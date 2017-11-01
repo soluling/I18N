@@ -25,17 +25,17 @@ where
 
 The following table contains possible forms.
 
-| Form    | Used with                       | Description                              |
-| ------- | ------------------------------- | ---------------------------------------- |
-| zero    | Grammatical numbers             | Nullar                                   |
-| one     | Grammatical numbers             | Singular                                 |
-| two     | Grammatical numbers             | Dual                                     |
-| few     | Grammatical numbers             | Paucal or similar                        |
-| many    | Grammatical numbers             | numbers: Greater paucal or similar.<br />gender: Neutral |
-| other   | Grammatical numbers and genders | Plural                                   |
-| male    | Grammatical genders             | Male                                     |
-| female  | Grammatical genders             | Female                                   |
-| neutral | Grammatical genders             | Neutral. Same as other.                  |
+| Form    | Used with                                | Description               |
+| ------- | ---------------------------------------- | ------------------------- |
+| zero    | Grammatical numbers                      | Nullar                    |
+| one     | Grammatical numbers                      | Singular                  |
+| two     | Grammatical numbers                      | Dual                      |
+| few     | Grammatical numbers                      | Paucal or similar         |
+| many    | Grammatical numbers                      | Greater paucal or similar |
+| other   | Grammatical numbers<br />Grammatical genders | Plural<br />Neutral       |
+| male    | Grammatical genders                      | Male                      |
+| female  | Grammatical genders                      | Female                    |
+| neutral | Grammatical genders                      | Neutral. Same as other.   |
 
 In addition of the above forms you can use operator code with grammatical numbers. The operators are:
 
