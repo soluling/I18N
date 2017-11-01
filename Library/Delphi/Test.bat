@@ -1,0 +1,6 @@
+\Tools\Delphi7\Bin\dcc32 -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPlural.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas
+rem \Tools\Delphi2009\Bin\dcc32 -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPlural.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas
+rem \Tools\DelphiXE\Bin\dcc32 -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPlural.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas
+rem \Tools\DelphiXE2\Bin\dcc64 -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS -NSSystem;System.Win;WinAPI;Vcl;Vcl.Imaging;Data NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPlural.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtChecker.pas NtRaizeChecker.pas NtTmsChecker.pas
+
+
