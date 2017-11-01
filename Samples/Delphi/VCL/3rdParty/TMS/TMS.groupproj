@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{42E28AB3-40BB-4E6D-BDF1-9D8079AF1DEE}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Checker\Checker.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Checker">
+        <MSBuild Projects="Checker\Checker.dproj"/>
+    </Target>
+    <Target Name="Checker:Clean">
+        <MSBuild Projects="Checker\Checker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Checker:Make">
+        <MSBuild Projects="Checker\Checker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Checker"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Checker:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Checker:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

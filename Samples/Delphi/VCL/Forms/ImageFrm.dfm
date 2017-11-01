@@ -1,0 +1,64 @@
+inherited ImageForm: TImageForm
+  Left = 0
+  Top = 0
+  ClientHeight = 145
+  ClientWidth = 385
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  PixelsPerInch = 96
+  TextHeight = 13
+  object Label1: TLabel
+    Left = 8
+    Top = 120
+    Width = 129
+    Height = 13
+    Alignment = taCenter
+    AutoSize = False
+    Caption = 'Image'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+  end
+  object Image1: TImage
+    Left = 8
+    Top = 8
+    Width = 128
+    Height = 128
+  end
+  object TextLabel: TLabel
+    Left = 144
+    Top = 8
+    Width = 43
+    Height = 13
+    Caption = 'dummy'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = [fsBold]
+    ParentFont = False
+  end
+  object DescriptionLabel: TLabel
+    Left = 144
+    Top = 32
+    Width = 233
+    Height = 81
+    AutoSize = False
+    Caption = 'dummy'
+    Font.Charset = DEFAULT_CHARSET
+    Font.Color = clWindowText
+    Font.Height = -11
+    Font.Name = 'Tahoma'
+    Font.Style = []
+    ParentFont = False
+    WordWrap = True
+  end
+end

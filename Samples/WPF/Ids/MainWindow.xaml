@@ -1,0 +1,17 @@
+﻿<Window
+  x:Uid="window"
+  x:Class="Ids.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" 
+  MinWidth="300" 
+  SizeToContent="WidthAndHeight"
+  Loaded="window_Loaded">
+  
+  <StackPanel>
+    <Label x:Uid="label1" Content="One" />
+    <Label x:Name="label2" Content="Two" />
+    <Label Name="label3" Content="Three" />
+    <Label Content="Four" />
+  </StackPanel>
+</Window>

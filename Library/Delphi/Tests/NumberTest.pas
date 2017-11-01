@@ -1,4 +1,4 @@
-﻿// This must be in UTF-8
+﻿// This must be in UTF-8 becasue it contains Japanese
 unit NumberTest;
 
 interface
@@ -33,7 +33,8 @@ uses
   Windows,
   NtBase,
   NtLocalization,
-  NtNumber;
+  NtNumber,
+  NtNumberData;
 
 procedure TNumberTest.SetLanguage(const value: String);
 var

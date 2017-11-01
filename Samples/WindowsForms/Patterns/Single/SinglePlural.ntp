@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20161130T151958Z" lastmodified="20170510T191111Z">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="SinglePlural.csproj" original="en" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" excludedresources="[nrGroupIcon,nrIcon,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <row id="$this.Text">
+        <value>Plural Sample</value>
+        <lang id="fi" st="3" review="0" time="20161130T152250Z">Esimerkki</lang>
+      </row>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="Language" scannedcomment="ISO 639 language code">
+          <value>en</value>
+          <lang id="fi" st="3" review="0" time="20161130T152251Z">fi</lang>
+        </row>
+        <row id="MessagePlural" class="TPatternRow" scannedcomment="{0}: File count" created="20170510T190538Z">
+          <value>{0} files</value>
+          <plural form="pfOne">{0} file</plural>
+          <lang id="fi" st="3" review="0" time="20170510T190558Z">
+            <data>{0} tiedostoa</data>
+            <plural form="pfOne">{0} tiedosto</plural>
+          </lang>
+        </row>
+        <row id="OtherMessagePlural" class="TPatternRow" scannedcomment="{0}: File count. This uses fixed code to 1, =1" created="20170510T190538Z">
+          <value>{0} files</value>
+          <plural fixed="1">{0} file</plural>
+          <lang id="fi" st="3" review="0" time="20170510T190611Z">
+            <data>{0} tiedostoa</data>
+            <plural fixed="1">{0} tiedosto</plural>
+          </lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

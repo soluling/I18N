@@ -1,0 +1,47 @@
+﻿<Window 
+  x:Class="NestedSample.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:NestedSample"
+  mc:Ignorable="d"
+  Title="MainWindow" Height="350" Width="525" ContentRendered="Window_ContentRendered">
+
+  <DockPanel>
+    <StackPanel DockPanel.Dock="Left" Orientation="Vertical">
+      <Label x:Uid="label1" Width="50">This is a long string</Label>
+    </StackPanel>
+
+    <StackPanel DockPanel.Dock="Right" Orientation="Vertical">
+      <Label x:Uid="label2" Width="50">This is a long string</Label>
+    </StackPanel>
+
+    <StackPanel>
+      <Grid>
+        <Grid.ColumnDefinitions>
+          <ColumnDefinition />
+          <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+          <RowDefinition />
+          <RowDefinition />
+        </Grid.RowDefinitions>
+
+        <Label x:Uid="label3" Grid.Column="0" Grid.Row="0" Width="50">This is very long</Label>
+        <Label x:Uid="label4" Grid.Column="1" Grid.Row="0" Width="50">This is very long</Label>
+        <Label x:Uid="label5" Grid.Column="0" Grid.Row="1" Width="50">This is very long</Label>
+        <Label x:Uid="label6" Grid.Column="1" Grid.Row="1" Width="50">This is very long</Label>
+      </Grid>
+
+      <DockPanel>
+        <Label x:Uid="label7" DockPanel.Dock="Top" Width="50">This is a long string</Label>
+        <Label x:Uid="label8" DockPanel.Dock="Left" Width="50">This is a long string</Label>
+        <Label x:Uid="label9" DockPanel.Dock="Right" Width="50">This is a long string</Label>
+        <Label x:Uid="label10" DockPanel.Dock="Bottom" Width="50">This is a long string</Label>
+        <Label x:Uid="label11">This is a long string</Label>
+      </DockPanel>
+    </StackPanel>
+  </DockPanel>
+</Window>

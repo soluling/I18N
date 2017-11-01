@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{5B3C5A99-216A-436E-A188-EDE416AB283D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Resources.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\INI\IniResources.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\Text\TextResources.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Resources">
+        <MSBuild Projects="Resources.dproj"/>
+    </Target>
+    <Target Name="Resources:Clean">
+        <MSBuild Projects="Resources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Resources:Make">
+        <MSBuild Projects="Resources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IniResources">
+        <MSBuild Projects="..\INI\IniResources.dproj"/>
+    </Target>
+    <Target Name="IniResources:Clean">
+        <MSBuild Projects="..\INI\IniResources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IniResources:Make">
+        <MSBuild Projects="..\INI\IniResources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TextResources">
+        <MSBuild Projects="..\Text\TextResources.dproj"/>
+    </Target>
+    <Target Name="TextResources:Clean">
+        <MSBuild Projects="..\Text\TextResources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TextResources:Make">
+        <MSBuild Projects="..\Text\TextResources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Resources;IniResources;TextResources"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Resources:Clean;IniResources:Clean;TextResources:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Resources:Make;IniResources:Make;TextResources:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

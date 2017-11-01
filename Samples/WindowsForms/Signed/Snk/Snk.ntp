@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20160228T164529Z" lastmodified="20160228T172353Z">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Snk.csproj" original="en" availableresources="[nrResx,nrForm]" excludedresources="[]" libraries="[nlWinForms]">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <row id="label1.Text">Hello World</row>
+      <row id="label2.Text">dummy</row>
+      <row id="$this.Text">Signed Sample</row>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="String1">This is a sample</row>
+      </node>
+    </node>
+    <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+  </node>
+</project>

@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20151020T213500Z" lastmodified="20151020T213552Z">
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <node class="TDelphiSource" name="Win32\Release\SingleFileDeploy.exe" original="en">
+    <excludedresources>
+      <add id="1"/>
+      <add id="12"/>
+      <add id="14"/>
+      <add id="3"/>
+      <add id="24"/>
+      <add id="6"/>
+      <add id="16"/>
+    </excludedresources>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">
+          <value>Sample</value>
+          <lang id="fi" origin="1" time="20151020T213510Z">Esimerkki</lang>
+          <lang id="ja" status="2" origin="1" time="20151020T213518Z">サンプル</lang>
+        </row>
+        <row id="ClientHeight">66</row>
+        <row id="ClientWidth">261</row>
+        <item name="Label1" type="TLabel">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">54</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Hello World</value>
+            <lang id="fi" origin="1" time="20151020T213510Z">Moi maailma</lang>
+          </row>
+        </item>
+        <item name="Button1" type="TButton">
+          <row id="Left">8</row>
+          <row id="Top">32</row>
+          <row id="Width">97</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>&amp;Language...</value>
+            <lang id="fi" origin="1" time="20151020T213510Z">&amp;Kieli...</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQCQgtDbGllbnRXaWR0aAMF
+          AQVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtG
+          b250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVPcmRlcggNUGl4ZWxzUGVySW5jaAJg
+          ClRleHRIZWlnaHQCDQAGVExhYmVsBkxhYmVsMQRMZWZ0AggDVG9wAggFV2lkdGgCNgZIZWlnaHQCDQdDYXB0aW9uBgtIZWxsbyBX
+          b3JsZAAAB1RCdXR0b24HQnV0dG9uMQRMZWZ0AggDVG9wAiAFV2lkdGgCYQZIZWlnaHQCGQdDYXB0aW9uBgwmTGFuZ3VhZ2UuLi4I
+          VGFiT3JkZXICAAdPbkNsaWNrBwxCdXR0b24xQ2xpY2sAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">256</row>
+        <row id="Top">347</row>
+        <row id="Caption">
+          <value>Select Language</value>
+          <lang id="fi" origin="1" time="20151020T213510Z">Valitse kieli</lang>
+        </row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">193</row>
+          <row id="Height">177</row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">8</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>OK</value>
+            <lang id="fi" origin="1" time="20151020T213510Z">OK</lang>
+            <lang id="ja" status="2" origin="1" time="20151020T213518Z">OK</lang>
+          </row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">40</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>Cancel</value>
+            <lang id="fi" origin="1" time="20151020T213510Z">Peru</lang>
+            <lang id="ja" status="2" origin="1" time="20151020T213518Z">キャンセル</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
+          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
+          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
+          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
+          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
+          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
+          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
+          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
+          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
+          AAA=
+        </data>
+      </node>
+    </node>
+    <configurations>
+      <configuration items="[oiLanguage]"/>
+    </configurations>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

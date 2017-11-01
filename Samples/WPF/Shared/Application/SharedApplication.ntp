@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20170411T020025Z" lastmodified="20170411T041327Z">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="SharedApplication.csproj" original="en-US" availableresources="[nrResx,nrXaml,nrManifest,nrVersion]" excludedresources="[nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <node class="TDirectoryFolder" name="..">
+      <node class="TDirectoryFolder" name="SharedProject">
+        <node class="TDirectoryFolder" name="Add">
+          <node class="TXamlNode" name="MyUserControl2.xaml" kind="xkUserControl">
+            <item name="Grid[0]" type="Grid">
+              <item name="Label[0]" type="Label" created="20170411T031229Z">
+                <row id="Content">Another shared string</row>
+              </item>
+            </item>
+            <data>
+              77u/PFVzZXJDb250cm9sDQogICAgeDpDbGFzcz0iU2hhcmVkUHJvamVjdC5BZGQuTXlVc2VyQ29udHJvbDIiDQogICAgeG1sbnM9
+              Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICB4bWxuczp4PSJo
+              dHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICB4bWxuczpsb2NhbD0idXNpbmc6U2hhcmVk
+              UHJvamVjdC5BZGQiDQogICAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5kLzIw
+              MDgiDQogICAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxmb3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8y
+              MDA2Ig0KICAgIG1jOklnbm9yYWJsZT0iZCINCiAgICBkOkRlc2lnbkhlaWdodD0iMzAwIg0KICAgIGQ6RGVzaWduV2lkdGg9IjQw
+              MCI+DQogICAgDQogIDxHcmlkPg0KICAgIDxMYWJlbD5Bbm90aGVyIHNoYXJlZCBzdHJpbmc8L0xhYmVsPg0KICA8L0dyaWQ+DQo8
+              L1VzZXJDb250cm9sPg0K
+            </data>
+          </node>
+        </node>
+        <node class="TXamlNode" name="MyUserControl1.xaml" kind="xkUserControl">
+          <item name="Grid[0]" type="Grid">
+            <item name="Label[0]" type="Label">
+              <row id="Content">This is a shared string</row>
+            </item>
+          </item>
+          <data>
+            77u/PFVzZXJDb250cm9sDQogIHg6Q2xhc3M9IlNoYXJlZFByb2plY3QuTXlVc2VyQ29udHJvbDEiDQogIHhtbG5zPSJodHRwOi8v
+            c2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0dHA6Ly9zY2hl
+            bWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICB4bWxuczpsb2NhbD0idXNpbmc6U2hhcmVkUHJvamVjdCINCiAg
+            eG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5kLzIwMDgiDQogIHhtbG5zOm1jPSJo
+            dHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxpdHkvMjAwNiINCiAgbWM6SWdub3JhYmxl
+            PSJkIg0KICBkOkRlc2lnbkhlaWdodD0iNTAiDQogIGQ6RGVzaWduV2lkdGg9IjIwMCI+DQoNCiAgPEdyaWQ+DQogICAgPExhYmVs
+            PlRoaXMgaXMgYSBzaGFyZWQgc3RyaW5nPC9MYWJlbD4NCiAgPC9HcmlkPg0KPC9Vc2VyQ29udHJvbD4=
+          </data>
+        </node>
+        <node class="TResXNode" name="Resources1.resx" created="20170411T031229Z">
+          <row id="String1">
+            <value>One</value>
+            <lang id="fi" st="3" review="0" time="20170411T041326Z">Yksi</lang>
+          </row>
+          <row id="String2">Two</row>
+        </node>
+      </node>
+    </node>
+    <node class="TXamlNode" name="App.xaml" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlNoYXJlZEFwcGxpY2F0aW9uLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDov
+        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAgIHhtbG5zOng9
+        Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICAgICAgICAgICAgIHhtbG5zOmxvY2FsPSJj
+        bHItbmFtZXNwYWNlOlNoYXJlZEFwcGxpY2F0aW9uIg0KICAgICAgICAgICAgIFN0YXJ0dXBVcmk9Ik1haW5XaW5kb3cueGFtbCI+
+        DQogICAgPEFwcGxpY2F0aW9uLlJlc291cmNlcz4NCiAgICAgICAgIA0KICAgIDwvQXBwbGljYXRpb24uUmVzb3VyY2VzPg0KPC9B
+        cHBsaWNhdGlvbj4NCg==
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" kind="xkWindow">
+      <row id="Title">Sample</row>
+      <item name="Grid[0]" type="Grid">
+        <item name="Label[0]" type="Label">
+          <row id="Content">This is a sample</row>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iU2hhcmVkQXBwbGljYXRpb24uTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hl
+        bWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMu
+        bWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhw
+        cmVzc2lvbi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1j
+        b21wYXRpYmlsaXR5LzIwMDYiDQogIHhtbG5zOmxvY2FsPSJjbHItbmFtZXNwYWNlOlNoYXJlZEFwcGxpY2F0aW9uIg0KICBtYzpJ
+        Z25vcmFibGU9ImQiDQogIFRpdGxlPSJTYW1wbGUiIEhlaWdodD0iMzUwIiBXaWR0aD0iNTI1Ij4NCg0KICA8R3JpZD4NCiAgICA8
+        TGFiZWw+VGhpcyBpcyBhIHNhbXBsZTwvTGFiZWw+DQogIDwvR3JpZD4NCjwvV2luZG93Pg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="String1" created="20170411T031229Z">
+          <value>One</value>
+          <lang id="fi" st="2" or="3" review="0" time="20170411T041326Z">Yksi</lang>
+        </row>
+        <row id="String2" created="20170411T031229Z">Two</row>
+      </node>
+    </node>
+    <node class="TXamlNode" name="UserControl1.xaml" kind="xkUserControl">
+      <item name="Grid[0]" type="Grid">
+        <item name="Label[0]" type="Label" created="20170411T031229Z">
+          <row id="Content">This is an user control string</row>
+        </item>
+      </item>
+      <data>
+        77u/PFVzZXJDb250cm9sIHg6Q2xhc3M9IlNoYXJlZEFwcGxpY2F0aW9uLlVzZXJDb250cm9sMSINCiAgICAgICAgICAgICB4bWxu
+        cz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAg
+        IHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICAgICAgICAgICAgIHhtbG5z
+        Om1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxpdHkvMjAwNiIgDQogICAgICAg
+        ICAgICAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5kLzIwMDgiIA0KICAgICAg
+        ICAgICAgIHhtbG5zOmxvY2FsPSJjbHItbmFtZXNwYWNlOlNoYXJlZEFwcGxpY2F0aW9uIg0KICAgICAgICAgICAgIG1jOklnbm9y
+        YWJsZT0iZCIgDQogICAgICAgICAgICAgZDpEZXNpZ25IZWlnaHQ9IjMwMCIgZDpEZXNpZ25XaWR0aD0iMzAwIj4NCiAgPEdyaWQ+
+        DQogICAgPExhYmVsPlRoaXMgaXMgYW4gdXNlciBjb250cm9sIHN0cmluZzwvTGFiZWw+DQogIDwvR3JpZD4NCjwvVXNlckNvbnRy
+        b2w+DQo=
+      </data>
+    </node>
+    <netproperties version="net461"/>
+  </node>
+</project>

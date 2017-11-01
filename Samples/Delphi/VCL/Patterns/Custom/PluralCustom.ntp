@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20140612T064644Z" lastmodified="20170723T234659Z">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TDelphiSource" name="Win32\Release\PluralCustom.exe" original="en">
+    <node class="TWindowsCursorFolder" name="Cursor" created="20170422T164650Z" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" created="20170422T164650Z" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" created="20170422T164650Z" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" created="20170422T164650Z" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">
+          <value>Plural Sample</value>
+          <lang id="fi" review="0" time="20170422T164720Z">Monikkoesimerkki</lang>
+        </row>
+        <row id="ClientHeight">119</row>
+        <row id="ClientWidth" changed="20170723T034044Z">857</row>
+        <item name="Label0_0" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">32</row>
+          <row id="Top">24</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label0_1" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">208</row>
+          <row id="Top">24</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label0_2" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">400</row>
+          <row id="Top">24</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label1_0" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">32</row>
+          <row id="Top">48</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label1_1" type="TLabel">
+          <row id="Left">208</row>
+          <row id="Top">48</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label1_2" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">400</row>
+          <row id="Top">48</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label2_0" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">32</row>
+          <row id="Top">72</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label2_1" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">208</row>
+          <row id="Top">72</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label2_2" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">400</row>
+          <row id="Top">72</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label3_0" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">32</row>
+          <row id="Top">96</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label3_1" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">208</row>
+          <row id="Top">96</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label3_2" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">400</row>
+          <row id="Top">96</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label1" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">32</row>
+          <row id="Top">8</row>
+          <row id="Width">98</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Standard pattern</value>
+            <lang id="fi" review="0" time="20170422T164904Z">Standardimalli</lang>
+          </row>
+        </item>
+        <item name="Label2" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">208</row>
+          <row id="Top">8</row>
+          <row id="Width">125</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Pattern with zero part</value>
+            <lang id="fi" review="0" time="20170422T164941Z">Malli, jossa on nollaosa</lang>
+          </row>
+        </item>
+        <item name="Label3" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">400</row>
+          <row id="Top">8</row>
+          <row id="Width">179</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Pattern with zero and two parts</value>
+            <lang id="fi" review="0" time="20170422T164938Z">Malli, jossa on nolla- ja kaksiosat</lang>
+          </row>
+        </item>
+        <item name="Label5" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">8</row>
+          <row id="Top" changed="20170723T034044Z">24</row>
+          <row id="Width">9</row>
+          <row id="Height">13</row>
+          <row id="Caption" changed="20170723T034044Z" created="20151020T140616Z" donottranslate="1">0 </row>
+        </item>
+        <item name="Label6" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">8</row>
+          <row id="Top" changed="20170723T034044Z">48</row>
+          <row id="Width">9</row>
+          <row id="Height">13</row>
+          <row id="Caption" changed="20170723T034044Z" created="20151020T140616Z" donottranslate="1">1 </row>
+        </item>
+        <item name="Label7" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">8</row>
+          <row id="Top" changed="20170723T034044Z">72</row>
+          <row id="Width">9</row>
+          <row id="Height">13</row>
+          <row id="Caption" changed="20170723T034044Z" created="20151020T140616Z" donottranslate="1">2 </row>
+        </item>
+        <item name="Label8" type="TLabel" created="20170723T034044Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">8</row>
+          <row id="Top">96</row>
+          <row id="Width">9</row>
+          <row id="Height">13</row>
+          <row id="Caption" donottranslate="1">3 </row>
+        </item>
+        <item name="Label4" type="TLabel">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left" changed="20170723T034044Z">640</row>
+          <row id="Top" changed="20170723T034044Z">8</row>
+          <row id="Width" changed="20170723T034044Z">147</row>
+          <row id="Height">13</row>
+          <row id="Caption" changed="20170723T034044Z" created="20151020T140616Z">
+            <value>Pattern with 0 and 2 parts</value>
+            <lang id="fi" st="3" review="0" time="20170723T234633Z">Malli, jossa on 0 ja 2 -osat</lang>
+          </row>
+        </item>
+        <item name="Label0_3" type="TLabel" created="20170723T034044Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">640</row>
+          <row id="Top">24</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label1_3" type="TLabel" created="20170723T034044Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">640</row>
+          <row id="Top">48</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label2_3" type="TLabel" created="20170723T034044Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">640</row>
+          <row id="Top">72</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <item name="Label3_3" type="TLabel" created="20170723T034044Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">640</row>
+          <row id="Top">96</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDVBsdXJhbCBTYW1wbGUMQ2xpZW50SGVpZ2h0AncLQ2xpZW50
+          V2lkdGgDWQMFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRv
+          d1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAOT2xkQ3JlYXRlT3JkZXIICE9uQ3JlYXRl
+          BwpGb3JtQ3JlYXRlDVBpeGVsc1BlckluY2gCYApUZXh0SGVpZ2h0Ag0ABlRMYWJlbAhMYWJlbDBfMARMZWZ0AiADVG9wAhgFV2lk
+          dGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdp
+          bmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAKUGFyZW50Rm9udAgAAAZUTGFiZWwI
+          TGFiZWwwXzEETGVmdAPQAANUb3ACGAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15DEZvbnQuQ2hhcnNldAcPREVGQVVM
+          VF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5
+          bGULAApQYXJlbnRGb250CAAABlRMYWJlbAhMYWJlbDBfMgRMZWZ0A5ABA1RvcAIYBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYF
+          ZHVtbXkMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJ
+          Rm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsAClBhcmVudEZvbnQIAAAGVExhYmVsCExhYmVsMV8wBExlZnQCIANUb3ACMAVX
+          aWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15DEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNs
+          V2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJlbnRGb250CAAABlRMYWJl
+          bAhMYWJlbDFfMQRMZWZ0A9AAA1RvcAIwBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkAAAZUTGFiZWwITGFiZWwxXzIE
+          TGVmdAOQAQNUb3ACMAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15DEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VU
+          CkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJl
+          bnRGb250CAAABlRMYWJlbAhMYWJlbDJfMARMZWZ0AiADVG9wAkgFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQxGb250
+          LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUG
+          BlRhaG9tYQpGb250LlN0eWxlCwAKUGFyZW50Rm9udAgAAAZUTGFiZWwITGFiZWwyXzEETGVmdAPQAANUb3ACSAVXaWR0aAIiBkhl
+          aWdodAINB0NhcHRpb24GBWR1bW15DEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4
+          dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJlbnRGb250CAAABlRMYWJlbAhMYWJlbDJf
+          MgRMZWZ0A5ABA1RvcAJIBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJT
+          RVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsAClBh
+          cmVudEZvbnQIAAAGVExhYmVsCExhYmVsM18wBExlZnQCIANUb3ACYAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15DEZv
+          bnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFt
+          ZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJlbnRGb250CAAABlRMYWJlbAhMYWJlbDNfMQRMZWZ0A9AAA1RvcAJgBVdpZHRoAiIG
+          SGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dU
+          ZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsAClBhcmVudEZvbnQIAAAGVExhYmVsCExhYmVs
+          M18yBExlZnQDkAEDVG9wAmAFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hB
+          UlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAK
+          UGFyZW50Rm9udAgAAAZUTGFiZWwGTGFiZWwxBExlZnQCIANUb3ACCAVXaWR0aAJiBkhlaWdodAINB0NhcHRpb24GEFN0YW5kYXJk
+          IHBhdHRlcm4MRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0
+          AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsGZnNCb2xkAApQYXJlbnRGb250CAAABlRMYWJlbAZMYWJlbDIETGVmdAPQ
+          AANUb3ACCAVXaWR0aAJ9BkhlaWdodAINB0NhcHRpb24GFlBhdHRlcm4gd2l0aCB6ZXJvIHBhcnQMRm9udC5DaGFyc2V0Bw9ERUZB
+          VUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5T
+          dHlsZQsGZnNCb2xkAApQYXJlbnRGb250CAAABlRMYWJlbAZMYWJlbDMETGVmdAOQAQNUb3ACCAVXaWR0aAOzAAZIZWlnaHQCDQdD
+          YXB0aW9uBh9QYXR0ZXJuIHdpdGggemVybyBhbmQgdHdvIHBhcnRzDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQu
+          Q29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULBmZzQm9sZAAKUGFy
+          ZW50Rm9udAgAAAZUTGFiZWwGTGFiZWw1BExlZnQCCANUb3ACGAVXaWR0aAIJBkhlaWdodAINB0NhcHRpb24GAjAgDEZvbnQuQ2hh
+          cnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFo
+          b21hCkZvbnQuU3R5bGULCGZzSXRhbGljAApQYXJlbnRGb250CAAABlRMYWJlbAZMYWJlbDYETGVmdAIIA1RvcAIwBVdpZHRoAgkG
+          SGVpZ2h0Ag0HQ2FwdGlvbgYCMSAMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0
+          C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsIZnNJdGFsaWMAClBhcmVudEZvbnQIAAAGVExhYmVs
+          BkxhYmVsNwRMZWZ0AggDVG9wAkgFV2lkdGgCCQZIZWlnaHQCDQdDYXB0aW9uBgIyIAxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hB
+          UlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwhm
+          c0l0YWxpYwAKUGFyZW50Rm9udAgAAAZUTGFiZWwGTGFiZWw4BExlZnQCCANUb3ACYAVXaWR0aAIJBkhlaWdodAINB0NhcHRpb24G
+          AjMgDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZv
+          bnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULCGZzSXRhbGljAApQYXJlbnRGb250CAAABlRMYWJlbAZMYWJlbDQETGVmdAOAAgNU
+          b3ACCAVXaWR0aAOTAAZIZWlnaHQCDQdDYXB0aW9uBhpQYXR0ZXJuIHdpdGggMCBhbmQgMiBwYXJ0cwxGb250LkNoYXJzZXQHD0RF
+          RkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250
+          LlN0eWxlCwZmc0JvbGQAClBhcmVudEZvbnQIAAAGVExhYmVsCExhYmVsMF8zBExlZnQDgAIDVG9wAhgFV2lkdGgCIgZIZWlnaHQC
+          DQdDYXB0aW9uBgVkdW1teQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9u
+          dC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAKUGFyZW50Rm9udAgAAAZUTGFiZWwITGFiZWwxXzMETGVm
+          dAOAAgNUb3ACMAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15DEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZv
+          bnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJlbnRG
+          b250CAAABlRMYWJlbAhMYWJlbDJfMwRMZWZ0A4ACA1RvcAJIBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkMRm9udC5D
+          aGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZU
+          YWhvbWEKRm9udC5TdHlsZQsAClBhcmVudEZvbnQIAAAGVExhYmVsCExhYmVsM18zBExlZnQDgAIDVG9wAmAFV2lkdGgCIgZIZWln
+          aHQCDQdDYXB0aW9uBgVkdW1teQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQL
+          Rm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAKUGFyZW50Rm9udAgAAAA=
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" created="20170723T234446Z" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1" ignored="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1" ignored="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+          <value>{0} files</value>
+          <prev>%d files</prev>
+          <plural form="pfOne">{0} file</plural>
+          <lang id="fi" review="0" time="20170723T034112Z">
+            <data>{0} tiedostoa</data>
+            <plural form="pfOne">{0} tiedosto</plural>
+          </lang>
+        </row>
+        <row id="SZeroMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+          <value>{0} files</value>
+          <prev>%d files</prev>
+          <plural form="pfZero">No files</plural>
+          <plural form="pfOne">One file</plural>
+          <lang id="fi" or="3" review="0" time="20170723T034112Z">
+            <data>{0} tiedostoa</data>
+            <plural form="pfZero">Ei tiedostoa</plural>
+            <plural form="pfOne">Yksi tiedosto</plural>
+          </lang>
+        </row>
+        <row id="STwoMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+          <value>{0} files</value>
+          <prev>%d files</prev>
+          <plural form="pfZero">No files</plural>
+          <plural form="pfOne">One file</plural>
+          <plural form="pfTwo">Two files</plural>
+          <lang id="fi" or="3" review="0" time="20170723T034112Z">
+            <data>{0} tiedostoa</data>
+            <plural form="pfZero">Ei tiedostoa</plural>
+            <plural form="pfOne">Yksi tiedosto</plural>
+            <plural form="pfTwo">Kaksi tiedostoa</plural>
+          </lang>
+        </row>
+        <row id="S2MessagePlural" class="TPatternRow" created="20170723T034044Z">
+          <value>{0} files</value>
+          <plural fixed="0">No files</plural>
+          <plural form="pfOne">One file</plural>
+          <plural fixed="2">Two files</plural>
+          <lang id="fi" review="0" time="20170723T034237Z">
+            <data>{0} tiedostoa</data>
+            <plural fixed="0">Ei tiedostoja</plural>
+            <plural form="pfOne">Yksi tiedosto</plural>
+            <plural fixed="2">Kaksi tiedostoa</plural>
+          </lang>
+        </row>
+        <row id="SNtLocale">
+          <value>en</value>
+          <lang id="fi" review="0" time="20170422T165040Z">fi</lang>
+        </row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1" ignored="1"/>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

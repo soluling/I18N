@@ -1,0 +1,12 @@
+﻿<Window 
+  x:Class="HelloWorld.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:prop="clr-namespace:HelloWorld.Properties"
+  Title="{x:Static prop:Resources.Sample}" Height="200" Width="400" Loaded="Window_Loaded">
+  
+  <StackPanel x:Name="panel">
+    <Label x:Name="label1" Content="{x:Static prop:Resources.HelloWorld}" />
+    <Label x:Name="label2" Content="dummy" />
+  </StackPanel>
+</Window>

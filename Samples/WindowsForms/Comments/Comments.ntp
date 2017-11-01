@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20161117T033039Z" lastmodified="20161117T033049Z">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Comments.csproj" original="en" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" excludedresources="[nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <row id="label1.Text">dummy</row>
+      <row id="label2.Text">dummy</row>
+      <row id="$this.Text">Sample</row>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="FormatComment" scannedcomment="Names">Hello {0} and {1}</row>
+        <row id="FormatNoComment">Hello {0} and {1}</row>
+        <row id="FormatPlaceholderComment" scannedcomment="{0}: Name of person 1
+{1}: Name of person 2">Hello {0} and {1}</row>
+        <row id="String1" scannedcomment="The most typical software output">Hello world</row>
+      </node>
+    </node>
+  </node>
+</project>

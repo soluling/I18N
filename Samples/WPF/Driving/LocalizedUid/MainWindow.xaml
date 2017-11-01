@@ -1,0 +1,64 @@
+﻿<Window 
+  x:Class="Driving.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Icon="car_sedan_blue.ico"
+  Title="Driving Time" 
+  SizeToContent="WidthAndHeight"
+  MinWidth="360"
+  Loaded="Window_Loaded">
+
+  <StackPanel x:Uid="panel">
+    <Menu x:Uid="menu">
+      <MenuItem x:Uid="fileMenu" Header="_File">
+        <MenuItem x:Uid="calculateMenu" x:Name="calculateMenu" Header="_Calculate" Click="calculateButton_Click" />
+        <Separator x:Uid="separator1" />
+        <MenuItem x:Uid="exitMenu"  Header="_Exit" Click="exitMenu_Click" />
+      </MenuItem>
+
+      <MenuItem x:Uid="helpMenu" Header="_Help">
+        <MenuItem x:Uid="aboutMenu" Header="_About" Click="aboutMenu_Click" />
+      </MenuItem>
+    </Menu>
+
+    <Grid x:Uid="editGrid">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition x:Uid="distanceColumn" />
+        <ColumnDefinition x:Uid="speedColumn" />
+        <ColumnDefinition x:Uid="buttonColumn" />
+      </Grid.ColumnDefinitions>
+
+      <StackPanel x:Uid="distancePanel" Grid.Column="0" Margin="5">
+        <Label x:Uid="distanceLabel" Content="_Distance:" />
+        <TextBox x:Uid="distanceTextBox" x:Name="distanceTextBox" TextChanged="textBox_TextChanged" />
+      </StackPanel>
+
+      <StackPanel x:Uid="speedPanel" Grid.Column="1" Margin="5">
+        <Label x:Uid="speedLabel" Content="_Speed:" />
+        <TextBox x:Uid="speedTextBox" x:Name="speedTextBox" TextChanged="textBox_TextChanged" />
+      </StackPanel>
+
+      <StackPanel x:Uid="buttonPanel" Grid.Column="2" Margin="5" VerticalAlignment="Bottom">
+        <Button x:Uid="calculateButton" x:Name="calculateButton" Content="_Calculate" Click="calculateButton_Click" />
+      </StackPanel>
+    </Grid>
+
+    <Grid x:Uid="infoGrid">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition x:Uid="carColumn" Width="1*" />
+        <ColumnDefinition x:Uid="infoColumn" Width="4*" />
+        <ColumnDefinition x:Uid="flagColumn" Width="1*" />
+      </Grid.ColumnDefinitions>
+
+      <Image x:Uid="carImage" Grid.Column="0" Source="car_sedan_blue.png" Width="48" />
+
+      <StackPanel x:Uid="timePanel" Grid.Column="1">
+        <Label x:Uid="timeLabel" Content="Driving time is" />
+        <Label x:Uid="hoursLabel" x:Name="hoursLabel" MinHeight="28" />
+        <Label x:Uid="minutesLabel" x:Name="minutesLabel" MinHeight="28" />
+      </StackPanel>
+
+      <Image x:Uid="flagImage" Grid.Column="2" Source="flag_united_kingdom.png" Width="48" />
+    </Grid>
+  </StackPanel>
+</Window>

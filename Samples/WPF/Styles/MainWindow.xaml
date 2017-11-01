@@ -1,0 +1,29 @@
+﻿<Window 
+  x:Class="Styles.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Styles Sample" 
+  Width="500"
+  SizeToContent="Height">
+  
+  <Grid Margin="8">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>     
+    
+    <Grid.RowDefinitions>
+      <RowDefinition Height="3*" />
+      <RowDefinition Height="2*" />
+      <RowDefinition Height="2*" />
+    </Grid.RowDefinitions>
+
+    <TextBlock x:Uid="text1" Grid.Column="0" Grid.Row="0" TextWrapping="Wrap">Clicking this button shows a dialog that <Bold>merges</Bold> an external dictionary and then uses the styles in the dictionary</TextBlock>
+    <Button x:Uid="button1" Grid.Column="0" Grid.Row="1" Width="100" MaxHeight="25" Margin="8" Click="Button1_Click" >_Show</Button>
+
+    <TextBlock x:Uid="text2" Grid.Column="1" Grid.Row="0" TextWrapping="Wrap">Clicking this button shows a dialog that <Bold>embeds</Bold> the styles in the window</TextBlock>
+    <Button x:Uid="button2" Grid.Column="1" Grid.Row="1" Width="100" MaxHeight="25" Margin="8" Click="Button2_Click">S_how</Button>
+
+    <TextBlock x:Uid="text3" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" TextWrapping="Wrap">What you see is the same on both cases. The implementation is just different.</TextBlock>
+  </Grid>
+</Window>

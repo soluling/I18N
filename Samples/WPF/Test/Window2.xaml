@@ -1,0 +1,15 @@
+﻿<Window 
+  x:Class="Test.Window2"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  
+  <StackPanel>
+    <Label Name="label1">One</Label>
+    <Label x:Name="label2">One</Label>
+    <Label x:Uid="label3">One</Label>
+    <Button>Two</Button>
+    <CheckBox>
+      <CheckBox.Content>Three</CheckBox.Content>
+    </CheckBox>
+  </StackPanel>
+</Window>

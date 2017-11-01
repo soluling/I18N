@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20170511T071718Z" lastmodified="20170512T041729Z">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Debug\CustomControlApplication.exe" original="en-US" binaryoptions="[bdAutoFormat]">
+    <dialogs scanvisualproperties="0"/>
+    <node class="TWindowsCursorFolder" name="Cursor" created="20170512T031532Z" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" created="20170512T031532Z" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" created="20170512T031532Z" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" created="20170512T031532Z" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" created="20170512T031532Z" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData" created="20170512T031532Z">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">
+          <value>Custom Control Sample</value>
+          <lang id="fi" review="0" time="20170511T072230Z">Muokattu kontrolli -esimerkki</lang>
+        </row>
+        <row id="ClientHeight">217</row>
+        <row id="ClientWidth">504</row>
+        <item name="Label1" type="TLabel">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">
+            <value>69</value>
+            <lang id="fi" st="3" review="0" time="20170512T031532Z">77</lang>
+          </row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Standard label</value>
+            <lang id="fi" review="0" time="20170511T072235Z">Normaali tunnus</lang>
+          </row>
+        </item>
+        <item name="MyLabel1" type="TMyLabel">
+          <row id="Left">8</row>
+          <row id="Top">24</row>
+          <row id="Width">61</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>Custom label</value>
+            <lang id="fi" review="0" time="20170511T072239Z">Muokattu tunnus</lang>
+          </row>
+          <row id="Description">
+            <value>This is description</value>
+            <lang id="fi" review="0" time="20170511T072245Z">Tämä on selitys</lang>
+          </row>
+        </item>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String" created="20170512T031532Z" excluded="1"/>
+    <node class="TWindowsVersionFolder" name="Version" created="20170512T031532Z" excluded="1"/>
+    <delphirules kind="drVcl">
+      <item type="TMyLabel" property="ExcludeMe"/>
+    </delphirules>
+    <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

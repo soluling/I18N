@@ -1,0 +1,72 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{ADBA4AC0-14A8-42F0-BF85-39D8B5A95BB5}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Plural\Plural.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Multi\PluralMulti.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mixed\PluralMixed.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SkiAndBicycle\SkiAndBicycle.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Plural">
+        <MSBuild Projects="Plural\Plural.dproj"/>
+    </Target>
+    <Target Name="Plural:Clean">
+        <MSBuild Projects="Plural\Plural.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Plural:Make">
+        <MSBuild Projects="Plural\Plural.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PluralMulti">
+        <MSBuild Projects="Multi\PluralMulti.dproj"/>
+    </Target>
+    <Target Name="PluralMulti:Clean">
+        <MSBuild Projects="Multi\PluralMulti.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PluralMulti:Make">
+        <MSBuild Projects="Multi\PluralMulti.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PluralMixed">
+        <MSBuild Projects="Mixed\PluralMixed.dproj"/>
+    </Target>
+    <Target Name="PluralMixed:Clean">
+        <MSBuild Projects="Mixed\PluralMixed.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PluralMixed:Make">
+        <MSBuild Projects="Mixed\PluralMixed.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SkiAndBicycle">
+        <MSBuild Projects="SkiAndBicycle\SkiAndBicycle.dproj"/>
+    </Target>
+    <Target Name="SkiAndBicycle:Clean">
+        <MSBuild Projects="SkiAndBicycle\SkiAndBicycle.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SkiAndBicycle:Make">
+        <MSBuild Projects="SkiAndBicycle\SkiAndBicycle.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Plural;PluralMulti;PluralMixed;SkiAndBicycle"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Plural:Clean;PluralMulti:Clean;PluralMixed:Clean;SkiAndBicycle:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Plural:Make;PluralMulti:Make;PluralMixed:Make;SkiAndBicycle:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

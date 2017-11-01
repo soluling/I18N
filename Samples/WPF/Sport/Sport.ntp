@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20121129080135" lastmodified="20121129081028">
+  <lang id="fi"/>
+  <node class="TAssemblySource" name="bin\Release\Sport.exe" original="en" version="net40" availableresources="[nrResx,nrXaml,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" excludedresources="[nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" library="nlWpf">
+    <node class="TNetResXFolder" name="ResX">
+      <node class="TResXNode" name="Sport.Properties.Resources.resources">
+        <row id="BasketballDescription" created="20121129080135">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+        <row id="BasketballName" created="20121129080135">
+          <value>Basketball</value>
+          <lang id="fi" status="3" time="080219">Koripallo</lang>
+        </row>
+        <row id="BasketballOrigin" created="20121129080135">
+          <value>United States</value>
+          <lang id="fi" status="3" time="080216">Yhdysvallat</lang>
+        </row>
+        <row id="HockeyDescription" created="20121129080135">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+        <row id="HockeyName" created="20121129080135">
+          <value>Ice hockey</value>
+          <lang id="fi" status="3" time="080212">Jääkiekko</lang>
+        </row>
+        <row id="HockeyOrigin" created="20121129080135">
+          <value>Canada</value>
+          <lang id="fi" status="3" time="080209">Kanada</lang>
+        </row>
+        <row id="SoccerDescription" created="20121129080135">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+        <row id="SoccerName" created="20121129080135">
+          <value>Soccer</value>
+          <lang id="fi" status="3" time="080141">Jalkapallo</lang>
+        </row>
+        <row id="SoccerOrigin" created="20121129080135">
+          <value>England</value>
+          <lang id="fi" status="3" time="080144">Englanti</lang>
+        </row>
+      </node>
+    </node>
+    <node class="TNetXamlFolder" name="XAML">
+      <node class="TXamlNode" name="mainwindow.baml">
+        <row id="Title" created="20121129080135">
+          <value>Sport</value>
+          <lang id="fi" status="3" time="080150">Urheilu</lang>
+        </row>
+        <item name="panel" type="StackPanel">
+          <item name="listView" type="ListView">
+            <item name="gridView" type="GridView">
+              <item name="nameColumn" type="GridViewColumn">
+                <row id="Header" created="20121129080135">
+                  <value>Name</value>
+                  <lang id="fi" status="3" time="080152">Nimi</lang>
+                </row>
+              </item>
+              <item name="playersColumn" type="GridViewColumn">
+                <row id="Header" created="20121129080135">
+                  <value>Field players</value>
+                  <lang id="fi" status="3" time="080156">Kenttäpelaajat</lang>
+                </row>
+              </item>
+              <item name="goalieColumn" type="GridViewColumn">
+                <row id="Header" created="20121129080135">
+                  <value>Goalie</value>
+                  <lang id="fi" status="3" time="080159">Maalivahti</lang>
+                </row>
+              </item>
+              <item name="originColumn" type="GridViewColumn">
+                <row id="Header" created="20121129080135">
+                  <value>Origin</value>
+                  <lang id="fi" status="3" time="080205">Alkuperä</lang>
+                </row>
+              </item>
+            </item>
+            <item name="tooltipStyle" type="Style">
+              <item name="toolTipProperty" type="Setter">
+                <item name="Binding[0]" type="Binding"/>
+              </item>
+            </item>
+          </item>
+        </item>
+        <data>
+          77u/PFdpbmRvdyB4OkNsYXNzPSJTcG9ydC5NYWluV2luZG93IiB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93
+          aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIiB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIw
+          MDYveGFtbCIgVGl0bGU9IlNwb3J0IiBIZWlnaHQ9IjE1MCIgV2lkdGg9IjQxMCIgRGF0YUNvbnRleHQ9IntCaW5kaW5nIFJlbGF0
+          aXZlU291cmNlPXtSZWxhdGl2ZVNvdXJjZSBTZWxmfX0iPg0KICA8U3RhY2tQYW5lbCB4Ok5hbWU9InBhbmVsIj4NCiAgICA8TGlz
+          dFZpZXcgeDpOYW1lPSJsaXN0VmlldyIgSXRlbXNTb3VyY2U9IntCaW5kaW5nIFNwb3J0Q29sbGVjdGlvbn0iPg0KICAgICAgPExp
+          c3RWaWV3LlZpZXc+DQogICAgICAgIDxHcmlkVmlldyB4Ok5hbWU9ImdyaWRWaWV3Ij4NCiAgICAgICAgICA8R3JpZFZpZXdDb2x1
+          bW4geDpOYW1lPSJuYW1lQ29sdW1uIiBXaWR0aD0iMTAwIiBIZWFkZXI9Ik5hbWUiIERpc3BsYXlNZW1iZXJCaW5kaW5nPSJ7Qmlu
+          ZGluZyBOYW1lfSIgLz4NCiAgICAgICAgICA8R3JpZFZpZXdDb2x1bW4geDpOYW1lPSJwbGF5ZXJzQ29sdW1uIiBXaWR0aD0iMTAw
+          IiBIZWFkZXI9IkZpZWxkIHBsYXllcnMiIERpc3BsYXlNZW1iZXJCaW5kaW5nPSJ7QmluZGluZyBGaWVsZFBsYXllcnN9IiAvPg0K
+          ICAgICAgICAgIDxHcmlkVmlld0NvbHVtbiB4Ok5hbWU9ImdvYWxpZUNvbHVtbiIgV2lkdGg9IjcwIiBIZWFkZXI9IkdvYWxpZSIg
+          RGlzcGxheU1lbWJlckJpbmRpbmc9IntCaW5kaW5nIEdvYWxpZX0iIC8+DQogICAgICAgICAgPEdyaWRWaWV3Q29sdW1uIHg6TmFt
+          ZT0ib3JpZ2luQ29sdW1uIiBXaWR0aD0iQXV0byIgSGVhZGVyPSJPcmlnaW4iIERpc3BsYXlNZW1iZXJCaW5kaW5nPSJ7QmluZGlu
+          ZyBPcmlnaW59IiAvPg0KICAgICAgICA8L0dyaWRWaWV3Pg0KICAgICAgPC9MaXN0Vmlldy5WaWV3Pg0KICAgICAgPExpc3RWaWV3
+          Lkl0ZW1Db250YWluZXJTdHlsZT4NCiAgICAgICAgPFN0eWxlIHg6TmFtZT0idG9vbHRpcFN0eWxlIiBUYXJnZXRUeXBlPSJ7eDpU
+          eXBlIExpc3RWaWV3SXRlbX0iPg0KICAgICAgICAgIDxTZXR0ZXIgeDpOYW1lPSJ0b29sVGlwUHJvcGVydHkiIFByb3BlcnR5PSJU
+          b29sVGlwIj4NCiAgICAgICAgICAgIDxTZXR0ZXIuVmFsdWU+DQogICAgICAgICAgICAgIDxCaW5kaW5nIFBhdGg9IkRlc2NyaXB0
+          aW9uIiAvPg0KICAgICAgICAgICAgPC9TZXR0ZXIuVmFsdWU+DQogICAgICAgICAgPC9TZXR0ZXI+DQogICAgICAgIDwvU3R5bGU+
+          DQogICAgICA8L0xpc3RWaWV3Lkl0ZW1Db250YWluZXJTdHlsZT4NCiAgICA8L0xpc3RWaWV3Pg0KICA8L1N0YWNrUGFuZWw+DQo8
+          L1dpbmRvdz4NCg==
+        </data>
+      </node>
+    </node>
+  </node>
+</project>

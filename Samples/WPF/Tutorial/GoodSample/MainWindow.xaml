@@ -1,0 +1,30 @@
+﻿<Window 
+  x:Class="Tutorial.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" SizeToContent="Width" Height="220" MinWidth="500" Loaded="Window_Loaded">
+  
+  <Grid x:Uid="grid" Margin="8">
+    <Grid.RowDefinitions>
+      <RowDefinition Height="auto" />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>      
+    
+    <StackPanel x:Uid="filePanel" Orientation="Horizontal" Height="30" Margin="0,0,0,8">
+      <Label x:Uid="fileLabel">_Filename:</Label>
+      <TextBox Name="fileTextBox" Width="325" Height="24" Margin="8,0,8,0" />
+      <Button Name="fileButton" MinWidth="60" Padding="8,0,8,0" Click="fileButton_Click">_Browse...</Button>
+    </StackPanel>
+    
+    <CheckBox x:Uid="compressCheckBox" Grid.Row="1" VerticalAlignment="Center" Content="Compress data" />
+
+    <Label Name="sampleLabel" Grid.Row="2">donotlocalize</Label>
+    <Label Name="dateLabel" Grid.Row="3">donotlocalize</Label>
+    <Label Name="skiLabel1" Grid.Row="4">donotlocalize</Label>
+    <Label Name="skiLabel2" Grid.Row="5">donotlocalize</Label>
+  </Grid>
+</Window>

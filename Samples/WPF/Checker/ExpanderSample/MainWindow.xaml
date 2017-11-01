@@ -1,0 +1,20 @@
+﻿<Window 
+  x:Class="ExpanderSample.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:ExpanderSample"
+  mc:Ignorable="d"
+  Title="MainWindow" Height="350" Width="525" ContentRendered="Window_ContentRendered">
+
+  <StackPanel Name="panel">
+    <Expander Name="expander1" Header="One">
+      <Label Name="label1" Width="50">This is long string</Label>
+    </Expander>
+
+    <Expander Name="expander2" Header="Two">
+      <Label Name="label2" Width="50">This is long string</Label>
+    </Expander>
+  </StackPanel>
+</Window>

@@ -1,0 +1,14 @@
+﻿<Window 
+  x:Class="Events.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" 
+  Height="200" 
+  Width="300" 
+  Loaded="Window_Loaded_1" 
+  GotFocus="Window_GotFocus_1">
+  
+  <Grid Loaded="Grid_Loaded_1">
+    <Button IsVisibleChanged="Button_IsVisibleChanged_1">Click me</Button>      
+  </Grid>
+</Window>

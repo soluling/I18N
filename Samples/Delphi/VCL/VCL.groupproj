@@ -1,0 +1,396 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{4049EC5C-C62A-42F5-8F57-4DF8744C2868}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ActiveLanguage\ActiveLanguage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Audio\Audio.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ButtonLayout\ButtonLayout.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Checker\Checker.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Comments\Comments.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CustomSelect\CustomSelect.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DualLanguage\DualLanguage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FileDialog\FileDialog.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Font\Font.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Forms\Forms.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IgnoreResourceDll\IgnoreResourceDll.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ImageList\ImageList.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Ime\IME.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resources\INI\IniResources.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Japanese\Japanese.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LanguageParam\LanguageParam.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LanguageSwitch\LanguageSwitch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Layout\Layout.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Menu\Menu.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MessageDlg\MessageDlg.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Number\Number.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="NTRes\Simple\NTResSimple.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Original\Original.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Ordinal\Ordinal.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resize\Resize.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resources\Mixed\Resources.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="StringArray\StringArray.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="SingleFileDeploy\SingleFileDeploy.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Version\Version.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Resources\Text\TextResources.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DFM\DFM.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ActiveLanguage">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj"/>
+    </Target>
+    <Target Name="ActiveLanguage:Clean">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActiveLanguage:Make">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Audio">
+        <MSBuild Projects="Audio\Audio.dproj"/>
+    </Target>
+    <Target Name="Audio:Clean">
+        <MSBuild Projects="Audio\Audio.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Audio:Make">
+        <MSBuild Projects="Audio\Audio.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ButtonLayout">
+        <MSBuild Projects="ButtonLayout\ButtonLayout.dproj"/>
+    </Target>
+    <Target Name="ButtonLayout:Clean">
+        <MSBuild Projects="ButtonLayout\ButtonLayout.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ButtonLayout:Make">
+        <MSBuild Projects="ButtonLayout\ButtonLayout.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Checker">
+        <MSBuild Projects="Checker\Checker.dproj"/>
+    </Target>
+    <Target Name="Checker:Clean">
+        <MSBuild Projects="Checker\Checker.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Checker:Make">
+        <MSBuild Projects="Checker\Checker.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Comments">
+        <MSBuild Projects="Comments\Comments.dproj"/>
+    </Target>
+    <Target Name="Comments:Clean">
+        <MSBuild Projects="Comments\Comments.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Comments:Make">
+        <MSBuild Projects="Comments\Comments.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomSelect">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj"/>
+    </Target>
+    <Target Name="CustomSelect:Clean">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomSelect:Make">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DualLanguage">
+        <MSBuild Projects="DualLanguage\DualLanguage.dproj"/>
+    </Target>
+    <Target Name="DualLanguage:Clean">
+        <MSBuild Projects="DualLanguage\DualLanguage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DualLanguage:Make">
+        <MSBuild Projects="DualLanguage\DualLanguage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FileDialog">
+        <MSBuild Projects="FileDialog\FileDialog.dproj"/>
+    </Target>
+    <Target Name="FileDialog:Clean">
+        <MSBuild Projects="FileDialog\FileDialog.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FileDialog:Make">
+        <MSBuild Projects="FileDialog\FileDialog.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Font">
+        <MSBuild Projects="Font\Font.dproj"/>
+    </Target>
+    <Target Name="Font:Clean">
+        <MSBuild Projects="Font\Font.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Font:Make">
+        <MSBuild Projects="Font\Font.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Forms">
+        <MSBuild Projects="Forms\Forms.dproj"/>
+    </Target>
+    <Target Name="Forms:Clean">
+        <MSBuild Projects="Forms\Forms.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Forms:Make">
+        <MSBuild Projects="Forms\Forms.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IgnoreResourceDll">
+        <MSBuild Projects="IgnoreResourceDll\IgnoreResourceDll.dproj"/>
+    </Target>
+    <Target Name="IgnoreResourceDll:Clean">
+        <MSBuild Projects="IgnoreResourceDll\IgnoreResourceDll.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IgnoreResourceDll:Make">
+        <MSBuild Projects="IgnoreResourceDll\IgnoreResourceDll.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ImageList">
+        <MSBuild Projects="ImageList\ImageList.dproj"/>
+    </Target>
+    <Target Name="ImageList:Clean">
+        <MSBuild Projects="ImageList\ImageList.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ImageList:Make">
+        <MSBuild Projects="ImageList\ImageList.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IME">
+        <MSBuild Projects="Ime\IME.dproj"/>
+    </Target>
+    <Target Name="IME:Clean">
+        <MSBuild Projects="Ime\IME.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IME:Make">
+        <MSBuild Projects="Ime\IME.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IniResources">
+        <MSBuild Projects="Resources\INI\IniResources.dproj"/>
+    </Target>
+    <Target Name="IniResources:Clean">
+        <MSBuild Projects="Resources\INI\IniResources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IniResources:Make">
+        <MSBuild Projects="Resources\INI\IniResources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Japanese">
+        <MSBuild Projects="Japanese\Japanese.dproj"/>
+    </Target>
+    <Target Name="Japanese:Clean">
+        <MSBuild Projects="Japanese\Japanese.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Japanese:Make">
+        <MSBuild Projects="Japanese\Japanese.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LanguageParam">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj"/>
+    </Target>
+    <Target Name="LanguageParam:Clean">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LanguageParam:Make">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LanguageSwitch">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj"/>
+    </Target>
+    <Target Name="LanguageSwitch:Clean">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LanguageSwitch:Make">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Layout">
+        <MSBuild Projects="Layout\Layout.dproj"/>
+    </Target>
+    <Target Name="Layout:Clean">
+        <MSBuild Projects="Layout\Layout.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Layout:Make">
+        <MSBuild Projects="Layout\Layout.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Menu">
+        <MSBuild Projects="Menu\Menu.dproj"/>
+    </Target>
+    <Target Name="Menu:Clean">
+        <MSBuild Projects="Menu\Menu.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Menu:Make">
+        <MSBuild Projects="Menu\Menu.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MessageDlg">
+        <MSBuild Projects="MessageDlg\MessageDlg.dproj"/>
+    </Target>
+    <Target Name="MessageDlg:Clean">
+        <MSBuild Projects="MessageDlg\MessageDlg.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MessageDlg:Make">
+        <MSBuild Projects="MessageDlg\MessageDlg.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Number">
+        <MSBuild Projects="Number\Number.dproj"/>
+    </Target>
+    <Target Name="Number:Clean">
+        <MSBuild Projects="Number\Number.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Number:Make">
+        <MSBuild Projects="Number\Number.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="NTResSimple">
+        <MSBuild Projects="NTRes\Simple\NTResSimple.dproj"/>
+    </Target>
+    <Target Name="NTResSimple:Clean">
+        <MSBuild Projects="NTRes\Simple\NTResSimple.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="NTResSimple:Make">
+        <MSBuild Projects="NTRes\Simple\NTResSimple.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Original">
+        <MSBuild Projects="Original\Original.dproj"/>
+    </Target>
+    <Target Name="Original:Clean">
+        <MSBuild Projects="Original\Original.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Original:Make">
+        <MSBuild Projects="Original\Original.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Ordinal">
+        <MSBuild Projects="Ordinal\Ordinal.dproj"/>
+    </Target>
+    <Target Name="Ordinal:Clean">
+        <MSBuild Projects="Ordinal\Ordinal.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Ordinal:Make">
+        <MSBuild Projects="Ordinal\Ordinal.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Resize">
+        <MSBuild Projects="Resize\Resize.dproj"/>
+    </Target>
+    <Target Name="Resize:Clean">
+        <MSBuild Projects="Resize\Resize.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Resize:Make">
+        <MSBuild Projects="Resize\Resize.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Resources">
+        <MSBuild Projects="Resources\Mixed\Resources.dproj"/>
+    </Target>
+    <Target Name="Resources:Clean">
+        <MSBuild Projects="Resources\Mixed\Resources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Resources:Make">
+        <MSBuild Projects="Resources\Mixed\Resources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringArray">
+        <MSBuild Projects="StringArray\StringArray.dproj"/>
+    </Target>
+    <Target Name="StringArray:Clean">
+        <MSBuild Projects="StringArray\StringArray.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringArray:Make">
+        <MSBuild Projects="StringArray\StringArray.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="SingleFileDeploy">
+        <MSBuild Projects="SingleFileDeploy\SingleFileDeploy.dproj"/>
+    </Target>
+    <Target Name="SingleFileDeploy:Clean">
+        <MSBuild Projects="SingleFileDeploy\SingleFileDeploy.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SingleFileDeploy:Make">
+        <MSBuild Projects="SingleFileDeploy\SingleFileDeploy.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Version">
+        <MSBuild Projects="Version\Version.dproj"/>
+    </Target>
+    <Target Name="Version:Clean">
+        <MSBuild Projects="Version\Version.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Version:Make">
+        <MSBuild Projects="Version\Version.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TextResources">
+        <MSBuild Projects="Resources\Text\TextResources.dproj"/>
+    </Target>
+    <Target Name="TextResources:Clean">
+        <MSBuild Projects="Resources\Text\TextResources.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TextResources:Make">
+        <MSBuild Projects="Resources\Text\TextResources.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DFM">
+        <MSBuild Projects="DFM\DFM.dproj"/>
+    </Target>
+    <Target Name="DFM:Clean">
+        <MSBuild Projects="DFM\DFM.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DFM:Make">
+        <MSBuild Projects="DFM\DFM.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ActiveLanguage;Audio;ButtonLayout;Checker;Comments;CustomSelect;DualLanguage;FileDialog;Font;Forms;IgnoreResourceDll;ImageList;IME;IniResources;Japanese;LanguageParam;LanguageSwitch;Layout;Menu;MessageDlg;Number;NTResSimple;Original;Ordinal;Resize;Resources;StringArray;SingleFileDeploy;Version;TextResources;DFM"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ActiveLanguage:Clean;Audio:Clean;ButtonLayout:Clean;Checker:Clean;Comments:Clean;CustomSelect:Clean;DualLanguage:Clean;FileDialog:Clean;Font:Clean;Forms:Clean;IgnoreResourceDll:Clean;ImageList:Clean;IME:Clean;IniResources:Clean;Japanese:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Layout:Clean;Menu:Clean;MessageDlg:Clean;Number:Clean;NTResSimple:Clean;Original:Clean;Ordinal:Clean;Resize:Clean;Resources:Clean;StringArray:Clean;SingleFileDeploy:Clean;Version:Clean;TextResources:Clean;DFM:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ActiveLanguage:Make;Audio:Make;ButtonLayout:Make;Checker:Make;Comments:Make;CustomSelect:Make;DualLanguage:Make;FileDialog:Make;Font:Make;Forms:Make;IgnoreResourceDll:Make;ImageList:Make;IME:Make;IniResources:Make;Japanese:Make;LanguageParam:Make;LanguageSwitch:Make;Layout:Make;Menu:Make;MessageDlg:Make;Number:Make;NTResSimple:Make;Original:Make;Ordinal:Make;Resize:Make;Resources:Make;StringArray:Make;SingleFileDeploy:Make;Version:Make;TextResources:Make;DFM:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

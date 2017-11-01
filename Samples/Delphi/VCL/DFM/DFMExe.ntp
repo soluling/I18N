@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20170903T011452Z" lastmodified="20171023T224859Z">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Debug\DFM.exe" original="en-US" scanformsvisualproperties="0">
+    <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+        <font id="Font" name="Tahoma"/>
+        <row id="Caption">Sample</row>
+        <item name="Label1" type="TLabel">
+          <row id="Caption">This is a sample</row>
+        </item>
+        <item name="CloseButton" type="TButton">
+          <row id="Caption">&amp;Close</row>
+        </item>
+        <item name="ShowButton" type="TButton">
+          <row id="Caption">Show</row>
+        </item>
+      </node>
+      <node class="TDelphiFormNode" name="TFORM2" type="TForm2" resname="TFORM2" objectname="Form2">
+        <font id="Font" name="Tahoma"/>
+        <row id="Caption">Another form</row>
+        <item name="Label1" type="TLabel">
+          <row id="Caption">This is another sample</row>
+        </item>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String" excluded="1"/>
+    <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

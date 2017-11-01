@@ -1,0 +1,444 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20150323024721" lastmodified="20150323024728">
+  <lang id="fi"/>
+  <node class="TVisualCppSource" name="Converter.exe" original="en-US" encoding="windows-1252">
+    <excludedresources>
+      <add id="2"/>
+      <add id="1"/>
+      <add id="12"/>
+      <add id="14"/>
+      <add id="3"/>
+      <add id="24"/>
+    </excludedresources>
+    <node class="TWindowsDialogFolder" name="Dialog">
+      <node class="TWindowsDialogNode" name="100" type="DIALOGEX" resid="100" langid="1033" extended="1">
+        <font id="Font" name="MS Shell Dlg" size="8"/>
+        <row id="Text">About Converter</row>
+        <row id="X">0</row>
+        <row id="Y">0</row>
+        <row id="CX">235</row>
+        <row id="CY">55</row>
+        <item name="STATIC" type="ICON" id="-1">
+          <row id="X">11</row>
+          <row id="Y">17</row>
+          <row id="CX">20</row>
+          <row id="CY">20</row>
+        </item>
+        <item name="STATIC_Converter_Version_1.0" type="LTEXT" id="-1">
+          <row id="Text">Converter Version 1.0</row>
+          <row id="X">40</row>
+          <row id="Y">10</row>
+          <row id="CX">119</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="STATIC_Copyright_(C)_2006" type="LTEXT" id="-1">
+          <row id="Text">Copyright (C) 2006</row>
+          <row id="X">40</row>
+          <row id="Y">25</row>
+          <row id="CX">119</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="1" type="DEFPUSHBUTTON" id="1">
+          <row id="Text">OK</row>
+          <row id="X">178</row>
+          <row id="Y">7</row>
+          <row id="CX">50</row>
+          <row id="CY">16</row>
+        </item>
+        <data>
+          AQD//wAAAAAAAAAAyADIgAQAAAAAAOsANwAAAAAAQQBiAG8AdQB0ACAAQwBvAG4AdgBlAHIAdABlAHIAAAAIAAAAAAFNAFMAIABT
+          AGgAZQBsAGwAIABEAGwAZwAAAAAAAAAAAAAAAAADAABQCwARABQAFAD///////+CAP//gAAAAAAAAAAAAAAAAACAAAJQKAAKAHcA
+          CAD///////+CAEMAbwBuAHYAZQByAHQAZQByACAAVgBlAHIAcwBpAG8AbgAgADEALgAwAAAAAAAAAAAAAAAAAAAAAAACUCgAGQB3
+          AAgA////////ggBDAG8AcAB5AHIAaQBnAGgAdAAgACgAQwApACAAMgAwADAANgAAAAAAAAAAAAAAAAABAANQsgAHADIAEAABAAAA
+          //+AAE8ASwAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsDialogNode" name="102" type="DIALOGEX" resid="102" langid="1033" extended="1">
+        <font id="Font" name="MS Shell Dlg" size="8"/>
+        <row id="Text">Converter</row>
+        <row id="X">0</row>
+        <row id="Y">0</row>
+        <row id="CX">171</row>
+        <row id="CY">174</row>
+        <item name="1" type="DEFPUSHBUTTON" id="1">
+          <row id="Text">OK</row>
+          <row id="X">7</row>
+          <row id="Y">151</row>
+          <row id="CX">50</row>
+          <row id="CY">16</row>
+        </item>
+        <item name="2" type="PUSHBUTTON" id="2">
+          <row id="Text">Cancel</row>
+          <row id="X">58</row>
+          <row id="Y">151</row>
+          <row id="CX">50</row>
+          <row id="CY">16</row>
+        </item>
+        <item name="1001" type="COMBOBOX" id="1001">
+          <row id="X">7</row>
+          <row id="Y">16</row>
+          <row id="CX">157</row>
+          <row id="CY">30</row>
+        </item>
+        <item name="STATIC_&amp;Type:" type="LTEXT" id="-1">
+          <row id="Text">&amp;Type:</row>
+          <row id="X">7</row>
+          <row id="Y">7</row>
+          <row id="CX">157</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="STATIC_&amp;Metric_unit:" type="LTEXT" id="-1">
+          <row id="Text">&amp;Metric unit:</row>
+          <row id="X">7</row>
+          <row id="Y">32</row>
+          <row id="CX">157</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="1002" type="COMBOBOX" id="1002">
+          <row id="X">7</row>
+          <row id="Y">42</row>
+          <row id="CX">157</row>
+          <row id="CY">30</row>
+        </item>
+        <item name="STATIC_Metric_&amp;amount:" type="LTEXT" id="-1">
+          <row id="Text">Metric &amp;amount:</row>
+          <row id="X">7</row>
+          <row id="Y">58</row>
+          <row id="CX">157</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="1003" type="EDITTEXT" id="1003">
+          <row id="X">7</row>
+          <row id="Y">69</row>
+          <row id="CX">157</row>
+          <row id="CY">14</row>
+        </item>
+        <item name="STATIC_&amp;US_unit:" type="LTEXT" id="-1">
+          <row id="Text">&amp;US unit:</row>
+          <row id="X">7</row>
+          <row id="Y">87</row>
+          <row id="CX">157</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="STATIC_US_a&amp;mount:" type="LTEXT" id="-1">
+          <row id="Text">US a&amp;mount:</row>
+          <row id="X">7</row>
+          <row id="Y">113</row>
+          <row id="CX">157</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="1004" type="COMBOBOX" id="1004">
+          <row id="X">7</row>
+          <row id="Y">97</row>
+          <row id="CX">157</row>
+          <row id="CY">30</row>
+        </item>
+        <item name="1005" type="EDITTEXT" id="1005">
+          <row id="X">7</row>
+          <row id="Y">123</row>
+          <row id="CX">157</row>
+          <row id="CY">14</row>
+        </item>
+        <data>
+          AQD//wAAAAAAAAQAyADIkAwAAAAAAKsArgAAAAAAQwBvAG4AdgBlAHIAdABlAHIAAAAIAAAAAAFNAFMAIABTAGgAZQBsAGwAIABE
+          AGwAZwAAAAAAAAAAAAAAAAABAAFQBwCXADIAEAABAAAA//+AAE8ASwAAAAAAAAAAAAAAAAAAAAFQOgCXADIAEAACAAAA//+AAEMA
+          YQBuAGMAZQBsAAAAAAAAAAAAAAAAAAIBIVAHABAAnQAeAOkDAAD//4UAAAAAAAAAAAAAAAAAAAACUAcABwCdAAgA////////ggAm
+          AFQAeQBwAGUAOgAAAAAAAAAAAAAAAAAAAAJQBwAgAJ0ACAD///////+CACYATQBlAHQAcgBpAGMAIAB1AG4AaQB0ADoAAAAAAAAA
+          AAAAAAAAAAACASFQBwAqAJ0AHgDqAwAA//+FAAAAAAAAAAAAAAAAAAAAAlAHADoAnQAIAP///////4IATQBlAHQAcgBpAGMAIAAm
+          AGEAbQBvAHUAbgB0ADoAAAAAAAAAAAAAAAAAAACAAIFQBwBFAJ0ADgDrAwAA//+BAAAAAAAAAAAAAAAAAAAAAlAHAFcAnQAIAP//
+          /////4IAJgBVAFMAIAB1AG4AaQB0ADoAAAAAAAAAAAAAAAAAAAAAAAJQBwBxAJ0ACAD///////+CAFUAUwAgAGEAJgBtAG8AdQBu
+          AHQAOgAAAAAAAAAAAAAAAAAAAAIBIVAHAGEAnQAeAOwDAAD//4UAAAAAAAAAAAAAAAAAgACBUAcAewCdAA4A7QMAAP//gQAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsDialogNode" name="30721" type="DIALOG" resid="30721" langid="1035">
+        <font id="Font" name="MS Shell Dlg" size="8"/>
+        <row id="Text">New</row>
+        <row id="X">9</row>
+        <row id="Y">26</row>
+        <row id="CX">183</row>
+        <row id="CY">70</row>
+        <item name="STATIC_&amp;New_" type="LTEXT" id="-1">
+          <row id="Text">&amp;New </row>
+          <row id="X">6</row>
+          <row id="Y">5</row>
+          <row id="CX">123</row>
+          <row id="CY">8</row>
+        </item>
+        <item name="100" type="LISTBOX" id="100">
+          <row id="X">6</row>
+          <row id="Y">15</row>
+          <row id="CX">125</row>
+          <row id="CY">49</row>
+        </item>
+        <item name="1" type="DEFPUSHBUTTON" id="1">
+          <row id="Text">OK</row>
+          <row id="X">137</row>
+          <row id="Y">6</row>
+          <row id="CX">40</row>
+          <row id="CY">14</row>
+        </item>
+        <item name="2" type="PUSHBUTTON" id="2">
+          <row id="Text">Cancel</row>
+          <row id="X">137</row>
+          <row id="Y">23</row>
+          <row id="CX">40</row>
+          <row id="CY">14</row>
+        </item>
+        <item name="57670" type="PUSHBUTTON" id="57670">
+          <row id="Text">&amp;Help</row>
+          <row id="X">137</row>
+          <row id="Y">43</row>
+          <row id="CX">40</row>
+          <row id="CY">14</row>
+        </item>
+        <data>
+          xADIgAAAAAAFAAkAGgC3AEYAAAAAAE4AZQB3AAAACABNAFMAIABTAGgAZQBsAGwAIABEAGwAZwAAAAAAAAAAUAAAAAAGAAUAewAI
+          AP////+CACYATgBlAHcAIAAAAAAAAQChUAAAAAAGAA8AfQAxAGQA//+DAAAAAAAAAAEAAVAAAAAAiQAGACgADgABAP//gABPAEsA
+          AAAAAAAAAAABUAAAAACJABcAKAAOAAIA//+AAEMAYQBuAGMAZQBsAAAAAAAAAAAAAVAAAAAAiQArACgADgBG4f//gAAmAEgAZQBs
+          AHAAAAAAAA==
+        </data>
+      </node>
+      <node class="TWindowsDialogNode" name="30734" type="DIALOG" resid="30734" langid="1035">
+        <font id="Font" name="MS Shell Dlg" size="8"/>
+        <row id="X">9</row>
+        <row id="Y">26</row>
+        <row id="CX">183</row>
+        <row id="CY">70</row>
+        <data>yADIgAAAAAAAAAkAGgC3AEYAAAAAAAAACABNAFMAIABTAGgAZQBsAGwAIABEAGwAZwAAAA==</data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="7" resid="7" langid="1033">
+        <row id="101">&amp;About Converter...</row>
+        <data>AAAAAAAAAAAAABMAJgBBAGIAbwB1AHQAIABDAG8AbgB2AGUAcgB0AGUAcgAuAC4ALgAAAAAAAAAAAAAAAAAAAAAAAAAAAA==</data>
+      </node>
+      <node class="TWindowsStringNode" name="3841" resid="3841" langid="1035">
+        <row id="61440">Open</row>
+        <row id="61441">Save As</row>
+        <row id="61442">All Files (*.*)</row>
+        <row id="61443">Untitled</row>
+        <row id="61446">an unnamed file</row>
+        <data>
+          BABPAHAAZQBuAAcAUwBhAHYAZQAgAEEAcwAPAEEAbABsACAARgBpAGwAZQBzACAAKAAqAC4AKgApAAgAVQBuAHQAaQB0AGwAZQBk
+          AAAAAAAPAGEAbgAgAHUAbgBuAGEAbQBlAGQAIABmAGkAbABlAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3842" resid="3842" langid="1035">
+        <row id="61457">&amp;Hide</row>
+        <data>AAAFACYASABpAGQAZQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</data>
+      </node>
+      <node class="TWindowsStringNode" name="3843" resid="3843" langid="1035">
+        <row id="61472">No error message is available.</row>
+        <row id="61473">Attempted an unsupported operation.</row>
+        <row id="61474">A required resource was unavailable.</row>
+        <row id="61475">Out of memory.</row>
+        <row id="61476">An unknown error has occurred.</row>
+        <row id="61477">Encountered an improper argument.</row>
+        <data>
+          HgBOAG8AIABlAHIAcgBvAHIAIABtAGUAcwBzAGEAZwBlACAAaQBzACAAYQB2AGEAaQBsAGEAYgBsAGUALgAjAEEAdAB0AGUAbQBw
+          AHQAZQBkACAAYQBuACAAdQBuAHMAdQBwAHAAbwByAHQAZQBkACAAbwBwAGUAcgBhAHQAaQBvAG4ALgAkAEEAIAByAGUAcQB1AGkA
+          cgBlAGQAIAByAGUAcwBvAHUAcgBjAGUAIAB3AGEAcwAgAHUAbgBhAHYAYQBpAGwAYQBiAGwAZQAuAA4ATwB1AHQAIABvAGYAIABt
+          AGUAbQBvAHIAeQAuAB4AQQBuACAAdQBuAGsAbgBvAHcAbgAgAGUAcgByAG8AcgAgAGgAYQBzACAAbwBjAGMAdQByAHIAZQBkAC4A
+          IQBFAG4AYwBvAHUAbgB0AGUAcgBlAGQAIABhAG4AIABpAG0AcAByAG8AcABlAHIAIABhAHIAZwB1AG0AZQBuAHQALgAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAA==
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3857" resid="3857" langid="1035">
+        <row id="61696">Incorrect filename.</row>
+        <row id="61697">Failed to open document.</row>
+        <row id="61698">Failed to save document.</row>
+        <row id="61699">Save changes to %1?</row>
+        <row id="61700">Failed to create empty document.</row>
+        <row id="61701">The file is too large to open.</row>
+        <row id="61702">Could not start print job.</row>
+        <row id="61703">Failed to launch help.</row>
+        <row id="61704">Internal application error.</row>
+        <row id="61705">Command failed.</row>
+        <row id="61706">Insufficient memory to perform operation.</row>
+        <row id="61707">System registry entries have been removed and the INI file (if any) was deleted.</row>
+        <row id="61708">Not all of the system registry entries (or INI file) were removed.</row>
+        <row id="61709">This program requires the file %s, which was not found on this system.</row>
+        <row id="61710">This program is linked to the missing export %s in the file %s. This machine may have an incompatible version of %s.</row>
+        <data>
+          EwBJAG4AYwBvAHIAcgBlAGMAdAAgAGYAaQBsAGUAbgBhAG0AZQAuABgARgBhAGkAbABlAGQAIAB0AG8AIABvAHAAZQBuACAAZABv
+          AGMAdQBtAGUAbgB0AC4AGABGAGEAaQBsAGUAZAAgAHQAbwAgAHMAYQB2AGUAIABkAG8AYwB1AG0AZQBuAHQALgATAFMAYQB2AGUA
+          IABjAGgAYQBuAGcAZQBzACAAdABvACAAJQAxAD8AIABGAGEAaQBsAGUAZAAgAHQAbwAgAGMAcgBlAGEAdABlACAAZQBtAHAAdAB5
+          ACAAZABvAGMAdQBtAGUAbgB0AC4AHgBUAGgAZQAgAGYAaQBsAGUAIABpAHMAIAB0AG8AbwAgAGwAYQByAGcAZQAgAHQAbwAgAG8A
+          cABlAG4ALgAaAEMAbwB1AGwAZAAgAG4AbwB0ACAAcwB0AGEAcgB0ACAAcAByAGkAbgB0ACAAagBvAGIALgAWAEYAYQBpAGwAZQBk
+          ACAAdABvACAAbABhAHUAbgBjAGgAIABoAGUAbABwAC4AGwBJAG4AdABlAHIAbgBhAGwAIABhAHAAcABsAGkAYwBhAHQAaQBvAG4A
+          IABlAHIAcgBvAHIALgAPAEMAbwBtAG0AYQBuAGQAIABmAGEAaQBsAGUAZAAuACkASQBuAHMAdQBmAGYAaQBjAGkAZQBuAHQAIABt
+          AGUAbQBvAHIAeQAgAHQAbwAgAHAAZQByAGYAbwByAG0AIABvAHAAZQByAGEAdABpAG8AbgAuAFAAUwB5AHMAdABlAG0AIAByAGUA
+          ZwBpAHMAdAByAHkAIABlAG4AdAByAGkAZQBzACAAaABhAHYAZQAgAGIAZQBlAG4AIAByAGUAbQBvAHYAZQBkACAAYQBuAGQAIAB0
+          AGgAZQAgAEkATgBJACAAZgBpAGwAZQAgACgAaQBmACAAYQBuAHkAKQAgAHcAYQBzACAAZABlAGwAZQB0AGUAZAAuAEIATgBvAHQA
+          IABhAGwAbAAgAG8AZgAgAHQAaABlACAAcwB5AHMAdABlAG0AIAByAGUAZwBpAHMAdAByAHkAIABlAG4AdAByAGkAZQBzACAAKABv
+          AHIAIABJAE4ASQAgAGYAaQBsAGUAKQAgAHcAZQByAGUAIAByAGUAbQBvAHYAZQBkAC4ARgBUAGgAaQBzACAAcAByAG8AZwByAGEA
+          bQAgAHIAZQBxAHUAaQByAGUAcwAgAHQAaABlACAAZgBpAGwAZQAgACUAcwAsACAAdwBoAGkAYwBoACAAdwBhAHMAIABuAG8AdAAg
+          AGYAbwB1AG4AZAAgAG8AbgAgAHQAaABpAHMAIABzAHkAcwB0AGUAbQAuAHQAVABoAGkAcwAgAHAAcgBvAGcAcgBhAG0AIABpAHMA
+          IABsAGkAbgBrAGUAZAAgAHQAbwAgAHQAaABlACAAbQBpAHMAcwBpAG4AZwAgAGUAeABwAG8AcgB0ACAAJQBzACAAaQBuACAAdABo
+          AGUAIABmAGkAbABlACAAJQBzAC4AIABUAGgAaQBzACAAbQBhAGMAaABpAG4AZQAgAG0AYQB5ACAAaABhAHYAZQAgAGEAbgAgAGkA
+          bgBjAG8AbQBwAGEAdABpAGIAbABlACAAdgBlAHIAcwBpAG8AbgAgAG8AZgAgACUAcwAuAAAA
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3858" resid="3858" langid="1035">
+        <row id="61712">Enter an integer.</row>
+        <row id="61713">Enter a number.</row>
+        <row id="61714">Enter an integer between %1 and %2.</row>
+        <row id="61715">Enter a number between %1 and %2.</row>
+        <row id="61716">Enter no more than %1 characters.</row>
+        <row id="61717">Select a button.</row>
+        <row id="61718">Enter an integer between 0 and 255.</row>
+        <row id="61719">Enter a positive integer.</row>
+        <row id="61720">Enter a date and/or time.</row>
+        <row id="61721">Enter a currency.</row>
+        <row id="61722">Enter a GUID.</row>
+        <row id="61723">Enter a time.</row>
+        <row id="61724">Enter a date.</row>
+        <data>
+          EQBFAG4AdABlAHIAIABhAG4AIABpAG4AdABlAGcAZQByAC4ADwBFAG4AdABlAHIAIABhACAAbgB1AG0AYgBlAHIALgAjAEUAbgB0
+          AGUAcgAgAGEAbgAgAGkAbgB0AGUAZwBlAHIAIABiAGUAdAB3AGUAZQBuACAAJQAxACAAYQBuAGQAIAAlADIALgAhAEUAbgB0AGUA
+          cgAgAGEAIABuAHUAbQBiAGUAcgAgAGIAZQB0AHcAZQBlAG4AIAAlADEAIABhAG4AZAAgACUAMgAuACEARQBuAHQAZQByACAAbgBv
+          ACAAbQBvAHIAZQAgAHQAaABhAG4AIAAlADEAIABjAGgAYQByAGEAYwB0AGUAcgBzAC4AEABTAGUAbABlAGMAdAAgAGEAIABiAHUA
+          dAB0AG8AbgAuACMARQBuAHQAZQByACAAYQBuACAAaQBuAHQAZQBnAGUAcgAgAGIAZQB0AHcAZQBlAG4AIAAwACAAYQBuAGQAIAAy
+          ADUANQAuABkARQBuAHQAZQByACAAYQAgAHAAbwBzAGkAdABpAHYAZQAgAGkAbgB0AGUAZwBlAHIALgAZAEUAbgB0AGUAcgAgAGEA
+          IABkAGEAdABlACAAYQBuAGQALwBvAHIAIAB0AGkAbQBlAC4AEQBFAG4AdABlAHIAIABhACAAYwB1AHIAcgBlAG4AYwB5AC4ADQBF
+          AG4AdABlAHIAIABhACAARwBVAEkARAAuAA0ARQBuAHQAZQByACAAYQAgAHQAaQBtAGUALgANAEUAbgB0AGUAcgAgAGEAIABkAGEA
+          dABlAC4AAAAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3859" resid="3859" langid="1035">
+        <row id="61728">Unexpected file format.</row>
+        <row id="61729">%1
+Cannot find this file.
+Verify that the correct path and file name are given.</row>
+        <row id="61730">Destination disk drive is full.</row>
+        <row id="61731">Unable to read from %1, it is opened by someone else.</row>
+        <row id="61732">Unable to write to %1, it is read-only or opened by someone else.</row>
+        <row id="61733">Encountered an unexpected error while reading %1.</row>
+        <row id="61734">Encountered an unexpected error while writing %1.</row>
+        <data>
+          FwBVAG4AZQB4AHAAZQBjAHQAZQBkACAAZgBpAGwAZQAgAGYAbwByAG0AYQB0AC4ATwAlADEACgBDAGEAbgBuAG8AdAAgAGYAaQBu
+          AGQAIAB0AGgAaQBzACAAZgBpAGwAZQAuAAoAVgBlAHIAaQBmAHkAIAB0AGgAYQB0ACAAdABoAGUAIABjAG8AcgByAGUAYwB0ACAA
+          cABhAHQAaAAgAGEAbgBkACAAZgBpAGwAZQAgAG4AYQBtAGUAIABhAHIAZQAgAGcAaQB2AGUAbgAuAB8ARABlAHMAdABpAG4AYQB0
+          AGkAbwBuACAAZABpAHMAawAgAGQAcgBpAHYAZQAgAGkAcwAgAGYAdQBsAGwALgA1AFUAbgBhAGIAbABlACAAdABvACAAcgBlAGEA
+          ZAAgAGYAcgBvAG0AIAAlADEALAAgAGkAdAAgAGkAcwAgAG8AcABlAG4AZQBkACAAYgB5ACAAcwBvAG0AZQBvAG4AZQAgAGUAbABz
+          AGUALgBBAFUAbgBhAGIAbABlACAAdABvACAAdwByAGkAdABlACAAdABvACAAJQAxACwAIABpAHQAIABpAHMAIAByAGUAYQBkAC0A
+          bwBuAGwAeQAgAG8AcgAgAG8AcABlAG4AZQBkACAAYgB5ACAAcwBvAG0AZQBvAG4AZQAgAGUAbABzAGUALgAxAEUAbgBjAG8AdQBu
+          AHQAZQByAGUAZAAgAGEAbgAgAHUAbgBlAHgAcABlAGMAdABlAGQAIABlAHIAcgBvAHIAIAB3AGgAaQBsAGUAIAByAGUAYQBkAGkA
+          bgBnACAAJQAxAC4AMQBFAG4AYwBvAHUAbgB0AGUAcgBlAGQAIABhAG4AIAB1AG4AZQB4AHAAZQBjAHQAZQBkACAAZQByAHIAbwBy
+          ACAAdwBoAGkAbABlACAAdwByAGkAdABpAG4AZwAgACUAMQAuAAAAAAAAAAAAAAAAAAAAAAAAAA==
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3860" resid="3860" langid="1035">
+        <row id="61744">%1: %2
+Continue running script?</row>
+        <row id="61745">Dispatch exception: %1</row>
+        <data>
+          HwAlADEAOgAgACUAMgAKAEMAbwBuAHQAaQBuAHUAZQAgAHIAdQBuAG4AaQBuAGcAIABzAGMAcgBpAHAAdAA/ABYARABpAHMAcABh
+          AHQAYwBoACAAZQB4AGMAZQBwAHQAaQBvAG4AOgAgACUAMQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3865" resid="3865" langid="1035">
+        <row id="61836">Unable to read write-only property.</row>
+        <row id="61837">Unable to write read-only property.</row>
+        <data>
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIwBVAG4AYQBiAGwAZQAgAHQAbwAgAHIAZQBhAGQAIAB3AHIAaQB0AGUALQBvAG4AbAB5
+          ACAAcAByAG8AcABlAHIAdAB5AC4AIwBVAG4AYQBiAGwAZQAgAHQAbwAgAHcAcgBpAHQAZQAgAHIAZQBhAGQALQBvAG4AbAB5ACAA
+          cAByAG8AcABlAHIAdAB5AC4AAAAAAA==
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3866" resid="3866" langid="1035">
+        <row id="61840">Unable to load mail system support.</row>
+        <row id="61841">Mail system DLL is invalid.</row>
+        <row id="61842">Send Mail failed to send message.</row>
+        <data>
+          IwBVAG4AYQBiAGwAZQAgAHQAbwAgAGwAbwBhAGQAIABtAGEAaQBsACAAcwB5AHMAdABlAG0AIABzAHUAcABwAG8AcgB0AC4AGwBN
+          AGEAaQBsACAAcwB5AHMAdABlAG0AIABEAEwATAAgAGkAcwAgAGkAbgB2AGEAbABpAGQALgAhAFMAZQBuAGQAIABNAGEAaQBsACAA
+          ZgBhAGkAbABlAGQAIAB0AG8AIABzAGUAbgBkACAAbQBlAHMAcwBhAGcAZQAuAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3867" resid="3867" langid="1035">
+        <row id="61856">No error occurred.</row>
+        <row id="61857">An unknown error occurred while accessing %1.</row>
+        <row id="61858">%1 was not found.</row>
+        <row id="61859">%1 contains an incorrect path.</row>
+        <row id="61860">Could not open %1 because there are too many open files.</row>
+        <row id="61861">Access to %1 was denied.</row>
+        <row id="61862">An incorrect file handle was associated with %1.</row>
+        <row id="61863">Could not remove %1 because it is the current directory.</row>
+        <row id="61864">Could not create %1 because the directory is full.</row>
+        <row id="61865">Seek failed on %1</row>
+        <row id="61866">Encountered a hardware I/O error while accessing %1.</row>
+        <row id="61867">Encountered a sharing violation while accessing %1.</row>
+        <row id="61868">Encountered a locking violation while accessing %1.</row>
+        <row id="61869">Disk full while accessing %1.</row>
+        <row id="61870">Attempted to access %1 past its end.</row>
+        <data>
+          EgBOAG8AIABlAHIAcgBvAHIAIABvAGMAYwB1AHIAcgBlAGQALgAtAEEAbgAgAHUAbgBrAG4AbwB3AG4AIABlAHIAcgBvAHIAIABv
+          AGMAYwB1AHIAcgBlAGQAIAB3AGgAaQBsAGUAIABhAGMAYwBlAHMAcwBpAG4AZwAgACUAMQAuABEAJQAxACAAdwBhAHMAIABuAG8A
+          dAAgAGYAbwB1AG4AZAAuAB4AJQAxACAAYwBvAG4AdABhAGkAbgBzACAAYQBuACAAaQBuAGMAbwByAHIAZQBjAHQAIABwAGEAdABo
+          AC4AOABDAG8AdQBsAGQAIABuAG8AdAAgAG8AcABlAG4AIAAlADEAIABiAGUAYwBhAHUAcwBlACAAdABoAGUAcgBlACAAYQByAGUA
+          IAB0AG8AbwAgAG0AYQBuAHkAIABvAHAAZQBuACAAZgBpAGwAZQBzAC4AGABBAGMAYwBlAHMAcwAgAHQAbwAgACUAMQAgAHcAYQBz
+          ACAAZABlAG4AaQBlAGQALgAwAEEAbgAgAGkAbgBjAG8AcgByAGUAYwB0ACAAZgBpAGwAZQAgAGgAYQBuAGQAbABlACAAdwBhAHMA
+          IABhAHMAcwBvAGMAaQBhAHQAZQBkACAAdwBpAHQAaAAgACUAMQAuADgAQwBvAHUAbABkACAAbgBvAHQAIAByAGUAbQBvAHYAZQAg
+          ACUAMQAgAGIAZQBjAGEAdQBzAGUAIABpAHQAIABpAHMAIAB0AGgAZQAgAGMAdQByAHIAZQBuAHQAIABkAGkAcgBlAGMAdABvAHIA
+          eQAuADIAQwBvAHUAbABkACAAbgBvAHQAIABjAHIAZQBhAHQAZQAgACUAMQAgAGIAZQBjAGEAdQBzAGUAIAB0AGgAZQAgAGQAaQBy
+          AGUAYwB0AG8AcgB5ACAAaQBzACAAZgB1AGwAbAAuABEAUwBlAGUAawAgAGYAYQBpAGwAZQBkACAAbwBuACAAJQAxADQARQBuAGMA
+          bwB1AG4AdABlAHIAZQBkACAAYQAgAGgAYQByAGQAdwBhAHIAZQAgAEkALwBPACAAZQByAHIAbwByACAAdwBoAGkAbABlACAAYQBj
+          AGMAZQBzAHMAaQBuAGcAIAAlADEALgAzAEUAbgBjAG8AdQBuAHQAZQByAGUAZAAgAGEAIABzAGgAYQByAGkAbgBnACAAdgBpAG8A
+          bABhAHQAaQBvAG4AIAB3AGgAaQBsAGUAIABhAGMAYwBlAHMAcwBpAG4AZwAgACUAMQAuADMARQBuAGMAbwB1AG4AdABlAHIAZQBk
+          ACAAYQAgAGwAbwBjAGsAaQBuAGcAIAB2AGkAbwBsAGEAdABpAG8AbgAgAHcAaABpAGwAZQAgAGEAYwBjAGUAcwBzAGkAbgBnACAA
+          JQAxAC4AHQBEAGkAcwBrACAAZgB1AGwAbAAgAHcAaABpAGwAZQAgAGEAYwBjAGUAcwBzAGkAbgBnACAAJQAxAC4AJABBAHQAdABl
+          AG0AcAB0AGUAZAAgAHQAbwAgAGEAYwBjAGUAcwBzACAAJQAxACAAcABhAHMAdAAgAGkAdABzACAAZQBuAGQALgAAAA==
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3868" resid="3868" langid="1035">
+        <row id="61872">No error occurred.</row>
+        <row id="61873">An unknown error occurred while accessing %1.</row>
+        <row id="61874">Attempted to write to the reading %1.</row>
+        <row id="61875">Attempted to access %1 past its end.</row>
+        <row id="61876">Attempted to read from the writing %1.</row>
+        <row id="61877">%1 has a bad format.</row>
+        <row id="61878">%1 contained an unexpected object.</row>
+        <row id="61879">%1 contains an incorrect schema.</row>
+        <data>
+          EgBOAG8AIABlAHIAcgBvAHIAIABvAGMAYwB1AHIAcgBlAGQALgAtAEEAbgAgAHUAbgBrAG4AbwB3AG4AIABlAHIAcgBvAHIAIABv
+          AGMAYwB1AHIAcgBlAGQAIAB3AGgAaQBsAGUAIABhAGMAYwBlAHMAcwBpAG4AZwAgACUAMQAuACUAQQB0AHQAZQBtAHAAdABlAGQA
+          IAB0AG8AIAB3AHIAaQB0AGUAIAB0AG8AIAB0AGgAZQAgAHIAZQBhAGQAaQBuAGcAIAAlADEALgAkAEEAdAB0AGUAbQBwAHQAZQBk
+          ACAAdABvACAAYQBjAGMAZQBzAHMAIAAlADEAIABwAGEAcwB0ACAAaQB0AHMAIABlAG4AZAAuACYAQQB0AHQAZQBtAHAAdABlAGQA
+          IAB0AG8AIAByAGUAYQBkACAAZgByAG8AbQAgAHQAaABlACAAdwByAGkAdABpAG4AZwAgACUAMQAuABQAJQAxACAAaABhAHMAIABh
+          ACAAYgBhAGQAIABmAG8AcgBtAGEAdAAuACIAJQAxACAAYwBvAG4AdABhAGkAbgBlAGQAIABhAG4AIAB1AG4AZQB4AHAAZQBjAHQA
+          ZQBkACAAbwBiAGoAZQBjAHQALgAgACUAMQAgAGMAbwBuAHQAYQBpAG4AcwAgAGEAbgAgAGkAbgBjAG8AcgByAGUAYwB0ACAAcwBj
+          AGgAZQBtAGEALgAAAAAAAAAAAAAAAAAAAAAA
+        </data>
+      </node>
+      <node class="TWindowsStringNode" name="3869" resid="3869" langid="1035">
+        <row id="61888">pixels</row>
+        <data>BgBwAGkAeABlAGwAcwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</data>
+      </node>
+      <node class="TWindowsStringNode" name="3887" resid="3887" langid="1035">
+        <row id="62177">Uncheck</row>
+        <row id="62178">Check</row>
+        <row id="62179">Mixed</row>
+        <data>AAAHAFUAbgBjAGgAZQBjAGsABQBDAGgAZQBjAGsABQBNAGkAeABlAGQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA</data>
+      </node>
+    </node>
+    <node class="TWindowsVersionFolder" name="Version">
+      <node class="TWindowsVersionNode" name="1" resid="1" langid="1033">
+        <row id="FileDescription">Converter</row>
+        <row id="ProductName">Converter</row>
+        <data>
+          6AI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAEAAAAAAAEAAQAAAD8AAAABAAAABAAA
+          AAEAAAAAAAAAAAAAAAAAAABIAgAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAAkAgAAAQAwADQAMAA5ADAANABlADQA
+          AAA+AA8AAQBDAG8AbQBwAGEAbgB5AE4AYQBtAGUAAAAAAFMAaQBzAHUAbABpAHoAZQByACAATAB0AGQALgAAAAAAPAAKAAEARgBp
+          AGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4AAAAAAEMAbwBuAHYAZQByAHQAZQByAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkA
+          bwBuAAAAAAAxAC4AMAAuADAALgAxAAAAPAAOAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABDAG8AbgB2AGUAcgB0AGUAcgAu
+          AGUAeABlAAAAdgApAAEATABlAGcAYQBsAEMAbwBwAHkAcgBpAGcAaAB0AAAAKABjACkAIABTAGkAcwB1AGwAaQB6AGUAcgAgAEwA
+          dABkAC4AIAAgAEEAbABsACAAcgBpAGcAaAB0AHMAIAByAGUAcwBlAHIAdgBlAGQALgAAAAAARAAOAAEATwByAGkAZwBpAG4AYQBs
+          AEYAaQBsAGUAbgBhAG0AZQAAAEMAbwBuAHYAZQByAHQAZQByAC4AZQB4AGUAAAA0AAoAAQBQAHIAbwBkAHUAYwB0AE4AYQBtAGUA
+          AAAAAEMAbwBuAHYAZQByAHQAZQByAAAANAAIAAEAUAByAG8AZAB1AGMAdABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMQAA
+          AEQAAAABAFYAYQByAEYAaQBsAGUASQBuAGYAbwAAAAAAJAAEAAAAVAByAGEAbgBzAGwAYQB0AGkAbwBuAAAAAAAJBOQE
+        </data>
+      </node>
+    </node>
+  </node>
+</project>
