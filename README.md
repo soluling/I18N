@@ -73,12 +73,6 @@ TBW
 
 TBW
 
-## Localization
-
-If you plan to localize your application using multiple patterns strings you better use a localization tool that has support for grammatical numbers and grammatical genders. In Q1 2018 a new localization tool will be released. It has an excellent support for multiple patterns and it support Delphi, .NET, ASP.NET, Java, Angular and many more.
-
-![NewTool.png](https://github.com/jaska45/I18N/blob/master/NewTool.png)
-
 ## .NET
 
 `Library\NET` contains the .NET API. `Library\NET\Standard` contains a .NET Standard library that contains API for grammatical numbers, grammatical genders, abbreviated numbers and ordinal numbers. Compile it and add that into your solution and finally add the library into the references of your project. Because the library is .NET Standard it works with Windows Forms, WPF, ASP.NET, .NET Core and Xamarin.
@@ -98,3 +92,11 @@ TypeScript/JavaScript library and samples are under construction. Will be added 
 ## Other programming languages
 
 I would like to see other programming languages such as PHP, Python and Ruby. As I am not that experienced PHP or Python programmer and I have never used Ruby it would be nice if somebody would implement Python library and samples.
+
+## Localization
+
+If you plan to localize your application using multiple patterns strings you better use a localization tool that has support for grammatical numbers and grammatical genders. In Q1 2018 a new localization tool will be released. It has an excellent support for multiple patterns and it supports ASP.NET, .NET, Delphi, Java, Angular and many more.
+
+![NewTool.png](https://github.com/jaska45/I18N/blob/master/NewTool.png)
+
+In addition it supports continuous localization, machine translation, fuzzy matching enabled translation memory, import/export, build tools and cloud translation.
