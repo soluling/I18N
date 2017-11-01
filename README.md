@@ -6,7 +6,7 @@ This project implements collection of I18N APIs for .NET, [Delphi](https://en.wi
 
 Each API is 100% native API. It means that it contains full source code and requires no data files. This means that .NET API contains only C# code and requires no other library or data files. Similarly Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code file that is part of the API source code. You don't need ICU library or CLDR XML files but everything including logic and rules are compiled into your application.
 
-## Multiple patterns
+## Grammatical numbers and genders
 
 Most resource formats (e.g. .resx in .NET, .properties in Java, and resource strings in Delphi) only support plain strings. Grammatical numbers and genders require structural data where there are several language depend variants for a single string. For example in English "I have N cars" would require two variants:
 
@@ -99,4 +99,4 @@ If you plan to localize your application using multiple patterns strings you bet
 
 ![NewTool.png](https://github.com/jaska45/I18N/blob/master/NewTool.png)
 
-In addition it supports continuous localization, machine translation, fuzzy matching enabled translation memory, import/export, build tools and cloud translation.
+In addition it supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools and cloud translation.
