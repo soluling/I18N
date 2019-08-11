@@ -185,8 +185,8 @@ With little effort I can make CldrToCode.exe to create Java, TypeScript and Pyth
 
 ## Localization
 
-If you plan to localize your application using multiple patterns strings you better use a localization tool that has support for grammatical numbers and grammatical genders. In the second half of 2019 a new localization tool called [Soluling](http://www.soluling.com) will be released. It has an excellent support for multiple patterns and it supports ASP.NET, .NET, Delphi, Java, Angular and many more.
+If you plan to localize your application using multiple patterns strings you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has an excellent support for multiple patterns and it supports ASP.NET, .NET, Delphi, Java, Angular and many more.
 
-![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/NewTool.png)
+![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
 In addition it supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools and cloud translation.
