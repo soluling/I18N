@@ -1,0 +1,21 @@
+﻿<Window
+  x:Name="CustomName"
+  AutomationProperties.AutomationId="CustomName1"
+  x:Class="Automation.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Automation"
+  mc:Ignorable="d"
+  Title="Sample" Height="350" Width="525">
+
+  <StackPanel Uid="panel">
+    <Button Uid="button1" Margin="8">One</Button>
+    <Button x:Uid="button2" Margin="8">Two</Button>
+    <Button Name="button3" Margin="8">Three</Button>
+    <Button x:Name="button4" Margin="8">Four</Button>
+    <Button AutomationProperties.AutomationId="button5" Margin="8">Five</Button>
+    <Button Uid="button6a" x:Uid="button6b" Name="button6c" Margin="8">Six</Button>
+  </StackPanel>
+</Window>

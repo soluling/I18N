@@ -1,0 +1,20 @@
+﻿<Window 
+  x:Class="Soluling.WPF.SelectLanguage"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Select Language" SizeToContent="WidthAndHeight" MinWidth="280" MinHeight="150">
+  
+  <Grid x:Uid="grid" Margin="8">
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="2*" />
+      <ColumnDefinition Width="*" />
+    </Grid.ColumnDefinitions>
+      
+    <ListBox Name="listBox" Grid.Column="0" MouseDoubleClick="listBox_MouseDoubleClick" />
+
+    <StackPanel x:Uid="buttonPanel" Grid.Column="1" Orientation="Vertical" Margin="8,0,0,0">
+      <Button Name="okButton" MinWidth="75" IsDefault="True" Click="okButton_Click">OK</Button>
+      <Button x:Uid="cancelButton" MinWidth="75" Margin="0,8,0,0" IsCancel="True">Cancel</Button>
+    </StackPanel>
+  </Grid>
+</Window>

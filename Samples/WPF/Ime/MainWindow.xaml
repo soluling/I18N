@@ -1,0 +1,18 @@
+﻿<Window
+  x:Class="Ime.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" 
+  Width="500"
+  SizeToContent="Height">
+
+  <StackPanel Margin="5">
+    <Label x:Name="defaultLabel" Target="{Binding ElementName=defaultTextBox}">_Default input method:</Label>
+    <TextBox x:Name="defaultTextBox" />
+    <TextBlock x:Name="defaultDescriptionLabel" TextWrapping="Wrap">The above edit component has the default InputMode: DoNotCare. The default value is not stored to XAML, so it will not be scanned and it cannot be localized.</TextBlock>
+
+    <Label x:Name="nativeLabel" Target="{Binding ElementName=nativeTextBox}">_Native input method:</Label>
+    <TextBox x:Name="nativeTextBox" InputMethod.PreferredImeState="On" InputMethod.PreferredImeConversionMode="FullShape,Native" />
+    <TextBlock x:Name="nativeDescriptionLabel" TextWrapping="Wrap">The above edit component has InputMode property set to Native. This will add the property to XAML, it will be scanned and it can be localized.</TextBlock>
+  </StackPanel>
+</Window>

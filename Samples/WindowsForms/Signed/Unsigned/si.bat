@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\Bin\x64\sn.exe" -e "D:\NT\Deploy\Samples\WindowsForms\Signed\Unsigned\bin\Debug\Signed.exe" "C:\Users\Jaska\AppData\Local\Temp\NtNet{3F3B67FF-11C2-408A-8743-A61478070A3D}\Key.snk"

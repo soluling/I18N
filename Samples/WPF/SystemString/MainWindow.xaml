@@ -1,0 +1,40 @@
+﻿<Window 
+  x:Class="SystemString.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" 
+  SizeToContent="Height"
+  Width="500" 
+  Loaded="Window_Loaded">
+
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Dictionary1.xaml" />
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+
+  <StackPanel Name="panel">
+    <GroupBox Name="applicationGroup" Header="Application">
+      <StackPanel Name="applicationPanel">
+        <Label Name="label1" />
+        <Label Name="label2" Content="{StaticResource two}" />
+      </StackPanel>  
+    </GroupBox>
+
+    <GroupBox Name="localGroup" Header="Local">
+      <StackPanel Name="localPanel">
+        <Label Name="label3" />
+        <Label Name="label4" Content="{StaticResource four}" />
+      </StackPanel>
+    </GroupBox>
+
+    <GroupBox Name="xamlGroup" Header="XAML">
+      <StackPanel Name="xamlPanel">
+        <Label Name="label5" Content="One" />
+        <Label Name="label6">Two</Label>
+      </StackPanel>
+    </GroupBox>
+  </StackPanel>
+</Window>

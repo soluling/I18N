@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="5BD65EAB-C382-4104-9619-03327EBD0A7C" created="20181207T001727Z" lastmodified="20181207T005216Z" version="1.0.272">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Database.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Database\Database.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net40"/>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title">
+        <value>Sport</value>
+        <lang id="fi" rw="0" time="20181207T005131Z">Urheilu</lang>
+      </row>
+      <item name="grid" type="DataGrid">
+        <item name="Columns">
+          <item name="pictureColumn" type="DataGridTemplateColumn">
+            <row id="Header">
+              <value>Picture</value>
+              <lang id="fi" rw="0" time="20181207T005134Z">Kuva</lang>
+            </row>
+            <item name="CellTemplate">
+              <item name="pictureTemplate" type="DataTemplate">
+                <item name="pictureImage" type="Image"/>
+              </item>
+            </item>
+          </item>
+          <item name="nameColumn" type="DataGridTextColumn">
+            <row id="Header">
+              <value>Name</value>
+              <lang id="fi" rw="0" time="20181207T005136Z">Nimi</lang>
+            </row>
+          </item>
+          <item name="fieldPlayersColumn" type="DataGridTextColumn">
+            <row id="Header">
+              <value>Field players</value>
+              <lang id="fi" rw="0" time="20181207T005141Z">Kenttäpelaajat</lang>
+            </row>
+          </item>
+          <item name="goalieColumn" type="DataGridCheckBoxColumn">
+            <row id="Header">
+              <value>Goalie</value>
+              <lang id="fi" rw="0" time="20181207T005144Z">Maalivahti</lang>
+            </row>
+          </item>
+          <item name="descriptionColumn" type="DataGridTemplateColumn">
+            <row id="Header">
+              <value>Description</value>
+              <lang id="fi" rw="0" time="20181207T005148Z">Selitys</lang>
+            </row>
+            <item name="CellTemplate">
+              <item name="descriptionTemplate" type="DataTemplate">
+                <item name="descriptionText" type="TextBlock"/>
+              </item>
+            </item>
+          </item>
+          <item name="originColumn" type="DataGridTextColumn">
+            <row id="Header">
+              <value>Origin</value>
+              <lang id="fi" rw="0" time="20181207T005151Z">Alkuperä</lang>
+            </row>
+          </item>
+          <item name="flagColumn" type="DataGridTemplateColumn">
+            <row id="Header">
+              <value>Flag</value>
+              <lang id="fi" rw="0" time="20181207T005153Z">Lippu</lang>
+            </row>
+            <item name="CellTemplate">
+              <item name="flagTemplate" type="DataTemplate">
+                <item name="flagImage" type="Image"/>
+              </item>
+            </item>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iRGF0YWJhc2UuTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
+        LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJTcG9ydCIgDQogIEhlaWdodD0iMzUwIiANCiAgV2lkdGg9IjgwMCIgDQog
+        IExvYWRlZD0iV2luZG93X0xvYWRlZCI+DQoNCiAgPERhdGFHcmlkIHg6TmFtZT0iZ3JpZCIgQWx0ZXJuYXRpbmdSb3dCYWNrZ3Jv
+        dW5kPSIjRjBGMEYwIiBBdXRvR2VuZXJhdGVDb2x1bW5zPSJGYWxzZSIgSXNSZWFkT25seT0iVHJ1ZSI+DQogICAgPERhdGFHcmlk
+        LkNvbHVtbnM+DQoNCiAgICAgIDxEYXRhR3JpZFRlbXBsYXRlQ29sdW1uIHg6TmFtZT0icGljdHVyZUNvbHVtbiIgSGVhZGVyPSJQ
+        aWN0dXJlIj4NCiAgICAgICAgPERhdGFHcmlkVGVtcGxhdGVDb2x1bW4uQ2VsbFRlbXBsYXRlPg0KICAgICAgICAgIDxEYXRhVGVt
+        cGxhdGUgeDpOYW1lPSJwaWN0dXJlVGVtcGxhdGUiPg0KICAgICAgICAgICAgPEltYWdlIHg6TmFtZT0icGljdHVyZUltYWdlIiBT
+        b3VyY2U9IntCaW5kaW5nIFBpY3R1cmV9IiAvPg0KICAgICAgICAgIDwvRGF0YVRlbXBsYXRlPg0KICAgICAgICA8L0RhdGFHcmlk
+        VGVtcGxhdGVDb2x1bW4uQ2VsbFRlbXBsYXRlPg0KICAgICAgPC9EYXRhR3JpZFRlbXBsYXRlQ29sdW1uPg0KICAgICAgDQogICAg
+        ICA8RGF0YUdyaWRUZXh0Q29sdW1uIHg6TmFtZT0ibmFtZUNvbHVtbiIgQmluZGluZz0ie0JpbmRpbmcgTmFtZX0iIEhlYWRlcj0i
+        TmFtZSIvPg0KICAgICAgPERhdGFHcmlkVGV4dENvbHVtbiB4Ok5hbWU9ImZpZWxkUGxheWVyc0NvbHVtbiIgQmluZGluZz0ie0Jp
+        bmRpbmcgRmllbGRQbGF5ZXJzfSIgSGVhZGVyPSJGaWVsZCBwbGF5ZXJzIi8+DQogICAgICA8RGF0YUdyaWRDaGVja0JveENvbHVt
+        biB4Ok5hbWU9ImdvYWxpZUNvbHVtbiIgQmluZGluZz0ie0JpbmRpbmcgR29hbGllfSIgSGVhZGVyPSJHb2FsaWUiLz4NCg0KICAg
+        ICAgPERhdGFHcmlkVGVtcGxhdGVDb2x1bW4geDpOYW1lPSJkZXNjcmlwdGlvbkNvbHVtbiIgSGVhZGVyPSJEZXNjcmlwdGlvbiIg
+        V2lkdGg9IjMwMCI+DQogICAgICAgIDxEYXRhR3JpZFRlbXBsYXRlQ29sdW1uLkNlbGxUZW1wbGF0ZT4NCiAgICAgICAgICA8RGF0
+        YVRlbXBsYXRlIHg6TmFtZT0iZGVzY3JpcHRpb25UZW1wbGF0ZSI+DQogICAgICAgICAgICA8VGV4dEJsb2NrIHg6TmFtZT0iZGVz
+        Y3JpcHRpb25UZXh0IiBUZXh0PSJ7QmluZGluZyBEZXNjcmlwdGlvbn0iIFRleHRXcmFwcGluZz0iV3JhcFdpdGhPdmVyZmxvdyIv
+        Pg0KICAgICAgICAgIDwvRGF0YVRlbXBsYXRlPg0KICAgICAgICA8L0RhdGFHcmlkVGVtcGxhdGVDb2x1bW4uQ2VsbFRlbXBsYXRl
+        Pg0KICAgICAgPC9EYXRhR3JpZFRlbXBsYXRlQ29sdW1uPg0KDQogICAgICA8RGF0YUdyaWRUZXh0Q29sdW1uIHg6TmFtZT0ib3Jp
+        Z2luQ29sdW1uIiBCaW5kaW5nPSJ7QmluZGluZyBPcmlnaW59IiBIZWFkZXI9Ik9yaWdpbiIvPg0KDQogICAgICA8RGF0YUdyaWRU
+        ZW1wbGF0ZUNvbHVtbiB4Ok5hbWU9ImZsYWdDb2x1bW4iIEhlYWRlcj0iRmxhZyI+DQogICAgICAgIDxEYXRhR3JpZFRlbXBsYXRl
+        Q29sdW1uLkNlbGxUZW1wbGF0ZT4NCiAgICAgICAgICA8RGF0YVRlbXBsYXRlIHg6TmFtZT0iZmxhZ1RlbXBsYXRlIj4NCiAgICAg
+        ICAgICAgIDxJbWFnZSB4Ok5hbWU9ImZsYWdJbWFnZSIgU291cmNlPSJ7QmluZGluZyBPcmlnaW5QaWN0dXJlfSIgLz4NCiAgICAg
+        ICAgICA8L0RhdGFUZW1wbGF0ZT4NCiAgICAgICAgPC9EYXRhR3JpZFRlbXBsYXRlQ29sdW1uLkNlbGxUZW1wbGF0ZT4NCiAgICAg
+        IDwvRGF0YUdyaWRUZW1wbGF0ZUNvbHVtbj4NCiAgICAgIA0KICAgIDwvRGF0YUdyaWQuQ29sdW1ucz4NCiAgPC9EYXRhR3JpZD4N
+        CjwvV2luZG93Pg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="Language">
+          <value>en</value>
+          <lang id="fi" rw="0" time="20181207T005156Z">fi</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

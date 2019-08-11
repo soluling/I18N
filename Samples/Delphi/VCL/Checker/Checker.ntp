@@ -1,0 +1,522 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20151026T131424Z" lastmodified="20181023T162010Z" guid="95B0E249-C47E-4F2E-9F26-009284AF4D88" version="1.0.228">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Release\Checker.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Checker\Win32\Release\Checker.exe" original="en" guid="C8911A04-7A07-47E7-BA9A-91BF719439A3">
+    <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TBASEFORM" type="TBaseForm" resname="TBASEFORM" objectname="BaseForm">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="ClientHeight">299</row>
+        <row id="ClientWidth">635</row>
+        <data>
+          VFBGMAlUQmFzZUZvcm0IQmFzZUZvcm0ETGVmdAIAA1RvcAIADENsaWVudEhlaWdodAMrAQtDbGllbnRXaWR0aAN7AgVDb2xvcgcJ
+          Y2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdo
+          dAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVPcmRlcggKT25BY3RpdmF0ZQcMRm9ybUFjdGl2YXRl
+          DVBpeGVsc1BlckluY2gCYApUZXh0SGVpZ2h0Ag0AAA==
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TFRAME1" type="TFrame1" resname="TFRAME1" objectname="Frame1">
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Width">116</row>
+        <row id="Height">67</row>
+        <item name="CheckBox1" type="TCheckBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption" changed="20151026T131740Z">
+            <value>One</value>
+            <lang id="fi" time="20151026T131858Z">Yksi</lang>
+          </row>
+        </item>
+        <item name="CheckBox2" type="TCheckBox">
+          <row id="Left">8</row>
+          <row id="Top">16</row>
+          <row id="Width">137</row>
+          <row id="Height">25</row>
+          <row id="Caption" changed="20151026T131740Z">
+            <value>Two</value>
+            <lang id="fi" time="20151026T131858Z">Kaksi</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMAdURnJhbWUxBkZyYW1lMQRMZWZ0AgADVG9wAgAFV2lkdGgCdAZIZWlnaHQCQwhUYWJPcmRlcgIAAAlUQ2hlY2tCb3gJQ2hl
+          Y2tCb3gxBExlZnQCCANUb3ACCAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GA09uZQhUYWJPcmRlcgIAAAAJVENoZWNrQm94CUNo
+          ZWNrQm94MgRMZWZ0AggDVG9wAhAFV2lkdGgDiQAGSGVpZ2h0AhkHQ2FwdGlvbgYDVHdvCFRhYk9yZGVyAgEAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TMAINFORM" objectname="MainForm" parent="TBaseForm" flags="[ffInherited]">
+        <row id="Caption">
+          <value>Sample</value>
+          <lang id="fi" time="20151026T131849Z">Näyte</lang>
+        </row>
+        <row id="ClientHeight" changed="20160612T222346Z">281</row>
+        <row id="ClientWidth" changed="20151027T020312Z">483</row>
+        <item name="Label1" type="TLabel">
+          <row id="Left">120</row>
+          <row id="Top">96</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+          <row id="Caption" excluded="2">dummy</row>
+        </item>
+        <item name="TruncationGroup" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">145</row>
+          <row id="Height">73</row>
+          <row id="Caption">
+            <value> Truncation </value>
+            <lang id="fi" time="20151026T131849Z">Katkaisu</lang>
+          </row>
+          <item name="TruncationLabel1" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">16</row>
+            <row id="Width">126</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>This is a sample label text.</value>
+              <lang id="fi" time="20151026T132000Z">Tämä on esimerkkiotsikkoteksti.</lang>
+            </row>
+          </item>
+          <item name="TruncationLabel2" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">32</row>
+            <row id="Width">34</row>
+            <row id="Height">13</row>
+            <row id="Caption" excluded="2">dummy</row>
+          </item>
+          <item name="TruncationLabel3" type="TLabel">
+            <row id="Left">7</row>
+            <row id="Top">48</row>
+            <row id="Width">34</row>
+            <row id="Height">13</row>
+            <row id="Caption" excluded="2">dummy</row>
+          </item>
+        </item>
+        <item name="CheckBox1" type="TCheckBox">
+          <row id="Left">8</row>
+          <row id="Top">88</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption">
+            <value>This is a sample</value>
+            <lang id="fi" time="20151026T131919Z">Tämä on esimerkki</lang>
+          </row>
+        </item>
+        <item name="CheckBox2" type="TCheckBox">
+          <row id="Left">8</row>
+          <row id="Top" changed="20151027T020312Z">120</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption" excluded="2">dummy</row>
+        </item>
+        <item name="Button2" type="TButton">
+          <row id="Left" changed="20151027T020312Z">168</row>
+          <row id="Top" changed="20151027T020312Z">152</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" excluded="2">dummy</row>
+        </item>
+        <item name="OverlappingGroup" type="TGroupBox">
+          <row id="Left">160</row>
+          <row id="Top">8</row>
+          <row id="Width">185</row>
+          <row id="Height">41</row>
+          <row id="Caption">
+            <value> Overlapping </value>
+            <lang id="fi" time="20151026T131912Z"> Päällekkäisiä </lang>
+          </row>
+          <item name="OverlappingLabel1" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">16</row>
+            <row id="Width">53</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>String one.</value>
+              <lang id="fi" time="20151026T131955Z">Merkkijono yksi.</lang>
+            </row>
+          </item>
+          <item name="OverlappingLabel2" type="TLabel">
+            <row id="Left">72</row>
+            <row id="Top">16</row>
+            <row id="Width">34</row>
+            <row id="Height">13</row>
+            <row id="Caption" excluded="2">dummy</row>
+          </item>
+          <item name="OverlappingLabel3" type="TLabel">
+            <row id="Left">120</row>
+            <row id="Top">16</row>
+            <row id="Width">54</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>Last string.</value>
+              <lang id="fi" time="20151026T131953Z">Viimeiseen merkkijono.</lang>
+            </row>
+          </item>
+        </item>
+        <item name="LanguageButton" type="TButton">
+          <row id="Left" changed="20151027T020312Z">400</row>
+          <row id="Top" changed="20160612T222346Z">248</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>&amp;Language...</value>
+            <lang id="fi" time="20151026T131850Z">Kieli</lang>
+          </row>
+        </item>
+        <item name="Frame1" type="TFrame1">
+          <row id="Left" changed="20151027T020312Z">358</row>
+          <row id="Top" changed="20151027T020312Z">8</row>
+          <row id="Width">116</row>
+          <row id="Height">67</row>
+          <item name="CheckBox1" type="TCheckBox">
+            <row id="Caption">
+              <value>Check box</value>
+              <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
+            </row>
+          </item>
+          <item name="CheckBox2" type="TCheckBox">
+            <row id="Caption">
+              <value>Check box</value>
+              <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
+            </row>
+          </item>
+        </item>
+        <item name="Panel1" type="TPanel">
+          <row id="Left">8</row>
+          <row id="Top" changed="20151027T020312Z">184</row>
+          <row id="Width">89</row>
+          <row id="Height" changed="20151027T020312Z">57</row>
+          <item name="CheckBox3" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">97</row>
+            <row id="Height">17</row>
+            <row id="Caption">
+              <value>Check box</value>
+              <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
+            </row>
+          </item>
+        </item>
+        <item name="ShowButton" type="TButton">
+          <row id="Left">8</row>
+          <row id="Top" changed="20151027T020312Z">152</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>Click to show</value>
+            <lang id="fi" time="20151026T131849Z">Näytä napsauttamalla</lang>
+          </row>
+        </item>
+        <item name="Button1" type="TButton" created="20151027T020312Z">
+          <row id="Left">88</row>
+          <row id="Top">152</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">This text is too.</row>
+        </item>
+        <item name="CheckBox4" type="TCheckBox" created="20151027T020312Z">
+          <row id="Left">8</row>
+          <row id="Top">104</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption">This is a a long sample</row>
+        </item>
+        <item name="RadioButton1" type="TRadioButton" created="20151027T020312Z">
+          <row id="Left">104</row>
+          <row id="Top">184</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption">This is a sample</row>
+        </item>
+        <item name="RadioButton2" type="TRadioButton" created="20151027T020312Z">
+          <row id="Left">104</row>
+          <row id="Top">200</row>
+          <row id="Width">97</row>
+          <row id="Height">17</row>
+          <row id="Caption">This is a a long sample</row>
+        </item>
+        <item name="ComboBox1" type="TComboBox" created="20151027T020312Z">
+          <row id="Left">160</row>
+          <row id="Top">56</row>
+          <row id="Width">73</row>
+          <row id="Height">21</row>
+          <row id="Items.Strings[0]">One</row>
+          <row id="Items.Strings[1]">Two</row>
+          <row id="Items.Strings[2]">This is too long</row>
+        </item>
+        <item name="PageControl1" type="TPageControl" created="20160612T222346Z">
+          <row id="Left">280</row>
+          <row id="Top">96</row>
+          <row id="Width">185</row>
+          <row id="Height">97</row>
+          <item name="TabSheet1" type="TTabSheet">
+            <row id="Caption">TabSheet1</row>
+            <item name="CheckBox5" type="TCheckBox">
+              <row id="Left">8</row>
+              <row id="Top">20</row>
+              <row id="Width">97</row>
+              <row id="Height">17</row>
+              <row id="Caption">This is a a long sample</row>
+            </item>
+          </item>
+          <item name="TabSheet2" type="TTabSheet">
+            <row id="Caption">TabSheet2</row>
+            <item name="CheckBox6" type="TCheckBox">
+              <row id="Left">48</row>
+              <row id="Top">4</row>
+              <row id="Width">97</row>
+              <row id="Height">17</row>
+              <row id="Caption">This is a a long sample</row>
+            </item>
+          </item>
+        </item>
+        <item name="SimpleButton" type="TButton" created="20160612T222346Z">
+          <row id="Left">8</row>
+          <row id="Top">248</row>
+          <row id="Width">97</row>
+          <row id="Height">25</row>
+          <row id="Caption">Show simple...</row>
+        </item>
+        <data>
+          VFBGMPEJVE1haW5Gb3JtCE1haW5Gb3JtB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDGQELQ2xpZW50V2lkdGgD4wEIT25D
+          cmVhdGUHCkZvcm1DcmVhdGUNRXhwbGljaXRXaWR0aAPzAQ5FeHBsaWNpdEhlaWdodANAAQ1QaXhlbHNQZXJJbmNoAmAKVGV4dEhl
+          aWdodAINAAZUTGFiZWwGTGFiZWwxBExlZnQCeANUb3ACYAVXaWR0aAIiBkhlaWdodAINCEF1dG9TaXplCAdDYXB0aW9uBgVkdW1t
+          eQAACVRHcm91cEJveA9UcnVuY2F0aW9uR3JvdXAETGVmdAIIA1RvcAIIBVdpZHRoA5EABkhlaWdodAJJB0NhcHRpb24GDCBUcnVu
+          Y2F0aW9uIAhUYWJPcmRlcgIAAAZUTGFiZWwQVHJ1bmNhdGlvbkxhYmVsMQRMZWZ0AggDVG9wAhAFV2lkdGgCfgZIZWlnaHQCDQdD
+          YXB0aW9uBhxUaGlzIGlzIGEgc2FtcGxlIGxhYmVsIHRleHQuAAAGVExhYmVsEFRydW5jYXRpb25MYWJlbDIETGVmdAIIA1RvcAIg
+          BVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkAAAZUTGFiZWwQVHJ1bmNhdGlvbkxhYmVsMwRMZWZ0AgcDVG9wAjAFV2lk
+          dGgCIgZIZWlnaHQCDQhBdXRvU2l6ZQgHQ2FwdGlvbgYFZHVtbXkAAAAJVENoZWNrQm94CUNoZWNrQm94MQRMZWZ0AggDVG9wAlgF
+          V2lkdGgCYQZIZWlnaHQCEQdDYXB0aW9uBhBUaGlzIGlzIGEgc2FtcGxlCFRhYk9yZGVyAgEAAAlUQ2hlY2tCb3gJQ2hlY2tCb3gy
+          BExlZnQCCANUb3ACeAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GBWR1bW15CFRhYk9yZGVyAgIAAAdUQnV0dG9uB0J1dHRvbjIE
+          TGVmdAOoAANUb3ADmAAFV2lkdGgCSwZIZWlnaHQCGQdDYXB0aW9uBgVkdW1teQhUYWJPcmRlcgIDAAAJVEdyb3VwQm94EE92ZXJs
+          YXBwaW5nR3JvdXAETGVmdAOgAANUb3ACCAVXaWR0aAO5AAZIZWlnaHQCKQdDYXB0aW9uBg0gT3ZlcmxhcHBpbmcgCFRhYk9yZGVy
+          AgQABlRMYWJlbBFPdmVybGFwcGluZ0xhYmVsMQRMZWZ0AggDVG9wAhAFV2lkdGgCNQZIZWlnaHQCDQdDYXB0aW9uBgtTdHJpbmcg
+          b25lLgAABlRMYWJlbBFPdmVybGFwcGluZ0xhYmVsMgRMZWZ0AkgDVG9wAhAFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1t
+          eQAABlRMYWJlbBFPdmVybGFwcGluZ0xhYmVsMwRMZWZ0AngDVG9wAhAFV2lkdGgCNgZIZWlnaHQCDQdDYXB0aW9uBgxMYXN0IHN0
+          cmluZy4AAAAHVEJ1dHRvbg5MYW5ndWFnZUJ1dHRvbgRMZWZ0A5ABA1RvcAP4AAVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GDCZM
+          YW5ndWFnZS4uLghUYWJPcmRlcgIFB09uQ2xpY2sHE0xhbmd1YWdlQnV0dG9uQ2xpY2sAAPQHVEZyYW1lMQZGcmFtZTEETGVmdANm
+          AQNUb3ACCAVXaWR0aAJ0BkhlaWdodAJDCFRhYk9yZGVyAgYMRXhwbGljaXRMZWZ0A2YBC0V4cGxpY2l0VG9wAggA8QlUQ2hlY2tC
+          b3gJQ2hlY2tCb3gxB0NhcHRpb24GCUNoZWNrIGJveAAA8QlUQ2hlY2tCb3gJQ2hlY2tCb3gyB0NhcHRpb24GCUNoZWNrIGJveAAA
+          AAZUUGFuZWwGUGFuZWwxBExlZnQCCANUb3ADuAAFV2lkdGgCWQZIZWlnaHQCOQhUYWJPcmRlcgIHAAlUQ2hlY2tCb3gJQ2hlY2tC
+          b3gzBExlZnQCCANUb3ACCAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GCUNoZWNrIGJveAhUYWJPcmRlcgIAAAAAB1RCdXR0b24K
+          U2hvd0J1dHRvbgRMZWZ0AggDVG9wA5gABVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYNQ2xpY2sgdG8gc2hvdwhUYWJPcmRlcgII
+          B09uQ2xpY2sHD1Nob3dCdXR0b25DbGljawAAB1RCdXR0b24HQnV0dG9uMQRMZWZ0AlgDVG9wA5gABVdpZHRoAksGSGVpZ2h0AhkH
+          Q2FwdGlvbgYRVGhpcyB0ZXh0IGlzIHRvby4IVGFiT3JkZXICCQdPbkNsaWNrBw9TaG93QnV0dG9uQ2xpY2sAAAlUQ2hlY2tCb3gJ
+          Q2hlY2tCb3g0BExlZnQCCANUb3ACaAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GF1RoaXMgaXMgYSBhIGxvbmcgc2FtcGxlCFRh
+          Yk9yZGVyAgoAAAxUUmFkaW9CdXR0b24MUmFkaW9CdXR0b24xBExlZnQCaANUb3ADuAAFV2lkdGgCYQZIZWlnaHQCEQdDYXB0aW9u
+          BhBUaGlzIGlzIGEgc2FtcGxlCFRhYk9yZGVyAgsAAAxUUmFkaW9CdXR0b24MUmFkaW9CdXR0b24yBExlZnQCaANUb3ADyAAFV2lk
+          dGgCYQZIZWlnaHQCEQdDYXB0aW9uBhdUaGlzIGlzIGEgYSBsb25nIHNhbXBsZQhUYWJPcmRlcgIMAAAJVENvbWJvQm94CUNvbWJv
+          Qm94MQRMZWZ0A6AAA1RvcAI4BVdpZHRoAkkGSGVpZ2h0AhUFU3R5bGUHDmNzRHJvcERvd25MaXN0CFRhYk9yZGVyAg0NSXRlbXMu
+          U3RyaW5ncwEGA09uZQYDVHdvBhBUaGlzIGlzIHRvbyBsb25nAAAADFRQYWdlQ29udHJvbAxQYWdlQ29udHJvbDEETGVmdAMYAQNU
+          b3ACYAVXaWR0aAO5AAZIZWlnaHQCYQpBY3RpdmVQYWdlBwlUYWJTaGVldDIIVGFiT3JkZXICDgAJVFRhYlNoZWV0CVRhYlNoZWV0
+          MQdDYXB0aW9uBglUYWJTaGVldDEMRXhwbGljaXRMZWZ0AgALRXhwbGljaXRUb3ACAA1FeHBsaWNpdFdpZHRoAgAORXhwbGljaXRI
+          ZWlnaHQCAAAJVENoZWNrQm94CUNoZWNrQm94NQRMZWZ0AggDVG9wAhQFV2lkdGgCYQZIZWlnaHQCEQdDYXB0aW9uBhdUaGlzIGlz
+          IGEgYSBsb25nIHNhbXBsZQhUYWJPcmRlcgIAAAAACVRUYWJTaGVldAlUYWJTaGVldDIHQ2FwdGlvbgYJVGFiU2hlZXQyCkltYWdl
+          SW5kZXgCAQxFeHBsaWNpdExlZnQCAAtFeHBsaWNpdFRvcAIADUV4cGxpY2l0V2lkdGgCAA5FeHBsaWNpdEhlaWdodAIAAAlUQ2hl
+          Y2tCb3gJQ2hlY2tCb3g2BExlZnQCMANUb3ACBAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GF1RoaXMgaXMgYSBhIGxvbmcgc2Ft
+          cGxlCFRhYk9yZGVyAgAAAAAAB1RCdXR0b24MU2ltcGxlQnV0dG9uBExlZnQCCANUb3AD+AAFV2lkdGgCYQZIZWlnaHQCGQdDYXB0
+          aW9uBg5TaG93IHNpbXBsZS4uLghUYWJPcmRlcgIPB09uQ2xpY2sHEVNpbXBsZUJ1dHRvbkNsaWNrAAAA
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">256</row>
+        <row id="Top">347</row>
+        <row id="Caption">
+          <value>Select Language</value>
+          <lang id="fi" time="20151026T131850Z">Valitse kieli</lang>
+        </row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">193</row>
+          <row id="Height">177</row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">8</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>OK</value>
+            <lang id="fi" time="20151026T131945Z">OK</lang>
+          </row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">40</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>Cancel</value>
+            <lang id="fi" time="20151026T131850Z">Peruuta</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
+          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
+          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
+          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
+          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
+          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
+          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
+          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
+          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
+          AAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TSAMPLEDIALOG" type="TSampleDialog" resname="TSAMPLEDIALOG" objectname="SampleDialog">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">
+          <value>Sample Dialog</value>
+          <lang id="fi" time="20151026T131850Z">Näyte dialogi</lang>
+        </row>
+        <row id="ClientHeight">185</row>
+        <row id="ClientWidth">394</row>
+        <item name="ComboBox1" type="TComboBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">145</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="ListBox1" type="TListBox">
+          <row id="Left">144</row>
+          <row id="Top">8</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+        </item>
+        <item name="Memo1" type="TMemo">
+          <row id="Left">304</row>
+          <row id="Top">48</row>
+          <row id="Width">185</row>
+          <row id="Height">89</row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Left">312</row>
+          <row id="Top">152</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>OK</value>
+            <lang id="fi" time="20151026T131945Z">OK</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMA1UU2FtcGxlRGlhbG9nDFNhbXBsZURpYWxvZwRMZWZ0AgADVG9wAgALQm9yZGVyU3R5bGUHCGJzRGlhbG9nB0NhcHRpb24G
+          DVNhbXBsZSBEaWFsb2cMQ2xpZW50SGVpZ2h0A7kAC0NsaWVudFdpZHRoA4oBBUNvbG9yBwljbEJ0bkZhY2UMRm9udC5DaGFyc2V0
+          Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEK
+          Rm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCA1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAlUQ29tYm9Cb3gJQ29tYm9C
+          b3gxBExlZnQCCANUb3ACCAVXaWR0aAORAAZIZWlnaHQCFQhUYWJPcmRlcgIAAAAIVExpc3RCb3gITGlzdEJveDEETGVmdAOQAANU
+          b3ACCAVXaWR0aAJ5BkhlaWdodAJhCkl0ZW1IZWlnaHQCDQhUYWJPcmRlcgIBAAAFVE1lbW8FTWVtbzEETGVmdAMwAQNUb3ACMAVX
+          aWR0aAO5AAZIZWlnaHQCWQhUYWJPcmRlcgICAAAHVEJ1dHRvbghPa0J1dHRvbgRMZWZ0AzgBA1RvcAOYAAVXaWR0aAJLBkhlaWdo
+          dAIZB0NhcHRpb24GAk9LC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAwAAAA==
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TSIMPLEFORM" type="TSimpleForm" resname="TSIMPLEFORM" created="20160612T222346Z" objectname="SimpleForm" parent="TBaseForm" flags="[ffInherited]">
+        <row id="Caption">Sample</row>
+        <row id="ClientHeight">90</row>
+        <row id="ClientWidth">218</row>
+        <item name="GroupBox1" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">121</row>
+          <row id="Height">73</row>
+          <row id="Caption"> Options </row>
+          <item name="CheckBox1" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">16</row>
+            <row id="Width">105</row>
+            <row id="Height">17</row>
+            <row id="Caption">&amp;This is a read only file</row>
+          </item>
+          <item name="CheckBox2" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">32</row>
+            <row id="Width">161</row>
+            <row id="Height">17</row>
+            <row id="Caption">&amp;Encrypt data before sending</row>
+          </item>
+          <item name="CheckBox3" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">48</row>
+            <row id="Width">65</row>
+            <row id="Height">17</row>
+            <row id="Caption">&amp;Mark</row>
+          </item>
+          <item name="CheckBox4" type="TCheckBox">
+            <row id="Left">56</row>
+            <row id="Top">48</row>
+            <row id="Width">57</row>
+            <row id="Height">17</row>
+            <row id="Caption">Release</row>
+          </item>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Left">136</row>
+          <row id="Top">16</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">OK</row>
+        </item>
+        <data>
+          VFBGMPELVFNpbXBsZUZvcm0KU2ltcGxlRm9ybQdDYXB0aW9uBgZTYW1wbGUMQ2xpZW50SGVpZ2h0AloLQ2xpZW50V2lkdGgD2gAN
+          RXhwbGljaXRXaWR0aAPqAA5FeHBsaWNpdEhlaWdodAOBAA1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAlUR3JvdXBCb3gJ
+          R3JvdXBCb3gxBExlZnQCCANUb3ACCAVXaWR0aAJ5BkhlaWdodAJJB0NhcHRpb24GCSBPcHRpb25zIAhUYWJPcmRlcgIAAAlUQ2hl
+          Y2tCb3gJQ2hlY2tCb3gxBExlZnQCCANUb3ACEAVXaWR0aAJpBkhlaWdodAIRB0NhcHRpb24GGSZUaGlzIGlzIGEgcmVhZCBvbmx5
+          IGZpbGUIVGFiT3JkZXICAAAACVRDaGVja0JveAlDaGVja0JveDIETGVmdAIIA1RvcAIgBVdpZHRoA6EABkhlaWdodAIRB0NhcHRp
+          b24GHCZFbmNyeXB0IGRhdGEgYmVmb3JlIHNlbmRpbmcIVGFiT3JkZXICAQAACVRDaGVja0JveAlDaGVja0JveDMETGVmdAIIA1Rv
+          cAIwBVdpZHRoAkEGSGVpZ2h0AhEHQ2FwdGlvbgYFJk1hcmsIVGFiT3JkZXICAgAACVRDaGVja0JveAlDaGVja0JveDQETGVmdAI4
+          A1RvcAIwBVdpZHRoAjkGSGVpZ2h0AhEHQ2FwdGlvbgYHUmVsZWFzZQhUYWJPcmRlcgIDAAAAB1RCdXR0b24IT2tCdXR0b24ETGVm
+          dAOIAANUb3ACEAVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GAk9LC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAAA==
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="MainFrm">
+        <row id="SOverlapping">
+          <value>Another strings.</value>
+          <lang id="fi" time="20151026T131851Z">Toinen jouset</lang>
+        </row>
+        <row id="SCheckBox">
+          <value>This is another sample</value>
+          <lang id="fi" time="20151026T131851Z">Tämä on toinen esimerkki</lang>
+        </row>
+        <row id="SButton">
+          <value>Click here to start</value>
+          <lang id="fi" time="20151026T131851Z">Aloita napsauttamalla tätä</lang>
+        </row>
+        <row id="STruncation">
+          <value>This is another sample label text.</value>
+          <lang id="fi" time="20151026T132001Z">Tämä on toinen esimerkkiotsikkoteksti.</lang>
+        </row>
+      </node>
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+    </node>
+    <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
+    <configurations>
+      <configuration items="[oiLanguage]"/>
+    </configurations>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+    <item type="TMemo" property="Lines.Strings" operation="roLocalize" options="[poCombineStringsItems]"/>
+  </delphirules>
+</project>

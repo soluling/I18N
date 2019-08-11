@@ -1,0 +1,120 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{F7F17474-F8EB-4489-A46C-1DABEBF34CA2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Plural\Plural.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Multi\PluralMulti.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Mixed\PluralMixed.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Custom\PluralCustom.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Gender\Gender.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Finnish\GenderFinnish.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Select\Select.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Tester\Tester.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Plural">
+        <MSBuild Projects="Plural\Plural.dproj"/>
+    </Target>
+    <Target Name="Plural:Clean">
+        <MSBuild Projects="Plural\Plural.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Plural:Make">
+        <MSBuild Projects="Plural\Plural.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PluralMulti">
+        <MSBuild Projects="Multi\PluralMulti.dproj"/>
+    </Target>
+    <Target Name="PluralMulti:Clean">
+        <MSBuild Projects="Multi\PluralMulti.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PluralMulti:Make">
+        <MSBuild Projects="Multi\PluralMulti.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PluralMixed">
+        <MSBuild Projects="Mixed\PluralMixed.dproj"/>
+    </Target>
+    <Target Name="PluralMixed:Clean">
+        <MSBuild Projects="Mixed\PluralMixed.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PluralMixed:Make">
+        <MSBuild Projects="Mixed\PluralMixed.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="PluralCustom">
+        <MSBuild Projects="Custom\PluralCustom.dproj"/>
+    </Target>
+    <Target Name="PluralCustom:Clean">
+        <MSBuild Projects="Custom\PluralCustom.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PluralCustom:Make">
+        <MSBuild Projects="Custom\PluralCustom.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Gender">
+        <MSBuild Projects="Gender\Gender.dproj"/>
+    </Target>
+    <Target Name="Gender:Clean">
+        <MSBuild Projects="Gender\Gender.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Gender:Make">
+        <MSBuild Projects="Gender\Gender.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="GenderFinnish">
+        <MSBuild Projects="Finnish\GenderFinnish.dproj"/>
+    </Target>
+    <Target Name="GenderFinnish:Clean">
+        <MSBuild Projects="Finnish\GenderFinnish.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="GenderFinnish:Make">
+        <MSBuild Projects="Finnish\GenderFinnish.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Select">
+        <MSBuild Projects="Select\Select.dproj"/>
+    </Target>
+    <Target Name="Select:Clean">
+        <MSBuild Projects="Select\Select.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Select:Make">
+        <MSBuild Projects="Select\Select.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Tester">
+        <MSBuild Projects="Tester\Tester.dproj"/>
+    </Target>
+    <Target Name="Tester:Clean">
+        <MSBuild Projects="Tester\Tester.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Tester:Make">
+        <MSBuild Projects="Tester\Tester.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Plural;PluralMulti;PluralMixed;PluralCustom;Gender;GenderFinnish;Select;Tester"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Plural:Clean;PluralMulti:Clean;PluralMixed:Clean;PluralCustom:Clean;Gender:Clean;GenderFinnish:Clean;Select:Clean;Tester:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Plural:Make;PluralMulti:Make;PluralMixed:Make;PluralCustom:Make;Gender:Make;GenderFinnish:Make;Select:Make;Tester:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

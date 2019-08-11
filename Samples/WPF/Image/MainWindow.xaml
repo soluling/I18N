@@ -1,0 +1,39 @@
+﻿<Window 
+  x:Class="Image.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Image"
+  mc:Ignorable="d"
+  Title="Image Sample" Height="350" Width="525" Loaded="Window_Loaded">
+  <StackPanel>
+    <!-- https://docs.microsoft.com/en-us/dotnet/framework/wpf/app-development/pack-uris-in-wpf -->
+    <!-- Use resource directly. Resource's build action has to be Resource -->
+    <StackPanel x:Name="resourcePanel" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Image x:Name="resourceImage" Source="about.png" Width="48" />
+      <Image x:Name="resourceImageSub" Source="Sub/about.png" Width="48" />
+    </StackPanel>
+
+    <!-- If build action is Embedded Resource XAML cannot access it. In this case the image is loaded in code. -->
+    <StackPanel x:Name="embeddedResourcePanel" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Image x:Name="embeddedResourceImage" Source="add.png" Width="48" />
+      <Image x:Name="embeddedResourceImageSub" Source="Sub/add.png" Width="48" />
+    </StackPanel>
+
+    <!-- If build action is Content then the image won't be inside the assembly but an external file. Use either of these markup. -->
+    <StackPanel x:Name="contentPanel" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Image x:Name="contentImage1" Source="pack://application:,,,/add2.png" Width="48" />
+      <Image x:Name="contentImage2" Source="/Image;component/add2.png" Width="48" />
+
+      <Image x:Name="contentImageSub1" Source="pack://application:,,,/Sub/add2.png" Width="48" />
+      <Image x:Name="contentImageSub2" Source="/Image;component/Sub/add2.png" Width="48" />
+    </StackPanel>
+
+    <!-- If build action is None the designer shows the image but it cannot be accessed on runtime. Do not use this! -->
+    <StackPanel x:Name="nonePanel" Orientation="Horizontal" HorizontalAlignment="Center">
+      <Image x:Name="noneImage" Source="address_book.png" Width="48" />
+      <Image x:Name="noneImageSub" Source="Sub/address_book.png" Width="48" />
+    </StackPanel>
+  </StackPanel>
+</Window>

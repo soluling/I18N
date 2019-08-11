@@ -1,0 +1,24 @@
+﻿<Window
+  x:Class="Styles.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Buttons" 
+  Width="300"
+  SizeToContent="Height">
+
+  <Window.Resources>
+    <ResourceDictionary>
+      <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="Dictionary1.xaml"/>
+      </ResourceDictionary.MergedDictionaries>
+    </ResourceDictionary>
+  </Window.Resources>
+
+  <StackPanel Name="panel1">
+    <Button Name="button1" Style="{StaticResource ButtonOne}" />
+    <Button Name="button2" Style="{StaticResource ButtonOne}">Custom text</Button>
+    <Button Name="button3" Style="{StaticResource ButtonTwo}" />
+    <Button Name="button4" Style="{StaticResource ButtonTwo}">Text</Button>
+    <Button Name="button5" Margin="0,8,0,0">Unstyled button</Button>
+  </StackPanel>
+</Window>

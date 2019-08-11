@@ -1,0 +1,28 @@
+﻿<Window 
+  x:Class="Sport.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  DataContext="{Binding RelativeSource={RelativeSource Self}}"
+  Title="Sport" 
+  Height="150" 
+  Width="410">
+
+  <StackPanel x:Name="panel">
+    <ListView x:Name="listView" ItemsSource="{Binding SportCollection}">
+      <ListView.View>
+        <GridView x:Name="gridView">
+          <GridViewColumn x:Name="nameColumn" Width="100" Header="Name" DisplayMemberBinding="{Binding Name}" />
+          <GridViewColumn x:Name="playersColumn" Width="100" Header="Field players" DisplayMemberBinding="{Binding FieldPlayers}" />
+          <GridViewColumn x:Name="goalieColumn" Width="70" Header="Goalie" DisplayMemberBinding="{Binding GoalieAsString}" />
+          <GridViewColumn x:Name="originColumn" Width="Auto" Header="Origin" DisplayMemberBinding="{Binding Origin}" />
+        </GridView>
+      </ListView.View>
+      
+      <ListView.ItemContainerStyle>
+        <Style x:Name="tooltipStyle" TargetType="{x:Type ListViewItem}">
+          <Setter x:Name="toolTipProperty" Property="ToolTip" Value="{Binding Path=Description}" />
+        </Style>
+      </ListView.ItemContainerStyle>
+    </ListView>
+  </StackPanel>
+</Window>

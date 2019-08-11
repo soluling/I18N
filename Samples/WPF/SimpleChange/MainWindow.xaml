@@ -1,0 +1,12 @@
+﻿<Window 
+  x:Class="SimpleChange.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sample" Height="350" Width="525" MouseDoubleClick="Window_MouseDoubleClick">
+
+  <ComboBox Name="languageComboBox" Height="25" >
+    <ComboBoxItem x:Uid="bothItem" IsSelected="True">Show native and English</ComboBoxItem>
+    <ComboBoxItem x:Uid="nativeItem">Show native only</ComboBoxItem>
+    <ComboBoxItem x:Uid="englishItem">Show English only</ComboBoxItem>
+  </ComboBox>
+</Window>

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="6A8180E1-D751-4205-A5DF-4AB8CD0E7792" created="20181128T212820Z" lastmodified="20181128T212820Z" version="1.0.268">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="Data" original="en" encoding="windows-1252">
+    <database kind="TSqlServerDatabase" address=".\SQLExpress" name="Data"/>
+    <tables>
+      <table name="dbo.Data" method="dlRow" language="Language">
+        <id name="Name"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="dbo.Data" keyfields="Name">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="Image">An image file</row>
+        <row id="MultiZip">A zip file that contains several files</row>
+        <row id="SingleZip">A zip file that contains one file</row>
+        <row id="Sound">A sound file</row>
+        <row id="Text">A text file</row>
+        <row id="Xml">An XML file</row>
+      </node>
+    </node>
+  </node>
+</project>

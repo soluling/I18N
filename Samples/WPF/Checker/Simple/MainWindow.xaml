@@ -1,0 +1,38 @@
+﻿<Window 
+  x:Class="Simple.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Simple"
+  mc:Ignorable="d"
+  Title="MainWindow" Height="400" Width="300" ContentRendered="Window_ContentRendered">
+
+  <StackPanel>
+    <Label x:Uid="label" Margin="4" Width="50">This is a sample</Label>
+    <Button x:Uid="button" Margin="4" Width="50">This is a sample</Button>
+    <CheckBox x:Uid="checkBox" Margin="4" Width="50">This is a sample</CheckBox>
+    <RadioButton x:Uid="radioButton" Margin="4" Width="50">This is a sample</RadioButton>
+
+    <ComboBox x:Uid="comboBox" Margin="4" Width="50">
+      <ComboBoxItem IsSelected="True">This is a sample</ComboBoxItem>
+      <ComboBoxItem>One</ComboBoxItem>
+      <ComboBoxItem>Two</ComboBoxItem>
+      <ComboBoxItem>Three</ComboBoxItem>
+    </ComboBox>
+
+    <ListBox x:Uid="listBox1" Margin="4" Width="50">
+      <ListBoxItem IsSelected="True">This is a sample</ListBoxItem>
+      <ListBoxItem>One</ListBoxItem>
+      <ListBoxItem>Two</ListBoxItem>
+      <ListBoxItem>Three</ListBoxItem>
+    </ListBox>
+
+    <ListBox x:Uid="listBox2" Margin="4" Width="50">
+      <CheckBox IsChecked="True">This is a sample</CheckBox>
+      <CheckBox>One</CheckBox>
+      <CheckBox>Two</CheckBox>
+      <CheckBox>Three</CheckBox>
+    </ListBox>
+  </StackPanel>
+</Window>

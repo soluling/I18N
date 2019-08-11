@@ -1,0 +1,60 @@
+package NtVcl;
+
+{$R *.res}
+{$R *.otares}
+{$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
+{$ALIGN 8}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO OFF}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS ON}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION OFF}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO ON}
+{$SAFEDIVIDE OFF}
+{$STACKFRAMES ON}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST OFF}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $400000}
+{$DEFINE DEBUG}
+{$ENDIF IMPLICITBUILDING}
+{$IMPLICITBUILD ON}
+
+requires
+  rtl,
+  vclimg,
+  vcl,
+  dbrtl;
+
+contains
+  NtBase in 'NtBase.pas',
+  NtBaseTranslator in 'NtBaseTranslator.pas',
+  NtChecker in 'NtChecker.pas',
+  NtDatabaseUtils in 'NtDatabaseUtils.pas',
+  NtDialog in 'NtDialog.pas',
+  NtFontUtils in 'NtFontUtils.pas',
+  NtInitialLocale in 'NtInitialLocale.pas',
+  NtLanguageDlg in 'NtLanguageDlg.pas' {NtLanguageDialog},
+  NtListViewTranslator in 'NtListViewTranslator.pas',
+  NtLocalization in 'NtLocalization.pas',
+  NtMenu in 'NtMenu.pas',
+  NtOrdinal in 'NtOrdinal.pas',
+  NtPictureTranslator in 'NtPictureTranslator.pas',
+  NtPattern in 'NtPattern.pas',
+  NtQuotation in 'NtQuotation.pas',
+  NtResource in 'NtResource.pas',
+  NtTranslator in 'NtTranslator.pas',
+  NtTreeViewTranslator in 'NtTreeViewTranslator.pas',
+  NtWindows in 'NtWindows.pas',
+  NtPluralData in 'NtPluralData.pas',
+  NtNumber in 'NtNumber.pas';
+
+end.

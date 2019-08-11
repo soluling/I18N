@@ -1,0 +1,24 @@
+﻿<Window 
+  x:Uid="window1"
+  x:Class="MultiPlural.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Plural Sample" 
+  SizeToContent="WidthAndHeight"
+  MinWidth="400" 
+  Loaded="Window_Loaded">
+
+  <StackPanel x:Name="panel" Margin="8,0,8,8">
+    <Label x:Name="label0_0">dummy</Label>
+    <Label x:Name="label0_1">dummy</Label>
+    <Label x:Name="label1_1">dummy</Label>
+    <Label x:Name="label0_2">dummy</Label>
+    <Label x:Name="label1_2">dummy</Label>
+    <Label x:Name="label2_2">dummy</Label>
+    <Label x:Name="label1_3">dummy</Label>
+    <Label x:Name="label2_3">dummy</Label>
+    <Label x:Name="label1_10">dummy</Label>
+    <Label x:Name="label5_10">dummy</Label>
+    <CheckBox x:Name="useZeroCheck" x:Uid="useZeroCheck" Checked="useZeroCheck_Checked" Unchecked="useZeroCheck_Checked">_Use zero part</CheckBox>
+  </StackPanel>
+</Window>

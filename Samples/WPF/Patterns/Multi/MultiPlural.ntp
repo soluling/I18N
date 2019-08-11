@@ -1,0 +1,113 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F73D566A-D9F4-424A-8D52-6CABBE236B40" created="20180331T145435Z" lastmodified="20181207T024237Z" version="1.0.272">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Multi\MultiPlural.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net462"/>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="Language">
+          <value>en</value>
+          <lang id="fi" rw="0" time="20180331T150112Z">fi</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180331T192827Z">de</lang>
+        </row>
+        <row id="MessagePlural" changed="20181207T024127Z" class="TPatternRow">
+          <value startpattern="1">I have completed {0} {1}</value>
+          <pattern plural="pfOne" index="0">one</pattern>
+          <pattern plural="pfOther" index="0">{0}</pattern>
+          <pattern plural="pfOne" index="1">out of one step</pattern>
+          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
+          <lang id="fi" rw="0" time="20181207T024154Z">
+            <value startpattern="1">Olen suorittanut {0} {1}</value>
+            <pattern plural="pfOne" index="0">yhden</pattern>
+            <pattern plural="pfOther" index="0">{0}</pattern>
+            <pattern plural="pfOne" index="1">yhdesta vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">{0}:stä vaiheista</pattern>
+          </lang>
+        </row>
+        <row id="ZeroMessagePlural" changed="20181207T024127Z" class="TPatternRow">
+          <value startpattern="1">I have completed {0} {1}</value>
+          <pattern plural="pfZero" index="0">none</pattern>
+          <pattern plural="pfOne" index="0">one</pattern>
+          <pattern plural="pfOther" index="0">{0}</pattern>
+          <pattern plural="pfZero" index="1">out of none steps</pattern>
+          <pattern plural="pfOne" index="1">out of one step</pattern>
+          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
+          <lang id="fi" rw="0" time="20181207T024206Z">
+            <value startpattern="1">Olen suorittanut {0} {1}</value>
+            <pattern plural="pfZero" index="0">en yhtään</pattern>
+            <pattern plural="pfOne" index="0">yhden</pattern>
+            <pattern plural="pfOther" index="0">{0}</pattern>
+            <pattern plural="pfZero" index="1">ei yhdestäkään vaiheesta</pattern>
+            <pattern plural="pfOne" index="1">yhdestä vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">{0}:stä vaiheista</pattern>
+          </lang>
+        </row>
+      </node>
+    </node>
+    <node class="TXamlNode" name="Window1.xaml" type="Window">
+      <row id="Title">
+        <value>Plural Sample</value>
+        <lang id="fi" rw="0" time="20180331T145451Z">Monikkoesimerkki</lang>
+        <lang id="de" st="1" or="6" rw="0" time="20180331T192846Z">Plurales Muster</lang>
+      </row>
+      <item name="panel" type="StackPanel">
+        <item name="label0_0" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label0_1" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label1_1" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label0_2" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label1_2" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label2_2" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label1_3" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label2_3" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label1_10" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="label5_10" type="Label">
+          <row id="Content" excluded="2">dummy</row>
+        </item>
+        <item name="useZeroCheck" type="CheckBox" created="20180331T175555Z">
+          <row id="Content">
+            <value>_Use zero part</value>
+            <lang id="fi" rw="0" time="20180331T175608Z">_Käytä nolla-osaa</lang>
+            <lang id="de" st="1" or="6" rw="0" time="20180331T192847Z">Nullteil verwenden</lang>
+          </row>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iTXVsdGlQbHVyYWwuV2luZG93MSINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
+        LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJQbHVyYWwgU2FtcGxlIiANCiAgU2l6ZVRvQ29udGVudD0iV2lkdGhBbmRI
+        ZWlnaHQiDQogIE1pbldpZHRoPSI0MDAiIA0KICBMb2FkZWQ9IldpbmRvd19Mb2FkZWQiPg0KDQogIDxTdGFja1BhbmVsIHg6TmFt
+        ZT0icGFuZWwiIE1hcmdpbj0iOCwwLDgsOCI+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwwXzAiPmR1bW15PC9MYWJlbD4NCiAg
+        ICA8TGFiZWwgeDpOYW1lPSJsYWJlbDBfMSI+ZHVtbXk8L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMV8xIj5kdW1t
+        eTwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwwXzIiPmR1bW15PC9MYWJlbD4NCiAgICA8TGFiZWwgeDpOYW1lPSJs
+        YWJlbDFfMiI+ZHVtbXk8L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMl8yIj5kdW1teTwvTGFiZWw+DQogICAgPExh
+        YmVsIHg6TmFtZT0ibGFiZWwxXzMiPmR1bW15PC9MYWJlbD4NCiAgICA8TGFiZWwgeDpOYW1lPSJsYWJlbDJfMyI+ZHVtbXk8L0xh
+        YmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMV8xMCI+ZHVtbXk8L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVs
+        NV8xMCI+ZHVtbXk8L0xhYmVsPg0KICAgIDxDaGVja0JveCB4Ok5hbWU9InVzZVplcm9DaGVjayIgQ2hlY2tlZD0idXNlWmVyb0No
+        ZWNrX0NoZWNrZWQiIFVuY2hlY2tlZD0idXNlWmVyb0NoZWNrX0NoZWNrZWQiPl9Vc2UgemVybyBwYXJ0PC9DaGVja0JveD4NCiAg
+        PC9TdGFja1BhbmVsPg0KPC9XaW5kb3c+DQo=
+      </data>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

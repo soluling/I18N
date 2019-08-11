@@ -1,0 +1,40 @@
+﻿<Window 
+  x:Class="FileDialog.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="File Dialog Sample" 
+  SizeToContent="WidthAndHeight" 
+  MinWidth="400">
+  
+  <StackPanel x:Uid="panel">
+    <StackPanel x:Uid="openPanel1" Orientation="Horizontal" Margin="8,8,8,0">
+      <Button Name="openButton1" Width="75" Click="openButton1_Click">_Open</Button>
+      <Label>Filter as a single string</Label>
+    </StackPanel>
+
+    <StackPanel x:Uid="openPanel2" Orientation="Horizontal" Margin="8,8,8,0">
+      <Button Name="openButton2" Width="75" Click="openButton2_Click">O_pen</Button>
+      <Label>Composed filter with all files</Label>
+    </StackPanel>
+
+    <StackPanel x:Uid="openPanel3" Orientation="Horizontal" Margin="8,8,8,0">
+      <Button Name="openButton3" Width="75" Click="openButton3_Click">Op_en</Button>
+      <Label>Composed filter without all files</Label>
+    </StackPanel>
+
+    <StackPanel x:Uid="openPanel4" Orientation="Horizontal" Margin="8,8,8,8">
+      <Button Name="openButton4" Width="75" Click="openButton4_Click">Ope_n</Button>
+      <Label>Composed filter all files after XML files</Label>
+    </StackPanel>
+
+    <StackPanel x:Uid="savePanel1" Orientation="Horizontal" Margin="8,8,8,0">
+      <Button Name="saveButton1" Width="75" Click="saveButton1_Click">_Save</Button>
+      <Label>Filter as a single string</Label>
+    </StackPanel>
+
+    <StackPanel x:Uid="savePanel2" Orientation="Horizontal" Margin="8,8,8,8">
+      <Button Name="saveButton2" Width="75" Click="saveButton2_Click">S_ave</Button>
+      <Label>Composed filter</Label>
+    </StackPanel>
+  </StackPanel>
+</Window>

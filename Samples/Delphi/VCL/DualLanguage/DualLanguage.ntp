@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20151019T020417Z" lastmodified="20181023T181211Z" guid="1442EC51-6D33-4684-926B-DCC022C593F5" version="1.0.228">
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <node class="TDelphiSource" name="Win32\Release\DualLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DualLanguage\Win32\Release\DualLanguage.exe" original="en" guid="2E4232FF-409F-4BD0-A6EB-DF031BDF3E43">
+    <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" st="0" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" st="0" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TBASEDIALOG" type="TBaseDialog" resname="TBASEDIALOG" objectname="BaseDialog">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="ClientHeight">185</row>
+        <row id="ClientWidth">265</row>
+        <item name="OkButton" type="TButton">
+          <row id="Left">104</row>
+          <row id="Top">150</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>OK</value>
+            <lang id="fi" time="20151019T020436Z">OK</lang>
+            <lang id="ja" time="20160702T141755Z">わかりました</lang>
+          </row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">184</row>
+          <row id="Top">150</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>Cancel</value>
+            <lang id="fi" time="20151019T020436Z">Peru</lang>
+            <lang id="ja" time="20160702T141756Z">キャンセル</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMAtUQmFzZURpYWxvZwpCYXNlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcIYnNEaWFsb2cMQ2xpZW50SGVpZ2h0
+          A7kAC0NsaWVudFdpZHRoAwkBBUNvbG9yBwljbEJ0bkZhY2UMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xv
+          cgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVy
+          CAhQb3NpdGlvbgcQcG9NYWluRm9ybUNlbnRlcg1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9rQnV0dG9u
+          BExlZnQCaANUb3ADlgAFV2lkdGgCSwZIZWlnaHQCGQdDYXB0aW9uBgJPSwtNb2RhbFJlc3VsdAIBCFRhYk9yZGVyAgAAAAdUQnV0
+          dG9uDENhbmNlbEJ1dHRvbgRMZWZ0A7gAA1RvcAOWAAVXaWR0aAJLBkhlaWdodAIZBkNhbmNlbAkHQ2FwdGlvbgYGQ2FuY2VsC01v
+          ZGFsUmVzdWx0AgIIVGFiT3JkZXICAQAAAA==
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TCLIENTOPTIONSDIALOG" type="TClientOptionsDialog" resname="TCLIENTOPTIONSDIALOG" created="20160702T142634Z" objectname="ClientOptionsDialog" parent="TBaseDialog" flags="[ffInherited]">
+        <row id="Caption">
+          <value>Client Options</value>
+          <lang id="fi" time="20160702T142638Z">Asiakkaan asetukset</lang>
+          <lang id="ja" time="20160702T142730Z">クライアントのオプション</lang>
+        </row>
+        <item name="CheckBox1" type="TCheckBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">249</row>
+          <row id="Height">17</row>
+          <row id="Caption">
+            <value>&amp;Send emails</value>
+            <lang id="fi" time="20160702T142638Z">&amp;Lähetä sähköpostia</lang>
+            <lang id="ja" time="20160702T142730Z">メールを送る(&amp;S)</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMPEUVENsaWVudE9wdGlvbnNEaWFsb2cTQ2xpZW50T3B0aW9uc0RpYWxvZwdDYXB0aW9uBg5DbGllbnQgT3B0aW9ucw1QaXhl
+          bHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAlUQ2hlY2tCb3gJQ2hlY2tCb3gxBExlZnQCCANUb3ACCAVXaWR0aAP5AAZIZWlnaHQC
+          EQdDYXB0aW9uBgwmU2VuZCBlbWFpbHMIVGFiT3JkZXICAgAAAA==
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TMAINFORM" created="20160702T142634Z" objectname="MainForm">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">
+          <value>Dual Language Sample</value>
+          <lang id="fi" time="20160702T142638Z">Kahden kielen esimerkki</lang>
+          <lang id="ja" time="20160702T142730Z">デュアル言語のサンプル</lang>
+        </row>
+        <row id="ClientHeight">249</row>
+        <row id="ClientWidth">539</row>
+        <item name="MainLabel" type="TLabel">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">73</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>&amp;Main language:</value>
+            <lang id="fi" time="20160702T142638Z">&amp;Pääkieli:</lang>
+            <lang id="ja" time="20160702T142730Z">主な言語(&amp;M):</lang>
+          </row>
+        </item>
+        <item name="ClientLabel" type="TLabel">
+          <row id="Left">272</row>
+          <row id="Top">8</row>
+          <row id="Width">78</row>
+          <row id="Height">13</row>
+          <row id="Caption">
+            <value>&amp;Client language:</value>
+            <lang id="fi" time="20160702T142638Z">&amp;Asiakaskieli:</lang>
+            <lang id="ja" time="20160702T142730Z">クライアントの言語(&amp;C):</lang>
+          </row>
+        </item>
+        <item name="MainCombo" type="TComboBox">
+          <row id="Left">8</row>
+          <row id="Top">24</row>
+          <row id="Width">257</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="ClientCombo" type="TComboBox">
+          <row id="Left">272</row>
+          <row id="Top">24</row>
+          <row id="Width">257</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="MainGroup" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">48</row>
+          <row id="Width">257</row>
+          <row id="Height">161</row>
+          <row id="Caption">
+            <value> Main </value>
+            <lang id="fi" time="20160702T142638Z"> Pää </lang>
+            <lang id="ja" time="20160702T142731Z"> メイン </lang>
+          </row>
+          <item name="PlanLabel" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">16</row>
+            <row id="Width">24</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>&amp;Plan:</value>
+              <lang id="fi" time="20160702T142638Z">&amp;Tuote:</lang>
+              <lang id="ja" time="20160702T142731Z">計画(&amp;P):</lang>
+            </row>
+          </item>
+          <item name="PlanList" type="TListBox">
+            <row id="Left">8</row>
+            <row id="Top">32</row>
+            <row id="Width">241</row>
+            <row id="Height">97</row>
+            <row id="Items.Strings[0]">
+              <value>Saver</value>
+              <lang id="fi" time="20160702T142638Z">Säästö</lang>
+              <lang id="ja" time="20160702T142731Z">セーバー</lang>
+            </row>
+            <row id="Items.Strings[1]">
+              <value>Standard</value>
+              <lang id="fi" time="20160702T142638Z">Normaali</lang>
+              <lang id="ja" time="20160702T142732Z">標準</lang>
+            </row>
+            <row id="Items.Strings[2]">
+              <value>Premium</value>
+              <lang id="fi" time="20160702T142638Z">Korkealuokkainen</lang>
+              <lang id="ja" time="20160702T142732Z">プレミアム</lang>
+            </row>
+            <row id="Items.Strings[3]">
+              <value>Ultimate</value>
+              <lang id="fi" time="20160702T142638Z">Kaiken kattava</lang>
+              <lang id="ja" time="20160702T142732Z">究極</lang>
+            </row>
+          </item>
+          <item name="NowCheck" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">136</row>
+            <row id="Width">241</row>
+            <row id="Height">17</row>
+            <row id="Caption">
+              <value>&amp;Start today</value>
+              <lang id="fi" time="20160702T142638Z">&amp;Aloita tänään</lang>
+              <lang id="ja" time="20160702T142732Z">今日のスタート(&amp;S)</lang>
+            </row>
+          </item>
+        </item>
+        <item name="ClientGroup" type="TGroupBox">
+          <row id="Left">272</row>
+          <row id="Top">48</row>
+          <row id="Width">257</row>
+          <row id="Height">161</row>
+          <row id="Caption">
+            <value> Client </value>
+            <lang id="fi" time="20160702T142638Z"> Asiakas </lang>
+            <lang id="ja" time="20160702T142733Z"> クライアント </lang>
+          </row>
+          <item name="NameLabel" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">16</row>
+            <row id="Width">31</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>&amp;Name:</value>
+              <lang id="fi" time="20160702T142638Z">&amp;Nimi</lang>
+              <lang id="ja" time="20160702T142733Z">名(&amp;N):</lang>
+            </row>
+          </item>
+          <item name="AgeLabel" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">56</row>
+            <row id="Width">23</row>
+            <row id="Height">13</row>
+            <row id="Caption">
+              <value>&amp;Age:</value>
+              <lang id="fi" time="20160702T142638Z">&amp;Ikä:</lang>
+              <lang id="ja" time="20160702T142733Z">年齢(&amp;A):</lang>
+            </row>
+          </item>
+          <item name="NameEdit" type="TEdit">
+            <row id="Left">8</row>
+            <row id="Top">32</row>
+            <row id="Width">241</row>
+            <row id="Height">21</row>
+          </item>
+          <item name="AgeEdit" type="TEdit">
+            <row id="Left">8</row>
+            <row id="Top">72</row>
+            <row id="Width">57</row>
+            <row id="Height">21</row>
+            <row id="Text" locked="1">
+              <value>35</value>
+              <lang id="ja" time="20160702T142733Z">35</lang>
+            </row>
+          </item>
+          <item name="AgeUpDown" type="TUpDown">
+            <row id="Left">65</row>
+            <row id="Top">72</row>
+            <row id="Width">16</row>
+            <row id="Height">21</row>
+          </item>
+          <item name="NewCheck" type="TCheckBox">
+            <row id="Left">8</row>
+            <row id="Top">96</row>
+            <row id="Width">241</row>
+            <row id="Height">17</row>
+            <row id="Caption">
+              <value>&amp;New client</value>
+              <lang id="fi" time="20160702T142638Z">&amp;Uusi asiakas</lang>
+              <lang id="ja" time="20160702T142733Z">新しいクライアント(&amp;N)</lang>
+            </row>
+          </item>
+        </item>
+        <item name="MainButton" type="TButton">
+          <row id="Left">128</row>
+          <row id="Top">216</row>
+          <row id="Width">137</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>&amp;Main options...</value>
+            <lang id="fi" time="20160702T142638Z">&amp;Pääasetukset...</lang>
+            <lang id="ja" time="20160702T142733Z">主なオプション(&amp;M)...</lang>
+          </row>
+        </item>
+        <item name="ClientButton" type="TButton">
+          <row id="Left">392</row>
+          <row id="Top">216</row>
+          <row id="Width">137</row>
+          <row id="Height">25</row>
+          <row id="Caption">
+            <value>C&amp;lient options...</value>
+            <lang id="fi" time="20160702T142638Z">&amp;Asiakasasetukset...</lang>
+            <lang id="ja" time="20160702T142734Z">クライアントのオプション(&amp;L)...</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAIAA1RvcAIAB0NhcHRpb24GFER1YWwgTGFuZ3VhZ2UgU2FtcGxlDENsaWVudEhl
+          aWdodAP5AAtDbGllbnRXaWR0aAMbAgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQu
+          Q29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVP
+          cmRlcggIT25DcmVhdGUHCkZvcm1DcmVhdGUNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAGVExhYmVsCU1haW5MYWJlbARM
+          ZWZ0AggDVG9wAggFV2lkdGgCSQZIZWlnaHQCDQdDYXB0aW9uBg8mTWFpbiBsYW5ndWFnZToAAAZUTGFiZWwLQ2xpZW50TGFiZWwE
+          TGVmdAMQAQNUb3ACCAVXaWR0aAJOBkhlaWdodAINB0NhcHRpb24GESZDbGllbnQgbGFuZ3VhZ2U6AAAJVENvbWJvQm94CU1haW5D
+          b21ibwRMZWZ0AggDVG9wAhgFV2lkdGgDAQEGSGVpZ2h0AhUFU3R5bGUHDmNzRHJvcERvd25MaXN0BlNvcnRlZAkIVGFiT3JkZXIC
+          AAhPbkNoYW5nZQcPTWFpbkNvbWJvQ2hhbmdlAAAJVENvbWJvQm94C0NsaWVudENvbWJvBExlZnQDEAEDVG9wAhgFV2lkdGgDAQEG
+          SGVpZ2h0AhUFU3R5bGUHDmNzRHJvcERvd25MaXN0BlNvcnRlZAkIVGFiT3JkZXICAQhPbkNoYW5nZQcRQ2xpZW50Q29tYm9DaGFu
+          Z2UAAAlUR3JvdXBCb3gJTWFpbkdyb3VwBExlZnQCCANUb3ACMAVXaWR0aAMBAQZIZWlnaHQDoQAHQ2FwdGlvbgYGIE1haW4gCFRh
+          Yk9yZGVyAgIABlRMYWJlbAlQbGFuTGFiZWwETGVmdAIIA1RvcAIQBVdpZHRoAhgGSGVpZ2h0Ag0HQ2FwdGlvbgYGJlBsYW46DEZv
+          Y3VzQ29udHJvbAcIUGxhbkxpc3QAAAhUTGlzdEJveAhQbGFuTGlzdARMZWZ0AggDVG9wAiAFV2lkdGgD8QAGSGVpZ2h0AmEKSXRl
+          bUhlaWdodAINDUl0ZW1zLlN0cmluZ3MBBgVTYXZlcgYIU3RhbmRhcmQGB1ByZW1pdW0GCFVsdGltYXRlAAhUYWJPcmRlcgIAAAAJ
+          VENoZWNrQm94CE5vd0NoZWNrBExlZnQCCANUb3ADiAAFV2lkdGgD8QAGSGVpZ2h0AhEHQ2FwdGlvbgYMJlN0YXJ0IHRvZGF5CFRh
+          Yk9yZGVyAgEAAAAJVEdyb3VwQm94C0NsaWVudEdyb3VwBExlZnQDEAEDVG9wAjAFV2lkdGgDAQEGSGVpZ2h0A6EAB0NhcHRpb24G
+          CCBDbGllbnQgCFRhYk9yZGVyAgMABlRMYWJlbAlOYW1lTGFiZWwETGVmdAIIA1RvcAIQBVdpZHRoAh8GSGVpZ2h0Ag0HQ2FwdGlv
+          bgYGJk5hbWU6DEZvY3VzQ29udHJvbAcITmFtZUVkaXQAAAZUTGFiZWwIQWdlTGFiZWwETGVmdAIIA1RvcAI4BVdpZHRoAhcGSGVp
+          Z2h0Ag0HQ2FwdGlvbgYFJkFnZToAAAVURWRpdAhOYW1lRWRpdARMZWZ0AggDVG9wAiAFV2lkdGgD8QAGSGVpZ2h0AhUIVGFiT3Jk
+          ZXICAAAABVRFZGl0B0FnZUVkaXQETGVmdAIIA1RvcAJIBVdpZHRoAjkGSGVpZ2h0AhUIVGFiT3JkZXICAQRUZXh0BgIzNQAAB1RV
+          cERvd24JQWdlVXBEb3duBExlZnQCQQNUb3ACSAVXaWR0aAIQBkhlaWdodAIVCUFzc29jaWF0ZQcHQWdlRWRpdANNaW4CEgNNYXgD
+          ggAIUG9zaXRpb24CIwhUYWJPcmRlcgICAAAJVENoZWNrQm94CE5ld0NoZWNrBExlZnQCCANUb3ACYAVXaWR0aAPxAAZIZWlnaHQC
+          EQdDYXB0aW9uBgsmTmV3IGNsaWVudAhUYWJPcmRlcgIDAAAAB1RCdXR0b24KTWFpbkJ1dHRvbgRMZWZ0A4AAA1RvcAPYAAVXaWR0
+          aAOJAAZIZWlnaHQCGQdDYXB0aW9uBhAmTWFpbiBvcHRpb25zLi4uCFRhYk9yZGVyAgQHT25DbGljawcPTWFpbkJ1dHRvbkNsaWNr
+          AAAHVEJ1dHRvbgxDbGllbnRCdXR0b24ETGVmdAOIAQNUb3AD2AAFV2lkdGgDiQAGSGVpZ2h0AhkHQ2FwdGlvbgYSQyZsaWVudCBv
+          cHRpb25zLi4uCFRhYk9yZGVyAgUHT25DbGljawcRQ2xpZW50QnV0dG9uQ2xpY2sAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TMAINOPTIONSDIALOG" type="TMainOptionsDialog" resname="TMAINOPTIONSDIALOG" created="20160702T142634Z" objectname="MainOptionsDialog" parent="TBaseDialog" flags="[ffInherited]">
+        <row id="Caption">
+          <value>Main Options</value>
+          <lang id="fi" time="20160702T142638Z">Pääasetukset</lang>
+          <lang id="ja" time="20160702T142734Z">主なオプション</lang>
+        </row>
+        <item name="RadioGroup1" type="TRadioGroup">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">249</row>
+          <row id="Height">137</row>
+          <row id="Caption">
+            <value> Color </value>
+            <lang id="fi" time="20160702T142638Z"> Väri </lang>
+            <lang id="ja" time="20160702T142734Z"> 色 </lang>
+          </row>
+          <row id="Items.Strings[0]">
+            <value>Red</value>
+            <lang id="fi" time="20160702T142638Z">Punainen</lang>
+            <lang id="ja" time="20160702T142734Z">赤</lang>
+          </row>
+          <row id="Items.Strings[1]">
+            <value>Blue</value>
+            <lang id="fi" time="20160702T142638Z">Sininen</lang>
+            <lang id="ja" time="20160702T142734Z">ブルー</lang>
+          </row>
+          <row id="Items.Strings[2]">
+            <value>Green</value>
+            <lang id="fi" time="20160702T142638Z">Vihreä</lang>
+            <lang id="ja" time="20160702T142735Z">グリーン</lang>
+          </row>
+          <row id="Items.Strings[3]">
+            <value>Yellow</value>
+            <lang id="fi" time="20160702T142638Z">Keltainen</lang>
+            <lang id="ja" time="20160702T142735Z">黄色</lang>
+          </row>
+          <row id="Items.Strings[4]">
+            <value>Black</value>
+            <lang id="fi" time="20160702T142638Z">Musta</lang>
+            <lang id="ja" time="20160702T142735Z">ブラック</lang>
+          </row>
+          <row id="Items.Strings[5]">
+            <value>White</value>
+            <lang id="fi" time="20160702T142638Z">Valkoinen</lang>
+            <lang id="ja" time="20160702T142735Z">ホワイト</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMPESVE1haW5PcHRpb25zRGlhbG9nEU1haW5PcHRpb25zRGlhbG9nB0NhcHRpb24GDE1haW4gT3B0aW9ucw1QaXhlbHNQZXJJ
+          bmNoAmAKVGV4dEhlaWdodAINAAtUUmFkaW9Hcm91cAtSYWRpb0dyb3VwMQRMZWZ0AggDVG9wAggFV2lkdGgD+QAGSGVpZ2h0A4kA
+          B0NhcHRpb24GByBDb2xvciAJSXRlbUluZGV4AgANSXRlbXMuU3RyaW5ncwEGA1JlZAYEQmx1ZQYFR3JlZW4GBlllbGxvdwYFQmxh
+          Y2sGBVdoaXRlAAhUYWJPcmRlcgICAAAA
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
+    <configurations>
+      <configuration items="[oiLanguage]"/>
+    </configurations>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

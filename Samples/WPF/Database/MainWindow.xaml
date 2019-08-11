@@ -1,0 +1,45 @@
+﻿<Window 
+  x:Class="Database.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  Title="Sport" 
+  Height="350" 
+  Width="800" 
+  Loaded="Window_Loaded">
+
+  <DataGrid x:Name="grid" AlternatingRowBackground="#F0F0F0" AutoGenerateColumns="False" IsReadOnly="True">
+    <DataGrid.Columns>
+
+      <DataGridTemplateColumn x:Name="pictureColumn" Header="Picture">
+        <DataGridTemplateColumn.CellTemplate>
+          <DataTemplate x:Name="pictureTemplate">
+            <Image x:Name="pictureImage" Source="{Binding Picture}" />
+          </DataTemplate>
+        </DataGridTemplateColumn.CellTemplate>
+      </DataGridTemplateColumn>
+      
+      <DataGridTextColumn x:Name="nameColumn" Binding="{Binding Name}" Header="Name"/>
+      <DataGridTextColumn x:Name="fieldPlayersColumn" Binding="{Binding FieldPlayers}" Header="Field players"/>
+      <DataGridCheckBoxColumn x:Name="goalieColumn" Binding="{Binding Goalie}" Header="Goalie"/>
+
+      <DataGridTemplateColumn x:Name="descriptionColumn" Header="Description" Width="300">
+        <DataGridTemplateColumn.CellTemplate>
+          <DataTemplate x:Name="descriptionTemplate">
+            <TextBlock x:Name="descriptionText" Text="{Binding Description}" TextWrapping="WrapWithOverflow"/>
+          </DataTemplate>
+        </DataGridTemplateColumn.CellTemplate>
+      </DataGridTemplateColumn>
+
+      <DataGridTextColumn x:Name="originColumn" Binding="{Binding Origin}" Header="Origin"/>
+
+      <DataGridTemplateColumn x:Name="flagColumn" Header="Flag">
+        <DataGridTemplateColumn.CellTemplate>
+          <DataTemplate x:Name="flagTemplate">
+            <Image x:Name="flagImage" Source="{Binding OriginPicture}" />
+          </DataTemplate>
+        </DataGridTemplateColumn.CellTemplate>
+      </DataGridTemplateColumn>
+      
+    </DataGrid.Columns>
+  </DataGrid>
+</Window>

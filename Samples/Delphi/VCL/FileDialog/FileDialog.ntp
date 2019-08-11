@@ -1,0 +1,216 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20150115T030511Z" lastmodified="20181023T181423Z" guid="1FA7CB3D-1F54-4BFD-8185-B2FB24F6FDE3" version="1.0.228">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Release\FileDialog.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\FileDialog\Win32\Release\FileDialog.exe" original="en" guid="E1758FDD-8906-46E9-84A2-A73DA8233CCB" platforms="[ptWin32,ptWin64]">
+    <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" st="0" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" st="0" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left" created="20160702T155316Z">0</row>
+        <row id="Top" created="20160702T155316Z">0</row>
+        <row id="Caption" changed="20150116T231407Z">
+          <value>File Dialog Sample</value>
+          <lang id="fi" time="20150116T231641Z">Tiedostodialogiesimerkki</lang>
+        </row>
+        <row id="ClientHeight" created="20160702T155316Z">209</row>
+        <row id="ClientWidth" created="20160702T155316Z">418</row>
+        <item name="OpenLabel1" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">13</row>
+          <row id="Width" created="20160702T155316Z">107</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Filter as a single string</value>
+            <lang id="fi" time="20150116T231714Z">Suodin yhtenä merkkijonona</lang>
+          </row>
+        </item>
+        <item name="OpenLabel2" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">45</row>
+          <row id="Width" created="20160702T155316Z">133</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Composed filter with all files</value>
+            <lang id="fi" time="20150116T231811Z">Rakennettu suodin kaikkien tiedostojen kanssa</lang>
+          </row>
+        </item>
+        <item name="OpenLabel3" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">77</row>
+          <row id="Width" created="20160702T155316Z">149</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Composed filter without all files</value>
+            <lang id="fi" time="20150116T231815Z">Rakennettu suodin  ilman kaikkia tiedostoja</lang>
+          </row>
+        </item>
+        <item name="OpenLabel4" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">109</row>
+          <row id="Width" created="20160702T155316Z">181</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Composed filter all files after XML files</value>
+            <lang id="fi" time="20150116T231742Z">Rakennettu suodin, jossa kaikki tiedostot XML tiedostojen jälkeen</lang>
+          </row>
+        </item>
+        <item name="SaveLabel1" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">149</row>
+          <row id="Width" created="20160702T155316Z">107</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Filter as a single string</value>
+            <lang id="fi" time="20150116T231714Z">Suodin yhtenä merkkijonona</lang>
+          </row>
+        </item>
+        <item name="SaveLabel2" type="TLabel" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">88</row>
+          <row id="Top" created="20160702T155316Z">181</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">13</row>
+          <row id="Caption">
+            <value>Composed filter</value>
+            <lang id="fi" time="20160702T155721Z">Rakennettu suodin</lang>
+          </row>
+        </item>
+        <item name="OpenButton1" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">8</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>&amp;Open...</value>
+            <lang id="fi" time="20150116T231531Z">&amp;Avaa...</lang>
+          </row>
+        </item>
+        <item name="SaveButton1" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">144</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>&amp;Save...</value>
+            <lang id="fi" time="20150116T231537Z">&amp;Tallata...</lang>
+          </row>
+        </item>
+        <item name="OpenButton2" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">40</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>O&amp;pen...</value>
+            <lang id="fi" time="20150116T231544Z">A&amp;vaa...</lang>
+          </row>
+        </item>
+        <item name="OpenButton3" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">72</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>Op&amp;en...</value>
+            <lang id="fi" time="20150116T231548Z">Avaa...</lang>
+          </row>
+        </item>
+        <item name="OpenButton4" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">104</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>Ope&amp;n...</value>
+            <lang id="fi" time="20150116T231551Z">Avaa...</lang>
+          </row>
+        </item>
+        <item name="SaveButton2" type="TButton" created="20150116T231407Z">
+          <row id="Left" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">176</row>
+          <row id="Width" created="20160702T155316Z">75</row>
+          <row id="Height" created="20160702T155316Z">25</row>
+          <row id="Caption">
+            <value>S&amp;ave...</value>
+            <lang id="fi" time="20150116T231600Z">Ta&amp;lleta...</lang>
+          </row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GEkZpbGUgRGlhbG9nIFNhbXBsZQxDbGllbnRIZWlnaHQD0QAL
+          Q2xpZW50V2lkdGgDogEFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxj
+          bFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAOT2xkQ3JlYXRlT3JkZXIIDVBp
+          eGVsc1BlckluY2gCYApUZXh0SGVpZ2h0Ag0ABlRMYWJlbApPcGVuTGFiZWwxBExlZnQCWANUb3ACDQVXaWR0aAJrBkhlaWdodAIN
+          B0NhcHRpb24GGUZpbHRlciBhcyBhIHNpbmdsZSBzdHJpbmcAAAZUTGFiZWwKT3BlbkxhYmVsMgRMZWZ0AlgDVG9wAi0FV2lkdGgD
+          hQAGSGVpZ2h0Ag0HQ2FwdGlvbgYeQ29tcG9zZWQgZmlsdGVyIHdpdGggYWxsIGZpbGVzAAAGVExhYmVsCk9wZW5MYWJlbDMETGVm
+          dAJYA1RvcAJNBVdpZHRoA5UABkhlaWdodAINB0NhcHRpb24GIUNvbXBvc2VkIGZpbHRlciB3aXRob3V0IGFsbCBmaWxlcwAABlRM
+          YWJlbApPcGVuTGFiZWw0BExlZnQCWANUb3ACbQVXaWR0aAO1AAZIZWlnaHQCDQdDYXB0aW9uBilDb21wb3NlZCBmaWx0ZXIgYWxs
+          IGZpbGVzIGFmdGVyIFhNTCBmaWxlcwAABlRMYWJlbApTYXZlTGFiZWwxBExlZnQCWANUb3ADlQAFV2lkdGgCawZIZWlnaHQCDQdD
+          YXB0aW9uBhlGaWx0ZXIgYXMgYSBzaW5nbGUgc3RyaW5nAAAGVExhYmVsClNhdmVMYWJlbDIETGVmdAJYA1RvcAO1AAVXaWR0aAJL
+          BkhlaWdodAINB0NhcHRpb24GD0NvbXBvc2VkIGZpbHRlcgAAB1RCdXR0b24LT3BlbkJ1dHRvbjEETGVmdAIIA1RvcAIIBVdpZHRo
+          AksGSGVpZ2h0AhkHQ2FwdGlvbgYIJk9wZW4uLi4IVGFiT3JkZXICAAdPbkNsaWNrBxBPcGVuQnV0dG9uMUNsaWNrAAAHVEJ1dHRv
+          bgtTYXZlQnV0dG9uMQRMZWZ0AggDVG9wA5AABVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYIJlNhdmUuLi4IVGFiT3JkZXICBAdP
+          bkNsaWNrBxBTYXZlQnV0dG9uMUNsaWNrAAAHVEJ1dHRvbgtPcGVuQnV0dG9uMgRMZWZ0AggDVG9wAigFV2lkdGgCSwZIZWlnaHQC
+          GQdDYXB0aW9uBghPJnBlbi4uLghUYWJPcmRlcgIBB09uQ2xpY2sHEE9wZW5CdXR0b24yQ2xpY2sAAAdUQnV0dG9uC09wZW5CdXR0
+          b24zBExlZnQCCANUb3ACSAVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GCE9wJmVuLi4uCFRhYk9yZGVyAgIHT25DbGljawcQT3Bl
+          bkJ1dHRvbjNDbGljawAAB1RCdXR0b24LT3BlbkJ1dHRvbjQETGVmdAIIA1RvcAJoBVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYI
+          T3BlJm4uLi4IVGFiT3JkZXICAwdPbkNsaWNrBxBPcGVuQnV0dG9uNENsaWNrAAAHVEJ1dHRvbgtTYXZlQnV0dG9uMgRMZWZ0AggD
+          VG9wA7AABVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYIUyZhdmUuLi4IVGFiT3JkZXICBQdPbkNsaWNrBxBTYXZlQnV0dG9uMkNs
+          aWNrAAAA
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SAllFiles" created="20150116T231407Z">
+          <value>All files</value>
+          <lang id="fi" time="20150116T231504Z">Kaikki tiedostot</lang>
+        </row>
+        <row id="SAllSupportedFiles" created="20150116T231407Z">
+          <value>All supported files</value>
+          <lang id="fi" time="20150116T231500Z">Kaikki tuetut tiedostot</lang>
+        </row>
+        <row id="SXmlFiles" created="20150116T231407Z">
+          <value>XML files</value>
+          <lang id="fi" time="20150116T231452Z">XML-tiedostot</lang>
+        </row>
+        <row id="SIniFiles" created="20150116T231407Z">
+          <value>Ini files</value>
+          <lang id="fi" time="20150116T231444Z">Ini-tiedostot</lang>
+        </row>
+        <row id="SOpenFilter" changed="20150116T231407Z">
+          <value>All supported files (*.xml;*.ini)|*.xml;*.ini|XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini|All files (*.*)|*.*</value>
+          <prev>All supported files (*.xml;*.ini)|*.xml;*.ini|XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini|All files (*.*)|*.*</prev>
+          <lang id="fi" time="20160702T154525Z">Kaikki tuetut tiedostot (*.xml;*.ini)|*.xml;*.ini|XML tiedostot (*.xml)|*.xml|Ini tiedostot (*.ini)|*.ini|Kaikki tiedostot (*.*)|*.*</lang>
+        </row>
+        <row id="SSaveFilter">
+          <value>XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini</value>
+          <lang id="fi" time="20150117T170243Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.in</lang>
+        </row>
+        <row id="SOpenTitle">
+          <value>Open File</value>
+          <lang id="fi" time="20150116T231523Z">Avaa tiedosto</lang>
+        </row>
+        <row id="SSaveTitle">
+          <value>Save File</value>
+          <lang id="fi" time="20150116T231519Z">Talleta tiedosto</lang>
+        </row>
+        <row id="SSaveFile">
+          <value>SampleFile.xml</value>
+          <lang id="fi" time="20150116T231510Z">EsimerkkiTiedosto.xml</lang>
+        </row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+    </node>
+    <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
+    <platformfiles>
+      <item file="..\..\Win64\Release\FileDialog.exe" drcfile="..\..\Win64\Release\FileDialog.drc"/>
+    </platformfiles>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+  </delphirules>
+</project>

@@ -1,0 +1,122 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="216A5917-C5D1-44C7-88B4-6B181E7B7EA9" created="20180424T140047Z" lastmodified="20181207T025441Z" version="1.0.272">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TNetProjectSource" name="Sport.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Sport\Sport.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net40"/>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title">
+        <value>Sport</value>
+        <lang id="fi" rw="0" time="20180424T140148Z">Urheilulaji</lang>
+      </row>
+      <item name="panel" type="StackPanel">
+        <item name="listView" type="ListView">
+          <item name="View">
+            <item name="gridView" type="GridView">
+              <item name="nameColumn" type="GridViewColumn">
+                <row id="Header">
+                  <value>Name</value>
+                  <lang id="fi" rw="0" time="20180424T140150Z">Nimi</lang>
+                </row>
+              </item>
+              <item name="playersColumn" type="GridViewColumn">
+                <row id="Header">
+                  <value>Field players</value>
+                  <lang id="fi" rw="0" time="20180424T140156Z">Kenttäpelaajia</lang>
+                </row>
+              </item>
+              <item name="goalieColumn" type="GridViewColumn">
+                <row id="Header">
+                  <value>Goalie</value>
+                  <lang id="fi" rw="0" time="20180424T140200Z">Maalivahti</lang>
+                </row>
+              </item>
+              <item name="originColumn" type="GridViewColumn">
+                <row id="Header">
+                  <value>Origin</value>
+                  <lang id="fi" rw="0" time="20180424T141008Z">Alkuperä</lang>
+                </row>
+              </item>
+            </item>
+          </item>
+          <item name="ItemContainerStyle">
+            <item name="tooltipStyle" type="Style">
+              <item name="Style[ListViewItem]">
+                <item name="toolTipProperty" type="Setter"/>
+              </item>
+            </item>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iU3BvcnQuTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29m
+        dC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
+        bS93aW5meC8yMDA2L3hhbWwiDQogIERhdGFDb250ZXh0PSJ7QmluZGluZyBSZWxhdGl2ZVNvdXJjZT17UmVsYXRpdmVTb3VyY2Ug
+        U2VsZn19Ig0KICBUaXRsZT0iU3BvcnQiIA0KICBIZWlnaHQ9IjE1MCIgDQogIFdpZHRoPSI0MTAiPg0KDQogIDxTdGFja1BhbmVs
+        IHg6TmFtZT0icGFuZWwiPg0KICAgIDxMaXN0VmlldyB4Ok5hbWU9Imxpc3RWaWV3IiBJdGVtc1NvdXJjZT0ie0JpbmRpbmcgU3Bv
+        cnRDb2xsZWN0aW9ufSI+DQogICAgICA8TGlzdFZpZXcuVmlldz4NCiAgICAgICAgPEdyaWRWaWV3IHg6TmFtZT0iZ3JpZFZpZXci
+        Pg0KICAgICAgICAgIDxHcmlkVmlld0NvbHVtbiB4Ok5hbWU9Im5hbWVDb2x1bW4iIFdpZHRoPSIxMDAiIEhlYWRlcj0iTmFtZSIg
+        RGlzcGxheU1lbWJlckJpbmRpbmc9IntCaW5kaW5nIE5hbWV9IiAvPg0KICAgICAgICAgIDxHcmlkVmlld0NvbHVtbiB4Ok5hbWU9
+        InBsYXllcnNDb2x1bW4iIFdpZHRoPSIxMDAiIEhlYWRlcj0iRmllbGQgcGxheWVycyIgRGlzcGxheU1lbWJlckJpbmRpbmc9IntC
+        aW5kaW5nIEZpZWxkUGxheWVyc30iIC8+DQogICAgICAgICAgPEdyaWRWaWV3Q29sdW1uIHg6TmFtZT0iZ29hbGllQ29sdW1uIiBX
+        aWR0aD0iNzAiIEhlYWRlcj0iR29hbGllIiBEaXNwbGF5TWVtYmVyQmluZGluZz0ie0JpbmRpbmcgR29hbGllQXNTdHJpbmd9IiAv
+        Pg0KICAgICAgICAgIDxHcmlkVmlld0NvbHVtbiB4Ok5hbWU9Im9yaWdpbkNvbHVtbiIgV2lkdGg9IkF1dG8iIEhlYWRlcj0iT3Jp
+        Z2luIiBEaXNwbGF5TWVtYmVyQmluZGluZz0ie0JpbmRpbmcgT3JpZ2lufSIgLz4NCiAgICAgICAgPC9HcmlkVmlldz4NCiAgICAg
+        IDwvTGlzdFZpZXcuVmlldz4NCiAgICAgIA0KICAgICAgPExpc3RWaWV3Lkl0ZW1Db250YWluZXJTdHlsZT4NCiAgICAgICAgPFN0
+        eWxlIHg6TmFtZT0idG9vbHRpcFN0eWxlIiBUYXJnZXRUeXBlPSJ7eDpUeXBlIExpc3RWaWV3SXRlbX0iPg0KICAgICAgICAgIDxT
+        ZXR0ZXIgeDpOYW1lPSJ0b29sVGlwUHJvcGVydHkiIFByb3BlcnR5PSJUb29sVGlwIiBWYWx1ZT0ie0JpbmRpbmcgUGF0aD1EZXNj
+        cmlwdGlvbn0iIC8+DQogICAgICAgIDwvU3R5bGU+DQogICAgICA8L0xpc3RWaWV3Lkl0ZW1Db250YWluZXJTdHlsZT4NCiAgICA8
+        L0xpc3RWaWV3Pg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4=
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="BasketballDescription">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+        <row id="BasketballName">
+          <value>Basketball</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Koripallo</lang>
+        </row>
+        <row id="BasketballOrigin">
+          <value>United States</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Yhdysvallat</lang>
+        </row>
+        <row id="HockeyDescription">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="HockeyName">
+          <value>Ice hockey</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Jääkiekko</lang>
+        </row>
+        <row id="HockeyOrigin">
+          <value>Canada</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Kanada</lang>
+        </row>
+        <row id="No" created="20180424T141458Z">
+          <value>No</value>
+          <lang id="fi" rw="0" time="20180424T141503Z">ei</lang>
+        </row>
+        <row id="SoccerDescription">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="SoccerName">
+          <value>Soccer</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Jalkapallo</lang>
+        </row>
+        <row id="SoccerOrigin">
+          <value>England</value>
+          <lang id="fi" or="5" rw="0" time="20180424T140137Z">Englanti</lang>
+        </row>
+        <row id="Yes" created="20180424T141458Z">
+          <value>Yes</value>
+          <lang id="fi" rw="0" time="20180424T141507Z">kyllä</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+</project>

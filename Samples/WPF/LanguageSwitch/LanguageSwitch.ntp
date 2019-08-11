@@ -1,0 +1,96 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="EAB4E8C3-C4EB-4143-9547-D179CB768791" created="20181207T022423Z" lastmodified="20181207T022446Z" version="1.0.272">
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <node class="TNetProjectSource" name="LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WPF\LanguageSwitch\LanguageSwitch.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net462"/>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title">
+        <value>Sample</value>
+        <lang id="fi" or="4" rw="0" time="20181207T022423Z">Esimerkki</lang>
+        <lang id="ja" or="4" rw="0" time="20181207T022423Z">サンプル</lang>
+      </row>
+      <item name="grid" type="Grid">
+        <item name="RowDefinitions">
+          <item name="RowDefinition[0]" type="RowDefinition"/>
+          <item name="RowDefinition[1]" type="RowDefinition"/>
+        </item>
+        <item name="textPanel" type="DockPanel">
+          <item name="label1" type="Label">
+            <row id="Content">
+              <value>This is a sample</value>
+              <lang id="fi" or="4" rw="0" time="20181207T022423Z">Tämä on esimerkki</lang>
+              <lang id="ja" or="4" rw="0" time="20181207T022423Z">これはサンプルです</lang>
+            </row>
+          </item>
+          <item name="label2" type="Label">
+            <row id="Content" excluded="2">dummy</row>
+          </item>
+        </item>
+        <item name="buttonPanel" type="DockPanel">
+          <item name="languageComboBox" type="ComboBox">
+            <item name="bothItem" type="ComboBoxItem">
+              <row id="Content">
+                <value>Show native and English</value>
+                <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä alkuperäinen kieli ja englanti</lang>
+                <lang id="ja" or="4" rw="0" time="20181207T022423Z">ネイティブと英語を表示します。</lang>
+              </row>
+            </item>
+            <item name="nativeItem" type="ComboBoxItem">
+              <row id="Content">
+                <value>Show native only</value>
+                <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä vain alkuperäinen kieli</lang>
+                <lang id="ja" or="4" rw="0" time="20181207T022423Z">ネイティブのみを表示します。</lang>
+              </row>
+            </item>
+            <item name="englishItem" type="ComboBoxItem">
+              <row id="Content">
+                <value>Show English only</value>
+                <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä vain englanti</lang>
+                <lang id="ja" or="4" rw="0" time="20181207T022423Z">英語のみを表示します。</lang>
+              </row>
+            </item>
+          </item>
+          <item name="languageButton" type="Button">
+            <row id="Content">
+              <value>_Language...</value>
+              <lang id="fi" or="4" rw="0" time="20181207T022423Z">_Kieli...</lang>
+              <lang id="ja" or="4" rw="0" time="20181207T022423Z">言語(_L)...</lang>
+            </row>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iTGFuZ3VhZ2VTd2l0Y2guTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFz
+        Lm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWlj
+        cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJTYW1wbGUiIEhlaWdodD0iMTIwIiBXaWR0aD0iNDAwIiBMb2Fk
+        ZWQ9IldpbmRvd19Mb2FkZWQiPg0KDQogIDxHcmlkIHg6VWlkPSJncmlkIiBNYXJnaW49IjgiPg0KICAgIDxHcmlkLlJvd0RlZmlu
+        aXRpb25zPg0KICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSIqIiAvPg0KICAgICAgPFJvd0RlZmluaXRpb24gSGVpZ2h0PSIq
+        IiAvPg0KICAgIDwvR3JpZC5Sb3dEZWZpbml0aW9ucz4NCg0KICAgIDxEb2NrUGFuZWwgeDpVaWQ9InRleHRQYW5lbCIgR3JpZC5S
+        b3c9IjAiPg0KICAgICAgPExhYmVsIHg6VWlkPSJsYWJlbDEiIERvY2tQYW5lbC5Eb2NrPSJMZWZ0Ij5UaGlzIGlzIGEgc2FtcGxl
+        PC9MYWJlbD4NCiAgICAgIDxMYWJlbCBOYW1lPSJsYWJlbDIiIEhvcml6b250YWxBbGlnbm1lbnQ9IlJpZ2h0IiBEb2NrUGFuZWwu
+        RG9jaz0iUmlnaHQiPmR1bW15PC9MYWJlbD4NCiAgICA8L0RvY2tQYW5lbD4NCiAgICANCiAgICA8RG9ja1BhbmVsIHg6VWlkPSJi
+        dXR0b25QYW5lbCIgR3JpZC5Sb3c9IjEiPg0KICAgICAgPENvbWJvQm94IE5hbWU9Imxhbmd1YWdlQ29tYm9Cb3giIEhlaWdodD0i
+        MjUiPg0KICAgICAgICA8Q29tYm9Cb3hJdGVtIHg6VWlkPSJib3RoSXRlbSIgSXNTZWxlY3RlZD0iVHJ1ZSI+U2hvdyBuYXRpdmUg
+        YW5kIEVuZ2xpc2g8L0NvbWJvQm94SXRlbT4NCiAgICAgICAgPENvbWJvQm94SXRlbSB4OlVpZD0ibmF0aXZlSXRlbSI+U2hvdyBu
+        YXRpdmUgb25seTwvQ29tYm9Cb3hJdGVtPg0KICAgICAgICA8Q29tYm9Cb3hJdGVtIHg6VWlkPSJlbmdsaXNoSXRlbSI+U2hvdyBF
+        bmdsaXNoIG9ubHk8L0NvbWJvQm94SXRlbT4NCiAgICAgIDwvQ29tYm9Cb3g+DQogICAgICA8QnV0dG9uIE5hbWU9Imxhbmd1YWdl
+        QnV0dG9uIiBEb2NrUGFuZWwuRG9jaz0iUmlnaHQiIFdpZHRoPSIxMDAiIEhlaWdodD0iMjUiIEhvcml6b250YWxBbGlnbm1lbnQ9
+        IlJpZ2h0IiBDbGljaz0ibGFuZ3VhZ2VCdXR0b25fQ2xpY2siPl9MYW5ndWFnZS4uLjwvQnV0dG9uPg0KICAgIDwvRG9ja1BhbmVs
+        Pg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4NCg==
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="String1">
+          <value>This is another sample</value>
+          <lang id="fi" or="4" rw="0" time="20181207T022423Z">Tämä on toinen esimerkki</lang>
+          <lang id="ja" or="4" rw="0" time="20181207T022423Z">これは別のサンプル</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

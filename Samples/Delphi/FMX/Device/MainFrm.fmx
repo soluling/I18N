@@ -1,0 +1,42 @@
+object MainForm: TMainForm
+  Left = 0
+  Top = 0
+  Caption = 'Sample'
+  ClientHeight = 172
+  ClientWidth = 178
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Label1: TLabel
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Text = 'Label1'
+  end
+  inline BaseFrame1: TBaseFrame
+    Position.X = 8.000000000000000000
+    Position.Y = 32.000000000000000000
+    Size.Width = 162.000000000000000000
+    Size.Height = 39.000000000000000000
+    Size.PlatformDefault = False
+  end
+  inline InheritedFrame1: TInheritedFrame
+    Position.X = 8.000000000000000000
+    Position.Y = 80.000000000000000000
+    Size.Width = 162.000000000000000000
+    Size.Height = 78.000000000000000000
+    Size.PlatformDefault = False
+  end
+  object Button1: TButton
+    Position.X = 216.000000000000000000
+    Position.Y = 56.000000000000000000
+    TabOrder = 3
+    Text = 'Button1'
+  end
+  object CheckBox1: TCheckBox
+    Position.X = 208.000000000000000000
+    Position.Y = 88.000000000000000000
+    TabOrder = 4
+    Text = 'CheckBox1'
+  end
+end

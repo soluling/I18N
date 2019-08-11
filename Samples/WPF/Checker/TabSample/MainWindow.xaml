@@ -1,0 +1,22 @@
+﻿<Window 
+  x:Class="TabSample.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:TabSample"
+  mc:Ignorable="d"
+  Title="MainWindow" Height="350" Width="525" ContentRendered="Window_ContentRendered">
+  
+  <Grid x:Uid="grid">
+    <TabControl Name="tabControl">
+      <TabItem Name="tablItem1" Header="One">
+        <CheckBox Name="checkBox1" Width="50">This is a sample</CheckBox>
+      </TabItem>
+      
+      <TabItem Name="tablItem2" Header="Two">
+        <CheckBox Name="checkBox2" Width="100">This is another sample</CheckBox>
+      </TabItem>
+    </TabControl>
+  </Grid>
+</Window>

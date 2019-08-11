@@ -1,0 +1,108 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{147096A2-CD90-4358-953C-052F86066FD2}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="JsonResource\JsonResource.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TextResource\TextResource.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="XmlResource\XmlResource.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="StringTable\StringTable.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DatabaseRecord\DatabaseRecord.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="DatabaseGrid\DatabaseGrid.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="IniResource\IniResource.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="JsonResource">
+        <MSBuild Projects="JsonResource\JsonResource.dproj"/>
+    </Target>
+    <Target Name="JsonResource:Clean">
+        <MSBuild Projects="JsonResource\JsonResource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="JsonResource:Make">
+        <MSBuild Projects="JsonResource\JsonResource.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TextResource">
+        <MSBuild Projects="TextResource\TextResource.dproj"/>
+    </Target>
+    <Target Name="TextResource:Clean">
+        <MSBuild Projects="TextResource\TextResource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TextResource:Make">
+        <MSBuild Projects="TextResource\TextResource.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="XmlResource">
+        <MSBuild Projects="XmlResource\XmlResource.dproj"/>
+    </Target>
+    <Target Name="XmlResource:Clean">
+        <MSBuild Projects="XmlResource\XmlResource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="XmlResource:Make">
+        <MSBuild Projects="XmlResource\XmlResource.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="StringTable">
+        <MSBuild Projects="StringTable\StringTable.dproj"/>
+    </Target>
+    <Target Name="StringTable:Clean">
+        <MSBuild Projects="StringTable\StringTable.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="StringTable:Make">
+        <MSBuild Projects="StringTable\StringTable.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DatabaseRecord">
+        <MSBuild Projects="DatabaseRecord\DatabaseRecord.dproj"/>
+    </Target>
+    <Target Name="DatabaseRecord:Clean">
+        <MSBuild Projects="DatabaseRecord\DatabaseRecord.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DatabaseRecord:Make">
+        <MSBuild Projects="DatabaseRecord\DatabaseRecord.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="DatabaseGrid">
+        <MSBuild Projects="DatabaseGrid\DatabaseGrid.dproj"/>
+    </Target>
+    <Target Name="DatabaseGrid:Clean">
+        <MSBuild Projects="DatabaseGrid\DatabaseGrid.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="DatabaseGrid:Make">
+        <MSBuild Projects="DatabaseGrid\DatabaseGrid.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="IniResource">
+        <MSBuild Projects="IniResource\IniResource.dproj"/>
+    </Target>
+    <Target Name="IniResource:Clean">
+        <MSBuild Projects="IniResource\IniResource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="IniResource:Make">
+        <MSBuild Projects="IniResource\IniResource.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="JsonResource;TextResource;XmlResource;StringTable;DatabaseRecord;DatabaseGrid;IniResource"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="JsonResource:Clean;TextResource:Clean;XmlResource:Clean;StringTable:Clean;DatabaseRecord:Clean;DatabaseGrid:Clean;IniResource:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="JsonResource:Make;TextResource:Make;XmlResource:Make;StringTable:Make;DatabaseRecord:Make;DatabaseGrid:Make;IniResource:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

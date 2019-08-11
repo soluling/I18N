@@ -1,0 +1,14 @@
+﻿<Window 
+  x:Class="Font.Window1"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  FontFamily="Broadway"
+  FontSize="16"
+  Title="Font Sample">
+
+  <StackPanel x:Name="panel">
+    <Label x:Name="label1">One</Label>
+    <Label x:Name="label2" FontSize="30">Two</Label>
+    <Label x:Name="label3" FontFamily="Courier New" FontSize="20">Three</Label>
+  </StackPanel>
+</Window>

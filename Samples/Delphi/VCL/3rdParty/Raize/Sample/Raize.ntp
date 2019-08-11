@@ -1,0 +1,1073 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20151019T134844Z" lastmodified="20170517T015603Z">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Debug\Raize.exe" original="en">
+    <node class="TWindowsBitmapFolder" name="Bitmap" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsCursorFolder" name="Cursor" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsDialogFolder" name="Dialog" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" created="20170517T015544Z" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" created="20170517T015544Z" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">Raize Sample</row>
+        <row id="ClientHeight" changed="20151019T143613Z">560</row>
+        <row id="ClientWidth" changed="20151019T143613Z">1096</row>
+        <item name="RzVersionInfoStatus1" type="TRzVersionInfoStatus" created="20151019T143613Z">
+          <row id="Left">224</row>
+          <row id="Top">488</row>
+        </item>
+        <item name="RzCheckTree1" type="TRzCheckTree">
+          <row id="Left" changed="20151019T143613Z">88</row>
+          <row id="Top" changed="20151019T140645Z">32</row>
+          <row id="Width" changed="20151019T143613Z">129</row>
+          <row id="Height" changed="20151019T143613Z">57</row>
+          <row id="Items[0].Text" created="20151019T140032Z">One</row>
+          <row id="Items[0].Items[0].Text" created="20151019T140032Z">Two</row>
+          <row id="Items[1].Text" created="20151019T140032Z">Three</row>
+        </item>
+        <item name="RzTreeView1" type="TRzTreeView">
+          <row id="Left" changed="20151019T143613Z">224</row>
+          <row id="Top" changed="20151019T140645Z">32</row>
+          <row id="Width" changed="20151019T143613Z">129</row>
+          <row id="Height" changed="20151019T143613Z">57</row>
+          <row id="Items[0].Text" created="20151019T135950Z">One</row>
+          <row id="Items[0].Items[0].Text" created="20151019T135950Z">Two</row>
+          <row id="Items[1].Text" created="20151019T135950Z">Three</row>
+        </item>
+        <item name="RzListView1" type="TRzListView" created="20151019T140645Z">
+          <row id="Left" changed="20151019T143613Z">88</row>
+          <row id="Top" changed="20151019T143613Z">96</row>
+          <row id="Width" changed="20151019T143613Z">129</row>
+          <row id="Height" changed="20151019T143613Z">73</row>
+          <row id="Columns[0].Caption">One</row>
+          <row id="Columns[1].Caption">Two</row>
+          <row id="Items[0]">One</row>
+          <row id="Items[0].Items[0]">Three</row>
+          <row id="Items[1]">Two</row>
+        </item>
+        <item name="RzPanel1" type="TRzPanel" created="20151019T143613Z">
+          <row id="Left">224</row>
+          <row id="Top">96</row>
+          <row id="Width">129</row>
+          <row id="Height">73</row>
+          <item name="RzSplitter1" type="TRzSplitter">
+            <row id="Left">57</row>
+            <row id="Top">16</row>
+            <row id="Width">15</row>
+            <row id="Height">41</row>
+          </item>
+        </item>
+        <item name="RzGroupBar1" type="TRzGroupBar" created="20151019T143613Z">
+          <row id="Left">0</row>
+          <row id="Top">29</row>
+          <row id="Width">81</row>
+          <row id="Height">512</row>
+          <item name="RzGroup1" type="TRzGroup">
+            <row id="Items[0].Caption">Item1</row>
+            <row id="Items[1].Caption">Item2</row>
+            <row id="Caption">One</row>
+          </item>
+          <item name="RzGroup2" type="TRzGroup">
+            <row id="Items[0].Caption">Item1</row>
+            <row id="Items[1].Caption">Item2</row>
+            <row id="Caption">Two</row>
+          </item>
+        </item>
+        <item name="RzToolbar1" type="TRzToolbar" created="20151019T143613Z">
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <row id="Width">1096</row>
+          <row id="Height">29</row>
+          <item name="RzToolButton2" type="TRzToolButton">
+            <row id="Left">4</row>
+            <row id="Top">2</row>
+          </item>
+        </item>
+        <item name="RzPageControl1" type="TRzPageControl" created="20151019T143613Z">
+          <row id="Left">360</row>
+          <row id="Top">32</row>
+          <row id="Width">265</row>
+          <row id="Height">113</row>
+          <item name="TabSheet1" type="TRzTabSheet">
+            <row id="Caption">TabSheet1</row>
+          </item>
+          <item name="TabSheet2" type="TRzTabSheet">
+            <row id="Caption">TabSheet2</row>
+          </item>
+        </item>
+        <item name="RzTabControl1" type="TRzTabControl" created="20151019T143613Z">
+          <row id="Left">360</row>
+          <row id="Top">152</row>
+          <row id="Width">137</row>
+          <row id="Height">33</row>
+          <row id="Tabs[0].Caption">Tab1</row>
+          <row id="Tabs[1].Caption">Tab2</row>
+          <row id="Tabs[2].Caption">Tab3</row>
+        </item>
+        <item name="RzStatusBar1" type="TRzStatusBar" created="20151019T143613Z">
+          <row id="Left">0</row>
+          <row id="Top">541</row>
+          <row id="Width">1096</row>
+          <row id="Height">19</row>
+          <item name="RzStatusPane1" type="TRzStatusPane">
+            <row id="Left">0</row>
+            <row id="Top">0</row>
+            <row id="Height">19</row>
+          </item>
+          <item name="RzGlyphStatus1" type="TRzGlyphStatus">
+            <row id="Left">100</row>
+            <row id="Top">0</row>
+            <row id="Height">19</row>
+          </item>
+        </item>
+        <item name="RzEdit1" type="TRzEdit" created="20151019T143613Z">
+          <row id="Left">632</row>
+          <row id="Top">32</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzMaskEdit1" type="TRzMaskEdit" created="20151019T143613Z">
+          <row id="Left">632</row>
+          <row id="Top">56</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzButtonEdit1" type="TRzButtonEdit" created="20151019T143613Z">
+          <row id="Left">632</row>
+          <row id="Top">80</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDateTimeEdit1" type="TRzDateTimeEdit" created="20151019T143613Z">
+          <row id="Left">632</row>
+          <row id="Top">104</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzNumericEdit1" type="TRzNumericEdit" created="20151019T143613Z">
+          <row id="Left">632</row>
+          <row id="Top">128</row>
+          <row id="Width">65</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzSpinEdit1" type="TRzSpinEdit" created="20151019T143613Z">
+          <row id="Left">704</row>
+          <row id="Top">128</row>
+          <row id="Width">47</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzColorEdit1" type="TRzColorEdit" created="20151019T143613Z">
+          <row id="Left">760</row>
+          <row id="Top">32</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzExpandEdit1" type="TRzExpandEdit" created="20151019T143613Z">
+          <row id="Left">760</row>
+          <row id="Top">56</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzHotKeyEdit1" type="TRzHotKeyEdit" created="20151019T143613Z">
+          <row id="Left">760</row>
+          <row id="Top">80</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzMemo1" type="TRzMemo" created="20151019T143613Z">
+          <row id="Left">888</row>
+          <row id="Top">32</row>
+          <row id="Width">201</row>
+          <row id="Height">49</row>
+        </item>
+        <item name="RzRichEdit1" type="TRzRichEdit" created="20151019T143613Z">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">888</row>
+          <row id="Top">88</row>
+          <row id="Width">201</row>
+          <row id="Height">57</row>
+        </item>
+        <item name="RzSpinner1" type="TRzSpinner" created="20151019T143613Z">
+          <row id="Left">760</row>
+          <row id="Top">104</row>
+        </item>
+        <item name="RzTrackBar1" type="TRzTrackBar" created="20151019T143613Z">
+          <row id="Left">888</row>
+          <row id="Top">152</row>
+        </item>
+        <item name="RzDateTimePicker1" type="TRzDateTimePicker" created="20151019T143613Z">
+          <row id="Left">888</row>
+          <row id="Top">192</row>
+          <row id="Width">186</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzListBox1" type="TRzListBox" created="20151019T143613Z">
+          <row id="Left">88</row>
+          <row id="Top">176</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+          <row id="Items.Strings[0]">One</row>
+          <row id="Items.Strings[1]">Two</row>
+          <row id="Items.Strings[2]">Three</row>
+        </item>
+        <item name="RzRankListBox1" type="TRzRankListBox" created="20151019T143613Z">
+          <row id="Left">88</row>
+          <row id="Top">280</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+          <row id="Items.Strings[0]">One</row>
+          <row id="Items.Strings[1]">Two</row>
+          <row id="Items.Strings[2]">Three</row>
+        </item>
+        <item name="RzTabbedListBox1" type="TRzTabbedListBox" created="20151019T143613Z">
+          <row id="Left">88</row>
+          <row id="Top">384</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+          <row id="Items.Strings[0]">One</row>
+          <row id="Items.Strings[1]">Two</row>
+          <row id="Items.Strings[2]">Three</row>
+        </item>
+        <item name="RzCheckList1" type="TRzCheckList" created="20151019T143613Z">
+          <row id="Left">216</row>
+          <row id="Top">176</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+          <row id="Items.Strings[0]">One</row>
+          <row id="Items.Strings[1]">Two</row>
+        </item>
+        <item name="ImageList1" type="TImageList" created="20151019T143613Z">
+          <row id="Left">136</row>
+          <row id="Top">496</row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDFJhaXplIFNhbXBsZQxDbGllbnRIZWlnaHQDMAILQ2xpZW50
+          V2lkdGgDSAQFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRv
+          d1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAOT2xkQ3JlYXRlT3JkZXIIDVBpeGVsc1Bl
+          ckluY2gCYApUZXh0SGVpZ2h0Ag0AFFRSelZlcnNpb25JbmZvU3RhdHVzFFJ6VmVyc2lvbkluZm9TdGF0dXMxBExlZnQD4AADVG9w
+          A+gBBUZpZWxkBxF2aWZQcm9kdWN0VmVyc2lvbgAADFRSekNoZWNrVHJlZQxSekNoZWNrVHJlZTEETGVmdAJYA1RvcAIgBVdpZHRo
+          A4EABkhlaWdodAI5BkluZGVudAITElNlbGVjdGlvblBlbi5Db2xvcgcLY2xCdG5TaGFkb3cLU3RhdGVJbWFnZXMHGFJ6Q2hlY2tU
+          cmVlMS5DaGVja0ltYWdlcwhUYWJPcmRlcgIADkl0ZW1zLk5vZGVEYXRhCoEAAAADAgAAACQAAAAAAAAAAAAAAAEAAAD/////AAAA
+          AAAAAAABAAAAAQNPAG4AZQAkAAAAAAAAAAAAAAABAAAA/////wAAAAAAAAAAAAAAAAEDVAB3AG8AKAAAAAAAAAAAAAAAAQAAAP//
+          //8AAAAAAAAAAAAAAAABBVQAaAByAGUAZQAAAAtUUnpUcmVlVmlldwtSelRyZWVWaWV3MQRMZWZ0A+AAA1RvcAIgBVdpZHRoA4EA
+          BkhlaWdodAI5ElNlbGVjdGlvblBlbi5Db2xvcgcLY2xCdG5TaGFkb3cGSW5kZW50AhMIVGFiT3JkZXICAQ5JdGVtcy5Ob2RlRGF0
+          YQqBAAAAAwIAAAAkAAAAAAAAAAAAAAD//////////wAAAAAAAAAAAQAAAAEDTwBuAGUAJAAAAAAAAAAAAAAA//////////8AAAAA
+          AAAAAAAAAAABA1QAdwBvACgAAAAAAAAAAAAAAP//////////AAAAAAAAAAAAAAAAAQVUAGgAcgBlAGUAAAALVFJ6TGlzdFZpZXcL
+          UnpMaXN0VmlldzEETGVmdAJYA1RvcAJgBVdpZHRoA4EABkhlaWdodAJJB0NvbHVtbnMOAQdDYXB0aW9uBgNPbmUAAQdDYXB0aW9u
+          BgNUd28FV2lkdGgCOgAADkl0ZW1zLkl0ZW1EYXRhClgAAAAFUQAAAAIAAAAAAAAA//////////8BAAAA/////wAAAAADTwBuAGUA
+          BVQAaAByAGUAZQCIQOEdAAAAAP//////////AAAAAP////8AAAAAA1QAdwBvAP//CFRhYk9yZGVyAgIJVmlld1N0eWxlBwh2c1Jl
+          cG9ydAAACFRSelBhbmVsCFJ6UGFuZWwxBExlZnQD4AADVG9wAmAFV2lkdGgDgQAGSGVpZ2h0AkkIVGFiT3JkZXICAwALVFJ6U3Bs
+          aXR0ZXILUnpTcGxpdHRlcjEETGVmdAI5A1RvcAIQBVdpZHRoAg8GSGVpZ2h0AikIUG9zaXRpb24CAAdQZXJjZW50AgAIVGFiT3Jk
+          ZXICAAdCYXJTaXplAQIAAgACBAIpABFVcHBlckxlZnRDb250cm9scwEAEkxvd2VyUmlnaHRDb250cm9scwEAAAAAC1RSekdyb3Vw
+          QmFyC1J6R3JvdXBCYXIxBExlZnQCAANUb3ACHQVXaWR0aAJRBkhlaWdodAMAAhJHcmFkaWVudENvbG9yU3RhcnQHCWNsQnRuRmFj
+          ZRFHcmFkaWVudENvbG9yU3RvcAcLY2xCdG5TaGFkb3cPR3JvdXBCb3JkZXJTaXplAggFQ29sb3IHC2NsQnRuU2hhZG93C1BhcmVu
+          dENvbG9yCAhUYWJPcmRlcgIEAAhUUnpHcm91cAhSekdyb3VwMQVJdGVtcw4BB0NhcHRpb24GBUl0ZW0xAAEHQ2FwdGlvbgYFSXRl
+          bTIAAAZPcGVuZWQJDE9wZW5lZEhlaWdodAJDDkRpdmlkZXJWaXNpYmxlCAdDYXB0aW9uBgNPbmULUGFyZW50Q29sb3IIAAAIVFJ6
+          R3JvdXAIUnpHcm91cDIFSXRlbXMOAQdDYXB0aW9uBgVJdGVtMQABB0NhcHRpb24GBUl0ZW0yAAAGT3BlbmVkCQxPcGVuZWRIZWln
+          aHQCQw5EaXZpZGVyVmlzaWJsZQgHQ2FwdGlvbgYDVHdvC1BhcmVudENvbG9yCAAAAApUUnpUb29sYmFyClJ6VG9vbGJhcjEETGVm
+          dAIAA1RvcAIABVdpZHRoA0gEBkhlaWdodAIdC0JvcmRlcklubmVyBwZmc05vbmULQm9yZGVyT3V0ZXIHCGZzR3Jvb3ZlC0JvcmRl
+          clNpZGVzCwVzZFRvcAALQm9yZGVyV2lkdGgCAAhUYWJPcmRlcgIFD1Rvb2xiYXJDb250cm9scwEHDVJ6VG9vbEJ1dHRvbjIAAA1U
+          UnpUb29sQnV0dG9uDVJ6VG9vbEJ1dHRvbjIETGVmdAIEA1RvcAICCkltYWdlSW5kZXgCAwZJbWFnZXMHCkltYWdlTGlzdDEAAAAO
+          VFJ6UGFnZUNvbnRyb2wOUnpQYWdlQ29udHJvbDEETGVmdANoAQNUb3ACIAVXaWR0aAMJAQZIZWlnaHQCcQRIaW50EgAAAAAKQWN0
+          aXZlUGFnZQcJVGFiU2hlZXQyCFRhYkluZGV4AgEIVGFiT3JkZXICBg5GaXhlZERpbWVuc2lvbgITAAtUUnpUYWJTaGVldAlUYWJT
+          aGVldDEHQ2FwdGlvbgYJVGFiU2hlZXQxDEV4cGxpY2l0TGVmdAIAC0V4cGxpY2l0VG9wAgANRXhwbGljaXRXaWR0aAIADkV4cGxp
+          Y2l0SGVpZ2h0AgAAAAtUUnpUYWJTaGVldAlUYWJTaGVldDIHQ2FwdGlvbgYJVGFiU2hlZXQyAAAADVRSelRhYkNvbnRyb2wNUnpU
+          YWJDb250cm9sMQRMZWZ0A2gBA1RvcAOYAAVXaWR0aAOJAAZIZWlnaHQCIQRIaW50EgAAAAAIVGFiSW5kZXgCAAhUYWJPcmRlcgIH
+          BFRhYnMOAQdDYXB0aW9uBgRUYWIxAAEHQ2FwdGlvbgYEVGFiMgABB0NhcHRpb24GBFRhYjMAAA5GaXhlZERpbWVuc2lvbgITAAAM
+          VFJ6U3RhdHVzQmFyDFJ6U3RhdHVzQmFyMQRMZWZ0AgADVG9wAx0CBVdpZHRoA0gEBkhlaWdodAITC0JvcmRlcklubmVyBwZmc05v
+          bmULQm9yZGVyT3V0ZXIHBmZzTm9uZQtCb3JkZXJTaWRlcwsGc2RMZWZ0BXNkVG9wB3NkUmlnaHQIc2RCb3R0b20AC0JvcmRlcldp
+          ZHRoAgAIVGFiT3JkZXICCAANVFJ6U3RhdHVzUGFuZQ1SelN0YXR1c1BhbmUxBExlZnQCAANUb3ACAAZIZWlnaHQCEwVBbGlnbgcG
+          YWxMZWZ0B0NhcHRpb24SAAAAAAxFeHBsaWNpdExlZnQDSAQORXhwbGljaXRIZWlnaHQCFAAADlRSekdseXBoU3RhdHVzDlJ6R2x5
+          cGhTdGF0dXMxBExlZnQCZANUb3ACAAZIZWlnaHQCEwVBbGlnbgcGYWxMZWZ0B0NhcHRpb24SAAAAAAxFeHBsaWNpdExlZnQDSAQO
+          RXhwbGljaXRIZWlnaHQCFAAAAAdUUnpFZGl0B1J6RWRpdDEETGVmdAN4AgNUb3ACIAVXaWR0aAJ5BkhlaWdodAIVBFRleHQSAAAA
+          AAhUYWJPcmRlcgIJAAALVFJ6TWFza0VkaXQLUnpNYXNrRWRpdDEETGVmdAN4AgNUb3ACOAVXaWR0aAJ5BkhlaWdodAIVCFRhYk9y
+          ZGVyAgoEVGV4dBIAAAAAAAANVFJ6QnV0dG9uRWRpdA1SekJ1dHRvbkVkaXQxBExlZnQDeAIDVG9wAlAFV2lkdGgCeQZIZWlnaHQC
+          FQRUZXh0EgAAAAAIVGFiT3JkZXICCwtBbHRCdG5XaWR0aAIPC0J1dHRvbldpZHRoAg8AAA9UUnpEYXRlVGltZUVkaXQPUnpEYXRl
+          VGltZUVkaXQxBExlZnQDeAIDVG9wAmgFV2lkdGgCeQZIZWlnaHQCFQhFZGl0VHlwZQcGZXREYXRlCFRhYk9yZGVyAgwAAA5UUnpO
+          dW1lcmljRWRpdA5Sek51bWVyaWNFZGl0MQRMZWZ0A3gCA1RvcAOAAAVXaWR0aAJBBkhlaWdodAIVCFRhYk9yZGVyAg0NRGlzcGxh
+          eUZvcm1hdAYHLDA7KCwwKQAAC1RSelNwaW5FZGl0C1J6U3BpbkVkaXQxBExlZnQDwAIDVG9wA4AABVdpZHRoAi8GSGVpZ2h0AhUD
+          TWF4BQAAAAAAAADIBUAIVGFiT3JkZXICDgAADFRSekNvbG9yRWRpdAxSekNvbG9yRWRpdDEETGVmdAP4AgNUb3ACIAVXaWR0aAJ5
+          BkhlaWdodAIVCFRhYk9yZGVyAg8AAA1UUnpFeHBhbmRFZGl0DVJ6RXhwYW5kRWRpdDEETGVmdAP4AgNUb3ACOAVXaWR0aAJ5Bkhl
+          aWdodAIVBFRleHQSAAAAAAhUYWJPcmRlcgIQDUV4cGFuZGVkV2lkdGgCAAAADVRSekhvdEtleUVkaXQNUnpIb3RLZXlFZGl0MQRM
+          ZWZ0A/gCA1RvcAJQBVdpZHRoAnkGSGVpZ2h0AhUGSG90S2V5BEGAAAAIVGFiT3JkZXICEQAAB1RSek1lbW8HUnpNZW1vMQRMZWZ0
+          A3gDA1RvcAIgBVdpZHRoA8kABkhlaWdodAIxCFRhYk9yZGVyAhIAAAtUUnpSaWNoRWRpdAtSelJpY2hFZGl0MQRMZWZ0A3gDA1Rv
+          cAJYBVdpZHRoA8kABkhlaWdodAI5DEZvbnQuQ2hhcnNldAcMQU5TSV9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtG
+          b250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAApQYXJlbnRGb250CAhUYWJPcmRlcgITBFpvb20CZAAA
+          ClRSelNwaW5uZXIKUnpTcGlubmVyMQRMZWZ0A/gCA1RvcAJoCFRhYk9yZGVyAhQAAAtUUnpUcmFja0JhcgtSelRyYWNrQmFyMQRM
+          ZWZ0A3gDA1RvcAOYAAhQb3NpdGlvbgIACFRhYk9yZGVyAhUAABFUUnpEYXRlVGltZVBpY2tlchFSekRhdGVUaW1lUGlja2VyMQRM
+          ZWZ0A3gDA1RvcAPAAAVXaWR0aAO6AAZIZWlnaHQCFQREYXRlBSI3WVWSUDilDkAGRm9ybWF0EgAAAAAEVGltZQUiN1lVklA4pQ5A
+          CFRhYk9yZGVyAhYAAApUUnpMaXN0Qm94ClJ6TGlzdEJveDEETGVmdAJYA1RvcAOwAAVXaWR0aAJ5BkhlaWdodAJhCkl0ZW1IZWln
+          aHQCDQ1JdGVtcy5TdHJpbmdzAQYDT25lBgNUd28GBVRocmVlAAhUYWJPcmRlcgIXAAAOVFJ6UmFua0xpc3RCb3gOUnpSYW5rTGlz
+          dEJveDEETGVmdAJYA1RvcAMYAQVXaWR0aAJ5BkhlaWdodAJhCkl0ZW1IZWlnaHQCDQ1JdGVtcy5TdHJpbmdzAQYDT25lBgNUd28G
+          BVRocmVlAAhUYWJPcmRlcgIYAAAQVFJ6VGFiYmVkTGlzdEJveBBSelRhYmJlZExpc3RCb3gxBExlZnQCWANUb3ADgAEFV2lkdGgC
+          eQZIZWlnaHQCYQpJdGVtSGVpZ2h0Ag0NSXRlbXMuU3RyaW5ncwEGA09uZQYDVHdvBgVUaHJlZQAIVGFiT3JkZXICGQAADFRSekNo
+          ZWNrTGlzdAxSekNoZWNrTGlzdDEETGVmdAPYAANUb3ADsAAFV2lkdGgCeQZIZWlnaHQCYQ1JdGVtcy5TdHJpbmdzAQYDT25lBgNU
+          d28AEUl0ZW1zLkl0ZW1FbmFibGVkAQkJAA9JdGVtcy5JdGVtU3RhdGUBAgACAAAKSXRlbUhlaWdodAIRCFRhYk9yZGVyAhoAAApU
+          SW1hZ2VMaXN0CkltYWdlTGlzdDEETGVmdAOIAANUb3AD8AEGQml0bWFwCqYhAABJTAEBBQAIABwAEAAQAP//////EP//////////
+          Qk02AAAAAAAAADYAAAAoAAAAQAAAACAAAAABACAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkAmZmZAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZAMzMzADMzMwAmZmZAOXl5QDMzMwAmZmZAOXl
+          5QDl5eUA5eXlAJmZmQDMzMwAzMzMAJmZmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AJmZmQDMzMwAzMzMAJmZmQDl5eUAzMzMAJmZmQDl5eUA5eXlAOXl5QCZmZkAzMzMAMzMzACZmZkAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZkAzMzMAMzMzACZmZkA5eXlAMzMzACZmZkA5eXlAOXl5QDl5eUAmZmZ
+          AMzMzADMzMwAmZmZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZAMzMzADMzMwA
+          mZmZAOXl5QDl5eUA5eXlAOXl5QDl5eUA5eXlAJmZmQDMzMwAzMzMAJmZmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAJmZmQDMzMwAzMzMAMzMzACZmZkAmZmZAJmZmQCZmZkAmZmZAJmZmQDMzMwAzMzMAMzMzACZmZkA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZkAzMzMAMzMzADMzMwAzMzMAMzMzADM
+          zMwAzMzMAMzMzADMzMwAzMzMAMzMzADMzMwAmZmZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAmZmZAMzMzADMzMwAmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkAmZmZAJmZmQDMzMwAzMzMAJmZmQAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmQDMzMwAmZmZAP///wD///8A////AP///wD///8A////AP//
+          /wD///8AmZmZAMzMzACZmZkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACZmZkAzMzM
+          AJmZmQD///8AmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkA////AJmZmQDMzMwAmZmZAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZAMzMzACZmZkA////AP///wD///8A////AP///wD///8A////AP///wCZmZkAzMzM
+          AJmZmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAJmZmQDl5eUAmZmZAP///wCZmZkA
+          mZmZAJmZmQCZmZkAmZmZAJmZmQD///8AmZmZAJmZmQCZmZkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAACZmZkAzMzMAJmZmQD///8A////AP///wD///8A////AP///wD///8A////AJmZmQDMzMwAmZmZAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAmZmZAJmZmQCZmZkAmZmZAJmZmQCZmZkAmZmZAJmZmQCZ
+          mZkAmZmZAJmZmQCZmZkAmZmZAJmZmQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAFBggKNAUOFmMIGSl/ChsrhAcRHHECBgtOAAAAJAAA
+          ABkAAAAaAAAACwAAAAIAAAAACAgHEjUzMapOSkfJLygmrCAeG3sYFxZWCgkJMAAAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAABAAAAAAAAAAAICAgwAAAAXhISEnkwMDB9Hx8faAkJCUIAAAAYAAAADgAAABQAAAAJAAAAAgAAAAAAAAAA
+          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
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TFORM2" type="TForm2" resname="TFORM2" created="20170517T015544Z">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption">Form2</row>
+        <row id="ClientHeight">516</row>
+        <row id="ClientWidth">931</row>
+        <item name="RzDBRadioGroup1" type="TRzDBRadioGroup">
+          <row id="Left">200</row>
+          <row id="Top">8</row>
+          <row id="Width">185</row>
+          <row id="Caption">RzDBRadioGroup1</row>
+        </item>
+        <item name="RzDBCheckBoxGroup1" type="TRzDBCheckBoxGroup">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">185</row>
+          <row id="ValueChecked">True</row>
+          <row id="ValueUnchecked">False</row>
+          <row id="Caption">RzDBCheckBoxGroup1</row>
+        </item>
+        <item name="RzDBEdit1" type="TRzDBEdit">
+          <row id="Left">400</row>
+          <row id="Top">248</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBButtonEdit1" type="TRzDBButtonEdit">
+          <row id="Left">224</row>
+          <row id="Top">248</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBDateTimeEdit1" type="TRzDBDateTimeEdit">
+          <row id="Left">408</row>
+          <row id="Top">200</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBNumericEdit3" type="TRzDBNumericEdit">
+          <row id="Left">480</row>
+          <row id="Top">400</row>
+          <row id="Width">65</row>
+          <row id="Height">21</row>
+          <row id="DisplayFormat">,0;(,0)</row>
+        </item>
+        <item name="RzDBSpinEdit1" type="TRzDBSpinEdit">
+          <row id="Left">656</row>
+          <row id="Top">336</row>
+          <row id="Width">47</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBExpandEdit1" type="TRzDBExpandEdit">
+          <row id="Left">712</row>
+          <row id="Top">256</row>
+          <row id="Width">121</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBMemo1" type="TRzDBMemo">
+          <row id="Left">544</row>
+          <row id="Top">336</row>
+          <row id="Width">185</row>
+          <row id="Height">89</row>
+        </item>
+        <item name="RzDBRichEdit1" type="TRzDBRichEdit">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">232</row>
+          <row id="Top">392</row>
+          <row id="Width">185</row>
+          <row id="Height">89</row>
+        </item>
+        <item name="RzDBSpinner1" type="TRzDBSpinner">
+          <row id="Left">400</row>
+          <row id="Top">48</row>
+        </item>
+        <item name="RzDBTrackBar1" type="TRzDBTrackBar">
+          <row id="Left">608</row>
+          <row id="Top">16</row>
+        </item>
+        <item name="RzDBDateTimePicker1" type="TRzDBDateTimePicker">
+          <row id="Left">400</row>
+          <row id="Top">16</row>
+          <row id="Width">186</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBListBox1" type="TRzDBListBox">
+          <row id="Left">72</row>
+          <row id="Top">152</row>
+          <row id="Width">121</row>
+          <row id="Height">97</row>
+        </item>
+        <item name="RzDBComboBox1" type="TRzDBComboBox">
+          <row id="Left">232</row>
+          <row id="Top">144</row>
+          <row id="Width">145</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBComboBox2" type="TRzDBComboBox">
+          <row id="Left">56</row>
+          <row id="Top">288</row>
+          <row id="Width">145</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBLookupComboBox1" type="TRzDBLookupComboBox">
+          <row id="Left">80</row>
+          <row id="Top">352</row>
+          <row id="Width">145</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="RzDBGrid1" type="TRzDBGrid">
+          <row id="Left">88</row>
+          <row id="Top">400</row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTIFRm9ybTIETGVmdAIAA1RvcAIAB0NhcHRpb24GBUZvcm0yDENsaWVudEhlaWdodAMEAgtDbGllbnRXaWR0aAOj
+          AwVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtG
+          b250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVPcmRlcggNUGl4ZWxzUGVySW5jaAJg
+          ClRleHRIZWlnaHQCDQAPVFJ6REJSYWRpb0dyb3VwD1J6REJSYWRpb0dyb3VwMQRMZWZ0A8gAA1RvcAIIBVdpZHRoA7kAB0NhcHRp
+          b24GD1J6REJSYWRpb0dyb3VwMQhUYWJPcmRlcgIAAAASVFJ6REJDaGVja0JveEdyb3VwElJ6REJDaGVja0JveEdyb3VwMQRMZWZ0
+          AggDVG9wAggFV2lkdGgDuQAMVmFsdWVDaGVja2VkBgRUcnVlDlZhbHVlVW5jaGVja2VkBgVGYWxzZQdDYXB0aW9uBhJSekRCQ2hl
+          Y2tCb3hHcm91cDEIVGFiT3JkZXICAQdUYWJTdG9wCQAACVRSekRCRWRpdAlSekRCRWRpdDEETGVmdAOQAQNUb3AD+AAFV2lkdGgC
+          eQZIZWlnaHQCFQhUYWJPcmRlcgICAAAPVFJ6REJCdXR0b25FZGl0D1J6REJCdXR0b25FZGl0MQRMZWZ0A+AAA1RvcAP4AAVXaWR0
+          aAJ5BkhlaWdodAIVCFRhYk9yZGVyAgMLQWx0QnRuV2lkdGgCDwtCdXR0b25XaWR0aAIPAAARVFJ6REJEYXRlVGltZUVkaXQRUnpE
+          QkRhdGVUaW1lRWRpdDEETGVmdAOYAQNUb3ADyAAFV2lkdGgCeQZIZWlnaHQCFQhUYWJPcmRlcgIECEVkaXRUeXBlBwZldERhdGUA
+          ABBUUnpEQk51bWVyaWNFZGl0EFJ6REJOdW1lcmljRWRpdDMETGVmdAPgAQNUb3ADkAEFV2lkdGgCQQZIZWlnaHQCFQlBbGlnbm1l
+          bnQHDXRhTGVmdEp1c3RpZnkIVGFiT3JkZXICBQ1EaXNwbGF5Rm9ybWF0BgcsMDsoLDApAAANVFJ6REJTcGluRWRpdA1SekRCU3Bp
+          bkVkaXQxBExlZnQDkAIDVG9wA1ABBVdpZHRoAi8GSGVpZ2h0AhUIVGFiT3JkZXICBgNNYXgFAAAAAAAAAMgFQAAAD1RSekRCRXhw
+          YW5kRWRpdA9SekRCRXhwYW5kRWRpdDEETGVmdAPIAgNUb3ADAAEFV2lkdGgCeQZIZWlnaHQCFQhUYWJPcmRlcgIHDUV4cGFuZGVk
+          V2lkdGgCAAAACVRSekRCTWVtbwlSekRCTWVtbzEETGVmdAMgAgNUb3ADUAEFV2lkdGgDuQAGSGVpZ2h0AlkIVGFiT3JkZXICCAAA
+          DVRSekRCUmljaEVkaXQNUnpEQlJpY2hFZGl0MQRMZWZ0A+gAA1RvcAOIAQVXaWR0aAO5AAZIZWlnaHQCWQxGb250LkNoYXJzZXQH
+          DEFOU0lfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250
+          LlN0eWxlCwAIVGFiT3JkZXICCQRab29tAmQAAAxUUnpEQlNwaW5uZXIMUnpEQlNwaW5uZXIxBExlZnQDkAEDVG9wAjAIVGFiT3Jk
+          ZXICCgAADVRSekRCVHJhY2tCYXINUnpEQlRyYWNrQmFyMQRMZWZ0A2ACA1RvcAIQCFBvc2l0aW9uAgAIVGFiT3JkZXICCwAAE1RS
+          ekRCRGF0ZVRpbWVQaWNrZXITUnpEQkRhdGVUaW1lUGlja2VyMQRMZWZ0A5ABA1RvcAIQBVdpZHRoA7oABkhlaWdodAIVBERhdGUF
+          Cv7JLBpTOKUOQAZGb3JtYXQSAAAAAARUaW1lBQr+ySwaUzilDkAIVGFiT3JkZXICDAAADFRSekRCTGlzdEJveAxSekRCTGlzdEJv
+          eDEETGVmdAJIA1RvcAOYAAVXaWR0aAJ5BkhlaWdodAJhCkl0ZW1IZWlnaHQCDQhUYWJPcmRlcgINAAANVFJ6REJDb21ib0JveA1S
+          ekRCQ29tYm9Cb3gxBExlZnQD6AADVG9wA5AABVdpZHRoA5EABkhlaWdodAIVCFRhYk9yZGVyAg4AAA1UUnpEQkNvbWJvQm94DVJ6
+          REJDb21ib0JveDIETGVmdAI4A1RvcAMgAQVXaWR0aAORAAZIZWlnaHQCFQhUYWJPcmRlcgIPAAATVFJ6REJMb29rdXBDb21ib0Jv
+          eBNSekRCTG9va3VwQ29tYm9Cb3gxBExlZnQCUANUb3ADYAEFV2lkdGgDkQAGSGVpZ2h0AhUIVGFiT3JkZXICEAAACVRSekRCR3Jp
+          ZAlSekRCR3JpZDEETGVmdAJYA1RvcAOQAQhUYWJPcmRlcgIREVRpdGxlRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQPVGl0
+          bGVGb250LkNvbG9yBwxjbFdpbmRvd1RleHQQVGl0bGVGb250LkhlaWdodAL1DlRpdGxlRm9udC5OYW1lBgZUYWhvbWEPVGl0bGVG
+          b250LlN0eWxlCwAAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TLOGINDIALOG" type="TLoginDialog" resname="TLOGINDIALOG" created="20170517T015544Z">
+        <row id="Left">307</row>
+        <row id="Top">131</row>
+        <row id="Caption">Database Login</row>
+        <row id="ClientHeight">147</row>
+        <row id="ClientWidth">283</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">119</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">200</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">Cancel</row>
+        </item>
+        <item name="Panel" type="TPanel">
+          <row id="Left">8</row>
+          <row id="Top">7</row>
+          <row id="Width">267</row>
+          <row id="Height">98</row>
+          <item name="Label3" type="TLabel">
+            <row id="Left">10</row>
+            <row id="Top">6</row>
+            <row id="Width">50</row>
+            <row id="Height">13</row>
+            <row id="Caption">Database:</row>
+          </item>
+          <item name="DatabaseName" type="TLabel">
+            <row id="Left">106</row>
+            <row id="Top">6</row>
+            <row id="Width">3</row>
+            <row id="Height">13</row>
+          </item>
+          <item name="Bevel" type="TBevel">
+            <row id="Left">1</row>
+            <row id="Top">24</row>
+            <row id="Width">264</row>
+            <row id="Height">9</row>
+          </item>
+          <item name="Panel1" type="TPanel">
+            <row id="Left">2</row>
+            <row id="Top">31</row>
+            <row id="Width">263</row>
+            <row id="Height">65</row>
+            <item name="Label1" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">8</row>
+              <row id="Width">56</row>
+              <row id="Height">13</row>
+              <row id="Caption">&amp;User Name:</row>
+            </item>
+            <item name="Label2" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">36</row>
+              <row id="Width">50</row>
+              <row id="Height">13</row>
+              <row id="Caption">&amp;Password:</row>
+            </item>
+            <item name="UserName" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">5</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+            </item>
+            <item name="Password" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">33</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+              <row id="PasswordChar">*</row>
+            </item>
+          </item>
+        </item>
+        <data>
+          VFBGMAxUTG9naW5EaWFsb2cLTG9naW5EaWFsb2cETGVmdAMzAQNUb3ADgwANQWN0aXZlQ29udHJvbAcIUGFzc3dvcmQLQm9yZGVy
+          U3R5bGUHCGJzRGlhbG9nB0NhcHRpb24GDkRhdGFiYXNlIExvZ2luDENsaWVudEhlaWdodAOTAAtDbGllbnRXaWR0aAMbAQVDb2xv
+          cgcJY2xCdG5GYWNlClBhcmVudEZvbnQJDk9sZENyZWF0ZU9yZGVyCQhQb3NpdGlvbgcOcG9TY3JlZW5DZW50ZXIGT25TaG93BwhG
+          b3JtU2hvdw1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9LQnV0dG9uBExlZnQCdwNUb3ACcgVXaWR0aAJL
+          BkhlaWdodAIZB0NhcHRpb24GAyZPSwdEZWZhdWx0CQtNb2RhbFJlc3VsdAIBCFRhYk9yZGVyAgAAAAdUQnV0dG9uDENhbmNlbEJ1
+          dHRvbgRMZWZ0A8gAA1RvcAJyBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2VsCQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghU
+          YWJPcmRlcgIBAAAGVFBhbmVsBVBhbmVsBExlZnQCCANUb3ACBwVXaWR0aAMLAQZIZWlnaHQCYgpCZXZlbElubmVyBwhidlJhaXNl
+          ZApCZXZlbE91dGVyBwlidkxvd2VyZWQIVGFiT3JkZXICAgAGVExhYmVsBkxhYmVsMwRMZWZ0AgoDVG9wAgYFV2lkdGgCMgZIZWln
+          aHQCDQdDYXB0aW9uBglEYXRhYmFzZToAAAZUTGFiZWwMRGF0YWJhc2VOYW1lBExlZnQCagNUb3ACBgVXaWR0aAIDBkhlaWdodAIN
+          AAAGVEJldmVsBUJldmVsBExlZnQCAQNUb3ACGAVXaWR0aAMIAQZIZWlnaHQCCQVTaGFwZQcJYnNUb3BMaW5lAAAGVFBhbmVsBlBh
+          bmVsMQRMZWZ0AgIDVG9wAh8FV2lkdGgDBwEGSGVpZ2h0AkEFQWxpZ24HCGFsQm90dG9tCkJldmVsT3V0ZXIHBmJ2Tm9uZQhUYWJP
+          cmRlcgIAAAZUTGFiZWwGTGFiZWwxBExlZnQCCANUb3ACCAVXaWR0aAI4BkhlaWdodAINB0NhcHRpb24GCyZVc2VyIE5hbWU6DEZv
+          Y3VzQ29udHJvbAcIVXNlck5hbWUAAAZUTGFiZWwGTGFiZWwyBExlZnQCCANUb3ACJAVXaWR0aAIyBkhlaWdodAINB0NhcHRpb24G
+          CiZQYXNzd29yZDoMRm9jdXNDb250cm9sBwhQYXNzd29yZAAABVRFZGl0CFVzZXJOYW1lBExlZnQCZQNUb3ACBQVXaWR0aAOZAAZI
+          ZWlnaHQCFQlNYXhMZW5ndGgCHwhUYWJPcmRlcgIAAAAFVEVkaXQIUGFzc3dvcmQETGVmdAJlA1RvcAIhBVdpZHRoA5kABkhlaWdo
+          dAIVCU1heExlbmd0aAIfDFBhc3N3b3JkQ2hhcgYBKghUYWJPcmRlcgIBAAAAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" created="20170517T015544Z">
+        <row id="Left">260</row>
+        <row id="Top">184</row>
+        <row id="Caption">Enter password</row>
+        <row id="ClientHeight">132</row>
+        <row id="ClientWidth">273</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">109</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">190</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption">Cancel</row>
+        </item>
+        <item name="GroupBox1" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">257</row>
+          <row id="Height">81</row>
+          <row id="Caption">Password</row>
+          <item name="Edit" type="TEdit">
+            <row id="Left">16</row>
+            <row id="Top">18</row>
+            <row id="Width">225</row>
+            <row id="Height">20</row>
+            <row id="PasswordChar">*</row>
+          </item>
+          <item name="AddButton" type="TButton">
+            <row id="Left">16</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption">&amp;Add</row>
+          </item>
+          <item name="RemoveButton" type="TButton">
+            <row id="Left">88</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption">&amp;Remove</row>
+          </item>
+          <item name="RemoveAllButton" type="TButton">
+            <row id="Left">160</row>
+            <row id="Top">46</row>
+            <row id="Width">81</row>
+            <row id="Height">25</row>
+            <row id="Caption">Re&amp;move all</row>
+          </item>
+        </item>
+        <data>
+          VFBGMA9UUGFzc3dvcmREaWFsb2cOUGFzc3dvcmREaWFsb2cETGVmdAMEAQNUb3ADuAANQWN0aXZlQ29udHJvbAcERWRpdAtCb3Jk
+          ZXJTdHlsZQcIYnNEaWFsb2cHQ2FwdGlvbgYORW50ZXIgcGFzc3dvcmQMQ2xpZW50SGVpZ2h0A4QAC0NsaWVudFdpZHRoAxEBClBh
+          cmVudEZvbnQJDVBpeGVsc1BlckluY2gCYAhQb3NpdGlvbgcOcG9TY3JlZW5DZW50ZXIKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9L
+          QnV0dG9uBExlZnQCbQNUb3ACYgVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GAyZPSwdEZWZhdWx0CQdFbmFibGVkCAtNb2RhbFJl
+          c3VsdAIBCFRhYk9yZGVyAgEHT25DbGljawcNT0tCdXR0b25DbGljawAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQDvgADVG9w
+          AmIFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIAAAlUR3Jv
+          dXBCb3gJR3JvdXBCb3gxBExlZnQCCANUb3ACCAVXaWR0aAMBAQZIZWlnaHQCUQdDYXB0aW9uBghQYXNzd29yZAhUYWJPcmRlcgIA
+          AAVURWRpdARFZGl0BExlZnQCEANUb3ACEgVXaWR0aAPhAAZIZWlnaHQCFAxQYXNzd29yZENoYXIGASoIVGFiT3JkZXICAAhPbkNo
+          YW5nZQcKRWRpdENoYW5nZQAAB1RCdXR0b24JQWRkQnV0dG9uBExlZnQCEANUb3ACLgVXaWR0aAJBBkhlaWdodAIZB0NhcHRpb24G
+          BCZBZGQHRW5hYmxlZAgIVGFiT3JkZXICAQdPbkNsaWNrBw5BZGRCdXR0b25DbGljawAAB1RCdXR0b24MUmVtb3ZlQnV0dG9uBExl
+          ZnQCWANUb3ACLgVXaWR0aAJBBkhlaWdodAIZB0NhcHRpb24GByZSZW1vdmUHRW5hYmxlZAgIVGFiT3JkZXICAgdPbkNsaWNrBxFS
+          ZW1vdmVCdXR0b25DbGljawAAB1RCdXR0b24PUmVtb3ZlQWxsQnV0dG9uBExlZnQDoAADVG9wAi4FV2lkdGgCUQZIZWlnaHQCGQdD
+          YXB0aW9uBgtSZSZtb3ZlIGFsbAhUYWJPcmRlcgIDB09uQ2xpY2sHFFJlbW92ZUFsbEJ1dHRvbkNsaWNrAAAAAA==
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TRZFRMCUSTOMIZETOOLBAR" type="TRzFrmCustomizeToolbar" resname="TRZFRMCUSTOMIZETOOLBAR" created="20151019T143613Z">
+        <font id="Font" name="Verdana" size="8"/>
+        <row id="Left">258</row>
+        <row id="Top">114</row>
+        <row id="Caption">Customize Toolbar</row>
+        <row id="ClientHeight">280</row>
+        <row id="ClientWidth">337</row>
+        <item name="BtnSpacer" type="TSpeedButton">
+          <row id="Left">359</row>
+          <row id="Top">227</row>
+          <row id="Width">25</row>
+          <row id="Height">25</row>
+          <row id="Hint">Add a Spacer</row>
+        </item>
+        <item name="BtnGrooveSpacer" type="TSpeedButton">
+          <row id="Left">384</row>
+          <row id="Top">227</row>
+          <row id="Width">25</row>
+          <row id="Height">25</row>
+          <row id="Hint">Add a Grooved Spacer</row>
+        </item>
+        <item name="LblHint" type="TRzLabel">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">38</row>
+          <row id="Height">13</row>
+          <row id="Caption">LblHint</row>
+        </item>
+        <item name="LblTextOptions" type="TRzLabel">
+          <row id="Left">8</row>
+          <row id="Top">236</row>
+          <row id="Width">84</row>
+          <row id="Height">13</row>
+          <row id="Caption">LblTextOptions</row>
+        </item>
+        <item name="BtnClose" type="TRzButton">
+          <row id="Left">244</row>
+          <row id="Top">24</row>
+          <row id="Width">85</row>
+          <row id="Caption">Close</row>
+        </item>
+        <item name="LstControls" type="TRzCheckList">
+          <row id="Left">8</row>
+          <row id="Top">24</row>
+          <row id="Width">225</row>
+          <row id="Height">205</row>
+        </item>
+        <item name="CbxTextOptions" type="TRzComboBox">
+          <row id="Left">8</row>
+          <row id="Top">252</row>
+          <row id="Width">225</row>
+          <row id="Height">21</row>
+        </item>
+        <item name="BtnMoveUp" type="TRzButton">
+          <row id="Left">244</row>
+          <row id="Top">84</row>
+          <row id="Width">85</row>
+          <row id="Caption">MoveUp</row>
+        </item>
+        <item name="BtnMoveDown" type="TRzButton">
+          <row id="Left">244</row>
+          <row id="Top">116</row>
+          <row id="Width">85</row>
+          <row id="Caption">MoveDown</row>
+        </item>
+        <item name="Timer1" type="TTimer">
+          <row id="Left">416</row>
+          <row id="Top">224</row>
+        </item>
+        <data>
+          VFBGMBZUUnpGcm1DdXN0b21pemVUb29sYmFyFVJ6RnJtQ3VzdG9taXplVG9vbGJhcgRMZWZ0AwIBA1RvcAJyC0JvcmRlckljb25z
+          CwxiaVN5c3RlbU1lbnUAC0JvcmRlclN0eWxlBwhic0RpYWxvZwdDYXB0aW9uBhFDdXN0b21pemUgVG9vbGJhcgxDbGllbnRIZWln
+          aHQDGAELQ2xpZW50V2lkdGgDUQEFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNv
+          bG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGB1ZlcmRhbmEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9y
+          ZGVyCQhTaG93SGludAkIT25DcmVhdGUHCkZvcm1DcmVhdGUNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAMVFNwZWVkQnV0
+          dG9uCUJ0blNwYWNlcgRMZWZ0A2cBA1RvcAPjAAVXaWR0aAIZBkhlaWdodAIZBEhpbnQGDEFkZCBhIFNwYWNlcgRGbGF0CQpHbHlw
+          aC5EYXRhCjoGAAA2BgAAQk02BgAAAAAAADYEAAAoAAAAIAAAABAAAAABAAgAAAAAAAACAAAzCwAAMwsAAAABAAAAAQAAAAAAADMA
+          AABmAAAAmQAAAMwAAAD/AAAAADMAADMzAABmMwAAmTMAAMwzAAD/MwAAAGYAADNmAABmZgAAmWYAAMxmAAD/ZgAAAJkAADOZAABm
+          mQAAmZkAAMyZAAD/mQAAAMwAADPMAABmzAAAmcwAAMzMAAD/zAAAAP8AADP/AABm/wAAmf8AAMz/AAD//wAAAAAzADMAMwBmADMA
+          mQAzAMwAMwD/ADMAADMzADMzMwBmMzMAmTMzAMwzMwD/MzMAAGYzADNmMwBmZjMAmWYzAMxmMwD/ZjMAAJkzADOZMwBmmTMAmZkz
+          AMyZMwD/mTMAAMwzADPMMwBmzDMAmcwzAMzMMwD/zDMAAP8zADP/MwBm/zMAmf8zAMz/MwD//zMAAABmADMAZgBmAGYAmQBmAMwA
+          ZgD/AGYAADNmADMzZgBmM2YAmTNmAMwzZgD/M2YAAGZmADNmZgBmZmYAmWZmAMxmZgD/ZmYAAJlmADOZZgBmmWYAmZlmAMyZZgD/
+          mWYAAMxmADPMZgBmzGYAmcxmAMzMZgD/zGYAAP9mADP/ZgBm/2YAmf9mAMz/ZgD//2YAAACZADMAmQBmAJkAmQCZAMwAmQD/AJkA
+          ADOZADMzmQBmM5kAmTOZAMwzmQD/M5kAAGaZADNmmQBmZpkAmWaZAMxmmQD/ZpkAAJmZADOZmQBmmZkAmZmZAMyZmQD/mZkAAMyZ
+          ADPMmQBmzJkAmcyZAMzMmQD/zJkAAP+ZADP/mQBm/5kAmf+ZAMz/mQD//5kAAADMADMAzABmAMwAmQDMAMwAzAD/AMwAADPMADMz
+          zABmM8wAmTPMAMwzzAD/M8wAAGbMADNmzABmZswAmWbMAMxmzAD/ZswAAJnMADOZzABmmcwAmZnMAMyZzAD/mcwAAMzMADPMzABm
+          zMwAmczMAMzMzAD/zMwAAP/MADP/zABm/8wAmf/MAMz/zAD//8wAAAD/ADMA/wBmAP8AmQD/AMwA/wD/AP8AADP/ADMz/wBmM/8A
+          mTP/AMwz/wD/M/8AAGb/ADNm/wBmZv8AmWb/AMxm/wD/Zv8AAJn/ADOZ/wBmmf8AmZn/AMyZ/wD/mf8AAMz/ADPM/wBmzP8Amcz/
+          AMzM/wD/zP8AAP//ADP//wBm//8Amf//AMz//wD///8AAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDAAICAgAAZGRkATExMALKy
+          sgDl5eUAyKwoAODMZgDy6r8AtZskANjp7ACZM2YA0HWjAOzG2QBkb3EAmaisAOLv8QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOjo6OgJCegJCegJCejo6Ojo6OjogYHogYHogYHo6Ojo
+          6Ojo6Ano6Ojo6OgJ6Ojo6Ojo6OiB6Ojo6Ojogejo6Ojo6OjoCejo6Ojo6Ano6Ojo6Ojo6IHo6Ojo6OiB6Ojo6Ojo6Ojo6Ojo6Ojo
+          6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6OjoCejo6Ojo6Ano6Ojo6Ojo6IHo
+          6Ojo6OiB6Ojo6Ojo6OgJ6Ojo6OjoCejo6Ojo6Ojogejo6Ojo6IHo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo
+          6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6OgJ6Ojo6OjoCejo6Ojo6Ojogejo6Ojo6IHo6Ojo6Ojo6Ano6Ojo6OgJ
+          6Ojo6Ojo6OiB6Ojo6Ojogejo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo
+          6Ojo6Ojo6Ojo6Ojo6Ano6Ojo6OgJ6Ojo6Ojo6OiB6Ojo6Ojogejo6Ojo6OjoCejo6Ojo6Ano6Ojo6Ojo6IHo6Ojo6OiB6Ojo6Ojo
+          6OgJCegJCegJCejo6Ojo6OjogYHogYHogYHo6OjoCU51bUdseXBocwICC1RyYW5zcGFyZW50CAdWaXNpYmxlCAAADFRTcGVlZEJ1
+          dHRvbg9CdG5Hcm9vdmVTcGFjZXIETGVmdAOAAQNUb3AD4wAFV2lkdGgCGQZIZWlnaHQCGQRIaW50BhRBZGQgYSBHcm9vdmVkIFNw
+          YWNlcgRGbGF0CQpHbHlwaC5EYXRhCjoGAAA2BgAAQk02BgAAAAAAADYEAAAoAAAAIAAAABAAAAABAAgAAAAAAAACAAAzCwAAMwsA
+          AAABAAAAAQAAAAAAADMAAABmAAAAmQAAAMwAAAD/AAAAADMAADMzAABmMwAAmTMAAMwzAAD/MwAAAGYAADNmAABmZgAAmWYAAMxm
+          AAD/ZgAAAJkAADOZAABmmQAAmZkAAMyZAAD/mQAAAMwAADPMAABmzAAAmcwAAMzMAAD/zAAAAP8AADP/AABm/wAAmf8AAMz/AAD/
+          /wAAAAAzADMAMwBmADMAmQAzAMwAMwD/ADMAADMzADMzMwBmMzMAmTMzAMwzMwD/MzMAAGYzADNmMwBmZjMAmWYzAMxmMwD/ZjMA
+          AJkzADOZMwBmmTMAmZkzAMyZMwD/mTMAAMwzADPMMwBmzDMAmcwzAMzMMwD/zDMAAP8zADP/MwBm/zMAmf8zAMz/MwD//zMAAABm
+          ADMAZgBmAGYAmQBmAMwAZgD/AGYAADNmADMzZgBmM2YAmTNmAMwzZgD/M2YAAGZmADNmZgBmZmYAmWZmAMxmZgD/ZmYAAJlmADOZ
+          ZgBmmWYAmZlmAMyZZgD/mWYAAMxmADPMZgBmzGYAmcxmAMzMZgD/zGYAAP9mADP/ZgBm/2YAmf9mAMz/ZgD//2YAAACZADMAmQBm
+          AJkAmQCZAMwAmQD/AJkAADOZADMzmQBmM5kAmTOZAMwzmQD/M5kAAGaZADNmmQBmZpkAmWaZAMxmmQD/ZpkAAJmZADOZmQBmmZkA
+          mZmZAMyZmQD/mZkAAMyZADPMmQBmzJkAmcyZAMzMmQD/zJkAAP+ZADP/mQBm/5kAmf+ZAMz/mQD//5kAAADMADMAzABmAMwAmQDM
+          AMwAzAD/AMwAADPMADMzzABmM8wAmTPMAMwzzAD/M8wAAGbMADNmzABmZswAmWbMAMxmzAD/ZswAAJnMADOZzABmmcwAmZnMAMyZ
+          zAD/mcwAAMzMADPMzABmzMwAmczMAMzMzAD/zMwAAP/MADP/zABm/8wAmf/MAMz/zAD//8wAAAD/ADMA/wBmAP8AmQD/AMwA/wD/
+          AP8AADP/ADMz/wBmM/8AmTP/AMwz/wD/M/8AAGb/ADNm/wBmZv8AmWb/AMxm/wD/Zv8AAJn/ADOZ/wBmmf8AmZn/AMyZ/wD/mf8A
+          AMz/ADPM/wBmzP8Amcz/AMzM/wD/zP8AAP//ADP//wBm//8Amf//AMz//wD///8AAACAAACAAAAAgIAAgAAAAIAAgACAgAAAwMDA
+          AICAgAAZGRkATExMALKysgDl5eUAyKwoAODMZgDy6r8AtZskANjp7ACZM2YA0HWjAOzG2QBkb3EAmaisAOLv8QAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAOjo6Ojo6Ojo6Ojo6Ojo6Ojo
+          6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo
+          6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo
+          7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo
+          6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo
+          6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt
+          1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojt1+jo6Ojo6Ojo6Ojo6Ojo7dfo6Ojo6Ojo6Ojo
+          6Ojo6O3X6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6Ojo6OjoCU51bUdseXBocwICC1RyYW5zcGFyZW50CAdWaXNp
+          YmxlCAAACFRSekxhYmVsB0xibEhpbnQETGVmdAIIA1RvcAIIBVdpZHRoAiYGSGVpZ2h0Ag0HQ2FwdGlvbgYHTGJsSGludAAACFRS
+          ekxhYmVsDkxibFRleHRPcHRpb25zBExlZnQCCANUb3AD7AAFV2lkdGgCVAZIZWlnaHQCDQdDYXB0aW9uBg5MYmxUZXh0T3B0aW9u
+          cwAACVRSekJ1dHRvbghCdG5DbG9zZQRMZWZ0A/QAA1RvcAIYBVdpZHRoAlULTW9kYWxSZXN1bHQCAQdDYXB0aW9uBgVDbG9zZQVD
+          b2xvcgT09PAACEhvdFRyYWNrCQhUYWJPcmRlcgICAAAMVFJ6Q2hlY2tMaXN0C0xzdENvbnRyb2xzBExlZnQCCANUb3ACGAVXaWR0
+          aAPhAAZIZWlnaHQDzQAIT25DaGFuZ2UHEUxzdENvbnRyb2xzQ2hhbmdlCERyYWdNb2RlBwtkbUF1dG9tYXRpYwpJdGVtSGVpZ2h0
+          AhQIVGFiT3JkZXICAAdPbkNsaWNrBxBMc3RDb250cm9sc0NsaWNrCk9uRHJhZ0Ryb3AHE0xzdENvbnRyb2xzRHJhZ0Ryb3AKT25E
+          cmFnT3ZlcgcTTHN0Q29udHJvbHNEcmFnT3ZlcgpPbkRyYXdJdGVtBw9MaXN0Qm94RHJhd0l0ZW0JT25FbmREcmFnBxJMc3RDb250
+          cm9sc0VuZERyYWcLT25Nb3VzZURvd24HFExzdENvbnRyb2xzTW91c2VEb3duAAALVFJ6Q29tYm9Cb3gOQ2J4VGV4dE9wdGlvbnME
+          TGVmdAIIA1RvcAP8AAVXaWR0aAPhAAZIZWlnaHQCFQVTdHlsZQcOY3NEcm9wRG93bkxpc3QIVGFiT3JkZXICAQdPbkNsaWNrBxND
+          YnhUZXh0T3B0aW9uc0NsaWNrAAAJVFJ6QnV0dG9uCUJ0bk1vdmVVcARMZWZ0A/QAA1RvcAJUBVdpZHRoAlUHQ2FwdGlvbgYGTW92
+          ZVVwBUNvbG9yBPT08AAISG90VHJhY2sJCFRhYk9yZGVyAgMHT25DbGljawcOQnRuTW92ZVVwQ2xpY2sAAAlUUnpCdXR0b24LQnRu
+          TW92ZURvd24ETGVmdAP0AANUb3ACdAVXaWR0aAJVB0NhcHRpb24GCE1vdmVEb3duBUNvbG9yBPT08AAISG90VHJhY2sJCFRhYk9y
+          ZGVyAgQHT25DbGljawcQQnRuTW92ZURvd25DbGljawAABlRUaW1lcgZUaW1lcjEHRW5hYmxlZAgISW50ZXJ2YWwCZAdPblRpbWVy
+          BwtUaW1lcjFUaW1lcgRMZWZ0A6ABA1RvcAPgAAAAAA==
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="Data" created="20170517T015544Z">
+        <row id="DBConsts_STextTrue">True</row>
+        <row id="DBConsts_SParameterNotFound" class="TPatternRow">Parameter '{0}' not found</row>
+        <row id="DBConsts_SInvalidVersion">Unable to load bind parameters</row>
+        <row id="DBConsts_SBadFieldType" class="TPatternRow">Field '{0}' is of an unsupported type</row>
+        <row id="DBConsts_SProviderSQLNotSupported">SQL not supported</row>
+        <row id="DBConsts_SProviderExecuteNotSupported">Execute not supported</row>
+        <row id="DBConsts_SDataSetUnidirectional">Operation not allowed on a unidirectional dataset</row>
+        <row id="DBConsts_SUnassignedVar">Unassigned variant value</row>
+        <row id="DBConsts_SRecordNotFound">Record not found</row>
+        <row id="DBConsts_SBcdOverflow">BCD overflow</row>
+        <row id="DBConsts_SInvalidBcdValue" class="TPatternRow">{0} is not a valid BCD value</row>
+        <row id="DBConsts_SCouldNotParseTimeStamp">Could not parse SQL TimeStamp string</row>
+        <row id="DBConsts_SInvalidSqlTimeStamp">Invalid SQL date/time values</row>
+        <row id="DBConsts_SDataSetMissing" class="TPatternRow">Field '{0}' has no dataset</row>
+        <row id="DBConsts_SInvalidCalcType" class="TPatternRow">Field '{0}' cannot be a calculated or lookup field</row>
+        <row id="DBConsts_SDuplicateIndexName" class="TPatternRow">Duplicate index name '{0}'</row>
+        <row id="DBConsts_SNoIndexForFields" class="TPatternRow">No index for fields '{0}'</row>
+        <row id="DBConsts_SIndexNotFound" class="TPatternRow">Index '{0}' not found</row>
+        <row id="DBConsts_SDBDuplicateName" class="TPatternRow">Duplicate name '{0}' in {1}</row>
+        <row id="DBConsts_SCircularDataLink">Circular datalinks are not allowed</row>
+        <row id="DBConsts_SLookupInfoError" class="TPatternRow">Lookup information for field '{0}' is incomplete</row>
+        <row id="DBConsts_SDataSourceChange">DataSource cannot be changed</row>
+        <row id="DBConsts_SDataSetOpen">Cannot perform this operation on an open dataset</row>
+        <row id="DBConsts_SNotEditing">Dataset not in edit or insert mode</row>
+        <row id="DBConsts_SDataSetClosed">Cannot perform this operation on a closed dataset</row>
+        <row id="DBConsts_SDataSetEmpty">Cannot perform this operation on an empty dataset</row>
+        <row id="DBConsts_SDataSetReadOnly">Cannot modify a read-only dataset</row>
+        <row id="DBConsts_SNestedDataSetClass" class="TPatternRow">Nested dataset must inherit from {0}</row>
+        <row id="DBConsts_STextFalse">False</row>
+        <row id="DBConsts_SUnknownFieldType" class="TPatternRow">Field '{0}' is of an unknown type</row>
+        <row id="DBConsts_SFieldNameMissing">Field name missing</row>
+        <row id="DBConsts_SDuplicateFieldName" class="TPatternRow">Duplicate field name '{0}'</row>
+        <row id="DBConsts_SFieldNotFound" class="TPatternRow">Field '{0}' not found</row>
+        <row id="DBConsts_SFieldAccessError" class="TPatternRow">Cannot access field '{0}' as type {1}</row>
+        <row id="DBConsts_SFieldValueError" class="TPatternRow">Invalid value for field '{0}'</row>
+        <row id="DBConsts_SFieldRangeError" class="TPatternRow">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SBcdFieldRangeError" class="TPatternRow">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SInvalidIntegerValue" class="TPatternRow">'{0}' is not a valid integer value for field '{1}'</row>
+        <row id="DBConsts_SInvalidBoolValue" class="TPatternRow">'{0}' is not a valid boolean value for field '{1}'</row>
+        <row id="DBConsts_SInvalidFloatValue" class="TPatternRow">'{0}' is not a valid floating point value for field '{1}'</row>
+        <row id="DBConsts_SFieldTypeMismatch" class="TPatternRow">Type mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SFieldSizeMismatch" class="TPatternRow">Size mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SInvalidVarByteArray" class="TPatternRow">Invalid variant type or size for field '{0}'</row>
+        <row id="DBConsts_SFieldOutOfRange" class="TPatternRow">Value of field '{0}' is out of range</row>
+        <row id="DBConsts_SFieldRequired" class="TPatternRow">Field '{0}' must have a value</row>
+        <row id="DBConsts_SInvalidFieldSize">Invalid field size</row>
+        <row id="DBConsts_SInvalidFieldKind">Invalid FieldKind</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzBorder" created="20151019T143613Z">
+        <row id="sRzColorBtnText">Button Text</row>
+        <row id="sRzColorInactiveCaptionText">Inactive Caption Text</row>
+        <row id="sRzColorBtnHighlight">Button Highlight</row>
+        <row id="sRzColor3DDkShadow">3D Dark Shadow</row>
+        <row id="sRzColor3DLight">3D Light</row>
+        <row id="sRzColorInfoText">Info Text</row>
+        <row id="sRzColorInfoBk">Info Background</row>
+        <row id="sRzColorHotLight">Hot Light</row>
+        <row id="sRzColorGradientActiveCaption">Gradient Active Caption</row>
+        <row id="sRzColorGradientInactiveCaption">Gradient Inactive Caption</row>
+        <row id="sRzColorMenuHighlight">Menu Highlight</row>
+        <row id="sRzColorMenuBar">Menu Bar</row>
+        <row id="sRzDefaultColorCaption">Default</row>
+        <row id="sRzNoColorCaption">None</row>
+        <row id="sRzCustomColorCaption">More Colors...</row>
+        <row id="sRzColorActiveCaption">Active Caption</row>
+        <row id="sRzColorInactiveCaption">Inactive Caption</row>
+        <row id="sRzColorMenu">Menu</row>
+        <row id="sRzColorWindow">Window</row>
+        <row id="sRzColorWindowFrame">Window Frame</row>
+        <row id="sRzColorMenuText">Menu Text</row>
+        <row id="sRzColorWindowText">Window Text</row>
+        <row id="sRzColorCaptionText">Caption Text</row>
+        <row id="sRzColorActiveBorder">Active Border</row>
+        <row id="sRzColorInactiveBorder">Inactive Border</row>
+        <row id="sRzColorAppWorkSpace">App WorkSpace</row>
+        <row id="sRzColorHighlight">Highlight</row>
+        <row id="sRzColorHighlightText">Highlight Text</row>
+        <row id="sRzColorBtnFace">Button Face</row>
+        <row id="sRzColorBtnShadow">Button Shadow</row>
+        <row id="sRzColorGrayText">Gray Text</row>
+        <row id="sRzColorYellow">Yellow</row>
+        <row id="sRzColorBrightGreen">Bright Green</row>
+        <row id="sRzColorTurquoise">Turquoise</row>
+        <row id="sRzColorSkyBlue">Sky Blue</row>
+        <row id="sRzColorPlum">Plum</row>
+        <row id="sRzColorGray25" class="TPatternRow" created="20170517T015544Z">Gray 25{0}</row>
+        <row id="sRzColorRose">Rose</row>
+        <row id="sRzColorTan">Tan</row>
+        <row id="sRzColorLightYellow">Light Yellow</row>
+        <row id="sRzColorLightGreen">Light Green</row>
+        <row id="sRzColorLightTurquoise">Light Turquoise</row>
+        <row id="sRzColorPaleBlue">Pale Blue</row>
+        <row id="sRzColorLavender">Lavender</row>
+        <row id="sRzColorWhite">White</row>
+        <row id="sRzColorScrollBar">Scroll Bar</row>
+        <row id="sRzColorBackground">Background</row>
+        <row id="sRzColorDarkYellow">Dark Yellow</row>
+        <row id="sRzColorGreen">Green</row>
+        <row id="sRzColorTeal">Teal</row>
+        <row id="sRzColorBlue">Blue</row>
+        <row id="sRzColorBlueGray">Blue Gray</row>
+        <row id="sRzColorGray50" class="TPatternRow" created="20170517T015544Z">Gray 50{0}</row>
+        <row id="sRzColorRed">Red</row>
+        <row id="sRzColorLightOrange">Light Orange</row>
+        <row id="sRzColorLime">Lime</row>
+        <row id="sRzColorSeaGreen">Sea Green</row>
+        <row id="sRzColorAqua">Aqua</row>
+        <row id="sRzColorLightBlue">Light Blue</row>
+        <row id="sRzColorViolet">Violet</row>
+        <row id="sRzColorGray40" class="TPatternRow" created="20170517T015544Z">Gray 40{0}</row>
+        <row id="sRzColorPink">Pink</row>
+        <row id="sRzColorGold">Gold</row>
+        <row id="sRzColorBlack">Black</row>
+        <row id="sRzColorBrown">Brown</row>
+        <row id="sRzColorOliveGreen">Olive Green</row>
+        <row id="sRzColorDarkGreen">Dark Green</row>
+        <row id="sRzColorDarkTeal">Dark Teal</row>
+        <row id="sRzColorDarkBlue">Dark Blue</row>
+        <row id="sRzColorIndigo">Indigo</row>
+        <row id="sRzColorGray80" class="TPatternRow" created="20170517T015544Z">Gray 80{0}</row>
+        <row id="sRzColorDarkRed">Dark Red</row>
+        <row id="sRzColorOrange">Orange</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzCommon" ignored="1"/>
+      <node class="TWindowsStringNode" name="RzDBSpin" created="20170517T015544Z">
+        <row id="sRzInvalidFieldType">DataField can only be connected to columns of type Integer, Smallint, Word, and Float</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzGroupBar" created="20151019T143613Z">
+        <row id="sRzCannotLoadGroupController">Cannot load Group Controller settings--No TRzRegIniFile component specified</row>
+        <row id="sRzCannotSaveGroupController">Cannot save Group Controller settings--No TRzRegIniFile component specified</row>
+        <row id="sRzGroupIndexError" class="TPatternRow" created="20170517T015544Z">{0} is an invalid GroupIndex value. GroupIndex must be between 0 and {1}</row>
+        <row id="sRzGroupParentError">TRzGroup components can only be placed in a TRzGroupBar component</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzLstBox" created="20151019T143613Z">
+        <row id="sRzRowParamError">Row parameter out of range</row>
+        <row id="sRzColParamError">Column parameter out of range</row>
+        <row id="sRzHeaderError">Only THeader and THeaderControl components can be passed to TRzCustomTabbedListBox.UpdateFromHeader</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzPanel" created="20151019T143613Z">
+        <row id="sRzCustomizeTitle">Customize Toolbar</row>
+        <row id="sRzHint">Uncheck to hide control</row>
+        <row id="sRzMoveUp">Move Up</row>
+        <row id="sRzMoveDown">Move Down</row>
+        <row id="sRzClose">Close</row>
+        <row id="sRzTextOptions">Text Options</row>
+        <row id="sRzNoTextLabels">No text labels</row>
+        <row id="sRzShowTextLabels">Show text labels</row>
+        <row id="sRzSelectiveTextOnRight">Selective text on right</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzPopups" created="20151019T143613Z">
+        <row id="sRzCaptionTodayBtn">Today</row>
+        <row id="sRzDateMax" class="TPatternRow" created="20170517T015544Z">Date exceeds maximum of {0}</row>
+        <row id="sRzDateMin" class="TPatternRow" created="20170517T015544Z">Date is less than minimum of {0}</row>
+        <row id="sRzDateRange">Date is beyond valid date range</row>
+        <row id="sRzHowToSelectTime" class="TPatternRow" created="20170517T015544Z">Left-click to set HourRight-click to set Minute    Ctrl key restricts to {0} minutes</row>
+        <row id="sRzCaptionAM">AM</row>
+        <row id="sRzCaptionPM">PM</row>
+        <row id="sRzCaptionSet">Set</row>
+        <row id="sRzCaptionClearBtn">Clear</row>
+      </node>
+      <node class="TWindowsStringNode" name="RzTabs" created="20151019T143613Z">
+        <row id="sRzIncorrectNumberOfPoints">Incorrect number of points in tab shape</row>
+        <row id="sRzTabRegionCapacityError">Capacity must be -1 (to cache all regions) or &gt; 0</row>
+        <row id="sRzSavingDCError">Error saving device context</row>
+        <row id="sRzCreateRegionError">Error creating region</row>
+        <row id="sRzPageIndexOutOfRange" class="TPatternRow" created="20170517T015544Z">{0} is an invalid PageIndex value. PageIndex must be between 0 and {1}</row>
+        <row id="sRzInvalidVisibilityChange">You cannot change the Visible property of a page</row>
+      </node>
+      <node class="TWindowsStringNode" name="System" ignored="1"/>
+      <node class="TWindowsStringNode" name="Vcl" ignored="1"/>
+    </node>
+    <node class="TWindowsVersionFolder" name="Version" created="20170517T015544Z">
+      <node class="TWindowsVersionNode" name="1" resid="1" langid="1033">
+        <data>
+          QAE0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
+          AAEAAAAAAAAAAAAAAAAAAACgAAAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAB8AAAAAQAwADQAMAA5ADAANABFADQA
+          AAAwAAgAAQBGAGkAbABlAFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQBy
+          AHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAARAAAAAEAVgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMA
+          bABhAHQAaQBvAG4AAAAAAAkE5AQ=
+        </data>
+      </node>
+    </node>
+  </node>
+  <delphirules kind="drVcl">
+    <item type="*" property="*Font.Name"/>
+    <item type="TImageList" property="Bitmap" format="pfImageList"/>
+    <item type="TRzCheckTree" property="Items.NodeData" operation="roLocalize" format="pfTreeViewNodeData"/>
+    <item type="TRzListView" property="Items.ItemData" operation="roLocalize" format="pfListViewItemData"/>
+    <item type="TRzNumericEdit" property="DisplayFormat"/>
+    <item type="TRzTreeView" property="Items.NodeData" operation="roLocalize" format="pfTreeViewNodeData"/>
+    <item type="TSpeedButton" property="Glyph.Data" format="pfSizeImage"/>
+  </delphirules>
+</project>

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="98C4859C-E6B3-4774-A574-9B76AEFEF89B" created="20181207T025839Z" lastmodified="20181207T025915Z" version="1.0.272">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="SystemString.csproj" fullpath="D:\NT\Deploy\Samples\WPF\SystemString\SystemString.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net30"/>
+    <node class="TXamlNode" name="Dictionary1.xaml" type="ResourceDictionary" kind="xkResourceDictionary">
+      <item name="three" type="system:String">
+        <row id="Content">
+          <value>One</value>
+          <lang id="fi" rw="0" time="20181207T025843Z">Yksi</lang>
+        </row>
+      </item>
+      <item name="four" type="system:String">
+        <row id="Content">
+          <value>Two</value>
+          <lang id="fi" rw="0" time="20181207T025844Z">Kaksi</lang>
+        </row>
+      </item>
+      <data>
+        77u/PFJlc291cmNlRGljdGlvbmFyeSANCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94
+        YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwi
+        DQogIHhtbG5zOnN5c3RlbT0iY2xyLW5hbWVzcGFjZTpTeXN0ZW07YXNzZW1ibHk9bXNjb3JsaWIiPg0KICANCg0KICA8c3lzdGVt
+        OlN0cmluZyB4OktleT0idGhyZWUiPk9uZTwvc3lzdGVtOlN0cmluZz4NCiAgPHN5c3RlbTpTdHJpbmcgeDpLZXk9ImZvdXIiPlR3
+        bzwvc3lzdGVtOlN0cmluZz4NCjwvUmVzb3VyY2VEaWN0aW9uYXJ5Pg==
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title">
+        <value>Sample</value>
+        <lang id="fi" rw="0" time="20181207T025847Z">Esimerkki</lang>
+      </row>
+      <item name="Resources">
+        <item name="ResourceDictionary[0]" type="ResourceDictionary">
+          <item name="MergedDictionaries">
+            <item name="ResourceDictionary[0]" type="ResourceDictionary"/>
+          </item>
+        </item>
+      </item>
+      <item name="panel" type="StackPanel">
+        <item name="applicationGroup" type="GroupBox">
+          <row id="Header">
+            <value>Application</value>
+            <lang id="fi" rw="0" time="20181207T025851Z">Sovellus</lang>
+          </row>
+          <item name="applicationPanel" type="StackPanel">
+            <item name="label1" type="Label"/>
+            <item name="label2" type="Label"/>
+          </item>
+        </item>
+        <item name="localGroup" type="GroupBox">
+          <row id="Header">
+            <value>Local</value>
+            <lang id="fi" rw="0" time="20181207T025907Z">Paikallinen</lang>
+          </row>
+          <item name="localPanel" type="StackPanel">
+            <item name="label3" type="Label"/>
+            <item name="label4" type="Label"/>
+          </item>
+        </item>
+        <item name="xamlGroup" type="GroupBox">
+          <row id="Header">
+            <value>XAML</value>
+            <lang id="fi" rw="0" time="20181207T025908Z">XAML</lang>
+          </row>
+          <item name="xamlPanel" type="StackPanel">
+            <item name="label5" type="Label">
+              <row id="Content">
+                <value>One</value>
+                <lang id="fi" or="3" rw="0" time="20181207T025843Z">Yksi</lang>
+              </row>
+            </item>
+            <item name="label6" type="Label">
+              <row id="Content">
+                <value>Two</value>
+                <lang id="fi" or="3" rw="0" time="20181207T025845Z">Kaksi</lang>
+              </row>
+            </item>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iU3lzdGVtU3RyaW5nLk1haW5XaW5kb3ciDQogIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICBUaXRsZT0iU2FtcGxlIiANCiAgU2l6ZVRvQ29udGVudD0iSGVpZ2h0Ig0KICBX
+        aWR0aD0iNTAwIiANCiAgTG9hZGVkPSJXaW5kb3dfTG9hZGVkIj4NCg0KICA8V2luZG93LlJlc291cmNlcz4NCiAgICA8UmVzb3Vy
+        Y2VEaWN0aW9uYXJ5Pg0KICAgICAgPFJlc291cmNlRGljdGlvbmFyeS5NZXJnZWREaWN0aW9uYXJpZXM+DQogICAgICAgIDxSZXNv
+        dXJjZURpY3Rpb25hcnkgU291cmNlPSJEaWN0aW9uYXJ5MS54YW1sIiAvPg0KICAgICAgPC9SZXNvdXJjZURpY3Rpb25hcnkuTWVy
+        Z2VkRGljdGlvbmFyaWVzPg0KICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Pg0KICA8L1dpbmRvdy5SZXNvdXJjZXM+DQoNCiAgPFN0
+        YWNrUGFuZWwgTmFtZT0icGFuZWwiPg0KICAgIDxHcm91cEJveCBOYW1lPSJhcHBsaWNhdGlvbkdyb3VwIiBIZWFkZXI9IkFwcGxp
+        Y2F0aW9uIj4NCiAgICAgIDxTdGFja1BhbmVsIE5hbWU9ImFwcGxpY2F0aW9uUGFuZWwiPg0KICAgICAgICA8TGFiZWwgTmFtZT0i
+        bGFiZWwxIiAvPg0KICAgICAgICA8TGFiZWwgTmFtZT0ibGFiZWwyIiBDb250ZW50PSJ7U3RhdGljUmVzb3VyY2UgdHdvfSIgLz4N
+        CiAgICAgIDwvU3RhY2tQYW5lbD4gIA0KICAgIDwvR3JvdXBCb3g+DQoNCiAgICA8R3JvdXBCb3ggTmFtZT0ibG9jYWxHcm91cCIg
+        SGVhZGVyPSJMb2NhbCI+DQogICAgICA8U3RhY2tQYW5lbCBOYW1lPSJsb2NhbFBhbmVsIj4NCiAgICAgICAgPExhYmVsIE5hbWU9
+        ImxhYmVsMyIgLz4NCiAgICAgICAgPExhYmVsIE5hbWU9ImxhYmVsNCIgQ29udGVudD0ie1N0YXRpY1Jlc291cmNlIGZvdXJ9IiAv
+        Pg0KICAgICAgPC9TdGFja1BhbmVsPg0KICAgIDwvR3JvdXBCb3g+DQoNCiAgICA8R3JvdXBCb3ggTmFtZT0ieGFtbEdyb3VwIiBI
+        ZWFkZXI9IlhBTUwiPg0KICAgICAgPFN0YWNrUGFuZWwgTmFtZT0ieGFtbFBhbmVsIj4NCiAgICAgICAgPExhYmVsIE5hbWU9Imxh
+        YmVsNSIgQ29udGVudD0iT25lIiAvPg0KICAgICAgICA8TGFiZWwgTmFtZT0ibGFiZWw2Ij5Ud288L0xhYmVsPg0KICAgICAgPC9T
+        dGFja1BhbmVsPg0KICAgIDwvR3JvdXBCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx"/>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

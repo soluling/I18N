@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{6BFA00A1-DE8C-4F2F-B5F7-0C05FEF72A97}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="CustomControlPackage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CustomControlApplication.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="CustomControlPackage">
+        <MSBuild Projects="CustomControlPackage.dproj"/>
+    </Target>
+    <Target Name="CustomControlPackage:Clean">
+        <MSBuild Projects="CustomControlPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomControlPackage:Make">
+        <MSBuild Projects="CustomControlPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomControlApplication">
+        <MSBuild Projects="CustomControlApplication.dproj"/>
+    </Target>
+    <Target Name="CustomControlApplication:Clean">
+        <MSBuild Projects="CustomControlApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomControlApplication:Make">
+        <MSBuild Projects="CustomControlApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="CustomControlPackage;CustomControlApplication"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="CustomControlPackage:Clean;CustomControlApplication:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="CustomControlPackage:Make;CustomControlApplication:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
