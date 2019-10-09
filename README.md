@@ -10,7 +10,7 @@ Each API is 100% native API. It means that it contains full source code and requ
 
 ## Grammatical numbers and genders
 
-Most resource formats (e.g., .resx in .NET, .properties in Java, and resource strings in Delphi) only support plain strings. Grammatical numbers and genders require structural data where there are several language-depend variants for a single string. For example, in English, "I have N cars" would require two variants:
+Most resource formats (e.g., .resx in .NET, .properties in Java, and resource strings in Delphi) only support plain strings. Grammatical numbers, and genders require structural data where there are several language-depend variants for a single string. For example, in English, "I have N cars" would require two variants:
 
 | Grammatical number | .NET            | Delphi and Java |
 | :----------------- | --------------- | --------------- |
