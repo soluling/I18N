@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160810T010204Z" lastmodified="20181025T023155Z" guid="BCF0FFE9-B378-4815-9B60-D6323CE03C14" version="1.0.228">
+<project id="90D3A8DD-D4B6-4992-85A9-A14F6DB750AC" created="20160810T010204Z" lastmodified="20190824T225614Z" version="1.0.506" stringid="16">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="ja"/>
   <lang id="de"/>
-  <node class="TDelphiProjectSource" name="NTResSimple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\NTRes\Simple\NTResSimple.dproj" original="en" guid="947FA6FF-2A4E-4BBF-B8CB-737DA79DAA4C">
+  <node class="TDelphiProjectSource" name="NTResSimple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\NTRes\Simple\NTResSimple.dproj" original="en">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" created="20160813T201630Z" objectname="Form1" filename="Unit1.dfm">
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi" time="20160814T014207Z">Esimerkki</lang>
           <lang id="fi-FI" time="20160814T162724Z">ESIMERKKI</lang>
@@ -24,7 +24,7 @@
           <row id="Top">8</row>
           <row id="Width">31</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>Label1</value>
             <lang id="fi" time="20160814T014211Z">Tunnus</lang>
             <lang id="ja" time="20160814T160611Z">ぁベル</lang>
@@ -36,42 +36,42 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="3" excluded="2">dummy</row>
         </item>
         <item name="Label3" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">40</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="4" excluded="2">dummy</row>
         </item>
         <item name="Label4" type="TLabel" created="20160814T003215Z">
           <row id="Left">8</row>
           <row id="Top">56</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="5" excluded="2">dummy</row>
         </item>
         <item name="Label5" type="TLabel" created="20160814T003215Z">
           <row id="Left">8</row>
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="6" excluded="2">dummy</row>
         </item>
         <item name="Label6" type="TLabel" created="20170517T141941Z">
           <row id="Left">8</row>
           <row id="Top">88</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="7" excluded="2">dummy</row>
         </item>
         <item name="Button1" type="TButton">
           <row id="Left">200</row>
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="8">
             <value>Button1</value>
             <lang id="fi" time="20160814T014216Z">Painike</lang>
             <lang id="ja" time="20160814T160620Z">バットん</lang>
@@ -95,7 +95,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="9">
           <value>Form2</value>
           <lang id="fi" time="20160814T014218Z">Lomake</lang>
           <lang id="de" time="20160814T162650Z">Form2</lang>
@@ -107,14 +107,14 @@
           <row id="Top">8</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="10" excluded="2">dummy</row>
         </item>
         <item name="Label2" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="11" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTIFRm9ybTIETGVmdAIAA1RvcAIAB0NhcHRpb24GBUZvcm0yDENsaWVudEhlaWdodAMrAQtDbGllbnRXaWR0aAN7
@@ -128,18 +128,18 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="Hello %s" class="TPatternRow" created="20170517T141941Z">
+        <row id="Hello %s" class="TPatternRow" si="12" created="20170517T141941Z">
           <value>Hello {0}</value>
           <lang id="fi" time="20170517T142005Z">Moi {0}</lang>
         </row>
-        <row id="Hello">
+        <row id="Hello" si="13">
           <value>Hello</value>
           <lang id="fi" time="20160810T010225Z">Moi</lang>
           <lang id="fi-FI" time="20160814T162729Z">MOIKKA</lang>
           <lang id="ja" time="20160814T160559Z">こんにちは</lang>
           <lang id="de" time="20160814T162650Z">Hallo</lang>
         </row>
-        <row id="Unit1" created="20160814T010551Z">
+        <row id="Unit1" si="14" created="20160814T010551Z">
           <value>This is a sample</value>
           <lang id="fi" time="20160814T014224Z">Tämä on esimerkki</lang>
           <lang id="ja" time="20160814T160559Z">これはサンプルです。</lang>
@@ -147,13 +147,13 @@
         </row>
       </node>
       <node class="TDelphiStringNode" name="Another" created="20160814T003215Z">
-        <row id="Str1">
+        <row id="Str1" si="15">
           <value>Another group</value>
           <lang id="fi" time="20160814T014233Z">Toinen ryhmä</lang>
           <lang id="ja" time="20160814T160559Z">別のグループ</lang>
           <lang id="de" time="20160814T162651Z">Eine andere Gruppe</lang>
         </row>
-        <row id="Str2" created="20160814T010551Z">
+        <row id="Str2" si="16" created="20160814T010551Z">
           <value>Another group</value>
           <lang id="fi" time="20160814T014233Z">Toinen ryhmä</lang>
           <lang id="ja" time="20160814T160559Z">別のグループ</lang>
@@ -165,7 +165,22 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

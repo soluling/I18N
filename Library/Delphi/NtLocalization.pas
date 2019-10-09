@@ -58,7 +58,7 @@ type
   public
     class procedure CheckLocaleVariables;
 
-    class procedure UpdateFormatSettings(const locale: String); overload;
+    class procedure UpdateFormatSettings(locale: String); overload;
     class procedure UpdateFormatSettings(locale: Integer); overload;
 
     { Convert resource DLL extension into to locale id.
@@ -428,9 +428,12 @@ begin
     UpdateFormatSettings(ExtensionToLocale(LoadedResourceLocale));
 end;
 
-class procedure TNtLocale.UpdateFormatSettings(const locale: String);
+class procedure TNtLocale.UpdateFormatSettings(locale: String);
 begin
-  UpdateFormatSettings(TNtLocale.ExtensionToLocale(DefaultLocale));
+  if locale = '' then
+    locale := DefaultLocale;
+
+  UpdateFormatSettings(TNtLocale.ExtensionToLocale(locale));
 end;
 
 class procedure TNtLocale.UpdateFormatSettings(locale: Integer);

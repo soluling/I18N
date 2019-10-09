@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9CD7690C-FA31-42EB-8138-03322EED2443" created="20170511T071718Z" lastmodified="20190523T134342Z" version="1.0.391" stringid="4">
+<project id="9CD7690C-FA31-42EB-8138-03322EED2443" created="20170511T071718Z" lastmodified="20190813T145216Z" version="1.0.490" stringid="5">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Debug\CustomControlApplication.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\CustomControl\Win32\Debug\CustomControlApplication.exe" original="en-US" binaryoptions="[]">
     <dialogs scanvisualproperties="0"/>
@@ -50,14 +50,14 @@
     </node>
     <node class="TWindowsStringFolder" name="String" excluded="1"/>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
-    <delphirules kind="drVcl">
-      <item type="TMyLabel" property="ExcludeMe"/>
-    </delphirules>
+    <rules kind="crVcl">
+      <rule component="TMyLabel" property="ExcludeMe"/>
+    </rules>
     <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteGlossary"/>
@@ -70,7 +70,6 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>

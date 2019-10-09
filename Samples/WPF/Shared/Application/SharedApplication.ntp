@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="83FD17AA-4B85-4D7D-A990-871295F6035E" created="20170411T020025Z" lastmodified="20181207T024647Z" version="1.0.272">
+<project id="83FD17AA-4B85-4D7D-A990-871295F6035E" created="20170411T020025Z" lastmodified="20190817T190434Z" version="1.0.493" stringid="4">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="SharedApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Shared\Application\SharedApplication.csproj" original="en-US" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <node class="TDirectoryFolder" name="..">
@@ -8,7 +8,7 @@
           <node class="TXamlNode" name="MyUserControl2.xaml" type="UserControl" kind="xkUserControl">
             <item name="Grid[0]" type="Grid">
               <item name="Label[0]" type="Label" created="20170411T031229Z">
-                <row id="Content">
+                <row id="Content" si="1">
                   <value>Another shared string</value>
                   <lang id="fi" rw="0" time="20181207T024643Z">Toinen jaettu merkkijono</lang>
                 </row>
@@ -29,7 +29,7 @@
         <node class="TXamlNode" name="MyUserControl1.xaml" type="UserControl" kind="xkUserControl">
           <item name="Grid[0]" type="Grid">
             <item name="Label[0]" type="Label">
-              <row id="Content">
+              <row id="Content" si="2">
                 <value>This is a shared string</value>
                 <lang id="fi" rw="0" time="20181207T024632Z">Tämä on jaettu merkkijono</lang>
               </row>
@@ -46,11 +46,11 @@
           </data>
         </node>
         <node class="TResXNode" name="Resources1.resx" created="20170411T031229Z">
-          <row id="String1">
+          <row id="String1" si="3">
             <value>One</value>
             <lang id="fi" time="20170411T041326Z">Yksi</lang>
           </row>
-          <row id="String2">
+          <row id="String2" si="4">
             <value>Two</value>
             <lang id="fi" rw="0" time="20181207T024555Z">Kaksi</lang>
           </row>
@@ -58,4 +58,19 @@
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

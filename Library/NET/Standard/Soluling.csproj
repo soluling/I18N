@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>netstandard2.0;net20;net40;net45;net46</TargetFrameworks>
+    <TargetFrameworks>netstandard2.1;net20;net40;net45;net46;net47;net48</TargetFrameworks>
     <AssemblyName>Soluling</AssemblyName>
     <RootNamespace>Soluling</RootNamespace>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
@@ -9,11 +9,11 @@
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net46\Soluling.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net48\Soluling.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\net46\Soluling.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\net48\Soluling.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>

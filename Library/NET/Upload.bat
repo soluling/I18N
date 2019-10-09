@@ -1,2 +1,2 @@
 rem https://docs.microsoft.com/en-us/nuget/quickstart/create-and-publish-a-package
-nuget push Soluling.Release.1.0.5.nupkg 47be3377-c434-4c29-8576-af7f6993a54b -Source https://www.nuget.org/api/v2/package
+nuget push Soluling.1.0.21.nupkg oy2o6fnv3bov7cifan4qavz7k3r4amquzp222ofkhqkxfa -Source https://api.nuget.org/v3/index.json

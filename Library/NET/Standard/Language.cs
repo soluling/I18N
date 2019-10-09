@@ -477,7 +477,7 @@ namespace Soluling
     }
 
     /// <summary>
-    /// Get array of available languages for the current application.
+    /// Get array of available languages for the current assembly.
     /// </summary>
     /// <remarks>
     /// Use this method to get list of available language if you want to build your own user interface to show available languages and to select a new language.
@@ -491,7 +491,7 @@ namespace Soluling
     }
 
     /// <summary>
-    /// Get array of available languages for the specified application.
+    /// Get array of available languages for the specified assembly file.
     /// </summary>
     /// <param name="fileName">Filename of the assembly whose satellite assemblies are listed</param>
     /// <returns>Array of culture infos of the satellite assemblies.</returns>
@@ -534,7 +534,12 @@ namespace Soluling
           }
         }
 
-        if (found)
+        if (!found)
+          continue;
+
+        string satelliteAssemblyFilename = di + "\\" + satelliteFileName;
+
+        if (File.Exists(satelliteAssemblyFilename))
           cultureArray.Add(new CultureInfo(str));
       }
 

@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="CBD363E6-6DD0-4B69-AA41-581ECCEF8D82" created="20190817T215943Z" lastmodified="20190817T220518Z" version="1.0.493" lockedrowcomplete="0" stringid="10">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="WpfApp1.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Link\WpfApp1\WpfApp1.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net48"/>
+    <node class="TDirectoryFolder" name="..">
+      <node class="TDirectoryFolder" name="WpfApp2">
+        <node class="TDirectoryFolder" name="SharedSub" created="20190817T220440Z" st="0">
+          <node class="TXamlNode" name="SharedSubWindow.xaml" type="Window" st="0">
+            <row id="Title" si="8" st="0">
+              <value>Shared Sub Window</value>
+              <lang id="fi" rw="0" time="20190817T220450Z">Jaettu ali-ikkuna</lang>
+            </row>
+            <item name="panel" type="StackPanel" st="0">
+              <item name="label" type="Label" st="0">
+                <row id="Content" si="9" st="0">
+                  <value>This is another shared window</value>
+                  <lang id="fi" rw="0" time="20190817T220503Z">Tämä on toinen jaettu ikkuna</lang>
+                </row>
+              </item>
+            </item>
+            <data>
+              77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iV3BmQXBwMi5TaGFyZWRTdWIuU2hhcmVkU3ViV2luZG93Ig0KICB4bWxucz0iaHR0cDov
+              L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2No
+              ZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
+              bS9leHByZXNzaW9uL2JsZW5kLzIwMDgiDQogIHhtbG5zOm1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFy
+              a3VwLWNvbXBhdGliaWxpdHkvMjAwNiINCiAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6V3BmQXBwMi5TaGFyZWRTdWIiDQog
+              IG1jOklnbm9yYWJsZT0iZCINCiAgVGl0bGU9IlNoYXJlZCBTdWIgV2luZG93IiBIZWlnaHQ9IjMwMCIgV2lkdGg9IjYwMCI+DQoN
+              CiAgPFN0YWNrUGFuZWwgeDpVaWQ9InBhbmVsIj4NCiAgICA8TGFiZWwgeDpVaWQ9ImxhYmVsIj5UaGlzIGlzIGFub3RoZXIgc2hh
+              cmVkIHdpbmRvdzwvTGFiZWw+ICAgICAgDQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
+            </data>
+          </node>
+        </node>
+        <node class="TXamlNode" name="SharedWindow.xaml" type="Window">
+          <row id="Title" si="1">
+            <value>Shared Window</value>
+            <lang id="fi" or="6" rw="0" time="20190817T215952Z" fuzzy="5">Jaettu ikkuna</lang>
+          </row>
+          <item name="panel" type="StackPanel">
+            <item name="label" type="Label">
+              <row id="Content" si="2">
+                <value>This is a share window</value>
+                <lang id="fi" rw="0" time="20190817T220001Z" fuzzy="5">Tämä on jaettu ikkuna</lang>
+              </row>
+            </item>
+          </item>
+          <data>
+            77u/DQo8V2luZG93IA0KICB4OkNsYXNzPSJXcGZBcHAyLlNoYXJlZFdpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1p
+            Y3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9z
+            b2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVzc2lv
+            bi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21wYXRp
+            YmlsaXR5LzIwMDYiDQogIHhtbG5zOmxvY2FsPSJjbHItbmFtZXNwYWNlOldwZkFwcDIiDQogIG1jOklnbm9yYWJsZT0iZCINCiAg
+            VGl0bGU9IlNoYXJlZCBXaW5kb3ciIEhlaWdodD0iMjAwIiBXaWR0aD0iMzAwIj4NCg0KICA8U3RhY2tQYW5lbCB4OlVpZD0icGFu
+            ZWwiPg0KICAgIDxMYWJlbCB4OlVpZD0ibGFiZWwiPlRoaXMgaXMgYSBzaGFyZSB3aW5kb3c8L0xhYmVsPiAgICAgDQogIDwvU3Rh
+            Y2tQYW5lbD4NCjwvV2luZG93Pg0K
+          </data>
+        </node>
+      </node>
+    </node>
+    <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IldwZkFwcDEuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3Nj
+        aGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3Bh
+        Y2U6V3BmQXBwMSINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5S
+        ZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
+    <node class="TXamlNode" name="LocalWindow.xaml" type="Window">
+      <row id="Title" si="6">
+        <value>Local Window</value>
+        <lang id="fi" or="6" rw="0" time="20190817T220004Z" fuzzy="5">Paikallinen ikkuna</lang>
+      </row>
+      <item name="panel" type="StackPanel">
+        <item name="label" type="Label">
+          <row id="Content" si="7">
+            <value>This is a local window</value>
+            <lang id="fi" or="6" rw="0" time="20190817T220006Z" fuzzy="5">Tämä on paikallinen ikkuna</lang>
+          </row>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iV3BmQXBwMS5Mb2NhbFdpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
+        LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVzc2lvbi9i
+        bGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21wYXRpYmls
+        aXR5LzIwMDYiDQogIHhtbG5zOmxvY2FsPSJjbHItbmFtZXNwYWNlOldwZkFwcDEiDQogIG1jOklnbm9yYWJsZT0iZCINCiAgVGl0
+        bGU9IkxvY2FsIFdpbmRvdyIgSGVpZ2h0PSIzMDAiIFdpZHRoPSI2MDAiPg0KDQogIDxTdGFja1BhbmVsIHg6VWlkPSJwYW5lbCI+
+        DQogICAgPExhYmVsIHg6VWlkPSJsYWJlbCI+VGhpcyBpcyBhIGxvY2FsIHdpbmRvdzwvTGFiZWw+ICAgICAgICANCiAgPC9TdGFj
+        a1BhbmVsPg0KPC9XaW5kb3c+DQo=
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title" si="3">
+        <value>Sample</value>
+        <lang id="fi" rw="0" time="20190817T220022Z">Esimerkki</lang>
+      </row>
+      <item name="panel" type="StackPanel">
+        <item name="localButton" type="Button">
+          <row id="Content" si="4">
+            <value>Open local...</value>
+            <lang id="fi" or="6" rw="0" time="20190817T220013Z" fuzzy="5">Avaa paikallinen...</lang>
+          </row>
+        </item>
+        <item name="linkedButton" type="Button">
+          <row id="Content" si="5">
+            <value>Open linked...</value>
+            <lang id="fi" or="6" rw="0" time="20190817T220015Z" fuzzy="5">Avaa linkitetty...</lang>
+          </row>
+        </item>
+        <item name="linkedButton2" type="Button" created="20190817T220440Z" st="0">
+          <row id="Content" si="10" st="0">
+            <value>Open another linked...</value>
+            <lang id="fi" or="6" rw="0" time="20190817T220510Z" fuzzy="5">Avaa toinen linkitetty...</lang>
+          </row>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iV3BmQXBwMS5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9z
+        b2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
+        Y29tL3dpbmZ4LzIwMDYveGFtbCINCiAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2Js
+        ZW5kLzIwMDgiDQogIHhtbG5zOm1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxp
+        dHkvMjAwNiINCiAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6V3BmQXBwMSINCiAgbWM6SWdub3JhYmxlPSJkIg0KICBUaXRs
+        ZT0iU2FtcGxlIiBIZWlnaHQ9IjMwMCIgV2lkdGg9IjYwMCI+DQoNCiAgPFN0YWNrUGFuZWwgeDpVaWQ9InBhbmVsIj4NCiAgICA8
+        QnV0dG9uIHg6VWlkPSJsb2NhbEJ1dHRvbiIgQ2xpY2s9ImxvY2FsQnV0dG9uX0NsaWNrIj5PcGVuIGxvY2FsLi4uPC9CdXR0b24+
+        DQogICAgPEJ1dHRvbiB4OlVpZD0ibGlua2VkQnV0dG9uIiBDbGljaz0ibGlua2VkQnV0dG9uX0NsaWNrIj5PcGVuIGxpbmtlZC4u
+        LjwvQnV0dG9uPg0KICAgIDxCdXR0b24geDpVaWQ9ImxpbmtlZEJ1dHRvbjIiIENsaWNrPSJsaW5rZWRCdXR0b24yX0NsaWNrIj5P
+        cGVuIGFub3RoZXIgbGlua2VkLi4uPC9CdXR0b24+DQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx"/>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+</project>

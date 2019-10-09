@@ -6,8 +6,16 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Soluling.AspNet
 {
+  /// <summary>
+  /// 
+  /// </summary>
   public static class ControllerExtension
   {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="ext"></param>
+    /// <returns></returns>
     public static string ImageExtToContentType(string ext)
     {
       if (ext == "jpg")
@@ -16,6 +24,13 @@ namespace Soluling.AspNet
         return "image/" + ext;
     }
 
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <param name="controller"></param>
+    /// <param name="hostingEnvironment"></param>
+    /// <param name="name"></param>
+    /// <returns></returns>
     public static IActionResult GetImage(this ControllerBase controller, IHostingEnvironment hostingEnvironment, string name)
     {
       var ext = Path.GetExtension(name).Replace(".", "");
