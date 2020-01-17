@@ -1,0 +1,2 @@
+curl http://localhost:53783/sports -X POST -d "@Waterpolo.json" --header "Content-Type: application/json"
+curl http://localhost:53783/sports/5 -X POST -d "@Waterpolo_fi.json" --header "Content-Type: application/json"

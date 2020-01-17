@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20181025T021511Z" lastmodified="20181025T022047Z" guid="A951DE00-D1B9-4A7E-A8F2-2EEC412D257B" version="1.0.228">
+<project id="0DDC6BB5-7A2E-4C4A-93E8-C4FD9FAEEEDB" created="20181025T021511Z" lastmodified="20191223T023913Z" version="1.0.632" stringid="2">
   <lang id="fi"/>
-  <node class="TRadStudioGroupSource" name="Multi.groupproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\Multi.groupproj" original="en" encoding="windows-1252" guid="BD8315FB-1A03-4C89-80D7-F8F90E130046">
-    <node class="TDelphiSource" name="One\Win32\Debug\One.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\One\Win32\Debug\One.exe" created="20181025T021937Z" original="en" guid="F15F712C-0398-4223-9154-D7228CEB6005">
+  <node class="TRadStudioGroupSource" name="Multi.groupproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\Multi.groupproj" original="en" encoding="windows-1252">
+    <node class="TDelphiSource" name="One\Win32\Debug\One.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\One\Win32\Debug\One.exe" created="20181025T021937Z" original="en" platforms="[ptWin32]">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -13,7 +13,7 @@
           <font id="Font" name="Tahoma" size="8"/>
           <row id="Left">0</row>
           <row id="Top">0</row>
-          <row id="Caption">
+          <row id="Caption" si="1">
             <value>Form1</value>
             <lang id="fi" rw="0" time="20181025T022039Z">Lomake</lang>
           </row>
@@ -27,10 +27,10 @@
           </data>
         </node>
       </node>
-      <node class="TWindowsStringFolder" name="String" excluded="1"/>
+      <node class="TWindowsStringFolder" name="String" excluded="1" needsconversion="0"/>
       <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     </node>
-    <node class="TDelphiSource" name="Two\Win32\Debug\Two.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\Two\Win32\Debug\Two.exe" created="20181025T021937Z" original="en" guid="E6F0BED6-D1B0-41AD-B4E2-60385DCD6062">
+    <node class="TDelphiSource" name="Two\Win32\Debug\Two.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Multi\Two\Win32\Debug\Two.exe" created="20181025T021937Z" original="en" platforms="[ptWin32]">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -41,7 +41,7 @@
           <font id="Font" name="Tahoma" size="8"/>
           <row id="Left">0</row>
           <row id="Top">0</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>Form1</value>
             <lang id="fi" or="3" rw="0" time="20181025T022039Z">Lomake</lang>
           </row>
@@ -55,8 +55,23 @@
           </data>
         </node>
       </node>
-      <node class="TWindowsStringFolder" name="String" excluded="1"/>
+      <node class="TWindowsStringFolder" name="String" excluded="1" needsconversion="0"/>
       <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

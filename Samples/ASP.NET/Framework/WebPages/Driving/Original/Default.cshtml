@@ -1,0 +1,68 @@
+﻿@{
+  Validation.RequireField("distance", "You must enter a distance");
+  Validation.RequireField("speed", "You must enter a speed");
+
+  string distanceText = Request.Params["distance"];
+  string speedText = Request.Params["speed"];
+  string message = "";
+  string hoursMessage = "";
+  string minutesMessage = "";
+
+  if ((distanceText != null) && (speedText != null) && Validation.IsValid())
+  {
+    double distance = Convert.ToDouble(distanceText);
+    double speed = Convert.ToDouble(speedText);
+
+    double time = distance/speed;
+    uint hours = (uint)time;
+    uint minutes = (uint)Math.Round(60*(time - hours));
+
+    message = "Driving Time is";
+    hoursMessage = String.Format("{0} hours", hours);
+    minutesMessage = String.Format("{0} minutes", minutes);
+  }
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Driving Time Calculator</title>
+  </head>
+
+  <body>
+    <h1><img align="middle" src="Images/flag.png"/> Driving Time</h1>
+
+    @Html.ValidationSummary()
+
+    <form id="form1">
+      <table border="0">
+        <tr>
+          <td>
+            Driving distance:<br />
+            <input type="text" name="distance" value="@distanceText">
+          </td>
+          <td>
+            Speed:<br />
+            <input type="text" name="speed" value="@speedText">
+          </td>
+          <td valign="bottom">
+            <input type="submit" value="Calculate" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="Images/car.png" />
+          </td>
+          <td>
+            @message
+          </td>
+          <td>
+            @hoursMessage
+            <br />
+            @minutesMessage
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

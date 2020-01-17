@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20150325T005249Z" lastmodified="20181026T234714Z" guid="588A986F-5037-42C8-BBAC-E1D9BCCE14B4" version="1.0.228">
+<project id="12F9BE57-7C44-4D60-AB1B-69EC1B576722" created="20150325T005249Z" lastmodified="20191223T025043Z" version="1.0.632" stringid="5">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Resize.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Resize\Win32\Release\Resize.exe" original="en" guid="D390EDD1-C0EF-46CA-8674-524A31B9BA6C">
+  <node class="TDelphiSource" name="Win32\Release\Resize.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Resize\Win32\Release\Resize.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -12,7 +12,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">Layout Sample</row>
+        <row id="Caption" si="1">Layout Sample</row>
         <row id="ClientHeight">41</row>
         <row id="ClientWidth">226</row>
         <item name="RedButton" type="TButton">
@@ -20,28 +20,28 @@
           <row id="Top">8</row>
           <row id="Width">33</row>
           <row id="Height">25</row>
-          <row id="Caption">&amp;Red</row>
+          <row id="Caption" si="2">&amp;Red</row>
         </item>
         <item name="GreenButton" type="TButton">
           <row id="Left">48</row>
           <row id="Top">8</row>
           <row id="Width">41</row>
           <row id="Height">25</row>
-          <row id="Caption">&amp;Green</row>
+          <row id="Caption" si="3">&amp;Green</row>
         </item>
         <item name="BlueButton" type="TButton">
           <row id="Left">96</row>
           <row id="Top">8</row>
           <row id="Width">33</row>
           <row id="Height">25</row>
-          <row id="Caption">&amp;Blue</row>
+          <row id="Caption" si="4">&amp;Blue</row>
         </item>
         <item name="SaveButton" type="TButton">
           <row id="Left">136</row>
           <row id="Top">8</row>
           <row id="Width">83</row>
           <row id="Height">25</row>
-          <row id="Caption">&amp;Save and clear</row>
+          <row id="Caption" si="5">&amp;Save and clear</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDUxheW91dCBTYW1wbGUMQ2xpZW50SGVpZ2h0AikLQ2xpZW50
@@ -55,13 +55,25 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
-    <configurations>
-      <configuration/>
-    </configurations>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

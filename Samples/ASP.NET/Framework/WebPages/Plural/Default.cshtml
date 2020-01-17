@@ -1,0 +1,68 @@
+﻿@using System.IO;
+@using System.Globalization;
+@using NewTool;
+@using Resources;
+
+@{
+  //Culture = UICulture = CultureInfo.CurrentCulture.ToString();
+  //NewTool.Plural.SetLanguage(Resource.Language);
+}
+
+@functions{
+  string Process(uint count)
+  {
+    return NewTool.Plural.Format(Resource.MessagePlural, count, count);
+  }
+  
+  string GetLanguageName()
+  {
+    return new CultureInfo(Resource.Language).NativeName;
+  }
+
+  string GetImageFile(string fileName)
+  {
+    string localizedImage = Path.Combine(Path.Combine(Path.GetDirectoryName(fileName), UICulture), Path.GetFileName(fileName));
+
+    if (System.IO.File.Exists(Server.MapPath(localizedImage)))
+      return localizedImage;
+    else 
+    {
+      int index = UICulture.IndexOf('-');
+      
+      if (index > 0)
+      {
+        string language = UICulture.Substring(0, index);
+
+        localizedImage = Path.Combine(Path.Combine(Path.GetDirectoryName(fileName), language), Path.GetFileName(fileName));
+
+        if (System.IO.File.Exists(Server.MapPath(localizedImage)))
+          return localizedImage;
+        else
+          return fileName;
+      }
+      else
+        return fileName;
+    }
+  }
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>@Resource.Title</title>
+  </head>
+
+  <body>
+    <h1><img align="middle" src="@GetImageFile("Images/flag.png")"/> @GetLanguageName()</h1>
+    <p>@Process(0)</p>
+    <p>@Process(1)</p>
+    <p>@Process(2)</p>
+    <p>@Process(3)</p>
+    <p>@Process(4)</p>
+    <p>@Process(5)</p>
+    <p>@Process(11)</p>
+    <p>@Process(21)</p>
+    <p>@Process(101)</p>
+    <p>@Process(111)</p>
+  </body>
+</html>

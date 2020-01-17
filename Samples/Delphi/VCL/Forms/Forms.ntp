@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20150320T045324Z" lastmodified="20181024T020937Z" guid="966E11A4-8BA0-46F0-950C-9289B3140478" version="1.0.228">
+<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20191223T020720Z" version="1.0.632" stringid="454">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" guid="3B8F8675-D10B-4DDA-93EA-F05D86456E0A" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" platforms="[ptWin32]" scansourcecode="1">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData">
       <node class="TDelphiFormNode" name="TAIRPLANEFORM" type="TAirplaneForm" resname="TAIRPLANEFORM" objectname="AirplaneForm" parent="TImageForm" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Airplane</value>
           <lang id="fi" time="20150320T050533Z">Lentokone</lang>
         </row>
@@ -27,9 +27,9 @@
             <lang id="fi" time="20150325T004904Z">97</lang>
           </row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>I want to go:</value>
-            <lang id="fi" time="20150320T050533Z">Minä haluan mennä</lang>
+            <lang id="fi" st="4" time="20191223T020716Z">Minä haluan mennä:</lang>
           </row>
         </item>
         <item name="ComboBox1" type="TComboBox">
@@ -47,23 +47,23 @@
             <lang id="fi" time="20150325T004902Z">129</lang>
           </row>
           <row id="Height" created="20150325T004946Z">21</row>
-          <row id="Text" created="20150321T233329Z">
+          <row id="Text" si="3" created="20150321T233329Z">
             <value>Please select</value>
             <lang id="fi" time="20150325T004924Z">Valitse</lang>
           </row>
-          <row id="Items.Strings[0]" created="20150322T001537Z">
+          <row id="Items.Strings[0]" si="4" created="20150322T001537Z">
             <value>Please select</value>
             <lang id="fi" time="20150325T004924Z">Valitse</lang>
           </row>
-          <row id="Items.Strings[1]" created="20150322T001537Z">
+          <row id="Items.Strings[1]" si="5" created="20150322T001537Z">
             <value>Europe</value>
             <lang id="fi" time="20170508T140701Z">Eurooppaan</lang>
           </row>
-          <row id="Items.Strings[2]">
+          <row id="Items.Strings[2]" si="6">
             <value>Asia</value>
             <lang id="fi" time="20170508T140706Z">Aasiaan</lang>
           </row>
-          <row id="Items.Strings[3]">
+          <row id="Items.Strings[3]" si="7">
             <value>America</value>
             <lang id="fi" time="20170508T140710Z">Amerikkaan</lang>
           </row>
@@ -264,9 +264,9 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TCARFORM" type="TCarForm" resname="TCARFORM" objectname="CarForm" parent="TImageForm" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="8">
           <value>Car</value>
-          <lang id="fi" time="20150321T190438Z">Auto</lang>
+          <lang id="fi" time="20191223T020538Z">Auto</lang>
         </row>
         <item name="Image1" type="TImage"/>
         <item name="CheckBox1" type="TCheckBox">
@@ -274,7 +274,7 @@
           <row id="Top" created="20150325T004946Z">120</row>
           <row id="Width" created="20150325T004946Z">233</row>
           <row id="Height" created="20150325T004946Z">17</row>
-          <row id="Caption">
+          <row id="Caption" si="9">
             <value>I have a car</value>
             <lang id="fi" time="20150320T050534Z">Minulla on auto</lang>
           </row>
@@ -536,7 +536,7 @@
           <row id="Top" created="20150325T004946Z">120</row>
           <row id="Width" created="20150325T004946Z">129</row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="10">
             <value>Image</value>
             <lang id="fi" time="20150321T190222Z">Kuva</lang>
           </row>
@@ -553,7 +553,7 @@
           <row id="Top">8</row>
           <row id="Width">43</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="11" excluded="2">dummy</row>
         </item>
         <item name="DescriptionLabel" type="TLabel" created="20150325T004946Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -561,7 +561,7 @@
           <row id="Top">32</row>
           <row id="Width">233</row>
           <row id="Height">81</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="12" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMPEKVEltYWdlRm9ybQlJbWFnZUZvcm0ETGVmdAIAA1RvcAIADENsaWVudEhlaWdodAORAAtDbGllbnRXaWR0aAOBAQVDb2xv
@@ -582,7 +582,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="13">
           <value>Sample</value>
           <lang id="fi" time="20170508T140635Z">Esimerkki</lang>
         </row>
@@ -594,7 +594,7 @@
           <row id="Top">8</row>
           <row id="Width">105</row>
           <row id="Height">33</row>
-          <row id="Caption">
+          <row id="Caption" si="14">
             <value>Car</value>
             <lang id="fi" time="20160702T220533Z">Auto</lang>
           </row>
@@ -604,7 +604,7 @@
           <row id="Top">8</row>
           <row id="Width">105</row>
           <row id="Height">33</row>
-          <row id="Caption">
+          <row id="Caption" si="15">
             <value>Airplane</value>
             <lang id="fi" time="20160702T220533Z">Lentokone</lang>
           </row>
@@ -615,7 +615,7 @@
           <row id="Top">48</row>
           <row id="Width">105</row>
           <row id="Height">33</row>
-          <row id="Caption">
+          <row id="Caption" si="16">
             <value>Messages</value>
             <lang id="fi" time="20160702T220533Z">Viestit</lang>
           </row>
@@ -626,9 +626,9 @@
           <row id="Top">8</row>
           <row id="Width">105</row>
           <row id="Height">33</row>
-          <row id="Caption">
+          <row id="Caption" si="17">
             <value>&amp;Language...</value>
-            <lang id="fi" time="20160702T220533Z">Kieli</lang>
+            <lang id="fi" time="20191223T020459Z">Kie&amp;li...</lang>
           </row>
         </item>
         <item name="StringsButton" type="TBitBtn">
@@ -637,9 +637,9 @@
           <row id="Top">48</row>
           <row id="Width">105</row>
           <row id="Height">33</row>
-          <row id="Caption">
+          <row id="Caption" si="18">
             <value>Strings</value>
-            <lang id="fi" time="20160702T220533Z">Merkkijonot</lang>
+            <lang id="fi" time="20191223T020548Z">Merkkijonot</lang>
           </row>
         </item>
         <data>
@@ -783,7 +783,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TMESSAGESFORM" type="TMessagesForm" resname="TMESSAGESFORM" created="20150321T150249Z" objectname="MessagesForm" parent="TBaseForm" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="19">
           <value>Messages</value>
           <lang id="fi" time="20150321T190250Z">Viestit</lang>
         </row>
@@ -796,7 +796,7 @@
           <row id="Top" created="20150325T004946Z">8</row>
           <row id="Width" created="20150325T004946Z">72</row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="20">
             <value>Static message</value>
             <lang id="fi" time="20150321T190301Z">Staattinen viesti</lang>
           </row>
@@ -806,63 +806,63 @@
           <row id="Top" changed="20170507T194529Z">32</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="21" excluded="2">dummy</row>
         </item>
         <item name="SingularLabel" type="TLabel" created="20150325T004946Z">
           <row id="Left">8</row>
           <row id="Top" changed="20170507T194529Z">104</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="22" excluded="2">dummy</row>
         </item>
         <item name="FewLabel" type="TLabel" created="20150325T004946Z">
           <row id="Left">8</row>
           <row id="Top" changed="20170507T194529Z">128</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="23" excluded="2">dummy</row>
         </item>
         <item name="ManyLabel" type="TLabel" created="20150325T004946Z">
           <row id="Left">8</row>
           <row id="Top" changed="20170507T194529Z">152</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="24" excluded="2">dummy</row>
         </item>
         <item name="OtherLabel" type="TLabel" created="20150325T004946Z">
           <row id="Left">8</row>
           <row id="Top" changed="20170507T194529Z">176</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="25" excluded="2">dummy</row>
         </item>
         <item name="DynamicLabel" type="TLabel" created="20150325T004946Z">
           <row id="Left">8</row>
           <row id="Top" changed="20170507T194529Z">56</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="26" excluded="2">dummy</row>
         </item>
         <item name="Dynamic2Label" type="TLabel" created="20170507T194529Z">
           <row id="Left">8</row>
           <row id="Top">80</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="27" excluded="2">dummy</row>
         </item>
         <item name="GenderLabel" type="TLabel" created="20180223T015516Z">
           <row id="Left">8</row>
           <row id="Top">200</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="28" excluded="2">dummy</row>
         </item>
         <item name="SelectLabel" type="TLabel" created="20180223T015516Z">
           <row id="Left">8</row>
           <row id="Top">224</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="29" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMPENVE1lc3NhZ2VzRm9ybQxNZXNzYWdlc0Zvcm0HQ2FwdGlvbgYITWVzc2FnZXMMQ2xpZW50SGVpZ2h0AwQBCE9uQ3JlYXRl
@@ -882,7 +882,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20150325T004946Z">256</row>
         <row id="Top" created="20150325T004946Z">347</row>
-        <row id="Caption">
+        <row id="Caption" si="30">
           <value>Select Language</value>
           <lang id="fi" time="20150320T050536Z">Valitse kieli</lang>
         </row>
@@ -899,7 +899,7 @@
           <row id="Top" created="20150325T004946Z">8</row>
           <row id="Width" created="20150325T004946Z">75</row>
           <row id="Height" created="20150325T004946Z">25</row>
-          <row id="Caption">
+          <row id="Caption" si="31">
             <value>OK</value>
             <lang id="fi" time="20170508T140618Z">OK</lang>
           </row>
@@ -909,7 +909,7 @@
           <row id="Top" created="20150325T004946Z">40</row>
           <row id="Width" created="20150325T004946Z">75</row>
           <row id="Height" created="20150325T004946Z">25</row>
-          <row id="Caption">
+          <row id="Caption" si="32">
             <value>Cancel</value>
             <lang id="fi" time="20150320T050536Z">Peruuta</lang>
           </row>
@@ -928,7 +928,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TSTRINGSFORM" type="TStringsForm" resname="TSTRINGSFORM" created="20150321T144343Z" objectname="StringsForm" parent="TBaseForm" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="33">
           <value>Strings</value>
           <lang id="fi" time="20150321T190245Z">Merkkijonot</lang>
         </row>
@@ -937,7 +937,7 @@
           <row id="Top" created="20150325T004946Z">8</row>
           <row id="Width" created="20150325T004946Z">77</row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="34">
             <value>I have a red car</value>
             <lang id="fi" tm="1" time="20150321T150319Z">Minulla on punainen auto</lang>
           </row>
@@ -947,7 +947,7 @@
           <row id="Top" created="20150325T004946Z">24</row>
           <row id="Width" created="20150325T004946Z">80</row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="35">
             <value>I have a fast car</value>
             <lang id="fi" time="20150321T190323Z">Minulla on nopea auto</lang>
           </row>
@@ -957,7 +957,7 @@
           <row id="Top" created="20150325T004946Z">40</row>
           <row id="Width" created="20150325T004946Z">75</row>
           <row id="Height" created="20150325T004946Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="36">
             <value>I have two cars</value>
             <lang id="fi" time="20150321T190332Z">Minulla on kaksi autoa</lang>
           </row>
@@ -970,57 +970,34 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
       <node class="TWindowsStringNode" name="AirplaneFrm">
-        <row id="SText">
+        <row id="SText" si="37">
           <value>Airplane</value>
           <lang id="fi" time="20150320T050536Z">Lentokone</lang>
         </row>
-        <row id="SDescription">
+        <row id="SDescription" si="38">
           <value>This is am airplane. It is very fast way to travel.</value>
           <lang id="fi" time="20150320T050621Z">Tämä on lentokone. Se on tosi nopea tapa matkustaa.</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="CarFrm">
-        <row id="SText" scannedcomment="Can title">
+        <row id="SDescription" si="40">
+          <value>This is a car. It is the most common way to move.</value>
+          <lang id="fi" time="20191223T020448Z">Tämä on auto. Se on yleisin tapa liikkua.</lang>
+        </row>
+        <row id="SText" si="39" scannedcomment="Can title">
           <value>Car</value>
           <lang id="fi" time="20150321T190438Z">Auto</lang>
         </row>
-        <row id="SDescription">
-          <value>This is a car. It is the most common way to move.</value>
-          <lang id="fi" time="20150320T050537Z">Tämä on auto. Se on yleisin tapa liikkua</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="MessagesFrm" created="20150321T150249Z">
-        <row id="SRuntime" scannedcomment="Message text">
-          <value>Runtime message</value>
-          <lang id="fi" time="20150321T190349Z">Ajonaikainen viesti</lang>
-          <lang id="ja" time="20151019T031055Z">ランタイム メッセージ</lang>
-        </row>
-        <row id="SDynamic" class="TPatternRow" scannedcomment="0: Name of the user" created="20170507T194529Z">
-          <value>Hello {0}!</value>
-          <lang id="fi" time="20170507T194615Z">Moi {0}!</lang>
-          <lang id="ja" time="20170508T140750Z">こんにちは{0}！</lang>
-        </row>
-        <row id="SDynamic2" class="TPatternRow" scannedcomment="0: Name of the first user, 1: Name of the second user" created="20170507T194529Z">
-          <value>Hello {0} and {1}!</value>
-          <lang id="fi" time="20170507T194548Z">Moi {0} ja {1}!</lang>
-        </row>
-        <row id="SMessagePlural" changed="20170508T140120Z" class="TPatternRow" scannedcomment="0: File count" created="20170507T194529Z">
-          <value>{0} files</value>
-          <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170508T140148Z">
-            <value>{0} tiedostoa</value>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
-          </lang>
-          <lang id="ja" time="20170508T140742Z">{0}ファイル</lang>
-        </row>
-        <row id="SMessageGender" class="TPatternRow" scannedcomment="0: Name of a person" created="20180223T015516Z">
+        <row id="SMessageGender" class="TPatternRow" si="45" scannedcomment="0: Name of a person" created="20180223T015516Z">
           <value gender="geMale">{0} will bring his bicycle</value>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
           <lang id="fi" rw="0" time="20181024T020804Z">{0} tuo pyöränsä</lang>
         </row>
-        <row id="SMessageSelect" changed="20181024T020750Z" class="TPatternRow" scannedcomment="0: Name of the player" created="20180223T015516Z">
+        <row id="SMessageSelect" changed="20181024T020750Z" class="TPatternRow" si="46" scannedcomment="0: Name of the player" created="20180223T015516Z">
           <value select="soccer">{0} is the best soccer player</value>
           <pattern select="basketball">{0} is the best basketball player</pattern>
           <pattern select="hockey">{0} is the best ice hockey player</pattern>
@@ -1030,26 +1007,68 @@
             <pattern select="hockey">{0} on paras jääkiekkoilija</pattern>
           </lang>
         </row>
+        <row id="SRuntime" si="41" scannedcomment="Message text">
+          <value>Runtime message</value>
+          <lang id="fi" time="20150321T190349Z">Ajonaikainen viesti</lang>
+          <lang id="ja" time="20151019T031055Z">ランタイム メッセージ</lang>
+        </row>
+        <row id="SDynamic" class="TPatternRow" si="42" scannedcomment="0: Name of the user" created="20170507T194529Z">
+          <value>Hello {0}!</value>
+          <lang id="fi" time="20170507T194615Z">Moi {0}!</lang>
+          <lang id="ja" time="20170508T140750Z">こんにちは{0}！</lang>
+        </row>
+        <row id="SDynamic2" class="TPatternRow" si="43" scannedcomment="0: Name of the first user, 1: Name of the second user" created="20170507T194529Z">
+          <value>Hello {0} and {1}!</value>
+          <lang id="fi" time="20170507T194548Z">Moi {0} ja {1}!</lang>
+        </row>
+        <row id="SMessagePlural" changed="20170508T140120Z" class="TPatternRow" si="44" scannedcomment="0: File count" created="20170507T194529Z">
+          <value>{0} files</value>
+          <pattern plural="pfOne">{0} file</pattern>
+          <lang id="fi" time="20170508T140148Z">
+            <value>{0} tiedostoa</value>
+            <pattern plural="pfOne">{0} tiedosto</pattern>
+          </lang>
+          <lang id="ja" time="20170508T140742Z">{0}ファイル</lang>
+        </row>
       </node>
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <platformfiles>
       <item file="..\..\Win64\Release\Project1.exe" drcfile="..\..\Win64\Release\Project1.drc"/>
     </platformfiles>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-    <item type="TBitBtn" property="Glyph.Data" format="pfSizeImage"/>
-    <item type="TImage" property="Picture.Data" format="pfClassImage"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+    <rule component="TBitBtn" property="Glyph.Data" format="pfSizeImage"/>
+    <rule component="TImage" property="Picture.Data" format="pfClassImage"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

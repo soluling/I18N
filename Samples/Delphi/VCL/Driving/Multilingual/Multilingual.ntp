@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20190826T145906Z" version="1.0.509" stringid="15">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20191223T010941Z" version="1.0.632" stringid="411">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32]">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -485,11 +485,18 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SNtLocale" si="15">
+          <value>en</value>
+          <lang id="fi" time="20110805T135509Z">fi</lang>
+        </row>
         <row id="SResultPlural" changed="20180524T033838Z" class="TPatternRow" si="13" created="20170517T034344Z">
           <value startpattern="1">Driving time{0}{1}.</value>
           <pattern plural="pfZero" index="0"> </pattern>
@@ -510,12 +517,9 @@
           <value>Driving time calculator</value>
           <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
         </row>
-        <row id="SNtLocale" si="15">
-          <value>en</value>
-          <lang id="fi" time="20110805T135509Z">fi</lang>
-        </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -527,9 +531,7 @@
     <rule component="TMenuItem" property="Caption" value="-"/>
   </rules>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>

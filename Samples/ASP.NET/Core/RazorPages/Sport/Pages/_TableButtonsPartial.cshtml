@@ -1,0 +1,36 @@
+﻿@model Data.IndividualButtonPartial
+
+<td style="width:150px;">
+  <div class="btn-group" role="group">
+    @await Html.PartialAsync(
+      "_IndividualButtonPartial",
+      new IndividualButtonPartial
+      {
+        Page = "Edit",
+        ButtonType = "btn-primary",
+        Glyph = "edit",
+        Id = Model.Id
+      })
+
+    @await Html.PartialAsync(
+      "_IndividualButtonPartial",
+      new IndividualButtonPartial
+      {
+        Page = "Details",
+        ButtonType = "btn-success",
+        Glyph = "list-ul",
+        Id = Model.Id
+      })
+
+    @await Html.PartialAsync(
+    "_IndividualButtonPartial",
+    new IndividualButtonPartial
+    {
+        Page = "Delete",
+        ButtonType = "btn-danger",
+        Glyph = "trash",
+        Id = Model.Id,
+        CanBeDeleted = Model.CanBeDeleted
+    })
+    </div>
+</td>

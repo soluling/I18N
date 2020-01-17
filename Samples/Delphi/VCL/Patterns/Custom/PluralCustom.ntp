@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20140612T064644Z" lastmodified="20181026T233923Z" guid="851FE3AA-939A-4C86-8970-B4FB9D9C4800" version="1.0.228">
+<project id="0187ED7C-631F-490C-8B5A-0569506EA542" created="20140612T064644Z" lastmodified="20191223T024648Z" version="1.0.632" stringid="415">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="Win32\Release\PluralCustom.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Custom\Win32\Release\PluralCustom.exe" original="en" guid="048FDB84-2C26-435D-AEE5-814F8C6E9D3D">
+  <node class="TDelphiSource" name="Win32\Release\PluralCustom.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Custom\Win32\Release\PluralCustom.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -12,7 +12,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Plural Sample</value>
           <lang id="fi" time="20170422T164720Z">Monikkoesimerkki</lang>
         </row>
@@ -30,7 +30,7 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="2" excluded="2">dummy</row>
         </item>
         <item name="Label0_1" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -38,7 +38,7 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="3" excluded="2">dummy</row>
         </item>
         <item name="Label0_2" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -46,7 +46,7 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="4" excluded="2">dummy</row>
         </item>
         <item name="Label1_0" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -54,14 +54,14 @@
           <row id="Top">48</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="5" excluded="2">dummy</row>
         </item>
         <item name="Label1_1" type="TLabel">
           <row id="Left">208</row>
           <row id="Top">48</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="6" excluded="2">dummy</row>
         </item>
         <item name="Label1_2" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -69,7 +69,7 @@
           <row id="Top">48</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="7" excluded="2">dummy</row>
         </item>
         <item name="Label2_0" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -77,7 +77,7 @@
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="8" excluded="2">dummy</row>
         </item>
         <item name="Label2_1" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -85,7 +85,7 @@
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="9" excluded="2">dummy</row>
         </item>
         <item name="Label2_2" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -93,7 +93,7 @@
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="10" excluded="2">dummy</row>
         </item>
         <item name="Label3_0" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -101,7 +101,7 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="11" excluded="2">dummy</row>
         </item>
         <item name="Label3_1" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -109,7 +109,7 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="12" excluded="2">dummy</row>
         </item>
         <item name="Label3_2" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -117,7 +117,7 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="13" excluded="2">dummy</row>
         </item>
         <item name="Label1" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -125,7 +125,7 @@
           <row id="Top">8</row>
           <row id="Width">98</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="14">
             <value>Standard pattern</value>
             <lang id="fi" time="20170422T164904Z">Standardimalli</lang>
           </row>
@@ -136,7 +136,7 @@
           <row id="Top">8</row>
           <row id="Width">125</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="15">
             <value>Pattern with zero part</value>
             <lang id="fi" time="20170422T164941Z">Malli, jossa on nollaosa</lang>
           </row>
@@ -147,7 +147,7 @@
           <row id="Top">8</row>
           <row id="Width">179</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="16">
             <value>Pattern with zero and two parts</value>
             <lang id="fi" time="20170422T164938Z">Malli, jossa on nolla- ja kaksiosat</lang>
           </row>
@@ -158,7 +158,7 @@
           <row id="Top" changed="20170723T034044Z">24</row>
           <row id="Width">9</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">0 </row>
+          <row id="Caption" si="17" excluded="1">0 </row>
         </item>
         <item name="Label6" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -166,7 +166,7 @@
           <row id="Top" changed="20170723T034044Z">48</row>
           <row id="Width">9</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">1 </row>
+          <row id="Caption" si="18" excluded="1">1 </row>
         </item>
         <item name="Label7" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -174,7 +174,7 @@
           <row id="Top" changed="20170723T034044Z">72</row>
           <row id="Width">9</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">2 </row>
+          <row id="Caption" si="19" excluded="1">2 </row>
         </item>
         <item name="Label8" type="TLabel" created="20170723T034044Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -182,7 +182,7 @@
           <row id="Top">96</row>
           <row id="Width">9</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">3 </row>
+          <row id="Caption" si="20" excluded="1">3 </row>
         </item>
         <item name="Label4" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -190,7 +190,7 @@
           <row id="Top" changed="20170723T034044Z">8</row>
           <row id="Width" changed="20170723T034044Z">147</row>
           <row id="Height">13</row>
-          <row id="Caption" changed="20170723T034044Z" created="20151020T140616Z">
+          <row id="Caption" changed="20170723T034044Z" si="21" created="20151020T140616Z">
             <value>Pattern with 0 and 2 parts</value>
             <lang id="fi" time="20170723T234633Z">Malli, jossa on 0 ja 2 -osat</lang>
           </row>
@@ -201,7 +201,7 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="22" excluded="2">dummy</row>
         </item>
         <item name="Label1_3" type="TLabel" created="20170723T034044Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -209,7 +209,7 @@
           <row id="Top">48</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="23" excluded="2">dummy</row>
         </item>
         <item name="Label2_3" type="TLabel" created="20170723T034044Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -217,7 +217,7 @@
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="24" excluded="2">dummy</row>
         </item>
         <item name="Label3_3" type="TLabel" created="20170723T034044Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -225,7 +225,7 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="25" excluded="2">dummy</row>
         </item>
         <item name="Label9" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -233,7 +233,7 @@
           <row id="Top">8</row>
           <row id="Width">156</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="26">
             <value>Pattern with operator parts</value>
             <lang id="fi" rw="0" time="20180523T160244Z">Malli, jossa on operaattoriosat</lang>
           </row>
@@ -244,7 +244,7 @@
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="27" excluded="2">dummy</row>
         </item>
         <item name="Label1_4" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -252,7 +252,7 @@
           <row id="Top">48</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="28" excluded="2">dummy</row>
         </item>
         <item name="Label2_4" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -260,7 +260,7 @@
           <row id="Top">72</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="29" excluded="2">dummy</row>
         </item>
         <item name="Label3_4" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -268,7 +268,7 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="30" excluded="2">dummy</row>
         </item>
         <item name="Label10" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -276,7 +276,7 @@
           <row id="Top">120</row>
           <row id="Width">9</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">4 </row>
+          <row id="Caption" si="31" excluded="1">4 </row>
         </item>
         <item name="Label4_0" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -284,7 +284,7 @@
           <row id="Top">120</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="32" excluded="2">dummy</row>
         </item>
         <item name="Label4_1" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -292,7 +292,7 @@
           <row id="Top">120</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="33" excluded="2">dummy</row>
         </item>
         <item name="Label4_2" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -300,7 +300,7 @@
           <row id="Top">120</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="34" excluded="2">dummy</row>
         </item>
         <item name="Label4_3" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -308,7 +308,7 @@
           <row id="Top">120</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="35" excluded="2">dummy</row>
         </item>
         <item name="Label4_4" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -316,7 +316,7 @@
           <row id="Top">120</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="36" excluded="2">dummy</row>
         </item>
         <item name="Label11" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -324,7 +324,7 @@
           <row id="Top">144</row>
           <row id="Width">6</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="1">5</row>
+          <row id="Caption" si="37" excluded="1">5</row>
         </item>
         <item name="Label5_0" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -332,7 +332,7 @@
           <row id="Top">144</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="38" excluded="2">dummy</row>
         </item>
         <item name="Label5_1" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -340,7 +340,7 @@
           <row id="Top">144</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="39" excluded="2">dummy</row>
         </item>
         <item name="Label5_2" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -348,7 +348,7 @@
           <row id="Top">144</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="40" excluded="2">dummy</row>
         </item>
         <item name="Label5_3" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -356,7 +356,7 @@
           <row id="Top">144</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="41" excluded="2">dummy</row>
         </item>
         <item name="Label5_4" type="TLabel" created="20180223T020706Z">
           <font id="Font" name="Tahoma" size="8"/>
@@ -364,7 +364,7 @@
           <row id="Top">144</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="42" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDVBsdXJhbCBTYW1wbGUMQ2xpZW50SGVpZ2h0A6oAC0NsaWVu
@@ -471,12 +471,15 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SZeroMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+        <row id="SZeroMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="43" created="20170422T164650Z">
           <value>{0} files</value>
           <prev>%d files</prev>
           <pattern plural="pfZero">No files</pattern>
@@ -487,7 +490,7 @@
             <pattern plural="pfOne">Yksi tiedosto</pattern>
           </lang>
         </row>
-        <row id="STwoMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+        <row id="STwoMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="44" created="20170422T164650Z">
           <value>{0} files</value>
           <prev>%d files</prev>
           <pattern plural="pfZero">No files</pattern>
@@ -500,7 +503,7 @@
             <pattern plural="pfTwo">Kaksi tiedostoa</pattern>
           </lang>
         </row>
-        <row id="S2MessagePlural" changed="20180223T020706Z" class="TPatternRow" created="20170723T034044Z">
+        <row id="S2MessagePlural" changed="20180223T020706Z" class="TPatternRow" si="45" created="20170723T034044Z">
           <value>{0} files</value>
           <prev>{0} files</prev>
           <pattern operator="okEqual" operand="0">No files</pattern>
@@ -513,7 +516,7 @@
             <pattern plural="pfOther">Kaksi tiedostoa</pattern>
           </lang>
         </row>
-        <row id="STextMessagePlural" class="TPatternRow" created="20180523T155849Z">
+        <row id="STextMessagePlural" class="TPatternRow" si="46" created="20180523T155849Z">
           <value>Lots of files</value>
           <pattern operator="okEqual" operand="0">No files</pattern>
           <pattern operator="okEqual" operand="1">One file</pattern>
@@ -531,11 +534,11 @@
             <pattern operator="okAround" operand="12">Tusina tiedostoja</pattern>
           </lang>
         </row>
-        <row id="SNtLocale">
+        <row id="SNtLocale" si="47">
           <value>en</value>
           <lang id="fi" time="20170422T165040Z">fi</lang>
         </row>
-        <row id="SMessagePlural" changed="20170723T034044Z" class="TPatternRow" created="20170422T164650Z">
+        <row id="SMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="48" created="20170422T164650Z">
           <value>{0} files</value>
           <prev>%d files</prev>
           <pattern plural="pfOne">{0} file</pattern>
@@ -545,13 +548,29 @@
           </lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

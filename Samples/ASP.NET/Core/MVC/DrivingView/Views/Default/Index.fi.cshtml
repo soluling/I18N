@@ -1,0 +1,39 @@
+﻿@model DrivingView.Models.DrivingModel;
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Ajoaikalaskin</title>
+</head>
+
+<body>
+  <h1><img align="top" src="images/fi/flag.png" /> Ajoaika</h1>
+
+  <form method="post">
+    <table border="0">
+      <tr>
+        <td>
+          Ajomatka:<br/>
+          <input type="text" asp-for="Distance">
+        </td>
+        <td>
+          Nopeus:<br/>
+          <input type="text" asp-for="Speed">
+        </td>
+        <td valign="bottom">
+          <input type="submit" value="Laske" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/fi/car.png" />
+        </td>
+        <td colspan="2">
+          @Model?.Message
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

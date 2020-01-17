@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2016 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2018 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'NtResource.pas' rev: 32.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'NtResource.pas' rev: 33.00 (MacOS)
 
 #ifndef NtresourceHPP
 #define NtresourceHPP
@@ -29,7 +29,6 @@ class DELPHICLASS TNtResourceLanguage;
 class DELPHICLASS TNtDelphiResource;
 class DELPHICLASS TNtDelphiResources;
 //-- type declarations -------------------------------------------------------
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtResourceLanguage : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -45,14 +44,12 @@ public:
 	__property System::UnicodeString Id = {read=FId};
 	__property System::UnicodeString Image = {read=FImage};
 public:
-	/* TObject.Create */ inline __fastcall TNtResourceLanguage(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TNtResourceLanguage(void) { }
+	/* TObject.Create */ inline __fastcall TNtResourceLanguage() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TNtResourceLanguage() { }
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtDelphiResource : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -76,14 +73,12 @@ public:
 	__property System::UnicodeString Id = {read=FId};
 	__property int Offset = {read=FOffset, write=SetOffset, nodefault};
 public:
-	/* TObject.Create */ inline __fastcall TNtDelphiResource(void) : System::TObject() { }
-	/* TObject.Destroy */ inline __fastcall virtual ~TNtDelphiResource(void) { }
+	/* TObject.Create */ inline __fastcall TNtDelphiResource() : System::TObject() { }
+	/* TObject.Destroy */ inline __fastcall virtual ~TNtDelphiResource() { }
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtDelphiResources : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -99,26 +94,26 @@ private:
 	int FLanguageIndex;
 	System::Generics::Collections::TList__1<TNtDelphiResource*>* FLanguages;
 	System::Generics::Collections::TList__1<TNtResourceLanguage*>* FLanguageNames;
-	TNtDelphiResource* __fastcall GetCurrent(void);
-	int __fastcall GetCount(void);
-	bool __fastcall GetEnabled(void);
+	TNtDelphiResource* __fastcall GetCurrent();
+	int __fastcall GetCount();
+	bool __fastcall GetEnabled();
 	TNtDelphiResource* __fastcall GetLanguage(int i);
-	System::UnicodeString __fastcall GetLanguageId(void);
+	System::UnicodeString __fastcall GetLanguageId();
 	System::UnicodeString __fastcall GetOriginal(const System::UnicodeString id);
 	System::UnicodeString __fastcall GetLanguageImage(const System::UnicodeString id);
 	void __fastcall SetLanguageId(const System::UnicodeString value);
-	void __fastcall CheckLoad(void);
+	void __fastcall CheckLoad();
 	
 public:
-	__fastcall TNtDelphiResources(void);
-	__fastcall virtual ~TNtDelphiResources(void);
-	void __fastcall Load(void);
+	__fastcall TNtDelphiResources();
+	__fastcall virtual ~TNtDelphiResources();
+	void __fastcall Load();
 	int __fastcall Find(const System::UnicodeString id);
 	System::Classes::TStream* __fastcall FindForm(const System::UnicodeString name);
 	bool __fastcall FormExists(const System::UnicodeString name);
 	System::UnicodeString __fastcall GetString(const System::UnicodeString original, const System::UnicodeString id, const System::UnicodeString group);
 	System::UnicodeString __fastcall GetStringInLanguage(const System::UnicodeString language, const System::UnicodeString original, const System::UnicodeString id, const System::UnicodeString group);
-	System::Classes::TStream* __fastcall GetResource(const System::UnicodeString id, System::WideChar * resType = (System::WideChar *)(0xa));
+	System::Classes::TStream* __fastcall GetResource(const System::UnicodeString id, System::WideChar * resType = (System::WideChar *)(0x000000000000000aULL));
 	TNtResourceLanguage* __fastcall _T(const System::UnicodeString original, const System::UnicodeString id);
 	__classmethod TNtDelphiResources* __fastcall GetResources();
 	__property bool CascadingEnabled = {read=FCascadingEnabled, write=FCascadingEnabled, nodefault};
@@ -133,10 +128,9 @@ public:
 	__property System::UnicodeString LanguageImages[const System::UnicodeString id] = {read=GetLanguageImage};
 };
 
-#pragma pack(pop)
 
 //-- var, const, procedure ---------------------------------------------------
-#define NTRES_RESOURCE_NAME_C L"NtLangRes"
+#define NTRES_RESOURCE_NAME_C u"NtLangRes"
 extern DELPHI_PACKAGE System::StaticArray<System::Byte, 4> NTRES_MAGIC_C;
 extern DELPHI_PACKAGE System::StaticArray<System::Byte, 4> NTLANG_MAGIC_C;
 extern DELPHI_PACKAGE TNtDelphiResources* NtResources;

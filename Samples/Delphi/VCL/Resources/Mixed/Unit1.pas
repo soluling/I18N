@@ -48,7 +48,7 @@ implementation
 
 uses
   Vcl.Imaging.pngimage,
-  NtGraphics;
+  NtGraphic;
 
 procedure TForm1.UpdateImage;
 resourcestring

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20151026T131424Z" lastmodified="20181023T162010Z" guid="95B0E249-C47E-4F2E-9F26-009284AF4D88" version="1.0.228">
+<project id="CC45AA2B-80E4-49E7-A649-BBEFD70455DF" created="20151026T131424Z" lastmodified="20191223T004914Z" version="1.0.632" stringid="431">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Checker.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Checker\Win32\Release\Checker.exe" original="en" guid="C8911A04-7A07-47E7-BA9A-91BF719439A3">
+  <node class="TDelphiSource" name="Win32\Release\Checker.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Checker\Win32\Release\Checker.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -31,7 +31,7 @@
           <row id="Top">8</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption" changed="20151026T131740Z">
+          <row id="Caption" changed="20151026T131740Z" si="1">
             <value>One</value>
             <lang id="fi" time="20151026T131858Z">Yksi</lang>
           </row>
@@ -41,7 +41,7 @@
           <row id="Top">16</row>
           <row id="Width">137</row>
           <row id="Height">25</row>
-          <row id="Caption" changed="20151026T131740Z">
+          <row id="Caption" changed="20151026T131740Z" si="2">
             <value>Two</value>
             <lang id="fi" time="20151026T131858Z">Kaksi</lang>
           </row>
@@ -53,7 +53,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TMAINFORM" objectname="MainForm" parent="TBaseForm" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="3">
           <value>Sample</value>
           <lang id="fi" time="20151026T131849Z">Näyte</lang>
         </row>
@@ -64,14 +64,14 @@
           <row id="Top">96</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="4" excluded="2">dummy</row>
         </item>
         <item name="TruncationGroup" type="TGroupBox">
           <row id="Left">8</row>
           <row id="Top">8</row>
           <row id="Width">145</row>
           <row id="Height">73</row>
-          <row id="Caption">
+          <row id="Caption" si="5">
             <value> Truncation </value>
             <lang id="fi" time="20151026T131849Z">Katkaisu</lang>
           </row>
@@ -80,7 +80,7 @@
             <row id="Top">16</row>
             <row id="Width">126</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="6">
               <value>This is a sample label text.</value>
               <lang id="fi" time="20151026T132000Z">Tämä on esimerkkiotsikkoteksti.</lang>
             </row>
@@ -90,14 +90,14 @@
             <row id="Top">32</row>
             <row id="Width">34</row>
             <row id="Height">13</row>
-            <row id="Caption" excluded="2">dummy</row>
+            <row id="Caption" si="7" excluded="2">dummy</row>
           </item>
           <item name="TruncationLabel3" type="TLabel">
             <row id="Left">7</row>
             <row id="Top">48</row>
             <row id="Width">34</row>
             <row id="Height">13</row>
-            <row id="Caption" excluded="2">dummy</row>
+            <row id="Caption" si="8" excluded="2">dummy</row>
           </item>
         </item>
         <item name="CheckBox1" type="TCheckBox">
@@ -105,7 +105,7 @@
           <row id="Top">88</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption">
+          <row id="Caption" si="9">
             <value>This is a sample</value>
             <lang id="fi" time="20151026T131919Z">Tämä on esimerkki</lang>
           </row>
@@ -115,21 +115,21 @@
           <row id="Top" changed="20151027T020312Z">120</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="10" excluded="2">dummy</row>
         </item>
         <item name="Button2" type="TButton">
           <row id="Left" changed="20151027T020312Z">168</row>
           <row id="Top" changed="20151027T020312Z">152</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="11" excluded="2">dummy</row>
         </item>
         <item name="OverlappingGroup" type="TGroupBox">
           <row id="Left">160</row>
           <row id="Top">8</row>
           <row id="Width">185</row>
           <row id="Height">41</row>
-          <row id="Caption">
+          <row id="Caption" si="12">
             <value> Overlapping </value>
             <lang id="fi" time="20151026T131912Z"> Päällekkäisiä </lang>
           </row>
@@ -138,7 +138,7 @@
             <row id="Top">16</row>
             <row id="Width">53</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="13">
               <value>String one.</value>
               <lang id="fi" time="20151026T131955Z">Merkkijono yksi.</lang>
             </row>
@@ -148,14 +148,14 @@
             <row id="Top">16</row>
             <row id="Width">34</row>
             <row id="Height">13</row>
-            <row id="Caption" excluded="2">dummy</row>
+            <row id="Caption" si="14" excluded="2">dummy</row>
           </item>
           <item name="OverlappingLabel3" type="TLabel">
             <row id="Left">120</row>
             <row id="Top">16</row>
             <row id="Width">54</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="15">
               <value>Last string.</value>
               <lang id="fi" time="20151026T131953Z">Viimeiseen merkkijono.</lang>
             </row>
@@ -166,7 +166,7 @@
           <row id="Top" changed="20160612T222346Z">248</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="16">
             <value>&amp;Language...</value>
             <lang id="fi" time="20151026T131850Z">Kieli</lang>
           </row>
@@ -177,13 +177,13 @@
           <row id="Width">116</row>
           <row id="Height">67</row>
           <item name="CheckBox1" type="TCheckBox">
-            <row id="Caption">
+            <row id="Caption" si="17">
               <value>Check box</value>
               <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
             </row>
           </item>
           <item name="CheckBox2" type="TCheckBox">
-            <row id="Caption">
+            <row id="Caption" si="18">
               <value>Check box</value>
               <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
             </row>
@@ -199,7 +199,7 @@
             <row id="Top">8</row>
             <row id="Width">97</row>
             <row id="Height">17</row>
-            <row id="Caption">
+            <row id="Caption" si="19">
               <value>Check box</value>
               <lang id="fi" time="20151026T131850Z">Valintaruutu</lang>
             </row>
@@ -210,7 +210,7 @@
           <row id="Top" changed="20151027T020312Z">152</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="20">
             <value>Click to show</value>
             <lang id="fi" time="20151026T131849Z">Näytä napsauttamalla</lang>
           </row>
@@ -220,37 +220,37 @@
           <row id="Top">152</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">This text is too.</row>
+          <row id="Caption" si="21">This text is too.</row>
         </item>
         <item name="CheckBox4" type="TCheckBox" created="20151027T020312Z">
           <row id="Left">8</row>
           <row id="Top">104</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption">This is a a long sample</row>
+          <row id="Caption" si="22">This is a a long sample</row>
         </item>
         <item name="RadioButton1" type="TRadioButton" created="20151027T020312Z">
           <row id="Left">104</row>
           <row id="Top">184</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption">This is a sample</row>
+          <row id="Caption" si="23">This is a sample</row>
         </item>
         <item name="RadioButton2" type="TRadioButton" created="20151027T020312Z">
           <row id="Left">104</row>
           <row id="Top">200</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption">This is a a long sample</row>
+          <row id="Caption" si="24">This is a a long sample</row>
         </item>
         <item name="ComboBox1" type="TComboBox" created="20151027T020312Z">
           <row id="Left">160</row>
           <row id="Top">56</row>
           <row id="Width">73</row>
           <row id="Height">21</row>
-          <row id="Items.Strings[0]">One</row>
-          <row id="Items.Strings[1]">Two</row>
-          <row id="Items.Strings[2]">This is too long</row>
+          <row id="Items.Strings[0]" si="25">One</row>
+          <row id="Items.Strings[1]" si="26">Two</row>
+          <row id="Items.Strings[2]" si="27">This is too long</row>
         </item>
         <item name="PageControl1" type="TPageControl" created="20160612T222346Z">
           <row id="Left">280</row>
@@ -258,23 +258,23 @@
           <row id="Width">185</row>
           <row id="Height">97</row>
           <item name="TabSheet1" type="TTabSheet">
-            <row id="Caption">TabSheet1</row>
+            <row id="Caption" si="28">TabSheet1</row>
             <item name="CheckBox5" type="TCheckBox">
               <row id="Left">8</row>
               <row id="Top">20</row>
               <row id="Width">97</row>
               <row id="Height">17</row>
-              <row id="Caption">This is a a long sample</row>
+              <row id="Caption" si="29">This is a a long sample</row>
             </item>
           </item>
           <item name="TabSheet2" type="TTabSheet">
-            <row id="Caption">TabSheet2</row>
+            <row id="Caption" si="30">TabSheet2</row>
             <item name="CheckBox6" type="TCheckBox">
               <row id="Left">48</row>
               <row id="Top">4</row>
               <row id="Width">97</row>
               <row id="Height">17</row>
-              <row id="Caption">This is a a long sample</row>
+              <row id="Caption" si="31">This is a a long sample</row>
             </item>
           </item>
         </item>
@@ -283,7 +283,7 @@
           <row id="Top">248</row>
           <row id="Width">97</row>
           <row id="Height">25</row>
-          <row id="Caption">Show simple...</row>
+          <row id="Caption" si="32">Show simple...</row>
         </item>
         <data>
           VFBGMPEJVE1haW5Gb3JtCE1haW5Gb3JtB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDGQELQ2xpZW50V2lkdGgD4wEIT25D
@@ -330,7 +330,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">256</row>
         <row id="Top">347</row>
-        <row id="Caption">
+        <row id="Caption" si="33">
           <value>Select Language</value>
           <lang id="fi" time="20151026T131850Z">Valitse kieli</lang>
         </row>
@@ -347,7 +347,7 @@
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="34">
             <value>OK</value>
             <lang id="fi" time="20151026T131945Z">OK</lang>
           </row>
@@ -357,7 +357,7 @@
           <row id="Top">40</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="35">
             <value>Cancel</value>
             <lang id="fi" time="20151026T131850Z">Peruuta</lang>
           </row>
@@ -379,7 +379,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="36">
           <value>Sample Dialog</value>
           <lang id="fi" time="20151026T131850Z">Näyte dialogi</lang>
         </row>
@@ -408,7 +408,7 @@
           <row id="Top">152</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="37">
             <value>OK</value>
             <lang id="fi" time="20151026T131945Z">OK</lang>
           </row>
@@ -425,7 +425,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TSIMPLEFORM" type="TSimpleForm" resname="TSIMPLEFORM" created="20160612T222346Z" objectname="SimpleForm" parent="TBaseForm" flags="[ffInherited]">
-        <row id="Caption">Sample</row>
+        <row id="Caption" si="38">Sample</row>
         <row id="ClientHeight">90</row>
         <row id="ClientWidth">218</row>
         <item name="GroupBox1" type="TGroupBox">
@@ -433,34 +433,34 @@
           <row id="Top">8</row>
           <row id="Width">121</row>
           <row id="Height">73</row>
-          <row id="Caption"> Options </row>
+          <row id="Caption" si="39"> Options </row>
           <item name="CheckBox1" type="TCheckBox">
             <row id="Left">8</row>
             <row id="Top">16</row>
             <row id="Width">105</row>
             <row id="Height">17</row>
-            <row id="Caption">&amp;This is a read only file</row>
+            <row id="Caption" si="40">&amp;This is a read only file</row>
           </item>
           <item name="CheckBox2" type="TCheckBox">
             <row id="Left">8</row>
             <row id="Top">32</row>
             <row id="Width">161</row>
             <row id="Height">17</row>
-            <row id="Caption">&amp;Encrypt data before sending</row>
+            <row id="Caption" si="41">&amp;Encrypt data before sending</row>
           </item>
           <item name="CheckBox3" type="TCheckBox">
             <row id="Left">8</row>
             <row id="Top">48</row>
             <row id="Width">65</row>
             <row id="Height">17</row>
-            <row id="Caption">&amp;Mark</row>
+            <row id="Caption" si="42">&amp;Mark</row>
           </item>
           <item name="CheckBox4" type="TCheckBox">
             <row id="Left">56</row>
             <row id="Top">48</row>
             <row id="Width">57</row>
             <row id="Height">17</row>
-            <row id="Caption">Release</row>
+            <row id="Caption" si="43">Release</row>
           </item>
         </item>
         <item name="OkButton" type="TButton">
@@ -468,7 +468,7 @@
           <row id="Top">16</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">OK</row>
+          <row id="Caption" si="44">OK</row>
         </item>
         <data>
           VFBGMPELVFNpbXBsZUZvcm0KU2ltcGxlRm9ybQdDYXB0aW9uBgZTYW1wbGUMQ2xpZW50SGVpZ2h0AloLQ2xpZW50V2lkdGgD2gAN
@@ -483,40 +483,60 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
       <node class="TWindowsStringNode" name="MainFrm">
-        <row id="SOverlapping">
+        <row id="SOverlapping" si="45">
           <value>Another strings.</value>
           <lang id="fi" time="20151026T131851Z">Toinen jouset</lang>
         </row>
-        <row id="SCheckBox">
+        <row id="SCheckBox" si="46">
           <value>This is another sample</value>
           <lang id="fi" time="20151026T131851Z">Tämä on toinen esimerkki</lang>
         </row>
-        <row id="SButton">
+        <row id="SButton" si="47">
           <value>Click here to start</value>
           <lang id="fi" time="20151026T131851Z">Aloita napsauttamalla tätä</lang>
         </row>
-        <row id="STruncation">
+        <row id="STruncation" si="48">
           <value>This is another sample label text.</value>
           <lang id="fi" time="20151026T132001Z">Tämä on toinen esimerkkiotsikkoteksti.</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.ComStrs" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-    <item type="TMemo" property="Lines.Strings" operation="roLocalize" options="[poCombineStringsItems]"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+    <rule component="TMemo" property="Lines.Strings" operation="roLocalize" options="[poCombineStringsItems]"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

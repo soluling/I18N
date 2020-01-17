@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20151019T020417Z" lastmodified="20181023T181211Z" guid="1442EC51-6D33-4684-926B-DCC022C593F5" version="1.0.228">
+<project id="A4A8E982-332D-4DB0-81A0-03B45141DFA3" created="20151019T020417Z" lastmodified="20191223T020150Z" version="1.0.632" stringid="29">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\DualLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DualLanguage\Win32\Release\DualLanguage.exe" original="en" guid="2E4232FF-409F-4BD0-A6EB-DF031BDF3E43">
+  <node class="TDelphiSource" name="Win32\Release\DualLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DualLanguage\Win32\Release\DualLanguage.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -20,7 +20,7 @@
           <row id="Top">150</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="1">
             <value>OK</value>
             <lang id="fi" time="20151019T020436Z">OK</lang>
             <lang id="ja" time="20160702T141755Z">わかりました</lang>
@@ -31,7 +31,7 @@
           <row id="Top">150</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>Cancel</value>
             <lang id="fi" time="20151019T020436Z">Peru</lang>
             <lang id="ja" time="20160702T141756Z">キャンセル</lang>
@@ -48,7 +48,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TCLIENTOPTIONSDIALOG" type="TClientOptionsDialog" resname="TCLIENTOPTIONSDIALOG" created="20160702T142634Z" objectname="ClientOptionsDialog" parent="TBaseDialog" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="3">
           <value>Client Options</value>
           <lang id="fi" time="20160702T142638Z">Asiakkaan asetukset</lang>
           <lang id="ja" time="20160702T142730Z">クライアントのオプション</lang>
@@ -58,7 +58,7 @@
           <row id="Top">8</row>
           <row id="Width">249</row>
           <row id="Height">17</row>
-          <row id="Caption">
+          <row id="Caption" si="4">
             <value>&amp;Send emails</value>
             <lang id="fi" time="20160702T142638Z">&amp;Lähetä sähköpostia</lang>
             <lang id="ja" time="20160702T142730Z">メールを送る(&amp;S)</lang>
@@ -74,7 +74,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="5">
           <value>Dual Language Sample</value>
           <lang id="fi" time="20160702T142638Z">Kahden kielen esimerkki</lang>
           <lang id="ja" time="20160702T142730Z">デュアル言語のサンプル</lang>
@@ -86,7 +86,7 @@
           <row id="Top">8</row>
           <row id="Width">73</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="6">
             <value>&amp;Main language:</value>
             <lang id="fi" time="20160702T142638Z">&amp;Pääkieli:</lang>
             <lang id="ja" time="20160702T142730Z">主な言語(&amp;M):</lang>
@@ -97,7 +97,7 @@
           <row id="Top">8</row>
           <row id="Width">78</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="7">
             <value>&amp;Client language:</value>
             <lang id="fi" time="20160702T142638Z">&amp;Asiakaskieli:</lang>
             <lang id="ja" time="20160702T142730Z">クライアントの言語(&amp;C):</lang>
@@ -120,7 +120,7 @@
           <row id="Top">48</row>
           <row id="Width">257</row>
           <row id="Height">161</row>
-          <row id="Caption">
+          <row id="Caption" si="8">
             <value> Main </value>
             <lang id="fi" time="20160702T142638Z"> Pää </lang>
             <lang id="ja" time="20160702T142731Z"> メイン </lang>
@@ -130,7 +130,7 @@
             <row id="Top">16</row>
             <row id="Width">24</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="9">
               <value>&amp;Plan:</value>
               <lang id="fi" time="20160702T142638Z">&amp;Tuote:</lang>
               <lang id="ja" time="20160702T142731Z">計画(&amp;P):</lang>
@@ -141,22 +141,22 @@
             <row id="Top">32</row>
             <row id="Width">241</row>
             <row id="Height">97</row>
-            <row id="Items.Strings[0]">
+            <row id="Items.Strings[0]" si="10">
               <value>Saver</value>
               <lang id="fi" time="20160702T142638Z">Säästö</lang>
               <lang id="ja" time="20160702T142731Z">セーバー</lang>
             </row>
-            <row id="Items.Strings[1]">
+            <row id="Items.Strings[1]" si="11">
               <value>Standard</value>
               <lang id="fi" time="20160702T142638Z">Normaali</lang>
               <lang id="ja" time="20160702T142732Z">標準</lang>
             </row>
-            <row id="Items.Strings[2]">
+            <row id="Items.Strings[2]" si="12">
               <value>Premium</value>
               <lang id="fi" time="20160702T142638Z">Korkealuokkainen</lang>
               <lang id="ja" time="20160702T142732Z">プレミアム</lang>
             </row>
-            <row id="Items.Strings[3]">
+            <row id="Items.Strings[3]" si="13">
               <value>Ultimate</value>
               <lang id="fi" time="20160702T142638Z">Kaiken kattava</lang>
               <lang id="ja" time="20160702T142732Z">究極</lang>
@@ -167,7 +167,7 @@
             <row id="Top">136</row>
             <row id="Width">241</row>
             <row id="Height">17</row>
-            <row id="Caption">
+            <row id="Caption" si="14">
               <value>&amp;Start today</value>
               <lang id="fi" time="20160702T142638Z">&amp;Aloita tänään</lang>
               <lang id="ja" time="20160702T142732Z">今日のスタート(&amp;S)</lang>
@@ -179,7 +179,7 @@
           <row id="Top">48</row>
           <row id="Width">257</row>
           <row id="Height">161</row>
-          <row id="Caption">
+          <row id="Caption" si="15">
             <value> Client </value>
             <lang id="fi" time="20160702T142638Z"> Asiakas </lang>
             <lang id="ja" time="20160702T142733Z"> クライアント </lang>
@@ -189,7 +189,7 @@
             <row id="Top">16</row>
             <row id="Width">31</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="16">
               <value>&amp;Name:</value>
               <lang id="fi" time="20160702T142638Z">&amp;Nimi</lang>
               <lang id="ja" time="20160702T142733Z">名(&amp;N):</lang>
@@ -200,7 +200,7 @@
             <row id="Top">56</row>
             <row id="Width">23</row>
             <row id="Height">13</row>
-            <row id="Caption">
+            <row id="Caption" si="17">
               <value>&amp;Age:</value>
               <lang id="fi" time="20160702T142638Z">&amp;Ikä:</lang>
               <lang id="ja" time="20160702T142733Z">年齢(&amp;A):</lang>
@@ -217,7 +217,7 @@
             <row id="Top">72</row>
             <row id="Width">57</row>
             <row id="Height">21</row>
-            <row id="Text" locked="1">
+            <row id="Text" si="18" locked="1">
               <value>35</value>
               <lang id="ja" time="20160702T142733Z">35</lang>
             </row>
@@ -233,7 +233,7 @@
             <row id="Top">96</row>
             <row id="Width">241</row>
             <row id="Height">17</row>
-            <row id="Caption">
+            <row id="Caption" si="19">
               <value>&amp;New client</value>
               <lang id="fi" time="20160702T142638Z">&amp;Uusi asiakas</lang>
               <lang id="ja" time="20160702T142733Z">新しいクライアント(&amp;N)</lang>
@@ -245,7 +245,7 @@
           <row id="Top">216</row>
           <row id="Width">137</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="20">
             <value>&amp;Main options...</value>
             <lang id="fi" time="20160702T142638Z">&amp;Pääasetukset...</lang>
             <lang id="ja" time="20160702T142733Z">主なオプション(&amp;M)...</lang>
@@ -256,7 +256,7 @@
           <row id="Top">216</row>
           <row id="Width">137</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="21">
             <value>C&amp;lient options...</value>
             <lang id="fi" time="20160702T142638Z">&amp;Asiakasasetukset...</lang>
             <lang id="ja" time="20160702T142734Z">クライアントのオプション(&amp;L)...</lang>
@@ -291,7 +291,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TMAINOPTIONSDIALOG" type="TMainOptionsDialog" resname="TMAINOPTIONSDIALOG" created="20160702T142634Z" objectname="MainOptionsDialog" parent="TBaseDialog" flags="[ffInherited]">
-        <row id="Caption">
+        <row id="Caption" si="22">
           <value>Main Options</value>
           <lang id="fi" time="20160702T142638Z">Pääasetukset</lang>
           <lang id="ja" time="20160702T142734Z">主なオプション</lang>
@@ -301,37 +301,37 @@
           <row id="Top">8</row>
           <row id="Width">249</row>
           <row id="Height">137</row>
-          <row id="Caption">
+          <row id="Caption" si="23">
             <value> Color </value>
             <lang id="fi" time="20160702T142638Z"> Väri </lang>
             <lang id="ja" time="20160702T142734Z"> 色 </lang>
           </row>
-          <row id="Items.Strings[0]">
+          <row id="Items.Strings[0]" si="24">
             <value>Red</value>
             <lang id="fi" time="20160702T142638Z">Punainen</lang>
             <lang id="ja" time="20160702T142734Z">赤</lang>
           </row>
-          <row id="Items.Strings[1]">
+          <row id="Items.Strings[1]" si="25">
             <value>Blue</value>
             <lang id="fi" time="20160702T142638Z">Sininen</lang>
             <lang id="ja" time="20160702T142734Z">ブルー</lang>
           </row>
-          <row id="Items.Strings[2]">
+          <row id="Items.Strings[2]" si="26">
             <value>Green</value>
             <lang id="fi" time="20160702T142638Z">Vihreä</lang>
             <lang id="ja" time="20160702T142735Z">グリーン</lang>
           </row>
-          <row id="Items.Strings[3]">
+          <row id="Items.Strings[3]" si="27">
             <value>Yellow</value>
             <lang id="fi" time="20160702T142638Z">Keltainen</lang>
             <lang id="ja" time="20160702T142735Z">黄色</lang>
           </row>
-          <row id="Items.Strings[4]">
+          <row id="Items.Strings[4]" si="28">
             <value>Black</value>
             <lang id="fi" time="20160702T142638Z">Musta</lang>
             <lang id="ja" time="20160702T142735Z">ブラック</lang>
           </row>
-          <row id="Items.Strings[5]">
+          <row id="Items.Strings[5]" si="29">
             <value>White</value>
             <lang id="fi" time="20160702T142638Z">Valkoinen</lang>
             <lang id="ja" time="20160702T142735Z">ホワイト</lang>
@@ -345,13 +345,28 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

@@ -118,5 +118,5 @@ resourcestring
   SNtLocale = 'en';
 initialization
   DefaultLocale := SNtLocale;
-  NtEnabledProperties := STRING_TYPES;
+  //NtEnabledProperties := STRING_TYPES;
 end.

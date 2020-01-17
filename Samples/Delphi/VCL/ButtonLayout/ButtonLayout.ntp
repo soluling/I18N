@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160702T135608Z" lastmodified="20181023T161910Z" guid="F415CE18-C80A-499A-BCEA-14DEDB41420D" version="1.0.228">
+<project id="3EC8FABC-05AA-49E2-8287-89B1BD9D0855" created="20160702T135608Z" lastmodified="20191223T004831Z" version="1.0.632" stringid="4">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\ButtonLayout.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ButtonLayout\Win32\Release\ButtonLayout.exe" original="en" guid="797EDF37-295C-47E0-AE86-513C3D5AEF3E">
+  <node class="TDelphiSource" name="Win32\Release\ButtonLayout.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ButtonLayout\Win32\Release\ButtonLayout.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -13,7 +13,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi" time="20160702T135608Z">Esimerkki</lang>
           <lang id="ja" time="20160702T135608Z">サンプル</lang>
@@ -29,7 +29,7 @@
           <row id="Top">13</row>
           <row id="Width">20</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>&amp;File:</value>
             <lang id="fi" time="20160702T135608Z">&amp;Tiedosto:</lang>
             <lang id="ja" time="20160702T135608Z">ファイル(&amp;F):</lang>
@@ -65,7 +65,7 @@
             <lang id="fi" time="20160702T135608Z">107</lang>
           </row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="3">
             <value>&amp;Browse...</value>
             <lang id="fi" time="20160702T135608Z">&amp;Selaa tiedostoa...</lang>
             <lang id="ja" time="20160702T135842Z">参照(&amp;B)...</lang>
@@ -85,7 +85,7 @@
             <lang id="fi" time="20160702T135608Z">161</lang>
           </row>
           <row id="Height">17</row>
-          <row id="Caption">
+          <row id="Caption" si="4">
             <value>&amp;Remember value</value>
             <lang id="fi" time="20160702T135608Z">&amp;Muista tiedoston arvo</lang>
             <lang id="ja" time="20160702T135829Z">値を覚えています(&amp;R)</lang>
@@ -103,10 +103,25 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

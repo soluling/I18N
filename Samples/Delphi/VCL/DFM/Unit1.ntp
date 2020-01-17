@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20170922T014522Z" lastmodified="20180223T015145Z" version="1.0.125">
+<project id="1DB34C82-144C-4925-B674-4D2432D45BD8" created="20170922T014522Z" lastmodified="20191223T010347Z" version="1.0.632" stringid="4">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="pl"/>
-  <node class="TDelphiFormSource" name="Unit1.dfm" original="sv-SE" encoding="windows-1252">
+  <node class="TDelphiFormSource" name="Unit1.dfm" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DFM\Unit1.dfm" original="sv-SE" encoding="windows-1252">
     <node class="TDelphiFormFileNode" name="Unit1.dfm" type="TForm1" objectname="Form1" filename="Unit1.dfm">
       <font id="Font" name="Tahoma" size="8"/>
       <row id="Left">0</row>
       <row id="Top">0</row>
-      <row id="Caption">
+      <row id="Caption" si="1">
         <value>Sample</value>
-        <lang id="fi" st="3" or="4" rw="0" time="20170922T014525Z">Esimerkki</lang>
+        <lang id="fi" rw="0" time="20170922T014525Z">Esimerkki</lang>
         <lang id="ja" st="3" or="4" rw="0" time="20170922T014525Z">サンプル</lang>
         <lang id="pl" st="3" or="4" rw="0" time="20170922T014526Z">Próbki</lang>
       </row>
@@ -25,9 +25,9 @@
           <lang id="ja" st="3" or="4" rw="0" time="20170922T014525Z">95</lang>
         </row>
         <row id="Height">13</row>
-        <row id="Caption">
+        <row id="Caption" si="2">
           <value>This is a sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20170922T014525Z">Tämä on esimerkki</lang>
+          <lang id="fi" rw="0" time="20170922T014525Z">Tämä on esimerkki</lang>
           <lang id="ja" st="3" or="4" rw="0" time="20170922T014525Z">これはサンプルです。</lang>
           <lang id="pl" st="3" or="4" rw="0" time="20170922T014526Z">Jest to próbka</lang>
         </row>
@@ -37,9 +37,9 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="3">
           <value>&amp;Close</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20170922T014525Z">&amp;Sulje</lang>
+          <lang id="fi" rw="0" time="20170922T014525Z">&amp;Sulje</lang>
           <lang id="ja" st="3" or="4" rw="0" time="20170922T014525Z">閉じる(&amp;C)</lang>
           <lang id="pl" st="3" or="4" rw="0" time="20170922T014526Z">&amp;Zamknij</lang>
         </row>
@@ -49,9 +49,9 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="4">
           <value>Show</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20170922T014525Z">Näytä</lang>
+          <lang id="fi" rw="0" time="20170922T014525Z">Näytä</lang>
           <lang id="ja" st="3" or="4" rw="0" time="20170922T014525Z">ショー</lang>
           <lang id="pl" st="3" or="4" rw="0" time="20170922T014526Z">Pokaż</lang>
         </row>
@@ -67,7 +67,22 @@
       </data>
     </node>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

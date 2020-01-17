@@ -57,7 +57,8 @@ private:
 	
 public:
 	__classmethod void __fastcall CheckLocaleVariables();
-	__classmethod void __fastcall UpdateFormatSettings(int locale);
+	__classmethod void __fastcall UpdateFormatSettings(System::UnicodeString locale)/* overload */;
+	__classmethod void __fastcall UpdateFormatSettings(int locale)/* overload */;
 	__classmethod int __fastcall ExtensionToLocale(const System::UnicodeString value);
 	__classmethod int __fastcall LocaleToCodePage(int locale);
 	__classmethod System::UnicodeString __fastcall LocaleToIso639(int locale);

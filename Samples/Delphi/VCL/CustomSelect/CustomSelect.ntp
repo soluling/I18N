@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20151019T004610Z" lastmodified="20181023T170727Z" guid="7E14277D-BDBE-488A-A41C-BCABE42D0F7E" version="1.0.228">
+<project id="10360EB6-12A5-4367-BCB1-A9E65BFE1171" created="20151019T004610Z" lastmodified="20191223T010246Z" version="1.0.632" stringid="381">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\CustomSelect.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\CustomSelect\Win32\Release\CustomSelect.exe" original="en" guid="C92EBF2B-BD73-4E43-A3BB-F6BB6E7BD8F5">
+  <node class="TDelphiSource" name="Win32\Release\CustomSelect.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\CustomSelect\Win32\Release\CustomSelect.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -14,7 +14,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi" time="20151019T015555Z">Esimerkki</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Beispiel</lang>
@@ -27,7 +27,7 @@
           <row id="Top">104</row>
           <row id="Width">101</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>This is a sample text.</value>
             <lang id="fi" time="20151019T015607Z">Tämä on esimerkkiteksti.</lang>
             <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Das ist ein Muster Text.</lang>
@@ -39,7 +39,7 @@
           <row id="Top">8</row>
           <row id="Width">409</row>
           <row id="Height">41</row>
-          <row id="Caption">
+          <row id="Caption" si="3">
             <value> Select language </value>
             <lang id="fi" time="20151019T015623Z"> Valitse kieli </lang>
             <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z"> Sprache auswählen </lang>
@@ -51,31 +51,31 @@
           <row id="Top">56</row>
           <row id="Width">409</row>
           <row id="Height">41</row>
-          <row id="Caption">
+          <row id="Caption" si="4">
             <value> Language names </value>
             <lang id="fi" time="20151019T015615Z"> Kielten nimet </lang>
             <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z"> Sprachnamen </lang>
             <lang id="ja" st="1" or="6" rw="0" time="20181023T170650Z"> 言語名 </lang>
           </row>
-          <row id="Items.Strings[0]">
+          <row id="Items.Strings[0]" si="5">
             <value>&amp;Native</value>
             <lang id="fi" time="20151019T015633Z">&amp;Alkuperäinen</lang>
             <lang id="de" st="3" rw="0" time="20181023T170704Z">&amp;Native</lang>
             <lang id="ja" st="1" or="6" rw="0" time="20181023T170650Z">&amp; ネイティブ</lang>
           </row>
-          <row id="Items.Strings[1]">
+          <row id="Items.Strings[1]" si="6">
             <value>&amp;Localized</value>
             <lang id="fi" time="20151019T015646Z">&amp;Lokalisoitu</lang>
             <lang id="de" st="3" rw="0" time="20181023T170706Z">&amp;Lokalisierte</lang>
             <lang id="ja" st="1" or="6" rw="0" time="20181023T170650Z">&amp; ローカライズ</lang>
           </row>
-          <row id="Items.Strings[2]">
+          <row id="Items.Strings[2]" si="7">
             <value>&amp;English</value>
             <lang id="fi" time="20151019T015654Z">&amp;Englanti</lang>
             <lang id="de" st="3" rw="0" time="20181023T170721Z">&amp;Englisch</lang>
             <lang id="ja" st="1" or="6" rw="0" time="20181023T170650Z">&amp; 英語</lang>
           </row>
-          <row id="Items.Strings[3]">
+          <row id="Items.Strings[3]" si="8">
             <value>&amp;System</value>
             <lang id="fi" time="20151019T015659Z">&amp;Systeemi</lang>
             <lang id="de" st="3" rw="0" time="20181023T170711Z">&amp;System</lang>
@@ -95,27 +95,27 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
       <node class="TWindowsStringNode" name="1" resid="1" langid="1035">
-        <row id="7">
+        <row id="7" si="9">
           <value>German</value>
           <lang id="fi" time="20110806T174327Z">saksa</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Deutsch</lang>
           <lang id="ja" time="20110806T174426Z">ドイツ語</lang>
         </row>
-        <row id="9">
+        <row id="9" si="10">
           <value>English</value>
           <lang id="fi" time="20110806T174329Z">englanti</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Englisch</lang>
           <lang id="ja" time="20110806T174430Z">英語</lang>
         </row>
-        <row id="11">
+        <row id="11" si="11">
           <value>Finnish</value>
           <lang id="fi" time="20110806T174331Z">suomi</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Finnisch</lang>
           <lang id="ja" time="20110806T174435Z">フィンランド語</lang>
         </row>
-        <row id="12">
+        <row id="12" si="12">
           <value>French</value>
           <lang id="fi" time="20110806T174333Z">ranska</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Französisch</lang>
@@ -123,24 +123,43 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="2" resid="2" langid="1035">
-        <row id="17">
+        <row id="17" si="13">
           <value>Japanese</value>
           <lang id="fi" time="20110806T174335Z">japani</lang>
           <lang id="de" st="1" or="6" rw="0" time="20181023T170700Z">Japanisch</lang>
           <lang id="ja" time="20110806T174446Z">日本語</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

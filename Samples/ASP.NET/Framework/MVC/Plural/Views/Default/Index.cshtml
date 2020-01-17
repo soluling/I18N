@@ -1,0 +1,40 @@
+﻿@{
+  Layout = null;
+  Culture = UICulture = NewTool.MVC.Utilities.GetBrowserLanguage(Request);
+  NewTool.Plural.SetLanguage(Plural.Resources.Strings.Language);
+}
+
+@functions
+{
+  string Process(uint count)
+  {
+    return NewTool.Plural.Format(Plural.Resources.Strings.MessagePlural, count, count);
+  }
+
+  string GetImageFile(string fileName)
+  {
+    return NewTool.MVC.Utilities.GetImageFile(Server, fileName, UICulture);
+  }
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>@Plural.Resources.Strings.Title</title>
+</head>
+<body>
+  <h1><img align="middle" src="@GetImageFile("Images/flag.png")"/> @Plural.Resources.Strings.LanguageName</h1>
+  <p>@Process(0)</p>
+  <p>@Process(1)</p>
+  <p>@Process(2)</p>
+  <p>@Process(3)</p>
+  <p>@Process(4)</p>
+  <p>@Process(5)</p>
+  <p>@Process(11)</p>
+  <p>@Process(21)</p>
+  <p>@Process(101)</p>
+  <p>@Process(111)</p>
+</body>
+</html>

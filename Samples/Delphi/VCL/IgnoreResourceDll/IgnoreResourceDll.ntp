@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160702T222321Z" lastmodified="20181024T150606Z" guid="8556D9D6-525A-4C53-AF34-5267354FC3F4" version="1.0.228">
+<project id="C0AE5EA5-AEDF-40D0-98E1-F233E8A6F267" created="20160702T222321Z" lastmodified="20191223T020906Z" version="1.0.632" stringid="2">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\IgnoreResourceDll.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\IgnoreResourceDll\Win32\Release\IgnoreResourceDll.exe" original="en" guid="6790009C-387A-4F6E-8091-1965ED167781">
+  <node class="TDelphiSource" name="Win32\Release\IgnoreResourceDll.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\IgnoreResourceDll\Win32\Release\IgnoreResourceDll.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -12,7 +12,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi" time="20160702T222335Z">Esimerkki</lang>
         </row>
@@ -23,7 +23,7 @@
           <row id="Top">8</row>
           <row id="Width">74</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>This is a sample</value>
             <lang id="fi" time="20160702T222338Z">Tämä on esimerkki</lang>
           </row>
@@ -37,12 +37,27 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

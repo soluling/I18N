@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F849EA6D-E256-4EAD-93AF-095EC9479372" created="20140502T024017Z" lastmodified="20190706T142225Z" version="1.0.456" stringid="37">
+<project id="F849EA6D-E256-4EAD-93AF-095EC9479372" created="20140502T024017Z" lastmodified="20191223T024939Z" version="1.0.632" stringid="399">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="pl"/>
-  <node class="TDelphiSource" name="Win32\Release\Plural.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Plural\Win32\Release\Plural.exe" original="en">
+  <node class="TDelphiSource" name="Win32\Release\Plural.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Plural\Win32\Release\Plural.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -276,56 +276,13 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" created="20170723T231032Z">
-        <row id="SMale" si="27">
-          <value>Male</value>
-          <lang id="fi" time="20170422T172848Z">Maskuliini</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Mężczyzna</lang>
-        </row>
-        <row id="SFemale" si="28">
-          <value>Female</value>
-          <lang id="fi" time="20170422T173022Z">Feminiini</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Kobieta</lang>
-        </row>
-        <row id="SNeutral" si="29">
-          <value>Neutral</value>
-          <lang id="fi" time="20170422T173027Z">Neutri</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Neutralny</lang>
-        </row>
-        <row id="SZero" si="30">
-          <value>Nullar</value>
-          <lang id="fi" time="20170519T145854Z">Nolla</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234217Z">Nullar</lang>
-        </row>
-        <row id="SOne" si="31">
-          <value>Singular</value>
-          <lang id="fi" time="20140502T035016Z">Yksikkö</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234217Z">Liczby pojedynczej</lang>
-        </row>
-        <row id="STwo" si="32">
-          <value>Dual</value>
-          <lang id="fi" time="20140502T035020Z">Kaksikko</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Podwójny</lang>
-        </row>
-        <row id="SFew" si="33">
-          <value>Few</value>
-          <lang id="fi" time="20140502T024214Z">Muutama</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Kilka</lang>
-        </row>
-        <row id="SMany" si="34">
-          <value>Many</value>
-          <lang id="fi" time="20140502T024216Z">Monta</lang>
-          <lang id="pl" st="1" or="6" time="20170723T234216Z">Wiele</lang>
-        </row>
-        <row id="SPlural" si="35" created="20171124T203434Z">
-          <value>Plural</value>
-          <lang id="fi" rw="0" time="20140502T035010Z">Monikko</lang>
-          <lang id="pl" st="1" or="6" rw="0" time="20170723T234216Z">Liczba mnoga</lang>
-        </row>
-      </node>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SMessagePlural" changed="20170508T040504Z" class="TPatternRow" si="36" created="20170422T172830Z">
           <value>{0} files</value>
@@ -350,7 +307,9 @@
             <pattern plural="pfZero">Ei tiedostoa</pattern>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
-          <lang id="ja" or="3" time="20170510T135106Z">{0}ファイル</lang>
+          <lang id="ja" or="3" time="20170510T135106Z">
+            <value>{0}ファイル</value>
+          </lang>
           <lang id="pl" time="20170723T234134Z">
             <value>{0} plików</value>
             <pattern plural="pfZero">Żadnych plików</pattern>
@@ -360,6 +319,7 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
     </node>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -372,9 +332,7 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -383,9 +341,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
 </project>

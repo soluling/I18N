@@ -1,0 +1,98 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="6FC71771-7895-4678-8AF5-66083CB8BA6E" created="20180331T144803Z" lastmodified="20191021T143859Z" version="1.0.581" stringid="13">
+  <lang id="ru"/>
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Single\SinglePlural.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20191018T145442Z" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlNpbmdsZVBsdXJhbC5BcHAiDQogICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
+        ZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICBTdGFydHVwVXJpPSJXaW5kb3cxLnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5S
+        ZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="Language" si="1">en</row>
+        <row id="MessagePlural" class="TPatternRow" si="2">
+          <value>{0} files</value>
+          <pattern plural="pfOne">{0} file</pattern>
+          <lang id="ru" st="4" rw="0">
+            <value>{0} ddddd</value>
+            <pattern plural="pfOne">{0} ddd</pattern>
+          </lang>
+        </row>
+      </node>
+    </node>
+    <node class="TXamlNode" name="Window1.xaml" type="Window" id="window1">
+      <row id="Title" si="3">
+        <value>Plural Sample</value>
+        <lang id="ru" st="4" rw="0" time="20191021T143842Z">khjkhk</lang>
+      </row>
+      <item name="panel" type="StackPanel">
+        <item name="label0" type="Label">
+          <row id="Content" si="4" excluded="2">dummy</row>
+        </item>
+        <item name="label1" type="Label">
+          <row id="Content" si="5" excluded="2">dummy</row>
+        </item>
+        <item name="label2" type="Label">
+          <row id="Content" si="6" excluded="2">dummy</row>
+        </item>
+        <item name="label3" type="Label">
+          <row id="Content" si="7" excluded="2">dummy</row>
+        </item>
+        <item name="label4" type="Label">
+          <row id="Content" si="8" excluded="2">dummy</row>
+        </item>
+        <item name="label5" type="Label">
+          <row id="Content" si="9" excluded="2">dummy</row>
+        </item>
+        <item name="label11" type="Label">
+          <row id="Content" si="10" excluded="2">dummy</row>
+        </item>
+        <item name="label21" type="Label">
+          <row id="Content" si="11" excluded="2">dummy</row>
+        </item>
+        <item name="label101" type="Label">
+          <row id="Content" si="12" excluded="2">dummy</row>
+        </item>
+        <item name="label111" type="Label">
+          <row id="Content" si="13" excluded="2">dummy</row>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpVaWQ9IndpbmRvdzEiDQogIHg6Q2xhc3M9IlNpbmdsZVBsdXJhbC5XaW5kb3cxIg0KICB4bWxucz0i
+        aHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRw
+        Oi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlBsdXJhbCBTYW1wbGUiIA0KICBTaXpl
+        VG9Db250ZW50PSJXaWR0aEFuZEhlaWdodCINCiAgTWluV2lkdGg9IjQwMCIgDQogIExvYWRlZD0iV2luZG93X0xvYWRlZCI+DQoN
+        CiAgPFN0YWNrUGFuZWwgeDpOYW1lPSJwYW5lbCI+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwwIj5kdW1teTwvTGFiZWw+DQog
+        ICAgPExhYmVsIHg6TmFtZT0ibGFiZWwxIj5kdW1teTwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwyIj5kdW1teTwv
+        TGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwzIj5kdW1teTwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWw0
+        Ij5kdW1teTwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWw1Ij5kdW1teTwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFt
+        ZT0ibGFiZWwxMSI+ZHVtbXk8L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMjEiPmR1bW15PC9MYWJlbD4NCiAgICA8
+        TGFiZWwgeDpOYW1lPSJsYWJlbDEwMSI+ZHVtbXk8L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMTExIj5kdW1teTwv
+        TGFiZWw+DQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
+      </data>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Yandex" type="TYandexTranslate"/>
+    </shared>
+  </mt>
+</project>

@@ -69,21 +69,34 @@ var
   nameLen: Byte;
   pictureClassName: String;
   ansi: AnsiString;
+{$IFDEF DELPHIXE}
+  data: TBytes;
+{$ELSE}
+  data: AnsiString;
+{$ENDIF}
   picture: TPicture;
   currentGraphic, newGraphic: TGraphic;
 begin
-  if VarType(value) <> varString then
+  if (VarType(value) <> (varArray or varByte)) and (VarType(value) <> (varString)) then
     Exit;
 
   picture := obj as TPicture;
   currentGraphic := picture.Graphic;
-  ansi := AnsiString(value);
+{$IFDEF DELPHIXE}
+  data := value;
+{$ELSE}
+  data := AnsiString(value);
+{$ENDIF}
 
   stream := nil;
   newGraphic := nil;
   try
     stream := TMemoryStream.Create;
-    stream.Write(ansi[1], Length(ansi));
+{$IFDEF DELPHIXE}
+    stream.Write(data[0], Length(data));
+{$ELSE}
+    stream.Write(data[1], Length(data));
+{$ENDIF}
     stream.Seek(0, soFromBeginning);
 
     stream.Read(nameLen, 1);

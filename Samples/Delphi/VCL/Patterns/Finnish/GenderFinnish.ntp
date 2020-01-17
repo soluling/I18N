@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20170426T132758Z" lastmodified="20181026T234057Z" guid="5BDDC038-12F6-4C63-976A-41803C07B1E1" version="1.0.228">
+<project id="AC808DC5-EA87-4249-A19B-FE24A44A4E19" created="20170426T132758Z" lastmodified="20191223T024721Z" version="1.0.632" stringid="384">
   <lang id="fi"/>
   <lang id="en"/>
-  <node class="TDelphiSource" name="Win32\Release\GenderFinnish.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Finnish\Win32\Release\GenderFinnish.exe" original="fi" guid="124EC0DF-9AA5-4734-A797-C8E27B6D5796">
+  <node class="TDelphiSource" name="Win32\Release\GenderFinnish.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Finnish\Win32\Release\GenderFinnish.exe" original="fi" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -13,7 +13,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sukuesimerkki</value>
           <lang id="en" time="20170426T163943Z">Gender Samples</lang>
         </row>
@@ -24,21 +24,21 @@
           <row id="Top">40</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="2" excluded="2">tyhjä</row>
         </item>
         <item name="MaleLabel" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">8</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="3" excluded="2">tyhjä</row>
         </item>
         <item name="FemaleLabel" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">24</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="4" excluded="2">tyhjä</row>
         </item>
         <item name="NeutralInfo" type="TLabel">
           <font id="Font" name="Tahoma" size="8"/>
@@ -46,21 +46,21 @@
           <row id="Top">40</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="5" excluded="2">tyhjä</row>
         </item>
         <item name="MaleInfo" type="TLabel">
           <row id="Left">385</row>
           <row id="Top">8</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="6" excluded="2">tyhjä</row>
         </item>
         <item name="FemaleInfo" type="TLabel">
           <row id="Left">385</row>
           <row id="Top">24</row>
           <row id="Width">25</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">tyhjä</row>
+          <row id="Caption" si="7" excluded="2">tyhjä</row>
         </item>
         <item name="LanguageButton" type="TButton">
           <font id="Font" name="Tahoma" size="8"/>
@@ -68,7 +68,7 @@
           <row id="Top">64</row>
           <row id="Width">99</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="8">
             <value>&amp;Kieli...</value>
             <lang id="en" time="20170426T163958Z">&amp;Language...</lang>
           </row>
@@ -95,7 +95,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">256</row>
         <row id="Top">347</row>
-        <row id="Caption">
+        <row id="Caption" si="9">
           <value>Select Language</value>
           <lang id="fi" st="3" time="20170426T172517Z">Valitse kieli</lang>
           <lang id="en" time="20170724T000601Z">Valitse kieli</lang>
@@ -113,7 +113,7 @@
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="10">
             <value>OK</value>
             <lang id="en" time="20170724T000603Z">OK</lang>
           </row>
@@ -123,7 +123,7 @@
           <row id="Top">40</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="11">
             <value>Cancel</value>
             <lang id="fi" st="3" time="20170426T172520Z">Peru</lang>
             <lang id="en" time="20170724T000605Z">Peru</lang>
@@ -143,34 +143,53 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessageGender" changed="20170508T143725Z" class="TPatternRow">
+        <row id="SMessageGender" changed="20170508T143725Z" class="TPatternRow" si="12">
           <value gender="geNeutral">{0} tuo polkupyöränsä</value>
           <lang id="en" time="20170724T000546Z">
             <value gender="geMale">{0} will bring his bicycle</value>
             <pattern gender="geFemale">{0} will bring her bicycle</pattern>
           </lang>
         </row>
-        <row id="SJoku">
+        <row id="SJoku" si="13">
           <value>Joku</value>
           <lang id="en" time="20170426T163917Z">Somebody</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>tyhjä</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

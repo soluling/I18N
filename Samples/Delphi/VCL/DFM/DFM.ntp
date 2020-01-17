@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20181023T171248Z" lastmodified="20181023T172950Z" guid="227AAA58-FD8A-450D-BE04-332B3FA8D3F9" version="1.0.228" storedata="0" storechangedtime="0" storecreatedtime="0" storetranslationtime="0" reviewenabled="0">
+<project id="2F0EC4FC-B3CC-4B9C-A641-097AC58E7999" created="20181023T171248Z" lastmodified="20191223T010311Z" version="1.0.632" storedata="0" storechangedtime="0" storecreatedtime="0" storetranslationtime="0" stringid="8">
   <lang id="fi"/>
   <lang id="pl"/>
   <lang id="ja"/>
-  <node class="TDelphiFormSource" name="*.dfm" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DFM\*.dfm" original="en" encoding="windows-1252" guid="AE7C5B76-5EEE-4260-A012-1592B3FE630E" mainfile="Unit1.dfm" scanformsvisualproperties="0" displayname="fdType">
+  <node class="TDelphiFormSource" name="*.dfm" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\DFM\*.dfm" original="en" encoding="windows-1252" mainfile="Unit1.dfm" scanformsvisualproperties="0" displayname="fdType">
     <node class="TDelphiFormFileNode" name="Unit1.dfm" type="TForm1" objectname="Form1" filename="Unit1.dfm">
       <font id="Font" name="Tahoma" size="8"/>
       <row id="Left">0</row>
       <row id="Top">0</row>
-      <row id="Caption">
+      <row id="Caption" si="1">
         <value>Sample</value>
-        <lang id="fi" st="3">Esimerkki</lang>
+        <lang id="fi">Esimerkki</lang>
         <lang id="pl" st="1" or="6">Próbki</lang>
         <lang id="ja" st="3">サンプル</lang>
       </row>
@@ -21,9 +21,9 @@
         <row id="Top">8</row>
         <row id="Width">74</row>
         <row id="Height">13</row>
-        <row id="Caption">
+        <row id="Caption" si="2">
           <value>This is a sample</value>
-          <lang id="fi" st="3">Tämä on koe</lang>
+          <lang id="fi">Tämä on koe</lang>
           <lang id="pl" st="1" or="6">Jest to próbka</lang>
           <lang id="ja" st="3">これはサンプルです</lang>
         </row>
@@ -33,9 +33,9 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="3">
           <value>&amp;Close</value>
-          <lang id="fi" st="3">&amp;Sulje</lang>
+          <lang id="fi">&amp;Sulje</lang>
           <lang id="pl" st="1" or="6">&amp;Zamknij</lang>
         </row>
       </item>
@@ -44,9 +44,9 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="4">
           <value>Show</value>
-          <lang id="fi" st="3">Näytä</lang>
+          <lang id="fi">Näytä</lang>
           <lang id="pl" st="1" or="6">Pokaż</lang>
         </row>
       </item>
@@ -56,9 +56,9 @@
       <font id="Font" name="Tahoma" size="8"/>
       <row id="Left">0</row>
       <row id="Top">0</row>
-      <row id="Caption">
+      <row id="Caption" si="5">
         <value>Sample</value>
-        <lang id="fi" st="3">Esimerkki</lang>
+        <lang id="fi">Esimerkki</lang>
       </row>
       <row id="ClientHeight">226</row>
       <row id="ClientWidth">447</row>
@@ -67,9 +67,9 @@
         <row id="Top">8</row>
         <row id="Width">74</row>
         <row id="Height">13</row>
-        <row id="Caption">
+        <row id="Caption" si="6">
           <value>This is a sample</value>
-          <lang id="fi" st="3">Tämä on koe</lang>
+          <lang id="fi">Tämä on koe</lang>
         </row>
       </item>
       <item name="CloseButton" type="TButton">
@@ -77,9 +77,9 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="7">
           <value>&amp;Close</value>
-          <lang id="fi" st="3">&amp;Sulje</lang>
+          <lang id="fi">&amp;Sulje</lang>
         </row>
       </item>
       <item name="ShowButton" type="TButton">
@@ -87,15 +87,30 @@
         <row id="Top">56</row>
         <row id="Width">75</row>
         <row id="Height">25</row>
-        <row id="Caption">
+        <row id="Caption" si="8">
           <value>Show</value>
-          <lang id="fi" st="3">Näytä</lang>
+          <lang id="fi">Näytä</lang>
         </row>
       </item>
     </node>
     <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

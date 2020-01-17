@@ -1,0 +1,11 @@
+﻿@page
+@model IndexModel
+
+@{
+  ViewData["Title"] = loc["Home page"];
+}
+
+<div class="text-center">
+  <h1 class="display-4">@loc["Welcome"]</h1>
+  <p>@loc["Learn about <a href=\"{0}\">building Web apps with ASP.NET Core</a>.", "https://docs.microsoft.com/aspnet/core"]</p><!-- 0: URL to a document -->
+</div>

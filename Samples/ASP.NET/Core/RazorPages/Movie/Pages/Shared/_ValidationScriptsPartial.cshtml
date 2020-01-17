@@ -1,0 +1,32 @@
+﻿<environment include="Development">
+  <script src="~/lib/jquery-validation/dist/jquery.validate.js"></script>
+  <script src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.js"></script>
+
+  <!-- npm install globalize and move ~/lib/node_modules/globalize to ~/lib/globalize -->
+  <!-- cldr scripts (needed for globalize) -->
+  <script src="~/lib/cldrjs/dist/cldr.js"></script>
+  <script src="~/lib/cldrjs/dist/cldr/event.js"></script>
+  <script src="~/lib/cldrjs/dist/cldr/supplemental.js"></script>
+
+  <!-- globalize scripts -->
+  <script src="~/lib/globalize/dist/globalize.js"></script>
+  <script src="~/lib/globalize/dist/globalize/number.js"></script>
+  <script src="~/lib/globalize/dist/globalize/date.js"></script>
+
+  <!-- npm install jquery-validation-globalize and move ~/lib/node_modules/jquery-validation-globalize to ~/lib/jquery-validation-globalize -->
+  <script src="~/lib/jquery-validation-globalize/jquery.validate.globalize.js"></script>
+</environment>
+<environment exclude="Development">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.17.0/jquery.validate.min.js"
+    asp-fallback-src="~/lib/jquery-validation/dist/jquery.validate.min.js"
+    asp-fallback-test="window.jQuery && window.jQuery.validator"
+    crossorigin="anonymous"
+    integrity="sha256-F6h55Qw6sweK+t7SiOJX+2bpSAa3b/fnlrVCJvmEj1A=">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validation-unobtrusive/3.2.11/jquery.validate.unobtrusive.min.js"
+    asp-fallback-src="~/lib/jquery-validation-unobtrusive/jquery.validate.unobtrusive.min.js"
+    asp-fallback-test="window.jQuery && window.jQuery.validator && window.jQuery.validator.unobtrusive"
+    crossorigin="anonymous"
+    integrity="sha256-9GycpJnliUjJDVDqP0UEu/bsm9U+3dnQUH8+3W10vkY=">
+  </script>
+</environment>

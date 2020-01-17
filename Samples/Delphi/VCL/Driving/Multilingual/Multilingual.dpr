@@ -1,6 +1,7 @@
 program Multilingual;
 
 uses
+  NtInitialLocale,
   Forms,
   Unit1 in 'Unit1.pas' {Form1};
 

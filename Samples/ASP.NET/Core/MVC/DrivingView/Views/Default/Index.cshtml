@@ -1,0 +1,39 @@
+﻿@model DrivingView.Models.DrivingModel;
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Driving Time Calculator</title>
+</head>
+
+<body>
+  <h1><img align="top" src="images/flag.png" /> Driving Time</h1>
+
+  <form method="post">
+    <table border="0">
+      <tr>
+        <td>
+          Driving distance:<br/>
+          <input type="text" asp-for="Distance">
+        </td>
+        <td>
+          Speed:<br/>
+          <input type="text" asp-for="Speed">
+        </td>
+        <td valign="bottom">
+          <input type="submit" value="Calculate" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="images/car.png" />
+        </td>
+        <td colspan="2">
+          @Model?.Message
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

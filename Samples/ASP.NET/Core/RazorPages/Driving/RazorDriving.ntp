@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C253E9FF-0816-4949-896D-81A98DB59036" created="20181207T165111Z" lastmodified="20191212T145813Z" version="1.0.627" stringid="7">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TNetProjectSource" name="RazorDriving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Driving\RazorDriving.csproj" original="en" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1">
+    <netproperties version="core30"/>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Pages">
+        <node class="TResXNode" name="Index.resx">
+          <row id="Driving Time Calculator" si="1">
+            <value>Driving Time Calculator</value>
+            <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Ajoaikalaskin</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Fahrzeitrechner</lang>
+          </row>
+          <row id="Driving Time" si="2">
+            <value>Driving Time</value>
+            <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Ajoaika</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Fahrzeit</lang>
+          </row>
+          <row id="Driving distance:" si="3">
+            <value>Driving distance:</value>
+            <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Ajomatka:</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Fahrstrecke:</lang>
+          </row>
+          <row id="Speed:" si="4">
+            <value>Speed:</value>
+            <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Nopeus:</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Geschwindigkeit:</lang>
+          </row>
+          <row id="Calculate" si="5">
+            <value>Calculate</value>
+            <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Laske</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Berechnen</lang>
+          </row>
+        </node>
+        <node class="TResXNode" name="IndexModel.resx" created="20181212T235743Z">
+          <row id="Enter values and click Calculate." si="6" scannedcomment="This is a comment">
+            <value>Enter values and click Calculate.</value>
+            <lang id="fi" rw="0" time="20191031T141028Z">Anna arvot ja paina Laske.</lang>
+            <lang id="de" or="6" rw="0" time="20181214T162217Z">Geben Sie Werte ein und klicken Sie auf Berechnung.</lang>
+          </row>
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="7" scannedcomment="0: Hours or minutes">
+            <value startpattern="1">Driving time is{0}{1}</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> {0} hour </pattern>
+            <pattern plural="pfOther" index="0"> {0} hours </pattern>
+            <pattern plural="pfOne" index="1">{0} minute</pattern>
+            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <lang id="fi" rw="0" tm="1" time="20181213T003858Z">
+              <value startpattern="1">Ajoaika on{0}{1}</value>
+              <pattern plural="pfZero" index="0"> </pattern>
+              <pattern plural="pfOne" index="0"> {0} tunti </pattern>
+              <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
+              <pattern plural="pfOne" index="1">{0} minuutti</pattern>
+              <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            </lang>
+            <lang id="de" rw="0" time="20181214T162236Z">
+              <value startpattern="1">Fahrzeit is{0}{1}</value>
+              <pattern plural="pfZero" index="0"> </pattern>
+              <pattern plural="pfOne" index="0"> {0} Stunde </pattern>
+              <pattern plural="pfOther" index="0"> {0} Stunden </pattern>
+              <pattern plural="pfOne" index="1">{0} Minute</pattern>
+              <pattern plural="pfOther" index="1">{0} Minuten</pattern>
+            </lang>
+          </row>
+        </node>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+</project>

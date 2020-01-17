@@ -30,7 +30,7 @@ implementation
 
 uses
   NtBase,
-  NtGraphics,
+  NtGraphic,
   NtLanguageDlg;
 
 procedure TForm1.UpdateItems;

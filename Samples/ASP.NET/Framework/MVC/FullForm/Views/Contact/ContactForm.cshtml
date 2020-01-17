@@ -1,0 +1,25 @@
+﻿@model FullForm.Models.ContactModel
+
+@{
+  ViewBag.Title = "ContactForm";
+}
+
+<h2>Contact Form</h2>
+
+@using (Html.BeginForm())
+{
+  @Html.LabelFor(model => model.Name) <br/>
+  @Html.TextBoxFor(model => model.Name) <br/>
+  @Html.ValidationMessageFor(model => model.Name) <br/>
+
+  @Html.LabelFor(model => model.Email) <br />
+  @Html.TextBoxFor(model => model.Email) <br />
+  @Html.ValidationMessageFor(model => model.Email) <br />
+
+  @Html.LabelFor(model => model.Comments) <br />
+  @Html.TextAreaFor(model => model.Comments) <br />
+  @Html.ValidationMessageFor(model => model.Comments) <br />
+
+  <button type="submit">Submit</button>
+}
+

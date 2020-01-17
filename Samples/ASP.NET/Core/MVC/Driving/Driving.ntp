@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="42A895AD-C7E5-4DCE-878C-FEDBB1C2DEF3" created="20181214T184734Z" lastmodified="20181214T190830Z" version="1.0.277">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TNetProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\Driving\Driving.csproj" original="en" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU">
+    <netproperties version="core22"/>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Controllers" created="20181214T190608Z">
+        <node class="TResXNode" name="DefaultController.resx">
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" scannedcomment="0: Hours or minutes">
+            <value startpattern="1">Driving time is{0}{1}</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> {0} hour </pattern>
+            <pattern plural="pfOther" index="0"> {0} hours </pattern>
+            <pattern plural="pfOne" index="1">{0} minute</pattern>
+            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <lang id="fi" rw="0" time="20181214T190825Z">
+              <value startpattern="1">Ajoaika on{0}{1}</value>
+              <pattern plural="pfZero" index="0"> </pattern>
+              <pattern plural="pfOne" index="0"> {0} tunti </pattern>
+              <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
+              <pattern plural="pfOne" index="1">{0} minuutti</pattern>
+              <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            </lang>
+          </row>
+        </node>
+      </node>
+      <node class="TDirectoryFolder" name="Views">
+        <node class="TDirectoryFolder" name="Default">
+          <node class="TResXNode" name="Index.resx">
+            <row id="Driving Time Calculator">
+              <value>Driving Time Calculator</value>
+              <lang id="fi" or="5" rw="0" time="20181214T184802Z">Ajoaikalaskin</lang>
+            </row>
+            <row id="Driving Time">
+              <value>Driving Time</value>
+              <lang id="fi" or="5" rw="0" time="20181214T184802Z">Ajoaika</lang>
+            </row>
+            <row id="Driving distance:">
+              <value>Driving distance:</value>
+              <lang id="fi" or="5" rw="0" time="20181214T184802Z">Ajomatka:</lang>
+            </row>
+            <row id="Speed:">
+              <value>Speed:</value>
+              <lang id="fi" or="5" rw="0" time="20181214T184802Z">Nopeus:</lang>
+            </row>
+            <row id="Calculate">
+              <value>Calculate</value>
+              <lang id="fi" or="5" rw="0" time="20181214T184802Z">Laske</lang>
+            </row>
+          </node>
+        </node>
+      </node>
+    </node>
+    <extractor/>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+</project>

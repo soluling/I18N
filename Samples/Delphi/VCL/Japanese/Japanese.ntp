@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20120330T112847Z" lastmodified="20181024T152538Z" guid="02214930-CA63-4DCA-86F5-70A9AFF9822A" version="1.0.228">
+<project id="BB8088DE-C852-4E2F-A482-7FEAD98F2942" created="20120330T112847Z" lastmodified="20191223T021848Z" version="1.0.632" stringid="373">
   <lang id="en"/>
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="Win32\Release\Japanese.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Japanese\Win32\Release\Japanese.exe" original="ja" guid="A81895E6-EC64-4FF1-819B-D789998D6363">
+  <node class="TDelphiSource" name="Win32\Release\Japanese.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Japanese\Win32\Release\Japanese.exe" original="ja" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -14,7 +14,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T030317Z">0</row>
         <row id="Top" created="20151019T030317Z">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>サンプル</value>
           <lang id="en" time="20120330T112912Z">Sample</lang>
           <lang id="fi" time="20120330T113012Z">Esimerkki</lang>
@@ -27,7 +27,7 @@
           <row id="Top" created="20151019T030317Z">8</row>
           <row id="Width" created="20151019T030317Z">73</row>
           <row id="Height" created="20151019T030317Z">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>ハロー・ワールド</value>
             <lang id="en" time="20120330T112916Z">Hello World</lang>
             <lang id="fi" time="20120330T113015Z">Moi maailma</lang>
@@ -39,14 +39,14 @@
           <row id="Top" created="20151019T030317Z">80</row>
           <row id="Width" created="20151019T030317Z">34</row>
           <row id="Height" created="20151019T030317Z">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="3" excluded="2">dummy</row>
         </item>
         <item name="LanguageGroup" type="TRadioGroup">
           <row id="Left" created="20151019T030317Z">8</row>
           <row id="Top" created="20151019T030317Z">32</row>
           <row id="Width" created="20151019T030317Z">457</row>
           <row id="Height" created="20151019T030317Z">41</row>
-          <row id="Caption">
+          <row id="Caption" si="4">
             <value> 言語を選択する </value>
             <lang id="en" time="20120330T112924Z"> Select language </lang>
             <lang id="fi" time="20120330T113019Z"> Valitse kieli </lang>
@@ -64,28 +64,47 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" created="20120401T151216Z">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" created="20120401T151216Z" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1" created="20120401T151557Z">
-        <row id="SStr">
+        <row id="SStr" si="5">
           <value>これはサンプルです。</value>
           <lang id="en" time="20151019T030355Z">This is a sample.</lang>
           <lang id="fi" time="20151019T030417Z">Tämä on esimerkki.</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

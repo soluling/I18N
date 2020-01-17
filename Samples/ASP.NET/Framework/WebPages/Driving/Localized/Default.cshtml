@@ -1,0 +1,102 @@
+﻿@using System.IO;
+@using System.Globalization;
+@using Resources;
+
+@{
+  Culture = UICulture = CultureInfo.CurrentCulture.ToString();
+
+  Validation.RequireField("distance", Resource.NoDistance);
+  Validation.RequireField("speed", Resource.NoSpeed);
+
+  string distanceText = Request.Params["distance"];
+  string speedText = Request.Params["speed"];
+  string message = "";
+  string hoursMessage = "";
+  string minutesMessage = "";
+
+  if ((distanceText != null) && (speedText != null) && Validation.IsValid())
+  {
+    double distance = Convert.ToDouble(distanceText);
+    double speed = Convert.ToDouble(speedText);
+
+    double time = distance/speed;
+    uint hours = (uint)time;
+    uint minutes = (uint)Math.Round(60*(time - hours));
+
+    message = Resource.DrivingTimeIs;
+    hoursMessage = NewTool.Plural.Format(Resource.Hours, hours);
+    minutesMessage = NewTool.Plural.Format(Resource.Minutes, minutes);
+  }
+}
+
+@functions{
+  string GetImageFile(string fileName)
+  {
+    string localizedImage = "\\" + Path.Combine(Path.Combine(Path.GetDirectoryName(fileName), UICulture), Path.GetFileName(fileName));
+
+    if (File.Exists(Server.MapPath(localizedImage)))
+      return localizedImage;
+    else 
+    {
+      int index = UICulture.IndexOf('-');
+      
+      if (index > 0)
+      {
+        string language = UICulture.Substring(0, index);
+
+        localizedImage = "\\" + Path.Combine(Path.Combine(Path.GetDirectoryName(fileName), language), Path.GetFileName(fileName));
+
+        if (File.Exists(Server.MapPath(localizedImage)))
+          return localizedImage;
+        else
+          return fileName;
+      }
+      else
+        return fileName;
+    }
+  }
+}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>@Resource.Title</title>
+  </head>
+
+  <body>
+    <h1><img align="middle" src="@GetImageFile("Images/flag.png")" /> @Resource.Header</h1>
+
+    @Html.ValidationSummary()
+
+    <form id="form1">
+      <table border="0">
+        <tr>
+          <td>
+            @Resource.DrivingDistance<br />
+            <input type="text" name="distance" value="@distanceText">
+          </td>
+          <td>
+            @Resource.Speed<br />
+            <input type="text" name="speed" value="@speedText">
+          </td>
+          <td valign="bottom">
+            <input type="submit" value="@Resource.Calculate" />
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <img src="@GetImageFile("Images/car.png")" />
+          </td>
+          <td>
+            @message
+          </td>
+          <td>
+            @hoursMessage
+            <br />
+            @minutesMessage
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>

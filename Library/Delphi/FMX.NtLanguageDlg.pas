@@ -34,8 +34,8 @@ type
     Resources1: TStyleBook;
     procedure FormCreate(Sender: TObject);
     procedure FormActivate(Sender: TObject);
-    procedure LanguageListDblClick(Sender: TObject);
     procedure FormClose(Sender: TObject; var Action: TCloseAction);
+    procedure LanguageListDblClick(Sender: TObject);
 
   private
     FOriginalLanguage: String;
@@ -339,7 +339,7 @@ procedure TNtLanguageDialog.FormActivate(Sender: TObject);
   begin
     item := TListBoxItem.Create(nil);
     item.Parent := LanguageList;
-    item.StyleLookup := 'CustomItem';
+    //item.StyleLookup := 'CustomItem';
     item.Text := language.Names[LanguageName];
     item.Data := TLanguageCode.Create(language.Code);
     LoadBitmap(item.ItemData.Bitmap, NtResources.LanguageImages[language.Code]);

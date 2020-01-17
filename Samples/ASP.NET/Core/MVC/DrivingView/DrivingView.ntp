@@ -1,0 +1,71 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="3B65E59D-0755-43FA-8249-E4972BDED891" created="20181214T223518Z" lastmodified="20191208T190447Z" version="1.0.625" stringid="7">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TNetProjectSource" name="DrivingView.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\DrivingView\DrivingView.csproj" original="en" resources="[nrResx,nrHtml]" availableresources="[nrResx,nrHtml]" netconfiguration="Debug|AnyCPU">
+    <netproperties version="core22"/>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Controllers">
+        <node class="TResXNode" name="DefaultController.resx">
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="1" scannedcomment="0: Hours or minutes">
+            <value startpattern="1">Driving time is{0}{1}</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> {0} hour </pattern>
+            <pattern plural="pfOther" index="0"> {0} hours </pattern>
+            <pattern plural="pfOne" index="1">{0} minute</pattern>
+            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+          </row>
+        </node>
+      </node>
+    </node>
+    <node class="TDirectoryFolder" name="Views" created="20181215T010852Z">
+      <node class="THtmlDataNode" name="_ViewImports.cshtml">
+        <data>
+          QHVzaW5nIERyaXZpbmdWaWV3DQpAdXNpbmcgRHJpdmluZ1ZpZXcuTW9kZWxzDQpAYWRkVGFnSGVscGVyICosIE1pY3Jvc29mdC5B
+          c3BOZXRDb3JlLk12Yy5UYWdIZWxwZXJzDQo=
+        </data>
+      </node>
+      <node class="TDirectoryFolder" name="Default">
+        <node class="THtmlDataNode" name="Index.cshtml">
+          <row id="title.text" class="THtmlRow" si="2">Driving Time Calculator</row>
+          <row id="h1.text" class="THtmlRow" si="3">&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Driving Time</row>
+          <row id="td.text" class="THtmlRow" si="4">Driving distance:</row>
+          <row id="td[1].text" class="THtmlRow" si="5">Speed:</row>
+          <row id="input[2].attributes.value" class="THtmlRow" si="6">Calculate</row>
+          <row id="td[4].text" class="THtmlRow" si="7">@Model?.Message</row>
+          <data>
+            77u/QG1vZGVsIERyaXZpbmdWaWV3Lk1vZGVscy5Ecml2aW5nTW9kZWw7DQoNCjwhRE9DVFlQRSBodG1sPg0KPGh0bWw+DQo8aGVh
+            ZD4NCiAgPG1ldGEgY2hhcnNldD0idXRmLTgiPg0KICA8dGl0bGU+RHJpdmluZyBUaW1lIENhbGN1bGF0b3I8L3RpdGxlPg0KPC9o
+            ZWFkPg0KDQo8Ym9keT4NCiAgPGgxPjxpbWcgYWxpZ249InRvcCIgc3JjPSJpbWFnZXMvZmxhZy5wbmciIC8+IERyaXZpbmcgVGlt
+            ZTwvaDE+DQoNCiAgPGZvcm0gbWV0aG9kPSJwb3N0Ij4NCiAgICA8dGFibGUgYm9yZGVyPSIwIj4NCiAgICAgIDx0cj4NCiAgICAg
+            ICAgPHRkPg0KICAgICAgICAgIERyaXZpbmcgZGlzdGFuY2U6PGJyLz4NCiAgICAgICAgICA8aW5wdXQgdHlwZT0idGV4dCIgYXNw
+            LWZvcj0iRGlzdGFuY2UiPg0KICAgICAgICA8L3RkPg0KICAgICAgICA8dGQ+DQogICAgICAgICAgU3BlZWQ6PGJyLz4NCiAgICAg
+            ICAgICA8aW5wdXQgdHlwZT0idGV4dCIgYXNwLWZvcj0iU3BlZWQiPg0KICAgICAgICA8L3RkPg0KICAgICAgICA8dGQgdmFsaWdu
+            PSJib3R0b20iPg0KICAgICAgICAgIDxpbnB1dCB0eXBlPSJzdWJtaXQiIHZhbHVlPSJDYWxjdWxhdGUiIC8+DQogICAgICAgIDwv
+            dGQ+DQogICAgICA8L3RyPg0KICAgICAgPHRyPg0KICAgICAgICA8dGQ+DQogICAgICAgICAgPGltZyBzcmM9ImltYWdlcy9jYXIu
+            cG5nIiAvPg0KICAgICAgICA8L3RkPg0KICAgICAgICA8dGQgY29sc3Bhbj0iMiI+DQogICAgICAgICAgQE1vZGVsPy5NZXNzYWdl
+            DQogICAgICAgIDwvdGQ+DQogICAgICA8L3RyPg0KICAgIDwvdGFibGU+DQogIDwvZm9ybT4NCjwvYm9keT4NCjwvaHRtbD4=
+          </data>
+        </node>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+</project>

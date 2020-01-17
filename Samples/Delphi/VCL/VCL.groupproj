@@ -102,6 +102,12 @@
         <Projects Include="Version\Version.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Image\Image.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="VclStrings\VclStrings.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -407,14 +413,32 @@
     <Target Name="Version:Make">
         <MSBuild Projects="Version\Version.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Image">
+        <MSBuild Projects="Image\Image.dproj"/>
+    </Target>
+    <Target Name="Image:Clean">
+        <MSBuild Projects="Image\Image.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Image:Make">
+        <MSBuild Projects="Image\Image.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="VclStrings">
+        <MSBuild Projects="VclStrings\VclStrings.dproj"/>
+    </Target>
+    <Target Name="VclStrings:Clean">
+        <MSBuild Projects="VclStrings\VclStrings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="VclStrings:Make">
+        <MSBuild Projects="VclStrings\VclStrings.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ActiveLanguage;Audio;ButtonLayout;Checker;Comments;CustomDir;CustomSelect;DFM;DualLanguage;FileDialog;Font;Format;Forms;IgnoreResourceDll;ImageList;IME;IniResources;Japanese;LanguageParam;LanguageSwitch;Layout;Menu;MessageDlg;Number;NTResSimple;Ordinal;Original;Resize;Resources;SingleFileDeploy;StringArray;TextResources;Version"/>
+        <CallTarget Targets="ActiveLanguage;Audio;ButtonLayout;Checker;Comments;CustomDir;CustomSelect;DFM;DualLanguage;FileDialog;Font;Format;Forms;IgnoreResourceDll;ImageList;IME;IniResources;Japanese;LanguageParam;LanguageSwitch;Layout;Menu;MessageDlg;Number;NTResSimple;Ordinal;Original;Resize;Resources;SingleFileDeploy;StringArray;TextResources;Version;Image;VclStrings"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ActiveLanguage:Clean;Audio:Clean;ButtonLayout:Clean;Checker:Clean;Comments:Clean;CustomDir:Clean;CustomSelect:Clean;DFM:Clean;DualLanguage:Clean;FileDialog:Clean;Font:Clean;Format:Clean;Forms:Clean;IgnoreResourceDll:Clean;ImageList:Clean;IME:Clean;IniResources:Clean;Japanese:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Layout:Clean;Menu:Clean;MessageDlg:Clean;Number:Clean;NTResSimple:Clean;Ordinal:Clean;Original:Clean;Resize:Clean;Resources:Clean;SingleFileDeploy:Clean;StringArray:Clean;TextResources:Clean;Version:Clean"/>
+        <CallTarget Targets="ActiveLanguage:Clean;Audio:Clean;ButtonLayout:Clean;Checker:Clean;Comments:Clean;CustomDir:Clean;CustomSelect:Clean;DFM:Clean;DualLanguage:Clean;FileDialog:Clean;Font:Clean;Format:Clean;Forms:Clean;IgnoreResourceDll:Clean;ImageList:Clean;IME:Clean;IniResources:Clean;Japanese:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Layout:Clean;Menu:Clean;MessageDlg:Clean;Number:Clean;NTResSimple:Clean;Ordinal:Clean;Original:Clean;Resize:Clean;Resources:Clean;SingleFileDeploy:Clean;StringArray:Clean;TextResources:Clean;Version:Clean;Image:Clean;VclStrings:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ActiveLanguage:Make;Audio:Make;ButtonLayout:Make;Checker:Make;Comments:Make;CustomDir:Make;CustomSelect:Make;DFM:Make;DualLanguage:Make;FileDialog:Make;Font:Make;Format:Make;Forms:Make;IgnoreResourceDll:Make;ImageList:Make;IME:Make;IniResources:Make;Japanese:Make;LanguageParam:Make;LanguageSwitch:Make;Layout:Make;Menu:Make;MessageDlg:Make;Number:Make;NTResSimple:Make;Ordinal:Make;Original:Make;Resize:Make;Resources:Make;SingleFileDeploy:Make;StringArray:Make;TextResources:Make;Version:Make"/>
+        <CallTarget Targets="ActiveLanguage:Make;Audio:Make;ButtonLayout:Make;Checker:Make;Comments:Make;CustomDir:Make;CustomSelect:Make;DFM:Make;DualLanguage:Make;FileDialog:Make;Font:Make;Format:Make;Forms:Make;IgnoreResourceDll:Make;ImageList:Make;IME:Make;IniResources:Make;Japanese:Make;LanguageParam:Make;LanguageSwitch:Make;Layout:Make;Menu:Make;MessageDlg:Make;Number:Make;NTResSimple:Make;Ordinal:Make;Original:Make;Resize:Make;Resources:Make;SingleFileDeploy:Make;StringArray:Make;TextResources:Make;Version:Make;Image:Make;VclStrings:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

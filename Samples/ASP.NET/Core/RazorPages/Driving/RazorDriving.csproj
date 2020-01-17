@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="RazorDriving.nds" />
+    <None Remove="RazorDriving.ntp" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Folder Include="wwwroot\images\fi\" />
+    <Folder Include="wwwroot\images\de\" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <PackageReference Include="Soluling" Version="1.0.40" />
+  </ItemGroup>
+  
+</Project>

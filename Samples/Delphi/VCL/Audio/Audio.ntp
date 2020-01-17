@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20140920T070611Z" lastmodified="20181023T160749Z" guid="018B7D5F-C869-42F1-9BCA-AF354E2DA898" version="1.0.228">
+<project id="84BB9811-B263-4D53-B2F4-FBA0D2C4D57A" created="20140920T070611Z" lastmodified="20191223T004757Z" version="1.0.632" stringid="378">
   <lang id="fi"/>
   <lang id="fr"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="Win32\Release\Audio.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Audio\Win32\Release\Audio.exe" original="en" guid="4775E384-FE65-4783-83D6-E09A58380C4E" platforms="[ptWin32,ptWin64]">
+  <node class="TDelphiSource" name="Win32\Release\Audio.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Audio\Win32\Release\Audio.exe" original="en" platforms="[ptWin32,ptWin64]">
     <node class="TWindowsBinaryFolder" name="&quot;AUDIO&quot;" resname="AUDIO">
       <node class="TWindowsBinaryNode" name="SAMPLE" resname="SAMPLE" langid="1035" binaryformat="bfAudio">
         <row id="value" class="TAudioRow">
@@ -939,7 +939,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Audio Sample</value>
           <lang id="fi" time="20140920T071237Z">Ääniesimerkki</lang>
           <lang id="fr" time="20140920T071632Z">Échantillon audio</lang>
@@ -952,7 +952,7 @@
           <row id="Top">112</row>
           <row id="Width" changed="20170404T143928Z">305</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="2" excluded="2">dummy</row>
         </item>
         <item name="Image1" type="TImage">
           <row id="Left" changed="20170404T143928Z">128</row>
@@ -1124,7 +1124,7 @@
           <row id="Top" changed="20170404T143928Z">78</row>
           <row id="Width">129</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="3">
             <value>Play</value>
             <lang id="fi" time="20140920T071241Z">Soita</lang>
             <lang id="fr" time="20140920T071632Z">Jouer</lang>
@@ -1201,17 +1201,21 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSample">
+        <row id="SSample" si="4">
           <value>How are you?</value>
           <lang id="fi" time="20140920T071247Z">Mitä sinulle kuuluu?</lang>
           <lang id="fr" time="20140920T071641Z">Comment vas-tu?</lang>
           <lang id="de" time="20140920T071426Z">Wie geht es Dir?</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <platformfiles>
@@ -1221,8 +1225,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-    <item type="TImage" property="Picture.Data" operation="roLocalize" format="pfClassImage"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+    <rule component="TImage" property="Picture.Data" operation="roLocalize" format="pfClassImage"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

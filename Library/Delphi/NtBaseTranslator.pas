@@ -908,7 +908,7 @@ var
   end;
 
 var
-  int: Longint;
+  int: Integer;
   str: String;
   identToInt: TIdentToInt;
   extension: TNtTranslatorExtension;
@@ -1321,7 +1321,7 @@ begin
   if Length(value) > 0 then
   begin
     Write(value[0], Length(value));
-    Seek(0, soFromBeginning);
+    Seek(0, TSeekOrigin.soBeginning);
   end;
 end;
 {$ELSE}
@@ -1395,4 +1395,6 @@ initialization
 
   NtTranslatorExtensions := TNtTranslatorExtensions.Create;
   NtTranslatorExtensions.Register(TNtStringsTranslator);
+finalization
+  NtTranslatorExtensions.Free;
 end.

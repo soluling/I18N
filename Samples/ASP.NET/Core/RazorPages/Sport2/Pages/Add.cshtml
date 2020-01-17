@@ -1,0 +1,72 @@
+﻿@page
+@using Soluling.Sport;
+@model AddModel
+@{
+  ViewData["Title"] = @Localizer["Add Message"];
+}
+
+<h1>@ViewData["Title"]</h1>
+
+<ul class="list-group" id="uploadList"></ul>
+
+<form method="post" enctype="multipart/form-data">
+  <div class="form-border">
+    <div asp-validation-summary="ModelOnly" class="text-danger">
+    </div>
+
+    <input type="hidden" asp-for="Value.Languages[0].Language" />
+
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <label asp-for="Value.Languages[0].Name" class="custom-label"></label>
+      </div>
+      <div class="col-sm-4">
+        <input asp-for="Value.Languages[0].Name" class="form-control" />
+        <span asp-validation-for="Value.Languages[0].Name" class="text-danger"></span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <label asp-for="Value.Languages[0].Description" class="custom-label"></label>
+      </div>
+      <div class="col-sm-4">
+        <input asp-for="Value.Languages[0].Description" class="form-control" />
+        <span asp-validation-for="Value.Languages[0].Description" class="text-danger"></span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <label asp-for="Value.Languages[0].Origin" class="custom-label"></label>
+      </div>
+      <div class="col-sm-4">
+        <input asp-for="Value.Languages[0].Origin" class="form-control" />
+        <span asp-validation-for="Value.Languages[0].Origin" class="text-danger"></span>
+      </div>
+    </div>
+
+    <div class="form-group row">
+      <div class="col-sm-2">
+        <label asp-for="Value.Olympic" class="custom-label"></label>
+      </div>
+      <div class="col-sm-4">
+        <select asp-for="Value.Olympic" asp-items="Html.GetEnumSelectList<Olympic>()" class="form-control"></select>
+        <span asp-validation-for="Value.Olympic" class="text-danger"></span>
+      </div>
+    </div>
+
+    <br />
+
+    <div class="form-group">
+      <button type="submit" class="btn btn-sm btn-primary btn-space"><span class="fas fa-plus"></span>&nbsp; @Localizer["Create"]</button>
+      <a asp-page="Index" class="btn btn-sm btn-success btn-space"><span class="fas fa-list-ul"></span>&nbsp; @Localizer["Back to List"]</a>
+    </div>
+  </div>
+</form>
+
+@section Scripts 
+{
+  @{ await Html.RenderPartialAsync("_ValidationScriptsPartial"); }
+}
+

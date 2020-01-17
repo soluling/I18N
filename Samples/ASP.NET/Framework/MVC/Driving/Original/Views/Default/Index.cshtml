@@ -1,0 +1,63 @@
+﻿@model Original.Models.DrivingModel
+
+@{
+  Layout = null;
+
+  string message = Model?.Message;
+  string hoursMessage = Model?.HoursMessage;
+  string minutesMessage = Model?.MinutesMessage;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width" />
+  <title>Driving Time Calculator</title>
+  @Styles.Render("~/Content/Site.css")
+  <script src="~/Scripts/jquery-1.10.2.js"></script>
+  <script src="~/Scripts/jquery.validate.js"></script>
+  <script src="~/Scripts/jquery.validate.unobtrusive.js"></script>
+</head>
+
+<body>
+  <h1><img align="middle" src="/Images/flag.png" /> Driving Time</h1>
+
+  @using (Html.BeginForm("Index", "Default"))
+  {
+    //@Html.ValidationSummary(false, "Account creation was unsuccessful. " + "Please correct the errors and try again.")
+
+    <table border="0">
+      <tr>
+        <td>
+          @Html.LabelFor(model => model.Distance) <br/> 
+          @Html.TextBoxFor(model => model.Distance)
+          @Html.ValidationMessageFor(model => model.Distance)
+        </td>
+        <td>
+          @Html.LabelFor(model => model.Speed) <br/> 
+          @Html.TextBoxFor(model => model.Speed)
+          @Html.ValidationMessageFor(model => model.Speed)
+        </td>
+        <td valign="bottom">
+          <button type="submit">Calculate</button>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="/Images/car.png" />
+        </td>
+        <td>
+          @message
+        </td>
+        <td>
+          @hoursMessage
+          <br />
+          @minutesMessage
+        </td>
+      </tr>
+    </table>
+  }
+</body>
+
+</html>

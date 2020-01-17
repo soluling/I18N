@@ -1,0 +1,40 @@
+﻿@page
+@model IndexModel
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>@Localizer["Driving Time Calculator"]</title>
+</head>
+
+<body>
+  <h1><img align="top" src="localizedimages/flag.png" /> @Localizer["Driving Time"]</h1>
+
+  <form method="post">
+    <table border="0">
+      <tr>
+        <td>
+          @Localizer["Driving distance:"]<br/>
+          <input type="text" asp-for="Distance">
+        </td>
+        <td>
+          @Localizer["Speed:"]<br/>
+          <input type="text" asp-for="Speed">
+        </td>
+        <td valign="bottom">
+          <input type="submit" value="@Localizer["Calculate"]" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <img src="localizedimages/car.png" />
+        </td>
+        <td colspan="2">
+          @Model.Message
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>

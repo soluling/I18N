@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20190706T142435Z" version="1.0.456" stringid="9">
+<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20191223T025020Z" version="1.0.632" stringid="380">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" platforms="[ptWin32]" scansourcecode="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -113,10 +113,13 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SSportSelect" changed="20180223T021035Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player">
           <value select="soccer">{0} is the best soccer player.</value>
@@ -130,7 +133,8 @@
           </lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -144,9 +148,7 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -155,9 +157,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
 </project>

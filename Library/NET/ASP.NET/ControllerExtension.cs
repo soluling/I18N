@@ -1,6 +1,5 @@
 ﻿using System.Collections.Generic;
 using System.IO;
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -28,10 +27,10 @@ namespace Soluling.AspNet
     /// 
     /// </summary>
     /// <param name="controller"></param>
-    /// <param name="hostingEnvironment"></param>
+    /// <param name="webRootPath"></param>
     /// <param name="name"></param>
     /// <returns></returns>
-    public static IActionResult GetImage(this ControllerBase controller, IHostingEnvironment hostingEnvironment, string name)
+    public static IActionResult GetImage(this ControllerBase controller, string webRootPath, string name)
     {
       var ext = Path.GetExtension(name).Replace(".", "");
 
@@ -42,7 +41,7 @@ namespace Soluling.AspNet
       }
 
       var stack = new Stack<string>();
-      var path = hostingEnvironment.WebRootPath + "\\images";
+      var path = webRootPath + "\\images";
 
       stack.Push(path + "\\" + name);
 

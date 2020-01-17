@@ -295,6 +295,9 @@ var
 implementation
 
 uses
+{$IF CompilerVersion = 22}
+  Windows,
+{$IFEND}
   RTLConsts,
   NtBase;
 
@@ -589,6 +592,7 @@ begin
 {$ENDIF}
 
   FLanguageNames.Free;
+  FStream.Free;
 
   inherited;
 end;
@@ -749,6 +753,7 @@ begin
     Exit;
   end;
 
+  FStream.Free;
   FStream := TResourceStream.Create(HInstance, FResourceName, RT_RCDATA);
   header := FStream.ReadBytes(Length(NTRES_MAGIC_C));
 

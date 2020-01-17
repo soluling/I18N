@@ -1,0 +1,1 @@
+\Tools\DelphiXE\Bin\dcc32 -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPattern.pas NtOrdinal.pas NtNumber.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtNumber.pas NtGraphic.pas

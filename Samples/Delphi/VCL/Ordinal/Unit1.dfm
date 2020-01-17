@@ -110,7 +110,7 @@ object Form1: TForm1
     Top = 200
     Width = 401
     Height = 41
-    Caption = ' Singular/Plural  '
+    Caption = ' Singular/Plural '
     Columns = 2
     Items.Strings = (
       'Use &singular sample'

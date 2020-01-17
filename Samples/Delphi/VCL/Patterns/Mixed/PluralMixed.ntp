@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A689C8F6-5530-4FC4-868A-E8C3657749FC" created="20140430T073758Z" lastmodified="20190706T142553Z" version="1.0.456" stringid="23">
+<project id="A689C8F6-5530-4FC4-868A-E8C3657749FC" created="20140430T073758Z" lastmodified="20191223T024831Z" version="1.0.632" stringid="390">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\PluralMixed.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Mixed\Win32\Release\PluralMixed.exe" original="en">
+  <node class="TDelphiSource" name="Win32\Release\PluralMixed.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Mixed\Win32\Release\PluralMixed.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -221,10 +221,13 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SFiles" class="TPatternRow" si="19" created="20170517T182243Z">
           <value>{0} files</value>
@@ -266,7 +269,8 @@
           <lang id="fi" time="20170517T182255Z">{0} tiedosto</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
   </node>
   <excludedoriginals>
@@ -276,9 +280,7 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -287,9 +289,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
 </project>

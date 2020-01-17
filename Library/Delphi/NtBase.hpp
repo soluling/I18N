@@ -1,8 +1,8 @@
 ﻿// CodeGear C++Builder
-// Copyright (c) 1995, 2017 by Embarcadero Technologies, Inc.
+// Copyright (c) 1995, 2018 by Embarcadero Technologies, Inc.
 // All rights reserved
 
-// (DO NOT EDIT: machine generated header) 'NtBase.pas' rev: 33.00 (Windows)
+// (DO NOT EDIT: machine generated header) 'NtBase.pas' rev: 33.00 (MacOS)
 
 #ifndef NtbaseHPP
 #define NtbaseHPP
@@ -47,7 +47,6 @@ typedef System::Set<TExtractOption, TExtractOption::eoCheckDate, TExtractOption:
 
 enum DECLSPEC_DENUM TNtLanguageName : unsigned char { lnNative, lnLocalized, lnBoth, lnEnglish, lnSystem };
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtLanguage : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -75,11 +74,9 @@ public:
 	
 };
 
-#pragma pack(pop)
 
 enum DECLSPEC_DENUM TLocaleSelect : unsigned char { lsUI, lsSettings };
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtLanguages : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -102,16 +99,13 @@ public:
 	__property TNtLanguage* Items[int i] = {read=GetItem/*, default*/};
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtBase : public System::TObject
 {
 	typedef System::TObject inherited;
 	
 private:
 	__classmethod void __fastcall DeleteExtractedFiles();
-	__classmethod bool __fastcall HasWriteAccess(const System::UnicodeString dir);
 	
 public:
 	__classmethod void __fastcall CheckThatDllsExist();
@@ -136,7 +130,7 @@ public:
 	__classmethod System::UnicodeString __fastcall GetRunningFileName();
 	__classmethod System::UnicodeString __fastcall GetLanguageFile(const System::UnicodeString exeFileName, const System::UnicodeString code);
 	__classmethod System::UnicodeString __fastcall GetCurrentLanguageFile();
-	__classmethod unsigned __fastcall GetResourceInstance();
+	__classmethod unsigned long __fastcall GetResourceInstance();
 	__classmethod int __fastcall GetUserLanguage();
 	__classmethod int __fastcall GetSystemLanguage();
 	__classmethod System::UnicodeString __fastcall GetDefaultLanguage();
@@ -144,33 +138,28 @@ public:
 	__classmethod System::UnicodeString __fastcall LocaleToIsoCode(int locale);
 	__classmethod int __fastcall IsoToLocale(const System::UnicodeString locale);
 	__classmethod int __fastcall IsoLanguageToLocale(const System::UnicodeString language, const System::UnicodeString country = System::UnicodeString());
-	__classmethod System::UnicodeString __fastcall LocaleToExtension(int locale);
 public:
 	/* TObject.Create */ inline __fastcall TNtBase() : System::TObject() { }
 	/* TObject.Destroy */ inline __fastcall virtual ~TNtBase() { }
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtResources : public System::TObject
 {
 	typedef System::TObject inherited;
 	
 public:
-	__classmethod bool __fastcall DoesExist(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0x0));
-	__classmethod System::Classes::TResourceStream* __fastcall GetResourceStream(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0x0));
-	__classmethod System::DynamicArray<System::Byte> __fastcall LoadResource(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0x0));
+	__classmethod bool __fastcall DoesExist(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0ULL));
+	__classmethod System::Classes::TResourceStream* __fastcall GetResourceStream(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0ULL));
+	__classmethod System::DynamicArray<System::Byte> __fastcall LoadResource(System::WideChar * resType, System::WideChar * resName, NativeUInt instance = (NativeUInt)(0ULL));
 public:
 	/* TObject.Create */ inline __fastcall TNtResources() : System::TObject() { }
 	/* TObject.Destroy */ inline __fastcall virtual ~TNtResources() { }
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtLocaleRegistry : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -189,9 +178,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtConvert : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -209,9 +196,7 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtExtension : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -222,11 +207,9 @@ public:
 	
 };
 
-#pragma pack(pop)
 
-typedef System::TMetaClass* TNtExtensionClass;
+_DECLARE_METACLASS(System::TMetaClass, TNtExtensionClass);
 
-#pragma pack(push,4)
 class PASCALIMPLEMENTATION TNtExtensions : public System::TObject
 {
 	typedef System::TObject inherited;
@@ -250,21 +233,18 @@ public:
 	__property TNtExtension* Items[int i] = {read=GetItem/*, default*/};
 };
 
-#pragma pack(pop)
 
 //-- var, const, procedure ---------------------------------------------------
-#define APPLICATION_RESOURCE L"SOLULING"
-#define APPLICATION_DIR L"Soluling"
+#define APPLICATION_RESOURCE u"SOLULING"
+#define APPLICATION_DIR u"Soluling"
 static const System::WideChar LOCALE_SEPARATOR = (System::WideChar)(0x2d);
 static const System::Int8 LOCALE_ALL = System::Int8(0x0);
 extern DELPHI_PACKAGE System::StaticArray<System::Byte, 4> VCL_FORM_HEADER;
 static const System::Int8 CSIDL_PERSONAL = System::Int8(0x5);
-#define LOCALE_OVERRIDE_KEY L"Software\\Embarcadero\\Locales"
-#define OLD_LOCALE_OVERRIDE_KEY L"Software\\CodeGear\\Locales"
-#define OLDEST_LOCALE_OVERRIDE_KEY L"Software\\Borland\\Locales"
-#define KERNEL L"kernel32.dll"
-extern "C" System::Word __stdcall GetUserDefaultUILanguage();
-extern "C" System::Word __stdcall GetSystemDefaultUILanguage();
+static const System::Int8 SUBLANG_NEUTRAL = System::Int8(0x0);
+#define LOCALE_OVERRIDE_KEY u"Software\\Embarcadero\\Locales"
+#define OLD_LOCALE_OVERRIDE_KEY u"Software\\CodeGear\\Locales"
+#define OLDEST_LOCALE_OVERRIDE_KEY u"Software\\Borland\\Locales"
 extern DELPHI_PACKAGE System::UnicodeString ResourceDllDir;
 extern DELPHI_PACKAGE System::UnicodeString LoadedResourceLocale;
 extern DELPHI_PACKAGE System::UnicodeString PreviouslyLoadedResourceLocale;

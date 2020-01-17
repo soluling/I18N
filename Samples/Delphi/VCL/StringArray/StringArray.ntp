@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20151020T220333Z" lastmodified="20180223T023219Z" version="1.0.125">
+<project id="FB5E23C8-2319-440B-B713-41DC93384DFE" created="20151020T220333Z" lastmodified="20191223T025552Z" version="1.0.632" stringid="386">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\StringArray.exe" original="en">
+  <node class="TDelphiSource" name="Win32\Release\StringArray.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\StringArray\Win32\Release\StringArray.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -13,7 +13,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi" time="20151020T220341Z">Esimerkki</lang>
         </row>
@@ -24,49 +24,49 @@
           <row id="Top">8</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="2" excluded="2">dummy</row>
         </item>
         <item name="Label2" type="TLabel">
           <row id="Left">96</row>
           <row id="Top">8</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="3" excluded="2">dummy</row>
         </item>
         <item name="Label3" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="4" excluded="2">dummy</row>
         </item>
         <item name="Label4" type="TLabel">
           <row id="Left">96</row>
           <row id="Top">24</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="5" excluded="2">dummy</row>
         </item>
         <item name="Label5" type="TLabel">
           <row id="Left">8</row>
           <row id="Top">40</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="6" excluded="2">dummy</row>
         </item>
         <item name="Label6" type="TLabel">
           <row id="Left">96</row>
           <row id="Top">40</row>
           <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" excluded="2">dummy</row>
+          <row id="Caption" si="7" excluded="2">dummy</row>
         </item>
         <item name="LanguageButton" type="TButton">
           <row id="Left">216</row>
           <row id="Top">8</row>
           <row id="Width">97</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="8">
             <value>&amp;Language...</value>
             <lang id="fi" time="20151020T220341Z">&amp;Kieli...</lang>
           </row>
@@ -88,7 +88,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">256</row>
         <row id="Top">347</row>
-        <row id="Caption">
+        <row id="Caption" si="9">
           <value>Select Language</value>
           <lang id="fi" time="20151020T220341Z">Valitse kieli</lang>
         </row>
@@ -105,7 +105,7 @@
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="10">
             <value>OK</value>
             <lang id="fi" time="20151020T220341Z">OK</lang>
           </row>
@@ -115,7 +115,7 @@
           <row id="Top">40</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
-          <row id="Caption">
+          <row id="Caption" si="11">
             <value>Cancel</value>
             <lang id="fi" time="20151020T220341Z">Peru</lang>
           </row>
@@ -134,33 +134,52 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SOne">
+        <row id="SOne" si="12">
           <value>One</value>
           <lang id="fi" time="20110809T100213Z">Yksi</lang>
           <lang id="ja" time="20110809T100313Z">一</lang>
         </row>
-        <row id="STwo">
+        <row id="STwo" si="13">
           <value>Two</value>
           <lang id="fi" time="20110809T100215Z">Kaksi</lang>
           <lang id="ja" time="20110809T100320Z">二</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
-      <configuration items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

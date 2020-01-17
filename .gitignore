@@ -1,6 +1,8 @@
 _*.bat
 Upload.bat
 *.exe
+*.obj
+*.hpp
 !Bin/CldrToCode.exe
 
 dunit.ini
@@ -13,6 +15,7 @@ DataView/
 HowTo/
 ImageView/
 
+Library/Delphi/*.obj
 Library/Automation/
 Library/Data/
 Library/JavaScript/
@@ -25,7 +28,6 @@ Library/NET/TestResults/
 Library/TypeScript/
 Library/TypeScript/node_modules/
 
-Samples/ASP.NET/
 Samples/Access/
 Samples/Android/
 Samples/Angular/
@@ -131,6 +133,7 @@ Samples/WindowsForms/**/*.xml
 *.skincfg
 *.sds
 *.slp
+*.ntr
 *.user
 *.nupkg
 *.nuspec

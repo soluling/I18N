@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20140624T223316Z" lastmodified="20181023T181440Z" guid="5835F5A9-3F8E-43B7-B427-454BF74E8B57" version="1.0.228">
+<project id="2D7035A3-1A9D-402D-B3AB-0394E8AAC0AA" created="20140624T223316Z" lastmodified="20191223T020316Z" version="1.0.632" stringid="5">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Font.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Font\Win32\Release\Font.exe" original="en" guid="F7C4330A-83F0-47D3-B3B5-02DCCDEE7227">
+  <node class="TDelphiSource" name="Win32\Release\Font.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Font\Win32\Release\Font.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -12,7 +12,7 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Font Sample</value>
           <lang id="fi" time="20160702T155832Z">Fonttiesimerkki</lang>
         </row>
@@ -23,7 +23,7 @@
           <row id="Top">8</row>
           <row id="Width">35</row>
           <row id="Height">13</row>
-          <row id="Caption">
+          <row id="Caption" si="2">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
           </row>
@@ -34,7 +34,7 @@
           <row id="Top">32</row>
           <row id="Width">60</row>
           <row id="Height">23</row>
-          <row id="Caption">
+          <row id="Caption" si="3">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
           </row>
@@ -45,7 +45,7 @@
           <row id="Top">64</row>
           <row id="Width">77</row>
           <row id="Height">22</row>
-          <row id="Caption">
+          <row id="Caption" si="4">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
           </row>
@@ -56,7 +56,7 @@
           <row id="Top">96</row>
           <row id="Width">35</row>
           <row id="Height">22</row>
-          <row id="Caption">
+          <row id="Caption" si="5">
             <value>All</value>
             <lang id="fi" time="20160702T155838Z">Kaikki</lang>
           </row>
@@ -77,10 +77,25 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
   </node>
-  <delphirules kind="drVcl">
-    <item type="*" property="*Font.Name"/>
-  </delphirules>
+  <rules kind="crVcl">
+    <rule component="*" property="*Font.Name"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

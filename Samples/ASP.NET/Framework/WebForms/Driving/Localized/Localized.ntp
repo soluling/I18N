@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F02BEF6F-949E-48C1-A698-77D1DB0790DD" created="20150614T015837Z" lastmodified="20190720T213405Z" version="1.0.472" stringid="13">
+  <lang id="fi"/>
+  <node class="TAspNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\Localized.csproj" original="en" availableresources="[nrResx,nrHtml,nrImage]">
+    <netproperties version="net45"/>
+    <node class="TDirectoryFolder" name="App_LocalResources">
+      <node class="TResXNode" name="Index.aspx.resx">
+        <row id="calculateButton.Text" si="1">Calculate</row>
+        <row id="carImage.ImageUrl" si="2">~/Images/car.png</row>
+        <row id="distanceLabel.Text" si="3">Driving distance:</row>
+        <row id="flagImage.ImageUrl" si="4">~/Images/flag.png</row>
+        <row id="speedLabel.Text" si="5">Speed:</row>
+      </node>
+    </node>
+    <node class="TDirectoryFolder" name="Images">
+      <node class="TDirectoryFolder" name="fi"/>
+      <node class="TDirectoryFolder" name="ja"/>
+    </node>
+    <node class="TResXNode" name="Resources.resx">
+      <row id="DrivingTimeIs" si="6">Driving time is</row>
+      <row id="Header" si="7">Driving Time</row>
+      <row id="Language" si="9">en</row>
+      <row id="ResultPlural" si="13" created="20190720T213352Z">Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}</row>
+      <row id="Title" si="11">Driving Time Calculator</row>
+      <row id="YouMustEnterValue" si="12">You must enter a valid distance and a speed!</row>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Amazon" type="TAmazonTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Yandex" type="TYandexTranslate"/>
+    </shared>
+  </mt>
+</project>

@@ -56,7 +56,7 @@ begin
     stream := TMemoryStream.Create;
     try
       stream.Write(data[0], Length(data));
-      stream.Seek(0, soFromBeginning);
+      stream.Seek(0, TSeekOrigin.soBeginning);
 
       if obj is TBitmap then
       begin
