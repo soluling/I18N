@@ -157,7 +157,7 @@ To learn more about this API read its [documentation](Library/Angular/README.md)
 
 #### FireMonkey
 
-FireMonkey does not have a proper localization resource. If your target mobile platforms such as iOS or Android, you cannot use resource DLLs. Everything, including the localized resource, must be in the main application file. This library contains a solution for FireMonkey localization. It uses a special .ntres file format to store form (.fmx), string, image, and audio resources into a single .ntres file. The file contains the resources in all the languages you want to support. Finally, you add the .ntres file as a custom resource into your application and use the library's API calls to access the resources. You don't have to modify your existing  application that much in order to make is multilingual. The only exception is the resource strings. You cannot use the. If you have hardcoded string, and you want to localize it, wrap it in _T function.
+FireMonkey does not have a proper localization resource. If your target mobile platforms such as iOS or Android, you cannot use resource DLLs. Everything, including the localized resource, must be in the main application file. This library contains a solution for FireMonkey localization. It uses a special `.ntres` file format to store form (`.fmx`), string, image, and audio resources into a single `.ntres` file. The file contains the resources in all the languages you want to support. Finally, you add the `.ntres` file as a custom resource into your application and use the library's API calls to access the resources. You don't have to modify your existing  application that much in order to make is multilingual. The only exception is the resource strings. You cannot use the. If you have hardcoded string, and you want to localize it, wrap it in _T function.
 
 ```pascal
 procedure TForm1.UpdateStrings;
@@ -191,8 +191,6 @@ We are considering to implement similar classes for TypeScript (JavaScript comes
 
 We can implement similar libraries for Java. There is already ICU implementation for Java, so if you use Java on the server-side, you can use it. If you use Java on the client-side, it will most likely be Android, and it supports plurals but not genders. We are still considering Java support. Let us know if it would be useful. 
 
-We also would like to see other programming languages such as PHP, Python, and Ruby. Because I am not that experienced PHP or Python programmer and I have never used Ruby, it would be nice if somebody would implement PHP, Python, and Ruby libraries and samples.
-
 ## CldrToCode.exe
 
 `Bin\CldrToCode.exe` is a tool that extracts rules from the CLDR XML files to C# and Delphi files. Normally you don't have to use it because the library already contains extracted files that contain rules in all CLDR languages. However, if you want to create rule files that contain only some languages, you can use `CldrToCode.exe` to create your own rules files. For example, if you want to create rule files that only contains English, German, and French use:
@@ -201,14 +199,16 @@ We also would like to see other programming languages such as PHP, Python, and R
 
 This will create `NtPluralData.pas`, `NtNumberData.pas`, `PluralData.cs` and `NumberData.cs`.
 
-With little effort I can make CldrToCode.exe to create Java, TypeScript and Python files too.
+With little effort we can make CldrToCode.exe to create Java, TypeScript and Python files too.
 
 ## Localization
 
-If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports ASP.NET, .NET, Angular, React, Delphi, Python, Java, and many more.
+If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports ASP.NET, .NET, Angular, React, Delphi, Python, Java, plus more than 100 other file and database formats.
 
 Soluling supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
 
 ![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
 You can download Soluling from [here](https://www.soluling.com/Download).
+
+**Note!** At the moment, Soluling is a Windows application and works only on Windows. However, we plan to release a web-based version soon.
