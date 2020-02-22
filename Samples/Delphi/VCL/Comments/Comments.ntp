@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20191223T004955Z" version="1.0.632" stringid="363">
+<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20200209T152109Z" version="1.0.691" stringid="363">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
@@ -85,23 +85,30 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SFormatComment" class="TPatternRow" si="9" scannedcomment="This is comment but no placeholder descriptions" created="20170508T134138Z">
-          <value>Hello {0}, welcome to {1}</value>
-          <lang id="fi" or="3" time="20170508T134314Z">Moi {0}, tervetuloa {1}:iin</lang>
+        <row id="SPixels" si="14" scannedcomment="This is pixels comment" scannedmaxpixels="100">
+          <value>Pixels</value>
+          <lang id="fi" comment="Sama juttu" time="20150517T235951Z">Pikseliä</lang>
+          <lang id="de" time="20150518T000019Z">Pixel</lang>
+          <lang id="ja" time="20150518T000034Z">ピクセル</lang>
         </row>
-        <row id="SFormatPlaceholderComment" class="TPatternRow" si="10" scannedcomment="0: Name of the person, 1: Name of the place" created="20170508T134138Z">
+        <row id="SFormatNoComment" changed="20200209T152035Z" class="TPatternRow" si="15" created="20170508T134138Z">
+          <value>Hello {0}, welcome to {1}</value>
+          <lang id="fi" time="20170508T134314Z">Moi {0}, tervetuloa {1}:iin</lang>
+        </row>
+        <row id="SFormatComment" changed="20200209T152035Z" class="TPatternRow" si="9" scannedcomment="This is comment but no placeholder descriptions" created="20170508T134138Z">
+          <value>Hello {0}, welcome to {1}</value>
+          <lang id="fi" time="20170508T134314Z">Moi {0}, tervetuloa {1}:iin</lang>
+        </row>
+        <row id="SFormatPlaceholderComment" changed="20200209T152035Z" class="TPatternRow" si="10" scannedcomment="0: Name of the person, 1: Name of the place" created="20170508T134138Z">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" time="20170508T134314Z">Moi {0}, tervetuloa {1}:iin</lang>
         </row>
         <row id="SRegExComment" si="11" scannedcomment="This can only contains A to Z, numbers and underscore" created="20180308T003943Z" scannedregex="[A-Z0-9_]*">
           <value>EXPRESSION_100</value>
-          <lang id="fi" rw="0" time="20180308T004921Z">ILMAISU_100</lang>
+          <lang id="fi" time="20180308T004921Z">ILMAISU_100</lang>
         </row>
         <row id="SHello" si="12" scannedcomment="This is a comment">
           <value>Hello World</value>
@@ -115,19 +122,8 @@
           <lang id="de" time="20150518T000019Z">Zeichen</lang>
           <lang id="ja" time="20150518T000034Z">文字</lang>
         </row>
-        <row id="SPixels" si="14" scannedcomment="This is pixels comment" scannedmaxpixels="100">
-          <value>Pixels</value>
-          <lang id="fi" comment="Sama juttu" time="20150517T235951Z">Pikseliä</lang>
-          <lang id="de" time="20150518T000019Z">Pixel</lang>
-          <lang id="ja" time="20150518T000034Z">ピクセル</lang>
-        </row>
-        <row id="SFormatNoComment" class="TPatternRow" si="15" created="20170508T134138Z">
-          <value>Hello {0}, welcome to {1}</value>
-          <lang id="fi" or="3" time="20170508T134314Z">Moi {0}, tervetuloa {1}:iin</lang>
-        </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
@@ -146,8 +142,8 @@
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

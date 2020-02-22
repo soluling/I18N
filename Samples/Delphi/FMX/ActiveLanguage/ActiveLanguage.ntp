@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160815T143751Z" lastmodified="20180223T023743Z" version="1.0.125">
+<project id="B291506A-A06F-4CC8-8231-A27998567AE6" created="20160815T143751Z" lastmodified="20200208T050837Z" version="1.0.691" stringid="17">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="ActiveLanguage.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="ActiveLanguage.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\ActiveLanguage\ActiveLanguage.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDirectoryFolder" name=".." created="20160815T144441Z">
         <node class="TDirectoryFolder" name="..">
@@ -12,24 +12,24 @@
                   <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
                     <row id="Left">0</row>
                     <row id="Top">0</row>
-                    <row id="Caption">
+                    <row id="Caption" si="1">
                       <value>Select Language</value>
                       <lang id="fi" time="20160815T144452Z">Valitse kieli</lang>
                     </row>
                     <row id="ClientHeight">193</row>
                     <row id="ClientWidth">291</row>
                     <item name="LanguageList" type="TListBox">
-                      <row id="DefaultItemStyles.GroupHeaderStyle" excluded="3"></row>
-                      <row id="DefaultItemStyles.GroupFooterStyle" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
                     </item>
                     <item name="OkButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="4">
                         <value>OK</value>
                         <lang id="fi" time="20160815T144456Z">OK</lang>
                       </row>
                     </item>
                     <item name="CancelButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="5">
                         <value>Cancel</value>
                         <lang id="fi" time="20160815T144449Z">Peru</lang>
                       </row>
@@ -78,43 +78,43 @@
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="6">
           <value>Sample</value>
           <lang id="fi" time="20160815T143825Z">Esimerkki</lang>
         </row>
         <row id="ClientHeight">137</row>
         <row id="ClientWidth">269</row>
         <item name="Button1" type="TButton">
-          <row id="Text">
+          <row id="Text" si="7">
             <value>Language...</value>
             <lang id="fi" time="20160815T143833Z">Kieli...</lang>
           </row>
         </item>
         <item name="GroupBox1" type="TGroupBox">
-          <row id="Text">
+          <row id="Text" si="8">
             <value> Language names </value>
             <lang id="fi" time="20160815T143811Z"> Kielten nimet </lang>
           </row>
           <item name="NativeRadio" type="TRadioButton">
-            <row id="Text">
+            <row id="Text" si="9">
               <value>Native</value>
               <lang id="fi" time="20160815T143812Z">Kotimainen</lang>
             </row>
           </item>
           <item name="LocalizedRadio" type="TRadioButton">
-            <row id="Text">
+            <row id="Text" si="10">
               <value>Localized</value>
               <lang id="fi" time="20160815T143812Z">Lokalisoitu</lang>
             </row>
           </item>
           <item name="EnglishRadio" type="TRadioButton">
-            <row id="Text">
+            <row id="Text" si="11">
               <value>English</value>
               <lang id="fi" time="20160815T143812Z">englanti</lang>
             </row>
           </item>
           <item name="SystemRadio" type="TRadioButton">
-            <row id="Text">
+            <row id="Text" si="12">
               <value>System</value>
               <lang id="fi" time="20160815T143838Z">Järjestelmä</lang>
             </row>
@@ -143,31 +143,50 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="en">
+        <row id="en" si="13">
           <value>English</value>
           <lang id="fi" time="20160815T143812Z">englanti</lang>
         </row>
-        <row id="fi">
+        <row id="fi" si="14">
           <value>Finnish</value>
           <lang id="fi" time="20160815T143812Z">suomi</lang>
         </row>
-        <row id="de">
+        <row id="de" si="15">
           <value>German</value>
           <lang id="fi" time="20160815T143812Z">saksa</lang>
         </row>
-        <row id="fr">
+        <row id="fr" si="16">
           <value>French</value>
           <lang id="fi" time="20160815T143812Z">ranska</lang>
         </row>
-        <row id="ja">
+        <row id="ja" si="17">
           <value>Japanese</value>
           <lang id="fi" time="20160815T143812Z">japani</lang>
         </row>
       </node>
     </node>
   </node>
-  <delphirules kind="drFireMonkey">
-    <item type="*" property="StyleLookup"/>
-    <item type="TListBox" property="DefaultItemStyles.ItemStyle"/>
-  </delphirules>
+  <rules kind="crFireMonkey">
+    <rule component="*" property="StyleLookup"/>
+    <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

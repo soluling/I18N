@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="420D634F-5C7A-4A70-AFAA-81500B98B31F" created="20170616T034437Z" lastmodified="20191223T024300Z" version="1.0.632" stringid="395">
+<project id="420D634F-5C7A-4A70-AFAA-81500B98B31F" created="20170616T034437Z" lastmodified="20200209T161232Z" version="1.0.691" stringid="395">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Ordinal.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Ordinal\Win32\Release\Ordinal.exe" original="en" formatstringcommentcheck="fcPlaceholders" platforms="[ptWin32]" scansourcecode="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -201,27 +201,23 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSingularSample" changed="20180223T020432Z" class="TPatternRow" si="21" scannedcomment="0: Singular ordinal number such as &quot;1st&quot; or &quot;first&quot;" created="20170616T122209Z">
+        <row id="SSingularSample" changed="20200209T161214Z" class="TPatternRow" si="21" scannedcomment="0: Singular ordinal number such as &quot;1st&quot; or &quot;first&quot;" created="20170616T122209Z">
           <value>This is the {0} attempt.</value>
-          <prev>This is the {0} attempt</prev>
-          <lang id="fi" time="20191223T024110Z">Tämä on {0} yritys.</lang>
+          <prev>This is the {0:s} attempt.</prev>
+          <lang id="fi" time="20200209T161220Z">Tämä on {0} yritys.</lang>
         </row>
-        <row id="SPluralSample" changed="20180223T020432Z" class="TPatternRow" si="22" scannedcomment="0: Plural ordinal number such as &quot;1st&quot; or &quot;first&quot;" created="20170616T122209Z">
+        <row id="SPluralSample" changed="20200209T161214Z" class="TPatternRow" si="22" scannedcomment="0: Plural ordinal number such as &quot;1st&quot; or &quot;first&quot;" created="20170616T122209Z">
           <value>These are the {0} attempts.</value>
-          <prev>These are the {0} attempts</prev>
-          <lang id="fi" time="20191223T024111Z">Tässä ovat {0} yritykset.</lang>
+          <prev>These are the {0:s} attempts.</prev>
+          <lang id="fi" time="20200209T161227Z">Tässä ovat {0} yritykset.</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -249,4 +245,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

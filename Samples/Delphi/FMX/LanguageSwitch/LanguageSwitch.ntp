@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160814T233415Z" lastmodified="20180223T024253Z" version="1.0.125">
+<project id="6B0769C4-E401-4914-860A-7715725FC3D4" created="20160814T233415Z" lastmodified="20200214T200221Z" version="1.0.696" stringid="27">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="LanguageSwitch.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="LanguageSwitch.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\LanguageSwitch\LanguageSwitch.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDirectoryFolder" name="..">
         <node class="TDirectoryFolder" name="..">
@@ -12,24 +12,24 @@
                   <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
                     <row id="Left">0</row>
                     <row id="Top">0</row>
-                    <row id="Caption">
+                    <row id="Caption" si="1">
                       <value>Select Language</value>
                       <lang id="fi" time="20160814T233507Z">Valitse kieli</lang>
                     </row>
                     <row id="ClientHeight">193</row>
                     <row id="ClientWidth">291</row>
                     <item name="LanguageList" type="TListBox">
-                      <row id="DefaultItemStyles.GroupHeaderStyle" excluded="3"></row>
-                      <row id="DefaultItemStyles.GroupFooterStyle" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
                     </item>
                     <item name="OkButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="4">
                         <value>OK</value>
                         <lang id="fi" time="20160814T233510Z">OK</lang>
                       </row>
                     </item>
                     <item name="CancelButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="5">
                         <value>Cancel</value>
                         <lang id="fi" time="20160814T233512Z">Peru</lang>
                       </row>
@@ -78,29 +78,32 @@
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="6">
           <value>Sample</value>
           <lang id="fi" time="20160814T233515Z">Esimerkki</lang>
         </row>
-        <row id="ClientHeight">237</row>
+        <row id="ClientHeight" changed="20200214T200156Z" st="2">
+          <value>405</value>
+          <prev>237</prev>
+        </row>
         <row id="ClientWidth">369</row>
         <item name="Button1" type="TButton">
-          <row id="Text">
+          <row id="Text" si="7">
             <value>Language...</value>
             <lang id="fi" time="20160814T233529Z">Kieli...</lang>
           </row>
         </item>
         <item name="ListBox1" type="TListBox">
-          <row id="DefaultItemStyles.GroupHeaderStyle" excluded="3"></row>
-          <row id="DefaultItemStyles.GroupFooterStyle" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupHeaderStyle" si="8" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupFooterStyle" si="9" excluded="3"></row>
           <item name="ListBoxItem1" type="TListBoxItem">
-            <row id="Text">
+            <row id="Text" si="10">
               <value>One</value>
               <lang id="fi" time="20160814T233533Z">Yksi</lang>
             </row>
           </item>
           <item name="ListBoxItem2" type="TListBoxItem">
-            <row id="Text">
+            <row id="Text" si="11">
               <value>Two</value>
               <lang id="fi" time="20160814T233536Z">Kaksi</lang>
             </row>
@@ -108,13 +111,13 @@
         </item>
         <item name="ComboBox1" type="TComboBox">
           <item name="ListBoxItem3" type="TListBoxItem">
-            <row id="Text">
+            <row id="Text" si="12">
               <value>One</value>
               <lang id="fi" time="20160814T233533Z">Yksi</lang>
             </row>
           </item>
           <item name="ListBoxItem4" type="TListBoxItem">
-            <row id="Text">
+            <row id="Text" si="13">
               <value>Two</value>
               <lang id="fi" time="20160814T233536Z">Kaksi</lang>
             </row>
@@ -122,29 +125,55 @@
         </item>
         <item name="TreeView1" type="TTreeView">
           <item name="TreeViewItem1" type="TTreeViewItem">
-            <row id="Text">
+            <row id="Text" si="14">
               <value>One</value>
               <lang id="fi" time="20160814T233533Z">Yksi</lang>
             </row>
           </item>
           <item name="TreeViewItem2" type="TTreeViewItem">
-            <row id="Text">
+            <row id="Text" si="15">
               <value>Two</value>
               <lang id="fi" time="20160814T233536Z">Kaksi</lang>
             </row>
           </item>
           <item name="TreeViewItem3" type="TTreeViewItem">
-            <row id="Text">
+            <row id="Text" si="16">
               <value>Three</value>
               <lang id="fi" time="20160814T233542Z">Kolme</lang>
             </row>
           </item>
         </item>
         <item name="Label1" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="17" excluded="2">dummy</row>
+        </item>
+        <item name="TabControl1" type="TTabControl" created="20200214T200156Z" st="0">
+          <item name="TabItem1" type="TTabItem" st="0">
+            <row id="Text" si="24" st="0">
+              <value>One</value>
+              <lang id="fi" time="20200214T200202Z" fuzzy="100">Yksi</lang>
+            </row>
+            <item name="Label2" type="TLabel" st="0">
+              <row id="Text" si="25" st="0">
+                <value>One</value>
+                <lang id="fi" time="20200214T200202Z">Yksi</lang>
+              </row>
+            </item>
+          </item>
+          <item name="TabItem2" type="TTabItem" st="0">
+            <row id="Text" si="26" st="0">
+              <value>Two</value>
+              <lang id="fi" time="20200214T200205Z" fuzzy="100">Kaksi</lang>
+            </row>
+            <item name="CheckBox" type="TCheckBox" st="0">
+              <row id="Text" si="27" st="0">
+                <value>Checkbox</value>
+                <lang id="fi" time="20200214T200209Z" fuzzy="5">Valintaruutu</lang>
+              </row>
+            </item>
+          </item>
         </item>
         <data>
-          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQD7QALQ2xpZW50V2lkdGgD
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDlQELQ2xpZW50V2lkdGgD
           cQEQRm9ybUZhY3Rvci5XaWR0aANAARFGb3JtRmFjdG9yLkhlaWdodAPgARJGb3JtRmFjdG9yLkRldmljZXMLB0Rlc2t0b3AGaVBo
           b25lBGlQYWQACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlE0Rlc2lnbmVyTWFzdGVyU3R5bGUCAAAHVEJ1dHRvbgdCdXR0b24xClBvc2l0
           aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5ZBQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwgVAC1NpemUuSGVpZ2h0BQAA
@@ -169,33 +198,42 @@
           Vmlld0l0ZW0NVHJlZVZpZXdJdGVtMwlJc0NoZWNrZWQICklzRXhwYW5kZWQICklzU2VsZWN0ZWQICFRhYk9yZGVyAgIEVGV4dAYF
           VGhyZWUAAAAGVExhYmVsBkxhYmVsMQhBdXRvU2l6ZQkKUG9zaXRpb24uWAUAAAAAAAAAgAJAClBvc2l0aW9uLlkFAAAAAAAAAKAG
           QApTaXplLldpZHRoBQAAAAAAAACkBEALU2l6ZS5IZWlnaHQFAAAAAAAAAIADQBRTaXplLlBsYXRmb3JtRGVmYXVsdAgVVGV4dFNl
-          dHRpbmdzLldvcmRXcmFwCARUZXh0BgVkdW1teQAAAA==
+          dHRpbmdzLldvcmRXcmFwCARUZXh0BgVkdW1teQAAC1RUYWJDb250cm9sC1RhYkNvbnRyb2wxClBvc2l0aW9uLlgFAAAAAAAAAIAC
+          QApQb3NpdGlvbi5ZBQAAAAAAAADABkAKU2l6ZS5XaWR0aAUAAAAAAAAAyAZAC1NpemUuSGVpZ2h0BQAAAAAAAACoBkAUU2l6ZS5Q
+          bGF0Zm9ybURlZmF1bHQICFRhYkluZGV4AgEIVGFiT3JkZXICBQtUYWJQb3NpdGlvbgcPUGxhdGZvcm1EZWZhdWx0BVNpemVzAQ8A
+          AEhDDwAADkMPAABIQw8AAA5DAAAIVFRhYkl0ZW0IVGFiSXRlbTEKQ3VzdG9tSWNvbg4BAAAKSXNTZWxlY3RlZAgKU2l6ZS5XaWR0
+          aAUAAAAAAAAArARAC1NpemUuSGVpZ2h0BQAAAAAAAADQA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIC1N0eWxlTG9va3VwEgAAAAAI
+          VGFiT3JkZXICAARUZXh0BgNPbmUABlRMYWJlbAZMYWJlbDIKUG9zaXRpb24uWAUAAAAAAAAA4ARAClBvc2l0aW9uLlkFAAAAAAAA
+          AJgEQARUZXh0BgNPbmUIVGFiT3JkZXICAAAAAAhUVGFiSXRlbQhUYWJJdGVtMgpDdXN0b21JY29uDgEAAApJc1NlbGVjdGVkCQpT
+          aXplLldpZHRoBQAAAAAAAACoBEALU2l6ZS5IZWlnaHQFAAAAAAAAANADQBRTaXplLlBsYXRmb3JtRGVmYXVsdAgLU3R5bGVMb29r
+          dXASAAAAAAhUYWJPcmRlcgIABFRleHQGA1R3bwAJVENoZWNrQm94CENoZWNrQm94ClBvc2l0aW9uLlgFAAAAAAAAAIAEQApQb3Np
+          dGlvbi5ZBQAAAAAAAADYBEAIVGFiT3JkZXICAARUZXh0BghDaGVja2JveAAAAAAA
         </data>
       </node>
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="HelloWorld" created="20160818T141554Z">
+        <row id="HelloWorld" si="18" created="20160818T141554Z">
           <value>Hello world</value>
           <lang id="fi" time="20160814T233546Z">Moi maailma</lang>
         </row>
-        <row id="en" created="20160818T142015Z">
+        <row id="en" si="19" created="20160818T142015Z">
           <value>English</value>
           <lang id="fi" time="20160818T142021Z">englanti</lang>
         </row>
-        <row id="fi" created="20160818T142015Z">
+        <row id="fi" si="20" created="20160818T142015Z">
           <value>Finnish</value>
           <lang id="fi" time="20160818T142024Z">suomi</lang>
         </row>
-        <row id="de" created="20160818T142015Z">
+        <row id="de" si="21" created="20160818T142015Z">
           <value>German</value>
           <lang id="fi" time="20160818T142025Z">saksa</lang>
         </row>
-        <row id="fr" created="20160818T142015Z">
+        <row id="fr" si="22" created="20160818T142015Z">
           <value>French</value>
           <lang id="fi" time="20160818T142028Z">ranska</lang>
         </row>
-        <row id="ja" created="20160818T142015Z">
+        <row id="ja" si="23" created="20160818T142015Z">
           <value>Japanese</value>
           <lang id="fi" time="20160818T142030Z">japani</lang>
         </row>
@@ -205,8 +243,27 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drFireMonkey">
-    <item type="*" property="StyleLookup"/>
-    <item type="TListBox" property="DefaultItemStyles.ItemStyle"/>
-  </delphirules>
+  <rules kind="crFireMonkey">
+    <rule component="*" property="StyleLookup"/>
+    <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -32,7 +32,7 @@ namespace SportAPI.Controllers
         StatusCode = (int)HttpStatusCode.OK,
         Content = 
           $"<h2>{localizer["Sport API"]}</h2>" +
-          $"<p>{localizer["This API implementes following endpoints."]}</p>" +
+          $"<p>{localizer["This API implementes following endpoints.."]}</p>" +
           "<table border=\"1\">" +
           "<tr>" +
           $"<th>{localizer["URI path"]}</th>" +

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E642EC47-32EE-44E6-94CD-CA76AB9EAA29" created="20160628T021632Z" lastmodified="20191223T025333Z" version="1.0.632" stringid="731">
+<project id="E642EC47-32EE-44E6-94CD-CA76AB9EAA29" created="20160628T021632Z" lastmodified="20200208T050459Z" version="1.0.691" stringid="779">
   <lang id="fi"/>
   <lang id="ja"/>
   <node class="TDelphiSource" name="Win32\Release\Resources.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Resources\Mixed\Win32\Release\Resources.exe" original="en" binaryoptions="[]" platforms="[ptWin32]" scansourcecode="1">
@@ -1129,29 +1129,22 @@ basketball	Basketball	5	0	United States	Basketball is a team sport in which two 
         </item>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1" created="20160701T175252Z">
-        <row id="SImageCaption" changed="20160701T192738Z" class="TPatternRow" si="148" scannedcomment="Image resource label. 
+        <row id="SImageCaption" changed="20200208T050446Z" class="TPatternRow" si="148" scannedcomment="Image resource label. 
  %0:d is the index of the current image. 
  %1:d is the total image count. 
  %2:s is the resource type. 
- %3:s is the resource name." created="20180223T021212Z">{0}/{1} image resource: {2}-{3}</row>
-        <row id="STextCaption" changed="20160701T192738Z" class="TPatternRow" si="149" scannedcomment="Text resource label. 
+ %3:s is the resource name." created="20180223T021212Z">{0:d}/{1:d} image resource: {2:s}-{3:s}</row>
+        <row id="STextCaption" changed="20200208T050446Z" class="TPatternRow" si="149" scannedcomment="Text resource label. 
  %0:d is the index of the current text. 
  %1:d is the total text count. 
  %2:s is the resource type. 
- %3:s is the resource name." created="20180223T021212Z">
-          <value>{0}/{1} text resource: {2}-{3}</value>
-          <prev>%0:d/%1:d text resource: %2:s-%3:s</prev>
-        </row>
+ %3:s is the resource name." created="20180223T021212Z">{0:d}/{1:d} text resource: {2:s}-{3:s}</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
@@ -1176,4 +1169,6 @@ basketball	Basketball	5	0	United States	Basketball is a team sport in which two 
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

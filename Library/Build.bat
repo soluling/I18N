@@ -1,2 +1,2 @@
 del *.zip
-zip -R Library *.chm *.dpk *.dpr *dproj *.groupproj *.otares *.res *.pas *.dfm *.fmx *.inc *.sln *.csproj *.cs *.resx *.xaml *.java *.js *.ts *.config -x */node_modules/* -x */obj/* -x Other/* -x */Debug/*.config
+zip -R Library *.chm *.dpk *.dpr *dproj *.groupproj *.otares *.res *.pas *.dfm *.fmx *.inc *.sln *.csproj *.cs *.resx *.xaml *.java *.js *.ts *.md *.json *.config -x */node_modules/* -x */dist/* -x */obj/* -x Other/* -x */Debug/*.config

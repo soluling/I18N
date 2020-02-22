@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6FC71771-7895-4678-8AF5-66083CB8BA6E" created="20180331T144803Z" lastmodified="20191021T143859Z" version="1.0.581" stringid="13">
-  <lang id="ru"/>
+<project id="6FC71771-7895-4678-8AF5-66083CB8BA6E" created="20180331T144803Z" lastmodified="20200214T031231Z" version="1.0.696" stringid="13">
+  <lang id="fi"/>
+  <lang id="de"/>
   <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Single\SinglePlural.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20191018T145442Z" kind="xkApplication">
@@ -13,13 +14,21 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="Language" si="1">en</row>
+        <row id="Language" si="1">
+          <value>en</value>
+          <lang id="fi" st="4" rw="0" time="20200214T031133Z">fi</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180331T144914Z">de</lang>
+        </row>
         <row id="MessagePlural" class="TPatternRow" si="2">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="ru" st="4" rw="0">
-            <value>{0} ddddd</value>
-            <pattern plural="pfOne">{0} ddd</pattern>
+          <lang id="fi" st="4" rw="0" time="20200214T031150Z">
+            <value></value>
+            <pattern plural="pfOne">{0} tiedosto</pattern>
+          </lang>
+          <lang id="de" st="3" or="6" rw="0" time="20180331T144916Z">
+            <value>{0} Dateien</value>
+            <pattern plural="pfOne">{0} Datei</pattern>
           </lang>
         </row>
       </node>
@@ -27,7 +36,7 @@
     <node class="TXamlNode" name="Window1.xaml" type="Window" id="window1">
       <row id="Title" si="3">
         <value>Plural Sample</value>
-        <lang id="ru" st="4" rw="0" time="20191021T143842Z">khjkhk</lang>
+        <lang id="de" st="1" or="6" rw="0" time="20180331T144917Z">Plurales Muster</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="label0" type="Label">
@@ -92,7 +101,8 @@
   <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

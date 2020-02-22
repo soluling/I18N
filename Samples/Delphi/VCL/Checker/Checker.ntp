@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CC45AA2B-80E4-49E7-A649-BBEFD70455DF" created="20151026T131424Z" lastmodified="20191223T004914Z" version="1.0.632" stringid="431">
+<project id="CC45AA2B-80E4-49E7-A649-BBEFD70455DF" created="20151026T131424Z" lastmodified="20200207T234913Z" version="1.0.691" stringid="431">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Checker.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Checker\Win32\Release\Checker.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -483,8 +483,12 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="MainFrm">
+        <row id="STruncation" si="48">
+          <value>This is another sample label text.</value>
+          <lang id="fi" time="20151026T132001Z">Tämä on toinen esimerkkiotsikkoteksti.</lang>
+        </row>
         <row id="SOverlapping" si="45">
           <value>Another strings.</value>
           <lang id="fi" time="20151026T131851Z">Toinen jouset</lang>
@@ -497,20 +501,11 @@
           <value>Click here to start</value>
           <lang id="fi" time="20151026T131851Z">Aloita napsauttamalla tätä</lang>
         </row>
-        <row id="STruncation" si="48">
-          <value>This is another sample label text.</value>
-          <lang id="fi" time="20151026T132001Z">Tämä on toinen esimerkkiotsikkoteksti.</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.ComStrs" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -535,8 +530,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

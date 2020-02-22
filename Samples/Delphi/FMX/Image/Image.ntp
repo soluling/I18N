@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160820T170016Z" lastmodified="20180223T024203Z" version="1.0.125">
+<project id="32795526-1A4F-4E75-85D8-34A7D961DC5B" created="20160820T170016Z" lastmodified="20200209T162739Z" version="1.0.691" stringid="14">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="Image.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="Image.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Image\Image.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDirectoryFolder" name=".." created="20160820T185338Z">
         <node class="TDirectoryFolder" name="..">
@@ -12,24 +12,24 @@
                   <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
                     <row id="Left">0</row>
                     <row id="Top">0</row>
-                    <row id="Caption">
+                    <row id="Caption" si="1">
                       <value>Select Language</value>
                       <lang id="fi" time="20160820T185616Z">Valitse kieli</lang>
                     </row>
                     <row id="ClientHeight">193</row>
                     <row id="ClientWidth">291</row>
                     <item name="LanguageList" type="TListBox">
-                      <row id="DefaultItemStyles.GroupHeaderStyle" excluded="3"></row>
-                      <row id="DefaultItemStyles.GroupFooterStyle" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
+                      <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
                     </item>
                     <item name="OkButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="4">
                         <value>OK</value>
                         <lang id="fi" time="20160820T185604Z">OK</lang>
                       </row>
                     </item>
                     <item name="CancelButton" type="TButton">
-                      <row id="Text">
+                      <row id="Text" si="5">
                         <value>Cancel</value>
                         <lang id="fi" time="20160820T185606Z">Peru</lang>
                       </row>
@@ -78,7 +78,7 @@
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="6">
           <value>Image Sample</value>
           <lang id="fi" time="20160820T172806Z">Kuvaesimerkki</lang>
         </row>
@@ -87,19 +87,19 @@
         <item name="FormImage" type="TImage"/>
         <item name="ResourceImage" type="TImage"/>
         <item name="LanguageButton" type="TButton">
-          <row id="Text">
+          <row id="Text" si="7">
             <value>Language...</value>
             <lang id="fi" time="20160820T170052Z">Kieli...</lang>
           </row>
         </item>
         <item name="FormImageLabel" type="TLabel">
-          <row id="Text">
+          <row id="Text" si="8">
             <value>Form image:</value>
             <lang id="fi" time="20160820T170101Z">Lomakekuva:</lang>
           </row>
         </item>
         <item name="ResourceImageLabel" type="TLabel">
-          <row id="Text">
+          <row id="Text" si="9">
             <value>Resource image:</value>
             <lang id="fi" time="20160820T170106Z">Resurssikuva:</lang>
           </row>
@@ -468,32 +468,51 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_" created="20160820T185547Z">
-        <row id="en">
+        <row id="en" si="10">
           <value>English</value>
           <lang id="fi" time="20160820T185552Z">englanti</lang>
         </row>
-        <row id="fi">
+        <row id="fi" si="11">
           <value>Finnish</value>
           <lang id="fi" time="20160820T185554Z">suomi</lang>
         </row>
-        <row id="de">
+        <row id="de" si="12">
           <value>German</value>
           <lang id="fi" time="20160820T185556Z">saksa</lang>
         </row>
-        <row id="fr">
+        <row id="fr" si="13">
           <value>French</value>
           <lang id="fi" time="20160820T185558Z">ranska</lang>
         </row>
-        <row id="ja">
+        <row id="ja" si="14">
           <value>Japanese</value>
           <lang id="fi" time="20160820T185601Z">japani</lang>
         </row>
       </node>
     </node>
   </node>
-  <delphirules kind="drFireMonkey">
-    <item type="*" property="StyleLookup"/>
-    <item type="TImage" property="MultiResBitmap.FileName"/>
-    <item type="TListBox" property="DefaultItemStyles.ItemStyle"/>
-  </delphirules>
+  <rules kind="crFireMonkey">
+    <rule component="*" property="StyleLookup"/>
+    <rule component="TImage" property="MultiResBitmap.FileName"/>
+    <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

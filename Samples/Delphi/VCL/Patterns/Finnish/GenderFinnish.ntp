@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AC808DC5-EA87-4249-A19B-FE24A44A4E19" created="20170426T132758Z" lastmodified="20191223T024721Z" version="1.0.632" stringid="384">
+<project id="AC808DC5-EA87-4249-A19B-FE24A44A4E19" created="20170426T132758Z" lastmodified="20200209T161525Z" version="1.0.691" stringid="384">
   <lang id="fi"/>
   <lang id="en"/>
   <node class="TDelphiSource" name="Win32\Release\GenderFinnish.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Finnish\Win32\Release\GenderFinnish.exe" original="fi" platforms="[ptWin32]">
@@ -143,17 +143,15 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessageGender" changed="20170508T143725Z" class="TPatternRow" si="12">
+        <row id="SMessageGender" changed="20200209T161503Z" class="TPatternRow" si="12">
           <value gender="geNeutral">{0} tuo polkupyöränsä</value>
-          <lang id="en" time="20170724T000546Z">
+          <prev gender="geNeutral">{0:s} tuo polkupyöränsä</prev>
+          <lang id="en" time="20200209T161516Z">
             <value gender="geMale">{0} will bring his bicycle</value>
             <pattern gender="geFemale">{0} will bring her bicycle</pattern>
           </lang>
@@ -164,7 +162,6 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -192,4 +189,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A37AA803-F869-41C8-BC2B-AE6454B881AC" created="20161206T185410Z" lastmodified="20191223T024801Z" version="1.0.632" stringid="383">
+<project id="A37AA803-F869-41C8-BC2B-AE6454B881AC" created="20161206T185410Z" lastmodified="20200209T161552Z" version="1.0.691" stringid="383">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Gender.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Gender\Win32\Release\Gender.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -140,7 +140,7 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" excluded="1">
         <row id="SNeutral" si="14" st="4">
           <value>Neutral</value>
@@ -149,19 +149,16 @@
       </node>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SOtherMessageGender" class="TPatternRow" si="21" created="20180223T020821Z">
+        <row id="SOtherMessageGender" changed="20200209T161539Z" class="TPatternRow" si="21" created="20180223T020821Z">
           <value gender="geNeutral">{0} will bring a bicycle</value>
+          <prev gender="geNeutral">{0:s} will bring a bicycle</prev>
           <pattern gender="geMale">{0} will bring his bicycle</pattern>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" rw="0" time="20170508T143433Z">{0} tuo polkupyöränsä</lang>
+          <lang id="fi" time="20200209T161546Z">{0} tuo polkupyöränsä</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -187,4 +184,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

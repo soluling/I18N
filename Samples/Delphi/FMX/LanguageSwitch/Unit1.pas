@@ -5,7 +5,7 @@ interface
 uses
   System.SysUtils, System.Types, System.UITypes, System.Classes, System.Variants,
   FMX.Types, FMX.Controls, FMX.Forms, FMX.Dialogs, FMX.Layouts, FMX.ListBox,
-  FMX.TreeView, FMX.StdCtrls, FMX.Controls.Presentation;
+  FMX.TreeView, FMX.StdCtrls, FMX.Controls.Presentation, FMX.TabControl;
 
 type
   TForm1 = class(TForm)
@@ -21,6 +21,11 @@ type
     TreeViewItem2: TTreeViewItem;
     TreeViewItem3: TTreeViewItem;
     Label1: TLabel;
+    TabControl1: TTabControl;
+    TabItem1: TTabItem;
+    TabItem2: TTabItem;
+    Label2: TLabel;
+    CheckBox: TCheckBox;
     procedure FormCreate(Sender: TObject);
     procedure Button1Click(Sender: TObject);
 

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0C49E348-789E-4C07-8BC3-7ED0FAB1308F" created="20160919T034725Z" lastmodified="20191223T004729Z" version="1.0.632" stringid="387">
+<project id="0C49E348-789E-4C07-8BC3-7ED0FAB1308F" created="20160919T034725Z" lastmodified="20200207T234812Z" version="1.0.691" stringid="387">
   <lang id="fi"/>
   <lang id="ja"/>
   <node class="TDelphiSource" name="Win32\Release\ActiveLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ActiveLanguage\Win32\Release\ActiveLanguage.exe" original="en" platforms="[ptWin32]">
@@ -132,7 +132,7 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="1" resid="1" langid="1035">
         <row id="7" si="12">
           <value>German</value>
@@ -165,11 +165,7 @@
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -190,8 +186,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

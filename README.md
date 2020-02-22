@@ -1,12 +1,12 @@
-# Internationalization API for .NET and Delphi
+# Internationalization APIs for .NET, Angular and Delphi
 
 *Plurals*, *genders*, *abbreviated numbers*, *ordinal numbers*, *runtime language change*, *overlap and truncation checking*, and many more.
 
-This project implements a collection of I18N APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
+This project implements a collection of I18N APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
 
 ## Implementation
 
-Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. In the same way, Delphi API contains only the Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
+Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. in the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
 
 ## Grammatical numbers and genders
 
@@ -113,6 +113,10 @@ CLDR contains rules to abbreviate numbers. The abbreviated number API uses those
 
 CLDR does not contain information on how to create ordinal numbers from a number. I have been collecting the rules from various sources. There are still many languages without proper rules. Help from a native speaker would be appreciated.
 
+## Runtime translation loading
+
+Some platforms such as Angular do not have runtime translation loading. This API implements it. Using this API you can now make one compilation, one deployment and one URL that serves all languages.
+
 ## Runtime language switch
 
 Runtime language switch is a feature where the application can change the language of its user interface on runtime. This library contains code for that. The language change is implemented in such a way the there is not reload of forms or dialog, and the current state of the application remains unchanged.
@@ -129,7 +133,23 @@ User interface checker APIs are for Delphi VCL, Delphi FireMonkey, .NET Windows 
 
 `Library\NET` contains the .NET API. `Library\NET\Standard` contains a .NET Standard library that contains API for grammatical numbers, grammatical genders, abbreviated numbers, and ordinal numbers. Compile it and add that into your solution and finally add the library into the references of your project. Because the no UI part of the library is .NET Standard, it works with Windows Forms, WPF, ASP.NET, .NET Core, and Xamarin. You can also compile it using any .NET version starting with .NET 2.0.
 
+You can get the API through NuGet.
+
+```
+Install-Package Soluling
+```
+
 Currently, we have samples for Windows Forms and WPF. We will add ASP.NET and ASP.NET Core samples soon.
+
+## Angular
+
+`Library\Angular` contains the Angular API. The API requires Angular 9 or later. The easiest way to use it is through npm.
+
+```bash
+npm install @soluling/angular
+```
+
+To learn more about this API read its documentation.
 
 ## Delphi
 
@@ -185,7 +205,7 @@ With little effort I can make CldrToCode.exe to create Java, TypeScript and Pyth
 
 ## Localization
 
-If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports ASP.NET, .NET, Delphi, Java, Angular, and many more.
+If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports ASP.NET, .NET, Angular, React, Delphi, Python, Java, and many more.
 
 ![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EE6F3244-F9D2-45EB-BA2A-3FBD2E74BF2E" created="20181130T160729Z" lastmodified="20181205T215929Z" version="1.0.271">
+<project id="EE6F3244-F9D2-45EB-BA2A-3FBD2E74BF2E" created="20181130T160729Z" lastmodified="20200123T015920Z" version="1.0.661" stringid="10">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Version.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Version\Version.csproj" original="en" resources="[nrResx,nrForm,nrAssemblyInfo]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="$this.Text">
+      <row id="$this.Text" si="1">
         <value>Version Sample</value>
         <lang id="fi" rw="0" time="20181205T215828Z">Versioesimerkki</lang>
       </row>
@@ -103,40 +103,40 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20181205T215722Z" fromassemblyinfo="1">
-        <options scannumbers="1"/>
-        <row id="AssemblyTitle">
+        <options scannumbers="1" scanstringnumbers="1"/>
+        <row id="AssemblyTitle" si="2">
           <value>This is title</value>
           <lang id="fi" rw="0" time="20181205T215739Z">Tämä on otsikko</lang>
         </row>
-        <row id="AssemblyDescription">
+        <row id="AssemblyDescription" si="3">
           <value>This is description</value>
           <lang id="fi" rw="0" time="20181205T215743Z">Tämä on selitys</lang>
         </row>
-        <row id="AssemblyConfiguration">
+        <row id="AssemblyConfiguration" si="4">
           <value>This configuration</value>
           <lang id="fi" rw="0" time="20181205T215750Z">Tämä on konfiguraatio</lang>
         </row>
-        <row id="AssemblyCompany">
+        <row id="AssemblyCompany" si="5">
           <value>This is company</value>
           <lang id="fi" rw="0" time="20181205T215759Z">Tämä on yritys</lang>
         </row>
-        <row id="AssemblyProduct">
+        <row id="AssemblyProduct" si="6">
           <value>This is product</value>
           <lang id="fi" rw="0" time="20181205T215803Z">Tämä on tuote</lang>
         </row>
-        <row id="AssemblyCopyright">
+        <row id="AssemblyCopyright" si="7">
           <value>This is product copyright</value>
           <lang id="fi" rw="0" time="20181205T215812Z">Tämä on tuotteen tekijänoikeudet</lang>
         </row>
-        <row id="AssemblyTrademark">
+        <row id="AssemblyTrademark" si="8">
           <value>This is trademark</value>
           <lang id="fi" rw="0" time="20181205T215819Z">Tämä on tuotemerkki</lang>
         </row>
-        <row id="AssemblyVersion" created="20181205T215900Z">
+        <row id="AssemblyVersion" si="9" created="20181205T215900Z">
           <value>1.5.0.0</value>
           <lang id="fi" rw="0" time="20181205T215903Z">1.5.0.0</lang>
         </row>
-        <row id="AssemblyFileVersion" created="20181205T215900Z">
+        <row id="AssemblyFileVersion" si="10" created="20181205T215900Z">
           <value>1.1.2.3</value>
           <lang id="fi" rw="0" time="20181205T215906Z">1.1.2.3</lang>
         </row>
@@ -147,4 +147,19 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
 </project>

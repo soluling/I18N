@@ -1,35 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20180223T023830Z" lastmodified="20180223T023941Z" version="1.0.125">
+<project id="8987FC76-00B7-40DB-8A58-1FD117F7928D" created="20180223T023830Z" lastmodified="20200209T162354Z" version="1.0.691" stringid="11">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiProjectSource" name="Comments.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="Comments.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Comments\Comments.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Comment Sample</value>
           <lang id="fi" rw="0" time="20180223T023852Z">Komenttiesimerkki</lang>
         </row>
         <row id="ClientHeight">180</row>
         <row id="ClientWidth">400</row>
         <item name="Label1" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="2" excluded="2">dummy</row>
         </item>
         <item name="Label2" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="3" excluded="2">dummy</row>
         </item>
         <item name="Label3" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="4" excluded="2">dummy</row>
         </item>
         <item name="Label4" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="5" excluded="2">dummy</row>
         </item>
         <item name="Label5" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="6" excluded="2">dummy</row>
         </item>
         <item name="Label6" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="7" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDkNvbW1lbnQgU2FtcGxlDENsaWVudEhlaWdodAO0AAtDbGll
@@ -55,19 +55,19 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="Hello World" scannedcomment="This is a comment">
+        <row id="Hello World" si="8" scannedcomment="This is a comment">
           <value>Hello World</value>
           <lang id="fi" rw="0" time="20180223T023905Z">Moi maailma</lang>
         </row>
-        <row id="Characters" scannedcomment="This is characters comment" scannedmaxcharacters="20">
+        <row id="Characters" si="9" scannedcomment="This is characters comment" scannedmaxcharacters="20">
           <value>Characters</value>
           <lang id="fi" rw="0" time="20180223T023911Z">Merkkiä</lang>
         </row>
-        <row id="Pixels" scannedcomment="This is pixels comment" scannedmaxpixels="100">
+        <row id="Pixels" si="10" scannedcomment="This is pixels comment" scannedmaxpixels="100">
           <value>Pixels</value>
           <lang id="fi" rw="0" time="20180223T023916Z">Pikseliä</lang>
         </row>
-        <row id="Hello %s, welcome to %s" class="TPatternRow" scannedcomment="0: Name of the person, 1: Name of the place">
+        <row id="Hello %s, welcome to %s" class="TPatternRow" si="11" scannedcomment="0: Name of the person, 1: Name of the place">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
         </row>
@@ -77,4 +77,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

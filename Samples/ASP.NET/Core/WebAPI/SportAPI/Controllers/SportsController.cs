@@ -80,7 +80,7 @@ namespace SportAPI.Controllers
 
     // POST: sports
     [HttpPost]
-    public async Task<IActionResult> PostSport(Sport sport)
+    public async Task<IActionResult> PostSport([FromBody]Sport sport)
     {
       if (!ModelState.IsValid)
         return BadRequest(ModelState);
@@ -93,7 +93,7 @@ namespace SportAPI.Controllers
 
     // POST: sports/<id>
     [HttpPost("{id}")]
-    public async Task<IActionResult> PostSportLanguage(int id, SportLanguage sportLanguage)
+    public async Task<IActionResult> PostSportLanguage(int id, [FromBody]SportLanguage sportLanguage)
     {
       if (!ModelState.IsValid)
         return BadRequest(ModelState);
@@ -127,7 +127,7 @@ namespace SportAPI.Controllers
 
     // PUT: sports/<id>
     [HttpPut("{id}")]
-    public async Task<IActionResult> PutSport(int id, Sport sport)
+    public async Task<IActionResult> PutSport(int id, [FromBody]Sport sport)
     {
       if (!ModelState.IsValid)
         return BadRequest(ModelState);

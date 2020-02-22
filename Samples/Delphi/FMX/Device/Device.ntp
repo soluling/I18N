@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160821T141037Z" lastmodified="20180223T024021Z" version="1.0.125">
+<project id="93190105-D9CA-4ADC-B60A-02B824DE60EA" created="20160821T141037Z" lastmodified="20200209T162438Z" version="1.0.691" stringid="11">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="Device.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="Device.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Device\Device.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="BaseFra" type="TBaseFrame" objectname="BaseFrame" filename="BaseFra.fmx">
         <item name="ComboBox1" type="TComboBox"/>
         <item name="Label1" type="TLabel">
-          <row id="Text">Label1</row>
+          <row id="Text" si="1">Label1</row>
         </item>
         <data>
           VFBGMApUQmFzZUZyYW1lCUJhc2VGcmFtZQpTaXplLldpZHRoBQAAAAAAAACiBkALU2l6ZS5IZWlnaHQFAAAAAAAAAJwEQBRTaXpl
@@ -19,11 +19,11 @@
       <node class="TDelphiFormFileNode" name="BaseFrm" type="TBaseForm" objectname="BaseForm" filename="BaseFrm.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">Form2</row>
+        <row id="Caption" si="2">Form2</row>
         <row id="ClientHeight">142</row>
         <row id="ClientWidth">282</row>
         <item name="Label1" type="TLabel">
-          <row id="Text">&amp;Value:</row>
+          <row id="Text" si="3">&amp;Value:</row>
         </item>
         <item name="Edit1" type="TEdit"/>
         <data>
@@ -46,9 +46,9 @@
         </data>
       </node>
       <node class="TDelphiFormFileNode" name="InheritedFrm" type="TInheritedForm" objectname="InheritedForm" flags="[ffInherited]" filename="InheritedFrm.fmx">
-        <row id="Caption">Inherited Form</row>
+        <row id="Caption" si="4">Inherited Form</row>
         <item name="CheckBox1" type="TCheckBox">
-          <row id="Text">&amp;Remember value</row>
+          <row id="Text" si="5">&amp;Remember value</row>
         </item>
         <data>
           VFBGMPEOVEluaGVyaXRlZEZvcm0NSW5oZXJpdGVkRm9ybQdDYXB0aW9uBg5Jbmhlcml0ZWQgRm9ybRNEZXNpZ25lck1hc3RlclN0
@@ -60,19 +60,19 @@
       <node class="TDelphiFormFileNode" name="MainFrm" type="TMainForm" objectname="MainForm" filename="MainFrm.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">Sample</row>
+        <row id="Caption" si="6">Sample</row>
         <row id="ClientHeight">172</row>
         <row id="ClientWidth" changed="20160821T143156Z">178</row>
         <item name="Label1" type="TLabel">
-          <row id="Text">Label1</row>
+          <row id="Text" si="7">Label1</row>
         </item>
         <item name="BaseFrame1" type="TBaseFrame"/>
         <item name="InheritedFrame1" type="TInheritedFrame"/>
         <item name="Button1" type="TButton">
-          <row id="Text">Button1</row>
+          <row id="Text" si="8">Button1</row>
         </item>
         <item name="CheckBox1" type="TCheckBox">
-          <row id="Text">CheckBox1</row>
+          <row id="Text" si="9">CheckBox1</row>
         </item>
         <data>
           VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDrAALQ2xpZW50
@@ -90,10 +90,10 @@
       <node class="TDelphiFormFileNode" name="MainFrm.Windows" type="TMainForm_Windows" created="20160821T143156Z" objectname="MainForm_Windows" flags="[ffInherited]" filename="MainFrm.Windows.fmx">
         <row id="ClientWidth">306</row>
         <item name="Button1" type="TButton">
-          <row id="Text">Windows</row>
+          <row id="Text" si="10">Windows</row>
         </item>
         <item name="CheckBox1" type="TCheckBox">
-          <row id="Text">Windows</row>
+          <row id="Text" si="11">Windows</row>
         </item>
         <data>
           VFBGMPERVE1haW5Gb3JtX1dpbmRvd3MQTWFpbkZvcm1fV2luZG93cwtDbGllbnRXaWR0aAMyARNEZXNpZ25lck1hc3RlclN0eWxl
@@ -106,4 +106,23 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings"/>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -955,9 +955,11 @@ begin  //FI:C101
     vaInt32:
       value := FReader.ReadInteger;
 
-    vaExtended,
-    vaSingle:
+    vaExtended:
       value := FReader.ReadFloat;
+
+    vaSingle:
+      value := FReader.ReadSingle;
 
     vaString,
     vaLString:

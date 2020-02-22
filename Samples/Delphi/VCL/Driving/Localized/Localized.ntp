@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20191223T010414Z" version="1.0.632" stringid="404" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20200209T160423Z" version="1.0.691" stringid="404" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -532,23 +532,20 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" changed="20180524T032956Z" class="TPatternRow" si="9">
+        <row id="SResultPlural" changed="20200209T160313Z" class="TPatternRow" si="9">
           <value startpattern="1">Driving time{0}{1}.</value>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
           <pattern plural="pfOther" index="0"> {0} hours </pattern>
           <pattern plural="pfOne" index="1">{0} minute</pattern>
           <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" tm="1" time="20181023T180200Z">
-            <value startpattern="1">Ajoaika{0}{1}.</value>
+          <lang id="fi" time="20200209T160403Z">
+            <value startpattern="1">Ajoaika{0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} tunti </pattern>
             <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
@@ -585,8 +582,7 @@
           <lang id="fr" st="1" or="6" rw="0" time="20190125T035833Z">fr</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <platformfiles>
       <item file="..\..\Win64\Release\Localized.exe" drcfile="..\..\Win64\Release\Localized.drc"/>
@@ -625,4 +621,6 @@
       </value>
     </item>
   </exchange>
+  <duplicates>
+  </duplicates>
 </project>

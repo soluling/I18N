@@ -1,41 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F7C492ED-E865-4ACE-9740-DF2F7ED7F53C" created="20141209T061216Z" lastmodified="20181207T023134Z" version="1.0.272" reviewcount="0">
+<project id="F7C492ED-E865-4ACE-9740-DF2F7ED7F53C" created="20141209T061216Z" lastmodified="20200221T011614Z" version="1.0.702" reviewcount="0" stringid="9">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" resources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200221T011609Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9Ik1lbnUuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
+        b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRvdy54YW1s
+        Ij4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8
+        L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" created="20181207T023031Z">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" time="20181207T023042Z">Esimerkki</lang>
       </row>
       <item name="editGrid" type="Grid">
         <item name="menu" type="Menu">
           <item name="fileMenu" type="MenuItem">
-            <row id="Header">
+            <row id="Header" si="2">
               <value>F_ile</value>
               <lang id="fi" time="20181207T023048Z">_Tiedosto</lang>
             </row>
             <item name="calculateMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="3">
                 <value>_Calculate</value>
                 <lang id="fi" time="20181207T023051Z">_Laske</lang>
               </row>
             </item>
             <item name="separator1" type="Separator"/>
             <item name="exitMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="4">
                 <value>E_xit</value>
                 <lang id="fi" time="20181207T023057Z">_Lopeta</lang>
               </row>
             </item>
           </item>
           <item name="helpMenu" type="MenuItem">
-            <row id="Header">
+            <row id="Header" si="5">
               <value>He_lp</value>
               <lang id="fi" time="20181207T023100Z">_Ohje</lang>
             </row>
             <item name="aboutMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="6">
                 <value>A_bout</value>
                 <lang id="fi" time="20181207T023103Z">_Tietoa</lang>
               </row>
@@ -58,15 +67,15 @@
     </node>
     <node class="TDirectoryFolder" name="Properties" created="20181207T023031Z">
       <node class="TWindowsVersionNode" name="AssemblyInfo.cs" fromassemblyinfo="1">
-        <row id="AssemblyTitle">
+        <row id="AssemblyTitle" si="7">
           <value>Menu</value>
           <lang id="fi" time="20181207T023116Z">Valikko</lang>
         </row>
-        <row id="AssemblyProduct">
+        <row id="AssemblyProduct" si="8">
           <value>Menu</value>
           <lang id="fi" or="3" time="20181207T023116Z">Valikko</lang>
         </row>
-        <row id="AssemblyCopyright">
+        <row id="AssemblyCopyright" si="9">
           <value>Copyright ©  2014</value>
           <lang id="fi" time="20181207T023128Z">Tekijänoikeudet ©  2014</lang>
         </row>
@@ -75,4 +84,23 @@
     </node>
     <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

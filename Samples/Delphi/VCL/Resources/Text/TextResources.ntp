@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5DC8F304-3B90-4FBC-B83F-73D1EF51B5DE" created="20170403T142959Z" lastmodified="20191223T025400Z" version="1.0.632" stringid="378">
+<project id="5DC8F304-3B90-4FBC-B83F-73D1EF51B5DE" created="20170403T142959Z" lastmodified="20200208T050526Z" version="1.0.691" stringid="378">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\TextResources.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Resources\Text\Win32\Release\TextResources.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsBinaryFolder" name="&quot;TEXT&quot;" resname="TEXT">
@@ -210,17 +210,13 @@ basketball	Basketball	5	0	United States	Basketball is a team sport in which two 
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="STextCaption" class="TPatternRow" si="17" created="20170517T184208Z">{0}/{1} text resource: {2}-{3}</row>
+        <row id="STextCaption" changed="20200208T050517Z" class="TPatternRow" si="17" created="20170517T184208Z">{0:d}/{1:d} text resource: {2:s}-{3:s}</row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
@@ -242,4 +238,6 @@ basketball	Basketball	5	0	United States	Basketball is a team sport in which two 
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

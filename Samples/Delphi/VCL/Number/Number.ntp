@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C4B54815-1D5E-40DF-976D-113322EE4B4F" created="20170622T215139Z" lastmodified="20191223T024013Z" version="1.0.632" stringid="416">
+<project id="C4B54815-1D5E-40DF-976D-113322EE4B4F" created="20170622T215139Z" lastmodified="20200209T161203Z" version="1.0.691" stringid="416">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
@@ -408,30 +408,25 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SNumberSample" class="TPatternRow" si="40" scannedcomment="0: Abbreviated number such as &quot;1K&quot; or &quot;12 million&quot;">
+        <row id="SNumberSample" changed="20200209T161126Z" class="TPatternRow" si="40" scannedcomment="0: Abbreviated number such as &quot;1K&quot; or &quot;12 million&quot;">
           <value>There are {0} users.</value>
-          <lang id="fi" time="20191223T024007Z">Käyttäjämäärä on {0}.</lang>
-          <lang id="de" st="3" time="20170623T141343Z">Gibt es Benutzer {0}</lang>
+          <lang id="fi" time="20200209T161135Z">Käyttäjämäärä on {0}.</lang>
+          <lang id="de" st="4" time="20200209T161155Z">Gibt es Benutzer {0}.</lang>
           <lang id="ja" st="1" or="6" time="20170623T135646Z">{0} 人のユーザーがあります。</lang>
         </row>
-        <row id="SCurrencySample" class="TPatternRow" si="41" scannedcomment="0: Abbreviated currency amount such as &quot;$1K&quot; or &quot;12M €&quot;">
+        <row id="SCurrencySample" changed="20200209T161126Z" class="TPatternRow" si="41" scannedcomment="0: Abbreviated currency amount such as &quot;$1K&quot; or &quot;12M €&quot;">
           <value>I have {0} in my account.</value>
-          <lang id="fi" time="20170622T215410Z">Minulla on {0} pankkitililläni.</lang>
-          <lang id="de" st="3" time="20170623T141345Z">Ich habe in meinem Konto {0}</lang>
+          <lang id="fi" time="20200209T161140Z">Minulla on {0} pankkitililläni.</lang>
+          <lang id="de" st="4" time="20200209T161156Z">Ich habe in meinem Konto {0}.</lang>
           <lang id="ja" st="1" or="6" time="20170623T135646Z">私は自分のアカウント {0} があります。</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.ComStrs" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -459,4 +454,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

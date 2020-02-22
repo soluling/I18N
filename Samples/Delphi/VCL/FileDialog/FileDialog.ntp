@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20191223T020218Z" version="1.0.632" stringid="371">
+<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20200208T023052Z" version="1.0.691" stringid="371">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\FileDialog.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\FileDialog\Win32\Release\FileDialog.exe" original="en" platforms="[ptWin32,ptWin64]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
@@ -162,12 +162,17 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SSaveTitle" si="21">
+          <value>Save File</value>
+          <lang id="fi" time="20150116T231519Z">Talleta tiedosto</lang>
+        </row>
+        <row id="SSaveFile" si="22">
+          <value>SampleFile.xml</value>
+          <lang id="fi" time="20150116T231510Z">EsimerkkiTiedosto.xml</lang>
+        </row>
         <row id="SAllFiles" si="14" created="20150116T231407Z">
           <value>All files</value>
           <lang id="fi" time="20150116T231504Z">Kaikki tiedostot</lang>
@@ -191,23 +196,14 @@
         </row>
         <row id="SSaveFilter" si="19">
           <value>XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini</value>
-          <lang id="fi" time="20150117T170243Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.in</lang>
+          <lang id="fi" time="20200208T023046Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini</lang>
         </row>
         <row id="SOpenTitle" si="20">
           <value>Open File</value>
           <lang id="fi" time="20150116T231523Z">Avaa tiedosto</lang>
         </row>
-        <row id="SSaveTitle" si="21">
-          <value>Save File</value>
-          <lang id="fi" time="20150116T231519Z">Talleta tiedosto</lang>
-        </row>
-        <row id="SSaveFile" si="22">
-          <value>SampleFile.xml</value>
-          <lang id="fi" time="20150116T231510Z">EsimerkkiTiedosto.xml</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
     <platformfiles>
@@ -232,4 +228,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

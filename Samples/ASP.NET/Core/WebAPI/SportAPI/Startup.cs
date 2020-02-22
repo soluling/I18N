@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Globalization;
 using System.Linq;
 using Microsoft.AspNetCore.Builder;
@@ -31,7 +32,11 @@ namespace SportAPI
       // Add support for CORS (cross-origin resource sharing)
       services.AddCors(c =>
       {
-        c.AddPolicy("ApiPolicy", options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+        c.AddPolicy("ApiPolicy", builder => builder
+          .AllowAnyOrigin()
+          .AllowAnyMethod()
+          .AllowAnyHeader()
+          .SetPreflightMaxAge(TimeSpan.FromMinutes(60)));
       });
 
       // Configure the database
@@ -90,10 +95,8 @@ namespace SportAPI
 
       app.UseRequestLocalization(options);
 
-      // Enable CORS from all origins and methods
-      app.UseCors("ApiPolicy");
-
       app.UseRouting();
+      app.UseCors("ApiPolicy");
 
       app.UseEndpoints(endpoints =>
       {

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0324A4DE-4BBB-441F-84C3-2803DBBA9652" created="20170402T040224Z" lastmodified="20191223T025137Z" version="1.0.632" stringid="426">
+<project id="0324A4DE-4BBB-441F-84C3-2803DBBA9652" created="20170402T040224Z" lastmodified="20200208T050436Z" version="1.0.691" stringid="426">
   <lang id="fi"/>
   <lang id="pl"/>
   <lang id="ja"/>
@@ -267,17 +267,13 @@
         </item>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="STextCaption" class="TPatternRow" si="65" created="20180223T021121Z">{0}/{1} text resource: {2}-{3}</row>
+        <row id="STextCaption" changed="20200208T050424Z" class="TPatternRow" si="65" created="20180223T021121Z">{0:d}/{1:d} text resource: {2:s}-{3:s}</row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
@@ -302,4 +298,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

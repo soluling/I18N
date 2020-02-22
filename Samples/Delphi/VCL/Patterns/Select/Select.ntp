@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20191223T025020Z" version="1.0.632" stringid="380">
+<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20200209T162125Z" version="1.0.691" stringid="380">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" platforms="[ptWin32]" scansourcecode="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -113,28 +113,24 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSportSelect" changed="20180223T021035Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player">
+        <row id="SSportSelect" changed="20200209T162053Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player">
           <value select="soccer">{0} is the best soccer player.</value>
-          <prev gender="geNeutral">{0} is the best soccer player.</prev>
+          <prev select="soccer">{0:s} is the best soccer player.</prev>
           <pattern select="basketball">{0} is the best basketball player.</pattern>
           <pattern select="hockey">{0} is the best ice hockey player.</pattern>
-          <lang id="fi" time="20170723T194412Z">
+          <lang id="fi" time="20200209T162114Z">
             <value select="soccer">{0} on paras jalkapalloilija.</value>
             <pattern select="basketball">{0} on paras koripalloilija.</pattern>
             <pattern select="hockey">{0} on paras jääkiekkoilija.</pattern>
           </lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -160,4 +156,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

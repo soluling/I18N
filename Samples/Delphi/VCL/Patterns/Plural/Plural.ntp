@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F849EA6D-E256-4EAD-93AF-095EC9479372" created="20140502T024017Z" lastmodified="20191223T024939Z" version="1.0.632" stringid="399">
+<project id="F849EA6D-E256-4EAD-93AF-095EC9479372" created="20140502T024017Z" lastmodified="20200209T162011Z" version="1.0.691" stringid="399">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="pl"/>
@@ -276,41 +276,39 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessagePlural" changed="20170508T040504Z" class="TPatternRow" si="36" created="20170422T172830Z">
+        <row id="SMessagePlural" changed="20200209T161938Z" class="TPatternRow" si="36" created="20170422T172830Z">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170508T040548Z">
+          <lang id="fi" time="20200209T161952Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
-          <lang id="ja" time="20170510T135106Z">{0}ファイル</lang>
-          <lang id="pl" time="20170510T134218Z">
+          <lang id="ja" st="3" time="20170510T135106Z">{0}ファイル</lang>
+          <lang id="pl" st="3" time="20170510T134218Z">
             <value>{0} plików</value>
             <pattern plural="pfOne">{0} plik</pattern>
             <pattern plural="pfFew">{0} pliki</pattern>
           </lang>
         </row>
-        <row id="SZeroMessagePlural" changed="20170508T040504Z" class="TPatternRow" si="37" created="20170422T172830Z">
+        <row id="SZeroMessagePlural" changed="20200209T161938Z" class="TPatternRow" si="37" created="20170422T172830Z">
           <value>{0} files</value>
           <pattern plural="pfZero">No files</pattern>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170508T040538Z">
+          <lang id="fi" time="20200209T162000Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfZero">Ei tiedostoa</pattern>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
-          <lang id="ja" or="3" time="20170510T135106Z">
+          <lang id="ja" st="3" or="3" time="20170510T135106Z">
             <value>{0}ファイル</value>
+            <pattern plural="pfZero"></pattern>
           </lang>
-          <lang id="pl" time="20170723T234134Z">
+          <lang id="pl" st="3" time="20170723T234134Z">
             <value>{0} plików</value>
             <pattern plural="pfZero">Żadnych plików</pattern>
             <pattern plural="pfOne">{0} plik</pattern>
@@ -319,7 +317,6 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
     </node>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -344,4 +341,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

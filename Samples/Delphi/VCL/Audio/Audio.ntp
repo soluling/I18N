@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="84BB9811-B263-4D53-B2F4-FBA0D2C4D57A" created="20140920T070611Z" lastmodified="20191223T004757Z" version="1.0.632" stringid="378">
+<project id="84BB9811-B263-4D53-B2F4-FBA0D2C4D57A" created="20140920T070611Z" lastmodified="20200207T234831Z" version="1.0.691" stringid="378">
   <lang id="fi"/>
   <lang id="fr"/>
   <lang id="de"/>
@@ -1201,11 +1201,8 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SSample" si="4">
           <value>How are you?</value>
@@ -1215,7 +1212,6 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <platformfiles>
@@ -1240,8 +1236,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

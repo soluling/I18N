@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="65C61D1E-D27A-4E02-A5E0-E72A4AE538BE" created="20171207T173512Z" lastmodified="20191223T010107Z" version="1.0.632" stringid="365">
+<project id="65C61D1E-D27A-4E02-A5E0-E72A4AE538BE" created="20171207T173512Z" lastmodified="20200207T235212Z" version="1.0.691" stringid="365">
   <lang id="en"/>
   <lang id="fi"/>
   <lang id="fi-FI"/>
@@ -16,7 +16,7 @@
         <row id="Top">0</row>
         <row id="Caption" si="1">
           <value>Sample</value>
-          <lang id="en" st="3" rw="0" time="20171208T020923Z">SAMPLE</lang>
+          <lang id="en" rw="0" time="20171208T020923Z">SAMPLE</lang>
           <lang id="fi" st="3" rw="0" time="20171207T173606Z">Esimerkki</lang>
           <lang id="fi-FI" st="3" rw="0" time="20171208T020939Z">Esimerkki (Suomi)</lang>
         </row>
@@ -29,7 +29,7 @@
           <row id="Height">13</row>
           <row id="Caption" si="2">
             <value>Hello</value>
-            <lang id="en" st="3" rw="0" time="20171208T020925Z">HELLO</lang>
+            <lang id="en" rw="0" time="20171208T020925Z">HELLO</lang>
             <lang id="fi" st="3" rw="0" time="20171207T173608Z">Moi</lang>
             <lang id="fi-FI" st="3" rw="0" time="20171208T020943Z">Moi (Suomi)</lang>
           </row>
@@ -51,22 +51,18 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SWorld" si="4">
           <value>World</value>
-          <lang id="en" st="3" rw="0" time="20171208T020927Z">WORLD</lang>
+          <lang id="en" rw="0" time="20171208T020927Z">WORLD</lang>
           <lang id="fi" st="3" rw="0" time="20171207T173610Z">Maailma</lang>
           <lang id="fi-FI" st="3" rw="0" time="20171208T020948Z">Maailma (Suomi)</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -90,8 +86,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

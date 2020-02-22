@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="870F4BA8-4585-472B-8804-A6809870B5CC" created="20131102T095310Z" lastmodified="20191223T023831Z" version="1.0.632" stringid="542">
+<project id="870F4BA8-4585-472B-8804-A6809870B5CC" created="20131102T095310Z" lastmodified="20200208T040434Z" version="1.0.691" stringid="542">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\MessageDlg.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\MessageDlg\Win32\Release\MessageDlg.exe" original="en" platforms="[ptWin32]">
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
@@ -94,7 +94,7 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
@@ -122,47 +122,95 @@
     <node class="TWindowsStringFolder" name="String" created="20131102T105825Z">
       <node class="TWindowsStringNode" name="4068" resid="4068" created="20151020T120818Z">
         <row id="Could not obtain OLE control window handle" si="12" created="20170517T173858Z">Could not obtain OLE control window handle</row>
-        <row id="OLE error %.8x" class="TPatternRow" si="13" created="20170517T173858Z">OLE error {0}</row>
+        <row id="OLE error %.8x" changed="20200208T040432Z" class="TPatternRow" si="13" created="20170517T173858Z" st="2">
+          <value>OLE error {0:#00}</value>
+          <prev>OLE error {0}</prev>
+        </row>
         <row id="Variant does not reference an OLE object" si="14" created="20170517T173858Z">Variant does not reference an OLE object</row>
         <row id="Variant does not reference an automation object" si="15" created="20170517T173858Z">Variant does not reference an automation object</row>
-        <row id="Method '%s' not supported by OLE object" class="TPatternRow" si="16" created="20170517T173858Z">Method '{0}' not supported by OLE object</row>
+        <row id="Method '%s' not supported by OLE object" changed="20200208T040432Z" class="TPatternRow" si="16" created="20170517T173858Z" st="2">
+          <value>Method '{0:s}' not supported by OLE object</value>
+          <prev>Method '{0}' not supported by OLE object</prev>
+        </row>
         <row id="Link Properties" si="17" created="20170517T173858Z">Link Properties</row>
         <row id="Cannot link to an invalid source." si="18" created="20170517T173858Z">Cannot link to an invalid source.</row>
         <row id="Break link operation is not supported." si="19" created="20170517T173858Z">Break link operation is not supported.</row>
-        <row id="Linked %s" class="TPatternRow" si="20" created="20170517T173858Z">Linked {0}</row>
+        <row id="Linked %s" changed="20200208T040432Z" class="TPatternRow" si="20" created="20170517T173858Z" st="2">
+          <value>Linked {0:s}</value>
+          <prev>Linked {0}</prev>
+        </row>
         <row id="Operation not allowed on an empty OLE container" si="21" created="20170517T173858Z">Operation not allowed on an empty OLE container</row>
         <row id="Invalid object verb" si="22" created="20170517T173858Z">Invalid object verb</row>
-        <row id="%s Properties" class="TPatternRow" si="23" created="20170517T173858Z">{0} Properties</row>
+        <row id="%s Properties" changed="20200208T040432Z" class="TPatternRow" si="23" created="20170517T173858Z" st="2">
+          <value>{0:s} Properties</value>
+          <prev>{0} Properties</prev>
+        </row>
         <row id="Invalid stream format" si="24" created="20170517T173858Z">Invalid stream format</row>
-        <row id="License information for %s is invalid" class="TPatternRow" si="25" created="20170517T173858Z">License information for {0} is invalid</row>
-        <row id="License information for %s not found. You cannot use this control in design mode" class="TPatternRow" si="491" created="20191223T023746Z">License information for {0} not found. You cannot use this control in design mode</row>
-        <row id="Unable to retrieve a pointer to a running object registered with OLE for %s/%s" class="TPatternRow" si="492" created="20191223T023746Z">Unable to retrieve a pointer to a running object registered with OLE for {0}/{1}</row>
+        <row id="License information for %s is invalid" changed="20200208T040432Z" class="TPatternRow" si="25" created="20170517T173858Z" st="2">
+          <value>License information for {0:s} is invalid</value>
+          <prev>License information for {0} is invalid</prev>
+        </row>
+        <row id="License information for %s not found. You cannot use this control in design mode" changed="20200208T040432Z" class="TPatternRow" si="491" created="20191223T023746Z" st="2">
+          <value>License information for {0:s} not found. You cannot use this control in design mode</value>
+          <prev>License information for {0} not found. You cannot use this control in design mode</prev>
+        </row>
+        <row id="Unable to retrieve a pointer to a running object registered with OLE for %s/%s" changed="20200208T040432Z" class="TPatternRow" si="492" created="20191223T023746Z" st="2">
+          <value>Unable to retrieve a pointer to a running object registered with OLE for {0:s}/{1:s}</value>
+          <prev>Unable to retrieve a pointer to a running object registered with OLE for {0}/{1}</prev>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="4069" resid="4069" created="20151020T120818Z">
         <row id="Hot-Key is invalid" si="28" created="20170517T173858Z">Hot-Key is invalid</row>
         <row id="Window is invalid or a child window" si="29" created="20170517T173858Z">Window is invalid or a child window</row>
         <row id="Hot-Key is assigned to another window" si="30" created="20170517T173858Z">Hot-Key is assigned to another window</row>
-        <row id="%s is already associated with %s" class="TPatternRow" si="31" created="20170517T173858Z">{0} is already associated with {1}</row>
-        <row id="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d" class="TPatternRow" si="32" created="20170517T173858Z">{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</row>
+        <row id="%s is already associated with %s" changed="20200208T040432Z" class="TPatternRow" si="31" created="20170517T173858Z" st="2">
+          <value>{0:s} is already associated with {1:s}</value>
+          <prev>{0} is already associated with {1}</prev>
+        </row>
+        <row id="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d" changed="20200208T040432Z" class="TPatternRow" si="32" created="20170517T173858Z" st="2">
+          <value>{0:d} is an invalid PageIndex value.  PageIndex must be between 0 and {1:d}</value>
+          <prev>{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</prev>
+        </row>
         <row id="This control requires version 4.70 or greater of COMCTL32.DLL" si="33" created="20170517T173858Z">This control requires version 4.70 or greater of COMCTL32.DLL</row>
-        <row id="Date exceeds maximum of %s" class="TPatternRow" si="34" created="20170517T173858Z">Date exceeds maximum of {0}</row>
-        <row id="Date is less than minimum of %s" class="TPatternRow" si="35" created="20170517T173858Z">Date is less than minimum of {0}</row>
+        <row id="Date exceeds maximum of %s" changed="20200208T040432Z" class="TPatternRow" si="34" created="20170517T173858Z" st="2">
+          <value>Date exceeds maximum of {0:s}</value>
+          <prev>Date exceeds maximum of {0}</prev>
+        </row>
+        <row id="Date is less than minimum of %s" changed="20200208T040432Z" class="TPatternRow" si="35" created="20170517T173858Z" st="2">
+          <value>Date is less than minimum of {0:s}</value>
+          <prev>Date is less than minimum of {0}</prev>
+        </row>
         <row id="You must be in ShowCheckbox mode to set to this date" si="36" created="20170517T173858Z">You must be in ShowCheckbox mode to set to this date</row>
         <row id="Failed to set calendar date or time" si="37" created="20170517T173858Z">Failed to set calendar date or time</row>
         <row id="Failed to set maximum selection range" si="38" created="20170517T173858Z">Failed to set maximum selection range</row>
         <row id="Failed to set calendar min/max range" si="39" created="20170517T173858Z">Failed to set calendar min/max range</row>
         <row id="Date range can only be used in multiselect mode" si="40" created="20170517T173858Z">Date range can only be used in multiselect mode</row>
         <row id="Failed to set calendar selected range" si="41" created="20170517T173858Z">Failed to set calendar selected range</row>
-        <row id="'%s' is not a valid property value" class="TPatternRow" si="493" created="20191223T023746Z">'{0}' is not a valid property value</row>
+        <row id="'%s' is not a valid property value" changed="20200208T040432Z" class="TPatternRow" si="493" created="20191223T023746Z" st="2">
+          <value>'{0:s}' is not a valid property value</value>
+          <prev>'{0}' is not a valid property value</prev>
+        </row>
         <row id="OLE control activation failed" si="494" created="20191223T023746Z">OLE control activation failed</row>
       </node>
       <node class="TWindowsStringNode" name="4070" resid="4070">
-        <row id="Failed to get object at index %d" class="TPatternRow" si="44" created="20170517T173858Z">Failed to get object at index {0}</row>
-        <row id="Failed to set tab &quot;%s&quot; at index %d" class="TPatternRow" si="45" created="20170517T173858Z">Failed to set tab &quot;{0}&quot; at index {1}</row>
-        <row id="Failed to set object at index %d" class="TPatternRow" si="46" created="20170517T173858Z">Failed to set object at index {0}</row>
+        <row id="Failed to get object at index %d" changed="20200208T040432Z" class="TPatternRow" si="44" created="20170517T173858Z" st="2">
+          <value>Failed to get object at index {0:d}</value>
+          <prev>Failed to get object at index {0}</prev>
+        </row>
+        <row id="Failed to set tab &quot;%s&quot; at index %d" changed="20200208T040432Z" class="TPatternRow" si="45" created="20170517T173858Z" st="2">
+          <value>Failed to set tab &quot;{0:s}&quot; at index {1:d}</value>
+          <prev>Failed to set tab &quot;{0}&quot; at index {1}</prev>
+        </row>
+        <row id="Failed to set object at index %d" changed="20200208T040432Z" class="TPatternRow" si="46" created="20170517T173858Z" st="2">
+          <value>Failed to set object at index {0:d}</value>
+          <prev>Failed to set object at index {0}</prev>
+        </row>
         <row id="MultiLine must be True when TabPosition is tpLeft or tpRight" si="47" created="20170517T173858Z">MultiLine must be True when TabPosition is tpLeft or tpRight</row>
         <row id="Invalid item level assignment" si="48" created="20170517T173858Z">Invalid item level assignment</row>
-        <row id="Invalid level (%d) for item &quot;%s&quot;" class="TPatternRow" si="49" created="20170517T173858Z">Invalid level ({0}) for item &quot;{1}&quot;</row>
+        <row id="Invalid level (%d) for item &quot;%s&quot;" changed="20200208T040432Z" class="TPatternRow" si="49" created="20170517T173858Z" st="2">
+          <value>Invalid level ({0:d}) for item &quot;{1:s}&quot;</value>
+          <prev>Invalid level ({0}) for item &quot;{1}&quot;</prev>
+        </row>
         <row id="Invalid index" si="50" created="20170517T173858Z">Invalid index</row>
         <row id="Unable to insert an item" si="51" created="20170517T173858Z">Unable to insert an item</row>
         <row id="Invalid owner" si="52" created="20170517T173858Z">Invalid owner</row>
@@ -172,15 +220,24 @@
         <row id="Failed to Load Stream" si="56" created="20170517T173858Z">Failed to Load Stream</row>
         <row id="Failed to Save Stream" si="57" created="20170517T173858Z">Failed to Save Stream</row>
         <row id="StatusBar cannot have more than 64 panels" si="495" created="20191223T023746Z">StatusBar cannot have more than 64 panels</row>
-        <row id="Error assigning Hot-Key to %s. %s" class="TPatternRow" si="496" created="20191223T023746Z">Error assigning Hot-Key to {0}. {1}</row>
+        <row id="Error assigning Hot-Key to %s. %s" changed="20200208T040432Z" class="TPatternRow" si="496" created="20191223T023746Z" st="2">
+          <value>Error assigning Hot-Key to {0:s}. {1:s}</value>
+          <prev>Error assigning Hot-Key to {0}. {1}</prev>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="4071" resid="4071">
         <row id="Appending an item to the frequent files category of a new jump list" si="60" created="20170517T173858Z">Appending an item to the frequent files category of a new jump list</row>
         <row id="Adding your tasks to a new jump list" si="61" created="20170517T173858Z">Adding your tasks to a new jump list</row>
-        <row id="Adding a custom category ('%s') and its child items to a new jump list" class="TPatternRow" si="62" created="20170517T173858Z">Adding a custom category ('{0}') and its child items to a new jump list</row>
+        <row id="Adding a custom category ('%s') and its child items to a new jump list" changed="20200208T040432Z" class="TPatternRow" si="62" created="20170517T173858Z" st="2">
+          <value>Adding a custom category ('{0:s}') and its child items to a new jump list</value>
+          <prev>Adding a custom category ('{0}') and its child items to a new jump list</prev>
+        </row>
         <row id="Committing a new jump list" si="63" created="20170517T173858Z">Committing a new jump list</row>
         <row id="The current operating system does not support jump lists" si="64" created="20170517T173858Z">The current operating system does not support jump lists</row>
-        <row id="The current process already has an application ID: %s" class="TPatternRow" si="65" created="20170517T173858Z">The current process already has an application ID: {0}</row>
+        <row id="The current process already has an application ID: %s" changed="20200208T040432Z" class="TPatternRow" si="65" created="20170517T173858Z" st="2">
+          <value>The current process already has an application ID: {0:s}</value>
+          <prev>The current process already has an application ID: {0}</prev>
+        </row>
         <row id="Cannot call BeginInvoke on a control with no parent or window handle" si="66" created="20170517T173858Z">Cannot call BeginInvoke on a control with no parent or window handle</row>
         <row id="On" si="67" created="20170517T173858Z">On</row>
         <row id="Off" si="68" created="20170517T173858Z">Off</row>
@@ -189,8 +246,14 @@
         <row id="Control cannot be positioned relative to itself" si="71" created="20170517T173858Z">Control cannot be positioned relative to itself</row>
         <row id="RelativePanel error: Circular dependency detected. Layout could not complete" si="72" created="20170517T173858Z">RelativePanel error: Circular dependency detected. Layout could not complete</row>
         <row id="Failed to clear tab control" si="73" created="20170517T173858Z">Failed to clear tab control</row>
-        <row id="Failed to delete tab at index %d" class="TPatternRow" si="497" created="20191223T023746Z">Failed to delete tab at index {0}</row>
-        <row id="Failed to retrieve tab at index %d" class="TPatternRow" si="498" created="20191223T023746Z">Failed to retrieve tab at index {0}</row>
+        <row id="Failed to delete tab at index %d" changed="20200208T040432Z" class="TPatternRow" si="497" created="20191223T023746Z" st="2">
+          <value>Failed to delete tab at index {0:d}</value>
+          <prev>Failed to delete tab at index {0}</prev>
+        </row>
+        <row id="Failed to retrieve tab at index %d" changed="20200208T040432Z" class="TPatternRow" si="498" created="20191223T023746Z" st="2">
+          <value>Failed to retrieve tab at index {0:d}</value>
+          <prev>Failed to retrieve tab at index {0}</prev>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="4072" resid="4072">
         <row id="Window Text" si="76" created="20170517T173858Z">Window Text</row>
@@ -205,8 +268,14 @@
         <row id="Adding an item to an object array" si="85" created="20170517T173858Z">Adding an item to an object array</row>
         <row id="Querying the IObjectArray interface" si="86" created="20170517T173858Z">Querying the IObjectArray interface</row>
         <row id="The FriendlyName property of an item must not be empty" si="87" created="20170517T173858Z">The FriendlyName property of an item must not be empty</row>
-        <row id="JumpListItem exception: Error %d: %s" class="TPatternRow" si="88" created="20170517T173858Z">JumpListItem exception: Error {0}: {1}</row>
-        <row id="JumpList exception: Error %d: %s" class="TPatternRow" si="89" created="20170517T173858Z">JumpList exception: Error {0}: {1}</row>
+        <row id="JumpListItem exception: Error %d: %s" changed="20200208T040432Z" class="TPatternRow" si="88" created="20170517T173858Z" st="2">
+          <value>JumpListItem exception: Error {0:d}: {1:s}</value>
+          <prev>JumpListItem exception: Error {0}: {1}</prev>
+        </row>
+        <row id="JumpList exception: Error %d: %s" changed="20200208T040432Z" class="TPatternRow" si="89" created="20170517T173858Z" st="2">
+          <value>JumpList exception: Error {0:d}: {1:s}</value>
+          <prev>JumpList exception: Error {0}: {1}</prev>
+        </row>
         <row id="Initiating a building session for a new jump list" si="499" created="20191223T023746Z">Initiating a building session for a new jump list</row>
         <row id="Appending an item to the recent files category of a new jump list" si="500" created="20191223T023746Z">Appending an item to the recent files category of a new jump list</row>
       </node>
@@ -265,17 +334,38 @@
         <row id="Cream" si="506" created="20191223T023746Z">Cream</row>
       </node>
       <node class="TWindowsStringNode" name="4076" resid="4076">
-        <row id="Style '%s' not found" class="TPatternRow" si="140" created="20170517T173858Z">Style '{0}' not found</row>
-        <row id="Style class '%s' not found" class="TPatternRow" si="141" created="20170517T173858Z">Style class '{0}' not found</row>
+        <row id="Style '%s' not found" changed="20200208T040432Z" class="TPatternRow" si="140" created="20170517T173858Z" st="2">
+          <value>Style '{0:s}' not found</value>
+          <prev>Style '{0}' not found</prev>
+        </row>
+        <row id="Style class '%s' not found" changed="20200208T040432Z" class="TPatternRow" si="141" created="20170517T173858Z" st="2">
+          <value>Style class '{0:s}' not found</value>
+          <prev>Style class '{0}' not found</prev>
+        </row>
         <row id="Invalid style handle" si="142" created="20170517T173858Z">Invalid style handle</row>
         <row id="Invalid style format" si="143" created="20170517T173858Z">Invalid style format</row>
         <row id="VCL Style File" si="144" created="20170517T173858Z">VCL Style File</row>
-        <row id="Class '%s' is already registered for '%s'" class="TPatternRow" si="145" created="20170517T173858Z">Class '{0}' is already registered for '{1}'</row>
-        <row id="Class '%s' is not registered for '%s'" class="TPatternRow" si="146" created="20170517T173858Z">Class '{0}' is not registered for '{1}'</row>
-        <row id="%s parameter cannot be nil" class="TPatternRow" si="147" created="20170517T173858Z">{0} parameter cannot be nil</row>
-        <row id="A StyleHook class has not been registered for %s" class="TPatternRow" si="148" created="20170517T173858Z">A StyleHook class has not been registered for {0}</row>
+        <row id="Class '%s' is already registered for '%s'" changed="20200208T040432Z" class="TPatternRow" si="145" created="20170517T173858Z" st="2">
+          <value>Class '{0:s}' is already registered for '{1:s}'</value>
+          <prev>Class '{0}' is already registered for '{1}'</prev>
+        </row>
+        <row id="Class '%s' is not registered for '%s'" changed="20200208T040432Z" class="TPatternRow" si="146" created="20170517T173858Z" st="2">
+          <value>Class '{0:s}' is not registered for '{1:s}'</value>
+          <prev>Class '{0}' is not registered for '{1}'</prev>
+        </row>
+        <row id="%s parameter cannot be nil" changed="20200208T040432Z" class="TPatternRow" si="147" created="20170517T173858Z" st="2">
+          <value>{0:s} parameter cannot be nil</value>
+          <prev>{0} parameter cannot be nil</prev>
+        </row>
+        <row id="A StyleHook class has not been registered for %s" changed="20200208T040432Z" class="TPatternRow" si="148" created="20170517T173858Z" st="2">
+          <value>A StyleHook class has not been registered for {0:s}</value>
+          <prev>A StyleHook class has not been registered for {0}</prev>
+        </row>
         <row id="Feature not supported by this style" si="149" created="20170517T173858Z">Feature not supported by this style</row>
-        <row id="Style '%s' is not registered" class="TPatternRow" si="150" created="20170517T173858Z">Style '{0}' is not registered</row>
+        <row id="Style '%s' is not registered" changed="20200208T040432Z" class="TPatternRow" si="150" created="20170517T173858Z" st="2">
+          <value>Style '{0:s}' is not registered</value>
+          <prev>Style '{0}' is not registered</prev>
+        </row>
         <row id="Cannot unregister the system style" si="151" created="20170517T173858Z">Cannot unregister the system style</row>
         <row id="Style not registered" si="152" created="20170517T173858Z">Style not registered</row>
         <row id="Black" si="153" created="20170517T173858Z">Black</row>
@@ -286,19 +376,37 @@
         <row id="CategoryPanel must have a CategoryPanelGroup as its parent" si="156" created="20170517T173858Z">CategoryPanel must have a CategoryPanelGroup as its parent</row>
         <row id="Only CategoryPanels can be inserted into a CategoryPanelGroup" si="157" created="20170517T173858Z">Only CategoryPanels can be inserted into a CategoryPanelGroup</row>
         <row id="Invalid canvas operation" si="158" created="20170517T173858Z">Invalid canvas operation</row>
-        <row id="%s has no owner" class="TPatternRow" si="159" created="20170517T173858Z">{0} has no owner</row>
+        <row id="%s has no owner" changed="20200208T040432Z" class="TPatternRow" si="159" created="20170517T173858Z" st="2">
+          <value>{0:s} has no owner</value>
+          <prev>{0} has no owner</prev>
+        </row>
         <row id="Source and destination require the same owner" si="160" created="20170517T173858Z">Source and destination require the same owner</row>
-        <row id="%s cannot be owned by a different canvas" class="TPatternRow" si="161" created="20170517T173858Z">{0} cannot be owned by a different canvas</row>
+        <row id="%s cannot be owned by a different canvas" changed="20200208T040432Z" class="TPatternRow" si="161" created="20170517T173858Z" st="2">
+          <value>{0:s} cannot be owned by a different canvas</value>
+          <prev>{0} cannot be owned by a different canvas</prev>
+        </row>
         <row id="Not a solid color brush" si="162" created="20170517T173858Z">Not a solid color brush</row>
         <row id="Invalid brush style" si="163" created="20170517T173858Z">Invalid brush style</row>
         <row id="Error retrieving locale information" si="164" created="20170517T173858Z">Error retrieving locale information</row>
         <row id="Failed to change input language" si="165" created="20170517T173858Z">Failed to change input language</row>
         <row id="You can only tab dock TWinControl based Controls" si="166" created="20170517T173858Z">You can only tab dock TWinControl based Controls</row>
         <row id="No help keyword specified." si="167" created="20170517T173858Z">No help keyword specified.</row>
-        <row id="Unable to load style '%s'" class="TPatternRow" si="168" created="20170517T173858Z">Unable to load style '{0}'</row>
-        <row id="Unable to load styles: %s" class="TPatternRow" si="169" created="20170517T173858Z">Unable to load styles: {0}</row>
-        <row id="Style '%s' already registered" class="TPatternRow" si="509" created="20191223T023746Z">Style '{0}' already registered</row>
-        <row id="Style class '%s' already registered" class="TPatternRow" si="510" created="20191223T023746Z">Style class '{0}' already registered</row>
+        <row id="Unable to load style '%s'" changed="20200208T040432Z" class="TPatternRow" si="168" created="20170517T173858Z" st="2">
+          <value>Unable to load style '{0:s}'</value>
+          <prev>Unable to load style '{0}'</prev>
+        </row>
+        <row id="Unable to load styles: %s" changed="20200208T040432Z" class="TPatternRow" si="169" created="20170517T173858Z" st="2">
+          <value>Unable to load styles: {0:s}</value>
+          <prev>Unable to load styles: {0}</prev>
+        </row>
+        <row id="Style '%s' already registered" changed="20200208T040432Z" class="TPatternRow" si="509" created="20191223T023746Z" st="2">
+          <value>Style '{0:s}' already registered</value>
+          <prev>Style '{0}' already registered</prev>
+        </row>
+        <row id="Style class '%s' already registered" changed="20200208T040432Z" class="TPatternRow" si="510" created="20191223T023746Z" st="2">
+          <value>Style class '{0:s}' already registered</value>
+          <prev>Style class '{0}' already registered</prev>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="4078" resid="4078">
         <row id="Member" si="172" created="20170517T173858Z">Member</row>
@@ -307,19 +415,40 @@
         <row id="Auto" si="175" created="20170517T173858Z">Auto</row>
         <row id="Percent" si="176" created="20170517T173858Z">Percent</row>
         <row id="Absolute" si="177" created="20170517T173858Z">Absolute</row>
-        <row id="Column%d" class="TPatternRow" si="178" created="20170517T173858Z">Column{0}</row>
-        <row id="Row%d" class="TPatternRow" si="179" created="20170517T173858Z">Row{0}</row>
+        <row id="Column%d" changed="20200208T040432Z" class="TPatternRow" si="178" created="20170517T173858Z" st="2">
+          <value>Column{0:d}</value>
+          <prev>Column{0}</prev>
+        </row>
+        <row id="Row%d" changed="20200208T040432Z" class="TPatternRow" si="179" created="20170517T173858Z" st="2">
+          <value>Row{0:d}</value>
+          <prev>Row{0}</prev>
+        </row>
         <row id="Cannot remove shell notification icon" si="180" created="20170517T173858Z">Cannot remove shell notification icon</row>
         <row id="Cannot create shell notification icon" si="181" created="20170517T173858Z">Cannot create shell notification icon</row>
         <row id="PageControl must first be assigned" si="182" created="20170517T173858Z">PageControl must first be assigned</row>
-        <row id="%s requires Windows Vista or later" class="TPatternRow" si="183" created="20170517T173858Z">{0} requires Windows Vista or later</row>
-        <row id="%s requires themes to be enabled" class="TPatternRow" si="184" created="20170517T173858Z">{0} requires themes to be enabled</row>
-        <row id="Button%d" class="TPatternRow" si="185" created="20170517T173858Z">Button{0}</row>
-        <row id="RadioButton%d" class="TPatternRow" si="511" created="20191223T023746Z">RadioButton{0}</row>
+        <row id="%s requires Windows Vista or later" changed="20200208T040432Z" class="TPatternRow" si="183" created="20170517T173858Z" st="2">
+          <value>{0:s} requires Windows Vista or later</value>
+          <prev>{0} requires Windows Vista or later</prev>
+        </row>
+        <row id="%s requires themes to be enabled" changed="20200208T040432Z" class="TPatternRow" si="184" created="20170517T173858Z" st="2">
+          <value>{0:s} requires themes to be enabled</value>
+          <prev>{0} requires themes to be enabled</prev>
+        </row>
+        <row id="Button%d" changed="20200208T040432Z" class="TPatternRow" si="185" created="20170517T173858Z" st="2">
+          <value>Button{0:d}</value>
+          <prev>Button{0}</prev>
+        </row>
+        <row id="RadioButton%d" changed="20200208T040432Z" class="TPatternRow" si="511" created="20191223T023746Z" st="2">
+          <value>RadioButton{0:d}</value>
+          <prev>RadioButton{0}</prev>
+        </row>
         <row id="Caption cannot be empty" si="512" created="20191223T023746Z">Caption cannot be empty</row>
       </node>
       <node class="TWindowsStringNode" name="4079" resid="4079">
-        <row id="&quot;%s&quot; is an invalid path" class="TPatternRow" si="188" created="20170517T173858Z">&quot;{0}&quot; is an invalid path</row>
+        <row id="&quot;%s&quot; is an invalid path" changed="20200208T040432Z" class="TPatternRow" si="188" created="20170517T173858Z" st="2">
+          <value>&quot;{0:s}&quot; is an invalid path</value>
+          <prev>&quot;{0}&quot; is an invalid path</prev>
+        </row>
         <row id="Invalid path" si="189" created="20170517T173858Z">Invalid path</row>
         <row id="ANSI" si="190" created="20170517T173858Z">ANSI</row>
         <row id="ASCII" si="191" created="20170517T173858Z">ASCII</row>
@@ -329,40 +458,82 @@
         <row id="UTF-7" si="195" created="20170517T173858Z">UTF-7</row>
         <row id="Encoding:" si="196" created="20170517T173858Z">Encoding:</row>
         <row id="Cannot add columns or rows while expand style is fixed size" si="197" created="20170517T173858Z">Cannot add columns or rows while expand style is fixed size</row>
-        <row id="'%d' is not a valid span" class="TPatternRow" si="198" created="20170517T173858Z">'{0}' is not a valid span</row>
-        <row id="Row index, %d, out of bounds" class="TPatternRow" si="199" created="20170517T173858Z">Row index, {0}, out of bounds</row>
-        <row id="Column index, %d, out of bounds" class="TPatternRow" si="200" created="20170517T173858Z">Column index, {0}, out of bounds</row>
+        <row id="'%d' is not a valid span" changed="20200208T040432Z" class="TPatternRow" si="198" created="20170517T173858Z" st="2">
+          <value>'{0:d}' is not a valid span</value>
+          <prev>'{0}' is not a valid span</prev>
+        </row>
+        <row id="Row index, %d, out of bounds" changed="20200208T040432Z" class="TPatternRow" si="199" created="20170517T173858Z" st="2">
+          <value>Row index, {0:d}, out of bounds</value>
+          <prev>Row index, {0}, out of bounds</prev>
+        </row>
+        <row id="Column index, %d, out of bounds" changed="20200208T040432Z" class="TPatternRow" si="200" created="20170517T173858Z" st="2">
+          <value>Column index, {0:d}, out of bounds</value>
+          <prev>Column index, {0}, out of bounds</prev>
+        </row>
         <row id="ControlItem.Control cannot be set to owning GridPanel" si="201" created="20170517T173858Z">ControlItem.Control cannot be set to owning GridPanel</row>
         <row id="Cannot delete a column that contains controls" si="513" created="20191223T023746Z">Cannot delete a column that contains controls</row>
         <row id="Cannot delete a row that contains controls" si="514" created="20191223T023746Z">Cannot delete a row that contains controls</row>
       </node>
       <node class="TWindowsStringNode" name="4080" resid="4080">
         <row id="Circular references not allowed" si="204" created="20170517T173858Z">Circular references not allowed</row>
-        <row id="%s does not allow hiding" class="TPatternRow" si="205" created="20170517T173858Z">{0} does not allow hiding</row>
-        <row id="Error setting %s.Count" class="TPatternRow" si="206" created="20170517T173858Z">Error setting {0}.Count</row>
-        <row id="Listbox (%s) style must be virtual in order to set Count" class="TPatternRow" si="207" created="20170517T173858Z">Listbox ({0}) style must be virtual in order to set Count</row>
+        <row id="%s does not allow hiding" changed="20200208T040432Z" class="TPatternRow" si="205" created="20170517T173858Z" st="2">
+          <value>{0:s} does not allow hiding</value>
+          <prev>{0} does not allow hiding</prev>
+        </row>
+        <row id="Error setting %s.Count" changed="20200208T040432Z" class="TPatternRow" si="206" created="20170517T173858Z" st="2">
+          <value>Error setting {0:s}.Count</value>
+          <prev>Error setting {0}.Count</prev>
+        </row>
+        <row id="Listbox (%s) style must be virtual in order to set Count" changed="20200208T040432Z" class="TPatternRow" si="207" created="20170517T173858Z" st="2">
+          <value>Listbox ({0:s}) style must be virtual in order to set Count</value>
+          <prev>Listbox ({0}) style must be virtual in order to set Count</prev>
+        </row>
         <row id="Unable to save settings" si="208" created="20170517T173858Z">Unable to save settings</row>
         <row id="Would you like to reset to the default Priority Schedule?" si="209" created="20170517T173858Z">Would you like to reset to the default Priority Schedule?</row>
         <row id="No OnGetItem event handler assigned" si="210" created="20170517T173858Z">No OnGetItem event handler assigned</row>
         <row id="Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx" si="211" created="20170517T173858Z">Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx</row>
-        <row id="A style named %s has already been registered" class="TPatternRow" si="212" created="20170517T173858Z">A style named {0} has already been registered</row>
-        <row id="A style named %s has not been registered" class="TPatternRow" si="213" created="20170517T173858Z">A style named {0} has not been registered</row>
+        <row id="A style named %s has already been registered" changed="20200208T040432Z" class="TPatternRow" si="212" created="20170517T173858Z" st="2">
+          <value>A style named {0:s} has already been registered</value>
+          <prev>A style named {0} has already been registered</prev>
+        </row>
+        <row id="A style named %s has not been registered" changed="20200208T040432Z" class="TPatternRow" si="213" created="20170517T173858Z" st="2">
+          <value>A style named {0:s} has not been registered</value>
+          <prev>A style named {0} has not been registered</prev>
+        </row>
         <row id="Standard Style" si="214" created="20170517T173858Z">Standard Style</row>
         <row id="XP Style" si="215" created="20170517T173858Z">XP Style</row>
         <row id="No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause" si="216" created="20170517T173858Z">No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause</row>
-        <row id="%s parameter in call to %s cannot be nil" class="TPatternRow" si="217" created="20170517T173858Z">{0} parameter in call to {1} cannot be nil</row>
+        <row id="%s parameter in call to %s cannot be nil" changed="20200208T040432Z" class="TPatternRow" si="217" created="20170517T173858Z" st="2">
+          <value>{0:s} parameter in call to {1:s} cannot be nil</value>
+          <prev>{0} parameter in call to {1} cannot be nil</prev>
+        </row>
         <row id="Invalid Color string" si="515" created="20191223T023746Z">Invalid Color string</row>
-        <row id="%s ActionManager property has not been assigned" class="TPatternRow" si="516" created="20191223T023746Z">{0} ActionManager property has not been assigned</row>
+        <row id="%s ActionManager property has not been assigned" changed="20200208T040432Z" class="TPatternRow" si="516" created="20191223T023746Z" st="2">
+          <value>{0:s} ActionManager property has not been assigned</value>
+          <prev>{0} ActionManager property has not been assigned</prev>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="4081" resid="4081">
-        <row id="Error downloading URL: %s" class="TPatternRow" si="220" created="20170517T173858Z">Error downloading URL: {0}</row>
-        <row id="Unable to load %s" class="TPatternRow" si="221" created="20170517T173858Z">Unable to load {0}</row>
+        <row id="Error downloading URL: %s" changed="20200208T040432Z" class="TPatternRow" si="220" created="20170517T173858Z" st="2">
+          <value>Error downloading URL: {0:s}</value>
+          <prev>Error downloading URL: {0}</prev>
+        </row>
+        <row id="Unable to load %s" changed="20200208T040432Z" class="TPatternRow" si="221" created="20170517T173858Z" st="2">
+          <value>Unable to load {0:s}</value>
+          <prev>Unable to load {0}</prev>
+        </row>
         <row id="(All Actions)" si="222" created="20170517T173858Z">(All Actions)</row>
         <row id="(No Category)" si="223" created="20170517T173858Z">(No Category)</row>
         <row id="Expand" si="224" created="20170517T173858Z">Expand</row>
-        <row id="Error setting path: &quot;%s&quot;" class="TPatternRow" si="225" created="20170517T173858Z">Error setting path: &quot;{0}&quot;</row>
+        <row id="Error setting path: &quot;%s&quot;" changed="20200208T040432Z" class="TPatternRow" si="225" created="20170517T173858Z" st="2">
+          <value>Error setting path: &quot;{0:s}&quot;</value>
+          <prev>Error setting path: &quot;{0}&quot;</prev>
+        </row>
         <row id="Attempting to put items into a virtual style listbox" si="226" created="20170517T173858Z">Attempting to put items into a virtual style listbox</row>
-        <row id="Error loading previously saved settings file: %sWould you like to delete it?" class="TPatternRow" si="227" created="20170517T173858Z">Error loading previously saved settings file: {0}Would you like to delete it?</row>
+        <row id="Error loading previously saved settings file: %sWould you like to delete it?" changed="20200208T040432Z" class="TPatternRow" si="227" created="20170517T173858Z" st="2">
+          <value>Error loading previously saved settings file: {0:s}Would you like to delete it?</value>
+          <prev>Error loading previously saved settings file: {0}Would you like to delete it?</prev>
+        </row>
         <row id="Reset all usage data?" si="228" created="20170517T173858Z">Reset all usage data?</row>
         <row id="Run" si="229" created="20170517T173858Z">Run</row>
         <row id="(No Name)" si="230" created="20170517T173858Z">(No Name)</row>
@@ -379,29 +550,56 @@
         <row id="Login" si="239" created="20170517T173858Z">Login</row>
         <row id="Key" si="240" created="20170517T173858Z">Key</row>
         <row id="Value" si="241" created="20170517T173858Z">Value</row>
-        <row id="A key with the name of &quot;%s&quot; already exists" class="TPatternRow" si="242" created="20170517T173858Z">A key with the name of &quot;{0}&quot; already exists</row>
-        <row id="Key &quot;%s&quot; not found" class="TPatternRow" si="243" created="20170517T173858Z">Key &quot;{0}&quot; not found</row>
+        <row id="A key with the name of &quot;%s&quot; already exists" changed="20200208T040432Z" class="TPatternRow" si="242" created="20170517T173858Z" st="2">
+          <value>A key with the name of &quot;{0:s}&quot; already exists</value>
+          <prev>A key with the name of &quot;{0}&quot; already exists</prev>
+        </row>
+        <row id="Key &quot;%s&quot; not found" changed="20200208T040432Z" class="TPatternRow" si="243" created="20170517T173858Z" st="2">
+          <value>Key &quot;{0:s}&quot; not found</value>
+          <prev>Key &quot;{0}&quot; not found</prev>
+        </row>
         <row id="goColMoving is not a supported option" si="244" created="20170517T173858Z">goColMoving is not a supported option</row>
         <row id="Key may not contain equals sign (&quot;=&quot;)" si="245" created="20170517T173858Z">Key may not contain equals sign (&quot;=&quot;)</row>
         <row id="Error sending mail" si="246" created="20170517T173858Z">Error sending mail</row>
         <row id="Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar" si="247" created="20170517T173858Z">Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar</row>
-        <row id="Item %s has subitems, delete anyway?" class="TPatternRow" si="248" created="20170517T173858Z">Item {0} has subitems, delete anyway?</row>
+        <row id="Item %s has subitems, delete anyway?" changed="20200208T040432Z" class="TPatternRow" si="248" created="20170517T173858Z" st="2">
+          <value>Item {0:s} has subitems, delete anyway?</value>
+          <prev>Item {0} has subitems, delete anyway?</prev>
+        </row>
         <row id="You are not allowed to delete this item" si="249" created="20170517T173858Z">You are not allowed to delete this item</row>
-        <row id="Item %s is not allowed to be moved" class="TPatternRow" si="519" created="20191223T023746Z">Item {0} is not allowed to be moved</row>
+        <row id="Item %s is not allowed to be moved" changed="20200208T040432Z" class="TPatternRow" si="519" created="20191223T023746Z" st="2">
+          <value>Item {0:s} is not allowed to be moved</value>
+          <prev>Item {0} is not allowed to be moved</prev>
+        </row>
         <row id="More Buttons" si="520" created="20191223T023746Z">More Buttons</row>
       </node>
       <node class="TWindowsStringNode" name="4083" resid="4083">
-        <row id="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;" class="TPatternRow" si="252" created="20170517T173858Z">Service &quot;{0}&quot; failed to install with error: &quot;{1}&quot;</row>
+        <row id="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;" changed="20200208T040432Z" class="TPatternRow" si="252" created="20170517T173858Z" st="2">
+          <value>Service &quot;{0:s}&quot; failed to install with error: &quot;{1:s}&quot;</value>
+          <prev>Service &quot;{0}&quot; failed to install with error: &quot;{1}&quot;</prev>
+        </row>
         <row id="Service uninstalled successfully" si="253" created="20170517T173858Z">Service uninstalled successfully</row>
-        <row id="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;" class="TPatternRow" si="254" created="20170517T173858Z">Service &quot;{0}&quot; failed to uninstall with error: &quot;{1}&quot;</row>
+        <row id="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;" changed="20200208T040432Z" class="TPatternRow" si="254" created="20170517T173858Z" st="2">
+          <value>Service &quot;{0:s}&quot; failed to uninstall with error: &quot;{1:s}&quot;</value>
+          <prev>Service &quot;{0}&quot; failed to uninstall with error: &quot;{1}&quot;</prev>
+        </row>
         <row id="Docked control must have a name" si="255" created="20170517T173858Z">Docked control must have a name</row>
         <row id="Error removing control from dock tree" si="256" created="20170517T173858Z">Error removing control from dock tree</row>
         <row id=" - Dock zone not found" si="257" created="20170517T173858Z"> - Dock zone not found</row>
         <row id=" - Dock zone has no control" si="258" created="20170517T173858Z"> - Dock zone has no control</row>
-        <row id="Error loading dock zone from the stream. Expecting version %d, but found %d." class="TPatternRow" si="259" created="20170517T173858Z">Error loading dock zone from the stream. Expecting version {0}, but found {1}.</row>
+        <row id="Error loading dock zone from the stream. Expecting version %d, but found %d." changed="20200208T040432Z" class="TPatternRow" si="259" created="20170517T173858Z" st="2">
+          <value>Error loading dock zone from the stream. Expecting version {0:d}, but found {1:d}.</value>
+          <prev>Error loading dock zone from the stream. Expecting version {0}, but found {1}.</prev>
+        </row>
         <row id="All Commands" si="260" created="20170517T173858Z">All Commands</row>
-        <row id="List does not allow duplicates ($0%x)" class="TPatternRow" si="261" created="20170517T173858Z">List does not allow duplicates ($0{0})</row>
-        <row id="Text not found: &quot;%s&quot;" class="TPatternRow" si="262" created="20170517T173858Z">Text not found: &quot;{0}&quot;</row>
+        <row id="List does not allow duplicates ($0%x)" changed="20200208T040432Z" class="TPatternRow" si="261" created="20170517T173858Z" st="2">
+          <value>List does not allow duplicates ($0{0:x})</value>
+          <prev>List does not allow duplicates ($0{0})</prev>
+        </row>
+        <row id="Text not found: &quot;%s&quot;" changed="20200208T040432Z" class="TPatternRow" si="262" created="20170517T173858Z" st="2">
+          <value>Text not found: &quot;{0:s}&quot;</value>
+          <prev>Text not found: &quot;{0}&quot;</prev>
+        </row>
         <row id="No default browser is specified" si="263" created="20170517T173858Z">No default browser is specified</row>
         <row id="Custom..." si="264" created="20170517T173858Z">Custom...</row>
         <row id="Multiselect mode must be on for this feature" si="265" created="20170517T173858Z">Multiselect mode must be on for this feature</row>
@@ -415,7 +613,10 @@
         <row id="Italic" si="271" created="20170517T173858Z">Italic</row>
         <row id="Regular" si="272" created="20170517T173858Z">Regular</row>
         <row id="Properties" si="273" created="20170517T173858Z">Properties</row>
-        <row id="Service failed on %s: %s" class="TPatternRow" si="274" created="20170517T173858Z">Service failed on {0}: {1}</row>
+        <row id="Service failed on %s: %s" changed="20200208T040432Z" class="TPatternRow" si="274" created="20170517T173858Z" st="2">
+          <value>Service failed on {0:s}: {1:s}</value>
+          <prev>Service failed on {0}: {1}</prev>
+        </row>
         <row id="execute" si="275" created="20170517T173858Z">execute</row>
         <row id="start" si="276" created="20170517T173858Z">start</row>
         <row id="stop" si="277" created="20170517T173858Z">stop</row>
@@ -423,7 +624,10 @@
         <row id="continue" si="279" created="20170517T173858Z">continue</row>
         <row id="interrogate" si="280" created="20170517T173858Z">interrogate</row>
         <row id="shutdown" si="281" created="20170517T173858Z">shutdown</row>
-        <row id="Service failed in custom message(%d): %s" class="TPatternRow" si="523" created="20191223T023746Z">Service failed in custom message({0}): {1}</row>
+        <row id="Service failed in custom message(%d): %s" changed="20200208T040432Z" class="TPatternRow" si="523" created="20191223T023746Z" st="2">
+          <value>Service failed in custom message({0:d}): {1:s}</value>
+          <prev>Service failed in custom message({0}): {1}</prev>
+        </row>
         <row id="Service installed successfully" si="524" created="20191223T023746Z">Service installed successfully</row>
       </node>
       <node class="TWindowsStringNode" name="4085" resid="4085">
@@ -445,24 +649,45 @@
       </node>
       <node class="TWindowsStringNode" name="4086" resid="4086">
         <row id="Clipboard does not support Icons" si="299" created="20170517T173858Z">Clipboard does not support Icons</row>
-        <row id="Cannot open clipboard: %s" class="TPatternRow" si="300" created="20170517T173858Z">Cannot open clipboard: {0}</row>
+        <row id="Cannot open clipboard: %s" changed="20200208T040432Z" class="TPatternRow" si="300" created="20170517T173858Z" st="2">
+          <value>Cannot open clipboard: {0:s}</value>
+          <prev>Cannot open clipboard: {0}</prev>
+        </row>
         <row id="Default" si="301" created="20170517T173858Z">Default</row>
         <row id="Text exceeds memo capacity" si="302" created="20170517T173858Z">Text exceeds memo capacity</row>
         <row id="Custom Colors" si="303" created="20170517T173858Z">Custom Colors</row>
         <row id="Operation not supported on selected printer" si="304" created="20170517T173858Z">Operation not supported on selected printer</row>
         <row id="There is no default printer currently selected" si="305" created="20170517T173858Z">There is no default printer currently selected</row>
-        <row id="Unable to write to %s" class="TPatternRow" si="306" created="20170517T173858Z">Unable to write to {0}</row>
+        <row id="Unable to write to %s" changed="20200208T040432Z" class="TPatternRow" si="306" created="20170517T173858Z" st="2">
+          <value>Unable to write to {0:s}</value>
+          <prev>Unable to write to {0}</prev>
+        </row>
         <row id="Bits index out of range" si="307" created="20170517T173858Z">Bits index out of range</row>
         <row id="(Untitled)" si="308" created="20170517T173858Z">(Untitled)</row>
-        <row id="Invalid data type for '%s'" class="TPatternRow" si="309" created="20170517T173858Z">Invalid data type for '{0}'</row>
-        <row id="Unknown RichEdit conversion file extension (.%s)" class="TPatternRow" si="310" created="20170517T173858Z">Unknown RichEdit conversion file extension (.{0})</row>
-        <row id="Menu '%s' is already being used by another form" class="TPatternRow" si="311" created="20170517T173858Z">Menu '{0}' is already being used by another form</row>
+        <row id="Invalid data type for '%s'" changed="20200208T040432Z" class="TPatternRow" si="309" created="20170517T173858Z" st="2">
+          <value>Invalid data type for '{0:s}'</value>
+          <prev>Invalid data type for '{0}'</prev>
+        </row>
+        <row id="Unknown RichEdit conversion file extension (.%s)" changed="20200208T040432Z" class="TPatternRow" si="310" created="20170517T173858Z" st="2">
+          <value>Unknown RichEdit conversion file extension (.{0:s})</value>
+          <prev>Unknown RichEdit conversion file extension (.{0})</prev>
+        </row>
+        <row id="Menu '%s' is already being used by another form" changed="20200208T040432Z" class="TPatternRow" si="311" created="20170517T173858Z" st="2">
+          <value>Menu '{0:s}' is already being used by another form</value>
+          <prev>Menu '{0}' is already being used by another form</prev>
+        </row>
         <row id="Picture:" si="312" created="20170517T173858Z">Picture:</row>
-        <row id=" (%dx%d)" class="TPatternRow" si="527" created="20191223T023746Z"> ({0}x{1})</row>
+        <row id=" (%dx%d)" changed="20200208T040432Z" class="TPatternRow" si="527" created="20191223T023746Z" st="2">
+          <value> ({0:d}x{1:d})</value>
+          <prev> ({0}x{1})</prev>
+        </row>
         <row id="Preview" si="528" created="20191223T023746Z">Preview</row>
       </node>
       <node class="TWindowsStringNode" name="4087" resid="4087">
-        <row id="Value must be between %d and %d" class="TPatternRow" si="315" created="20170517T173858Z">Value must be between {0} and {1}</row>
+        <row id="Value must be between %d and %d" changed="20200208T040432Z" class="TPatternRow" si="315" created="20170517T173858Z" st="2">
+          <value>Value must be between {0:d} and {1:d}</value>
+          <prev>Value must be between {0} and {1}</prev>
+        </row>
         <row id="Invalid argument to date encode" si="316" created="20170517T173858Z">Invalid argument to date encode</row>
         <row id="All files (*.*)|*.*" si="317" created="20170517T173858Z">All files (*.*)|*.*</row>
         <row id="All" si="318" created="20170517T173858Z">All</row>
@@ -577,9 +802,18 @@
         <row id="PutObject to undefined item" si="399" created="20170517T173858Z">PutObject to undefined item</row>
         <row id="Could not load CARDS.DLL" si="400" created="20170517T173858Z">Could not load CARDS.DLL</row>
         <row id="Duplicate CardId found" si="401" created="20170517T173858Z">Duplicate CardId found</row>
-        <row id="An error returned from DDE  ($0%x)" class="TPatternRow" si="402" created="20170517T173858Z">An error returned from DDE  ($0{0})</row>
-        <row id="DDE Error - conversation not established ($0%x)" class="TPatternRow" si="403" created="20170517T173858Z">DDE Error - conversation not established ($0{0})</row>
-        <row id="Error occurred when DDE ran out of memory ($0%x)" class="TPatternRow" si="404" created="20170517T173858Z">Error occurred when DDE ran out of memory ($0{0})</row>
+        <row id="An error returned from DDE  ($0%x)" changed="20200208T040432Z" class="TPatternRow" si="402" created="20170517T173858Z" st="2">
+          <value>An error returned from DDE  ($0{0:x})</value>
+          <prev>An error returned from DDE  ($0{0})</prev>
+        </row>
+        <row id="DDE Error - conversation not established ($0%x)" changed="20200208T040432Z" class="TPatternRow" si="403" created="20170517T173858Z" st="2">
+          <value>DDE Error - conversation not established ($0{0:x})</value>
+          <prev>DDE Error - conversation not established ($0{0})</prev>
+        </row>
+        <row id="Error occurred when DDE ran out of memory ($0%x)" changed="20200208T040432Z" class="TPatternRow" si="404" created="20170517T173858Z" st="2">
+          <value>Error occurred when DDE ran out of memory ($0{0:x})</value>
+          <prev>Error occurred when DDE ran out of memory ($0{0})</prev>
+        </row>
         <row id="Unable to connect DDE conversation" si="405" created="20170517T173858Z">Unable to connect DDE conversation</row>
         <row id="FB" si="406" created="20170517T173858Z">FB</row>
         <row id="FG" si="407" created="20170517T173858Z">FG</row>
@@ -591,7 +825,10 @@
         <row id="Printing in progress" si="411" created="20170517T173858Z">Printing in progress</row>
         <row id="Printer index out of range" si="412" created="20170517T173858Z">Printer index out of range</row>
         <row id="Printer selected is not valid" si="413" created="20170517T173858Z">Printer selected is not valid</row>
-        <row id="%s on %s" class="TPatternRow" si="414" created="20170517T173858Z">{0} on {1}</row>
+        <row id="%s on %s" changed="20200208T040432Z" class="TPatternRow" si="414" created="20170517T173858Z" st="2">
+          <value>{0:s} on {1:s}</value>
+          <prev>{0} on {1}</prev>
+        </row>
         <row id="GroupIndex cannot be less than a previous menu item's GroupIndex" si="415" created="20170517T173858Z">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
         <row id="Cannot have more than one MDI form per application" si="416" created="20170517T173858Z">Cannot have more than one MDI form per application</row>
         <row id="Cannot create form. No MDI forms are currently active" si="417" created="20170517T173858Z">Cannot create form. No MDI forms are currently active</row>
@@ -615,28 +852,47 @@
         <row id="Error creating window class" si="428" created="20170517T173858Z">Error creating window class</row>
         <row id="Error creating window" si="429" created="20170517T173858Z">Error creating window</row>
         <row id="Cannot focus a disabled or invisible window" si="430" created="20170517T173858Z">Cannot focus a disabled or invisible window</row>
-        <row id="Control '%s' has no parent window" class="TPatternRow" si="431" created="20170517T173858Z">Control '{0}' has no parent window</row>
+        <row id="Control '%s' has no parent window" changed="20200208T040432Z" class="TPatternRow" si="431" created="20170517T173858Z" st="2">
+          <value>Control '{0:s}' has no parent window</value>
+          <prev>Control '{0}' has no parent window</prev>
+        </row>
         <row id=". Path:
-%s" class="TPatternRow" si="542" created="20191223T023746Z">. Path:
-{0}</row>
-        <row id="Parent given is not a parent of '%s'" class="TPatternRow" si="432" created="20170517T173858Z">Parent given is not a parent of '{0}'</row>
+%s" changed="20200208T040432Z" class="TPatternRow" si="542" created="20191223T023746Z" st="2">
+          <value>. Path:
+{0:s}</value>
+          <prev>. Path:
+{0}</prev>
+        </row>
+        <row id="Parent given is not a parent of '%s'" changed="20200208T040432Z" class="TPatternRow" si="432" created="20170517T173858Z" st="2">
+          <value>Parent given is not a parent of '{0:s}'</value>
+          <prev>Parent given is not a parent of '{0}'</prev>
+        </row>
         <row id="Cannot hide an MDI Child Form" si="433" created="20170517T173858Z">Cannot hide an MDI Child Form</row>
         <row id="Cannot change Visible in OnShow or OnHide" si="434" created="20170517T173858Z">Cannot change Visible in OnShow or OnHide</row>
         <row id="Cannot make a visible window modal" si="435" created="20170517T173858Z">Cannot make a visible window modal</row>
         <row id="Scrollbar property out of range" si="436" created="20170517T173858Z">Scrollbar property out of range</row>
-        <row id="%s property out of range" class="TPatternRow" si="437" created="20170517T173858Z">{0} property out of range</row>
+        <row id="%s property out of range" changed="20200208T040432Z" class="TPatternRow" si="437" created="20170517T173858Z" st="2">
+          <value>{0:s} property out of range</value>
+          <prev>{0} property out of range</prev>
+        </row>
         <row id="Menu index out of range" si="438" created="20170517T173858Z">Menu index out of range</row>
         <row id="Menu inserted twice" si="439" created="20170517T173858Z">Menu inserted twice</row>
       </node>
       <node class="TWindowsStringNode" name="4095" resid="4095">
         <row id="Cannot change the size of a WIC Image" si="441" created="20170517T173858Z">Cannot change the size of a WIC Image</row>
         <row id="Invalid operation on TOleGraphic" si="442" created="20170517T173858Z">Invalid operation on TOleGraphic</row>
-        <row id="Unknown picture file extension (.%s)" class="TPatternRow" si="443" created="20170517T173858Z">Unknown picture file extension (.{0})</row>
+        <row id="Unknown picture file extension (.%s)" changed="20200208T040432Z" class="TPatternRow" si="443" created="20170517T173858Z" st="2">
+          <value>Unknown picture file extension (.{0:s})</value>
+          <prev>Unknown picture file extension (.{0})</prev>
+        </row>
         <row id="Unsupported clipboard format" si="444" created="20170517T173858Z">Unsupported clipboard format</row>
         <row id="Unsupported stream format" si="445" created="20170517T173858Z">Unsupported stream format</row>
         <row id="Out of system resources" si="446" created="20170517T173858Z">Out of system resources</row>
         <row id="Canvas does not allow drawing" si="447" created="20170517T173858Z">Canvas does not allow drawing</row>
-        <row id="Text format flag '%s' not supported" class="TPatternRow" si="448" created="20170517T173858Z">Text format flag '{0}' not supported</row>
+        <row id="Text format flag '%s' not supported" changed="20200208T040432Z" class="TPatternRow" si="448" created="20170517T173858Z" st="2">
+          <value>Text format flag '{0:s}' not supported</value>
+          <prev>Text format flag '{0}' not supported</prev>
+        </row>
         <row id="Invalid image size" si="449" created="20170517T173858Z">Invalid image size</row>
         <row id="Too many images" si="450" created="20170517T173858Z">Too many images</row>
         <row id="Image dimensions do not match image list dimensions" si="451" created="20170517T173858Z">Image dimensions do not match image list dimensions</row>
@@ -651,7 +907,10 @@
         <row id="Open" si="458" created="20170517T173858Z">Open</row>
         <row id="Can't write to a read-only resource stream" si="459" created="20170517T173858Z">Can't write to a read-only resource stream</row>
         <row id="WriteObject called twice for the same instance" si="460" created="20170517T173858Z">WriteObject called twice for the same instance</row>
-        <row id="Resource %s is of incorrect class" class="TPatternRow" si="461" created="20170517T173858Z">Resource {0} is of incorrect class</row>
+        <row id="Resource %s is of incorrect class" changed="20200208T040432Z" class="TPatternRow" si="461" created="20170517T173858Z" st="2">
+          <value>Resource {0:s} is of incorrect class</value>
+          <prev>Resource {0} is of incorrect class</prev>
+        </row>
         <row id="Tab index out of bounds" si="462" created="20170517T173858Z">Tab index out of bounds</row>
         <row id="Tab position incompatible with current tab style" si="463" created="20170517T173858Z">Tab position incompatible with current tab style</row>
         <row id="Tab style incompatible with current tab position" si="464" created="20170517T173858Z">Tab style incompatible with current tab position</row>
@@ -688,4 +947,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="73224067-5B9C-447C-967C-B0A7073999A9" created="20180223T205738Z" lastmodified="20191223T025518Z" version="1.0.632" stringid="994">
+<project id="73224067-5B9C-447C-967C-B0A7073999A9" created="20180223T205738Z" lastmodified="20200209T162236Z" version="1.0.691" stringid="1128">
   <lang id="fi"/>
   <lang id="de"/>
   <node class="TDelphiSource" name="JsonResource\Win32\Debug\JsonResource.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\JsonResource\Win32\Debug\JsonResource.exe" original="en-US" platforms="[ptWin32]">
@@ -340,19 +340,67 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" created="20180224T002056Z" needsconversion="0">
-      <node class="TWindowsStringNode" name="Data.DBConsts" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String" created="20180224T002056Z">
+      <node class="TWindowsStringNode" name="Data" created="20200208T050557Z">
+        <row id="DBConsts_SBcdOverflow" si="1014">BCD overflow</row>
+        <row id="DBConsts_SInvalidBcdValue" changed="20200209T162207Z" class="TPatternRow" si="1015">{0} is not a valid BCD value</row>
+        <row id="DBConsts_SCouldNotParseTimeStamp" si="1016">Could not parse SQL TimeStamp string</row>
+        <row id="DBConsts_SInvalidSqlTimeStamp" si="1017">Invalid SQL date/time values</row>
+        <row id="DBConsts_SDataSetOpen" si="1019">Cannot perform this operation on an open dataset</row>
+        <row id="DBConsts_SNotEditing" si="1020">Dataset not in edit or insert mode</row>
+        <row id="DBConsts_SDataSetClosed" si="1021">Cannot perform this operation on a closed dataset</row>
+        <row id="DBConsts_SDataSetEmpty" si="1022">Cannot perform this operation on an empty dataset</row>
+        <row id="DBConsts_SDataSetReadOnly" si="1023">Cannot modify a read-only dataset</row>
+        <row id="DBConsts_SNestedDataSetClass" changed="20200209T162207Z" class="TPatternRow" si="1024">Nested dataset must inherit from {0}</row>
+        <row id="DBConsts_STextFalse" si="1025">False</row>
+        <row id="DBConsts_STextTrue" si="1026">True</row>
+        <row id="DBConsts_SParameterNotFound" changed="20200209T162207Z" class="TPatternRow" si="1027">Parameter '{0}' not found</row>
+        <row id="DBConsts_SInvalidVersion" si="1028">Unable to load bind parameters</row>
+        <row id="DBConsts_SBadFieldType" changed="20200209T162207Z" class="TPatternRow" si="1029">Field '{0}' is of an unsupported type</row>
+        <row id="DBConsts_SProviderSQLNotSupported" si="1030">SQL not supported</row>
+        <row id="DBConsts_SProviderExecuteNotSupported" si="1031">Execute not supported</row>
+        <row id="DBConsts_SDataSetUnidirectional" si="1032">Operation not allowed on a unidirectional dataset</row>
+        <row id="DBConsts_SUnassignedVar" si="1033">Unassigned variant value</row>
+        <row id="DBConsts_SRecordNotFound" si="1034">Record not found</row>
+        <row id="DBConsts_SInvalidBoolValue" changed="20200209T162207Z" class="TPatternRow" si="1035">'{0}' is not a valid boolean value for field '{1}'</row>
+        <row id="DBConsts_SInvalidFloatValue" changed="20200209T162207Z" class="TPatternRow" si="1036">'{0}' is not a valid floating point value for field '{1}'</row>
+        <row id="DBConsts_SFieldTypeMismatch" changed="20200209T162207Z" class="TPatternRow" si="1037">Type mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SFieldSizeMismatch" changed="20200209T162207Z" class="TPatternRow" si="1038">Size mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SInvalidVarByteArray" changed="20200209T162207Z" class="TPatternRow" si="1039">Invalid variant type or size for field '{0}'</row>
+        <row id="DBConsts_SFieldOutOfRange" changed="20200209T162207Z" class="TPatternRow" si="1040">Value of field '{0}' is out of range</row>
+        <row id="DBConsts_SFieldRequired" changed="20200209T162207Z" class="TPatternRow" si="1041">Field '{0}' must have a value</row>
+        <row id="DBConsts_SDataSetMissing" changed="20200209T162207Z" class="TPatternRow" si="1042">Field '{0}' has no dataset</row>
+        <row id="DBConsts_SInvalidCalcType" changed="20200209T162207Z" class="TPatternRow" si="1043">Field '{0}' cannot be a calculated or lookup field</row>
+        <row id="DBConsts_SDuplicateIndexName" changed="20200209T162207Z" class="TPatternRow" si="1044">Duplicate index name '{0}'</row>
+        <row id="DBConsts_SNoIndexForFields" changed="20200209T162207Z" class="TPatternRow" si="1045">No index for fields '{0}'</row>
+        <row id="DBConsts_SIndexNotFound" changed="20200209T162207Z" class="TPatternRow" si="1046">Index '{0}' not found</row>
+        <row id="DBConsts_SDBDuplicateName" changed="20200209T162207Z" class="TPatternRow" si="1047">Duplicate name '{0}' in {1}</row>
+        <row id="DBConsts_SCircularDataLink" si="1048">Circular datalinks are not allowed</row>
+        <row id="DBConsts_SLookupInfoError" changed="20200209T162207Z" class="TPatternRow" si="1049">Lookup information for field '{0}' is incomplete</row>
+        <row id="DBConsts_SDataSourceChange" si="1050">DataSource cannot be changed</row>
+        <row id="DBConsts_SInvalidFieldSize" si="1051">Invalid field size</row>
+        <row id="DBConsts_SInvalidFieldKind" si="1052">Invalid FieldKind</row>
+        <row id="DBConsts_SUnknownFieldType" changed="20200209T162207Z" class="TPatternRow" si="1053">Field '{0}' is of an unknown type</row>
+        <row id="DBConsts_SFieldNameMissing" si="1054">Field name missing</row>
+        <row id="DBConsts_SDuplicateFieldName" changed="20200209T162207Z" class="TPatternRow" si="1055">Duplicate field name '{0}'</row>
+        <row id="DBConsts_SFieldNotFound" changed="20200209T162207Z" class="TPatternRow" si="1056">Field '{0}' not found</row>
+        <row id="DBConsts_SFieldAccessError" changed="20200209T162207Z" class="TPatternRow" si="1057">Cannot access field '{0}' as type {1}</row>
+        <row id="DBConsts_SFieldValueError" changed="20200209T162207Z" class="TPatternRow" si="1058">Invalid value for field '{0}'</row>
+        <row id="DBConsts_SFieldRangeError" changed="20200209T162207Z" class="TPatternRow" si="1059">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SBcdFieldRangeError" changed="20200209T162207Z" class="TPatternRow" si="1060">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SInvalidIntegerValue" changed="20200209T162207Z" class="TPatternRow" si="1061">'{0}' is not a valid integer value for field '{1}'</row>
+      </node>
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="SportFrm">
-        <row id="SOrigin" class="TPatternRow" si="11">
+        <row id="SOrigin" changed="20200209T162207Z" class="TPatternRow" si="11">
           <value>Origin: {0}</value>
-          <lang id="fi" or="3" rw="0" time="20180224T002140Z">Origin: {0}</lang>
+          <lang id="fi" st="4" or="3" rw="0" time="20200209T162219Z">Lähdemaa: {0}</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: {0}</lang>
         </row>
-        <row id="SPlayers" class="TPatternRow" si="12">
+        <row id="SPlayers" changed="20200209T162207Z" class="TPatternRow" si="12">
           <value>{0} players</value>
-          <lang id="fi" or="3" rw="0" time="20180224T002140Z">{0} pelaajaa</lang>
+          <lang id="fi" st="4" or="3" rw="0" time="20200209T162227Z">{0} pelaajaa</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">{0} Spieler</lang>
         </row>
         <row id="SHasGoalie" si="13">
@@ -367,13 +415,29 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.JSONConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
-      <node class="TWindowsStringNode" name="Xml.XMLConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Xml" created="20200208T050557Z">
+        <row id="XMLConst_SNoRefresh" si="995">Refresh is only supported if the FileName or XML properties are set</row>
+        <row id="XMLConst_SMissingFileName" si="996">FileName cannot be blank</row>
+        <row id="XMLConst_SLine" si="997">Line</row>
+        <row id="XMLConst_SNoMatchingDOMVendor" changed="20200209T162207Z" class="TPatternRow" si="998">No matching DOM Vendor: &quot;{0}&quot;</row>
+        <row id="XMLConst_SNoDOMNodeEx" si="999">Selected DOM Vendor does not support this property or method</row>
+        <row id="XMLConst_SDOMNotSupported" changed="20200209T162207Z" class="TPatternRow" si="1000">Property or Method &quot;{0}&quot; is not supported by DOM Vendor &quot;{1}&quot;</row>
+        <row id="XMLConst_SNoDOMVendorSelected" si="1001">No selected DOM Vendor</row>
+        <row id="XMLConst_SNodeExpected" si="1002">Node cannot be null</row>
+        <row id="XMLConst_SMSDOMNotInstalled" si="1003">Microsoft MSXML is not installed</row>
+        <row id="XMLConst_SNotActive" si="1004">No active document</row>
+        <row id="XMLConst_SNodeNotFound" changed="20200209T162207Z" class="TPatternRow" si="1005">Node &quot;{0}&quot; not found</row>
+        <row id="XMLConst_SMissingNode" si="1006">IDOMNode required</row>
+        <row id="XMLConst_SNoAttributes" si="1007">Attributes are not supported on this node type</row>
+        <row id="XMLConst_SInvalidNodeType" si="1008">Invalid node type</row>
+        <row id="XMLConst_SMismatchedRegItems" si="1009">Mismatched paramaters to RegisterChildNodes</row>
+        <row id="XMLConst_SNotSingleTextNode" changed="20200209T162207Z" class="TPatternRow" si="1010">Element &quot;{0}&quot; does not contain a single text node</row>
+        <row id="XMLConst_SNoDOMParseOptions" si="1011">DOM Implementation does not support IDOMParseOptions</row>
+        <row id="XMLConst_SMissingItemTag" si="1012">ItemTag property is not initialized</row>
+        <row id="XMLConst_SNodeReadOnly" si="1013">Node is readonly</row>
+        <row id="XMLConst_SDuplicateRegistration" changed="20200209T162207Z" class="TPatternRow" si="1018">&quot;{0}&quot; DOMImplementation already registered</row>
+      </node>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
@@ -397,7 +461,7 @@
         <row id="Top">347</row>
         <row id="Caption" si="15">
           <value>Select Language</value>
-          <lang id="fi" or="5" rw="0" time="20180223T210025Z">Valitse kieli</lang>
+          <lang id="fi" time="20180223T210025Z">Valitse kieli</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Sprache auswählen</lang>
         </row>
         <row id="ClientHeight">193</row>
@@ -415,7 +479,7 @@
           <row id="Height">25</row>
           <row id="Caption" si="16">
             <value>OK</value>
-            <lang id="fi" or="5" rw="0" time="20180223T210025Z">OK</lang>
+            <lang id="fi" time="20180223T210025Z">OK</lang>
             <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Okay</lang>
           </row>
         </item>
@@ -426,7 +490,7 @@
           <row id="Height">25</row>
           <row id="Caption" si="17">
             <value>Cancel</value>
-            <lang id="fi" or="5" rw="0" time="20180223T210025Z">Peru</lang>
+            <lang id="fi" time="20180223T210025Z">Peru</lang>
             <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Abbrechen</lang>
           </row>
         </item>
@@ -449,7 +513,7 @@
         <row id="Top">0</row>
         <row id="Caption" si="18">
           <value>Sports</value>
-          <lang id="fi" or="5" rw="0" time="20180223T210025Z">Urheilulajit</lang>
+          <lang id="fi" time="20180223T210025Z">Urheilulajit</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Sport</lang>
         </row>
         <row id="ClientHeight">153</row>
@@ -521,7 +585,7 @@
           <row id="Height">25</row>
           <row id="Caption" si="24">
             <value>&amp;Language...</value>
-            <lang id="fi" or="5" rw="0" time="20180223T210025Z">&amp;Kieli...</lang>
+            <lang id="fi" time="20180223T210025Z">&amp;Kieli...</lang>
             <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">&amp; Sprache...</lang>
           </row>
         </item>
@@ -642,95 +706,159 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="1" resid="1" langid="1035">
         <row id="0" si="25">
           <value>Soccer</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Jalkapallo</lang>
+          <lang id="fi" time="20180223T205853Z">Jalkapallo</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Fußball</lang>
         </row>
         <row id="1" si="26" excluded="1">10</row>
         <row id="2" si="27" excluded="1">1</row>
         <row id="3" si="28">
           <value>England</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Englanti</lang>
+          <lang id="fi" time="20180223T205853Z">Englanti</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">England</lang>
         </row>
         <row id="4" si="29">
           <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Jalkapallo on kaksi joukkuetta yhdestätoista pelaajat pallomainen pallo.</lang>
+          <lang id="fi" time="20180223T205853Z">Jalkapallo on kaksi joukkuetta yhdestätoista pelaajat pallomainen pallo.</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Fußball ist eine Sportart, die zwischen zwei Mannschaften von elf Spielern mit einem kugelförmigen Ball gespielt wird.</lang>
         </row>
         <row id="10" si="30">
           <value>Ice hockey</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Jääkiekko</lang>
+          <lang id="fi" time="20180223T205853Z">Jääkiekko</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Eishockey</lang>
         </row>
         <row id="11" si="31" excluded="1">5</row>
         <row id="12" si="32" excluded="1">1</row>
         <row id="13" si="33">
           <value>Canada</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Kanada</lang>
+          <lang id="fi" time="20180223T205853Z">Kanada</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Kanada</lang>
         </row>
         <row id="14" si="34">
           <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Jääkiekko on joukkuelaji, joka on ollut jäissä, jossa luistelijoita avulla tikkuja ohjata kiekon vastustajan maaliin.</lang>
+          <lang id="fi" time="20180223T205853Z">Jääkiekko on joukkuelaji, joka on ollut jäissä, jossa luistelijoita avulla tikkuja ohjata kiekon vastustajan maaliin.</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Eishockey ist ein Team Sport auf Eis gespielt, in dem Skater verwenden Stöcke, um einen Puck in das gegnerische Team Ziel zu lenken.</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="2" resid="2" langid="1035">
         <row id="20" si="35">
           <value>Basketball</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Koripallo</lang>
+          <lang id="fi" time="20180223T205853Z">Koripallo</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Basketball</lang>
         </row>
         <row id="21" si="36" excluded="1">5</row>
         <row id="22" si="37" excluded="1">0</row>
         <row id="23" si="38">
           <value>United States</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Yhdysvallat</lang>
+          <lang id="fi" time="20180223T205853Z">Yhdysvallat</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">USA</lang>
         </row>
         <row id="24" si="39">
           <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205853Z">Koripallo on joukkuelaji, jossa kaksi joukkuetta viisi pelaajaa yrittää pisteitä heittämällä pallon läpi alkuun koripallo vanne taas seuraavat säännöt.</lang>
+          <lang id="fi" time="20180223T205853Z">Koripallo on joukkuelaji, jossa kaksi joukkuetta viisi pelaajaa yrittää pisteitä heittämällä pallon läpi alkuun koripallo vanne taas seuraavat säännöt.</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Basketball ist ein Team Sport, in dem zwei Teams von fünf Spielern versuchen, Punkte zu sammeln, indem Sie einen Ball durch die Oberseite eines Basketball Korbs werfen, während Sie einem Regelwerk folgen.</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Data.DBConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="Data" created="20200208T050557Z">
+        <row id="DBConsts_SProviderExecuteNotSupported" si="1082">Execute not supported</row>
+        <row id="DBConsts_SDataSetUnidirectional" si="1083">Operation not allowed on a unidirectional dataset</row>
+        <row id="DBConsts_SUnassignedVar" si="1084">Unassigned variant value</row>
+        <row id="DBConsts_SRecordNotFound" si="1085">Record not found</row>
+        <row id="DBConsts_SBcdOverflow" si="1086">BCD overflow</row>
+        <row id="DBConsts_SInvalidBcdValue" changed="20200209T162207Z" class="TPatternRow" si="1087">{0} is not a valid BCD value</row>
+        <row id="DBConsts_SCouldNotParseTimeStamp" si="1088">Could not parse SQL TimeStamp string</row>
+        <row id="DBConsts_SInvalidSqlTimeStamp" si="1089">Invalid SQL date/time values</row>
+        <row id="DBConsts_SDBDuplicateName" changed="20200209T162207Z" class="TPatternRow" si="1090">Duplicate name '{0}' in {1}</row>
+        <row id="DBConsts_SCircularDataLink" si="1091">Circular datalinks are not allowed</row>
+        <row id="DBConsts_SLookupInfoError" changed="20200209T162207Z" class="TPatternRow" si="1092">Lookup information for field '{0}' is incomplete</row>
+        <row id="DBConsts_SDataSourceChange" si="1093">DataSource cannot be changed</row>
+        <row id="DBConsts_SDataSetOpen" si="1094">Cannot perform this operation on an open dataset</row>
+        <row id="DBConsts_SNotEditing" si="1095">Dataset not in edit or insert mode</row>
+        <row id="DBConsts_SDataSetClosed" si="1096">Cannot perform this operation on a closed dataset</row>
+        <row id="DBConsts_SDataSetEmpty" si="1097">Cannot perform this operation on an empty dataset</row>
+        <row id="DBConsts_SDataSetReadOnly" si="1098">Cannot modify a read-only dataset</row>
+        <row id="DBConsts_SNestedDataSetClass" changed="20200209T162207Z" class="TPatternRow" si="1099">Nested dataset must inherit from {0}</row>
+        <row id="DBConsts_STextFalse" si="1100">False</row>
+        <row id="DBConsts_STextTrue" si="1101">True</row>
+        <row id="DBConsts_SParameterNotFound" changed="20200209T162207Z" class="TPatternRow" si="1102">Parameter '{0}' not found</row>
+        <row id="DBConsts_SInvalidVersion" si="1103">Unable to load bind parameters</row>
+        <row id="DBConsts_SBadFieldType" changed="20200209T162207Z" class="TPatternRow" si="1104">Field '{0}' is of an unsupported type</row>
+        <row id="DBConsts_SProviderSQLNotSupported" si="1105">SQL not supported</row>
+        <row id="DBConsts_SFieldValueError" changed="20200209T162207Z" class="TPatternRow" si="1106">Invalid value for field '{0}'</row>
+        <row id="DBConsts_SFieldRangeError" changed="20200209T162207Z" class="TPatternRow" si="1107">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SBcdFieldRangeError" changed="20200209T162207Z" class="TPatternRow" si="1108">{0} is not a valid value for field '{1}'. The allowed range is {2} to {3}</row>
+        <row id="DBConsts_SInvalidIntegerValue" changed="20200209T162207Z" class="TPatternRow" si="1109">'{0}' is not a valid integer value for field '{1}'</row>
+        <row id="DBConsts_SInvalidBoolValue" changed="20200209T162207Z" class="TPatternRow" si="1110">'{0}' is not a valid boolean value for field '{1}'</row>
+        <row id="DBConsts_SInvalidFloatValue" changed="20200209T162207Z" class="TPatternRow" si="1111">'{0}' is not a valid floating point value for field '{1}'</row>
+        <row id="DBConsts_SFieldTypeMismatch" changed="20200209T162207Z" class="TPatternRow" si="1112">Type mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SFieldSizeMismatch" changed="20200209T162207Z" class="TPatternRow" si="1113">Size mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="DBConsts_SInvalidVarByteArray" changed="20200209T162207Z" class="TPatternRow" si="1114">Invalid variant type or size for field '{0}'</row>
+        <row id="DBConsts_SFieldOutOfRange" changed="20200209T162207Z" class="TPatternRow" si="1115">Value of field '{0}' is out of range</row>
+        <row id="DBConsts_SFieldRequired" changed="20200209T162207Z" class="TPatternRow" si="1116">Field '{0}' must have a value</row>
+        <row id="DBConsts_SDataSetMissing" changed="20200209T162207Z" class="TPatternRow" si="1117">Field '{0}' has no dataset</row>
+        <row id="DBConsts_SInvalidCalcType" changed="20200209T162207Z" class="TPatternRow" si="1118">Field '{0}' cannot be a calculated or lookup field</row>
+        <row id="DBConsts_SDuplicateIndexName" changed="20200209T162207Z" class="TPatternRow" si="1119">Duplicate index name '{0}'</row>
+        <row id="DBConsts_SNoIndexForFields" changed="20200209T162207Z" class="TPatternRow" si="1120">No index for fields '{0}'</row>
+        <row id="DBConsts_SIndexNotFound" changed="20200209T162207Z" class="TPatternRow" si="1121">Index '{0}' not found</row>
+        <row id="DBConsts_SInvalidFieldSize" si="1122">Invalid field size</row>
+        <row id="DBConsts_SInvalidFieldKind" si="1123">Invalid FieldKind</row>
+        <row id="DBConsts_SUnknownFieldType" changed="20200209T162207Z" class="TPatternRow" si="1124">Field '{0}' is of an unknown type</row>
+        <row id="DBConsts_SFieldNameMissing" si="1125">Field name missing</row>
+        <row id="DBConsts_SDuplicateFieldName" changed="20200209T162207Z" class="TPatternRow" si="1126">Duplicate field name '{0}'</row>
+        <row id="DBConsts_SFieldNotFound" changed="20200209T162207Z" class="TPatternRow" si="1127">Field '{0}' not found</row>
+        <row id="DBConsts_SFieldAccessError" changed="20200209T162207Z" class="TPatternRow" si="1128">Cannot access field '{0}' as type {1}</row>
+      </node>
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="SportFrm">
-        <row id="SOrigin" class="TPatternRow" si="40">
+        <row id="SOrigin" changed="20200209T162207Z" class="TPatternRow" si="40">
           <value>Origin: {0}</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205939Z">Origin: {0}</lang>
+          <lang id="fi" time="20200209T162218Z">Lähdemaa: {0}</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: {0}</lang>
         </row>
-        <row id="SPlayers" class="TPatternRow" si="41">
+        <row id="SPlayers" changed="20200209T162207Z" class="TPatternRow" si="41">
           <value>{0} players</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205939Z">{0} pelaajaa</lang>
+          <lang id="fi" time="20200209T162226Z">{0} pelaajaa</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">{0} Spieler</lang>
         </row>
         <row id="SHasGoalie" si="42">
           <value>Has a goalie</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205939Z">On maalivahti</lang>
+          <lang id="fi" time="20180223T205939Z">On maalivahti</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Hat einen Torwart</lang>
         </row>
         <row id="SNoGoalie" si="43">
           <value>No goalie</value>
-          <lang id="fi" or="5" rw="0" time="20180223T205939Z">Ei maalivahtia</lang>
+          <lang id="fi" time="20180223T205939Z">Ei maalivahtia</lang>
           <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Kein Torwart</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.JSONConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
-      <node class="TWindowsStringNode" name="Xml.XMLConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Xml" created="20200208T050557Z">
+        <row id="XMLConst_SNotSingleTextNode" changed="20200209T162207Z" class="TPatternRow" si="1062">Element &quot;{0}&quot; does not contain a single text node</row>
+        <row id="XMLConst_SNoDOMParseOptions" si="1063">DOM Implementation does not support IDOMParseOptions</row>
+        <row id="XMLConst_SMissingItemTag" si="1064">ItemTag property is not initialized</row>
+        <row id="XMLConst_SNodeReadOnly" si="1065">Node is readonly</row>
+        <row id="XMLConst_SNoRefresh" si="1066">Refresh is only supported if the FileName or XML properties are set</row>
+        <row id="XMLConst_SMissingFileName" si="1067">FileName cannot be blank</row>
+        <row id="XMLConst_SLine" si="1068">Line</row>
+        <row id="XMLConst_SDuplicateRegistration" changed="20200209T162207Z" class="TPatternRow" si="1069">&quot;{0}&quot; DOMImplementation already registered</row>
+        <row id="XMLConst_SNoMatchingDOMVendor" changed="20200209T162207Z" class="TPatternRow" si="1070">No matching DOM Vendor: &quot;{0}&quot;</row>
+        <row id="XMLConst_SNoDOMNodeEx" si="1071">Selected DOM Vendor does not support this property or method</row>
+        <row id="XMLConst_SDOMNotSupported" changed="20200209T162207Z" class="TPatternRow" si="1072">Property or Method &quot;{0}&quot; is not supported by DOM Vendor &quot;{1}&quot;</row>
+        <row id="XMLConst_SNoDOMVendorSelected" si="1073">No selected DOM Vendor</row>
+        <row id="XMLConst_SNodeExpected" si="1074">Node cannot be null</row>
+        <row id="XMLConst_SMSDOMNotInstalled" si="1075">Microsoft MSXML is not installed</row>
+        <row id="XMLConst_SNotActive" si="1076">No active document</row>
+        <row id="XMLConst_SNodeNotFound" changed="20200209T162207Z" class="TPatternRow" si="1077">Node &quot;{0}&quot; not found</row>
+        <row id="XMLConst_SMissingNode" si="1078">IDOMNode required</row>
+        <row id="XMLConst_SNoAttributes" si="1079">Attributes are not supported on this node type</row>
+        <row id="XMLConst_SInvalidNodeType" si="1080">Invalid node type</row>
+        <row id="XMLConst_SMismatchedRegItems" si="1081">Mismatched paramaters to RegisterChildNodes</row>
+      </node>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -759,4 +887,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

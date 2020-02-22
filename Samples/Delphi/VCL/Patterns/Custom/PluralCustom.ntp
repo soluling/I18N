@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0187ED7C-631F-490C-8B5A-0569506EA542" created="20140612T064644Z" lastmodified="20191223T024648Z" version="1.0.632" stringid="415">
+<project id="0187ED7C-631F-490C-8B5A-0569506EA542" created="20140612T064644Z" lastmodified="20200209T161345Z" version="1.0.691" stringid="415">
   <lang id="fi"/>
   <lang id="de"/>
   <node class="TDelphiSource" name="Win32\Release\PluralCustom.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Custom\Win32\Release\PluralCustom.exe" original="en" platforms="[ptWin32]">
@@ -471,49 +471,45 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
-      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SZeroMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="43" created="20170422T164650Z">
+        <row id="SZeroMessagePlural" changed="20200209T161310Z" class="TPatternRow" si="43" created="20170422T164650Z">
           <value>{0} files</value>
-          <prev>%d files</prev>
           <pattern plural="pfZero">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
-          <lang id="fi" or="3" time="20170723T034112Z">
+          <lang id="fi" time="20200209T161326Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfZero">Ei tiedostoa</pattern>
             <pattern plural="pfOne">Yksi tiedosto</pattern>
           </lang>
         </row>
-        <row id="STwoMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="44" created="20170422T164650Z">
+        <row id="STwoMessagePlural" changed="20200209T161310Z" class="TPatternRow" si="44" created="20170422T164650Z">
           <value>{0} files</value>
-          <prev>%d files</prev>
           <pattern plural="pfZero">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
           <pattern plural="pfTwo">Two files</pattern>
-          <lang id="fi" or="3" time="20170723T034112Z">
+          <lang id="fi" time="20200209T161327Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfZero">Ei tiedostoa</pattern>
             <pattern plural="pfOne">Yksi tiedosto</pattern>
             <pattern plural="pfTwo">Kaksi tiedostoa</pattern>
           </lang>
         </row>
-        <row id="S2MessagePlural" changed="20180223T020706Z" class="TPatternRow" si="45" created="20170723T034044Z">
+        <row id="S2MessagePlural" changed="20200209T161310Z" class="TPatternRow" si="45" created="20170723T034044Z">
           <value>{0} files</value>
-          <prev>{0} files</prev>
           <pattern operator="okEqual" operand="0">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
           <pattern operator="okEqual" operand="2">Two files</pattern>
-          <lang id="fi" time="20170723T034237Z">
+          <lang id="fi" time="20200209T161327Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfOther">Ei tiedostoja</pattern>
             <pattern plural="pfOne">Yksi tiedosto</pattern>
             <pattern plural="pfOther">Kaksi tiedostoa</pattern>
+            <pattern operator="okEqual" operand="0"></pattern>
+            <pattern operator="okEqual" operand="2"></pattern>
           </lang>
         </row>
         <row id="STextMessagePlural" class="TPatternRow" si="46" created="20180523T155849Z">
@@ -524,7 +520,7 @@
           <pattern operator="okLess" operand="6">Few files</pattern>
           <pattern operator="okLessOrEqual" operand="10">Several files</pattern>
           <pattern operator="okAround" operand="12">A dozen files</pattern>
-          <lang id="fi" rw="0" time="20180523T160123Z">
+          <lang id="fi" time="20180523T160123Z">
             <value>Paljon tiedostoja</value>
             <pattern operator="okEqual" operand="0">Ei tiedostoa</pattern>
             <pattern operator="okEqual" operand="1">Yksi tiedosto</pattern>
@@ -538,18 +534,16 @@
           <value>en</value>
           <lang id="fi" time="20170422T165040Z">fi</lang>
         </row>
-        <row id="SMessagePlural" changed="20170723T034044Z" class="TPatternRow" si="48" created="20170422T164650Z">
+        <row id="SMessagePlural" changed="20200209T161310Z" class="TPatternRow" si="48" created="20170422T164650Z">
           <value>{0} files</value>
-          <prev>%d files</prev>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170723T034112Z">
+          <lang id="fi" time="20200209T161336Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
   </node>
   <excludedoriginals>
@@ -573,4 +567,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>
