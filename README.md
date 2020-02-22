@@ -207,8 +207,8 @@ With little effort I can make CldrToCode.exe to create Java, TypeScript and Pyth
 
 If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports ASP.NET, .NET, Angular, React, Delphi, Python, Java, and many more.
 
+Soluling supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
+
 ![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
 You can download Soluling from [here](https://www.soluling.com/Download).
-
-Also, Soluling supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
