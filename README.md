@@ -149,7 +149,7 @@ Currently, we have samples for Windows Forms and WPF. We will add ASP.NET and AS
 npm install @soluling/angular
 ```
 
-To learn more about this API read its documentation.
+To learn more about this API read its [documentation](Library/Angular/README.md).
 
 ## Delphi
 
@@ -177,7 +177,7 @@ end;
 
 See `Samples\Delphi\FMX\Patterns\Simple` sample first.
 
-You can use .ntres resources also in VCL applications, but it is recommended to use the standard VCL localization method with resource strings and  resource DLLs or localized EXE files.
+You can use `.ntres` resources also in VCL applications, but it is recommended to use the standard VCL localization method with resource strings and  resource DLLs or localized EXE files.
 
 #### C++Builder
 
@@ -185,9 +185,9 @@ C++Builder is not officially supported. All these codes should work with C++Buil
 
 ## Other programming languages
 
-We chose .NET and Delphi as the first platform for a few reasons. First is that I love both Delphi and C#. Secondly, both Delphi and .NET lack support for several I18N APIs, such as plurals and genders. The third is that both Delphi and .NET would also benefit from runtime language switch. Fourth is that Delphi is used to create mobile applications where the size matters. The fifth is that I believe that C# + .NET Core will have a bright future.
+We chose .NET, Angular and Delphi as the first platform for a few reasons. First is that we love Angular, C# and Delphi. Secondly, both Delphi and .NET lack support for several I18N APIs, such as plurals and genders. The third is that both Delphi and .NET would also benefit from runtime language switch. Fourth is that Delphi is used to create mobile applications where the size matters. The fifth is that I believe that C# + .NET Core will have a bright future.
 
-We are considering to implement similar classes for TypeScript (JavaScript comes in the process). However, TypeScript is mostly used with Angular that already has great support plurals and genders. I will probably implement only abbreviated numbers API for TypeScript.
+We are considering to implement similar classes for TypeScript (JavaScript comes in the process). However, TypeScript is mostly used with Angular that already has great support plurals and genders. We implemented the runtime translation loading for Angular. We will probably implement only abbreviated numbers API for TypeScript.
 
 We can implement similar libraries for Java. There is already ICU implementation for Java, so if you use Java on the server-side, you can use it. If you use Java on the client-side, it will most likely be Android, and it supports plurals but not genders. We are still considering Java support. Let us know if it would be useful. 
 
@@ -209,4 +209,6 @@ If you plan to localize your application using multiple patterns strings, you be
 
 ![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
-Also, it supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
+You can download Soluling from [here](https://www.soluling.com/Download).
+
+Also, Soluling supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
