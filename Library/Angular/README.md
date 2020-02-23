@@ -1,8 +1,8 @@
 # Runtime Translation Loading for Angular
 
-The standard Angular 9 internationalization is designed to produce one compiled application per language. This is quite restrictive because you have to compile the language for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
+The standard Angular 9 internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile the language for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
 
-Start by installing the library.
+Start by installing the Soluling library.
 
 ```bash
 npm install @soluling/angular
