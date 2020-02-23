@@ -87,7 +87,7 @@ export class AppModule { }
 
 We use `LocaleService` service. It is a service that gives us the id of the loaded resource.
 
-The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF or XMB). Even Soluling can localize both XLIFF 1.2, XLIFF 2.0 and XMB; you need to use XLIFF 2.0 when using the runtime localization. Add the XLIFF 2.0 created by the extract tool to a Soluling project. Then select the `.xlf` in the project tree and choose Options. Select Write options sheet. Check either *Compact runtime file*, or *Both files*.
+The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF or XMB). Even [Soluling](https://www.soluling.com/) can localize both XLIFF 1.2, XLIFF 2.0 and XMB; you need to use XLIFF 2.0 when using the runtime localization. Add the XLIFF 2.0 created by the extract tool to a Soluling project. Then select the `.xlf` in the project tree and choose Options. Select Write options sheet. Check either *Compact runtime file*, or *Both files*.
 
 ![Runtime](Runtime.png)
 
@@ -98,6 +98,8 @@ ng server -o
 ```
 
 If you have the resource file matching your browser's language, the application appears in that language. If not, change the language of the browser and click refresh to see the application in the selected language.
+
+You can download Soluling from [here](https://www.soluling.com/Download).
 
 **Note!** The extract tool of Angular 9 does not extract source code strings but only strings from templates. An improved extract tool will most likely arrive with Angular 9.1.
 
