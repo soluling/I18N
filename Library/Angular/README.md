@@ -87,14 +87,14 @@ export class AppModule { }
 
 We use `LocaleService` service. It is a service that gives us the id of the loaded resource.
 
-The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF or XMB). Even [Soluling](https://www.soluling.com/) can localize both XLIFF 1.2, XLIFF 2.0 and XMB; you need to use XLIFF 2.0 when using the runtime localization. Add the XLIFF 2.0 created by the extract tool to a Soluling project. Then select the `.xlf` in the project tree and choose Options. Select Write options sheet. Check either *Compact runtime file*, or *Both files*.
+The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF or XMB). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 and XMB. However you need to use XLIFF 2.0 when using the runtime localization. Add the XLIFF 2.0 created by the extract tool to a [Soluling project](https://www.soluling.com/Help/Angular/Index.htm). Then select the `.xlf` in the project tree and choose Options. Select Write options sheet. Check either *Compact runtime file*, or *Both files*.
 
 ![Runtime](Runtime.png)
 
 By default Soluling creates the runtime files into assets\i18n directory that is the directory you want to have them. Run the application.
 
 ```bash
-ng server -o
+ng serve -o
 ```
 
 If you have the resource file matching your browser's language, the application appears in that language. If not, change the language of the browser and click refresh to see the application in the selected language.
