@@ -1,18 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D8CFE810-A73A-4811-A488-B1BE864CD6EE" created="20181023T151323Z" lastmodified="20181207T001351Z" version="1.0.272">
+<project id="D8CFE810-A73A-4811-A488-B1BE864CD6EE" created="20181023T151323Z" lastmodified="20200316T192829Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="BiDiArabic.csproj" fullpath="D:\NT\Deploy\Samples\WPF\BiDi\BiDiArabic\BiDiArabic.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
-    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+    <netproperties version="net30" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192828Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkJpRGlBcmFiaWMuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1h
+        cy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDov
+        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRv
+        dy54YW1sIj4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJj
+        ZXM+DQo8L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
+      <row id="Title" si="1">
         <value>Sample</value>
-        <lang id="fi" st="3" or="4" rw="0" time="20181023T151323Z">Esimerkki</lang>
+        <lang id="fi" st="4" or="4" rw="0" time="20181023T151323Z">Esimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
+        <item name="CheckBox[0]" type="CheckBox" st="4">
+          <row id="Content" si="4" st="4">_Save</row>
+        </item>
         <item name="label" type="Label">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>_Value:</value>
-            <lang id="fi" st="3" rw="0" time="20181023T151335Z">_Arvo:</lang>
+            <lang id="fi" st="4" rw="0" time="20181023T151335Z">_Arvo:</lang>
           </row>
         </item>
         <item name="grid" type="Grid">
@@ -22,36 +34,55 @@
           </item>
           <item name="textBox" type="TextBox"/>
           <item name="button" type="Button">
-            <row id="Content">
+            <row id="Content" si="3">
               <value>_Clear</value>
-              <lang id="fi" st="3" rw="0" time="20181023T151345Z">_Tyhjennä:</lang>
+              <lang id="fi" st="4" rw="0" time="20181023T151345Z">_Tyhjennä:</lang>
             </row>
           </item>
         </item>
-        <item name="CheckBox[0]" type="CheckBox">
-          <row id="Content">
+        <item name="checkBox" type="CheckBox" created="20200316T192828Z" st="0">
+          <row id="Content" si="5" st="0">
             <value>_Save</value>
-            <lang id="fi" st="3" rw="0" time="20181023T151348Z">_Talleta:</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20181023T151348Z">_Talleta:</lang>
           </row>
         </item>
       </item>
       <data>
-        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iQmlEaUFyYWJpYy5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWlj
-        cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
-        ZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNhbXBsZSIgDQogIFNpemVUb0NvbnRlbnQ9IldpZHRoQW5kSGVpZ2h0
-        Ig0KICBNaW5XaWR0aD0iNTAwIg0KICBGbG93RGlyZWN0aW9uPSJSaWdodFRvTGVmdCI+DQoNCiAgPFN0YWNrUGFuZWwgeDpOYW1l
-        PSJwYW5lbCI+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwiIE1hcmdpbj0iNSw1LDUsMCIgVGFyZ2V0PSJ7QmluZGluZyBFbGVt
-        ZW50TmFtZT10ZXh0Qm94fSI+X1ZhbHVlOjwvTGFiZWw+DQoNCiAgICA8R3JpZCB4Ok5hbWU9ImdyaWQiPg0KICAgICAgPEdyaWQu
-        Q29sdW1uRGVmaW5pdGlvbnM+DQogICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIFdpZHRoPSI0KiIgLz4NCiAgICAgICAgPENvbHVt
-        bkRlZmluaXRpb24gLz4NCiAgICAgIDwvR3JpZC5Db2x1bW5EZWZpbml0aW9ucz4NCg0KICAgICAgPFRleHRCb3ggeDpOYW1lPSJ0
-        ZXh0Qm94IiBHcmlkLkNvbHVtbj0iMCIgTWFyZ2luPSI1LDAsNSwwIiAvPg0KICAgICAgPEJ1dHRvbiB4Ok5hbWU9ImJ1dHRvbiIg
-        R3JpZC5Db2x1bW49IjEiIE1hcmdpbj0iNSwwLDUsMCIgQ2xpY2s9ImJ1dHRvbl9DbGljayI+X0NsZWFyPC9CdXR0b24+DQogICAg
-        PC9HcmlkPg0KDQogICAgPENoZWNrQm94IE1hcmdpbj0iNSI+X1NhdmU8L0NoZWNrQm94Pg0KICA8L1N0YWNrUGFuZWw+DQo8L1dp
-        bmRvdz4NCg==
+        77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IkJpRGlBcmFiaWMuTWFpbldpbmRvdyINCiAgeG1s
+        bnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0i
+        aHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJTYW1wbGUiIA0KICBTaXplVG9D
+        b250ZW50PSJXaWR0aEFuZEhlaWdodCINCiAgTWluV2lkdGg9IjUwMCINCiAgRmxvd0RpcmVjdGlvbj0iUmlnaHRUb0xlZnQiPg0K
+        DQogIDxTdGFja1BhbmVsIHg6VWlkPSJwYW5lbCI+DQogICAgPExhYmVsIHg6VWlkPSJsYWJlbCIgTWFyZ2luPSI1LDUsNSwwIiBU
+        YXJnZXQ9IntCaW5kaW5nIEVsZW1lbnROYW1lPXRleHRCb3h9Ij5fVmFsdWU6PC9MYWJlbD4NCg0KICAgIDxHcmlkIHg6VWlkPSJn
+        cmlkIj4NCiAgICAgIDxHcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KICAgICAgICA8Q29sdW1uRGVmaW5pdGlvbiBXaWR0aD0iNCoi
+        IC8+DQogICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIC8+DQogICAgICA8L0dyaWQuQ29sdW1uRGVmaW5pdGlvbnM+DQoNCiAgICAg
+        IDxUZXh0Qm94IHg6VWlkPSJ0ZXh0Qm94IiB4Ok5hbWU9InRleHRCb3giIEdyaWQuQ29sdW1uPSIwIiBNYXJnaW49IjUsMCw1LDAi
+        IC8+DQogICAgICA8QnV0dG9uIHg6VWlkPSJidXR0b24iIEdyaWQuQ29sdW1uPSIxIiBNYXJnaW49IjUsMCw1LDAiIENsaWNrPSJi
+        dXR0b25fQ2xpY2siPl9DbGVhcjwvQnV0dG9uPg0KICAgIDwvR3JpZD4NCg0KICAgIDxDaGVja0JveCB4OlVpZD0iY2hlY2tCb3gi
+        IE1hcmdpbj0iNSI+X1NhdmU8L0NoZWNrQm94Pg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx"/>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

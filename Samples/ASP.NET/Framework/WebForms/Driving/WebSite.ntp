@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20131012T052937Z" lastmodified="20150614T020132Z">
+<project id="E74865CB-3198-49B0-BA52-B262A78EF710" created="20131012T052937Z" lastmodified="20200316T235200Z" version="1.0.714" stringid="18">
   <lang id="fi"/>
   <node class="TAspNetWebSiteSource" name="Original" original="en" encoding="windows-1252" availableresources="[wrMarkup,wrScript,wrImage,wrXml]">
     <node class="TDirectoryFolder" name="Images" created="20131012T090653Z">
@@ -90,7 +90,7 @@
             EDk+N+bG3Jgbc2NuzI258U7jD0BIt+Gp4p3kAAAAK3RFWHRDb3B5cmlnaHQAQ29weXJpZ2h0IKkgMjAwOC0yMDExIElOQ09SUyBH
             bWJIEI4hTwAAAABJRU5ErkJggg==
           </value>
-          <lang id="fi" status="3" time="20150614T020051Z" filename="..\..\..\Common\64x64\car_sedan_blue.png">
+          <lang id="fi" time="20150614T020051Z" filename="..\..\..\Common\64x64\car_sedan_blue.png">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAX+ElEQVR42u2aeZScV3nmf/dbai/1vqi71d1aWq19ly3Lsmx5QRgJ
             G2H72MHsIQ4BhkCSCRMOM4FZPJxASE7GHGZIIAaCwTjYDmBbeEPYkmXt1tJS7/te+171Lffmj642jWwggD3Mouec99xbdfp01fO8
             y33fry7/v0NwBVdwBVdwBVdwBVf6gN8x7vpsl6cpdGKHIdUuVzgrz13qt6aj8aF4MjsQS2b77ZlSDzNP5/6fEuATf/OP7cLibVLa
@@ -251,7 +251,7 @@
             ekP/b2T7R//oH/2jf/SP/tE/+sc/+fgfY2UUm3tV2rkAAAArdEVYdENvcHlyaWdodABDb3B5cmlnaHQgqSAyMDA4LTIwMTEgSU5D
             T1JTIEdtYkgQjiFPAAAAAElFTkSuQmCC
           </value>
-          <lang id="fi" status="3" time="20150614T020058Z" filename="..\..\..\Common\64x64\flag_finland.png">
+          <lang id="fi" time="20150614T020058Z" filename="..\..\..\Common\64x64\flag_finland.png">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAHp0lEQVR42u1Zy64kRxE9J6r6grGQPYzEchZjFvaCb+ALWMzOHzFf
             MjtW/MNskJDmG1ggFiAkZIGRANkWvn3ftx/1yAgWmVmVVZ39ut1jFlMxj6rKyszKeJ+IxkQTTTTRRBNNNNFEHyiVH7oAGG/evHnz
             9YsXL162bfukTZaN4asbhYRnBUACToGPZ8AXzws4O/Gw7I4LMxs871qTzhURzOfzr1+/fv2LgQU8e/bs5atXr1DXdXYTVd36ESFx
@@ -285,58 +285,32 @@
       </node>
     </node>
     <node class="THtmlDataNode" name="Index.aspx">
-      <row id="title.text" class="THtmlRow">
+      <row id="title.text" class="THtmlRow" si="1">
         <value>Driving Time Calculator</value>
-        <lang id="fi" status="3" time="20150614T020103Z">Ajoaikalaskin</lang>
+        <lang id="fi" rw="0" time="20150614T020103Z">Ajoaikalaskin</lang>
       </row>
-      <row id="asp:Image.text" class="THtmlRow">
+      <row id="asp:Image.text" class="THtmlRow" si="2">
         <value>Driving Time</value>
-        <lang id="fi" status="3" time="20150614T020106Z">Ajoaika</lang>
+        <lang id="fi" rw="0" time="20150614T020106Z">Ajoaika</lang>
       </row>
-      <row id="asp:Label.attributes.Text" class="THtmlRow">
+      <row id="asp:Label.attributes.Text" class="THtmlRow" si="3">
         <value>Driving distance:</value>
-        <lang id="fi" status="3" time="20150614T020113Z">Ajomatka:</lang>
+        <lang id="fi" rw="0" time="20150614T020113Z">Ajomatka:</lang>
       </row>
-      <row id="asp:Label[1].attributes.Text" class="THtmlRow">
+      <row id="asp:Label[1].attributes.Text" class="THtmlRow" si="4">
         <value>Speed:</value>
-        <lang id="fi" status="3" time="20150614T020116Z">Nopeus:</lang>
+        <lang id="fi" rw="0" time="20150614T020116Z">Nopeus:</lang>
       </row>
-      <row id="asp:Button.attributes.Text" class="THtmlRow">
+      <row id="asp:Button.attributes.Text" class="THtmlRow" si="5">
         <value>Calculate</value>
-        <lang id="fi" status="3" time="20150614T020118Z">Laske</lang>
+        <lang id="fi" rw="0" time="20150614T020118Z">Laske</lang>
       </row>
       <item class="THtmlScriptItem" name="Jsp" created="20150614T015940Z">
-        <row id="String[0]">C##</row>
-        <row id="String[1]">true</row>
-        <row id="String[2]">Index.aspx.cs</row>
-        <row id="String[3]">Driving.Index</row>
+        <row id="C##" si="6">C##</row>
+        <row id="true" si="7">true</row>
+        <row id="Index.aspx.cs" si="8">Index.aspx.cs</row>
+        <row id="Driving.Index" si="9">Driving.Index</row>
       </item>
-      <object entities="" options="[]">
-        <attributes>
-          <remove tag="a" name="href"/>
-          <remove tag="a" name="title"/>
-          <remove tag="area" name="title"/>
-          <remove tag="asp:Button" name="Text"/>
-          <remove tag="asp:Label" name="Text"/>
-          <remove tag="body" name="xml:lang"/>
-          <remove tag="h1" name="title"/>
-          <remove tag="h2" name="title"/>
-          <remove tag="h3" name="title"/>
-          <remove tag="h4" name="title"/>
-          <remove tag="h5" name="title"/>
-          <remove tag="h6" name="title"/>
-          <remove tag="h7" name="title"/>
-          <remove tag="img" name="alt"/>
-          <remove tag="img" name="href"/>
-          <remove tag="img" name="title"/>
-          <remove tag="input" name="accesskey"/>
-          <remove tag="input" name="title"/>
-          <remove tag="input" name="value"/>
-          <remove tag="meta" name="description"/>
-          <remove tag="meta" name="keywords"/>
-          <remove tag="param" name="value"/>
-        </attributes>
-      </object>
       <data>
         77u/PCVAIFBhZ2UgTGFuZ3VhZ2U9IkMjIiBBdXRvRXZlbnRXaXJldXA9InRydWUiIENvZGVCZWhpbmQ9IkluZGV4LmFzcHguY3Mi
         IEluaGVyaXRzPSJEcml2aW5nLkluZGV4IiAlPg0KDQo8IURPQ1RZUEUgaHRtbD4NCg0KPGh0bWwgeG1sbnM9Imh0dHA6Ly93d3cu
@@ -360,6 +334,7 @@
       </data>
     </node>
     <node class="TScriptDataNode" name="Index.aspx.cs" created="20131012T085839Z">
+      <properties language="plCSharp"/>
       <data>
         77u/dXNpbmcgU3lzdGVtOw0KdXNpbmcgU3lzdGVtLkNvbGxlY3Rpb25zLkdlbmVyaWM7DQp1c2luZyBTeXN0ZW0uTGlucTsNCnVz
         aW5nIFN5c3RlbS5XZWI7DQp1c2luZyBTeXN0ZW0uV2ViLlVJOw0KdXNpbmcgU3lzdGVtLldlYi5VSS5XZWJDb250cm9sczsNCnVz
@@ -383,6 +358,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties" created="20150614T015940Z">
       <node class="TScriptDataNode" name="AssemblyInfo.cs">
+        <properties language="plCSharp"/>
         <data>
           77u/dXNpbmcgU3lzdGVtLlJlZmxlY3Rpb247DQp1c2luZyBTeXN0ZW0uUnVudGltZS5Db21waWxlclNlcnZpY2VzOw0KdXNpbmcg
           U3lzdGVtLlJ1bnRpbWUuSW50ZXJvcFNlcnZpY2VzOw0KDQovLyBHZW5lcmFsIEluZm9ybWF0aW9uIGFib3V0IGFuIGFzc2VtYmx5
@@ -408,4 +384,24 @@
     </node>
     <tags usage="tuOnlyIncluded"/>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20190215T174005Z" version="1.0.336" rowid="13">
+<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20200316T185741Z" version="1.0.714" stringid="13">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" groupname="" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text" ri="1" excluded="2">dummy</row>
-      <row id="label2.Text" ri="2" excluded="2">dummy</row>
-      <row id="label3.Text" ri="3" excluded="2">dummy</row>
-      <row id="label4.Text" ri="4" excluded="2">dummy</row>
-      <row id="label5.Text" ri="5" excluded="2">dummy</row>
-      <row id="label11.Text" ri="6" excluded="2">dummy</row>
-      <row id="label21.Text" ri="7" excluded="2">dummy</row>
-      <row id="label101.Text" ri="8" excluded="2">dummy</row>
-      <row id="label111.Text" ri="9" excluded="2">dummy</row>
-      <row id="label0.Text" ri="10" excluded="2">dummy</row>
-      <row id="$this.Text" ri="11">
+      <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="label3.Text" si="3" excluded="2">dummy</row>
+      <row id="label4.Text" si="4" excluded="2">dummy</row>
+      <row id="label5.Text" si="5" excluded="2">dummy</row>
+      <row id="label11.Text" si="6" excluded="2">dummy</row>
+      <row id="label21.Text" si="7" excluded="2">dummy</row>
+      <row id="label101.Text" si="8" excluded="2">dummy</row>
+      <row id="label111.Text" si="9" excluded="2">dummy</row>
+      <row id="label0.Text" si="10" excluded="2">dummy</row>
+      <row id="$this.Text" si="11">
         <value>Plural Sample</value>
         <lang id="fi" time="20161130T152250Z">Esimerkki</lang>
       </row>
@@ -254,11 +254,11 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="Language" ri="12" scannedcomment="ISO 639 language code">
+        <row id="Language" si="12" scannedcomment="ISO 639 language code">
           <value>en</value>
           <lang id="fi" time="20161130T152251Z">fi</lang>
         </row>
-        <row id="MessagePlural" ri="13" class="TPatternRow" scannedcomment="{0}: File count" created="20170510T190538Z">
+        <row id="MessagePlural" class="TPatternRow" si="13" scannedcomment="{0}: File count" created="20170510T190538Z">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" time="20170510T190558Z">
@@ -268,9 +268,27 @@
         </row>
       </node>
     </node>
-    <extractor/>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

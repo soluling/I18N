@@ -1,29 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20181129T161442Z" version="1.0.269">
+<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20200316T191019Z" version="1.0.714" stringid="8">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
-      <row id="newToolStripMenuItem.Text">&amp;New</row>
+      <row id="newToolStripMenuItem.Text" si="1">&amp;New</row>
       <row id="openToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">57423</row>
-      <row id="openToolStripMenuItem.Text">&amp;Open...</row>
+      <row id="openToolStripMenuItem.Text" si="2">&amp;Open...</row>
       <row id="exitToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">32836</row>
-      <row id="exitToolStripMenuItem.Text">E&amp;xit</row>
-      <row id="fileToolStripMenuItem.Text">&amp;File</row>
-      <row id="helpToolStripMenuItem.Text">&amp;Help</row>
-      <row id="menuStrip1.Text">menuStrip1</row>
-      <row id="aboutToolStripMenuItem.Text">
+      <row id="exitToolStripMenuItem.Text" si="3">E&amp;xit</row>
+      <row id="fileToolStripMenuItem.Text" si="4">&amp;File</row>
+      <row id="helpToolStripMenuItem.Text" si="5">&amp;Help</row>
+      <row id="menuStrip1.Text" si="6">menuStrip1</row>
+      <row id="aboutToolStripMenuItem.Text" si="7">
         <value>&amp;About...</value>
-        <lang id="fi" st="3" rw="0" time="20181129T161434Z">&amp;Tietoa...</lang>
+        <lang id="fi" st="4" rw="0" time="20181129T161434Z">&amp;Tietoa...</lang>
       </row>
-      <row id="$this.Text">
+      <row id="$this.Text" si="8">
         <value>Menu Sample</value>
-        <lang id="fi" st="3" rw="0" time="20181129T161430Z">Valokkoesimerkki</lang>
+        <lang id="fi" st="4" rw="0" time="20181129T161430Z">Valokkoesimerkki</lang>
       </row>
       <codeproperties>
-        <collection component="menuStrip1" property="Items" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
-        <collection component="fileToolStripMenuItem" property="DropDownItems" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
-        <collection component="helpToolStripMenuItem" property="DropDownItems" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
+        <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
+        <collection component="fileToolStripMenuItem" property="DropDownItems" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
+        <collection component="helpToolStripMenuItem" property="DropDownItems" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
       </codeproperties>
       <data>
         77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -204,4 +205,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

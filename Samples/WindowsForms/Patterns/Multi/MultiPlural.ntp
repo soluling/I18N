@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="673E1CDA-AC73-4E14-9247-6867BFE99911" created="20181130T004117Z" lastmodified="20190215T173909Z" version="1.0.336" rowid="15">
+<project id="673E1CDA-AC73-4E14-9247-6867BFE99911" created="20181130T004117Z" lastmodified="20200316T185909Z" version="1.0.714" stringid="15">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" groupname="" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label0_1.Text" ri="1" excluded="2">dummy</row>
-      <row id="label1_1.Text" ri="2" excluded="2">dummy</row>
-      <row id="label0_2.Text" ri="3" excluded="2">dummy</row>
-      <row id="label1_2.Text" ri="4" excluded="2">dummy</row>
-      <row id="label2_2.Text" ri="5" excluded="2">dummy</row>
-      <row id="label1_3.Text" ri="6" excluded="2">dummy</row>
-      <row id="label2_3.Text" ri="7" excluded="2">dummy</row>
-      <row id="label1_10.Text" ri="8" excluded="2">dummy</row>
-      <row id="label5_10.Text" ri="9" excluded="2">dummy</row>
-      <row id="label0_0.Text" ri="10" excluded="2">dummy</row>
-      <row id="useZeroCheck.Text" ri="11">
+      <row id="label0_1.Text" si="1" excluded="2">dummy</row>
+      <row id="label1_1.Text" si="2" excluded="2">dummy</row>
+      <row id="label0_2.Text" si="3" excluded="2">dummy</row>
+      <row id="label1_2.Text" si="4" excluded="2">dummy</row>
+      <row id="label2_2.Text" si="5" excluded="2">dummy</row>
+      <row id="label1_3.Text" si="6" excluded="2">dummy</row>
+      <row id="label2_3.Text" si="7" excluded="2">dummy</row>
+      <row id="label1_10.Text" si="8" excluded="2">dummy</row>
+      <row id="label5_10.Text" si="9" excluded="2">dummy</row>
+      <row id="label0_0.Text" si="10" excluded="2">dummy</row>
+      <row id="useZeroCheck.Text" si="11">
         <value>&amp;Use zero part</value>
         <lang id="fi" rw="0" time="20181130T004750Z">&amp;Käytä nolla-osaa</lang>
       </row>
-      <row id="$this.Text" ri="12">
+      <row id="$this.Text" si="12">
         <value>Plural Sample</value>
         <lang id="fi" rw="0" time="20181130T004739Z">Monikkoesimerkki</lang>
       </row>
@@ -273,11 +273,11 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="Language" ri="13">
+        <row id="Language" si="13">
           <value>en</value>
           <lang id="fi" rw="0" time="20181130T004741Z">fi</lang>
         </row>
-        <row id="MessagePlural" ri="14" class="TPatternRow" scannedcomment="0: Amount of steps">
+        <row id="MessagePlural" class="TPatternRow" si="14" scannedcomment="0: Amount of steps">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfOne" index="0">one</pattern>
           <pattern plural="pfOther" index="0">{0}</pattern>
@@ -291,7 +291,7 @@
             <pattern plural="pfOther" index="1">{0}:stä vaiheesta</pattern>
           </lang>
         </row>
-        <row id="ZeroMessagePlural" ri="15" class="TPatternRow" scannedcomment="0: Amount of steps">
+        <row id="ZeroMessagePlural" class="TPatternRow" si="15" scannedcomment="0: Amount of steps">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
@@ -311,9 +311,27 @@
         </row>
       </node>
     </node>
-    <extractor/>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

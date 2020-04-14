@@ -1,14 +1,14 @@
 ﻿@model DrivingView.Models.DrivingModel;
 
 <!DOCTYPE html>
-<html>
+<html lang="fi">
 <head>
   <meta charset="utf-8">
-  <title>Ajoaikalaskin</title>
+  <title>Ajoaika Laskin ÖÄÅ</title>
 </head>
 
 <body>
-  <h1><img align="top" src="images/fi/flag.png" /> Ajoaika</h1>
+  <h1><img align="top" src="images/flag.png" /> Ajoaika</h1>
 
   <form method="post">
     <table border="0">
@@ -18,7 +18,7 @@
           <input type="text" asp-for="Distance">
         </td>
         <td>
-          Nopeus:<br/>
+          Nopeus<br/>
           <input type="text" asp-for="Speed">
         </td>
         <td valign="bottom">
@@ -27,7 +27,7 @@
       </tr>
       <tr>
         <td>
-          <img src="images/fi/car.png" />
+          <img src="images/car.png" />
         </td>
         <td colspan="2">
           @Model?.Message

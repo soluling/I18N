@@ -1,20 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="52A4B217-27E7-41AC-A3EC-7B325A75B246" created="20121126T091428Z" lastmodified="20181129T155010Z" version="1.0.269">
+<project id="52A4B217-27E7-41AC-A3EC-7B325A75B246" created="20121126T091428Z" lastmodified="20200316T191049Z" version="1.0.714" stringid="8">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\LanguageSwitch.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\LanguageSwitch\bin\Release\LanguageSwitch.exe" original="en-US" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="LanguageSwitch.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\LanguageSwitch.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\LanguageSwitch\bin\Release\LanguageSwitch.exe" original="en-US" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="LanguageSwitch.csproj" libraries="[nlWinForms]">
     <netproperties version="net462"/>
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="LanguageSwitch.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Sample</value>
           <lang id="fi" time="20110410T125039Z">Esimerkki</lang>
         </row>
-        <row id="label1.Text">
+        <row id="label1.Text" si="2">
           <value>This is a sample</value>
           <lang id="fi" time="20110410T125043Z">Tämä on esimerkki</lang>
         </row>
-        <row id="label2.Text" created="20181129T154919Z" st="0">dummy</row>
-        <row id="languageButton.Text">
+        <row id="label2.Text" si="3" created="20181129T154919Z" st="0">dummy</row>
+        <row id="languageButton.Text" si="4">
           <value>&amp;Language...</value>
           <lang id="fi" time="20110410T125047Z">&amp;Kieli...</lang>
         </row>
@@ -78,15 +78,15 @@
         </data>
       </node>
       <node class="TResXNode" name="NewTool.WindowsForms.SelectLanguage.resources" st="4">
-        <row id="$this.Text" st="4">
+        <row id="$this.Text" si="5" st="4">
           <value>Select Language</value>
           <lang id="fi" time="20110410T125050Z">Valitse kieli</lang>
         </row>
-        <row id="cancelButton.Text" st="4">
+        <row id="cancelButton.Text" si="6" st="4">
           <value>Cancel</value>
           <lang id="fi" time="20110410T125051Z">Peru</lang>
         </row>
-        <row id="okButton.Text" st="4">
+        <row id="okButton.Text" si="7" st="4">
           <value>OK</value>
           <lang id="fi" time="20110410T125053Z">OK</lang>
         </row>
@@ -97,11 +97,30 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="LanguageSwitch.Properties.Resources.resources">
-        <row id="String1">
+        <row id="String1" si="8">
           <value>This is another sample</value>
           <lang id="fi" time="20110410T125101Z">Tämä on toinen esimerkki</lang>
         </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

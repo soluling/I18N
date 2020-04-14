@@ -1,38 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="593BE91D-7893-4A03-9AA2-387581174B8C" created="20121106T071646Z" lastmodified="20181130T160702Z" version="1.0.269">
+<project id="593BE91D-7893-4A03-9AA2-387581174B8C" created="20121106T071646Z" lastmodified="20200316T190028Z" version="1.0.714" stringid="11">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\TreeView.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\TreeView\bin\Release\TreeView.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="TreeView.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\TreeView.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\TreeView\bin\Release\TreeView.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="TreeView.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="TreeView.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121106T071646Z">
+        <row id="$this.Text" si="1" created="20121106T071646Z">
           <value>Sample</value>
           <lang id="fi" time="20121106T071656Z">Esimerkki</lang>
         </row>
-        <row id="treeView1.Nodes.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes.Text" si="2" created="20121106T233345Z">
           <value>One</value>
           <lang id="fi" time="20121106T233405Z">Yksi</lang>
         </row>
-        <row id="treeView1.Nodes.children0.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes.children0.Text" si="3" created="20121106T233345Z">
           <value>One</value>
           <lang id="fi" time="20121106T233405Z">Yksi</lang>
         </row>
-        <row id="treeView1.Nodes.children1.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes.children1.Text" si="4" created="20121106T233345Z">
           <value>Two</value>
           <lang id="fi" time="20121106T233409Z">Kaksi</lang>
         </row>
-        <row id="treeView1.Nodes.children2.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes.children2.Text" si="5" created="20121106T233345Z">
           <value>Three</value>
           <lang id="fi" time="20121106T233411Z">Kolme</lang>
         </row>
-        <row id="treeView1.Nodes1.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes1.Text" si="6" created="20121106T233345Z">
           <value>Two</value>
           <lang id="fi" time="20121106T233409Z">Kaksi</lang>
         </row>
-        <row id="treeView1.Nodes1.children0.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes1.children0.Text" si="7" created="20121106T233345Z">
           <value>One</value>
           <lang id="fi" time="20121106T233405Z">Yksi</lang>
         </row>
-        <row id="treeView1.Nodes2.Text" created="20121106T233345Z">
+        <row id="treeView1.Nodes2.Text" si="8" created="20121106T233345Z">
           <value>Three</value>
           <lang id="fi" time="20121106T233411Z">Kolme</lang>
         </row>
@@ -103,19 +103,38 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="TreeView.Properties.Resources.resources">
-        <row id="String1" created="20121106T071646Z">
+        <row id="String1" si="9" created="20121106T071646Z">
           <value>One</value>
           <lang id="fi" time="20121106T071659Z">Yksi</lang>
         </row>
-        <row id="String2" created="20121106T071646Z">
+        <row id="String2" si="10" created="20121106T071646Z">
           <value>Two</value>
           <lang id="fi" time="20121106T071701Z">Kaksi</lang>
         </row>
-        <row id="String3" created="20121106T071646Z">
+        <row id="String3" si="11" created="20121106T071646Z">
           <value>Three</value>
           <lang id="fi" time="20121106T071703Z">Kolme</lang>
         </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

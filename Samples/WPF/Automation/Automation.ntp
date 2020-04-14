@@ -1,46 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="92B146AD-F948-42C1-90F6-67DB74E5AA1D" created="20181023T132324Z" lastmodified="20181207T000628Z" version="1.0.272">
+<project id="92B146AD-F948-42C1-90F6-67DB74E5AA1D" created="20181023T132324Z" lastmodified="20200316T192835Z" version="1.0.714" stringid="7">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Automation.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Automation\Automation.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt140"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192834Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkF1dG9tYXRpb24uQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1h
+        cy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDov
+        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1l
+        c3BhY2U6QXV0b21hdGlvbiINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNh
+        dGlvbi5SZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="CustomName" automationid="CustomName1">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" or="4" rw="0" time="20181023T132324Z">Esimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="button1" type="Button">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>One</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Yksi</lang>
           </row>
         </item>
         <item name="button2" type="Button">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Two</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Kaksi</lang>
           </row>
         </item>
         <item name="button3" type="Button">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>Three</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Kolme</lang>
           </row>
         </item>
         <item name="button4" type="Button">
-          <row id="Content">
+          <row id="Content" si="5">
             <value>Four</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Neljä</lang>
           </row>
         </item>
         <item name="button5" type="Button">
-          <row id="Content">
+          <row id="Content" si="6">
             <value>Five</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Viisi</lang>
           </row>
         </item>
         <item name="button6b" type="Button" automationid="button6a">
-          <row id="Content">
+          <row id="Content" si="7">
             <value>Six</value>
             <lang id="fi" or="4" rw="0" time="20181023T132324Z">Kuusi</lang>
           </row>
@@ -66,4 +75,23 @@
       <node class="TResXNode" name="Resources.resx"/>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

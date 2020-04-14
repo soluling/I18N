@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B2FD1971-F033-464D-BB70-3E84654E8B31" created="20121121T103857Z" lastmodified="20181129T153633Z" version="1.0.269">
+<project id="B2FD1971-F033-464D-BB70-3E84654E8B31" created="20121121T103857Z" lastmodified="20200316T191238Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\HardCoded.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\HardCoded\bin\Release\HardCoded.exe" original="en" resources="[nrHardCodeStrings]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="HardCoded.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\HardCoded.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\HardCoded\bin\Release\HardCoded.exe" original="en" resources="[nrHardCodeStrings]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="HardCoded.csproj" libraries="[nlWinForms]">
     <node class="TAssemblyStringNode" name="AssemblyStrings" created="20121121T103925Z">
-      <row id="Hello World" created="20121121T103925Z">
+      <row id="Hello World" si="1" created="20121121T103925Z">
         <value>Hello World</value>
         <lang id="fi" time="20121121T104034Z">Moi maailma</lang>
       </row>
-      <row id="&amp;Filename:" created="20121121T103925Z">
+      <row id="&amp;Filename:" si="2" created="20121121T103925Z">
         <value>&amp;Filename:</value>
         <lang id="fi" time="20121121T104038Z">&amp;Tiedosto:</lang>
       </row>
-      <row id="Browse..." created="20121121T104126Z">
+      <row id="Browse..." si="3" created="20121121T104126Z">
         <value>Browse...</value>
         <lang id="fi" time="20121121T104137Z">Selaa...</lang>
       </row>
-      <row id="dummy" excluded="2">dummy</row>
-      <row id="Sample" created="20121121T103925Z">
+      <row id="dummy" si="4" excluded="2">dummy</row>
+      <row id="Sample" si="5" created="20121121T103925Z">
         <value>Sample</value>
         <lang id="fi" time="20121121T104043Z">Esimerkki</lang>
       </row>
@@ -25,4 +25,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

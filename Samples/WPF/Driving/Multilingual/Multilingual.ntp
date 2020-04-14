@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20181207T012317Z" version="1.0.272">
+<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20200316T192800Z" version="1.0.714" stringid="13">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192800Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRyaXZpbmcuQXBwIg0KICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
+        Y29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
+        bS93aW5meC8yMDA2L3hhbWwiDQogICAgU3RhcnR1cFVyaT0iTWFpbldpbmRvdy54YW1sIj4NCiAgICA8QXBwbGljYXRpb24uUmVz
+        b3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
     <node class="TImageDataNode" name="car_sedan_blue.png" created="20181207T012058Z" filename="..\..\..\Common\48x48\car_sedan_blue.png">
       <row id="value" class="TImageRow">
         <value>
@@ -186,44 +194,44 @@
       </row>
     </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Driving Time</value>
         <lang id="fi" or="5" rw="0" time="20181207T012141Z">Ajoaika</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="menu" type="Menu">
           <item name="fileMenu" type="MenuItem">
-            <row id="Header">
+            <row id="Header" si="2">
               <value>_File</value>
               <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Tiedosto</lang>
             </row>
             <item name="calculateMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="3">
                 <value>_Calculate</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Laske</lang>
               </row>
             </item>
             <item name="languageMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="4">
                 <value>_Language...</value>
                 <lang id="fi" rw="0" time="20181207T012147Z">_Kieli...</lang>
               </row>
             </item>
             <item name="separator1" type="Separator"/>
             <item name="exitMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="5">
                 <value>_Exit</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Lopeta</lang>
               </row>
             </item>
           </item>
           <item name="helpMenu" type="MenuItem">
-            <row id="Header">
+            <row id="Header" si="6">
               <value>_Help</value>
               <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Ohje</lang>
             </row>
             <item name="aboutMenu" type="MenuItem">
-              <row id="Header">
+              <row id="Header" si="7">
                 <value>_About</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Tietoa</lang>
               </row>
@@ -238,7 +246,7 @@
           </item>
           <item name="distancePanel" type="StackPanel">
             <item name="distanceLabel" type="Label">
-              <row id="Content">
+              <row id="Content" si="8">
                 <value>_Distance:</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Etäisyys:</lang>
               </row>
@@ -247,7 +255,7 @@
           </item>
           <item name="speedPanel" type="StackPanel">
             <item name="speedLabel" type="Label">
-              <row id="Content">
+              <row id="Content" si="9">
                 <value>_Speed:</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Nopeus:</lang>
               </row>
@@ -256,7 +264,7 @@
           </item>
           <item name="buttonPanel" type="StackPanel">
             <item name="calculateButton" type="Button">
-              <row id="Content">
+              <row id="Content" si="10">
                 <value>_Calculate</value>
                 <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Laske</lang>
               </row>
@@ -282,48 +290,48 @@
         Y29tL3dpbmZ4LzIwMDYveGFtbCINCiAgSWNvbj0iY2FyX3NlZGFuX2JsdWUuaWNvIg0KICBUaXRsZT0iRHJpdmluZyBUaW1lIiAN
         CiAgU2l6ZVRvQ29udGVudD0iV2lkdGhBbmRIZWlnaHQiDQogIE1pbldpZHRoPSIzNjAiDQogIExvYWRlZD0iV2luZG93X0xvYWRl
         ZCI+DQoNCiAgPFN0YWNrUGFuZWwgeDpOYW1lPSJwYW5lbCI+DQogICAgPE1lbnUgeDpOYW1lPSJtZW51Ij4NCiAgICAgIDxNZW51
-        SXRlbSB4Ok5hbWU9ImZpbGVNZW51IiBIZWFkZXI9Il9GaWxlIj4NCiAgICAgICAgPE1lbnVJdGVtIHg6TmFtZT0iY2FsY3VsYXRl
-        TWVudSIgSGVhZGVyPSJfQ2FsY3VsYXRlIiBDbGljaz0iY2FsY3VsYXRlQnV0dG9uX0NsaWNrIiAvPg0KICAgICAgICA8TWVudUl0
-        ZW0geDpOYW1lPSJsYW5ndWFnZU1lbnUiIEhlYWRlcj0iX0xhbmd1YWdlLi4uIiBDbGljaz0ibGFuZ3VhZ2VNZW51X0NsaWNrIiAv
-        Pg0KICAgICAgICA8U2VwYXJhdG9yIHg6TmFtZT0ic2VwYXJhdG9yMSIgLz4NCiAgICAgICAgPE1lbnVJdGVtIHg6TmFtZT0iZXhp
-        dE1lbnUiICBIZWFkZXI9Il9FeGl0IiBDbGljaz0iZXhpdE1lbnVfQ2xpY2siIC8+DQogICAgICA8L01lbnVJdGVtPg0KDQogICAg
-        ICA8TWVudUl0ZW0geDpOYW1lPSJoZWxwTWVudSIgSGVhZGVyPSJfSGVscCI+DQogICAgICAgIDxNZW51SXRlbSB4Ok5hbWU9ImFi
-        b3V0TWVudSIgSGVhZGVyPSJfQWJvdXQiIENsaWNrPSJhYm91dE1lbnVfQ2xpY2siIC8+DQogICAgICA8L01lbnVJdGVtPg0KICAg
-        IDwvTWVudT4NCg0KICAgIDxHcmlkIHg6TmFtZT0iZWRpdEdyaWQiPg0KICAgICAgPEdyaWQuQ29sdW1uRGVmaW5pdGlvbnM+DQog
-        ICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIHg6TmFtZT0iZGlzdGFuY2VDb2x1bW4iIC8+DQogICAgICAgIDxDb2x1bW5EZWZpbml0
-        aW9uIHg6TmFtZT0ic3BlZWRDb2x1bW4iIC8+DQogICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIHg6TmFtZT0iYnV0dG9uQ29sdW1u
-        IiAvPg0KICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KDQogICAgICA8U3RhY2tQYW5lbCB4Ok5hbWU9ImRpc3RhbmNl
-        UGFuZWwiIEdyaWQuQ29sdW1uPSIwIiBNYXJnaW49IjUiPg0KICAgICAgICA8TGFiZWwgeDpOYW1lPSJkaXN0YW5jZUxhYmVsIiBD
-        b250ZW50PSJfRGlzdGFuY2U6IiAvPg0KICAgICAgICA8VGV4dEJveCB4Ok5hbWU9ImRpc3RhbmNlVGV4dEJveCIgVGV4dENoYW5n
-        ZWQ9InRleHRCb3hfVGV4dENoYW5nZWQiIC8+DQogICAgICA8L1N0YWNrUGFuZWw+DQoNCiAgICAgIDxTdGFja1BhbmVsIHg6TmFt
-        ZT0ic3BlZWRQYW5lbCIgR3JpZC5Db2x1bW49IjEiIE1hcmdpbj0iNSI+DQogICAgICAgIDxMYWJlbCB4Ok5hbWU9InNwZWVkTGFi
-        ZWwiIENvbnRlbnQ9Il9TcGVlZDoiIC8+DQogICAgICAgIDxUZXh0Qm94IHg6TmFtZT0ic3BlZWRUZXh0Qm94IiBUZXh0Q2hhbmdl
-        ZD0idGV4dEJveF9UZXh0Q2hhbmdlZCIgLz4NCiAgICAgIDwvU3RhY2tQYW5lbD4NCg0KICAgICAgPFN0YWNrUGFuZWwgeDpOYW1l
-        PSJidXR0b25QYW5lbCIgR3JpZC5Db2x1bW49IjIiIE1hcmdpbj0iNSIgVmVydGljYWxBbGlnbm1lbnQ9IkJvdHRvbSI+DQogICAg
-        ICAgIDxCdXR0b24geDpOYW1lPSJjYWxjdWxhdGVCdXR0b24iIENvbnRlbnQ9Il9DYWxjdWxhdGUiIENsaWNrPSJjYWxjdWxhdGVC
-        dXR0b25fQ2xpY2siIC8+DQogICAgICA8L1N0YWNrUGFuZWw+DQogICAgPC9HcmlkPg0KDQogICAgPEdyaWQgeDpOYW1lPSJpbmZv
-        R3JpZCI+DQogICAgICA8R3JpZC5Db2x1bW5EZWZpbml0aW9ucz4NCiAgICAgICAgPENvbHVtbkRlZmluaXRpb24geDpOYW1lPSJj
-        YXJDb2x1bW4iIFdpZHRoPSIxKiIgLz4NCiAgICAgICAgPENvbHVtbkRlZmluaXRpb24geDpOYW1lPSJpbmZvQ29sdW1uIiBXaWR0
-        aD0iNCoiIC8+DQogICAgICAgIDxDb2x1bW5EZWZpbml0aW9uIHg6TmFtZT0iZmxhZ0NvbHVtbiIgV2lkdGg9IjEqIiAvPg0KICAg
-        ICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KDQogICAgICA8SW1hZ2UgeDpOYW1lPSJjYXJJbWFnZSIgR3JpZC5Db2x1bW49
-        IjAiIFNvdXJjZT0iY2FyX3NlZGFuX2JsdWUucG5nIiBXaWR0aD0iNDgiIC8+DQoNCiAgICAgIDxTdGFja1BhbmVsIHg6TmFtZT0i
-        dGltZVBhbmVsIiBHcmlkLkNvbHVtbj0iMSI+DQogICAgICAgIDxMYWJlbCB4Ok5hbWU9InJlc3VsdExhYmVsIiAvPg0KICAgICAg
-        PC9TdGFja1BhbmVsPg0KDQogICAgICA8SW1hZ2UgeDpOYW1lPSJmbGFnSW1hZ2UiIEdyaWQuQ29sdW1uPSIyIiBTb3VyY2U9ImZs
-        YWdfdW5pdGVkX2tpbmdkb20ucG5nIiBXaWR0aD0iNDgiIC8+DQogICAgPC9HcmlkPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRv
-        dz4NCg==
+        SXRlbSB4OlVpZD0iZmlsZU1lbnUiIEhlYWRlcj0iX0ZpbGUiPg0KICAgICAgICA8TWVudUl0ZW0geDpVaWQ9ImNhbGN1bGF0ZU1l
+        bnUiIHg6TmFtZT0iY2FsY3VsYXRlTWVudSIgSGVhZGVyPSJfQ2FsY3VsYXRlIiBDbGljaz0iY2FsY3VsYXRlQnV0dG9uX0NsaWNr
+        IiAvPg0KICAgICAgICA8TWVudUl0ZW0geDpVaWQ9Imxhbmd1YWdlTWVudSIgSGVhZGVyPSJfTGFuZ3VhZ2UuLi4iIENsaWNrPSJs
+        YW5ndWFnZU1lbnVfQ2xpY2siIC8+DQogICAgICAgIDxTZXBhcmF0b3IgeDpOYW1lPSJzZXBhcmF0b3IxIiAvPg0KICAgICAgICA8
+        TWVudUl0ZW0geDpVaWQ9ImV4aXRNZW51IiAgSGVhZGVyPSJfRXhpdCIgQ2xpY2s9ImV4aXRNZW51X0NsaWNrIiAvPg0KICAgICAg
+        PC9NZW51SXRlbT4NCg0KICAgICAgPE1lbnVJdGVtIHg6VWlkPSJoZWxwTWVudSIgSGVhZGVyPSJfSGVscCI+DQogICAgICAgIDxN
+        ZW51SXRlbSB4OlVpZD0iYWJvdXRNZW51IiBIZWFkZXI9Il9BYm91dCIgQ2xpY2s9ImFib3V0TWVudV9DbGljayIgLz4NCiAgICAg
+        IDwvTWVudUl0ZW0+DQogICAgPC9NZW51Pg0KDQogICAgPEdyaWQgeDpOYW1lPSJlZGl0R3JpZCI+DQogICAgICA8R3JpZC5Db2x1
+        bW5EZWZpbml0aW9ucz4NCiAgICAgICAgPENvbHVtbkRlZmluaXRpb24geDpOYW1lPSJkaXN0YW5jZUNvbHVtbiIgLz4NCiAgICAg
+        ICAgPENvbHVtbkRlZmluaXRpb24geDpOYW1lPSJzcGVlZENvbHVtbiIgLz4NCiAgICAgICAgPENvbHVtbkRlZmluaXRpb24geDpO
+        YW1lPSJidXR0b25Db2x1bW4iIC8+DQogICAgICA8L0dyaWQuQ29sdW1uRGVmaW5pdGlvbnM+DQoNCiAgICAgIDxTdGFja1BhbmVs
+        IHg6TmFtZT0iZGlzdGFuY2VQYW5lbCIgR3JpZC5Db2x1bW49IjAiIE1hcmdpbj0iNSI+DQogICAgICAgIDxMYWJlbCB4OlVpZD0i
+        ZGlzdGFuY2VMYWJlbCIgQ29udGVudD0iX0Rpc3RhbmNlOiIgLz4NCiAgICAgICAgPFRleHRCb3ggeDpOYW1lPSJkaXN0YW5jZVRl
+        eHRCb3giIFRleHRDaGFuZ2VkPSJ0ZXh0Qm94X1RleHRDaGFuZ2VkIiAvPg0KICAgICAgPC9TdGFja1BhbmVsPg0KDQogICAgICA8
+        U3RhY2tQYW5lbCB4Ok5hbWU9InNwZWVkUGFuZWwiIEdyaWQuQ29sdW1uPSIxIiBNYXJnaW49IjUiPg0KICAgICAgICA8TGFiZWwg
+        eDpVaWQ9InNwZWVkTGFiZWwiIENvbnRlbnQ9Il9TcGVlZDoiIC8+DQogICAgICAgIDxUZXh0Qm94IHg6TmFtZT0ic3BlZWRUZXh0
+        Qm94IiBUZXh0Q2hhbmdlZD0idGV4dEJveF9UZXh0Q2hhbmdlZCIgLz4NCiAgICAgIDwvU3RhY2tQYW5lbD4NCg0KICAgICAgPFN0
+        YWNrUGFuZWwgeDpOYW1lPSJidXR0b25QYW5lbCIgR3JpZC5Db2x1bW49IjIiIE1hcmdpbj0iNSIgVmVydGljYWxBbGlnbm1lbnQ9
+        IkJvdHRvbSI+DQogICAgICAgIDxCdXR0b24geDpVaWQ9ImNhbGN1bGF0ZUJ1dHRvbiIgeDpOYW1lPSJjYWxjdWxhdGVCdXR0b24i
+        IENvbnRlbnQ9Il9DYWxjdWxhdGUiIENsaWNrPSJjYWxjdWxhdGVCdXR0b25fQ2xpY2siIC8+DQogICAgICA8L1N0YWNrUGFuZWw+
+        DQogICAgPC9HcmlkPg0KDQogICAgPEdyaWQgeDpOYW1lPSJpbmZvR3JpZCI+DQogICAgICA8R3JpZC5Db2x1bW5EZWZpbml0aW9u
+        cz4NCiAgICAgICAgPENvbHVtbkRlZmluaXRpb24geDpOYW1lPSJjYXJDb2x1bW4iIFdpZHRoPSIxKiIgLz4NCiAgICAgICAgPENv
+        bHVtbkRlZmluaXRpb24geDpOYW1lPSJpbmZvQ29sdW1uIiBXaWR0aD0iNCoiIC8+DQogICAgICAgIDxDb2x1bW5EZWZpbml0aW9u
+        IHg6TmFtZT0iZmxhZ0NvbHVtbiIgV2lkdGg9IjEqIiAvPg0KICAgICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KDQogICAg
+        ICA8SW1hZ2UgeDpOYW1lPSJjYXJJbWFnZSIgR3JpZC5Db2x1bW49IjAiIFNvdXJjZT0iY2FyX3NlZGFuX2JsdWUucG5nIiBXaWR0
+        aD0iNDgiIC8+DQoNCiAgICAgIDxTdGFja1BhbmVsIHg6TmFtZT0idGltZVBhbmVsIiBHcmlkLkNvbHVtbj0iMSI+DQogICAgICAg
+        IDxMYWJlbCB4Ok5hbWU9InJlc3VsdExhYmVsIiAvPg0KICAgICAgPC9TdGFja1BhbmVsPg0KDQogICAgICA8SW1hZ2UgeDpOYW1l
+        PSJmbGFnSW1hZ2UiIEdyaWQuQ29sdW1uPSIyIiBTb3VyY2U9ImZsYWdfdW5pdGVkX2tpbmdkb20ucG5nIiBXaWR0aD0iNDgiIC8+
+        DQogICAgPC9HcmlkPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="About">
+        <row id="About" si="11">
           <value>Driving time calculator</value>
           <lang id="fi" or="5" rw="0" time="20181207T012141Z">Ajoaikalaskin</lang>
         </row>
-        <row id="Language">
+        <row id="Language" si="12">
           <value>en</value>
           <lang id="fi" or="5" rw="0" time="20181207T012141Z">fi</lang>
         </row>
-        <row id="ResultPlural" class="TPatternRow">
+        <row id="ResultPlural" class="TPatternRow" si="13">
           <value startpattern="1">Driving time is{0}{1}</value>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -345,4 +353,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

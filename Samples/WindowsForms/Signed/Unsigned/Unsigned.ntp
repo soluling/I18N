@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5F3168AB-402B-4D08-B743-8FC08EA3812D" created="20170829T123840Z" lastmodified="20181130T032204Z" version="1.0.269">
+<project id="5F3168AB-402B-4D08-B743-8FC08EA3812D" created="20170829T123840Z" lastmodified="20200316T190127Z" version="1.0.714" stringid="9">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Unsigned.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Unsigned\Unsigned.csproj" original="en-US" resources="[nrResx,nrForm,nrVersion]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>Hello World</value>
         <lang id="fi" rw="0" time="20170829T123916Z">Moi maailma</lang>
       </row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="$this.Text" si="3">
         <value>Signed Sample</value>
         <lang id="fi" rw="0" time="20170829T123927Z">Allekirjoitusesimerkki</lang>
       </row>
@@ -136,7 +137,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="4">
           <value>This is a sample</value>
           <lang id="fi" rw="0" time="20170829T123931Z">Tämä on koe</lang>
         </row>
@@ -144,17 +145,17 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="FileDescription">
+        <row id="FileDescription" si="5">
           <value>Signed</value>
           <lang id="fi" or="3" rw="0" time="20170829T124037Z">Allekirjoitettu</lang>
         </row>
-        <row id="InternalName">Signed.exe</row>
-        <row id="LegalCopyright">
+        <row id="InternalName" si="6">Signed.exe</row>
+        <row id="LegalCopyright" si="7">
           <value>Copyright ©  2013</value>
           <lang id="fi" rw="0" time="20170829T124026Z">Tekijänoikeudet ©  2013</lang>
         </row>
-        <row id="OriginalFilename">Signed.exe</row>
-        <row id="ProductName">
+        <row id="OriginalFilename" si="8">Signed.exe</row>
+        <row id="ProductName" si="9">
           <value>Signed</value>
           <lang id="fi" rw="0" time="20170829T124037Z">Allekirjoitettu</lang>
         </row>
@@ -174,10 +175,29 @@
       </node>
     </node>
     <configurations>
-      <configuration compilemethod="cmDirect"/>
+      <configuration name="Default" compilemethod="cmDirect"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5F67A006-1ABB-4F3C-97D1-4B90EA3B3E77" created="20180506T134908Z" lastmodified="20181129T151155Z" version="1.0.269">
+<project id="5F67A006-1ABB-4F3C-97D1-4B90EA3B3E77" created="20180506T134908Z" lastmodified="20200316T191303Z" version="1.0.714" stringid="9">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Database.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Database\Database.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="button1.Text">
+      <row id="button1.Text" si="1">
         <value>&amp;Language...</value>
         <lang id="fi" or="5" rw="0" time="20180506T134914Z">&amp;Kieli...</lang>
       </row>
-      <row id="$this.Text">
+      <row id="$this.Text" si="2">
         <value>Sport</value>
         <lang id="fi" or="5" rw="0" time="20180506T134914Z">Urheilu</lang>
       </row>
@@ -137,31 +137,31 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="DescriptionColumn">
+        <row id="DescriptionColumn" si="3">
           <value>Description</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Selitys</lang>
         </row>
-        <row id="FieldPlayersColumn">
+        <row id="FieldPlayersColumn" si="4">
           <value>Field players</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Kenttäpalaajat</lang>
         </row>
-        <row id="FlagPictureColumn">
+        <row id="FlagPictureColumn" si="5">
           <value>Flag</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Lippu</lang>
         </row>
-        <row id="GoalieColumn">
+        <row id="GoalieColumn" si="6">
           <value>Goalie</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Maalivahti</lang>
         </row>
-        <row id="NameColumn">
+        <row id="NameColumn" si="7">
           <value>Name</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Nimi</lang>
         </row>
-        <row id="OriginColumn">
+        <row id="OriginColumn" si="8">
           <value>Origin</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Alkuperä</lang>
         </row>
-        <row id="PictureColumn">
+        <row id="PictureColumn" si="9">
           <value>Picture</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Kuva</lang>
         </row>
@@ -171,4 +171,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E445B246-46E7-4549-8FD2-C4FF4E072EE2" created="20121125T223132Z" lastmodified="20181129T153923Z" version="1.0.269">
+<project id="E445B246-46E7-4549-8FD2-C4FF4E072EE2" created="20121125T223132Z" lastmodified="20200316T191122Z" version="1.0.714" stringid="2">
   <lang id="en"/>
   <lang id="en-US"/>
   <lang id="en-GB"/>
-  <node class="TAssemblySource" name="bin\Release\IgnoreSatelliteAssembly.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\bin\Release\IgnoreSatelliteAssembly.exe" original="en-US" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="IgnoreSatelliteAssembly.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\IgnoreSatelliteAssembly.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\bin\Release\IgnoreSatelliteAssembly.exe" original="en-US" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="IgnoreSatelliteAssembly.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="IgnoreSatelliteAssembly.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Sample</value>
           <lang id="en" time="20110413T141618Z">SAMPLE</lang>
         </row>
-        <row id="label1.Text">
+        <row id="label1.Text" si="2">
           <value>This is a sample</value>
           <lang id="en" time="20110413T141625Z">This is an English sample</lang>
           <lang id="en-US" time="20110413T141634Z">This is a US sample</lang>
@@ -51,4 +51,23 @@
       <node class="TResXNode" name="IgnoreSatelliteAssembly.Properties.Resources.resources"/>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

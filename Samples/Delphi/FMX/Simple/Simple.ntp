@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160814T195528Z" lastmodified="20180324T152327Z" version="1.0.139">
+<project id="95B0711C-B093-46D0-B791-EE0BB891DAB1" created="20160814T195528Z" lastmodified="20200317T003901Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
   <lang id="nl"/>
   <lang id="it"/>
   <lang id="es"/>
-  <node class="TDelphiProjectSource" name="Simple.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="Simple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Simple\Simple.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi">Esimerkki</lang>
-          <lang id="de" st="3" rw="0" time="20180324T152138Z">Beispiel</lang>
-          <lang id="fr" st="3" or="6" rw="0" time="20180324T152235Z">Échantillon</lang>
+          <lang id="de" st="4" rw="0" time="20180324T152138Z">Beispiel</lang>
+          <lang id="fr" st="4" or="6" rw="0" time="20180324T152235Z">Échantillon</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180324T152256Z">Steekproef</lang>
           <lang id="it" st="1" or="6" rw="0" time="20180324T152309Z">Campione</lang>
           <lang id="es" st="1" or="6" rw="0" time="20180324T152321Z">Muestra</lang>
@@ -23,7 +23,7 @@
         <row id="ClientHeight">126</row>
         <row id="ClientWidth">281</row>
         <item name="Label1" type="TLabel">
-          <row id="Text">
+          <row id="Text" si="2">
             <value>Hello World</value>
             <lang id="fi" time="20160814T195606Z">Moi maailma</lang>
             <lang id="de" st="1" or="6" rw="0" time="20180324T152121Z">Hallo Welt</lang>
@@ -34,7 +34,7 @@
           </row>
         </item>
         <item name="Label2" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="3" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQCfgtDbGllbnRXaWR0aAMZ
@@ -50,7 +50,7 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="This is a sample" scannedcomment="This is a comment">
+        <row id="This is a sample" si="4" scannedcomment="This is a comment">
           <value>This is a sample</value>
           <lang id="fi" time="20160814T195611Z">Tämä on esimerkki</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180324T152122Z">Dies ist ein Beispiel</lang>
@@ -65,4 +65,24 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

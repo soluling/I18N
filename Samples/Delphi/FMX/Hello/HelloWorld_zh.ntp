@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20170730T154309Z" lastmodified="20180325T184309Z" version="1.0.141">
+<project id="431D5073-1331-4B9E-85C9-C026875B3A6A" created="20170730T154309Z" lastmodified="20200317T003850Z" version="1.0.714" stringid="9">
   <lang id="zh"/>
-  <node class="TDelphiProjectSource" name="HelloWorld.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="HelloWorld.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Hello\HelloWorld.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1">
+      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">Sample</row>
+        <row id="Caption" si="1">Sample</row>
         <row id="ClientHeight">247</row>
         <row id="ClientWidth">420</row>
         <item name="Label1" type="TLabel">
-          <row id="Text">This is a sample</row>
+          <row id="Text" si="2">This is a sample</row>
         </item>
         <item name="Button1" type="TButton">
-          <row id="Text">Click</row>
+          <row id="Text" si="3">Click</row>
         </item>
         <item name="Label2" type="TLabel">
-          <row id="Text">Windows</row>
+          <row id="Text" si="4">Windows</row>
         </item>
         <item name="RuntimeLabel" type="TLabel" created="20170730T181844Z">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="5" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQD9wALQ2xpZW50V2lkdGgD
@@ -36,12 +36,12 @@
           dHRpbmdzLldvcmRXcmFwCARUZXh0BgVkdW1teQhUYWJPcmRlcgIFAAAA
         </data>
       </node>
-      <node class="TDelphiFormFileNode" name="Unit1.iPhone" type="TForm1_iPhone" objectname="Form1_iPhone">
+      <node class="TDelphiFormFileNode" name="Unit1.iPhone" type="TForm1_iPhone" objectname="Form1_iPhone" flags="[ffInherited]" filename="Unit1.iPhone.fmx">
         <row id="ClientHeight">460</row>
         <row id="ClientWidth">320</row>
         <item name="Label1" type="TLabel"/>
         <item name="Label2" type="TLabel">
-          <row id="Text">iOS</row>
+          <row id="Text" si="6">iOS</row>
         </item>
         <item name="RuntimeLabel" type="TLabel" created="20170730T181844Z"/>
         <data>
@@ -51,12 +51,12 @@
           YmVsDFJ1bnRpbWVMYWJlbApTaXplLldpZHRoBQAAAAAAAADoBEALU2l6ZS5IZWlnaHQFAAAAAAAAALgDQAAAAA==
         </data>
       </node>
-      <node class="TDelphiFormFileNode" name="Unit1.SmXhdpiPh" type="TForm1_SmXhdpiPh" created="20170730T181844Z" objectname="Form1_SmXhdpiPh">
+      <node class="TDelphiFormFileNode" name="Unit1.SmXhdpiPh" type="TForm1_SmXhdpiPh" created="20170730T181844Z" objectname="Form1_SmXhdpiPh" flags="[ffInherited]" filename="Unit1.SmXhdpiPh.fmx">
         <row id="ClientHeight">375</row>
         <row id="ClientWidth">250</row>
         <item name="Label1" type="TLabel"/>
         <item name="Label2" type="TLabel">
-          <row id="Text">Android</row>
+          <row id="Text" si="7">Android</row>
         </item>
         <item name="RuntimeLabel" type="TLabel" created="20170731T031804Z"/>
         <data>
@@ -69,12 +69,32 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_" created="20170730T181844Z">
-        <row id="ThisIsString" created="20170730T182640Z">This is a string</row>
-        <row id="HelloWorld" created="20170730T182640Z">Hello World</row>
+        <row id="ThisIsString" si="8" created="20170730T182640Z">This is a string</row>
+        <row id="HelloWorld" si="9" created="20170730T182640Z">Hello World</row>
       </node>
     </node>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

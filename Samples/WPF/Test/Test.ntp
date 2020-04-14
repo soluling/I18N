@@ -1,49 +1,58 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9F2D1999-3013-49AC-8336-6432162A5759" created="20180424T134516Z" lastmodified="20181207T030500Z" version="1.0.272">
+<project id="9F2D1999-3013-49AC-8336-6432162A5759" created="20180424T134516Z" lastmodified="20200316T192539Z" version="1.0.714" stringid="19">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="Test.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Test\Test.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192538Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRlc3QuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
+        b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRvdy54YW1s
+        Ij4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8
+        L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20180424T134534Z">Esimerkki</lang>
       </row>
       <item name="StackPanel[0]" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>One</value>
             <lang id="fi" rw="0" time="20180424T134537Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Two</value>
             <lang id="fi" rw="0" time="20180424T134540Z">Kaksi</lang>
           </row>
         </item>
         <item name="button5" type="Button">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>Three</value>
             <lang id="fi" rw="0" time="20180424T134542Z">Kolme</lang>
           </row>
         </item>
         <item name="panel1" type="StackPanel">
           <item name="label3" type="Label">
-            <row id="Content">
+            <row id="Content" si="5">
               <value>One</value>
               <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
             </row>
           </item>
           <item name="label4" type="Label">
-            <row id="Content">
+            <row id="Content" si="6">
               <value>Two</value>
               <lang id="fi" or="3" rw="0" time="20180424T134540Z">Kaksi</lang>
             </row>
           </item>
           <item name="button4" type="Button">
-            <row id="Content">
+            <row id="Content" si="7">
               <value>Three</value>
               <lang id="fi" or="3" rw="0" time="20180424T134542Z">Kolme</lang>
             </row>
@@ -51,19 +60,19 @@
         </item>
         <item name="panel2" type="StackPanel">
           <item name="button1" type="Button">
-            <row id="Content">
+            <row id="Content" si="8">
               <value>One</value>
               <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
             </row>
           </item>
           <item name="button2" type="Button">
-            <row id="Content">
+            <row id="Content" si="9">
               <value>Two</value>
               <lang id="fi" or="3" rw="0" time="20180424T134540Z">Kaksi</lang>
             </row>
           </item>
           <item name="button3" type="Button">
-            <row id="Content">
+            <row id="Content" si="10">
               <value>Three</value>
               <lang id="fi" or="3" rw="0" time="20180424T134542Z">Kolme</lang>
             </row>
@@ -91,13 +100,13 @@
     <node class="TXamlNode" name="Window1.xaml" type="Window">
       <item name="StackPanel[0]" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="11">
             <value>One</value>
             <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="12">
             <value>Two</value>
             <lang id="fi" or="3" rw="0" time="20180424T134540Z">Kaksi</lang>
           </row>
@@ -113,31 +122,31 @@
     <node class="TXamlNode" name="Window2.xaml" type="Window">
       <item name="StackPanel[0]" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="13">
             <value>One</value>
             <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="14">
             <value>One</value>
             <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
           </row>
         </item>
         <item name="label3" type="Label">
-          <row id="Content">
+          <row id="Content" si="15">
             <value>One</value>
             <lang id="fi" or="3" rw="0" time="20180424T134537Z">Yksi</lang>
           </row>
         </item>
         <item name="Button[0]" type="Button">
-          <row id="Content">
+          <row id="Content" si="16">
             <value>Two</value>
             <lang id="fi" or="3" rw="0" time="20180424T134540Z">Kaksi</lang>
           </row>
         </item>
         <item name="CheckBox[0]" type="CheckBox">
-          <row id="Content">
+          <row id="Content" si="17">
             <value>Three</value>
             <lang id="fi" or="3" rw="0" time="20180424T134542Z">Kolme</lang>
           </row>
@@ -155,13 +164,13 @@
     <node class="TXamlNode" name="Window3.xaml" type="Window">
       <item name="StackPanel[0]" type="StackPanel">
         <item name="label" type="Label">
-          <row id="Content">
+          <row id="Content" si="18">
             <value>Label</value>
             <lang id="fi" rw="0" time="20180424T134547Z">Tunnus</lang>
           </row>
         </item>
         <item name="button" type="Button">
-          <row id="Content">
+          <row id="Content" si="19">
             <value>Button</value>
             <lang id="fi" rw="0" time="20180424T134550Z">Painike</lang>
           </row>
@@ -175,4 +184,23 @@
       </data>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <RootNamespace>BlazorSportServer</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="BlazorSportServer.nds" />
+    <None Remove="BlazorSportServer.ntp" />
+    <None Remove="BlazorSportServer.ntr" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ASP.NET\Core\SportLibrary\SportLibrary.csproj" />
+  </ItemGroup>
+
+</Project>

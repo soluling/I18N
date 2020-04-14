@@ -1,30 +1,30 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8AB49C22-5021-4418-90FC-6DBD40EEAB27" created="20121106T071534Z" lastmodified="20181129T160936Z" version="1.0.269">
+<project id="8AB49C22-5021-4418-90FC-6DBD40EEAB27" created="20121106T071534Z" lastmodified="20200316T191026Z" version="1.0.714" stringid="9">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\ListView.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\bin\Release\ListView.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="ListView.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\ListView.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\bin\Release\ListView.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="ListView.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="ListView.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121106T071534Z">
+        <row id="$this.Text" si="1" created="20121106T071534Z">
           <value>Sample</value>
           <lang id="fi" time="20121106T071545Z">Esimerkki</lang>
         </row>
-        <row id="columnHeader1.Text" created="20121106T071534Z">
+        <row id="columnHeader1.Text" si="2" created="20121106T071534Z">
           <value>One</value>
           <lang id="fi" time="20121106T071547Z">Yksi</lang>
         </row>
-        <row id="columnHeader2.Text" created="20121106T071534Z">
+        <row id="columnHeader2.Text" si="3" created="20121106T071534Z">
           <value>Two</value>
           <lang id="fi" time="20121106T071549Z">Kaksi</lang>
         </row>
-        <row id="columnHeader3.Text" created="20121106T071534Z">
+        <row id="columnHeader3.Text" si="4" created="20121106T071534Z">
           <value>Three</value>
           <lang id="fi" time="20121106T071551Z">Kolme</lang>
         </row>
-        <row id="listView1.Items.Text" created="20121106T072950Z">
+        <row id="listView1.Items.Text" si="5" created="20121106T072950Z">
           <value>One</value>
           <lang id="fi" time="20121106T071547Z">Yksi</lang>
         </row>
-        <row id="listView1.Items1.Text" created="20121106T072950Z">
+        <row id="listView1.Items1.Text" si="6" created="20121106T072950Z">
           <value>One</value>
           <lang id="fi" time="20121106T071547Z">Yksi</lang>
         </row>
@@ -106,19 +106,38 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="ListView.Properties.Resources.resources">
-        <row id="String1" created="20121106T071534Z">
+        <row id="String1" si="7" created="20121106T071534Z">
           <value>One</value>
           <lang id="fi" time="20121106T071547Z">Yksi</lang>
         </row>
-        <row id="String2" created="20121106T071534Z">
+        <row id="String2" si="8" created="20121106T071534Z">
           <value>Two</value>
           <lang id="fi" time="20121106T071549Z">Kaksi</lang>
         </row>
-        <row id="String3" created="20121106T071534Z">
+        <row id="String3" si="9" created="20121106T071534Z">
           <value>Three</value>
           <lang id="fi" time="20121106T071551Z">Kolme</lang>
         </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,0 +1,9 @@
+﻿@page "/"
+
+@inject IStringLocalizer<Index> localizer
+
+<h1>@localizer["Hello, world!"]</h1>
+
+@localizer["Welcome to your new app."]
+
+@System.Globalization.CultureInfo.CurrentCulture.ToString()

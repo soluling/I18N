@@ -1,27 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20190920T143639Z" version="1.0.542" lockedrowcomplete="0" stringid="541">
+<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200316T185521Z" version="1.0.714" lockedrowcomplete="0" stringid="553">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="WindowsForms.sln" fullpath="D:\NT\Deploy\Samples\WindowsForms\WindowsForms.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms]" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrJson,nrText,nrXml,nrGroupIcon,nrIcon,nrManifest]">
-    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Standard.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Standard.csproj" original="en" groupname="..\..\Library\NET\Standard\Standard.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" st="0" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
       <netproperties version="standard20"/>
-      <node class="TResXNode" name="Resources.resx">
-        <row id="Female" si="520">Female</row>
-        <row id="Few" si="521">Few</row>
-        <row id="Male" si="522">Male</row>
-        <row id="Many" si="523">Many</row>
-        <row id="Neutral" si="524">Neutral</row>
-        <row id="One" si="525">One</row>
-        <row id="Plural" si="526">Plural</row>
-        <row id="Two" si="527">Two</row>
-        <row id="Zero" si="528">Zero</row>
+      <node class="TResXNode" name="Resources.resx" st="0">
+        <row id="Female" si="542" st="0">Female</row>
+        <row id="Few" si="543" st="0">Few</row>
+        <row id="Male" si="544" st="0">Male</row>
+        <row id="Many" si="545" st="0">Many</row>
+        <row id="Neutral" si="546" st="0">Neutral</row>
+        <row id="One" si="547" st="0">
+          <value>One</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20190920T141948Z">Yksi</lang>
+        </row>
+        <row id="Plural" si="548" st="0">Plural</row>
+        <row id="Two" si="549" st="0">
+          <value>Two</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20190920T141948Z">Kaksi</lang>
+        </row>
+        <row id="Zero" si="550" st="0">Zero</row>
       </node>
     </node>
-    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\Forms.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\Forms\Forms.csproj" original="en" groupname="..\..\Library\NET\Translator\Forms\Forms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" st="0" original="en" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="SelectLanguage.resx" resourcekind="nkForm">
-        <row id="okButton.Text" si="539">OK</row>
-        <row id="cancelButton.Text" si="540">Cancel</row>
-        <row id="$this.Text" si="541">Select Language</row>
+      <node class="TResXNode" name="SelectLanguage.resx" st="0" resourcekind="nkForm">
+        <row id="okButton.Text" si="551" st="0">OK</row>
+        <row id="cancelButton.Text" si="552" st="0">Cancel</row>
+        <row id="$this.Text" si="553" st="0">Select Language</row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
           IFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9ybWF0
@@ -159,10 +165,11 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BiDiArabic\BiDiArabic.csproj" original="en" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="checkBox1.Text" si="350">
           <value>&amp;Save</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Talleta</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Talleta</lang>
         </row>
         <row id="browseButton.Text" si="351">&amp;Clear</row>
         <row id="label1.Text" si="352">&amp;Value:</row>
@@ -328,6 +335,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="BiDi\BidiEnglish\BidiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiEnglish\BidiEnglish.csproj" original="en" groupname="BiDi\BidiEnglish\BidiEnglish.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="346">&amp;Value:</row>
         <row id="browseButton.Text" si="347">&amp;Clear</row>
@@ -484,10 +492,11 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="BiDi\BidiSimple\BidiSimple.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiSimple\BidiSimple.csproj" original="en" groupname="BiDi\BidiSimple\BidiSimple.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="359">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -587,12 +596,13 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Comments\Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="162">dummy</row>
         <row id="label2.Text" si="163">dummy</row>
         <row id="$this.Text" si="164">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -723,43 +733,44 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="FormatComment" class="TPatternRow" si="165" scannedcomment="Name and place">
             <value>Hello {0}, welcome to {1}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
           </row>
           <row id="FormatNoComment" class="TPatternRow" si="166">
             <value>Hello {0}, welcome to {1}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
           </row>
           <row id="FormatPlaceholderComment" class="TPatternRow" si="167" scannedcomment="0: Name of person
 1: Name of place">
             <value>Hello {0}, welcome to {1}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
           </row>
           <row id="HelloWorld" si="168" scannedcomment="The most typical software output">
             <value>Hello world</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="CustomControl\Application\Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" groupname="CustomControl\Application\Application.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="sampleLabel1.CustomC1" si="114">4,1,0,0,0,95,Columns:1{Caption:"One";}	2{Caption:"Two";}	3{Caption:"Three";}	</row>
+        <row id="sampleLabel1.CustomC1" si="114">4,1,0,0,0,95,Columns:1{Caption:&quot;One&quot;;}	2{Caption:&quot;Two&quot;;}	3{Caption:&quot;Three&quot;;}	</row>
         <row id="sampleLabel1.CustomChar" si="115">a</row>
         <row id="sampleLabel1.CustomExpression" si="116">One;Two;Three</row>
         <row id="sampleLabel1.CustomHtml" si="117">&lt;html&gt;&lt;head&gt;&lt;title&gt;Test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;&lt;/body&gt;&lt;/html&gt;</row>
-        <row id="sampleLabel1.CustomJson" si="118">{"product": "Skim milk", "price": 1.15, "onsale": false}</row>
+        <row id="sampleLabel1.CustomJson" si="118">{&quot;product&quot;: &quot;Skim milk&quot;, &quot;price&quot;: 1.15, &quot;onsale&quot;: false}</row>
         <row id="sampleLabel1.CustomString" si="119">
           <value>This is a sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
         </row>
-        <row id="sampleLabel1.CustomXml" si="120">&lt;?xml version="1.0" encoding="utf-8"?&gt;&lt;simple&gt;&lt;product&gt;Skim milk&lt;/product&gt;&lt;price&gt;1.15&lt;/price&gt;&lt;/simple&gt;</row>
+        <row id="sampleLabel1.CustomXml" si="120">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;simple&gt;&lt;product&gt;Skim milk&lt;/product&gt;&lt;price&gt;1.15&lt;/price&gt;&lt;/simple&gt;</row>
         <row id="sampleLabel1.Text" si="121">
           <value>Hello World</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
         <row id="$this.Text" si="122">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -939,17 +950,19 @@
         <node class="TResXNode" name="Resources.resx"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Control\Control.csproj" original="en" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU"/>
+    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Control\Control.csproj" original="en" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
+      <netproperties toolsversion="nt40"/>
+    </node>
     <node class="TNetProjectSource" name="Database\Database.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Database\Database.csproj" original="en" groupname="Database\Database.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="button1.Text" si="1">
           <value>&amp;Language...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
         </row>
         <row id="$this.Text" si="2">
           <value>Sport</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Urheilu</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Urheilu</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -1078,31 +1091,31 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="DescriptionColumn" si="3">
             <value>Description</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Selitys</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Selitys</lang>
           </row>
           <row id="FieldPlayersColumn" si="4">
             <value>Field players</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Kenttäpalaajat</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Kenttäpalaajat</lang>
           </row>
           <row id="FlagPictureColumn" si="5">
             <value>Flag</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Lippu</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Lippu</lang>
           </row>
           <row id="GoalieColumn" si="6">
             <value>Goalie</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Maalivahti</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Maalivahti</lang>
           </row>
           <row id="NameColumn" si="7">
             <value>Name</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Nimi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Nimi</lang>
           </row>
           <row id="OriginColumn" si="8">
             <value>Origin</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Alkuperä</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Alkuperä</lang>
           </row>
           <row id="PictureColumn" si="9">
             <value>Picture</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Kuva</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Kuva</lang>
           </row>
         </node>
       </node>
@@ -1112,39 +1125,39 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="10">
           <value>&amp;Calculate</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Laske</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Laske</lang>
         </row>
         <row id="exitToolStripMenuItem.Text" si="11">
           <value>E&amp;xit</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Lopeta</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Lopeta</lang>
         </row>
         <row id="fileToolStripMenuItem.Text" si="12">
           <value>&amp;File</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Tiedosto</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Tiedosto</lang>
         </row>
         <row id="aboutToolStripMenuItem.Text" si="13">
           <value>&amp;About...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Tietoa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Tietoa...</lang>
         </row>
         <row id="helpToolStripMenuItem.Text" si="14">
           <value>&amp;Help</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Ohje</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Ohje</lang>
         </row>
         <row id="distanceLabel.Text" si="15">
           <value>&amp;Driving distance:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Ajomatka:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Ajomatka:</lang>
         </row>
         <row id="sizeLabel.Text" si="16">
           <value>&amp;Speed:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Nopeus:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Nopeus:</lang>
         </row>
         <row id="calculateButton.Text" si="17">
           <value>&amp;Calculate</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Laske</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Laske</lang>
         </row>
         <row id="$this.Text" si="18">
           <value>Driving Time</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Ajoaika</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Ajoaika</lang>
         </row>
         <codeproperties>
           <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
@@ -3819,7 +3832,7 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="About" si="19">
             <value>Driving time calculator</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Ajoaikalaskin</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Ajoaikalaskin</lang>
           </row>
           <row id="ResultPlural" class="TPatternRow" si="20">
             <value startpattern="1">Driving time is{0}{1}</value>
@@ -3828,7 +3841,7 @@
             <pattern plural="pfOther" index="0"> {0} hours </pattern>
             <pattern plural="pfOne" index="1">{0} minute</pattern>
             <pattern plural="pfOther" index="1">{0} minutes</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">
               <value startpattern="1">Ajoaika on{0}{1}</value>
               <pattern plural="pfZero" index="0"> </pattern>
               <pattern plural="pfOne" index="0"> {0} tunti </pattern>
@@ -3839,7 +3852,7 @@
           </row>
           <row id="Language" si="21">
             <value>en</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">fi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">fi</lang>
           </row>
         </node>
       </node>
@@ -3849,43 +3862,43 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="411">
           <value>&amp;Calculate</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Laske</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Laske</lang>
         </row>
         <row id="languageToolStripMenuItem.Text" si="412">
           <value>&amp;Language...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Kieli...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Kieli...</lang>
         </row>
         <row id="exitToolStripMenuItem.Text" si="413">
           <value>E&amp;xit</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Lopeta</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Lopeta</lang>
         </row>
         <row id="fileToolStripMenuItem.Text" si="414">
           <value>&amp;File</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Tiedosto</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Tiedosto</lang>
         </row>
         <row id="aboutToolStripMenuItem.Text" si="415">
           <value>&amp;About...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Tietoa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Tietoa...</lang>
         </row>
         <row id="helpToolStripMenuItem.Text" si="416">
           <value>&amp;Help</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Ohje</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Ohje</lang>
         </row>
         <row id="distanceLabel.Text" si="417">
           <value>&amp;Driving distance:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Ajomatka:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Ajomatka:</lang>
         </row>
         <row id="sizeLabel.Text" si="418">
           <value>&amp;Speed:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Nopeus:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Nopeus:</lang>
         </row>
         <row id="calculateButton.Text" si="419">
           <value>&amp;Calculate</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Laske</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Laske</lang>
         </row>
         <row id="$this.Text" si="420">
           <value>Driving Time</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Ajoaika</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ajoaika</lang>
         </row>
         <codeproperties>
           <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
@@ -6569,7 +6582,7 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="About" si="421">
             <value>Driving time calculator</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Ajoaikalaskin</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ajoaikalaskin</lang>
           </row>
           <row id="ResultPlural" class="TPatternRow" si="422">
             <value startpattern="1">Driving time is{0}{1}</value>
@@ -6578,7 +6591,7 @@
             <pattern plural="pfOther" index="0"> {0} hours </pattern>
             <pattern plural="pfOne" index="1">{0} minute</pattern>
             <pattern plural="pfOther" index="1">{0} minutes</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value startpattern="1">Ajoaika on {0}{1}</value>
               <pattern plural="pfZero" index="0"> </pattern>
               <pattern plural="pfOne" index="0"> {0} tunti</pattern>
@@ -6589,12 +6602,13 @@
           </row>
           <row id="Language" si="423">
             <value>en</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">fi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Driving\Original\Original.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Original\Original.csproj" original="en" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="401">&amp;Calculate</row>
         <row id="exitToolStripMenuItem.Text" si="402">E&amp;xit</row>
@@ -9309,10 +9323,11 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="EmbeddedResources\EmbeddedResources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\EmbeddedResources\EmbeddedResources.csproj" original="en" groupname="EmbeddedResources\EmbeddedResources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="452">
           <value>Resource Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Resurssiesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Resurssiesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -9413,6 +9428,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Encodings\Encodings.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Encodings\Encodings.csproj" original="en" groupname="Encodings\Encodings.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Ansi.resx">
         <row id="String1" si="169">Ansi ångström</row>
       </node>
@@ -9432,7 +9448,7 @@
         <row id="utf32LeNoBomLabel.Text" si="182">dummy</row>
         <row id="$this.Text" si="183">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -9754,7 +9770,7 @@
       <node class="TResXNode" name="Utf8NoBom.resx">
         <row id="String1" si="195">
           <value>UTF-8 no BOM ångström</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">UTF-8 ei BOM:a ångström</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-8 ei BOM:a ångström</lang>
         </row>
       </node>
       <node class="TResXNode" name="Utf16BE.resx">
@@ -9763,7 +9779,7 @@
       <node class="TResXNode" name="Utf16BENoBom.resx">
         <row id="String1" si="187">
           <value>UTF-16 BE no BOM ångström</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">UTF-16 BE ei BOM:a ångström</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-16 BE ei BOM:a ångström</lang>
         </row>
       </node>
       <node class="TResXNode" name="Utf16LE.resx">
@@ -9772,7 +9788,7 @@
       <node class="TResXNode" name="Utf16LENoBom.resx">
         <row id="String1" si="189">
           <value>UTF-16 LE no BOM ångström</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">UTF-16 LE ei BOM:a ångström</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-16 LE ei BOM:a ångström</lang>
         </row>
       </node>
       <node class="TResXNode" name="Utf32BE.resx">
@@ -9781,7 +9797,7 @@
       <node class="TResXNode" name="Utf32BENoBom.resx">
         <row id="String1" si="191">
           <value>UTF-32 BE no BOM ångström</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">UTF-32 BE ei BOM:a ångström</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-32 BE ei BOM:a ångström</lang>
         </row>
       </node>
       <node class="TResXNode" name="Utf32LE.resx">
@@ -9790,63 +9806,64 @@
       <node class="TResXNode" name="Utf32LENoBom.resx">
         <row id="String1" si="193">
           <value>UTF-32 LE no BOM ångström</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">UTF-32 LE ei BOM:a ångström</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-32 LE ei BOM:a ångström</lang>
         </row>
       </node>
     </node>
     <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="openButton1.Text" si="368">
           <value>&amp;Open...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Avaa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Avaa...</lang>
         </row>
         <row id="saveButton1.Text" si="369">
           <value>&amp;Save...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Talleta...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Talleta...</lang>
         </row>
         <row id="openButton2.Text" si="370">
           <value>O&amp;pen...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">A&amp;vaa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">A&amp;vaa...</lang>
         </row>
         <row id="saveButton2.Text" si="371">
           <value>S&amp;ave...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Ta&amp;lleta...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ta&amp;lleta...</lang>
         </row>
         <row id="openButton3.Text" si="372">
           <value>Op&amp;en...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Av&amp;aa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Av&amp;aa...</lang>
         </row>
         <row id="openButton4.Text" si="373">
           <value>Ope&amp;n...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Avaa..</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Avaa..</lang>
         </row>
         <row id="label1.Text" si="374">
           <value>Filter as a single string</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Suodin yhtenä merkkijonona</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Suodin yhtenä merkkijonona</lang>
         </row>
         <row id="label2.Text" si="375">
           <value>Composed filter with all files</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koottu suodin kaikkien tiedostojen kanssa</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koottu suodin kaikkien tiedostojen kanssa</lang>
         </row>
         <row id="label3.Text" si="376">
           <value>Composed filter without all files</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koottu suodin ilman kaikkia tiedostoja</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koottu suodin ilman kaikkia tiedostoja</lang>
         </row>
         <row id="label4.Text" si="377">
           <value>Composed filter all files after XML files</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koottu suodin, kaikki tiedostot XML-tiedostojen jälkeen</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koottu suodin, kaikki tiedostot XML-tiedostojen jälkeen</lang>
         </row>
         <row id="label5.Text" si="378">
           <value>Filter as a single string</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Suodin yhtenä merkkijonona</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Suodin yhtenä merkkijonona</lang>
         </row>
         <row id="label6.Text" si="379">
           <value>Composed filter</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koottu suodin</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koottu suodin</lang>
         </row>
         <row id="$this.Text" si="380">
           <value>File Dialog Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Tiedostodialogiesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tiedostodialogiesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -10118,70 +10135,71 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="AllFiles" si="381">
             <value>All files</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaikki tiedostot</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaikki tiedostot</lang>
           </row>
           <row id="AllSupportedFiles" si="382">
             <value>All supported files</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaikki tuetut tiedostot</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaikki tuetut tiedostot</lang>
           </row>
           <row id="IniFiles" si="383">
             <value>Ini files</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Ini-tiedostot</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ini-tiedostot</lang>
           </row>
           <row id="OpenFilter" si="384" scannedcomment="This is open dialog filter. Keep the format.">
             <value>All supported files (*.xml;*.ini)|*.xml;*.ini|XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini|All files (*.*)|*.*</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaikki tuetut tiedostot (*.xml;*.ini)|*.xml;*.ini|XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini|Kaikki tiedostot (*.*)|*.*</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaikki tuetut tiedostot (*.xml;*.ini)|*.xml;*.ini|XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini|Kaikki tiedostot (*.*)|*.*</lang>
           </row>
           <row id="OpenTitle" si="385">
             <value>Open File</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Avaa tiedosto</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Avaa tiedosto</lang>
           </row>
           <row id="SaveFile" si="386">
             <value>SampleFile.xml</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">EsimerkkiTiedotsto.xml</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">EsimerkkiTiedotsto.xml</lang>
           </row>
           <row id="SaveFilter" si="387" scannedcomment="This is save dialog filter. Keep the format.">
             <value>XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini</lang>
           </row>
           <row id="SaveTitle" si="388">
             <value>Save File</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Talleta tiedostot</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Talleta tiedostot</lang>
           </row>
           <row id="XmlFiles" si="389">
             <value>XML files</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">XML-tiedostot</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">XML-tiedostot</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Font\Font.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Font\Font.csproj" original="en" groupname="Font\Font.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="360">
           <value>Standard</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Perus</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
         </row>
         <row id="label2.Text" si="361">Arial</row>
         <row id="label3.Text" si="362">Onyx</row>
         <row id="label4.Text" si="363">
           <value>Standard</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Perus</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
         </row>
         <row id="label5.Text" si="364">
           <value>Standard</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Perus</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
         </row>
         <row id="label6.Text" si="365">
           <value>All</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaikki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaikki</lang>
         </row>
         <row id="label7.Text" si="366">
           <value>Standard</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Perus</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
         </row>
         <row id="$this.Text" si="367">
           <value>Font Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Fonttiesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Fonttiesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -10400,11 +10418,13 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="HardCoded\HardCoded.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\HardCoded\HardCoded.csproj" original="en" groupname="HardCoded\HardCoded.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+      <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx"/>
       </node>
     </node>
     <node class="TNetProjectSource" name="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" groupname="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="22">This is a sample</row>
         <row id="$this.Text" si="23">Sample</row>
@@ -10525,27 +10545,27 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="embeddedLabel.Text" si="24">
           <value>Embedded:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Sulautettu:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Sulautettu:</lang>
         </row>
         <row id="designTimeResxLabel.Text" si="25">
           <value>Design time resx:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Kehitysaikainen resx:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Kehitysaikainen resx:</lang>
         </row>
         <row id="resourceLabel.Text" si="26">
           <value>Resource:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Resurssi:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Resurssi:</lang>
         </row>
         <row id="embeddedResourceLabel.Text" si="27">
           <value>Embedded resource:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Sulautettu resurssi:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Sulautettu resurssi:</lang>
         </row>
         <row id="runtimeResxLabel.Text" si="28">
           <value>Runtime resx:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Ajonaikainen resx:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Ajonaikainen resx:</lang>
         </row>
         <row id="$this.Text" si="29">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -11359,6 +11379,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="ImageList\ImageList.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ImageList\ImageList.csproj" original="en" groupname="ImageList\ImageList.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="imageList1.ImageStream.Data[0]" class="TImageRow">
             Qk0owAAAAAAAADYAAAAoAAAAgAAAAIAAAAABABgAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -13341,6 +13362,7 @@
         <row id="label1.Text" si="31">dummy</row>
         <row id="$this.Text" si="32">Sample</row>
         <codeproperties>
+          <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
         </codeproperties>
@@ -16174,6 +16196,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Ime\Ime.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Ime\Ime.csproj" original="en" groupname="Ime\Ime.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="defaultLabel.Text" si="354">&amp;Default input method:</row>
         <row id="onLabel.Text" si="355">&amp;Input method on:</row>
@@ -16370,6 +16393,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Inherited\Inherited.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Inherited\Inherited.csproj" original="en" groupname="Inherited\Inherited.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="BaseForm.resx" resourcekind="nkForm">
         <row id="label1.Text" si="143">Base</row>
         <row id="$this.Text" si="144">Base</row>
@@ -17001,16 +17025,16 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="36">
           <value>This is a sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
         </row>
         <row id="languageButton.Text" si="37">
           <value>&amp;Language...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
         </row>
         <row id="label2.Text" si="38">dummy</row>
         <row id="$this.Text" si="39">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -17151,12 +17175,13 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="40">
             <value>This is another sample</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on toinen esimerkki</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on toinen esimerkki</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Links\Links.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Links\Links.csproj" original="en" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="41">dummy</row>
         <row id="textXml.Text" si="42">dummy</row>
@@ -17438,6 +17463,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="ListView\ListView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\ListView.csproj" original="en" groupname="ListView\ListView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="columnHeader1.Text" si="58">One</row>
         <row id="columnHeader2.Text" si="59">Two</row>
@@ -17616,6 +17642,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Menu\Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" groupname="Menu\Menu.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
         <row id="newToolStripMenuItem.Text" si="440">&amp;New</row>
@@ -17628,11 +17655,11 @@
         <row id="menuStrip1.Text" si="445">menuStrip1</row>
         <row id="aboutToolStripMenuItem.Text" si="446">
           <value>&amp;About...</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Tietoa...</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Tietoa...</lang>
         </row>
         <row id="$this.Text" si="447">
           <value>Menu Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Valokkoesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Valokkoesimerkki</lang>
         </row>
         <codeproperties>
           <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
@@ -17830,9 +17857,9 @@
         <row id="abbreviated10.Text" si="492">dummy</row>
         <row id="abbreviated11.Text" si="493">dummy</row>
         <row id="abbreviated12.Text" si="494">dummy</row>
-        <row id="currencyRadio.Text" si="495">&amp;Currency such as "$1M"</row>
-        <row id="shortRadio.Text" si="496">&amp;Short such as "1M"</row>
-        <row id="longRadio.Text" si="497">&amp;Long such as "1 million"</row>
+        <row id="currencyRadio.Text" si="495">&amp;Currency such as &quot;$1M&quot;</row>
+        <row id="shortRadio.Text" si="496">&amp;Short such as &quot;1M&quot;</row>
+        <row id="longRadio.Text" si="497">&amp;Long such as &quot;1 million&quot;</row>
         <row id="formatGroup.Text" si="498"> Format  </row>
         <row id="original1.Text" si="499">dummy</row>
         <row id="original2.Text" si="500">dummy</row>
@@ -17854,7 +17881,7 @@
         <row id="original14.Text" si="516">dummy</row>
         <row id="$this.Text" si="517">
           <value>Number Abbreviation Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Numeron lyhennys -esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Numeron lyhennys -esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -18537,15 +18564,15 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="247">
           <value>Standard pattern</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Normaali malli</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Normaali malli</lang>
         </row>
         <row id="label2.Text" si="248">
           <value>Pattern with zero part</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Malli, jossa on nolla-osa</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on nolla-osa</lang>
         </row>
         <row id="label3.Text" si="249">
           <value>Pattern with zero and two parts</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Malli, jossa on nolla- ja kaksi-osat</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on nolla- ja kaksi-osat</lang>
         </row>
         <row id="label41.Text" si="250">0</row>
         <row id="label0_0.Text" si="251">dummy</row>
@@ -18579,7 +18606,7 @@
         <row id="label0_3.Text" si="279">dummy</row>
         <row id="label4.Text" si="280">
           <value>Pattern with 0 and 2 parts</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Malli, jossa ovat 0- ja 2-osat</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa ovat 0- ja 2-osat</lang>
         </row>
         <row id="label5_4.Text" si="281">dummy</row>
         <row id="label4_4.Text" si="282">dummy</row>
@@ -18589,11 +18616,11 @@
         <row id="label0_4.Text" si="286">dummy</row>
         <row id="label23.Text" si="287">
           <value>Pattern with operator parts</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Malli, jossa on operaattoriosia</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on operaattoriosia</lang>
         </row>
         <row id="$this.Text" si="288">
           <value>Plural Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -19344,7 +19371,7 @@
           <row id="MessagePlural" class="TPatternRow" si="289">
             <value>{0} files</value>
             <pattern plural="pfOne">{0} file</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern plural="pfOne">{0} tiedosto</pattern>
             </lang>
@@ -19357,7 +19384,7 @@
             <pattern operator="okLess" operand="6">Few files</pattern>
             <pattern operator="okLessOrEqual" operand="10">Several files</pattern>
             <pattern operator="okAround" operand="12">A dozen files</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>Paljon tiedostoja</value>
               <pattern operator="okEqual" operand="0">Ei tiedostoa</pattern>
               <pattern operator="okEqual" operand="1">Yksi tiedosto</pattern>
@@ -19372,7 +19399,7 @@
             <pattern operator="okEqual" operand="0">No files</pattern>
             <pattern plural="pfOne">One file</pattern>
             <pattern operator="okEqual" operand="2">Two files</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern operator="okEqual" operand="0">Ei tiedostoa</pattern>
               <pattern plural="pfOne">Yksi tiedosto</pattern>
@@ -19384,7 +19411,7 @@
             <pattern plural="pfZero">No files</pattern>
             <pattern plural="pfOne">One file</pattern>
             <pattern plural="pfTwo">Two files</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern plural="pfZero">Ei tiedostoa</pattern>
               <pattern plural="pfOne">Yksi tiedosto</pattern>
@@ -19395,7 +19422,7 @@
             <value>{0} files</value>
             <pattern plural="pfZero">No files</pattern>
             <pattern plural="pfOne">One file</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern plural="pfZero">Ei tiedostoa</pattern>
               <pattern plural="pfOne">Yksi tiedosto</pattern>
@@ -19642,28 +19669,28 @@
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="noPluralLabel.Text" si="322">
           <value>A dynamic string without plural support:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
         </row>
         <row id="noPluralLabel0.Text" si="323">dummy</row>
         <row id="noPluralLabel1.Text" si="324">dummy</row>
         <row id="noPluralLabel2.Text" si="325">dummy</row>
         <row id="pluralLabel.Text" si="326">
           <value>Using a proper plural enabled format function:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Käyttän kunnollista monikkotukevaa muotoilufunktiota:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Käyttän kunnollista monikkotukevaa muotoilufunktiota:</lang>
         </row>
         <row id="pluralLabel0.Text" si="327">dummy</row>
         <row id="pluralLabel1.Text" si="328">dummy</row>
         <row id="pluralLabel2.Text" si="329">dummy</row>
         <row id="homeLabel.Text" si="330">
           <value>A home brew solution that works on English and few other languages:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kotitekoinen ratkaisu, joka toimii englannilla ja muutamalla muulla kielellä:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kotitekoinen ratkaisu, joka toimii englannilla ja muutamalla muulla kielellä:</lang>
         </row>
         <row id="homeLabel0.Text" si="331">dummy</row>
         <row id="homeLabel1.Text" si="332">dummy</row>
         <row id="homeLabel2.Text" si="333">dummy</row>
         <row id="multiPluralLabel.Text" si="334">
           <value>Same a above but using a multi plural enabled format function:</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kuten yllä, mutta käyttää monen monikon ymmärtävää muotoilufunktiota:</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kuten yllä, mutta käyttää monen monikon ymmärtävää muotoilufunktiota:</lang>
         </row>
         <row id="multiPluralLabel1.Text" si="335">dummy</row>
         <row id="multiPluralLabel2.Text" si="336">dummy</row>
@@ -19671,7 +19698,7 @@
         <row id="multiPluralLabel4.Text" si="338">dummy</row>
         <row id="$this.Text" si="339">
           <value>Plural Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -20046,23 +20073,23 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="File" class="TPatternRow" si="340">
             <value>{0} file</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">{0} tiedosto</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{0} tiedosto</lang>
           </row>
           <row id="Files" class="TPatternRow" si="341">
             <value>{0} files</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">{0} tiedostoa</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{0} tiedostoa</lang>
           </row>
           <row id="FilesPlural" class="TPatternRow" si="342" scannedcomment="Singular and plural parts">
             <value>{0} files</value>
             <pattern plural="pfOne">{0} file</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern plural="pfOne">{0} tiedosto</pattern>
             </lang>
           </row>
           <row id="Language" si="343" scannedcomment="ISO 639 language code">
             <value>en</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">fi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
           </row>
           <row id="MessagePlural" class="TPatternRow" si="344" scannedcomment="Start, nullar1, singular1, plural1, separator, nullar2, singular2 and plural2">
             <value startpattern="1">I have completed {0} {1}</value>
@@ -20072,7 +20099,7 @@
             <pattern plural="pfZero" index="1">out of none steps</pattern>
             <pattern plural="pfOne" index="1">out of one step</pattern>
             <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value startpattern="1">Olen suorittanut {0} {1}</value>
               <pattern plural="pfZero" index="0">en yhtään</pattern>
               <pattern plural="pfOne" index="0">yhden</pattern>
@@ -20100,11 +20127,11 @@
         <row id="label0_0.Text" si="316">dummy</row>
         <row id="useZeroCheck.Text" si="317">
           <value>&amp;Use zero part</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Käytä nolla-osaa</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Käytä nolla-osaa</lang>
         </row>
         <row id="$this.Text" si="318">
           <value>Plural Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
         </row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -20359,7 +20386,7 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="Language" si="319">
             <value>en</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">fi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
           </row>
           <row id="MessagePlural" class="TPatternRow" si="320" scannedcomment="0: Amount of steps">
             <value startpattern="1">I have completed {0} {1}</value>
@@ -20367,7 +20394,7 @@
             <pattern plural="pfOther" index="0">{0}</pattern>
             <pattern plural="pfOne" index="1">out of one step</pattern>
             <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value startpattern="1">Olen suorittanut {0} {1}</value>
               <pattern plural="pfOne" index="0">yhden</pattern>
               <pattern plural="pfOther" index="0">{0}</pattern>
@@ -20383,7 +20410,7 @@
             <pattern plural="pfZero" index="1">out of none steps</pattern>
             <pattern plural="pfOne" index="1">out of one step</pattern>
             <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value startpattern="1">Olen suorittanut {0} {1}</value>
               <pattern plural="pfZero" index="0">en yhtään</pattern>
               <pattern plural="pfOne" index="0">yhden</pattern>
@@ -20404,10 +20431,11 @@
             <value select="soccer">{0} is the best soccer player</value>
             <pattern select="basketball">{0} is the best basketball player</pattern>
             <pattern select="hockey">{0} is the best ice hockey player</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
-              <value select="basketball">{0} on paras koripalloilija</value>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
+              <value select="soccer">{0} on paras koripalloilija</value>
               <pattern select="hockey">{0} on paras jääkiekkoilija</pattern>
               <pattern select="soccer">{0} on paras jalkapaloilija</pattern>
+              <pattern select="basketball"></pattern>
             </lang>
           </row>
         </node>
@@ -20428,7 +20456,7 @@
         <row id="label0.Text" si="303">dummy</row>
         <row id="$this.Text" si="304">
           <value>Plural Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
         </row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -20668,12 +20696,12 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="Language" si="305" scannedcomment="ISO 639 language code">
             <value>en</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">fi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
           </row>
           <row id="MessagePlural" class="TPatternRow" si="306" scannedcomment="{0}: File count">
             <value>{0} files</value>
             <pattern plural="pfOne">{0} file</pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
               <value>{0} tiedostoa</value>
               <pattern plural="pfOne">{0} tiedosto</pattern>
             </lang>
@@ -20682,6 +20710,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="PlatformFiles\PlatformFiles.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\PlatformFiles\PlatformFiles.csproj" original="en" groupname="PlatformFiles\PlatformFiles.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="157">Hello world</row>
         <row id="label2.Text" si="158">dummy</row>
@@ -20816,10 +20845,11 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="ResourceName\ResourceName.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceName\ResourceName.csproj" original="en" groupname="ResourceName\ResourceName.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="453">
           <value>Form1</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -20917,7 +20947,7 @@
       <node class="TResXNode" name="Form2.resx" resourcekind="nkForm">
         <row id="$this.Text" si="454">
           <value>Form2</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21015,7 +21045,7 @@
       <node class="TResXNode" name="Form3.resx" resourcekind="nkForm">
         <row id="$this.Text" si="455">
           <value>Form3</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21114,69 +21144,69 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="456">
             <value>One</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
           </row>
           <row id="String2" si="457">
             <value>Two</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
           </row>
         </node>
       </node>
       <node class="TResXNode" name="Resource1.resx">
         <row id="String1" si="458">
           <value>One</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
         <row id="String2" si="459">
           <value>Two</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
       <node class="TResXNode" name="Resources1.resx">
         <row id="String1" si="466">
           <value>One</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
         <row id="String2" si="467">
           <value>Two</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
       <node class="TResXNode" name="Resources2Custom.resx">
         <row id="String1" si="464">
           <value>One</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
         <row id="String2" si="465">
           <value>Two</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
       <node class="TResXNode" name="Resources3Custom.resx">
         <row id="String1" si="462">
           <value>One</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
         <row id="String2" si="463">
           <value>Two</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
       <node class="TResXNode" name="Resources4Custom.resx">
         <row id="String1" si="460">
           <value>One</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
         <row id="String2" si="461">
           <value>Two</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
       <node class="TDirectoryFolder" name="Sub">
         <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
           <row id="$this.Text" si="468">
             <value>Form1</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
           </row>
           <data>
             77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21274,20 +21304,21 @@
         <node class="TResXNode" name="Resource1.resx">
           <row id="String1" si="469">
             <value>One</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
           </row>
           <row id="String2" si="470">
             <value>Two</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Resources\Resources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Resources\Resources.csproj" original="en" groupname="Resources\Resources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="67">
           <value>Resource Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Resurssiesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Resurssiesimerkki</lang>
         </row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -21388,6 +21419,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceStringLocation\ResourceStringLocation.csproj" original="en" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="390">dummy</row>
         <row id="label2.Text" si="391">dummy</row>
@@ -21674,18 +21706,19 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="ResxData\ResxData.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\ResxData.csproj" original="en" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="196">dummy</row>
         <row id="playButton.Text" si="197">
           <value>&amp;Play</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&amp;Soita</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Soita</lang>
         </row>
         <row id="stringXmlLabel.Text" si="198">dummy</row>
         <row id="binaryXmlLabel.Text" si="199">dummy</row>
         <row id="simpleXmlLabel.Text" si="200">dummy</row>
         <row id="$this.Text" si="201">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21877,12 +21910,12 @@
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx">
           <row id="SimpleJson" si="226">
-            <value>{ "data": "This is a sample" }</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">{ "data": "Tämä on esimerkki" }</lang>
+            <value>{ &quot;data&quot;: &quot;This is a sample&quot; }</value>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{ &quot;data&quot;: &quot;Tämä on esimerkki&quot; }</lang>
           </row>
           <row id="SimpleXml" si="227">
             <value>&lt;data&gt;This is a sample&lt;/data&gt;</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">&lt;data&gt;Tämä on esimerkki&lt;/data&gt;</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&lt;data&gt;Tämä on esimerkki&lt;/data&gt;</lang>
           </row>
           <row id="Sound" class="TAudioRow">
               UklGRiRNAwBXQVZFZm10IBAAAAABAAIARKwAABCxAgAEABAAZGF0YQBNAwAAAP////8AAAAA//8AAAAAAAAAAP//AAAAAAAA//8A
@@ -24773,55 +24806,55 @@
             </row>
           <row id="String1" si="228">
             <value>Hello world</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Moi maailma</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Moi maailma</lang>
           </row>
           <node class="TIniDataNode" name="BinaryIni" encoding="windows-1252">
             <item class="TIniItem" name="soccer">
               <row id="name" si="202">
                 <value>Soccer</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jalkapallo</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jalkapallo</lang>
               </row>
               <row id="fieldplayers" si="203">10</row>
               <row id="goalie" si="204">1</row>
               <row id="origin" si="205">
                 <value>England</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Englanti</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Englanti</lang>
               </row>
               <row id="description" si="206">
                 <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jalkapallo on peli, jossa kaksi 11-henkistä joukkuetta pelaa pallolla.</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jalkapallo on peli, jossa kaksi 11-henkistä joukkuetta pelaa pallolla.</lang>
               </row>
             </item>
             <item class="TIniItem" name="hockey">
               <row id="name" si="207">
                 <value>Ice hockey</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jääkiekko</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jääkiekko</lang>
               </row>
               <row id="fieldplayers" si="208">5</row>
               <row id="goalie" si="209">1</row>
               <row id="origin" si="210">
                 <value>Canada</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kanada</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kanada</lang>
               </row>
               <row id="description" si="211">
                 <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jääkiekko on jäällä pelattava joukkuepeli, jossa luistelijat yrittävät mailalla saada kiekon vastapuolen maaliin.</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jääkiekko on jäällä pelattava joukkuepeli, jossa luistelijat yrittävät mailalla saada kiekon vastapuolen maaliin.</lang>
               </row>
             </item>
             <item class="TIniItem" name="basketball">
               <row id="name" si="212">
                 <value>Basketball</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koripallo</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koripallo</lang>
               </row>
               <row id="fieldplayers" si="213">5</row>
               <row id="goalie" si="214">0</row>
               <row id="origin" si="215">
                 <value>United States</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yhdysvallat</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yhdysvallat</lang>
               </row>
               <row id="description" si="216">
                 <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
-                <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koripallo on joukkuepeli, jossa kaksi viisihenkistä joukkuetta yrittää heittää palloa vastapuolen koriin noudattaen tiettyjä sääntöjä.</lang>
+                <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koripallo on joukkuepeli, jossa kaksi viisihenkistä joukkuetta yrittää heittää palloa vastapuolen koriin noudattaen tiettyjä sääntöjä.</lang>
               </row>
             </item>
             <data>
@@ -24841,54 +24874,54 @@
               <item class="TXmlItem" name="soccer">
                 <row id="=name" si="217">
                   <value>Soccer</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jalkapallo</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jalkapallo</lang>
                 </row>
                 <row id="=fieldplayers" class="TIntegerRow">10</row>
                 <row id="=goalie" class="TIntegerRow">1</row>
                 <row id="=origin" si="218">
                   <value>England</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Englanti</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Englanti</lang>
                 </row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="219">
                     <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
-                    <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+                    <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
                   </row>
                 </item>
               </item>
               <item class="TXmlItem" name="hockey">
                 <row id="=name" si="220">
                   <value>Ice hockey</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jääkiekko</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jääkiekko</lang>
                 </row>
                 <row id="=fieldplayers" class="TIntegerRow">5</row>
                 <row id="=goalie" class="TIntegerRow">1</row>
                 <row id="=origin" si="221">
                   <value>Canada</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Kanada</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kanada</lang>
                 </row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="222">
                     <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
-                    <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+                    <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
                   </row>
                 </item>
               </item>
               <item class="TXmlItem" name="basketball">
                 <row id="=name" si="223">
                   <value>Basketball</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koripallo</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koripallo</lang>
                 </row>
                 <row id="=fieldplayers" class="TIntegerRow">5</row>
                 <row id="=goalie" class="TIntegerRow">0</row>
                 <row id="=origin" si="224">
                   <value>United States</value>
-                  <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Yhdysvallat</lang>
+                  <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yhdysvallat</lang>
                 </row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="225">
                     <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
-                    <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+                    <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
                   </row>
                 </item>
               </item>
@@ -24976,6 +25009,7 @@
     </node>
     <node class="TNetProjectSource" name="Signed\Delay\Delay.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Delay\Delay.csproj" original="en" groupname="Signed\Delay\Delay.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx" delaysign="1"/>
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="123">Hello World</row>
         <row id="label2.Text" si="124">dummy</row>
@@ -25110,6 +25144,7 @@
     </node>
     <node class="TNetProjectSource" name="Signed\Pfx\Pfx.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Pfx\Pfx.csproj" original="en" groupname="Signed\Pfx\Pfx.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx"/>
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="127">Hello World</row>
         <row id="label2.Text" si="128">dummy</row>
@@ -25244,15 +25279,16 @@
     </node>
     <node class="TNetProjectSource" name="Signed\SatelliteContract\SatelliteContract.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\SatelliteContract\SatelliteContract.csproj" original="en" groupname="Signed\SatelliteContract\SatelliteContract.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+      <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="139">
           <value>Hello world</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
         <row id="label2.Text" si="140">dummy</row>
         <row id="$this.Text" si="141">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -25380,22 +25416,23 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="142">
             <value>This is a sample</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Signed\Snk\Snk.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Snk\Snk.csproj" original="en" groupname="Signed\Snk\Snk.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="131">
           <value>Hello World</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
         <row id="label2.Text" si="132">dummy</row>
         <row id="$this.Text" si="133">
           <value>Signed Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Allekirjoitettu esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitettu esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -25523,21 +25560,22 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="134">
             <value>This is a sample</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="Signed\Unsigned\Unsigned.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Unsigned\Unsigned.csproj" original="en" groupname="Signed\Unsigned\Unsigned.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="135">
           <value>Hello World</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
         <row id="label2.Text" si="136">dummy</row>
         <row id="$this.Text" si="137">
           <value>Signed Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Allekirjoitusesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitusesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -25665,7 +25703,7 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="138">
             <value>This is a sample</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Tämä on koe</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on koe</lang>
           </row>
         </node>
       </node>
@@ -30354,6 +30392,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="471">dummy</row>
         <row id="label2.Text" si="472">dummy</row>
@@ -30362,7 +30401,7 @@
         <row id="label5.Text" si="475">dummy</row>
         <row id="$this.Text" si="476">
           <value>String Format Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Merkkijonon muotoiluesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Merkkijonon muotoiluesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -30539,37 +30578,41 @@
         <node class="TResXNode" name="Resources.resx">
           <row id="CalculationNone" class="TPatternRow" si="477">
             <value>Sample: {0} + {1} = {2}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Esimerkki: {0} + {1} = {2}</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki: {0} + {1} = {2}</lang>
           </row>
           <row id="CalculationPartial" class="TPatternRow" si="478" scannedcomment="0: First number">
             <value>Sample: {0} + {1} = {2}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Esimerkki: {0} + {1} = {2}</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki: {0} + {1} = {2}</lang>
           </row>
           <row id="Hello" class="TPatternRow" si="479" scannedcomment="0: Name of the user">
             <value>Hello {0}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Moi {0}</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Moi {0}</lang>
           </row>
           <row id="ServerError" class="TPatternRow" si="480" scannedcomment="0: Server name, 1: Error message">
             <value>Error in server {0}: {1}</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Virhe {0} palvelimessa: {1}</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Virhe {0} palvelimessa: {1}</lang>
           </row>
           <row id="Test" class="TPatternRow" si="481">
             <value startpattern="1">{0} and {1}</value>
             <pattern select="" index="0">, </pattern>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z"> ja {0} merkkejä</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">
+              <value startpattern="1"> ja {0} merkkejä</value>
+              <pattern select="" index="0"></pattern>
+            </lang>
           </row>
         </node>
       </node>
     </node>
     <node class="TNetProjectSource" name="SubDir\SubDir.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\SubDir\SubDir.csproj" original="en" groupname="SubDir\SubDir.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="448">
           <value>This is a sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Tämä on esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tämä on esimerkki</lang>
         </row>
         <row id="$this.Text" si="449">
           <value>Form</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -30686,11 +30729,11 @@
         <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
           <row id="label1.Text" si="450">
             <value>This is another sample</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Tämä on toinen esimerkki</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tämä on toinen esimerkki</lang>
           </row>
           <row id="$this.Text" si="451">
             <value>Sub Form</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Alilomake</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Alilomake</lang>
           </row>
           <data>
             77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -30807,6 +30850,7 @@
       </node>
     </node>
     <node class="TNetProjectSource" name="Text\Text.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Text\Text.csproj" original="en" groupname="Text\Text.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrText,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="90">Sample</row>
         <data>
@@ -31024,6 +31068,7 @@ Basketball is a team sport in which two teams of five players try to score point
       </node>
     </node>
     <node class="TNetProjectSource" name="TreeView\TreeView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\TreeView\TreeView.csproj" original="en" groupname="TreeView\TreeView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="treeView1.Nodes.Text" si="98">One</row>
         <row id="treeView1.Nodes.children0.Text" si="99">One</row>
@@ -31193,6 +31238,7 @@ Basketball is a team sport in which two teams of five players try to score point
       </node>
     </node>
     <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Tutorial\BadSample\BadSample.csproj" original="en" groupname="Tutorial\BadSample\BadSample.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+      <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx"/>
       </node>
@@ -31431,10 +31477,11 @@ Basketball is a team sport in which two teams of five players try to score point
       </node>
     </node>
     <node class="TNetProjectSource" name="Version\Version.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Version\Version.csproj" original="en" groupname="Version\Version.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="482">
           <value>Version Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141948Z">Versioesimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Versioesimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -31535,15 +31582,16 @@ Basketball is a team sport in which two teams of five players try to score point
       </node>
     </node>
     <node class="TNetProjectSource" name="VisualStudioCompile\VisualStudioCompile.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VisualStudioCompile\VisualStudioCompile.csproj" original="en" groupname="VisualStudioCompile\VisualStudioCompile.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="109">
           <value>Hello World</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
         <row id="label2.Text" si="110">dummy</row>
         <row id="$this.Text" si="111">
           <value>Sample</value>
-          <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -31671,11 +31719,11 @@ Basketball is a team sport in which two teams of five players try to score point
         <node class="TResXNode" name="Resources.resx">
           <row id="String1" si="112">
             <value>One</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Yksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Yksi</lang>
           </row>
           <row id="String2" si="113">
             <value>Two</value>
-            <lang id="fi" st="3" or="4" rw="0" time="20190920T141947Z">Kaksi</lang>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Kaksi</lang>
           </row>
         </node>
       </node>
@@ -31685,9 +31733,7 @@ Basketball is a team sport in which two teams of five players try to score point
     </configurations>
   </node>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -31696,9 +31742,10 @@ Basketball is a team sport in which two teams of five players try to score point
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

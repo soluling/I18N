@@ -1,18 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20121124100315" lastmodified="20141123151341">
+<project id="24AAB2A9-2699-420E-99C4-CC57D406C016" created="20121124T100315Z" lastmodified="20200316T191559Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\Signed.exe" original="en" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" excludedresources="[nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="Pfx.csproj" libraries="[nlWinForms]">
-    <sign method="smFile" keyfile="D:\NT\Deploy\Samples\WindowsForms\Signed\Pfx\Key.pfx" password="Mjg0MDg0OTQxRUI0RkE2RQ=="/>
+  <node class="TAssemblySource" name="bin\Release\Signed.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Pfx\bin\Release\Signed.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Pfx.csproj" libraries="[nlWinForms]">
+    <sign kinds="[nskStrongName]"/>
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="Signed.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121124100315">
+        <row id="$this.Text" si="1" created="20121124T100315Z">
           <value>Signed Sample</value>
-          <lang id="fi" status="3" time="20121124100324">Allekirjoitusesimerkki</lang>
+          <lang id="fi" time="20121124T100324Z">Allekirjoitusesimerkki</lang>
         </row>
-        <row id="label1.Text" created="20121124100315">
+        <row id="label1.Text" si="2" created="20121124T100315Z">
           <value>Hello World</value>
-          <lang id="fi" status="3" time="20121124100328">Moi maailma</lang>
+          <lang id="fi" time="20121124T100328Z">Moi maailma</lang>
         </row>
+        <row id="label2.Text" si="4" st="0" excluded="2">dummy</row>
+        <resourcestrings>
+          <node name="Signed.Properties.Resources.resources">
+            <id>String1</id>
+          </node>
+        </resourcestrings>
         <data>
           zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1
           bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNv
@@ -57,9 +63,9 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="Signed.Properties.Resources.resources">
-        <row id="String1" created="20121124100315">
+        <row id="String1" si="3" created="20121124T100315Z">
           <value>This is a sample</value>
-          <lang id="fi" status="3" time="20121124100334">Tämä on esimerkki</lang>
+          <lang id="fi" time="20121124T100334Z">Tämä on esimerkki</lang>
         </row>
       </node>
     </node>
@@ -67,4 +73,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

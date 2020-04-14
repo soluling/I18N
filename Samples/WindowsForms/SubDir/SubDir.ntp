@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="832256C2-B676-447D-8C97-70178E7EC2C8" created="20160416T144320Z" lastmodified="20181130T160144Z" version="1.0.269">
+<project id="832256C2-B676-447D-8C97-70178E7EC2C8" created="20160416T144320Z" lastmodified="20200316T190050Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="SubDir.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\SubDir\SubDir.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>This is a sample</value>
         <lang id="fi" time="20160416T144336Z">Tämä on esimerkki</lang>
       </row>
-      <row id="$this.Text">
+      <row id="$this.Text" si="2">
         <value>Form</value>
         <lang id="fi" time="20160416T144326Z">Lomake</lang>
       </row>
@@ -124,11 +124,11 @@
     </node>
     <node class="TDirectoryFolder" name="Sub">
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text">
+        <row id="label1.Text" si="3">
           <value>This is another sample</value>
           <lang id="fi" time="20160416T144343Z">Tämä on toinen esimerkki</lang>
         </row>
-        <row id="$this.Text">
+        <row id="$this.Text" si="4">
           <value>Sub Form</value>
           <lang id="fi" time="20160416T144329Z">Alilomake</lang>
         </row>
@@ -246,4 +246,23 @@
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

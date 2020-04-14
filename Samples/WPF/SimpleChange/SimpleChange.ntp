@@ -1,29 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="10349FC1-3BF2-49A5-89C9-1EC4D6414CF8" created="20181207T025248Z" lastmodified="20181207T025331Z" version="1.0.272">
+<project id="10349FC1-3BF2-49A5-89C9-1EC4D6414CF8" created="20181207T025248Z" lastmodified="20200316T192517Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="SimpleChange.csproj" fullpath="D:\NT\Deploy\Samples\WPF\SimpleChange\SimpleChange.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192516Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlNpbXBsZUNoYW5nZS5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hl
+        bWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICAgICAgICAgICB4bWxuczp4PSJodHRw
+        Oi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2lu
+        ZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291
+        cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181207T025253Z">Esimerkki</lang>
       </row>
       <item name="languageComboBox" type="ComboBox">
         <item name="bothItem" type="ComboBoxItem">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>Show native and English</value>
             <lang id="fi" rw="0" time="20181207T025304Z">Näytä alkuperäinen ja englanti</lang>
           </row>
         </item>
         <item name="nativeItem" type="ComboBoxItem">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Show native only</value>
             <lang id="fi" rw="0" time="20181207T025316Z">Näytä vain alkuperäinen</lang>
           </row>
         </item>
         <item name="englishItem" type="ComboBoxItem">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>Show English only</value>
             <lang id="fi" rw="0" time="20181207T025323Z">Näytä vain englanti</lang>
           </row>
@@ -47,4 +56,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

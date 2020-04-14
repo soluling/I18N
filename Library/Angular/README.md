@@ -61,9 +61,9 @@ registerLocaleData(de, 'de');
 registerLocaleData(ja, 'ja'); 
 ```
 
-The above code will ensure that the compiled application contains the locale date also for German and Japanese besides English. All locale-dependent functions, such as date pipe, rely on the locale data.
+The above code will ensure that the compiled application contains the locale data also for German and Japanese besides English. All locale-dependent functions, such as date pipe, rely on the locale data.
 
-The final modification is to add a code that species the active locale of the application. Angular uses the `LOCALE_ID` variable for that. By default, it is `en-US`. Let's add code to change that to match to the locale id of the resource we have loaded.
+The final modification is to add a code that specifies the active locale of the application. Angular uses the `LOCALE_ID` variable for that. By default, it is `en-US`. Let's add code to change that to match to the locale id of the resource we have loaded.
 
 ```typescript
 import { NgModule, LOCALE_ID } from '@angular/core';

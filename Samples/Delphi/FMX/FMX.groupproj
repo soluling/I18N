@@ -33,6 +33,9 @@
         <Projects Include="MessageDlg\MessageDialog.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="ExternalFile\ExternalFile.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -131,14 +134,23 @@
     <Target Name="MessageDialog:Make">
         <MSBuild Projects="MessageDlg\MessageDialog.dproj" Targets="Make"/>
     </Target>
+    <Target Name="ExternalFile">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj"/>
+    </Target>
+    <Target Name="ExternalFile:Clean">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExternalFile:Make">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="ActiveLanguage;CustomSelect;LanguageParam;LanguageSwitch;Simple;TreeView;Image;Device;Comments;MessageDialog"/>
+        <CallTarget Targets="ActiveLanguage;CustomSelect;LanguageParam;LanguageSwitch;Simple;TreeView;Image;Device;Comments;MessageDialog;ExternalFile"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="ActiveLanguage:Clean;CustomSelect:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Simple:Clean;TreeView:Clean;Image:Clean;Device:Clean;Comments:Clean;MessageDialog:Clean"/>
+        <CallTarget Targets="ActiveLanguage:Clean;CustomSelect:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Simple:Clean;TreeView:Clean;Image:Clean;Device:Clean;Comments:Clean;MessageDialog:Clean;ExternalFile:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="ActiveLanguage:Make;CustomSelect:Make;LanguageParam:Make;LanguageSwitch:Make;Simple:Make;TreeView:Make;Image:Make;Device:Make;Comments:Make;MessageDialog:Make"/>
+        <CallTarget Targets="ActiveLanguage:Make;CustomSelect:Make;LanguageParam:Make;LanguageSwitch:Make;Simple:Make;TreeView:Make;Image:Make;Device:Make;Comments:Make;MessageDialog:Make;ExternalFile:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

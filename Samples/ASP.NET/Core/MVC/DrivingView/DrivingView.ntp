@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3B65E59D-0755-43FA-8249-E4972BDED891" created="20181214T223518Z" lastmodified="20191208T190447Z" version="1.0.625" stringid="7">
+<project id="3B65E59D-0755-43FA-8249-E4972BDED891" created="20181214T223518Z" lastmodified="20200406T231757Z" version="1.0.731" stringid="19">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="DrivingView.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\DrivingView\DrivingView.csproj" original="en" resources="[nrResx,nrHtml]" availableresources="[nrResx,nrHtml]" netconfiguration="Debug|AnyCPU">
+  <node class="TNetProjectSource" name="DrivingView.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\DrivingView\DrivingView.csproj" original="en" resources="[nrResx,nrHtml]" availableresources="[nrResx,nrHtml]" netconfiguration="Debug|AnyCPU" aspnetcore="1">
     <netproperties version="core22"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers">
@@ -27,11 +27,26 @@
       </node>
       <node class="TDirectoryFolder" name="Default">
         <node class="THtmlDataNode" name="Index.cshtml">
-          <row id="title.text" class="THtmlRow" si="2">Driving Time Calculator</row>
-          <row id="h1.text" class="THtmlRow" si="3">&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Driving Time</row>
-          <row id="td.text" class="THtmlRow" si="4">Driving distance:</row>
-          <row id="td[1].text" class="THtmlRow" si="5">Speed:</row>
-          <row id="input[2].attributes.value" class="THtmlRow" si="6">Calculate</row>
+          <row id="title.text" class="THtmlRow" si="2">
+            <value>Driving Time Calculator</value>
+            <lang id="fi" st="4" rw="0" time="20200406T231751Z" fuzzy="5">Ajoaika Laskin ÖÄÅ</lang>
+          </row>
+          <row id="h1.text" class="THtmlRow" si="3">
+            <value>&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Driving Time</value>
+            <lang id="fi" st="4" rw="0" time="20200406T231746Z">&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Ajoaika</lang>
+          </row>
+          <row id="td.text" class="THtmlRow" si="4">
+            <value>Driving distance:</value>
+            <lang id="fi" st="4" or="6" rw="0" time="20200406T231724Z" fuzzy="5">Ajomatka:</lang>
+          </row>
+          <row id="td[1].text" class="THtmlRow" si="5">
+            <value>Speed:</value>
+            <lang id="fi" st="4" rw="0" time="20200406T231728Z">Nopeus</lang>
+          </row>
+          <row id="input[2].attributes.value" class="THtmlRow" si="6">
+            <value>Calculate</value>
+            <lang id="fi" st="4" rw="0" time="20200406T231731Z">Laske</lang>
+          </row>
           <row id="td[4].text" class="THtmlRow" si="7">@Model?.Message</row>
           <data>
             77u/QG1vZGVsIERyaXZpbmdWaWV3Lk1vZGVscy5Ecml2aW5nTW9kZWw7DQoNCjwhRE9DVFlQRSBodG1sPg0KPGh0bWw+DQo8aGVh
@@ -68,4 +83,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

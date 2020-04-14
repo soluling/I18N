@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160815T022120Z" lastmodified="20180223T024645Z" version="1.0.125">
+<project id="4116DE74-7704-452A-9FDB-EE5E0334AE09" created="20160815T022120Z" lastmodified="20200317T003906Z" version="1.0.714" stringid="7">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="TreeView.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="TreeView.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\TreeView\TreeView.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption">
+        <row id="Caption" si="1">
           <value>Sample</value>
           <lang id="fi">Esimerkki</lang>
         </row>
@@ -14,19 +14,19 @@
         <row id="ClientWidth">362</row>
         <item name="TreeView1" type="TTreeView">
           <item name="TreeViewItem1" type="TTreeViewItem">
-            <row id="Text">
+            <row id="Text" si="2">
               <value>One</value>
               <lang id="fi" time="20160815T022139Z">Yksi</lang>
             </row>
             <item name="TreeViewItem2" type="TTreeViewItem">
-              <row id="Text">
+              <row id="Text" si="3">
                 <value>Two</value>
                 <lang id="fi" time="20160815T022141Z">Kaksi</lang>
               </row>
             </item>
           </item>
           <item name="TreeViewItem3" type="TTreeViewItem">
-            <row id="Text">
+            <row id="Text" si="4">
               <value>Three</value>
               <lang id="fi" time="20160815T022144Z">Kolme</lang>
             </row>
@@ -53,22 +53,42 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="SOne">
+        <row id="SOne" si="5">
           <value>One</value>
           <lang id="fi" time="20160815T022139Z">Yksi</lang>
         </row>
-        <row id="STwo">
+        <row id="STwo" si="6">
           <value>Two</value>
           <lang id="fi" time="20160815T022141Z">Kaksi</lang>
         </row>
-        <row id="SThree">
+        <row id="SThree" si="7">
           <value>Three</value>
           <lang id="fi" time="20160815T022144Z">Kolme</lang>
         </row>
       </node>
     </node>
   </node>
-  <delphirules kind="drFireMonkey">
-    <item type="TListView" property="*ClassName"/>
-  </delphirules>
+  <rules kind="crFireMonkey">
+    <rule component="TListView" property="*ClassName"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

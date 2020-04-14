@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="111FFF81-4918-42D2-A26C-B05EA3602EF1" created="20181130T002448Z" lastmodified="20181130T003501Z" version="1.0.269">
+<project id="111FFF81-4918-42D2-A26C-B05EA3602EF1" created="20181130T002448Z" lastmodified="20200316T190955Z" version="1.0.714" stringid="23">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="MixedPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Mixed\MixedPlural.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="noPluralLabel.Text">
+      <row id="noPluralLabel.Text" si="1">
         <value>A dynamic string without plural support:</value>
         <lang id="fi" rw="0" time="20181130T003217Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
       </row>
-      <row id="noPluralLabel0.Text" excluded="2">dummy</row>
-      <row id="noPluralLabel1.Text" excluded="2">dummy</row>
-      <row id="noPluralLabel2.Text" excluded="2">dummy</row>
-      <row id="pluralLabel.Text">
+      <row id="noPluralLabel0.Text" si="2" excluded="2">dummy</row>
+      <row id="noPluralLabel1.Text" si="3" excluded="2">dummy</row>
+      <row id="noPluralLabel2.Text" si="4" excluded="2">dummy</row>
+      <row id="pluralLabel.Text" si="5">
         <value>Using a proper plural enabled format function:</value>
         <lang id="fi" rw="0" time="20181130T003251Z">Käyttän kunnollista monikkotukevaa muotoilufunktiota:</lang>
       </row>
-      <row id="pluralLabel0.Text" excluded="2">dummy</row>
-      <row id="pluralLabel1.Text" excluded="2">dummy</row>
-      <row id="pluralLabel2.Text" excluded="2">dummy</row>
-      <row id="homeLabel.Text">
+      <row id="pluralLabel0.Text" si="6" excluded="2">dummy</row>
+      <row id="pluralLabel1.Text" si="7" excluded="2">dummy</row>
+      <row id="pluralLabel2.Text" si="8" excluded="2">dummy</row>
+      <row id="homeLabel.Text" si="9">
         <value>A home brew solution that works on English and few other languages:</value>
         <lang id="fi" rw="0" time="20181130T003353Z">Kotitekoinen ratkaisu, joka toimii englannilla ja muutamalla muulla kielellä:</lang>
       </row>
-      <row id="homeLabel0.Text" excluded="2">dummy</row>
-      <row id="homeLabel1.Text" excluded="2">dummy</row>
-      <row id="homeLabel2.Text" excluded="2">dummy</row>
-      <row id="multiPluralLabel.Text">
+      <row id="homeLabel0.Text" si="10" excluded="2">dummy</row>
+      <row id="homeLabel1.Text" si="11" excluded="2">dummy</row>
+      <row id="homeLabel2.Text" si="12" excluded="2">dummy</row>
+      <row id="multiPluralLabel.Text" si="13">
         <value>Same a above but using a multi plural enabled format function:</value>
         <lang id="fi" rw="0" time="20181130T003456Z">Kuten yllä, mutta käyttää monen monikon ymmärtävää muotoilufunktiota:</lang>
       </row>
-      <row id="multiPluralLabel1.Text" excluded="2">dummy</row>
-      <row id="multiPluralLabel2.Text" excluded="2">dummy</row>
-      <row id="multiPluralLabel3.Text" excluded="2">dummy</row>
-      <row id="multiPluralLabel4.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="multiPluralLabel1.Text" si="14" excluded="2">dummy</row>
+      <row id="multiPluralLabel2.Text" si="15" excluded="2">dummy</row>
+      <row id="multiPluralLabel3.Text" si="16" excluded="2">dummy</row>
+      <row id="multiPluralLabel4.Text" si="17" excluded="2">dummy</row>
+      <row id="$this.Text" si="18">
         <value>Plural Sample</value>
         <lang id="fi" rw="0" time="20181130T002642Z">Monikkoesimerkki</lang>
       </row>
@@ -408,15 +408,15 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="File" class="TPatternRow">
+        <row id="File" class="TPatternRow" si="19">
           <value>{0} file</value>
           <lang id="fi" rw="0" time="20181130T002508Z">{0} tiedosto</lang>
         </row>
-        <row id="Files" class="TPatternRow">
+        <row id="Files" class="TPatternRow" si="20">
           <value>{0} files</value>
           <lang id="fi" rw="0" time="20181130T002513Z">{0} tiedostoa</lang>
         </row>
-        <row id="FilesPlural" class="TPatternRow" scannedcomment="Singular and plural parts">
+        <row id="FilesPlural" class="TPatternRow" si="21" scannedcomment="Singular and plural parts">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" rw="0" time="20181130T002518Z">
@@ -424,11 +424,11 @@
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
         </row>
-        <row id="Language" scannedcomment="ISO 639 language code">
+        <row id="Language" si="22" scannedcomment="ISO 639 language code">
           <value>en</value>
           <lang id="fi" rw="0" time="20181130T002521Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" scannedcomment="Start, nullar1, singular1, plural1, separator, nullar2, singular2 and plural2">
+        <row id="MessagePlural" class="TPatternRow" si="23" scannedcomment="Start, nullar1, singular1, plural1, separator, nullar2, singular2 and plural2">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
@@ -452,4 +452,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

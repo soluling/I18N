@@ -1,16 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8946D263-AFD8-4F04-BD91-065EEDC2C217" created="20181207T013002Z" lastmodified="20181207T013019Z" version="1.0.272">
+<project id="8946D263-AFD8-4F04-BD91-065EEDC2C217" created="20181207T013002Z" lastmodified="20200316T192755Z" version="1.0.714" stringid="2">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Events.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Events\Events.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192754Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkV2ZW50cy5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1p
+        Y3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICAgICAgICAgICB4bWxuczp4PSJodHRwOi8vc2No
+        ZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93Lnhh
+        bWwiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4N
+        CjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181207T013006Z">Esimerkki</lang>
       </row>
       <item name="Grid[0]" type="Grid">
         <item name="Button[0]" type="Button">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>Click me</value>
             <lang id="fi" rw="0" time="20181207T013013Z">Klikkaa tästä</lang>
           </row>
@@ -32,4 +41,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

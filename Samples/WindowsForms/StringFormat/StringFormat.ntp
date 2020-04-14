@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D9516A95-3FB6-4946-86C1-FE58BB468097" created="20160927T034342Z" lastmodified="20181130T154233Z" version="1.0.269">
+<project id="D9516A95-3FB6-4946-86C1-FE58BB468097" created="20160927T034342Z" lastmodified="20200316T190103Z" version="1.0.714" stringid="12">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" formatstringcommentcheck="fcPlaceholders" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text" excluded="2">dummy</row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="label3.Text" excluded="2">dummy</row>
-      <row id="label4.Text" excluded="2">dummy</row>
-      <row id="label5.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="label3.Text" si="3" excluded="2">dummy</row>
+      <row id="label4.Text" si="4" excluded="2">dummy</row>
+      <row id="label5.Text" si="5" excluded="2">dummy</row>
+      <row id="$this.Text" si="6">
         <value>String Format Sample</value>
         <lang id="fi" time="20170503T171324Z">Merkkijonon muotoiluesimerkki</lang>
       </row>
@@ -185,27 +186,49 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="CalculationNone" changed="20170503T232846Z" class="TPatternRow" created="20170503T170026Z">
+        <row id="CalculationNone" changed="20170503T232846Z" class="TPatternRow" si="7" created="20170503T170026Z">
           <value>Sample: {0} + {1} = {2}</value>
           <lang id="fi" time="20170503T185100Z">Esimerkki: {0} + {1} = {2}</lang>
         </row>
-        <row id="CalculationPartial" changed="20170503T232846Z" class="TPatternRow" scannedcomment="0: First number" created="20170503T170026Z">
+        <row id="CalculationPartial" changed="20170503T232846Z" class="TPatternRow" si="8" scannedcomment="0: First number" created="20170503T170026Z">
           <value>Sample: {0} + {1} = {2}</value>
           <lang id="fi" or="3" time="20170503T185100Z">Esimerkki: {0} + {1} = {2}</lang>
         </row>
-        <row id="Hello" changed="20170503T232846Z" class="TPatternRow" scannedcomment="0: Name of the user" created="20170503T170026Z">
+        <row id="Hello" changed="20170503T232846Z" class="TPatternRow" si="9" scannedcomment="0: Name of the user" created="20170503T170026Z">
           <value>Hello {0}</value>
           <lang id="fi" time="20170503T171345Z">Moi {0}</lang>
         </row>
-        <row id="ServerError" changed="20170503T232846Z" class="TPatternRow" scannedcomment="0: Server name, 1: Error message" created="20170503T170026Z">
+        <row id="ServerError" changed="20170503T232846Z" class="TPatternRow" si="10" scannedcomment="0: Server name, 1: Error message" created="20170503T170026Z">
           <value>Error in server {0}: {1}</value>
           <lang id="fi" time="20170503T185132Z">Virhe {0} palvelimessa: {1}</lang>
         </row>
-        <row id="Test" created="20181130T153907Z" messagestring="2">{{, }} and {0} characters</row>
+        <row id="Test" class="TPatternRow" si="11" created="20200316T190102Z" st="0" messagestring="2">
+          <value startpattern="1">{0} and {1}</value>
+          <pattern select="" index="0">, </pattern>
+        </row>
       </node>
     </node>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

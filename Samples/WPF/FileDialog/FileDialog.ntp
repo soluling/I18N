@@ -1,23 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AE0D7887-3BE1-482C-9894-BE839BE7E243" created="20181207T013408Z" lastmodified="20181207T013906Z" version="1.0.272">
+<project id="AE0D7887-3BE1-482C-9894-BE839BE7E243" created="20181207T013408Z" lastmodified="20200404T023609Z" version="1.0.731" stringid="22">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WPF\FileDialog\FileDialog.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192748Z" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkZpbGVEaWFsb2cuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1h
+        cy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDov
+        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRv
+        dy54YW1sIj4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJj
+        ZXM+DQo8L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>File Dialog Sample</value>
         <lang id="fi" or="4" rw="0" time="20181207T013408Z">Tiedostodialogiesimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="openPanel1" type="StackPanel">
           <item name="openButton1" type="Button">
-            <row id="Content">
+            <row id="Content" si="2">
               <value>_Open</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">_Avaa</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="3">
               <value>Filter as a single string</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Suodatin yhtenä merkkijonona</lang>
             </row>
@@ -25,13 +34,13 @@
         </item>
         <item name="openPanel2" type="StackPanel">
           <item name="openButton2" type="Button">
-            <row id="Content">
+            <row id="Content" si="4">
               <value>O_pen</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">A_vaa</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="5">
               <value>Composed filter with all files</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Rakenteellinen suodatin kaikkien tiedostojen kanssa</lang>
             </row>
@@ -39,13 +48,13 @@
         </item>
         <item name="openPanel3" type="StackPanel">
           <item name="openButton3" type="Button">
-            <row id="Content">
+            <row id="Content" si="6">
               <value>Op_en</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">_Avaa</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="7">
               <value>Composed filter without all files</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Rakenteellinen suodatin ilman kaikkia tiedostoja</lang>
             </row>
@@ -53,13 +62,13 @@
         </item>
         <item name="openPanel4" type="StackPanel">
           <item name="openButton4" type="Button">
-            <row id="Content">
+            <row id="Content" si="8">
               <value>Ope_n</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">_Avaa</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="9">
               <value>Composed filter all files after XML files</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Rakenteellinen suodatin, jossa kaikki tiedostot ovat XML-tiedostojen jälkeen</lang>
             </row>
@@ -67,13 +76,13 @@
         </item>
         <item name="savePanel1" type="StackPanel">
           <item name="saveButton1" type="Button">
-            <row id="Content">
+            <row id="Content" si="10">
               <value>_Save</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">_Talleta</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="11">
               <value>Filter as a single string</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Suodatin yhtenä merkkijonona</lang>
             </row>
@@ -81,13 +90,13 @@
         </item>
         <item name="savePanel2" type="StackPanel">
           <item name="saveButton2" type="Button">
-            <row id="Content">
+            <row id="Content" si="12">
               <value>S_ave</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Ta_lleta</lang>
             </row>
           </item>
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="13">
               <value>Composed filter</value>
               <lang id="fi" or="4" rw="0" time="20181207T013408Z">Rakenteellinen suodatin</lang>
             </row>
@@ -123,39 +132,39 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="AllFiles">
+        <row id="AllFiles" si="14">
           <value>All files</value>
           <lang id="fi" rw="0" time="20181207T013416Z">Kaikki tiedostot</lang>
         </row>
-        <row id="AllSupportedFiles">
+        <row id="AllSupportedFiles" si="15">
           <value>All supported files</value>
           <lang id="fi" rw="0" time="20181207T013422Z">Kaikki tuetut tiedostot</lang>
         </row>
-        <row id="IniFiles">
+        <row id="IniFiles" si="16">
           <value>Ini files</value>
           <lang id="fi" rw="0" time="20181207T013559Z">Ini-tiedostot</lang>
         </row>
-        <row id="OpenFilter">
+        <row id="OpenFilter" si="17">
           <value>All supported files (*.xml;*.ini)|*.xml;*.ini|XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini|All files (*.*)|*.*</value>
           <lang id="fi" rw="0" time="20181207T013856Z">Kaikki tuetetut tiedostot (*.xml;*.ini)|*.xml;*.ini|XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini|Kaikki tiedostot (*.*)|*.*</lang>
         </row>
-        <row id="OpenTitle">
+        <row id="OpenTitle" si="18">
           <value>Open File</value>
           <lang id="fi" rw="0" time="20181207T013605Z">Avaa tiedosto</lang>
         </row>
-        <row id="SaveFile">
+        <row id="SaveFile" si="19">
           <value>SaveFile.xml</value>
           <lang id="fi" rw="0" time="20181207T013615Z">TalletaTiedosto.xml</lang>
         </row>
-        <row id="SaveFilter">
+        <row id="SaveFilter" si="20">
           <value>XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini</value>
           <lang id="fi" rw="0" time="20181207T013650Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini</lang>
         </row>
-        <row id="SaveTitle">
+        <row id="SaveTitle" si="21">
           <value>Save File</value>
           <lang id="fi" rw="0" time="20181207T013623Z">Talleta tiedosto</lang>
         </row>
-        <row id="XmlFiles">
+        <row id="XmlFiles" si="22">
           <value>XML files</value>
           <lang id="fi" rw="0" time="20181207T013627Z">XML-tiedostot</lang>
         </row>
@@ -165,4 +174,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

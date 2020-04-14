@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0B04BA30-7EA0-4A42-967D-A273E695876E" created="20180507T133810Z" lastmodified="20181129T153453Z" version="1.0.269">
+<project id="0B04BA30-7EA0-4A42-967D-A273E695876E" created="20180507T133810Z" lastmodified="20200316T191250Z" version="1.0.714" stringid="37">
   <lang id="fi"/>
   <lang id="no"/>
   <lang id="nb"/>
@@ -7,8 +7,9 @@
   <lang id="zh"/>
   <lang id="zh-Hant"/>
   <node class="TNetProjectSource" name="EmbeddedResources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\EmbeddedResources\EmbeddedResources.csproj" original="en" resources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml]" availableresources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="$this.Text" changed="20180507T133944Z">
+      <row id="$this.Text" changed="20180507T133944Z" si="1">
         <value>Resource Sample</value>
         <lang id="fi" rw="0" time="20180507T133953Z">Resurssiesimerkki</lang>
         <lang id="no" st="1" or="6" rw="0" time="20180508T002832Z">Ressurs eksempel</lang>
@@ -540,53 +541,53 @@
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx"/>
     </node>
-    <node class="TIniDataNode" name="Sport.ini" filename="..\..\Common\Sport.ini" bom="0" encoding="windows-1252">
+    <node class="TIniDataNode" name="Sport.ini" filename="..\..\Common\Sport.ini" encoding="windows-1252">
       <item class="TIniItem" name="soccer">
-        <row id="name">
+        <row id="name" si="2">
           <value>Soccer</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003343Z">足球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="3">
           <value>England</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Englanti</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003343Z">英国</lang>
         </row>
-        <row id="description">
+        <row id="description" si="4">
           <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003343Z">足球是在两个队十一个球员之间用球形球演奏的运动。</lang>
         </row>
       </item>
       <item class="TIniItem" name="hockey">
-        <row id="name">
+        <row id="name" si="5">
           <value>Ice hockey</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003343Z">冰球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="6">
           <value>Canada</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Kanada</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003344Z">加拿大</lang>
         </row>
-        <row id="description">
+        <row id="description" si="7">
           <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003344Z">冰球是一项在冰上玩的团队运动, 其中溜冰者用棍子将冰球定向到对方球队的球门。</lang>
         </row>
       </item>
       <item class="TIniItem" name="basketball">
-        <row id="name">
+        <row id="name" si="8">
           <value>Basketball</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003344Z">篮球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="9">
           <value>United States</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Yhdysvallat</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003345Z">美国</lang>
         </row>
-        <row id="description">
+        <row id="description" si="10">
           <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003345Z">篮球是一项团队运动, 其中两队的五名球员试图得分通过投掷一个球在篮球篮的顶部, 而遵循一套规则。</lang>
@@ -619,51 +620,51 @@
     </node>
     <node class="TJsonDataNode" name="Sport.json" filename="..\..\Common\Sport.json">
       <item class="TJsonComponent" name="soccer">
-        <row id="name">
+        <row id="name" si="11">
           <value>Soccer</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003345Z">足球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="12">
           <value>England</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Englanti</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003345Z">英国</lang>
         </row>
-        <row id="description">
+        <row id="description" si="13">
           <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003346Z">足球是在两个队十一个球员之间用球形球演奏的运动。</lang>
         </row>
       </item>
       <item class="TJsonComponent" name="hockey">
-        <row id="name">
+        <row id="name" si="14">
           <value>Ice hockey</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003346Z">冰球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="15">
           <value>Canada</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Kanada</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003346Z">加拿大</lang>
         </row>
-        <row id="description">
+        <row id="description" si="16">
           <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003347Z">冰球是一项在冰上玩的团队运动, 其中溜冰者用棍子将冰球定向到对方球队的球门。</lang>
         </row>
       </item>
       <item class="TJsonComponent" name="basketball">
-        <row id="name">
+        <row id="name" si="17">
           <value>Basketball</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003347Z">篮球</lang>
         </row>
-        <row id="origin">
+        <row id="origin" si="18">
           <value>United States</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Yhdysvallat</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003347Z">美国</lang>
         </row>
-        <row id="description">
+        <row id="description" si="19">
           <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
           <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
           <lang id="zh" st="1" or="6" rw="0" time="20180508T003348Z">篮球是一项团队运动, 其中两队的五名球员试图得分通过投掷一个球在篮球篮的顶部, 而遵循一套规则。</lang>
@@ -705,39 +706,39 @@
           <field type="dfValue" before="\t" after="\r\n"/>
         </definition>
       </text>
-      <row id="soccer[1]" created="20180508T034547Z">
+      <row id="soccer[1]" si="20" created="20180508T034547Z">
         <value>Soccer</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Jalkapallo</lang>
       </row>
-      <row id="soccer[4]" created="20180508T034547Z">
+      <row id="soccer[4]" si="21" created="20180508T034547Z">
         <value>England</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Englanti</lang>
       </row>
-      <row id="soccer[5]" created="20180508T034547Z">
+      <row id="soccer[5]" si="22" created="20180508T034547Z">
         <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
       </row>
-      <row id="hockey[1]" created="20180508T034547Z">
+      <row id="hockey[1]" si="23" created="20180508T034547Z">
         <value>Ice hockey</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Jääkiekko</lang>
       </row>
-      <row id="hockey[4]" created="20180508T034547Z">
+      <row id="hockey[4]" si="24" created="20180508T034547Z">
         <value>Canada</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Kanada</lang>
       </row>
-      <row id="hockey[5]" created="20180508T034547Z">
+      <row id="hockey[5]" si="25" created="20180508T034547Z">
         <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
       </row>
-      <row id="basketball[1]" created="20180508T034547Z">
+      <row id="basketball[1]" si="26" created="20180508T034547Z">
         <value>Basketball</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Koripallo</lang>
       </row>
-      <row id="basketball[4]" created="20180508T034547Z">
+      <row id="basketball[4]" si="27" created="20180508T034547Z">
         <value>United States</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Yhdysvallat</lang>
       </row>
-      <row id="basketball[5]" created="20180508T034547Z">
+      <row id="basketball[5]" si="28" created="20180508T034547Z">
         <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
         <lang id="fi" or="5" rw="0" time="20180508T034554Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
       </row>
@@ -754,18 +755,18 @@
     <node class="TXmlDataNode" name="Sport.xml" filename="..\..\Common\Sport.xml">
       <item class="TXmlItem" name="sports">
         <item class="TXmlItem" name="soccer">
-          <row id="=name">
+          <row id="=name" si="29">
             <value>Soccer</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003348Z">足球</lang>
           </row>
-          <row id="=origin">
+          <row id="=origin" si="30">
             <value>England</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Englanti</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003348Z">英国</lang>
           </row>
           <item class="TXmlItem" name="description">
-            <row id="value">
+            <row id="value" si="31">
               <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
               <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
               <lang id="zh" st="1" or="6" rw="0" time="20180508T003348Z">足球是在两个队十一个球员之间用球形球演奏的运动。</lang>
@@ -773,18 +774,18 @@
           </item>
         </item>
         <item class="TXmlItem" name="hockey">
-          <row id="=name">
+          <row id="=name" si="32">
             <value>Ice hockey</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003349Z">冰球</lang>
           </row>
-          <row id="=origin">
+          <row id="=origin" si="33">
             <value>Canada</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Kanada</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003349Z">加拿大</lang>
           </row>
           <item class="TXmlItem" name="description">
-            <row id="value">
+            <row id="value" si="34">
               <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
               <lang id="fi" or="5" rw="0" time="20180507T134115Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
               <lang id="zh" st="1" or="6" rw="0" time="20180508T003349Z">冰球是一项在冰上玩的团队运动, 其中溜冰者用棍子将冰球定向到对方球队的球门。</lang>
@@ -792,18 +793,18 @@
           </item>
         </item>
         <item class="TXmlItem" name="basketball">
-          <row id="=name">
+          <row id="=name" si="35">
             <value>Basketball</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003349Z">篮球</lang>
           </row>
-          <row id="=origin">
+          <row id="=origin" si="36">
             <value>United States</value>
             <lang id="fi" or="5" rw="0" time="20180507T134115Z">Yhdysvallat</lang>
             <lang id="zh" st="1" or="6" rw="0" time="20180508T003350Z">美国</lang>
           </row>
           <item class="TXmlItem" name="description">
-            <row id="value">
+            <row id="value" si="37">
               <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
               <lang id="fi" or="5" rw="0" time="20180507T134115Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
               <lang id="zh" st="1" or="6" rw="0" time="20180508T003350Z">篮球是一项团队运动, 其中两队的五名球员试图得分通过投掷一个球在篮球篮的顶部, 而遵循一套规则。</lang>
@@ -839,10 +840,29 @@
       </data>
     </node>
     <configurations>
-      <configuration resourcenaming="rmAddLanguagePart"/>
+      <configuration name="Default" resourcenaming="rmAddLanguagePart"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

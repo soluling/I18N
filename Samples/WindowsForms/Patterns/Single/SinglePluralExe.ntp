@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="7CA192D0-A7A9-4981-A5D5-E03740119B9F" created="20121108T070413Z" lastmodified="20181129T161629Z" version="1.0.269">
+<project id="7CA192D0-A7A9-4981-A5D5-E03740119B9F" created="20121108T070413Z" lastmodified="20200316T191007Z" version="1.0.714" stringid="13">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\SinglePlural.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\bin\Release\SinglePlural.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="SinglePlural.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\SinglePlural.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\bin\Release\SinglePlural.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="SinglePlural.csproj" libraries="[nlWinForms]">
     <netproperties version="net462"/>
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="SinglePlural.Form1.resources" created="20171124T162118Z" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Plural Sample</value>
-          <lang id="fi" st="3" rw="0" time="20171124T163238Z">Monikkoesimerkki</lang>
+          <lang id="fi" st="4" rw="0" time="20171124T163238Z">Monikkoesimerkki</lang>
         </row>
-        <row id="label0.Text" excluded="2">dummy</row>
-        <row id="label1.Text" excluded="2">dummy</row>
-        <row id="label101.Text" excluded="2">dummy</row>
-        <row id="label11.Text" excluded="2">dummy</row>
-        <row id="label111.Text" excluded="2">dummy</row>
-        <row id="label2.Text" excluded="2">dummy</row>
-        <row id="label21.Text" excluded="2">dummy</row>
-        <row id="label3.Text" excluded="2">dummy</row>
-        <row id="label4.Text" excluded="2">dummy</row>
-        <row id="label5.Text" excluded="2">dummy</row>
+        <row id="label0.Text" si="2" excluded="2">dummy</row>
+        <row id="label1.Text" si="3" excluded="2">dummy</row>
+        <row id="label101.Text" si="4" excluded="2">dummy</row>
+        <row id="label11.Text" si="5" excluded="2">dummy</row>
+        <row id="label111.Text" si="6" excluded="2">dummy</row>
+        <row id="label2.Text" si="7" excluded="2">dummy</row>
+        <row id="label21.Text" si="8" excluded="2">dummy</row>
+        <row id="label3.Text" si="9" excluded="2">dummy</row>
+        <row id="label4.Text" si="10" excluded="2">dummy</row>
+        <row id="label5.Text" si="11" excluded="2">dummy</row>
         <resourcestrings>
           <node name="SinglePlural.Properties.Resources.resources">
             <id>Language</id>
@@ -167,14 +167,14 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="SinglePlural.Properties.Resources.resources" created="20171124T162118Z">
-        <row id="Language" scannedcomment="ISO 639 language code">
+        <row id="Language" si="12" scannedcomment="ISO 639 language code">
           <value>en</value>
-          <lang id="fi" st="3" rw="0" time="20171124T163239Z">fi</lang>
+          <lang id="fi" st="4" rw="0" time="20171124T163239Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" scannedcomment="{0}: File count">
+        <row id="MessagePlural" class="TPatternRow" si="13" scannedcomment="{0}: File count">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" st="3" rw="0" time="20171124T163258Z">
+          <lang id="fi" st="4" rw="0" time="20171124T163258Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
@@ -185,4 +185,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

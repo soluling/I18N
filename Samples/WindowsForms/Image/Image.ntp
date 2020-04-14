@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20190613T135115Z" version="1.0.406" stringid="6">
+<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20200316T185711Z" version="1.0.714" stringid="6">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en-US" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -1510,7 +1510,7 @@
           /fWlkjNr5/fl/+5SzaHNc18079SkRtMOzrVbds6o8EXj63/4+yu3S/3hhRzKvlOpUs++ZT/09+X35ffl9+V/3VKq1P8HyJ3AdsD0
           PM8AAAAASUVORK5CYII=
         </prev>
-        <lang id="fi" st="4" rw="0" time="20180509T181512Z" filename="..\..\Common\128x128\address_book2.png">
+        <lang id="fi" st="3" rw="0" time="20180509T181512Z" filename="..\..\Common\128x128\address_book2.png">
           iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAABOxklEQVR42uy9d7Rl11Xm+1tr75NuzhVUkkqlUrItW5aNscG25AA2
           YdgPM2waNzyMTWgPmm4amtfk7kczCN1NNjm0Abcj8J7hgQG3jQNOcpJtWVlVJVXVzefee869J+291pz9x1p773NlCQPjDfmOHpTG
           Ud2qG+qcs+aa4Zvf/KbhH/jrRZBmV3GrcTzPGZ6SKteScsxYplPDisavs4rmwrpATz37XrlkDJdTZQ3DRYVL4tjIci7O7NB/Dzj+
@@ -3512,7 +3512,7 @@
             6uCqedNs0Dl5wAyNQOCJvWHn/L2PMf8zvIv5AIBjPO78G3buYPoWgLcwHD/jeYDhGAAwHIc7/g+HJ77n9wotTAAAACt0RVh0Q29w
             eXJpZ2h0AENvcHlyaWdodCCpIDIwMDgtMjAxMSBJTkNPUlMgR21iSBCOIU8AAAAASUVORK5CYII=
           </value>
-          <lang id="fi" st="3" rw="0" time="20190613T133951Z" filename="..\..\Common\128x128\add2.png">
+          <lang id="fi" st="4" rw="0" time="20190613T133951Z" filename="..\..\Common\128x128\add2.png">
             iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAABFw0lEQVR42uy9eZwcV3n3+z2nqrp7enaNZrTvq1dZBmNLtrExXgAb
             EhbbhH0LCSS5gUAg3DfvJ2TjAjGBhASzmYANsY0xm8GADV7wItuSLGvfRqMZzaqZ6ZnpvbuWc+4fVd1d3dOjZSwb3jcufVrdXVVT
             XXWe33n25zm8tL20vbS9tL20vbS9tL20vbS9tL20vbS9tP1P2sT/bQ/0y1/+0ti3b9+CaDR6vudxDlIv165eblrGUilFc2NjfFEk
@@ -4028,7 +4028,7 @@
             IcXw2OjYgpF9e6RJ8hFE8lWk3d8C7f9eeFIX1oV1Yc3O9X8E8g4DMQH37AAAACt0RVh0Q29weXJpZ2h0AENvcHlyaWdodCCpIDIw
             MDgtMjAxMSBJTkNPUlMgR21iSBCOIU8AAAAASUVORK5CYII=
           </value>
-          <lang id="fi" st="3" rw="0" time="20190613T134000Z" filename="..\..\Common\128x128\address_book2.png">
+          <lang id="fi" st="4" rw="0" time="20190613T134000Z" filename="..\..\Common\128x128\address_book2.png">
             iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAABOxklEQVR42uy9d7Rl11Xm+1tr75NuzhVUkkqlUrItW5aNscG25AA2
             YdgPM2waNzyMTWgPmm4amtfk7kczCN1NNjm0Abcj8J7hgQG3jQNOcpJtWVlVJVXVzefee869J+291pz9x1p773NlCQPjDfmOHpTG
             Ud2qG+qcs+aa4Zvf/KbhH/jrRZBmV3GrcTzPGZ6SKteScsxYplPDisavs4rmwrpATz37XrlkDJdTZQ3DRYVL4tjIci7O7NB/Dzj+
@@ -4309,9 +4309,7 @@
     </configurations>
   </node>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -4320,8 +4318,9 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

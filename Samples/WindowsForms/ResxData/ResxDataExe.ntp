@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B70AB233-CDD0-4731-AD0A-7D7788115EA3" created="20150425T163333Z" lastmodified="20181130T022049Z" version="1.0.269">
+<project id="B70AB233-CDD0-4731-AD0A-7D7788115EA3" created="20150425T163333Z" lastmodified="20200316T190207Z" version="1.0.714" stringid="35">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\ResxData.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\bin\Debug\ResxData.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="ResxData.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Debug\ResxData.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\bin\Debug\ResxData.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="ResxData.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="ResxData.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Sample</value>
           <lang id="fi" time="20150425T211854Z">Esimerkki</lang>
         </row>
-        <row id="binaryXmlLabel.Text">dummy</row>
-        <row id="label1.Text">dummy</row>
-        <row id="playButton.Text">&amp;Play</row>
-        <row id="simpleXmlLabel.Text">dummy</row>
-        <row id="stringXmlLabel.Text">dummy</row>
+        <row id="binaryXmlLabel.Text" si="2">dummy</row>
+        <row id="label1.Text" si="3">dummy</row>
+        <row id="playButton.Text" si="4">&amp;Play</row>
+        <row id="simpleXmlLabel.Text" si="5">dummy</row>
+        <row id="stringXmlLabel.Text" si="6">dummy</row>
         <resourcestrings>
           <node name="ResxData.Properties.Resources.resources">
             <id>SimpleXml</id>
@@ -136,8 +136,8 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="ResxData.Properties.Resources.resources">
-        <row id="SimpleJson">{ "data": "This is a sample" }</row>
-        <row id="SimpleXml">&lt;data&gt;This is a sample&lt;/data&gt;</row>
+        <row id="SimpleJson" si="7">{ &quot;data&quot;: &quot;This is a sample&quot; }</row>
+        <row id="SimpleXml" si="8">&lt;data&gt;This is a sample&lt;/data&gt;</row>
         <row id="Sound" class="TAudioRow">
             UklGRiRNAwBXQVZFZm10IBAAAAABAAIARKwAABCxAgAEABAAZGF0YQBNAwAAAP////8AAAAA//8AAAAAAAAAAP//AAAAAAAA//8A
             AAAAAAAAAP//AAAAAAAAAAAAAAAAAAD//wAA/////////////wAAAAD//wAAAAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAA
@@ -3025,8 +3025,8 @@
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
           </row>
-        <row id="String1">Hello world</row>
-        <row id="StringIni" created="20181130T022048Z" st="0">[soccer]
+        <row id="String1" si="9">Hello world</row>
+        <row id="StringIni" si="10" created="20181130T022048Z" st="0">[soccer]
 name=Soccer
 fieldplayers=10
 goalie=1
@@ -3047,33 +3047,33 @@ goalie=0
 origin=United States
 description=Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.
 </row>
-        <row id="StringXml">&lt;?xml version="1.0" encoding="utf-8"?&gt;
+        <row id="StringXml" si="11">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
 &lt;numbers&gt;
-  &lt;number id="1"&gt;One&lt;/number&gt;
-  &lt;number id="2"&gt;Two&lt;/number&gt;
-  &lt;number id="3"&gt;Three&lt;/number&gt;
+  &lt;number id=&quot;1&quot;&gt;One&lt;/number&gt;
+  &lt;number id=&quot;2&quot;&gt;Two&lt;/number&gt;
+  &lt;number id=&quot;3&quot;&gt;Three&lt;/number&gt;
 &lt;/numbers&gt;</row>
-        <node class="TIniDataNode" name="BinaryIni" created="20181130T022048Z" st="0" bom="0" encoding="windows-1252">
+        <node class="TIniDataNode" name="BinaryIni" created="20181130T022048Z" st="0" encoding="windows-1252">
           <item class="TIniItem" name="soccer" st="0">
-            <row id="name" st="0">Soccer</row>
-            <row id="fieldplayers" st="0">10</row>
-            <row id="goalie" st="0">1</row>
-            <row id="origin" st="0">England</row>
-            <row id="description" st="0">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+            <row id="name" si="12" st="0">Soccer</row>
+            <row id="fieldplayers" si="13" st="0">10</row>
+            <row id="goalie" si="14" st="0">1</row>
+            <row id="origin" si="15" st="0">England</row>
+            <row id="description" si="16" st="0">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
           </item>
           <item class="TIniItem" name="hockey" st="0">
-            <row id="name" st="0">Ice hockey</row>
-            <row id="fieldplayers" st="0">5</row>
-            <row id="goalie" st="0">1</row>
-            <row id="origin" st="0">Canada</row>
-            <row id="description" st="0">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+            <row id="name" si="17" st="0">Ice hockey</row>
+            <row id="fieldplayers" si="18" st="0">5</row>
+            <row id="goalie" si="19" st="0">1</row>
+            <row id="origin" si="20" st="0">Canada</row>
+            <row id="description" si="21" st="0">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
           </item>
           <item class="TIniItem" name="basketball" st="0">
-            <row id="name" st="0">Basketball</row>
-            <row id="fieldplayers" st="0">5</row>
-            <row id="goalie" st="0">0</row>
-            <row id="origin" st="0">United States</row>
-            <row id="description" st="0">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+            <row id="name" si="22" st="0">Basketball</row>
+            <row id="fieldplayers" si="23" st="0">5</row>
+            <row id="goalie" si="24" st="0">0</row>
+            <row id="origin" si="25" st="0">United States</row>
+            <row id="description" si="26" st="0">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
           </item>
           <data>
             W3NvY2Nlcl0NCm5hbWU9U29jY2VyDQpmaWVsZHBsYXllcnM9MTANCmdvYWxpZT0xDQpvcmlnaW49RW5nbGFuZA0KZGVzY3JpcHRp
@@ -3090,30 +3090,30 @@ description=Basketball is a team sport in which two teams of five players try to
         <node class="TXmlDataNode" name="BinaryXml">
           <item class="TXmlItem" name="sports">
             <item class="TXmlItem" name="soccer" created="20181130T022048Z" st="0">
-              <row id="=name" st="0">Soccer</row>
+              <row id="=name" si="27" st="0">Soccer</row>
               <row id="=fieldplayers" class="TIntegerRow" st="0">10</row>
               <row id="=goalie" class="TIntegerRow" st="0">1</row>
-              <row id="=origin" st="0">England</row>
+              <row id="=origin" si="28" st="0">England</row>
               <item class="TXmlItem" name="description" st="0">
-                <row id="value" st="0">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+                <row id="value" si="29" st="0">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
               </item>
             </item>
             <item class="TXmlItem" name="hockey" created="20181130T022048Z" st="0">
-              <row id="=name" st="0">Ice hockey</row>
+              <row id="=name" si="30" st="0">Ice hockey</row>
               <row id="=fieldplayers" class="TIntegerRow" st="0">5</row>
               <row id="=goalie" class="TIntegerRow" st="0">1</row>
-              <row id="=origin" st="0">Canada</row>
+              <row id="=origin" si="31" st="0">Canada</row>
               <item class="TXmlItem" name="description" st="0">
-                <row id="value" st="0">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+                <row id="value" si="32" st="0">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
               </item>
             </item>
             <item class="TXmlItem" name="basketball" created="20181130T022048Z" st="0">
-              <row id="=name" st="0">Basketball</row>
+              <row id="=name" si="33" st="0">Basketball</row>
               <row id="=fieldplayers" class="TIntegerRow" st="0">5</row>
               <row id="=goalie" class="TIntegerRow" st="0">0</row>
-              <row id="=origin" st="0">United States</row>
+              <row id="=origin" si="34" st="0">United States</row>
               <item class="TXmlItem" name="description" st="0">
-                <row id="value" st="0">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+                <row id="value" si="35" st="0">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
               </item>
             </item>
           </item>
@@ -3135,4 +3135,23 @@ description=Basketball is a team sport in which two teams of five players try to
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

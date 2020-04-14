@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D31FD2B0-939B-44D1-8FD3-52CEE2CAA528" created="20160415T035905Z" lastmodified="20181130T031930Z" version="1.0.269">
+<project id="D31FD2B0-939B-44D1-8FD3-52CEE2CAA528" created="20160415T035905Z" lastmodified="20200316T190147Z" version="1.0.714" stringid="9">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="SatelliteContract.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\SatelliteContract\SatelliteContract.csproj" original="en" resources="[nrResx,nrForm,nrManifest,nrVersion]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+    <netproperties toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>Hello world</value>
         <lang id="fi" time="20160415T134834Z">Moi maailma</lang>
       </row>
-      <row id="label2.Text" st="0" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label2.Text" si="2" st="0" excluded="2">dummy</row>
+      <row id="$this.Text" si="3">
         <value>Sample</value>
         <lang id="fi" time="20160415T134840Z">Esimerkki</lang>
       </row>
@@ -137,7 +138,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="4">
           <value>This is a sample</value>
           <lang id="fi" time="20160415T134845Z">Tämä on esimerkki</lang>
         </row>
@@ -145,11 +146,11 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version" created="20171010T223246Z" st="0">
       <node class="TWindowsVersionNode" name="1" resid="1" st="0">
-        <row id="FileDescription" st="0">SatelliteContract</row>
-        <row id="InternalName" st="0">SatelliteContract.exe</row>
-        <row id="LegalCopyright" st="0">Copyright ©  2014</row>
-        <row id="OriginalFilename" st="0">SatelliteContract.exe</row>
-        <row id="ProductName" st="0">SatelliteContract</row>
+        <row id="FileDescription" si="5" st="0">SatelliteContract</row>
+        <row id="InternalName" si="6" st="0">SatelliteContract.exe</row>
+        <row id="LegalCopyright" si="7" st="0">Copyright ©  2014</row>
+        <row id="OriginalFilename" si="8" st="0">SatelliteContract.exe</row>
+        <row id="ProductName" si="9" st="0">SatelliteContract</row>
         <data>
           XAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAQABAAAAAAABAAEAAAAAAD8AAAAAAAAABAAA
           AAEAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
@@ -170,4 +171,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

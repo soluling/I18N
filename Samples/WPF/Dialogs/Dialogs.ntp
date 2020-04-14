@@ -1,10 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="41A3DAAF-BAF9-4224-A51D-AF66720A3E90" created="20181207T010214Z" lastmodified="20181207T010347Z" version="1.0.272">
+<project id="41A3DAAF-BAF9-4224-A51D-AF66720A3E90" created="20181207T010214Z" lastmodified="20200316T192806Z" version="1.0.714" stringid="12">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Dialogs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Dialogs\Dialogs.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net45"/>
+    <netproperties version="net45" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192805Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIA0KICB4OkNsYXNzPSJEaWFsb2dzLkFwcCINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29m
+        dC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
+        bS93aW5meC8yMDA2L3hhbWwiDQogIFN0YXJ0dXBVcmk9Ik1haW5XaW5kb3cueGFtbCI+DQogIA0KICA8QXBwbGljYXRpb24uUmVz
+        b3VyY2VzPg0KICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Dialog Sample</value>
         <lang id="fi" rw="0" time="20181207T010223Z">Dialogiesimerkki</lang>
       </row>
@@ -17,25 +25,25 @@
           </item>
         </item>
         <item name="openDialog" type="Button">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>Open file</value>
             <lang id="fi" rw="0" time="20181207T010340Z">Avaa tiedosto</lang>
           </row>
         </item>
         <item name="saveDialog" type="Button">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Save file</value>
             <lang id="fi" rw="0" time="20181207T010336Z">Talleta tiedosto</lang>
           </row>
         </item>
         <item name="openDialogWinForms" type="Button">
-          <row id="Content">Open file, Windows Forms version</row>
+          <row id="Content" si="4">Open file, Windows Forms version</row>
         </item>
         <item name="saveDialogWinForms" type="Button">
-          <row id="Content">Save file, Windows Forms version</row>
+          <row id="Content" si="5">Save file, Windows Forms version</row>
         </item>
         <item name="folderDialog" type="Button">
-          <row id="Content">Select folder</row>
+          <row id="Content" si="6">Select folder</row>
         </item>
       </item>
       <data>
@@ -57,16 +65,35 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="AllFiles">All files</row>
-        <row id="AllSupportedFiles">All supported files</row>
-        <row id="FolderDescription">Select a file</row>
-        <row id="SaveFileName">SampleFile</row>
-        <row id="TextFiles">Text files</row>
-        <row id="XmlFiles">XML files</row>
+        <row id="AllFiles" si="7">All files</row>
+        <row id="AllSupportedFiles" si="8">All supported files</row>
+        <row id="FolderDescription" si="9">Select a file</row>
+        <row id="SaveFileName" si="10">SampleFile</row>
+        <row id="TextFiles" si="11">Text files</row>
+        <row id="XmlFiles" si="12">XML files</row>
       </node>
     </node>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

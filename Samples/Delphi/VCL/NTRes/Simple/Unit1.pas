@@ -48,6 +48,9 @@ end;
 
 procedure TForm1.FormCreate(Sender: TObject);
 begin
+  if ParamCount > 0 then
+    NtResources.LanguageId := ParamStr(1);
+
   Translate;
 end;
 

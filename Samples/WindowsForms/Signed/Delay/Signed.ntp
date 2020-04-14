@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8FD3B534-CA34-4BFC-A124-9503F4E5E5D6" created="20121124T100638Z" lastmodified="20181130T031830Z" version="1.0.269">
+<project id="8FD3B534-CA34-4BFC-A124-9503F4E5E5D6" created="20121124T100638Z" lastmodified="20200316T190154Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\Signed.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Delay\bin\Release\Signed.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="Delay.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\Signed.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Delay\bin\Release\Signed.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Delay.csproj" libraries="[nlWinForms]">
     <sign kinds="[nskStrongName]"/>
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="Signed.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121124T100638Z">
+        <row id="$this.Text" si="1" created="20121124T100638Z">
           <value>Signed Sample</value>
           <lang id="fi" time="20121124T100656Z">Allekirjoitusesimerkki</lang>
         </row>
-        <row id="label1.Text" created="20121124T100638Z">
+        <row id="label1.Text" si="2" created="20121124T100638Z">
           <value>Hello World</value>
           <lang id="fi" time="20121124T100701Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" created="20181130T031810Z">dummy</row>
+        <row id="label2.Text" si="3" created="20181130T031810Z">dummy</row>
         <resourcestrings>
           <node name="Signed.Properties.Resources.resources">
             <id>String1</id>
@@ -63,11 +63,30 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="Signed.Properties.Resources.resources">
-        <row id="String1" created="20121124T100638Z">
+        <row id="String1" si="4" created="20121124T100638Z">
           <value>This is a sample</value>
           <lang id="fi" time="20121124T100706Z">Tämä on esimerkki</lang>
         </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

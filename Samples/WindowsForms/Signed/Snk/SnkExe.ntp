@@ -1,15 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D1945487-E82F-4FB9-AB37-DB475E9761B1" created="20160228T164529Z" lastmodified="20181130T032117Z" version="1.0.269">
+<project id="D1945487-E82F-4FB9-AB37-DB475E9761B1" created="20160228T164529Z" lastmodified="20200316T190133Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Snk.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Snk\Snk.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+    <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>Hello World</value>
         <lang id="fi" rw="0" time="20181130T032049Z">Moi maailma</lang>
       </row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="$this.Text" si="3">
         <value>Signed Sample</value>
         <lang id="fi" rw="0" time="20181130T032106Z">Allekirjoitettu esimerkki</lang>
       </row>
@@ -137,7 +138,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="4">
           <value>This is a sample</value>
           <lang id="fi" rw="0" time="20181130T032055Z">Tämä on esimerkki</lang>
         </row>
@@ -147,4 +148,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,14 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C7008D04-C466-4ED5-B939-2151085DF87B" created="20181130T164607Z" lastmodified="20181130T164647Z" version="1.0.270">
+<project id="C7008D04-C466-4ED5-B939-2151085DF87B" created="20181130T164607Z" lastmodified="20200316T190015Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="VisualStudioCompile.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VisualStudioCompile\VisualStudioCompile.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>Hello World</value>
         <lang id="fi" rw="0" time="20181130T164622Z">Moi maailma</lang>
       </row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="$this.Text" si="3">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181130T164619Z">Esimerkki</lang>
       </row>
@@ -136,21 +137,40 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="4">
           <value>One</value>
           <lang id="fi" rw="0" time="20181130T164625Z">Yksi</lang>
         </row>
-        <row id="String2">
+        <row id="String2" si="5">
           <value>Two</value>
           <lang id="fi" rw="0" time="20181130T164627Z">Kaksi</lang>
         </row>
       </node>
     </node>
     <configurations>
-      <configuration compilemethod="cmNone"/>
+      <configuration name="Default" compilemethod="cmNone"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

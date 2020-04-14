@@ -1,0 +1,27 @@
+﻿@page "/"
+@namespace BlazorSportServer.Pages
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+
+@using Microsoft.Extensions.Localization
+@inject IStringLocalizer<Strings> localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>@localizer["Sport"]</title>
+  <base href="~/" />
+  <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+  <link href="css/site.css" rel="stylesheet" />
+  <script src="~/browserLanguage.js"></script>"
+</head>
+<body>
+  <app>
+    <!-- Lets disable prerendering so JS interop call inside OnInitializedAsync will work -->
+    @(await Html.RenderComponentAsync<App>(RenderMode.Server))
+  </app>
+
+  <script src="_framework/blazor.server.js"></script>
+</body>
+</html>

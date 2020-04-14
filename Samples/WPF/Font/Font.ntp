@@ -1,52 +1,61 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D3B57B95-3892-41ED-AA67-452F103C7165" created="20160801T010124Z" lastmodified="20181207T014245Z" version="1.0.272">
+<project id="D3B57B95-3892-41ED-AA67-452F103C7165" created="20160801T010124Z" lastmodified="20200316T192743Z" version="1.0.714" stringid="15">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Font.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Font\Font.csproj" original="en" resources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192742Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkZvbnQuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
+        b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRvdy54YW1s
+        Ij4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8
+        L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Font Sample</value>
         <lang id="fi" time="20160801T010528Z">Fonttiesimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>One</value>
             <lang id="fi" time="20160801T010608Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Two</value>
             <lang id="fi" time="20160801T010610Z">Kaksi</lang>
           </row>
         </item>
         <item name="label3" type="Label">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>Three</value>
             <lang id="fi" time="20160801T010612Z">Kolme</lang>
           </row>
         </item>
         <item name="labelPx" type="Label">
-          <row id="Content">
+          <row id="Content" si="5">
             <value>device-independent units</value>
             <lang id="fi" rw="0" time="20181207T014240Z">laiteriippumattomia yksiköitä</lang>
           </row>
         </item>
         <item name="labelPt" type="Label">
-          <row id="Content">
+          <row id="Content" si="6">
             <value>points</value>
             <lang id="fi" rw="0" time="20181207T014157Z">pistettä</lang>
           </row>
         </item>
         <item name="labelCm" type="Label">
-          <row id="Content">
+          <row id="Content" si="7">
             <value>centimeters</value>
             <lang id="fi" rw="0" time="20181207T014202Z">senttimetriä</lang>
           </row>
         </item>
         <item name="labelIn" type="Label">
-          <row id="Content">
+          <row id="Content" si="8">
             <value>inches</value>
             <lang id="fi" rw="0" time="20181207T014204Z">tuumaa</lang>
           </row>
@@ -68,15 +77,15 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20181207T014015Z" fromassemblyinfo="1">
-        <row id="AssemblyTitle">
+        <row id="AssemblyTitle" si="9">
           <value>Font</value>
           <lang id="fi" or="3" rw="0" time="20181207T014118Z">Fontti</lang>
         </row>
-        <row id="AssemblyProduct">
+        <row id="AssemblyProduct" si="10">
           <value>Font</value>
           <lang id="fi" rw="0" time="20181207T014118Z">Fontti</lang>
         </row>
-        <row id="AssemblyCopyright">
+        <row id="AssemblyCopyright" si="11">
           <value>Copyright © 2013</value>
           <lang id="fi" rw="0" time="20181207T014135Z">Tekijänoikeudet © 2013</lang>
         </row>
@@ -84,25 +93,25 @@
       <node class="TResXNode" name="Resources.resx"/>
     </node>
     <node class="TXamlNode" name="Window1.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="12">
         <value>Font Sample</value>
         <lang id="fi" time="20160801T010528Z">Fonttiesimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="13">
             <value>One</value>
             <lang id="fi" time="20160801T010608Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="14">
             <value>Two</value>
             <lang id="fi" time="20160801T010610Z">Kaksi</lang>
           </row>
         </item>
         <item name="label3" type="Label">
-          <row id="Content">
+          <row id="Content" si="15">
             <value>Three</value>
             <lang id="fi" time="20160801T010612Z">Kolme</lang>
           </row>
@@ -119,4 +128,23 @@
       </data>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

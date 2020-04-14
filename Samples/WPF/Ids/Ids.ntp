@@ -1,34 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="34E8619C-F382-46A3-9A6A-EBCF25A721D2" created="20181207T021856Z" lastmodified="20181207T021914Z" version="1.0.272">
+<project id="34E8619C-F382-46A3-9A6A-EBCF25A721D2" created="20181207T021856Z" lastmodified="20200316T192720Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Ids.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Ids\Ids.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192719Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9Iklkcy5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICAgICAgICAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1h
+        cy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwi
+        Pg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwv
+        QXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" or="4" rw="0" time="20181207T021856Z">Esimerkki</lang>
       </row>
       <item name="StackPanel[0]" type="StackPanel">
         <item name="label1" type="Label">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>One</value>
             <lang id="fi" or="4" rw="0" time="20181207T021856Z">Yksi</lang>
           </row>
         </item>
         <item name="label2" type="Label">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>Two</value>
             <lang id="fi" or="4" rw="0" time="20181207T021856Z">Kaksi</lang>
           </row>
         </item>
         <item name="label3" type="Label">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>Three</value>
             <lang id="fi" rw="0" time="20181207T021901Z">Kolme</lang>
           </row>
         </item>
         <item name="Label[3]" type="Label">
-          <row id="Content">
+          <row id="Content" si="5">
             <value>Four</value>
             <lang id="fi" rw="0" time="20181207T021906Z">Neljä</lang>
           </row>
@@ -51,4 +60,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

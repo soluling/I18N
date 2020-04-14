@@ -1,34 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="14A4B2BD-3F13-4EFE-BBB1-1D59B0E3ECF1" created="20181207T030628Z" lastmodified="20181207T030638Z" version="1.0.272">
+<project id="14A4B2BD-3F13-4EFE-BBB1-1D59B0E3ECF1" created="20181207T030628Z" lastmodified="20200316T192545Z" version="1.0.714" stringid="7">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Text.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Text\Text.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net461"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192544Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRleHQuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
+        b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6
+        VGV4dCINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJj
+        ZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Text sample</value>
         <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tekstiesimerkki</lang>
       </row>
       <item name="StackPanel[0]" type="StackPanel">
         <item name="textPlain" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="2">
             <value>This is a sample</value>
             <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tämä on esimerkki</lang>
           </row>
         </item>
         <item name="textWhiteSpace" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="3">
             <value>This is a sample</value>
             <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tämä on esimerkki</lang>
           </row>
         </item>
         <item name="textWhiteSpace2" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="4">
             <value>This is a sample</value>
             <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tämä on esimerkki</lang>
           </row>
         </item>
         <item name="textTwoLines" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="5">
             <value>This is a sample
 This is another sample</value>
             <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tämä on esimerkki
@@ -36,7 +45,7 @@ Tämä on toinen esimerkki</lang>
           </row>
         </item>
         <item name="textPreserve" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="6">
             <value>This is a sample
 This is another sample</value>
             <lang id="fi" or="4" rw="0" time="20181207T030628Z">Tämä on esimerkki
@@ -44,7 +53,7 @@ Tämä on toinen esimerkki</lang>
           </row>
         </item>
         <item name="textPreserve2" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="7">
             <value>
       This is a sample
       This is another sample
@@ -83,4 +92,23 @@ Tämä on toinen esimerkki</lang>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

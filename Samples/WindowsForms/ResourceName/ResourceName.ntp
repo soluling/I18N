@@ -1,9 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C3D0DFAB-6D51-4992-8C56-DFE5D99EADF4" created="20160724T225752Z" lastmodified="20181130T020104Z" version="1.0.269">
+<project id="C3D0DFAB-6D51-4992-8C56-DFE5D99EADF4" created="20160724T225752Z" lastmodified="20200316T190935Z" version="1.0.714" stringid="23">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="ResourceName.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceName\ResourceName.csproj" original="en" resources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="$this.Text">
+      <row id="$this.Text" si="1">
         <value>Form1</value>
         <lang id="fi" time="20160724T225821Z">Lomake</lang>
       </row>
@@ -101,7 +102,7 @@
       </data>
     </node>
     <node class="TResXNode" name="Form2.resx" resourcekind="nkForm">
-      <row id="$this.Text">
+      <row id="$this.Text" si="2">
         <value>Form2</value>
         <lang id="fi" time="20160724T225821Z">Lomake</lang>
       </row>
@@ -199,7 +200,7 @@
       </data>
     </node>
     <node class="TResXNode" name="Form3.resx" resourcekind="nkForm">
-      <row id="$this.Text">
+      <row id="$this.Text" si="3">
         <value>Form3</value>
         <lang id="fi" time="20160724T225821Z">Lomake</lang>
       </row>
@@ -859,69 +860,69 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="4">
           <value>One</value>
           <lang id="fi" time="20160724T225816Z">Yksi</lang>
         </row>
-        <row id="String2">
+        <row id="String2" si="5">
           <value>Two</value>
           <lang id="fi" time="20160724T225818Z">Kaksi</lang>
         </row>
       </node>
     </node>
     <node class="TResXNode" name="Resource1.resx">
-      <row id="String1">
+      <row id="String1" si="6">
         <value>One</value>
         <lang id="fi" time="20160724T225816Z">Yksi</lang>
       </row>
-      <row id="String2">
+      <row id="String2" si="7">
         <value>Two</value>
         <lang id="fi" time="20160724T225818Z">Kaksi</lang>
       </row>
     </node>
     <node class="TResXNode" name="Resources1.resx">
-      <row id="String1">
+      <row id="String1" si="8">
         <value>One</value>
         <lang id="fi" time="20160724T225816Z">Yksi</lang>
       </row>
-      <row id="String2">
+      <row id="String2" si="9">
         <value>Two</value>
         <lang id="fi" time="20160724T225818Z">Kaksi</lang>
       </row>
     </node>
     <node class="TResXNode" name="Resources2Custom.resx">
-      <row id="String1">
+      <row id="String1" si="10">
         <value>One</value>
         <lang id="fi" time="20160724T225816Z">Yksi</lang>
       </row>
-      <row id="String2">
+      <row id="String2" si="11">
         <value>Two</value>
         <lang id="fi" time="20160724T225818Z">Kaksi</lang>
       </row>
     </node>
     <node class="TResXNode" name="Resources3Custom.resx">
-      <row id="String1">
+      <row id="String1" si="12">
         <value>One</value>
         <lang id="fi" time="20160724T225816Z">Yksi</lang>
       </row>
-      <row id="String2">
+      <row id="String2" si="13">
         <value>Two</value>
         <lang id="fi" time="20160724T225818Z">Kaksi</lang>
       </row>
     </node>
     <node class="TResXNode" name="Resources4Custom.resx">
-      <row id="String1">
+      <row id="String1" si="14">
         <value>One</value>
         <lang id="fi" time="20160724T225816Z">Yksi</lang>
       </row>
-      <row id="String2">
+      <row id="String2" si="15">
         <value>Two</value>
         <lang id="fi" time="20160724T225818Z">Kaksi</lang>
       </row>
     </node>
     <node class="TDirectoryFolder" name="Sub">
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="16">
           <value>Form1</value>
           <lang id="fi" time="20160724T225821Z">Lomake</lang>
         </row>
@@ -1019,11 +1020,11 @@
         </data>
       </node>
       <node class="TResXNode" name="Resource1.resx">
-        <row id="String1">
+        <row id="String1" si="17">
           <value>One</value>
           <lang id="fi" time="20160724T225816Z">Yksi</lang>
         </row>
-        <row id="String2">
+        <row id="String2" si="18">
           <value>Two</value>
           <lang id="fi" time="20160724T225818Z">Kaksi</lang>
         </row>
@@ -1031,11 +1032,11 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version" created="20160731T220253Z">
       <node class="TWindowsVersionNode" name="1" resid="1">
-        <row id="FileDescription">ResourceName</row>
-        <row id="InternalName">ResourceName.exe</row>
-        <row id="LegalCopyright">Copyright ©  2016</row>
-        <row id="OriginalFilename">ResourceName.exe</row>
-        <row id="ProductName">ResourceName</row>
+        <row id="FileDescription" si="19">ResourceName</row>
+        <row id="InternalName" si="20">ResourceName.exe</row>
+        <row id="LegalCopyright" si="21">Copyright ©  2016</row>
+        <row id="OriginalFilename" si="22">ResourceName.exe</row>
+        <row id="ProductName" si="23">ResourceName</row>
         <data>
           PAM0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
           AAEAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
@@ -1053,4 +1054,23 @@
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

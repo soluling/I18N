@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="875FD2AA-96EE-4D29-A827-BC0F05D1AA62" created="20190425T130324Z" lastmodified="20190425T133830Z" version="1.0.374" rowid="5">
+<project id="875FD2AA-96EE-4D29-A827-BC0F05D1AA62" created="20190425T130324Z" lastmodified="20200316T192556Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
-  <node class="TXamlSource" name="MainWindow.xaml" type="Window" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\MainWindow.xaml" original="en" encoding="utf-8">
-    <row id="Title" ri="1">
+  <node class="TXamlSource" name="MainWindow.xaml" type="Window" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\MainWindow.xaml" original="en" encoding="utf-8" bom="1" id="mainWindow">
+    <row id="Title" si="1">
       <value>Sample</value>
       <lang id="fi" or="4" rw="0" time="20190425T130422Z">Näyte</lang>
     </row>
     <item name="StackPanel[0]" type="StackPanel">
       <item name="label1" type="Label">
-        <row id="Content" ri="2">
+        <row id="Content" si="2">
           <value>Hello</value>
           <lang id="fi" or="4" rw="0" time="20190425T130422Z">Moi</lang>
         </row>
       </item>
       <item name="customLabel" type="custom:CustomLabel">
-        <row id="Content" ri="3">
+        <row id="Content" si="3">
           <value>Custom hello</value>
           <lang id="fi" or="4" rw="0" time="20190425T130422Z">Muokattu moi</lang>
         </row>
-        <row id="TextValue" ri="5" created="20190425T133811Z">
+        <row id="TextValue" si="4" created="20190425T133811Z">
           <value>Some text</value>
           <lang id="fi" rw="0" time="20190425T133825Z">Jotain tekstiä</lang>
         </row>
@@ -30,41 +30,32 @@
     </rules>
     <netproperties version="net48"/>
     <data>
-      77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iV3BmQXBwbGljYXRpb24uTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFz
-      Lm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWlj
-      cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVz
-      c2lvbi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21w
-      YXRpYmlsaXR5LzIwMDYiDQogIHhtbG5zOmN1c3RvbT0iY2xyLW5hbWVzcGFjZTpXcGZDb250cm9sO2Fzc2VtYmx5PVdwZkNvbnRy
-      b2wiDQogIHhtbG5zOnVzZXI9ImNsci1uYW1lc3BhY2U6V3BmVXNlckNvbnRyb2w7YXNzZW1ibHk9V3BmVXNlckNvbnRyb2wiDQog
-      IG1jOklnbm9yYWJsZT0iZCINCiAgVGl0bGU9IlNhbXBsZSIgSGVpZ2h0PSIyMDAiIFdpZHRoPSIzMDAiPg0KDQogIDxTdGFja1Bh
-      bmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMSI+SGVsbG88L0xhYmVsPg0KICAgIDxjdXN0b206Q3VzdG9tTGFiZWwgeDpO
-      YW1lPSJjdXN0b21MYWJlbCIgVGV4dFZhbHVlPSJTb21lIHRleHQiPkN1c3RvbSBoZWxsbzwvY3VzdG9tOkN1c3RvbUxhYmVsPg0K
-      ICAgIDx1c2VyOlVzZXJDb250cm9sMSB4Ok5hbWU9InVzZXJDb250cm9sIiAvPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4N
-      Cg==
+      77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLk1haW5XaW5kb3ciDQog
+      IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5z
+      Ong9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICB4bWxuczpkPSJodHRwOi8vc2NoZW1h
+      cy5taWNyb3NvZnQuY29tL2V4cHJlc3Npb24vYmxlbmQvMjAwOCINCiAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxm
+      b3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8yMDA2Ig0KICB4bWxuczpjdXN0b209ImNsci1uYW1lc3BhY2U6V3BmQ29u
+      dHJvbDthc3NlbWJseT1XcGZDb250cm9sIg0KICB4bWxuczp1c2VyPSJjbHItbmFtZXNwYWNlOldwZlVzZXJDb250cm9sO2Fzc2Vt
+      Ymx5PVdwZlVzZXJDb250cm9sIg0KICBtYzpJZ25vcmFibGU9ImQiDQogIFRpdGxlPSJTYW1wbGUiIEhlaWdodD0iMjAwIiBXaWR0
+      aD0iMzAwIj4NCg0KICA8U3RhY2tQYW5lbD4NCiAgICA8TGFiZWwgeDpVaWQ9ImxhYmVsMSI+SGVsbG88L0xhYmVsPg0KICAgIDxj
+      dXN0b206Q3VzdG9tTGFiZWwgeDpVaWQ9ImN1c3RvbUxhYmVsIiBUZXh0VmFsdWU9IlNvbWUgdGV4dCI+Q3VzdG9tIGhlbGxvPC9j
+      dXN0b206Q3VzdG9tTGFiZWw+DQogICAgPHVzZXI6VXNlckNvbnRyb2wxIHg6VWlkPSJ1c2VyQ29udHJvbCIgLz4NCiAgPC9TdGFj
+      a1BhbmVsPg0KPC9XaW5kb3c+DQo=
     </data>
   </node>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
     </shared>
-    <settings>
-    </settings>
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate" enabled="0"/>
-      <item name="DeepL" type="TDeepLTranslator" enabled="0"/>
-      <item name="Google" type="TGoogleTranslate" enabled="0"/>
-      <item name="IBM" type="TIBMTranslator" enabled="0"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="ModernMT" type="TModernMT" enabled="0"/>
-      <item name="MyMemory" type="TMyMemoryMachineTranslator" enabled="0"/>
-      <item name="Yandex" type="TYandexTranslate" enabled="0"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

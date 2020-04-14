@@ -1,53 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9A4DF261-DFBB-40F2-AA59-45781D98F1E4" created="20180506T023502Z" lastmodified="20181129T153439Z" version="1.0.269">
+<project id="9A4DF261-DFBB-40F2-AA59-45781D98F1E4" created="20180506T023502Z" lastmodified="20200316T191256Z" version="1.0.714" stringid="13">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Multilingual\Multilingual.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="calculateToolStripMenuItem.Text">
+      <row id="calculateToolStripMenuItem.Text" si="1">
         <value>&amp;Calculate</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Laske</lang>
       </row>
-      <row id="languageToolStripMenuItem.Text">
+      <row id="languageToolStripMenuItem.Text" si="2">
         <value>&amp;Language...</value>
         <lang id="fi" rw="0" time="20180506T025139Z">&amp;Kieli...</lang>
       </row>
-      <row id="exitToolStripMenuItem.Text">
+      <row id="exitToolStripMenuItem.Text" si="3">
         <value>E&amp;xit</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Lopeta</lang>
       </row>
-      <row id="fileToolStripMenuItem.Text">
+      <row id="fileToolStripMenuItem.Text" si="4">
         <value>&amp;File</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Tiedosto</lang>
       </row>
-      <row id="aboutToolStripMenuItem.Text">
+      <row id="aboutToolStripMenuItem.Text" si="5">
         <value>&amp;About...</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Tietoa...</lang>
       </row>
-      <row id="helpToolStripMenuItem.Text">
+      <row id="helpToolStripMenuItem.Text" si="6">
         <value>&amp;Help</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Ohje</lang>
       </row>
-      <row id="distanceLabel.Text">
+      <row id="distanceLabel.Text" si="7">
         <value>&amp;Driving distance:</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Ajomatka:</lang>
       </row>
-      <row id="sizeLabel.Text">
+      <row id="sizeLabel.Text" si="8">
         <value>&amp;Speed:</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Nopeus:</lang>
       </row>
-      <row id="calculateButton.Text">
+      <row id="calculateButton.Text" si="9">
         <value>&amp;Calculate</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">&amp;Laske</lang>
       </row>
-      <row id="$this.Text">
+      <row id="$this.Text" si="10">
         <value>Driving Time</value>
         <lang id="fi" or="5" rw="0" time="20180506T025132Z">Ajoaika</lang>
       </row>
       <codeproperties>
-        <collection component="menuStrip1" property="Items" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
-        <collection component="fileToolStripMenuItem" property="DropDownItems" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
-        <collection component="helpToolStripMenuItem" property="DropDownItems" method="AddRange" ItemType="System.Windows.Forms.ToolStripItem"/>
+        <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
+        <collection component="fileToolStripMenuItem" property="DropDownItems" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
+        <collection component="helpToolStripMenuItem" property="DropDownItems" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
       </codeproperties>
       <data>
         PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -2724,32 +2724,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="About">
-          <value>Driving time calculator</value>
-          <lang id="fi" or="5" rw="0" time="20180506T025132Z">Ajoaikalaskin</lang>
-        </row>
-        <row id="ResultPlural" changed="20181129T153426Z" class="TPatternRow" created="20181129T152452Z">
-          <value startpattern="1">Driving time is{0}{1}</value>
-          <prev startpattern="1">Driving time is%0:s%1:s</prev>
-          <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" time="20181129T153434Z">
-            <value startpattern="1">Ajoaika on {0}{1}</value>
-            <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti</pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia</pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
-          </lang>
-        </row>
-        <row id="Language">
-          <value>en</value>
-          <lang id="fi" or="5" rw="0" time="20180506T025132Z">fi</lang>
-        </row>
-        <row id="car_sedan_blue" class="TImageRow">
+        <row id="car_sedan_blue" class="TImageRow" st="4">
           <value>
             iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAODklEQVR42u2YaZCdVZ3Gf+fd73vv7b7pJb1l7zTpJh3SSTqBQBMT
             AkiGvRBUNKMw6oj7WE4JM4jF4GiNOjqKpQ6DylDlhjAhoMFAggaSSHaSdLrTnU46va/39naXdz/zIcGRmhoVFWemKk/V+fB+eev5
@@ -2855,7 +2830,7 @@
             aWdodCCpIDIwMDgtMjAxMSBJTkNPUlMgR21iSBCOIU8AAAAASUVORK5CYII=
           </lang>
         </row>
-        <row id="flag_great_britain" class="TImageRow">
+        <row id="flag_great_britain" class="TImageRow" st="4">
           <value>
             iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAM8UlEQVR42u2ZeZBV1Z3HP79zl3690LTsu+xgwG0cIlLGoFGCJYLi
             EkwmEQeMOpFKgjOjTDkmEw1i1cRoZkISkbJMFBBxK8WUEDdUlgRoVKLsmzR0Qzevu1/32+6958wf576lm8yU/0+fqlv33XPvO++3
@@ -2928,7 +2903,51 @@
             RU5ErkJggg==
           </lang>
         </row>
+        <row id="About" si="11">
+          <value>Driving time calculator</value>
+          <lang id="fi" or="5" rw="0" time="20180506T025132Z">Ajoaikalaskin</lang>
+        </row>
+        <row id="ResultPlural" changed="20181129T153426Z" class="TPatternRow" si="12" created="20181129T152452Z">
+          <value startpattern="1">Driving time is{0}{1}</value>
+          <prev startpattern="1">Driving time is%0:s%1:s</prev>
+          <pattern plural="pfZero" index="0"> </pattern>
+          <pattern plural="pfOne" index="0"> {0} hour </pattern>
+          <pattern plural="pfOther" index="0"> {0} hours </pattern>
+          <pattern plural="pfOne" index="1">{0} minute</pattern>
+          <pattern plural="pfOther" index="1">{0} minutes</pattern>
+          <lang id="fi" rw="0" time="20181129T153434Z">
+            <value startpattern="1">Ajoaika on {0}{1}</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> {0} tunti</pattern>
+            <pattern plural="pfOther" index="0"> {0} tuntia</pattern>
+            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
+            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+          </lang>
+        </row>
+        <row id="Language" si="13">
+          <value>en</value>
+          <lang id="fi" or="5" rw="0" time="20180506T025132Z">fi</lang>
+        </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

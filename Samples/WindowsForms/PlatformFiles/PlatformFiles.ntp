@@ -1,18 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="13417A0C-8A3D-4230-9008-918491AAC878" created="20181130T014834Z" lastmodified="20181130T015134Z" version="1.0.269">
+<project id="13417A0C-8A3D-4230-9008-918491AAC878" created="20181130T014834Z" lastmodified="20200316T190941Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\PlatformFiles.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\PlatformFiles\bin\Debug\PlatformFiles.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="PlatformFiles.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Debug\PlatformFiles.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\PlatformFiles\bin\Debug\PlatformFiles.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="PlatformFiles.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="PlatformFiles.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Sample</value>
           <lang id="fi" rw="0" time="20181130T015114Z">Esimerkki</lang>
         </row>
-        <row id="label1.Text">
+        <row id="label1.Text" si="2">
           <value>Hello world</value>
           <lang id="fi" rw="0" time="20181130T015117Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" excluded="2">dummy</row>
+        <row id="label2.Text" si="3" excluded="2">dummy</row>
         <resourcestrings>
           <node name="PlatformFiles.Properties.Resources.resources">
             <id>Custom</id>
@@ -63,11 +63,11 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="PlatformFiles.Properties.Resources.resources">
-        <row id="Custom">
+        <row id="Custom" si="4">
           <value>Custom value</value>
           <lang id="fi" rw="0" time="20181130T015130Z">Muokattu arvo</lang>
         </row>
-        <row id="Standard">
+        <row id="Standard" si="5">
           <value>Standard value</value>
           <lang id="fi" rw="0" time="20181130T015125Z">Standardi arvo</lang>
         </row>
@@ -81,4 +81,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

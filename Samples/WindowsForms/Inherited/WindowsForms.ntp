@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A67D8F2E-BAD5-4740-8B5F-F382FBE32461" created="20121126T083858Z" lastmodified="20181129T154228Z" version="1.0.269">
+<project id="A67D8F2E-BAD5-4740-8B5F-F382FBE32461" created="20121126T083858Z" lastmodified="20200316T191055Z" version="1.0.714" stringid="14">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\WindowsForms.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Inherited\bin\Release\WindowsForms.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="Inherited.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\WindowsForms.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Inherited\bin\Release\WindowsForms.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Inherited.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="WindowsForms.BaseForm.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121126T083858Z">Base</row>
-        <row id="label1.Text" created="20121126T083858Z">Base</row>
+        <row id="$this.Text" si="1" created="20121126T083858Z">Base</row>
+        <row id="label1.Text" si="2" created="20121126T083858Z">Base</row>
         <data>
           zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1
           bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNv
@@ -37,8 +37,8 @@
         </data>
       </node>
       <node class="TResXNode" name="WindowsForms.InheritedForm.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121126T083858Z">Inherited</row>
-        <row id="button1.Text" created="20121126T083858Z">Browse...</row>
+        <row id="$this.Text" si="3" created="20121126T083858Z">Inherited</row>
+        <row id="button1.Text" si="4" created="20121126T083858Z">Browse...</row>
         <resourcestrings>
           <node name="WindowsForms.Properties.Resources.resources">
             <id>EnterValue</id>
@@ -90,11 +90,11 @@
         </data>
       </node>
       <node class="TResXNode" name="WindowsForms.MainForm.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121126T083858Z">Sample</row>
-        <row id="baseButton.Text" created="20121126T083858Z">Base</row>
-        <row id="inheritedButton.Text" created="20121126T083858Z">Inherited</row>
-        <row id="moreButton.Text" created="20121126T083858Z">More</row>
-        <row id="simpleButton.Text" created="20121126T083858Z">
+        <row id="$this.Text" si="5" created="20121126T083858Z">Sample</row>
+        <row id="baseButton.Text" si="6" created="20121126T083858Z">Base</row>
+        <row id="inheritedButton.Text" si="7" created="20121126T083858Z">Inherited</row>
+        <row id="moreButton.Text" si="8" created="20121126T083858Z">More</row>
+        <row id="simpleButton.Text" si="9" created="20121126T083858Z">
           <value>Simple</value>
           <lang id="fi" time="20121126T083924Z">Yksinkertainen</lang>
         </row>
@@ -165,8 +165,8 @@
         </data>
       </node>
       <node class="TResXNode" name="WindowsForms.MoreForm.resources" resourcekind="nkForm">
-        <row id="checkBox1.Text" created="20121126T083858Z">&amp;Visible</row>
-        <row id="label1.Text" created="20121126T083858Z">&amp;Enter value:</row>
+        <row id="checkBox1.Text" si="10" created="20121126T083858Z">&amp;Visible</row>
+        <row id="label1.Text" si="11" created="20121126T083858Z">&amp;Enter value:</row>
         <data>
           zsrvvgEAAACRAAAAbFN5c3RlbS5SZXNvdXJjZXMuUmVzb3VyY2VSZWFkZXIsIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1
           bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSNTeXN0ZW0uUmVzb3VyY2VzLlJ1bnRpbWVSZXNv
@@ -206,11 +206,11 @@
         </data>
       </node>
       <node class="TResXNode" name="WindowsForms.SimpleForm.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121126T083858Z">
+        <row id="$this.Text" si="12" created="20121126T083858Z">
           <value>Simple</value>
           <lang id="fi" time="20121126T083924Z">Yksinkertainen</lang>
         </row>
-        <row id="label1.Text" created="20121126T083858Z">
+        <row id="label1.Text" si="13" created="20121126T083858Z">
           <value>One</value>
           <lang id="fi" time="20121126T083919Z">Yksi</lang>
         </row>
@@ -247,8 +247,27 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="WindowsForms.Properties.Resources.resources">
-        <row id="EnterValue" created="20121126T083858Z">&amp;Enter value:</row>
+        <row id="EnterValue" si="14" created="20121126T083858Z">&amp;Enter value:</row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

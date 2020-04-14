@@ -1,17 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5BD65EAB-C382-4104-9619-03327EBD0A7C" created="20181207T001727Z" lastmodified="20181207T005216Z" version="1.0.272">
+<project id="5BD65EAB-C382-4104-9619-03327EBD0A7C" created="20181207T001727Z" lastmodified="20200316T192811Z" version="1.0.714" stringid="9">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Database.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Database\Database.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net40"/>
+    <netproperties version="net40" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192810Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRhdGFiYXNlLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3NjaGVtYXMu
+        bWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAgIHhtbG5zOng9Imh0dHA6Ly9z
+        Y2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICAgICAgICAgICAgIFN0YXJ0dXBVcmk9Ik1haW5XaW5kb3cu
+        eGFtbCI+DQogICAgPEFwcGxpY2F0aW9uLlJlc291cmNlcz4NCiAgICAgICAgIA0KICAgIDwvQXBwbGljYXRpb24uUmVzb3VyY2Vz
+        Pg0KPC9BcHBsaWNhdGlvbj4NCg==
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sport</value>
         <lang id="fi" rw="0" time="20181207T005131Z">Urheilu</lang>
       </row>
       <item name="grid" type="DataGrid">
         <item name="Columns">
           <item name="pictureColumn" type="DataGridTemplateColumn">
-            <row id="Header">
+            <row id="Header" si="2">
               <value>Picture</value>
               <lang id="fi" rw="0" time="20181207T005134Z">Kuva</lang>
             </row>
@@ -22,25 +31,25 @@
             </item>
           </item>
           <item name="nameColumn" type="DataGridTextColumn">
-            <row id="Header">
+            <row id="Header" si="3">
               <value>Name</value>
               <lang id="fi" rw="0" time="20181207T005136Z">Nimi</lang>
             </row>
           </item>
           <item name="fieldPlayersColumn" type="DataGridTextColumn">
-            <row id="Header">
+            <row id="Header" si="4">
               <value>Field players</value>
               <lang id="fi" rw="0" time="20181207T005141Z">Kenttäpelaajat</lang>
             </row>
           </item>
           <item name="goalieColumn" type="DataGridCheckBoxColumn">
-            <row id="Header">
+            <row id="Header" si="5">
               <value>Goalie</value>
               <lang id="fi" rw="0" time="20181207T005144Z">Maalivahti</lang>
             </row>
           </item>
           <item name="descriptionColumn" type="DataGridTemplateColumn">
-            <row id="Header">
+            <row id="Header" si="6">
               <value>Description</value>
               <lang id="fi" rw="0" time="20181207T005148Z">Selitys</lang>
             </row>
@@ -51,13 +60,13 @@
             </item>
           </item>
           <item name="originColumn" type="DataGridTextColumn">
-            <row id="Header">
+            <row id="Header" si="7">
               <value>Origin</value>
               <lang id="fi" rw="0" time="20181207T005151Z">Alkuperä</lang>
             </row>
           </item>
           <item name="flagColumn" type="DataGridTemplateColumn">
-            <row id="Header">
+            <row id="Header" si="8">
               <value>Flag</value>
               <lang id="fi" rw="0" time="20181207T005153Z">Lippu</lang>
             </row>
@@ -101,7 +110,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="Language">
+        <row id="Language" si="9">
           <value>en</value>
           <lang id="fi" rw="0" time="20181207T005156Z">fi</lang>
         </row>
@@ -111,4 +120,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

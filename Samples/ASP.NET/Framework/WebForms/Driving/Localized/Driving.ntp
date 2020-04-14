@@ -1,83 +1,93 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20150613T144916Z" lastmodified="20150613T150052Z">
+<project id="8E171479-382A-4DD6-A1A2-29388529B49B" created="20150613T144916Z" lastmodified="20200316T235206Z" version="1.0.714" stringid="14">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TResXSource" name="App_LocalResources\Index.aspx.resx" original="en" encoding="utf-8">
-    <row id="calculateButton.Text" created="20150613T145021Z">
+  <node class="TResXSource" name="App_LocalResources\Index.aspx.resx" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\App_LocalResources\Index.aspx.resx" original="en" encoding="utf-8" bom="1">
+    <row id="calculateButton.Text" si="1" created="20150613T145021Z">
       <value>Calculate</value>
-      <lang id="fi" status="3" time="20150613T145032Z">Laske</lang>
-      <lang id="ja" status="1" method="3" time="20150613T145504Z">計算します。</lang>
+      <lang id="fi" time="20150613T145032Z">Laske</lang>
+      <lang id="ja" time="20150613T145504Z">計算します。</lang>
     </row>
-    <row id="carImage.ImageUrl" created="20150613T145021Z">
+    <row id="carImage.ImageUrl" si="2" created="20150613T145021Z">
       <value>~/Images/car.png</value>
-      <lang id="fi" status="3" time="20150613T145849Z">~/Images/fi/car.png</lang>
-      <lang id="ja" status="3" time="20150613T150037Z">~/Images/ja/car.png</lang>
+      <lang id="fi" time="20150613T145849Z">~/Images/fi/car.png</lang>
+      <lang id="ja" time="20150613T150037Z">~/Images/ja/car.png</lang>
     </row>
-    <row id="distanceLabel.Text" created="20150613T145021Z">
+    <row id="distanceLabel.Text" si="3" created="20150613T145021Z">
       <value>Driving distance:</value>
-      <lang id="fi" status="3" time="20150613T145036Z">Ajomatka:</lang>
-      <lang id="ja" status="1" method="3" time="20150613T145504Z">走行距離</lang>
+      <lang id="fi" time="20150613T145036Z">Ajomatka:</lang>
+      <lang id="ja" time="20150613T145504Z">走行距離</lang>
     </row>
-    <row id="flagImage.ImageUrl" created="20150613T145021Z">
+    <row id="flagImage.ImageUrl" si="4" created="20150613T145021Z">
       <value>~/Images/flag.png</value>
-      <lang id="fi" status="3" time="20150613T145856Z">~/Images/fi/flag.png</lang>
-      <lang id="ja" status="3" time="20150613T150050Z">~/Images/ja/flag.png</lang>
+      <lang id="fi" time="20150613T145856Z">~/Images/fi/flag.png</lang>
+      <lang id="ja" time="20150613T150050Z">~/Images/ja/flag.png</lang>
     </row>
-    <row id="speedLabel.Text" created="20150613T145021Z">
+    <row id="speedLabel.Text" si="5" created="20150613T145021Z">
       <value>Speed:</value>
-      <lang id="fi" status="3" time="20150613T145038Z">Nopeus:</lang>
-      <lang id="ja" status="1" method="3" time="20150613T145505Z">速度</lang>
+      <lang id="fi" time="20150613T145038Z">Nopeus:</lang>
+      <lang id="ja" time="20150613T145505Z">速度</lang>
     </row>
     <netproperties version="net452"/>
   </node>
-  <node class="TAssemblySource" name="bin\Driving.dll" original="en" availableresources="[nrResx,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" excludedresources="[nrVersion,nrAssemblyInfo,nrHardCodeStrings]">
+  <node class="TAssemblySource" name="bin\Driving.dll" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\bin\Driving.dll" original="en" availableresources="[nrResx,nrVersion,nrHardCodeStrings]">
     <netproperties version="net45"/>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="Driving.Resources.resources">
-        <row id="DrivingTimeIs">
+        <row id="DrivingTimeIs" si="6">
           <value>Driving time is</value>
-          <lang id="fi" status="3" time="20150613T144929Z">Ajoaika on</lang>
-          <lang id="ja" status="1" method="3" time="20150613T145505Z">所要時間は</lang>
+          <lang id="fi" time="20150613T144929Z">Ajoaika on</lang>
+          <lang id="ja" time="20150613T145505Z">所要時間は</lang>
         </row>
-        <row id="Header">
+        <row id="Header" si="7">
           <value>Driving Time</value>
-          <lang id="fi" status="3" time="20150613T144931Z">Ajoaika</lang>
-          <lang id="ja" status="1" method="3" time="20150613T145505Z">運転時間</lang>
+          <lang id="fi" time="20150613T144931Z">Ajoaika</lang>
+          <lang id="ja" time="20150613T145505Z">運転時間</lang>
         </row>
-        <row id="HoursPlural">
+        <row id="HoursPlural" class="TPatternRow" si="8" created="20200316T235205Z" st="0">
           <value>{0} hours</value>
-          <plural kind="pfOne">{0} hour</plural>
-          <lang id="fi" status="3" time="20150613T144944Z">
-            <data>{0} tuntia</data>
-            <plural kind="pfOne">{0} tunti</plural>
-          </lang>
-          <lang id="ja" status="1" method="3" time="20150613T145505Z">{0} 時間</lang>
+          <pattern plural="pfOne">{0} hour</pattern>
         </row>
-        <row id="Language">
+        <row id="Language" si="9">
           <value>en</value>
-          <lang id="fi" status="3" time="20150613T144946Z">fi</lang>
-          <lang id="ja" status="1" method="3" time="20150613T145506Z">en</lang>
+          <lang id="fi" time="20150613T144946Z">fi</lang>
+          <lang id="ja" time="20150613T145506Z">en</lang>
         </row>
-        <row id="MinutesPlural">
+        <row id="MinutesPlural" class="TPatternRow" si="10" created="20200316T235205Z" st="0">
           <value>{0} minutes</value>
-          <plural kind="pfOne">{0} minute</plural>
-          <lang id="fi" status="3" time="20150613T145002Z">
-            <data>{0} minuuttia</data>
-            <plural kind="pfOne">{0} minuutti</plural>
-          </lang>
-          <lang id="ja" status="1" method="3" time="20150613T145506Z">{0} 分</lang>
+          <pattern plural="pfOne">{0} minute</pattern>
         </row>
-        <row id="Title">
+        <row id="Title" si="11">
           <value>Driving Time Calculator</value>
-          <lang id="fi" status="3" time="20150613T145005Z">Ajoaikalaskin</lang>
-          <lang id="ja" status="1" method="3" time="20150613T145506Z">走行時間を計算</lang>
+          <lang id="fi" time="20150613T145005Z">Ajoaikalaskin</lang>
+          <lang id="ja" time="20150613T145506Z">走行時間を計算</lang>
         </row>
-        <row id="YouMustEnterValue">
+        <row id="YouMustEnterValue" si="12">
           <value>You must enter a valid distance and a speed!</value>
-          <lang id="fi" status="3" time="20150613T145059Z">Matka ja nopeus on annettava!</lang>
-          <lang id="ja" status="1" method="3" time="20150613T145506Z">有効な距離と速度を入力してください。</lang>
+          <lang id="fi" time="20150613T145059Z">Matka ja nopeus on annettava!</lang>
+          <lang id="ja" time="20150613T145506Z">有効な距離と速度を入力してください。</lang>
         </row>
       </node>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

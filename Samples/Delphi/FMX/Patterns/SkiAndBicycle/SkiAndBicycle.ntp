@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project created="20160819T234417Z" guid="C47AD96A-8ED8-4F80-8985-6DF9CBF2BEF8" lastmodified="20180524T030316Z" version="1.0.203">
+<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20200317T003816Z" version="1.0.714" stringid="16">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" guid="935BA77E-C9AE-418D-BBA6-8EE809A8F5D5" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" library="dlFireMonkey">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDirectoryFolder" name=".." created="20160820T024247Z">
         <node class="TDirectoryFolder" name="..">
@@ -13,24 +13,24 @@
                     <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
                       <row id="Left">0</row>
                       <row id="Top">0</row>
-                      <row id="Caption">
+                      <row id="Caption" si="1">
                         <value>Select Language</value>
                         <lang id="fi" time="20160820T024259Z">Valitse kieli</lang>
                       </row>
                       <row id="ClientHeight">193</row>
                       <row id="ClientWidth">291</row>
                       <item name="LanguageList" type="TListBox">
-                        <row id="DefaultItemStyles.GroupHeaderStyle" excluded="3"></row>
-                        <row id="DefaultItemStyles.GroupFooterStyle" excluded="3"></row>
+                        <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
+                        <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
                       </item>
                       <item name="OkButton" type="TButton">
-                        <row id="Text">
+                        <row id="Text" si="4">
                           <value>OK</value>
                           <lang id="fi" time="20160820T024250Z">OK</lang>
                         </row>
                       </item>
                       <item name="CancelButton" type="TButton">
-                        <row id="Text">
+                        <row id="Text" si="5">
                           <value>Cancel</value>
                           <lang id="fi" time="20160820T024252Z">Peru</lang>
                         </row>
@@ -80,7 +80,7 @@
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" changed="20160820T021422Z">
+        <row id="Caption" changed="20160820T021422Z" si="6">
           <value>Skies and Bicycles</value>
           <prev>Skies and Bicycles</prev>
           <lang id="fi" time="20160820T021433Z">Sukset ja polkupyörät</lang>
@@ -88,24 +88,24 @@
         <row id="ClientHeight" changed="20160820T014555Z">82</row>
         <row id="ClientWidth">403</row>
         <item name="Label1" type="TLabel">
-          <row id="Text" excluded="2">dummy</row>
+          <row id="Text" si="7" excluded="2">dummy</row>
         </item>
         <item name="SkiLabel" type="TLabel" created="20160820T014555Z">
-          <row id="Text">
+          <row id="Text" si="8">
             <value>&amp;Ski amount:</value>
             <lang id="fi" time="20160820T014719Z">&amp;Suksien määrä:</lang>
           </row>
         </item>
         <item name="SkiCombo" type="TComboBox" created="20160820T014555Z"/>
         <item name="BicycleLabel" type="TLabel" created="20160820T014555Z">
-          <row id="Text" changed="20160820T014645Z">
+          <row id="Text" changed="20160820T014645Z" si="9">
             <value>&amp;Bicycle amount:</value>
             <lang id="fi" time="20160820T014716Z">&amp;Polkupyörien määrä:</lang>
           </row>
         </item>
         <item name="BicycleCombo" type="TComboBox" created="20160820T014555Z"/>
         <item name="LanguageButton" type="TButton" created="20160820T024247Z">
-          <row id="Text">
+          <row id="Text" si="10">
             <value>Language...</value>
             <lang id="fi" time="20160820T024328Z">Kieli...</lang>
           </row>
@@ -135,7 +135,7 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="MessagePlural" changed="20180524T030254Z" class="TPatternRow" created="20170805T010447Z">
+        <row id="MessagePlural" changed="20180524T030254Z" class="TPatternRow" si="11" created="20170805T010447Z">
           <value startpattern="1">I have {0} {1}</value>
           <prev startpattern="1">I have {0}</prev>
           <pattern plural="pfZero" index="0">no skis</pattern>
@@ -154,23 +154,23 @@
             <pattern plural="pfOther" index="1">ja {0} polkupyörä</pattern>
           </lang>
         </row>
-        <row id="en" created="20160820T024247Z">
+        <row id="en" si="12" created="20160820T024247Z">
           <value>English</value>
           <lang id="fi" time="20160820T024305Z">englanti</lang>
         </row>
-        <row id="fi" created="20160820T024247Z">
+        <row id="fi" si="13" created="20160820T024247Z">
           <value>Finnish</value>
           <lang id="fi" time="20160820T024309Z">suomi</lang>
         </row>
-        <row id="de" created="20160820T024247Z">
+        <row id="de" si="14" created="20160820T024247Z">
           <value>German</value>
           <lang id="fi" time="20160820T024311Z">saksa</lang>
         </row>
-        <row id="fr" created="20160820T024247Z">
+        <row id="fr" si="15" created="20160820T024247Z">
           <value>French</value>
           <lang id="fi" time="20160820T024313Z">ranska</lang>
         </row>
-        <row id="ja" created="20160820T024247Z">
+        <row id="ja" si="16" created="20160820T024247Z">
           <value>Japanese</value>
           <lang id="fi" time="20160820T024315Z">japani</lang>
         </row>
@@ -180,8 +180,28 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <delphirules kind="drFireMonkey">
-    <item type="*" property="StyleLookup"/>
-    <item type="TListBox" property="DefaultItemStyles.ItemStyle"/>
-  </delphirules>
+  <rules kind="crFireMonkey">
+    <rule component="*" property="StyleLookup"/>
+    <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
+  </rules>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

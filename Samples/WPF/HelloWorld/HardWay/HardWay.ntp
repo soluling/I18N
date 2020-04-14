@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="FC5CB722-52F5-4ED5-8BA8-898023982A86" created="20181207T015204Z" lastmodified="20181207T015249Z" version="1.0.272">
+<project id="FC5CB722-52F5-4ED5-8BA8-898023982A86" created="20181207T015204Z" lastmodified="20200316T192730Z" version="1.0.714" stringid="3">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="HardWay.csproj" fullpath="D:\NT\Deploy\Samples\WPF\HelloWorld\HardWay\HardWay.csproj" original="en" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="HelloWorld">
+        <row id="HelloWorld" si="1">
           <value>Hello World</value>
           <lang id="fi" rw="0" time="20181207T015220Z">Moi maailma</lang>
         </row>
-        <row id="HowAreYou">
+        <row id="HowAreYou" si="2">
           <value>How are you?</value>
           <lang id="fi" rw="0" time="20181207T015226Z">Mitä kuuluu?</lang>
         </row>
-        <row id="Sample">
+        <row id="Sample" si="3">
           <value>Sample</value>
           <lang id="fi" rw="0" time="20181207T015228Z">Esimerkki</lang>
         </row>
@@ -23,4 +23,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,17 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="2783D8D3-B675-449D-AA3B-F7CCA89A4E50" created="20160228T140245Z" lastmodified="20181130T031113Z" version="1.0.269">
+<project id="2783D8D3-B675-449D-AA3B-F7CCA89A4E50" created="20160228T140245Z" lastmodified="20200316T190201Z" version="1.0.714" stringid="39">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="ResxData.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\ResxData.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text" excluded="2">dummy</row>
-      <row id="playButton.Text">
+      <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="playButton.Text" si="2">
         <value>&amp;Play</value>
         <lang id="fi" rw="0" time="20171014T164527Z">&amp;Soita</lang>
       </row>
-      <row id="stringXmlLabel.Text" excluded="2">dummy</row>
-      <row id="binaryXmlLabel.Text" excluded="2">dummy</row>
-      <row id="simpleXmlLabel.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="stringXmlLabel.Text" si="3" excluded="2">dummy</row>
+      <row id="binaryXmlLabel.Text" si="4" excluded="2">dummy</row>
+      <row id="simpleXmlLabel.Text" si="5" excluded="2">dummy</row>
+      <row id="$this.Text" si="6">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20171014T164529Z">Esimerkki</lang>
       </row>
@@ -207,7 +208,7 @@
         <formats>
           <item name="SimpleXml" format="sfXml"/>
         </formats>
-        <row id="Image" class="TImageRow">
+        <row id="Image" class="TImageRow" st="4">
           <value>
             iVBORw0KGgoAAAANSUhEUgAAAIAAAACACAYAAADDPmHLAABN7ElEQVR42uy9eZRl2VXe+Tvn3je/mDIiMyKHmqWippaEJpckSqKR
             LDAgARZYiEHGsECNbQY3amgMtKHtBpvRuDHQpmEBAiyM3IBk40aWkMCYQVIVqkFVkqqkqszKzBjfFPHGe8/Z23+cc+97kZVAsVZ3
@@ -752,9 +753,9 @@
             IElOQ09SUyBHbWJIEI4hTwAAAABJRU5ErkJggg==
           </lang>
         </row>
-        <row id="SimpleJson" created="20181130T022106Z">
-          <value>{ "data": "This is a sample" }</value>
-          <lang id="fi" rw="0" time="20181130T022921Z">{ "data": "Tämä on esimerkki" }</lang>
+        <row id="SimpleJson" si="7" created="20181130T022106Z">
+          <value>{ &quot;data&quot;: &quot;This is a sample&quot; }</value>
+          <lang id="fi" rw="0" time="20181130T022921Z">{ &quot;data&quot;: &quot;Tämä on esimerkki&quot; }</lang>
         </row>
         <row id="Sound" class="TAudioRow">
           <value>
@@ -5167,49 +5168,49 @@
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
           </lang>
         </row>
-        <row id="String1">
+        <row id="String1" si="8">
           <value>Hello world</value>
           <lang id="fi" rw="0" time="20171014T164831Z">Moi maailma</lang>
         </row>
-        <node class="TIniDataNode" name="BinaryIni" created="20171014T143110Z" bom="0" encoding="windows-1252">
+        <node class="TIniDataNode" name="BinaryIni" created="20171014T143110Z" encoding="windows-1252">
           <item class="TIniItem" name="soccer">
-            <row id="name">
+            <row id="name" si="9">
               <value>Soccer</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Jalkapallo</lang>
             </row>
-            <row id="origin">
+            <row id="origin" si="10">
               <value>England</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Englanti</lang>
             </row>
-            <row id="description">
+            <row id="description" si="11">
               <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Jalkapallo on peli, jossa kaksi 11-henkistä joukkuetta pelaa pallolla.</lang>
             </row>
           </item>
           <item class="TIniItem" name="hockey">
-            <row id="name">
+            <row id="name" si="12">
               <value>Ice hockey</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Jääkiekko</lang>
             </row>
-            <row id="origin">
+            <row id="origin" si="13">
               <value>Canada</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Kanada</lang>
             </row>
-            <row id="description">
+            <row id="description" si="14">
               <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Jääkiekko on jäällä pelattava joukkuepeli, jossa luistelijat yrittävät mailalla saada kiekon vastapuolen maaliin.</lang>
             </row>
           </item>
           <item class="TIniItem" name="basketball">
-            <row id="name">
+            <row id="name" si="15">
               <value>Basketball</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Koripallo</lang>
             </row>
-            <row id="origin">
+            <row id="origin" si="16">
               <value>United States</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Yhdysvallat</lang>
             </row>
-            <row id="description">
+            <row id="description" si="17">
               <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
               <lang id="fi" or="5" rw="0" time="20171014T164646Z">Koripallo on joukkuepeli, jossa kaksi viisihenkistä joukkuetta yrittää heittää palloa vastapuolen koriin noudattaen tiettyjä sääntöjä.</lang>
             </row>
@@ -5242,48 +5243,48 @@
         <node class="TXmlDataNode" name="BinaryXml">
           <item class="TXmlItem" name="sports">
             <item class="TXmlItem" name="soccer" created="20181130T022106Z">
-              <row id="=name">
+              <row id="=name" si="18">
                 <value>Soccer</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Jalkapallo</lang>
               </row>
-              <row id="=origin">
+              <row id="=origin" si="19">
                 <value>England</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Englanti</lang>
               </row>
               <item class="TXmlItem" name="description">
-                <row id="value">
+                <row id="value" si="20">
                   <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
                   <lang id="fi" or="5" rw="0" time="20181130T031106Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
                 </row>
               </item>
             </item>
             <item class="TXmlItem" name="hockey" created="20181130T022106Z">
-              <row id="=name">
+              <row id="=name" si="21">
                 <value>Ice hockey</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Jääkiekko</lang>
               </row>
-              <row id="=origin">
+              <row id="=origin" si="22">
                 <value>Canada</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Kanada</lang>
               </row>
               <item class="TXmlItem" name="description">
-                <row id="value">
+                <row id="value" si="23">
                   <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
                   <lang id="fi" or="5" rw="0" time="20181130T031106Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
                 </row>
               </item>
             </item>
             <item class="TXmlItem" name="basketball" created="20181130T022106Z">
-              <row id="=name">
+              <row id="=name" si="24">
                 <value>Basketball</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Koripallo</lang>
               </row>
-              <row id="=origin">
+              <row id="=origin" si="25">
                 <value>United States</value>
                 <lang id="fi" or="5" rw="0" time="20181130T031106Z">Yhdysvallat</lang>
               </row>
               <item class="TXmlItem" name="description">
-                <row id="value">
+                <row id="value" si="26">
                   <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
                   <lang id="fi" or="5" rw="0" time="20181130T031106Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
                 </row>
@@ -5319,7 +5320,7 @@
         </node>
         <node class="TXmlDataNode" name="SimpleXml" created="20171014T164558Z">
           <item class="TXmlItem" name="data">
-            <row id="value">
+            <row id="value" si="27">
               <value>This is a sample</value>
               <lang id="fi" or="3" rw="0" time="20171014T203812Z">Tämä on esimerkki</lang>
             </row>
@@ -5327,45 +5328,45 @@
           <xml encoding="unicode"/>
           <data>PABkAGEAdABhAD4AVABoAGkAcwAgAGkAcwAgAGEAIABzAGEAbQBwAGwAZQA8AC8AZABhAHQAYQA+AA==</data>
         </node>
-        <node class="TIniDataNode" name="StringIni" created="20171014T143110Z" bom="0" encoding="unicode">
+        <node class="TIniDataNode" name="StringIni" created="20171014T143110Z" encoding="unicode">
           <item class="TIniItem" name="soccer" created="20171014T151655Z">
-            <row id="name" created="20171014T153304Z">
+            <row id="name" si="28" created="20171014T153304Z">
               <value>Soccer</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Jalkapallo</lang>
             </row>
-            <row id="origin" created="20171014T153304Z">
+            <row id="origin" si="29" created="20171014T153304Z">
               <value>England</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Englanti</lang>
             </row>
-            <row id="description" created="20171014T153304Z">
+            <row id="description" si="30" created="20171014T153304Z">
               <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
             </row>
           </item>
           <item class="TIniItem" name="hockey" created="20171014T153304Z">
-            <row id="name">
+            <row id="name" si="31">
               <value>Ice hockey</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Jääkiekko</lang>
             </row>
-            <row id="origin">
+            <row id="origin" si="32">
               <value>Canada</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Kanada</lang>
             </row>
-            <row id="description">
+            <row id="description" si="33">
               <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
             </row>
           </item>
           <item class="TIniItem" name="basketball" created="20171014T153304Z">
-            <row id="name">
+            <row id="name" si="34">
               <value>Basketball</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Koripallo</lang>
             </row>
-            <row id="origin">
+            <row id="origin" si="35">
               <value>United States</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Yhdysvallat</lang>
             </row>
-            <row id="description">
+            <row id="description" si="36">
               <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
               <lang id="fi" or="5" rw="0" time="20181130T031048Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
             </row>
@@ -5406,19 +5407,19 @@
         <node class="TXmlDataNode" name="StringXml">
           <item class="TXmlItem" name="numbers">
             <item class="TXmlItem" name="1" created="20181130T022106Z">
-              <row id="value">
+              <row id="value" si="37">
                 <value>One</value>
                 <lang id="fi" rw="0" time="20171014T194232Z">Yksi</lang>
               </row>
             </item>
             <item class="TXmlItem" name="2" created="20181130T022106Z">
-              <row id="value">
+              <row id="value" si="38">
                 <value>Two</value>
                 <lang id="fi" rw="0" time="20171014T194236Z">Kaksi</lang>
               </row>
             </item>
             <item class="TXmlItem" name="3" created="20181130T022106Z">
-              <row id="value">
+              <row id="value" si="39">
                 <value>Three</value>
                 <lang id="fi" rw="0" time="20171014T194238Z">Kolme</lang>
               </row>
@@ -5442,10 +5443,29 @@
       </node>
     </node>
     <configurations>
-      <configuration writemethod="wmDifferent" options="[netWriteComments]"/>
+      <configuration name="Default" writemethod="wmDifferent" options="[netWriteComments]"/>
     </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

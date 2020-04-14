@@ -1,11 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EAB4E8C3-C4EB-4143-9547-D179CB768791" created="20181207T022423Z" lastmodified="20181207T022446Z" version="1.0.272">
+<project id="EAB4E8C3-C4EB-4143-9547-D179CB768791" created="20181207T022423Z" lastmodified="20200316T192708Z" version="1.0.714" stringid="8">
   <lang id="fi"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WPF\LanguageSwitch\LanguageSwitch.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192707Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9Ikxhbmd1YWdlU3dpdGNoLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3Nj
+        aGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAgIHhtbG5zOng9Imh0
+        dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICAgICAgICAgICAgIFN0YXJ0dXBVcmk9Ik1haW5X
+        aW5kb3cueGFtbCI+DQogICAgPEFwcGxpY2F0aW9uLlJlc291cmNlcz4NCiAgICAgICAgIA0KICAgIDwvQXBwbGljYXRpb24uUmVz
+        b3VyY2VzPg0KPC9BcHBsaWNhdGlvbj4NCg==
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" or="4" rw="0" time="20181207T022423Z">Esimerkki</lang>
         <lang id="ja" or="4" rw="0" time="20181207T022423Z">サンプル</lang>
@@ -17,34 +26,34 @@
         </item>
         <item name="textPanel" type="DockPanel">
           <item name="label1" type="Label">
-            <row id="Content">
+            <row id="Content" si="2">
               <value>This is a sample</value>
               <lang id="fi" or="4" rw="0" time="20181207T022423Z">Tämä on esimerkki</lang>
               <lang id="ja" or="4" rw="0" time="20181207T022423Z">これはサンプルです</lang>
             </row>
           </item>
           <item name="label2" type="Label">
-            <row id="Content" excluded="2">dummy</row>
+            <row id="Content" si="3" excluded="2">dummy</row>
           </item>
         </item>
         <item name="buttonPanel" type="DockPanel">
           <item name="languageComboBox" type="ComboBox">
             <item name="bothItem" type="ComboBoxItem">
-              <row id="Content">
+              <row id="Content" si="4">
                 <value>Show native and English</value>
                 <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä alkuperäinen kieli ja englanti</lang>
                 <lang id="ja" or="4" rw="0" time="20181207T022423Z">ネイティブと英語を表示します。</lang>
               </row>
             </item>
             <item name="nativeItem" type="ComboBoxItem">
-              <row id="Content">
+              <row id="Content" si="5">
                 <value>Show native only</value>
                 <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä vain alkuperäinen kieli</lang>
                 <lang id="ja" or="4" rw="0" time="20181207T022423Z">ネイティブのみを表示します。</lang>
               </row>
             </item>
             <item name="englishItem" type="ComboBoxItem">
-              <row id="Content">
+              <row id="Content" si="6">
                 <value>Show English only</value>
                 <lang id="fi" or="4" rw="0" time="20181207T022423Z">Näytä vain englanti</lang>
                 <lang id="ja" or="4" rw="0" time="20181207T022423Z">英語のみを表示します。</lang>
@@ -52,7 +61,7 @@
             </item>
           </item>
           <item name="languageButton" type="Button">
-            <row id="Content">
+            <row id="Content" si="7">
               <value>_Language...</value>
               <lang id="fi" or="4" rw="0" time="20181207T022423Z">_Kieli...</lang>
               <lang id="ja" or="4" rw="0" time="20181207T022423Z">言語(_L)...</lang>
@@ -82,7 +91,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="8">
           <value>This is another sample</value>
           <lang id="fi" or="4" rw="0" time="20181207T022423Z">Tämä on toinen esimerkki</lang>
           <lang id="ja" or="4" rw="0" time="20181207T022423Z">これは別のサンプル</lang>
@@ -93,4 +102,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

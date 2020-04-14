@@ -1,13 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="698324B3-C088-47E1-8BBD-E7AB88B94E77" created="20180506T025948Z" lastmodified="20181129T144904Z" version="1.0.269">
+<project id="698324B3-C088-47E1-8BBD-E7AB88B94E77" created="20180506T025948Z" lastmodified="20200316T191321Z" version="1.0.714" stringid="4">
   <lang id="fi"/>
   <lang id="ar"/>
   <node class="TNetProjectSource" name="BidiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiEnglish\BidiEnglish.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">&amp;Value:</row>
-      <row id="browseButton.Text">&amp;Clear</row>
-      <row id="checkBox1.Text">&amp;Save</row>
-      <row id="$this.Text">Sample</row>
+      <row id="label1.Text" si="1">&amp;Value:</row>
+      <row id="browseButton.Text" si="2">&amp;Clear</row>
+      <row id="checkBox1.Text" si="3">&amp;Save</row>
+      <row id="$this.Text" si="4">Sample</row>
       <data>
         77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
         ZXNYIFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9y
@@ -158,4 +159,23 @@
       <node class="TResXNode" name="Resources.resx"/>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

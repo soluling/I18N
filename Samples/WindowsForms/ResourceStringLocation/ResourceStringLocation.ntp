@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="70BC571F-B08C-47B6-8754-2FC2E7A3CBEC" created="20150621T181231Z" lastmodified="20181130T021909Z" version="1.0.269">
+<project id="70BC571F-B08C-47B6-8754-2FC2E7A3CBEC" created="20150621T181231Z" lastmodified="20200316T190214Z" version="1.0.714" stringid="11">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\ResourceStringLocation.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceStringLocation\bin\Debug\ResourceStringLocation.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="ResourceStringLocation.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Debug\ResourceStringLocation.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceStringLocation\bin\Debug\ResourceStringLocation.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="ResourceStringLocation.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="ResourceStringLocation.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="1">
           <value>Sample</value>
           <lang id="fi" time="20150621T181304Z">Esimerkki</lang>
         </row>
-        <row id="label1.Text" excluded="2">dummy</row>
-        <row id="label2.Text" excluded="2">dummy</row>
-        <row id="label3.Text" excluded="2">dummy</row>
+        <row id="label1.Text" si="2" excluded="2">dummy</row>
+        <row id="label2.Text" si="3" excluded="2">dummy</row>
+        <row id="label3.Text" si="4" excluded="2">dummy</row>
         <resourcestrings>
           <node name="ResourceStringLocation.Properties.Resources.resources">
             <id>MyName</id>
@@ -78,12 +78,12 @@
         </data>
       </node>
       <node class="TResXNode" name="ResourceStringLocation.Form2.resources" resourcekind="nkForm">
-        <row id="$this.Text">
+        <row id="$this.Text" si="5">
           <value>Sample</value>
           <lang id="fi" time="20150621T181304Z">Esimerkki</lang>
         </row>
-        <row id="label1.Text" excluded="2">dummy</row>
-        <row id="label2.Text" excluded="2">dummy</row>
+        <row id="label1.Text" si="6" excluded="2">dummy</row>
+        <row id="label2.Text" si="7" excluded="2">dummy</row>
         <resourcestrings>
           <node name="ResourceStringLocation.Properties.Resources.resources">
             <id>MyName</id>
@@ -141,19 +141,19 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="ResourceStringLocation.Properties.Resources.resources">
-        <row id="MyName" class="TPatternRow" scannedcomment="This is used on both forms" created="20181130T021850Z">
+        <row id="MyName" class="TPatternRow" si="8" scannedcomment="This is used on both forms" created="20181130T021850Z">
           <value>My name is {0}</value>
           <lang id="fi" rw="0" time="20181130T021902Z">Nimeni on {0}</lang>
         </row>
-        <row id="String2" scannedcomment="This is used on both forms">
+        <row id="String2" si="9" scannedcomment="This is used on both forms">
           <value>Two</value>
           <lang id="fi" time="20150621T181309Z">Kaksi</lang>
         </row>
-        <row id="String3" scannedcomment="This is used on the main form">
+        <row id="String3" si="10" scannedcomment="This is used on the main form">
           <value>Three</value>
           <lang id="fi" time="20150621T181311Z">Kolme</lang>
         </row>
-        <row id="String4" scannedcomment="This is not yet used anywhere">
+        <row id="String4" si="11" scannedcomment="This is not yet used anywhere">
           <value>Four</value>
           <lang id="fi" time="20150621T181313Z">Neljä</lang>
         </row>
@@ -163,4 +163,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,37 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6108C03E-4879-4AEF-9A22-C951B7610B42" created="20180509T141849Z" lastmodified="20181129T144834Z" version="1.0.269">
+<project id="6108C03E-4879-4AEF-9A22-C951B7610B42" created="20180509T141849Z" lastmodified="20200316T191514Z" version="1.0.714" stringid="8">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Font.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Font\Font.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>Standard</value>
         <lang id="fi" rw="0" time="20180509T141920Z">Perus</lang>
       </row>
-      <row id="label2.Text">
+      <row id="label2.Text" si="2">
         <value>Arial</value>
         <lang id="fi" rw="0" time="20180509T141856Z">Arial</lang>
       </row>
-      <row id="label3.Text">
+      <row id="label3.Text" si="3">
         <value>Onyx</value>
         <lang id="fi" rw="0" time="20180509T141856Z">Onyx</lang>
       </row>
-      <row id="label4.Text">
+      <row id="label4.Text" si="4">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
       </row>
-      <row id="label5.Text">
+      <row id="label5.Text" si="5">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
       </row>
-      <row id="label6.Text">
+      <row id="label6.Text" si="6">
         <value>All</value>
         <lang id="fi" rw="0" time="20180509T141924Z">Kaikki</lang>
       </row>
-      <row id="label7.Text">
+      <row id="label7.Text" si="7">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
       </row>
-      <row id="$this.Text">
+      <row id="$this.Text" si="8">
         <value>Font Sample</value>
         <lang id="fi" rw="0" time="20180509T141910Z">Fonttiesimerkki</lang>
       </row>
@@ -254,4 +255,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

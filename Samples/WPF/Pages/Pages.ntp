@@ -1,17 +1,26 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="063BE832-BB24-49AE-AA06-D6614972253F" created="20181207T023302Z" lastmodified="20181207T023513Z" version="1.0.272">
+<project id="063BE832-BB24-49AE-AA06-D6614972253F" created="20181207T023302Z" lastmodified="20200316T192653Z" version="1.0.714" stringid="12">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Pages.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Pages\Pages.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt120"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192652Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlBhZ2VzLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWlj
+        cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hl
+        bWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICAgICAgICAgICAgIFN0YXJ0dXBVcmk9Ik1haW5XaW5kb3cueGFt
+        bCI+DQogICAgPEFwcGxpY2F0aW9uLlJlc291cmNlcz4NCiAgICAgICAgIA0KICAgIDwvQXBwbGljYXRpb24uUmVzb3VyY2VzPg0K
+        PC9BcHBsaWNhdGlvbj4NCg==
+      </data>
+    </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181207T023311Z">Esimerkki</lang>
       </row>
       <item name="DockPanel[0]" type="DockPanel">
         <item name="Label[0]" type="Label">
           <item name="Bold[0]" type="Bold">
-            <row id="Content">
+            <row id="Content" si="2">
               <value>Sample text</value>
               <lang id="fi" rw="0" time="20181207T023316Z">Esimerkkiteksti</lang>
             </row>
@@ -19,13 +28,13 @@
         </item>
         <item name="DockPanel[0]" type="DockPanel">
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="3">
               <value>Written in 2014</value>
               <lang id="fi" rw="0" time="20181207T023322Z">Kirjoitettu 2014</lang>
             </row>
           </item>
           <item name="Button[0]" type="Button">
-            <row id="Content">
+            <row id="Content" si="4">
               <value>Move</value>
               <lang id="fi" rw="0" time="20181207T023327Z">Siirry</lang>
             </row>
@@ -46,25 +55,25 @@
       </data>
     </node>
     <node class="TXamlNode" name="Page1.xaml" type="Page" kind="xkPage">
-      <row id="Title">
+      <row id="Title" si="5">
         <value>Page</value>
         <lang id="fi" rw="0" time="20181207T023329Z">Sivu</lang>
       </row>
       <item name="StackPanel[0]" type="StackPanel">
         <item name="TextBlock[0]" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="6">
             <value>This is a &lt;Bold&gt;bold&lt;/Bold&gt; sample.</value>
             <lang id="fi" rw="0" time="20181207T023402Z">Tämä on &lt;Bold&gt;lihavoitu&lt;/Bold&gt; esimerkki.</lang>
           </row>
         </item>
         <item name="TextBlock[1]" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="7">
             <value>This is an &lt;Italic&gt;italic&lt;/Italic&gt; sample.</value>
             <lang id="fi" rw="0" time="20181207T023413Z">Tämä on &lt;Italic&gt;kursiivi&lt;/Italic&gt; esimerkki.</lang>
           </row>
         </item>
         <item name="TextBlock[2]" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="8">
             <value>This is a &lt;Bold&gt;&lt;Italic&gt;bold and italic&lt;/Italic&gt;&lt;/Bold&gt; sample.</value>
             <lang id="fi" rw="0" time="20181207T023507Z">Tämä on &lt;Bold&gt;&lt;Italic&gt;lihavoitu ja kursiivi&lt;/Italic&gt;&lt;/Bold&gt; esimerkki.</lang>
           </row>
@@ -83,13 +92,13 @@
       </data>
     </node>
     <node class="TXamlNode" name="Page2.xaml" type="Page" kind="xkPage">
-      <row id="Title">
+      <row id="Title" si="9">
         <value>Two</value>
         <lang id="fi" rw="0" time="20181207T023343Z">Kaksi</lang>
       </row>
       <item name="Grid[0]" type="Grid">
         <item name="Label[0]" type="Label">
-          <row id="Content">
+          <row id="Content" si="10">
             <value>Page two</value>
             <lang id="fi" rw="0" time="20181207T023334Z">Sivu kaksi</lang>
           </row>
@@ -110,13 +119,13 @@
     </node>
     <node class="TDirectoryFolder" name="Sub">
       <node class="TXamlNode" name="Page1.xaml" type="Page" kind="xkPage">
-        <row id="Title">
+        <row id="Title" si="11">
           <value>Car</value>
           <lang id="fi" rw="0" time="20181207T023336Z">Auto</lang>
         </row>
         <item name="StackPanel[0]" type="StackPanel">
           <item name="Label[0]" type="Label">
-            <row id="Content">
+            <row id="Content" si="12">
               <value>This is a car</value>
               <lang id="fi" rw="0" time="20181207T023340Z">Tämä on auto</lang>
             </row>
@@ -138,4 +147,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

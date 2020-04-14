@@ -1,19 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="529456BA-B25A-40FA-80D3-6765C3FCCE41" created="20181129T155036Z" lastmodified="20181129T155207Z" version="1.0.269">
+<project id="529456BA-B25A-40FA-80D3-6765C3FCCE41" created="20181129T155036Z" lastmodified="20200316T191043Z" version="1.0.714" stringid="5">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\LanguageSwitch\LanguageSwitch.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="net462"/>
+    <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text">
+      <row id="label1.Text" si="1">
         <value>This is a sample</value>
         <lang id="fi" rw="0" time="20181129T155100Z">Tämä on esimerkki</lang>
       </row>
-      <row id="languageButton.Text">
+      <row id="languageButton.Text" si="2">
         <value>&amp;Language...</value>
         <lang id="fi" rw="0" time="20181129T155105Z">&amp;Kieli...</lang>
       </row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label2.Text" si="3" excluded="2">dummy</row>
+      <row id="$this.Text" si="4">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181129T155144Z">Esimerkki</lang>
       </row>
@@ -154,7 +154,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="String1">
+        <row id="String1" si="5">
           <value>This is another sample</value>
           <lang id="fi" rw="0" time="20181129T155152Z">Tämä on toinen esimerkki</lang>
         </row>
@@ -164,4 +164,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -1,11 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="507ED7F4-F680-4A41-8A01-7B0D09BF785C" created="20161117T033039Z" lastmodified="20181129T151104Z" version="1.0.269">
+<project id="507ED7F4-F680-4A41-8A01-7B0D09BF785C" created="20161117T033039Z" lastmodified="20200316T191309Z" version="1.0.714" stringid="7">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="label1.Text" excluded="2">dummy</row>
-      <row id="label2.Text" excluded="2">dummy</row>
-      <row id="$this.Text">
+      <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="$this.Text" si="3">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20180506T033331Z">Esimerkki</lang>
       </row>
@@ -136,20 +137,20 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="FormatComment" class="TPatternRow" scannedcomment="Name and place" created="20180506T033317Z">
+        <row id="FormatComment" class="TPatternRow" si="4" scannedcomment="Name and place" created="20180506T033317Z">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" rw="0" time="20180506T033419Z">Moi {0}, tervetuloa {1}in</lang>
         </row>
-        <row id="FormatNoComment" class="TPatternRow" created="20180506T033317Z">
+        <row id="FormatNoComment" class="TPatternRow" si="5" created="20180506T033317Z">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" or="3" rw="0" time="20180506T033420Z">Moi {0}, tervetuloa {1}in</lang>
         </row>
-        <row id="FormatPlaceholderComment" class="TPatternRow" scannedcomment="0: Name of person
+        <row id="FormatPlaceholderComment" class="TPatternRow" si="6" scannedcomment="0: Name of person
 1: Name of place" created="20180506T033317Z">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" or="3" rw="0" time="20180506T033420Z">Moi {0}, tervetuloa {1}in</lang>
         </row>
-        <row id="HelloWorld" scannedcomment="The most typical software output" created="20180506T033317Z">
+        <row id="HelloWorld" si="7" scannedcomment="The most typical software output" created="20180506T033317Z">
           <value>Hello world</value>
           <lang id="fi" rw="0" time="20180506T033335Z">Moi maailma</lang>
         </row>
@@ -159,4 +160,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

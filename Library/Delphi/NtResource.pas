@@ -182,7 +182,8 @@ type
   TNtDelphiResource = class(TObject)
   private
     FOffset: Integer;
-    FStream: TResourceStream;
+    FStream: TStream;
+    FFileName: String;
     FId: String;
 
     FFormCount: Integer;
@@ -194,6 +195,9 @@ type
 
     procedure SetOffset(value: Integer);
 
+    procedure CheckStream;
+    procedure ReadHeader;
+
   public
     function FindForm(const name: String): TStream;
     function FindString(const original: String; id: String; const group: String): String;
@@ -203,15 +207,26 @@ type
     property Offset: Integer read FOffset write SetOffset;
   end;
 
+  TTranslationSource =
+  (
+    tsNone,
+    tsResource,
+    tsFile,
+    tsDirectory
+  );
+
   TNtDelphiResources = class(TObject)
   private
     FLoaded: Boolean;
     FResourceName: String;
-    FStream: TResourceStream;
+    FResourcePath: String;
+    FStream: TStream;
     FCascadingEnabled: Boolean;
     FLanguageIndex: Integer;
     FLanguages: TList<TNtDelphiResource>;
     FLanguageNames: TList<TNtResourceLanguage>;
+    FTranslationSource: TTranslationSource;
+    FTranslationSourceValue: String;
 
     function GetCurrent: TNtDelphiResource;
     function GetCount: Integer;
@@ -220,6 +235,7 @@ type
     function GetLanguageId: String;
     function GetOriginal(const id: String): String;
     function GetLanguageImage(const id: String): String;
+    function GetResourceDirectories: TStringDynArray;
 
     procedure SetLanguageId(const value: String);
 
@@ -261,9 +277,13 @@ type
     property LanguageId: String read GetLanguageId write SetLanguageId;
     property Languages[i: Integer]: TNtDelphiResource read GetLanguage; default;
     property ResourceName: String read FResourceName write FResourceName;
-    property Stream: TResourceStream read FStream;
+    property ResourcePath: String read FResourcePath write FResourcePath;
+    property Stream: TStream read FStream;
+    property ResourceDirectories: TStringDynArray read GetResourceDirectories;
     property Originals[const id: String]: String read GetOriginal;
     property LanguageImages[const id: String]: String read GetLanguageImage;
+    property TranslationSource: TTranslationSource read FTranslationSource;
+    property TranslationSourceValue: String read FTranslationSourceValue;
   end;
 
 { Get the string value in the current language.
@@ -299,6 +319,7 @@ uses
   Windows,
 {$IFEND}
   RTLConsts,
+  System.IOUtils,
   NtBase;
 
 
@@ -412,15 +433,10 @@ end;
 
 // TNtDelphiResource
 
-procedure TNtDelphiResource.SetOffset(value: Integer);
+procedure TNtDelphiResource.ReadHeader;
 var
-  position: Integer;
   header: TBytes;
 begin
-  position := FStream.Position;
-  FOffset := value;
-  FStream.Position := FOffset;
-
   header := FStream.ReadBytes(Length(NTLANG_MAGIC_C));
 
   if not CompareMem(@NTLANG_MAGIC_C, @header[0], Length(NTLANG_MAGIC_C)) then
@@ -433,7 +449,25 @@ begin
   FFormNameOffset := FStream.Position;
   FStringGroupNameOffset := FFormNameOffset + 16*FFormCount;
   FResourceNameOffset := FStringGroupNameOffset + 16*FStringGroupCount;
+end;
 
+procedure TNtDelphiResource.CheckStream;
+begin
+  if (FStream = nil) and FileExists(FFileName) then
+  begin
+    FStream := TFileStream.Create(FFileName, fmOpenRead or fmShareDenyWrite);
+    ReadHeader;
+  end;
+end;
+
+procedure TNtDelphiResource.SetOffset(value: Integer);
+var
+  position: Integer;
+begin
+  position := FStream.Position;
+  FOffset := value;
+  FStream.Position := FOffset;
+  ReadHeader;
   FStream.Position := position;
 end;
 
@@ -444,6 +478,7 @@ var
   formData: TBytes;
   str: String;
 begin
+  CheckStream;
   FStream.Position := FFormNameOffset;
 
   for i := 0 to FFormCount - 1 do
@@ -483,6 +518,7 @@ begin
     id := original;
 
   // Find group
+  CheckStream;
   FStream.Position := FStringGroupNameOffset;
 
   for i := 0 to FStringGroupCount - 1 do
@@ -530,6 +566,7 @@ var
   resourceData: TBytes;
   str: String;
 begin
+  CheckStream;
   FStream.Position := FResourceNameOffset;
 
   for i := 0 to FResourceCount - 1 do
@@ -736,6 +773,193 @@ begin
     Load;
 end;
 
+function TNtDelphiResources.GetResourceDirectories: TStringDynArray;
+var
+  values: TStringList;
+
+  function Add(dir: String): Boolean;
+  begin
+    Result := (dir <> '') and DirectoryExists(dir);
+
+    if Result then
+      values.Add(dir);
+  end;
+
+var
+  i: Integer;
+  applicationName: String;
+begin
+  values := TStringList.Create;
+  try
+    Add(FResourcePath);
+
+    applicationName := ParamStr(0);
+
+{$IFDEF MSWINDOWS}
+    Add(ExtractFileDir(applicationName));
+{$ENDIF}
+
+{$IFDEF DELPHIXE4}
+    applicationName := TPath.GetFileNameWithoutExtension(applicationName);
+
+    if (applicationName = '') or not Add(TPath.GetDocumentsPath + PathDelim + applicationName) then
+      Add(TPath.GetDocumentsPath);
+{$ENDIF}
+
+    SetLength(Result, values.Count);
+
+    for i := 0 to values.Count - 1 do
+      Result[i] := values[i];
+  finally
+    values.Free;
+  end;
+end;
+
+procedure TNtDelphiResources.Load;
+
+  function FindResourceFile(directories: TStringDynArray; var fileName: String): Boolean;
+  var
+    i: Integer;
+  begin
+    // If a resource file is specified and it exists use it.
+    // Otherwise try to find the resource file from the default directories
+    if FileExists(FResourcePath) then
+    begin
+      fileName := FResourcePath;
+      Result := True;
+    end
+    else
+    begin
+      for i := 0 to Length(directories) - 1 do
+      begin
+        fileName := directories[i] + PathDelim + ResourceName + '.ntres';
+        Result := FileExists(fileName);
+
+        if Result then
+          Exit;
+      end;
+
+      Result := False;
+    end;
+  end;
+
+  function FindLanguagesFiles(directories: TStringDynArray; var files: TStringDynArray): Boolean;
+  var
+    i: Integer;
+  begin
+    for i := 0 to Length(directories) - 1 do
+    begin
+      files := TDirectory.GetFiles(directories[i], '*.ntlang');
+      Result := Length(files) > 0;
+
+      if Result then
+        Exit;
+    end;
+
+    Result := False;
+  end;
+
+  procedure LoadResourceFile(stream: TStream);
+  var
+    i, idCount: Integer;
+    offsetValue, len: Integer;
+    header: TBytes;
+    item: TNtDelphiResource;
+  begin
+    FStream.Free;
+    FStream := stream;
+
+    header := FStream.ReadBytes(Length(NTRES_MAGIC_C));
+
+    if not CompareMem(@NTRES_MAGIC_C, @header[0], Length(NTRES_MAGIC_C)) then
+      raise EInvalidImage.CreateRes(@SInvalidImage);
+
+    FStream.ReadInt32;  // Version number
+
+    // Read language ids
+    idCount := FStream.ReadInt32;
+
+    for i := 0 to idCount - 1 do  //FI:W528
+    begin
+      offsetValue := FStream.ReadInt32;
+      len := FStream.ReadInt32;
+
+      item := TNtDelphiResource.Create;
+      item.FId := FStream.ReadAnsi(offsetValue, len);
+      item.FStream := FStream;
+      FLanguages.Add(item);
+    end;
+
+    // Read language data offsets
+    for i := 0 to idCount - 1 do
+    begin
+      Languages[i].Offset := FStream.ReadInt32;
+      FStream.ReadInt32;
+    end;
+  end;
+
+  procedure LoadLanguageFiles(languageFileNames: TStringDynArray);
+  var
+    i: Integer;
+    languageFileName: String;
+    item: TNtDelphiResource;
+  begin
+    for i := 0 to Length(languageFileNames) - 1 do
+    begin
+      languageFileName := languageFileNames[i];
+
+      item := TNtDelphiResource.Create;
+      item.FId := TPath.GetFileNameWithoutExtension(languageFileName);
+      item.FFileName := languageFileName;
+      FLanguages.Add(item);
+    end;
+  end;
+
+var
+  resourceFileName: String;
+  languageFileNames: TStringDynArray;
+  directories: TStringDynArray;
+begin
+  FLoaded := True;
+  directories := GetResourceDirectories;
+
+  if FindLanguagesFiles(directories, languageFileNames) then
+  begin
+    // Load translations from local .ntlang files
+    LoadLanguageFiles(languageFileNames);
+    FTranslationSource := tsDirectory;
+    FTranslationSourceValue := ExtractFileDir(languageFileNames[0]);
+  end
+  else if FindResourceFile(directories, resourceFileName) then
+  begin
+    // Load translations from a local .ntres file
+    LoadResourceFile(TFileStream.Create(resourceFileName, fmOpenRead or fmShareDenyWrite));
+    FTranslationSource := tsFile;
+    FTranslationSourceValue := resourceFileName;
+  end
+  else if FindResource(HInstance, PChar(FResourceName), RT_RCDATA) > 0 then
+  begin
+    // Load translations from an embedded .ntres resource
+    LoadResourceFile(TResourceStream.Create(HInstance, FResourceName, RT_RCDATA));
+    FTranslationSource := tsResource;
+    FTranslationSourceValue := FResourceName;
+  end
+  else
+  begin
+    // No translation file or resource found
+    if not SameText(FResourceName, NTRES_RESOURCE_NAME_C) then
+      raise EReadError.CreateResFmt(@SResNotFound, [FResourceName]);
+
+    Exit;
+  end;
+
+  if DefaultLocale <> '' then
+    LanguageId := DefaultLocale
+  else
+    FLanguageIndex := -1;
+end;
+
+{
 procedure TNtDelphiResources.Load;
 var
   i, idCount: Integer;
@@ -788,6 +1012,7 @@ begin
   else
     FLanguageIndex := -1;
 end;
+}
 
 function TNtDelphiResources.Find(const id: String): Integer;
 begin

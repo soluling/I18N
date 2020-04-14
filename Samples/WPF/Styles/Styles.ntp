@@ -1,8 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E0EE36D1-A9B3-470B-AF0C-966E3E34D710" created="20180424T141755Z" lastmodified="20181207T025511Z" version="1.0.272">
+<project id="E0EE36D1-A9B3-470B-AF0C-966E3E34D710" created="20180424T141755Z" lastmodified="20200316T192528Z" version="1.0.714" stringid="20">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Styles.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Styles\Styles.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt40"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192527Z" st="0" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlN0eWxlQnV0dG9ucy5BcHAiDQogICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jv
+        c29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
+        ZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlv
+        bi5SZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
     <node class="TXamlNode" name="Dictionary1.xaml" type="ResourceDictionary" kind="xkResourceDictionary">
       <item name="ButtonOne" type="Style">
         <item name="Style[ButtonOne]">
@@ -17,13 +25,13 @@
           <item name="Setter[8]" type="Setter"/>
           <item name="Setter[9]" type="Setter"/>
           <item name="Setter[10]" type="Setter">
-            <row id="Content">
+            <row id="Content" si="1">
               <value>This is a button</value>
               <lang id="fi" or="3" rw="0" time="20180424T141815Z">Tämä on painike</lang>
             </row>
           </item>
           <item name="Setter[11]" type="Setter">
-            <row id="ToolTip">
+            <row id="ToolTip" si="2">
               <value>This is a sample</value>
               <lang id="fi" or="3" rw="0" time="20180424T141823Z">Tämä on esimerkki</lang>
             </row>
@@ -42,7 +50,7 @@
           <item name="Setter[7]" type="Setter"/>
           <item name="Setter[8]" type="Setter"/>
           <item name="Setter[9]" type="Setter">
-            <row id="Content">
+            <row id="Content" si="3">
               <value>This is a button</value>
               <lang id="fi" or="3" rw="0" time="20180424T141815Z">Tämä on painike</lang>
             </row>
@@ -74,7 +82,7 @@
       </data>
     </node>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="4">
         <value>Styles Sample</value>
         <lang id="fi" or="4" rw="0" time="20180424T141756Z">Tyyliesimerkki</lang>
       </row>
@@ -89,31 +97,31 @@
           <item name="RowDefinition[2]" type="RowDefinition"/>
         </item>
         <item name="text1" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="5">
             <value>Clicking this button shows a dialog that &lt;Bold&gt;merges&lt;/Bold&gt; an external dictionary and then uses the styles in the dictionary</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold&gt;yhdistää&lt;/Bold&gt; ulkoisen sanaston ja käyttää sen tyylejä.</lang>
           </row>
         </item>
         <item name="button1" type="Button">
-          <row id="Content">
+          <row id="Content" si="6">
             <value>_Show</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">_Näytä pitkä</lang>
           </row>
         </item>
         <item name="text2" type="TextBlock">
-          <row id="Content" class="TTagRow">
+          <row id="Content" class="TTagRow" si="7">
             <value>Clicking this button shows a dialog that &lt;Bold&gt;embeds&lt;/Bold&gt; the styles in the window</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold&gt;sisältää&lt;/Bold&gt; sanaston</lang>
           </row>
         </item>
         <item name="button2" type="Button">
-          <row id="Content">
+          <row id="Content" si="8">
             <value>S_how</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">N_äytä</lang>
           </row>
         </item>
         <item name="text3" type="TextBlock">
-          <row id="Content">
+          <row id="Content" si="9">
             <value>What you see is the same on both cases. The implementation is just different.</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Kummassakin tapauksessa se mitä näet on sama, mutta toteutus on erilainen.</lang>
           </row>
@@ -146,7 +154,7 @@
       <node class="TResXNode" name="Resources.resx"/>
     </node>
     <node class="TXamlNode" name="Window1.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="10">
         <value>Buttons</value>
         <lang id="fi" or="4" rw="0" time="20180424T141756Z">Moi</lang>
       </row>
@@ -160,20 +168,20 @@
       <item name="panel1" type="StackPanel">
         <item name="button1" type="Button"/>
         <item name="button2" type="Button">
-          <row id="Content">
+          <row id="Content" si="11">
             <value>Custom text</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Yksi</lang>
           </row>
         </item>
         <item name="button3" type="Button"/>
         <item name="button4" type="Button">
-          <row id="Content">
+          <row id="Content" si="12">
             <value>Text</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Kaksi</lang>
           </row>
         </item>
         <item name="button5" type="Button">
-          <row id="Content">
+          <row id="Content" si="13">
             <value>Unstyled button</value>
             <lang id="fi" or="3" rw="0" time="20180424T141835Z">Tyylitön painike</lang>
           </row>
@@ -196,7 +204,7 @@
       </data>
     </node>
     <node class="TXamlNode" name="Window2.xaml" type="Window">
-      <row id="Title">
+      <row id="Title" si="14">
         <value>Buttons</value>
         <lang id="fi" or="4" rw="0" time="20180424T141756Z">Esimerkki</lang>
       </row>
@@ -214,13 +222,13 @@
             <item name="Setter[8]" type="Setter"/>
             <item name="Setter[9]" type="Setter"/>
             <item name="Setter[10]" type="Setter">
-              <row id="Content">
+              <row id="Content" si="15">
                 <value>This is a button</value>
                 <lang id="fi" rw="0" time="20180424T141806Z">Tämä on painike</lang>
               </row>
             </item>
             <item name="Setter[11]" type="Setter">
-              <row id="ToolTip">
+              <row id="ToolTip" si="16">
                 <value>This is a sample</value>
                 <lang id="fi" rw="0" time="20180424T141823Z">Tämä on esimerkki</lang>
               </row>
@@ -239,7 +247,7 @@
             <item name="Setter[7]" type="Setter"/>
             <item name="Setter[8]" type="Setter"/>
             <item name="Setter[9]" type="Setter">
-              <row id="Content">
+              <row id="Content" si="17">
                 <value>This is a button</value>
                 <lang id="fi" or="3" rw="0" time="20180424T141815Z">Tämä on painike</lang>
               </row>
@@ -250,20 +258,20 @@
       <item name="panel1" type="StackPanel">
         <item name="button1" type="Button"/>
         <item name="button2" type="Button">
-          <row id="Content">
+          <row id="Content" si="18">
             <value>Custom text</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Ensimmäinen</lang>
           </row>
         </item>
         <item name="button3" type="Button"/>
         <item name="button4" type="Button">
-          <row id="Content">
+          <row id="Content" si="19">
             <value>Text</value>
             <lang id="fi" or="4" rw="0" time="20180424T141756Z">Toinen</lang>
           </row>
         </item>
         <item name="button5" type="Button">
-          <row id="Content">
+          <row id="Content" si="20">
             <value>Unstyled button</value>
             <lang id="fi" rw="0" time="20180424T141832Z">Tyylitön painike</lang>
           </row>
@@ -302,4 +310,23 @@
       </data>
     </node>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>

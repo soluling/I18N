@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20190602T234800Z" version="1.0.397" stringid="19">
+<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20200316T185726Z" version="1.0.714" stringid="22">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <formats>
         <item name="sampleLabel1.CustomExpression" format="sfStructured"/>
@@ -9,7 +10,7 @@
         <item name="sampleLabel1.CustomJson" format="sfJson"/>
         <item name="sampleLabel1.CustomXml" format="sfXml"/>
       </formats>
-      <row id="sampleLabel1.CustomC1" si="1">4,1,0,0,0,95,Columns:1{Caption:"One";}	2{Caption:"Two";}	3{Caption:"Three";}	</row>
+      <row id="sampleLabel1.CustomC1" si="1">4,1,0,0,0,95,Columns:1{Caption:&quot;One&quot;;}	2{Caption:&quot;Two&quot;;}	3{Caption:&quot;Three&quot;;}	</row>
       <row id="sampleLabel1.CustomChar" si="2">
         <value>a</value>
         <lang id="fi" rw="0" time="20180506T040011Z">b</lang>
@@ -60,7 +61,7 @@
       <node class="THtmlDataNode" name="sampleLabel1.CustomHtml" created="20180506T134531Z">
         <row id="title.text" class="THtmlRow" si="9">
           <value>Test</value>
-          <lang id="fi" st="3" rw="0" time="20180506T134814Z">node.Properties.Structure</lang>
+          <lang id="fi" st="4" rw="0" time="20180506T134814Z">node.Properties.Structure</lang>
         </row>
         <row id="li.text" class="THtmlRow" si="10">
           <value>One</value>
@@ -298,9 +299,7 @@
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
-    <shared>
-      <item name="Local" type="TSqliteGlossary"/>
-    </shared>
+    <shared/>
   </terminology>
   <tm>
     <shared>
@@ -309,8 +308,9 @@
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

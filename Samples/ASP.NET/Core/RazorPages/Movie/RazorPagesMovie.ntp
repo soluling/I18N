@@ -1,60 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="154013D7-5CEA-46F1-B0AF-5A0C14824B8A" created="20181211T043107Z" lastmodified="20191102T171219Z" version="1.0.590" stringid="51">
+<project id="154013D7-5CEA-46F1-B0AF-5A0C14824B8A" created="20181211T043107Z" lastmodified="20200316T235126Z" version="1.0.714" stringid="65">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="RazorPagesMovie.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Movie\RazorPagesMovie.csproj" original="en" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU" core="1">
+  <node class="TNetProjectSource" name="RazorPagesMovie.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Movie\RazorPagesMovie.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1">
     <netproperties version="core22"/>
-    <node class="TDirectoryFolder" name="Pages" created="20191031T011649Z">
-      <node class="TDirectoryFolder" name="Movies"/>
-      <node class="TDirectoryFolder" name="Shared"/>
-    </node>
     <node class="TDirectoryFolder" name="Resources" created="20181212T160418Z">
-      <node class="TDirectoryFolder" name="Models">
-        <node class="TResXNode" name="Movie.resx">
-          <row id="The Title field is required." si="1" scannedcomment="No title value entered">
-            <value>The Title field is required.</value>
-            <lang id="fi" rw="0" time="20191031T011300Z">Otsikko-kenttä on pakollinen.</lang>
-          </row>
-          <row id="Title" si="2" scannedcomment="Display name of Title field">
-            <value>Title</value>
-            <lang id="fi" rw="0" time="20191031T011256Z">Otsikko</lang>
-          </row>
-          <row id="The Release Date field is required." si="3" scannedcomment="No release date value entered">
-            <value>The Release Date field is required.</value>
-            <lang id="fi" rw="0" time="20191031T011320Z">Julkaisupäivämäärä-kenttä on pakollinen.</lang>
-          </row>
-          <row id="Release Date" si="4" scannedcomment="Display name of Release Date field">
-            <value>Release Date</value>
-            <lang id="fi" rw="0" time="20191031T011256Z">Julkaisupäivä</lang>
-          </row>
-          <row id="The Genre field is required." si="5">
-            <value>The Genre field is required.</value>
-            <lang id="fi" rw="0" time="20191031T011354Z">Lajityyppi-kenttä on pakollinen.</lang>
-          </row>
-          <row id="Genre" si="6" scannedcomment="Display name of Genre field">
-            <value>Genre</value>
-            <lang id="fi" rw="0" time="20191031T011358Z">Lajityyppi</lang>
-          </row>
-          <row id="The Price field is required." si="7">
-            <value>The Price field is required.</value>
-            <lang id="fi" rw="0" time="20191031T011256Z">Hinta-kenttä on pakollinen.</lang>
-          </row>
-          <row id="Price" si="8" scannedcomment="Display name of Price field">
-            <value>Price</value>
-            <lang id="fi" rw="0" time="20191031T011256Z">Hinta</lang>
-          </row>
-          <row id="The Rating field is required." si="9" scannedcomment="No rating value entered.">
-            <value>The Rating field is required.</value>
-            <lang id="fi" rw="0" time="20191031T011411Z">Luokitus-kenttä on pakollinen.</lang>
-          </row>
-          <row id="Rating code must contain only alphanumeric text." si="50" scannedcomment="Invalid rating value entered" created="20191031T140433Z">Rating code must contain only alphanumeric text.</row>
-          <row id="Rating" si="10" scannedcomment="Display name of Rating field">
-            <value>Rating</value>
-            <lang id="fi" rw="0" time="20191031T011419Z">Luokitus</lang>
-          </row>
-        </node>
-      </node>
       <node class="TDirectoryFolder" name="Pages" created="20181212T165406Z">
         <node class="TResXNode" name="Index.resx">
+          <row id="Home page" si="64" created="20200316T235107Z">Home page</row>
           <row id="Welcome" si="11">
             <value>Welcome</value>
             <lang id="fi" rw="0" time="20191031T011256Z">Tervetuloa</lang>
@@ -63,13 +15,13 @@
         </node>
         <node class="TDirectoryFolder" name="Movies">
           <node class="TResXNode" name="Create.resx">
-            <row id="Movie" si="13">
-              <value>Movie</value>
-              <lang id="fi" rw="0" time="20191031T011256Z">Elokuva</lang>
-            </row>
             <row id="Create" si="14">
               <value>Create</value>
               <lang id="fi" rw="0" time="20191031T011437Z">Luo</lang>
+            </row>
+            <row id="Movie" si="13">
+              <value>Movie</value>
+              <lang id="fi" rw="0" time="20191031T011256Z">Elokuva</lang>
             </row>
             <row id="Back to List" si="15">
               <value>Back to List</value>
@@ -77,6 +29,10 @@
             </row>
           </node>
           <node class="TResXNode" name="Delete.resx">
+            <row id="Delete" si="18">
+              <value>Delete</value>
+              <lang id="fi" rw="0" time="20191031T011256Z">Poista</lang>
+            </row>
             <row id="Are you sure you want to delete this?" si="16">
               <value>Are you sure you want to delete this?</value>
               <lang id="fi" rw="0" time="20191031T011256Z">Haluatko varmasti poistaa tämän?</lang>
@@ -84,10 +40,6 @@
             <row id="Movie" si="17">
               <value>Movie</value>
               <lang id="fi" rw="0" time="20191031T011256Z">Elokuva</lang>
-            </row>
-            <row id="Delete" si="18">
-              <value>Delete</value>
-              <lang id="fi" rw="0" time="20191031T011256Z">Poista</lang>
             </row>
             <row id="Back to List" si="19">
               <value>Back to List</value>
@@ -148,6 +100,7 @@
           </node>
         </node>
         <node class="TResXNode" name="Privacy.resx">
+          <row id="Privacy Policy" si="65" created="20200316T235107Z">Privacy Policy</row>
           <row id="Use this page to detail your site's privacy policy." si="32">
             <value>Use this page to detail your site's privacy policy.</value>
             <lang id="fi" rw="0" time="20191031T011621Z">Käytä tätä sivua kertoaksesi sivuston yksityisyysasetukset.</lang>
@@ -175,10 +128,53 @@
           </node>
         </node>
       </node>
-      <node class="TResXNode" name="Startup.resx">
-        <row id="The value '{0}' is not valid for {1}." class="TPatternRow" si="39" scannedcomment="SetAttemptedValueIsInvalidAccessor">
+      <node class="TResXNode" name="RazorPagesMovie.Models.Movie.resx" created="20200316T235107Z">
+        <row id="The Title field is required." si="52" scannedcomment="No title value entered">
+          <value>The Title field is required.</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011300Z">Otsikko-kenttä on pakollinen.</lang>
+        </row>
+        <row id="Title" si="53" scannedcomment="Display name of Title field">
+          <value>Title</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011256Z">Otsikko</lang>
+        </row>
+        <row id="The Release Date field is required." si="54" scannedcomment="No release date value entered">
+          <value>The Release Date field is required.</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011320Z">Julkaisupäivämäärä-kenttä on pakollinen.</lang>
+        </row>
+        <row id="Release Date" si="55" scannedcomment="Display name of Release Date field">
+          <value>Release Date</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011256Z">Julkaisupäivä</lang>
+        </row>
+        <row id="The Genre field is required." si="56">
+          <value>The Genre field is required.</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011354Z">Lajityyppi-kenttä on pakollinen.</lang>
+        </row>
+        <row id="Genre" si="57" scannedcomment="Display name of Genre field">
+          <value>Genre</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011358Z">Lajityyppi</lang>
+        </row>
+        <row id="The Price field is required." si="58">
+          <value>The Price field is required.</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011256Z">Hinta-kenttä on pakollinen.</lang>
+        </row>
+        <row id="Price" si="59" scannedcomment="Display name of Price field">
+          <value>Price</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011256Z">Hinta</lang>
+        </row>
+        <row id="The Rating field is required." si="60" scannedcomment="No rating value entered.">
+          <value>The Rating field is required.</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011411Z">Luokitus-kenttä on pakollinen.</lang>
+        </row>
+        <row id="Rating code must contain only alphanumeric text." si="61" scannedcomment="Invalid rating value entered">Rating code must contain only alphanumeric text.</row>
+        <row id="Rating" si="62" scannedcomment="Display name of Rating field">
+          <value>Rating</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011419Z">Luokitus</lang>
+        </row>
+      </node>
+      <node class="TResXNode" name="RazorPagesMovie.Startup.resx" created="20200316T235107Z">
+        <row id="The value '{0}' is not valid for {1}." class="TPatternRow" si="63" scannedcomment="SetAttemptedValueIsInvalidAccessor">
           <value>The value '{0}' is not valid for {1}.</value>
-          <lang id="fi" rw="0" time="20191031T011256Z">Arvo {0} ei kelpaa {1}.</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20191031T011256Z">Arvo {0} ei kelpaa {1}.</lang>
         </row>
       </node>
     </node>
@@ -199,7 +195,8 @@
   <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

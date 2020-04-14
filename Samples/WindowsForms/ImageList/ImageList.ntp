@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="65FC59B2-4BD7-4013-A17C-AF32551A5170" created="20121107T223931Z" lastmodified="20181129T154114Z" version="1.0.269">
+<project id="65FC59B2-4BD7-4013-A17C-AF32551A5170" created="20121107T223931Z" lastmodified="20200316T191110Z" version="1.0.714" stringid="6">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\ImageList.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ImageList\bin\Release\ImageList.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrAssemblyInfo,nrHardCodeStrings]" projectfilename="ImageList.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Release\ImageList.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\ImageList\bin\Release\ImageList.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="ImageList.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="ImageList.Form1.resources" resourcekind="nkForm">
-        <row id="$this.Text" created="20121107T223931Z">
+        <row id="$this.Text" si="1" created="20121107T223931Z">
           <value>Sample</value>
           <lang id="fi" time="20121107T223947Z">Esimerkki</lang>
         </row>
-        <row id="button1.Text" changed="20140109T234733Z" created="20121107T223931Z">
+        <row id="button1.Text" changed="20140109T234733Z" si="2" created="20121107T223931Z">
           <value>&amp;Next</value>
           <lang id="fi" time="20140109T234739Z">&amp;Seuraava</lang>
         </row>
@@ -3972,7 +3972,7 @@
             ////////
           </lang>
         </row>
-        <row id="label1.Text" excluded="2">dummy</row>
+        <row id="label1.Text" si="3" excluded="2">dummy</row>
         <resourcestrings>
           <node name="ImageList.Properties.Resources.resources">
             <id>Book</id>
@@ -5841,15 +5841,15 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="ImageList.Properties.Resources.resources">
-        <row id="Book" created="20140109T234620Z">
+        <row id="Book" si="4" created="20140109T234620Z">
           <value>Book</value>
           <lang id="fi" time="20140109T234635Z">Kirja</lang>
         </row>
-        <row id="Plane" created="20140109T234620Z">
+        <row id="Plane" si="5" created="20140109T234620Z">
           <value>Plane</value>
           <lang id="fi" time="20140109T234645Z">Ilma-alus</lang>
         </row>
-        <row id="Sign" created="20140109T234620Z">
+        <row id="Sign" si="6" created="20140109T234620Z">
           <value>Sign</value>
           <lang id="fi" time="20140109T234639Z">Merkki</lang>
         </row>
@@ -5859,4 +5859,23 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
 </project>
