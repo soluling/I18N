@@ -1,0 +1,30 @@
+<div class="table-responsive">
+  <table class="table mb-0" *ngIf="sports$ | async as sports">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Kind</th>
+        <th>Olympic</th>
+        <th>Players</th>
+        <th>Goalie</th>
+        <th>Origin</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody *ngFor="let sport of sports">
+      <tr>
+        <td>{{ sport.name }}</td>
+        <td>{{ sport.kind }}</td>
+        <td>{{ sport.olympic }}</td>
+        <td>{{ sport.fieldPlayers }}</td>
+        <td>{{ sport.goalie }}</td>
+        <td>{{ sport.origin }}</td>
+        <td>{{ sport.description }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="alert alert-danger" *ngIf="errorMessage$ | async as errorMessage">
+  {{ errorMessage }}
+</div>

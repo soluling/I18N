@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="4849682140549215168" meaning="header"><source>app/app.component.html:1</source>Localization Sample</msg>
+  <msg id="4438291026891864493" desc="name: Name of the user" meaning="hello"><source>app/embedded.component.ts:2</source>Hello <ph name="INTERPOLATION"><ex>{{name}}</ex>{{name}}</ph>!</msg>
+  <msg id="5571439480228251211" meaning="sample"><source>app/embedded.component.ts:3</source>This is a sample</msg>
+  <msg id="2553574127157647344" desc="name: Name of the first user
+name2: Name of the second user" meaning="hello"><source>app/external.component.html:2</source>Hello <ph name="INTERPOLATION"><ex>{{name}}</ex>{{name}}</ph> and <ph name="INTERPOLATION_1"><ex>{{name2}}</ex>{{name2}}</ph>!</msg>
+  <msg id="5425338937505052468" meaning="sample"><source>app/external.component.html:3</source>This is another sample</msg>
+</messagebundle>

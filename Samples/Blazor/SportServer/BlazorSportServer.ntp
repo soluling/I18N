@@ -1,53 +1,78 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20200322T000552Z" version="1.0.721" lockedrowcomplete="0" stringid="15">
+<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20200418T232144Z" version="1.0.734" lockedrowcomplete="0" stringid="18">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="BlazorSportServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Sport\BlazorSportServer.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1">
+  <lang id="ja"/>
+  <node class="TNetProjectSource" name="BlazorSportServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\SportServer\BlazorSportServer.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1">
     <netproperties version="core30"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages" created="20200321T225656Z">
         <node class="TResXNode" name="Index.resx">
           <row id="Sports" si="8">
             <value>Sports</value>
-            <lang id="fi" rw="0" time="20200321T202638Z">Urheilu</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202638Z">Urheilu</lang>
             <lang id="de" st="4" or="5" rw="0" time="20200322T000522Z" fuzzy="99">Sport</lang>
           </row>
           <row id="Loading data..." si="9">
             <value>Loading data...</value>
-            <lang id="fi" rw="0" time="20200321T202640Z">Ladataan tietoja...</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202640Z">Ladataan tietoja...</lang>
             <lang id="de" st="4" or="5" rw="0" time="20200322T000524Z" fuzzy="99">Daten werden geladen...</lang>
           </row>
           <row id="Id" si="10">
             <value>Id</value>
-            <lang id="fi" rw="0" time="20200321T202645Z">Tunnus</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Tunnus</lang>
             <lang id="de" st="4" rw="0" time="20200322T000549Z">Id</lang>
           </row>
           <row id="Name" si="11">
             <value>Name</value>
-            <lang id="fi" rw="0" time="20200321T202645Z">Nimi</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Nimi</lang>
             <lang id="de" st="4" or="6" rw="0" time="20200322T000534Z" fuzzy="5">Namen</lang>
           </row>
           <row id="Description" si="12">
             <value>Description</value>
-            <lang id="fi" rw="0" time="20200321T202645Z">Kuvaus</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Kuvaus</lang>
             <lang id="de" st="4" or="5" rw="0" time="20200322T000539Z" fuzzy="99">Beschreibung</lang>
           </row>
           <row id="Origin" si="13">
             <value>Origin</value>
-            <lang id="fi" rw="0" time="20200321T202645Z">Alkuperä</lang>
+            <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Alkuperä</lang>
             <lang id="de" st="4" or="5" rw="0" time="20200322T000543Z" fuzzy="99">Ursprung</lang>
+          </row>
+        </node>
+      </node>
+      <node class="TDirectoryFolder" name="Shared" created="20200418T161128Z">
+        <node class="TResXNode" name="MainLayout.resx">
+          <row id="About" si="16">
+            <value>About</value>
+            <lang id="fi" rw="0" time="20200418T161137Z" fuzzy="100">Tietoa</lang>
+            <lang id="de" st="4" or="5" rw="0" time="20200418T161156Z" fuzzy="99">Info</lang>
+          </row>
+        </node>
+        <node class="TResXNode" name="NavMenu.resx">
+          <row id="Sport" si="17">
+            <value>Sport</value>
+            <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Urheilu</lang>
+            <lang id="de" st="2" or="3" rw="0" time="20200322T000545Z">Sport</lang>
+          </row>
+          <row id="Home" si="18">
+            <value>Home</value>
+            <lang id="fi" rw="0" time="20200418T161144Z" fuzzy="100">Koti</lang>
+            <lang id="de" st="4" or="5" rw="0" time="20200418T161203Z" fuzzy="99">Startseite</lang>
           </row>
         </node>
       </node>
       <node class="TResXNode" name="Strings.resx" created="20200321T232434Z">
         <row id="Sport" si="15">
           <value>Sport</value>
-          <lang id="fi" rw="0" time="20200321T202645Z">Urheilu</lang>
+          <lang id="fi" rw="0" tm="1" time="20200321T202645Z">Urheilu</lang>
           <lang id="de" st="4" or="6" rw="0" time="20200322T000545Z" fuzzy="5">Sport</lang>
         </row>
       </node>
     </node>
     <extractor category="lcBlazor"/>
+    <configurations>
+      <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
+    </configurations>
   </node>
   <terminology>
     <shared>

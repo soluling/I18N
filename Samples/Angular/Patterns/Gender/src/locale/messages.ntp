@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E85112C8-3B85-4871-B682-D720E0B961F5" created="20171204T211602Z" lastmodified="20200317T002259Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <lang id="en"/>
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Gender\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="app\app.component.ts.header" importid="9062141988063736217" si="1">
+      <value>Gender Sample</value>
+      <lang id="fi" rw="0">Sukuesimerkki</lang>
+      <lang id="en" rw="0" time="20180523T185225Z">Gender Sample</lang>
+    </row>
+    <row id="app\name.component.ts.value" importid="2792220360813277329" changed="20200317T002249Z" class="TPatternRow" si="2" scannedcomment="name: Name of the person">
+      <value gender="geMale">{name} drives his car.</value>
+      <pattern gender="geFemale">{name} drives her car.</pattern>
+      <lang id="fi" rw="0" time="20171204T211649Z">{name} ajaa autoaan.</lang>
+      <lang id="en" st="3" rw="0" time="20180523T185227Z">
+        <value gender="geMale">{name} drives his car.</value>
+        <pattern gender="geFemale">{name} drives her car.</pattern>
+      </lang>
+    </row>
+    <row id="app\name.component.ts.value2" importid="2260906681375880880" changed="20200317T002249Z" class="TPatternRow" si="3" scannedcomment="name: Name of the person">
+      <value gender="geNeutral">{name} drives the car.</value>
+      <pattern gender="geMale">{name} drives his car.</pattern>
+      <pattern gender="geFemale">{name} drives her car.</pattern>
+      <lang id="fi" rw="0" time="20171204T211651Z">{name} ajaa autoaan.</lang>
+      <lang id="en" st="3" rw="0" time="20180523T185229Z">
+        <value gender="geMale">{name} drives the car.</value>
+        <pattern gender="geMale">{name} drives his car.</pattern>
+        <pattern gender="geFemale">{name} drives her car.</pattern>
+      </lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

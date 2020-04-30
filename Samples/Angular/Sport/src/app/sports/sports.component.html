@@ -1,0 +1,62 @@
+<div class="example-container mat-elevation-z8">
+  <mat-table #table [dataSource]="dataSource">
+
+    <ng-container matColumnDef="id">
+      <mat-header-cell *matHeaderCellDef class="narrowWidth" i18n="id|">Id</mat-header-cell>
+      <mat-cell *matCellDef="let sport" class="narrowWidth" >{{sport.id}}</mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="name">
+      <mat-header-cell *matHeaderCellDef i18n="name|">Sport name</mat-header-cell>
+      <mat-cell *matCellDef="let sport">{{sport.languages[0].name}}</mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="olympic">
+        <mat-header-cell *matHeaderCellDef i18n="olympic|">Olympic</mat-header-cell>
+        <mat-cell *matCellDef="let sport">{{sport.olympicAsString}}</mat-cell>
+      </ng-container>
+
+    <ng-container matColumnDef="fieldPlayers">
+      <mat-header-cell *matHeaderCellDef i18n="fieldPlayers|">Amount of payers</mat-header-cell>
+      <mat-cell *matCellDef="let sport">{{sport.fieldPlayers}}</mat-cell>
+    </ng-container>
+  
+    <ng-container matColumnDef="goalie">
+      <mat-header-cell *matHeaderCellDef i18n="goalie|">Goalkeeper</mat-header-cell>
+      <mat-cell *matCellDef="let sport">{{sport.goalieAsString}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="origin">
+      <mat-header-cell *matHeaderCellDef i18n="origin|">Origin</mat-header-cell>
+      <mat-cell *matCellDef="let sport">{{sport.languages[0].origin}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="description">
+      <mat-header-cell *matHeaderCellDef class="halfWidth" i18n="description|">Description</mat-header-cell>
+      <mat-cell *matCellDef="let sport" class="halfWidth">{{sport.languages[0].description}}</mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="edit">
+      <mat-header-cell *matHeaderCellDef></mat-header-cell>
+      <mat-cell *matCellDef="let sport">
+        <div class="button-row">
+          <button mat-icon-button (click)="edit(sport.id)">
+            <mat-icon i18n-aria-label="editButton|" aria-label="Edit">mode_edit</mat-icon>
+          </button>
+          <button mat-icon-button (click)="delete(sport.id)">
+            <mat-icon i18n-aria-label="deleteButton|" aria-label="Delete">delete</mat-icon>
+          </button>
+        </div>
+      </mat-cell>
+    </ng-container>
+  
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+  </mat-table>
+</div>
+  
+<p>
+  <button mat-button (click)="addSport()" i18n="addButton|">Add...</button>
+  <button mat-button (click)="addWaterpolo()" i18n="addWaterpoloButton|">Add water polo</button>
+  <button mat-button (click)="addVolleyball()" i18n="addVolleyballButton|">Add volleyball</button>
+</p>

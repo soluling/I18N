@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="5CC3B8CA-A6E6-4668-9483-D24AC51FD388" created="20170714T225324Z" lastmodified="20200317T002339Z" version="1.0.714" stringid="12">
+  <lang id="fi"/>
+  <lang id="en"/>
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Select\src\locale\messages.xlf" original="en" encoding="utf-8" context="acMeaning" hasmeaning="1">
+    <row id="app\app.component.ts.header" importid="2139580084212067875" si="1">
+      <value>Select Sample</value>
+      <lang id="fi" time="20170717T051755Z">Esimerkki</lang>
+    </row>
+    <row id="app\app.component.ts.select" importid="1023308545030740642" changed="20170725T154202Z" si="2" scannedcomment="Sport combo box is following" created="20170725T184009Z">
+      <value>Select the sport:</value>
+      <lang id="fi" time="20170725T184318Z">Valitse urheilulaji:</lang>
+    </row>
+    <row id="app\app.component.ts.selectHeader" importid="7949264276778386605" si="3" created="20170725T184009Z">
+      <value>Sports</value>
+      <lang id="fi" time="20170725T184332Z">Urheilulajit</lang>
+    </row>
+    <row id="app\app.component.ts.selectDescription" importid="7232737304824513495" changed="20170725T184009Z" si="4" created="20170725T154202Z">
+      <value>The following text is a result of select states:</value>
+      <prev>The following samples uses three select states.</prev>
+      <lang id="fi" time="20170725T184358Z">Seuraava esimerkki on valintavaihtoehdon tulos:</lang>
+    </row>
+    <row id="app\app.component.ts.selectText" importid="3006939030540113391" changed="20200317T002322Z" class="TPatternRow" si="5" scannedcomment="bestPlayer: Name of the best player" created="20170725T184009Z">
+      <value select="soccer">{bestPlayer} is the best soccer player.</value>
+      <pattern select="basketball">{bestPlayer} is the best basketball player.</pattern>
+      <pattern select="hockey">{bestPlayer} is the best ice hockey player.</pattern>
+      <lang id="fi" time="20170725T184622Z">
+        <value select="soccer">{bestPlayer} on paras jalkapalloilija.</value>
+        <pattern select="basketball">{bestPlayer} on paras koripalloilija.</pattern>
+        <pattern select="hockey">{bestPlayer} on paras jääkiekkoilija.</pattern>
+      </lang>
+    </row>
+    <row id="app\app.component.ts.fallbackHeader" importid="5158279274514081016" si="6" created="20170725T184009Z">
+      <value>Sports with a fallback</value>
+      <lang id="fi" time="20170725T184930Z">Urheilulajit varmistuksen kanssa</lang>
+    </row>
+    <row id="app\app.component.ts.fallbackDescription" importid="3273667572203478902" si="7" created="20170725T184009Z">
+      <value>The following text is a result the same select states plus a fallback state:</value>
+      <lang id="fi" time="20170725T184549Z">Seuraava esimerkki on varmistuksen kanssa olevan valintavaihtoehdon tulos:</lang>
+    </row>
+    <row id="app\app.component.ts.fallbackText" importid="2311695989492157790" changed="20200317T002322Z" class="TPatternRow" si="8" scannedcomment="bestPlayer: Name of the best player" created="20170725T184009Z">
+      <value select="other">Somebody is the best player.</value>
+      <pattern select="basketball">{bestPlayer} is the best basketball player.</pattern>
+      <pattern select="hockey">{bestPlayer} is the best ice hockey player.</pattern>
+      <pattern select="soccer">{bestPlayer} is the best soccer player.</pattern>
+      <lang id="fi" time="20170725T184810Z">
+        <value select="other">Joku on paras urheilija.</value>
+        <pattern select="basketball">{bestPlayer} on paras koripalloilija.</pattern>
+        <pattern select="hockey">{bestPlayer} on paras jääkiekkoilija.</pattern>
+        <pattern select="soccer">{bestPlayer} on paras jalkapalloilija.</pattern>
+      </lang>
+    </row>
+    <configurations>
+      <configuration name="Default" notranslation="ntFallback"/>
+    </configurations>
+  </node>
+  <node class="TAngularSource" name="source.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Select\src\locale\source.xlf" original="en" encoding="utf-8" context="acValue">
+    <row id="src\app\app.component.ts.Soccer" importid="3561837173133763041" si="9" created="20180523T203057Z">
+      <value>Soccer</value>
+      <lang id="fi" rw="0" time="20180523T203101Z">Jalkapallo</lang>
+    </row>
+    <row id="src\app\app.component.ts.Ice Hockey" importid="1378473899434596660" si="10" created="20180523T203057Z">
+      <value>Ice Hockey</value>
+      <lang id="fi" rw="0" time="20180523T203104Z">Jääkiekko</lang>
+    </row>
+    <row id="src\app\app.component.ts.Basketball" importid="5217306673498240951" si="11" created="20180523T203057Z">
+      <value>Basketball</value>
+      <lang id="fi" rw="0" time="20180523T203107Z">Koripallo</lang>
+    </row>
+    <row id="src\app\app.component.ts.Other" importid="8693603235657020323" si="12" created="20180523T203057Z">
+      <value>Other</value>
+      <lang id="fi" rw="0" time="20180523T203109Z">Muu</lang>
+    </row>
+    <configurations>
+      <configuration name="Default" notranslation="ntFallback"/>
+    </configurations>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

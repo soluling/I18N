@@ -959,61 +959,6 @@ begin
     FLanguageIndex := -1;
 end;
 
-{
-procedure TNtDelphiResources.Load;
-var
-  i, idCount: Integer;
-  offsetValue, len: Integer;
-  item: TNtDelphiResource;
-  header: TBytes;
-begin
-  FLoaded := True;
-
-  if FindResource(HInstance, PChar(FResourceName), RT_RCDATA) = 0 then
-  begin
-    if not SameText(FResourceName, NTRES_RESOURCE_NAME_C) then
-      raise EReadError.CreateResFmt(@SResNotFound, [FResourceName]);
-
-    Exit;
-  end;
-
-  FStream.Free;
-  FStream := TResourceStream.Create(HInstance, FResourceName, RT_RCDATA);
-  header := FStream.ReadBytes(Length(NTRES_MAGIC_C));
-
-  if not CompareMem(@NTRES_MAGIC_C, @header[0], Length(NTRES_MAGIC_C)) then
-    raise EInvalidImage.CreateRes(@SInvalidImage);
-
-  FStream.ReadInt32;  // Version number
-
-  // Read language ids
-  idCount := FStream.ReadInt32;
-
-  for i := 0 to idCount - 1 do  //FI:W528
-  begin
-    offsetValue := FStream.ReadInt32;
-    len := FStream.ReadInt32;
-
-    item := TNtDelphiResource.Create;
-    item.FId := FStream.ReadAnsi(offsetValue, len);
-    item.FStream := FStream;
-    FLanguages.Add(item);
-  end;
-
-  // Read language data offsets
-  for i := 0 to idCount - 1 do
-  begin
-    Languages[i].Offset := FStream.ReadInt32;
-    FStream.ReadInt32;
-  end;
-
-  if DefaultLocale <> '' then
-    LanguageId := DefaultLocale
-  else
-    FLanguageIndex := -1;
-end;
-}
-
 function TNtDelphiResources.Find(const id: String): Integer;
 begin
   for Result := 0 to Count - 1 do

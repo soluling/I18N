@@ -131,6 +131,9 @@ namespace Soluling.Sport
     [Display(Name = "Description")]
     public string Description { get; set; }
 
+    [Display(Name = "Machine translated")]
+    public bool MachineTranslated { get; set; } = false;
+
     // We don't need foreign key property but having it turns on automatic cascade delete
     [JsonIgnore]
     public int SportId { get; set; }

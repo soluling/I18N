@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="60F140F9-4B45-4167-93B2-3C91024BED5A" created="20180517T141336Z" lastmodified="20200317T002522Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Multi\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="app\app.component.ts.header" importid="8884523860497558714" si="1" created="20180523T185841Z">
+      <value>Sample</value>
+      <lang id="fi" rw="0" time="20180523T185503Z">Esimerkki</lang>
+    </row>
+    <row id="app\app.component.ts.skis" importid="1420873212592132990" class="TPatternRow" si="2" created="20180523T185841Z">
+      <value>I have {ski} skis.</value>
+      <lang id="fi" rw="0" time="20200317T002515Z">Minulla on {ski} suksea.</lang>
+    </row>
+    <row id="app\app.component.ts.plural" importid="7133463901580073687" changed="20190215T201417Z" class="TPatternRow" si="3">
+      <value startpattern="1">I have {0:ski, plural, one  other} and {1:car, plural, one  other}.</value>
+      <prev>I have {0:ski, plural, one other} and {1:car, plural, one other}.</prev>
+      <pattern plural="pfOne">{ski} ski</pattern>
+      <pattern plural="pfOther">{ski} skis</pattern>
+      <lang id="fi" rw="0" time="20190215T201553Z">
+        <value startpattern="1">Minulla on {0:ski, plural, one other} ja {1:car, plural, one other}.</value>
+        <pattern plural="pfOne">{ski} suksi</pattern>
+        <pattern plural="pfOther">{ski} suksea</pattern>
+      </lang>
+    </row>
+    <row id="app\app.component.ts.8061099442892692790" importid="8061099442892692790" class="TPatternRow" si="4">
+      <value>{car} cars</value>
+      <pattern plural="pfOne">{car} car</pattern>
+      <lang id="fi" rw="0" time="20180523T185545Z">
+        <value>{car} autoa</value>
+        <pattern plural="pfOne">{car} auto</pattern>
+      </lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="fi">
+  <file original="ng.template" id="ngi18n">
+    <unit id="1538119734082426044">
+      <notes>
+        <note category="meaning">header</note>
+        <note category="location">app/app.component.ts:2</note>
+      </notes>
+      <segment>
+        <source>Angular Sample</source>
+        <target>Angular--esimerkki</target>
+      </segment>
+    </unit>
+    <unit id="4438291026891864493">
+      <notes>
+        <note category="description">name: Name</note>
+        <note category="meaning">hello</note>
+        <note category="location">app/app.component.ts:3</note>
+      </notes>
+      <segment>
+        <source>Hello <ph id="0" equiv="INTERPOLATION" disp="{{name}}"/>!</source>
+        <target>Moi <ph id="0" equiv="INTERPOLATION" disp="{{name}}"/>!</target>
+      </segment>
+    </unit>
+    <unit id="5978994821803949985">
+      <notes>
+        <note category="description">name: Name
+name2: Another name</note>
+        <note category="meaning">hello2</note>
+        <note category="location">app/app.component.ts:5</note>
+      </notes>
+      <segment>
+        <source>Hello <ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> and <ph id="1" equiv="INTERPOLATION_1" disp="{{name2}}"/>!</source>
+        <target>Moi <ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> ja <ph id="1" equiv="INTERPOLATION_1" disp="{{name2}}"/>!</target>
+      </segment>
+    </unit>
+    <unit id="7740933642512890512">
+      <notes>
+        <note category="meaning">sample</note>
+        <note category="location">app/app.component.ts:6</note>
+      </notes>
+      <segment>
+        <source>This is an Angular localization sample.</source>
+        <target>Tämä on Angular-lokalisointiesimerkki.</target>
+      </segment>
+    </unit>
+    <unit id="8364466453937797307">
+      <notes>
+        <note category="meaning">formatting</note>
+        <note category="location">app/app.component.ts:8</note>
+      </notes>
+      <segment>
+        <source>Formatting</source>
+        <target>Muotoilut</target>
+      </segment>
+    </unit>
+    <unit id="4831793611448446227">
+      <notes>
+        <note category="description">value: Value as string</note>
+        <note category="meaning">number</note>
+        <note category="location">app/app.component.ts:9</note>
+      </notes>
+      <segment>
+        <source>Value is <ph id="0" equiv="INTERPOLATION" disp="{{value|number}}"/></source>
+        <target>Arvo on <ph id="0" equiv="INTERPOLATION" disp="{{value|number}}"/></target>
+      </segment>
+    </unit>
+    <unit id="6384835329279431207">
+      <notes>
+        <note category="description">share: Share percent as string</note>
+        <note category="meaning">percent</note>
+        <note category="location">app/app.component.ts:10</note>
+      </notes>
+      <segment>
+        <source>Share is <ph id="0" equiv="INTERPOLATION" disp="{{share|percent}}"/></source>
+        <target>Osuus on <ph id="0" equiv="INTERPOLATION" disp="{{share|percent}}"/></target>
+      </segment>
+    </unit>
+    <unit id="2959313732367412216">
+      <notes>
+        <note category="description">now: Date as string</note>
+        <note category="meaning">date</note>
+        <note category="location">app/app.component.ts:11</note>
+      </notes>
+      <segment>
+        <source>Today is <ph id="0" equiv="INTERPOLATION" disp="{{now|date:&apos;shortDate&apos;}}"/></source>
+        <target>Tänään on <ph id="0" equiv="INTERPOLATION" disp="{{now|date:'shortDate'}}"/></target>
+      </segment>
+    </unit>
+    <unit id="6467812184184056161">
+      <notes>
+        <note category="description">now: Time as string</note>
+        <note category="meaning">time</note>
+        <note category="location">app/app.component.ts:12</note>
+      </notes>
+      <segment>
+        <source>Time is <ph id="0" equiv="INTERPOLATION" disp="{{now|date:&apos;shortTime&apos;}}"/></source>
+        <target>Kello on <ph id="0" equiv="INTERPOLATION" disp="{{now|date:'shortTime'}}"/></target>
+      </segment>
+    </unit>
+    <unit id="4142501126785898588">
+      <notes>
+        <note category="meaning">plurals</note>
+        <note category="location">app/app.component.ts:14</note>
+      </notes>
+      <segment>
+        <source>Plurals and Genders</source>
+        <target>Monikot ja suvut</target>
+      </segment>
+    </unit>
+    <unit id="7466822367860161039">
+      <notes>
+        <note category="description">cars: Number of cars</note>
+        <note category="meaning">plural</note>
+        <note category="location">app/app.component.ts:15</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, one {I have <ph id="0" equiv="INTERPOLATION" disp="{{cars}}"/> car.} other {I have <ph id="1" equiv="INTERPOLATION" disp="{{cars}}"/> cars.} }</source>
+        <target>{VAR_PLURAL, plural, one {Minulla on <ph id="0" equiv="INTERPOLATION" disp="{{cars}}"/> auto} other {Minulla on <ph id="1" equiv="INTERPOLATION" disp="{{cars}}"/> autoa} }</target>
+      </segment>
+    </unit>
+    <unit id="7447701765409304281">
+      <notes>
+        <note category="description">cars: Number of cars</note>
+        <note category="meaning">plural2</note>
+        <note category="location">app/app.component.ts:16</note>
+      </notes>
+      <segment>
+        <source>Cars: <ph id="0" equiv="ICU" disp="{cars, plural, one {...} other {...}}"/></source>
+        <target>Autot: <ph id="0" equiv="ICU" disp="{cars, plural, one {...} other {...}}"/></target>
+      </segment>
+    </unit>
+    <unit id="5098982984779633083">
+      <notes>
+        <note category="location">app/app.component.ts:16</note>
+      </notes>
+      <segment>
+        <source>{VAR_PLURAL, plural, one {I have <ph id="0" equiv="INTERPOLATION" disp="{{cars}}"/> car.} other {I have <ph id="1" equiv="INTERPOLATION" disp="{{cars}}"/> cars.} }</source>
+        <target>{VAR_PLURAL, plural, one {Minulla on <ph id="0" equiv="INTERPOLATION" disp="{{cars}}"/> auto} other {Minulla on <ph id="0" equiv="INTERPOLATION" disp="{{cars}}"/> autoa} }</target>
+      </segment>
+    </unit>
+    <unit id="218967529038719609">
+      <notes>
+        <note category="description">name: Name of the person</note>
+        <note category="meaning">gender</note>
+        <note category="location">app/app.component.ts:17</note>
+      </notes>
+      <segment>
+        <source>{VAR_SELECT, select, male {<ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> drives his car.} female {<ph id="1" equiv="INTERPOLATION" disp="{{name}}"/> drives her car.} }</source>
+        <target>{VAR_SELECT, select, other {<ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> ajaa autollansa} }</target>
+      </segment>
+    </unit>
+  </file>
+</xliff>

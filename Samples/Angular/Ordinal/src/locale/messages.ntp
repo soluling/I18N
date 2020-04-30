@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="8F7FAE44-5B84-475A-909F-66FCF4EF08A1" created="20170619T182329Z" lastmodified="20200317T002713Z" version="1.0.714" stringid="5">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Ordinal\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="app\app.component.ts.header" importid="8884523860497558714" si="1" created="20171205T153536Z">
+      <value>Sample</value>
+      <lang id="fi" rw="0" time="20170619T182427Z">Esimerkki</lang>
+      <lang id="de" rw="0" time="20170619T182826Z">Beispiel</lang>
+    </row>
+    <row id="app\number.component.ts.shortSingular" importid="5021315299614543929" changed="20190129T024659Z" class="TPatternRow" si="2" scannedcomment="num: Singular ordinal number in a short form such as '1st'" created="20171205T153536Z">
+      <value>This is the {num|ordinal} attempt.</value>
+      <lang id="fi" rw="0" time="20170619T182436Z">Tämä on {num|ordinal} yritys.</lang>
+      <lang id="de" st="3" or="3" rw="0" time="20170619T184109Z">Dies ist der {num|ordinal} Versuch.</lang>
+    </row>
+    <row id="app\number.component.ts.longSingular" importid="586836927075846858" changed="20190129T024659Z" class="TPatternRow" si="3" scannedcomment="num: Singular ordinal number in a long form such as 'first'" created="20171205T153536Z">
+      <value>This is the {num|ordinal:'long'} attempt.</value>
+      <lang id="fi" rw="0" time="20170619T182436Z">Tämä on {num|ordinal:'long'} yritys.</lang>
+      <lang id="de" st="3" or="3" rw="0" time="20170619T184109Z">Dies ist der {num|ordinal:'long'} Versuch.</lang>
+    </row>
+    <row id="app\number.component.ts.shortPlural" importid="2650238607388907089" changed="20190129T024659Z" class="TPatternRow" si="4" scannedcomment="num: Plural ordinal number in a short form such as '1st'" created="20171205T153536Z">
+      <value>These are the {num|ordinal:'other'} attempts.</value>
+      <lang id="fi" rw="0" time="20170619T182445Z">Nämä ovat {num|ordinal:'other'} yritykset.</lang>
+      <lang id="de" st="3" or="3" rw="0" time="20170619T184117Z">Dies sind die {num|ordinal:'other'} Versuche.</lang>
+    </row>
+    <row id="app\number.component.ts.longPlural" importid="7536202618555025261" changed="20190129T024659Z" class="TPatternRow" si="5" scannedcomment="num: Plural ordinal number in a long form such as 'first'" created="20171205T153536Z">
+      <value>These are the {num|ordinal:'long;other'} attempts.</value>
+      <lang id="fi" rw="0" time="20170619T182445Z">Nämä ovat {num|ordinal:'long;other'} yritykset.</lang>
+      <lang id="de" st="3" or="3" rw="0" time="20170619T184117Z">Dies sind die {num|ordinal:'long;other'} Versuche.</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

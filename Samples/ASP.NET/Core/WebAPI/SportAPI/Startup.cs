@@ -13,6 +13,7 @@ using Microsoft.Extensions.Hosting;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Converters;
 using Newtonsoft.Json.Serialization;
+using Soluling.MachineTranslation;
 using SportAPI.Models;
 
 namespace SportAPI
@@ -82,6 +83,22 @@ namespace SportAPI
 
       if (env.IsDevelopment())
         app.UseDeveloperExceptionPage();
+
+      // Get machine translation languages, if any
+      var key = Startup.Configuration["MicrosoftTranslator:Key"];
+      var endpoint = Startup.Configuration["MicrosoftTranslator:Endpoint"];
+
+      if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(endpoint))
+      {
+        var machineTranslator = new MicrosoftTranslator(key, endpoint);
+        var languages = machineTranslator.GetLanguages();
+
+        foreach (var language in languages)
+        {
+          if (dbCultures.Find(c => c.Name == language.Id) == null) 
+            dbCultures.Add(new CultureInfo(language.Id));
+        }
+      }
 
       // Use db languages to set the available languages for localization
       var supportedCultures = dbCultures.ToArray();

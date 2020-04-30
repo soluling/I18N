@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="en" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="3585f01f7c710c2a7aadbe0ecedf63569c397311" datatype="html">
+        <source>Localization Sample</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/app.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+        <note priority="1" from="meaning">header</note>
+      </trans-unit>
+      <trans-unit id="391b3e116d7e5279686c3abb9901fc6644935fbf" datatype="html">
+        <source>Hello <x id="INTERPOLATION" equiv-text="{{name}}"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/embedded.component.ts</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">name: Name of the user</note>
+        <note priority="1" from="meaning">hello</note>
+      </trans-unit>
+      <trans-unit id="080f966c08d75fda2e85fb7e0e72e2f1f3dd030b" datatype="html">
+        <source>This is a sample</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/embedded.component.ts</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="meaning">sample</note>
+      </trans-unit>
+      <trans-unit id="9e485b155d635b1282bdaa6e5c923d8a9ce02783" datatype="html">
+        <source>Hello <x id="INTERPOLATION" equiv-text="{{name}}"/> and <x id="INTERPOLATION_1" equiv-text="{{name2}}"/>!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/external.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+        <note priority="1" from="description">name: Name of the first user
+name2: Name of the second user</note>
+        <note priority="1" from="meaning">hello</note>
+      </trans-unit>
+      <trans-unit id="c743aac6a917d7cea1c459fb023ce2ca9623bc39" datatype="html">
+        <source>This is another sample</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">app/external.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+        <note priority="1" from="meaning">sample</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

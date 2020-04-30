@@ -1,0 +1,42 @@
+{
+  "name": "hello",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@lingui/react": "^2.8.3",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0",
+    "react-scripts": "3.1.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+
+    "add-locale": "lingui add-locale",
+    "extract": "lingui extract",
+    "compile": "lingui compile"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@babel/core": "^7.5.5",
+    "@lingui/cli": "^2.8.3",
+    "@lingui/macro": "^2.8.3",
+    "babel-core": "^7.0.0-bridge.0"
+  }
+}

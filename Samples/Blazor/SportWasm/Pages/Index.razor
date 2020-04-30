@@ -1,9 +1,61 @@
 ﻿@page "/"
 
+@inject SportService SportService
 @inject IStringLocalizer<Index> localizer
+@inject IJSRuntime jsRuntime
 
-<h1>@localizer["Hello, world!"]</h1>
+<h1 class="display-4">@localizer["Sports"]</h1>
 
-@localizer["Welcome to your new app."]
+@if (Sports == null)
+{
+  <p>@localizer["Loading data..."]</p>
+}
+else
+{
+  <table class="table">
+    <tr>
+      <th>
+        @localizer["Id"]
+      </th>
+      <th>
+        @localizer["Name"]
+      </th>
+      <th>
+        @localizer["Description"]
+      </th>
+      <th>
+        @localizer["Origin"]
+      </th>
+    </tr>
 
-@System.Globalization.CultureInfo.CurrentCulture.ToString()
+    @foreach (var sport in Sports)
+    {
+      <tr>
+        <td>
+          @sport.Id
+        </td>
+        <td>
+          @sport.Languages[0].Name
+        </td>
+        <td>
+          @sport.Languages[0].Description
+        </td>
+        <td>
+          @sport.Languages[0].Origin
+        </td>
+      </tr>
+    }
+  </table>
+}
+
+@code {
+  [Parameter] public IEnumerable<Sport> Sports { get; set; }
+
+  protected override async Task OnInitializedAsync()  
+  { 
+    // Get the language of the browser
+    var browserLanguage = await jsRuntime.InvokeAsync<string>("getLanguage");
+
+    Sports = await SportService.GetAllAsync(browserLanguage);
+  }  
+}

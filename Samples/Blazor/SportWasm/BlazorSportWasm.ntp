@@ -1,18 +1,57 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20200328T175210Z" version="1.0.727" lockedrowcomplete="0" stringid="4">
+<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20200418T161424Z" version="1.0.734" lockedrowcomplete="0" stringid="15">
   <lang id="fi"/>
+  <lang id="ja"/>
   <node class="TNetProjectSource" name="BlazorSportWasm.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\SportWasm\BlazorSportWasm.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1">
     <netproperties version="standard21"/>
     <node class="TDirectoryFolder" name="Resources" created="20200328T175152Z">
       <node class="TDirectoryFolder" name="Pages">
         <node class="TResXNode" name="Index.resx">
-          <row id="Hello, world!" si="3">
-            <value>Hello, world!</value>
-            <lang id="fi" st="2" or="3" rw="0" time="20200328T173658Z">Moi maailma!</lang>
+          <row id="Sports" si="10" created="20200418T021553Z">
+            <value>Sports</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Urheilu</lang>
+            <lang id="ja" st="4" or="5" rw="0" time="20200418T021732Z" fuzzy="99">スポーツ</lang>
           </row>
-          <row id="Welcome to your new app." si="4">
-            <value>Welcome to your new app.</value>
-            <lang id="fi" st="2" or="3" rw="0" time="20200328T173701Z">Tervetuloa uuteen sovellukseesi.</lang>
+          <row id="Loading data..." si="11" created="20200418T021553Z">
+            <value>Loading data...</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Ladataan tietoja...</lang>
+          </row>
+          <row id="Id" si="12" created="20200418T021553Z">
+            <value>Id</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Tunnus</lang>
+          </row>
+          <row id="Name" si="13" created="20200418T021553Z">
+            <value>Name</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Nimi</lang>
+          </row>
+          <row id="Description" si="14" created="20200418T021553Z">
+            <value>Description</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Kuvaus</lang>
+          </row>
+          <row id="Origin" si="15" created="20200418T021553Z">
+            <value>Origin</value>
+            <lang id="fi" rw="0" time="20200418T021603Z">Alkuperä</lang>
+          </row>
+        </node>
+      </node>
+      <node class="TDirectoryFolder" name="Shared" created="20200417T031628Z">
+        <node class="TResXNode" name="MainLayout.resx" created="20200417T031728Z">
+          <row id="About" si="8">
+            <value>About</value>
+            <lang id="fi" rw="0" time="20200417T031735Z">Tietoa</lang>
+            <lang id="ja" st="4" or="5" rw="0" time="20200417T043109Z" fuzzy="99">バージョン情報</lang>
+          </row>
+        </node>
+        <node class="TResXNode" name="NavMenu.resx">
+          <row id="Sport" si="9" created="20200417T031903Z">
+            <value>Sport</value>
+            <lang id="fi" rw="0" time="20200417T031910Z" fuzzy="100">Urheilu</lang>
+            <lang id="ja" st="4" or="5" rw="0" time="20200417T043126Z" fuzzy="99">スポーツ</lang>
+          </row>
+          <row id="Home" si="7">
+            <value>Home</value>
+            <lang id="fi" rw="0" time="20200417T024850Z">Koti</lang>
+            <lang id="ja" st="4" or="6" rw="0" time="20200417T043129Z" fuzzy="5">ホーム</lang>
           </row>
         </node>
       </node>

@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="8E91140E-6F48-4D6E-95E1-9ECB21D52B60" created="20171204T205103Z" lastmodified="20200317T002317Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <lang id="pl"/>
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Plural\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="app\app.component.ts.header" importid="1835493080467832141" si="1">
+      <value>Plural Sample</value>
+      <lang id="fi" rw="0" time="20171204T205115Z">Monikkoesimerkki</lang>
+      <lang id="ja" or="6" rw="0" time="20171204T205430Z">複数のサンプル</lang>
+      <lang id="pl" or="6" rw="0" time="20171204T205451Z">Liczba mnoga</lang>
+    </row>
+    <row id="app\number.component.ts.value" importid="5758534050920449356" changed="20200317T002303Z" class="TPatternRow" si="2" scannedcomment="num: Number of files">
+      <value>{num} files</value>
+      <pattern plural="pfOne">{num} file</pattern>
+      <lang id="fi" rw="0" time="20171204T205122Z">
+        <value>{num} tiedostoa</value>
+        <pattern plural="pfOne">{num} tiedosto</pattern>
+      </lang>
+      <lang id="ja" st="3" or="6" rw="0" time="20171204T205430Z">{num} ファイル</lang>
+      <lang id="pl" st="3" rw="0" time="20171204T210335Z">
+        <value>{num} plików</value>
+        <pattern plural="pfOne">{num} plik</pattern>
+        <pattern plural="pfFew">{num} pliki</pattern>
+      </lang>
+    </row>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<translationbundle>
+  <translation id="1238358838717941284">Esimerkki</translation>
+  <translation id="2936540941337291086">Teksti.</translation>
+  <translation id="8630488884016746845">Teksti on <ph name="START_BOLD_TEXT"><ex>&lt;b&gt;</ex></ph>lihavoitu<ph name="CLOSE_BOLD_TEXT"><ex>&lt;/b&gt;</ex></ph> .</translation>
+  <translation id="9177085542057981127">Tämä on <ph name="START_BOLD_TEXT"><ex>&lt;b&gt;</ex></ph>lihavoitu<ph name="CLOSE_BOLD_TEXT"><ex>&lt;/b&gt;</ex></ph> ja <ph name="START_BOLD_TEXT"><ex>&lt;b&gt;</ex></ph>Uusi<ph name="CLOSE_BOLD_TEXT"><ex>&lt;/b&gt;</ex></ph> teksti.</translation>
+  <translation id="6426986805077510140">Tämä on <ph name="START_LINK"><ex>&lt;a&gt;</ex></ph>linkki<ph name="CLOSE_LINK"><ex>&lt;/a&gt;</ex></ph> ja <ph name="START_BOLD_TEXT"><ex>&lt;b&gt;</ex></ph>rohkea<ph name="CLOSE_BOLD_TEXT"><ex>&lt;/b&gt;</ex></ph> näyte.</translation>
+</translationbundle>

@@ -4,6 +4,7 @@ using System.Threading;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Soluling.MachineTranslation;
 using Soluling.Sport;
 using SportAPI.Models;
 
@@ -14,6 +15,18 @@ namespace SportAPI.Controllers
   public class SportsController : Controller
   {
     private readonly SportContext context;
+    private static MachineTranslator machineTranslator;
+
+    static SportsController()
+    {
+      var key = Startup.Configuration["MicrosoftTranslator:Key"];
+      var endpoint = Startup.Configuration["MicrosoftTranslator:Endpoint"];
+
+      if (!string.IsNullOrEmpty(key) && !string.IsNullOrEmpty(endpoint))
+        machineTranslator = new MicrosoftTranslator(key, endpoint);
+      else
+        machineTranslator = null;
+    }
 
     public SportsController(SportContext context)
     {
@@ -30,6 +43,42 @@ namespace SportAPI.Controllers
       }
     }
 
+    private void ProcessSport(Sport sport)
+    {
+      // If the language does not exist and machine translator exit, use it to translate the sport to that language.
+      var targetSportLanguage = sport.Languages.Find(m => m.Language == Language);
+
+      if ((targetSportLanguage == null) && (machineTranslator != null) && (sport.Languages.Count > 0))
+      {
+        // Find the English sport to be used as the original language.
+        var originalSportLanguage = sport.Languages.Find(m => m.Language == "en");
+
+        // If not found take the first sport.
+        if (originalSportLanguage == null)
+          originalSportLanguage = sport.Languages[0];
+
+        // Create a new language specific sport using the machine translated properties
+        targetSportLanguage = new SportLanguage
+        {
+          Language = Language,
+          MachineTranslated = true,
+          Name = machineTranslator.Translate(originalSportLanguage.Name, originalSportLanguage.Language, Language),
+          Origin = machineTranslator.Translate(originalSportLanguage.Origin, originalSportLanguage.Language, Language),
+          Description = machineTranslator.Translate(originalSportLanguage.Description, originalSportLanguage.Language, Language)
+        };
+
+        // If the machine translation succeeded add the sport language to the list and sav it to the DB
+        if (!string.IsNullOrEmpty(targetSportLanguage.Name) && !string.IsNullOrEmpty(targetSportLanguage.Origin) && !string.IsNullOrEmpty(targetSportLanguage.Description))
+        {
+          sport.AddLanguage(targetSportLanguage);
+          context.SaveChanges();
+        }
+      }
+
+      // Move the active language to the first in the list
+      sport.MoveDefaultLanguateToTop(Language);
+    }
+
     // GET: sports
     [HttpGet]
     public IEnumerable<Sport> GetSports()
@@ -37,7 +86,7 @@ namespace SportAPI.Controllers
       var sports = context.Sport.Include(s => s.Languages).ToArray();
 
       foreach (var sport in sports)
-        sport.MoveDefaultLanguateToTop(Language);
+        ProcessSport(sport);
 
       return sports;
     }
@@ -54,7 +103,7 @@ namespace SportAPI.Controllers
       if (sport == null)
         return NotFound();
 
-      sport.MoveDefaultLanguateToTop(Language);
+      ProcessSport(sport);
       return Ok(sport);
     }
 
