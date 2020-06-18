@@ -18,7 +18,8 @@
 //  DELPHIDX1   Delphi 10.1 Berlin or higher
 //  DELPHIDX2   Delphi 10.2 Tokyo or higher
 //  DELPHIDX3   Delphi 10.3 Rio or higher
-//  DELPHIDX4   Delphi 10.4 xxx or higher
+//  DELPHIDX4   Delphi 10.4 Sydney or higher
+//  DELPHIDX5   Delphi 10.5 xxx or higher
 
 {$IF CompilerVersion >= 24}
   {$LEGACYIFEND ON}
@@ -104,6 +105,10 @@
 
 {$IF CompilerVersion >= 34}
   {$DEFINE DELPHIDX4}
+{$IFEND}
+
+{$IF CompilerVersion >= 35}
+  {$DEFINE DELPHIDX5}
 {$IFEND}
 
 {$WARN SYMBOL_PLATFORM OFF}

@@ -1,78 +1,166 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20200317T004226Z" version="1.0.714" stringid="17">
+<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20200530T205214Z" version="1.0.748" stringid="1017">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Project1.exe" original="en" library="dlAnsi">
-    <node class="TDelphiFormFolder" name="RC Data">
-      <node class="TDelphiFormNode" name="TLOGINDIALOG" type="TLoginDialog" resname="TLOGINDIALOG" excluded="1">
-        <item name="OKButton" type="TButton"/>
-        <item name="CancelButton" type="TButton"/>
+  <node class="TDelphiSource" name="Win32\Debug\DatabaseGrid.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\DatabaseGrid\Win32\Debug\DatabaseGrid.exe" original="en" platforms="[ptWin32]">
+    <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
+    <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData" created="20200530T205110Z">
+      <node class="TDelphiFormNode" name="TLOGINDIALOG" type="TLoginDialog" resname="TLOGINDIALOG" objectname="LoginDialog">
+        <row id="Left">307</row>
+        <row id="Top">131</row>
+        <row id="Caption" si="505">Database Login</row>
+        <row id="ClientHeight">147</row>
+        <row id="ClientWidth">283</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">119</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="506">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">200</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="507">Cancel</row>
+        </item>
         <item name="Panel" type="TPanel">
-          <item name="Label3" type="TLabel"/>
-          <item name="DatabaseName" type="TLabel"/>
-          <item name="Bevel" type="TBevel"/>
+          <row id="Left">8</row>
+          <row id="Top">7</row>
+          <row id="Width">267</row>
+          <row id="Height">98</row>
+          <item name="Label3" type="TLabel">
+            <row id="Left">10</row>
+            <row id="Top">6</row>
+            <row id="Width">50</row>
+            <row id="Height">13</row>
+            <row id="Caption" si="508">Database:</row>
+          </item>
+          <item name="DatabaseName" type="TLabel">
+            <row id="Left">106</row>
+            <row id="Top">6</row>
+            <row id="Width">3</row>
+            <row id="Height">13</row>
+          </item>
+          <item name="Bevel" type="TBevel">
+            <row id="Left">1</row>
+            <row id="Top">24</row>
+            <row id="Width">264</row>
+            <row id="Height">9</row>
+          </item>
           <item name="Panel1" type="TPanel">
-            <item name="Label1" type="TLabel"/>
-            <item name="Label2" type="TLabel"/>
-            <item name="UserName" type="TEdit"/>
-            <item name="Password" type="TEdit"/>
+            <row id="Left">2</row>
+            <row id="Top">31</row>
+            <row id="Width">263</row>
+            <row id="Height">65</row>
+            <item name="Label1" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">8</row>
+              <row id="Width">56</row>
+              <row id="Height">13</row>
+              <row id="Caption" si="509">&amp;User Name:</row>
+            </item>
+            <item name="Label2" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">36</row>
+              <row id="Width">50</row>
+              <row id="Height">13</row>
+              <row id="Caption" si="510">&amp;Password:</row>
+            </item>
+            <item name="UserName" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">5</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+            </item>
+            <item name="Password" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">33</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+              <row id="PasswordChar" si="511">*</row>
+            </item>
           </item>
         </item>
         <data>
           VFBGMAxUTG9naW5EaWFsb2cLTG9naW5EaWFsb2cETGVmdAMzAQNUb3ADgwANQWN0aXZlQ29udHJvbAcIUGFzc3dvcmQLQm9yZGVy
-          U3R5bGUHCGJzRGlhbG9nB0NhcHRpb24GDkRhdGFiYXNlIExvZ2luDENsaWVudEhlaWdodAOTAAtDbGllbnRXaWR0aAMRAQVDb2xv
+          U3R5bGUHCGJzRGlhbG9nB0NhcHRpb24GDkRhdGFiYXNlIExvZ2luDENsaWVudEhlaWdodAOTAAtDbGllbnRXaWR0aAMbAQVDb2xv
           cgcJY2xCdG5GYWNlClBhcmVudEZvbnQJDk9sZENyZWF0ZU9yZGVyCQhQb3NpdGlvbgcOcG9TY3JlZW5DZW50ZXIGT25TaG93BwhG
-          b3JtU2hvdw1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9LQnV0dG9uBExlZnQCbQNUb3ACcgVXaWR0aAJL
+          b3JtU2hvdw1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9LQnV0dG9uBExlZnQCdwNUb3ACcgVXaWR0aAJL
           BkhlaWdodAIZB0NhcHRpb24GAyZPSwdEZWZhdWx0CQtNb2RhbFJlc3VsdAIBCFRhYk9yZGVyAgAAAAdUQnV0dG9uDENhbmNlbEJ1
-          dHRvbgRMZWZ0A74AA1RvcAJyBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2VsCQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghU
-          YWJPcmRlcgIBAAAGVFBhbmVsBVBhbmVsBExlZnQCCANUb3ACBwVXaWR0aAMBAQZIZWlnaHQCYgpCZXZlbElubmVyBwhidlJhaXNl
-          ZApCZXZlbE91dGVyBwlidkxvd2VyZWQIVGFiT3JkZXICAgAGVExhYmVsBkxhYmVsMwRMZWZ0AgoDVG9wAgYFV2lkdGgCMQZIZWln
-          aHQCDQdDYXB0aW9uBglEYXRhYmFzZToAAAZUTGFiZWwMRGF0YWJhc2VOYW1lBExlZnQCWwNUb3ACBgVXaWR0aAIDBkhlaWdodAIN
-          AAAGVEJldmVsBUJldmVsBExlZnQCAQNUb3ACGAVXaWR0aAP+AAZIZWlnaHQCCQVTaGFwZQcJYnNUb3BMaW5lAAAGVFBhbmVsBlBh
-          bmVsMQRMZWZ0AgIDVG9wAh8FV2lkdGgD/QAGSGVpZ2h0AkEFQWxpZ24HCGFsQm90dG9tCkJldmVsT3V0ZXIHBmJ2Tm9uZQhUYWJP
+          dHRvbgRMZWZ0A8gAA1RvcAJyBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2VsCQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghU
+          YWJPcmRlcgIBAAAGVFBhbmVsBVBhbmVsBExlZnQCCANUb3ACBwVXaWR0aAMLAQZIZWlnaHQCYgpCZXZlbElubmVyBwhidlJhaXNl
+          ZApCZXZlbE91dGVyBwlidkxvd2VyZWQIVGFiT3JkZXICAgAGVExhYmVsBkxhYmVsMwRMZWZ0AgoDVG9wAgYFV2lkdGgCMgZIZWln
+          aHQCDQdDYXB0aW9uBglEYXRhYmFzZToAAAZUTGFiZWwMRGF0YWJhc2VOYW1lBExlZnQCagNUb3ACBgVXaWR0aAIDBkhlaWdodAIN
+          AAAGVEJldmVsBUJldmVsBExlZnQCAQNUb3ACGAVXaWR0aAMIAQZIZWlnaHQCCQVTaGFwZQcJYnNUb3BMaW5lAAAGVFBhbmVsBlBh
+          bmVsMQRMZWZ0AgIDVG9wAh8FV2lkdGgDBwEGSGVpZ2h0AkEFQWxpZ24HCGFsQm90dG9tCkJldmVsT3V0ZXIHBmJ2Tm9uZQhUYWJP
           cmRlcgIAAAZUTGFiZWwGTGFiZWwxBExlZnQCCANUb3ACCAVXaWR0aAI4BkhlaWdodAINB0NhcHRpb24GCyZVc2VyIE5hbWU6DEZv
-          Y3VzQ29udHJvbAcIVXNlck5hbWUAAAZUTGFiZWwGTGFiZWwyBExlZnQCCANUb3ACJAVXaWR0aAIxBkhlaWdodAINB0NhcHRpb24G
-          CiZQYXNzd29yZDoMRm9jdXNDb250cm9sBwhQYXNzd29yZAAABVRFZGl0CFVzZXJOYW1lBExlZnQCVgNUb3ACBQVXaWR0aAOZAAZI
-          ZWlnaHQCFQlNYXhMZW5ndGgCHwhUYWJPcmRlcgIAAAAFVEVkaXQIUGFzc3dvcmQETGVmdAJWA1RvcAIhBVdpZHRoA5kABkhlaWdo
+          Y3VzQ29udHJvbAcIVXNlck5hbWUAAAZUTGFiZWwGTGFiZWwyBExlZnQCCANUb3ACJAVXaWR0aAIyBkhlaWdodAINB0NhcHRpb24G
+          CiZQYXNzd29yZDoMRm9jdXNDb250cm9sBwhQYXNzd29yZAAABVRFZGl0CFVzZXJOYW1lBExlZnQCZQNUb3ACBQVXaWR0aAOZAAZI
+          ZWlnaHQCFQlNYXhMZW5ndGgCHwhUYWJPcmRlcgIAAAAFVEVkaXQIUGFzc3dvcmQETGVmdAJlA1RvcAIhBVdpZHRoA5kABkhlaWdo
           dAIVCU1heExlbmd0aAIfDFBhc3N3b3JkQ2hhcgYBKghUYWJPcmRlcgIBAAAAAAA=
         </data>
       </node>
-      <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TMAINFORM">
-        <row id="Caption" si="1">Data Sample</row>
-        <item name="DBGrid1" type="TDBGrid"/>
+      <node class="TDelphiFormNode" name="TMAINFORM" type="TMainForm" resname="TMAINFORM" objectname="MainForm">
+        <font id="Font" name="MS Sans Serif" size="8"/>
+        <row id="Left">205</row>
+        <row id="Top">126</row>
+        <row id="Caption" si="512">Data Sample</row>
+        <row id="ClientHeight">102</row>
+        <row id="ClientWidth">729</row>
+        <item name="DBGrid1" type="TDBGrid">
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <row id="Width">729</row>
+          <row id="Height">102</row>
+        </item>
         <item name="MainMenu" type="TMainMenu">
+          <row id="Left">16</row>
+          <row id="Top">48</row>
           <item name="DatabaseMenu" type="TMenuItem">
-            <row id="Caption" si="2">Database</row>
+            <row id="Caption" si="513">Database</row>
             <item name="OpenMenu" type="TMenuItem">
-              <row id="Caption" si="3">Open</row>
+              <row id="Caption" si="514">Open</row>
             </item>
             <item name="CloseMenu" type="TMenuItem">
-              <row id="Caption" si="4">Close</row>
+              <row id="Caption" si="515">Close</row>
             </item>
             <item name="N1" type="TMenuItem"/>
             <item name="LanguageMenu" type="TMenuItem">
-              <row id="Caption" si="5">Language...</row>
+              <row id="Caption" si="516">Language...</row>
             </item>
             <item name="N2" type="TMenuItem"/>
             <item name="ExitMenu" type="TMenuItem">
-              <row id="Caption" si="6">Exit</row>
+              <row id="Caption" si="517">Exit</row>
             </item>
           </item>
           <item name="HelpMenu" type="TMenuItem">
-            <row id="Caption" si="7">Help</row>
+            <row id="Caption" si="518">Help</row>
             <item name="AboutMenu" type="TMenuItem">
-              <row id="Caption" si="8">About</row>
+              <row id="Caption" si="519">About</row>
             </item>
           </item>
         </item>
-        <item name="DataSource1" type="TDataSource"/>
-        <item name="Query1" type="TADOQuery"/>
-        <item name="Connection1" type="TADOConnection"/>
+        <item name="DataSource1" type="TDataSource">
+          <row id="Left">216</row>
+          <row id="Top">48</row>
+        </item>
+        <item name="Query1" type="TADOQuery">
+          <row id="Left">152</row>
+          <row id="Top">48</row>
+        </item>
+        <item name="Connection1" type="TADOConnection">
+          <row id="Left">88</row>
+          <row id="Top">48</row>
+        </item>
         <data>
-          VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAPNAANUb3ACfgdDYXB0aW9uBgtEYXRhIFNhbXBsZQxDbGllbnRIZWlnaHQCegtD
+          VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAPNAANUb3ACfgdDYXB0aW9uBgtEYXRhIFNhbXBsZQxDbGllbnRIZWlnaHQCZgtD
           bGllbnRXaWR0aAPZAgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNs
           V2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYNTVMgU2FucyBTZXJpZgpGb250LlN0eWxlCwAETWVudQcITWFpbk1l
           bnUOT2xkQ3JlYXRlT3JkZXIIBk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAHVERCR3JpZAdE
-          QkdyaWQxBExlZnQCAANUb3ACAAVXaWR0aAPZAgZIZWlnaHQCegVBbGlnbgcIYWxDbGllbnQKRGF0YVNvdXJjZQcLRGF0YVNvdXJj
+          QkdyaWQxBExlZnQCAANUb3ACAAVXaWR0aAPZAgZIZWlnaHQCZgVBbGlnbgcIYWxDbGllbnQKRGF0YVNvdXJjZQcLRGF0YVNvdXJj
           ZTEIVGFiT3JkZXICABFUaXRsZUZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUD1RpdGxlRm9udC5Db2xvcgcMY2xXaW5kb3dU
           ZXh0EFRpdGxlRm9udC5IZWlnaHQC9Q5UaXRsZUZvbnQuTmFtZQYNTVMgU2FucyBTZXJpZg9UaXRsZUZvbnQuU3R5bGULAAAACVRN
           YWluTWVudQhNYWluTWVudQRMZWZ0AhADVG9wAjAACVRNZW51SXRlbQxEYXRhYmFzZU1lbnUHQ2FwdGlvbgYIRGF0YWJhc2UHT25D
@@ -83,41 +171,105 @@
           dAdPbkNsaWNrBw1FeGl0TWVudUNsaWNrAAAACVRNZW51SXRlbQhIZWxwTWVudQdDYXB0aW9uBgRIZWxwAAlUTWVudUl0ZW0JQWJv
           dXRNZW51B0NhcHRpb24GBUFib3V0B09uQ2xpY2sHDkFib3V0TWVudUNsaWNrAAAAAAtURGF0YVNvdXJjZQtEYXRhU291cmNlMQRM
           ZWZ0A9gAA1RvcAIwAAAJVEFET1F1ZXJ5BlF1ZXJ5MQpDb25uZWN0aW9uBwtDb25uZWN0aW9uMQpQYXJhbWV0ZXJzDgAETGVmdAOY
-          AANUb3ACMAAADlRBRE9Db25uZWN0aW9uC0Nvbm5lY3Rpb24xEENvbm5lY3Rpb25TdHJpbmcGUlByb3ZpZGVyPU1pY3Jvc29mdC5K
-          ZXQuT0xFREIuNC4wO0RhdGEgU291cmNlPVNwb3J0Lm1kYjtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2ULTG9naW5Qcm9tcHQI
-          CFByb3ZpZGVyBhdNaWNyb3NvZnQuSmV0Lk9MRURCLjQuMARMZWZ0AlgDVG9wAjAAAAA=
+          AANUb3ACMAAADlRBRE9Db25uZWN0aW9uC0Nvbm5lY3Rpb24xEENvbm5lY3Rpb25TdHJpbmcGW1Byb3ZpZGVyPU1pY3Jvc29mdC5K
+          ZXQuT0xFREIuNC4wO0RhdGEgU291cmNlPS4uXC4uXC4uXFNwb3J0Lm1kYjtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2ULTG9n
+          aW5Qcm9tcHQICFByb3ZpZGVyBhdNaWNyb3NvZnQuSmV0Lk9MRURCLjQuMARMZWZ0AlgDVG9wAjAAAAA=
         </data>
       </node>
-      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG">
-        <row id="Caption" si="9">Select Language</row>
-        <item name="LanguageList" type="TListBox"/>
+      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">256</row>
+        <row id="Top">347</row>
+        <row id="Caption" si="520">Select Language</row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">193</row>
+          <row id="Height">177</row>
+        </item>
         <item name="OkButton" type="TButton">
-          <row id="Caption" si="10">OK</row>
+          <row id="Left">208</row>
+          <row id="Top">8</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="521">OK</row>
         </item>
         <item name="CancelButton" type="TButton">
-          <row id="Caption" si="11">Cancel</row>
+          <row id="Left">208</row>
+          <row id="Top">40</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="522">Cancel</row>
         </item>
         <data>
           VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
           ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
           Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
-          YW1lBg1NUyBTYW5zIFNlcmlmCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVPcmRlcggIT25DcmVhdGUHCkZvcm1DcmVhdGUJT25EZXN0
-          cm95BwtGb3JtRGVzdHJveQZPblNob3cHCEZvcm1TaG93DVBpeGVsc1BlckluY2gCYApUZXh0SGVpZ2h0Ag0ACFRMaXN0Qm94DExh
-          bmd1YWdlTGlzdARMZWZ0AggDVG9wAggFV2lkdGgDwQAGSGVpZ2h0A7EACkl0ZW1IZWlnaHQCDQZTb3J0ZWQJCFRhYk9yZGVyAgAK
-          T25EYmxDbGljawcUTGFuZ3VhZ2VMaXN0RGJsQ2xpY2sAAAdUQnV0dG9uCE9rQnV0dG9uBExlZnQD0AADVG9wAggFV2lkdGgCSwZI
-          ZWlnaHQCGQdDYXB0aW9uBgJPSwdEZWZhdWx0CQtNb2RhbFJlc3VsdAIBCFRhYk9yZGVyAgEAAAdUQnV0dG9uDENhbmNlbEJ1dHRv
-          bgRMZWZ0A9AAA1RvcAIoBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2VsCQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghUYWJP
-          cmRlcgICAAAA
+          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
+          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
+          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
+          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
+          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
+          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
+          AAA=
         </data>
       </node>
-      <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" excluded="1">
-        <item name="OKButton" type="TButton"/>
-        <item name="CancelButton" type="TButton"/>
+      <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" objectname="PasswordDialog">
+        <row id="Left">260</row>
+        <row id="Top">184</row>
+        <row id="Caption" si="523">Enter password</row>
+        <row id="ClientHeight">132</row>
+        <row id="ClientWidth">273</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">109</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="524">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">190</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="525">Cancel</row>
+        </item>
         <item name="GroupBox1" type="TGroupBox">
-          <item name="Edit" type="TEdit"/>
-          <item name="AddButton" type="TButton"/>
-          <item name="RemoveButton" type="TButton"/>
-          <item name="RemoveAllButton" type="TButton"/>
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">257</row>
+          <row id="Height">81</row>
+          <row id="Caption" si="526">Password</row>
+          <item name="Edit" type="TEdit">
+            <row id="Left">16</row>
+            <row id="Top">18</row>
+            <row id="Width">225</row>
+            <row id="Height">20</row>
+            <row id="PasswordChar" si="527">*</row>
+          </item>
+          <item name="AddButton" type="TButton">
+            <row id="Left">16</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="528">&amp;Add</row>
+          </item>
+          <item name="RemoveButton" type="TButton">
+            <row id="Left">88</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="529">&amp;Remove</row>
+          </item>
+          <item name="RemoveAllButton" type="TButton">
+            <row id="Left">160</row>
+            <row id="Top">46</row>
+            <row id="Width">81</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="530">Re&amp;move all</row>
+          </item>
         </item>
         <data>
           VFBGMA9UUGFzc3dvcmREaWFsb2cOUGFzc3dvcmREaWFsb2cETGVmdAMEAQNUb3ADuAANQWN0aXZlQ29udHJvbAcERWRpdAtCb3Jk
@@ -137,22 +289,19 @@
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="ADOConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="ComConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="Consts" excluded="1"/>
-      <node class="TWindowsStringNode" name="DBConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="NtLocalization" excluded="1"/>
-      <node class="TWindowsStringNode" name="RTLConsts" excluded="1"/>
-      <node class="TWindowsStringNode" name="SysConst" excluded="1"/>
-      <node class="TWindowsStringNode" name="Unit1">
-        <row id="SDescription" si="12">Description</row>
-        <row id="SAboutMessage" si="13">This application shows how to localize database content.</row>
-        <row id="SName" si="14">Name</row>
-        <row id="SFieldplayers" si="15">Fieldplayers</row>
-        <row id="SGoalie" si="16">Goalie</row>
-        <row id="SOrigin" si="17">Origin</row>
+      <node class="TWindowsStringNode" name="Data" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1" created="20200530T205132Z">
+        <row id="SName" si="532">Name</row>
+        <row id="SFieldplayers" si="533">Fieldplayers</row>
+        <row id="SGoalie" si="534">Goalie</row>
+        <row id="SOrigin" si="535">Origin</row>
+        <row id="SDescription" si="536">Description</row>
+        <row id="SAboutMessage" si="537">This application shows how to localize database content.</row>
       </node>
-      <node class="TWindowsStringNode" name="VDBConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
   </node>
   <excludedoriginals>
@@ -168,13 +317,10 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>
