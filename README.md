@@ -1,8 +1,10 @@
-# Internationalization APIs for .NET, Angular and Delphi
+# Soluling's Internationalization APIs and Localization Samples
 
 *Plurals*, *genders*, *abbreviated numbers*, *ordinal numbers*, *runtime language change*, *overlap and truncation checking*, and many more.
 
-This project implements a collection of internationalization (I18N) APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
+Soluling has implemented a collection of internationalization (I18N) APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
+
+The project also contains dozens of internationalization and localization samples.
 
 ## Implementation
 
