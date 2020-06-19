@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="2641C8DF-669C-47A3-9BA1-16F868672B79" created="20120303T075959Z" lastmodified="20200316T232022Z" version="1.0.714" stringid="27">
+  <lang id="fi"/>
+  <node class="TPropertiesSource" name="Messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Test\src\Messages.properties" original="en-US" encoding="iso-8859-1">
+    <row id="Title" si="1">
+      <value>Sample</value>
+      <lang id="fi" time="20120303T080018Z">Esimerkki</lang>
+    </row>
+    <row id="single1" si="2" created="20140908T095155Z">
+      <value>'sample'</value>
+      <lang id="fi" time="20140908T095205Z">'esimerkki'</lang>
+    </row>
+    <row id="single2" si="3" created="20140908T095155Z">
+      <value>'sample'</value>
+      <lang id="fi" time="20140908T095205Z">'esimerkki'</lang>
+    </row>
+    <row id="double1" si="4" created="20140908T095155Z">
+      <value>&quot;sample&quot;</value>
+      <lang id="fi" time="20140908T095214Z">&quot;esimerkki&quot;</lang>
+    </row>
+    <row id="double2" si="5" created="20140908T095155Z">
+      <value>&quot;sample&quot;</value>
+      <lang id="fi" time="20140908T095214Z">&quot;esimerkki&quot;</lang>
+    </row>
+    <row id="single'1" si="6" created="20140908T095155Z">quote in key</row>
+    <row id="Plain" si="7">
+      <value>Plain</value>
+      <lang id="fi" time="20140908T095219Z">Pelkkä</lang>
+    </row>
+    <row id="plain" si="8">
+      <value>plain</value>
+      <lang id="fi" time="20140908T095221Z">pelkkä</lang>
+    </row>
+    <row id="One Two" si="9">
+      <value>One Two</value>
+      <lang id="fi" time="20120303T080023Z">Yksi kaksi</lang>
+    </row>
+    <row id="multiline" si="10">
+      <value>Hello World</value>
+      <lang id="fi" time="20120303T080027Z">Moi maailma</lang>
+    </row>
+    <row id="colon" si="11">Colon</row>
+    <row id="one=two" si="12">One=Two:</row>
+    <row id="colon " si="13"> Colon space</row>
+    <row id="unicode" si="14">NT</row>
+    <row id="NT" si="15">NT</row>
+    <row id="message1" class="TPatternRow" si="16" created="20200316T232021Z" st="0">test {0} {1} {2}</row>
+    <row id="message2" class="TPatternRow" si="17" created="20200316T232021Z" st="0">test {0} '{1}' {2}</row>
+    <row id="message3" class="TPatternRow" si="18" created="20200316T232021Z" st="0">test {0} ''{1}'' {2}</row>
+    <row id="message4" class="TPatternRow" si="19" created="20200316T232021Z" st="0">test {0} '''{1}''' {2}</row>
+    <row id="message5" class="TPatternRow" si="20" created="20200316T232021Z" st="0">test {0} '{1} {2}</row>
+    <row id="message6" class="TPatternRow" si="21" created="20200316T232021Z" st="0">test {0} ''{1} {2}</row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

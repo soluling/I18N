@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E698FB57-9FA3-447B-A162-2E356D4CAE1F" created="20140910T052357Z" lastmodified="20200316T231944Z" version="1.0.714" stringid="9">
+  <lang id="fi"/>
+  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Driving\src\Driving\messages.properties" original="en" encoding="iso-8859-1">
+    <row id="Locale" si="1">en</row>
+    <row id="HoursPlural" class="TPatternRow" si="2" created="20190309T193118Z">
+      <value>{0} hours</value>
+      <pattern plural="pfOne">{0} hour</pattern>
+    </row>
+    <row id="MinutesPlural" class="TPatternRow" si="3" created="20190309T193118Z">
+      <value>{0} minutes</value>
+      <pattern plural="pfOne">{0} minute</pattern>
+    </row>
+    <row id="Distance" si="4">
+      <value>Distance:</value>
+      <lang id="fi" st="4" or="6" rw="0" time="20190309T193144Z" fuzzy="1">Etäisyys:</lang>
+    </row>
+    <row id="Speed" si="5">
+      <value>Speed:</value>
+      <lang id="fi" st="4" or="6" rw="0" time="20190309T193146Z" fuzzy="1">Nopeus:</lang>
+    </row>
+    <row id="Calculate" si="6">
+      <value>Calculate</value>
+      <lang id="fi" st="4" or="6" rw="0" time="20190309T193149Z" fuzzy="1">Laske</lang>
+    </row>
+    <row id="Message" si="7">dummy</row>
+    <row id="Title" si="8">
+      <value>Driving Time</value>
+      <lang id="fi" st="4" or="6" rw="0" time="20190309T193139Z" fuzzy="1">Ajoaika</lang>
+    </row>
+    <row id="DrivingTimeIs" class="TPatternRow" si="9" created="20190309T193118Z">
+      <value>Driving time is {0} and {1}</value>
+      <lang id="fi" st="4" or="6" rw="0" time="20190309T193155Z" fuzzy="1">Ajoaika on {0} ja {1}</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

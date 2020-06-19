@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="845C04D4-C620-4D4D-B2F7-2AE62D1D3B75" created="20180105T213830Z" lastmodified="20200316T231950Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Plural\src\Plural\messages.properties" original="en-US" encoding="iso-8859-1">
+    <row id="MessagePlural" class="TPatternRow" si="1" created="20180105T221619Z">
+      <value>{0} files</value>
+      <pattern plural="pfOne">{0} file</pattern>
+      <lang id="fi" rw="0" time="20180105T221647Z">
+        <value>{0} tiedostoa</value>
+        <pattern plural="pfOne">{0} tiedosto</pattern>
+      </lang>
+    </row>
+    <row id="Locale" si="2">
+      <value>en</value>
+      <lang id="fi" rw="0" time="20180105T221633Z">fi</lang>
+    </row>
+    <row id="Title" si="3">
+      <value>Plural Sample</value>
+      <lang id="fi" rw="0" time="20180105T221640Z">Monikkoesimerkki</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
