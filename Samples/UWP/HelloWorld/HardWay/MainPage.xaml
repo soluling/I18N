@@ -1,0 +1,14 @@
+﻿<Page
+    x:Class="HelloWorld.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:HelloWorld"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" Loaded="Page_Loaded_1">
+
+  <StackPanel x:Name="panel" Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <TextBlock x:Uid="text1" Style="{StaticResource HeaderTextStyle}" />
+    <TextBlock x:Name="text2" Style="{StaticResource SubheaderTextStyle}" Text="dummy" />
+  </StackPanel>
+</Page>

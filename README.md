@@ -6,9 +6,7 @@ Soluling has implemented a collection of internationalization (I18N) APIs for [.
 
 ## Samples
 
-The project also contains internationalization and localization samples. You don't need to spend lots of time searching localization samples from various blogs and articles. Soluling has hundredths of samples covering all major programming platforms and file formats.
-
-Samples are up-to-date and using a recent version of the programming languages.
+This repo also contains internationalization and localization [samples](https://github.com/soluling/I18N/tree/master/Samples). Soluling has dozens of samples covering several major programming platforms and file formats. Samples are up-to-date and using a recent version of their programming language.
 
 ## API Implementation
 
