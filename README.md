@@ -4,9 +4,13 @@
 
 Soluling has implemented a collection of internationalization (I18N) APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
 
-The project also contains dozens of internationalization and localization samples.
+## Samples
 
-## Implementation
+The project also contains internationalization and localization samples. You don't need to spend lots of time searching localization samples from various blogs and articles. Soluling has hundredths of samples covering all major programming platforms and file formats.
+
+Samples are up-to-date and using a recent version of the programming languages.
+
+## API Implementation
 
 Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. in the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
 
