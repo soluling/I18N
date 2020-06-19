@@ -1,0 +1,1 @@
+lupdate Plural.pro

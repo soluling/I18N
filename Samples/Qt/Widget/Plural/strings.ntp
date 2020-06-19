@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="6F718AEA-E5E4-4566-98AF-EE5AFC05A57D" created="20190111T163409Z" lastmodified="20200316T230049Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TQtTsSource" name="strings.ts" fullpath="D:\NT\Deploy\Samples\Qt\Widget\Plural\strings.ts" original="en" encoding="windows-1252">
+    <node class="TQtNode" name="Dialog">
+      <row id="Plural Sample" si="1">
+        <value>Plural Sample</value>
+        <lang id="fi" or="4" rw="0" time="20190111T163409Z">Monikkoesimerkki</lang>
+        <lang id="de" or="4" rw="0" time="20190111T163409Z">Plural Probe</lang>
+        <lang id="ja" or="4" rw="0" time="20190111T163409Z">複数サンプル</lang>
+      </row>
+      <row id="%n file" class="TPatternRow" si="2">
+        <value>%n file</value>
+        <pattern plural="pfOne">%n file</pattern>
+        <lang id="fi" or="4" rw="0" time="20190111T163409Z">
+          <value>%n tiedostoa</value>
+          <pattern plural="pfOne">%n tiedosto</pattern>
+        </lang>
+        <lang id="de" or="4" rw="0" time="20190111T163409Z">
+          <value>%n Dateien</value>
+          <pattern plural="pfOne">%n Datei</pattern>
+        </lang>
+        <lang id="ja" or="4" rw="0" time="20190111T163409Z">%n ファイル</lang>
+      </row>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

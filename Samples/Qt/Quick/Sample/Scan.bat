@@ -1,0 +1,1 @@
+lupdate Sample.pro

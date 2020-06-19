@@ -1,0 +1,1 @@
+lupdate -verbose Hello.pro
