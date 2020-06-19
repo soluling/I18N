@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
   <file original="ng.template" id="ngi18n">
     <unit id="8884523860497558714">
       <notes>
         <note category="meaning">header</note>
-        <note category="location">app/app.component.ts:2</note>
+        <note category="location">src/app/app.component.ts:2</note>
       </notes>
       <segment>
         <source>Sample</source>
@@ -14,7 +14,7 @@
       <notes>
         <note category="description">name: Name of the person, dogs: Amount of dogs</note>
         <note category="meaning">nested</note>
-        <note category="location">app/app.component.ts:4,7</note>
+        <note category="location">src/app/app.component.ts:4,7</note>
       </notes>
       <segment>
         <source>{VAR_SELECT, select, male {{VAR_PLURAL, plural, =0 {<ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> will not bring his dog} one {<ph id="1" equiv="INTERPOLATION" disp="{{name}}"/> will bring his <ph id="2" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {<ph id="3" equiv="INTERPOLATION" disp="{{name}}"/> will bring his <ph id="4" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } female {{VAR_PLURAL_1, plural, =0 {<ph id="5" equiv="INTERPOLATION" disp="{{name}}"/> will not bring her dog} one {<ph id="6" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="7" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {<ph id="8" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="9" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } other {{VAR_PLURAL_2, plural, =0 {Nobody will bring a dog} one {Somebody will bring <ph id="10" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {Somebody will bring <ph id="11" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } }</source>
@@ -24,7 +24,7 @@
       <notes>
         <note category="description">name: Name of the person, dogs: Amount of dogs</note>
         <note category="meaning">nested2</note>
-        <note category="location">app/app.component.ts:9,12</note>
+        <note category="location">src/app/app.component.ts:9,12</note>
       </notes>
       <segment>
         <source>Dogs: <ph id="0" equiv="ICU" disp="{gender, select, male {...} female {...} other {...}}"/></source>
@@ -32,7 +32,7 @@
     </unit>
     <unit id="8874828798974273417">
       <notes>
-        <note category="location">app/app.component.ts:9,12</note>
+        <note category="location">src/app/app.component.ts:9,12</note>
       </notes>
       <segment>
         <source>{VAR_SELECT, select, male {{VAR_PLURAL, plural, =0 {<ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> will not bring his dog} one {<ph id="1" equiv="INTERPOLATION" disp="{{name}}"/> will bring his <ph id="2" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {<ph id="3" equiv="INTERPOLATION" disp="{{name}}"/> will bring his <ph id="4" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } female {{VAR_PLURAL_1, plural, =0 {<ph id="5" equiv="INTERPOLATION" disp="{{name}}"/> will not bring her dog} one {<ph id="6" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="7" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {<ph id="8" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="9" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } other {{VAR_PLURAL_2, plural, =0 {Nobody will bring a dog} one {Somebody will bring <ph id="10" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {Somebody will bring <ph id="11" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } }</source>
@@ -41,7 +41,7 @@
     <unit id="6514022994852656906">
       <notes>
         <note category="meaning">nested3</note>
-        <note category="location">app/app.component.ts:14,17</note>
+        <note category="location">src/app/app.component.ts:14,17</note>
       </notes>
       <segment>
         <source>{VAR_PLURAL, plural, =0 {{VAR_SELECT, select, male {<ph id="0" equiv="INTERPOLATION" disp="{{name}}"/> will not bring his dog} female {<ph id="1" equiv="INTERPOLATION" disp="{{name}}"/> will not bring her dog} other {Nobody will bring a dog} } } one {{VAR_SELECT_1, select, male {<ph id="2" equiv="INTERPOLATION" disp="{{name}}"/> will not bring his <ph id="3" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} female {<ph id="4" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="5" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} other {Somebody will bring <ph id="6" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dog} } } other {{VAR_SELECT_2, select, male {<ph id="7" equiv="INTERPOLATION" disp="{{name}}"/> will bring his <ph id="8" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} female {<ph id="9" equiv="INTERPOLATION" disp="{{name}}"/> will bring her <ph id="10" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} other {Somebody will bring <ph id="11" equiv="INTERPOLATION_1" disp="{{dogs}}"/> dogs} } } }</source>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US">
   <file original="ng.template" id="ngi18n">
     <unit id="2139580084212067875">
       <notes>
         <note category="meaning">header</note>
-        <note category="location">app/app.component.ts:2</note>
+        <note category="location">src/app/app.component.ts:2</note>
       </notes>
       <segment>
         <source>Select Sample</source>
@@ -14,7 +14,7 @@
       <notes>
         <note category="description">Sport combo box is following</note>
         <note category="meaning">select</note>
-        <note category="location">app/app.component.ts:4</note>
+        <note category="location">src/app/app.component.ts:4</note>
       </notes>
       <segment>
         <source>Select the sport:</source>
@@ -23,7 +23,7 @@
     <unit id="7949264276778386605">
       <notes>
         <note category="meaning">selectHeader</note>
-        <note category="location">app/app.component.ts:9</note>
+        <note category="location">src/app/app.component.ts:9</note>
       </notes>
       <segment>
         <source>Sports</source>
@@ -32,7 +32,7 @@
     <unit id="7232737304824513495">
       <notes>
         <note category="meaning">selectDescription</note>
-        <note category="location">app/app.component.ts:10</note>
+        <note category="location">src/app/app.component.ts:10</note>
       </notes>
       <segment>
         <source>The following text is a result of select states:</source>
@@ -42,7 +42,7 @@
       <notes>
         <note category="description">bestPlayer: Name of the best player</note>
         <note category="meaning">selectText</note>
-        <note category="location">app/app.component.ts:11</note>
+        <note category="location">src/app/app.component.ts:11</note>
       </notes>
       <segment>
         <source>{VAR_SELECT, select, soccer {<ph id="0" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best soccer player.} hockey {<ph id="1" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best ice hockey player.} basketball {<ph id="2" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best basketball player.} }</source>
@@ -51,7 +51,7 @@
     <unit id="5158279274514081016">
       <notes>
         <note category="meaning">fallbackHeader</note>
-        <note category="location">app/app.component.ts:13</note>
+        <note category="location">src/app/app.component.ts:13</note>
       </notes>
       <segment>
         <source>Sports with a fallback</source>
@@ -60,7 +60,7 @@
     <unit id="3273667572203478902">
       <notes>
         <note category="meaning">fallbackDescription</note>
-        <note category="location">app/app.component.ts:14</note>
+        <note category="location">src/app/app.component.ts:14</note>
       </notes>
       <segment>
         <source>The following text is a result the same select states plus a fallback state:</source>
@@ -70,10 +70,42 @@
       <notes>
         <note category="description">bestPlayer: Name of the best player</note>
         <note category="meaning">fallbackText</note>
-        <note category="location">app/app.component.ts:15</note>
+        <note category="location">src/app/app.component.ts:15</note>
       </notes>
       <segment>
         <source>{VAR_SELECT, select, soccer {<ph id="0" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best soccer player.} hockey {<ph id="1" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best ice hockey player.} basketball {<ph id="2" equiv="INTERPOLATION" disp="{{bestPlayer}}"/> is the best basketball player.} other {Somebody is the best player.} }</source>
+      </segment>
+    </unit>
+    <unit id="3561837173133763041">
+      <notes>
+        <note category="location">src/app/app.component.ts:19</note>
+      </notes>
+      <segment>
+        <source>Soccer</source>
+      </segment>
+    </unit>
+    <unit id="1378473899434596660">
+      <notes>
+        <note category="location">src/app/app.component.ts:20</note>
+      </notes>
+      <segment>
+        <source>Ice Hockey</source>
+      </segment>
+    </unit>
+    <unit id="5217306673498240951">
+      <notes>
+        <note category="location">src/app/app.component.ts:21</note>
+      </notes>
+      <segment>
+        <source>Basketball</source>
+      </segment>
+    </unit>
+    <unit id="8693603235657020323">
+      <notes>
+        <note category="location">src/app/app.component.ts:22</note>
+      </notes>
+      <segment>
+        <source>Other</source>
       </segment>
     </unit>
   </file>
