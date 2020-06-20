@@ -16,7 +16,9 @@ Soluling contains samples for the following platforms:
 - Blazor
 - Delphi VCL
 - Delphi FireMonkey
+- INI
 - Java
+- JSON
 - PHP
 - PO/GetText
 - Qt
@@ -25,6 +27,7 @@ Soluling contains samples for the following platforms:
 - Vue
 - WPF
 - Windows Forms
+- XML
 - Plus more
 
 ## API Implementation
