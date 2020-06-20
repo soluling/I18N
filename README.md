@@ -11,12 +11,12 @@ This repo also contains internationalization and localization [samples](https://
 Soluling contains samples for the following platforms:
 
 - ASP.NET
-
 - ASP.NET Core
 - Angular
 - Blazor
 - Delphi VCL
 - Delphi FireMonkey
+- Java
 - PHP
 - PO/GetText
 - Qt
