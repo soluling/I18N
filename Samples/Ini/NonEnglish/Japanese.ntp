@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="56B5DC8F-E70D-400C-8564-D4016356C7BC" created="20181125T185126Z" lastmodified="20200316T233458Z" version="1.0.714" stringid="3">
+  <lang id="en"/>
+  <lang id="fi"/>
+  <node class="TIniSource" name="Japanese.ini" fullpath="D:\NT\Deploy\Samples\Ini\NonEnglish\Japanese.ini" original="ja" encoding="utf-8" bom="1">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>一</value>
+        <lang id="en" rw="0" time="20181125T185132Z">One</lang>
+        <lang id="fi" rw="0" time="20181125T185142Z">Yksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>二</value>
+        <lang id="en" rw="0" time="20181125T185133Z">Two</lang>
+        <lang id="fi" rw="0" time="20181125T185144Z">Kaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>三</value>
+        <lang id="en" rw="0" time="20181125T185135Z">Three</lang>
+        <lang id="fi" rw="0" time="20181125T185146Z">Kolme</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

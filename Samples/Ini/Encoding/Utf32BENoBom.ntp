@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F5322B9A-1C6E-4F62-8144-CEA2B0968D1A" created="20140315T061259Z" lastmodified="20200316T232712Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Utf32BENoBom.ini" fullpath="D:\NT\Deploy\Samples\Ini\Encoding\Utf32BENoBom.ini" original="en" encoding="UTF-32BE">
+    <ini detectstringformat="1"/>
+    <item name="simple" created="20140315T061319Z">
+      <row id="one" si="1">
+        <value>One</value>
+        <lang id="fi" time="20140315T061332Z">Yksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>Two</value>
+        <lang id="fi" time="20140315T061334Z">Kaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Ångström</value>
+        <lang id="fi" time="20140315T061335Z">Ångström</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

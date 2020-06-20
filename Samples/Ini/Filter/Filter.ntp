@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="D2126F3A-6FC3-4BB0-868A-A21E7929F2CE" created="20180309T213044Z" lastmodified="20200316T233314Z" version="1.0.714" stringid="5">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Filter.ini" fullpath="D:\NT\Deploy\Samples\Ini\Filter\Filter.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="filter">
+      <row id="one" si="1">Soccer</row>
+      <row id="two" si="2">Soccer1</row>
+      <row id="three" si="3">&amp;Soccer</row>
+      <row id="four" si="4">Soccer is a sport.</row>
+      <row id="five" si="5">I like soccer.</row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="7722C967-2635-4129-B140-1C410A737E18" created="20121206T153756Z" lastmodified="20200316T215858Z" version="1.0.714" stringid="11">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="Mixed.xml" fullpath="D:\NT\Deploy\Samples\XML\Mixed\Mixed.xml" original="en" encoding="utf-8" bom="1">
+    <xml encoding="utf-8">
+      <root name="sports">
+        <tag name="sport">
+          <attribute name="name"/>
+          <attribute name="fieldplayers" checked="0"/>
+          <attribute name="goalie" checked="0"/>
+          <attribute name="origin"/>
+          <tag name="description"/>
+        </tag>
+        <tag name="data"/>
+      </root>
+    </xml>
+    <item name="sports">
+      <item name="sport[0]">
+        <row id="=name" si="1" created="20121206T153756Z">Soccer</row>
+        <row id="=origin" si="2" created="20121206T153756Z">England</row>
+        <item name="description">
+          <row id="value" si="3" created="20121206T153756Z">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+        </item>
+      </item>
+      <item name="data[0]">
+        <row id="value" si="4" created="20121206T153756Z">One</row>
+      </item>
+      <item name="sport[1]">
+        <row id="=name" si="5" created="20121206T153756Z">Ice hockey</row>
+        <row id="=origin" si="6" created="20121206T153756Z">Canada</row>
+        <item name="description">
+          <row id="value" si="7" created="20121206T153756Z">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+        </item>
+      </item>
+      <item name="data[1]">
+        <row id="value" si="8" created="20121206T153756Z">Two</row>
+      </item>
+      <item name="sport[2]">
+        <row id="=name" si="9" created="20121206T153756Z">Basketball</row>
+        <row id="=origin" si="10" created="20121206T153756Z">United States</row>
+        <item name="description">
+          <row id="value" si="11" created="20121206T153756Z">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+        </item>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzcG9ydHM+DQogIDxzcG9ydCBuYW1lPSJTb2NjZXIi
+      IGZpZWxkcGxheWVycz0iMTAiIGdvYWxpZT0iMSIgb3JpZ2luPSJFbmdsYW5kIj4NCiAgICA8ZGVzY3JpcHRpb24+U29jY2VyIGlz
+      IGEgc3BvcnQgcGxheWVkIGJldHdlZW4gdHdvIHRlYW1zIG9mIGVsZXZlbiBwbGF5ZXJzIHdpdGggYSBzcGhlcmljYWwgYmFsbC48
+      L2Rlc2NyaXB0aW9uPg0KICA8L3Nwb3J0Pg0KICA8ZGF0YT5PbmU8L2RhdGE+DQogIDxzcG9ydCBuYW1lPSJJY2UgaG9ja2V5IiBm
+      aWVsZHBsYXllcnM9IjUiIGdvYWxpZT0iMSIgb3JpZ2luPSJDYW5hZGEiPg0KICAgIDxkZXNjcmlwdGlvbj5JY2UgaG9ja2V5IGlz
+      IGEgdGVhbSBzcG9ydCBwbGF5ZWQgb24gaWNlLCBpbiB3aGljaCBza2F0ZXJzIHVzZSBzdGlja3MgdG8gZGlyZWN0IGEgcHVjayBp
+      bnRvIHRoZSBvcHBvc2luZyB0ZWFtJ3MgZ29hbC48L2Rlc2NyaXB0aW9uPg0KICA8L3Nwb3J0Pg0KICA8ZGF0YT5Ud288L2RhdGE+
+      DQogIDxzcG9ydCBuYW1lPSJCYXNrZXRiYWxsIiBmaWVsZHBsYXllcnM9IjUiIGdvYWxpZT0iMCIgb3JpZ2luPSJVbml0ZWQgU3Rh
+      dGVzIj4NCiAgICA8ZGVzY3JpcHRpb24+QmFza2V0YmFsbCBpcyBhIHRlYW0gc3BvcnQgaW4gd2hpY2ggdHdvIHRlYW1zIG9mIGZp
+      dmUgcGxheWVycyB0cnkgdG8gc2NvcmUgcG9pbnRzIGJ5IHRocm93aW5nIGEgYmFsbCB0aHJvdWdoIHRoZSB0b3Agb2YgYSBiYXNr
+      ZXRiYWxsIGhvb3Agd2hpbGUgZm9sbG93aW5nIGEgc2V0IG9mIHJ1bGVzLjwvZGVzY3JpcHRpb24+DQogIDwvc3BvcnQ+DQo8L3Nw
+      b3J0cz4NCg==
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

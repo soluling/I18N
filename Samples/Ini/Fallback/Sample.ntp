@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="7574956E-6BAF-4347-9159-D73C3B9A8540" created="20170417T214959Z" lastmodified="20200316T232816Z" version="1.0.714" stringid="5">
+  <lang id="en"/>
+  <lang id="fi"/>
+  <lang id="fi-FI"/>
+  <lang id="de"/>
+  <lang id="de-AT"/>
+  <node class="TIniSource" name="Sample.ini" fullpath="D:\NT\Deploy\Samples\Ini\Fallback\Sample.ini" original="en-US" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="values">
+      <row id="one" changed="20170515T022532Z" si="1">
+        <value>one</value>
+        <lang id="en" time="20170515T022537Z">One</lang>
+        <lang id="fi" st="4" time="20170417T215005Z">Yksi</lang>
+        <lang id="fi-FI" st="4" time="20170417T215104Z">Yks</lang>
+        <lang id="de" or="6" rw="0" time="20181125T191959Z">Eine</lang>
+        <lang id="de-AT" rw="0" time="20181125T192205Z">eine</lang>
+      </row>
+      <row id="two" changed="20170515T022532Z" si="2">
+        <value>two</value>
+        <lang id="en" time="20170515T022539Z">Two</lang>
+        <lang id="fi" st="4" time="20170417T215008Z">Kaksi</lang>
+        <lang id="fi-FI" st="4" time="20170417T215107Z">Kaks</lang>
+        <lang id="de" or="6" rw="0" time="20181125T191959Z">Zwei</lang>
+        <lang id="de-AT" rw="0" time="20181125T192207Z">zwei</lang>
+      </row>
+      <row id="three" changed="20170515T022532Z" si="3">
+        <value>three</value>
+        <lang id="en" time="20170515T022540Z">Three</lang>
+        <lang id="fi" st="4" time="20170417T215048Z">Kolme</lang>
+        <lang id="de" or="6" rw="0" time="20181125T191959Z">Drei</lang>
+        <lang id="de-AT" rw="0" time="20181125T192210Z">drei</lang>
+      </row>
+      <row id="four" si="4" created="20170515T022655Z">
+        <value>four</value>
+        <lang id="en" time="20170515T022701Z">Four</lang>
+        <lang id="de" or="6" rw="0" time="20181125T191959Z">Vier</lang>
+        <lang id="de-AT" rw="0" time="20181125T192213Z">vier</lang>
+      </row>
+      <row id="sauna" changed="20170515T022532Z" si="5" created="20170417T215041Z">
+        <value>sauna</value>
+        <lang id="en" time="20170515T022542Z">Sauna</lang>
+        <lang id="de" or="6" rw="0" time="20181125T191959Z">Sauna</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

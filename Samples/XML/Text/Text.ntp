@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C2C3085D-CCC4-40D6-9BD6-EC9C9651D72D" created="20181126T013927Z" lastmodified="20200316T215709Z" version="1.0.714" stringid="11">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="Text.xml" fullpath="D:\NT\Deploy\Samples\XML\Text\Text.xml" original="en" encoding="utf-8" bom="1">
+    <xml encoding="utf-8"/>
+    <item name="texts">
+      <item name="plain">
+        <row id="=description" si="1">This is plain text</row>
+        <row id="value" si="2">This is a plain text</row>
+      </item>
+      <item name="segmented">
+        <row id="=description" si="3">This is segmented text</row>
+        <row id="value" si="4">Soccer is a sport played between two teams of eleven players with a spherical ball. Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal. Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+      </item>
+      <item name="structure" created="20181126T021603Z">
+        <row id="=format" si="5">##;##;##</row>
+        <row id="=description" si="6">This is an expression</row>
+        <node class="TTextDataNode" name="value">
+          <text scanmethod="tsStructured" structure="#;#;#"/>
+          <row id="0" si="7">Soccer</row>
+          <row id="1" si="8">Ice hockey</row>
+          <row id="2" si="9">Basketball</row>
+          <data>UwBvAGMAYwBlAHIAOwBJAGMAZQAgAGgAbwBjAGsAZQB5ADsAQgBhAHMAawBlAHQAYgBhAGwAbAA=</data>
+        </node>
+      </item>
+      <item name="defined">
+        <row id="=description" si="10">This is structured text</row>
+        <row id="value" si="11">soccer;Soccer;10;1;England;Soccer is a sport played between two teams of eleven players with a spherical ball.
+hockey;Ice hockey;5;1;Canada;Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.
+basketball;Basketball;5;0;United States;Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.
+  </row>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjx0ZXh0cz4NCiAgPHRleHQgaWQ9InBsYWluIiBkZXNj
+      cmlwdGlvbj0iVGhpcyBpcyBwbGFpbiB0ZXh0Ij5UaGlzIGlzIGEgcGxhaW4gdGV4dDwvdGV4dD4NCiAgPHRleHQgaWQ9InNlZ21l
+      bnRlZCIgZGVzY3JpcHRpb249IlRoaXMgaXMgc2VnbWVudGVkIHRleHQiPlNvY2NlciBpcyBhIHNwb3J0IHBsYXllZCBiZXR3ZWVu
+      IHR3byB0ZWFtcyBvZiBlbGV2ZW4gcGxheWVycyB3aXRoIGEgc3BoZXJpY2FsIGJhbGwuIEljZSBob2NrZXkgaXMgYSB0ZWFtIHNw
+      b3J0IHBsYXllZCBvbiBpY2UsIGluIHdoaWNoIHNrYXRlcnMgdXNlIHN0aWNrcyB0byBkaXJlY3QgYSBwdWNrIGludG8gdGhlIG9w
+      cG9zaW5nIHRlYW0ncyBnb2FsLiBCYXNrZXRiYWxsIGlzIGEgdGVhbSBzcG9ydCBpbiB3aGljaCB0d28gdGVhbXMgb2YgZml2ZSBw
+      bGF5ZXJzIHRyeSB0byBzY29yZSBwb2ludHMgYnkgdGhyb3dpbmcgYSBiYWxsIHRocm91Z2ggdGhlIHRvcCBvZiBhIGJhc2tldGJh
+      bGwgaG9vcCB3aGlsZSBmb2xsb3dpbmcgYSBzZXQgb2YgcnVsZXMuPC90ZXh0Pg0KICA8dGV4dCBpZD0ic3RydWN0dXJlIiBmb3Jt
+      YXQ9IiM7IzsjIiBkZXNjcmlwdGlvbj0iVGhpcyBpcyBhbiBleHByZXNzaW9uIj5Tb2NjZXI7SWNlIGhvY2tleTtCYXNrZXRiYWxs
+      PC90ZXh0Pg0KICA8dGV4dCBpZD0iZGVmaW5lZCIgZGVzY3JpcHRpb249IlRoaXMgaXMgc3RydWN0dXJlZCB0ZXh0Ij5zb2NjZXI7
+      U29jY2VyOzEwOzE7RW5nbGFuZDtTb2NjZXIgaXMgYSBzcG9ydCBwbGF5ZWQgYmV0d2VlbiB0d28gdGVhbXMgb2YgZWxldmVuIHBs
+      YXllcnMgd2l0aCBhIHNwaGVyaWNhbCBiYWxsLg0KaG9ja2V5O0ljZSBob2NrZXk7NTsxO0NhbmFkYTtJY2UgaG9ja2V5IGlzIGEg
+      dGVhbSBzcG9ydCBwbGF5ZWQgb24gaWNlLCBpbiB3aGljaCBza2F0ZXJzIHVzZSBzdGlja3MgdG8gZGlyZWN0IGEgcHVjayBpbnRv
+      IHRoZSBvcHBvc2luZyB0ZWFtJ3MgZ29hbC4NCmJhc2tldGJhbGw7QmFza2V0YmFsbDs1OzA7VW5pdGVkIFN0YXRlcztCYXNrZXRi
+      YWxsIGlzIGEgdGVhbSBzcG9ydCBpbiB3aGljaCB0d28gdGVhbXMgb2YgZml2ZSBwbGF5ZXJzIHRyeSB0byBzY29yZSBwb2ludHMg
+      YnkgdGhyb3dpbmcgYSBiYWxsIHRocm91Z2ggdGhlIHRvcCBvZiBhIGJhc2tldGJhbGwgaG9vcCB3aGlsZSBmb2xsb3dpbmcgYSBz
+      ZXQgb2YgcnVsZXMuDQogIDwvdGV4dD4NCjwvdGV4dHM+DQo=
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

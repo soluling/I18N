@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="1B8C7384-02EF-4B16-B6BF-F382A4C9511E" created="20181125T185432Z" lastmodified="20200316T233446Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TIniSource" name="AnsiCR.ini" fullpath="D:\NT\Deploy\Samples\Ini\NewLine\AnsiCR.ini" original="en" encoding="windows-1252" newline="nlCr">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>One</value>
+        <lang id="fi" rw="0" time="20181125T185437Z">Yksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>Two</value>
+        <lang id="fi" rw="0" time="20181125T185440Z">Kaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Ångström</value>
+        <lang id="fi" rw="0" time="20181125T185441Z">Ångström</lang>
+      </row>
+    </item>
+    <item name="another">
+      <row id="four" si="4">
+        <value>Four</value>
+        <lang id="fi" rw="0" time="20181125T185444Z">Neljä</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="95098867-5C2B-482A-BD8D-D3F01D19D72C" created="20161215T140209Z" lastmodified="20200316T215834Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="Inline.xml" fullpath="D:\NT\Deploy\Samples\XML\Inline\Inline.xml" original="en-US" encoding="utf-8" bom="1">
+    <xml encoding="utf-8">
+      <root name="simple">
+        <tag name="plain"/>
+        <tag name="inline"/>
+      </root>
+    </xml>
+    <item name="simple">
+      <item name="plain">
+        <row id="value" si="1">This is a sample</row>
+      </item>
+      <item name="inline">
+        <row id="value" class="TTagRow" si="2" created="20180118T000755Z">This is a &lt;bold&gt;new&lt;/bold&gt; sample</row>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzaW1wbGU+DQogIDxwbGFpbj5UaGlzIGlzIGEgc2Ft
+      cGxlPC9wbGFpbj4NCiAgPGlubGluZT5UaGlzIGlzIGEgPGJvbGQ+bmV3PC9ib2xkPiBzYW1wbGU8L2lubGluZT4NCjwvc2ltcGxl
+      Pg0K
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="290075F8-5A1B-4247-B336-38BBF7EFEBAB" created="20180226T151928Z" lastmodified="20200316T230810Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TJsonSource" name="Sample.json" fullpath="D:\NT\Deploy\Samples\JSON\Escape\Sample.json" original="en" encoding="utf-8" bom="1">
+    <json encoding="utf-8"/>
+    <row id="one" changed="20180226T152155Z" si="1">
+      <value>One	Two</value>
+      <lang id="fi" rw="0" time="20180226T152205Z">Yksi	Kaksi</lang>
+    </row>
+    <row id="two" changed="20180226T152155Z" si="2">
+      <value>One\Two</value>
+      <lang id="fi" rw="0" time="20180226T152210Z">Yksi\Kaksi</lang>
+    </row>
+    <row id="three" changed="20180226T152155Z" si="3">
+      <value>One
+Two</value>
+      <lang id="fi" rw="0" time="20180226T152215Z">Yksi
+Kaksi</lang>
+    </row>
+    <row id="four" changed="20180226T152155Z" si="4">
+      <value>One</value>
+      <lang id="fi" rw="0" time="20180226T152217Z">Yksi</lang>
+    </row>
+    <data>
+      77u/ew0KICAib25lIjogIk9uZVx0VHdvIiwNCiAgInR3byI6ICJPbmVcXFR3byIsDQogICJ0aHJlZSI6ICJPbmVcclxuVHdvIiwN
+      CiAgImZvdXIiOiAiT25cdTAwNjUiDQp9
+    </data>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

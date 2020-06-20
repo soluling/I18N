@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="7B8BEFBA-59A2-418C-A05D-2339D1DF6EBA" created="20120127T172548Z" lastmodified="20200316T215941Z" version="1.0.714" stringid="4">
+  <lang id="de"/>
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <lang id="sv"/>
+  <lang id="en"/>
+  <node class="TXmlSource" name="FlatNoNeutral.xml" fullpath="D:\NT\Deploy\Samples\XML\Multilingual\FlatNoNeutral.xml" original="de" encoding="utf-8" bom="1" multilingual="1">
+    <xml encoding="utf-8" languages="de;en;fi;ja"/>
+    <item name="items">
+      <item name="One" created="20200316T215934Z">
+        <row id="value" si="3">
+          <value>Eins</value>
+          <lang id="fi" st="2" or="3" rw="0">Yksi</lang>
+          <lang id="ja" st="2" or="3" rw="0">一</lang>
+          <lang id="sv" st="2" or="3" rw="0" time="20120128T141027Z">Ett</lang>
+          <lang id="en" st="2" or="3" rw="0" time="20120128T141255Z">One</lang>
+        </row>
+      </item>
+      <item name="Two" created="20200316T215934Z">
+        <row id="value" si="4">
+          <value>Zwei</value>
+          <lang id="fi" st="2" or="3" rw="0">Kaksi</lang>
+          <lang id="ja" st="2" or="3" rw="0">二</lang>
+          <lang id="sv" st="2" or="3" rw="0" time="20120128T141029Z">Två</lang>
+          <lang id="en" st="2" or="3" rw="0" time="20120128T141257Z">Two</lang>
+        </row>
+      </item>
+    </item>
+    <configurations>
+      <configuration name="Default" items="[oiLocalized]"/>
+    </configurations>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxpdGVtcz4NCiAgPHZhbHVlIHhtbDpsYW5nPSJlbiIg
+      aWQ9Ik9uZSI+T25lPC92YWx1ZT4NCiAgPHZhbHVlIHhtbDpsYW5nPSJmaSIgaWQ9Ik9uZSI+WWtzaTwvdmFsdWU+DQogIDx2YWx1
+      ZSB4bWw6bGFuZz0iZGUiIGlkPSJPbmUiPkVpbnM8L3ZhbHVlPg0KICA8dmFsdWUgeG1sOmxhbmc9ImphIiBpZD0iT25lIj7kuIA8
+      L3ZhbHVlPg0KICA8dmFsdWUgeG1sOmxhbmc9ImVuIiBpZD0iVHdvIj5Ud288L3ZhbHVlPg0KICA8dmFsdWUgeG1sOmxhbmc9ImZp
+      IiBpZD0iVHdvIj5LYWtzaTwvdmFsdWU+DQogIDx2YWx1ZSB4bWw6bGFuZz0iZGUiIGlkPSJUd28iPlp3ZWk8L3ZhbHVlPg0KICA8
+      dmFsdWUgeG1sOmxhbmc9ImphIiBpZD0iVHdvIj7kuow8L3ZhbHVlPg0KPC9pdGVtcz4NCg==
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

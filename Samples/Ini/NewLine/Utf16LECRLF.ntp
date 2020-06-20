@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="CC1ADA4C-DC1E-4C6C-BB45-57151C1E7274" created="20181125T190239Z" lastmodified="20200316T233353Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Utf16LECRLF.ini" fullpath="D:\NT\Deploy\Samples\Ini\NewLine\Utf16LECRLF.ini" original="en" encoding="unicode" bom="1">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>One</value>
+        <lang id="fi" or="5" rw="0" time="20181125T190246Z">Yksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>Two</value>
+        <lang id="fi" or="5" rw="0" time="20181125T190246Z">Kaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Ångström</value>
+        <lang id="fi" or="5" rw="0" time="20181125T190246Z">Ångström</lang>
+      </row>
+    </item>
+    <item name="another">
+      <row id="four" si="4">
+        <value>Four</value>
+        <lang id="fi" or="5" rw="0" time="20181125T190246Z">Neljä</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

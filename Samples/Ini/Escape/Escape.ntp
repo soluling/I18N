@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="5A06DC90-A085-4F31-9685-8345F58D7407" created="20180221T012919Z" lastmodified="20200316T232809Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Escape.ini" fullpath="D:\NT\Deploy\Samples\Ini\Escape\Escape.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>OneTwo</value>
+        <lang id="fi" rw="0" time="20180221T012927Z">YksiKaksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>One
+Two</value>
+        <lang id="fi" rw="0" time="20180221T012927Z">YksiKaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>One
+Two</value>
+        <lang id="fi" rw="0" time="20180221T012927Z">YksiKaksi</lang>
+      </row>
+      <row id="four" si="4">
+        <value>One
+Two</value>
+        <lang id="fi" rw="0" time="20180221T012927Z">YksiKaksi</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

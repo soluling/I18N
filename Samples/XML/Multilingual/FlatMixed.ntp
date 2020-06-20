@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4DBCB5F6-E8C0-439B-8A10-F79589D95217" created="20120128T095137Z" lastmodified="20200316T220007Z" version="1.0.714" stringid="4">
+  <lang id="de"/>
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <node class="TXmlSource" name="FlatMixed.xml" fullpath="D:\NT\Deploy\Samples\XML\Multilingual\FlatMixed.xml" original="en" encoding="utf-8" bom="1" multilingual="1">
+    <xml encoding="utf-8" languages=";de;en;fi;ja"/>
+    <item name="items">
+      <item name="One" created="20200316T220001Z">
+        <row id="value" si="3">
+          <value>One</value>
+          <lang id="de" st="2" or="3" rw="0">Eins</lang>
+          <lang id="fi" st="2" or="3" rw="0">Yksi</lang>
+          <lang id="ja" st="2" or="3" rw="0">一</lang>
+        </row>
+      </item>
+      <item name="Two" created="20200316T220001Z">
+        <row id="value" si="4">
+          <value>Two</value>
+          <lang id="de" st="2" or="3" rw="0">Zwei</lang>
+          <lang id="fi" st="2" or="3" rw="0">Kaksi</lang>
+          <lang id="ja" st="2" or="3" rw="0">二</lang>
+        </row>
+      </item>
+    </item>
+    <configurations>
+      <configuration name="Default" items="[oiLocalized]"/>
+    </configurations>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxpdGVtcz4NCiAgPHZhbHVlIGlkPSJPbmUiPk9uZTwv
+      dmFsdWU+DQogIDx2YWx1ZSB4bWw6bGFuZz0iZmkiIGlkPSJPbmUiPllrc2k8L3ZhbHVlPg0KICA8dmFsdWUgeG1sOmxhbmc9ImRl
+      IiBpZD0iT25lIj5FaW5zPC92YWx1ZT4NCiAgPHZhbHVlIHhtbDpsYW5nPSJqYSIgaWQ9Ik9uZSI+5LiAPC92YWx1ZT4NCiAgPHZh
+      bHVlIHhtbDpsYW5nPSJlbiIgaWQ9IlR3byI+VHdvPC92YWx1ZT4NCiAgPHZhbHVlIHhtbDpsYW5nPSJmaSIgaWQ9IlR3byI+S2Fr
+      c2k8L3ZhbHVlPg0KICA8dmFsdWUgeG1sOmxhbmc9ImRlIiBpZD0iVHdvIj5ad2VpPC92YWx1ZT4NCiAgPHZhbHVlIHhtbDpsYW5n
+      PSJqYSIgaWQ9IlR3byI+5LqMPC92YWx1ZT4NCjwvaXRlbXM+DQo=
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

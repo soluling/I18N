@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="403DFBC9-5DD6-4606-BB19-E82B85603A5F" created="20170726T002818Z" lastmodified="20200316T233731Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Ini\Unused\sample.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="Values">
+      <row id="two" si="2" scannedcomment="one=One">
+        <value>Two</value>
+        <lang id="fi" st="4" time="20170726T002828Z">Kaksi</lang>
+      </row>
+      <row id="five" si="3">
+        <value>Five</value>
+        <lang id="fi" st="4" time="20170726T002830Z">Viisi</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="5B29AE07-C332-41D1-A8BF-B7A3620D167C" created="20181125T184915Z" lastmodified="20200316T232638Z" version="1.0.714" stringid="3">
+  <lang id="en"/>
+  <node class="TIniSource" name="Finnish.ini" fullpath="D:\NT\Deploy\Samples\Ini\NonEnglish\Finnish.ini" original="fi" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>Tämä on esimerkki</value>
+        <lang id="en" rw="0" tm="1" time="20181125T184937Z">This is an example</lang>
+      </row>
+      <row id="two" si="2">
+        <value>Helsinki on Suomen pääkaupunki</value>
+        <lang id="en" rw="0" tm="1" time="20181125T184946Z">Helsinki is the capital of Finland</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Kesällä on valoisaa</value>
+        <lang id="en" rw="0" tm="1" time="20181125T185034Z">Summer is bright</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

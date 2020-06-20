@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="7532484D-42EB-49BE-8B13-28976D3326CA" created="20120128T112853Z" lastmodified="20200316T215955Z" version="1.0.714" stringid="4">
+  <lang id="de"/>
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <lang id="sv"/>
+  <node class="TXmlSource" name="FlatNoLang.xml" fullpath="D:\NT\Deploy\Samples\XML\Multilingual\FlatNoLang.xml" original="en" encoding="utf-8" bom="1">
+    <xml encoding="utf-8"/>
+    <item name="items">
+      <item name="One" created="20200316T215946Z">
+        <row id="value" si="3">
+          <value>One</value>
+          <lang id="de" st="2" or="3" rw="0" time="20120128T112908Z">Eins</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20120128T123327Z">Yksi</lang>
+          <lang id="ja" st="2" or="3" rw="0" time="20120128T123342Z">一</lang>
+          <lang id="sv" st="2" or="3" rw="0" time="20120128T140758Z">Ett</lang>
+        </row>
+      </item>
+      <item name="Two" created="20200316T215946Z">
+        <row id="value" si="4">
+          <value>Two</value>
+          <lang id="de" st="2" or="3" rw="0" time="20120128T112958Z">Zwei</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20120128T123330Z">Kaksi</lang>
+          <lang id="ja" st="2" or="3" rw="0" time="20120128T123347Z">二</lang>
+          <lang id="sv" st="2" or="3" rw="0" time="20120128T140801Z">Två</lang>
+        </row>
+      </item>
+    </item>
+    <configurations>
+      <configuration name="Default" dir="." items="[oiLocalized,oiMultilingual]"/>
+    </configurations>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxpdGVtcz4NCiAgPHZhbHVlIGlkPSJPbmUiPk9uZTwv
+      dmFsdWU+DQogIDx2YWx1ZSBpZD0iVHdvIj5Ud288L3ZhbHVlPg0KPC9pdGVtcz4=
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

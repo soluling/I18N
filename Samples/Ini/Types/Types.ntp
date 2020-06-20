@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C821052D-7DCC-4B55-A1CD-A6506F4CB6F3" created="20140322T050354Z" lastmodified="20200316T233718Z" version="1.0.714" stringid="7">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Types.ini" fullpath="D:\NT\Deploy\Samples\Ini\Types\Types.ini" original="en" encoding="utf-8">
+    <ini detectstringformat="1"/>
+    <datatypes>
+      <item class="TBooleanData" scan="dsYes"/>
+      <item class="TFloatData" scan="dsYes"/>
+      <item class="TIntegerData" scan="dsYes"/>
+    </datatypes>
+    <item name="Values">
+      <row id="string1" si="1">String</row>
+      <row id="string2" si="2">This is a sample</row>
+      <row id="expression" si="3">One;Two;Three</row>
+      <row id="boolean1" class="TIntegerRow" created="20181125T154756Z">0</row>
+      <row id="boolean2" class="TIntegerRow" created="20181125T154756Z">1</row>
+      <row id="boolean3" si="4" created="20200316T233520Z">true</row>
+      <row id="boolean4" si="5" created="20200316T233520Z">false</row>
+      <row id="boolean5" si="6" created="20200316T233520Z">yes</row>
+      <row id="boolean6" si="7" created="20200316T233520Z">no</row>
+      <row id="integer1" class="TIntegerRow" created="20181125T154756Z">10</row>
+      <row id="integer2" class="TIntegerRow" created="20181125T154756Z">-2</row>
+      <row id="float1" changed="20200316T233520Z" class="TFloatRow" created="20181125T154756Z">1.5</row>
+      <row id="float2" class="TFloatRow" created="20181125T154756Z">52000000000</row>
+      <row id="float3" changed="20200316T233520Z" class="TFloatRow" created="20181125T154756Z">-2.6E-12</row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

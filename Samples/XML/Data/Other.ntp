@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="6CF3F0DD-D322-45FB-970C-65770B6B33A1" created="20181126T015927Z" lastmodified="20200316T215720Z" version="1.0.714" stringid="16">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="Other.xml" fullpath="D:\NT\Deploy\Samples\XML\Data\Other.xml" original="en" encoding="utf-8" bom="1">
+    <xml encoding="utf-8"/>
+    <item name="datas">
+      <item name="plain">
+        <row id="=desciption" si="1" created="20181126T020652Z">Plain text</row>
+        <row id="value" si="2">This is a sample</row>
+      </item>
+      <item name="structure" created="20181126T021110Z">
+        <row id="=desciption" si="3">Expression</row>
+        <node class="TTextDataNode" name="value">
+          <text scanmethod="tsStructured" structure="#;#;#"/>
+          <row id="0" si="4">One</row>
+          <row id="1" si="5">Two</row>
+          <row id="2" si="6">Three</row>
+          <data>TwBuAGUAOwBUAHcAbwA7AFQAaAByAGUAZQA=</data>
+        </node>
+      </item>
+      <item name="script[0]">
+        <row id="=desciption" si="7">C code</row>
+        <node class="TScriptDataNode" name="@cdata" created="20181126T020652Z" encoding="unicode">
+          <row id="This is a sample" si="8">This is a sample</row>
+          <properties language="plCpp"/>
+          <data>
+            DQAKACAAIAAgACAAaQBmACAAKABpACAAPAAgADAAKQANAAoAIAAgACAAIAB7AA0ACgAgACAAIAAgACAAIABzAHQAcgAgAD0AIAAi
+            AFQAaABpAHMAIABpAHMAIABhACAAcwBhAG0AcABsAGUAIgA7ACAALwAvAGwAbwBjAA0ACgAgACAAIAAgAH0ADQAKACAAIAA=
+          </data>
+        </node>
+      </item>
+      <item name="script[1]">
+        <row id="=desciption" si="9">C++ code</row>
+        <node class="TScriptDataNode" name="value" created="20181126T020652Z" encoding="unicode">
+          <row id="This is a sample" si="10">This is a sample</row>
+          <properties language="plCpp"/>
+          <data>
+            DQAKACAAIAAgACAAaQBmACAAKABpACAAPAAgADAAKQANAAoAIAAgACAAIAB7AA0ACgAgACAAIAAgACAAIABzAHQAcgAgAD0AIAAi
+            AFQAaABpAHMAIABpAHMAIABhACAAcwBhAG0AcABsAGUAIgA7ACAALwAvAEwATwBDAA0ACgAgACAAIAAgAH0ADQAKACAAIAA=
+          </data>
+        </node>
+      </item>
+      <item name="script[2]">
+        <row id="=desciption" si="11">JavaScript code</row>
+        <node class="TScriptDataNode" name="value" created="20181126T020652Z" encoding="unicode">
+          <row id="message" si="12">message</row>
+          <row id="circle" si="13">circle</row>
+          <row id="r" si="14">r</row>
+          <row id="Click circle to make it larger" si="15">Click circle to make it larger</row>
+          <row id="Click circle to make it smaller" si="16">Click circle to make it smaller</row>
+          <data>
+            DQAKACAAIAAgACAAZgB1AG4AYwB0AGkAbwBuACAAbQBlAHMAcwBhAGcAZQBfAGwAbwBhAGQAKABlAHYAdAApACAADQAKACAAIAAg
+            ACAAewANAAoAIAAgACAAIAAgACAAdgBhAHIAIABtAGUAcwBzAGEAZwBlACAAPQAgAGQAbwBjAHUAbQBlAG4AdAAuAGcAZQB0AEUA
+            bABlAG0AZQBuAHQAQgB5AEkAZAAoACcAbQBlAHMAcwBhAGcAZQAnACkAOwANAAoAIAAgACAAIAAgACAAdgBhAHIAIABjAGkAcgBj
+            AGwAZQAgAD0AIABkAG8AYwB1AG0AZQBuAHQALgBnAGUAdABFAGwAZQBtAGUAbgB0AEIAeQBJAGQAKAAnAGMAaQByAGMAbABlACcA
+            KQA7AA0ACgAgACAAIAAgACAAIAB2AGEAcgAgAGMAdQByAHIAZQBuAHQAUgBhAGQAaQB1AHMAIAA9ACAAYwBpAHIAYwBsAGUALgBn
+            AGUAdABBAHQAdAByAGkAYgB1AHQAZQAoACIAcgAiACkAOwANAAoADQAKACAAIAAgACAAIAAgAGkAZgAgACgAYwB1AHIAcgBlAG4A
+            dABSAGEAZABpAHUAcwAgAD0APQAgADEAMAAwACkADQAKACAAIAAgACAAIAAgACAAIABtAGUAcwBzAGEAZwBlAC4AdABlAHgAdABD
+            AG8AbgB0AGUAbgB0ACAAPQAgACIAQwBsAGkAYwBrACAAYwBpAHIAYwBsAGUAIAB0AG8AIABtAGEAawBlACAAaQB0ACAAbABhAHIA
+            ZwBlAHIAIgA7ACAAIAAvAC8AIABsAG8AYwANAAoAIAAgACAAIAAgACAAZQBsAHMAZQANAAoAIAAgACAAIAAgACAAIAAgAG0AZQBz
+            AHMAYQBnAGUALgB0AGUAeAB0AEMAbwBuAHQAZQBuAHQAIAA9ACAAIgBDAGwAaQBjAGsAIABjAGkAcgBjAGwAZQAgAHQAbwAgAG0A
+            YQBrAGUAIABpAHQAIABzAG0AYQBsAGwAZQByACIAOwAgACAALwAvACAAbABvAGMADQAKACAAIAAgACAAfQANAAoAIAAgAA==
+          </data>
+        </node>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxkYXRhcz4NCiAgPHBsYWluIGRlc2NpcHRpb249IlBs
+      YWluIHRleHQiPlRoaXMgaXMgYSBzYW1wbGU8L3BsYWluPg0KDQogIDxzdHJ1Y3R1cmUgZGVzY2lwdGlvbj0iRXhwcmVzc2lvbiIg
+      Zm9ybWF0PSIjOyM7IyI+T25lO1R3bztUaHJlZTwvc3RydWN0dXJlPg0KDQogIDxzY3JpcHQgZGVzY2lwdGlvbj0iQyBjb2RlIiB0
+      eXBlPSJ0ZXh0L2MiPjwhW0NEQVRBWw0KICAgIGlmIChpIDwgMCkNCiAgICB7DQogICAgICBzdHIgPSAiVGhpcyBpcyBhIHNhbXBs
+      ZSI7IC8vbG9jDQogICAgfQ0KICBdXT48L3NjcmlwdD4NCg0KICA8c2NyaXB0IGRlc2NpcHRpb249IkMrKyBjb2RlIiB0eXBlPSJ0
+      ZXh0L2NwcCI+DQogICAgaWYgKGkgJmx0OyAwKQ0KICAgIHsNCiAgICAgIHN0ciA9ICJUaGlzIGlzIGEgc2FtcGxlIjsgLy9MT0MN
+      CiAgICB9DQogIDwvc2NyaXB0Pg0KDQogIDxzY3JpcHQgZGVzY2lwdGlvbj0iSmF2YVNjcmlwdCBjb2RlIiB0eXBlPSJ0ZXh0L2ph
+      dmFzY3JpcHQiPg0KICAgIGZ1bmN0aW9uIG1lc3NhZ2VfbG9hZChldnQpIA0KICAgIHsNCiAgICAgIHZhciBtZXNzYWdlID0gZG9j
+      dW1lbnQuZ2V0RWxlbWVudEJ5SWQoJ21lc3NhZ2UnKTsNCiAgICAgIHZhciBjaXJjbGUgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJ
+      ZCgnY2lyY2xlJyk7DQogICAgICB2YXIgY3VycmVudFJhZGl1cyA9IGNpcmNsZS5nZXRBdHRyaWJ1dGUoInIiKTsNCg0KICAgICAg
+      aWYgKGN1cnJlbnRSYWRpdXMgPT0gMTAwKQ0KICAgICAgICBtZXNzYWdlLnRleHRDb250ZW50ID0gIkNsaWNrIGNpcmNsZSB0byBt
+      YWtlIGl0IGxhcmdlciI7ICAvLyBsb2MNCiAgICAgIGVsc2UNCiAgICAgICAgbWVzc2FnZS50ZXh0Q29udGVudCA9ICJDbGljayBj
+      aXJjbGUgdG8gbWFrZSBpdCBzbWFsbGVyIjsgIC8vIGxvYw0KICAgIH0NCiAgPC9zY3JpcHQ+DQo8L2RhdGFzPg0K
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4A8EE1B6-D080-445B-AA8F-0A101E8647FC" created="20140418T103336Z" lastmodified="20200316T233515Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TIniSource" name="String.ini" fullpath="D:\NT\Deploy\Samples\Ini\String\String.ini" original="en" encoding="utf-8">
+    <ini detectstringformat="1"/>
+    <item name="sample">
+      <row id="one" si="1">One</row>
+      <row id="two" si="2">Two</row>
+      <row id="hello" si="3">Hello world</row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

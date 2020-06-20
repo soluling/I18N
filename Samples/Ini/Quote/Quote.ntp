@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="8E48D241-C4A7-42E2-BF5C-79918866C370" created="20160803T202841Z" lastmodified="20200316T233504Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Quote.ini" fullpath="D:\NT\Deploy\Samples\Ini\Quote\Quote.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="simple">
+      <row id="one" si="1">
+        <value>This is the &quot;red&quot; sample</value>
+        <lang id="fi" time="20181125T183716Z">Tämä on &quot;punainen&quot; esimerkki</lang>
+      </row>
+      <row id="two" si="2">
+        <value>This is “another” sample</value>
+        <lang id="fi" time="20160804T145731Z">Tämä on ”toinen” esimerkki</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

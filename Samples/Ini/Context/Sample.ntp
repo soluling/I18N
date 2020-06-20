@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B91DE76E-A364-4DBB-BED2-1FB5EB73ABE8" created="20160921T003933Z" lastmodified="20200316T232655Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Sample.ini" fullpath="D:\NT\Deploy\Samples\Ini\Context\Sample.ini" original="en-US" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="data">
+      <row id="one1" si="1" created="20181125T204714Z">
+        <value>One</value>
+        <lang id="fi" rw="0" time="20160921T013933Z">Yksi</lang>
+      </row>
+      <row id="two2" si="2" created="20181125T204714Z">
+        <value>Two</value>
+        <lang id="fi" rw="0" time="20160921T013939Z">Kaksi</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Three</value>
+        <lang id="fi" time="20160921T013945Z">Kolme</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<datas>
+  <plain desciption="Plain text">This is a sample</plain>
+
+  <structure desciption="Expression" format="#;#;#">One;Two;Three</structure>
+
+  <script desciption="C code" type="text/c"><![CDATA[
+    if (i < 0)
+    {
+      str = "This is a sample"; //loc
+    }
+  ]]></script>
+
+  <script desciption="C++ code" type="text/cpp">
+    if (i &lt; 0)
+    {
+      str = "This is a sample"; //LOC
+    }
+  </script>
+
+  <script desciption="JavaScript code" type="text/javascript">
+    function message_load(evt) 
+    {
+      var message = document.getElementById('message');
+      var circle = document.getElementById('circle');
+      var currentRadius = circle.getAttribute("r");
+
+      if (currentRadius == 100)
+        message.textContent = "Click circle to make it larger";  // loc
+      else
+        message.textContent = "Click circle to make it smaller";  // loc
+    }
+  </script>
+</datas>
