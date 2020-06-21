@@ -39,6 +39,7 @@ Soluling contains samples for the following platforms:
 - UWP (Universal Windows Platform)
 - Vue
 - WebVTT subtitles
+- Wix installer
 - Word
 - WPF (.NET)
 - Windows Forms (.NET)
