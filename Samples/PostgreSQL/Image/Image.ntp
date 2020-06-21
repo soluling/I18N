@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E065090A-EEA1-4C46-81F7-A2119063B4DA" created="20160908T131601Z" lastmodified="20181129T034316Z" version="1.0.268">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Images" original="en" encoding="utf-8" fields="[dtString,dtBinary]" hasunicodefields="1">
+    <database kind="TPostgreSqlDatabase" user="postgres" password="Mjg0MDg0OTQxRUI0RkE2RQ==" address="localhost" name="Image"/>
+    <tables>
+      <table name="public.images" method="dlRow" language="language">
+        <id name="id"/>
+        <field name="name" format="sfPlain" marked="1"/>
+        <field name="data" type="dtBinary" format="bfText" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="public.images" keyfields="id">
+      <node class="TDatabaseFieldNode" name="data">
+        <node class="TTextDataNode" name="0" created="20181129T034248Z">
+          <row id="value">D:/NT/Deploy/Samples/Common/64x64/flag_usa.png</row>
+          <data>RDovTlQvRGVwbG95L1NhbXBsZXMvQ29tbW9uLzY0eDY0L2ZsYWdfdXNhLnBuZw==</data>
+        </node>
+        <node class="TTextDataNode" name="1" created="20181129T034248Z">
+          <row id="value">D:/NT/Deploy/Samples/Common/64x64/car_sedan_blue.png</row>
+          <data>RDovTlQvRGVwbG95L1NhbXBsZXMvQ29tbW9uLzY0eDY0L2Nhcl9zZWRhbl9ibHVlLnBuZw==</data>
+        </node>
+        <node class="TTextDataNode" name="2" created="20181129T034248Z">
+          <row id="value">D:/NT/Deploy/Samples/Common/64x64/address_book.png</row>
+          <data>RDovTlQvRGVwbG95L1NhbXBsZXMvQ29tbW9uLzY0eDY0L2FkZHJlc3NfYm9vay5wbmc=</data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="name">
+        <row id="0" created="20181129T034248Z">
+          <value>Flag</value>
+          <lang id="fi" rw="0" time="20160908T131703Z">Lippu</lang>
+          <lang id="ja" rw="0" time="20130401T013412Z">羽田</lang>
+        </row>
+        <row id="1" created="20181129T034248Z">
+          <value>Car</value>
+          <lang id="fi" rw="0" time="20160908T131705Z">Auto</lang>
+          <lang id="ja" rw="0" time="20130401T013418Z">車</lang>
+        </row>
+        <row id="2" created="20181129T034248Z">
+          <value>Address book</value>
+          <lang id="fi" rw="0" time="20130401T004050Z">Osoitekirja</lang>
+          <lang id="ja" rw="0" time="20130401T013425Z">自称</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+</project>

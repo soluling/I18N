@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20160906T162506Z" lastmodified="20160906T162640Z">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="SPORTNOCASE.FDB" original="en" encoding="utf-8" casesensitive="0">
+    <database kind="TFirebirdDatabase" user="SYSDBA" password="MzU5M0JDNDhFRUNENjQ5RUU0" file="SPORTCASE.FDB"/>
+    <tables>
+      <table name="SPORT" method="dlRow" language="LANGUAGE">
+        <field name="NAME" format="sfPlain" marked="1"/>
+        <field name="ORIGIN" format="sfPlain" marked="1"/>
+        <field name="DESCRIPTION" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="SPORT" keyfields="ID;LANGUAGE">
+      <node class="TDatabaseFieldNode" name="DESCRIPTION">
+        <row id="0;en">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+      </node>
+      <node class="TDatabaseFieldNode" name="NAME">
+        <row id="0;en">Soccer</row>
+      </node>
+      <node class="TDatabaseFieldNode" name="ORIGIN">
+        <row id="0;en">England</row>
+      </node>
+    </node>
+  </node>
+</project>

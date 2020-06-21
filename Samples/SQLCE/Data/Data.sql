@@ -1,0 +1,7 @@
+CREATE TABLE Data
+(
+  Name NVARCHAR(50) NOT NULL,
+  Description NVARCHAR(100) NOT NULL,
+  Data IMAGE NOT NULL,
+  PRIMARY KEY(Name)
+)

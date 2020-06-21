@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="2FF09CF6-8578-40B1-8E48-23FC6ADD686D" created="20160911T211249Z" lastmodified="20181128T204042Z" version="1.0.268">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="fr"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="SportField" original="en" encoding="windows-1252" hasunicodefields="1">
+    <database kind="TSqlServerDatabase" address=".\SQLExpress" name="SportField"/>
+    <tables>
+      <table name="dbo.Sport" method="dlField">
+        <field name="Name" format="sfPlain">
+          <field name="Name_fi" lang="fi" format="sfPlain"/>
+          <field name="Name_de" lang="de" format="sfPlain"/>
+          <field name="Name_fr" lang="fr" format="sfPlain"/>
+          <field name="Name_ja" lang="ja" format="sfPlain"/>
+        </field>
+        <field name="Origin" format="sfPlain">
+          <field name="Origin_fi" lang="fi" format="sfPlain"/>
+          <field name="Origin_de" lang="de" format="sfPlain"/>
+          <field name="Origin_fr" lang="fr" format="sfPlain"/>
+          <field name="Origin_ja" lang="ja" format="sfPlain"/>
+        </field>
+        <field name="Description" format="sfPlain">
+          <field name="Description_fi" lang="fi" format="sfPlain"/>
+          <field name="Description_de" lang="de" format="sfPlain"/>
+          <field name="Description_fr" lang="fr" format="sfPlain"/>
+          <field name="Description_ja" lang="ja" format="sfPlain"/>
+        </field>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="dbo.Sport" created="20160912T041730Z" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T204038Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="1">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T204038Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="2">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T204038Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0">
+          <value>Soccer</value>
+          <lang id="fi">Jalkapallo</lang>
+          <lang id="de">Fußball</lang>
+          <lang id="fr">Football</lang>
+          <lang id="ja">サッカー</lang>
+        </row>
+        <row id="1">
+          <value>Ice hockey</value>
+          <lang id="fi">Jääkiekko</lang>
+          <lang id="de">Eishockey</lang>
+          <lang id="fr">Hockey sur glace</lang>
+          <lang id="ja">アイス ホッケー</lang>
+        </row>
+        <row id="2">
+          <value>Basketball</value>
+          <lang id="fi">Koripallo</lang>
+          <lang id="de">Basketball</lang>
+          <lang id="fr">Basket-ball</lang>
+          <lang id="ja">バスケット ボール</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0">
+          <value>England</value>
+          <lang id="fi">Englanti</lang>
+          <lang id="de">England</lang>
+          <lang id="fr">L’Angleterre</lang>
+          <lang id="ja">イギリス</lang>
+        </row>
+        <row id="1">
+          <value>Canada</value>
+          <lang id="fi">Kanada</lang>
+          <lang id="de">Kanada</lang>
+          <lang id="fr">Canada</lang>
+          <lang id="ja">カナダ</lang>
+        </row>
+        <row id="2">
+          <value>United States</value>
+          <lang id="fi">Yhdysvallat</lang>
+          <lang id="de">USA</lang>
+          <lang id="fr">États-Unis</lang>
+          <lang id="ja">米国</lang>
+        </row>
+      </node>
+    </node>
+    <configurations>
+      <configuration incompleterowaction="irUseOriginal"/>
+    </configurations>
+  </node>
+</project>

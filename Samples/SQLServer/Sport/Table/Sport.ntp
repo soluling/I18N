@@ -1,0 +1,66 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="EE738B0D-2B3F-4605-BDC7-A9B02250B862" created="20120211T192753Z" lastmodified="20181128T212556Z" version="1.0.268">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="fr"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="SportTable" original="en" encoding="windows-1252" hasunicodefields="1">
+    <database kind="TSqlServerDatabase" address=".\SQLExpress" name="SportTable"/>
+    <tables>
+      <table name="dbo.Sport" method="dlTable">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+        <table name="dbo.Sport_de" lang="de"/>
+        <table name="dbo.Sport_fr" lang="fr"/>
+        <table name="dbo.Sport_ja" lang="ja"/>
+        <table name="dbo.Sport_fi" lang="fi"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="dbo.Sport" created="20181128T212426Z" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description" created="20181128T212447Z">
+        <row id="0">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="1">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="2">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name" created="20181128T212447Z">
+        <row id="0">
+          <value>Soccer</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Jalkapallo</lang>
+        </row>
+        <row id="1">
+          <value>Ice hockey</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Jääkiekko</lang>
+        </row>
+        <row id="2">
+          <value>Basketball</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Koripallo</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin" created="20181128T212447Z">
+        <row id="0">
+          <value>England</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Englanti</lang>
+        </row>
+        <row id="1">
+          <value>Canada</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Kanada</lang>
+        </row>
+        <row id="2">
+          <value>United States</value>
+          <lang id="fi" or="5" rw="0" time="20181128T212552Z">Yhdysvallat</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+</project>

@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20140207064030" lastmodified="20140207064041">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Multiple.fdb" original="en" encoding="windows-1252" tablenames="LOCALIZE">
+    <database kind="TFirebirdDatabase" user="SYSDBA" password="MzU5M0JDNDhFRUNENjQ5RUU0" file="Multiple.fdb"/>
+    <tables>
+      <table name="LOCALIZE" method="dlRow" language="LANGUAGE">
+        <field name="SPORT" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="LOCALIZE" keyfields="ID;LANGUAGE">
+      <node class="TDatabaseFieldNode" name="SPORT">
+        <row id="0;en">Soccer</row>
+        <row id="1;en">Ice hockey</row>
+        <row id="2;en">Basketball</row>
+      </node>
+    </node>
+  </node>
+</project>

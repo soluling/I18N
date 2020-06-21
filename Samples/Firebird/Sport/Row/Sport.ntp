@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20160903T135148Z" lastmodified="20160911T003550Z">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="fr"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Sport.fdb" original="en" encoding="windows-1252" hasunicodefields="1">
+    <database kind="TFirebirdDatabase" user="SYSDBA" password="MzU5M0JDNDhFRUNENjQ5RUU0" file="Sport.fdb"/>
+    <tables>
+      <table name="SPORT" method="dlRow" language="LANGUAGE">
+        <field name="NAME" format="sfPlain" marked="1"/>
+        <field name="ORIGIN" format="sfPlain" marked="1"/>
+        <field name="DESCRIPTION" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="SPORT" keyfields="ID;LANGUAGE">
+      <node class="TDatabaseFieldNode" name="DESCRIPTION">
+        <row id="0;en">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Jalkapallo on peli, jossa kaksi 11-henkistä joukkuetta pelaa pallolla.</lang>
+        </row>
+        <row id="1;en">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Jääkiekko on jäällä pelattava joukkuepeli, jossa luistelijat yrittävät mailalla saada kiekon vastapuolen maaliin.</lang>
+        </row>
+        <row id="2;en">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Koripallo on joukkuepeli, jossa kaksi viisihenkistä joukkuetta yrittää heittää palloa vastapuolen koriin noudattaen tiettyjä sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="NAME">
+        <row id="0;en">
+          <value>Soccer</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Jalkapallo</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">Fußball</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">Football</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">サッカー</lang>
+        </row>
+        <row id="1;en">
+          <value>Ice hockey</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Jääkiekko</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">Eishockey</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">Hockey sur glace</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">アイス ホッケー</lang>
+        </row>
+        <row id="2;en">
+          <value>Basketball</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Koripallo</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">Basketball</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">Basket-ball</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">バスケット ボール</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="ORIGIN">
+        <row id="0;en">
+          <value>England</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Englanti</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">England</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">L’Angleterre</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">イギリス</lang>
+        </row>
+        <row id="1;en">
+          <value>Canada</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Kanada</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">Kanada</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">Canada</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">カナダ</lang>
+        </row>
+        <row id="2;en">
+          <value>United States</value>
+          <lang id="fi" origin="5" review="0" time="20160910T185247Z">Yhdysvallat</lang>
+          <lang id="de" origin="5" review="0" time="20160910T185358Z">USA</lang>
+          <lang id="fr" origin="5" review="0" time="20160910T185418Z">États-Unis</lang>
+          <lang id="ja" origin="5" review="0" time="20160910T185429Z">米国</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+</project>
