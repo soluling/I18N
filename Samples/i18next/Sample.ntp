@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F2CB98A9-8B31-4F50-A9D9-C411D6A2E6DA" created="20180514T133354Z" lastmodified="20200316T233933Z" version="1.0.714" stringid="16">
+  <lang id="fi"/>
+  <node class="Ti18nextSource" name="Sample.json" fullpath="D:\NT\Deploy\Samples\i18next\Sample.json" original="en" encoding="utf-8">
+    <row id="key" si="1" created="20190419T225715Z">
+      <value>value</value>
+      <lang id="fi" st="4" rw="0" time="20190419T225725Z">arvo</lang>
+    </row>
+    <row id="keyNesting" si="2" created="20190419T225715Z">reuse $t(keyDeep.inner)</row>
+    <row id="keyInterpolate" class="TPatternRow" si="3" created="20190419T225715Z">replace this {value}</row>
+    <row id="keyInterpolateUnescaped" class="TPatternRow" si="4" created="20190419T225715Z">replace this {- value}</row>
+    <row id="keyInterpolateWithFormatting" class="TPatternRow" si="5" created="20190419T225715Z">replace this {value, format}</row>
+    <row id="keyContext_male" si="6" created="20190419T225715Z">the male variant</row>
+    <row id="keyContext_female" si="7" created="20190419T225715Z">the female variant</row>
+    <row id="keyPluralSimple" si="8" created="20190419T225715Z">the singular</row>
+    <row id="keyPluralSimple_plural" si="9" created="20190419T225715Z">the plural</row>
+    <row id="keyPluralMultipleEgArabic_0" si="10" created="20190419T225715Z">the plural form 0</row>
+    <row id="keyPluralMultipleEgArabic_1" si="11" created="20190419T225715Z">the plural form 1</row>
+    <row id="keyPluralMultipleEgArabic_2" si="12" created="20190419T225715Z">the plural form 2</row>
+    <row id="keyPluralMultipleEgArabic_3" si="13" created="20190419T225715Z">the plural form 3</row>
+    <row id="keyPluralMultipleEgArabic_4" si="14" created="20190419T225715Z">the plural form 4</row>
+    <row id="keyPluralMultipleEgArabic_5" si="15" created="20190419T225715Z">the plural form 5</row>
+    <item class="TJsonResourceComponent" name="keyDeep" created="20190424T155641Z">
+      <row id="inner" si="16">
+        <value>value</value>
+        <lang id="fi" st="2" rw="0" time="20190419T225725Z">arvo</lang>
+      </row>
+    </item>
+    <data>
+      ew0KICAia2V5IjogInZhbHVlIiwNCiAgImtleURlZXAiOiB7DQogICAgImlubmVyIjogInZhbHVlIg0KICB9LA0KICAia2V5TmVz
+      dGluZyI6ICJyZXVzZSAkdChrZXlEZWVwLmlubmVyKSIsDQogICJrZXlJbnRlcnBvbGF0ZSI6ICJyZXBsYWNlIHRoaXMge3t2YWx1
+      ZX19IiwNCiAgImtleUludGVycG9sYXRlVW5lc2NhcGVkIjogInJlcGxhY2UgdGhpcyB7ey0gdmFsdWV9fSIsDQogICJrZXlJbnRl
+      cnBvbGF0ZVdpdGhGb3JtYXR0aW5nIjogInJlcGxhY2UgdGhpcyB7e3ZhbHVlLCBmb3JtYXR9fSIsDQogICJrZXlDb250ZXh0X21h
+      bGUiOiAidGhlIG1hbGUgdmFyaWFudCIsDQogICJrZXlDb250ZXh0X2ZlbWFsZSI6ICJ0aGUgZmVtYWxlIHZhcmlhbnQiLA0KICAi
+      a2V5UGx1cmFsU2ltcGxlIjogInRoZSBzaW5ndWxhciIsDQogICJrZXlQbHVyYWxTaW1wbGVfcGx1cmFsIjogInRoZSBwbHVyYWwi
+      LA0KICAia2V5UGx1cmFsTXVsdGlwbGVFZ0FyYWJpY18wIjogInRoZSBwbHVyYWwgZm9ybSAwIiwNCiAgImtleVBsdXJhbE11bHRp
+      cGxlRWdBcmFiaWNfMSI6ICJ0aGUgcGx1cmFsIGZvcm0gMSIsDQogICJrZXlQbHVyYWxNdWx0aXBsZUVnQXJhYmljXzIiOiAidGhl
+      IHBsdXJhbCBmb3JtIDIiLA0KICAia2V5UGx1cmFsTXVsdGlwbGVFZ0FyYWJpY18zIjogInRoZSBwbHVyYWwgZm9ybSAzIiwNCiAg
+      ImtleVBsdXJhbE11bHRpcGxlRWdBcmFiaWNfNCI6ICJ0aGUgcGx1cmFsIGZvcm0gNCIsDQogICJrZXlQbHVyYWxNdWx0aXBsZUVn
+      QXJhYmljXzUiOiAidGhlIHBsdXJhbCBmb3JtIDUiDQp9
+    </data>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
