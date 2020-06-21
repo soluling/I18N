@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="326C56D1-2DAD-4AB7-8208-D2985D8C3CE3" created="20160524T144438Z" lastmodified="20200316T234439Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Product.xlsx" fullpath="D:\NT\Deploy\Samples\Excel\Xlsx\Product\Product.xlsx" original="en">
+    <row id="milk[1]" si="1">
+      <value>Skim milk</value>
+      <lang id="fi" time="20160524T144451Z">Rasvaton maito</lang>
+    </row>
+    <row id="milk[2]" changed="20200316T234438Z" class="TFloatRow" st="2">
+      <value>1.15</value>
+      <prev>0</prev>
+      <lang id="fi" st="3" invalidated="1" time="20160524T144456Z">0</lang>
+    </row>
+    <row id="milk[3]" class="TBooleanRow">
+      <value>False</value>
+      <lang id="fi" time="20160524T144502Z">True</lang>
+    </row>
+    <row id="milk[4]" class="TIntegerRow">
+      <value>1</value>
+      <lang id="fi" time="20160524T144505Z">2</lang>
+    </row>
+    <row id="milk[5]" si="2">
+      <value>A</value>
+      <lang id="fi" time="20160524T144506Z">B</lang>
+    </row>
+    <definition null="NullEdit" sheet="Sheet1" range="A1:F1">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+      <field type="dfValue" format="sfFloat"/>
+      <field type="dfValue" format="sfBoolean"/>
+      <field type="dfValue" format="sfInteger"/>
+      <field type="dfValue"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

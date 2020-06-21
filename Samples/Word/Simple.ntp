@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="26382042-9E4A-481A-9D7F-F16F24B699E8" created="20190630T044615Z" lastmodified="20190705T161659Z" version="1.0.455" stringid="11">
+  <lang id="fi"/>
+  <node class="TWordSource" name="Simple.docx" fullpath="D:\NT\Deploy\Samples\Word\Simple.docx" original="en" onlyids="1">
+    <node class="TWordDocumentNode" name="document" created="20190705T011524Z">
+      <row id="4B487598" si="6">
+        <value>Hello</value>
+        <lang id="fi" rw="0" time="20190705T011626Z">Moi</lang>
+      </row>
+      <row id="35D4352A" si="7">
+        <value>This is a sample.</value>
+        <lang id="fi" rw="0" time="20190705T011634Z">Tämä on esimerkki.</lang>
+      </row>
+      <row id="01AADBF3" class="TTagRow" si="8">
+        <value>This is &lt;b&gt;another&lt;/b&gt; sample.</value>
+        <lang id="fi" rw="0" time="20190705T011647Z">Tämä on &lt;b&gt;toinen&lt;/b&gt; esimerkki.</lang>
+      </row>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Amazon" type="TAmazonTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Yandex" type="TYandexTranslate"/>
+    </shared>
+  </mt>
+</project>

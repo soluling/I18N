@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="0818FE1B-921E-48AA-864E-103C986C6BA8" created="20181127T013256Z" lastmodified="20200316T234338Z" version="1.0.714" stringid="7">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Comment.ods" fullpath="D:\NT\Deploy\Samples\Excel\Ods\Comment\Comment.ods" original="en">
+    <row id="Context" si="1" scannedcomment="Comment">Value</row>
+    <row id="hello" si="2" scannedcomment="The famous programming sample string">Hello world</row>
+    <row id="difficult" si="3" scannedcomment="This is difficult">This is hard</row>
+    <row id="firm" si="4" scannedcomment="This is difficult">This is hard</row>
+    <row id="one" si="5">One</row>
+    <row id="two" si="6">Two</row>
+    <row id="three" si="7">Three</row>
+    <definition sheet="Sheet1" range="A1:C">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+      <field type="dfComment"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

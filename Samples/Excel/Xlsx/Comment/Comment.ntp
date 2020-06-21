@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4B7C4F1B-CFDD-44BC-AA93-9D442690289D" created="20140319T075747Z" lastmodified="20200316T234429Z" version="1.0.714" stringid="6">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Comment.xlsx" fullpath="D:\NT\Deploy\Samples\Excel\Xlsx\Comment\Comment.xlsx" original="en">
+    <row id="hello" si="1" scannedcomment="The famous programming sample string">
+      <value>Hello world</value>
+      <lang id="fi" time="20140319T075800Z">Moi maailma</lang>
+    </row>
+    <row id="difficult" si="2" scannedcomment="This is difficult">
+      <value>This is hard</value>
+      <lang id="fi" time="20140319T075828Z">Tämä on vaikea</lang>
+    </row>
+    <row id="firm" si="3" scannedcomment="This is difficult">
+      <value>This is hard</value>
+      <lang id="fi" time="20140319T075818Z">Tämä on kova</lang>
+    </row>
+    <row id="one" si="4">
+      <value>One</value>
+      <lang id="fi" time="20140319T075832Z">Yksi</lang>
+    </row>
+    <row id="two" si="5">
+      <value>Two</value>
+      <lang id="fi" time="20140319T075834Z">Kaksi</lang>
+    </row>
+    <row id="three" si="6">
+      <value>Three</value>
+      <lang id="fi" time="20140319T075836Z">Kolme</lang>
+    </row>
+    <definition sheet="Sheet1" range="A2:C7">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+      <field type="dfComment"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

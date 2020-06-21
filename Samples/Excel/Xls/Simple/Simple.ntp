@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="82F03BFC-9FE2-4A77-BC2F-2ECD59D87589" created="20140318T215855Z" lastmodified="20200316T234424Z" version="1.0.714" stringid="1">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Simple.xls" fullpath="D:\NT\Deploy\Samples\Excel\Xls\Simple\Simple.xls" original="en">
+    <row id="milk" si="1" created="20160524T143653Z">
+      <value>Skim milk</value>
+      <lang id="fi" time="20140318T215908Z">Rasvaton maito</lang>
+    </row>
+    <definition sheet="Sheet1" range="A1:B1">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

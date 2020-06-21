@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="BC892EAE-7091-4922-BD3C-F4F4904D870B" created="20181127T013215Z" lastmodified="20200316T234357Z" version="1.0.714" stringid="4">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Product.ods" fullpath="D:\NT\Deploy\Samples\Excel\Ods\Product\Product.ods" original="en">
+    <row id="milk[1]" si="1">Skim milk</row>
+    <row id="milk[2]" si="2">1.15</row>
+    <row id="milk[3]" class="TBooleanRow">False</row>
+    <row id="milk[4]" si="3">1</row>
+    <row id="milk[5]" si="4">A</row>
+    <definition sheet="Sheet1" range="A1:F">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+      <field type="dfValue"/>
+      <field type="dfValue" format="sfBoolean"/>
+      <field type="dfValue"/>
+      <field type="dfValue"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

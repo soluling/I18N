@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F5949972-8B98-476C-9116-59D2A17E0DDE" created="20140319T081021Z" lastmodified="20190705T231315Z" version="1.0.456" stringid="9">
+  <lang id="fi"/>
+  <node class="TExcelSource" name="Sport.xlsx" fullpath="D:\NT\Deploy\Samples\Excel\Xlsx\Sport\Sport.xlsx" original="en">
+    <row id="soccer[1]" changed="20140319T081143Z" si="1">
+      <value>Soccer</value>
+      <lang id="fi" time="20190705T231252Z">Jalkapallo</lang>
+    </row>
+    <row id="soccer[4]" si="2">
+      <value>England</value>
+      <lang id="fi" time="20190705T231252Z">Englanti</lang>
+    </row>
+    <row id="soccer[5]" si="3">
+      <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+      <lang id="fi" time="20190705T231252Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+    </row>
+    <row id="hockey[1]" si="4">
+      <value>Ice hockey</value>
+      <lang id="fi" time="20190705T231252Z">Jääkiekko</lang>
+    </row>
+    <row id="hockey[4]" si="5">
+      <value>Canada</value>
+      <lang id="fi" time="20190705T231252Z">Kanada</lang>
+    </row>
+    <row id="hockey[5]" si="6">
+      <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+      <lang id="fi" time="20190705T231252Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+    </row>
+    <row id="basketball[1]" changed="20140319T081143Z" si="7">
+      <value>Basketball</value>
+      <lang id="fi" time="20190705T231252Z">Koripallo</lang>
+    </row>
+    <row id="basketball[4]" si="8">
+      <value>United States</value>
+      <lang id="fi" time="20190705T231252Z">Yhdysvallat</lang>
+    </row>
+    <row id="basketball[5]" si="9">
+      <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+      <lang id="fi" time="20190705T231252Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+    </row>
+    <definition sheet="Sheet1" range="A1:F3">
+      <field type="dfContext"/>
+      <field type="dfValue"/>
+      <field type="dfIgnore" format="sfInteger"/>
+      <field type="dfIgnore" format="sfBoolean"/>
+      <field type="dfValue"/>
+      <field type="dfValue"/>
+    </definition>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Amazon" type="TAmazonTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Yandex" type="TYandexTranslate"/>
+    </shared>
+  </mt>
+</project>
