@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="CAE3C401-CB22-4DB0-A247-13ACCBE97FEA" created="20170901T000938Z" lastmodified="20200316T234517Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="SatelliteContract.csproj" fullpath="D:\NT\Deploy\Samples\DotNet\Signed\SatelliteContract\SatelliteContract.csproj" original="en-US" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU">
+    <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
+    <netproperties version="core20"/>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="HelloWorld" si="1">
+          <value>Hello World!</value>
+          <lang id="fi" or="4" rw="0" time="20170901T000952Z">Moi maailma!</lang>
+        </row>
+        <row id="Sample" si="2">
+          <value>This is a sample</value>
+          <lang id="fi" or="4" rw="0" time="20170901T000952Z">Tämä on esimerkki</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

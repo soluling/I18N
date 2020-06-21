@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="145D5952-B35D-4AF8-9D1A-0ECA55A08D1C" created="20170908T123701Z" lastmodified="20200316T234506Z" version="1.0.714" stringid="4">
+  <lang id="de"/>
+  <lang id="fi"/>
+  <node class="TAssemblySource" name="bin\Debug\netcoreapp2.0\Hello.dll" fullpath="D:\NT\Deploy\Samples\DotNet\Hello\bin\Debug\netcoreapp2.0\Hello.dll" original="en" availableresources="[nrResx,nrManifest,nrVersion,nrHardCodeStrings]">
+    <netproperties version="core20"/>
+    <node class="TNetResXFolder" name="ResX">
+      <node class="TResXNode" name="Hello.Properties.Resources.resources">
+        <row id="HelloWorld" si="1">
+          <value>Hello World!</value>
+          <lang id="de" st="4" or="4" rw="0" time="20170908T123717Z">Hallo Welt!</lang>
+          <lang id="fi" st="4" rw="0" time="20170909T211718Z">Moi maailma</lang>
+        </row>
+        <row id="Sample" si="2">
+          <value>This is a sample.</value>
+          <lang id="de" st="4" or="4" rw="0" time="20170908T123717Z">Dies ist ein Beispiel.</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20170908T123726Z">Tämä on esimerkki.</lang>
+        </row>
+        <row id="Time" class="TPatternRow" si="3">
+          <value>Time is {0}</value>
+          <lang id="de" st="4" or="4" rw="0" time="20170908T123718Z">Es ist {0}</lang>
+        </row>
+        <row id="Today" class="TPatternRow" si="4">
+          <value>Today is {0}</value>
+          <lang id="de" st="4" or="4" rw="0" time="20170908T123718Z">Heute ist {0}</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
