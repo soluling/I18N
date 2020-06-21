@@ -1,0 +1,36 @@
+﻿<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="8cm" height="5cm" viewBox="0 0 800 500">
+  <desc>A script sample</desc>
+
+  <script type="application/ecmascript"> <![CDATA[
+    function message_load(evt) 
+    {
+      var message = document.getElementById('message');
+      var circle = document.getElementById('circle');
+      var currentRadius = circle.getAttribute("r");
+
+      if (currentRadius  == 100)
+        message.textContent = "Click circle to make it larger";  // loc This message is shown when circle is small can it can be made larger
+      else
+        message.textContent = "Click circle to make it smaller";  // loc This message is shown when circle is large can it can be made smaller
+    }
+
+    function circle_click(evt) 
+    {
+      var circle = evt.target;
+      var currentRadius = circle.getAttribute("r");
+
+      if (currentRadius  == 100)
+        circle.setAttribute("r", currentRadius*2);
+      else
+        circle.setAttribute("r", currentRadius*0.5);
+
+      message_load(evt);
+    }
+  ]]> </script>
+
+  <rect x="1" y="1" width="798" height="498" fill="none" stroke="green"/>
+
+  <circle id="circle" cx="400" cy="225" r="100" fill="red" onclick="circle_click(evt)"/>
+
+  <text id="message" x="400" y="480" font-family="Verdana" font-size="35" text-anchor="middle" onload="message_load(evt)"/>
+</svg>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="EADF5768-AA53-4FBD-BEE6-B5D5A0D2110D" created="20181030T182156Z" lastmodified="20200316T183343Z" version="1.0.714" reviewcount="0" stringid="1">
+  <lang id="fi"/>
+  <node class="TTextSource" name="Simple.txt" fullpath="D:\NT\Deploy\Samples\Text\Simple\Simple.txt" original="en-US" encoding="windows-1250">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfIgnore" before="\t"/>
+        <field type="dfIgnore" before="\t" after="\r\n|\z"/>
+      </definition>
+    </text>
+    <row id="milk" si="1" created="20181127T032259Z" st="0">
+      <value>Skim milk</value>
+      <lang id="fi" time="20181127T032240Z">Rasvaton maito</lang>
+    </row>
+    <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

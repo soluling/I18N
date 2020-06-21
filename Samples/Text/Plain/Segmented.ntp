@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B08BA96F-261C-44B6-8D4C-42BB94972678" created="20170405T015818Z" lastmodified="20200316T184221Z" version="1.0.714" stringid="13">
+  <lang id="fi"/>
+  <node class="TTextSource" name="Plain.txt" fullpath="D:\NT\Deploy\Samples\Text\Plain\Plain.txt" original="en" encoding="windows-1252">
+    <text scanmethod="tsSegmented">
+      <rules>
+        <item before="\r\n">
+        </item>
+        <item type="rtException" before="^[0-9]+\." after="\s">
+        </item>
+      </rules>
+    </text>
+    <row id="Sports" si="1">Sports</row>
+    <row id="1. Soccer" si="2">1. Soccer</row>
+    <row id="Soccer is a sport played between two teams of eleven players with a spherical ball." si="3">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+    <row id="Team contains 10 field players and a goalie." si="4">Team contains 10 field players and a goalie.</row>
+    <row id="Soccer originates from England." si="5">Soccer originates from England.</row>
+    <row id="2. Ice hockey" si="6">2. Ice hockey</row>
+    <row id="Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal." si="7">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+    <row id="Team contains 5 field players and a goalie." si="8">Team contains 5 field players and a goalie.</row>
+    <row id="Ice hockey originates from Canada." si="9">Ice hockey originates from Canada.</row>
+    <row id="3. Basketball" si="10">3. Basketball</row>
+    <row id="Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules." si="11">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+    <row id="Team contains 5 field players." si="12">Team contains 5 field players.</row>
+    <row id="Basketball originates from United States." si="13">Basketball originates from United States.</row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

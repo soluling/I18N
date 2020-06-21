@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C23A4C39-ABE1-462D-81F2-85B5F2F3588E" created="20111127T164058Z" lastmodified="20200316T184317Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <node class="TTextSource" name="Comment.txt" fullpath="D:\NT\Deploy\Samples\Text\Comment\Comment.txt" original="en" encoding="windows-1252">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfComment" before="\t" after="\r\n"/>
+      </definition>
+    </text>
+    <row id="0" si="1" scannedcomment="This is a comment" created="20181127T031754Z">
+      <value>Zero</value>
+      <lang id="fi" rw="0" time="20181127T031804Z">Nolla</lang>
+    </row>
+    <row id="1" si="2" scannedcomment="Number 1" created="20181127T031754Z">
+      <value>One</value>
+      <lang id="fi" rw="0" time="20111127T165223Z">Yksi</lang>
+    </row>
+    <row id="2" si="3" scannedcomment="Number 2" created="20181127T031754Z">
+      <value>Two</value>
+      <lang id="fi" rw="0" time="20111127T165225Z">Kaksi</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

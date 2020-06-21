@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="1DC608FE-F935-4F5C-8132-349182D4DBDB" created="20181127T033024Z" lastmodified="20200316T183359Z" version="1.0.714" stringid="6">
+  <lang id="fi"/>
+  <node class="TTextSource" name="ContextError.txt" fullpath="D:\NT\Deploy\Samples\Text\Test\ContextError.txt" original="en-US" encoding="windows-1252">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfIgnore" before="\t"/>
+        <field type="dfIgnore" before="\t"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfValue" before="\t" after="\r\n"/>
+      </definition>
+    </text>
+    <row id="soccer[1]" changed="20181127T033024Z" si="1">
+      <value>Soccer</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Jalkapallo</lang>
+    </row>
+    <row id="soccer[4]" si="2">
+      <value>England</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Englanti</lang>
+    </row>
+    <row id="soccer[5]" si="3">
+      <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+    </row>
+    <row id="basketball[1]" changed="20181127T033024Z" si="4">
+      <value>Basketball</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Koripallo</lang>
+    </row>
+    <row id="basketball[4]" si="5">
+      <value>United States</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Yhdysvallat</lang>
+    </row>
+    <row id="basketball[5]" si="6">
+      <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+      <lang id="fi" rw="0" time="20181127T033047Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

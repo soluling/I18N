@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="2B7C344A-14A3-4657-B644-A05BA4701E7B" created="20111127T160506Z" lastmodified="20200316T184207Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TTextSource" name="Escape.txt" fullpath="D:\NT\Deploy\Samples\Text\Escape\Escape.txt" original="en" encoding="windows-1252">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" escape="1" before="\t" after="\r\n"/>
+      </definition>
+    </text>
+    <row id="one" si="1">
+      <value>Single line</value>
+      <lang id="fi" time="20111127T160551Z">Yksi</lang>
+    </row>
+    <row id="two" changed="20181127T032913Z" si="2">
+      <value>First line
+Second line</value>
+      <lang id="fi" time="20111127T160556Z">Eka
+Toka</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

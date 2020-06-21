@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="D9AC9BF2-8548-4CC4-B0CA-81BE613F0628" created="20200530T165845Z" lastmodified="20200530T165907Z" version="1.0.747" lockedrowcomplete="0" stringid="15">
+  <lang id="fi"/>
+  <lang id="ja"/>
+  <node class="TTextSource" name="Sport.txt" fullpath="D:\NT\Deploy\Samples\Text\Sport\Sport.txt" original="en" encoding="windows-1252">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfValue" before="\t"/>
+        <field type="dfValue" before="\t" after="\r\n"/>
+      </definition>
+    </text>
+    <row id="soccer[1]" si="1">Soccer</row>
+    <row id="soccer[2]" si="2">10</row>
+    <row id="soccer[3]" si="3">1</row>
+    <row id="soccer[4]" si="4">England</row>
+    <row id="soccer[5]" si="5">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+    <row id="hockey[1]" si="6">Ice hockey</row>
+    <row id="hockey[2]" si="7">5</row>
+    <row id="hockey[3]" si="8">1</row>
+    <row id="hockey[4]" si="9">Canada</row>
+    <row id="hockey[5]" si="10">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+    <row id="basketball[1]" si="11">Basketball</row>
+    <row id="basketball[2]" si="12">5</row>
+    <row id="basketball[3]" si="13">0</row>
+    <row id="basketball[4]" si="14">United States</row>
+    <row id="basketball[5]" si="15">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Amazon" type="TAmazonTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

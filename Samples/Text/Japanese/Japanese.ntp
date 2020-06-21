@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4995983E-DCB0-48E1-A542-896CD1D9CA37" created="20181127T032708Z" lastmodified="20200316T184214Z" version="1.0.714" stringid="2">
+  <lang id="fi"/>
+  <node class="TTextSource" name="Japanese.txt" fullpath="D:\NT\Deploy\Samples\Text\Japanese\Japanese.txt" original="ja" encoding="shift_jis">
+    <text scanmethod="tsDefined">
+      <definition exts="txt">
+        <field type="dfContext"/>
+        <field type="dfValue" escape="1" before="\t" after="\r\n"/>
+      </definition>
+    </text>
+    <row id="one" si="1">
+      <value>シングル</value>
+      <lang id="fi" rw="0" time="20181127T032801Z">Yksikkö</lang>
+    </row>
+    <row id="two" changed="20181127T032733Z" si="2">
+      <value>一
+二</value>
+      <lang id="fi" rw="0" time="20181127T032755Z">Yksi
+Kaksi</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
