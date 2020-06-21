@@ -1,0 +1,9 @@
+del /Q *.tmx
+del /Q *.tbx
+del /Q *.xlf
+del /Q *.xliff
+del /Q *.txt
+del /Q *.xls*
+del /Q *.ods
+del /Q *.resx
+del /Q *.xx
