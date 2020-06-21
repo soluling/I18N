@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project created="20130402T011522Z" lastmodified="20171003T140551Z">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Sport.db" original="en" encoding="utf-8" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="Sport.db"/>
+    <tables>
+      <table name="Languages" method="dlRow" language="Id">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Flag" type="dtBinary" format="bfImage" marked="1"/>
+      </table>
+      <table name="Sport" method="dlRow" language="LangId">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Languages" created="20171003T014017Z" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Flag">
+        <row id="en" class="TImageRow">
+          <value>
+            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
+          </value>
+          <lang id="fi" rw="0" time="20171003T014655Z" filename="C:\Users\Public\Documents\NewTool\Samples\Common\48x48\flag_finland.png">
+            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
+            RU5ErkJggg==
+          </lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="en">
+          <value>English</value>
+          <lang id="fi" rw="0" time="20171003T014718Z">suomi</lang>
+        </row>
+      </node>
+    </node>
+    <node class="TSqlDatabaseTableNode" name="Sport" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description" created="20130402T011710Z">
+        <row id="0" created="20171003T014017Z">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20171003T014805Z">Jalkapallo on peli, jossa kaksi 11-henkistä joukkuetta pelaa pallolla.</lang>
+        </row>
+        <row id="1" created="20171003T014017Z">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20171003T014805Z">Jääkiekko on jäällä pelattava joukkuepeli, jossa luistelijat yrittävät mailalla saada kiekon vastapuolen maaliin.</lang>
+        </row>
+        <row id="2" created="20171003T014017Z">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20171003T014805Z">Koripallo on joukkuepeli, jossa kaksi viisihenkistä joukkuetta yrittää heittää palloa vastapuolen koriin noudattaen tiettyjä sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" created="20171003T014017Z">
+          <value>Soccer</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011537Z">Jalkapallo</lang>
+        </row>
+        <row id="1" created="20171003T014017Z">
+          <value>Ice hockey</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011540Z">Jääkiekko</lang>
+        </row>
+        <row id="2" created="20171003T014017Z">
+          <value>Basketball</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011543Z">Koripallo</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0" created="20171003T014017Z">
+          <value>England</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011545Z">Englanti</lang>
+        </row>
+        <row id="1" created="20171003T014017Z">
+          <value>Canada</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011548Z">Kanada</lang>
+        </row>
+        <row id="2" created="20171003T014017Z">
+          <value>United States</value>
+          <lang id="fi" rw="0" tm="1" time="20130402T011552Z">Yhdysvallat</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+</project>

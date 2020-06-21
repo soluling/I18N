@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="A5734F7C-4BAB-4D9A-8FD9-D3A55C381B6D" created="20170928T020316Z" lastmodified="20181128T200257Z" version="1.0.714" stringid="9">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="Sport.db" original="en" encoding="utf-8" fields="[dtString,dtBinary,dtInteger]" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="Sport.db"/>
+    <tables>
+      <table name="Sport" method="dlRow" language="Language">
+        <id name="ResourceId"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Sport" keyfields="ResourceId">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0" si="1">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="1" si="2">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="4">
+          <value>Soccer</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Jalkapallo</lang>
+        </row>
+        <row id="1" si="5">
+          <value>Ice hockey</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Jääkiekko</lang>
+        </row>
+        <row id="2" si="6">
+          <value>Basketball</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Koripallo</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0" si="7">
+          <value>England</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Englanti</lang>
+        </row>
+        <row id="1" si="8">
+          <value>Canada</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Kanada</lang>
+        </row>
+        <row id="2" si="9">
+          <value>United States</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200254Z">Yhdysvallat</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

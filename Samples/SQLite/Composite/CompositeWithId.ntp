@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="AC17F56E-E934-4BBA-BBEE-FA3B26D811F7" created="20171130T024331Z" lastmodified="20171130T024443Z" version="1.0.714" stringid="6">
+  <lang id="fi"/>
+  <lang id="ca"/>
+  <node class="TSqlDatabaseSource" name="CompositeWithId.db" original="en" encoding="utf-8" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="CompositeWithId.db"/>
+    <tables>
+      <table name="Composite" method="dlField" language="Language">
+        <id name="Id"/>
+        <field name="GroupId" format="sfPlain"/>
+        <field name="Value" format="sfPlain">
+          <field name="Value_fi" lang="fi" format="sfPlain"/>
+          <field name="Value_xx" lang="ca" format="sfPlain"/>
+        </field>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Composite" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Value">
+        <row id="1" si="1">
+          <value>Finland</value>
+          <lang id="fi" st="4" rw="0" time="20171130T024342Z">Suomi</lang>
+          <lang id="ca" st="4" rw="0" time="20171130T024438Z">FINLAND</lang>
+        </row>
+        <row id="2" si="2">
+          <value>Germany</value>
+          <lang id="fi" st="4" rw="0" time="20171130T024344Z">Saksa</lang>
+          <lang id="ca" st="4" rw="0" time="20171130T024441Z">GERMANY</lang>
+        </row>
+        <row id="3" si="3">
+          <value>Japan</value>
+          <lang id="fi" st="4" rw="0" time="20171130T024346Z">Japani</lang>
+          <lang id="ca" st="4" rw="0" time="20171130T024443Z">JAPAN</lang>
+        </row>
+        <row id="4" si="4">Soccer</row>
+        <row id="5" si="5">Ice hockey</row>
+        <row id="6" si="6">Basketball</row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

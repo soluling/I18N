@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B241EFAF-5DE9-4DF6-8D1B-52DDDBE819BD" created="20170423T023841Z" lastmodified="20170423T023910Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Simple.db" original="en-US" encoding="utf-8" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="Simple.db"/>
+    <tables>
+      <table name="Simple" method="dlField">
+        <id name="Id"/>
+        <field name="Value" format="sfPlain">
+          <field name="Value_fi" lang="fi" format="sfPlain"/>
+          <field name="Value_de" lang="de" format="sfPlain"/>
+          <field name="Value_ja" lang="ja" format="sfPlain"/>
+        </field>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Simple" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Value">
+        <row id="0" si="1">
+          <value>Soccer</value>
+          <lang id="fi" st="4" time="20170423T023853Z">Jalkapallo</lang>
+        </row>
+        <row id="1" si="2">
+          <value>Ice hockey</value>
+          <lang id="fi" st="4" time="20170423T023856Z">Jääkiekko</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Basketball</value>
+          <lang id="fi" st="4" time="20170423T023859Z">Koripallo</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

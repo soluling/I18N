@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="8AE6CA28-9344-4DD5-8246-966F43D9B0FA" created="20140208T213507Z" lastmodified="20171003T141636Z" version="1.0.714" stringid="3">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Simple.db" original="en" encoding="utf-8" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="Simple.db"/>
+    <tables>
+      <table name="Simple" method="dlField">
+        <id name="Id"/>
+        <field name="Value" format="sfPlain">
+          <field name="ValueF" lang="fi" format="sfPlain"/>
+          <field name="ValueD" lang="de" format="sfPlain"/>
+          <field name="ValueJ" lang="ja" format="sfPlain"/>
+        </field>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Simple" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Value">
+        <row id="0" si="1">
+          <value>Soccer</value>
+          <lang id="fi" or="5" rw="0" time="20171003T141605Z">Jalkapallo</lang>
+          <lang id="de" or="5" rw="0" time="20171003T141620Z">Fußball</lang>
+          <lang id="ja" or="5" rw="0" time="20171003T141633Z">サッカー</lang>
+        </row>
+        <row id="1" si="2">
+          <value>Ice hockey</value>
+          <lang id="fi" or="5" rw="0" time="20171003T141605Z">Jääkiekko</lang>
+          <lang id="de" or="5" rw="0" time="20171003T141620Z">Eishockey</lang>
+          <lang id="ja" or="5" rw="0" time="20171003T141633Z">アイス ホッケー</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Basketball</value>
+          <lang id="fi" or="5" rw="0" time="20171003T141605Z">Koripallo</lang>
+          <lang id="de" or="5" rw="0" time="20171003T141620Z">Basketball</lang>
+          <lang id="ja" or="5" rw="0" time="20171003T141633Z">バスケット ボール</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

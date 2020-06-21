@@ -1,0 +1,1 @@
+sqlite3 Comment.db < Comment.sql

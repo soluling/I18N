@@ -1,0 +1,9 @@
+CREATE TABLE StringImages
+(
+  Id INTEGER NOT NULL,
+  LangId VARCHAR(10) NOT NULL,
+  Name VARCHAR(100) NOT NULL,
+  Encoding VARCHAR(20) NOT NULL,
+  Data TEXT NOT NULL,
+  PRIMARY KEY(Id, LangId)
+);

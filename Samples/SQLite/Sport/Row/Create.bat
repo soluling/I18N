@@ -1,0 +1,1 @@
+sqlite3 Sport.db < Sport.sql

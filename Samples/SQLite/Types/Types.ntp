@@ -1,0 +1,674 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="A5886D53-D725-4D27-84DF-E23A77D653F0" created="20171004T200551Z" lastmodified="20200316T221007Z" version="1.0.714" stringid="108">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="Types.db" original="en" encoding="utf-8" hasunicodefields="1">
+    <database kind="TSqliteDatabase" file="Types.db"/>
+    <tables>
+      <table name="Types" method="dlCopy">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+        <field name="Expression" format="sfPlain" marked="1"/>
+        <field name="ImageRaw" type="dtBinary" format="bfImage" marked="1"/>
+        <field name="ImageBase64" format="sfBase64" binaryformat="bfImage" marked="1"/>
+        <field name="XmlRaw" type="dtBinary" format="bfXml" marked="1"/>
+        <field name="XmlBase64" format="sfBase64" binaryformat="bfXml" marked="1"/>
+        <field name="XmlText" format="sfXml" marked="1"/>
+        <field name="JsonRaw" type="dtBinary" format="bfJson" marked="1"/>
+        <field name="JsonBase64" format="sfBase64" binaryformat="bfJson" marked="1"/>
+        <field name="JsonText" format="sfJson" marked="1"/>
+        <field name="HtmlRaw" type="dtBinary" format="bfHtml" marked="1"/>
+        <field name="HtmlBase64" format="sfBase64" binaryformat="bfHtml" marked="1"/>
+        <field name="HtmlText" format="sfHtml" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Types" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0" si="1">
+          <value>This is a book</value>
+          <lang id="fi" st="4" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+        </row>
+        <row id="1" si="2">
+          <value>This is a car</value>
+          <lang id="fi" st="4" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Expression">
+        <row id="0" si="77" created="20200316T221000Z">
+          <value>One;Two;Three</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+        </row>
+        <row id="1" si="93" created="20200316T221000Z">Red;Blue;White</row>
+      </node>
+      <node class="TDatabaseFieldNode" name="HtmlBase64" created="20171004T231138Z">
+        <node class="THtmlDataNode" name="0">
+          <row id="h1.text" class="THtmlRow" si="9">
+            <value>Book</value>
+            <lang id="fi" st="4" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="10">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="11">19.95</row>
+          <row id="p[2].text" class="THtmlRow" si="12">0</row>
+          <row id="title.text" class="THtmlRow" si="13">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <data>
+            PGh0bWw+DQo8dGl0bGU+Qm9vazwvdGl0bGU+DQo8Ym9keT4NCjxoMT5Cb29rPC9oMT4NCjxwPlRoaXMgaXMgYSBib29rPC9wPg0K
+            PHA+MTkuOTU8L3A+DQo8cD4wPC9wPg0KPC9ib2R5Pg0KPC9odG1sPg0K
+          </data>
+        </node>
+        <node class="THtmlDataNode" name="1">
+          <row id="h1.text" class="THtmlRow" si="14">
+            <value>Car</value>
+            <lang id="fi" st="4" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="15">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="16">24900.00</row>
+          <row id="p[2].text" class="THtmlRow" si="17">1</row>
+          <row id="title.text" class="THtmlRow" si="18">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <data>
+            PGh0bWw+DQo8dGl0bGU+Q2FyPC90aXRsZT4NCjxib2R5Pg0KPGgxPkNhcjwvaDE+DQo8cD5UaGlzIGlzIGEgY2FyPC9wPg0KPHA+
+            MjQ5MDAuMDA8L3A+DQo8cD4xPC9wPg0KPC9ib2R5Pg0KPC9odG1sPg0K
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="HtmlRaw" created="20171004T231123Z">
+        <node class="THtmlDataNode" name="0">
+          <row id="h1.text" class="THtmlRow" si="19">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="20">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="21">19.95</row>
+          <row id="p[2].text" class="THtmlRow" si="22">0</row>
+          <row id="title.text" class="THtmlRow" si="23">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <data>
+            PGh0bWw+DQo8dGl0bGU+Qm9vazwvdGl0bGU+DQo8Ym9keT4NCjxoMT5Cb29rPC9oMT4NCjxwPlRoaXMgaXMgYSBib29rPC9wPg0K
+            PHA+MTkuOTU8L3A+DQo8cD4wPC9wPg0KPC9ib2R5Pg0KPC9odG1sPg0K
+          </data>
+        </node>
+        <node class="THtmlDataNode" name="1">
+          <row id="h1.text" class="THtmlRow" si="24">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="25">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="26">24900.00</row>
+          <row id="p[2].text" class="THtmlRow" si="27">1</row>
+          <row id="title.text" class="THtmlRow" si="28">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <data>
+            PGh0bWw+DQo8dGl0bGU+Q2FyPC90aXRsZT4NCjxib2R5Pg0KPGgxPkNhcjwvaDE+DQo8cD5UaGlzIGlzIGEgY2FyPC9wPg0KPHA+
+            MjQ5MDAuMDA8L3A+DQo8cD4xPC9wPg0KPC9ib2R5Pg0KPC9odG1sPg0K
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="HtmlText" created="20171005T002100Z">
+        <node class="THtmlDataNode" name="0" created="20171005T013534Z">
+          <row id="h1.text" class="THtmlRow" si="29">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="30">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="31">19.95</row>
+          <row id="p[2].text" class="THtmlRow" si="32">0</row>
+          <row id="title.text" class="THtmlRow" si="33">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <data>
+            PABoAHQAbQBsAD4ADQAKADwAdABpAHQAbABlAD4AQgBvAG8AawA8AC8AdABpAHQAbABlAD4ADQAKADwAYgBvAGQAeQA+AA0ACgA8
+            AGgAMQA+AEIAbwBvAGsAPAAvAGgAMQA+AA0ACgA8AHAAPgBUAGgAaQBzACAAaQBzACAAYQAgAGIAbwBvAGsAPAAvAHAAPgANAAoA
+            PABwAD4AMQA5AC4AOQA1ADwALwBwAD4ADQAKADwAcAA+ADAAPAAvAHAAPgANAAoAPAAvAGIAbwBkAHkAPgANAAoAPAAvAGgAdABt
+            AGwAPgA=
+          </data>
+        </node>
+        <node class="THtmlDataNode" name="1" created="20171005T013534Z">
+          <row id="h1.text" class="THtmlRow" si="34">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="p.text" class="THtmlRow" si="35">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="p[1].text" class="THtmlRow" si="36">24900.00</row>
+          <row id="p[2].text" class="THtmlRow" si="37">1</row>
+          <row id="title.text" class="THtmlRow" si="38">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <data>
+            PABoAHQAbQBsAD4ADQAKADwAdABpAHQAbABlAD4AQwBhAHIAPAAvAHQAaQB0AGwAZQA+AA0ACgA8AGIAbwBkAHkAPgANAAoAPABo
+            ADEAPgBDAGEAcgA8AC8AaAAxAD4ADQAKADwAcAA+AFQAaABpAHMAIABpAHMAIABhACAAYwBhAHIAPAAvAHAAPgANAAoAPABwAD4A
+            MgA0ADkAMAAwAC4AMAAwADwALwBwAD4ADQAKADwAcAA+ADEAPAAvAHAAPgANAAoAPAAvAGIAbwBkAHkAPgANAAoAPAAvAGgAdABt
+            AGwAPgA=
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="ImageBase64" created="20171004T230650Z">
+        <row id="0" class="TImageRow" created="20171005T021506Z">
+            iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAKnRFWHRDcmVhdGlvbiBUaW1lAFNhIDkgRmViIDIwMDIgMTY6MDE6
+            NTEgKzAxMDCR21o5AAAAB3RJTUUH0wUPETc2iqSn7QAAAAlwSFlzAAAK8AAACvABQqw0mAAAAARnQU1BAACxjwv8YQUAAAsQSURB
+            VHja7VhZkFTVGf7u3n1v9/R0z9o0RIKobAIzIkpSsbBcgkWoKMYK0SxlNGpZlYfEMg/6kKpU6UsSq4wvqSxlImoWNwyiEkqkBNlE
+            BqMyoGArzPRsvc30evtu+c+93bM2MEOIplJzqMO93dP3nO/7l+//zwVmx+yYHbPjixzc57LLt7tUKNZiWHYnxAYDf170p/9dAnd9
+            FIJVXAqTwHLogFnphD5yGTjHB5+PQ8VwoLT+DE8v/9UXT+C+eDOMwuWwzE44TiddO6DnFoCzZRespgF+P6CqgKJ4zxQKwLGPLait
+            9+HZjj98TgQcDvccjZJVV4DjOzywOgM7DzwkF2QNbCAAyDI94gC2DVjW2JV9x/PAyAhwMm5Aa78Df+l87sISuPMtAb658+BUVtLG
+            ZFmjA9bwSuhmFIIsjIJlQJlla2BrQGuTfTc6aV3DoN1oO8v0SGSzwKnTJajtN+Nvq/75nxP4ydD90NMbkR9eArvSJqsSX5EJoKZ6
+            YBloSZoItmZVNtjn2lWvAHkKlXwRKJcJr4mQIiAj0jpBbey3mQyQ6BuhcLoJz1299/wJ3Nu9EVbu+RUrLuLmGWkgEsZAuA3Hh2yM
+            lBjISWDHgy6VgeERb1J8S5yBtkYF7a0BRFtVRJtVhFQJoujg2V0D+KxEHpNEetbyPJFMAgNDSfjnXIcXr/zX+RH47p4XWi6ObVy9
+            Zj6a8jlUek/hdNsC9Jd5nMxYY6FA1kSGXJ+mOTwMhcC2EtiW9iDa2WwJkKNEEhxa1mYkHW8DepagQhI4/G5PGllal37krcnCanCQ
+            rdkLX2QttlxzYiYERPd/U19oU6j052lNJYgIhUtgsBda05cQJoNlilVrHTiIS+b6sbAzikhzOwmN6MY3bzujXtHLFginC5gncAwf
+            597z7m9+tCaM3+zLQy8azIWeF5uaWI7EkEu9hvW712Lb13qnS4D3CNhi3uSR0uHOQlMMmlGAvzCMBplZj8CZlHxXXIGhLIXInJAL
+            Si8ZMHQThmkRDtu1Ovst53iWr02ekeAdsH8Sfbh3leblllUlwBK8uZlUzLcQxtCr2LC/aWYEbCujF8tI0zppRoKTwDe1I5hMQOVt
+            NIjVHJAlZAOt6D466ILinSrY2pwEnpFhGwhVV/vIHQo9GAvyuGulDwhHxlSrRkIWl6Oc2IprtwSnT8DBSaRTGCHxSFccpFheUhKT
+            ECGQHYImcQSiusncKA4czcI2TPdBVMGz29qVERPJ4orgwE/I2fPkKHyQdrDlUwePHuHwxw/oC6PihWaNBDNSSwux5dZAMJ/Huld9
+            5yIguP8v3NRKwbsBsbnQOdGLYVo3wNzccwq61oAy7VcxLE/TZR9ygxlcEvMkkf1eIMAyWddHH5h3BvIOPkza2N1rY+sJE/viFRxL
+            lNA/QPGfJKUrUMIVC2PqNr6GsFpTLFwMw1qERatewokd9tmTWJS2o6Bb5AXBjjQhLSiQyQu+QBAhklQt2QetoR2Fkg2Hxa3qQ5wy
+            fohcFmsUUSjb+Cxnoz/n4DQBzxYcT4Vq8mub3m61AldVptE5vvDVakSEwmsoeSsqF/8WeOwe4Kd1SYwVsg07tiPsvxFLl7pFK0Da
+            HSUHzpFM2IcPIRFsQ68ho8xiobqRXCQrCgJ5hpYReW81F8A4UJPBzeSekU8lybWhX2P7+gfPnAPuXejn6O0nL5B7i0XkmUNYPjgi
+            +Ng8aKl+BCR4Vq26uiL7UeHpS+owXF23rQl/n/Ec346wezZCjRzKww/g+h0Pn53Ay6v3Q9CeRnc36aPuVtiMzrkJnW+PQVV4qLmU
+            K4Nj/Y7tgbatMwOZCeh6f2MjoJEKDP4CN2y//8wE2DC1h5ChnqCnhwiUYFPlTZNQpGia8y9FYDgNDcZUwBcSdD1PMEVRfTyKg49j
+            7fbbz0xg5zUJiOojOH7cDSM29bKBJHkh1xiG1BSBlk2S6nBnBjITIjN5jnINfllEpf9JXLt9XX0CbPSWH6du8jg+/tjrfahBY/mQ
+            LJFsX7IYmk4V2ih5KlNv88mSeDaA9b6boE40K+T+HBkzlaMWnO0L+oDLJ9aB8SP1goUv3xVHsvc7aG3lqI10Gy5dkCH6BSi0sJPo
+            QUHW6iuNcw4FqieZ4wGzVrzAXE5ghwmrrWPZHBM3rgDuvl488do7wfnY+43dU2V08rjymVcQktZj9Wrv4BIMQiH9j9It3ngDA46C
+            klKHxNnkcXItYJWdVfQSiQaT5wo1gqqN5TEby2IOOi4C5rcIFD0CnQkFNDaGN6+97uvfn1rI6g3b/wCG+q9Dfz+hjrqJpAvU8Iky
+            IkuXQ923HyXBN1Hz6xGpga4BrtAsk5XLhgtYCZhkYQvLoiZWznMwJ8zaANEFzNHV5FgTI0AUqEOQ1e7JMM9M4N2Nx3HFU0+QrD5I
+            1Fk7SQEnIkeLKu0tkFuaISdTqIQiUyvsqKpRjJeZdQ3PyqaNQNDEkqiOJW0GWdpCa5BaQKHa7vFUFBlY2oNZnU1RFEevgUAgNX0C
+            bPjCj6CQuB2ffhrDggWs4XHVICMF0NzRCf+211EhuR09ajLrujWkamEiFg7qWBQtYXGLjqXtFTqdca5lHY7llgSD7nlOmAJ4MniJ
+            TnEBTZ6C99xvJb7y9x+gnHkSV63mWB6452OSVCUkw3n9TVSGC67lXMCkKk1aDpc1l7CkuYhLCbRG8s1xHmCOF9xZD2RtSmQMnsK1
+            dq39xq+IePHt7MlHf1+6AUc3xqdPAJsErLpxNyINa7B4sUfAR93i1m1QKz0IRQNo1XQsaBjGpZEyndkV+nMAgqS4xHj+7NatgeZI
+            6cb/jaeKLxABRSLlI88zQ3TFdWx66NhpNLStw8Fbj06TAI2vvnwVCn17sGyJ6CZ09zHgk/exJrwNsZYGUtsoddgqfKpGx0w/9YIa
+            FEUZteB4y44HyUDXrgKBZIBluvqot5JFDhVbQFfahwNJP/YmNZwsUQQcOUwtfi+dqKjxPPS998RpEXj7mwew6qnNiMfvRDjM3iJA
+            dBKINgWo5Y7AoljmBPbmQXIBeTE7MQTGg2XToZwRyMoSO0cQWIXSqGxxODwo4uCAgoODKj4bVjzxKFHXm+0HRrLspRgd86go8RLp
+            O6ZJgA0l/DAKvbdQn9TIzschMU8p0QjZr04ByYCzyT6zKwPLDvis+RNdC9NytHPR5HCoh8fhAQkH+2T0ZWWv7zGYECSoi6TqmyPA
+            NvJURQ+Cl3dCbHwTg31diN9dPrcKTfDChj6s3vwIEfglq8winbwkWXYBssEO9QyoZVmj98zCAkfnBjqaKoStRHnedYoAJ3gc6ZMw
+            kBa8Ez9rEI0ce6VBbnDbhQKEwLu0+E667oLW+A72bCjWgzV9AmyMSE8gUP4h+XVx3qAq7KRdoE61iLFDvXsWFknvFUJREfBB3MH7
+            px109ThIZ9nBmSquyM4NJa+rNQm8w5cg+LrAyW9SEdsFS9mPQ9/KTwfSzN9OX7XlJliZV5D7hN+0shvhxhAkUSCN9sMWAzg1HEKc
+            kq47ISObru7A6hSPca0jVwGvvkfXXZQ8O8FZ+3HgjuyMsZwXAZfEM/9AKbVhibYHLc2NGNDn4lSuCcW8XAXqVF8KVasyJxikGh9S
+            MdjlhkVR2Iv3b0ud194XhMCqly4jWTiCfNyHcpKOlCGqDS1UkalGuK8tBBOC/yPXuo61C466G+/cMnghAF8YAmxc/dKPYWYeg5Wn
+            MstaDGojRd9fYQtbKRHewr7bEv8NwBeOgEtiyw0kG3fSHWWmbzP237zj8wA9O2bH7Pg/Gv8Gw8UczW81w2YAAAAASUVORK5CYII=
+          </row>
+        <row id="1" class="TImageRow">
+            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
+          </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="ImageRaw" created="20171004T224536Z">
+        <row id="0" class="TImageRow">
+            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
+          </row>
+        <row id="1" class="TImageRow">
+            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
+          </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="JsonBase64" created="20171005T002015Z">
+        <node class="TJsonDataNode" name="0">
+          <row id="description" si="39">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="expression" si="40">
+            <value>One;Two;Three</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+          </row>
+          <row id="name" si="41">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="price" changed="20200316T221000Z" class="TFloatRow">19.95</row>
+          <data>
+            ew0KICAiaWQiOiAwLA0KICAibmFtZSI6ICJCb29rIiwNCiAgImRlc2NyaXB0aW9uIjogIlRoaXMgaXMgYSBib29rIiwNCiAgImV4
+            cHJlc3Npb24iOiAiT25lO1R3bztUaHJlZSIsDQogICJwcmljZSI6IDE5Ljk1DQp9
+          </data>
+        </node>
+        <node class="TJsonDataNode" name="1">
+          <row id="description" si="42">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="expression" si="43">Red;Blue;White</row>
+          <row id="name" si="44">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="price" class="TFloatRow">24900</row>
+          <data>
+            ew0KICAiaWQiOiAxLA0KICAibmFtZSI6ICJDYXIiLA0KICAiZGVzY3JpcHRpb24iOiAiVGhpcyBpcyBhIGNhciIsDQogICJleHBy
+            ZXNzaW9uIjogIlJlZDtCbHVlO1doaXRlIiwNCiAgInByaWNlIjogMjQ5MDAuMDANCn0=
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="JsonRaw" created="20171004T224603Z">
+        <node class="TJsonDataNode" name="0">
+          <row id="description" si="45">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="expression" si="46">
+            <value>One;Two;Three</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+          </row>
+          <row id="name" si="47">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="price" changed="20200316T221000Z" class="TFloatRow">19.95</row>
+          <data>
+            ew0KICAiaWQiOiAwLA0KICAibmFtZSI6ICJCb29rIiwNCiAgImRlc2NyaXB0aW9uIjogIlRoaXMgaXMgYSBib29rIiwNCiAgImV4
+            cHJlc3Npb24iOiAiT25lO1R3bztUaHJlZSIsDQogICJwcmljZSI6IDE5Ljk1DQp9
+          </data>
+        </node>
+        <node class="TJsonDataNode" name="1">
+          <row id="description" si="48">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="expression" si="49">Red;Blue;White</row>
+          <row id="name" si="50">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="price" class="TFloatRow">24900</row>
+          <data>
+            ew0KICAiaWQiOiAxLA0KICAibmFtZSI6ICJDYXIiLA0KICAiZGVzY3JpcHRpb24iOiAiVGhpcyBpcyBhIGNhciIsDQogICJleHBy
+            ZXNzaW9uIjogIlJlZDtCbHVlO1doaXRlIiwNCiAgInByaWNlIjogMjQ5MDAuMDANCn0=
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="JsonText" created="20171005T002048Z">
+        <node class="TJsonDataNode" name="0">
+          <row id="description" si="51">
+            <value>This is a book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+          </row>
+          <row id="expression" si="52">
+            <value>One;Two;Three</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+          </row>
+          <row id="name" si="53">
+            <value>Book</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+          </row>
+          <row id="price" changed="20200316T221000Z" class="TFloatRow">19.95</row>
+          <json encoding="unicode"/>
+          <data>
+            ewANAAoAIAAgACIAaQBkACIAOgAgADAALAANAAoAIAAgACIAbgBhAG0AZQAiADoAIAAiAEIAbwBvAGsAIgAsAA0ACgAgACAAIgBk
+            AGUAcwBjAHIAaQBwAHQAaQBvAG4AIgA6ACAAIgBUAGgAaQBzACAAaQBzACAAYQAgAGIAbwBvAGsAIgAsAA0ACgAgACAAIgBlAHgA
+            cAByAGUAcwBzAGkAbwBuACIAOgAgACIATwBuAGUAOwBUAHcAbwA7AFQAaAByAGUAZQAiACwADQAKACAAIAAiAHAAcgBpAGMAZQAi
+            ADoAIAAxADkALgA5ADUADQAKAH0A
+          </data>
+        </node>
+        <node class="TJsonDataNode" name="1">
+          <row id="description" si="54">
+            <value>This is a car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+          </row>
+          <row id="expression" si="55">Red;Blue;White</row>
+          <row id="name" si="56">
+            <value>Car</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+          </row>
+          <row id="price" class="TFloatRow">24900</row>
+          <json encoding="unicode"/>
+          <data>
+            ewANAAoAIAAgACIAaQBkACIAOgAgADEALAANAAoAIAAgACIAbgBhAG0AZQAiADoAIAAiAEMAYQByACIALAANAAoAIAAgACIAZABl
+            AHMAYwByAGkAcAB0AGkAbwBuACIAOgAgACIAVABoAGkAcwAgAGkAcwAgAGEAIABjAGEAcgAiACwADQAKACAAIAAiAGUAeABwAHIA
+            ZQBzAHMAaQBvAG4AIgA6ACAAIgBSAGUAZAA7AEIAbAB1AGUAOwBXAGgAaQB0AGUAIgAsAA0ACgAgACAAIgBwAHIAaQBjAGUAIgA6
+            ACAAMgA0ADkAMAAwAC4AMAAwAA0ACgB9AA==
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="57">
+          <value>Book</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+        </row>
+        <row id="1" si="58">
+          <value>Car</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="XmlBase64" created="20171004T231107Z">
+        <node class="TXmlDataNode" name="0">
+          <item class="TXmlItem" name="product">
+            <item class="TXmlItem" name="name">
+              <row id="value" si="59">
+                <value>Book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="60">
+                <value>This is a book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="61">
+                <value>One;Two;Three</value>
+                <lang id="fi" st="4" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" changed="20200316T221000Z" class="TFloatRow">19.9500007629395</row>
+            </item>
+          </item>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0Pg0KICA8bmFtZT5Cb29rPC9uYW1lPg0K
+            ICA8ZGVzY3JpcHRpb24+VGhpcyBpcyBhIGJvb2s8L2Rlc2NyaXB0aW9uPg0KICA8ZXhwcmVzc2lvbj5PbmU7VHdvO1RocmVlPC9l
+            eHByZXNzaW9uPg0KICA8cHJpY2U+MTkuOTUwMDAwNzYyOTM5NTwvcHJpY2U+DQo8L3Byb2R1Y3Q+DQo=
+          </data>
+        </node>
+        <node class="TXmlDataNode" name="1">
+          <item class="TXmlItem" name="product">
+            <row id="=id" class="TIntegerRow">1</row>
+            <item class="TXmlItem" name="name">
+              <row id="value" si="62">
+                <value>Car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="63">
+                <value>This is a car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="64">Red;Blue;White</row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" class="TIntegerRow">24900</row>
+            </item>
+          </item>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0IGlkPSIxIj4NCiAgPG5hbWU+Q2FyPC9u
+            YW1lPg0KICA8ZGVzY3JpcHRpb24+VGhpcyBpcyBhIGNhcjwvZGVzY3JpcHRpb24+DQogIDxleHByZXNzaW9uPlJlZDtCbHVlO1do
+            aXRlPC9leHByZXNzaW9uPg0KICA8cHJpY2U+MjQ5MDA8L3ByaWNlPg0KPC9wcm9kdWN0Pg0K
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="XmlRaw" created="20171004T224546Z">
+        <node class="TXmlDataNode" name="0">
+          <item class="TXmlItem" name="product">
+            <item class="TXmlItem" name="name">
+              <row id="value" si="65">
+                <value>Book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="66">
+                <value>This is a book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="67">
+                <value>One;Two;Three</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" changed="20200316T221000Z" class="TFloatRow">19.9500007629395</row>
+            </item>
+          </item>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0Pg0KICA8bmFtZT5Cb29rPC9uYW1lPg0K
+            ICA8ZGVzY3JpcHRpb24+VGhpcyBpcyBhIGJvb2s8L2Rlc2NyaXB0aW9uPg0KICA8ZXhwcmVzc2lvbj5PbmU7VHdvO1RocmVlPC9l
+            eHByZXNzaW9uPg0KICA8cHJpY2U+MTkuOTUwMDAwNzYyOTM5NTwvcHJpY2U+DQo8L3Byb2R1Y3Q+DQo=
+          </data>
+        </node>
+        <node class="TXmlDataNode" name="1">
+          <item class="TXmlItem" name="product">
+            <row id="=id" class="TIntegerRow">1</row>
+            <item class="TXmlItem" name="name">
+              <row id="value" si="68">
+                <value>Car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="69">
+                <value>This is a car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="70">Red;Blue;White</row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" class="TIntegerRow">24900</row>
+            </item>
+          </item>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0IGlkPSIxIj4NCiAgPG5hbWU+Q2FyPC9u
+            YW1lPg0KICA8ZGVzY3JpcHRpb24+VGhpcyBpcyBhIGNhcjwvZGVzY3JpcHRpb24+DQogIDxleHByZXNzaW9uPlJlZDtCbHVlO1do
+            aXRlPC9leHByZXNzaW9uPg0KICA8cHJpY2U+MjQ5MDA8L3ByaWNlPg0KPC9wcm9kdWN0Pg0K
+          </data>
+        </node>
+      </node>
+      <node class="TDatabaseFieldNode" name="XmlText" created="20171005T002034Z">
+        <node class="TXmlDataNode" name="0">
+          <item class="TXmlItem" name="product">
+            <item class="TXmlItem" name="name">
+              <row id="value" si="71">
+                <value>Book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013635Z">Kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="72">
+                <value>This is a book</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013600Z">Tämä on kirja</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="73">
+                <value>One;Two;Three</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013708Z">Yksi;Kaksi;Kolme</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" changed="20200316T221000Z" class="TFloatRow">19.9500007629395</row>
+            </item>
+          </item>
+          <xml encoding="unicode"/>
+          <data>
+            PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0AGYALQAxADYAIgA/
+            AD4ADQAKADwAcAByAG8AZAB1AGMAdAA+AA0ACgAgACAAPABuAGEAbQBlAD4AQgBvAG8AawA8AC8AbgBhAG0AZQA+AA0ACgAgACAA
+            PABkAGUAcwBjAHIAaQBwAHQAaQBvAG4APgBUAGgAaQBzACAAaQBzACAAYQAgAGIAbwBvAGsAPAAvAGQAZQBzAGMAcgBpAHAAdABp
+            AG8AbgA+AA0ACgAgACAAPABlAHgAcAByAGUAcwBzAGkAbwBuAD4ATwBuAGUAOwBUAHcAbwA7AFQAaAByAGUAZQA8AC8AZQB4AHAA
+            cgBlAHMAcwBpAG8AbgA+AA0ACgAgACAAPABwAHIAaQBjAGUAPgAxADkALgA5ADUAMAAwADAAMAA3ADYAMgA5ADMAOQA1ADwALwBw
+            AHIAaQBjAGUAPgANAAoAPAAvAHAAcgBvAGQAdQBjAHQAPgA=
+          </data>
+        </node>
+        <node class="TXmlDataNode" name="1">
+          <item class="TXmlItem" name="product">
+            <row id="=id" class="TIntegerRow">1</row>
+            <item class="TXmlItem" name="name">
+              <row id="value" si="74">
+                <value>Car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013639Z">Auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="description">
+              <row id="value" si="75">
+                <value>This is a car</value>
+                <lang id="fi" st="2" or="3" rw="0" time="20171005T013612Z">Tämä on auto</lang>
+              </row>
+            </item>
+            <item class="TXmlItem" name="expression">
+              <row id="value" si="76">Red;Blue;White</row>
+            </item>
+            <item class="TXmlItem" name="price">
+              <row id="value" class="TIntegerRow">24900</row>
+            </item>
+          </item>
+          <xml encoding="unicode"/>
+          <data>
+            PAA/AHgAbQBsACAAdgBlAHIAcwBpAG8AbgA9ACIAMQAuADAAIgAgAGUAbgBjAG8AZABpAG4AZwA9ACIAdQB0AGYALQAxADYAIgA/
+            AD4ADQAKADwAcAByAG8AZAB1AGMAdAAgAGkAZAA9ACIAMQAiAD4ADQAKACAAIAA8AG4AYQBtAGUAPgBDAGEAcgA8AC8AbgBhAG0A
+            ZQA+AA0ACgAgACAAPABkAGUAcwBjAHIAaQBwAHQAaQBvAG4APgBUAGgAaQBzACAAaQBzACAAYQAgAGMAYQByADwALwBkAGUAcwBj
+            AHIAaQBwAHQAaQBvAG4APgANAAoAIAAgADwAZQB4AHAAcgBlAHMAcwBpAG8AbgA+AFIAZQBkADsAQgBsAHUAZQA7AFcAaABpAHQA
+            ZQA8AC8AZQB4AHAAcgBlAHMAcwBpAG8AbgA+AA0ACgAgACAAPABwAHIAaQBjAGUAPgAyADQAOQAwADAAPAAvAHAAcgBpAGMAZQA+
+            AA0ACgA8AC8AcAByAG8AZAB1AGMAdAA+AA==
+          </data>
+        </node>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
