@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+
+<script>
+  function loaded()
+  {
+    document.getElementById("p1").innerHTML = "This is a 'sample'";
+    document.getElementById("p2").innerHTML = 'This is a \'sample\'';
+    document.getElementById("p3").innerHTML = 'This is a "sample"';
+    document.getElementById("p4").innerHTML = "This is a \"sample\"";
+
+    var str = "Is this all there is?";
+    var pattern = /is/gi;
+    var result = str.match(pattern);
+    document.getElementById("p10").innerHTML = result;
+
+    str = "Is this 3 all there is?";
+    pattern = /3 a/;
+    result = str.match(pattern);
+    document.getElementById("p11").innerHTML = result;
+
+    str = "Is this /// all there is?";
+    pattern = /\/\/\//g;
+    result = str.match(pattern);
+    document.getElementById("p12").innerHTML = result;
+
+    str = "Is this all there is/a?";
+    pattern = /[!"#$%&'()*+=<>\:\-./;¨?_(at)_[\]_^Çç`{|}~]/g;
+    result = str.match(pattern);
+    document.getElementById("p13").innerHTML = result;
+
+    str = "Visit Microsoft!";
+    result = str.replace(/microsoft/i, "W3Schools"); 
+    document.getElementById("p14").innerHTML = result;
+  }
+</script>
+</head>
+<body onload="loaded()">
+  <h1>Sample</h1>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+
+  <p id="p10"></p>
+  <p id="p11"></p>
+  <p id="p12"></p>
+  <p id="p13"></p>
+  <p id="p14"></p>
+</body>
+</html>

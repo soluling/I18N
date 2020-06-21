@@ -1,0 +1,51 @@
+<html>
+
+<head>
+<title>Script</title>
+<style type="text/css">
+
+  h2 {color:red;}
+  p {color:blue;}
+
+</style>
+</head>
+
+<body>
+
+<p><?php echoo "Red \x41 ja \102"; ?>Vuorokaudessa on <?php echo 24*60*60; ?> sekuntia.<?php echo 'Green'; ?></p>
+
+<p><?php echo "Hello \\this\\ World!"; ?></p>
+
+<p><% echo "Colors"; %></p>
+
+<script type="text/javascript">
+
+  /* </script> */
+  // </script>
+
+  document.write("</script> Hello")
+  document.write('</script> Hello')
+  document.write("'</script>' Hello")
+  document.write('"</script>" Hello')
+  document.write("\"</script>\" Hello")
+  document.write('\'</script>\' Hello')
+
+</script>
+
+<script type="text/vbscript">
+
+  ' </script>
+  '* </script>
+
+  Sub edit1_changed()
+    If edit1.value = "a""b""c" Then
+      button1.enabled = True
+    Else
+      button1.enabled = False
+    End If
+  End Sub
+
+</script>
+
+</body>
+</html>

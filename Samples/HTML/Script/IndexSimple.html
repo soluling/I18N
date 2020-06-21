@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sample</title>
+
+<script>
+  function loaded()
+  {
+    document.getElementById("p1").innerHTML = 
+      "This is a 'sample'";  //loc
+
+    document.getElementById("p2").innerHTML = 
+      'This is a \'sample\'';  //loc
+
+    document.getElementById("p3").innerHTML = 
+      'This is a "sample"';  //loc
+
+    document.getElementById("p4").innerHTML = 
+      "This is a \"sample\"";  //loc
+  }
+</script>
+</head>
+<body onload="loaded()">
+  <h1>Sample</h1>
+  <p id="p1"></p>
+  <p id="p2"></p>
+  <p id="p3"></p>
+  <p id="p4"></p>
+</body>
+</html>

@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+<head>
+  <script src="sprintf.js"></script>
+  <script src="plural.js"></script>
+
+  <script>
+// This event is called when the calculate button is clicked
+function calculate() 
+{
+  var distance = document.getElementById("distanceTextBox").value;
+  var speed = document.getElementById("speedTextBox").value;
+
+  if ((distance < 0) || (speed < 0))
+  {
+    document.getElementById("resultLabel").innerHTML = "Distance and speed must be positive numbers!";  //loc
+  }
+  else if ((distance >= 0) && (speed > 0)) 
+  {
+    var time = distance / speed;
+    var hours = Math.floor(time);
+    var minutes = Math.round(60 * (time - hours));
+
+    document.getElementById("hoursLabel").innerHTML = Plural.pluralSprintf("%d hour;%d hours", hours, hours);  //loc
+    document.getElementById("minutesLabel").innerHTML = Plural.pluralSprintf("%d minute;%d minutes", minutes, minutes);  //loc
+    // In many cases instead of above you use hard coded strings and append them together using . or +
+    // document.getElementById("hoursLabel").innerHTML = hours." hours";
+    // document.getElementById("minutesLabel").innerHTML = hours + " minutes";
+    // Do not use them but use Plural.pluralSprintf or at least sprintf
+  }
+  else 
+  {
+    document.getElementById("resultLabel").innerHTML = "You must enter a valid distance and a speed!";  //loc
+  }
+
+  document.getElementById("resultLabel").style.display = "block";
+}
+
+// This event is called when either the distance or speed edit has been changed
+function valueChanged() 
+{
+  var distance = document.getElementById("distanceTextBox").value;
+  var speed = document.getElementById("speedTextBox").value;
+
+  document.getElementById("calculateButton").disabled = (distance == "") || (speed == "");
+}
+  </script>
+
+  <meta charset="utf-8" />
+  <title>TypeScript HTML App</title>
+</head>
+
+<body>
+  <h1>Driving Time</h1>
+
+  <table>
+    <tr>
+      <td>
+        Driving distance:<br />
+        <input type="text" id="distanceTextBox" onkeypress="valueChanged()" onchange="valueChanged()">
+      </td>
+      <td>
+        Speed:<br />
+        <input type="text" id="speedTextBox" onkeypress="valueChanged()" onchange="valueChanged()">
+      </td>
+      <td valign="bottom">
+        <button id="calculateButton" onclick="calculate()">Calculate</button>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <img src="car.png" />
+      </td>
+      <td>
+        <p id="resultLabel" style="display: none">Driving time is</p>
+        <p id="hoursLabel"></p>
+        <p id="minutesLabel"></p>
+      </td>
+      <td>
+        <img src="flag.png" />
+      </td>
+    </tr>
+  </table>
+</body>
+</html>

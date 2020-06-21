@@ -1,0 +1,81 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="D5DE92A5-0206-4CD0-B95A-9F573BE42B01" created="20140701T225358Z" lastmodified="20200316T234304Z" version="1.0.714" stringid="34">
+  <lang id="fi"/>
+  <node class="THtmlSource" name="index.htm" fullpath="D:\NT\Deploy\Samples\HTML\Driving\index.htm" original="en" encoding="utf-8" bom="1">
+    <row id="title.text" si="3">TypeScript HTML App</row>
+    <row id="h1.text" si="4">Driving Time</row>
+    <row id="td.text" si="5">Driving distance:</row>
+    <row id="td[1].text" si="6">Speed:</row>
+    <row id="button.text" si="7">Calculate</row>
+    <row id="p.text" si="8">Driving time is</row>
+    <item class="THtmlScriptItem" name="JavaScript" created="20200316T234224Z">
+      <row id="Distance and speed must be positive numbers!" si="16">Distance and speed must be positive numbers!</row>
+      <row id="hoursLabel" si="17">hoursLabel</row>
+      <row id="%d hour;%d hours" si="18">%d hour;%d hours</row>
+      <row id="minutesLabel" si="19">minutesLabel</row>
+      <row id="%d minute;%d minutes" si="20">%d minute;%d minutes</row>
+      <row id="resultLabel" si="15">resultLabel</row>
+      <row id="You must enter a valid distance and a speed!" si="21">You must enter a valid distance and a speed!</row>
+    </item>
+    <tags usage="tuOnlyIncluded"/>
+    <data>
+      77u/PCFET0NUWVBFIGh0bWw+DQoNCjxodG1sIGxhbmc9ImVuIj4NCjxoZWFkPg0KICA8c2NyaXB0IHNyYz0ic3ByaW50Zi5qcyI+
+      PC9zY3JpcHQ+DQogIDxzY3JpcHQgc3JjPSJwbHVyYWwuanMiPjwvc2NyaXB0Pg0KDQogIDxzY3JpcHQ+DQovLyBUaGlzIGV2ZW50
+      IGlzIGNhbGxlZCB3aGVuIHRoZSBjYWxjdWxhdGUgYnV0dG9uIGlzIGNsaWNrZWQNCmZ1bmN0aW9uIGNhbGN1bGF0ZSgpIA0Kew0K
+      ICB2YXIgZGlzdGFuY2UgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgiZGlzdGFuY2VUZXh0Qm94IikudmFsdWU7DQogIHZhciBz
+      cGVlZCA9IGRvY3VtZW50LmdldEVsZW1lbnRCeUlkKCJzcGVlZFRleHRCb3giKS52YWx1ZTsNCg0KICBpZiAoKGRpc3RhbmNlIDwg
+      MCkgfHwgKHNwZWVkIDwgMCkpDQogIHsNCiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicmVzdWx0TGFiZWwiKS5pbm5lckhU
+      TUwgPSAiRGlzdGFuY2UgYW5kIHNwZWVkIG11c3QgYmUgcG9zaXRpdmUgbnVtYmVycyEiOyAgLy9sb2MNCiAgfQ0KICBlbHNlIGlm
+      ICgoZGlzdGFuY2UgPj0gMCkgJiYgKHNwZWVkID4gMCkpIA0KICB7DQogICAgdmFyIHRpbWUgPSBkaXN0YW5jZSAvIHNwZWVkOw0K
+      ICAgIHZhciBob3VycyA9IE1hdGguZmxvb3IodGltZSk7DQogICAgdmFyIG1pbnV0ZXMgPSBNYXRoLnJvdW5kKDYwICogKHRpbWUg
+      LSBob3VycykpOw0KDQogICAgZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImhvdXJzTGFiZWwiKS5pbm5lckhUTUwgPSBQbHVyYWwu
+      cGx1cmFsU3ByaW50ZigiJWQgaG91cjslZCBob3VycyIsIGhvdXJzLCBob3Vycyk7ICAvL2xvYw0KICAgIGRvY3VtZW50LmdldEVs
+      ZW1lbnRCeUlkKCJtaW51dGVzTGFiZWwiKS5pbm5lckhUTUwgPSBQbHVyYWwucGx1cmFsU3ByaW50ZigiJWQgbWludXRlOyVkIG1p
+      bnV0ZXMiLCBtaW51dGVzLCBtaW51dGVzKTsgIC8vbG9jDQogICAgLy8gSW4gbWFueSBjYXNlcyBpbnN0ZWFkIG9mIGFib3ZlIHlv
+      dSB1c2UgaGFyZCBjb2RlZCBzdHJpbmdzIGFuZCBhcHBlbmQgdGhlbSB0b2dldGhlciB1c2luZyAuIG9yICsNCiAgICAvLyBkb2N1
+      bWVudC5nZXRFbGVtZW50QnlJZCgiaG91cnNMYWJlbCIpLmlubmVySFRNTCA9IGhvdXJzLiIgaG91cnMiOw0KICAgIC8vIGRvY3Vt
+      ZW50LmdldEVsZW1lbnRCeUlkKCJtaW51dGVzTGFiZWwiKS5pbm5lckhUTUwgPSBob3VycyArICIgbWludXRlcyI7DQogICAgLy8g
+      RG8gbm90IHVzZSB0aGVtIGJ1dCB1c2UgUGx1cmFsLnBsdXJhbFNwcmludGYgb3IgYXQgbGVhc3Qgc3ByaW50Zg0KICB9DQogIGVs
+      c2UgDQogIHsNCiAgICBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgicmVzdWx0TGFiZWwiKS5pbm5lckhUTUwgPSAiWW91IG11c3Qg
+      ZW50ZXIgYSB2YWxpZCBkaXN0YW5jZSBhbmQgYSBzcGVlZCEiOyAgLy9sb2MNCiAgfQ0KDQogIGRvY3VtZW50LmdldEVsZW1lbnRC
+      eUlkKCJyZXN1bHRMYWJlbCIpLnN0eWxlLmRpc3BsYXkgPSAiYmxvY2siOw0KfQ0KDQovLyBUaGlzIGV2ZW50IGlzIGNhbGxlZCB3
+      aGVuIGVpdGhlciB0aGUgZGlzdGFuY2Ugb3Igc3BlZWQgZWRpdCBoYXMgYmVlbiBjaGFuZ2VkDQpmdW5jdGlvbiB2YWx1ZUNoYW5n
+      ZWQoKSANCnsNCiAgdmFyIGRpc3RhbmNlID0gZG9jdW1lbnQuZ2V0RWxlbWVudEJ5SWQoImRpc3RhbmNlVGV4dEJveCIpLnZhbHVl
+      Ow0KICB2YXIgc3BlZWQgPSBkb2N1bWVudC5nZXRFbGVtZW50QnlJZCgic3BlZWRUZXh0Qm94IikudmFsdWU7DQoNCiAgZG9jdW1l
+      bnQuZ2V0RWxlbWVudEJ5SWQoImNhbGN1bGF0ZUJ1dHRvbiIpLmRpc2FibGVkID0gKGRpc3RhbmNlID09ICIiKSB8fCAoc3BlZWQg
+      PT0gIiIpOw0KfQ0KICA8L3NjcmlwdD4NCg0KICA8bWV0YSBjaGFyc2V0PSJ1dGYtOCIgLz4NCiAgPHRpdGxlPlR5cGVTY3JpcHQg
+      SFRNTCBBcHA8L3RpdGxlPg0KPC9oZWFkPg0KDQo8Ym9keT4NCiAgPGgxPkRyaXZpbmcgVGltZTwvaDE+DQoNCiAgPHRhYmxlPg0K
+      ICAgIDx0cj4NCiAgICAgIDx0ZD4NCiAgICAgICAgRHJpdmluZyBkaXN0YW5jZTo8YnIgLz4NCiAgICAgICAgPGlucHV0IHR5cGU9
+      InRleHQiIGlkPSJkaXN0YW5jZVRleHRCb3giIG9ua2V5cHJlc3M9InZhbHVlQ2hhbmdlZCgpIiBvbmNoYW5nZT0idmFsdWVDaGFu
+      Z2VkKCkiPg0KICAgICAgPC90ZD4NCiAgICAgIDx0ZD4NCiAgICAgICAgU3BlZWQ6PGJyIC8+DQogICAgICAgIDxpbnB1dCB0eXBl
+      PSJ0ZXh0IiBpZD0ic3BlZWRUZXh0Qm94IiBvbmtleXByZXNzPSJ2YWx1ZUNoYW5nZWQoKSIgb25jaGFuZ2U9InZhbHVlQ2hhbmdl
+      ZCgpIj4NCiAgICAgIDwvdGQ+DQogICAgICA8dGQgdmFsaWduPSJib3R0b20iPg0KICAgICAgICA8YnV0dG9uIGlkPSJjYWxjdWxh
+      dGVCdXR0b24iIG9uY2xpY2s9ImNhbGN1bGF0ZSgpIj5DYWxjdWxhdGU8L2J1dHRvbj4NCiAgICAgIDwvdGQ+DQogICAgPC90cj4N
+      CiAgICA8dHI+DQogICAgICA8dGQ+DQogICAgICAgIDxpbWcgc3JjPSJjYXIucG5nIiAvPg0KICAgICAgPC90ZD4NCiAgICAgIDx0
+      ZD4NCiAgICAgICAgPHAgaWQ9InJlc3VsdExhYmVsIiBzdHlsZT0iZGlzcGxheTogbm9uZSI+RHJpdmluZyB0aW1lIGlzPC9wPg0K
+      ICAgICAgICA8cCBpZD0iaG91cnNMYWJlbCI+PC9wPg0KICAgICAgICA8cCBpZD0ibWludXRlc0xhYmVsIj48L3A+DQogICAgICA8
+      L3RkPg0KICAgICAgPHRkPg0KICAgICAgICA8aW1nIHNyYz0iZmxhZy5wbmciIC8+DQogICAgICA8L3RkPg0KICAgIDwvdHI+DQog
+      IDwvdGFibGU+DQo8L2JvZHk+DQo8L2h0bWw+
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
