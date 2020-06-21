@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="DBF338E4-69DF-4252-B655-851CA5ACF3E1" created="20130125T105733Z" lastmodified="20190420T003512Z" version="1.0.714" stringid="9">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="MultiTable.accdb" original="en" encoding="windows-1252" hasunicodefields="1">
+    <database kind="TAccessDatabase" file="MultiTable.accdb"/>
+    <tables>
+      <table name="Number" method="dlCopy">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+      </table>
+      <table name="Sport" method="dlCopy">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Number" created="20190420T003418Z" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="1">
+          <value>Zero</value>
+          <lang id="fi" rw="0" time="20190420T003447Z">Nolla</lang>
+        </row>
+        <row id="1" si="2">
+          <value>One</value>
+          <lang id="fi" rw="0" time="20190420T003449Z">Yksi</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Two</value>
+          <lang id="fi" rw="0" time="20190420T003450Z">Kaksi</lang>
+        </row>
+        <row id="3" si="4">
+          <value>Three</value>
+          <lang id="fi" rw="0" time="20190420T003453Z">Kolme</lang>
+        </row>
+        <row id="4" si="5">
+          <value>Four</value>
+          <lang id="fi" rw="0" time="20190420T003456Z">Neljä</lang>
+        </row>
+        <row id="5" si="6">
+          <value>Five</value>
+          <lang id="fi" rw="0" time="20190420T003458Z">Viisi</lang>
+        </row>
+      </node>
+    </node>
+    <node class="TSqlDatabaseTableNode" name="Sport" created="20190420T003418Z" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="7">
+          <value>Soccer</value>
+          <lang id="fi" rw="0" time="20190420T003502Z">Jalkapallo</lang>
+        </row>
+        <row id="1" si="8">
+          <value>Ice hockey</value>
+          <lang id="fi" rw="0" time="20190420T003506Z">Jääkiekko</lang>
+        </row>
+        <row id="2" si="9">
+          <value>Basketball</value>
+          <lang id="fi" rw="0" time="20190420T003508Z">Koripallo</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

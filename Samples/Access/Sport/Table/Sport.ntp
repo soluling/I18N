@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="FC5C2526-1077-4375-AE62-F6725A93BBA7" created="20160914T011324Z" lastmodified="20181128T200444Z" version="1.0.714" stringid="9">
+  <lang id="fi"/>
+  <lang id="fr"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Sport.accdb" original="en" encoding="unicode" hasunicodefields="1">
+    <database kind="TAccessDatabase" file="Sport.accdb" provider="Microsoft.ACE.OLEDB.15.0"/>
+    <tables>
+      <table name="Sport" method="dlTable">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+        <table name="Sport_de" lang="de"/>
+        <table name="Sport_fi" lang="fi"/>
+        <table name="Sport_fr" lang="fr"/>
+        <table name="Sport_ja" lang="ja"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Sport" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0" si="1">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200441Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="1" si="2">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200441Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" time="20181128T200441Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="4">
+          <value>Soccer</value>
+          <lang id="fi" time="20160914T011330Z">Jalkapallo</lang>
+          <lang id="fr" time="20160914T011330Z">Football</lang>
+          <lang id="de" time="20160914T011330Z">Fußball</lang>
+          <lang id="ja" time="20160914T011330Z">サッカー</lang>
+        </row>
+        <row id="1" si="5">
+          <value>Ice hockey</value>
+          <lang id="fi" time="20160914T011330Z">Jääkiekko</lang>
+          <lang id="fr" time="20160914T011330Z">Hockey sur glace</lang>
+          <lang id="de" time="20160914T011330Z">Eishockey</lang>
+          <lang id="ja" time="20160914T011330Z">アイス ホッケー</lang>
+        </row>
+        <row id="2" si="6">
+          <value>Basketball</value>
+          <lang id="fi" time="20160914T011330Z">Koripallo</lang>
+          <lang id="fr" time="20160914T011330Z">Basket-ball</lang>
+          <lang id="de" time="20160914T011330Z">Basketball</lang>
+          <lang id="ja" time="20160914T011330Z">バスケット ボール</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0" si="7">
+          <value>England</value>
+          <lang id="fi" time="20160914T011330Z">Englanti</lang>
+          <lang id="fr" time="20160914T011330Z">L’Angleterre</lang>
+          <lang id="de" time="20160914T011330Z">England</lang>
+          <lang id="ja" time="20160914T011330Z">イギリス</lang>
+        </row>
+        <row id="1" si="8">
+          <value>Canada</value>
+          <lang id="fi" time="20160914T011330Z">Kanada</lang>
+          <lang id="fr" time="20160914T011330Z">Canada</lang>
+          <lang id="de" time="20160914T011330Z">Kanada</lang>
+          <lang id="ja" time="20160914T011330Z">カナダ</lang>
+        </row>
+        <row id="2" si="9">
+          <value>United States</value>
+          <lang id="fi" time="20160914T011330Z">Yhdysvallat</lang>
+          <lang id="fr" time="20160914T011330Z">États-Unis</lang>
+          <lang id="de" time="20160914T011330Z">USA</lang>
+          <lang id="ja" time="20160914T011330Z">米国</lang>
+        </row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

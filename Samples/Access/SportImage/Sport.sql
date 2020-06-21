@@ -1,0 +1,22 @@
+CREATE TABLE Languages
+(
+  Id VARCHAR(10) NOT NULL,
+  Name VARCHAR(50) NOT NULL,
+  Flag IMAGE NOT NULL,
+  PRIMARY KEY(Id)
+);
+
+CREATE TABLE Sport
+(
+  Id INTEGER NOT NULL,
+  LangId VARCHAR(10) NOT NULL,
+  Name VARCHAR(50) NOT NULL,
+  Picture IMAGE NOT NULL,
+  FieldPlayers INTEGER NOT NULL,
+  Goalie YESNO NOT NULL,
+  Origin VARCHAR(50) NOT NULL,
+  OriginPicture IMAGE NOT NULL,
+  Description VARCHAR(200) NOT NULL,
+  PRIMARY KEY(Id, LangId),
+  FOREIGN KEY(LangId) REFERENCES Languages(Id)
+);

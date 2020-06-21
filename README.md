@@ -28,7 +28,8 @@ Soluling contains samples for the following platforms:
 - WPF
 - Windows Forms
 - XML
-- Plus more
+
+More samples will be added soon.
 
 ## API Implementation
 
