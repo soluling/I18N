@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20190826T143036Z" version="1.0.507" stringid="5">
+  <lang id="fi"/>
+  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="value">
+      <row id="finland" changed="20130130T230920Z" si="1" created="20130130T230707Z">
+        <value>Capital of Finland is Helsinki</value>
+        <lang id="fi" time="20190826T002625Z">Suomen pääkaupunki on Helsinki</lang>
+      </row>
+      <row id="germany" si="2" created="20170930T004203Z">
+        <value>Capital on Germany is Berlin</value>
+        <lang id="fi" time="20190825T183040Z" fuzzy="5">Saksan pääkaupunki on Berliini</lang>
+      </row>
+      <row id="usa" changed="20190825T205844Z" si="3" created="20170930T004203Z">
+        <value>Capital of United States is Washington</value>
+        <prev>Capital of United States is Washington </prev>
+        <lang id="fi" time="20190826T134846Z">Yhdysvaltojen pääkaupunki on Washington</lang>
+      </row>
+      <row id="japan" si="4" created="20170930T004203Z" locked="1" st="0">
+        <value>Capital of Japan is Tokyo</value>
+        <lang id="fi" time="20190825T183045Z" fuzzy="5">Japanin pääkaupunki on Tokio</lang>
+      </row>
+      <row id="sweden" changed="20130130T230920Z" si="5" created="20130130T230707Z">
+        <value>Capital of Sweden is Stockholm</value>
+        <lang id="fi" time="20190825T183047Z" fuzzy="5">Ruotsin pääkaupunki on Tukholma</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+</project>
