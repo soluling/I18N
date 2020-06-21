@@ -6,28 +6,45 @@ Soluling has implemented a collection of internationalization (I18N) APIs for [.
 
 ## Samples
 
-This repo also contains internationalization and localization [samples](https://github.com/soluling/I18N/tree/master/Samples). Soluling has dozens of samples covering several major programming platforms and file formats. Samples are up-to-date and using a recent version of their programming language.
+This repo also contains internationalization and localization [sample application, files and databases](https://github.com/soluling/I18N/tree/master/Samples). Soluling has dozens of samples covering several major programming platforms and file formats. Samples are up-to-date and using a recent version of their programming language.
 
 Soluling contains samples for the following platforms:
 
 - ASP.NET
 - ASP.NET Core
+- Access
 - Angular
 - Blazor
 - Delphi VCL
 - Delphi FireMonkey
-- INI
+- Excel
+- Firebird
+- Ini
+- Interbase
 - Java
 - JSON
+- MySQL
 - PHP
 - PO/GetText
+- PostgreSQL
+- PowerPoint
 - Qt
 - React
+- SQLite
+- SQL Server
+- SQL Server Compact Edition
+- SRT  subtitles
+- SVG
+- TMX
 - UWP (Universal Windows Platform)
 - Vue
-- WPF
-- Windows Forms
+- WebVTT subtitles
+- Word
+- WPF (.NET)
+- Windows Forms (.NET)
+- XLIFF
 - XML
+- YAML
 
 More samples will be added soon.
 

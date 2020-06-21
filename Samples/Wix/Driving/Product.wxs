@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+	<Product 
+    Id="*" 
+    Name="!(loc.ProductName)" 
+    Language="!(loc.LocaleId)" 
+    Version="1.0.0.0" 
+    Manufacturer="NewTool" 
+    UpgradeCode="021318e6-4cbe-46f5-be37-80ace1a74fe1">
+    
+		<Package 
+      InstallerVersion="200" 
+      Compressed="yes" 
+      InstallScope="perMachine" 
+      SummaryCodepage="!(loc.SummaryCodepage)" />
+
+		<MajorUpgrade DowngradeErrorMessage="!(loc.DowngradeErrorMessage)" />
+		<MediaTemplate EmbedCab="yes" />
+
+		<Feature Id="ProductFeature" Title="!(loc.ProductTitle)" Level="1">
+			<ComponentGroupRef Id="ProductComponents" />
+		</Feature>
+    
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+  
+    <Icon Id="icon.ico" SourceFile="..\..\Common\car_sedan_blue.ico"/>
+    <Property Id="ARPPRODUCTICON" Value="icon.ico" />
+	</Product>
+
+	<Fragment>
+		<Directory Id="TARGETDIR" Name="SourceDir">
+			<Directory Id="ProgramFilesFolder">
+				<Directory Id="INSTALLFOLDER" Name="!(loc.ProductName)" />
+			</Directory>
+		</Directory>
+	</Fragment>
+
+	<Fragment>
+		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
+			<Component Id="ProductComponent" Guid="8D57C128-89A2-4EC1-AEB9-7475D2058E4C">
+        <File Id="ExeFile" Source="..\..\Delphi\VCL\Driving\Localized\Win32\Debug\Localized.exe" KeyPath="yes" />
+			</Component>
+		</ComponentGroup>
+	</Fragment>
+</Wix>
