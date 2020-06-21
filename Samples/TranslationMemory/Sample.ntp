@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E613E54B-F569-4677-A945-31E023F951A5" created="20170930T013001Z" lastmodified="20191006T175012Z" version="1.0.563" stringid="16">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Sample.ini" fullpath="D:\NT\Deploy\Samples\TranslationMemory\Sample.ini" original="en" encoding="windows-1252">
+    <item name="car">
+      <row id="one" si="1">
+        <value>This is a red car</value>
+        <lang id="fi" rw="0" time="20170930T013011Z">Tämä on punainen auto</lang>
+      </row>
+      <row id="one1" si="2">
+        <value>This is a red car.</value>
+        <lang id="fi" st="3" or="5" rw="0" time="20191005T143945Z" fuzzy="94.4444427490234">Tämä on punainen auto.</lang>
+      </row>
+      <row id="two" si="3">
+        <value>This is a new car</value>
+        <lang id="fi" st="3" or="5" rw="0" time="20191005T143945Z" fuzzy="88.2352905273438">Tämä on punainen auto</lang>
+      </row>
+      <row id="three" si="4">This is a fast car</row>
+      <row id="four" si="5">
+        <value>This is very fast car</value>
+        <lang id="fi" st="3" or="6" rw="0" time="20191005T143958Z" fuzzy="5">Tämä on erittäin nopea auto</lang>
+      </row>
+    </item>
+    <item name="finland">
+      <row id="five" si="6">
+        <value>I am a Finn. I live in Helsinki.</value>
+        <lang id="fi" rw="0" time="20191005T144011Z" fuzzy="5">Olen suomalainen. Asun Helsingissä.</lang>
+      </row>
+      <row id="six" si="7">I am a Finn</row>
+      <row id="seven" si="8">Hello. I am a Finn.</row>
+      <row id="eight" si="9">I live in Helsinki.</row>
+      <row id="nine" si="10">I am the Finn. I live at Helsinki.</row>
+      <row id="10" si="11">I am the Finn</row>
+      <row id="11" si="12">I live at Helsinki.</row>
+      <row id="12" si="13">Hello</row>
+    </item>
+    <item name="other">
+      <row id="ski" si="14">Girl skis on a white car</row>
+    </item>
+    <item name="spell">
+      <row id="spell1" si="15">Thiis is a red cas</row>
+    </item>
+    <item name="long">
+      <row id="long" si="16">I have a car. It is a station wagon.</row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm translateorder="toPerfectMatchFirst">
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+</project>
