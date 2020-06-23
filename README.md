@@ -30,6 +30,7 @@ Soluling contains samples for the following platforms:
 - PO/GetText
 - PostgreSQL
 - PowerPoint
+- Python
 - Qt
 - React
 - SQLite
