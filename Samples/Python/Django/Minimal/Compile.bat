@@ -1,0 +1,1 @@
+env\Scripts\django-admin compilemessages

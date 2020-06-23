@@ -1,0 +1,88 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-04-12 09:45-0700\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=CHARSET\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#. DO NOT write code like this!
+#. The problem is that you will have three fragments of a sentance. They are hard to translate and impossible to change order
+#: Composite.py:12
+msgid "My name is "
+msgstr ""
+
+#: Composite.py:12
+msgid " and I am "
+msgstr ""
+
+#: Composite.py:12
+msgid " years old"
+msgstr ""
+
+#. DO NOT write code like this!
+#. f-string is basically just a syntax sugar that makes compisite string more readable but f-string cannot be localized because
+#. they don't provide a single string that can be stored as a resource item. Do not use!
+#. name: Name of the person
+#. age: Age of the person
+#: Composite.py:18 Composite.py:45
+#, python-brace-format
+msgid "My name is {name} and I am {age} years old"
+msgstr ""
+
+#. This is the preferred way to localize composite strings.
+#. {}: Name of the person
+#: Composite.py:24
+msgid "My name is {}"
+msgstr ""
+
+#. DO NOT write code like this!
+#. It is hard for translators to chnage the order of the placheolder
+#. 1st {}: Name of the person
+#. 2nd {}: Age of the person
+#: Composite.py:32
+msgid "My name is {} and I am {} years old"
+msgstr ""
+
+#. Either add indexes to the placehoders or use named paramters.
+#. This allows to reorder parameters in the localized patterns.
+#. 0: Name of the person
+#. 1: Age of the person
+#: Composite.py:40
+#, python-brace-format
+msgid "My name is {0} and I am {1} years old"
+msgstr ""
+
+#. You can also use the old format syntax that uses %
+#. %s: Name of the person
+#: Composite.py:51
+#, python-format
+msgid "My name is %s"
+msgstr ""
+
+#. However if you have more than do not use the old syntax: the parameter order cannot be changed
+#. %s: Name of the person
+#. %d: Age of the person
+#: Composite.py:58
+#, python-format
+msgid "My name is %s and I am %d years old"
+msgstr ""
+
+#. Instead use the named parameters
+#. name: Name of the person
+#. age: Age of the person
+#: Composite.py:65
+#, python-format
+msgid "My name is %(name)s and I am %(age)d years old"
+msgstr ""

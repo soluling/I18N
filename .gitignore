@@ -40,7 +40,6 @@ Samples/JavaScript/
 Samples/Nexus/
 Samples/Old/
 Samples/PDF/
-Samples/Python/
 Samples/Rails/
 Samples/Silverlight/
 Samples/SimpleDB/
@@ -79,6 +78,15 @@ vcl250.*
 **/packages/
 **/.vs/
 **/.vscode/
+**/.idea/
+
+**/__pycache__/
+**/Python/**/locale/
+**/Django/**/env/
+**/Django/**/static/
+**/Flask/**/env/
+**/Django/**/*.sqlite3
+
 Samples/WindowsForms/**/*.xml
 !Samples/WindowsForms/ResxData/Resources/Sports.xml
 !Samples/WindowsForms/ResxData/Resources/Numbers.xml

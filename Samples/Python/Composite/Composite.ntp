@@ -1,0 +1,112 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="7D399E91-42D4-4BC8-841A-CB85F68164ED" created="20190411T104324Z" lastmodified="20200316T230124Z" version="1.0.714" stringid="10">
+  <lang id="fi"/>
+  <node class="TPoSource" name="Composite.po" fullpath="D:\NT\Deploy\Samples\Python\Composite\Composite.po" original="en" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1">
+    <row id="My name is " si="1" scannedcomment="DO NOT write code like this!
+The problem is that you will have three fragments of a sentance. They are hard to translate and impossible to change order">
+      <value>My name is </value>
+      <lang id="fi" rw="0" time="20190411T104945Z">Nimeni on </lang>
+    </row>
+    <row id=" and I am " si="2">
+      <value> and I am </value>
+      <lang id="fi" rw="0" time="20190411T104340Z"> ja olen </lang>
+    </row>
+    <row id=" years old" si="3">
+      <value> years old</value>
+      <lang id="fi" rw="0" time="20190411T104345Z"> vuotta vanha</lang>
+    </row>
+    <row id="My name is {name} and I am {age} years old" class="TPatternRow" si="4" scannedcomment="DO NOT write code like this!
+f-string is basically just a syntax sugar that makes compisite string more readable but f-string cannot be localized because
+they don't provide a single string that can be stored as a resource item. Do not use!
+name: Name of the person
+age: Age of the person">
+      <value>My name is {name} and I am {age} years old</value>
+      <lang id="fi" rw="0" time="20190411T111516Z">Nimeni on {name} ja olen {age} vuotta vanha</lang>
+    </row>
+    <row id="My name is {}" changed="20190411T110511Z" class="TPatternRow" si="5" scannedcomment="This is the preferred way to localize composite strings.
+{}: Name of the person">
+      <value>My name is { }</value>
+      <lang id="fi" rw="0" time="20190411T111520Z">Nimeni on { }</lang>
+    </row>
+    <row id="My name is {} and I am {} years old" changed="20190411T110511Z" class="TPatternRow" si="6" scannedcomment="DO NOT write code like this!
+It is hard for translators to chnage the order of the placheolder
+1st {}: Name of the person
+2nd {}: Age of the person">
+      <value>My name is { } and I am { } years old</value>
+      <lang id="fi" rw="0" time="20190411T111533Z">Nimeni on { } ja olen { } vuotta vanha</lang>
+    </row>
+    <row id="My name is {0} and I am {1} years old" class="TPatternRow" si="7" scannedcomment="Either add indexes to the placehoders or use named paramters.
+This allows to reorder parameters in the localized patterns.
+0: Name of the person
+1: Age of the person">
+      <value>My name is {0} and I am {1} years old</value>
+      <lang id="fi" rw="0" time="20190411T111547Z">Nimeni on {0} ja olen {1} vuotta vanha</lang>
+    </row>
+    <row id="My name is %s" changed="20190411T104933Z" class="TPatternRow" si="8" scannedcomment="You can also use the old format syntax that uses %
+%s: Name of the person">
+      <value>My name is {0}</value>
+      <lang id="fi" rw="0" time="20190411T111553Z">Nimeni on {0}</lang>
+    </row>
+    <row id="My name is %s and I am %d years old" class="TPatternRow" si="9" scannedcomment="However if you have more than do not use the old syntax: the parameter order cannot be changed
+%s: Name of the person
+%d: Age of the person">
+      <value>My name is {0} and I am {1} years old</value>
+      <lang id="fi" or="3" rw="0" time="20190411T111547Z">Nimeni on {0} ja olen {1} vuotta vanha</lang>
+    </row>
+    <row id="My name is %(name)s and I am %(age)d years old" class="TPatternRow" si="10" scannedcomment="Instead use the named parameters
+name: Name of the person
+age: Age of the person">
+      <value>My name is {name} and I am {age} years old</value>
+      <lang id="fi" or="3" rw="0" time="20190411T111516Z">Nimeni on {name} ja olen {age} vuotta vanha</lang>
+    </row>
+    <data>
+      IyBTT01FIERFU0NSSVBUSVZFIFRJVExFLgojIENvcHlyaWdodCAoQykgWUVBUiBUSEUgUEFDS0FHRSdTIENPUFlSSUdIVCBIT0xE
+      RVIKIyBUaGlzIGZpbGUgaXMgZGlzdHJpYnV0ZWQgdW5kZXIgdGhlIHNhbWUgbGljZW5zZSBhcyB0aGUgUEFDS0FHRSBwYWNrYWdl
+      LgojIEZJUlNUIEFVVEhPUiA8RU1BSUxAQUREUkVTUz4sIFlFQVIuCiMKIywgZnV6enkKbXNnaWQgIiIKbXNnc3RyICIiCiJQcm9q
+      ZWN0LUlkLVZlcnNpb246IFBBQ0tBR0UgVkVSU0lPTlxuIgoiUmVwb3J0LU1zZ2lkLUJ1Z3MtVG86IFxuIgoiUE9ULUNyZWF0aW9u
+      LURhdGU6IDIwMTktMDQtMTIgMDk6NDUtMDcwMFxuIgoiUE8tUmV2aXNpb24tRGF0ZTogWUVBUi1NTy1EQSBITzpNSStaT05FXG4i
+      CiJMYXN0LVRyYW5zbGF0b3I6IEZVTEwgTkFNRSA8RU1BSUxAQUREUkVTUz5cbiIKIkxhbmd1YWdlLVRlYW06IExBTkdVQUdFIDxM
+      TEBsaS5vcmc+XG4iCiJMYW5ndWFnZTogXG4iCiJNSU1FLVZlcnNpb246IDEuMFxuIgoiQ29udGVudC1UeXBlOiB0ZXh0L3BsYWlu
+      OyBjaGFyc2V0PUNIQVJTRVRcbiIKIkNvbnRlbnQtVHJhbnNmZXItRW5jb2Rpbmc6IDhiaXRcbiIKCiMuIERPIE5PVCB3cml0ZSBj
+      b2RlIGxpa2UgdGhpcyEKIy4gVGhlIHByb2JsZW0gaXMgdGhhdCB5b3Ugd2lsbCBoYXZlIHRocmVlIGZyYWdtZW50cyBvZiBhIHNl
+      bnRhbmNlLiBUaGV5IGFyZSBoYXJkIHRvIHRyYW5zbGF0ZSBhbmQgaW1wb3NzaWJsZSB0byBjaGFuZ2Ugb3JkZXIKIzogQ29tcG9z
+      aXRlLnB5OjEyCm1zZ2lkICJNeSBuYW1lIGlzICIKbXNnc3RyICIiCgojOiBDb21wb3NpdGUucHk6MTIKbXNnaWQgIiBhbmQgSSBh
+      bSAiCm1zZ3N0ciAiIgoKIzogQ29tcG9zaXRlLnB5OjEyCm1zZ2lkICIgeWVhcnMgb2xkIgptc2dzdHIgIiIKCiMuIERPIE5PVCB3
+      cml0ZSBjb2RlIGxpa2UgdGhpcyEKIy4gZi1zdHJpbmcgaXMgYmFzaWNhbGx5IGp1c3QgYSBzeW50YXggc3VnYXIgdGhhdCBtYWtl
+      cyBjb21waXNpdGUgc3RyaW5nIG1vcmUgcmVhZGFibGUgYnV0IGYtc3RyaW5nIGNhbm5vdCBiZSBsb2NhbGl6ZWQgYmVjYXVzZQoj
+      LiB0aGV5IGRvbid0IHByb3ZpZGUgYSBzaW5nbGUgc3RyaW5nIHRoYXQgY2FuIGJlIHN0b3JlZCBhcyBhIHJlc291cmNlIGl0ZW0u
+      IERvIG5vdCB1c2UhCiMuIG5hbWU6IE5hbWUgb2YgdGhlIHBlcnNvbgojLiBhZ2U6IEFnZSBvZiB0aGUgcGVyc29uCiM6IENvbXBv
+      c2l0ZS5weToxOCBDb21wb3NpdGUucHk6NDUKIywgcHl0aG9uLWJyYWNlLWZvcm1hdAptc2dpZCAiTXkgbmFtZSBpcyB7bmFtZX0g
+      YW5kIEkgYW0ge2FnZX0geWVhcnMgb2xkIgptc2dzdHIgIiIKCiMuIFRoaXMgaXMgdGhlIHByZWZlcnJlZCB3YXkgdG8gbG9jYWxp
+      emUgY29tcG9zaXRlIHN0cmluZ3MuCiMuIHt9OiBOYW1lIG9mIHRoZSBwZXJzb24KIzogQ29tcG9zaXRlLnB5OjI0Cm1zZ2lkICJN
+      eSBuYW1lIGlzIHt9Igptc2dzdHIgIiIKCiMuIERPIE5PVCB3cml0ZSBjb2RlIGxpa2UgdGhpcyEKIy4gSXQgaXMgaGFyZCBmb3Ig
+      dHJhbnNsYXRvcnMgdG8gY2huYWdlIHRoZSBvcmRlciBvZiB0aGUgcGxhY2hlb2xkZXIKIy4gMXN0IHt9OiBOYW1lIG9mIHRoZSBw
+      ZXJzb24KIy4gMm5kIHt9OiBBZ2Ugb2YgdGhlIHBlcnNvbgojOiBDb21wb3NpdGUucHk6MzIKbXNnaWQgIk15IG5hbWUgaXMge30g
+      YW5kIEkgYW0ge30geWVhcnMgb2xkIgptc2dzdHIgIiIKCiMuIEVpdGhlciBhZGQgaW5kZXhlcyB0byB0aGUgcGxhY2Vob2RlcnMg
+      b3IgdXNlIG5hbWVkIHBhcmFtdGVycy4KIy4gVGhpcyBhbGxvd3MgdG8gcmVvcmRlciBwYXJhbWV0ZXJzIGluIHRoZSBsb2NhbGl6
+      ZWQgcGF0dGVybnMuCiMuIDA6IE5hbWUgb2YgdGhlIHBlcnNvbgojLiAxOiBBZ2Ugb2YgdGhlIHBlcnNvbgojOiBDb21wb3NpdGUu
+      cHk6NDAKIywgcHl0aG9uLWJyYWNlLWZvcm1hdAptc2dpZCAiTXkgbmFtZSBpcyB7MH0gYW5kIEkgYW0gezF9IHllYXJzIG9sZCIK
+      bXNnc3RyICIiCgojLiBZb3UgY2FuIGFsc28gdXNlIHRoZSBvbGQgZm9ybWF0IHN5bnRheCB0aGF0IHVzZXMgJQojLiAlczogTmFt
+      ZSBvZiB0aGUgcGVyc29uCiM6IENvbXBvc2l0ZS5weTo1MQojLCBweXRob24tZm9ybWF0Cm1zZ2lkICJNeSBuYW1lIGlzICVzIgpt
+      c2dzdHIgIiIKCiMuIEhvd2V2ZXIgaWYgeW91IGhhdmUgbW9yZSB0aGFuIGRvIG5vdCB1c2UgdGhlIG9sZCBzeW50YXg6IHRoZSBw
+      YXJhbWV0ZXIgb3JkZXIgY2Fubm90IGJlIGNoYW5nZWQKIy4gJXM6IE5hbWUgb2YgdGhlIHBlcnNvbgojLiAlZDogQWdlIG9mIHRo
+      ZSBwZXJzb24KIzogQ29tcG9zaXRlLnB5OjU4CiMsIHB5dGhvbi1mb3JtYXQKbXNnaWQgIk15IG5hbWUgaXMgJXMgYW5kIEkgYW0g
+      JWQgeWVhcnMgb2xkIgptc2dzdHIgIiIKCiMuIEluc3RlYWQgdXNlIHRoZSBuYW1lZCBwYXJhbWV0ZXJzCiMuIG5hbWU6IE5hbWUg
+      b2YgdGhlIHBlcnNvbgojLiBhZ2U6IEFnZSBvZiB0aGUgcGVyc29uCiM6IENvbXBvc2l0ZS5weTo2NQojLCBweXRob24tZm9ybWF0
+      Cm1zZ2lkICJNeSBuYW1lIGlzICUobmFtZSlzIGFuZCBJIGFtICUoYWdlKWQgeWVhcnMgb2xkIgptc2dzdHIgIiIK
+    </data>
+  </node>
+  <terminology>
+    <shared/>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
