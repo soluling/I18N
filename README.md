@@ -50,7 +50,7 @@ Soluling contains samples for the following platforms:
 - XML
 - YAML
 
-More samples will be added soon.
+Android, iOS and Visual C++ samples will be added soon.
 
 ## API Implementation
 
