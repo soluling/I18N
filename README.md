@@ -17,12 +17,14 @@ Soluling contains samples for the following platforms:
 - Blazor
 - Delphi VCL
 - Delphi FireMonkey
+- DITA
 - Excel
 - Firebird
 - Ini
 - Interbase
 - Java
 - JSON
+- Markdown
 - MySQL
 - PHP
 - PO/GetText
