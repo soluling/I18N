@@ -14,6 +14,7 @@ Soluling contains samples for the following platforms:
 - ASP.NET Core
 - Access
 - Angular
+- Binary data files
 - Blazor
 - Delphi VCL
 - Delphi FireMonkey
@@ -24,6 +25,7 @@ Soluling contains samples for the following platforms:
 - Interbase
 - Java
 - JSON
+- JSP
 - Markdown
 - MySQL
 - PHP
@@ -38,6 +40,7 @@ Soluling contains samples for the following platforms:
 - SQL Server Compact Edition
 - SRT  subtitles
 - SVG
+- Text files
 - TMX
 - UWP (Universal Windows Platform)
 - Vue

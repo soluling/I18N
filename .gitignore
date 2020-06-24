@@ -32,10 +32,8 @@ Library/TypeScript/
 Library/TypeScript/node_modules/
 
 Samples/Android/
-Samples/Binary/
 Samples/BSON/
 Samples/iOS/
-Samples/JSP/
 Samples/JavaScript/
 Samples/Nexus/
 Samples/Old/
@@ -59,9 +57,11 @@ Samples/BuildDataView.bat
 **/de/*
 **/ja/*
 **/internal/*.ntres
+**/*_??.properties
 
 **/.metadata/
 **/.recommenders/
+**/.settings/
 
 **/__history/
 **/__recovery/
@@ -79,6 +79,8 @@ vcl250.*
 **/.vs/
 **/.vscode/
 **/.idea/
+**/.classpath
+**/.project
 
 **/__pycache__/
 **/Python/**/locale/
@@ -86,6 +88,9 @@ vcl250.*
 **/Django/**/static/
 **/Flask/**/env/
 **/Django/**/*.sqlite3
+
+**/JSP/Servers/*
+**/JSP/Template/*
 
 Samples/WindowsForms/**/*.xml
 !Samples/WindowsForms/ResxData/Resources/Sports.xml
