@@ -1,6 +1,6 @@
 # Runtime Translation Loading for Angular
 
-The standard Angular 9 internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile the language for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
+The standard Angular 9 or later internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile the language for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
 
 Start by installing the Soluling library.
 
@@ -47,7 +47,7 @@ The resource files are simple JSON files that contain key-value pairs.
 }
 ```
 
-The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and produces faster parsing time. The easiest way to create the runtime files is to use Soluling, but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
+The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and has faster parsing time. The easiest way to create the runtime files is to use [Soluling](https://www.soluling.com/), but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
 
 The next modification you need to do is to add locale support for the languages you plan to support. By default, Angular application contains support for English (United States). If you plan to support German and Japanese, you need to add the locale support for those languages. Add the following code into your `app.module.ts`.
 
@@ -101,6 +101,6 @@ If you have the resource file matching your browser's language, the application 
 
 You can download Soluling from [here](https://www.soluling.com/Download).
 
-**Note!** The extract tool of Angular 9 does not extract source code strings but only strings from templates. An improved extract tool will most likely arrive with Angular 9.1.
+**Note!** The extract tools of Angular 9 and 10 do not extract source code strings but only strings from templates. An improved extract tool will arrive with Angular 10.1.
 
 **Note!** At the moment, Soluling is a Windows application and works only on Windows. However, we plan to release a web-based version soon.

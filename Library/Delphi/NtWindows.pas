@@ -91,6 +91,7 @@ implementation
 uses
   Windows,
   SysUtils,
+  Classes,
 {$IFDEF DELPHIXE}
   NtResource,
 {$ENDIF}
@@ -300,14 +301,71 @@ var
   enumCompatibleOnly: Boolean;
   enumCheckVersions: Boolean;
 
+{$IFDEF DELPHI2009}
+function CheckStamp(
+  stream: TStream;
+  const stamp: TBytes;
+  start: Integer): Boolean; overload;
+
+  function GetByte: Byte;
+  begin
+    stream.Read(Result, Sizeof(Result));
+  end;
+
+var
+  i: Integer;
+  position: Integer;
+begin
+  Result := True;
+  position := stream.Position;
+
+  try
+    for i := 0 to start - 1 do
+      GetByte;
+
+    for i := 0 to Length(stamp) - 1 do
+      if GetByte <> stamp[i] then
+        Exit(False);
+  finally
+    stream.Position := position;
+  end;
+end;
+
+function CheckStamp(
+  const fileName: String;
+  const stamp: TBytes;
+  start: Integer = 0): Boolean; overload;
+var
+  stream: TFileStream;
+begin
+  stream := TFileStream.Create(fileName, fmOpenRead or fmShareDenyNone);
+  try
+    Result := CheckStamp(stream, stamp, start);
+  finally
+    stream.Free;
+  end;
+end;
+
+function IsPeFile(const fileName: String): Boolean;
+const
+  IMAGE_DOS_SIGNATURE_C = #$4D#$5A; // MZ
+begin
+  Result := CheckStamp(fileName, BytesOf(IMAGE_DOS_SIGNATURE_C));
+end;
+{$ENDIF}
+
 function EnumLocalesEx(localeStr: PChar; flags: DWord; param: LParam): Integer; stdcall;  //FI:O804
 var
   code: String;
+  thisFileName: String;
 begin
   code := localeStr;
+  thisFileName := ChangeFileExt(enumExeFileName, '.' + code);
 
-  if FileExists(ChangeFileExt(enumExeFileName, '.' + code)) then
+  if FileExists(thisFileName) {$IFDEF DELPHI2009}and IsPeFile(thisFileName){$ENDIF} then
+  begin
     enumLanguages.Add(code, TNtWindows.CodeToId(code));
+  end;
 
   Result := 1;
 end;
