@@ -11,7 +11,7 @@ let resourceLocale: string = 'en-US';
 function parseTranslations(fileData: string): Translations 
 {
   // Converts JSON file into JavaScript object and cast that to the type of the strongly typed translation
-  let translations: Translations = JSON.parse(fileData);
+  let translations: Translations = JSON.parse(fileData).translations;
   return translations;
 }
 

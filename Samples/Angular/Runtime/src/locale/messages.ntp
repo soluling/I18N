@@ -1,32 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="452370F6-398B-4C37-9A8A-89EABECF71FB" created="20200218T184729Z" lastmodified="20200221T212804Z" version="1.0.703" lockedrowcomplete="0" stringid="5">
+<project id="452370F6-398B-4C37-9A8A-89EABECF71FB" created="20200218T184729Z" lastmodified="20200709T173536Z" version="1.0.765" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="E:\Src\Angular\Runtime\src\locale\messages.xlf" original="en" encoding="utf-8">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Runtime\src\locale\messages.xlf" original="en" encoding="utf-8">
     <row id="1238358838717941284" si="1">
       <value>Sample</value>
-      <lang id="fi" st="4" or="5" rw="0" time="20200218T184743Z" fuzzy="99">Esimerkki</lang>
+      <lang id="fi" rw="0" time="20200218T184743Z" fuzzy="99">Esimerkki</lang>
       <lang id="ja" st="4" or="5" rw="0" time="20200221T212759Z" fuzzy="99">サンプル</lang>
     </row>
     <row id="8195429391839583561" si="2">
       <value>Static text</value>
-      <lang id="fi" st="4" or="6" rw="0" time="20200218T184746Z" fuzzy="5">Staattinen teksti</lang>
+      <lang id="fi" rw="0" time="20200218T184746Z" fuzzy="5">Staattinen teksti</lang>
       <lang id="ja" st="4" or="5" rw="0" time="20200221T212745Z" fuzzy="99">スタティック テキスト</lang>
     </row>
     <row id="3536303920536194408" class="THtmlRow" si="3">
       <value>This is a &lt;b&gt;new&lt;/b&gt; sample</value>
-      <lang id="fi" st="4" rw="0" time="20200218T184755Z" fuzzy="5">Tämä on &lt;b&gt;uusi&lt;/b&gt; esimerkki</lang>
+      <lang id="fi" rw="0" time="20200218T184755Z" fuzzy="5">Tämä on &lt;b&gt;uusi&lt;/b&gt; esimerkki</lang>
       <lang id="ja" st="4" or="6" rw="0" time="20200221T212749Z" fuzzy="5">これは&lt;b&gt;新しい&lt;/b&gt;サンプルです</lang>
     </row>
-    <row id="5078016957909331967" class="TPatternRow" si="4">
-      <value>My name is {0}</value>
-      <lang id="fi" st="4" rw="0" time="20200218T184759Z">Nimeni on {0}</lang>
-      <lang id="ja" st="4" or="6" rw="0" time="20200221T212752Z" fuzzy="5">自分の名前が {0}</lang>
+    <row id="5078016957909331967" changed="20200709T173314Z" class="TPatternRow" si="4">
+      <value>My name is {name}</value>
+      <prev>My name is {0}</prev>
+      <lang id="fi" rw="0" time="20200218T184759Z">Nimeni on {name}</lang>
+      <lang id="ja" st="3" or="6" rw="0" time="20200221T212752Z" fuzzy="5">自分の名前が {name}</lang>
     </row>
-    <row id="3938815228928675456" class="TPatternRow" si="5">
-      <value>{0} and {1} are my friends</value>
-      <lang id="fi" st="4" rw="0" time="20200218T184826Z">{0} ja {1} ovat ystäviäni</lang>
-      <lang id="ja" st="4" or="6" rw="0" time="20200221T212754Z" fuzzy="5">{0} と {1} が友達</lang>
+    <row id="3938815228928675456" changed="20200709T173314Z" class="TPatternRow" si="5">
+      <value>{0:name} and {1:name2} are my friends</value>
+      <prev>{0} and {1} are my friends</prev>
+      <lang id="fi" rw="0" time="20200709T173423Z">{0:name} ja {1:name2} ovat ystäviäni</lang>
+      <lang id="ja" st="4" rw="0" time="20200709T173524Z">{0:name} と {1:name2} が友達</lang>
     </row>
     <configurations>
       <configuration name="Default" format="aoBoth"/>
@@ -45,9 +47,7 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>
