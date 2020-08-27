@@ -7,5 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent 
 {
+  name = 'John';
   str = $localize`Source code string`;
 }

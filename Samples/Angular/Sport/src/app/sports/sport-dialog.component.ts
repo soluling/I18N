@@ -36,6 +36,9 @@ export class SportDialogComponent implements OnInit
 
   onSubmit(): void 
   {
+    if (this.form.invalid)
+      return;
+      
     this.sport.languages[0].name = this.form.value.name;
     this.sport.languages[0].origin = this.form.value.origin;
     this.sport.languages[0].description = this.form.value.description;

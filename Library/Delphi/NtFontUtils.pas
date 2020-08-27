@@ -8,7 +8,7 @@ unit NtFontUtils;
 interface
 
 uses
-  Graphics;
+  Vcl.Graphics;
 
 type
   { @abstract Record that stores information about charset. }

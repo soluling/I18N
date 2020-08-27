@@ -38,16 +38,20 @@ getTranslations('assets/i18n').then(translations =>
 
 Here we first call `getTranslations` function that gets the translation file from the server. The function gets the resource file matching the current language of the browser. You can override the language by using the parameters, but the default behavior is to find a resource file matching the language of the browser. If the function finds any translations, then it loads them using `loadTranslations`. If no translation is found, no loading happens, and then the application uses the original strings.
 
-The resource files are simple JSON files that contain key-value pairs.
+The resource files are the standard Angular JSON resource files that contain key-value pairs.
 
 ```json
 {
-  "1238358838717941284": "Sample",
-  "3067469718492071419": "This is a sample"
+  "locale": "en",
+  "translations":
+  {
+    "1238358838717941284": "Sample",
+    "3067469718492071419": "This is a sample"
+  }
 }
 ```
 
-The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and has faster parsing time. The easiest way to create the runtime files is to use [Soluling](https://www.soluling.com/), but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
+The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and has faster parsing time. Angular's extraction tool can extract JSON instead of XLIFF or XMB. The disadvantage of the JSON extraction is that comments and meanings are not extracted. The easiest way to create the JSON files is to use [Soluling](https://www.soluling.com/), but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
 
 The next modification you need to do is to add locale support for the languages you plan to support. By default, Angular application contains support for English (United States). If you plan to support German and Japanese, you need to add the locale support for those languages. Add the following code into your `app.module.ts`.
 
@@ -87,11 +91,7 @@ export class AppModule { }
 
 We use `LocaleService` service. It is a service that gives us the id of the loaded resource.
 
-The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF or XMB). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 and XMB. However you need to use XLIFF 2.0 when using the runtime localization. Add the XLIFF 2.0 created by the extract tool to a [Soluling project](https://www.soluling.com/Help/Angular/Index.htm). Then select the `.xlf` in the project tree and choose Options. Select Write options sheet. Check either *Compact runtime file*, or *Both files*.
-
-![Runtime](Runtime.png)
-
-By default Soluling creates the runtime files into assets\i18n directory that is the directory you want to have them. Run the application.
+The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF, XMB or JSON). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 JSON, and XMB. However you need to use JSON when using the runtime localization. The localized JSON files are ready to be used in runtime location. Place the the localized JSON files into assets\i18n directory. Run the application.
 
 ```bash
 ng serve -o

@@ -1,33 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200316T185521Z" version="1.0.714" lockedrowcomplete="0" stringid="553">
+<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200827T150821Z" version="1.0.772" lockedrowcomplete="0" stringid="553">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="WindowsForms.sln" fullpath="D:\NT\Deploy\Samples\WindowsForms\WindowsForms.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms]" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrJson,nrText,nrXml,nrGroupIcon,nrIcon,nrManifest]">
-    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" st="0" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
       <netproperties version="standard20"/>
-      <node class="TResXNode" name="Resources.resx" st="0">
-        <row id="Female" si="542" st="0">Female</row>
-        <row id="Few" si="543" st="0">Few</row>
-        <row id="Male" si="544" st="0">Male</row>
-        <row id="Many" si="545" st="0">Many</row>
-        <row id="Neutral" si="546" st="0">Neutral</row>
-        <row id="One" si="547" st="0">
+      <node class="TResXNode" name="Resources.resx">
+        <row id="Female" si="542">Female</row>
+        <row id="Few" si="543">Few</row>
+        <row id="Male" si="544">Male</row>
+        <row id="Many" si="545">Many</row>
+        <row id="Neutral" si="546">Neutral</row>
+        <row id="One" si="547">
           <value>One</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141948Z">Yksi</lang>
         </row>
-        <row id="Plural" si="548" st="0">Plural</row>
-        <row id="Two" si="549" st="0">
+        <row id="Plural" si="548">Plural</row>
+        <row id="Two" si="549">
           <value>Two</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
-        <row id="Zero" si="550" st="0">Zero</row>
+        <row id="Zero" si="550">Zero</row>
       </node>
     </node>
-    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" st="0" original="en" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" original="en" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="SelectLanguage.resx" st="0" resourcekind="nkForm">
-        <row id="okButton.Text" si="551" st="0">OK</row>
-        <row id="cancelButton.Text" si="552" st="0">Cancel</row>
-        <row id="$this.Text" si="553" st="0">Select Language</row>
+      <node class="TResXNode" name="SelectLanguage.resx" resourcekind="nkForm">
+        <row id="okButton.Text" si="551">OK</row>
+        <row id="cancelButton.Text" si="552">Cancel</row>
+        <row id="$this.Text" si="553">Select Language</row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
           IFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9ybWF0
@@ -13362,6 +13362,7 @@
         <row id="label1.Text" si="31">dummy</row>
         <row id="$this.Text" si="32">Sample</row>
         <codeproperties>
+          <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
@@ -31733,18 +31734,19 @@ Basketball is a team sport in which two teams of five players try to score point
     </configurations>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

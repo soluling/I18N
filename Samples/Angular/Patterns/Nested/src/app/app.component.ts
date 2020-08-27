@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 
 // This samples uses nested plural/select markup. The sample show how flexible the markup is but you should 
 // avoid nested or at least deeply nested markup because they tend to come very hard to read and also very difficult to translate
-// without editor's support. NewTool's multi pattern editor does not support nested patters but you have to use chained patterns. 
+// without editor's support. Soluling's multi pattern editor does not support nested patters but you have to use chained patterns. 
 // See Multi sample to see how use chained patterns.
 @Component({
   selector: 'app-root',
