@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200827T150821Z" version="1.0.772" lockedrowcomplete="0" stringid="553">
+<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200830T204259Z" version="1.0.772" lockedrowcomplete="0" stringid="553">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="WindowsForms.sln" fullpath="D:\NT\Deploy\Samples\WindowsForms\WindowsForms.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms]" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrJson,nrText,nrXml,nrGroupIcon,nrIcon,nrManifest]">
     <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
@@ -598,8 +598,8 @@
     <node class="TNetProjectSource" name="Comments\Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="162">dummy</row>
-        <row id="label2.Text" si="163">dummy</row>
+        <row id="label1.Text" si="162" excluded="2">dummy</row>
+        <row id="label2.Text" si="163" excluded="2">dummy</row>
         <row id="$this.Text" si="164">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -9433,19 +9433,19 @@
         <row id="String1" si="169">Ansi ångström</row>
       </node>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="utf8Label.Text" si="170">dummy</row>
-        <row id="ansiLabel.Text" si="171">dummy</row>
-        <row id="isoLabel.Text" si="172">dummy</row>
-        <row id="utf16LeLabel.Text" si="173">dummy</row>
-        <row id="utf16BeLabel.Text" si="174">dummy</row>
-        <row id="utf32LeLabel.Text" si="175">dummy</row>
-        <row id="utf32BeLabel.Text" si="176">dummy</row>
-        <row id="gb18030NoBomLabel.Text" si="177">dummy</row>
-        <row id="utf8NoBomLabel.Text" si="178">dummy</row>
-        <row id="utf16BeNoBomLabel.Text" si="179">dummy</row>
-        <row id="utf16LeNoBomLabel.Text" si="180">dummy</row>
-        <row id="utf32BeNoBomLabel.Text" si="181">dummy</row>
-        <row id="utf32LeNoBomLabel.Text" si="182">dummy</row>
+        <row id="utf8Label.Text" si="170" excluded="2">dummy</row>
+        <row id="ansiLabel.Text" si="171" excluded="2">dummy</row>
+        <row id="isoLabel.Text" si="172" excluded="2">dummy</row>
+        <row id="utf16LeLabel.Text" si="173" excluded="2">dummy</row>
+        <row id="utf16BeLabel.Text" si="174" excluded="2">dummy</row>
+        <row id="utf32LeLabel.Text" si="175" excluded="2">dummy</row>
+        <row id="utf32BeLabel.Text" si="176" excluded="2">dummy</row>
+        <row id="gb18030NoBomLabel.Text" si="177" excluded="2">dummy</row>
+        <row id="utf8NoBomLabel.Text" si="178" excluded="2">dummy</row>
+        <row id="utf16BeNoBomLabel.Text" si="179" excluded="2">dummy</row>
+        <row id="utf16LeNoBomLabel.Text" si="180" excluded="2">dummy</row>
+        <row id="utf32BeNoBomLabel.Text" si="181" excluded="2">dummy</row>
+        <row id="utf32LeNoBomLabel.Text" si="182" excluded="2">dummy</row>
         <row id="$this.Text" si="183">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -13359,7 +13359,7 @@
             AAAAAAAA
           </row>
         <row id="button1.Text" si="30">&amp;Next</row>
-        <row id="label1.Text" si="31">dummy</row>
+        <row id="label1.Text" si="31" excluded="2">dummy</row>
         <row id="$this.Text" si="32">Sample</row>
         <codeproperties>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
@@ -17032,7 +17032,7 @@
           <value>&amp;Language...</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
         </row>
-        <row id="label2.Text" si="38">dummy</row>
+        <row id="label2.Text" si="38" excluded="2">dummy</row>
         <row id="$this.Text" si="39">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -17184,9 +17184,9 @@
     <node class="TNetProjectSource" name="Links\Links.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Links\Links.csproj" original="en" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="41">dummy</row>
-        <row id="textXml.Text" si="42">dummy</row>
-        <row id="binaryXml.Text" si="43">dummy</row>
+        <row id="label1.Text" si="41" excluded="2">dummy</row>
+        <row id="textXml.Text" si="42" excluded="2">dummy</row>
+        <row id="binaryXml.Text" si="43" excluded="2">dummy</row>
         <row id="label2.Text" si="44">Text XML:</row>
         <row id="label3.Text" si="45">Binary XML</row>
         <row id="$this.Text" si="46">Sample</row>
@@ -17846,40 +17846,40 @@
     <node class="TNetProjectSource" name="Number\Number.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Number\Number.csproj" original="en" groupname="Number\Number.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="abbreviated4.Text" si="483">dummy</row>
-        <row id="abbreviated3.Text" si="484">dummy</row>
-        <row id="abbreviated2.Text" si="485">dummy</row>
-        <row id="abbreviated1.Text" si="486">dummy</row>
-        <row id="abbreviated5.Text" si="487">dummy</row>
-        <row id="abbreviated6.Text" si="488">dummy</row>
-        <row id="abbreviated7.Text" si="489">dummy</row>
-        <row id="abbreviated8.Text" si="490">dummy</row>
-        <row id="abbreviated9.Text" si="491">dummy</row>
-        <row id="abbreviated10.Text" si="492">dummy</row>
-        <row id="abbreviated11.Text" si="493">dummy</row>
-        <row id="abbreviated12.Text" si="494">dummy</row>
+        <row id="abbreviated4.Text" si="483" excluded="2">dummy</row>
+        <row id="abbreviated3.Text" si="484" excluded="2">dummy</row>
+        <row id="abbreviated2.Text" si="485" excluded="2">dummy</row>
+        <row id="abbreviated1.Text" si="486" excluded="2">dummy</row>
+        <row id="abbreviated5.Text" si="487" excluded="2">dummy</row>
+        <row id="abbreviated6.Text" si="488" excluded="2">dummy</row>
+        <row id="abbreviated7.Text" si="489" excluded="2">dummy</row>
+        <row id="abbreviated8.Text" si="490" excluded="2">dummy</row>
+        <row id="abbreviated9.Text" si="491" excluded="2">dummy</row>
+        <row id="abbreviated10.Text" si="492" excluded="2">dummy</row>
+        <row id="abbreviated11.Text" si="493" excluded="2">dummy</row>
+        <row id="abbreviated12.Text" si="494" excluded="2">dummy</row>
         <row id="currencyRadio.Text" si="495">&amp;Currency such as &quot;$1M&quot;</row>
         <row id="shortRadio.Text" si="496">&amp;Short such as &quot;1M&quot;</row>
         <row id="longRadio.Text" si="497">&amp;Long such as &quot;1 million&quot;</row>
         <row id="formatGroup.Text" si="498"> Format  </row>
-        <row id="original1.Text" si="499">dummy</row>
-        <row id="original2.Text" si="500">dummy</row>
-        <row id="original3.Text" si="501">dummy</row>
-        <row id="original4.Text" si="502">dummy</row>
-        <row id="original5.Text" si="503">dummy</row>
-        <row id="original6.Text" si="504">dummy</row>
-        <row id="original7.Text" si="505">dummy</row>
-        <row id="original8.Text" si="506">dummy</row>
-        <row id="original9.Text" si="507">dummy</row>
-        <row id="original10.Text" si="508">dummy</row>
-        <row id="original11.Text" si="509">dummy</row>
-        <row id="original12.Text" si="510">dummy</row>
+        <row id="original1.Text" si="499" excluded="2">dummy</row>
+        <row id="original2.Text" si="500" excluded="2">dummy</row>
+        <row id="original3.Text" si="501" excluded="2">dummy</row>
+        <row id="original4.Text" si="502" excluded="2">dummy</row>
+        <row id="original5.Text" si="503" excluded="2">dummy</row>
+        <row id="original6.Text" si="504" excluded="2">dummy</row>
+        <row id="original7.Text" si="505" excluded="2">dummy</row>
+        <row id="original8.Text" si="506" excluded="2">dummy</row>
+        <row id="original9.Text" si="507" excluded="2">dummy</row>
+        <row id="original10.Text" si="508" excluded="2">dummy</row>
+        <row id="original11.Text" si="509" excluded="2">dummy</row>
+        <row id="original12.Text" si="510" excluded="2">dummy</row>
         <row id="label1.Text" si="511">&amp;Precision:</row>
         <row id="button1.Text" si="512">&amp;Language...</row>
-        <row id="abbreviated13.Text" si="513">dummy</row>
-        <row id="abbreviated14.Text" si="514">dummy</row>
-        <row id="original13.Text" si="515">dummy</row>
-        <row id="original14.Text" si="516">dummy</row>
+        <row id="abbreviated13.Text" si="513" excluded="2">dummy</row>
+        <row id="abbreviated14.Text" si="514" excluded="2">dummy</row>
+        <row id="original13.Text" si="515" excluded="2">dummy</row>
+        <row id="original14.Text" si="516" excluded="2">dummy</row>
         <row id="$this.Text" si="517">
           <value>Number Abbreviation Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Numeron lyhennys -esimerkki</lang>
@@ -18576,45 +18576,45 @@
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on nolla- ja kaksi-osat</lang>
         </row>
         <row id="label41.Text" si="250">0</row>
-        <row id="label0_0.Text" si="251">dummy</row>
-        <row id="label0_1.Text" si="252">dummy</row>
-        <row id="label0_2.Text" si="253">dummy</row>
-        <row id="label1_2.Text" si="254">dummy</row>
-        <row id="label1_1.Text" si="255">dummy</row>
-        <row id="label1_0.Text" si="256">dummy</row>
+        <row id="label0_0.Text" si="251" excluded="2">dummy</row>
+        <row id="label0_1.Text" si="252" excluded="2">dummy</row>
+        <row id="label0_2.Text" si="253" excluded="2">dummy</row>
+        <row id="label1_2.Text" si="254" excluded="2">dummy</row>
+        <row id="label1_1.Text" si="255" excluded="2">dummy</row>
+        <row id="label1_0.Text" si="256" excluded="2">dummy</row>
         <row id="label8.Text" si="257">1</row>
-        <row id="label2_2.Text" si="258">dummy</row>
-        <row id="label2_1.Text" si="259">dummy</row>
-        <row id="label2_0.Text" si="260">dummy</row>
+        <row id="label2_2.Text" si="258" excluded="2">dummy</row>
+        <row id="label2_1.Text" si="259" excluded="2">dummy</row>
+        <row id="label2_0.Text" si="260" excluded="2">dummy</row>
         <row id="label12.Text" si="261">2</row>
-        <row id="label3_2.Text" si="262">dummy</row>
-        <row id="label3_1.Text" si="263">dummy</row>
-        <row id="label3_0.Text" si="264">dummy</row>
+        <row id="label3_2.Text" si="262" excluded="2">dummy</row>
+        <row id="label3_1.Text" si="263" excluded="2">dummy</row>
+        <row id="label3_0.Text" si="264" excluded="2">dummy</row>
         <row id="label16.Text" si="265">3</row>
-        <row id="label4_2.Text" si="266">dummy</row>
-        <row id="label4_1.Text" si="267">dummy</row>
-        <row id="label4_0.Text" si="268">dummy</row>
+        <row id="label4_2.Text" si="266" excluded="2">dummy</row>
+        <row id="label4_1.Text" si="267" excluded="2">dummy</row>
+        <row id="label4_0.Text" si="268" excluded="2">dummy</row>
         <row id="label9.Text" si="269">11</row>
-        <row id="label5_2.Text" si="270">dummy</row>
-        <row id="label5_1.Text" si="271">dummy</row>
-        <row id="label5_0.Text" si="272">dummy</row>
+        <row id="label5_2.Text" si="270" excluded="2">dummy</row>
+        <row id="label5_1.Text" si="271" excluded="2">dummy</row>
+        <row id="label5_0.Text" si="272" excluded="2">dummy</row>
         <row id="label14.Text" si="273">20</row>
-        <row id="label5_3.Text" si="274">dummy</row>
-        <row id="label4_3.Text" si="275">dummy</row>
-        <row id="label3_3.Text" si="276">dummy</row>
-        <row id="label2_3.Text" si="277">dummy</row>
-        <row id="label1_3.Text" si="278">dummy</row>
-        <row id="label0_3.Text" si="279">dummy</row>
+        <row id="label5_3.Text" si="274" excluded="2">dummy</row>
+        <row id="label4_3.Text" si="275" excluded="2">dummy</row>
+        <row id="label3_3.Text" si="276" excluded="2">dummy</row>
+        <row id="label2_3.Text" si="277" excluded="2">dummy</row>
+        <row id="label1_3.Text" si="278" excluded="2">dummy</row>
+        <row id="label0_3.Text" si="279" excluded="2">dummy</row>
         <row id="label4.Text" si="280">
           <value>Pattern with 0 and 2 parts</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa ovat 0- ja 2-osat</lang>
         </row>
-        <row id="label5_4.Text" si="281">dummy</row>
-        <row id="label4_4.Text" si="282">dummy</row>
-        <row id="label3_4.Text" si="283">dummy</row>
-        <row id="label2_4.Text" si="284">dummy</row>
-        <row id="label1_4.Text" si="285">dummy</row>
-        <row id="label0_4.Text" si="286">dummy</row>
+        <row id="label5_4.Text" si="281" excluded="2">dummy</row>
+        <row id="label4_4.Text" si="282" excluded="2">dummy</row>
+        <row id="label3_4.Text" si="283" excluded="2">dummy</row>
+        <row id="label2_4.Text" si="284" excluded="2">dummy</row>
+        <row id="label1_4.Text" si="285" excluded="2">dummy</row>
+        <row id="label0_4.Text" si="286" excluded="2">dummy</row>
         <row id="label23.Text" si="287">
           <value>Pattern with operator parts</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on operaattoriosia</lang>
@@ -19435,13 +19435,13 @@
     <node class="TNetProjectSource" name="Patterns\Gender\SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" groupname="Patterns\Gender\SimpleGender.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="maleLabel.Text" si="529">dummy</row>
-        <row id="femaleLabel.Text" si="530">dummy</row>
-        <row id="neutralLabel.Text" si="531">dummy</row>
+        <row id="maleLabel.Text" si="529" excluded="2">dummy</row>
+        <row id="femaleLabel.Text" si="530" excluded="2">dummy</row>
+        <row id="neutralLabel.Text" si="531" excluded="2">dummy</row>
         <row id="languageButton.Text" si="532">&amp;Language...</row>
-        <row id="neutralInfo.Text" si="533">dummy</row>
-        <row id="femaleInfo.Text" si="534">dummy</row>
-        <row id="maleInfo.Text" si="535">dummy</row>
+        <row id="neutralInfo.Text" si="533" excluded="2">dummy</row>
+        <row id="femaleInfo.Text" si="534" excluded="2">dummy</row>
+        <row id="maleInfo.Text" si="535" excluded="2">dummy</row>
         <row id="$this.Text" si="536">Gender Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -19672,31 +19672,31 @@
           <value>A dynamic string without plural support:</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
         </row>
-        <row id="noPluralLabel0.Text" si="323">dummy</row>
-        <row id="noPluralLabel1.Text" si="324">dummy</row>
-        <row id="noPluralLabel2.Text" si="325">dummy</row>
+        <row id="noPluralLabel0.Text" si="323" excluded="2">dummy</row>
+        <row id="noPluralLabel1.Text" si="324" excluded="2">dummy</row>
+        <row id="noPluralLabel2.Text" si="325" excluded="2">dummy</row>
         <row id="pluralLabel.Text" si="326">
           <value>Using a proper plural enabled format function:</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Käyttän kunnollista monikkotukevaa muotoilufunktiota:</lang>
         </row>
-        <row id="pluralLabel0.Text" si="327">dummy</row>
-        <row id="pluralLabel1.Text" si="328">dummy</row>
-        <row id="pluralLabel2.Text" si="329">dummy</row>
+        <row id="pluralLabel0.Text" si="327" excluded="2">dummy</row>
+        <row id="pluralLabel1.Text" si="328" excluded="2">dummy</row>
+        <row id="pluralLabel2.Text" si="329" excluded="2">dummy</row>
         <row id="homeLabel.Text" si="330">
           <value>A home brew solution that works on English and few other languages:</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kotitekoinen ratkaisu, joka toimii englannilla ja muutamalla muulla kielellä:</lang>
         </row>
-        <row id="homeLabel0.Text" si="331">dummy</row>
-        <row id="homeLabel1.Text" si="332">dummy</row>
-        <row id="homeLabel2.Text" si="333">dummy</row>
+        <row id="homeLabel0.Text" si="331" excluded="2">dummy</row>
+        <row id="homeLabel1.Text" si="332" excluded="2">dummy</row>
+        <row id="homeLabel2.Text" si="333" excluded="2">dummy</row>
         <row id="multiPluralLabel.Text" si="334">
           <value>Same a above but using a multi plural enabled format function:</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kuten yllä, mutta käyttää monen monikon ymmärtävää muotoilufunktiota:</lang>
         </row>
-        <row id="multiPluralLabel1.Text" si="335">dummy</row>
-        <row id="multiPluralLabel2.Text" si="336">dummy</row>
-        <row id="multiPluralLabel3.Text" si="337">dummy</row>
-        <row id="multiPluralLabel4.Text" si="338">dummy</row>
+        <row id="multiPluralLabel1.Text" si="335" excluded="2">dummy</row>
+        <row id="multiPluralLabel2.Text" si="336" excluded="2">dummy</row>
+        <row id="multiPluralLabel3.Text" si="337" excluded="2">dummy</row>
+        <row id="multiPluralLabel4.Text" si="338" excluded="2">dummy</row>
         <row id="$this.Text" si="339">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
@@ -20116,16 +20116,16 @@
     <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label0_1.Text" si="307">dummy</row>
-        <row id="label1_1.Text" si="308">dummy</row>
-        <row id="label0_2.Text" si="309">dummy</row>
-        <row id="label1_2.Text" si="310">dummy</row>
-        <row id="label2_2.Text" si="311">dummy</row>
-        <row id="label1_3.Text" si="312">dummy</row>
-        <row id="label2_3.Text" si="313">dummy</row>
-        <row id="label1_10.Text" si="314">dummy</row>
-        <row id="label5_10.Text" si="315">dummy</row>
-        <row id="label0_0.Text" si="316">dummy</row>
+        <row id="label0_1.Text" si="307" excluded="2">dummy</row>
+        <row id="label1_1.Text" si="308" excluded="2">dummy</row>
+        <row id="label0_2.Text" si="309" excluded="2">dummy</row>
+        <row id="label1_2.Text" si="310" excluded="2">dummy</row>
+        <row id="label2_2.Text" si="311" excluded="2">dummy</row>
+        <row id="label1_3.Text" si="312" excluded="2">dummy</row>
+        <row id="label2_3.Text" si="313" excluded="2">dummy</row>
+        <row id="label1_10.Text" si="314" excluded="2">dummy</row>
+        <row id="label5_10.Text" si="315" excluded="2">dummy</row>
+        <row id="label0_0.Text" si="316" excluded="2">dummy</row>
         <row id="useZeroCheck.Text" si="317">
           <value>&amp;Use zero part</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Käytä nolla-osaa</lang>
@@ -20445,16 +20445,16 @@
     <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="294">dummy</row>
-        <row id="label2.Text" si="295">dummy</row>
-        <row id="label3.Text" si="296">dummy</row>
-        <row id="label4.Text" si="297">dummy</row>
-        <row id="label5.Text" si="298">dummy</row>
-        <row id="label11.Text" si="299">dummy</row>
-        <row id="label21.Text" si="300">dummy</row>
-        <row id="label101.Text" si="301">dummy</row>
-        <row id="label111.Text" si="302">dummy</row>
-        <row id="label0.Text" si="303">dummy</row>
+        <row id="label1.Text" si="294" excluded="2">dummy</row>
+        <row id="label2.Text" si="295" excluded="2">dummy</row>
+        <row id="label3.Text" si="296" excluded="2">dummy</row>
+        <row id="label4.Text" si="297" excluded="2">dummy</row>
+        <row id="label5.Text" si="298" excluded="2">dummy</row>
+        <row id="label11.Text" si="299" excluded="2">dummy</row>
+        <row id="label21.Text" si="300" excluded="2">dummy</row>
+        <row id="label101.Text" si="301" excluded="2">dummy</row>
+        <row id="label111.Text" si="302" excluded="2">dummy</row>
+        <row id="label0.Text" si="303" excluded="2">dummy</row>
         <row id="$this.Text" si="304">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -20714,7 +20714,7 @@
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="157">Hello world</row>
-        <row id="label2.Text" si="158">dummy</row>
+        <row id="label2.Text" si="158" excluded="2">dummy</row>
         <row id="$this.Text" si="159">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21422,9 +21422,9 @@
     <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceStringLocation\ResourceStringLocation.csproj" original="en" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="390">dummy</row>
-        <row id="label2.Text" si="391">dummy</row>
-        <row id="label3.Text" si="392">dummy</row>
+        <row id="label1.Text" si="390" excluded="2">dummy</row>
+        <row id="label2.Text" si="391" excluded="2">dummy</row>
+        <row id="label3.Text" si="392" excluded="2">dummy</row>
         <row id="$this.Text" si="393">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21567,8 +21567,8 @@
         </data>
       </node>
       <node class="TResXNode" name="Form2.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="394">dummy</row>
-        <row id="label2.Text" si="395">dummy</row>
+        <row id="label1.Text" si="394" excluded="2">dummy</row>
+        <row id="label2.Text" si="395" excluded="2">dummy</row>
         <row id="$this.Text" si="396">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21709,14 +21709,14 @@
     <node class="TNetProjectSource" name="ResxData\ResxData.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\ResxData.csproj" original="en" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="196">dummy</row>
+        <row id="label1.Text" si="196" excluded="2">dummy</row>
         <row id="playButton.Text" si="197">
           <value>&amp;Play</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Soita</lang>
         </row>
-        <row id="stringXmlLabel.Text" si="198">dummy</row>
-        <row id="binaryXmlLabel.Text" si="199">dummy</row>
-        <row id="simpleXmlLabel.Text" si="200">dummy</row>
+        <row id="stringXmlLabel.Text" si="198" excluded="2">dummy</row>
+        <row id="binaryXmlLabel.Text" si="199" excluded="2">dummy</row>
+        <row id="simpleXmlLabel.Text" si="200" excluded="2">dummy</row>
         <row id="$this.Text" si="201">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -25013,7 +25013,7 @@
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="123">Hello World</row>
-        <row id="label2.Text" si="124">dummy</row>
+        <row id="label2.Text" si="124" excluded="2">dummy</row>
         <row id="$this.Text" si="125">Signed Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -25148,7 +25148,7 @@
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="127">Hello World</row>
-        <row id="label2.Text" si="128">dummy</row>
+        <row id="label2.Text" si="128" excluded="2">dummy</row>
         <row id="$this.Text" si="129">Signed Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -25286,7 +25286,7 @@
           <value>Hello world</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" si="140">dummy</row>
+        <row id="label2.Text" si="140" excluded="2">dummy</row>
         <row id="$this.Text" si="141">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -25430,7 +25430,7 @@
           <value>Hello World</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" si="132">dummy</row>
+        <row id="label2.Text" si="132" excluded="2">dummy</row>
         <row id="$this.Text" si="133">
           <value>Signed Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitettu esimerkki</lang>
@@ -25573,7 +25573,7 @@
           <value>Hello World</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" si="136">dummy</row>
+        <row id="label2.Text" si="136" excluded="2">dummy</row>
         <row id="$this.Text" si="137">
           <value>Signed Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitusesimerkki</lang>
@@ -30395,11 +30395,11 @@
     <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="label1.Text" si="471">dummy</row>
-        <row id="label2.Text" si="472">dummy</row>
-        <row id="label3.Text" si="473">dummy</row>
-        <row id="label4.Text" si="474">dummy</row>
-        <row id="label5.Text" si="475">dummy</row>
+        <row id="label1.Text" si="471" excluded="2">dummy</row>
+        <row id="label2.Text" si="472" excluded="2">dummy</row>
+        <row id="label3.Text" si="473" excluded="2">dummy</row>
+        <row id="label4.Text" si="474" excluded="2">dummy</row>
+        <row id="label5.Text" si="475" excluded="2">dummy</row>
         <row id="$this.Text" si="476">
           <value>String Format Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Merkkijonon muotoiluesimerkki</lang>
@@ -31589,7 +31589,7 @@ Basketball is a team sport in which two teams of five players try to score point
           <value>Hello World</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
-        <row id="label2.Text" si="110">dummy</row>
+        <row id="label2.Text" si="110" excluded="2">dummy</row>
         <row id="$this.Text" si="111">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -31733,6 +31733,9 @@ Basketball is a team sport in which two teams of five players try to score point
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
@@ -31746,7 +31749,9 @@ Basketball is a team sport in which two teams of five players try to score point
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

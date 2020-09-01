@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A03A43B1-7B85-4526-A35E-30281374F8C3" created="20190424T210027Z" lastmodified="20200316T192607Z" version="1.0.714" stringid="6">
+<project id="A03A43B1-7B85-4526-A35E-30281374F8C3" created="20190424T210027Z" lastmodified="20200901T140833Z" version="1.0.774" stringid="6">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="..\WpfUserControl\WpfUserControl.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfUserControl\WpfUserControl.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30"/>
@@ -94,17 +94,19 @@
     </rules>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

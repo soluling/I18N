@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4A436CA3-03F2-4AE6-BF4A-9FE45AD03FBB" created="20200901T202037Z" lastmodified="20200901T202152Z" version="1.0.775" lockedrowcomplete="0" stringid="3">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TGoI18nSource" name="active.en.json" fullpath="D:\NT\Deploy\Samples\Go\Simple\active.en.json" original="en" encoding="windows-1252">
+    <row id="HelloName" class="TPatternRow" si="1">
+      <value>Hello {name}!</value>
+      <lang id="fi" rw="0" time="20200901T202124Z" fuzzy="100">Hei {name}!</lang>
+    </row>
+    <row id="HelloWorld" si="2">
+      <value>Hello World</value>
+      <lang id="fi" rw="0" time="20200901T202127Z" fuzzy="100">Hei maailma</lang>
+    </row>
+    <row id="Skis" class="TPatternRow" si="3">
+      <value>I have {ski} skis.</value>
+      <pattern plural="pfOne">I have {ski} ski.</pattern>
+      <lang id="fi" rw="0" time="20200901T202144Z">
+        <value>Minulla on {ski} suksea.</value>
+        <pattern plural="pfOne">Minulla on {ski} suksi.</pattern>
+      </lang>
+    </row>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+    <settings saveoptions="[soEveryTime,soSameAsOriginal,soRemoveOld]" range="srLanguage" projectsavestatus="tsTranslated">
+    </settings>
+  </tm>
+  <mt optimizeusage="0">
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
