@@ -21,6 +21,7 @@ Soluling contains samples for the following platforms:
 - DITA
 - Excel
 - Firebird
+- Go
 - Ini
 - Interbase
 - Java
