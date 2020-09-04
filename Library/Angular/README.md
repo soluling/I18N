@@ -101,6 +101,6 @@ If you have the resource file matching your browser's language, the application 
 
 You can download Soluling from [here](https://www.soluling.com/Download).
 
-**Note!** The extract tools of Angular 9 and 10 do not extract source code strings but only strings from templates. An improved extract tool will arrive with Angular 10.1.
+**Note!** If you want to extract string from .ts file you need to use Angular 10.1 or later. The extract tools of Angular 9 and 10 do not extract strings from .ts files but only strings from templates.
 
 **Note!** At the moment, Soluling is a Windows application and works only on Windows. However, we plan to release a web-based version soon.

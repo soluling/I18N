@@ -1,51 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="452370F6-398B-4C37-9A8A-89EABECF71FB" created="20200218T184729Z" lastmodified="20200709T225406Z" version="1.0.765" lockedrowcomplete="0" stringid="8">
+<project id="D0CBDEEC-4FC9-47D6-8936-DA3CB014A173" created="20200904T005938Z" lastmodified="20200904T010728Z" version="1.0.772" lockedrowcomplete="0" stringid="10">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Runtime\src\locale\messages.xlf" original="en" encoding="utf-8">
-    <row id="1238358838717941284" si="1">
-      <value>Sample</value>
-      <lang id="fi" rw="0" time="20200218T184743Z" fuzzy="99">Esimerkki</lang>
-      <lang id="ja" st="4" or="5" rw="0" time="20200221T212759Z" fuzzy="99">サンプル</lang>
-    </row>
-    <row id="8195429391839583561" si="2">
-      <value>Static text</value>
-      <lang id="fi" rw="0" time="20200218T184746Z" fuzzy="5">Staattinen teksti</lang>
-      <lang id="ja" st="4" or="5" rw="0" time="20200221T212745Z" fuzzy="99">スタティック テキスト</lang>
-    </row>
-    <row id="3536303920536194408" class="THtmlRow" si="3">
-      <value>This is a &lt;b&gt;new&lt;/b&gt; sample</value>
-      <lang id="fi" rw="0" time="20200218T184755Z" fuzzy="5">Tämä on &lt;b&gt;uusi&lt;/b&gt; esimerkki</lang>
-      <lang id="ja" st="4" or="6" rw="0" time="20200221T212749Z" fuzzy="5">これは&lt;b&gt;新しい&lt;/b&gt;サンプルです</lang>
-    </row>
-    <row id="5078016957909331967" changed="20200709T173314Z" class="TPatternRow" si="4">
-      <value>My name is {name}</value>
-      <prev>My name is {0}</prev>
-      <lang id="fi" rw="0" time="20200218T184759Z">Nimeni on {name}</lang>
-      <lang id="ja" st="3" or="6" rw="0" time="20200221T212752Z" fuzzy="5">自分の名前が {name}</lang>
-    </row>
-    <row id="3938815228928675456" changed="20200709T173314Z" class="TPatternRow" si="5">
-      <value>{0:name} and {1:name2} are my friends</value>
-      <prev>{0} and {1} are my friends</prev>
-      <lang id="fi" rw="0" time="20200709T173423Z">{0:name} ja {1:name2} ovat ystäviäni</lang>
-      <lang id="ja" st="4" rw="0" time="20200709T173524Z">{0:name} と {1:name2} が友達</lang>
-    </row>
-    <row id="224905756619582507" si="6" created="20200709T225302Z" st="0">
+  <node class="TAngularSource" name="messages.json" fullpath="D:\NT\Deploy\Samples\Angular\Runtime\src\locale\messages.json" original="en" encoding="windows-1252">
+    <row id="224905756619582507" si="1">
       <value>This is a sample.</value>
-      <lang id="fi" rw="0" time="20200709T225325Z" fuzzy="99">Tämä on esimerkki.</lang>
+      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on esimerkki.</lang>
+      <lang id="ja" rw="0" time="20200904T010107Z" fuzzy="5">これはサンプルです。</lang>
     </row>
-    <row id="7646278465584374540" class="TPatternRow" si="7" created="20200709T225302Z" st="0">
-      <value>`My name is {this.name}</value>
-      <lang id="fi" rw="0" time="20200709T225337Z" fuzzy="73.9130401611328">Nimeni on {this.name}</lang>
+    <row id="4231664889986575153" class="TTagRow" si="2">
+      <value>My name is &lt;PH/&gt;</value>
+      <lang id="fi" rw="0" time="20200904T010047Z" fuzzy="5">Nimeni on &lt;PH/&gt;</lang>
+      <lang id="ja" rw="0" time="20200904T010343Z" fuzzy="5">私の名前は&lt;PH/&gt;です</lang>
     </row>
-    <row id="8508734183248173875" class="TPatternRow" si="8" created="20200709T225302Z" st="0">
-      <value>{0:this.name} and {1:this.name2} will come</value>
-      <lang id="fi" rw="0" time="20200709T225400Z">{0:this.name} ja {1:this.name2} tulevat</lang>
+    <row id="3501459928511353606" class="TTagRow" si="3">
+      <value>&lt;PH/&gt; and &lt;PH_1/&gt; will come</value>
+      <lang id="fi" rw="0" time="20200904T010015Z" fuzzy="5">&lt;PH/&gt; ja &lt;PH_1/&gt; tulevat</lang>
+      <lang id="ja" rw="0" time="20200904T010658Z">&lt;PH/&gt;と&lt;PH_1/&gt;が来ます</lang>
+    </row>
+    <row id="1238358838717941284" si="4">
+      <value>Sample</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Esimerkki</lang>
+      <lang id="ja" rw="0" time="20200904T010101Z">サンプル</lang>
+    </row>
+    <row id="8195429391839583561" si="5">
+      <value>Static text</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Staattinen teksti</lang>
+      <lang id="ja" rw="0" time="20200904T010101Z">スタティック テキスト</lang>
+    </row>
+    <row id="2184669140276043151" class="TTagRow" si="6">
+      <value>This is a &lt;b&gt;new&lt;/b&gt; sample</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on &lt;b&gt;uusi&lt;/b&gt; esimerkki</lang>
+      <lang id="ja" rw="0" time="20200904T010101Z">これは&lt;b&gt;新しい&lt;/b&gt;サンプルです</lang>
+    </row>
+    <row id="3683231710138827964" class="TPatternRow" si="7">
+      <value>My name is {0}</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Nimeni on {0}</lang>
+      <lang id="ja" rw="0" time="20200904T010512Z" fuzzy="5">私の名前は{0}です</lang>
+    </row>
+    <row id="6979255853066988770" class="TPatternRow" si="8">
+      <value>{0} and {1} are my friends</value>
+      <lang id="fi" rw="0" time="20200904T010034Z" fuzzy="5">{0} ja {1} ovat ystäviäni</lang>
+      <lang id="ja" rw="0" time="20200904T010316Z" fuzzy="5">{0}と{1}は私の友人です</lang>
+    </row>
+    <row id="4314513045811054997" class="TPatternRow" si="10">
+      <value>{0} and {1} will come</value>
+      <lang id="fi" rw="0" time="20200904T010029Z" fuzzy="5">{0} ja {1} tulevat</lang>
+      <lang id="ja" rw="0" time="20200904T010710Z" fuzzy="5">{0}と{1}が来ます</lang>
     </row>
     <configurations>
-      <configuration name="Default" format="aoBoth"/>
+      <configuration name="Default" dir="..\assets\i18n" localized="&lt;id&gt;.&lt;ext&gt;"/>
     </configurations>
   </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
@@ -57,9 +66,13 @@
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
+    <settings range="srView">
+    </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

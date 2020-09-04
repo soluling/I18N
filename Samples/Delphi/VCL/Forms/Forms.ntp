@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20191223T020720Z" version="1.0.632" stringid="454">
+<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20200902T134622Z" version="1.0.776" stringid="458">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" platforms="[ptWin32]" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" platforms="[ptWin32,ptWin64]" scansourcecode="1">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
@@ -34,6 +34,22 @@
         </item>
         <item name="ComboBox1" type="TComboBox">
           <font id="Font" name="Tahoma" size="8"/>
+          <row id="Items.Strings[0]" si="4" created="20150322T001537Z">
+            <value>Please select</value>
+            <lang id="fi" time="20150325T004924Z">Valitse</lang>
+          </row>
+          <row id="Items.Strings[1]" si="5" created="20150322T001537Z">
+            <value>Europe</value>
+            <lang id="fi" time="20170508T140701Z">Eurooppaan</lang>
+          </row>
+          <row id="Items.Strings[2]" si="6">
+            <value>Asia</value>
+            <lang id="fi" time="20170508T140706Z">Aasiaan</lang>
+          </row>
+          <row id="Items.Strings[3]" si="7">
+            <value>America</value>
+            <lang id="fi" time="20170508T140710Z">Amerikkaan</lang>
+          </row>
           <row id="Left">
             <value>216</value>
             <lang id="fi" time="20150325T004902Z">248</lang>
@@ -51,21 +67,21 @@
             <value>Please select</value>
             <lang id="fi" time="20150325T004924Z">Valitse</lang>
           </row>
-          <row id="Items.Strings[0]" si="4" created="20150322T001537Z">
+          <row id="Items.Strings[0]" si="455" created="20200902T134619Z" st="0">
             <value>Please select</value>
-            <lang id="fi" time="20150325T004924Z">Valitse</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20150325T004924Z">Valitse</lang>
           </row>
-          <row id="Items.Strings[1]" si="5" created="20150322T001537Z">
+          <row id="Items.Strings[1]" si="456" created="20200902T134619Z" st="0">
             <value>Europe</value>
-            <lang id="fi" time="20170508T140701Z">Eurooppaan</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20170508T140701Z">Eurooppaan</lang>
           </row>
-          <row id="Items.Strings[2]" si="6">
+          <row id="Items.Strings[2]" si="457" created="20200902T134619Z" st="0">
             <value>Asia</value>
-            <lang id="fi" time="20170508T140706Z">Aasiaan</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20170508T140706Z">Aasiaan</lang>
           </row>
-          <row id="Items.Strings[3]" si="7">
+          <row id="Items.Strings[3]" si="458" created="20200902T134619Z" st="0">
             <value>America</value>
-            <lang id="fi" time="20170508T140710Z">Amerikkaan</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20170508T140710Z">Amerikkaan</lang>
           </row>
         </item>
         <data>
@@ -970,7 +986,7 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="AirplaneFrm">
         <row id="SText" si="37">
           <value>Airplane</value>
@@ -982,16 +998,25 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="CarFrm">
-        <row id="SDescription" si="40">
-          <value>This is a car. It is the most common way to move.</value>
-          <lang id="fi" time="20191223T020448Z">Tämä on auto. Se on yleisin tapa liikkua.</lang>
-        </row>
         <row id="SText" si="39" scannedcomment="Can title">
           <value>Car</value>
           <lang id="fi" time="20150321T190438Z">Auto</lang>
         </row>
+        <row id="SDescription" si="40">
+          <value>This is a car. It is the most common way to move.</value>
+          <lang id="fi" time="20191223T020448Z">Tämä on auto. Se on yleisin tapa liikkua.</lang>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="MessagesFrm" created="20150321T150249Z">
+        <row id="SMessagePlural" changed="20170508T140120Z" class="TPatternRow" si="44" scannedcomment="0: File count" created="20170507T194529Z">
+          <value>{0} files</value>
+          <pattern plural="pfOne">{0} file</pattern>
+          <lang id="fi" time="20170508T140148Z">
+            <value>{0} tiedostoa</value>
+            <pattern plural="pfOne">{0} tiedosto</pattern>
+          </lang>
+          <lang id="ja" time="20170508T140742Z">{0}ファイル</lang>
+        </row>
         <row id="SMessageGender" class="TPatternRow" si="45" scannedcomment="0: Name of a person" created="20180223T015516Z">
           <value gender="geMale">{0} will bring his bicycle</value>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
@@ -1021,28 +1046,15 @@
           <value>Hello {0} and {1}!</value>
           <lang id="fi" time="20170507T194548Z">Moi {0} ja {1}!</lang>
         </row>
-        <row id="SMessagePlural" changed="20170508T140120Z" class="TPatternRow" si="44" scannedcomment="0: File count" created="20170507T194529Z">
-          <value>{0} files</value>
-          <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170508T140148Z">
-            <value>{0} tiedostoa</value>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
-          </lang>
-          <lang id="ja" time="20170508T140742Z">{0}ファイル</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <platformfiles>
-      <item file="..\..\Win64\Release\Project1.exe" drcfile="..\..\Win64\Release\Project1.drc"/>
+      <item file="..\..\Win64\Release\Forms.exe" drcfile="..\..\Win64\Release\Forms.drc"/>
     </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -1059,16 +1071,18 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>
