@@ -8,9 +8,9 @@ class Sport
   bestPlayer: string;  // Name of the best player in that sport
 
   constructor(
-    name: string, 
-    select: string = "", 
-    bestPlayer: string = "") 
+    name: string,
+    select: string = '',
+    bestPlayer: string = '') 
   {
     this.name = name;
     this.select = select;
@@ -53,9 +53,9 @@ export class AppComponent
   constructor()
   {
     // Populate the sport array
-    this.sports.push(new Sport($localize`Soccer`, "soccer", "Pelé"));
-    this.sports.push(new Sport($localize`Ice Hockey`, "hockey", "Wayne Gretzky"));
-    this.sports.push(new Sport($localize`Basketball`, "basketball", "Michael Jordan"));
+    this.sports.push(new Sport($localize`Soccer`, 'soccer', 'Pelé'));
+    this.sports.push(new Sport($localize`Ice Hockey`, 'hockey', 'Wayne Gretzky'));
+    this.sports.push(new Sport($localize`Basketball`, 'basketball', 'Michael Jordan'));
     this.sports.push(new Sport($localize`Other`));
 
     // Select the first sport

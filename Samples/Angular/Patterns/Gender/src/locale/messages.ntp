@@ -1,42 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E85112C8-3B85-4871-B682-D720E0B961F5" created="20171204T211602Z" lastmodified="20200317T002259Z" version="1.0.714" stringid="3">
+<project id="E85112C8-3B85-4871-B682-D720E0B961F5" created="20171204T211602Z" lastmodified="20200904T104251Z" version="1.0.772" stringid="6">
   <lang id="fi"/>
   <lang id="en"/>
   <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Gender\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
-    <row id="app\app.component.ts.header" importid="9062141988063736217" si="1">
+    <row id="src\app\app.component.js.header" importid="9062141988063736217" si="4" created="20200904T104003Z">
       <value>Gender Sample</value>
-      <lang id="fi" rw="0">Sukuesimerkki</lang>
-      <lang id="en" rw="0" time="20180523T185225Z">Gender Sample</lang>
+      <lang id="fi" st="2" or="3" rw="0">Sukuesimerkki</lang>
+      <lang id="en" st="2" or="3" rw="0" time="20180523T185225Z">Gender Sample</lang>
     </row>
-    <row id="app\name.component.ts.value" importid="2792220360813277329" changed="20200317T002249Z" class="TPatternRow" si="2" scannedcomment="name: Name of the person">
-      <value gender="geMale">{name} drives his car.</value>
-      <pattern gender="geFemale">{name} drives her car.</pattern>
-      <lang id="fi" rw="0" time="20171204T211649Z">{name} ajaa autoaan.</lang>
-      <lang id="en" st="3" rw="0" time="20180523T185227Z">
-        <value gender="geMale">{name} drives his car.</value>
-        <pattern gender="geFemale">{name} drives her car.</pattern>
+    <row id="src\app\name.component.js.value" importid="2792220360813277329" class="TPatternRow" si="5" scannedcomment="name: Name of the person" created="20200904T104003Z">
+      <value gender="geMale">{0} drives his car.</value>
+      <pattern gender="geFemale">{0} drives her car.</pattern>
+      <lang id="fi" st="4" rw="0" time="20200904T104129Z" fuzzy="100">{0} ajaa autoaan.</lang>
+      <lang id="en" st="4" rw="0" time="20200904T104211Z" fuzzy="5">
+        <value gender="geMale">{0} drives his car.</value>
+        <pattern gender="geFemale">{0} drives her car.</pattern>
       </lang>
     </row>
-    <row id="app\name.component.ts.value2" importid="2260906681375880880" changed="20200317T002249Z" class="TPatternRow" si="3" scannedcomment="name: Name of the person">
-      <value gender="geNeutral">{name} drives the car.</value>
-      <pattern gender="geMale">{name} drives his car.</pattern>
-      <pattern gender="geFemale">{name} drives her car.</pattern>
-      <lang id="fi" rw="0" time="20171204T211651Z">{name} ajaa autoaan.</lang>
-      <lang id="en" st="3" rw="0" time="20180523T185229Z">
-        <value gender="geMale">{name} drives the car.</value>
-        <pattern gender="geMale">{name} drives his car.</pattern>
-        <pattern gender="geFemale">{name} drives her car.</pattern>
-      </lang>
+    <row id="src\app\name.component.js.value2" importid="2260906681375880880" class="TPatternRow" si="6" scannedcomment="name: Name of the person" created="20200904T104003Z">
+      <value gender="geNeutral">{0} drives the car.</value>
+      <pattern gender="geMale">{0} drives his car.</pattern>
+      <pattern gender="geFemale">{0} drives her car.</pattern>
+      <lang id="fi" st="4" rw="0" time="20200904T104139Z" fuzzy="84.2105255126953">{0} ajaa autoaan.</lang>
     </row>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

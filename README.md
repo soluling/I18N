@@ -4,58 +4,6 @@
 
 Soluling has implemented a collection of internationalization (I18N) APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
 
-## Samples
-
-This repo also contains internationalization and localization [sample application, files and databases](https://github.com/soluling/I18N/tree/master/Samples). Soluling has dozens of samples covering several major programming platforms and file formats. Samples are up-to-date and using a recent version of their programming language.
-
-Soluling contains samples for the following platforms:
-
-- ASP.NET
-- ASP.NET Core
-- Access
-- Angular
-- Binary data files
-- Blazor
-- Delphi VCL
-- Delphi FireMonkey
-- DITA
-- Excel
-- Firebird
-- Go
-- Ini
-- Interbase
-- Java
-- JSON
-- JSP
-- Markdown
-- MySQL
-- PHP
-- PO/GetText
-- PostgreSQL
-- PowerPoint
-- Python
-- Qt
-- React
-- SQLite
-- SQL Server
-- SQL Server Compact Edition
-- SRT  subtitles
-- SVG
-- Text files
-- TMX
-- UWP (Universal Windows Platform)
-- Vue
-- WebVTT subtitles
-- Wix installer
-- Word
-- WPF (.NET)
-- Windows Forms (.NET)
-- XLIFF
-- XML
-- YAML
-
-Android, iOS and Visual C++ samples will be added soon.
-
 ## API Implementation
 
 Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. in the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
@@ -252,6 +200,58 @@ We can implement similar libraries for Java. There is already ICU implementation
 This will create `NtPluralData.pas`, `NtNumberData.pas`, `PluralData.cs` and `NumberData.cs`.
 
 With little effort we can make CldrToCode.exe to create Java, TypeScript and Python files too.
+
+## Samples
+
+This repo also contains internationalization and localization [sample application, files and databases](https://github.com/soluling/I18N/tree/master/Samples). Soluling has dozens of samples covering several major programming platforms and file formats. Samples are up-to-date and using a recent version of their programming language.
+
+Soluling contains samples for the following platforms:
+
+- ASP.NET
+- ASP.NET Core
+- Access
+- Angular
+- Binary data files
+- Blazor
+- Delphi VCL
+- Delphi FireMonkey
+- DITA
+- Excel
+- Firebird
+- Go
+- Ini
+- Interbase
+- Java
+- JSON
+- JSP
+- Markdown
+- MySQL
+- PHP
+- PO/GetText
+- PostgreSQL
+- PowerPoint
+- Python
+- Qt
+- React
+- SQLite
+- SQL Server
+- SQL Server Compact Edition
+- SRT  subtitles
+- SVG
+- Text files
+- TMX
+- UWP (Universal Windows Platform)
+- Vue
+- WebVTT subtitles
+- Wix installer
+- Word
+- WPF (.NET)
+- Windows Forms (.NET)
+- XLIFF
+- XML
+- YAML
+
+Android, iOS and Visual C++ samples will be added soon.
 
 ## Localization
 
