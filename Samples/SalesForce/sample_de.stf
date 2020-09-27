@@ -1,0 +1,36 @@
+# Use the Bilingual file to review translations, edit labels that have already been translated, and add translations for labels that haven't been translated.
+# - The TRANSLATED section of the file contains the text that has been translated and needs to be reviewed.
+# - The UNTRANSLATED section of the file contains text that hasn't been translated. You can replace untranslated labels in the LABEL column with translated values.
+
+# The Out of Date indicators are:
+# - An asterisk (*): The label is out of date. A change was made to the default language label and the translation hasn't been updated.
+# - A dash (-): The translation is current.
+
+# Notes:
+# Don't add columns to or remove columns from this file.
+# Tabs (\t), new lines (\n) and carriage returns (\r) are represented by special characters in this file. These characters should be preserved in the import file to maintain formatting.
+# Lines that begin with the # symbol are ignored during import.
+# Salesforce translation files are exported in the UTF-8 encoding to support extended and double-byte characters. This encoding cannot be changed.
+
+# Language: German
+Language code: de
+Type: Bilingual
+
+------------------TRANSLATED-------------------
+
+# KEY	LABEL	TRANSLATION	OUT OF DATE
+
+ButtonOrLink.Event.New_Event	New Event	Neues Ereignis	-
+ButtonOrLink.Opportunity.Add_Line_Items	Add Line Items	Artikelanlage	-
+CustomLabel.PKB2_All_Fields_Required	All fields are required.	Alle Felder sind obligatorisch.	-
+CustomLabel.PKB2_Answers_Might_Help	These answers might help immediately	Diese Antworten könnten vielleicht helfen	-
+CustomLabel.PKB2_Back_To_Results	Back to search results	Zurück zu den Suchergebnissen	-
+CustomLabel.PKB2_Back_To_Search_Page	Back to search page	Zurück zur Suchseite	-
+CustomLabel.PKB2_Cancel	Cancel	Abbrechen	-
+CustomLabel.SC_Case_Information	Case Information	Beschreibungsinformationen	-
+CustomLabel.SC_Contact_Information	Contact Information	Kontaktinformationen	-
+CustomLabel.SC_New_Case	New Case	Neuer Kundenvorgang	-
+CustomLabel.SC_New_Find_Contact	New / Find Contact	Neuer Kontakt / Kontakt suchen	-
+CustomLabel.SC_Save_New	Save & New	Speichern & Neu	-
+
+------------------UNTRANSLATED-----------------
