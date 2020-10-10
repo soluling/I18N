@@ -437,7 +437,8 @@ type
   (
     pkPrintf,       //< %0:d
     pkDoubleBrace,  //< {{0}}
-    pkSingleBrace   //< {0}
+    pkSingleBrace,  //< {0}
+    pkHashtag       //< #
   );
 
   { @abstract Enumeration that specifies how braces in ICU message are escaped. }
@@ -465,6 +466,7 @@ type
 {$ENDIF}
     FStartPattern: String;
     FPlaceholderKind: TPlaceholderKind;
+    FSubPlaceholderKind: TPlaceholderKind;
     FEscape: TIcuMessageEscape;
     FSyntax: TFormatStringSyntax;
 
@@ -515,7 +517,8 @@ type
     function ParseLegacy(pattern: String): Boolean;
     function ParseIcu(pattern: String): Boolean;
 
-    class function IsPattern(const pattern: String): Boolean;
+    class function IsPattern(const pattern: String): Boolean; deprecated 'Use IsMultiPattern instead';
+    class function IsMultiPattern(const pattern: String): Boolean;
 
     property Count: Integer read GetCount;
     property Items[i: Integer]: TFormatPart read GetItem; default;
@@ -528,6 +531,7 @@ type
     property GenderValues[value: TGender]: String read GetGenderValue;
     property SelectValues[const value: String]: String read GetSelectValue;
     property PlaceholderKind: TPlaceholderKind read FPlaceholderKind write FPlaceholderKind;
+    property SubPlaceholderKind: TPlaceholderKind read FSubPlaceholderKind write FSubPlaceholderKind;
     property Escape: TIcuMessageEscape read FEscape write FEscape;
     property Syntax: TFormatStringSyntax read FSyntax write FSyntax;
   end;
@@ -2233,6 +2237,11 @@ begin
 end;
 
 class function TFormatString.IsPattern(const pattern: String): Boolean;
+begin
+  Result := IsMultiPattern(pattern);
+end;
+
+class function TFormatString.IsMultiPattern(const pattern: String): Boolean;
 var
   str: TFormatString;
 begin
@@ -2436,6 +2445,7 @@ begin //FI:C101
         pkPrintf: placeholder := Format('%%%d:s', [placeholderIndex]);
         pkDoubleBrace: placeholder := Format('{{%d}}', [placeholderIndex]);
         pkSingleBrace: placeholder := Format('{%d}', [placeholderIndex]);
+        pkHashtag: placeholder := '#';
       else
         placeholder := Format('{%d}', [placeholderIndex]);
       end;

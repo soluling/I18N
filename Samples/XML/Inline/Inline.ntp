@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="95098867-5C2B-482A-BD8D-D3F01D19D72C" created="20161215T140209Z" lastmodified="20200316T215834Z" version="1.0.714" stringid="2">
+<project id="95098867-5C2B-482A-BD8D-D3F01D19D72C" created="20161215T140209Z" lastmodified="20201008T142007Z" version="1.0.789" stringid="4">
   <lang id="fi"/>
   <node class="TXmlSource" name="Inline.xml" fullpath="D:\NT\Deploy\Samples\XML\Inline\Inline.xml" original="en-US" encoding="utf-8" bom="1">
     <xml encoding="utf-8">
@@ -10,16 +10,29 @@
     </xml>
     <item name="simple">
       <item name="plain">
-        <row id="value" si="1">This is a sample</row>
+        <row id="value" si="1">
+          <value>This is a sample</value>
+          <lang id="fi" st="4" or="5" rw="0" time="20201008T141635Z" fuzzy="100">Tämä on esimerkki</lang>
+        </row>
       </item>
-      <item name="inline">
-        <row id="value" class="TTagRow" si="2" created="20180118T000755Z">This is a &lt;bold&gt;new&lt;/bold&gt; sample</row>
+      <item name="inline[0]" created="20201008T130705Z">
+        <row id="value" class="TTagRow" si="3">
+          <value>This is a &lt;bold&gt;new&lt;/bold&gt; sample</value>
+          <lang id="fi" rw="0" time="20201008T141622Z">Tämä on &lt;bold&gt;uusi &lt;/bold&gt; esimerkki</lang>
+        </row>
+      </item>
+      <item name="inline[1]" created="20201008T130705Z">
+        <row id="value" changed="20201008T130952Z" class="TTagRow" si="4">
+          <value>This is a &lt;bold style=&quot;normal&quot; color=&quot;red&quot;&gt;new&lt;/bold&gt; sample</value>
+          <lang id="fi" rw="0" time="20201008T130854Z">Tämä on &lt;bold style=&quot;normal&quot;&gt;uusi&lt;/bold&gt; esimerkki</lang>
+        </row>
       </item>
     </item>
     <data>
       77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxzaW1wbGU+DQogIDxwbGFpbj5UaGlzIGlzIGEgc2Ft
-      cGxlPC9wbGFpbj4NCiAgPGlubGluZT5UaGlzIGlzIGEgPGJvbGQ+bmV3PC9ib2xkPiBzYW1wbGU8L2lubGluZT4NCjwvc2ltcGxl
-      Pg0K
+      cGxlPC9wbGFpbj4NCiAgPGlubGluZT5UaGlzIGlzIGEgPGJvbGQ+bmV3PC9ib2xkPiBzYW1wbGU8L2lubGluZT4NCiAgPGlubGlu
+      ZT5UaGlzIGlzIGEgPGJvbGQgc3R5bGU9Im5vcm1hbCIgY29sb3I9InJlZCI+bmV3PC9ib2xkPiBzYW1wbGU8L2lubGluZT4NCjwv
+      c2ltcGxlPg0K
     </data>
   </node>
   <terminology>
@@ -32,7 +45,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

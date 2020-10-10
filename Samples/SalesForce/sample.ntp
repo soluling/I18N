@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="ECE46DBC-D64A-4800-ADE0-1DC0D9134C0B" created="20200923T145633Z" lastmodified="20200924T011259Z" version="1.0.786" lockedrowcomplete="0" stringid="17">
+<project id="ECE46DBC-D64A-4800-ADE0-1DC0D9134C0B" created="20200923T145633Z" lastmodified="20201008T005455Z" version="1.0.789" lockedrowcomplete="0" stringid="17">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
@@ -133,15 +133,15 @@
   </terminology>
   <tm>
     <shared>
-      <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Local" type="TSqliteTranslationMemory" enabled="0"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory" enabled="0"/>
     </shared>
+    <settings savename="SQL Server">
+    </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

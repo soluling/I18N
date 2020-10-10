@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="946BACA2-28E3-47BB-AE29-B1EE1C3DF883" created="20201006T024009Z" lastmodified="20201006T024026Z" version="1.0.789" lockedrowcomplete="0" stringid="5">
+  <lang id="fi"/>
+  <node class="TIniSource" name="html.ini" fullpath="D:\NT\Deploy\Samples\Ini\HTML\html.ini" original="en" encoding="windows-1252" newline="nlLf">
+    <ini stringoptions="[soDetectHtml]" detectstringformat="1"/>
+    <item name="data">
+      <row id="name" si="1">Name</row>
+      <row id="text" class="THtmlRow" si="2" created="20201006T024024Z" st="0">&lt;p&gt;This is a &lt;b&gt;simple&lt;/b&gt; sample.&lt;/p&gt;</row>
+      <row id="partial" class="THtmlRow" si="3" created="20201006T024024Z" st="0">This is a &lt;b&gt;simple&lt;/b&gt; sample.</row>
+    </item>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
