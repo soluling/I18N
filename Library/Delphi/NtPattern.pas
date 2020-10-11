@@ -466,7 +466,6 @@ type
 {$ENDIF}
     FStartPattern: String;
     FPlaceholderKind: TPlaceholderKind;
-    FSubPlaceholderKind: TPlaceholderKind;
     FEscape: TIcuMessageEscape;
     FSyntax: TFormatStringSyntax;
 
@@ -531,7 +530,6 @@ type
     property GenderValues[value: TGender]: String read GetGenderValue;
     property SelectValues[const value: String]: String read GetSelectValue;
     property PlaceholderKind: TPlaceholderKind read FPlaceholderKind write FPlaceholderKind;
-    property SubPlaceholderKind: TPlaceholderKind read FSubPlaceholderKind write FSubPlaceholderKind;
     property Escape: TIcuMessageEscape read FEscape write FEscape;
     property Syntax: TFormatStringSyntax read FSyntax write FSyntax;
   end;

@@ -4,11 +4,18 @@
   "newProjectRoot": "projects",
   "projects": {
     "Format": {
+      "i18n": {
+        "locales": {
+          "de": "src/locale/messages.de.xlf",
+          "fi": "src/locale/messages.fi.xlf",
+          "ja": "src/locale/messages.ja.xlf"
+        }
+      },
+      "projectType": "application",
+      "schematics": {},
       "root": "",
       "sourceRoot": "src",
-      "projectType": "application",
       "prefix": "app",
-      "schematics": {},
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
@@ -17,7 +24,8 @@
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.app.json",
+            "tsConfig": "tsconfig.app.json",
+            "aot": true,
             "assets": [
               "src/favicon.ico",
               "src/assets"
@@ -40,28 +48,30 @@
               "sourceMap": false,
               "extractCss": true,
               "namedChunks": false,
-              "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "6kb",
+                  "maximumError": "10kb"
+                }
+              ]
             },
             "fi": {
-              "aot": true,
-              "i18nFile": "src/locale/messages.fi.xlf",
-              "i18nFormat": "xlf2",
-              "i18nLocale": "fi"
+              "localize": ["fi"]
             },
-            "fi1": {
-              "aot": true,
-              "i18nFile": "src/locale/messages12.fi.xlf",
-              "i18nFormat": "xlf",
-              "i18nLocale": "fi"
+            "de": {
+              "localize": ["de"]
             },
-            "fix": {
-              "aot": true,
-              "i18nFile": "src/locale/messages.fi.xmb",
-              "i18nFormat": "xtb",
-              "i18nLocale": "fi"
+            "ja": {
+              "localize": ["ja"]
             }
           }
         },
@@ -77,11 +87,11 @@
             "fi": { 
               "browserTarget": "Format:build:fi" 
             },
-            "fi1": { 
-              "browserTarget": "Format:build:fi1" 
+            "de": { 
+              "browserTarget": "Format:build:de" 
             },
-            "fix": { 
-              "browserTarget": "Format:build:fix" 
+            "ja": { 
+              "browserTarget": "Format:build:ja" 
             }
           }
         },
@@ -96,36 +106,31 @@
           "options": {
             "main": "src/test.ts",
             "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "karmaConfig": "src/karma.conf.js",
-            "styles": [
-              "src/styles.css"
-            ],
-            "scripts": [],
+            "tsConfig": "tsconfig.spec.json",
+            "karmaConfig": "karma.conf.js",
             "assets": [
               "src/favicon.ico",
               "src/assets"
-            ]
+            ],
+            "styles": [
+              "src/styles.css"
+            ],
+            "scripts": []
           }
         },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "src/tsconfig.app.json",
-              "src/tsconfig.spec.json"
+              "tsconfig.app.json",
+              "tsconfig.spec.json",
+              "e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
             ]
           }
-        }
-      }
-    },
-    "Format-e2e": {
-      "root": "e2e/",
-      "projectType": "application",
-      "architect": {
+        },
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
@@ -137,18 +142,8 @@
               "devServerTarget": "Format:serve:production"
             }
           }
-        },
-        "lint": {
-          "builder": "@angular-devkit/build-angular:tslint",
-          "options": {
-            "tsConfig": "e2e/tsconfig.e2e.json",
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
         }
       }
-    }
-  },
+    }},
   "defaultProject": "Format"
 }

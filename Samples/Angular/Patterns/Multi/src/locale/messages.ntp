@@ -1,34 +1,37 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="60F140F9-4B45-4167-93B2-3C91024BED5A" created="20180517T141336Z" lastmodified="20200317T002522Z" version="1.0.714" stringid="4">
+<project id="60F140F9-4B45-4167-93B2-3C91024BED5A" created="20180517T141336Z" lastmodified="20201010T233141Z" version="1.0.790" stringid="9">
   <lang id="fi"/>
   <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Multi\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
-    <row id="app\app.component.ts.header" importid="8884523860497558714" si="1" created="20180523T185841Z">
+    <row id="src\app\app.component.ts.header" importid="8884523860497558714" si="5" created="20201010T232717Z">
       <value>Sample</value>
       <lang id="fi" rw="0" time="20180523T185503Z">Esimerkki</lang>
     </row>
-    <row id="app\app.component.ts.skis" importid="1420873212592132990" class="TPatternRow" si="2" created="20180523T185841Z">
+    <row id="src\app\app.component.ts.skis" importid="1420873212592132990" class="TPatternRow" si="6" created="20201010T232717Z">
       <value>I have {ski} skis.</value>
       <lang id="fi" rw="0" time="20200317T002515Z">Minulla on {ski} suksea.</lang>
     </row>
-    <row id="app\app.component.ts.plural" importid="7133463901580073687" changed="20190215T201417Z" class="TPatternRow" si="3">
+    <row id="src\app\app.component.ts.plural" importid="7133463901580073687" changed="20201010T233029Z" class="TPatternRow" si="9" created="20201010T232717Z">
       <value startpattern="1">I have {0:ski, plural, one  other} and {1:car, plural, one  other}.</value>
-      <prev>I have {0:ski, plural, one other} and {1:car, plural, one other}.</prev>
       <pattern plural="pfOne">{ski} ski</pattern>
       <pattern plural="pfOther">{ski} skis</pattern>
-      <lang id="fi" rw="0" time="20190215T201553Z">
-        <value startpattern="1">Minulla on {0:ski, plural, one other} ja {1:car, plural, one other}.</value>
+      <lang id="fi" rw="0" time="20201010T233107Z">
+        <value startpattern="1">Minulla on {0:ski, plural, one  other} ja {1:car, plural, one  other}</value>
         <pattern plural="pfOne">{ski} suksi</pattern>
         <pattern plural="pfOther">{ski} suksea</pattern>
       </lang>
     </row>
-    <row id="app\app.component.ts.8061099442892692790" importid="8061099442892692790" class="TPatternRow" si="4">
+    <row id="src\app\app.component.ts.8061099442892692790" importid="8061099442892692790" changed="20201010T233029Z" class="TPatternRow" si="8" created="20201010T232717Z">
       <value>{car} cars</value>
+      <prev>{0} cars</prev>
       <pattern plural="pfOne">{car} car</pattern>
-      <lang id="fi" rw="0" time="20180523T185545Z">
-        <value>{car} autoa</value>
-        <pattern plural="pfOne">{car} auto</pattern>
+      <lang id="fi" rw="0" time="20201010T232802Z">
+        <value>{0} autoa</value>
+        <pattern plural="pfOne">{0} auto</pattern>
       </lang>
     </row>
+    <configurations>
+      <configuration name="Default"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
@@ -40,7 +43,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

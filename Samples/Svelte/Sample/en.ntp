@@ -1,18 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="01683CCD-51AC-45B6-AE48-9098BE14CECB" created="20201009T024930Z" lastmodified="20201009T030204Z" version="1.0.789" lockedrowcomplete="0" stringid="8">
+<project id="01683CCD-51AC-45B6-AE48-9098BE14CECB" created="20201009T024930Z" lastmodified="20201010T023230Z" version="1.0.789" lockedrowcomplete="0" stringid="9">
   <lang id="fi"/>
   <node class="TSvelteI18nSource" name="en.json" fullpath="D:\NT\Deploy\Samples\Svelte\Sample\en.json" original="en" encoding="utf-8">
+    <row id="ski" changed="20201010T013850Z" class="TPatternRow" si="9" created="20201010T010550Z">
+      <value startpattern="1">I have {0}</value>
+      <pattern operator="okEqual" operand="0">no skis</pattern>
+      <pattern plural="pfOne">{0} ski</pattern>
+      <pattern plural="pfOther">{0} skis</pattern>
+      <lang id="fi" st="4" rw="0" time="20201010T014459Z">
+        <value startpattern="1">Minulla on {0}</value>
+        <pattern operator="okEqual" operand="0">ei yhtään suksea</pattern>
+        <pattern plural="pfOne">{0} suksi</pattern>
+        <pattern plural="pfOther">{0} suksea</pattern>
+      </lang>
+    </row>
     <item class="TJsonResourceComponent" name="common">
-      <row id="name" si="1">Sport</row>
-      <row id="description" si="2">This is a sample</row>
+      <row id="name" si="1">
+        <value>Sport</value>
+        <lang id="fi" st="4" rw="0" time="20201010T014503Z">Urheilu</lang>
+      </row>
+      <row id="description" si="2">
+        <value>This is a sample</value>
+        <lang id="fi" st="4" or="5" rw="0" time="20201010T014507Z" fuzzy="100">Tämä on esimerkki</lang>
+      </row>
     </item>
     <item class="TJsonResourceComponent" name="pattern">
-      <row id="ski" class="TPatternRow" si="3">I have {n,plural,=0{noskis} one {##ski} other {##skis}}</row>
-      <row id="message" class="TPatternRow" si="4">Today is {date}</row>
+      <row id="message" class="TPatternRow" si="4">
+        <value>Today is {date}</value>
+        <lang id="fi" st="4" rw="0" time="20201010T014619Z" fuzzy="5">Tänään on {date}</lang>
+      </row>
     </item>
     <item class="TJsonResourceComponent" name="footer">
-      <row id="value1" class="THtmlRow" si="5" created="20201009T030056Z">Please read &lt;a href=&quot;{url}&quot;&gt;this&lt;/a&gt; article.</row>
-      <row id="value2" class="THtmlRow" si="6" created="20201009T030056Z">This is written in &lt;a href=&quot;{toolUrl}&quot;&gt;Svelte&lt;/a&gt; &amp;amp; &lt;a href=&quot;{editorUrl}&quot;&gt;VS Code&lt;/a&gt;.</row>
+      <row id="value1" class="THtmlRow" si="5" created="20201009T030056Z">
+        <value>Please read &lt;a href=&quot;{url}&quot;&gt;this&lt;/a&gt; article.</value>
+        <lang id="fi" st="4" or="6" rw="0" time="20201010T023222Z" fuzzy="5">Lue &lt;a href=&quot;{url}&quot;&gt;tämä&lt;/a&gt; artikkeli.</lang>
+      </row>
+      <row id="value2" class="THtmlRow" si="6" created="20201009T030056Z">
+        <value>This is written in &lt;a href=&quot;{toolUrl}&quot;&gt;Svelte&lt;/a&gt; &amp;amp; &lt;a href=&quot;{editorUrl}&quot;&gt;VS Code&lt;/a&gt;.</value>
+        <lang id="fi" st="4" or="6" rw="0" time="20201010T023226Z" fuzzy="5">Tämä on kirjoitettu &lt;a href=&quot;{toolUrl}&quot;&gt;Svelte&lt;/a&gt; &amp;amp; &lt;a href=&quot;{editorUrl}&quot;&gt;VS -koodilla&lt;/a&gt;.</lang>
+      </row>
     </item>
     <data>
       ew0KICAiY29tbW9uIjogDQogIHsNCiAgICAibmFtZSI6ICJTcG9ydCIsDQogICAgImRlc2NyaXB0aW9uIjogIlRoaXMgaXMgYSBz

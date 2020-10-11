@@ -1,37 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A38164C6-3C9B-4994-95A9-A5C15E938FE1" created="20170515T232723Z" lastmodified="20200317T002542Z" version="1.0.714" stringid="6">
+<project id="A38164C6-3C9B-4994-95A9-A5C15E938FE1" created="20170515T232723Z" lastmodified="20201010T204939Z" version="1.0.790" stringid="12">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="et" relative="fi"/>
   <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Fallback\src\locale\messages.xlf" original="en-US" encoding="utf-8" context="acMeaning" hasmeaning="1">
-    <row id="app\app.component.ts.one" importid="1790280481892349348" si="1" created="20171205T171443Z">
+    <row id="src\app\app.component.ts.one" importid="1790280481892349348" si="7" created="20201010T204805Z">
       <value>One</value>
       <lang id="fi" rw="0" time="20170515T232827Z">Yksi</lang>
       <lang id="fi-FI" rw="0" time="20170515T232857Z">Yks</lang>
       <lang id="et" rw="0" time="20170517T214504Z">Üks</lang>
     </row>
-    <row id="app\app.component.ts.two" importid="662146266194589037" si="2" created="20171205T171443Z">
+    <row id="src\app\app.component.ts.two" importid="662146266194589037" si="8" created="20201010T204805Z">
       <value>Two</value>
       <lang id="fi" rw="0" time="20170515T232831Z">Kaksi</lang>
       <lang id="fi-FI" rw="0" time="20170516T133320Z">Kaks</lang>
       <lang id="et" rw="0" time="20170518T004135Z">Kaks</lang>
     </row>
-    <row id="app\app.component.ts.three" importid="8600309473174976058" si="3" created="20171205T171443Z">
+    <row id="src\app\app.component.ts.three" importid="8600309473174976058" si="9" created="20201010T204805Z">
       <value>Three</value>
       <lang id="fi" rw="0" time="20170515T232833Z">Kolme</lang>
     </row>
-    <row id="app\app.component.ts.four" importid="3399860010313228176" si="4" created="20171205T171443Z">Four</row>
-    <row id="app\app.component.ts.name" importid="700742630364194126" class="TPatternRow" si="5" created="20171205T171443Z">
+    <row id="src\app\app.component.ts.four" importid="3399860010313228176" si="10" created="20201010T204805Z">
+      <value>Four</value>
+      <lang id="fi" rw="0" time="20201010T204916Z" fuzzy="100">Neljä</lang>
+    </row>
+    <row id="src\app\app.component.ts.name" importid="700742630364194126" class="TPatternRow" si="11" created="20201010T204805Z">
       <value>Hello {name}</value>
       <lang id="fi" rw="0" time="20170609T182026Z">Terve {name}</lang>
       <lang id="et" rw="0" time="20170609T182058Z">Tere {name}</lang>
     </row>
-    <row id="app\app.component.ts.plural" importid="7466822367860161039" class="TPatternRow" si="6" scannedcomment="0: Number of cars" created="20171205T171443Z">
-      <value>I have {cars} cars.</value>
-      <pattern plural="pfOne">I have {cars} car.</pattern>
-      <lang id="fi" rw="0" time="20170609T182037Z">
-        <value>Minulla on {cars} autoa.</value>
-        <pattern plural="pfOne">Minulla on {cars} auto.</pattern>
+    <row id="src\app\app.component.ts.plural" importid="7466822367860161039" class="TPatternRow" si="12" scannedcomment="0: Number of cars" created="20201010T204805Z">
+      <value>I have {0} cars.</value>
+      <pattern plural="pfOne">I have {0} car.</pattern>
+      <lang id="fi" rw="0" time="20201010T204837Z" fuzzy="5">
+        <value>Minulla on {0} autoa.</value>
+        <pattern plural="pfOne">Minulla on {0} auto.</pattern>
       </lang>
     </row>
     <configurations>
@@ -48,7 +51,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

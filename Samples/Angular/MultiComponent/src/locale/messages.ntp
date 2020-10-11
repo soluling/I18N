@@ -1,25 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8AA58501-9E2E-4489-BBD8-3E7B32E48BFF" created="20170610T111047Z" lastmodified="20200317T002237Z" version="1.0.714" stringid="5">
+<project id="8AA58501-9E2E-4489-BBD8-3E7B32E48BFF" created="20170610T111047Z" lastmodified="20201010T220249Z" version="1.0.790" stringid="10">
   <lang id="fi"/>
   <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\MultiComponent\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
-    <row id="app\app.component.html.header" importid="4849682140549215168" si="1" created="20190129T034438Z">
+    <row id="src\app\app.component.html.header" importid="4849682140549215168" si="6" created="20201010T220220Z">
       <value>Localization Sample</value>
       <lang id="fi" rw="0" time="20170610T111103Z">Lokalisointiesimerkki</lang>
     </row>
-    <row id="app\embedded.component.ts.hello" importid="4438291026891864493" changed="20200317T002152Z" class="TPatternRow" si="2" scannedcomment="name: Name of the user" created="20171205T193721Z">
+    <row id="src\app\embedded.component.ts.hello" importid="4438291026891864493" class="TPatternRow" si="7" scannedcomment="name: Name of the user" created="20201010T220220Z">
       <value>Hello {name}!</value>
       <lang id="fi" rw="0" time="20170610T112931Z">Moi { name}!</lang>
     </row>
-    <row id="app\embedded.component.ts.sample" importid="5571439480228251211" si="3" created="20171205T193721Z">
+    <row id="src\app\embedded.component.ts.sample" importid="5571439480228251211" si="8" created="20201010T220220Z">
       <value>This is a sample</value>
       <lang id="fi" rw="0" time="20170610T111114Z">Tämä on esimerkki</lang>
     </row>
-    <row id="app\external.component.html.hello" importid="2553574127157647344" changed="20200317T002152Z" class="TPatternRow" si="4" scannedcomment="name: Name of the first user
-name2: Name of the second user" created="20190129T034438Z">
+    <row id="src\app\external.component.html.hello" importid="2553574127157647344" class="TPatternRow" si="9" scannedcomment="name: Name of the first user
+name2: Name of the second user" created="20201010T220220Z">
       <value>Hello {0:name} and {1:name2}!</value>
       <lang id="fi" rw="0" time="20200317T002229Z">Moi {0:name} ja {1:name2}!</lang>
     </row>
-    <row id="app\external.component.html.sample" importid="5425338937505052468" si="5" created="20190129T034438Z">
+    <row id="src\app\external.component.html.sample" importid="5425338937505052468" si="10" created="20201010T220220Z">
       <value>This is another sample</value>
       <lang id="fi" rw="0" time="20170610T111125Z">Tämä on toinen esimerkki</lang>
     </row>
@@ -34,7 +34,7 @@ name2: Name of the second user" created="20190129T034438Z">
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

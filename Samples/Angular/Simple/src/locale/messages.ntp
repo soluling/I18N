@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CBC5ECBB-9A46-44A3-88D6-F9E801D9F88E" created="20200325T224612Z" lastmodified="20200824T150812Z" version="1.0.772" lockedrowcomplete="0" stringid="5">
+<project id="CBC5ECBB-9A46-44A3-88D6-F9E801D9F88E" created="20200325T224612Z" lastmodified="20201010T232052Z" version="1.0.790" lockedrowcomplete="0" stringid="6">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Simple\src\locale\messages.xlf" original="en" encoding="UTF-8">
-    <row id="6727813075332149615" si="3" created="20200326T004230Z" st="4">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Simple\src\locale\messages.xlf" original="en" encoding="UTF-8" hasmeaning="1">
+    <row id="6727813075332149615" si="3" created="20200326T004230Z">
       <value>Source code string</value>
       <lang id="fi" rw="0" time="20200326T004236Z" fuzzy="5">Lähdekoodin merkkijono</lang>
       <lang id="de" rw="0" time="20200710T014054Z" fuzzy="5">Quellcodezeichenfolge</lang>
@@ -22,8 +22,14 @@
       <lang id="de" rw="0" time="20200325T235934Z">Dies ist ein Beispiel</lang>
       <lang id="ja" rw="0" time="20200325T235951Z" fuzzy="99">これはサンプルです</lang>
     </row>
-    <row id="4848371593517801531" class="TPatternRow" si="4" created="20200824T150521Z">Hello {name}!</row>
-    <row id="5677486051697385867" class="TPatternRow" si="5" scannedcomment="name: The name of the user" created="20200824T150521Z">Hello {name}!</row>
+    <row id="4848371593517801531" class="TPatternRow" si="4" scannedcomment="hello1" created="20200824T150521Z">
+      <value>Hello {name}!</value>
+      <lang id="fi" rw="0" time="20201010T232038Z" fuzzy="100">Moi {name}!</lang>
+    </row>
+    <row id="7863711721538167134" class="TPatternRow" si="6" scannedcomment="name: The name of the user" created="20201010T232022Z">
+      <value>Hello {name}!</value>
+      <lang id="fi" rw="0" time="20201010T232039Z">Moi {name}!</lang>
+    </row>
   </node>
   <terminology>
     <shared>
@@ -35,12 +41,15 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
     <settings range="srView">
     </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>
