@@ -197,8 +197,8 @@ namespace Soluling
 
     private static void CheckActiveAssembly()
     {
-      if (mainAssembly != null)
-        return;
+      //if (mainAssembly != null)
+      //  return;
 
       mainAssembly = Assembly.GetEntryAssembly();
 
@@ -481,13 +481,14 @@ namespace Soluling
     /// </summary>
     /// <remarks>
     /// Use this method to get list of available language if you want to build your own user interface to show available languages and to select a new language.
-    /// You can also use the built-in language selection dialogs. If you use Windows Forms use the <see cref="T:Soluling.Forms.SelectLanguage"/> class. 
+    /// You can also use the built-in language selection dialogs. 
+    /// If you use Windows Forms use the <see cref="T:Soluling.Forms.SelectLanguage"/> class. 
     /// If you use WPF use the <see cref="T:Soluling.WPF.SelectLanguage"/> class.
     /// </remarks>
     /// <returns>Array of culture infos of the satellite assemblies.</returns>
     public static CultureInfo[] GetAvailableLanguages()
     {
-      return GetAvailableLanguages(Assembly.GetExecutingAssembly().Location);
+      return GetAvailableLanguages(Assembly.GetEntryAssembly().Location);
     }
 
     /// <summary>

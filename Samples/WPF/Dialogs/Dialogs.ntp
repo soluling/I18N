@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="41A3DAAF-BAF9-4224-A51D-AF66720A3E90" created="20181207T010214Z" lastmodified="20200316T192806Z" version="1.0.714" stringid="12">
+<project id="41A3DAAF-BAF9-4224-A51D-AF66720A3E90" created="20181207T010214Z" lastmodified="20201025T220419Z" version="1.0.797" stringid="12">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Dialogs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Dialogs\Dialogs.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net45" toolsversion="nt120"/>
@@ -11,7 +11,7 @@
         b3VyY2VzPg0KICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
       </data>
     </node>
-    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
       <row id="Title" si="1">
         <value>Dialog Sample</value>
         <lang id="fi" rw="0" time="20181207T010223Z">Dialogiesimerkki</lang>
@@ -37,40 +37,68 @@
           </row>
         </item>
         <item name="openDialogWinForms" type="Button">
-          <row id="Content" si="4">Open file, Windows Forms version</row>
+          <row id="Content" si="4">
+            <value>Open file, Windows Forms version</value>
+            <lang id="fi" rw="0" time="20201025T220349Z" fuzzy="1">Avaa tiedosto, Windows Forms -versio</lang>
+          </row>
         </item>
         <item name="saveDialogWinForms" type="Button">
-          <row id="Content" si="5">Save file, Windows Forms version</row>
+          <row id="Content" si="5">
+            <value>Save file, Windows Forms version</value>
+            <lang id="fi" rw="0" time="20201025T220351Z" fuzzy="5">Tallenna tiedosto, Windows Forms -versio</lang>
+          </row>
         </item>
         <item name="folderDialog" type="Button">
-          <row id="Content" si="6">Select folder</row>
+          <row id="Content" si="6">
+            <value>Select folder</value>
+            <lang id="fi" rw="0" time="20201025T220355Z" fuzzy="5">Valitse kansio</lang>
+          </row>
         </item>
       </item>
       <data>
-        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iRGlhbG9ncy5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9z
-        b2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
-        Y29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IkRpYWxvZyBTYW1wbGUiIA0KICBNaW5XaWR0aD0iMzAwIiANCiAgU2l6ZVRv
-        Q29udGVudD0iV2lkdGhBbmRIZWlnaHQiPg0KICANCiAgPFN0YWNrUGFuZWw+DQogICAgPFN0YWNrUGFuZWwuUmVzb3VyY2VzPg0K
-        ICAgICAgPFN0eWxlIFRhcmdldFR5cGU9Int4OlR5cGUgQnV0dG9ufSI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1hcmdp
-        biIgVmFsdWU9IjgsNCw4LDQiLz4NCiAgICAgIDwvU3R5bGU+DQogICAgPC9TdGFja1BhbmVsLlJlc291cmNlcz4NCg0KICAgIDxC
-        dXR0b24gTmFtZT0ib3BlbkRpYWxvZyIgQ2xpY2s9Im9wZW5EaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw4LDgsNCI+T3BlbiBmaWxl
-        PC9CdXR0b24+DQogICAgPEJ1dHRvbiBOYW1lPSJzYXZlRGlhbG9nIiBDbGljaz0ic2F2ZURpYWxvZ19DbGljayI+U2F2ZSBmaWxl
-        PC9CdXR0b24+DQogICAgDQogICAgPEJ1dHRvbiBOYW1lPSJvcGVuRGlhbG9nV2luRm9ybXMiIENsaWNrPSJvcGVuRGlhbG9nV2lu
-        Rm9ybXNfQ2xpY2siID5PcGVuIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KICAgIDxCdXR0b24gTmFtZT0i
-        c2F2ZURpYWxvZ1dpbkZvcm1zIiBDbGljaz0ic2F2ZURpYWxvZ1dpbkZvcm1zX0NsaWNrIj5TYXZlIGZpbGUsIFdpbmRvd3MgRm9y
-        bXMgdmVyc2lvbjwvQnV0dG9uPg0KDQogICAgPEJ1dHRvbiBOYW1lPSJmb2xkZXJEaWFsb2ciIENsaWNrPSJmb2xkZXJEaWFsb2df
-        Q2xpY2siIE1hcmdpbj0iOCw0LDgsOCI+U2VsZWN0IGZvbGRlcjwvQnV0dG9uPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4N
-        Cg==
+        77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciIA0KICB4OkNsYXNzPSJEaWFsb2dzLk1haW5XaW5kb3ciDQogIHhtbG5z
+        PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0
+        dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICBUaXRsZT0iRGlhbG9nIFNhbXBsZSIgDQogIE1p
+        bldpZHRoPSIzMDAiIA0KICBTaXplVG9Db250ZW50PSJXaWR0aEFuZEhlaWdodCI+DQogIA0KICA8U3RhY2tQYW5lbD4NCiAgICA8
+        U3RhY2tQYW5lbC5SZXNvdXJjZXM+DQogICAgICA8U3R5bGUgVGFyZ2V0VHlwZT0ie3g6VHlwZSBCdXR0b259Ij4NCiAgICAgICAg
+        PFNldHRlciBQcm9wZXJ0eT0iTWFyZ2luIiBWYWx1ZT0iOCw0LDgsNCIvPg0KICAgICAgPC9TdHlsZT4NCiAgICA8L1N0YWNrUGFu
+        ZWwuUmVzb3VyY2VzPg0KDQogICAgPEJ1dHRvbiB4OlVpZD0ib3BlbkRpYWxvZyIgTmFtZT0ib3BlbkRpYWxvZyIgQ2xpY2s9Im9w
+        ZW5EaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw4LDgsNCI+T3BlbiBmaWxlPC9CdXR0b24+DQogICAgPEJ1dHRvbiB4OlVpZD0ic2F2
+        ZURpYWxvZyIgTmFtZT0ic2F2ZURpYWxvZyIgQ2xpY2s9InNhdmVEaWFsb2dfQ2xpY2siPlNhdmUgZmlsZTwvQnV0dG9uPg0KDQog
+        ICAgPEJ1dHRvbiB4OlVpZD0ib3BlbkRpYWxvZ1dpbkZvcm1zIiBOYW1lPSJvcGVuRGlhbG9nV2luRm9ybXMiIENsaWNrPSJvcGVu
+        RGlhbG9nV2luRm9ybXNfQ2xpY2siID5PcGVuIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KICAgIDxCdXR0
+        b24geDpVaWQ9InNhdmVEaWFsb2dXaW5Gb3JtcyIgTmFtZT0ic2F2ZURpYWxvZ1dpbkZvcm1zIiBDbGljaz0ic2F2ZURpYWxvZ1dp
+        bkZvcm1zX0NsaWNrIj5TYXZlIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KDQogICAgPEJ1dHRvbiB4OlVp
+        ZD0iZm9sZGVyRGlhbG9nIiBOYW1lPSJmb2xkZXJEaWFsb2ciIENsaWNrPSJmb2xkZXJEaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw0
+        LDgsOCI+U2VsZWN0IGZvbGRlcjwvQnV0dG9uPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx">
-        <row id="AllFiles" si="7">All files</row>
-        <row id="AllSupportedFiles" si="8">All supported files</row>
-        <row id="FolderDescription" si="9">Select a file</row>
-        <row id="SaveFileName" si="10">SampleFile</row>
-        <row id="TextFiles" si="11">Text files</row>
-        <row id="XmlFiles" si="12">XML files</row>
+        <row id="AllFiles" si="7">
+          <value>All files</value>
+          <lang id="fi" rw="0" time="20201025T220357Z" fuzzy="5">Kaikki tiedostot</lang>
+        </row>
+        <row id="AllSupportedFiles" si="8">
+          <value>All supported files</value>
+          <lang id="fi" rw="0" time="20201025T220359Z" fuzzy="5">Kaikki tuetut tiedostot</lang>
+        </row>
+        <row id="FolderDescription" si="9">
+          <value>Select a file</value>
+          <lang id="fi" rw="0" time="20201025T220404Z" fuzzy="1">Valitse tiedosto</lang>
+        </row>
+        <row id="SaveFileName" si="10">
+          <value>SampleFile</value>
+          <lang id="fi" rw="0" time="20201025T220407Z" fuzzy="5">Esimerkkitiedosto</lang>
+        </row>
+        <row id="TextFiles" si="11">
+          <value>Text files</value>
+          <lang id="fi" rw="0" time="20201025T220410Z" fuzzy="5">Tekstitiedostot</lang>
+        </row>
+        <row id="XmlFiles" si="12">
+          <value>XML files</value>
+          <lang id="fi" rw="0" time="20201025T220412Z" fuzzy="5">XML-tiedostot</lang>
+        </row>
       </node>
     </node>
   </node>
@@ -90,9 +118,7 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

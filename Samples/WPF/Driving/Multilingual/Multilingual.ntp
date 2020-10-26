@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20200316T192800Z" version="1.0.714" stringid="13">
+<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20201025T235819Z" version="1.0.797" stringid="13">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
@@ -196,19 +196,19 @@
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
       <row id="Title" si="1">
         <value>Driving Time</value>
-        <lang id="fi" or="5" rw="0" time="20181207T012141Z">Ajoaika</lang>
+        <lang id="fi" rw="0" time="20181207T012141Z">Ajoaika</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="menu" type="Menu">
           <item name="fileMenu" type="MenuItem">
             <row id="Header" si="2">
               <value>_File</value>
-              <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Tiedosto</lang>
+              <lang id="fi" rw="0" time="20181207T012141Z">_Tiedosto</lang>
             </row>
             <item name="calculateMenu" type="MenuItem">
               <row id="Header" si="3">
                 <value>_Calculate</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Laske</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Laske</lang>
               </row>
             </item>
             <item name="languageMenu" type="MenuItem">
@@ -221,19 +221,19 @@
             <item name="exitMenu" type="MenuItem">
               <row id="Header" si="5">
                 <value>_Exit</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Lopeta</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Lopeta</lang>
               </row>
             </item>
           </item>
           <item name="helpMenu" type="MenuItem">
             <row id="Header" si="6">
               <value>_Help</value>
-              <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Ohje</lang>
+              <lang id="fi" rw="0" time="20181207T012141Z">_Ohje</lang>
             </row>
             <item name="aboutMenu" type="MenuItem">
               <row id="Header" si="7">
                 <value>_About</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Tietoa</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Tietoa</lang>
               </row>
             </item>
           </item>
@@ -248,7 +248,7 @@
             <item name="distanceLabel" type="Label">
               <row id="Content" si="8">
                 <value>_Distance:</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Etäisyys:</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Etäisyys:</lang>
               </row>
             </item>
             <item name="distanceTextBox" type="TextBox"/>
@@ -257,7 +257,7 @@
             <item name="speedLabel" type="Label">
               <row id="Content" si="9">
                 <value>_Speed:</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Nopeus:</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Nopeus:</lang>
               </row>
             </item>
             <item name="speedTextBox" type="TextBox"/>
@@ -266,7 +266,7 @@
             <item name="calculateButton" type="Button">
               <row id="Content" si="10">
                 <value>_Calculate</value>
-                <lang id="fi" or="5" rw="0" time="20181207T012141Z">_Laske</lang>
+                <lang id="fi" rw="0" time="20181207T012141Z">_Laske</lang>
               </row>
             </item>
           </item>
@@ -325,11 +325,11 @@
       <node class="TResXNode" name="Resources.resx">
         <row id="About" si="11">
           <value>Driving time calculator</value>
-          <lang id="fi" or="5" rw="0" time="20181207T012141Z">Ajoaikalaskin</lang>
+          <lang id="fi" rw="0" time="20181207T012141Z">Ajoaikalaskin</lang>
         </row>
         <row id="Language" si="12">
           <value>en</value>
-          <lang id="fi" or="5" rw="0" time="20181207T012141Z">fi</lang>
+          <lang id="fi" rw="0" time="20181207T012141Z">fi</lang>
         </row>
         <row id="ResultPlural" class="TPatternRow" si="13">
           <value startpattern="1">Driving time is{0}{1}</value>
@@ -362,7 +362,6 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

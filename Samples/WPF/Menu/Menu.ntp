@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F7C492ED-E865-4ACE-9740-DF2F7ED7F53C" created="20141209T061216Z" lastmodified="20200620T143812Z" version="1.0.761" reviewcount="0" stringid="9">
+<project id="F7C492ED-E865-4ACE-9740-DF2F7ED7F53C" created="20141209T061216Z" lastmodified="20201022T144616Z" version="1.0.796" reviewcount="0" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" resources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" resources="[nrResx,nrXaml,nrAssemblyInfo]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20200221T011609Z" kind="xkApplication">
       <data>
@@ -12,7 +12,7 @@
         L0FwcGxpY2F0aW9uPg0K
       </data>
     </node>
-    <node class="TXamlNode" name="MainWindow.xaml" type="Window" created="20181207T023031Z">
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window" created="20181207T023031Z" id="mainWindow">
       <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" time="20181207T023042Z">Esimerkki</lang>
@@ -53,16 +53,16 @@
         </item>
       </item>
       <data>
-        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iTWVudS5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
-        LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29t
-        L3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNhbXBsZSIgDQogIEhlaWdodD0iMzAwIiANCiAgV2lkdGg9IjUwMCI+DQoNCiAg
-        PEdyaWQgeDpOYW1lPSJlZGl0R3JpZCI+DQogICAgPE1lbnUgeDpOYW1lPSJtZW51Ij4NCiAgICAgIDxNZW51SXRlbSB4Ok5hbWU9
-        ImZpbGVNZW51IiBIZWFkZXI9IkZfaWxlIiA+DQogICAgICAgIDxNZW51SXRlbSB4Ok5hbWU9ImNhbGN1bGF0ZU1lbnUiIEhlYWRl
-        cj0iX0NhbGN1bGF0ZSIgLz4NCiAgICAgICAgPFNlcGFyYXRvciB4Ok5hbWU9InNlcGFyYXRvcjEiIC8+DQogICAgICAgIDxNZW51
-        SXRlbSB4Ok5hbWU9ImV4aXRNZW51IiAgSGVhZGVyPSJFX3hpdCIgLz4NCiAgICAgIDwvTWVudUl0ZW0+DQoNCiAgICAgIDxNZW51
-        SXRlbSB4Ok5hbWU9ImhlbHBNZW51IiBIZWFkZXI9IkhlX2xwIj4NCiAgICAgICAgPE1lbnVJdGVtIHg6TmFtZT0iYWJvdXRNZW51
-        IiBIZWFkZXI9IkFfYm91dCIgLz4NCiAgICAgIDwvTWVudUl0ZW0+DQogICAgPC9NZW51Pg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4N
-        Cg==
+        77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9Ik1lbnUuTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0
+        dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDov
+        L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJTYW1wbGUiIA0KICBIZWlnaHQ9IjMwMCIg
+        DQogIFdpZHRoPSI1MDAiPg0KDQogIDxHcmlkIHg6TmFtZT0iZWRpdEdyaWQiPg0KICAgIDxNZW51IHg6TmFtZT0ibWVudSI+DQog
+        ICAgICA8TWVudUl0ZW0geDpVaWQ9ImZpbGVNZW51IiBIZWFkZXI9IkZfaWxlIiA+DQogICAgICAgIDxNZW51SXRlbSB4OlVpZD0i
+        Y2FsY3VsYXRlTWVudSIgSGVhZGVyPSJfQ2FsY3VsYXRlIiAvPg0KICAgICAgICA8U2VwYXJhdG9yIHg6TmFtZT0ic2VwYXJhdG9y
+        MSIgLz4NCiAgICAgICAgPE1lbnVJdGVtIHg6VWlkPSJleGl0TWVudSIgIEhlYWRlcj0iRV94aXQiIC8+DQogICAgICA8L01lbnVJ
+        dGVtPg0KDQogICAgICA8TWVudUl0ZW0geDpVaWQ9ImhlbHBNZW51IiBIZWFkZXI9IkhlX2xwIj4NCiAgICAgICAgPE1lbnVJdGVt
+        IHg6VWlkPSJhYm91dE1lbnUiIEhlYWRlcj0iQV9ib3V0IiAvPg0KICAgICAgPC9NZW51SXRlbT4NCiAgICA8L01lbnU+DQogIDwv
+        R3JpZD4NCjwvV2luZG93Pg0K
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties" created="20181207T023031Z">
@@ -93,7 +93,6 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

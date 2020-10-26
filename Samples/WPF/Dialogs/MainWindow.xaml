@@ -1,4 +1,5 @@
 ﻿<Window 
+  x:Uid="mainWindow" 
   x:Class="Dialogs.MainWindow"
   xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
   xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
@@ -13,12 +14,12 @@
       </Style>
     </StackPanel.Resources>
 
-    <Button Name="openDialog" Click="openDialog_Click" Margin="8,8,8,4">Open file</Button>
-    <Button Name="saveDialog" Click="saveDialog_Click">Save file</Button>
-    
-    <Button Name="openDialogWinForms" Click="openDialogWinForms_Click" >Open file, Windows Forms version</Button>
-    <Button Name="saveDialogWinForms" Click="saveDialogWinForms_Click">Save file, Windows Forms version</Button>
+    <Button x:Uid="openDialog" Name="openDialog" Click="openDialog_Click" Margin="8,8,8,4">Open file</Button>
+    <Button x:Uid="saveDialog" Name="saveDialog" Click="saveDialog_Click">Save file</Button>
 
-    <Button Name="folderDialog" Click="folderDialog_Click" Margin="8,4,8,8">Select folder</Button>
+    <Button x:Uid="openDialogWinForms" Name="openDialogWinForms" Click="openDialogWinForms_Click" >Open file, Windows Forms version</Button>
+    <Button x:Uid="saveDialogWinForms" Name="saveDialogWinForms" Click="saveDialogWinForms_Click">Save file, Windows Forms version</Button>
+
+    <Button x:Uid="folderDialog" Name="folderDialog" Click="folderDialog_Click" Margin="8,4,8,8">Select folder</Button>
   </StackPanel>
 </Window>

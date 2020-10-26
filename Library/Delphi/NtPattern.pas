@@ -2156,7 +2156,7 @@ end;
 
 function IsIcuPattern(const pattern: String): Boolean;
 var
-  i, level: Integer;
+  i, level, maxLevel: Integer;
   c: Char;
 begin
   Result := (Pos('{', pattern) > 0) and (Pos('}', pattern) > 0);
@@ -2165,6 +2165,7 @@ begin
     Exit;
 
   level := 0;
+  maxLevel := 0;
   Result := False;
 
   for i := 1 to Length(pattern) do
@@ -2176,12 +2177,14 @@ begin
     else if (c = '}') and ((i = 1) or (pattern[i - 1] <> '\')) then
       Dec(level);
 
-    if level >= 2 then
-    begin
-      Result := True;
-      Break;
-    end;
+    if level > maxLevel then
+      maxLevel := level;
+
+    if level < 0 then
+      Exit;
   end;
+
+  Result := (maxLevel >= 2) and (maxLevel <= 4) and (level = 0);
 end;
 
 function IsLegacyPattern(const pattern: String): Boolean;
@@ -2243,7 +2246,7 @@ class function TFormatString.IsMultiPattern(const pattern: String): Boolean;
 var
   str: TFormatString;
 begin
-  Result := IsIcuPattern(pattern) or IsLegacyPatternStrict(pattern);
+  Result := IsIcuPattern(pattern); // or IsLegacyPatternStrict(pattern);
 
   if not Result then
     Exit;

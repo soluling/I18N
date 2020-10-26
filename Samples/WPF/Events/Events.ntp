@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8946D263-AFD8-4F04-BD91-065EEDC2C217" created="20181207T013002Z" lastmodified="20200316T192755Z" version="1.0.714" stringid="2">
+<project id="8946D263-AFD8-4F04-BD91-065EEDC2C217" created="20181207T013002Z" lastmodified="20201025T220942Z" version="1.0.797" stringid="3">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Events.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Events\Events.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt40"/>
-    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192754Z" st="0" kind="xkApplication">
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192754Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkV2ZW50cy5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1p
         Y3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgICAgICAgICAgICB4bWxuczp4PSJodHRwOi8vc2No
@@ -12,26 +12,27 @@
         CjwvQXBwbGljYXRpb24+DQo=
       </data>
     </node>
-    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
       <row id="Title" si="1">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20181207T013006Z">Esimerkki</lang>
       </row>
       <item name="Grid[0]" type="Grid">
-        <item name="Button[0]" type="Button">
-          <row id="Content" si="2">
+        <item name="button" type="Button" created="20201025T220910Z">
+          <row id="Content" si="3">
             <value>Click me</value>
             <lang id="fi" rw="0" time="20181207T013013Z">Klikkaa tästä</lang>
           </row>
         </item>
       </item>
       <data>
-        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iRXZlbnRzLk1haW5XaW5kb3ciDQogIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
-        ZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5j
-        b20vd2luZngvMjAwNi94YW1sIg0KICBUaXRsZT0iU2FtcGxlIiANCiAgSGVpZ2h0PSIyMDAiIA0KICBXaWR0aD0iMzAwIiANCiAg
-        TG9hZGVkPSJXaW5kb3dfTG9hZGVkXzEiIA0KICBHb3RGb2N1cz0iV2luZG93X0dvdEZvY3VzXzEiPg0KICANCiAgPEdyaWQgTG9h
-        ZGVkPSJHcmlkX0xvYWRlZF8xIj4NCiAgICA8QnV0dG9uIElzVmlzaWJsZUNoYW5nZWQ9IkJ1dHRvbl9Jc1Zpc2libGVDaGFuZ2Vk
-        XzEiPkNsaWNrIG1lPC9CdXR0b24+ICAgICAgDQogIDwvR3JpZD4NCjwvV2luZG93Pg0K
+        77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IkV2ZW50cy5NYWluV2luZG93Ig0KICB4bWxucz0i
+        aHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRw
+        Oi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNhbXBsZSIgDQogIEhlaWdodD0iMjAw
+        IiANCiAgV2lkdGg9IjMwMCIgDQogIExvYWRlZD0iV2luZG93X0xvYWRlZF8xIiANCiAgR290Rm9jdXM9IldpbmRvd19Hb3RGb2N1
+        c18xIj4NCiAgDQogIDxHcmlkIExvYWRlZD0iR3JpZF9Mb2FkZWRfMSI+DQogICAgPEJ1dHRvbiB4OlVpZD0iYnV0dG9uIiBJc1Zp
+        c2libGVDaGFuZ2VkPSJCdXR0b25fSXNWaXNpYmxlQ2hhbmdlZF8xIj5DbGljayBtZTwvQnV0dG9uPiAgICAgIA0KICA8L0dyaWQ+
+        DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
@@ -56,6 +57,7 @@
   <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Amazon" type="TAmazonTranslate"/>
     </shared>
   </mt>
   <duplicates>

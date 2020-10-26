@@ -168,10 +168,10 @@ namespace Soluling.WPF
     private BamlControl LoadBaml(string name)
     {
       if (assembly == null)
-        assembly = Assembly.GetCallingAssembly();
+        assembly = Assembly.GetEntryAssembly();
 
       if (assemblyName == "")
-        assemblyName = Language.GetAssemblyName(Assembly.GetCallingAssembly());
+        assemblyName = Language.GetAssemblyName(Assembly.GetEntryAssembly());
 
       string language = Language.Id;
 

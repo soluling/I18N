@@ -2,23 +2,14 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
     <UseWPF>true</UseWPF>
   </PropertyGroup>
-
-  <ItemGroup>
-    <EmbeddedResource Remove="Resources.fi.resx" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Remove="Core.nds" />
     <None Remove="Core.ntp" />
     <None Remove="Core.ntr" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Page Remove="App.fi.xaml" />
-    <Page Remove="MainWindow.fi.xaml" />
   </ItemGroup>
 
   <ItemGroup>

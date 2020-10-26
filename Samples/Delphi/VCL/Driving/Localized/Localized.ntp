@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20200209T160423Z" version="1.0.691" stringid="404" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20201021T152051Z" version="1.0.795" stringid="404" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -19,7 +19,7 @@
         <row id="Top">0</row>
         <row id="Caption" si="1">
           <value>Driving Time</value>
-          <lang id="fi" or="1" tm="1" time="20180524T033653Z">Ajoaika</lang>
+          <lang id="fi" tm="1" time="20180524T033653Z">Ajoaika</lang>
           <lang id="de" or="6" rw="0" time="20180410T013800Z">Fahrzeit</lang>
           <lang id="fr" st="1" or="6" rw="0" time="20190125T035825Z">Temps de conduite</lang>
         </row>
@@ -301,10 +301,7 @@
         </item>
         <item name="DistanceLabel" type="TLabel">
           <row id="Left">8</row>
-          <row id="Top">
-            <value>8</value>
-            <lang id="fi" rw="0" time="20181101T233236Z">9</lang>
-          </row>
+          <row id="Top">8</row>
           <row id="Width">80</row>
           <row id="Height">13</row>
           <row id="Caption" si="2">
@@ -321,7 +318,7 @@
           <row id="Height">13</row>
           <row id="Caption" si="3">
             <value>&amp;Speed:</value>
-            <lang id="fi" or="5" rw="0" time="20190326T180856Z" fuzzy="100">&amp;Nopeus:</lang>
+            <lang id="fi" rw="0" time="20190326T180856Z" fuzzy="100">&amp;Nopeus:</lang>
             <lang id="de" or="6" rw="0" time="20180410T013802Z">Ge&amp;schwindigkeit:</lang>
             <lang id="fr" st="1" or="6" rw="0" time="20190125T035825Z">&amp;Speed :</lang>
           </row>
@@ -334,19 +331,13 @@
         </item>
         <item name="DistanceEdit" type="TEdit">
           <row id="Left">8</row>
-          <row id="Top">
-            <value>24</value>
-            <lang id="fi" rw="0" time="20181101T233232Z">25</lang>
-          </row>
+          <row id="Top">24</row>
           <row id="Width">105</row>
           <row id="Height">21</row>
         </item>
         <item name="SpeedEdit" type="TEdit">
           <row id="Left">120</row>
-          <row id="Top">
-            <value>24</value>
-            <lang id="fi" rw="0" time="20181101T233234Z">25</lang>
-          </row>
+          <row id="Top">24</row>
           <row id="Width">105</row>
           <row id="Height">21</row>
         </item>
@@ -362,7 +353,7 @@
           <item name="File1" type="TMenuItem">
             <row id="Caption" si="4">
               <value>File</value>
-              <lang id="fi" or="5" tm="1" time="20170412T214235Z" fuzzy="90">Tiedosto</lang>
+              <lang id="fi" tm="1" time="20170412T214235Z" fuzzy="90">Tiedosto</lang>
               <lang id="de" or="6" rw="0" time="20180410T013803Z">Datei</lang>
               <lang id="fr" st="1" or="6" rw="0" time="20190125T035825Z">Fichier</lang>
             </row>
@@ -387,7 +378,7 @@
             <item name="About1" type="TMenuItem">
               <row id="Caption" si="7">
                 <value>About...</value>
-                <lang id="fi" or="5" rw="0" time="20190326T180922Z" fuzzy="100">Tietoa...</lang>
+                <lang id="fi" rw="0" time="20190326T180922Z" fuzzy="100">Tietoa...</lang>
                 <lang id="de" or="6" rw="0" time="20180410T013807Z">Über....</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20190125T035825Z">Ã propos de....</lang>
               </row>
@@ -600,11 +591,15 @@
     <rule component="TMenuItem" property="Caption" value="-"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
     <settings range="srView">
     </settings>
@@ -612,15 +607,6 @@
   <mt>
     <shared/>
   </mt>
-  <exchange>
-    <item id="fi">
-      <value id="fi">
-        <value>
-          <translator class="TFileTranslator" name="E:\Src\Bin\Win32\Debug\Localized_fi.ntp"/>
-        </value>
-      </value>
-    </item>
-  </exchange>
   <duplicates>
   </duplicates>
 </project>

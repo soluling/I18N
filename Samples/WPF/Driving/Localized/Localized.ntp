@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C959D339-26D1-4A18-8651-657855037822" created="20180323T133706Z" lastmodified="20200316T192630Z" version="1.0.714" stringid="12">
+<project id="C959D339-26D1-4A18-8651-657855037822" created="20180323T133706Z" lastmodified="20201025T221208Z" version="1.0.797" stringid="12">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -7,7 +7,7 @@
   <lang id="ja"/>
   <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\Localized.csproj" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
-    <node class="TXamlNode" name="App.xaml" type="Application" created="20190725T011703Z" st="0" kind="xkApplication">
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20190725T011703Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRyaXZpbmcuQXBwIg0KICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
         Y29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
@@ -276,7 +276,7 @@
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="Main">
       <row id="Title" si="1">
         <value>Driving Time</value>
-        <lang id="fi" or="5" rw="0" tm="1" time="20180323T133706Z">Ajoaika</lang>
+        <lang id="fi" rw="0" tm="1" time="20180323T133706Z">Ajoaika</lang>
         <lang id="de" or="6" rw="0" time="20180328T191008Z">Fahrzeit</lang>
         <lang id="fr" st="1" or="6" rw="0" time="20180331T143411Z">Temps de conduite</lang>
         <lang id="nl" st="1" or="6" rw="0" time="20180331T143457Z">Rijtijd</lang>
@@ -294,7 +294,7 @@
             <item name="calculateMenu" type="MenuItem">
               <row id="Header" si="3">
                 <value>_Calculate</value>
-                <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Laske</lang>
+                <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Laske</lang>
                 <lang id="de" or="6" rw="0" time="20180328T191010Z">Berechnen</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20180331T143413Z">Calculer</lang>
                 <lang id="nl" st="1" or="6" rw="0" time="20180331T143459Z">_Berekenen</lang>
@@ -314,7 +314,7 @@
           <item name="helpMenu" type="MenuItem">
             <row id="Header" si="5">
               <value>_Help</value>
-              <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Ohje</lang>
+              <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Ohje</lang>
               <lang id="de" or="6" rw="0" time="20180328T191012Z">Hilfe</lang>
               <lang id="fr" st="1" or="6" rw="0" time="20180331T143415Z">Aider</lang>
               <lang id="nl" st="1" or="6" rw="0" time="20180331T143501Z">_Help</lang>
@@ -322,7 +322,7 @@
             <item name="aboutMenu" type="MenuItem">
               <row id="Header" si="6">
                 <value>_About</value>
-                <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Tietoa</lang>
+                <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Tietoa</lang>
                 <lang id="de" or="6" rw="0" time="20180328T191013Z">Über uns</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20180331T143417Z">A propos de</lang>
                 <lang id="nl" st="1" or="6" rw="0" time="20180331T143502Z">_About</lang>
@@ -340,7 +340,7 @@
             <item name="distanceLabel" type="Label">
               <row id="Content" si="7">
                 <value>_Distance:</value>
-                <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Etäisyys:</lang>
+                <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Etäisyys:</lang>
                 <lang id="de" or="6" rw="0" time="20180328T191014Z">Entfernung:</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20180331T143418Z">Distance :</lang>
                 <lang id="nl" st="1" or="6" rw="0" time="20180331T143503Z">_Distance:</lang>
@@ -352,7 +352,7 @@
             <item name="speedLabel" type="Label">
               <row id="Content" si="8">
                 <value>_Speed:</value>
-                <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Nopeus:</lang>
+                <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Nopeus:</lang>
                 <lang id="de" or="6" rw="0" time="20180328T191015Z">Geschwindigkeit:</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20180331T143419Z">Vitesse :</lang>
                 <lang id="nl" st="1" or="6" rw="0" time="20180331T143504Z">_Snelheid:</lang>
@@ -364,7 +364,7 @@
             <item name="calculateButton" type="Button">
               <row id="Content" si="9">
                 <value>_Calculate</value>
-                <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">_Laske</lang>
+                <lang id="fi" rw="0" tm="1" time="20180323T133706Z">_Laske</lang>
                 <lang id="de" or="6" rw="0" time="20180328T191016Z">Berechnen</lang>
                 <lang id="fr" st="1" or="6" rw="0" time="20180331T143420Z">Calculer</lang>
                 <lang id="nl" st="1" or="6" rw="0" time="20180331T143505Z">_Berekenen</lang>
@@ -425,14 +425,14 @@
       <node class="TResXNode" name="Resources.resx">
         <row id="About" si="10">
           <value>Driving time calculator</value>
-          <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">Ajoaikalaskin</lang>
+          <lang id="fi" rw="0" tm="1" time="20180323T133706Z">Ajoaikalaskin</lang>
           <lang id="de" or="6" rw="0" time="20180328T191018Z">Fahrzeit-Rechner</lang>
           <lang id="fr" st="1" or="6" rw="0" time="20180331T143422Z">Calculateur de temps de conduite</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180331T143507Z">Rijtijdcalculator</lang>
         </row>
         <row id="Language" si="11">
           <value>en</value>
-          <lang id="fi" or="4" rw="0" tm="1" time="20180323T133706Z">fi</lang>
+          <lang id="fi" rw="0" tm="1" time="20180323T133706Z">fi</lang>
           <lang id="de" or="6" rw="0" time="20180328T191021Z">de</lang>
           <lang id="fr" st="1" or="6" rw="0" time="20180331T143425Z">fr</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180331T143510Z">en</lang>
@@ -460,16 +460,21 @@
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Amazon" type="TAmazonTranslate"/>
     </shared>
   </mt>
   <duplicates>
