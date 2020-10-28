@@ -1972,6 +1972,12 @@ end;
 initialization
   FExtractedResourceFiles := TStringList.Create;
 
+  // If you use Delphi 10.4.1, uncomment the following line and remove the line after that
+//{$IFDEF DELPHIDX4}
+{$IFDEF DELPHIDX5}
+  LoadResStringFunc := nil;
+{$ENDIF}
+
   UiLayout := laLeftToRight;
   DefaultLocale := 'en';
   OriginalLanguage := 'en';

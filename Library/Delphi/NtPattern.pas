@@ -516,7 +516,7 @@ type
     function ParseLegacy(pattern: String): Boolean;
     function ParseIcu(pattern: String): Boolean;
 
-    class function IsPattern(const pattern: String): Boolean; deprecated 'Use IsMultiPattern instead';
+    class function IsPattern(const pattern: String): Boolean; {$IFDEF DELPHI2009}deprecated  'Use IsMultiPattern instead';{$ENDIF}
     class function IsMultiPattern(const pattern: String): Boolean;
 
     property Count: Integer read GetCount;
@@ -2196,12 +2196,15 @@ function IsLegacyPatternStrict(const pattern: String): Boolean;
 
   function Check(codes: array of String): Boolean;
   var
+    i: Integer;
     code: String;
   begin
     // other;...
     // male;...
-    for code in codes do
+    for i := 0 to Length(codes) - 1 do
     begin
+      code := codes[i];
+
       if Pos(code + ';', pattern) > 0 then
       begin
         Result := True;
@@ -2214,15 +2217,17 @@ function IsLegacyPatternStrict(const pattern: String): Boolean;
 
   function CheckNumber(codes: array of String): Boolean;
   var
-    i: Integer;
+    i, j: Integer;
     code: String;
   begin
     // =1;...
-    for code in codes do
+    for i := 0 to Length(codes) - 1 do
     begin
-      for i := 0 to 9 do
+      code := codes[i];
+
+      for j := 0 to 9 do
       begin
-        if Pos(code + IntToStr(i) + ';', pattern) > 0 then
+        if Pos(code + IntToStr(j) + ';', pattern) > 0 then
         begin
           Result := True;
           Exit;

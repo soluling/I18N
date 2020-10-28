@@ -319,7 +319,9 @@ uses
   Windows,
 {$IFEND}
   RTLConsts,
+{$IFDEF DELPHIXE2}
   System.IOUtils,
+{$ENDIF}
   NtBase;
 
 
@@ -843,6 +845,7 @@ procedure TNtDelphiResources.Load;
     end;
   end;
 
+{$IFDEF DELPHIXE2}
   function FindLanguagesFiles(directories: TStringDynArray; var files: TStringDynArray): Boolean;
   var
     i: Integer;
@@ -858,6 +861,7 @@ procedure TNtDelphiResources.Load;
 
     Result := False;
   end;
+{$ENDIF}
 
   procedure LoadResourceFile(stream: TStream);
   var
@@ -898,6 +902,7 @@ procedure TNtDelphiResources.Load;
     end;
   end;
 
+{$IFDEF DELPHIXE2}
   procedure LoadLanguageFiles(languageFileNames: TStringDynArray);
   var
     i: Integer;
@@ -914,15 +919,19 @@ procedure TNtDelphiResources.Load;
       FLanguages.Add(item);
     end;
   end;
+{$ENDIF}
 
 var
   resourceFileName: String;
-  languageFileNames: TStringDynArray;
   directories: TStringDynArray;
+{$IFDEF DELPHIXE2}
+  languageFileNames: TStringDynArray;
+{$ENDIF}
 begin
   FLoaded := True;
   directories := GetResourceDirectories;
 
+{$IFDEF DELPHIXE2}
   if FindLanguagesFiles(directories, languageFileNames) then
   begin
     // Load translations from local .ntlang files
@@ -930,7 +939,9 @@ begin
     FTranslationSource := tsDirectory;
     FTranslationSourceValue := ExtractFileDir(languageFileNames[0]);
   end
-  else if FindResourceFile(directories, resourceFileName) then
+  else
+{$ENDIF}
+  if FindResourceFile(directories, resourceFileName) then
   begin
     // Load translations from a local .ntres file
     LoadResourceFile(TFileStream.Create(resourceFileName, fmOpenRead or fmShareDenyWrite));
