@@ -1,0 +1,13 @@
+﻿@page "/"
+
+@inject IStringLocalizer<SharedStrings> localizer
+
+<h1>@localizer["Hello World!"]</h1>
+
+<p>@localizer["Welcome to your new app."]</p>
+
+<MyComponent />
+
+<SharedServerLibrary.Component />
+<SharedServerLibrary.ComponentTwo />
+

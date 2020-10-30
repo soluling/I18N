@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="D879E974-0AB4-4884-B84C-32A090A6880B" created="20201030T013849Z" lastmodified="20201030T020436Z" version="1.0.798" lockedrowcomplete="0" stringid="10">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="MultiServer\MultiServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\Multi\MultiServer\MultiServer.csproj" original="en" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
+    <netproperties version="core31"/>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Components" created="20201030T013954Z">
+        <node class="TResXNode" name="MyComponent.resx">
+          <row id="This is a local component" si="3">
+            <value>This is a local component</value>
+            <lang id="fi" rw="0" time="20201030T014046Z" fuzzy="5">Tämä on paikallinen komponentti</lang>
+          </row>
+        </node>
+      </node>
+      <node class="TDirectoryFolder" name="Pages">
+        <node class="TResXNode" name="Index.resx">
+          <row id="Hello World!" si="1">
+            <value>Hello World!</value>
+            <lang id="fi" rw="0" time="20201030T014049Z" fuzzy="91.6666641235352">Hei maailma!</lang>
+          </row>
+          <row id="Welcome to your new app." si="2">
+            <value>Welcome to your new app.</value>
+            <lang id="fi" rw="0" time="20201030T014042Z" fuzzy="100">Tervetuloa uuteen sovellukseesi.</lang>
+          </row>
+        </node>
+      </node>
+      <node class="TDirectoryFolder" name="Shared" created="20201030T014340Z">
+        <node class="TResXNode" name="MainLayout.resx">
+          <row id="About" si="4">
+            <value>About</value>
+            <lang id="fi" rw="0" time="20201030T014347Z" fuzzy="83.3333358764648">Tietoa</lang>
+          </row>
+        </node>
+        <node class="TResXNode" name="NavMenu.resx">
+          <row id="Sample" si="6" created="20201030T014628Z">
+            <value>Sample</value>
+            <lang id="fi" rw="0" time="20201030T014632Z" fuzzy="100">Esimerkki</lang>
+          </row>
+          <row id="Home" si="5">
+            <value>Home</value>
+            <lang id="fi" rw="0" time="20201030T014349Z" fuzzy="5">Kotisivu</lang>
+          </row>
+        </node>
+      </node>
+    </node>
+    <extractor category="lcBlazor"/>
+  </node>
+  <node class="TNetProjectSource" name="MultiServerLibrary\MultiServerLibrary.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\Multi\MultiServerLibrary\MultiServerLibrary.csproj" original="en" availableresources="[nrResx]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" resourcedir="Resources" defaultresourcedir="Resources">
+    <netproperties version="standard20"/>
+    <node class="TDirectoryFolder" name="Resources" created="20201030T014747Z">
+      <node class="TResXNode" name="Component.resx">
+        <row id="This a library component." si="7">
+          <value>This a library component.</value>
+          <lang id="fi" st="4" or="6" rw="0" time="20201030T014752Z" fuzzy="5">Tämä on kirjaston komponentti.</lang>
+        </row>
+        <row id="This another library component." si="8">
+          <value>This another library component.</value>
+          <lang id="fi" st="4" or="6" rw="0" time="20201030T014755Z" fuzzy="5">Tämä toinen kirjastokomponentti.</lang>
+        </row>
+      </node>
+      <node class="TResXNode" name="MyClass.resx">
+        <row id="This is another sample" si="9">
+          <value>This is another sample</value>
+          <lang id="fi" st="4" or="5" rw="0" time="20201030T014757Z" fuzzy="100">Tämä on toinen esimerkki</lang>
+        </row>
+        <row id="This is a sample" si="10">
+          <value>This is a sample</value>
+          <lang id="fi" st="4" or="5" rw="0" time="20201030T014800Z" fuzzy="100">Tämä on esimerkki</lang>
+        </row>
+      </node>
+    </node>
+    <extractor category="lcBlazor"/>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

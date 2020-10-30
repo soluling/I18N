@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26730.12
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30621.155
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Hello", "Hello\Hello.csproj", "{C56E5718-F944-4DC0-BB35-CC3289F5EB0F}"
 EndProject
@@ -17,7 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Library", "Library\Library.
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Delay", "Signed\Delay\Delay.csproj", "{A4C88A59-82CC-4014-9E7D-461DAA3B2FC6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomName", "CustomName\CustomName.csproj", "{3A65AABE-8C52-4225-A58A-2200DBE0DF70}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomName", "CustomName\CustomName.csproj", "{3A65AABE-8C52-4225-A58A-2200DBE0DF70}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "IStringLocalizer", "IStringLocalizer", "{6F384AF9-50E4-431E-98E1-12B69F58A89A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleApp", "IStringLocalizer\ConsoleApp\ConsoleApp.csproj", "{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,6 +57,10 @@ Global
 		{3A65AABE-8C52-4225-A58A-2200DBE0DF70}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3A65AABE-8C52-4225-A58A-2200DBE0DF70}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3A65AABE-8C52-4225-A58A-2200DBE0DF70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -62,6 +70,7 @@ Global
 		{98FAF8BA-196A-4C2F-BDFA-E1B25A866F6E} = {E9587F34-9073-4F33-9E68-74C5379BE897}
 		{9FEA4189-E26C-43E4-91FD-2452456A5FBC} = {E9587F34-9073-4F33-9E68-74C5379BE897}
 		{A4C88A59-82CC-4014-9E7D-461DAA3B2FC6} = {E9587F34-9073-4F33-9E68-74C5379BE897}
+		{8B0DE24F-9C57-4C0A-A009-143A28BFCE7A} = {6F384AF9-50E4-431E-98E1-12B69F58A89A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {9D86AEB2-DEC9-436E-9AE2-B41D39DEF416}

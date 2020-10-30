@@ -1,0 +1,17 @@
+﻿@inherits LayoutComponentBase
+
+@inject IStringLocalizer<SharedStrings> localizer
+
+<div class="sidebar">
+    <NavMenu />
+</div>
+
+<div class="main">
+    <div class="top-row px-4">
+        <a href="https://www.soluling.com/" target="_blank">@localizer["About"]</a>
+    </div>
+
+    <div class="content px-4">
+        @Body
+    </div>
+</div>
