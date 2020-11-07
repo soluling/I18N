@@ -10,7 +10,7 @@ namespace SimpleAPI
 {
   public class Startup
   {
-    public Startup(IHostingEnvironment env)
+    public Startup(IWebHostEnvironment env)
     {
       var builder = new ConfigurationBuilder()
         .SetBasePath(env.ContentRootPath)
@@ -30,11 +30,11 @@ namespace SimpleAPI
 
       services
         .AddMvc()
-        .AddJsonOptions(options => options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented);
+        .AddNewtonsoftJson(options => options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented);
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app)
     {
       var supportedCultures = new List<CultureInfo>
       {
@@ -51,7 +51,12 @@ namespace SimpleAPI
 
       app.UseRequestLocalization(options);
 
-      app.UseMvc();
+      app.UseRouting();
+
+      app.UseEndpoints(endpoints =>
+      {
+        endpoints.MapControllers();
+      });
     }
   }
 }

@@ -3,10 +3,10 @@ using System.Globalization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Razor;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Hosting;
 
 namespace Driving
 {
@@ -24,18 +24,16 @@ namespace Driving
     {
       services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
 
-      services.AddMvc()
-        .SetCompatibilityVersion(CompatibilityVersion.Version_2_2)
+      services.AddControllersWithViews()
         .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
         .AddDataAnnotationsLocalization();
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
       if (env.IsDevelopment())
       {
-        app.UseBrowserLink();
         app.UseDeveloperExceptionPage();
       }
       else
@@ -60,11 +58,13 @@ namespace Driving
       app.UseRequestLocalization(options);
       app.UseStaticFiles();
 
-      app.UseMvc(routes =>
+      app.UseRouting();
+
+      app.UseEndpoints(endpoints =>
       {
-        routes.MapRoute(
+        endpoints.MapControllerRoute(
           name: "default",
-          template: "{controller=Default}/{action=Index}/{id?}");
+          pattern: "{controller=Default}/{action=Index}/{id?}");
       });
     }
   }

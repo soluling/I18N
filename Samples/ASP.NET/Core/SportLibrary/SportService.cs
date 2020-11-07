@@ -17,125 +17,106 @@ namespace Soluling.Sport
 
     public async Task<Sport[]> GetAllAsync(string language)
     {
-      using (var client = new HttpClient())
-      {
-        client.DefaultRequestHeaders.Add("Accept-Language", language);
+      using var client = new HttpClient();
+      client.DefaultRequestHeaders.Add("Accept-Language", language);
 
-        var response = await client.GetAsync(URL);
+      var response = await client.GetAsync(URL);
 
-        if (response.StatusCode != System.Net.HttpStatusCode.OK)
-          return null;
+      if (response.StatusCode != System.Net.HttpStatusCode.OK)
+        return null;
 
-        var payload = response.Content.ReadAsStringAsync().Result;
+      var payload = response.Content.ReadAsStringAsync().Result;
 
-        if (payload == null)
-          return null;
+      if (payload == null)
+        return null;
 
-        return JsonConvert.DeserializeObject<Sport[]>(payload);
-      }
+      return JsonConvert.DeserializeObject<Sport[]>(payload);
     }
 
     public async Task<Sport> GetAsync(int id, string language)
     {
-      using (var client = new HttpClient())
-      {
-        client.DefaultRequestHeaders.Add("Accept-Language", language);
+      using var client = new HttpClient();
+      client.DefaultRequestHeaders.Add("Accept-Language", language);
 
-        var response = client.GetAsync(URL + $"/{id}").Result;
+      var response = client.GetAsync(URL + $"/{id}").Result;
 
-        if (response.StatusCode != System.Net.HttpStatusCode.OK)
-          return null;
+      if (response.StatusCode != System.Net.HttpStatusCode.OK)
+        return null;
 
-        var payload = await response.Content.ReadAsStringAsync();
+      var payload = await response.Content.ReadAsStringAsync();
 
-        if (payload == null)
-          return null;
+      if (payload == null)
+        return null;
 
-        return JsonConvert.DeserializeObject<Sport>(payload);
-      }
+      return JsonConvert.DeserializeObject<Sport>(payload);
     }
 
     public async Task<Sport> AddAsync(Sport value)
     {
-      using (var client = new HttpClient())
-      using (var request = new HttpRequestMessage(HttpMethod.Post, URL))
-      {
-        var payload = JsonConvert.SerializeObject(value);
+      using var client = new HttpClient();
+      using var request = new HttpRequestMessage(HttpMethod.Post, URL);
+      var payload = JsonConvert.SerializeObject(value);
 
-        using (var content = new StringContent(payload, Encoding.UTF8, "application/json"))
-        {
-          request.Content = content;
+      using var content = new StringContent(payload, Encoding.UTF8, "application/json");
+      request.Content = content;
 
-          using (var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead))
-          {
-            if (response.StatusCode != System.Net.HttpStatusCode.OK)
-              return null;
+      using var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
 
-            payload = await response.Content.ReadAsStringAsync();
+      if (response.StatusCode != System.Net.HttpStatusCode.OK)
+        return null;
 
-            if (payload == null)
-              return null;
+      payload = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<Sport>(payload);
-          }
-        }
-      }
+      if (payload == null)
+        return null;
+
+      return JsonConvert.DeserializeObject<Sport>(payload);
     }
 
     public async Task<Sport> EditAsync(Sport value)
     {
-      using (var client = new HttpClient())
-      using (var request = new HttpRequestMessage(HttpMethod.Patch, URL))
-      {
-        var payload = JsonConvert.SerializeObject(value);
+      using var client = new HttpClient();
+      using var request = new HttpRequestMessage(HttpMethod.Patch, URL);
+      var payload = JsonConvert.SerializeObject(value);
 
-        using (var content = new StringContent(payload, Encoding.UTF8, "application/json"))
-        {
-          request.Content = content;
+      using var content = new StringContent(payload, Encoding.UTF8, "application/json");
+      request.Content = content;
 
-          using (var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead))
-          {
-            if (response.StatusCode != System.Net.HttpStatusCode.OK)
-              return null;
+      using var response = await client.SendAsync(request, HttpCompletionOption.ResponseHeadersRead);
 
-            payload = await response.Content.ReadAsStringAsync();
+      if (response.StatusCode != System.Net.HttpStatusCode.OK)
+        return null;
 
-            if (payload == null)
-              return null;
+      payload = await response.Content.ReadAsStringAsync();
 
-            return JsonConvert.DeserializeObject<Sport>(payload);
-          }
-        }
-      }
+      if (payload == null)
+        return null;
+
+      return JsonConvert.DeserializeObject<Sport>(payload);
     }
 
     public async Task<Sport[]> SetDefaultAsync()
     {
-      using (var client = new HttpClient())
-      {
-        using (var response = await client.PostAsync(URL + "/initialize", null))
-        {
-          if (response.StatusCode != System.Net.HttpStatusCode.OK)
-            return null;
+      using var client = new HttpClient();
+      using var response = await client.PostAsync(URL + "/initialize", null);
 
-          var payload = await response.Content.ReadAsStringAsync();
+      if (response.StatusCode != System.Net.HttpStatusCode.OK)
+        return null;
 
-          if (payload == null)
-            return null;
+      var payload = await response.Content.ReadAsStringAsync();
 
-          return JsonConvert.DeserializeObject<Sport[]>(payload);
-        }
-      }
+      if (payload == null)
+        return null;
+
+      return JsonConvert.DeserializeObject<Sport[]>(payload);
     }
 
     public async Task<bool> DeleteAsync(int id)
     {
-      using (var client = new HttpClient())
-      {
-        var response = await client.DeleteAsync(URL + $"/{id}");
+      using var client = new HttpClient();
+      var response = await client.DeleteAsync(URL + $"/{id}");
 
-        return response.StatusCode == System.Net.HttpStatusCode.OK;
-      }
+      return response.StatusCode == System.Net.HttpStatusCode.OK;
     }
   }
 }

@@ -1,9 +1,9 @@
-﻿using Newtonsoft.Json;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Newtonsoft.Json;
 
-// This model contain one sport. Because some properties of the sport need to be localized (e.g. name and origin)
+// This model contain a sport. Because some properties of the sport need to be localized (e.g. name and origin)
 // we split model into two entities: Sport and SpotLanguage. Sport contains language independet properties and 
 // SportLanguage contains language specific properties. Sport has a list of SportLanguages, one for each language.
 namespace Soluling.Sport
@@ -50,6 +50,7 @@ namespace Soluling.Sport
     public bool? Goalie { get; set; }
 
     [NotMapped]
+    [Display(Name = "Kind")]
     public SportKind Kind
     {
       get
@@ -76,7 +77,7 @@ namespace Soluling.Sport
     }
 
     // List that contains the language specific parts
-    public List<SportLanguage> Languages { get; set; }
+    public List<SportLanguage> Languages { get; set; } = new List<SportLanguage>();
 
     public Sport AddLanguage(SportLanguage language)
     {

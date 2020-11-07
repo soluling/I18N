@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Hosting;
 
 namespace HelloWorld
 {
@@ -12,13 +12,13 @@ namespace HelloWorld
   {
     public void ConfigureServices(IServiceCollection services)
     {
-      services.AddMvc();
+      services.AddControllersWithViews();
 
       // 1) Specify .resx directory. Add Resources directory and add Startup.resx file.
       services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
     }
 
-    public void Configure(IApplicationBuilder app, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
     {
       if (env.IsDevelopment())
         app.UseDeveloperExceptionPage();
@@ -41,11 +41,13 @@ namespace HelloWorld
 
       app.UseRequestLocalization(options);
 
-      app.UseMvc(routes =>
+      app.UseRouting();
+
+      app.UseEndpoints(endpoints =>
       {
-        routes.MapRoute(
+        endpoints.MapControllerRoute(
           name: "default",
-          template: "{controller=Default}/{action=Index}/{id?}");
+          pattern: "{controller=Default}/{action=Index}/{id?}");
       });
     }
   }

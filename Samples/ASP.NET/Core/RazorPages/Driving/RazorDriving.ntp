@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C253E9FF-0816-4949-896D-81A98DB59036" created="20181207T165111Z" lastmodified="20191212T145813Z" version="1.0.627" stringid="7">
+<project id="C253E9FF-0816-4949-896D-81A98DB59036" created="20181207T165111Z" lastmodified="20201107T141246Z" version="1.0.802" stringid="7">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="RazorDriving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Driving\RazorDriving.csproj" original="en" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1">
-    <netproperties version="core30"/>
+  <node class="TNetProjectSource" name="RazorDriving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Driving\RazorDriving.csproj" original="en" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core31"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages">
         <node class="TResXNode" name="Index.resx">
@@ -71,7 +71,10 @@
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
@@ -79,6 +82,10 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

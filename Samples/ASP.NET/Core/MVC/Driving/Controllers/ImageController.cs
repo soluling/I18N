@@ -8,9 +8,9 @@ namespace RazorDriving.Controllers
   [ApiController]
   public class ImageController : ControllerBase
   {
-    private readonly IHostingEnvironment hostingEnvironment;
+    private readonly IWebHostEnvironment hostingEnvironment;
 
-    public ImageController(IHostingEnvironment hostingEnvironment)
+    public ImageController(IWebHostEnvironment hostingEnvironment)
     {
       this.hostingEnvironment = hostingEnvironment;
     }

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20200620T143859Z" version="1.0.761" lockedrowcomplete="0" stringid="52">
+<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20201107T135142Z" version="1.0.802" lockedrowcomplete="0" stringid="53">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU" aspnetcore="1">
-    <netproperties version="core30"/>
+  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core31"/>
     <node class="TDirectoryFolder" name="Pages">
       <node class="TResXNode" name="LanguageNames.resx">
         <row id="English" si="1">
@@ -199,6 +199,10 @@
           <value>Goalie</value>
           <lang id="fi" rw="0" time="20191113T152910Z" fuzzy="100">Maalivahti</lang>
         </row>
+        <row id="Kind" si="53" created="20201107T134944Z">
+          <value>Kind</value>
+          <lang id="fi" rw="0" time="20201107T135107Z">Tyyppi</lang>
+        </row>
       </node>
       <node class="TResXNode" name="Soluling.Sport.SportKind.resx">
         <row id="Individual" si="11">
@@ -235,7 +239,10 @@
           <value>Description</value>
           <lang id="fi" rw="0" time="20191113T153003Z" fuzzy="100">Kuvaus</lang>
         </row>
-        <row id="Machine translated" si="52" created="20200620T143848Z">Machine translated</row>
+        <row id="Machine translated" si="52" created="20200620T143848Z">
+          <value>Machine translated</value>
+          <lang id="fi" rw="0" time="20201107T135130Z" fuzzy="5">Konekäännetty</lang>
+        </row>
       </node>
     </node>
   </node>
@@ -248,13 +255,14 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
     <settings range="srView">
     </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

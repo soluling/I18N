@@ -7,7 +7,7 @@ namespace SimpleAPI.Controllers
   [Route("[controller]")]
   public class ValuesController : Controller
   {
-    private List<string> values = new List<string>();
+    private readonly List<string> values = new List<string>();
 
     public ValuesController(IStringLocalizer<ValuesController> localizer)
     {

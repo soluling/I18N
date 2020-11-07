@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D43CA0BF-94D8-4541-9434-AA4E73C89DF4" created="20181212T222610Z" lastmodified="20190927T222437Z" version="1.0.552" stringid="2">
+<project id="D43CA0BF-94D8-4541-9434-AA4E73C89DF4" created="20181212T222610Z" lastmodified="20201107T144454Z" version="1.0.802" stringid="2">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SimpleAPI.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\WebAPI\SimpleAPI\SimpleAPI.csproj" original="en" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU" core="1">
-    <netproperties version="core22"/>
+  <node class="TNetProjectSource" name="SimpleAPI.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\WebAPI\SimpleAPI\SimpleAPI.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core31"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers">
         <node class="TResXNode" name="ValuesController.resx">
@@ -19,7 +19,10 @@
     </node>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
@@ -27,6 +30,10 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

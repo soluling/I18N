@@ -5,8 +5,8 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Localization;
+using Microsoft.Extensions.Hosting;
 
 namespace Minimal
 {
@@ -19,7 +19,7 @@ namespace Minimal
     }
 
     // 2) Add IStringLocalizer<Startup> parameter so it can be injected. 
-    public void Configure(IApplicationBuilder app, IStringLocalizer<Startup> localizer, IHostingEnvironment env, ILoggerFactory loggerFactory)
+    public void Configure(IApplicationBuilder app, IStringLocalizer<Startup> localizer, IWebHostEnvironment env)
     {
       if (env.IsDevelopment())
         app.UseDeveloperExceptionPage();

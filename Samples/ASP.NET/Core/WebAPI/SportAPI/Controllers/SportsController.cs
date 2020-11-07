@@ -15,7 +15,7 @@ namespace SportAPI.Controllers
   public class SportsController : Controller
   {
     private readonly SportContext context;
-    private static MachineTranslator machineTranslator;
+    private static readonly MachineTranslator machineTranslator;
 
     static SportsController()
     {
