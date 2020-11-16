@@ -4,7 +4,6 @@ import { loadTranslations } from '@angular/localize';
 
 import { getTranslations } from 'angular';
 
-import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
 
 import '@angular/localize/init';

@@ -30,7 +30,7 @@ export function setCookie(name: string, value: string)
 
 export function getCookie(name: string) 
 {
-  console.log('getCookie');
+  //console.log('getCookie');
 
   // cookie: language=fi; other=xxx
   // return: fi
@@ -76,7 +76,7 @@ export function getTranslationsByUrl(
 // Load resources matching the give language id. If not found, use the fallback ids.
 export function getTranslationsById(baseUrl: string, id: string, fallbacks: string[], setLocaleId: boolean): Promise<Translations> 
 {
-  console.log('getTranslationsById: ' + id);
+  //console.log('getTranslationsById: ' + id);
 
   return getTranslationsByUrl(getLanguageUrl(baseUrl, id), id, setLocaleId).then(translations => 
     {
@@ -120,7 +120,7 @@ export interface TranslateOptions
   tryAllLanguages?: boolean;  // Try all languages in Accept-Language. Default true
   setLocaleId?: boolean;      // Set LOCALE_ID to match the loaded resource. Default true
   fallbackId?: string;        // Specifies the fallback language/locale id. Default en
-  locale?: string;            // Specifies the locale to be loaded. If null or empty use the browser language. Default null
+  locale?: string;            // Specifies the locale to be loaded. Separate multiple locales with a semicolon (;). If null or empty use the browser language. Default null
   cookieName?: string;        // Specifies the cookie name that stores the language. If null cookies are ignored. Default null
 }
 
@@ -133,7 +133,7 @@ export function getTranslationsEx(
   let tryAllLanguages = true;
   let setLocaleId = true;
   let fallbackId = "en";
-  let locale = null;
+  let locale: string = null;
   let cookieName = null;
 
   if (options)
@@ -164,7 +164,7 @@ export function getTranslationsEx(
   let languages = [];
 
   if (locale)
-    languages.push(locale)
+    languages = locale.split(';');
   else if (!ingoreCountry)
     languages = [...navigator.languages];
   else
@@ -179,7 +179,7 @@ export function getTranslationsEx(
     }
   }
 
-  console.log(languages);
+  //console.log(languages);
 
   // Take the first id from the language list
   let id = languages.shift();
@@ -189,7 +189,7 @@ export function getTranslationsEx(
     languages = [];
 
   // If a fallback has been specified and the language list does not contain it, add the fallback to the list
-  if (fallbackId && (languages.indexOf(fallbackId) == -1))
+  if (fallbackId && (fallbackId !== id) && (languages.indexOf(fallbackId) == -1))
     languages.push(fallbackId);
 
   // Get the translations

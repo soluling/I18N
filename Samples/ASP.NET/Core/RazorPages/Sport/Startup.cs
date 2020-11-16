@@ -28,7 +28,6 @@ namespace RazorSport
         .AddDataAnnotationsLocalization();
 
       services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
-      services.ConfigureWithAvailableLanguages(Assembly.GetExecutingAssembly().Location, "en");
     }
 
     // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -45,7 +44,7 @@ namespace RazorSport
         app.UseHsts();
       }
 
-      app.UseRequestLocalizationWithConfiguredLanguages();
+      app.UseRequestLocalizationWithAvailableLanguages(Assembly.GetExecutingAssembly().Location, "en");
 
       app.UseHttpsRedirection();
       app.UseStaticFiles();
