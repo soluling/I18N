@@ -91,7 +91,7 @@ export class AppModule { }
 
 We use `LocaleService` service. It is a service that gives us the id of the loaded resource.
 
-The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF, XMB or JSON). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 JSON, and XMB. However you need to use JSON when using the runtime localization. Angular extract tool extracts XLIFF and XMB from the source code (i.e., .html and .ts). However the JSON file is extracted from the compiled application (e.g., dist\*.js). In addition Angular CLI does not yet support JSON so you have to do the extraction without the CLI. First build your application.
+The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF, XMB or JSON). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 JSON, and XMB. However you need to use JSON when using the runtime localization. Angular extract tool extracts XLIFF and XMB from the source code (i.e., `.html` and `.ts`). However the JSON file is extracted from the compiled application (e.g., `dist\*.js`). In addition Angular CLI does not yet support JSON so you have to do the extraction without the CLI. First build your application.
 
 ```bash
 ng build
@@ -116,9 +116,9 @@ Then run the extractor to extract strings and to create the `messages.json` file
 npm run i18nj
 ```
 
-Localize the `messages.json` file. Save the localized files into `assets/i18n` folder with the name `id.json` where id is the language id. For example, the German file is `assets/i18n/de.json`.  We recommend using Soluling when creating localized files. You can download Soluling from [here](https://www.soluling.com/Download). 
+Localize the `messages.json` file. Save the localized files with the name `id.json` where id is the language id. For example, the German file is `de.json`.  We recommend using Soluling when creating localized files. You can download Soluling from [here](https://www.soluling.com/Download). 
 
-The localized JSON files are ready to be used in runtime location. Place the the localized JSON files into assets\i18n directory. Run the application.
+The localized JSON files are ready to be used in runtime location. Place the the localized JSON files into `assets\i18n` directory. Run the application.
 
 ```bash
 ng serve -o
@@ -126,6 +126,6 @@ ng serve -o
 
 If you have the resource file matching your browser's language, the application appears in that language. If not, change the language of the browser and click refresh to see the application in the selected language.
 
-**Note!** If you want to extract string from .ts file you need to use Angular 10.1 or later. The extract tools of Angular 9 and 10 do not extract strings from .ts files but only strings from templates.
+**Note!** If you want to extract string from `.ts` file you need to use Angular 10.1 or later. The extract tools of Angular 9 and 10 do not extract strings from `.ts` files but only strings from templates.
 
 **Note!** At the moment, Soluling is a Windows application and works only on Windows. However, we will release a web-based version soon.
