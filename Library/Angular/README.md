@@ -116,7 +116,7 @@ Then run the extractor to extract strings and to create the `messages.json` file
 npm run i18nj
 ```
 
-Localize the `messages.json` file. Save the localized files with the name `id.json` where id is the language id. For example, the German file is `de.json`.  We recommend using Soluling when creating localized files. You can download Soluling from [here](https://www.soluling.com/Download). 
+Localize the `messages.json` file. Save the localized files with the name `<id>.json` where id is the language id. For example, the German file is `de.json`.  We recommend using Soluling when creating localized files. You can download Soluling from [here](https://www.soluling.com/Download). 
 
 The localized JSON files are ready to be used in runtime location. Place the the localized JSON files into `assets\i18n` directory. Run the application.
 
