@@ -3558,4 +3558,6 @@ finalization
     FDatas.Objects[0].Free;
     FDatas.Delete(0);
   end;
+
+  FDatas.Free;
 end.
