@@ -9,7 +9,7 @@ namespace LanguageSwitch
   {
     public App()
     {
-      Soluling.Language.SetInitial();
+      Soluling.Language.SetInitial(LanguageSwitch.Properties.Settings.Default.Language);
     }
   }
 }

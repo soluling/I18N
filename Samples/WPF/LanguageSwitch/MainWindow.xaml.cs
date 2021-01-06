@@ -40,6 +40,10 @@ namespace LanguageSwitch
         // Language has been changed.
         // Properties that were set on run time must be reset.
         UpdateItems();
+
+        // Store the language
+        Properties.Settings.Default.Language = Soluling.Language.Culture.Name;
+        Properties.Settings.Default.Save();
       }
     }
   }
