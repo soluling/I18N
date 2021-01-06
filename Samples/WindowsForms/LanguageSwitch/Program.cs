@@ -13,7 +13,7 @@ namespace LanguageSwitch
     {
       // Set the original and default languages.
       // Default language is the current selection in Regional Settings sheet of Control panel.
-      Soluling.Language.SetInitial();
+      Soluling.Language.SetInitial(Properties.Settings.Default.Language);
 
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
