@@ -1,4 +1,4 @@
-CREATE DATABASE "SportAnsi.fdb";
+CREATE DATABASE 'SportAnsi.fdb';
 
 CREATE TABLE Sport
 (

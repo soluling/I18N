@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20200507T030106Z" version="1.0.740" lockedrowcomplete="0" stringid="18">
+<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20210113T174353Z" version="1.0.815" lockedrowcomplete="0" stringid="18">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="BlazorSportServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\SportServer\BlazorSportServer.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1">
+  <node class="TNetProjectSource" name="SportServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\SportServer\SportServer.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
     <netproperties version="core30"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages" created="20200321T225656Z">
@@ -70,6 +70,9 @@
       </node>
     </node>
     <extractor category="lcBlazor"/>
+    <configurations>
+      <configuration name="Default" compilemethod="cmAl"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
@@ -86,7 +89,9 @@
     </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

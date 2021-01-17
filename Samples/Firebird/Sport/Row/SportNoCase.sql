@@ -1,4 +1,4 @@
-CREATE DATABASE "SportNoCase.fdb" default character set utf8 collation unicode_ci;
+CREATE DATABASE 'SportNoCase.fdb' default character set utf8 collation unicode_ci;
 
 CREATE TABLE Sport
 (

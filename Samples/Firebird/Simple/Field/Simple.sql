@@ -1,4 +1,4 @@
-CREATE DATABASE "Simple.fdb" default character set utf8;
+CREATE DATABASE 'Simple.fdb' default character set utf8;
 
 CREATE TABLE Simple
 (

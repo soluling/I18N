@@ -1,4 +1,4 @@
-CREATE DATABASE "Multiple.fdb" default character set utf8;
+CREATE DATABASE 'Multiple.fdb' default character set utf8;
 
 CREATE TABLE Localize
 (

@@ -262,8 +262,11 @@ type
     class function ResourceFileExist(const fileName, id: String): Boolean;
 
     { Set the initial locale to match the current settings in the Regional Settings of Control Panel.
-      @param localeSelect  Specifies how to select the dfault locale. }
-    class procedure SetInitialLocale(localeSelect: TLocaleSelect);
+      @param localeSelect   Specifies how to select the dfault locale.
+      @param defaultLocale  Specifies the default locale. If empty the default locale is not set. }
+    class procedure SetInitialLocale(
+      localeSelect: TLocaleSelect;
+      const defaultLocale: String = '');
 
     { Sets the directory where the resource DLL file locates.
       @longCode(#
@@ -1158,7 +1161,9 @@ begin
   SetInitialLocale(localeSelect);
 end;
 
-class procedure TNtBase.SetInitialLocale(localeSelect: TLocaleSelect);
+class procedure TNtBase.SetInitialLocale(
+  localeSelect: TLocaleSelect;
+  const defaultLocale: String);
 {$IFDEF MSWINDOWS}
 var
   fileName: String;
@@ -1227,6 +1232,8 @@ begin  //FI:C101
 {$IFDEF MSWINDOWS}
   fileName := ParamStr(0);
 
+  if defaultLocale <> '' then
+    NtBase.DefaultLocale := defaultLocale;
 {$IFDEF DELPHI2010}
   // Check if there is a resource DLL matching the locale override.
   id := GetLocaleOverride(fileName);

@@ -1,4 +1,4 @@
-CREATE DATABASE "Sport.fdb" default character set utf8;
+CREATE DATABASE 'Sport.fdb' default character set utf8;
 
 CREATE TABLE Resource
 (
