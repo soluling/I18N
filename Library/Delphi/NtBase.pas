@@ -1357,6 +1357,12 @@ var
   module: PLibModule;
   buffer: array[0..260] of Char;
 begin  //FI:C101
+  // If you use Delphi 10.4.2, uncomment the following line and remove the line after that
+//{$IFDEF DELPHIDX4}
+{$IFDEF DELPHIDX5}
+  ResStringCleanupCache;
+{$ENDIF}
+
   Result := 0;
   module := LibModuleList;
   newResourceLocale := '';
@@ -1979,11 +1985,10 @@ end;
 initialization
   FExtractedResourceFiles := TStringList.Create;
 
-  // If you use Delphi 10.4.1, uncomment the following line and remove the line after that
+  // If you use Delphi 10.4.1, uncomment the following three lines
 //{$IFDEF DELPHIDX4}
-{$IFDEF DELPHIDX5}
-  LoadResStringFunc := nil;
-{$ENDIF}
+//  LoadResStringFunc := nil;
+//{$ENDIF}
 
   UiLayout := laLeftToRight;
   DefaultLocale := 'en';

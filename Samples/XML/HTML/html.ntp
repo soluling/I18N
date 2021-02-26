@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="71B24CFD-EB23-4683-9419-256CA75D229E" created="20201006T011159Z" lastmodified="20201006T145250Z" version="1.0.789" lockedrowcomplete="0" stringid="11">
+<project id="71B24CFD-EB23-4683-9419-256CA75D229E" created="20201006T011159Z" lastmodified="20210125T013709Z" version="1.0.820" lockedrowcomplete="0" stringid="11">
   <lang id="fi"/>
   <node class="TXmlSource" name="html.xml" fullpath="D:\NT\Deploy\Samples\XML\HTML\html.xml" original="en" encoding="utf-8">
-    <xml detecthtml="1" encoding="UTF-8"/>
+    <xml detectstringformat="1" encoding="UTF-8"/>
     <item name="datas">
       <item name="data">
         <item name="id"/>
@@ -44,9 +44,9 @@
   </terminology>
   <tm>
     <shared>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

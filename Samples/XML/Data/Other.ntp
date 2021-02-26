@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6CF3F0DD-D322-45FB-970C-65770B6B33A1" created="20181126T015927Z" lastmodified="20200316T215720Z" version="1.0.714" stringid="16">
+<project id="6CF3F0DD-D322-45FB-970C-65770B6B33A1" created="20181126T015927Z" lastmodified="20210125T013452Z" version="1.0.820" stringid="16">
   <lang id="fi"/>
   <node class="TXmlSource" name="Other.xml" fullpath="D:\NT\Deploy\Samples\XML\Data\Other.xml" original="en" encoding="utf-8" bom="1">
-    <xml encoding="utf-8"/>
+    <xml detectstringformat="1" encoding="utf-8"/>
     <item name="datas">
       <item name="plain">
         <row id="=desciption" si="1" created="20181126T020652Z">Plain text</row>
@@ -90,7 +90,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

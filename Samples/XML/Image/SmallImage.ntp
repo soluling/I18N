@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8B0D7859-CE4D-4BCB-A102-6053A7B7523E" created="20140413T070745Z" lastmodified="20200316T215852Z" version="1.0.714" stringid="8">
+<project id="8B0D7859-CE4D-4BCB-A102-6053A7B7523E" created="20140413T070745Z" lastmodified="20210125T014052Z" version="1.0.820" stringid="8">
   <lang id="fi"/>
   <node class="TXmlSource" name="SmallImage.xml" fullpath="D:\NT\Deploy\Samples\XML\Image\SmallImage.xml" original="en" encoding="utf-8" bom="1">
     <xml encoding="utf-8">
@@ -11,9 +11,9 @@
       </root>
     </xml>
     <item name="images">
-      <item name="blue" created="20200316T215851Z" st="0">
-        <row id="=description" si="5" st="0">Blue book</row>
-        <row id="value" class="TImageRow" st="0">
+      <item name="blue" created="20200316T215851Z">
+        <row id="=description" si="5">Blue book</row>
+        <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACRUlEQVR42m2SO2tUURSFv33unXszeQwJJhGfIIqaoGUyUVHsbARb
             wcLSytJWLAR/gIV/QKzVSrESC4t08YESEESIr2gQ85h7z9l7W8xMMoqnPudjrW8dARifv3gjjExeMedQVVUtrStz84hITWgENDq4
             AwlQQFX1gy09Pp0D7J85eevg4dnh2d1jXDgzx6mjewMeS41aqhngJHViMtbWt7h8+wHvFp83DMgBtpL4Vtbi3tMlllcDd5vvmWg2
@@ -26,9 +26,9 @@
             YkgQjiFPAAAAAElFTkSuQmCC
           </row>
       </item>
-      <item name="green" created="20200316T215851Z" st="0">
-        <row id="=description" si="6" st="0">Green book</row>
-        <row id="value" class="TImageRow" st="0">
+      <item name="green" created="20200316T215851Z">
+        <row id="=description" si="6">Green book</row>
+        <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACHklEQVR42nWSPWtUQRSGn/m6yWbzsaZYLLJKbCR+gYWsNjYpxX+g
             lQjprKzttBNLW0EtLMTKNv/ARkOIiASCiJJIXMkHe+ecY3Hv3myUDAwMzJnnPed9JwL0bvUexHa4q04XVXUOMO+8+eCHMeLMcjaT
             rEoGU8C1i59rn17ocgU4t/Cke+l062zrDDcuX+Vib4mYJwk+JEMIPuJxZCk5KPd5/P4eW+u7wCERoHQlaa5gdWOV3fYmq3tvaIcZ
@@ -40,9 +40,9 @@
             aWdodABDb3B5cmlnaHQgqSAyMDA4LTIwMTEgSU5DT1JTIEdtYkgQjiFPAAAAAElFTkSuQmCC
           </row>
       </item>
-      <item name="red" created="20200316T215851Z" st="0">
-        <row id="=description" si="7" st="0">Red book</row>
-        <row id="value" class="TImageRow" st="0">
+      <item name="red" created="20200316T215851Z">
+        <row id="=description" si="7">Red book</row>
+        <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACSUlEQVR42m2SP4tdVRTFf/v+eY+E92aS0YAmZJKABMHYiM5YWFho
             K0i6IJJ0YqFfwA8QQSwEG3uJ30ARBMHORmwEBSFEi6QQmcwk795z9l7b4s7LvIC7OJzinN9ea+1tANdfvvrR6b5/38bhSox1u1sd
             JNaMfdvEvKnuChcok4KIDMa2DN9/9U983AG8cOnS7b3LF0+1F3a59tor7O69gad1WStEAIZ8RLWgMvDtzbf56e7qOWACqBbObC35
@@ -55,9 +55,9 @@
             UyBHbWJIEI4hTwAAAABJRU5ErkJggg==
           </row>
       </item>
-      <item name="yellow" created="20200316T215851Z" st="0">
-        <row id="=description" si="8" st="0">Yellow book</row>
-        <row id="value" class="TImageRow" st="0">
+      <item name="yellow" created="20200316T215851Z">
+        <row id="=description" si="8">Yellow book</row>
+        <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACTElEQVR42m2SvYudVRCHnznnvffup9kENYu6uBoUMWAl6xZ2kkLQ
             xkLBQhCbNP4J6a0sbFLZWSx+YG1rQAJWIooRE6x0KwlB9757zsxvLO517yoeGKY58/DMhwG8fu2R61tTvbu2llf62HfiNLI1jwkE
             VSCCJIAGCPhTqaNPb+nGAPDC049/+PLBk+ujXeGp5w945uorJHWQHCNRiFRwOj6g1IGjm2/w3fe/vAfjAjArns89scWtr4+Y7v/E
@@ -161,7 +161,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

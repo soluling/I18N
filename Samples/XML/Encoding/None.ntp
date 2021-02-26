@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="28807052-A82D-4493-A180-39DF3EAE984E" created="20140323T034245Z" lastmodified="20200316T215657Z" version="1.0.714" stringid="9">
+<project id="28807052-A82D-4493-A180-39DF3EAE984E" created="20140323T034245Z" lastmodified="20210125T013619Z" version="1.0.820" stringid="9">
   <lang id="fi"/>
   <node class="TXmlSource" name="None.xml" fullpath="D:\NT\Deploy\Samples\XML\Encoding\None.xml" original="en" encoding="utf-8">
-    <xml encoding="utf-8"/>
+    <xml detectstringformat="1" encoding="utf-8"/>
     <item name="sports">
       <item name="soccer" created="20181126T021635Z">
         <row id="=name" si="1">Soccer</row>
@@ -50,7 +50,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

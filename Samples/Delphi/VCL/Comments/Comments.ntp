@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20200209T152109Z" version="1.0.691" stringid="363">
+<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20210208T184521Z" version="1.0.821" stringid="365">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\Comments.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Comments\Win32\Release\Comments.exe" original="en" formatstringcommentcheck="fcPlaceholders" platforms="[ptWin32]" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Comments.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Comments\Win32\Release\Comments.exe" original="en" formatstringcommentcheck="fcPlaceholders" platforms="[ptWin32]" scansourcecode="1" scanexcludetags="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -71,6 +71,13 @@
           <row id="Height">13</row>
           <row id="Caption" si="8" excluded="2">dummy</row>
         </item>
+        <item name="Label8" type="TLabel" created="20210208T170511Z" st="0">
+          <row id="Left" st="0">8</row>
+          <row id="Top" st="0">120</row>
+          <row id="Width" st="0">34</row>
+          <row id="Height" st="0">13</row>
+          <row id="Caption" si="365" st="0" excluded="2">dummy</row>
+        </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDkNvbW1lbnQgU2FtcGxlDENsaWVudEhlaWdodAO0AAtDbGll
           bnRXaWR0aAOQAQVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2lu
@@ -81,7 +88,8 @@
           AAAGVExhYmVsBkxhYmVsNARMZWZ0AggDVG9wAjgFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQAABlRMYWJlbAZMYWJl
           bDUETGVmdAIIA1RvcAJIBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkAAAZUTGFiZWwGTGFiZWw2BExlZnQCCANUb3AC
           WAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15AAAGVExhYmVsBkxhYmVsNwRMZWZ0AggDVG9wAmgFV2lkdGgCIgZIZWln
-          aHQCDQdDYXB0aW9uBgVkdW1teQAAAA==
+          aHQCDQdDYXB0aW9uBgVkdW1teQAABlRMYWJlbAZMYWJlbDgETGVmdAIIA1RvcAJ4BVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYF
+          ZHVtbXkAAAA=
         </data>
       </node>
     </node>
@@ -110,6 +118,7 @@
           <value>EXPRESSION_100</value>
           <lang id="fi" time="20180308T004921Z">ILMAISU_100</lang>
         </row>
+        <row id="SIgnore" si="364" st="0" excluded="1">Ignore this</row>
         <row id="SHello" si="12" scannedcomment="This is a comment">
           <value>Hello World</value>
           <lang id="fi" comment="Voi olla väärä" time="20180308T011058Z">Moi maailma</lang>
@@ -134,15 +143,22 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

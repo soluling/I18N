@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3032DCC6-BF88-4663-AA31-5E6417624ECC" created="20140408T202540Z" lastmodified="20200316T215739Z" version="1.0.714" stringid="4">
+<project id="3032DCC6-BF88-4663-AA31-5E6417624ECC" created="20140408T202540Z" lastmodified="20210125T014000Z" version="1.0.820" stringid="12">
   <lang id="fi"/>
   <node class="TXmlSource" name="Image.xml" fullpath="D:\NT\Deploy\Samples\XML\Image\Image.xml" original="en" encoding="utf-8" bom="1">
     <xml encoding="utf-8">
@@ -16,7 +16,7 @@
           <value>A flag</value>
           <lang id="fi" rw="0" time="20140408T202644Z">Lippu</lang>
         </row>
-        <row id="value" class="TImageRow">
+        <row id="value" class="TImageRow" created="20210125T013921Z" st="0">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAPdklEQVR42u2aaYwl1XXHf+fUW/p1TzMLhB0cFoPFkggMwVmNZcBh
             mcEeg52FCClSJAsniqIozvItURIpQsGW88FCxmCIFVkWMwNeWCYKJt5tTDAQZgaY9phhmZnumV7fWss9+XBv1at6/XqAiG90S091
             69St7Sz////c6hrv8r93vQN03QHrJbDugHUHrDtg3QHrDlinwXd9Btx2xz/ObDhh47nmHBZ8Y2rgAFUwb7XSyYaWLApq+bRiPz9s
@@ -79,7 +79,7 @@
           <value>A car</value>
           <lang id="fi" rw="0" time="20140408T202646Z">Auto</lang>
         </row>
-        <row id="value" class="TImageRow">
+        <row id="value" class="TImageRow" created="20210125T013921Z" st="0">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAX+ElEQVR42u2aeZScV3nmf/dbai/1vqi71d1aWq19ly3Lsmx5QRgJ
             G2H72MHsIQ4BhkCSCRMOM4FZPJxASE7GHGZIIAaCwTjYDmBbeEPYkmXt1tJS7/te+171Lffmj642jWwggD3Mouec99xbdfp01fO8
             y33fry7/v0NwBVdwBVdwBVdwBVf6gN8x7vpsl6cpdGKHIdUuVzgrz13qt6aj8aF4MjsQS2b77ZlSDzNP5/6fEuATf/OP7cLibVLa
@@ -171,7 +171,7 @@
           <value>An address book</value>
           <lang id="fi" rw="0" time="20140408T202650Z">Osoitekirja</lang>
         </row>
-        <row id="value" class="TImageRow">
+        <row id="value" class="TImageRow" created="20210125T013921Z" st="0">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAYlElEQVR42u2be6xtV3Xef3OutZ/ncc99v32NscFgKA42EB5+0AZI
             KHlISQlpkxQoVaVaiYQq1KhUraJKVR9Sq6qqqqaVQh/pU2rkkJLwtHHAwUCgYGOwwfZ9nXvPe7/3XmvNOcboH3Ptfa9tqX9wDlVT
             dUlH9+57zz13zzHH+L5vfGNsx0ueQ6+4sNZy3Q+Y8uec507MHXO4VYNoni1Mh065gmMd5zYMLqtzl53Kug1kY3fv+yPA+FPyvCgA
@@ -265,7 +265,7 @@
           <value>A sport</value>
           <lang id="fi" rw="0" time="20140408T202657Z">Urheilulaji</lang>
         </row>
-        <row id="value" class="TImageRow">
+        <row id="value" class="TImageRow" created="20210125T013921Z" st="0">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUND
             IHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2Afk
             IaKOg6OIisr74Xuja9a89+bN/rXXPues852zzwfACAyWSDNRNYAMqUIeEeCDx8TG4eQuQIEKJHAAEAizZCFz/SMBAPh+PDwrIsAH
@@ -1084,7 +1084,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

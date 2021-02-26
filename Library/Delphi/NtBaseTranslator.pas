@@ -22,6 +22,8 @@ const
   ];
 
 type
+  TNtBaseTranslator = class;
+
   { This event is called before translating a property value.
     @param host          Either form or data module where the object belongs to.
     @param obj           Component or a sub component that is currenty being translated.
@@ -31,6 +33,25 @@ type
     @param cancel        Set True if you want to cancel the translation. }
   TNtBeforeTranslateEvent = procedure(
     host: TComponent;
+    obj: TObject;
+    propertyInfo: PPropInfo;
+    const currentValue: Variant;
+    var newValue: Variant;
+    var cancel: Boolean);
+
+  { This event is called before translating a property value.
+    @param translator    Instance of translator that is performing the translation.
+    @param host          Either form or data module where the object belongs to.
+    @param component     Component that is current being translated.
+    @param obj           Component or a sub component that is currenty being translated.
+    @param propertyInfo  Property info.
+    @param currentValue  Current value of the property.
+    @param newValue      New value of the property. Change it if you want to use different value.
+    @param cancel        Set True if you want to cancel the translation. }
+  TNtBeforeTranslateEventEx = procedure(
+    translator: TNtBaseTranslator;
+    host: TComponent;
+    component: TComponent;
     obj: TObject;
     propertyInfo: PPropInfo;
     const currentValue: Variant;
@@ -253,14 +274,23 @@ end.#) }
     If @false postion is not changed. }
   NtFormPositionTranslationEnabled: Boolean;
 
-  { Event that is called before translating a property value.
+  { An event that is called before translating a property value.
     Use this to disable or change the translation process.
-    If you assing this value make sure that the event is as fast as possible because
+    If you assign this value, make sure that the event is as fast as possible because
     this event is called on every single property of the application.
 
     See @italic(Samples\Delphi\VCL\DualLanguage) sample to see how to use the event.
     @seealso(NtAfterTranslate) }
   NtBeforeTranslate: TNtBeforeTranslateEvent;
+
+  { An event that is called before translating a property value.
+    Use this to disable or change the translation process.
+    If you assign this value, make sure that the event is as fast as possible because
+    this event is called on every single property of the application.
+
+    See @italic(Samples\Delphi\VCL\DualLanguage) sample to see how to use the event.
+    @seealso(NtAfterTranslate) }
+  NtBeforeTranslateEx: TNtBeforeTranslateEventEx;
 
   { Event that is called after a property value has been translated.
     If you assing this value make sure that the event is as fast as possible because
@@ -859,6 +889,9 @@ var
   begin
     Result := False;
 
+    if Assigned(NtBeforeTranslateEx) then
+      NtBeforeTranslateEx(Self, FHost, FCurrent, FObj, FPropInfo, current, value, Result);
+
     if Assigned(NtBeforeTranslate) then
       NtBeforeTranslate(FHost, FObj, FPropInfo, current, value, Result);
   end;
@@ -1010,6 +1043,11 @@ begin  //FI:C101
       try
         current := GetPropValue(FObj);
 
+        if FObj.ClassName = 'TFieldDef' then
+        begin
+          FObj := FObj;
+        end;
+
         if TypesEqual and (current <> value) and not IgnoreProperty then
         begin
           SetPropValue(FObj, value);
@@ -1017,7 +1055,7 @@ begin  //FI:C101
         end;
       except
         on e: Exception do
-          raise Exception.CreateFmt('Could not translate %s.%s: %s', [FObj.ClassName, FName, e.Message]);
+          raise Exception.CreateFmt('Could not translate %s.%s from "%s" to "%s": %s', [FObj.ClassName, FName, current, value, e.Message]);
       end;
     end
     else if NtTranslatorExtensions.CanTranslate(FObj, extension) then

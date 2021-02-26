@@ -22,8 +22,6 @@ object Form1: TForm1
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'One'
-      ExplicitWidth = 281
-      ExplicitHeight = 165
       object Label1: TLabel
         Left = 8
         Top = 8
@@ -35,6 +33,8 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Two'
       ImageIndex = 1
+      ExplicitLeft = 0
+      ExplicitTop = 0
       ExplicitWidth = 281
       ExplicitHeight = 165
       object CheckBox1: TCheckBox

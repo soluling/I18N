@@ -1,15 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9B13D458-3032-46CC-B2AC-1CF438E7C985" created="20181126T014935Z" lastmodified="20200316T215732Z" version="1.0.714" stringid="8">
+<project id="9B13D458-3032-46CC-B2AC-1CF438E7C985" created="20181126T014935Z" lastmodified="20210125T014120Z" version="1.0.820" stringid="8">
   <lang id="fi"/>
   <node class="TXmlSource" name="Url.xml" fullpath="D:\NT\Deploy\Samples\XML\Image\Url.xml" original="en" encoding="utf-8" bom="1">
-    <xml encoding="utf-8"/>
-    <datatypes>
-      <item class="TImageData" scan="dsYes"/>
-    </datatypes>
+    <xml encoding="utf-8">
+      <root name="images">
+        <tag name="image">
+          <attribute name="id" checked="0" kind="akContext"/>
+          <attribute name="description"/>
+        </tag>
+      </root>
+    </xml>
     <item name="images">
       <item name="flag">
         <row id="=description" si="1">A flag</row>
-        <row id="=encoding" si="2">base64</row>
         <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAPdklEQVR42u2aaYwl1XXHf+fUW/p1TzMLhB0cFoPFkggMwVmNZcBh
             mcEeg52FCClSJAsniqIozvItURIpQsGW88FCxmCIFVkWMwNeWCYKJt5tTDAQZgaY9phhmZnumV7fWss9+XBv1at6/XqAiG90S091
@@ -70,7 +73,6 @@
       </item>
       <item name="car">
         <row id="=description" si="3">A car</row>
-        <row id="=encoding" si="4">base32</row>
         <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAX+ElEQVR42u2aeZScV3nmf/dbai/1vqi71d1aWq19ly3Lsmx5QRgJ
             G2H72MHsIQ4BhkCSCRMOM4FZPJxASE7GHGZIIAaCwTjYDmBbeEPYkmXt1tJS7/te+171Lffmj642jWwggD3Mouec99xbdfp01fO8
@@ -160,7 +162,6 @@
       </item>
       <item name="book">
         <row id="=description" si="5">An address book</row>
-        <row id="=encoding" si="6">base16</row>
         <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAYlElEQVR42u2be6xtV3Xef3OutZ/ncc99v32NscFgKA42EB5+0AZI
             KHlISQlpkxQoVaVaiYQq1KhUraJKVR9Sq6qqqqaVQh/pU2rkkJLwtHHAwUCgYGOwwfZ9nXvPe7/3XmvNOcboH3Ptfa9tqX9wDlVT
@@ -252,7 +253,6 @@
       </item>
       <item name="sport">
         <row id="=description" si="7">A sport</row>
-        <row id="=encoding" si="8">url</row>
         <row id="value" class="TImageRow">
             iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAYAAACqaXHeAAAACXBIWXMAAAsTAAALEwEAmpwYAAAKT2lDQ1BQaG90b3Nob3AgSUND
             IHByb2ZpbGUAAHjanVNnVFPpFj333vRCS4iAlEtvUhUIIFJCi4AUkSYqIQkQSoghodkVUcERRUUEG8igiAOOjoCMFVEsDIoK2Afk
@@ -1264,7 +1264,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

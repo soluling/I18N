@@ -1,12 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1D53916E-2140-40A1-955A-78090D084399" created="20140412T215326Z" lastmodified="20200316T215725Z" version="1.0.714" stringid="11">
+<project id="1D53916E-2140-40A1-955A-78090D084399" created="20140412T215326Z" lastmodified="20210125T013415Z" version="1.0.820" stringid="11">
   <lang id="fi"/>
   <node class="TXmlSource" name="Data.xml" fullpath="D:\NT\Deploy\Samples\XML\Data\Data.xml" original="en" encoding="utf-8" bom="1">
-    <xml encoding="utf-8"/>
-    <datatypes>
-      <item class="TAudioData" scan="dsYes"/>
-      <item class="TImageData" scan="dsYes"/>
-    </datatypes>
+    <xml detectstringformat="1" encoding="utf-8"/>
     <item name="datas">
       <item name="data[0]">
         <row id="=name" si="1">
@@ -28,7 +24,7 @@
       <item name="data[1]">
         <row id="=name" si="4">Image</row>
         <row id="=desciption" si="5">An image file</row>
-        <row id="value" class="TImageRow" created="20181126T015831Z" st="0">
+        <row id="value" class="TImageRow" created="20181126T015831Z">
             iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAACnklEQVR42nXRvYsdVRyH8eecOWfOzN3JvZvdJOhKEhLJxkAKLQyK
             iAqCWoR0NjYpQhob/wSxs7YRVAJB0NJGbCxSLYLgS4yyu2yWZCe7e9/m7r137ry/2WhIGPLrnw8/+Cr+u6sfXl/r9Xo3kbzRXT7+
             oud5q8a2PSGhKopwOguD8WSyK+AOdfj199/cGgA8BlZOnvr1wuVX1957+3Vc10ErhW1rjNbYRvekpldU1fnN3++++9Wtb28A554C
@@ -45,7 +41,7 @@
       <item name="data[2]">
         <row id="=name" si="6">Sound</row>
         <row id="=desciption" si="7">A sound file</row>
-        <row id="value" class="TAudioRow" created="20181126T015831Z" st="0">
+        <row id="value" class="TAudioRow" created="20181126T015831Z">
             UklGRiRNAwBXQVZFZm10IBAAAAABAAIARKwAABCxAgAEABAAZGF0YQBNAwAAAP////8AAAAA//8AAAAAAAAAAP//AAAAAAAA//8A
             AAAAAAAAAP//AAAAAAAAAAAAAAAAAAD//wAA/////////////wAAAAD//wAAAAAAAP//AAAAAAAA/////wAAAAAAAAAAAAAAAAAA
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAD//wAAAAAAAP////8AAAAA/////wAAAAAAAP//////
@@ -2937,7 +2933,7 @@
         <row id="=name" si="8">SingleZip</row>
         <row id="=desciption" si="9">A zip file that contains one file</row>
         <node class="TZipDataNode" name="value">
-          <row id="value.book_blue.png" class="TImageRow" created="20181126T015831Z" st="0">
+          <row id="value.book_blue.png" class="TImageRow" created="20181126T015831Z">
               iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKnRFWHRDcmVhdGlvbiBUaW1lAFNhIDkgRmViIDIwMDIgMTY6MDE6
               NTEgKzAxMDCR21o5AAAAB3RJTUUH0wIZFiMHN8myVAAAAAlwSFlzAAAK8AAACvABQqw0mAAAAARnQU1BAACxjwv8YQUAAAI3SURB
               VHjaxZPdSxRRGMZ/MzvjsjOzX5YfZWlYrpJBGY6FGelNIVJEgd3UPxAVEf0DRRdd1FWX3VVIF4GguFBmgaFBWlloF5a1kWu5rqy6
@@ -2955,7 +2951,7 @@
         <row id="=name" si="10">MultiZip</row>
         <row id="=desciption" si="11">A zip file that contains several files</row>
         <node class="TZipDataNode" name="value">
-          <row id="value.drink_blue.png" class="TImageRow" created="20181126T015831Z" st="0">
+          <row id="value.drink_blue.png" class="TImageRow" created="20181126T015831Z">
               iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKnRFWHRDcmVhdGlvbiBUaW1lAE1vIDYgT2t0IDIwMDMgMjE6MzI6
               NDYgKzAxMDAnFBpFAAAAB3RJTUUH0woGEyEHOz4eNQAAAAlwSFlzAAAK8AAACvABQqw0mAAAAARnQU1BAACxjwv8YQUAAAI9SURB
               VHjapZO/bxMxFMff849zcmmDkkJFpCKBEEjZyobEXwIb/0ZhzMKAmJHK0oGJhX8BISGxUBgY2qHNRW0V1ByXH5c7n882L62CEt3Y
@@ -2967,7 +2963,7 @@
               c768nhdjA1Q4EuM1gJohE1KPFwfoK4BF5LNJxLi4cjA37mpwIeRUDUb2y0U+G56satYB08tv2fAYmKR9y4BGA0BRAwwUCKoMDn6B
               sumPVY1Yo3G5lxx+7lupnu9ge3fL1xpqyiE/ztKjJDos0uRjMknf3/QPXot/RoUSVcSuskAAAAAASUVORK5CYII=
             </row>
-          <row id="value.drink_green.png" class="TImageRow" created="20181126T015831Z" st="0">
+          <row id="value.drink_green.png" class="TImageRow" created="20181126T015831Z">
               iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKnRFWHRDcmVhdGlvbiBUaW1lAE1vIDYgT2t0IDIwMDMgMjE6MzM6
               MjcgKzAxMDCoznNIAAAAB3RJTUUH0woGEyEvDou2zwAAAAlwSFlzAAAK8AAACvABQqw0mAAAAARnQU1BAACxjwv8YQUAAAJCSURB
               VHjapZNLb9NAEMdn9mE3TtxASotQhXhIvXGAQyQkPgnc+Brl2BNC4s4hlxw48AW4c0FCQgGOSNDGpWkb4tap7diO98E4KKXFx87K
@@ -2979,7 +2975,7 @@
               i23FLBtVCxw5HMWjRQ0qGG39910hErm3EP8DKsvTPEDGF6szlQCj41SBi8EQDNNQTv6lXwMUZ8XHbJwBkwhc0CdmAF0DbIWqTfdz
               NmgAL9zBxRhxcYIct6dfp0MjzNN78sHDTJ41V0YOFNZJfxyKL/OIvY3S/TdX/YMv2R/GDAZpDt1RkAAAAABJRU5ErkJggg==
             </row>
-          <row id="value.drink_red.png" class="TImageRow" created="20181126T015831Z" st="0">
+          <row id="value.drink_red.png" class="TImageRow" created="20181126T015831Z">
               iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAKnRFWHRDcmVhdGlvbiBUaW1lAE1vIDYgT2t0IDIwMDMgMjE6MzA6
               MDggKzAxMDD3lL/fAAAAB3RJTUUH0woGEx4uIVKsZQAAAAlwSFlzAAAK8AAACvABQqw0mAAAAARnQU1BAACxjwv8YQUAAAJGSURB
               VHjapZM7bxNBEMf/u7Pnezgx5hEnkESpQJSAhIQEH4CvAB1fI4guEhINNVIoSEFBQUtHgZCQaEBRRJEiju3wSBzb51zOd+e73WXi
@@ -7182,7 +7178,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

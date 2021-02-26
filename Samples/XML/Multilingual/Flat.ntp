@@ -1,27 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="17A17F4E-09E1-45EA-87B4-E97A0D4ABDE1" created="20140911T215633Z" lastmodified="20200316T215841Z" version="1.0.714" stringid="4">
+<project id="17A17F4E-09E1-45EA-87B4-E97A0D4ABDE1" created="20140911T215633Z" lastmodified="20210125T014350Z" version="1.0.820" stringid="4">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
   <node class="TXmlSource" name="Flat.xml" fullpath="D:\NT\Deploy\Samples\XML\Multilingual\Flat.xml" original="en" encoding="utf-8" bom="1" multilingual="1">
     <xml encoding="utf-8" languages=";de;fi;ja"/>
     <item name="items">
-      <item name="value[Two]" st="4">
-        <row id="value" si="2" st="4">Two</row>
-      </item>
-      <item name="value[One]" st="4">
-        <row id="value" si="1" st="4">One</row>
-      </item>
-      <item name="One" created="20200316T215840Z" st="0">
-        <row id="value" si="3" st="0">
+      <item name="One" created="20200316T215840Z">
+        <row id="value" si="3">
           <value>One</value>
           <lang id="fi" st="2" or="3" rw="0">Yksi</lang>
           <lang id="de" st="2" or="3" rw="0">Eins</lang>
           <lang id="ja" st="2" or="3" rw="0">一</lang>
         </row>
       </item>
-      <item name="Two" created="20200316T215840Z" st="0">
-        <row id="value" si="4" st="0">
+      <item name="Two" created="20200316T215840Z">
+        <row id="value" si="4">
           <value>Two</value>
           <lang id="fi" st="2" or="3" rw="0">Kaksi</lang>
           <lang id="de" st="2" or="3" rw="0">Zwei</lang>
@@ -48,7 +42,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2484A26-C633-438D-9047-05FFD5052721" created="20181126T021655Z" lastmodified="20200316T215651Z" version="1.0.714" stringid="9">
+<project id="A2484A26-C633-438D-9047-05FFD5052721" created="20181126T021655Z" lastmodified="20210125T013548Z" version="1.0.820" stringid="15">
   <lang id="fi"/>
   <node class="TXmlSource" name="Iso-8859-1.xml" fullpath="D:\NT\Deploy\Samples\XML\Encoding\Iso-8859-1.xml" original="en" encoding="iso-8859-1">
-    <xml encoding="ISO-8859-1"/>
+    <xml detectstringformat="1" encoding="ISO-8859-1"/>
     <item name="sports">
       <item name="soccer">
         <row id="=name" si="1">Soccer</row>
@@ -51,7 +51,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

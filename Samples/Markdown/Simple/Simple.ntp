@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1C085B10-7177-4DF0-A18F-3851895EEECE" created="20181120T134558Z" lastmodified="20200316T230407Z" version="1.0.714" stringid="39">
+<project id="1C085B10-7177-4DF0-A18F-3851895EEECE" created="20181120T134558Z" lastmodified="20210225T232836Z" version="1.0.828" stringid="47">
   <lang id="fi"/>
   <node class="TMarkdownSource" name="Simple.md" fullpath="D:\NT\Deploy\Samples\Markdown\Simple\Simple.md" original="en" encoding="windows-1252">
     <row id="header1[0]" si="9" created="20191027T000922Z">
@@ -16,16 +16,28 @@ Line two.</value>
       <lang id="fi" rw="0" time="20191027T001005Z">Rivi yksi.
 Rivi kaksi.</lang>
     </row>
-    <row id="para[2]" class="THtmlRow" si="12" created="20191027T000922Z">This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;bi&gt;both&lt;/bi&gt; and &lt;code&gt;code&lt;/code&gt;.</row>
+    <row id="para[2]" class="THtmlRow" si="12" created="20191027T000922Z">
+      <value>This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;bi&gt;both&lt;/bi&gt; and &lt;code&gt;code&lt;/code&gt;.</value>
+      <lang id="fi" rw="0" time="20210225T232826Z" fuzzy="5">Tämä on &lt;b&gt;lihavoitu&lt;/b&gt;, &lt;i&gt;kursivoitu&lt;/i&gt;, &lt;bi&gt;sekä&lt;/bi&gt; että &lt;code&gt;code&lt;/code&gt;.</lang>
+    </row>
     <row id="header2[0]" si="13" created="20191027T000922Z">
       <value>List</value>
       <lang id="fi" rw="0" time="20191027T001021Z">Lista</lang>
     </row>
     <row id="ulist[0]" si="1">
-      <value>One
+      <value>One</value>
+      <prev>One
 - Two
-- Three</value>
+- Three</prev>
       <lang id="fi" rw="0" time="20181120T140004Z">Yksi</lang>
+    </row>
+    <row id="ulist[1]" si="46" created="20210225T232751Z" st="0">
+      <value>Two</value>
+      <lang id="fi" rw="0" time="20210225T232755Z">Kaksi</lang>
+    </row>
+    <row id="ulist[2]" si="47" created="20210225T232751Z" st="0">
+      <value>Three</value>
+      <lang id="fi" rw="0" time="20210225T232758Z">Kolme</lang>
     </row>
     <data>
       U2FtcGxlDQo9PT09DQoNClRoaXMgaXMgYSBzYW1wbGUuDQoNCkxpbmUgb25lLg0KTGluZSB0d28uDQoNClRoaXMgaXMgKipib2xk
@@ -35,11 +47,16 @@ Rivi kaksi.</lang>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="MySQL" type="TMySqlTranslationMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

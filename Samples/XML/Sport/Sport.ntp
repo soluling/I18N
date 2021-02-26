@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D16F7E35-3C63-4C62-B67B-BF67840D0A35" created="20140410T203939Z" lastmodified="20200529T151036Z" version="1.0.746" stringid="9">
+<project id="D16F7E35-3C63-4C62-B67B-BF67840D0A35" created="20140410T203939Z" lastmodified="20210201T163932Z" version="1.0.821" stringid="9">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -119,11 +119,15 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="MySQL" type="TMySqlTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
+    <settings savename="MySQL">
+    </settings>
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>

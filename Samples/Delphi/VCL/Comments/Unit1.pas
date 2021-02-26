@@ -16,6 +16,7 @@ type
     Label5: TLabel;
     Label6: TLabel;
     Label7: TLabel;
+    Label8: TLabel;
     procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
@@ -42,6 +43,7 @@ resourcestring
   SFormatComment = 'Hello %s, welcome to %s'; //loc This is comment but no placeholder descriptions
   SFormatPlaceholderComment = 'Hello %s, welcome to %s'; //loc 0: Name of the person, 1: Name of the place
   SRegExComment = 'EXPRESSION_100'; //loc RegEx="[A-Z0-9_]*" This can only contains A to Z, numbers and underscore
+  SIgnore = 'Ignore this'; //noloc
 begin
   Label1.Caption := SHello;
   Label2.Caption := SCharacters;
@@ -50,6 +52,7 @@ begin
   Label5.Caption := Format(SFormatComment, [NAME_C, PLACE_C]);
   Label6.Caption := Format(SFormatPlaceholderComment, [NAME_C, PLACE_C]);
   Label7.Caption := SRegExComment;
+  Label8.Caption := SIgnore;
 end;
 
 end.
