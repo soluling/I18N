@@ -1357,8 +1357,12 @@ var
   module: PLibModule;
   buffer: array[0..260] of Char;
 begin  //FI:C101
-  // If you use Delphi 10.4.2, uncomment the following line and remove the line after that
-//{$IFDEF DELPHIDX4}
+  // ResStringCleanupCache was added in Delphi 10.4.2
+{$IF CompilerVersion = 34}
+  {$IF Declared(RTLVersion1042)}
+  ResStringCleanupCache;
+  {$IFEND}
+{$IFEND}
 {$IFDEF DELPHIDX5}
   ResStringCleanupCache;
 {$ENDIF}
@@ -1985,10 +1989,14 @@ end;
 initialization
   FExtractedResourceFiles := TStringList.Create;
 
-  // If you use Delphi 10.4.1, uncomment the following three lines
-//{$IFDEF DELPHIDX4}
-//  LoadResStringFunc := nil;
-//{$ENDIF}
+  // Workaround for the resource string cache bug of Delphi 10.4.1
+{$IF CompilerVersion = 34}
+  {$IF Declared(RTLVersion1041)}
+    {$IF not Declared(RTLVersion1042)}
+    LoadResStringFunc := nil;
+    {$IFEND}
+  {$IFEND}
+{$IFEND}
 
   UiLayout := laLeftToRight;
   DefaultLocale := 'en';

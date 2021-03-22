@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CB6849C0-CD62-42EE-8CBF-6B5EE1735BBA" created="20160628T031114Z" lastmodified="20201120T153205Z" version="1.0.803" stringid="48">
+<project id="CB6849C0-CD62-42EE-8CBF-6B5EE1735BBA" created="20160628T031114Z" lastmodified="20210320T192824Z" version="1.0.838" stringid="48">
   <lang id="fi"/>
+  <lang id="de"/>
   <node class="THtmlSource" name="Sport.htm" fullpath="D:\NT\Deploy\Samples\HTML\Sport\Sport.htm" original="en" encoding="windows-1252">
     <row id="title.text" si="1">
       <value>Sports</value>
@@ -89,6 +90,7 @@
       <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
       <lang id="fi" rw="0" tm="1" time="20191026T234151Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
     </row>
+    <tags usage="tuOnlyIncluded"/>
     <data>
       PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1MYW5ndWFnZSIgY29udGVudD0iZW4iPg0KPG1ldGEg
       aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9d2luZG93cy0xMjUyIj4NCjx0aXRs
@@ -126,11 +128,14 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
-  <mt>
+  <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

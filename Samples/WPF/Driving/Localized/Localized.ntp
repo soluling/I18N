@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C959D339-26D1-4A18-8651-657855037822" created="20180323T133706Z" lastmodified="20201025T221208Z" version="1.0.797" stringid="12">
+<project id="C959D339-26D1-4A18-8651-657855037822" created="20180323T133706Z" lastmodified="20210305T152041Z" version="1.0.832" stringid="12">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
   <lang id="nl"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\Localized.csproj" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net462" toolsversion="nt120"/>
+    <netproperties version="net46" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20190725T011703Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRyaXZpbmcuQXBwIg0KICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
@@ -469,6 +469,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>

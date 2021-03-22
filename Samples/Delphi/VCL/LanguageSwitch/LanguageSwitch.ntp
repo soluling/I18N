@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8E048562-B0DE-4E19-AEE5-2CD8EE58A776" created="20150630T010456Z" lastmodified="20200214T202724Z" version="1.0.688" stringid="828">
+<project id="8E048562-B0DE-4E19-AEE5-2CD8EE58A776" created="20150630T010456Z" lastmodified="20210227T202823Z" version="1.0.829" stringid="831">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="Win32\Release\LanguageSwitch.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\LanguageSwitch\Win32\Release\LanguageSwitch.exe" original="en">
+  <node class="TDelphiSource" name="Win32\Release\LanguageSwitch.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\LanguageSwitch\Win32\Release\LanguageSwitch.exe" original="en" platforms="[ptWin32,ptWin64]">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -553,13 +553,10 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" needsconversion="0">
+    <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.RTLConsts" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.SysConst" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
         <row id="SSample" si="20">
           <value>This is another sample</value>
@@ -568,9 +565,11 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.ComStrs" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="Vcl.Consts" st="0" excluded="1"/>
     </node>
+    <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
+    <platformfiles>
+      <item file="..\..\Win64\Release\LanguageSwitch.exe" drcfile="..\..\Win64\Release\LanguageSwitch.drc"/>
+    </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
@@ -587,11 +586,14 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -599,4 +601,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

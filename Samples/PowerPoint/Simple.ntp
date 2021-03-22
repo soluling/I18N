@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="10FD28F2-CE71-417B-9D27-4446B62700F8" created="20190705T010804Z" lastmodified="20190705T011046Z" version="1.0.454" stringid="10">
+<project id="10FD28F2-CE71-417B-9D27-4446B62700F8" created="20190705T010804Z" lastmodified="20210304T033028Z" version="1.0.832" stringid="23">
   <lang id="fi"/>
   <node class="TPowerPointSource" name="Simple.pptx" fullpath="D:\NT\Deploy\Samples\PowerPoint\Simple.pptx" original="en">
     <node class="TPowerPointFolder" name="slides">
@@ -24,6 +24,18 @@
           <value>Another sub text</value>
           <lang id="fi" or="3" rw="0" time="20190705T010902Z">Toinen aliteksti</lang>
         </row>
+        <row id="3[4]" importid="5" si="16" created="20210304T024944Z" st="0">
+          <value>Link sample</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20210304T033026Z">Linkitä esimerkki</lang>
+        </row>
+        <row id="3[5]" importid="6" si="17" created="20210304T024944Z" st="0">
+          <value>This is a link</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20210304T033026Z">Tämä on linkki.</lang>
+        </row>
+        <row id="3[6]" importid="7" class="TTagRow" si="18" created="20210304T024944Z" st="0">
+          <value>This is &lt;b&gt;another&lt;/b&gt; link.</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20210304T033026Z">Tämä &lt;b&gt; toinen &lt;/b&gt;.</lang>
+        </row>
       </node>
       <node class="TPowerPointSlideNode" name="slide2">
         <row id="2[0]" importid="0" si="6">
@@ -44,26 +56,31 @@
         </row>
         <row id="3[3]" importid="4" si="10">
           <value>Another sub text</value>
-          <lang id="fi" rw="0" time="20190705T010901Z" fuzzy="8">Toinen aliteksti</lang>
+          <lang id="fi" rw="0" time="20190705T010901Z">Toinen aliteksti</lang>
         </row>
       </node>
     </node>
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="MySQL" type="TMySqlTranslationMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>
