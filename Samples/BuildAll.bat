@@ -25,6 +25,10 @@ cd BSON
 rem call Build.bat
 cd ..
 
+cd CBuilder
+call Build.bat
+cd ..
+
 cd Common
 call Build.bat
 cd ..

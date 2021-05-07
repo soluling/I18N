@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20200208T023052Z" version="1.0.691" stringid="371">
+<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20210427T144534Z" version="1.0.850" stringid="371">
   <lang id="fi"/>
+  <lang id="es"/>
   <node class="TDelphiSource" name="Win32\Release\FileDialog.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\FileDialog\Win32\Release\FileDialog.exe" original="en" platforms="[ptWin32,ptWin64]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
@@ -80,7 +81,10 @@
         </item>
         <item name="OpenButton1" type="TButton" created="20150116T231407Z">
           <row id="Left" created="20160702T155316Z">8</row>
-          <row id="Top" created="20160702T155316Z">8</row>
+          <row id="Top" created="20160702T155316Z">
+            <value>8</value>
+            <lang id="fi" rw="0" time="20210427T144036Z">9</lang>
+          </row>
           <row id="Width" created="20160702T155316Z">75</row>
           <row id="Height" created="20160702T155316Z">25</row>
           <row id="Caption" si="8">
@@ -209,6 +213,9 @@
     <platformfiles>
       <item file="..\..\Win64\Release\FileDialog.exe" drcfile="..\..\Win64\Release\FileDialog.drc"/>
     </platformfiles>
+    <configurations>
+      <configuration name="Default" items="[oiLocalized,oiLanguage]"/>
+    </configurations>
   </node>
   <rules kind="crVcl">
     <rule component="*" property="*Font.Name"/>
@@ -216,16 +223,21 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

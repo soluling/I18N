@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{B954EF67-0342-4279-885B-A47DB42AC527}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Simple\Simple.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Inherited\Inherited.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Simple">
+        <MSBuild Projects="Simple\Simple.cbproj"/>
+    </Target>
+    <Target Name="Simple:Clean">
+        <MSBuild Projects="Simple\Simple.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Simple:Make">
+        <MSBuild Projects="Simple\Simple.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Inherited">
+        <MSBuild Projects="Inherited\Inherited.cbproj"/>
+    </Target>
+    <Target Name="Inherited:Clean">
+        <MSBuild Projects="Inherited\Inherited.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Inherited:Make">
+        <MSBuild Projects="Inherited\Inherited.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Simple;Inherited"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Simple:Clean;Inherited:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Simple:Make;Inherited:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
