@@ -1434,9 +1434,6 @@ begin  //FI:C101
         else
         begin
           module.ResInstance := module.Instance;
-
-          if Result = 0 then
-            Result := module.Instance;
         end;
       end;
     end;

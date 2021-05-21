@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20190826T143036Z" version="1.0.507" stringid="5">
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20210519T130939Z" version="1.0.854" stringid="5">
   <lang id="fi"/>
   <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" encoding="windows-1252">
     <ini detectstringformat="1"/>
@@ -28,13 +28,19 @@
     </item>
   </node>
   <terminology>
+    <items>
+      <glossary kind="TTbxGlossary" filename="D:\NT\Deploy\Samples\Glossary\Countries.tbx"/>
+    </items>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
@@ -42,4 +48,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>
