@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6F718AEA-E5E4-4566-98AF-EE5AFC05A57D" created="20190111T163409Z" lastmodified="20200316T230049Z" version="1.0.714" stringid="2">
+<project id="6F718AEA-E5E4-4566-98AF-EE5AFC05A57D" created="20190111T163409Z" lastmodified="20210521T140155Z" version="1.0.855" stringid="2">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
@@ -11,18 +11,18 @@
         <lang id="de" or="4" rw="0" time="20190111T163409Z">Plural Probe</lang>
         <lang id="ja" or="4" rw="0" time="20190111T163409Z">複数サンプル</lang>
       </row>
-      <row id="%n file" class="TPatternRow" si="2">
-        <value>%n file</value>
-        <pattern plural="pfOne">%n file</pattern>
-        <lang id="fi" or="4" rw="0" time="20190111T163409Z">
-          <value>%n tiedostoa</value>
-          <pattern plural="pfOne">%n tiedosto</pattern>
+      <row id="%n file" changed="20210521T140123Z" class="TPatternRow" si="2">
+        <value>{0} file</value>
+        <pattern plural="pfOne">{0} file</pattern>
+        <lang id="fi" st="4" rw="0" time="20210521T140142Z">
+          <value>{0} tiedostoa</value>
+          <pattern plural="pfOne">{0} tiedosto</pattern>
         </lang>
-        <lang id="de" or="4" rw="0" time="20190111T163409Z">
+        <lang id="de" st="3" or="4" rw="0" time="20190111T163409Z">
           <value>%n Dateien</value>
           <pattern plural="pfOne">%n Datei</pattern>
         </lang>
-        <lang id="ja" or="4" rw="0" time="20190111T163409Z">%n ファイル</lang>
+        <lang id="ja" st="3" or="4" rw="0" time="20190111T163409Z">%n ファイル</lang>
       </row>
     </node>
   </node>
@@ -36,7 +36,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
