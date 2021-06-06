@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9912BA56-80EE-4264-BFDA-6F0BCB8747E8" created="20151020T213500Z" lastmodified="20191223T025409Z" version="1.0.632" stringid="6">
+<project id="9912BA56-80EE-4264-BFDA-6F0BCB8747E8" created="20151020T213500Z" lastmodified="20210605T135101Z" version="1.0.857" stringid="6">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\SingleFileDeploy.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\SingleFileDeploy\Win32\Release\SingleFileDeploy.exe" original="en" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\SingleFileDeploy.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\SingleFileDeploy\Win32\Release\SingleFileDeploy.exe" original="en" platforms="[ptWin32,ptWin64]">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -101,10 +101,13 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
+    <platformfiles>
+      <item file="..\..\Win64\Release\SingleFileDeploy.exe" drcfile="..\..\Win64\Release\SingleFileDeploy.drc"/>
+    </platformfiles>
     <configurations>
-      <configuration name="Default" items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiEmbedded]" nocodeaccepted="1"/>
     </configurations>
   </node>
   <rules kind="crVcl">
@@ -113,11 +116,14 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -125,4 +131,6 @@
       <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

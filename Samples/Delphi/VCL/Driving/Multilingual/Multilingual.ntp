@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20200209T160519Z" version="1.0.691" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210605T213015Z" version="1.0.858" stringid="411">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32]">
     <datatypes>
@@ -490,10 +490,6 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SNtLocale" si="15">
-          <value>en</value>
-          <lang id="fi" time="20110805T135509Z">fi</lang>
-        </row>
         <row id="SResultPlural" changed="20200209T160439Z" class="TPatternRow" si="13" created="20170517T034344Z">
           <value startpattern="1">Driving time{0}{1}.</value>
           <prev startpattern="1">Driving time{0:s}{1:s}.</prev>
@@ -515,6 +511,10 @@
           <value>Driving time calculator</value>
           <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
         </row>
+        <row id="SNtLocale" si="15">
+          <value>en</value>
+          <lang id="fi" time="20110805T135509Z">fi</lang>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
@@ -528,17 +528,20 @@
     <rule component="TMenuItem" property="Caption" value="-"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>
