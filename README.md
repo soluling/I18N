@@ -251,8 +251,6 @@ Soluling contains samples for the following platforms:
 - XML
 - YAML
 
-Android, iOS and Visual C++ samples will be added soon.
-
 ## Localization
 
 If you plan to localize your application using multiple patterns strings, you better use a localization tool that has support for grammatical numbers and grammatical genders. [Soluling](http://www.soluling.com) has excellent support for multiple patterns, and it supports [ASP.NET](https://www.soluling.com/Help/ASP.NETCore/Index.htm), [.NET](https://www.soluling.com/Help/NET/Index.htm), [Angular](https://www.soluling.com/Help/Angular/Index.htm), [React](https://www.soluling.com/Help/React/Index.htm), [Blazor](https://www.soluling.com/Help/Blazor/Index.htm), [Delphi](https://www.soluling.com/Help/Delphi/Index.htm), [Python](https://www.soluling.com/Help/Python/Index.htm), [Java](https://www.soluling.com/Help/Java/Index.htm), plus more than 100 other file and [database](https://www.soluling.com/Help/Database/Index.htm) [formats](https://www.soluling.com/Help/SupportedFormats.htm).
