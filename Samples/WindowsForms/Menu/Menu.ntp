@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20200316T191019Z" version="1.0.714" stringid="8">
+<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20210630T223630Z" version="1.0.861" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
@@ -19,7 +19,7 @@
       </row>
       <row id="$this.Text" si="8">
         <value>Menu Sample</value>
-        <lang id="fi" st="4" rw="0" time="20181129T161430Z">Valokkoesimerkki</lang>
+        <lang id="fi" st="4" rw="0" time="20210630T223628Z">Valikkoesimerkki</lang>
       </row>
       <codeproperties>
         <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
@@ -215,12 +215,11 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>
