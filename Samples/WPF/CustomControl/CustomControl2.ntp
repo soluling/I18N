@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="79C0B455-9FEB-4278-9436-69B9772330DC" created="20210720T013133Z" lastmodified="20210720T013200Z" version="1.0.866" lockedrowcomplete="0" stringid="5">
+<project id="F53BC89C-24F6-4188-91A8-5D61732BA4E4" created="20210720T015202Z" lastmodified="20210720T015211Z" version="1.0.867" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
-  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en-US" encoding="windows-1252" enabledconfigurations="Debug|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" readprojectreferences="0">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en-US" groupname="WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]" readprojectreferences="0">
+  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en" encoding="windows-1252" enabledconfigurations="Debug|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]">
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" groupname="WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -17,19 +17,19 @@
       <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
         <row id="Title" si="1">
           <value>Sample</value>
-          <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Näyte</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20210720T015202Z">Näyte</lang>
         </row>
         <item name="StackPanel[0]" type="StackPanel">
           <item name="label1" type="Label">
             <row id="Content" si="2">
               <value>Hello</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Moi</lang>
+              <lang id="fi" st="4" or="4" rw="0" time="20210720T015202Z">Moi</lang>
             </row>
           </item>
           <item name="customLabel" type="custom:CustomLabel">
             <row id="Content" si="3">
               <value>Custom hello</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Muokattu moi</lang>
+              <lang id="fi" st="4" or="4" rw="0" time="20210720T015202Z">Muokattu moi</lang>
             </row>
           </item>
           <item name="userControl" type="user:UserControl1"/>
@@ -51,20 +51,14 @@
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx"/>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
     </node>
-    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en-US" groupname="WpfControl\WpfControl.csproj" netconfiguration="Debug|AnyCPU" readprojectreferences="0">
+    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" groupname="WpfControl\WpfControl.csproj" availableresources="[nrResx,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx"/>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
     </node>
-    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en-US" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]" readprojectreferences="0">
+    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx"/>
@@ -74,14 +68,14 @@
           <item name="firstName" type="Label">
             <row id="Content" si="4">
               <value>First name:</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Etunimi:</lang>
+              <lang id="fi" st="4" or="4" rw="0" time="20210720T015202Z">Etunimi:</lang>
             </row>
           </item>
           <item name="firstNameEdit" type="TextBox"/>
           <item name="lastName" type="Label">
             <row id="Content" si="5">
               <value>Last name:</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Sukunimi:</lang>
+              <lang id="fi" st="4" or="4" rw="0" time="20210720T015202Z">Sukunimi:</lang>
             </row>
           </item>
           <item name="lastNameEdit" type="TextBox"/>
@@ -98,17 +92,11 @@
           bGFzdE5hbWVFZGl0Ij48L1RleHRCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvVXNlckNvbnRyb2w+DQo=
         </data>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
     </node>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <excludedoriginals>
-    <item>dummy</item>
-  </excludedoriginals>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
@@ -118,8 +106,8 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
