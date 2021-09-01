@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210605T213015Z" version="1.0.858" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210823T141008Z" version="1.0.872" stringid="411">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32,ptWin64]">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -518,6 +518,9 @@
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
+    <platformfiles>
+      <item file="..\..\Win64\Release\Multilingual.exe" drcfile="..\..\Win64\Release\Multilingual.drc"/>
+    </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>

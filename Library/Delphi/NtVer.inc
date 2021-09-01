@@ -19,7 +19,7 @@
 //  DELPHIDX2   Delphi 10.2 Tokyo or higher
 //  DELPHIDX3   Delphi 10.3 Rio or higher
 //  DELPHIDX4   Delphi 10.4 Sydney or higher
-//  DELPHIDX5   Delphi 10.5 xxx or higher
+//  DELPHIDX5   Delphi 11 xxx or higher
 
 {$IF CompilerVersion >= 24}
   {$LEGACYIFEND ON}

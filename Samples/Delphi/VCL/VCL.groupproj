@@ -429,4 +429,210 @@
         <CallTarget Targets="ActiveLanguage:Make;Audio:Make;ButtonLayout:Make;Checker:Make;Comments:Make;CustomDir:Make;CustomSelect:Make;DFM:Make;DualLanguage:Make;FileDialog:Make;Font:Make;Format:Make;IgnoreResourceDll:Make;ImageList:Make;IME:Make;IniResources:Make;Japanese:Make;LanguageParam:Make;LanguageSwitch:Make;Layout:Make;Menu:Make;MessageDlg:Make;Number:Make;NTResSimple:Make;Ordinal:Make;Original:Make;Resize:Make;Resources:Make;SingleFileDeploy:Make;StringArray:Make;TextResources:Make;Version:Make;Image:Make;VclStrings:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+    <ItemGroup Condition="'$(BuildGroup)'=='All'">
+        <BuildGroupProject Include="ButtonLayout\ButtonLayout.dproj">
+            <ProjectGuid>{1F760238-9765-42EC-A6D0-2BEDB4CD5373}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Japanese\Japanese.dproj">
+            <ProjectGuid>{E0084E1E-F608-4098-8A60-CE5EB45A057F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="VclStrings\VclStrings.dproj">
+            <ProjectGuid>{8395AB3A-793B-4B10-90D3-AC7569B5C59F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="ImageList\ImageList.dproj">
+            <ProjectGuid>{8D3F42CF-357E-4989-809D-0A38D39F14D6}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Ordinal\Ordinal.dproj">
+            <ProjectGuid>{0B6C3178-F93B-42C9-B383-88ACA5642473}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="IgnoreResourceDll\IgnoreResourceDll.dproj">
+            <ProjectGuid>{B030EFD2-13A5-4325-85C5-C145AE76BBFF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Font\Font.dproj">
+            <ProjectGuid>{65C2627D-56DC-4F67-B1F2-77F02265DDCB}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Resources\Mixed\Resources.dproj">
+            <ProjectGuid>{2516305B-7F23-408C-8C2F-A1999D2483F9}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Checker\Checker.dproj">
+            <ProjectGuid>{D0D9EDD4-F925-4053-9AC8-C18D6E2997EF}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Ime\IME.dproj">
+            <ProjectGuid>{4AE20C80-43F3-4311-93DC-5A7A9A773E08}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Resources\Text\TextResources.dproj">
+            <ProjectGuid>{8BE4CA01-FFB8-46B9-B943-26638304CDE1}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Layout\Layout.dproj">
+            <ProjectGuid>{ECDB4622-EA52-4AE6-A06F-7DE88D310704}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="ActiveLanguage\ActiveLanguage.dproj">
+            <ProjectGuid>{4AFD0F4D-BB34-4378-9FA4-BFA182D13F09}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Comments\Comments.dproj">
+            <ProjectGuid>{FFDA97BA-19CF-494A-B3D7-2E0966B4E522}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="FileDialog\FileDialog.dproj">
+            <ProjectGuid>{B41D3BAE-69D4-48DF-BF67-CF3BBCA4DE42}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="CustomDir\CustomDir.dproj">
+            <ProjectGuid>{3CFE2C44-7F1A-405A-86E4-483A155187A4}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="NTRes\Simple\NTResSimple.dproj">
+            <ProjectGuid>{995F2CBB-BBF2-4AC1-9BC0-A7360884E56D}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Format\Format.dproj">
+            <ProjectGuid>{2B08D01F-0C3A-4139-BF48-0459388F3F81}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Audio\Audio.dproj">
+            <ProjectGuid>{C6C44971-C54A-403D-AFA7-FD02919E1B1C}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Version\Version.dproj">
+            <ProjectGuid>{59C92303-0365-4248-9634-1E42714C9F63}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Original\Original.dproj">
+            <ProjectGuid>{F989201B-E611-4DBD-B5BF-4FCEF56C5975}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="SingleFileDeploy\SingleFileDeploy.dproj">
+            <ProjectGuid>{56C22BD3-9B7B-41BC-8D48-449BABEFA9CA}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="CustomSelect\CustomSelect.dproj">
+            <ProjectGuid>{7426BF53-6688-48D8-B4D1-8F95EF9511C3}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Menu\Menu.dproj">
+            <ProjectGuid>{A627FC4D-AB31-404D-9995-7C081DE38D3F}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="StringArray\StringArray.dproj">
+            <ProjectGuid>{70886F1C-F132-4109-8E8E-F168DD4BF815}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="DualLanguage\DualLanguage.dproj">
+            <ProjectGuid>{FC9C28CD-DBA4-4B85-B833-7A295F395FA8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="DFM\DFM.dproj">
+            <ProjectGuid>{2529EA64-D4D1-4349-8919-94ED241841CC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Resize\Resize.dproj">
+            <ProjectGuid>{1C2110D1-3F97-43A5-B341-881ED9D54DDC}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="MessageDlg\MessageDlg.dproj">
+            <ProjectGuid>{B7850BBB-5540-4737-8469-1254E50B5065}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Resources\INI\IniResources.dproj">
+            <ProjectGuid>{694ACB95-1626-40F1-978B-53260842F604}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Number\Number.dproj">
+            <ProjectGuid>{05920087-03EF-4435-8DB5-3DC21D7BD0C8}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="Image\Image.dproj">
+            <ProjectGuid>{1D108986-937A-4D85-8AB8-6BECC849A21E}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="LanguageParam\LanguageParam.dproj">
+            <ProjectGuid>{3BA30FE8-1850-4341-973E-9C21167679D5}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+        <BuildGroupProject Include="LanguageSwitch\LanguageSwitch.dproj">
+            <ProjectGuid>{D9596950-454E-47C8-941C-26F7E8D6C0A0}</ProjectGuid>
+            <Configurations>Release</Configurations>
+            <Platforms>Win32;Win64</Platforms>
+            <Enabled>True</Enabled>
+        </BuildGroupProject>
+    </ItemGroup>
 </Project>

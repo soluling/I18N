@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E6B1A18C-9EF1-4E20-9D4D-4DA17AE34AB6" created="20190801T160504Z" lastmodified="20200316T220804Z" version="1.0.714" stringid="6">
+<project id="E6B1A18C-9EF1-4E20-9D4D-4DA17AE34AB6" created="20190801T160504Z" lastmodified="20210818T210156Z" version="1.0.870" stringid="6">
   <lang id="fi"/>
   <node class="TSrtSource" name="Simple.srt" fullpath="D:\NT\Deploy\Samples\SRT\Simple.srt" original="en" encoding="windows-1252" maxlinelength="36">
     <row id="1.00:00:01,600 --&gt; 00:00:03,200" changed="20190807T125002Z" si="4" created="20190802T145857Z">
@@ -21,15 +21,22 @@
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

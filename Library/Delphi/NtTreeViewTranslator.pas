@@ -108,7 +108,32 @@ var
   procedure Process2(node: TTreeNode);
   var
     i: Integer;
-    info: TNodeDataInfo2;
+    info: {$IFDEF DELPHIXE2}TNodeDataInfo2x86{$ELSE}TNodeDataInfo2{$ENDIF};
+    str: UnicodeString;
+  begin
+    stream.ReadInteger;
+    stream.Read(info, SizeOf(info));
+
+    SetLength(str, info.TextLen);
+
+    if info.TextLen > 0 then
+      stream.Read(str[1], 2*info.TextLen);
+
+    node.ImageIndex := info.ImageIndex;
+    node.SelectedIndex := info.SelectedIndex;
+    node.OverlayIndex := info.OverlayIndex;
+    node.Text := str;
+
+    for i := 0 to info.Count - 1 do
+      Process2(node[i]);
+  end;
+{$ENDIF}
+
+{$IFDEF DELPHIXE2}
+  procedure Process264(node: TTreeNode);
+  var
+    i: Integer;
+    info: TNodeDataInfo2x64;
     str: UnicodeString;
   begin
     stream.ReadInteger;
@@ -131,6 +156,7 @@ var
 
 const
   VERSION_32_2 = $03;
+  VERSION_64_2 = $04;
 var
   i, count: Integer;
   node: TTreeNode;
@@ -168,7 +194,9 @@ begin
       for i := 0 to count - 1 do  //FI:W528
       begin
   {$IFDEF UNICODE}
-        if version >= VERSION_32_2 then
+        if version >= VERSION_64_2 then
+          Process264(node)
+        else if version = VERSION_32_2 then
           Process2(node)
         else
   {$ENDIF}

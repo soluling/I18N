@@ -61,6 +61,25 @@ type
     Data: Pointer;
   end;
 
+  TItemDataInfo2x86 = record
+    ImageIndex: Integer;
+    StateIndex: Integer;
+    OverlayIndex: Integer;
+    SubItemCount: Integer;
+    GroupID: Integer;
+    Data: Integer; // must be Integer
+  end;
+
+  TItemDataInfo2x64 = record
+    ImageIndex: Integer;
+    StateIndex: Integer;
+    OverlayIndex: Integer;
+    SubItemCount: Integer;
+    GroupID: Integer;
+    Data: Int64; // must be Int64
+  end;
+
+
 function TNtListViewTranslator.CanTranslate(obj: TObject): Boolean;
 begin
   Result := obj is TListItems;
@@ -75,6 +94,7 @@ procedure TNtListViewTranslator.Translate(
 const
   VERSION_32_2 = $03;  // 32-bit struct size version 2
   VERSION_32_3 = $05;  // 32-bit struct size version 3
+  VERSION_64_3 = $06;  // 64-bit struct size version 3
 var
   stream: TNtStream;
   items: TListItems;
@@ -137,13 +157,13 @@ var
     procedure ProcessItemInfo2(version: Byte);
     var
       i: Integer;
-      info: TItemInfo2;
+      info: {$IFDEF DELPHIXE2}TItemDataInfo2x86{$ELSE}TItemInfo2{$ENDIF};
     begin
       stream.Read(info, Sizeof(info));
       item.ImageIndex := info.ImageIndex;
       item.StateIndex := info.StateIndex;
       item.OverlayIndex := info.OverlayIndex;
-      item.Data := info.Data;
+      item.Data := Pointer(info.Data);
       item.Caption := stream.ReadShortUnicodeString;
 
       for i := 0 to info.SubItemCount - 1 do
@@ -154,7 +174,30 @@ var
           stream.ReadPointer;
       end;
     end;
-  {$ENDIF}
+{$ENDIF}
+
+{$IFDEF DELPHIXE2}
+    procedure ProcessItemInfo264(version: Byte);
+    var
+      i: Integer;
+      info: TItemDataInfo2x64;
+    begin
+      stream.Read(info, Sizeof(info));
+      item.ImageIndex := info.ImageIndex;
+      item.StateIndex := info.StateIndex;
+      item.OverlayIndex := info.OverlayIndex;
+      item.Data := Pointer(info.Data);
+      item.Caption := stream.ReadShortUnicodeString;
+
+      for i := 0 to info.SubItemCount - 1 do
+      begin
+        item.SubItems[i] := stream.ReadShortUnicodeString;
+
+        if version >= VERSION_32_3 then
+          stream.ReadPointer;
+      end;
+    end;
+{$ENDIF}
 
   var
     i, count: Integer;
@@ -171,7 +214,9 @@ var
       item := items[i];
 
 {$IFDEF UNICODE}
-      if version >= VERSION_32_2 then
+      if version >= VERSION_64_3 then
+        ProcessItemInfo264(version)
+      else if version >= VERSION_32_2 then
         ProcessItemInfo2(version)
       else
 {$ENDIF}
