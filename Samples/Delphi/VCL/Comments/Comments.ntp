@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20210208T184521Z" version="1.0.821" stringid="365">
+<project id="9FA5F157-5FCF-46F2-9657-1B0E56DE67FF" created="20150317T010507Z" lastmodified="20210908T222753Z" version="1.0.876" stringid="365">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
@@ -96,6 +96,18 @@
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SHello" si="12" scannedcomment="This is a comment">
+          <value>Hello World</value>
+          <lang id="fi" comment="Voi olla väärä" time="20180308T011058Z">Moi maailma</lang>
+          <lang id="de" time="20150518T000018Z">Hallo Welt</lang>
+          <lang id="ja" time="20150518T000034Z">ハローワールド</lang>
+        </row>
+        <row id="SCharacters" si="13" scannedcomment="This is characters comment" scannedmaxcharacters="20">
+          <value>Characters</value>
+          <lang id="fi" comment="Pituusko?" time="20150517T235947Z">Merkkiä</lang>
+          <lang id="de" time="20150518T000019Z">Zeichen</lang>
+          <lang id="ja" time="20150518T000034Z">文字</lang>
+        </row>
         <row id="SPixels" si="14" scannedcomment="This is pixels comment" scannedmaxpixels="100">
           <value>Pixels</value>
           <lang id="fi" comment="Sama juttu" time="20150517T235951Z">Pikseliä</lang>
@@ -119,18 +131,6 @@
           <lang id="fi" time="20180308T004921Z">ILMAISU_100</lang>
         </row>
         <row id="SIgnore" si="364" st="0" excluded="1">Ignore this</row>
-        <row id="SHello" si="12" scannedcomment="This is a comment">
-          <value>Hello World</value>
-          <lang id="fi" comment="Voi olla väärä" time="20180308T011058Z">Moi maailma</lang>
-          <lang id="de" time="20150518T000018Z">Hallo Welt</lang>
-          <lang id="ja" time="20150518T000034Z">ハローワールド</lang>
-        </row>
-        <row id="SCharacters" si="13" scannedcomment="This is characters comment" scannedmaxcharacters="20">
-          <value>Characters</value>
-          <lang id="fi" comment="Pituusko?" time="20150517T235947Z">Merkkiä</lang>
-          <lang id="de" time="20150518T000019Z">Zeichen</lang>
-          <lang id="ja" time="20150518T000034Z">文字</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
@@ -156,9 +156,7 @@
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

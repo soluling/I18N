@@ -214,9 +214,12 @@ var
       item := items[i];
 
 {$IFDEF UNICODE}
+  {$IFDEF DELPHIXE2}
       if version >= VERSION_64_3 then
         ProcessItemInfo264(version)
-      else if version >= VERSION_32_2 then
+      else
+  {$ENDIF}
+      if version >= VERSION_32_2 then
         ProcessItemInfo2(version)
       else
 {$ENDIF}

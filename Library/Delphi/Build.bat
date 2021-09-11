@@ -46,6 +46,9 @@
 \Tools\DXSydney\Bin\dcc64 -B -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS -NSSystem;System.Win;WinAPI;Vcl;Vcl.Imaging;Data NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPattern.pas NtOrdinal.pas NtNumber.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtChecker.pas NtRaizeChecker.pas NtVirtualTreeTranslator.pas NtNumber.pas NtGraphic.pas
 \Tools\DXSydney\Bin\dcc32 -B -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS -NSSystem;System.Win;WinAPI;Vcl;Vcl.Imaging;Data NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPattern.pas NtOrdinal.pas NtNumber.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtChecker.pas NtRaizeChecker.pas NtVirtualTreeTranslator.pas NtNumber.pas NtGraphic.pas
 
+\Tools\DXAlexandria\Bin\dcc64 -B -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS -NSSystem;System.Win;WinAPI;Vcl;Vcl.Imaging;Data NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPattern.pas NtOrdinal.pas NtNumber.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtChecker.pas NtRaizeChecker.pas NtVirtualTreeTranslator.pas NtNumber.pas NtGraphic.pas
+\Tools\DXAlexandria\Bin\dcc32 -B -JPHNE -U\Tools\Raize;\Tools\VirtualTree;\Tools\TMS -NSSystem;System.Win;WinAPI;Vcl;Vcl.Imaging;Data NtBase.pas NtLocalization.pas NtTranslator.pas NtMenu.pas NtDatabaseUtils.pas NtLanguageDlg.pas NtPictureTranslator.pas NtListViewTranslator.pas NtTreeViewTranslator.pas NtPattern.pas NtOrdinal.pas NtNumber.pas NtInitialLocale.pas NtDialog.pas NtWindows.pas NtChecker.pas NtRaizeChecker.pas NtVirtualTreeTranslator.pas NtNumber.pas NtGraphic.pas
+
 call BuildVclDoc.bat
 call BuildFmxDoc.bat
 

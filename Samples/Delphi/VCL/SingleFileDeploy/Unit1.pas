@@ -27,6 +27,10 @@ implementation
 
 {$R *.dfm}
 
+{$IFOPT D+}
+  {$R 'Resources.res' 'Resources.rc'}
+{$ENDIF}
+
 uses
   NtBase,
   NtBaseTranslator,

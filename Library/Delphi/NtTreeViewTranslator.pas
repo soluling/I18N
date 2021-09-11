@@ -194,9 +194,12 @@ begin
       for i := 0 to count - 1 do  //FI:W528
       begin
   {$IFDEF UNICODE}
+    {$IFDEF DELPHIXE2}
         if version >= VERSION_64_2 then
           Process264(node)
-        else if version = VERSION_32_2 then
+        else
+    {$ENDIF}
+        if version = VERSION_32_2 then
           Process2(node)
         else
   {$ENDIF}
