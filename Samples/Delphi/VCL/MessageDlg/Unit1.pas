@@ -36,6 +36,7 @@ implementation
 {$R *.dfm}
 
 uses
+  UITypes,
   NtTranslator,
   NtLanguageDlg;
 

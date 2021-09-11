@@ -23,6 +23,9 @@ implementation
 
 {$R *.dfm}
 
+uses
+  UITypes;
+
 procedure TForm1.ClickButtonClick(Sender: TObject);
 resourcestring
   SStr = 'This is a sample';
