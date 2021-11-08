@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210919T105101Z" version="1.0.880" stringid="411">
-  <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32,ptWin64]">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" version="1.0.885" stringid="404" reviewcaption="Review" ex="1">
+  <lang id="de"/>
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" original="en" platforms="[ptWin32,ptWin64]" scansourcecode="1">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -13,20 +13,12 @@
     <node class="TDelphiFormFolder" name="RCData">
       <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
         <font id="Font" name="Tahoma" size="8"/>
-        <row id="Left" created="20151019T020107Z">0</row>
-        <row id="Top" created="20151019T020107Z">0</row>
         <row id="Caption" si="1">
           <value>Driving Time</value>
-          <lang id="fi" time="20180524T033719Z">Ajoaika</lang>
+          <lang id="de" or="6" rw="0" time="20180410T013800Z">Fahrzeit</lang>
         </row>
-        <row id="ClientHeight" created="20151019T020107Z">113</row>
-        <row id="ClientWidth" created="20151019T020107Z">346</row>
         <item name="CarImage" type="TImage">
-          <row id="Left" created="20151019T020107Z">8</row>
-          <row id="Top" created="20151019T020107Z">56</row>
-          <row id="Width" created="20151019T020107Z">48</row>
-          <row id="Height" created="20151019T020107Z">48</row>
-          <row id="Picture.Data" created="20190826T145734Z">
+          <row id="Picture.Data" created="20170412T214650Z">
             <value>
               iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAOmElEQVR42u1XCXRU53m9b957s480WgbtaENIQpIFQghDAIvd1Gar
               ncUx1DGJ3ThOTpbax7iLfRKauF6OE4NPXFM3JT6Na+zSWmBDCZslCwwSSKBdQvsy2mZGs8+bN2/pNyMgyWlT27FdknP4z/n1ZtN7
@@ -81,65 +73,62 @@
               +FNYtwjc7HWLwM1etwjc7HWLwM1e/w0nWIOaKm/XrAAAACt0RVh0Q29weXJpZ2h0AENvcHlyaWdodCCpIDIwMDgtMjAxMSBJTkNP
               UlMgR21iSBCOIU8AAAAASUVORK5CYII=
             </value>
-            <lang id="fi" time="20190826T145855Z" filename="..\..\..\..\Common\48x48\car_sedan_green.png">
-              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
+            <lang id="de" rw="0" time="20180410T013900Z" filename="..\..\..\..\Common\48x48\car_sedan_red.png">
+              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
+              RK5CYII=
             </lang>
           </row>
         </item>
         <item name="FlagImage" type="TImage">
-          <row id="Left" created="20151019T020107Z">288</row>
-          <row id="Top" created="20151019T020107Z">56</row>
-          <row id="Width" created="20151019T020107Z">48</row>
-          <row id="Height" created="20151019T020107Z">48</row>
-          <row id="Picture.Data" created="20190826T145734Z">
+          <row id="Picture.Data" created="20170412T214650Z">
             <value>
               iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAOsUlEQVR42u1ZaXRUVbb+7r01pZJQSRhiEBwgAwhPtFEEniLdKiTR
               RjC0go0gEm15YRReM+hDbdIoEejHFAPqErUBGYIogi1oryexCdKtKPKUDiEgg2SupCpVSVXdW+ftc86tIWiv7h+9Fqvf4mZdbt3p
@@ -194,118 +183,81 @@
               8kjwYrZ0pBOGKw2NM6dR4atDq86qFjW15/z/+A+Of+XtCoDLvV0BcLm3KwAu9/Z/nX9fmu5v1AwAAAArdEVYdENvcHlyaWdodABD
               b3B5cmlnaHQgqSAyMDA4LTIwMTEgSU5DT1JTIEdtYkgQjiFPAAAAAElFTkSuQmCC
             </value>
-            <lang id="fi" time="20190826T145846Z" filename="..\..\..\..\Common\48x48\flag_finland.png">
-              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
-              RU5ErkJggg==
+            <lang id="de" rw="0" time="20180410T013847Z" filename="..\..\..\..\Common\48x48\flag_germany.png">
+              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
+              TwAAAABJRU5ErkJggg==
             </lang>
           </row>
         </item>
         <item name="DistanceLabel" type="TLabel">
-          <row id="Left" created="20151019T020107Z">8</row>
-          <row id="Top" created="20151019T020107Z">8</row>
-          <row id="Width" created="20151019T020107Z">80</row>
-          <row id="Height" created="20151019T020107Z">13</row>
           <row id="Caption" si="2">
             <value>&amp;Driving distance:</value>
-            <lang id="fi" time="20180524T033719Z">&amp;Ajomatka:</lang>
+            <lang id="de" or="6" rw="0" time="20180410T013801Z">&amp;Fahrstrecke:</lang>
           </row>
         </item>
         <item name="SpeedLabel" type="TLabel">
-          <row id="Left" created="20151019T020107Z">120</row>
-          <row id="Top" created="20151019T020107Z">8</row>
-          <row id="Width" created="20151019T020107Z">34</row>
-          <row id="Height" created="20151019T020107Z">13</row>
           <row id="Caption" si="3">
             <value>&amp;Speed:</value>
-            <lang id="fi" time="20180524T033719Z">&amp;Nopeus:</lang>
+            <lang id="de" or="6" rw="0" time="20180410T013802Z">Ge&amp;schwindigkeit:</lang>
           </row>
         </item>
-        <item name="ResultLabel" type="TLabel" created="20151019T020107Z">
-          <row id="Left">64</row>
-          <row id="Top">56</row>
-          <row id="Width">217</row>
-          <row id="Height">48</row>
-        </item>
-        <item name="DistanceEdit" type="TEdit">
-          <row id="Left" created="20151019T020107Z">8</row>
-          <row id="Top" created="20151019T020107Z">24</row>
-          <row id="Width" created="20151019T020107Z">105</row>
-          <row id="Height" created="20151019T020107Z">21</row>
-        </item>
-        <item name="SpeedEdit" type="TEdit">
-          <row id="Left" created="20151019T020107Z">120</row>
-          <row id="Top" created="20151019T020107Z">24</row>
-          <row id="Width" created="20151019T020107Z">105</row>
-          <row id="Height" created="20151019T020107Z">21</row>
-        </item>
-        <item name="CalculateButton" type="TButton">
-          <row id="Left" created="20151019T020107Z">232</row>
-          <row id="Top" created="20151019T020107Z">22</row>
-          <row id="Width" created="20151019T020107Z">105</row>
-          <row id="Height" created="20151019T020107Z">25</row>
-        </item>
+        <item name="ResultLabel" type="TLabel"/>
+        <item name="DistanceEdit" type="TEdit"/>
+        <item name="SpeedEdit" type="TEdit"/>
+        <item name="CalculateButton" type="TButton"/>
         <item name="MainMenu1" type="TMainMenu">
-          <row id="Left" created="20151019T020107Z">240</row>
-          <row id="Top" created="20151019T020107Z">56</row>
           <item name="File1" type="TMenuItem">
             <row id="Caption" si="4">
               <value>File</value>
-              <lang id="fi" time="20180524T033719Z">Tiedosto</lang>
+              <lang id="de" or="6" rw="0" time="20180410T013803Z">Datei</lang>
             </row>
             <item name="Calculate1" type="TMenuItem"/>
-            <item name="Language1" type="TMenuItem">
-              <row id="Caption" si="5">
-                <value>Language...</value>
-                <lang id="fi" time="20180524T033724Z">Kieli...</lang>
-              </row>
-            </item>
             <item name="N1" type="TMenuItem"/>
             <item name="Exit1" type="TMenuItem">
-              <row id="Caption" si="6">
+              <row id="Caption" si="5">
                 <value>Exit</value>
-                <lang id="fi" time="20180524T033719Z">Lopeta</lang>
+                <lang id="de" or="6" rw="0" time="20180410T013804Z">Beenden</lang>
               </row>
             </item>
           </item>
           <item name="Help1" type="TMenuItem">
-            <row id="Caption" si="7">
+            <row id="Caption" si="6">
               <value>Help</value>
-              <lang id="fi" time="20180524T033719Z">Ohje</lang>
+              <lang id="de" or="6" rw="0" time="20180410T013805Z">Hilfe</lang>
             </row>
             <item name="About1" type="TMenuItem">
-              <row id="Caption" si="8">
+              <row id="Caption" si="7">
                 <value>About...</value>
-                <lang id="fi" time="20180524T033719Z">Tietoa...</lang>
+                <lang id="de" or="6" rw="0" time="20180410T013807Z">Über....</lang>
               </row>
             </item>
           </item>
         </item>
         <item name="ActionList1" type="TActionList">
-          <row id="Left" created="20151019T020107Z">176</row>
-          <row id="Top" created="20151019T020107Z">56</row>
           <item name="CalculateAction" type="TAction">
-            <row id="Caption" si="9">
+            <row id="Caption" si="8">
               <value>Calculate</value>
-              <lang id="fi" time="20180524T033719Z">Laske</lang>
+              <lang id="de" or="6" rw="0" time="20180410T013808Z">Berechnen</lang>
             </row>
           </item>
         </item>
@@ -427,61 +379,11 @@
           ZHRoAmkGSGVpZ2h0AhUIVGFiT3JkZXICAQhPbkNoYW5nZQcKRWRpdENoYW5nZQAAB1RCdXR0b24PQ2FsY3VsYXRlQnV0dG9uBExl
           ZnQD6AADVG9wAhYFV2lkdGgCaQZIZWlnaHQCGQZBY3Rpb24HD0NhbGN1bGF0ZUFjdGlvbghUYWJPcmRlcgICAAAJVE1haW5NZW51
           CU1haW5NZW51MQRMZWZ0A/AAA1RvcAI4AAlUTWVudUl0ZW0FRmlsZTEHQ2FwdGlvbgYERmlsZQAJVE1lbnVJdGVtCkNhbGN1bGF0
-          ZTEGQWN0aW9uBw9DYWxjdWxhdGVBY3Rpb24AAAlUTWVudUl0ZW0JTGFuZ3VhZ2UxB0NhcHRpb24GC0xhbmd1YWdlLi4uB09uQ2xp
-          Y2sHDkxhbmd1YWdlMUNsaWNrAAAJVE1lbnVJdGVtAk4xB0NhcHRpb24GAS0AAAlUTWVudUl0ZW0FRXhpdDEHQ2FwdGlvbgYERXhp
-          dAdPbkNsaWNrBwpFeGl0MUNsaWNrAAAACVRNZW51SXRlbQVIZWxwMQdDYXB0aW9uBgRIZWxwAAlUTWVudUl0ZW0GQWJvdXQxB0Nh
-          cHRpb24GCEFib3V0Li4uB09uQ2xpY2sHC0Fib3V0MUNsaWNrAAAAAAtUQWN0aW9uTGlzdAtBY3Rpb25MaXN0MQRMZWZ0A7AAA1Rv
-          cAI4AAdUQWN0aW9uD0NhbGN1bGF0ZUFjdGlvbgdDYXB0aW9uBglDYWxjdWxhdGUJT25FeGVjdXRlBxZDYWxjdWxhdGVBY3Rpb25F
-          eGVjdXRlAAAAAA==
-        </data>
-      </node>
-      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
-        <font id="Font" name="Tahoma" size="8"/>
-        <row id="Left" created="20151019T020107Z">256</row>
-        <row id="Top" created="20151019T020107Z">347</row>
-        <row id="Caption" si="10">
-          <value>Select Language</value>
-          <lang id="fi" time="20180524T033734Z">Valitse kieli</lang>
-        </row>
-        <row id="ClientHeight" created="20151019T020107Z">193</row>
-        <row id="ClientWidth" created="20151019T020107Z">291</row>
-        <item name="LanguageList" type="TListBox">
-          <row id="Left" created="20151019T020107Z">8</row>
-          <row id="Top" created="20151019T020107Z">8</row>
-          <row id="Width" created="20151019T020107Z">193</row>
-          <row id="Height" created="20151019T020107Z">177</row>
-        </item>
-        <item name="OkButton" type="TButton">
-          <row id="Left" created="20151019T020107Z">208</row>
-          <row id="Top" created="20151019T020107Z">8</row>
-          <row id="Width" created="20151019T020107Z">75</row>
-          <row id="Height" created="20151019T020107Z">25</row>
-          <row id="Caption" si="11">
-            <value>OK</value>
-            <lang id="fi" time="20180524T033736Z">OK</lang>
-          </row>
-        </item>
-        <item name="CancelButton" type="TButton">
-          <row id="Left" created="20151019T020107Z">208</row>
-          <row id="Top" created="20151019T020107Z">40</row>
-          <row id="Width" created="20151019T020107Z">75</row>
-          <row id="Height" created="20151019T020107Z">25</row>
-          <row id="Caption" si="12">
-            <value>Cancel</value>
-            <lang id="fi" time="20180524T033738Z">Peru</lang>
-          </row>
-        </item>
-        <data>
-          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
-          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
-          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
-          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
-          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
-          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
-          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
-          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
-          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
-          AAA=
+          ZTEGQWN0aW9uBw9DYWxjdWxhdGVBY3Rpb24AAAlUTWVudUl0ZW0CTjEHQ2FwdGlvbgYBLQAACVRNZW51SXRlbQVFeGl0MQdDYXB0
+          aW9uBgRFeGl0B09uQ2xpY2sHCkV4aXQxQ2xpY2sAAAAJVE1lbnVJdGVtBUhlbHAxB0NhcHRpb24GBEhlbHAACVRNZW51SXRlbQZB
+          Ym91dDEHQ2FwdGlvbgYIQWJvdXQuLi4HT25DbGljawcLQWJvdXQxQ2xpY2sAAAAAC1RBY3Rpb25MaXN0C0FjdGlvbkxpc3QxBExl
+          ZnQDsAADVG9wAjgAB1RBY3Rpb24PQ2FsY3VsYXRlQWN0aW9uB0NhcHRpb24GCUNhbGN1bGF0ZQlPbkV4ZWN1dGUHFkNhbGN1bGF0
+          ZUFjdGlvbkV4ZWN1dGUAAAAA
         </data>
       </node>
     </node>
@@ -490,41 +392,43 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" changed="20200209T160439Z" class="TPatternRow" si="13" created="20170517T034344Z">
+        <row id="SResultPlural" changed="20200209T160313Z" class="TPatternRow" si="9">
           <value startpattern="1">Driving time{0}{1}.</value>
-          <prev startpattern="1">Driving time{0:s}{1:s}.</prev>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
           <pattern plural="pfOther" index="0"> {0} hours </pattern>
           <pattern plural="pfOne" index="1">{0} minute</pattern>
           <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" time="20200209T160512Z">
-            <value startpattern="1">Ajoaika{0}{1}</value>
-            <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+          <lang id="de" st="4" rw="0" time="20180410T013939Z">
+            <value startpattern="1">Fahrzeit {0}</value>
+            <pattern plural="pfZero" index="0">{1}</pattern>
+            <pattern plural="pfOne" index="0"> {0} Stunde{1}</pattern>
+            <pattern plural="pfOther" index="0"> {0} Stunden{1}</pattern>
+            <pattern plural="pfOne" index="1"> {0} Minute.</pattern>
+            <pattern plural="pfOther" index="1"> {0} Minuten.</pattern>
           </lang>
         </row>
-        <row id="SAbout" si="14">
+        <row id="SAbout" si="10">
           <value>Driving time calculator</value>
-          <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
+          <lang id="de" or="6" rw="0" time="20180410T013815Z">Fahrzeit-Rechner</lang>
         </row>
-        <row id="SNtLocale" si="15">
+        <row id="SNtLocale" si="11">
           <value>en</value>
-          <lang id="fi" time="20110805T135509Z">fi</lang>
+          <lang id="de" or="6" rw="0" time="20180410T013816Z">de</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <platformfiles>
-      <item file="..\..\Win64\Release\Multilingual.exe" drcfile="..\..\Win64\Release\Multilingual.drc"/>
+      <item file="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win64\Release\Localized.exe"/>
     </platformfiles>
     <configurations>
-      <configuration name="Default" items="[oiLanguage]"/>
+      <configuration name="Default" items="[oiLocalized,oiLanguage]"/>
     </configurations>
   </node>
+  <excludedoriginals>
+    <item>-</item>
+  </excludedoriginals>
   <rules kind="crVcl">
     <rule component="*" property="*Font.Name"/>
     <rule component="TImage" property="Picture.Data" format="pfClassImage"/>
@@ -539,14 +443,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

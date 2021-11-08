@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20200418T161424Z" version="1.0.734" lockedrowcomplete="0" stringid="15">
+<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20210916T091820Z" version="1.0.878" lockedrowcomplete="0" stringid="15">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="BlazorSportWasm.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\SportWasm\BlazorSportWasm.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1">
-    <netproperties version="standard21"/>
+  <node class="TNetProjectSource" name="SportWasm.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Wasm\SportWasm\SportWasm.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
+    <netproperties version="standard21" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources" created="20200328T175152Z">
       <node class="TDirectoryFolder" name="Pages">
         <node class="TResXNode" name="Index.resx">
@@ -68,13 +68,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

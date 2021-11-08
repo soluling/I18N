@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6EAE4F90-D0BA-4450-B68A-4CA3793C6438" created="20111123T132218Z" lastmodified="20200316T234716Z" version="1.0.714" stringid="1">
+<project id="6EAE4F90-D0BA-4450-B68A-4CA3793C6438" created="20111123T132218Z" lastmodified="20211005T125505Z" version="1.0.884" stringid="1">
   <lang id="fi"/>
   <node class="TBinarySource" name="Simple.bfs" fullpath="D:\NT\Deploy\Samples\Binary\Simple\Simple.bfs" original="en" encoding="windows-1252">
-    <definition name="BinaryBFS" description="Simple binary file" exts="bfs" stringencoding="ecUtf8" stringlength="bslWord">
+    <definition description="Simple binary file" exts="bfs" stringencoding="ecUtf8" stringlength="bslWord">
       <field type="dfContext" binarytype="btString"/>
       <field type="dfValue" binarytype="btString"/>
       <field type="dfValue" binarytype="btSingle"/>
@@ -23,15 +23,22 @@
     <data>BABtaWxrCQBTa2ltIG1pbGszM5M/AA==</data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

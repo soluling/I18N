@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20210113T174353Z" version="1.0.815" lockedrowcomplete="0" stringid="18">
+<project id="4EFC5380-9B60-485D-B8F9-8376A79C4B98" created="20200321T202628Z" lastmodified="20210916T091840Z" version="1.0.878" lockedrowcomplete="0" stringid="18">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="SportServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\SportServer\SportServer.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
-    <netproperties version="core30"/>
+    <netproperties version="core30" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages" created="20200321T225656Z">
         <node class="TResXNode" name="Index.resx">
@@ -84,13 +84,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

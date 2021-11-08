@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20190821T211709Z" version="1.0.499" stringid="12">
+<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20211020T003103Z" version="1.0.885" stringid="15">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en-US" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en-US" resources="[nrResx,nrForm,nrAssemblyInfo]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
@@ -2713,6 +2713,20 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
+      <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20211020T002941Z" st="0" fromassemblyinfo="1">
+        <row id="AssemblyTitle" si="13" st="0">
+          <value>Driving</value>
+          <lang id="fi" rw="0" time="20211020T003033Z">Ajoaika</lang>
+        </row>
+        <row id="AssemblyProduct" si="14" st="0">
+          <value>Driving</value>
+          <lang id="fi" rw="0" time="20211020T003033Z">Ajoaika</lang>
+        </row>
+        <row id="AssemblyCopyright" si="15" st="0">
+          <value>Copyright ©  2010-2016</value>
+          <lang id="fi" rw="0" time="20211020T003057Z">Tekijänoikeudet ©  2010-2016</lang>
+        </row>
+      </node>
       <node class="TResXNode" name="Resources.resx">
         <row id="About" si="10">
           <value>Driving time calculator</value>
@@ -2926,17 +2940,21 @@
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

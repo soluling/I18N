@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0DD66084-B3CC-4E74-A823-41FB1316D1DA" created="20180331T192219Z" lastmodified="20200316T192619Z" version="1.0.714" stringid="11">
+<project id="0DD66084-B3CC-4E74-A823-41FB1316D1DA" created="20180331T192219Z" lastmodified="20210916T100833Z" version="1.0.879" stringid="11">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -8,7 +8,7 @@
   <lang id="es"/>
   <lang id="pl"/>
   <node class="TNetProjectSource" name="Format.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Format\Format.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="net30"/>
+    <netproperties version="net30" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20190611T151208Z" st="0" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkZvcm1hdC5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1p
@@ -118,15 +118,23 @@
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

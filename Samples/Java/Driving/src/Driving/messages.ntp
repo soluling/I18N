@@ -1,16 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E698FB57-9FA3-447B-A162-2E356D4CAE1F" created="20140910T052357Z" lastmodified="20200316T231944Z" version="1.0.714" stringid="9">
+<project id="E698FB57-9FA3-447B-A162-2E356D4CAE1F" created="20140910T052357Z" lastmodified="20210916T093057Z" version="1.0.878" stringid="9">
   <lang id="fi"/>
   <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Driving\src\Driving\messages.properties" original="en" encoding="iso-8859-1">
     <row id="Locale" si="1">en</row>
-    <row id="HoursPlural" class="TPatternRow" si="2" created="20190309T193118Z">
-      <value>{0} hours</value>
-      <pattern plural="pfOne">{0} hour</pattern>
-    </row>
-    <row id="MinutesPlural" class="TPatternRow" si="3" created="20190309T193118Z">
-      <value>{0} minutes</value>
-      <pattern plural="pfOne">{0} minute</pattern>
-    </row>
+    <row id="HoursPlural" changed="20210916T093045Z" class="TPatternRow" si="2" created="20190309T193118Z">one;{0} hour;other;{1} hours</row>
+    <row id="MinutesPlural" changed="20210916T093045Z" class="TPatternRow" si="3" created="20190309T193118Z">one;{0} minute;other;{1} minutes</row>
     <row id="Distance" si="4">
       <value>Distance:</value>
       <lang id="fi" st="4" or="6" rw="0" time="20190309T193144Z" fuzzy="1">Etäisyys:</lang>
@@ -32,6 +26,12 @@
       <value>Driving time is {0} and {1}</value>
       <lang id="fi" st="4" or="6" rw="0" time="20190309T193155Z" fuzzy="1">Ajoaika on {0} ja {1}</lang>
     </row>
+    <data>
+      TG9jYWxlPWVuDQpIb3Vyc1BsdXJhbD1vbmU7JWQgaG91cjtvdGhlcjslZCBob3Vycw0KTWludXRlc1BsdXJhbD1vbmU7JWQgbWlu
+      dXRlO290aGVyOyVkIG1pbnV0ZXMNCkRpc3RhbmNlPURpc3RhbmNlOg0KU3BlZWQ9U3BlZWQ6DQpDYWxjdWxhdGU9Q2FsY3VsYXRl
+      DQpNZXNzYWdlPWR1bW15DQpUaXRsZT1Ecml2aW5nIFRpbWUNCkRyaXZpbmdUaW1lSXM9RHJpdmluZyB0aW1lIGlzICVzIGFuZCAl
+      cw0K
+    </data>
   </node>
   <terminology>
     <shared>
@@ -43,12 +43,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

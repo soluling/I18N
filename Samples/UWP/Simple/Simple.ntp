@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="00566B42-8844-4412-B686-EF6E72B56D72" created="20181216T233605Z" lastmodified="20200316T185339Z" version="1.0.714" stringid="15">
+<project id="00566B42-8844-4412-B686-EF6E72B56D72" created="20181216T233605Z" lastmodified="20210916T094152Z" version="1.0.878" stringid="15">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TUwpProjectSource" name="Simple.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Simple\Simple.csproj" original="en" defaultlanguage="en" scansource="rsNeutral" availableresources="[rtResw,rtXaml,rtImage]">
+  <node class="TUwpProjectSource" name="Simple.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Simple\Simple.csproj" original="en" defaultlanguage="en" scansource="rsNeutral" resources="[rtResw,rtXaml]" availableresources="[rtResw,rtXaml,rtImage]">
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <item name="Resources">
         <item name="ResourceDictionary[0]" type="ResourceDictionary">
@@ -2327,11 +2327,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

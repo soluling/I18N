@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F5949972-8B98-476C-9116-59D2A17E0DDE" created="20140319T081021Z" lastmodified="20190705T231315Z" version="1.0.456" stringid="9">
+<project id="F5949972-8B98-476C-9116-59D2A17E0DDE" created="20140319T081021Z" lastmodified="20210916T092008Z" version="1.0.878" stringid="9">
   <lang id="fi"/>
   <node class="TExcelSource" name="Sport.xlsx" fullpath="D:\NT\Deploy\Samples\Excel\Xlsx\Sport\Sport.xlsx" original="en">
     <row id="soccer[1]" changed="20140319T081143Z" si="1">
@@ -38,7 +38,7 @@
       <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
       <lang id="fi" time="20190705T231252Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
     </row>
-    <definition sheet="Sheet1" range="A1:F3">
+    <definition sheet="Sheet1" range="A1:F">
       <field type="dfContext"/>
       <field type="dfValue"/>
       <field type="dfIgnore" format="sfInteger"/>
@@ -49,19 +49,22 @@
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

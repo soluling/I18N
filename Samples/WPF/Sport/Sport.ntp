@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="216A5917-C5D1-44C7-88B4-6B181E7B7EA9" created="20180424T140047Z" lastmodified="20200316T192522Z" version="1.0.714" stringid="16">
+<project id="216A5917-C5D1-44C7-88B4-6B181E7B7EA9" created="20180424T140047Z" lastmodified="20210916T094412Z" version="1.0.878" stringid="16">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="Sport.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Sport\Sport.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net40" toolsversion="nt40"/>
-    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192522Z" st="0" kind="xkApplication">
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192522Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlNwb3J0LkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWlj
         cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICAgICAgICAgICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hl
@@ -138,11 +138,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>
