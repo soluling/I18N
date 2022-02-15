@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="7435492258621955017" meaning="header"><source>src/app/app.component.ts:5</source>Sports</msg>
+  <msg id="4546456403011516690" meaning="header"><source>src/app/sports/sport-dialog.component.html:1</source>Sport</msg>
+  <msg id="3965769458978027538" meaning="bodyText"><source>src/app/sports/sport-dialog.component.html:2</source>Enter properties of a sport.</msg>
+  <msg id="5412061639190455352" meaning="namePlaceholder"><source>src/app/sports/sport-dialog.component.html:6</source>Name</msg>
+  <msg id="347807346634661578" meaning="nameValidation"><source>src/app/sports/sport-dialog.component.html:7</source>Name is required</msg>
+  <msg id="3269565461533850890" meaning="olympicPlaceholder"><source>src/app/sports/sport-dialog.component.html:11</source>Olympic Games</msg>
+  <msg id="4688893772139292089" meaning="olympicNo"><source>src/app/sports/sport-dialog.component.html:12</source>No</msg>
+  <msg id="7934930583635021943" meaning="olympicWinter"><source>src/app/sports/sport-dialog.component.html:13</source>Winter</msg>
+  <msg id="6808028743397309818" meaning="olympicSummer"><source>src/app/sports/sport-dialog.component.html:14</source>Summer</msg>
+  <msg id="1420851080984555630" meaning="individualRadio"><source>src/app/sports/sport-dialog.component.html:19</source>Individual sport</msg>
+  <msg id="6470115951635736337" meaning="teamRadio"><source>src/app/sports/sport-dialog.component.html:20</source>Team sport</msg>
+  <msg id="5221578937020973418" meaning="goalieCheck"><source>src/app/sports/sport-dialog.component.html:29</source>Has goalkeeper</msg>
+  <msg id="7799738110858474651" meaning="originPlaceholder"><source>src/app/sports/sport-dialog.component.html:35</source>Origin</msg>
+  <msg id="9009367376684363386" meaning="originValidation"><source>src/app/sports/sport-dialog.component.html:36</source>Origin is required</msg>
+  <msg id="5324477523368767674" meaning="descriptionPlaceholder"><source>src/app/sports/sport-dialog.component.html:40</source>Description</msg>
+  <msg id="3129937959724086916" meaning="descriptionValidation"><source>src/app/sports/sport-dialog.component.html:41</source>Description is required</msg>
+  <msg id="5803239427440846208" meaning="okButton"><source>src/app/sports/sport-dialog.component.html:47</source>OK</msg>
+  <msg id="7310365732728276921" meaning="cancelButton"><source>src/app/sports/sport-dialog.component.html:48</source>Cancel</msg>
+  <msg id="8975348987833106233" meaning="id"><source>src/app/sports/sports.component.html:4</source>Id</msg>
+  <msg id="2598875424061309057" meaning="name"><source>src/app/sports/sports.component.html:9</source>Sport name</msg>
+  <msg id="5909765719634651388" meaning="olympic"><source>src/app/sports/sports.component.html:14</source>Olympic</msg>
+  <msg id="1677875612734852539" meaning="fieldPlayers"><source>src/app/sports/sports.component.html:19</source>Amount of payers</msg>
+  <msg id="4668855927553609573" meaning="goalie"><source>src/app/sports/sports.component.html:24</source>Goalkeeper</msg>
+  <msg id="9147956655005809552" meaning="origin"><source>src/app/sports/sports.component.html:29</source>Origin</msg>
+  <msg id="7360236606985703931" meaning="description"><source>src/app/sports/sports.component.html:34</source>Description</msg>
+  <msg id="8821667938245000484" meaning="editButton"><source>src/app/sports/sports.component.html:43</source>Edit</msg>
+  <msg id="8293615958040124038" meaning="deleteButton"><source>src/app/sports/sports.component.html:46</source>Delete</msg>
+  <msg id="5333241360009441144" meaning="addButton"><source>src/app/sports/sports.component.html:58</source>Add...</msg>
+  <msg id="939013059329229990" meaning="addWaterpoloButton"><source>src/app/sports/sports.component.html:59</source>Add water polo</msg>
+  <msg id="4405779790348275177" meaning="addVolleyballButton"><source>src/app/sports/sports.component.html:60</source>Add volleyball</msg>
+</messagebundle>
