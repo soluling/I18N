@@ -25,46 +25,38 @@ import { DialogsService } from './dialogs/dialogs.service';
 import { SelectDialog }   from './dialogs/select-dialog.component';
 
 @NgModule({
-  declarations: 
-  [
-    AppComponent,
-    SportsComponent,
-    SportDialogComponent,
-    SelectDialog
-  ],
-  imports: 
-  [
-    BrowserModule,
-    BrowserAnimationsModule,
-    HttpClientModule,
-    FormsModule,
-    ReactiveFormsModule,
-    CdkTableModule,
-    MatButtonModule,
-    MatCheckboxModule,
-    MatDialogModule,
-    MatFormFieldModule,
-    MatGridListModule,
-    MatIconModule,
-    MatInputModule,
-    MatListModule,
-    MatRadioModule,
-    MatSelectModule,
-    MatTableModule
-  ],
-  exports: [
-    SelectDialog,
-  ],
-  entryComponents: 
-  [
-    SportDialogComponent,
-    SelectDialog
-  ],
-  providers: 
-  [
-    SportsService,
-    DialogsService
-  ],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        SportsComponent,
+        SportDialogComponent,
+        SelectDialog
+    ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        HttpClientModule,
+        FormsModule,
+        ReactiveFormsModule,
+        CdkTableModule,
+        MatButtonModule,
+        MatCheckboxModule,
+        MatDialogModule,
+        MatFormFieldModule,
+        MatGridListModule,
+        MatIconModule,
+        MatInputModule,
+        MatListModule,
+        MatRadioModule,
+        MatSelectModule,
+        MatTableModule
+    ],
+    exports: [
+        SelectDialog,
+    ],
+    providers: [
+        SportsService,
+        DialogsService
+    ],
+    bootstrap: [AppComponent]
 })
 export class AppModule { }
