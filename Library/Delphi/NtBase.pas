@@ -1363,7 +1363,7 @@ begin  //FI:C101
   ResStringCleanupCache;
   {$IFEND}
 {$IFEND}
-{$IFDEF DELPHIDX5}
+{$IFDEF DELPHI11}
   ResStringCleanupCache;
 {$ENDIF}
 

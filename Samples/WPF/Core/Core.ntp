@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20201025T212303Z" version="1.0.797" lockedrowcomplete="0" stringid="4">
+<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20220126T134252Z" version="1.0.900" lockedrowcomplete="0" stringid="4">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="core31"/>
+  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" lastmodified="20220126T134252Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core31" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkNvcmUuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
@@ -40,12 +40,15 @@
         ZHVtbXk8L0xhYmVsPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
-    <node class="TResXNode" name="Resources.resx">
+    <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
       <row id="String1" si="1">
         <value>This is a resource string</value>
         <lang id="fi" rw="0" time="20190818T194915Z" fuzzy="5">Tämä on resurssimerkkijono</lang>
       </row>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\netcoreapp3.1\Core.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -60,6 +63,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>

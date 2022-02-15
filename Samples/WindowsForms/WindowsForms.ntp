@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20200830T204259Z" version="1.0.772" lockedrowcomplete="0" stringid="553">
+<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20220121T152524Z" version="1.0.899" lockedrowcomplete="0" stringid="572">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="WindowsForms.sln" fullpath="D:\NT\Deploy\Samples\WindowsForms\WindowsForms.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms]" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrJson,nrText,nrXml,nrGroupIcon,nrIcon,nrManifest]">
-    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
-      <netproperties version="standard20"/>
-      <node class="TResXNode" name="Resources.resx">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" original="en" lastmodified="20220121T152524Z" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
+      <netproperties version="standard20" toolsversion="nt150"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
         <row id="Female" si="542">Female</row>
         <row id="Few" si="543">Few</row>
         <row id="Male" si="544">Male</row>
@@ -21,10 +21,22 @@
         </row>
         <row id="Zero" si="550">Zero</row>
       </node>
+      <assemblies>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" original="en" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="SelectLanguage.resx" resourcekind="nkForm">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" original="en" lastmodified="20220121T152524Z" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="net45" toolsversion="nt120"/>
+      <node class="TResXNode" name="SelectLanguage.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="okButton.Text" si="551">OK</row>
         <row id="cancelButton.Text" si="552">Cancel</row>
         <row id="$this.Text" si="553">Select Language</row>
@@ -163,10 +175,14 @@
           MTkzNGUwODk8L3ZhbHVlPg0KICA8L2RhdGE+DQo8L3Jvb3Q+
         </data>
       </node>
+      <assemblies>
+        <assembly>bin\Release\Soluling.dll</assembly>
+        <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BiDiArabic\BiDiArabic.csproj" original="en" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" original="en" lastmodified="20220121T152522Z" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="checkBox1.Text" si="350">
           <value>&amp;Save</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Talleta</lang>
@@ -331,12 +347,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BidiEnglish\BidiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiEnglish\BidiEnglish.csproj" original="en" groupname="BiDi\BidiEnglish\BidiEnglish.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BidiEnglish\BidiEnglish.csproj" original="en" lastmodified="20220121T152522Z" groupname="BiDi\BidiEnglish\BidiEnglish.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="346">&amp;Value:</row>
         <row id="browseButton.Text" si="347">&amp;Clear</row>
         <row id="checkBox1.Text" si="348">&amp;Save</row>
@@ -488,12 +504,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BidiSimple\BidiSimple.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiSimple\BidiSimple.csproj" original="en" groupname="BiDi\BidiSimple\BidiSimple.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BidiSimple\BidiSimple.csproj" original="en" lastmodified="20220121T152522Z" groupname="BiDi\BidiSimple\BidiSimple.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="$this.Text" si="359">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -592,12 +608,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Comments\Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Comments\Comments.csproj" original="en" lastmodified="20220121T152520Z" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="162" excluded="2">dummy</row>
         <row id="label2.Text" si="163" excluded="2">dummy</row>
         <row id="$this.Text" si="164">
@@ -730,7 +746,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="FormatComment" class="TPatternRow" si="165" scannedcomment="Name and place">
             <value>Hello {0}, welcome to {1}</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi {0}, tervetuloa {1}in</lang>
@@ -751,23 +767,24 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\Application\Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" groupname="CustomControl\Application\Application.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="CustomControl\Application\Application.csproj" original="en" lastmodified="20220121T152524Z" groupname="CustomControl\Application\Application.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="sampleLabel1.CustomC1" si="114">4,1,0,0,0,95,Columns:1{Caption:&quot;One&quot;;}	2{Caption:&quot;Two&quot;;}	3{Caption:&quot;Three&quot;;}	</row>
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+        <row id="sampleLabel1.CustomC1" si="114">4,1,0,0,0,95,Columns:1{Caption:"One";}	2{Caption:"Two";}	3{Caption:"Three";}	</row>
         <row id="sampleLabel1.CustomChar" si="115">a</row>
         <row id="sampleLabel1.CustomExpression" si="116">One;Two;Three</row>
-        <row id="sampleLabel1.CustomHtml" si="117">&lt;html&gt;&lt;head&gt;&lt;title&gt;Test&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;li&gt;One&lt;/li&gt;&lt;li&gt;Two&lt;/li&gt;&lt;/body&gt;&lt;/html&gt;</row>
-        <row id="sampleLabel1.CustomJson" si="118">{&quot;product&quot;: &quot;Skim milk&quot;, &quot;price&quot;: 1.15, &quot;onsale&quot;: false}</row>
+        <row id="sampleLabel1.CustomHtml" si="117">&lt;html>&lt;head>&lt;title>Test&lt;/title>&lt;/head>&lt;body>&lt;li>One&lt;/li>&lt;li>Two&lt;/li>&lt;/body>&lt;/html></row>
+        <row id="sampleLabel1.CustomJson" si="118">{"product": "Skim milk", "price": 1.15, "onsale": false}</row>
         <row id="sampleLabel1.CustomString" si="119">
           <value>This is a sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
         </row>
-        <row id="sampleLabel1.CustomXml" si="120">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;&lt;simple&gt;&lt;product&gt;Skim milk&lt;/product&gt;&lt;price&gt;1.15&lt;/price&gt;&lt;/simple&gt;</row>
+        <row id="sampleLabel1.CustomXml" si="120">&lt;?xml version="1.0" encoding="utf-8"?>&lt;simple>&lt;product>Skim milk&lt;/product>&lt;price>1.15&lt;/price>&lt;/simple></row>
         <row id="sampleLabel1.Text" si="121">
           <value>Hello World</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
+        <row id="label1.Text" si="562" created="20220121T152517Z" st="0">Hello</row>
         <row id="$this.Text" si="122">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -930,30 +947,47 @@
           ZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbDwvdmFsdWU+DQogIDwvZGF0YT4NCiAg
           PGRhdGEgbmFtZT0iJmd0OyZndDtzYW1wbGVMYWJlbDEuUGFyZW50IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+
           JHRoaXM8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsmZ3Q7c2FtcGxlTGFiZWwxLlpPcmRlciIgeG1sOnNw
-          YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjA8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxtZXRhZGF0YSBuYW1lPSIkdGhpcy5M
-          b2NhbGl6YWJsZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
-          bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSI+DQogICAgPHZhbHVlPlRydWU8L3ZhbHVlPg0KICA8L21ldGFkYXRh
-          Pg0KICA8ZGF0YSBuYW1lPSIkdGhpcy5BdXRvU2NhbGVEaW1lbnNpb25zIiB0eXBlPSJTeXN0ZW0uRHJhd2luZy5TaXplRiwgU3lz
-          dGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT42LCAxMzwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuQ2xp
-          ZW50U2l6ZSIgdHlwZT0iU3lzdGVtLkRyYXdpbmcuU2l6ZSwgU3lzdGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT4zNzcsIDE0MDwv
-          dmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuSW1lTW9kZSIgdHlwZT0iU3lzdGVtLldpbmRvd3MuRm9ybXMu
-          SW1lTW9kZSwgU3lzdGVtLldpbmRvd3MuRm9ybXMiPg0KICAgIDx2YWx1ZT5Ob0NvbnRyb2w8L3ZhbHVlPg0KICA8L2RhdGE+DQog
-          IDxkYXRhIG5hbWU9IiR0aGlzLlRleHQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICAgIDx2YWx1ZT5TYW1wbGU8L3ZhbHVlPg0K
-          ICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsmZ3Q7JHRoaXMuTmFtZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZh
-          bHVlPkZvcm0xPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0OyR0aGlzLlR5cGUiIHhtbDpzcGFjZT0i
-          cHJlc2VydmUiPg0KICAgIDx2YWx1ZT5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Gb3JtLCBTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVy
-          c2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODk8L3ZhbHVlPg0KICA8
-          L2RhdGE+DQo8L3Jvb3Q+
+          YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjE8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9ImxhYmVsMS5BdXRv
+          U2l6ZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliIj4NCiAgICA8dmFsdWU+VHJ1ZTwvdmFsdWU+DQogIDwvZGF0YT4N
+          CiAgPGRhdGEgbmFtZT0ibGFiZWwxLkxvY2F0aW9uIiB0eXBlPSJTeXN0ZW0uRHJhd2luZy5Qb2ludCwgU3lzdGVtLkRyYXdpbmci
+          Pg0KICAgIDx2YWx1ZT44LCAyNDwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0ibGFiZWwxLlNpemUiIHR5cGU9IlN5
+          c3RlbS5EcmF3aW5nLlNpemUsIFN5c3RlbS5EcmF3aW5nIj4NCiAgICA8dmFsdWU+MzEsIDEzPC92YWx1ZT4NCiAgPC9kYXRhPg0K
+          ICA8ZGF0YSBuYW1lPSJsYWJlbDEuVGFiSW5kZXgiIHR5cGU9IlN5c3RlbS5JbnQzMiwgbXNjb3JsaWIiPg0KICAgIDx2YWx1ZT4x
+          PC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSJsYWJlbDEuVGV4dCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAg
+          PHZhbHVlPkhlbGxvPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0O2xhYmVsMS5OYW1lIiB4bWw6c3Bh
+          Y2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+bGFiZWwxPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0
+          O2xhYmVsMS5UeXBlIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+U3lzdGVtLldpbmRvd3MuRm9ybXMuTGFiZWws
+          IFN5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3
+          YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZndDtsYWJlbDEuUGFyZW50IiB4bWw6
+          c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+JHRoaXM8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsm
+          Z3Q7bGFiZWwxLlpPcmRlciIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjA8L3ZhbHVlPg0KICA8L2RhdGE+DQog
+          IDxtZXRhZGF0YSBuYW1lPSIkdGhpcy5Mb2NhbGl6YWJsZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliLCBWZXJzaW9u
+          PTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSI+DQogICAgPHZhbHVlPlRy
+          dWU8L3ZhbHVlPg0KICA8L21ldGFkYXRhPg0KICA8ZGF0YSBuYW1lPSIkdGhpcy5BdXRvU2NhbGVEaW1lbnNpb25zIiB0eXBlPSJT
+          eXN0ZW0uRHJhd2luZy5TaXplRiwgU3lzdGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT42LCAxMzwvdmFsdWU+DQogIDwvZGF0YT4N
+          CiAgPGRhdGEgbmFtZT0iJHRoaXMuQ2xpZW50U2l6ZSIgdHlwZT0iU3lzdGVtLkRyYXdpbmcuU2l6ZSwgU3lzdGVtLkRyYXdpbmci
+          Pg0KICAgIDx2YWx1ZT4zNzcsIDE0MDwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuVGV4dCIgeG1sOnNw
+          YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPlNhbXBsZTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZn
+          dDskdGhpcy5OYW1lIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+Rm9ybTE8L3ZhbHVlPg0KICA8L2RhdGE+DQog
+          IDxkYXRhIG5hbWU9IiZndDsmZ3Q7JHRoaXMuVHlwZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPlN5c3RlbS5X
+          aW5kb3dzLkZvcm1zLkZvcm0sIFN5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwg
+          UHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCjwvcm9vdD4=
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
+      <assemblies>
+        <assembly>bin\Release\SampleControl.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Control\Control.csproj" original="en" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" original="en" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
+      <assemblies>
+        <assembly>bin\Release\SampleControl.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Database\Database.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Database\Database.csproj" original="en" groupname="Database\Database.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Database\Database.csproj" original="en" lastmodified="20220121T152518Z" groupname="Database\Database.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="button1.Text" si="1">
@@ -1088,7 +1122,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="DescriptionColumn" si="3">
             <value>Description</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Selitys</lang>
@@ -1120,7 +1154,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" original="en" lastmodified="20220121T152518Z" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="10">
@@ -3829,7 +3863,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="About" si="19">
             <value>Driving time calculator</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Ajoaikalaskin</lang>
@@ -3856,8 +3890,11 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Multilingual\Multilingual.csproj" original="en" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20220121T152522Z" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="411">
@@ -6579,7 +6616,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="About" si="421">
             <value>Driving time calculator</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ajoaikalaskin</lang>
@@ -6606,8 +6643,12 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+        <assembly>bin\Release\NewTool.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Original\Original.csproj" original="en" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" original="en" lastmodified="20220121T152522Z" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Text" si="401">&amp;Calculate</row>
@@ -9319,12 +9360,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="EmbeddedResources\EmbeddedResources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\EmbeddedResources\EmbeddedResources.csproj" original="en" groupname="EmbeddedResources\EmbeddedResources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="EmbeddedResources\EmbeddedResources.csproj" original="en" lastmodified="20220121T152523Z" groupname="EmbeddedResources\EmbeddedResources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="$this.Text" si="452">
           <value>Resource Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Resurssiesimerkki</lang>
@@ -9424,15 +9465,15 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Encodings\Encodings.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Encodings\Encodings.csproj" original="en" groupname="Encodings\Encodings.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Encodings\Encodings.csproj" original="en" lastmodified="20220121T152520Z" groupname="Encodings\Encodings.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Ansi.resx">
+      <node class="TResXNode" name="Ansi.resx" windowsforms="wf20">
         <row id="String1" si="169">Ansi ångström</row>
       </node>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="utf8Label.Text" si="170" excluded="2">dummy</row>
         <row id="ansiLabel.Text" si="171" excluded="2">dummy</row>
         <row id="isoLabel.Text" si="172" excluded="2">dummy</row>
@@ -9755,62 +9796,62 @@
           NzdhNWM1NjE5MzRlMDg5PC92YWx1ZT4NCiAgPC9kYXRhPg0KPC9yb290Pg==
         </data>
       </node>
-      <node class="TResXNode" name="GB18030NoBom.resx">
+      <node class="TResXNode" name="GB18030NoBom.resx" windowsforms="wf20">
         <row id="String1" si="184">GB18030 ångström</row>
       </node>
-      <node class="TResXNode" name="Iso.resx">
+      <node class="TResXNode" name="Iso.resx" windowsforms="wf20">
         <row id="String1" si="185">ISO ångström</row>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
-      <node class="TResXNode" name="Utf8.resx">
+      <node class="TResXNode" name="Utf8.resx" windowsforms="wf20">
         <row id="String1" si="194" scannedcomment="This is a comment">UTF-8 ångström</row>
       </node>
-      <node class="TResXNode" name="Utf8NoBom.resx">
+      <node class="TResXNode" name="Utf8NoBom.resx" windowsforms="wf20">
         <row id="String1" si="195">
           <value>UTF-8 no BOM ångström</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-8 ei BOM:a ångström</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Utf16BE.resx">
+      <node class="TResXNode" name="Utf16BE.resx" windowsforms="wf20">
         <row id="String1" si="186">UTF-16 BE ångström</row>
       </node>
-      <node class="TResXNode" name="Utf16BENoBom.resx">
+      <node class="TResXNode" name="Utf16BENoBom.resx" windowsforms="wf20">
         <row id="String1" si="187">
           <value>UTF-16 BE no BOM ångström</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-16 BE ei BOM:a ångström</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Utf16LE.resx">
+      <node class="TResXNode" name="Utf16LE.resx" windowsforms="wf20">
         <row id="String1" si="188">UTF-16 LE ångström</row>
       </node>
-      <node class="TResXNode" name="Utf16LENoBom.resx">
+      <node class="TResXNode" name="Utf16LENoBom.resx" windowsforms="wf20">
         <row id="String1" si="189">
           <value>UTF-16 LE no BOM ångström</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-16 LE ei BOM:a ångström</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Utf32BE.resx">
+      <node class="TResXNode" name="Utf32BE.resx" windowsforms="wf20">
         <row id="String1" si="190">UTF-32 BE ångström</row>
       </node>
-      <node class="TResXNode" name="Utf32BENoBom.resx">
+      <node class="TResXNode" name="Utf32BENoBom.resx" windowsforms="wf20">
         <row id="String1" si="191">
           <value>UTF-32 BE no BOM ångström</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-32 BE ei BOM:a ångström</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Utf32LE.resx">
+      <node class="TResXNode" name="Utf32LE.resx" windowsforms="wf20">
         <row id="String1" si="192">UTF-32 LE ångström</row>
       </node>
-      <node class="TResXNode" name="Utf32LENoBom.resx">
+      <node class="TResXNode" name="Utf32LENoBom.resx" windowsforms="wf20">
         <row id="String1" si="193">
           <value>UTF-32 LE no BOM ångström</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">UTF-32 LE ei BOM:a ångström</lang>
         </row>
       </node>
     </node>
-    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" original="en" lastmodified="20220121T152522Z" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="openButton1.Text" si="368">
@@ -10132,7 +10173,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="AllFiles" si="381">
             <value>All files</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaikki tiedostot</lang>
@@ -10172,9 +10213,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Font\Font.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Font\Font.csproj" original="en" groupname="Font\Font.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Font\Font.csproj" original="en" lastmodified="20220121T152522Z" groupname="Font\Font.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="360">
           <value>Standard</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
@@ -10414,18 +10455,18 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HardCoded\HardCoded.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\HardCoded\HardCoded.csproj" original="en" groupname="HardCoded\HardCoded.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="HardCoded\HardCoded.csproj" original="en" lastmodified="20220121T152519Z" groupname="HardCoded\HardCoded.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" groupname="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" lastmodified="20220121T152518Z" groupname="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="22">This is a sample</row>
         <row id="$this.Text" si="23">Sample</row>
         <data>
@@ -10537,10 +10578,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Image\Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en" groupname="Image\Image.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Image\Image.csproj" original="en" lastmodified="20220121T152519Z" groupname="Image\Image.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="embeddedLabel.Text" si="24">
@@ -11375,12 +11416,15 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="ImageList\ImageList.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ImageList\ImageList.csproj" original="en" groupname="ImageList\ImageList.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ImageList\ImageList.csproj" original="en" lastmodified="20220121T152519Z" groupname="ImageList\ImageList.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="imageList1.ImageStream.Data[0]" class="TImageRow">
             Qk0owAAAAAAAADYAAAAoAAAAgAAAAIAAAAABABgAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
             AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
@@ -13362,6 +13406,7 @@
         <row id="label1.Text" si="31" excluded="2">dummy</row>
         <row id="$this.Text" si="32">Sample</row>
         <codeproperties>
+          <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
@@ -16189,16 +16234,16 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Book" si="33">Book</row>
           <row id="Plane" si="34">Plane</row>
           <row id="Sign" si="35">Sign</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Ime\Ime.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Ime\Ime.csproj" original="en" groupname="Ime\Ime.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Ime\Ime.csproj" original="en" lastmodified="20220121T152522Z" groupname="Ime\Ime.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="defaultLabel.Text" si="354">&amp;Default input method:</row>
         <row id="onLabel.Text" si="355">&amp;Input method on:</row>
         <row id="defaultDesciptionLabel.Text" si="356">The above text box component has the default ImeMode: NoControl. The default value is not stored to RESX, so it will not be scanned and it cannot be localized.</row>
@@ -16390,10 +16435,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Inherited\Inherited.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Inherited\Inherited.csproj" original="en" groupname="Inherited\Inherited.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Inherited\Inherited.csproj" original="en" lastmodified="20220121T152520Z" groupname="Inherited\Inherited.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="BaseForm.resx" resourcekind="nkForm">
         <row id="label1.Text" si="143">Base</row>
@@ -16506,7 +16551,7 @@
           bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCjwvcm9vdD4=
         </data>
       </node>
-      <node class="TResXNode" name="InheritedForm.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="InheritedForm.resx" resourcekind="nkForm" windowsforms="wfCore">
         <row id="button1.Text" si="145">Browse...</row>
         <row id="$this.Text" si="146">Inherited</row>
         <data>
@@ -16633,7 +16678,7 @@
           Pg0KPC9yb290Pg==
         </data>
       </node>
-      <node class="TResXNode" name="MainForm.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="MainForm.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="simpleButton.Text" si="147">Simple</row>
         <row id="baseButton.Text" si="148">Base</row>
         <row id="inheritedButton.Text" si="149">Inherited</row>
@@ -16785,7 +16830,7 @@
           L3ZhbHVlPg0KICA8L2RhdGE+DQo8L3Jvb3Q+
         </data>
       </node>
-      <node class="TResXNode" name="MoreForm.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="MoreForm.resx" resourcekind="nkForm" windowsforms="wfCore">
         <row id="label1.Text" si="152">&amp;Enter value:</row>
         <row id="checkBox1.Text" si="153">&amp;Visible</row>
         <data>
@@ -16905,7 +16950,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="EnterValue" si="154">&amp;Enter value:</row>
         </node>
       </node>
@@ -17021,9 +17066,9 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\LanguageSwitch\LanguageSwitch.csproj" original="en" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" original="en" lastmodified="20220121T152519Z" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="36">
           <value>This is a sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
@@ -17173,7 +17218,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="40">
             <value>This is another sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on toinen esimerkki</lang>
@@ -17181,9 +17226,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Links\Links.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Links\Links.csproj" original="en" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Links\Links.csproj" original="en" lastmodified="20220121T152524Z" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="41" excluded="2">dummy</row>
         <row id="textXml.Text" si="42" excluded="2">dummy</row>
         <row id="binaryXml.Text" si="43" excluded="2">dummy</row>
@@ -17384,7 +17429,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String" si="47">One</row>
           <node class="TXmlDataNode" name="XmlBinary">
             <item class="TXmlItem" name="simple">
@@ -17392,10 +17437,10 @@
                 <row id="value" si="48">Skim milk</row>
               </item>
               <item class="TXmlItem" name="price">
-                <row id="value" class="TFloatRow">1.15</row>
+                <row id="value" si="554" created="20220121T152517Z" st="0">1.15</row>
               </item>
               <item class="TXmlItem" name="onsale">
-                <row id="value" class="TIntegerRow">0</row>
+                <row id="value" si="555" created="20220121T152517Z" st="0">0</row>
               </item>
             </item>
             <data>
@@ -17407,8 +17452,8 @@
             <item class="TXmlItem" name="sports">
               <item class="TXmlItem" name="soccer">
                 <row id="=name" si="49">Soccer</row>
-                <row id="=fieldplayers" class="TIntegerRow">10</row>
-                <row id="=goalie" class="TIntegerRow">1</row>
+                <row id="=fieldplayers" si="556" created="20220121T152517Z" st="0">10</row>
+                <row id="=goalie" si="557" created="20220121T152517Z" st="0">1</row>
                 <row id="=origin" si="50">England</row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="51">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
@@ -17416,8 +17461,8 @@
               </item>
               <item class="TXmlItem" name="hockey">
                 <row id="=name" si="52">Ice hockey</row>
-                <row id="=fieldplayers" class="TIntegerRow">5</row>
-                <row id="=goalie" class="TIntegerRow">1</row>
+                <row id="=fieldplayers" si="558" created="20220121T152517Z" st="0">5</row>
+                <row id="=goalie" si="559" created="20220121T152517Z" st="0">1</row>
                 <row id="=origin" si="53">Canada</row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="54">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
@@ -17425,8 +17470,8 @@
               </item>
               <item class="TXmlItem" name="basketball">
                 <row id="=name" si="55">Basketball</row>
-                <row id="=fieldplayers" class="TIntegerRow">5</row>
-                <row id="=goalie" class="TIntegerRow">0</row>
+                <row id="=fieldplayers" si="560" created="20220121T152517Z" st="0">5</row>
+                <row id="=goalie" si="561" created="20220121T152517Z" st="0">0</row>
                 <row id="=origin" si="56">United States</row>
                 <item class="TXmlItem" name="description">
                   <row id="value" si="57">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
@@ -17463,7 +17508,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ListView\ListView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\ListView.csproj" original="en" groupname="ListView\ListView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ListView\ListView.csproj" original="en" lastmodified="20220121T152519Z" groupname="ListView\ListView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="columnHeader1.Text" si="58">One</row>
@@ -17635,14 +17680,14 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="64">One</row>
           <row id="String2" si="65">Two</row>
           <row id="String3" si="66">Three</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Menu\Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" groupname="Menu\Menu.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20220121T152523Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
@@ -17840,12 +17885,135 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Number\Number.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Number\Number.csproj" original="en" groupname="Number\Number.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="net462"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TNetProjectSource" name="MessageBox\MessageBox.csproj" created="20220121T152517Z" st="0" original="en" lastmodified="20220121T152524Z" groupname="MessageBox\MessageBox.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties toolsversion="nt150"/>
+      <node class="TResXNode" name="Form1.resx" st="0" resourcekind="nkForm" windowsforms="wf20">
+        <row id="showButton.Text" si="569" st="0">&amp;Show...</row>
+        <row id="$this.Text" si="570" st="0">Message Box Sample</row>
+        <data>
+          77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
+          ZXNYIFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9y
+          bWF0IGlzIHRvIGFsbG93IGEgc2ltcGxlIFhNTCBmb3JtYXQgDQogICAgdGhhdCBpcyBtb3N0bHkgaHVtYW4gcmVhZGFibGUuIFRo
+          ZSBnZW5lcmF0aW9uIGFuZCBwYXJzaW5nIG9mIHRoZSANCiAgICB2YXJpb3VzIGRhdGEgdHlwZXMgYXJlIGRvbmUgdGhyb3VnaCB0
+          aGUgVHlwZUNvbnZlcnRlciBjbGFzc2VzIA0KICAgIGFzc29jaWF0ZWQgd2l0aCB0aGUgZGF0YSB0eXBlcy4NCiAgICANCiAgICBF
+          eGFtcGxlOg0KICAgIA0KICAgIC4uLiBhZG8ubmV0L1hNTCBoZWFkZXJzICYgc2NoZW1hIC4uLg0KICAgIDxyZXNoZWFkZXIgbmFt
+          ZT0icmVzbWltZXR5cGUiPnRleHQvbWljcm9zb2Z0LXJlc3g8L3Jlc2hlYWRlcj4NCiAgICA8cmVzaGVhZGVyIG5hbWU9InZlcnNp
+          b24iPjIuMDwvcmVzaGVhZGVyPg0KICAgIDxyZXNoZWFkZXIgbmFtZT0icmVhZGVyIj5TeXN0ZW0uUmVzb3VyY2VzLlJlc1hSZXNv
+          dXJjZVJlYWRlciwgU3lzdGVtLldpbmRvd3MuRm9ybXMsIC4uLjwvcmVzaGVhZGVyPg0KICAgIDxyZXNoZWFkZXIgbmFtZT0id3Jp
+          dGVyIj5TeXN0ZW0uUmVzb3VyY2VzLlJlc1hSZXNvdXJjZVdyaXRlciwgU3lzdGVtLldpbmRvd3MuRm9ybXMsIC4uLjwvcmVzaGVh
+          ZGVyPg0KICAgIDxkYXRhIG5hbWU9Ik5hbWUxIj48dmFsdWU+dGhpcyBpcyBteSBsb25nIHN0cmluZzwvdmFsdWU+PGNvbW1lbnQ+
+          dGhpcyBpcyBhIGNvbW1lbnQ8L2NvbW1lbnQ+PC9kYXRhPg0KICAgIDxkYXRhIG5hbWU9IkNvbG9yMSIgdHlwZT0iU3lzdGVtLkRy
+          YXdpbmcuQ29sb3IsIFN5c3RlbS5EcmF3aW5nIj5CbHVlPC9kYXRhPg0KICAgIDxkYXRhIG5hbWU9IkJpdG1hcDEiIG1pbWV0eXBl
+          PSJhcHBsaWNhdGlvbi94LW1pY3Jvc29mdC5uZXQub2JqZWN0LmJpbmFyeS5iYXNlNjQiPg0KICAgICAgICA8dmFsdWU+W2Jhc2U2
+          NCBtaW1lIGVuY29kZWQgc2VyaWFsaXplZCAuTkVUIEZyYW1ld29yayBvYmplY3RdPC92YWx1ZT4NCiAgICA8L2RhdGE+DQogICAg
+          PGRhdGEgbmFtZT0iSWNvbjEiIHR5cGU9IlN5c3RlbS5EcmF3aW5nLkljb24sIFN5c3RlbS5EcmF3aW5nIiBtaW1ldHlwZT0iYXBw
+          bGljYXRpb24veC1taWNyb3NvZnQubmV0Lm9iamVjdC5ieXRlYXJyYXkuYmFzZTY0Ij4NCiAgICAgICAgPHZhbHVlPltiYXNlNjQg
+          bWltZSBlbmNvZGVkIHN0cmluZyByZXByZXNlbnRpbmcgYSBieXRlIGFycmF5IGZvcm0gb2YgdGhlIC5ORVQgRnJhbWV3b3JrIG9i
+          amVjdF08L3ZhbHVlPg0KICAgICAgICA8Y29tbWVudD5UaGlzIGlzIGEgY29tbWVudDwvY29tbWVudD4NCiAgICA8L2RhdGE+DQog
+          ICAgICAgICAgICAgICAgDQogICAgVGhlcmUgYXJlIGFueSBudW1iZXIgb2YgInJlc2hlYWRlciIgcm93cyB0aGF0IGNvbnRhaW4g
+          c2ltcGxlIA0KICAgIG5hbWUvdmFsdWUgcGFpcnMuDQogICAgDQogICAgRWFjaCBkYXRhIHJvdyBjb250YWlucyBhIG5hbWUsIGFu
+          ZCB2YWx1ZS4gVGhlIHJvdyBhbHNvIGNvbnRhaW5zIGEgDQogICAgdHlwZSBvciBtaW1ldHlwZS4gVHlwZSBjb3JyZXNwb25kcyB0
+          byBhIC5ORVQgY2xhc3MgdGhhdCBzdXBwb3J0IA0KICAgIHRleHQvdmFsdWUgY29udmVyc2lvbiB0aHJvdWdoIHRoZSBUeXBlQ29u
+          dmVydGVyIGFyY2hpdGVjdHVyZS4gDQogICAgQ2xhc3NlcyB0aGF0IGRvbid0IHN1cHBvcnQgdGhpcyBhcmUgc2VyaWFsaXplZCBh
+          bmQgc3RvcmVkIHdpdGggdGhlIA0KICAgIG1pbWV0eXBlIHNldC4NCiAgICANCiAgICBUaGUgbWltZXR5cGUgaXMgdXNlZCBmb3Ig
+          c2VyaWFsaXplZCBvYmplY3RzLCBhbmQgdGVsbHMgdGhlIA0KICAgIFJlc1hSZXNvdXJjZVJlYWRlciBob3cgdG8gZGVwZXJzaXN0
+          IHRoZSBvYmplY3QuIFRoaXMgaXMgY3VycmVudGx5IG5vdCANCiAgICBleHRlbnNpYmxlLiBGb3IgYSBnaXZlbiBtaW1ldHlwZSB0
+          aGUgdmFsdWUgbXVzdCBiZSBzZXQgYWNjb3JkaW5nbHk6DQogICAgDQogICAgTm90ZSAtIGFwcGxpY2F0aW9uL3gtbWljcm9zb2Z0
+          Lm5ldC5vYmplY3QuYmluYXJ5LmJhc2U2NCBpcyB0aGUgZm9ybWF0IA0KICAgIHRoYXQgdGhlIFJlc1hSZXNvdXJjZVdyaXRlciB3
+          aWxsIGdlbmVyYXRlLCBob3dldmVyIHRoZSByZWFkZXIgY2FuIA0KICAgIHJlYWQgYW55IG9mIHRoZSBmb3JtYXRzIGxpc3RlZCBi
+          ZWxvdy4NCiAgICANCiAgICBtaW1ldHlwZTogYXBwbGljYXRpb24veC1taWNyb3NvZnQubmV0Lm9iamVjdC5iaW5hcnkuYmFzZTY0
+          DQogICAgdmFsdWUgICA6IFRoZSBvYmplY3QgbXVzdCBiZSBzZXJpYWxpemVkIHdpdGggDQogICAgICAgICAgICA6IFN5c3RlbS5S
+          dW50aW1lLlNlcmlhbGl6YXRpb24uRm9ybWF0dGVycy5CaW5hcnkuQmluYXJ5Rm9ybWF0dGVyDQogICAgICAgICAgICA6IGFuZCB0
+          aGVuIGVuY29kZWQgd2l0aCBiYXNlNjQgZW5jb2RpbmcuDQogICAgDQogICAgbWltZXR5cGU6IGFwcGxpY2F0aW9uL3gtbWljcm9z
+          b2Z0Lm5ldC5vYmplY3Quc29hcC5iYXNlNjQNCiAgICB2YWx1ZSAgIDogVGhlIG9iamVjdCBtdXN0IGJlIHNlcmlhbGl6ZWQgd2l0
+          aCANCiAgICAgICAgICAgIDogU3lzdGVtLlJ1bnRpbWUuU2VyaWFsaXphdGlvbi5Gb3JtYXR0ZXJzLlNvYXAuU29hcEZvcm1hdHRl
+          cg0KICAgICAgICAgICAgOiBhbmQgdGhlbiBlbmNvZGVkIHdpdGggYmFzZTY0IGVuY29kaW5nLg0KDQogICAgbWltZXR5cGU6IGFw
+          cGxpY2F0aW9uL3gtbWljcm9zb2Z0Lm5ldC5vYmplY3QuYnl0ZWFycmF5LmJhc2U2NA0KICAgIHZhbHVlICAgOiBUaGUgb2JqZWN0
+          IG11c3QgYmUgc2VyaWFsaXplZCBpbnRvIGEgYnl0ZSBhcnJheSANCiAgICAgICAgICAgIDogdXNpbmcgYSBTeXN0ZW0uQ29tcG9u
+          ZW50TW9kZWwuVHlwZUNvbnZlcnRlcg0KICAgICAgICAgICAgOiBhbmQgdGhlbiBlbmNvZGVkIHdpdGggYmFzZTY0IGVuY29kaW5n
+          Lg0KICAgIC0tPg0KICA8eHNkOnNjaGVtYSBpZD0icm9vdCIgeG1sbnM9IiIgeG1sbnM6eHNkPSJodHRwOi8vd3d3LnczLm9yZy8y
+          MDAxL1hNTFNjaGVtYSIgeG1sbnM6bXNkYXRhPSJ1cm46c2NoZW1hcy1taWNyb3NvZnQtY29tOnhtbC1tc2RhdGEiPg0KICAgIDx4
+          c2Q6aW1wb3J0IG5hbWVzcGFjZT0iaHR0cDovL3d3dy53My5vcmcvWE1MLzE5OTgvbmFtZXNwYWNlIiAvPg0KICAgIDx4c2Q6ZWxl
+          bWVudCBuYW1lPSJyb290IiBtc2RhdGE6SXNEYXRhU2V0PSJ0cnVlIj4NCiAgICAgIDx4c2Q6Y29tcGxleFR5cGU+DQogICAgICAg
+          IDx4c2Q6Y2hvaWNlIG1heE9jY3Vycz0idW5ib3VuZGVkIj4NCiAgICAgICAgICA8eHNkOmVsZW1lbnQgbmFtZT0ibWV0YWRhdGEi
+          Pg0KICAgICAgICAgICAgPHhzZDpjb21wbGV4VHlwZT4NCiAgICAgICAgICAgICAgPHhzZDpzZXF1ZW5jZT4NCiAgICAgICAgICAg
+          ICAgICA8eHNkOmVsZW1lbnQgbmFtZT0idmFsdWUiIHR5cGU9InhzZDpzdHJpbmciIG1pbk9jY3Vycz0iMCIgLz4NCiAgICAgICAg
+          ICAgICAgPC94c2Q6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9Im5hbWUiIHVzZT0icmVxdWly
+          ZWQiIHR5cGU9InhzZDpzdHJpbmciIC8+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9InR5cGUiIHR5cGU9Inhz
+          ZDpzdHJpbmciIC8+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9Im1pbWV0eXBlIiB0eXBlPSJ4c2Q6c3RyaW5n
+          IiAvPg0KICAgICAgICAgICAgICA8eHNkOmF0dHJpYnV0ZSByZWY9InhtbDpzcGFjZSIgLz4NCiAgICAgICAgICAgIDwveHNkOmNv
+          bXBsZXhUeXBlPg0KICAgICAgICAgIDwveHNkOmVsZW1lbnQ+DQogICAgICAgICAgPHhzZDplbGVtZW50IG5hbWU9ImFzc2VtYmx5
+          Ij4NCiAgICAgICAgICAgIDx4c2Q6Y29tcGxleFR5cGU+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9ImFsaWFz
+          IiB0eXBlPSJ4c2Q6c3RyaW5nIiAvPg0KICAgICAgICAgICAgICA8eHNkOmF0dHJpYnV0ZSBuYW1lPSJuYW1lIiB0eXBlPSJ4c2Q6
+          c3RyaW5nIiAvPg0KICAgICAgICAgICAgPC94c2Q6Y29tcGxleFR5cGU+DQogICAgICAgICAgPC94c2Q6ZWxlbWVudD4NCiAgICAg
+          ICAgICA8eHNkOmVsZW1lbnQgbmFtZT0iZGF0YSI+DQogICAgICAgICAgICA8eHNkOmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAg
+          ICA8eHNkOnNlcXVlbmNlPg0KICAgICAgICAgICAgICAgIDx4c2Q6ZWxlbWVudCBuYW1lPSJ2YWx1ZSIgdHlwZT0ieHNkOnN0cmlu
+          ZyIgbWluT2NjdXJzPSIwIiBtc2RhdGE6T3JkaW5hbD0iMSIgLz4NCiAgICAgICAgICAgICAgICA8eHNkOmVsZW1lbnQgbmFtZT0i
+          Y29tbWVudCIgdHlwZT0ieHNkOnN0cmluZyIgbWluT2NjdXJzPSIwIiBtc2RhdGE6T3JkaW5hbD0iMiIgLz4NCiAgICAgICAgICAg
+          ICAgPC94c2Q6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9Im5hbWUiIHR5cGU9InhzZDpzdHJp
+          bmciIHVzZT0icmVxdWlyZWQiIG1zZGF0YTpPcmRpbmFsPSIxIiAvPg0KICAgICAgICAgICAgICA8eHNkOmF0dHJpYnV0ZSBuYW1l
+          PSJ0eXBlIiB0eXBlPSJ4c2Q6c3RyaW5nIiBtc2RhdGE6T3JkaW5hbD0iMyIgLz4NCiAgICAgICAgICAgICAgPHhzZDphdHRyaWJ1
+          dGUgbmFtZT0ibWltZXR5cGUiIHR5cGU9InhzZDpzdHJpbmciIG1zZGF0YTpPcmRpbmFsPSI0IiAvPg0KICAgICAgICAgICAgICA8
+          eHNkOmF0dHJpYnV0ZSByZWY9InhtbDpzcGFjZSIgLz4NCiAgICAgICAgICAgIDwveHNkOmNvbXBsZXhUeXBlPg0KICAgICAgICAg
+          IDwveHNkOmVsZW1lbnQ+DQogICAgICAgICAgPHhzZDplbGVtZW50IG5hbWU9InJlc2hlYWRlciI+DQogICAgICAgICAgICA8eHNk
+          OmNvbXBsZXhUeXBlPg0KICAgICAgICAgICAgICA8eHNkOnNlcXVlbmNlPg0KICAgICAgICAgICAgICAgIDx4c2Q6ZWxlbWVudCBu
+          YW1lPSJ2YWx1ZSIgdHlwZT0ieHNkOnN0cmluZyIgbWluT2NjdXJzPSIwIiBtc2RhdGE6T3JkaW5hbD0iMSIgLz4NCiAgICAgICAg
+          ICAgICAgPC94c2Q6c2VxdWVuY2U+DQogICAgICAgICAgICAgIDx4c2Q6YXR0cmlidXRlIG5hbWU9Im5hbWUiIHR5cGU9InhzZDpz
+          dHJpbmciIHVzZT0icmVxdWlyZWQiIC8+DQogICAgICAgICAgICA8L3hzZDpjb21wbGV4VHlwZT4NCiAgICAgICAgICA8L3hzZDpl
+          bGVtZW50Pg0KICAgICAgICA8L3hzZDpjaG9pY2U+DQogICAgICA8L3hzZDpjb21wbGV4VHlwZT4NCiAgICA8L3hzZDplbGVtZW50
+          Pg0KICA8L3hzZDpzY2hlbWE+DQogIDxyZXNoZWFkZXIgbmFtZT0icmVzbWltZXR5cGUiPg0KICAgIDx2YWx1ZT50ZXh0L21pY3Jv
+          c29mdC1yZXN4PC92YWx1ZT4NCiAgPC9yZXNoZWFkZXI+DQogIDxyZXNoZWFkZXIgbmFtZT0idmVyc2lvbiI+DQogICAgPHZhbHVl
+          PjIuMDwvdmFsdWU+DQogIDwvcmVzaGVhZGVyPg0KICA8cmVzaGVhZGVyIG5hbWU9InJlYWRlciI+DQogICAgPHZhbHVlPlN5c3Rl
+          bS5SZXNvdXJjZXMuUmVzWFJlc291cmNlUmVhZGVyLCBTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVyc2lvbj0yLjAuMC4wLCBDdWx0
+          dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODk8L3ZhbHVlPg0KICA8L3Jlc2hlYWRlcj4NCiAgPHJl
+          c2hlYWRlciBuYW1lPSJ3cml0ZXIiPg0KICAgIDx2YWx1ZT5TeXN0ZW0uUmVzb3VyY2VzLlJlc1hSZXNvdXJjZVdyaXRlciwgU3lz
+          dGVtLldpbmRvd3MuRm9ybXMsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1
+          NjE5MzRlMDg5PC92YWx1ZT4NCiAgPC9yZXNoZWFkZXI+DQogIDxhc3NlbWJseSBhbGlhcz0iU3lzdGVtLkRyYXdpbmciIG5hbWU9
+          IlN5c3RlbS5EcmF3aW5nLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49YjAzZjVmN2Yx
+          MWQ1MGEzYSIgLz4NCiAgPGRhdGEgbmFtZT0ic2hvd0J1dHRvbi5Mb2NhdGlvbiIgdHlwZT0iU3lzdGVtLkRyYXdpbmcuUG9pbnQs
+          IFN5c3RlbS5EcmF3aW5nIj4NCiAgICA8dmFsdWU+MTIsIDEyPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSJzaG93
+          QnV0dG9uLlNpemUiIHR5cGU9IlN5c3RlbS5EcmF3aW5nLlNpemUsIFN5c3RlbS5EcmF3aW5nIj4NCiAgICA8dmFsdWU+NzUsIDIz
+          PC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8YXNzZW1ibHkgYWxpYXM9Im1zY29ybGliIiBuYW1lPSJtc2NvcmxpYiwgVmVyc2lvbj0y
+          LjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODkiIC8+DQogIDxkYXRhIG5hbWU9
+          InNob3dCdXR0b24uVGFiSW5kZXgiIHR5cGU9IlN5c3RlbS5JbnQzMiwgbXNjb3JsaWIiPg0KICAgIDx2YWx1ZT4wPC92YWx1ZT4N
+          CiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSJzaG93QnV0dG9uLlRleHQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICAgIDx2YWx1
+          ZT4mYW1wO1Nob3cuLi48L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsmZ3Q7c2hvd0J1dHRvbi5OYW1lIiB4
+          bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+c2hvd0J1dHRvbjwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFt
+          ZT0iJmd0OyZndDtzaG93QnV0dG9uLlR5cGUiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICAgIDx2YWx1ZT5TeXN0ZW0uV2luZG93
+          cy5Gb3Jtcy5CdXR0b24sIFN5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVi
+          bGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZndDtzaG93
+          QnV0dG9uLlBhcmVudCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPiR0aGlzPC92YWx1ZT4NCiAgPC9kYXRhPg0K
+          ICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0O3Nob3dCdXR0b24uWk9yZGVyIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+
+          MDwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPG1ldGFkYXRhIG5hbWU9IiR0aGlzLkxvY2FsaXphYmxlIiB0eXBlPSJTeXN0ZW0uQm9v
+          bGVhbiwgbXNjb3JsaWIsIFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5
+          MzRlMDg5Ij4NCiAgICA8dmFsdWU+VHJ1ZTwvdmFsdWU+DQogIDwvbWV0YWRhdGE+DQogIDxkYXRhIG5hbWU9IiR0aGlzLkF1dG9T
+          Y2FsZURpbWVuc2lvbnMiIHR5cGU9IlN5c3RlbS5EcmF3aW5nLlNpemVGLCBTeXN0ZW0uRHJhd2luZyI+DQogICAgPHZhbHVlPjYs
+          IDEzPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSIkdGhpcy5DbGllbnRTaXplIiB0eXBlPSJTeXN0ZW0uRHJhd2lu
+          Zy5TaXplLCBTeXN0ZW0uRHJhd2luZyI+DQogICAgPHZhbHVlPjQ3NCwgMjMzPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBu
+          YW1lPSIkdGhpcy5UZXh0IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+TWVzc2FnZSBCb3ggU2FtcGxlPC92YWx1
+          ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0OyR0aGlzLk5hbWUiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICAg
+          IDx2YWx1ZT5Gb3JtMTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZndDskdGhpcy5UeXBlIiB4bWw6c3Bh
+          Y2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+U3lzdGVtLldpbmRvd3MuRm9ybXMuRm9ybSwgU3lzdGVtLldpbmRvd3MuRm9ybXMs
+          IFZlcnNpb249Mi4wLjAuMCwgQ3VsdHVyZT1uZXV0cmFsLCBQdWJsaWNLZXlUb2tlbj1iNzdhNWM1NjE5MzRlMDg5PC92YWx1ZT4N
+          CiAgPC9kYXRhPg0KPC9yb290Pg==
+        </data>
+      </node>
+      <node class="TDirectoryFolder" name="Properties" st="0">
+        <node class="TResXNode" name="Resources.resx" st="0" windowsforms="wf20">
+          <row id="MessageBoxCaption" si="571" st="0">
+            <value>Sample</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
+          </row>
+          <row id="MessageBoxText" si="572" st="0">This is a message box.</row>
+        </node>
+      </node>
+    </node>
+    <node class="TNetProjectSource" name="Number\Number.csproj" original="en" lastmodified="20220121T152523Z" groupname="Number\Number.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="net462" toolsversion="nt150"/>
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="abbreviated4.Text" si="483" excluded="2">dummy</row>
         <row id="abbreviated3.Text" si="484" excluded="2">dummy</row>
         <row id="abbreviated2.Text" si="485" excluded="2">dummy</row>
@@ -17858,9 +18026,9 @@
         <row id="abbreviated10.Text" si="492" excluded="2">dummy</row>
         <row id="abbreviated11.Text" si="493" excluded="2">dummy</row>
         <row id="abbreviated12.Text" si="494" excluded="2">dummy</row>
-        <row id="currencyRadio.Text" si="495">&amp;Currency such as &quot;$1M&quot;</row>
-        <row id="shortRadio.Text" si="496">&amp;Short such as &quot;1M&quot;</row>
-        <row id="longRadio.Text" si="497">&amp;Long such as &quot;1 million&quot;</row>
+        <row id="currencyRadio.Text" si="495">&amp;Currency such as "$1M"</row>
+        <row id="shortRadio.Text" si="496">&amp;Short such as "1M"</row>
+        <row id="longRadio.Text" si="497">&amp;Long such as "1 million"</row>
         <row id="formatGroup.Text" si="498"> Format  </row>
         <row id="original1.Text" si="499" excluded="2">dummy</row>
         <row id="original2.Text" si="500" excluded="2">dummy</row>
@@ -18554,13 +18722,17 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="CurrencySample" class="TPatternRow" si="518" scannedcomment="0: Abbreviated currency amount such as &quot;$1K&quot; or &quot;12M €&quot;">I have {0} in my account.</row>
           <row id="NumberSample" class="TPatternRow" si="519" scannedcomment="0: Abbreviated number such as &quot;1K&quot; or &quot;12 million&quot;">There are {0} users.</row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+        <assembly>bin\Release\NewTool.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Custom\CustomPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Custom\CustomPlural.csproj" original="en" groupname="Patterns\Custom\CustomPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Custom\CustomPlural.csproj" original="en" lastmodified="20220121T152521Z" groupname="Patterns\Custom\CustomPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="247">
@@ -19368,7 +19540,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="MessagePlural" class="TPatternRow" si="289">
             <value>{0} files</value>
             <pattern plural="pfOne">{0} file</pattern>
@@ -19431,9 +19603,12 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Gender\SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" groupname="Patterns\Gender\SimpleGender.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="net462"/>
+    <node class="TNetProjectSource" name="Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20220121T152524Z" groupname="Patterns\Gender\SimpleGender.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="net462" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="maleLabel.Text" si="529" excluded="2">dummy</row>
         <row id="femaleLabel.Text" si="530" excluded="2">dummy</row>
@@ -19652,7 +19827,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="MessageGender" class="TPatternRow" si="537" scannedcomment="0: Name of a person">
             <value gender="geMale">{0} will bring his bicycle</value>
             <pattern gender="geFemale">{0} will bring her bicycle</pattern>
@@ -19664,10 +19839,14 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+        <assembly>bin\Release\NewTool.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Mixed\MixedPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Mixed\MixedPlural.csproj" original="en" groupname="Patterns\Mixed\MixedPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Mixed\MixedPlural.csproj" original="en" lastmodified="20220121T152521Z" groupname="Patterns\Mixed\MixedPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="noPluralLabel.Text" si="322">
           <value>A dynamic string without plural support:</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
@@ -20071,7 +20250,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="File" class="TPatternRow" si="340">
             <value>{0} file</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{0} tiedosto</lang>
@@ -20112,8 +20291,11 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20220121T152521Z" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label0_1.Text" si="307" excluded="2">dummy</row>
@@ -20384,7 +20566,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Language" si="319">
             <value>en</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
@@ -20423,11 +20605,14 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Select\Select.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Select\Select.csproj" original="en" groupname="Patterns\Select\Select.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
-      <netproperties version="net462"/>
+    <node class="TNetProjectSource" name="Patterns\Select\Select.csproj" original="en" lastmodified="20220121T152522Z" groupname="Patterns\Select\Select.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+      <netproperties version="net462" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="SportSelect" class="TPatternRow" si="345" scannedcomment="0: Name of the player">
             <value select="soccer">{0} is the best soccer player</value>
             <pattern select="basketball">{0} is the best basketball player</pattern>
@@ -20441,10 +20626,14 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+        <assembly>bin\Release\NewTool.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20220121T152521Z" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="294" excluded="2">dummy</row>
         <row id="label2.Text" si="295" excluded="2">dummy</row>
         <row id="label3.Text" si="296" excluded="2">dummy</row>
@@ -20694,7 +20883,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Language" si="305" scannedcomment="ISO 639 language code">
             <value>en</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">fi</lang>
@@ -20709,10 +20898,13 @@
           </row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="PlatformFiles\PlatformFiles.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\PlatformFiles\PlatformFiles.csproj" original="en" groupname="PlatformFiles\PlatformFiles.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="PlatformFiles\PlatformFiles.csproj" original="en" lastmodified="20220121T152520Z" groupname="PlatformFiles\PlatformFiles.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="157">Hello world</row>
         <row id="label2.Text" si="158" excluded="2">dummy</row>
         <row id="$this.Text" si="159">Sample</row>
@@ -20839,13 +21031,13 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Custom" si="160">Custom value</row>
           <row id="Standard" si="161">Standard value</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResourceName\ResourceName.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceName\ResourceName.csproj" original="en" groupname="ResourceName\ResourceName.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResourceName\ResourceName.csproj" original="en" lastmodified="20220121T152523Z" groupname="ResourceName\ResourceName.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="453">
@@ -21142,7 +21334,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="456">
             <value>One</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21153,7 +21345,7 @@
           </row>
         </node>
       </node>
-      <node class="TResXNode" name="Resource1.resx">
+      <node class="TResXNode" name="Resource1.resx" windowsforms="wf20">
         <row id="String1" si="458">
           <value>One</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21163,7 +21355,7 @@
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Resources1.resx">
+      <node class="TResXNode" name="Resources1.resx" windowsforms="wf20">
         <row id="String1" si="466">
           <value>One</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21173,7 +21365,7 @@
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Resources2Custom.resx">
+      <node class="TResXNode" name="Resources2Custom.resx" windowsforms="wf20">
         <row id="String1" si="464">
           <value>One</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21183,7 +21375,7 @@
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Resources3Custom.resx">
+      <node class="TResXNode" name="Resources3Custom.resx" windowsforms="wf20">
         <row id="String1" si="462">
           <value>One</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21193,7 +21385,7 @@
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kaksi</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Resources4Custom.resx">
+      <node class="TResXNode" name="Resources4Custom.resx" windowsforms="wf20">
         <row id="String1" si="460">
           <value>One</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21302,7 +21494,7 @@
             dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODk8L3ZhbHVlPg0KICA8L2RhdGE+DQo8L3Jvb3Q+
           </data>
         </node>
-        <node class="TResXNode" name="Resource1.resx">
+        <node class="TResXNode" name="Resource1.resx" windowsforms="wf20">
           <row id="String1" si="469">
             <value>One</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yksi</lang>
@@ -21314,9 +21506,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Resources\Resources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Resources\Resources.csproj" original="en" groupname="Resources\Resources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Resources\Resources.csproj" original="en" lastmodified="20220121T152519Z" groupname="Resources\Resources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="$this.Text" si="67">
           <value>Resource Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Resurssiesimerkki</lang>
@@ -21416,10 +21608,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResourceStringLocation\ResourceStringLocation.csproj" original="en" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" original="en" lastmodified="20220121T152522Z" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="390" excluded="2">dummy</row>
@@ -21698,7 +21890,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="MyName" class="TPatternRow" si="397" scannedcomment="This is used on both forms">My name is {0}</row>
           <row id="String2" si="398" scannedcomment="This is used on both forms">Two</row>
           <row id="String3" si="399" scannedcomment="This is used on the main form">Three</row>
@@ -21706,9 +21898,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResxData\ResxData.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ResxData\ResxData.csproj" original="en" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResxData\ResxData.csproj" original="en" lastmodified="20220121T152524Z" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="196" excluded="2">dummy</row>
         <row id="playButton.Text" si="197">
           <value>&amp;Play</value>
@@ -21909,14 +22101,14 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="SimpleJson" si="226">
-            <value>{ &quot;data&quot;: &quot;This is a sample&quot; }</value>
-            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{ &quot;data&quot;: &quot;Tämä on esimerkki&quot; }</lang>
+            <value>{ "data": "This is a sample" }</value>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">{ "data": "Tämä on esimerkki" }</lang>
           </row>
           <row id="SimpleXml" si="227">
-            <value>&lt;data&gt;This is a sample&lt;/data&gt;</value>
-            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&lt;data&gt;Tämä on esimerkki&lt;/data&gt;</lang>
+            <value>&lt;data>This is a sample&lt;/data></value>
+            <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&lt;data>Tämä on esimerkki&lt;/data></lang>
           </row>
           <row id="Sound" class="TAudioRow">
               UklGRiRNAwBXQVZFZm10IBAAAAABAAIARKwAABCxAgAEABAAZGF0YQBNAwAAAP////8AAAAA//8AAAAAAAAAAP//AAAAAAAA//8A
@@ -24877,8 +25069,8 @@
                   <value>Soccer</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jalkapallo</lang>
                 </row>
-                <row id="=fieldplayers" class="TIntegerRow">10</row>
-                <row id="=goalie" class="TIntegerRow">1</row>
+                <row id="=fieldplayers" si="563" created="20220121T152517Z" st="0">10</row>
+                <row id="=goalie" si="564" created="20220121T152517Z" st="0">1</row>
                 <row id="=origin" si="218">
                   <value>England</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Englanti</lang>
@@ -24895,8 +25087,8 @@
                   <value>Ice hockey</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Jääkiekko</lang>
                 </row>
-                <row id="=fieldplayers" class="TIntegerRow">5</row>
-                <row id="=goalie" class="TIntegerRow">1</row>
+                <row id="=fieldplayers" si="565" created="20220121T152517Z" st="0">5</row>
+                <row id="=goalie" si="566" created="20220121T152517Z" st="0">1</row>
                 <row id="=origin" si="221">
                   <value>Canada</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Kanada</lang>
@@ -24913,8 +25105,8 @@
                   <value>Basketball</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koripallo</lang>
                 </row>
-                <row id="=fieldplayers" class="TIntegerRow">5</row>
-                <row id="=goalie" class="TIntegerRow">0</row>
+                <row id="=fieldplayers" si="567" created="20220121T152517Z" st="0">5</row>
+                <row id="=goalie" si="568" created="20220121T152517Z" st="0">0</row>
                 <row id="=origin" si="224">
                   <value>United States</value>
                   <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Yhdysvallat</lang>
@@ -25008,7 +25200,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Delay\Delay.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Delay\Delay.csproj" original="en" groupname="Signed\Delay\Delay.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Delay\Delay.csproj" original="en" lastmodified="20220121T152520Z" groupname="Signed\Delay\Delay.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx" delaysign="1"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -25138,12 +25330,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="126">This is a sample</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Pfx\Pfx.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Pfx\Pfx.csproj" original="en" groupname="Signed\Pfx\Pfx.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Pfx\Pfx.csproj" original="en" lastmodified="20220121T152520Z" groupname="Signed\Pfx\Pfx.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -25273,12 +25465,12 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="130">This is a sample</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\SatelliteContract\SatelliteContract.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\SatelliteContract\SatelliteContract.csproj" original="en" groupname="Signed\SatelliteContract\SatelliteContract.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\SatelliteContract\SatelliteContract.csproj" original="en" lastmodified="20220121T152520Z" groupname="Signed\SatelliteContract\SatelliteContract.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -25414,7 +25606,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="142">
             <value>This is a sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
@@ -25422,7 +25614,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Snk\Snk.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Snk\Snk.csproj" original="en" groupname="Signed\Snk\Snk.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Snk\Snk.csproj" original="en" lastmodified="20220121T152520Z" groupname="Signed\Snk\Snk.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -25558,7 +25750,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="134">
             <value>This is a sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on esimerkki</lang>
@@ -25566,7 +25758,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Unsigned\Unsigned.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Unsigned\Unsigned.csproj" original="en" groupname="Signed\Unsigned\Unsigned.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Unsigned\Unsigned.csproj" original="en" lastmodified="20220121T152520Z" groupname="Signed\Unsigned\Unsigned.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="135">
@@ -25701,7 +25893,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="138">
             <value>This is a sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Tämä on koe</lang>
@@ -25709,10 +25901,10 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Sound\Sound.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Sound\Sound.csproj" original="en" groupname="Sound\Sound.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
-      <netproperties version="net462"/>
+    <node class="TNetProjectSource" name="Sound\Sound.csproj" original="en" lastmodified="20220121T152524Z" groupname="Sound\Sound.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+      <netproperties version="net462" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="chord" class="TAudioRow">
               UklGRiS9AQBXQVZFZm10IBAAAAABAAIARKwAABCxAgAEABAAZGF0YQC9AQAAAAAAAAAAAAAAAAAAAP//AAD/////AAD/////////
               //////////////////////////////////////////////////////////////////////8AAP///////wAAAAAAAAAAAAAAAAAA
@@ -30125,9 +30317,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Sport\Sport.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Sport\Sport.csproj" original="en" groupname="Sport\Sport.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Sport\Sport.csproj" original="en" lastmodified="20220121T152519Z" groupname="Sport\Sport.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="nameColumn.Text" si="68">Name</row>
         <row id="playersColumn.Text" si="69">Field players</row>
         <row id="goalieColumn.Text" si="70">Goalie</row>
@@ -30385,14 +30577,18 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Basketball" si="87">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
           <row id="Hockey" si="88">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
           <row id="Soccer" si="89">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+        <assembly>bin\Release\NewTool.Translator.Forms.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" original="en" lastmodified="20220121T152523Z" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="471" excluded="2">dummy</row>
@@ -30576,7 +30772,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="CalculationNone" class="TPatternRow" si="477">
             <value>Sample: {0} + {1} = {2}</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki: {0} + {1} = {2}</lang>
@@ -30604,9 +30800,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="SubDir\SubDir.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\SubDir\SubDir.csproj" original="en" groupname="SubDir\SubDir.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="SubDir\SubDir.csproj" original="en" lastmodified="20220121T152523Z" groupname="SubDir\SubDir.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="448">
           <value>This is a sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tämä on esimerkki</lang>
@@ -30724,7 +30920,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TDirectoryFolder" name="Sub">
         <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -30850,9 +31046,9 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Text\Text.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Text\Text.csproj" original="en" groupname="Text\Text.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrText,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Text\Text.csproj" original="en" lastmodified="20220121T152519Z" groupname="Text\Text.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrText,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="$this.Text" si="90">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -30948,7 +31144,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String" si="94">One</row>
           <node class="TTextDataNode" name="PlainText">
             <row id="value" si="91">Soccer is a sport played between two teams of eleven players with a spherical ball. Team contains 10 field players and a goalie. Soccer originates from England.</row>
@@ -31068,7 +31264,7 @@ Basketball is a team sport in which two teams of five players try to score point
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="TreeView\TreeView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\TreeView\TreeView.csproj" original="en" groupname="TreeView\TreeView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="TreeView\TreeView.csproj" original="en" lastmodified="20220121T152519Z" groupname="TreeView\TreeView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="treeView1.Nodes.Text" si="98">One</row>
@@ -31231,22 +31427,22 @@ Basketball is a team sport in which two teams of five players try to score point
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="106">One</row>
           <row id="String2" si="107">Two</row>
           <row id="String3" si="108">Three</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Tutorial\BadSample\BadSample.csproj" original="en" groupname="Tutorial\BadSample\BadSample.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" original="en" lastmodified="20220121T152522Z" groupname="Tutorial\BadSample\BadSample.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Tutorial\GoodSample\GoodSample.csproj" original="en" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20220121T152523Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
-      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Text" si="432">&amp;Value:</row>
         <row id="checkBox1.Text" si="433">&amp;Compress data</row>
         <row id="label2.Text" si="434">donotlocalize</row>
@@ -31462,7 +31658,7 @@ Basketball is a team sport in which two teams of five players try to score point
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="AllFiles" si="424" scannedcomment="All files in file dialog filter">All files</row>
           <row id="AllSupportedFiles" si="425" scannedcomment="All supported files in file dialog filter">All supported files</row>
           <row id="IniFiles" si="426" scannedcomment="INI files in file dialog filter">Ini files</row>
@@ -31476,8 +31672,11 @@ Basketball is a team sport in which two teams of five players try to score point
           <row id="XmlFiles" si="431" scannedcomment="XML files in file dialog filter">XML files</row>
         </node>
       </node>
+      <assemblies>
+        <assembly>bin\Release\NewTool.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Version\Version.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Version\Version.csproj" original="en" groupname="Version\Version.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Version\Version.csproj" original="en" lastmodified="20220121T152523Z" groupname="Version\Version.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="$this.Text" si="482">
@@ -31579,10 +31778,10 @@ Basketball is a team sport in which two teams of five players try to score point
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="VisualStudioCompile\VisualStudioCompile.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VisualStudioCompile\VisualStudioCompile.csproj" original="en" groupname="VisualStudioCompile\VisualStudioCompile.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="VisualStudioCompile\VisualStudioCompile.csproj" original="en" lastmodified="20220121T152519Z" groupname="VisualStudioCompile\VisualStudioCompile.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Text" si="109">
@@ -31717,7 +31916,7 @@ Basketball is a team sport in which two teams of five players try to score point
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="112">
             <value>One</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Yksi</lang>
@@ -31740,17 +31939,20 @@ Basketball is a team sport in which two teams of five players try to score point
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

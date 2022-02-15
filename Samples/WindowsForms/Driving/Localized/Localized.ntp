@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20211020T003103Z" version="1.0.885" stringid="15">
+<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20211229T202013Z" version="1.0.895" stringid="15">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en-US" resources="[nrResx,nrForm,nrAssemblyInfo]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
@@ -2727,7 +2727,7 @@
           <lang id="fi" rw="0" time="20211020T003057Z">Tekijänoikeudet ©  2010-2016</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
         <row id="About" si="10">
           <value>Driving time calculator</value>
           <lang id="fi" rw="0" tm="1" time="20180505T165557Z">Ajoaikalaskin</lang>
@@ -2953,7 +2953,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

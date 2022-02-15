@@ -1,10 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="27F1A21E-7368-4AF5-8934-4919C59BDC73" created="20111118T065307Z" lastmodified="20211031T133843Z" version="1.0.885" stringid="9" cloudid="1" comments="A INI file that contains the sport list">
-  <lang id="fi"/>
-  <lang id="de"/>
-  <lang id="fr"/>
-  <lang id="ja"/>
-  <cloudserviceproject username="jaska" password="Mjg0MDg0OEMyQUYzRTg=" account="1"/>
+<project id="27F1A21E-7368-4AF5-8934-4919C59BDC73" created="20111118T065307Z" lastmodified="20211113T214105Z" version="1.0.887" stringid="9" cloudid="1" comments="A INI file that contains the sport list">
+  <lang id="fi">
+    <invitation id="1" account="1" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaakko" languageId="fi" userId="0" emailSent="20211113T194707573Z" accepted="18991230T000000000Z" securityToken="2113434667">
+    </invitation>
+  </lang>
+  <lang id="de">
+    <invitation id="2" account="1" projectId="1" projectName="Sport" email="jaakko.salmenius@gmail.com" name="Jaska" languageId="de" userId="1" emailSent="20211113T195733443Z" accepted="18991230T000000000Z" securityToken="2127149085">
+    </invitation>
+  </lang>
+  <lang id="fr">
+    <invitation id="3" account="1" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaska" languageId="fr" userId="0" emailSent="20211113T200701587Z" accepted="18991230T000000000Z" securityToken="900712063">
+    </invitation>
+  </lang>
+  <lang id="ja">
+    <invitation id="8" account="1" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaska" languageId="ja" userId="0" emailSent="20211113T214051241Z" accepted="18991230T000000000Z" securityToken="476482219">
+    </invitation>
+  </lang>
   <node class="TIniSource" name="Sport.ini" fullpath="D:\NT\Deploy\Samples\Ini\Sport\Sport.ini" original="en" encoding="windows-1252">
     <ini detectstringformat="1">
       <keys>
@@ -22,7 +33,7 @@
     <item name="soccer">
       <row id="name" si="1" comment="This is a comment">
         <value>Soccer</value>
-        <lang id="fi" comment="Kommentti" ex="1" time="20211010T160527Z">Jalkapallo</lang>
+        <lang id="fi" st="4" comment="Kommentti" ex="1" time="20211109T153721Z">Jalkapallo</lang>
         <lang id="de" or="5" rw="0" ex="1" time="20180325T233142Z">Fußball</lang>
         <lang id="fr" or="5" rw="0" ex="1" time="20180325T234043Z">Soccer</lang>
         <lang id="ja" rw="0" ex="1" time="20191005T172922Z" fuzzy="100">サッカー</lang>

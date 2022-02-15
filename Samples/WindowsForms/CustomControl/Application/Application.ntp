@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20200316T185726Z" version="1.0.714" stringid="22">
+<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20211229T202122Z" version="1.0.895" stringid="26">
   <lang id="fi"/>
   <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <formats>
         <item name="sampleLabel1.CustomExpression" format="sfStructured"/>
         <item name="sampleLabel1.CustomHtml" format="sfHtml"/>
         <item name="sampleLabel1.CustomJson" format="sfJson"/>
         <item name="sampleLabel1.CustomXml" format="sfXml"/>
       </formats>
-      <row id="sampleLabel1.CustomC1" si="1">4,1,0,0,0,95,Columns:1{Caption:&quot;One&quot;;}	2{Caption:&quot;Two&quot;;}	3{Caption:&quot;Three&quot;;}	</row>
+      <row id="sampleLabel1.CustomC1" si="1">4,1,0,0,0,95,Columns:1{Caption:"One";}	2{Caption:"Two";}	3{Caption:"Three";}	</row>
       <row id="sampleLabel1.CustomChar" si="2">
         <value>a</value>
         <lang id="fi" rw="0" time="20180506T040011Z">b</lang>
@@ -38,6 +38,7 @@
         <value>Hello World</value>
         <lang id="fi" rw="0" time="20180506T040002Z">Moi maailma</lang>
       </row>
+      <row id="label1.Text" si="26" created="20211229T202116Z" st="0">Hello</row>
       <row id="$this.Text" si="5">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20180506T040005Z">Esimerkki</lang>
@@ -272,24 +273,35 @@
         ZXJzaW9uPTEuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49bnVsbDwvdmFsdWU+DQogIDwvZGF0YT4NCiAg
         PGRhdGEgbmFtZT0iJmd0OyZndDtzYW1wbGVMYWJlbDEuUGFyZW50IiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+
         JHRoaXM8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsmZ3Q7c2FtcGxlTGFiZWwxLlpPcmRlciIgeG1sOnNw
-        YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjA8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxtZXRhZGF0YSBuYW1lPSIkdGhpcy5M
-        b2NhbGl6YWJsZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJh
-        bCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSI+DQogICAgPHZhbHVlPlRydWU8L3ZhbHVlPg0KICA8L21ldGFkYXRh
-        Pg0KICA8ZGF0YSBuYW1lPSIkdGhpcy5BdXRvU2NhbGVEaW1lbnNpb25zIiB0eXBlPSJTeXN0ZW0uRHJhd2luZy5TaXplRiwgU3lz
-        dGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT42LCAxMzwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuQ2xp
-        ZW50U2l6ZSIgdHlwZT0iU3lzdGVtLkRyYXdpbmcuU2l6ZSwgU3lzdGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT4zNzcsIDE0MDwv
-        dmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuSW1lTW9kZSIgdHlwZT0iU3lzdGVtLldpbmRvd3MuRm9ybXMu
-        SW1lTW9kZSwgU3lzdGVtLldpbmRvd3MuRm9ybXMiPg0KICAgIDx2YWx1ZT5Ob0NvbnRyb2w8L3ZhbHVlPg0KICA8L2RhdGE+DQog
-        IDxkYXRhIG5hbWU9IiR0aGlzLlRleHQiIHhtbDpzcGFjZT0icHJlc2VydmUiPg0KICAgIDx2YWx1ZT5TYW1wbGU8L3ZhbHVlPg0K
-        ICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsmZ3Q7JHRoaXMuTmFtZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZh
-        bHVlPkZvcm0xPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0OyR0aGlzLlR5cGUiIHhtbDpzcGFjZT0i
-        cHJlc2VydmUiPg0KICAgIDx2YWx1ZT5TeXN0ZW0uV2luZG93cy5Gb3Jtcy5Gb3JtLCBTeXN0ZW0uV2luZG93cy5Gb3JtcywgVmVy
-        c2lvbj0yLjAuMC4wLCBDdWx0dXJlPW5ldXRyYWwsIFB1YmxpY0tleVRva2VuPWI3N2E1YzU2MTkzNGUwODk8L3ZhbHVlPg0KICA8
-        L2RhdGE+DQo8L3Jvb3Q+
+        YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjE8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9ImxhYmVsMS5BdXRv
+        U2l6ZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliIj4NCiAgICA8dmFsdWU+VHJ1ZTwvdmFsdWU+DQogIDwvZGF0YT4N
+        CiAgPGRhdGEgbmFtZT0ibGFiZWwxLkxvY2F0aW9uIiB0eXBlPSJTeXN0ZW0uRHJhd2luZy5Qb2ludCwgU3lzdGVtLkRyYXdpbmci
+        Pg0KICAgIDx2YWx1ZT44LCAyNDwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0ibGFiZWwxLlNpemUiIHR5cGU9IlN5
+        c3RlbS5EcmF3aW5nLlNpemUsIFN5c3RlbS5EcmF3aW5nIj4NCiAgICA8dmFsdWU+MzEsIDEzPC92YWx1ZT4NCiAgPC9kYXRhPg0K
+        ICA8ZGF0YSBuYW1lPSJsYWJlbDEuVGFiSW5kZXgiIHR5cGU9IlN5c3RlbS5JbnQzMiwgbXNjb3JsaWIiPg0KICAgIDx2YWx1ZT4x
+        PC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSJsYWJlbDEuVGV4dCIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAg
+        PHZhbHVlPkhlbGxvPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0O2xhYmVsMS5OYW1lIiB4bWw6c3Bh
+        Y2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+bGFiZWwxPC92YWx1ZT4NCiAgPC9kYXRhPg0KICA8ZGF0YSBuYW1lPSImZ3Q7Jmd0
+        O2xhYmVsMS5UeXBlIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+U3lzdGVtLldpbmRvd3MuRm9ybXMuTGFiZWws
+        IFN5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3
+        YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZndDtsYWJlbDEuUGFyZW50IiB4bWw6
+        c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+JHRoaXM8L3ZhbHVlPg0KICA8L2RhdGE+DQogIDxkYXRhIG5hbWU9IiZndDsm
+        Z3Q7bGFiZWwxLlpPcmRlciIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPjA8L3ZhbHVlPg0KICA8L2RhdGE+DQog
+        IDxtZXRhZGF0YSBuYW1lPSIkdGhpcy5Mb2NhbGl6YWJsZSIgdHlwZT0iU3lzdGVtLkJvb2xlYW4sIG1zY29ybGliLCBWZXJzaW9u
+        PTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwgUHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OSI+DQogICAgPHZhbHVlPlRy
+        dWU8L3ZhbHVlPg0KICA8L21ldGFkYXRhPg0KICA8ZGF0YSBuYW1lPSIkdGhpcy5BdXRvU2NhbGVEaW1lbnNpb25zIiB0eXBlPSJT
+        eXN0ZW0uRHJhd2luZy5TaXplRiwgU3lzdGVtLkRyYXdpbmciPg0KICAgIDx2YWx1ZT42LCAxMzwvdmFsdWU+DQogIDwvZGF0YT4N
+        CiAgPGRhdGEgbmFtZT0iJHRoaXMuQ2xpZW50U2l6ZSIgdHlwZT0iU3lzdGVtLkRyYXdpbmcuU2l6ZSwgU3lzdGVtLkRyYXdpbmci
+        Pg0KICAgIDx2YWx1ZT4zNzcsIDE0MDwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJHRoaXMuVGV4dCIgeG1sOnNw
+        YWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPlNhbXBsZTwvdmFsdWU+DQogIDwvZGF0YT4NCiAgPGRhdGEgbmFtZT0iJmd0OyZn
+        dDskdGhpcy5OYW1lIiB4bWw6c3BhY2U9InByZXNlcnZlIj4NCiAgICA8dmFsdWU+Rm9ybTE8L3ZhbHVlPg0KICA8L2RhdGE+DQog
+        IDxkYXRhIG5hbWU9IiZndDsmZ3Q7JHRoaXMuVHlwZSIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSI+DQogICAgPHZhbHVlPlN5c3RlbS5X
+        aW5kb3dzLkZvcm1zLkZvcm0sIFN5c3RlbS5XaW5kb3dzLkZvcm1zLCBWZXJzaW9uPTIuMC4wLjAsIEN1bHR1cmU9bmV1dHJhbCwg
+        UHVibGljS2V5VG9rZW49Yjc3YTVjNTYxOTM0ZTA4OTwvdmFsdWU+DQogIDwvZGF0YT4NCjwvcm9vdD4=
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
     </node>
     <rules kind="crWinForms">
       <rule component="SampleControl.SampleLabel" property="CustomImage" operation="roLocalize" format="wfImageArray"/>
@@ -299,16 +311,22 @@
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

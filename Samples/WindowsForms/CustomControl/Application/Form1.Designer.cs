@@ -30,6 +30,7 @@
     {
       System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
       this.sampleLabel1 = new SampleControl.SampleLabel();
+      this.label1 = new System.Windows.Forms.Label();
       this.SuspendLayout();
       // 
       // sampleLabel1
@@ -37,10 +38,16 @@
       resources.ApplyResources(this.sampleLabel1, "sampleLabel1");
       this.sampleLabel1.Name = "sampleLabel1";
       // 
+      // label1
+      // 
+      resources.ApplyResources(this.label1, "label1");
+      this.label1.Name = "label1";
+      // 
       // Form1
       // 
       resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+      this.Controls.Add(this.label1);
       this.Controls.Add(this.sampleLabel1);
       this.Name = "Form1";
       this.ResumeLayout(false);
@@ -51,7 +58,7 @@
     #endregion
 
     private SampleControl.SampleLabel sampleLabel1;
-
+    private System.Windows.Forms.Label label1;
   }
 }
 

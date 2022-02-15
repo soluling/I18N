@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20200209T151114Z" version="1.0.691" stringid="393">
+<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20211128T234841Z" version="1.0.889" stringid="393">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="de"/>
@@ -212,6 +212,19 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SCount2" changed="20200209T151023Z" class="TPatternRow" si="18" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person">
+          <value>{0} cars will pick up {1} and {2}</value>
+          <lang id="fi" time="20171212T235856Z">{0} autoa hakee {1}:in ja {2}:in</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190210Z">Autos nehmen {1} und {2} auf.</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192418Z">Auto's zullen {0} ophalen {1} en {2}.</lang>
+        </row>
+        <row id="SDouble" changed="20200209T151023Z" class="TPatternRow" si="19" scannedcomment="0: Name of a person. This parameter occurs twice.">
+          <value>{0} swims and {0} skis</value>
+          <lang id="fi" time="20200208T023336Z">{0} ui ja {0} hiihtää</lang>
+          <lang id="fi-FI" st="3" rw="0" time="20171213T003658Z">{0} ui ja {0} hiihtää</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190211Z">Schwimmen und Skier</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192420Z">{0} Zwemmen en {0} ski's</lang>
+        </row>
         <row id="SHello" changed="20200209T151023Z" class="TPatternRow" si="15" scannedcomment="0: Name of a person">
           <value>Hello {0}!</value>
           <lang id="fi" time="20200209T151047Z">Moi {0}!</lang>
@@ -231,19 +244,6 @@
           <lang id="de" st="1" or="6" rw="0" time="20180321T190208Z">{0} hat {1} Autos</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180321T192417Z">{0} heeft {1} auto's</lang>
         </row>
-        <row id="SCount2" changed="20200209T151023Z" class="TPatternRow" si="18" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person">
-          <value>{0} cars will pick up {1} and {2}</value>
-          <lang id="fi" time="20171212T235856Z">{0} autoa hakee {1}:in ja {2}:in</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190210Z">Autos nehmen {1} und {2} auf.</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192418Z">Auto's zullen {0} ophalen {1} en {2}.</lang>
-        </row>
-        <row id="SDouble" changed="20200209T151023Z" class="TPatternRow" si="19" scannedcomment="0: Name of a person. This parameter occurs twice.">
-          <value>{0} swims and {0} skis</value>
-          <lang id="fi" time="20200208T023336Z">{0} ui ja {0} hiihtää</lang>
-          <lang id="fi-FI" st="3" rw="0" time="20171213T003658Z">{0} ui ja {0} hiihtää</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190211Z">Schwimmen und Skier</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192420Z">{0} Zwemmen en {0} ski's</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
@@ -259,17 +259,21 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

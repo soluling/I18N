@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20200827T150644Z" version="1.0.772" lockedrowcomplete="0" stringid="321">
+<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20220121T143612Z" version="1.0.899" lockedrowcomplete="0" stringid="322">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="Wpf.sln" fullpath="D:\NT\Deploy\Samples\WPF\Wpf.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms,nlWpf]" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]">
-    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" original="en" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
-      <netproperties version="standard20"/>
-      <node class="TResXNode" name="Resources.resx">
+    <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" original="en" lastmodified="20220121T143612Z" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
+      <netproperties version="standard20" toolsversion="nt150"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
         <row id="Female" si="283">Female</row>
         <row id="Few" si="284">Few</row>
         <row id="Male" si="285">Male</row>
@@ -15,9 +15,21 @@
         <row id="Two" si="290">Two</row>
         <row id="Zero" si="291">Zero</row>
       </node>
+      <assemblies>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+        <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" original="en" groupname="..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" original="en" lastmodified="20220121T143612Z" groupname="..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net45" toolsversion="nt120"/>
       <node class="TXamlNode" name="SelectLanguage.xaml" type="Window">
         <row id="Title" si="292">
           <value>Select Language</value>
@@ -56,8 +68,12 @@
           Y2VsPC9CdXR0b24+DQogICAgPC9TdGFja1BhbmVsPg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4NCg==
         </data>
       </node>
+      <assemblies>
+        <assembly>bin\Release\Soluling.dll</assembly>
+        <assembly>bin\Release\Soluling.Translator.WPF.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Automation\Automation.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Automation\Automation.csproj" original="en" groupname="Automation\Automation.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Automation\Automation.csproj" original="en" lastmodified="20220121T143612Z" groupname="Automation\Automation.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt140"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -128,10 +144,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" fullpath="D:\NT\Deploy\Samples\WPF\BiDi\BiDiArabic\BiDiArabic.csproj" original="en" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" original="en" lastmodified="20220121T143611Z" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -187,10 +203,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BiDiEnglish\BiDiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WPF\BiDi\BiDiEnglish\BiDiEnglish.csproj" original="en" groupname="BiDi\BiDiEnglish\BiDiEnglish.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="BiDi\BiDiEnglish\BiDiEnglish.csproj" original="en" lastmodified="20220121T143611Z" groupname="BiDi\BiDiEnglish\BiDiEnglish.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -246,11 +262,11 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Core\Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" groupname="Core\Core.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="core30"/>
+    <node class="TNetProjectSource" name="Core\Core.csproj" original="en" lastmodified="20220121T143612Z" groupname="Core\Core.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core31" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkNvcmUuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
@@ -260,7 +276,7 @@
           ZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
         <row id="Title" si="319">
           <value>.NET Core Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">.NET Core -esimerkki</lang>
@@ -277,26 +293,26 @@
           </item>
         </item>
         <data>
-          77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iQ29yZS5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
-          LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29t
-          L3dpbmZ4LzIwMDYveGFtbCINCiAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5k
-          LzIwMDgiDQogIHhtbG5zOm1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxpdHkv
-          MjAwNiINCiAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6Q29yZSINCiAgbWM6SWdub3JhYmxlPSJkIg0KICBUaXRsZT0iLk5F
-          VCBDb3JlIFNhbXBsZSIgDQogIEhlaWdodD0iMjAwIiANCiAgV2lkdGg9IjMwMCINCiAgTG9hZGVkPSJXaW5kb3dfTG9hZGVkIj4N
-          Cg0KICA8U3RhY2tQYW5lbCB4OlVpZD0icGFuZWwiPg0KICAgIDxMYWJlbCB4OlVpZD0ibGFiZWwxIj5UaGlzIGlzIGEgLk5FVCBD
-          b3JlIGFwcGxpY2F0aW9uLjwvTGFiZWw+DQogICAgPExhYmVsIHg6TmFtZT0ibGFiZWwyIj5kdW1teTwvTGFiZWw+DQogIDwvU3Rh
-          Y2tQYW5lbD4NCjwvV2luZG93Pg0K
+          77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IkNvcmUuTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0
+          dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDov
+          L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29m
+          dC5jb20vZXhwcmVzc2lvbi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3Jn
+          L21hcmt1cC1jb21wYXRpYmlsaXR5LzIwMDYiDQogIHhtbG5zOmxvY2FsPSJjbHItbmFtZXNwYWNlOkNvcmUiDQogIG1jOklnbm9y
+          YWJsZT0iZCINCiAgVGl0bGU9Ii5ORVQgQ29yZSBTYW1wbGUiIA0KICBIZWlnaHQ9IjIwMCIgDQogIFdpZHRoPSIzMDAiDQogIExv
+          YWRlZD0iV2luZG93X0xvYWRlZCI+DQoNCiAgPFN0YWNrUGFuZWwgeDpVaWQ9InBhbmVsIj4NCiAgICA8TGFiZWwgeDpVaWQ9Imxh
+          YmVsMSI+VGhpcyBpcyBhIC5ORVQgQ29yZSBhcHBsaWNhdGlvbi48L0xhYmVsPg0KICAgIDxMYWJlbCB4Ok5hbWU9ImxhYmVsMiI+
+          ZHVtbXk8L0xhYmVsPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
         </data>
       </node>
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
         <row id="String1" si="318">
           <value>This is a resource string</value>
           <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on resurssimerkkijono</lang>
         </row>
       </node>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\WpfApplication\WpfApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.csproj" original="en" groupname="CustomControl\WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net30"/>
+    <node class="TNetProjectSource" name="CustomControl\WpfApplication\WpfApplication.csproj" original="en" lastmodified="20220121T143612Z" groupname="CustomControl\WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net30" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3Nj
@@ -342,19 +358,19 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\WpfControl\WpfControl.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfControl\WpfControl.csproj" original="en" groupname="CustomControl\WpfControl\WpfControl.csproj" availableresources="[nrResx,nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
-      <netproperties version="net30"/>
+    <node class="TNetProjectSource" name="CustomControl\WpfControl\WpfControl.csproj" original="en" lastmodified="20220121T143612Z" groupname="CustomControl\WpfControl\WpfControl.csproj" availableresources="[nrResx,nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
+      <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\WpfUserControl\WpfUserControl.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfUserControl\WpfUserControl.csproj" original="en" groupname="CustomControl\WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net30"/>
+    <node class="TNetProjectSource" name="CustomControl\WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20220121T143612Z" groupname="CustomControl\WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl" id="userControl">
         <item name="StackPanel[0]" type="StackPanel">
@@ -386,7 +402,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Database\Database.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Database\Database.csproj" original="en" groupname="Database\Database.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Database\Database.csproj" original="en" lastmodified="20220121T143610Z" groupname="Database\Database.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net40" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -494,7 +510,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Language" si="25">
             <value>en</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">fi</lang>
@@ -502,7 +518,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Dialogs\Dialogs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Dialogs\Dialogs.csproj" original="en" groupname="Dialogs\Dialogs.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Dialogs\Dialogs.csproj" original="en" lastmodified="20220121T143612Z" groupname="Dialogs\Dialogs.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net45" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -512,7 +528,7 @@
           b3VyY2VzPg0KICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
         <row id="Title" si="263">
           <value>Dialog Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Dialogiesimerkki</lang>
@@ -548,24 +564,25 @@
           </item>
         </item>
         <data>
-          77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iRGlhbG9ncy5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9z
-          b2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
-          Y29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IkRpYWxvZyBTYW1wbGUiIA0KICBNaW5XaWR0aD0iMzAwIiANCiAgU2l6ZVRv
-          Q29udGVudD0iV2lkdGhBbmRIZWlnaHQiPg0KICANCiAgPFN0YWNrUGFuZWw+DQogICAgPFN0YWNrUGFuZWwuUmVzb3VyY2VzPg0K
-          ICAgICAgPFN0eWxlIFRhcmdldFR5cGU9Int4OlR5cGUgQnV0dG9ufSI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1hcmdp
-          biIgVmFsdWU9IjgsNCw4LDQiLz4NCiAgICAgIDwvU3R5bGU+DQogICAgPC9TdGFja1BhbmVsLlJlc291cmNlcz4NCg0KICAgIDxC
-          dXR0b24gTmFtZT0ib3BlbkRpYWxvZyIgQ2xpY2s9Im9wZW5EaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw4LDgsNCI+T3BlbiBmaWxl
-          PC9CdXR0b24+DQogICAgPEJ1dHRvbiBOYW1lPSJzYXZlRGlhbG9nIiBDbGljaz0ic2F2ZURpYWxvZ19DbGljayI+U2F2ZSBmaWxl
-          PC9CdXR0b24+DQogICAgDQogICAgPEJ1dHRvbiBOYW1lPSJvcGVuRGlhbG9nV2luRm9ybXMiIENsaWNrPSJvcGVuRGlhbG9nV2lu
-          Rm9ybXNfQ2xpY2siID5PcGVuIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KICAgIDxCdXR0b24gTmFtZT0i
-          c2F2ZURpYWxvZ1dpbkZvcm1zIiBDbGljaz0ic2F2ZURpYWxvZ1dpbkZvcm1zX0NsaWNrIj5TYXZlIGZpbGUsIFdpbmRvd3MgRm9y
-          bXMgdmVyc2lvbjwvQnV0dG9uPg0KDQogICAgPEJ1dHRvbiBOYW1lPSJmb2xkZXJEaWFsb2ciIENsaWNrPSJmb2xkZXJEaWFsb2df
-          Q2xpY2siIE1hcmdpbj0iOCw0LDgsOCI+U2VsZWN0IGZvbGRlcjwvQnV0dG9uPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4N
-          Cg==
+          77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciIA0KICB4OkNsYXNzPSJEaWFsb2dzLk1haW5XaW5kb3ciDQogIHhtbG5z
+          PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0
+          dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICBUaXRsZT0iRGlhbG9nIFNhbXBsZSIgDQogIE1p
+          bldpZHRoPSIzMDAiIA0KICBTaXplVG9Db250ZW50PSJXaWR0aEFuZEhlaWdodCI+DQogIA0KICA8U3RhY2tQYW5lbD4NCiAgICA8
+          U3RhY2tQYW5lbC5SZXNvdXJjZXM+DQogICAgICA8U3R5bGUgVGFyZ2V0VHlwZT0ie3g6VHlwZSBCdXR0b259Ij4NCiAgICAgICAg
+          PFNldHRlciBQcm9wZXJ0eT0iTWFyZ2luIiBWYWx1ZT0iOCw0LDgsNCIvPg0KICAgICAgPC9TdHlsZT4NCiAgICA8L1N0YWNrUGFu
+          ZWwuUmVzb3VyY2VzPg0KDQogICAgPEJ1dHRvbiB4OlVpZD0ib3BlbkRpYWxvZyIgTmFtZT0ib3BlbkRpYWxvZyIgQ2xpY2s9Im9w
+          ZW5EaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw4LDgsNCI+T3BlbiBmaWxlPC9CdXR0b24+DQogICAgPEJ1dHRvbiB4OlVpZD0ic2F2
+          ZURpYWxvZyIgTmFtZT0ic2F2ZURpYWxvZyIgQ2xpY2s9InNhdmVEaWFsb2dfQ2xpY2siPlNhdmUgZmlsZTwvQnV0dG9uPg0KDQog
+          ICAgPEJ1dHRvbiB4OlVpZD0ib3BlbkRpYWxvZ1dpbkZvcm1zIiBOYW1lPSJvcGVuRGlhbG9nV2luRm9ybXMiIENsaWNrPSJvcGVu
+          RGlhbG9nV2luRm9ybXNfQ2xpY2siID5PcGVuIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KICAgIDxCdXR0
+          b24geDpVaWQ9InNhdmVEaWFsb2dXaW5Gb3JtcyIgTmFtZT0ic2F2ZURpYWxvZ1dpbkZvcm1zIiBDbGljaz0ic2F2ZURpYWxvZ1dp
+          bkZvcm1zX0NsaWNrIj5TYXZlIGZpbGUsIFdpbmRvd3MgRm9ybXMgdmVyc2lvbjwvQnV0dG9uPg0KDQogICAgPEJ1dHRvbiB4OlVp
+          ZD0iZm9sZGVyRGlhbG9nIiBOYW1lPSJmb2xkZXJEaWFsb2ciIENsaWNrPSJmb2xkZXJEaWFsb2dfQ2xpY2siIE1hcmdpbj0iOCw0
+          LDgsOCI+U2VsZWN0IGZvbGRlcjwvQnV0dG9uPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="AllFiles" si="269">All files</row>
           <row id="AllSupportedFiles" si="270">All supported files</row>
           <row id="FolderDescription" si="271">Select a file</row>
@@ -575,8 +592,8 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\Localized.csproj" original="en" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net462" toolsversion="nt120"/>
+    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" original="en" lastmodified="20220121T143611Z" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net46" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRyaXZpbmcuQXBwIg0KICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
@@ -707,7 +724,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="About" si="211">
             <value>Driving time calculator</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Ajoaikalaskin</lang>
@@ -735,7 +752,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20220121T143611Z" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -874,7 +891,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="About" si="234">
             <value>Driving time calculator</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Ajoaikalaskin</lang>
@@ -902,7 +919,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Original\Original.csproj" original="en" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" original="en" lastmodified="20220121T143611Z" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1012,10 +1029,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Events\Events.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Events\Events.csproj" original="en" groupname="Events\Events.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Events\Events.csproj" original="en" lastmodified="20220121T143612Z" groupname="Events\Events.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1026,33 +1043,34 @@
           CjwvQXBwbGljYXRpb24+DQo=
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
         <row id="Title" si="67">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Esimerkki</lang>
         </row>
         <item name="Grid[0]" type="Grid">
-          <item name="Button[0]" type="Button">
-            <row id="Content" si="68">
+          <item name="button" type="Button" created="20220121T143609Z" st="0">
+            <row id="Content" si="322" st="0">
               <value>Click me</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Klikkaa tästä</lang>
+              <lang id="fi" st="2" or="3" rw="0" time="20200827T150637Z">Klikkaa tästä</lang>
             </row>
           </item>
         </item>
         <data>
-          77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iRXZlbnRzLk1haW5XaW5kb3ciDQogIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3Nv
-          ZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5j
-          b20vd2luZngvMjAwNi94YW1sIg0KICBUaXRsZT0iU2FtcGxlIiANCiAgSGVpZ2h0PSIyMDAiIA0KICBXaWR0aD0iMzAwIiANCiAg
-          TG9hZGVkPSJXaW5kb3dfTG9hZGVkXzEiIA0KICBHb3RGb2N1cz0iV2luZG93X0dvdEZvY3VzXzEiPg0KICANCiAgPEdyaWQgTG9h
-          ZGVkPSJHcmlkX0xvYWRlZF8xIj4NCiAgICA8QnV0dG9uIElzVmlzaWJsZUNoYW5nZWQ9IkJ1dHRvbl9Jc1Zpc2libGVDaGFuZ2Vk
-          XzEiPkNsaWNrIG1lPC9CdXR0b24+ICAgICAgDQogIDwvR3JpZD4NCjwvV2luZG93Pg0K
+          77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IkV2ZW50cy5NYWluV2luZG93Ig0KICB4bWxucz0i
+          aHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRw
+          Oi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNhbXBsZSIgDQogIEhlaWdodD0iMjAw
+          IiANCiAgV2lkdGg9IjMwMCIgDQogIExvYWRlZD0iV2luZG93X0xvYWRlZF8xIiANCiAgR290Rm9jdXM9IldpbmRvd19Hb3RGb2N1
+          c18xIj4NCiAgDQogIDxHcmlkIExvYWRlZD0iR3JpZF9Mb2FkZWRfMSI+DQogICAgPEJ1dHRvbiB4OlVpZD0iYnV0dG9uIiBJc1Zp
+          c2libGVDaGFuZ2VkPSJCdXR0b25fSXNWaXNpYmxlQ2hhbmdlZF8xIj5DbGljayBtZTwvQnV0dG9uPiAgICAgIA0KICA8L0dyaWQ+
+          DQo8L1dpbmRvdz4NCg==
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WPF\FileDialog\FileDialog.csproj" original="en" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" original="en" lastmodified="20220121T143611Z" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1182,7 +1200,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="AllFiles" si="161">
             <value>All files</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Kaikki tiedostot</lang>
@@ -1222,7 +1240,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Font\Font.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Font\Font.csproj" original="en" groupname="Font\Font.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Font\Font.csproj" original="en" lastmodified="20220121T143610Z" groupname="Font\Font.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1297,7 +1315,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TXamlNode" name="Window1.xaml" type="Window">
         <row id="Title" si="53">
@@ -1335,8 +1353,8 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Format\Format.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Format\Format.csproj" original="en" groupname="Format\Format.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net30"/>
+    <node class="TNetProjectSource" name="Format\Format.csproj" original="en" lastmodified="20220121T143612Z" groupname="Format\Format.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net30" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkZvcm1hdC5BcHAiDQogICAgICAgICAgICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1p
@@ -1382,7 +1400,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Hello" class="TPatternRow" si="308" scannedcomment="0: Name of the person">
             <value>Hello {0}!</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Moi {0}!</lang>
@@ -1406,7 +1424,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HelloWorld\EasyWay\EasyWay.csproj" fullpath="D:\NT\Deploy\Samples\WPF\HelloWorld\EasyWay\EasyWay.csproj" original="en" groupname="HelloWorld\EasyWay\EasyWay.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="HelloWorld\EasyWay\EasyWay.csproj" original="en" lastmodified="20220121T143610Z" groupname="HelloWorld\EasyWay\EasyWay.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1443,7 +1461,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="HowAreYou" si="62">
             <value>How are you?</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Mitä kuuluu?</lang>
@@ -1451,7 +1469,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HelloWorld\HardWay\HardWay.csproj" fullpath="D:\NT\Deploy\Samples\WPF\HelloWorld\HardWay\HardWay.csproj" original="en" groupname="HelloWorld\HardWay\HardWay.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="HelloWorld\HardWay\HardWay.csproj" original="en" lastmodified="20220121T143610Z" groupname="HelloWorld\HardWay\HardWay.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1480,7 +1498,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="HelloWorld" si="64">
             <value>Hello World</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Moi maailma</lang>
@@ -1496,7 +1514,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HelloWorld\Original\Original.csproj" fullpath="D:\NT\Deploy\Samples\WPF\HelloWorld\Original\Original.csproj" original="en" groupname="HelloWorld\Original\Original.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="HelloWorld\Original\Original.csproj" original="en" lastmodified="20220121T143610Z" groupname="HelloWorld\Original\Original.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1525,10 +1543,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Ids\Ids.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Ids\Ids.csproj" original="en" groupname="Ids\Ids.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Ids\Ids.csproj" original="en" lastmodified="20220121T143610Z" groupname="Ids\Ids.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1581,10 +1599,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Image\Image.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Image\Image.csproj" original="en" groupname="Image\Image.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Image\Image.csproj" original="en" lastmodified="20220121T143612Z" groupname="Image\Image.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt140"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1656,10 +1674,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Ime\Ime.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Ime\Ime.csproj" original="en" groupname="Ime\Ime.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Ime\Ime.csproj" original="en" lastmodified="20220121T143610Z" groupname="Ime\Ime.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1717,10 +1735,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WPF\LanguageSwitch\LanguageSwitch.csproj" original="en" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" original="en" lastmodified="20220121T143611Z" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1802,7 +1820,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="197">
             <value>This is another sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on toinen esimerkki</lang>
@@ -1810,7 +1828,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Menu\Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" groupname="Menu\Menu.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20220121T143611Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1821,7 +1839,7 @@
           L0FwcGxpY2F0aW9uPg0K
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
         <row id="Title" si="142">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Esimerkki</lang>
@@ -1862,23 +1880,23 @@
           </item>
         </item>
         <data>
-          77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iTWVudS5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
-          LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29t
-          L3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNhbXBsZSIgDQogIEhlaWdodD0iMzAwIiANCiAgV2lkdGg9IjUwMCI+DQoNCiAg
-          PEdyaWQgeDpOYW1lPSJlZGl0R3JpZCI+DQogICAgPE1lbnUgeDpOYW1lPSJtZW51Ij4NCiAgICAgIDxNZW51SXRlbSB4Ok5hbWU9
-          ImZpbGVNZW51IiBIZWFkZXI9IkZfaWxlIiA+DQogICAgICAgIDxNZW51SXRlbSB4Ok5hbWU9ImNhbGN1bGF0ZU1lbnUiIEhlYWRl
-          cj0iX0NhbGN1bGF0ZSIgLz4NCiAgICAgICAgPFNlcGFyYXRvciB4Ok5hbWU9InNlcGFyYXRvcjEiIC8+DQogICAgICAgIDxNZW51
-          SXRlbSB4Ok5hbWU9ImV4aXRNZW51IiAgSGVhZGVyPSJFX3hpdCIgLz4NCiAgICAgIDwvTWVudUl0ZW0+DQoNCiAgICAgIDxNZW51
-          SXRlbSB4Ok5hbWU9ImhlbHBNZW51IiBIZWFkZXI9IkhlX2xwIj4NCiAgICAgICAgPE1lbnVJdGVtIHg6TmFtZT0iYWJvdXRNZW51
-          IiBIZWFkZXI9IkFfYm91dCIgLz4NCiAgICAgIDwvTWVudUl0ZW0+DQogICAgPC9NZW51Pg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4N
-          Cg==
+          77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9Ik1lbnUuTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0
+          dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDov
+          L3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIFRpdGxlPSJTYW1wbGUiIA0KICBIZWlnaHQ9IjMwMCIg
+          DQogIFdpZHRoPSI1MDAiPg0KDQogIDxHcmlkIHg6TmFtZT0iZWRpdEdyaWQiPg0KICAgIDxNZW51IHg6TmFtZT0ibWVudSI+DQog
+          ICAgICA8TWVudUl0ZW0geDpVaWQ9ImZpbGVNZW51IiBIZWFkZXI9IkZfaWxlIiA+DQogICAgICAgIDxNZW51SXRlbSB4OlVpZD0i
+          Y2FsY3VsYXRlTWVudSIgSGVhZGVyPSJfQ2FsY3VsYXRlIiAvPg0KICAgICAgICA8U2VwYXJhdG9yIHg6TmFtZT0ic2VwYXJhdG9y
+          MSIgLz4NCiAgICAgICAgPE1lbnVJdGVtIHg6VWlkPSJleGl0TWVudSIgIEhlYWRlcj0iRV94aXQiIC8+DQogICAgICA8L01lbnVJ
+          dGVtPg0KDQogICAgICA8TWVudUl0ZW0geDpVaWQ9ImhlbHBNZW51IiBIZWFkZXI9IkhlX2xwIj4NCiAgICAgICAgPE1lbnVJdGVt
+          IHg6VWlkPSJhYm91dE1lbnUiIEhlYWRlcj0iQV9ib3V0IiAvPg0KICAgICAgPC9NZW51SXRlbT4NCiAgICA8L01lbnU+DQogIDwv
+          R3JpZD4NCjwvV2luZG93Pg0K
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Pages\Pages.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Pages\Pages.csproj" original="en" groupname="Pages\Pages.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Pages\Pages.csproj" original="en" lastmodified="20220121T143611Z" groupname="Pages\Pages.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1939,20 +1957,20 @@
         <item name="StackPanel[0]" type="StackPanel">
           <item name="TextBlock[0]" type="TextBlock">
             <row id="Content" class="TTagRow" si="130">
-              <value>This is a &lt;Bold&gt;bold&lt;/Bold&gt; sample.</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Bold&gt;lihavoitu&lt;/Bold&gt; esimerkki.</lang>
+              <value>This is a &lt;Bold>bold&lt;/Bold> sample.</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Bold>lihavoitu&lt;/Bold> esimerkki.</lang>
             </row>
           </item>
           <item name="TextBlock[1]" type="TextBlock">
             <row id="Content" class="TTagRow" si="131">
-              <value>This is an &lt;Italic&gt;italic&lt;/Italic&gt; sample.</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Italic&gt;kursiivi&lt;/Italic&gt; esimerkki.</lang>
+              <value>This is an &lt;Italic>italic&lt;/Italic> sample.</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Italic>kursiivi&lt;/Italic> esimerkki.</lang>
             </row>
           </item>
           <item name="TextBlock[2]" type="TextBlock">
             <row id="Content" class="TTagRow" si="132">
-              <value>This is a &lt;Bold&gt;&lt;Italic&gt;bold and italic&lt;/Italic&gt;&lt;/Bold&gt; sample.</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Bold&gt;&lt;Italic&gt;lihavoitu ja kursiivi&lt;/Italic&gt;&lt;/Bold&gt; esimerkki.</lang>
+              <value>This is a &lt;Bold>&lt;Italic>bold and italic&lt;/Italic>&lt;/Bold> sample.</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on &lt;Bold>&lt;Italic>lihavoitu ja kursiivi&lt;/Italic>&lt;/Bold> esimerkki.</lang>
             </row>
           </item>
         </item>
@@ -1992,7 +2010,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TDirectoryFolder" name="Sub">
         <node class="TXamlNode" name="Page1.xaml" type="Page" kind="xkPage">
@@ -2021,7 +2039,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Multi\MultiPlural.csproj" original="en" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20220121T143610Z" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2032,7 +2050,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Language" si="109">
             <value>en</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">fi</lang>
@@ -2131,7 +2149,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Single\SinglePlural.csproj" original="en" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20220121T143610Z" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2142,7 +2160,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="Language" si="95">
             <value>en</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">fi</lang>
@@ -2209,7 +2227,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="SimpleChange\SimpleChange.csproj" fullpath="D:\NT\Deploy\Samples\WPF\SimpleChange\SimpleChange.csproj" original="en" groupname="SimpleChange\SimpleChange.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="SimpleChange\SimpleChange.csproj" original="en" lastmodified="20220121T143611Z" groupname="SimpleChange\SimpleChange.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2257,10 +2275,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Sport\Sport.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Sport\Sport.csproj" original="en" groupname="Sport\Sport.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Sport\Sport.csproj" original="en" lastmodified="20220121T143610Z" groupname="Sport\Sport.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net40" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2322,7 +2340,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="BasketballDescription" si="6">
             <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
@@ -2364,7 +2382,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Styles\Styles.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Styles\Styles.csproj" original="en" groupname="Styles\Styles.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Styles\Styles.csproj" original="en" lastmodified="20220121T143611Z" groupname="Styles\Styles.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2461,8 +2479,8 @@
           </item>
           <item name="text1" type="TextBlock">
             <row id="Content" class="TTagRow" si="174">
-              <value>Clicking this button shows a dialog that &lt;Bold&gt;merges&lt;/Bold&gt; an external dictionary and then uses the styles in the dictionary</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold&gt;yhdistää&lt;/Bold&gt; ulkoisen sanaston ja käyttää sen tyylejä.</lang>
+              <value>Clicking this button shows a dialog that &lt;Bold>merges&lt;/Bold> an external dictionary and then uses the styles in the dictionary</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold>yhdistää&lt;/Bold> ulkoisen sanaston ja käyttää sen tyylejä.</lang>
             </row>
           </item>
           <item name="button1" type="Button">
@@ -2473,8 +2491,8 @@
           </item>
           <item name="text2" type="TextBlock">
             <row id="Content" class="TTagRow" si="176">
-              <value>Clicking this button shows a dialog that &lt;Bold&gt;embeds&lt;/Bold&gt; the styles in the window</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold&gt;sisältää&lt;/Bold&gt; sanaston</lang>
+              <value>Clicking this button shows a dialog that &lt;Bold>embeds&lt;/Bold> the styles in the window</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Jos klikkaa tätä painiketta, niin se näyttää dialogi, joka &lt;Bold>sisältää&lt;/Bold> sanaston</lang>
             </row>
           </item>
           <item name="button2" type="Button">
@@ -2514,7 +2532,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TXamlNode" name="Window1.xaml" type="Window">
         <row id="Title" si="179">
@@ -2673,7 +2691,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="SystemString\SystemString.csproj" fullpath="D:\NT\Deploy\Samples\WPF\SystemString\SystemString.csproj" original="en" groupname="SystemString\SystemString.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="SystemString\SystemString.csproj" original="en" lastmodified="20220121T143610Z" groupname="SystemString\SystemString.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <item name="Resources">
@@ -2786,10 +2804,10 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Test\Test.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Test\Test.csproj" original="en" groupname="Test\Test.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Test\Test.csproj" original="en" lastmodified="20220121T143610Z" groupname="Test\Test.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -2881,7 +2899,7 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TXamlNode" name="Window1.xaml" type="Window">
         <item name="StackPanel[0]" type="StackPanel">
@@ -2970,8 +2988,8 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Text\Text.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Text\Text.csproj" original="en" groupname="Text\Text.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net461"/>
+    <node class="TNetProjectSource" name="Text\Text.csproj" original="en" lastmodified="20220121T143612Z" groupname="Text\Text.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="net461" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRleHQuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
@@ -3055,10 +3073,10 @@ Tämä on toinen esimerkki</lang>
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tutorial\BadSample\BadSample.csproj" original="en" groupname="Tutorial\BadSample\BadSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" original="en" lastmodified="20220121T143611Z" groupname="Tutorial\BadSample\BadSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3125,10 +3143,10 @@ Tämä on toinen esimerkki</lang>
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tutorial\GoodSample\GoodSample.csproj" original="en" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20220121T143611Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3197,7 +3215,7 @@ Tämä on toinen esimerkki</lang>
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="AllFiles" si="253" scannedcomment="All files in file dialog filter">All files</row>
           <row id="AllSupportedFiles" si="254" scannedcomment="All supported files in file dialog filter">All supported files</row>
           <row id="IniFiles" si="255" scannedcomment="INI files in file dialog filter">Ini files</row>
@@ -3212,7 +3230,7 @@ Tämä on toinen esimerkki</lang>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\HardCoded\HardCoded.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tutorial\HardCoded\HardCoded.csproj" original="en" groupname="Tutorial\HardCoded\HardCoded.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Tutorial\HardCoded\HardCoded.csproj" original="en" lastmodified="20220121T143612Z" groupname="Tutorial\HardCoded\HardCoded.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3237,12 +3255,12 @@ Tämä on toinen esimerkki</lang>
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="SampleText" si="262">This is a sample</row>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="WindowsForms\WindowsForms.csproj" fullpath="D:\NT\Deploy\Samples\WPF\WindowsForms\WindowsForms.csproj" original="en" groupname="WindowsForms\WindowsForms.csproj" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms,nlWpf]">
+    <node class="TNetProjectSource" name="WindowsForms\WindowsForms.csproj" original="en" lastmodified="20220121T143611Z" groupname="WindowsForms\WindowsForms.csproj" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms,nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3399,7 +3417,7 @@ Tämä on toinen esimerkki</lang>
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx">
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
           <row id="String1" si="141">
             <value>This is a sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Tämä on esimerkki</lang>
@@ -3418,18 +3436,21 @@ Tämä on toinen esimerkki</lang>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings saveoptions="[soEveryTime,soSameAsOriginal,soRemoveOld]" range="srLanguage" projectsavestatus="tsTranslated">
-    </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

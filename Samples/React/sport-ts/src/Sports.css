@@ -1,0 +1,39 @@
+.Sports {
+  text-align: center;
+}
+
+.Sports-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .Sports-logo {
+    animation: Sports-logo-float infinite 3s ease-in-out;
+  }
+}
+
+.Sports-header {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+}
+
+.Sports-link {
+  color: rgb(112, 76, 182);
+}
+
+@keyframes Sports-logo-float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
