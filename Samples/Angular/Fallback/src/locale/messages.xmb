@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="1790280481892349348" meaning="one"><source>src/app/app.component.ts:5</source>One</msg>
+  <msg id="662146266194589037" meaning="two"><source>src/app/app.component.ts:6</source>Two</msg>
+  <msg id="8600309473174976058" meaning="three"><source>src/app/app.component.ts:7</source>Three</msg>
+  <msg id="3399860010313228176" meaning="four"><source>src/app/app.component.ts:8</source>Four</msg>
+  <msg id="700742630364194126" meaning="name"><source>src/app/app.component.ts:9</source>Hello <ph name="INTERPOLATION"/></msg>
+  <msg id="7466822367860161039" desc="0: Number of cars" meaning="plural"><source>src/app/app.component.ts:10</source>{VAR_PLURAL, plural, one {I have <ph name="INTERPOLATION"/> car.} other {I have <ph name="INTERPOLATION"/> cars.}}</msg>
+</messagebundle>
