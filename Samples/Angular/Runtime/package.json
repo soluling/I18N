@@ -5,7 +5,7 @@
     "i18n": "ng extract-i18n --format=xlf2 --outputPath=src/locale",
     "i18n1": "ng extract-i18n --format=xlf --outputPath=src/locale --outFile=messages1.xlf",
     "i18nx": "ng extract-i18n --format=xmb --outputPath=src/locale",
-    "i18nj": "node_modules/.bin/localize-extract -s 'dist/**/*.js' -f json -o src/locale/messages.json",
+    "i18nj": "node_modules/.bin/localize-extract -s dist/**/*.js -f json -o src/locale/messages.json",
     "ng": "ng",
     "start": "ng serve -o",
     "build": "ng build",
@@ -24,7 +24,7 @@
     "@angular/platform-browser": "~13.2.2",
     "@angular/platform-browser-dynamic": "~13.2.2",
     "@angular/router": "~13.2.2",
-    "@soluling/angular": "^1.0.4",
+    "@soluling/angular": "~12.0.0",
     "rxjs": "~6.5.5",
     "tslib": "^2.0.0",
     "zone.js": "~0.11.4"

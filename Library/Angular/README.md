@@ -1,6 +1,6 @@
 # Runtime Translation Loading for Angular
 
-The standard Angular 9 or later internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile the language for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
+The standard Angular internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
 
 Start by installing the Soluling library.
 
@@ -103,7 +103,7 @@ Then add the following command to the `package.json` file un the `"scripts"` sec
 {
   ...
   "scripts": {
-    "i18nj": "node_modules/.bin/localize-extract -s 'dist/**/*.js' -f json -o src/locale/messages.json",    
+    "i18nj": "node_modules/.bin/localize-extract -s dist/**/*.js -f json -o src/locale/messages.json",    
     ...      
   }
   ...

@@ -5,7 +5,7 @@
     "i18n": "ng extract-i18n --format=xlf2 --output-path src/locale",
     "i18n1": "ng extract-i18n --format=xlf --output-path src/locale --outFile=messages12.xlf",
     "i18nx": "ng extract-i18n --format=xmb --output-path src/locale",
-    "i18nj": "node_modules/.bin/localize-extract -s 'dist/**/*.js' -f json -o src/locale/messages.json",
+    "i18nj": "node_modules/.bin/localize-extract -s dist/**/*.js -f json -o src/locale/messages.json",
     "fi": "ng serve -c=fi -o",
     "ja": "ng serve -c=ja -o",
     "pl": "ng serve -c=pl -o",

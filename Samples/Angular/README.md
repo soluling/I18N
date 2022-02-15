@@ -11,3 +11,4 @@ This directory contains Soluling's Angular samples. Learn about [Angular localiz
 | Fallback | An application that uses [fallback](https://www.soluling.com/Help/Fallback.htm). |                                                              |
 | Sport    | Localized application that consumes a multilingual Sport API. | Learn more about the application from [here](https://www.soluling.com/Help/WebSample/Index.htm). |
 
+All samples have been updated to Angular 13.
