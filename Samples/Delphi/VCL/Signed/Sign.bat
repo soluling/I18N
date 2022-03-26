@@ -1,0 +1,1 @@
+call ..\..\..\..\..\Desktop\Sign "Win32\Debug\Signed.exe"

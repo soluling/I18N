@@ -277,13 +277,6 @@ uses
   Forms,
   Unit1 in 'Unit1.pas';
 
-begin
-  TNtBase.SetResourceDllDir('Locales');
-  Application.Initialize;
-  Application.MainFormOnTaskbar := True;
-  Application.CreateForm(TForm1, Form1);
-  Application.Run;
-end.
 #)
       @param value         Directory. Can be abosulte or relative to the application file.
       @param localeSelect  Specifies how to select the dfault locale. }
@@ -1357,14 +1350,16 @@ var
   module: PLibModule;
   buffer: array[0..260] of Char;
 begin  //FI:C101
+{$IFDEF MSWINDOWS}
   // ResStringCleanupCache was added in Delphi 10.4.2
-{$IF CompilerVersion = 34}
-  {$IF Declared(RTLVersion1042)}
+  {$IF CompilerVersion = 34}
+    {$IF Declared(RTLVersion1042)}
   ResStringCleanupCache;
+    {$IFEND}
   {$IFEND}
-{$IFEND}
-{$IFDEF DELPHI11}
+  {$IFDEF DELPHI11}
   ResStringCleanupCache;
+  {$ENDIF}
 {$ENDIF}
 
   Result := 0;

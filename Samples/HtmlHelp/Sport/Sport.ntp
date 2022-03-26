@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1B84899B-F2B4-4B40-A21B-96B074454B44" created="20120510T114640Z" lastmodified="20191005T172439Z" version="1.0.563" stringid="731">
+<project id="1B84899B-F2B4-4B40-A21B-96B074454B44" created="20120510T114640Z" lastmodified="20220326T155640Z" version="1.0.911" stringid="833">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TChmSource" name="Sport.chm" fullpath="D:\NT\Deploy\Samples\HtmlHelp\Sport\Sport.chm" original="en-US" encoding="windows-1252">
+  <node class="TChmSource" name="Sport.chm" fullpath="D:\NT\Deploy\Samples\HtmlHelp\Sport\Sport.chm" original="en-US" lastmodified="20220326T155645Z" encoding="windows-1252">
     <datatypes>
       <item class="TImageData" scan="dsNo"/>
     </datatypes>
@@ -411,18 +411,23 @@
     </node>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>

@@ -369,6 +369,10 @@ end;
 function TStreamHelper.ReadString(length: Integer): String;
 begin
   SetLength(Result, length);
+
+  if length = 0 then
+    Exit;
+
 {$IFDEF DELPHIXE3}
   Read(Result[Low(String)], 2*length)
 {$ELSE}

@@ -378,9 +378,10 @@ function EnumLocales(localeStr: PAnsiChar): Integer; stdcall;
     checkIfExists: Boolean);
   var
     i: Integer;
-    fileName: String;
+    ext, fileName, resourceFileName: String;
   begin
-    fileName := ChangeFileExt(enumExeFileName, '.' + code);
+    ext := '.' + code;
+    fileName := ChangeFileExt(enumExeFileName, ext);
 
     if FileExists(fileName) and
       (not enumCompatibleOnly or TNtBase.IsLocaleCompatible(id)) and
@@ -392,6 +393,28 @@ function EnumLocales(localeStr: PAnsiChar): Integer; stdcall;
             Exit;
 
       enumLanguages.Add(code, id, fileName);
+      Exit;
+    end;
+
+    if ResourceDllDir <> '' then
+    begin
+      resourceFileName := ChangeFileExt(ExtractFileName(enumExeFileName), ext);
+      fileName := ResourceDllDir + '\' + resourceFileName;
+
+      if not FileExists(fileName) then
+        fileName :=  ExtractFileDir(enumExeFileName) + '\' + ResourceDllDir + '\' + resourceFileName;
+
+      if FileExists(fileName) and
+        (not enumCompatibleOnly or TNtBase.IsLocaleCompatible(id)) and
+        (not enumCheckVersions or TNtResource.DoesLocaleVersionMatchFile(fileName)) then
+      begin
+        if checkIfExists then
+          for i := 0 to enumLanguages.Count - 1 do
+            if enumLanguages[i].Code = code then
+              Exit;
+
+        enumLanguages.Add(code, id, fileName);
+      end;
     end;
   end;
 

@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="4B93981A-5DFF-465B-9552-FB8E13B433D0" created="20220303T174127Z" lastmodified="20220303T174546Z" version="1.0.910" lockedrowcomplete="0" stringid="9">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="Sport.accdb" original="en" lastmodified="20220303T174546Z" encoding="unicode" hasunicodefields="1">
+    <database kind="TAccessDatabase" file="Sport.accdb"/>
+    <tables>
+      <table name="Sport" method="dlCopy">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Sport" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0" si="3">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
+        <row id="1" si="6">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
+        <row id="2" si="9">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="1">Soccer</row>
+        <row id="1" si="4">Ice hockey</row>
+        <row id="2" si="7">Basketball</row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0" si="2">England</row>
+        <row id="1" si="5">Canada</row>
+        <row id="2" si="8">United States</row>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

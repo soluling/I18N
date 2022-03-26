@@ -1,17 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20210630T223630Z" version="1.0.861" stringid="8">
+<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20220314T030820Z" version="1.0.910" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" lastmodified="20220314T030820Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
-      <row id="newToolStripMenuItem.Text" si="1">&amp;New</row>
+      <row id="newToolStripMenuItem.Text" si="1">
+        <value>&amp;New</value>
+        <lang id="fi" st="4" rw="0" time="20220314T030758Z">&amp;Uusi</lang>
+      </row>
       <row id="openToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">57423</row>
-      <row id="openToolStripMenuItem.Text" si="2">&amp;Open...</row>
+      <row id="openToolStripMenuItem.Text" si="2">
+        <value>&amp;Open...</value>
+        <lang id="fi" st="4" rw="0" time="20220314T030807Z">&amp;Avaa...</lang>
+      </row>
       <row id="exitToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">32836</row>
-      <row id="exitToolStripMenuItem.Text" si="3">E&amp;xit</row>
-      <row id="fileToolStripMenuItem.Text" si="4">&amp;File</row>
-      <row id="helpToolStripMenuItem.Text" si="5">&amp;Help</row>
+      <row id="exitToolStripMenuItem.Text" si="3">
+        <value>E&amp;xit</value>
+        <lang id="fi" st="4" rw="0" time="20220314T030811Z">&amp;Lopeta</lang>
+      </row>
+      <row id="fileToolStripMenuItem.Text" si="4">
+        <value>&amp;File</value>
+        <lang id="fi" st="4" rw="0" time="20220314T030816Z">&amp;Tiedosto</lang>
+      </row>
+      <row id="helpToolStripMenuItem.Text" si="5">
+        <value>&amp;Help</value>
+        <lang id="fi" st="4" rw="0" time="20220314T030820Z">&amp;Ohje</lang>
+      </row>
       <row id="menuStrip1.Text" si="6">menuStrip1</row>
       <row id="aboutToolStripMenuItem.Text" si="7">
         <value>&amp;About...</value>
@@ -199,7 +214,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
     </node>
   </node>
   <excludedoriginals>
