@@ -14,7 +14,6 @@ import messages_fi from "./translations/fi.json";
 import messages_ja from "./translations/ja.json";
 import messages_sv from "./translations/sv.json";
 
-//Sports = 
 injectIntl(Sports);
 
 // Add each language here

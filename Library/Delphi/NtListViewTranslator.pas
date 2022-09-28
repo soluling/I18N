@@ -1,7 +1,7 @@
 {
   @abstract Implements @link(TNtListViewTranslator) translator extension class that translates TListView.
 
-  To enabled runtime language switch of list views just add this unit into your project
+  To enable runtime language switch of list views just add this unit into your project
   or add unit into any uses block.
 
   @longCode(#

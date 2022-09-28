@@ -133,6 +133,10 @@ cd React
 call Build.bat
 cd ..
 
+cd RTF
+call Build.bat
+cd ..
+
 cd Script
 call Build.bat
 cd ..

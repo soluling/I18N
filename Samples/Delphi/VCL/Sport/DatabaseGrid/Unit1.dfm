@@ -11,7 +11,6 @@ object MainForm: TMainForm
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   Menu = MainMenu
-  OldCreateOrder = False
   OnShow = FormShow
   PixelsPerInch = 96
   TextHeight = 13

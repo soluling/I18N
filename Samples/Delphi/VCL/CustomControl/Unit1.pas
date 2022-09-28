@@ -10,6 +10,8 @@ type
   TForm1 = class(TForm)
     Label1: TLabel;
     MyLabel1: TMyLabel;
+    Memo1: TMemo;
+    MyMemo1: TMyMemo;
   private
     { Private declarations }
   public

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="79C0B455-9FEB-4278-9436-69B9772330DC" created="20210720T013133Z" lastmodified="20210720T013200Z" version="1.0.866" lockedrowcomplete="0" stringid="5">
+<project id="79C0B455-9FEB-4278-9436-69B9772330DC" created="20210720T013133Z" lastmodified="20220501T131317Z" version="1.0.918" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
-  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en-US" encoding="windows-1252" enabledconfigurations="Debug|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" readprojectreferences="0">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en-US" groupname="WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]" readprojectreferences="0">
+  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en-US" encoding="windows-1252" enabledconfigurations="Debug|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]">
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en-US" lastmodified="20220501T131317Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -49,25 +49,26 @@
         </data>
       </node>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
+      <assemblies>
+        <assembly>bin\Debug\WpfControl.dll</assembly>
+        <assembly>bin\Debug\WpfUserControl.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en-US" groupname="WpfControl\WpfControl.csproj" netconfiguration="Debug|AnyCPU" readprojectreferences="0">
+    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en-US" lastmodified="20220501T131317Z" groupname="WpfControl\WpfControl.csproj" netconfiguration="Debug|AnyCPU">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
+      <assemblies>
+        <assembly>bin\Debug\WpfControl.dll</assembly>
+      </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en-US" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]" readprojectreferences="0">
+    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en-US" lastmodified="20220501T131317Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx"/>
+        <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
       </node>
       <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl" id="userControl">
         <item name="StackPanel[0]" type="StackPanel">
@@ -98,9 +99,9 @@
           bGFzdE5hbWVFZGl0Ij48L1RleHRCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvVXNlckNvbnRyb2w+DQo=
         </data>
       </node>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
+      <assemblies>
+        <assembly>bin\Debug\WpfUserControl.dll</assembly>
+      </assemblies>
     </node>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -113,6 +114,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -120,10 +122,16 @@
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

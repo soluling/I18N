@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D9516A95-3FB6-4946-86C1-FE58BB468097" created="20160927T034342Z" lastmodified="20200316T190103Z" version="1.0.714" stringid="12">
+<project id="D9516A95-3FB6-4946-86C1-FE58BB468097" created="20160927T034342Z" lastmodified="20220424T232407Z" version="1.0.914" stringid="17">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" formatstringcommentcheck="fcPlaceholders" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="StringFormat.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\StringFormat.csproj" original="en" lastmodified="20220424T232407Z" formatstringcommentcheck="fcPlaceholders" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt140"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="label1.Text" si="1" excluded="2">dummy</row>
@@ -185,7 +185,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
         <row id="CalculationNone" changed="20170503T232846Z" class="TPatternRow" si="7" created="20170503T170026Z">
           <value>Sample: {0} + {1} = {2}</value>
           <lang id="fi" time="20170503T185100Z">Esimerkki: {0} + {1} = {2}</lang>
@@ -202,10 +202,7 @@
           <value>Error in server {0}: {1}</value>
           <lang id="fi" time="20170503T185132Z">Virhe {0} palvelimessa: {1}</lang>
         </row>
-        <row id="Test" class="TPatternRow" si="11" created="20200316T190102Z" st="0" messagestring="2">
-          <value startpattern="1">{0} and {1}</value>
-          <pattern select="" index="0">, </pattern>
-        </row>
+        <row id="Test" si="11" created="20220424T232306Z" st="0" messagestring="2">{{, }} and {0} characters</row>
       </node>
     </node>
   </node>
@@ -216,17 +213,23 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>

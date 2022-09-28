@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B78D681B-4798-48D4-BE24-A95AB295D866" created="20220813T123756Z" lastmodified="20220813T132010Z" version="1.0.937" stringid="9">
+  <lang id="fi"/>
+  <node class="TIniSource" name="Numbers.ini" fullpath="D:\NT\Deploy\Samples\TranslationMemory\Numbers.ini" original="en" lastmodified="20220813T132010Z" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="numbers">
+      <row id="one" si="1">
+        <value>One</value>
+        <lang id="fi" rw="0" time="20220813T123800Z">Yksi</lang>
+      </row>
+      <row id="one1" si="2">
+        <value>One</value>
+        <lang id="fi" rw="0" time="20220813T123803Z">Yks</lang>
+      </row>
+      <row id="one2" si="3">
+        <value>One</value>
+        <lang id="fi" rw="0" time="20220813T123809Z">Yx</lang>
+      </row>
+      <row id="two" si="4">
+        <value>Two</value>
+        <lang id="fi" rw="0" time="20220813T123814Z">Kaksi</lang>
+      </row>
+      <row id="two2" si="6" created="20220813T123839Z" st="0">
+        <value>Two</value>
+        <lang id="fi" rw="0" time="20220813T123843Z">Kaks</lang>
+      </row>
+      <row id="three" si="5">
+        <value>Three</value>
+        <lang id="fi" rw="0" time="20220813T123820Z">Kolme</lang>
+      </row>
+    </item>
+    <item name="values" created="20220813T131858Z" st="0">
+      <row id="value1" si="7" st="0">
+        <value>This is a sample</value>
+        <lang id="fi" rw="0" time="20220813T131910Z" fuzzy="99.5">Tämä on esimerkki</lang>
+      </row>
+      <row id="value2" si="8" st="0">
+        <value>This is a small sample</value>
+        <lang id="fi" rw="0" time="20220813T131942Z" fuzzy="99.5">Tämä on pieni esimerkki</lang>
+      </row>
+      <row id="value3" si="9" st="0">
+        <value>This is a new sample</value>
+        <lang id="fi" rw="0" time="20220813T131926Z" fuzzy="80">Tämä on uusi esimerkki</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Countries.tbx" type="TTbxGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="IBM" type="TIBMTranslator"/>
+      <item name="iTranslate" type="TiTranslateTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

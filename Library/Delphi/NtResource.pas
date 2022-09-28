@@ -286,28 +286,36 @@ type
     property TranslationSourceValue: String read FTranslationSourceValue;
   end;
 
-{ Get the string value in the current language.
+{ Get the string value in the current language or in the specific language.
   @param original Original string value.
   @param id       Optional id value. If not present the original value is used.
   @param group    String group.
+  @param language Optional language id. If not present the current language is used.
   @return String value in the current languages.}
 function _T(
   const original: String;
   const id: String = '';
-  const group: String = ''): String; overload;
+  const group: String = '';
+  const language: String = ''): String; overload;
 
 function Translate(
   const original: String;
   const id: String = '';
-  const group: String = ''): String; overload;
+  const group: String = '';
+  const language: String = ''): String; overload;
 
 { Get the string value in the current language.
   @param original Original string value.
   @param group    String group.
+  @param language Optional language id. If not present the current language is used.
   @return String value in the current languages.}
-function _TG(const original, group: String): String;
+function _TG(
+  const original, group: String;
+  const language: String = ''): String;
 
-function TranslateGroup(const original, group: String): String;
+function TranslateGroup(
+  const original, group: String;
+  const language: String = ''): String;
 
 var
   NtResources: TNtDelphiResources;
@@ -404,27 +412,39 @@ end;
 function _T(
   const original: String;
   const id: String = '';
-  const group: String = ''): String;
+  const group: String = '';
+  const language: String = ''): String;
 begin
-  Result := NtResources.GetString(original, id, group);
+  if language <> '' then
+    Result := NtResources.GetStringInLanguage(language, original, id, group)
+  else
+    Result := NtResources.GetString(original, id, group);
 end;
 
 function Translate(
   const original: String;
   const id: String = '';
-  const group: String = ''): String;
+  const group: String = '';
+  const language: String = ''): String;
 begin
-  Result := _T(original, id, group);
+  Result := _T(original, id, group, language);
 end;
 
-function _TG(const original, group: String): String;
+function _TG(
+  const original, group: String;
+  const language: String = ''): String;
 begin
-  Result := NtResources.GetString(original, '', group);
+  if language <> '' then
+    Result := NtResources.GetStringInLanguage(language, original, '', group)
+  else
+    Result := NtResources.GetString(original, '', group);
 end;
 
-function TranslateGroup(const original, group: String): String;
+function TranslateGroup(
+  const original, group: String;
+  const language: String = ''): String;
 begin
-  Result := _TG(original, group);
+  Result := _TG(original, group, language);
 end;
 
 
@@ -678,8 +698,7 @@ begin
   Result := '';
 end;
 
-function TNtDelphiResources._T(
-  const original, id: String): TNtResourceLanguage;
+function TNtDelphiResources._T(const original, id: String): TNtResourceLanguage;
 begin
   Result := TNtResourceLanguage.Create;
   Result.FOriginal := original;

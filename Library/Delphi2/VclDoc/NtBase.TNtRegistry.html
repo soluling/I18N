@@ -1,0 +1,154 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NewTool's VCL Classes: NtBase: Class TNtRegistry</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtRegistry"></a><h1 class="cio">Class TNtRegistry</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtBase.html">NtBase</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtRegistry = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class that contains registry routines to manipulate locale override values.</p>
+<p>
+ Locale override are registry key entries that specify the default locale of a Delphi application.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TNtRegistry</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtRegistry.html#SetCurrentDefaultLocale">SetCurrentDefaultLocale</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtRegistry.html#GetCurrentDefaultLocale">GetCurrentDefaultLocale</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtRegistry.html#ClearCurrentDefaultLocale">ClearCurrentDefaultLocale</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtRegistry.html#SetDefaultLocale">SetDefaultLocale</a></b>(const fileName: String; code: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtRegistry.html#GetDefaultLocale">GetDefaultLocale</a></b>(const fileName: String): String; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtRegistry.html#GetDefaultLocale">GetDefaultLocale</a></b>(const fileName: String; out keyExists: Boolean): String; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtRegistry.html#ClearDefaultLocale">ClearDefaultLocale</a></b>(const fileName: String): Boolean;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetCurrentDefaultLocale"></a><code>class procedure <b>SetCurrentDefaultLocale</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Save the current locale of the current application as locale override.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCurrentDefaultLocale"></a><code>class function <b>GetCurrentDefaultLocale</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the locale override of the current application. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The locale override value.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearCurrentDefaultLocale"></a><code>class function <b>ClearCurrentDefaultLocale</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clear the locale override value of the current application in the registry. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if succesful, <code>False</code> if failed.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetDefaultLocale"></a><code>class procedure <b>SetDefaultLocale</b>(const fileName: String; code: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the locale override value of the given application.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>fileName</dt>
+<dd>Application.</dd>
+<dt>code</dt>
+<dd>Locale override value.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDefaultLocale"></a><code>class function <b>GetDefaultLocale</b>(const fileName: String): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the locale override value of the given application.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>fileName</dt>
+<dd>Application.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Locale override value.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDefaultLocale"></a><code>class function <b>GetDefaultLocale</b>(const fileName: String; out keyExists: Boolean): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the locale override value of the given application.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>fileName</dt>
+<dd>Application.</dd>
+<dt>keyExists</dt>
+<dd><code>True</code> if the locale override value exists, <code>False</code> if it does not exist.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Locale override value.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ClearDefaultLocale"></a><code>class function <b>ClearDefaultLocale</b>(const fileName: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clear the locale override value of the given application. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if succesful, <code>False</code> if failed.</p></td></tr>
+</table>
+</body></html>

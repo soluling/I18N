@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="11FA784E-7313-4DE1-8D53-AD9296CDDC5F" created="20140521T084934Z" lastmodified="20220322T142851Z" version="1.0.910" stringid="9">
+<project id="11FA784E-7313-4DE1-8D53-AD9296CDDC5F" created="20140521T084934Z" lastmodified="20220504T222601Z" version="1.0.920" stringid="9">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Menu.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Menu\Win32\Release\Menu.exe" original="en" lastmodified="20220322T142851Z">
+  <node class="TDelphiSource" name="Win32\Release\Menu.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Menu\Win32\Release\Menu.exe" original="en" lastmodified="20220504T222601Z" hassignature="1" hassignatureread="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -140,6 +140,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -152,6 +153,9 @@
   <mt optimizeusage="0">
     <shared>
       <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
   <duplicates>

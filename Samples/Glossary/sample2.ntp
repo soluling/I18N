@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="330B5A97-4489-4D39-A90A-292454954D4C" created="20220426T124256Z" lastmodified="20220426T124329Z" version="1.0.915" lockedrowcomplete="0" stringid="5">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" lastmodified="20220426T124329Z" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="value">
+      <row id="finland" si="1">
+        <value>Capital of Finland is Helsinki</value>
+        <lang id="de" st="4" rw="0" time="20220426T124312Z">Finnland</lang>
+      </row>
+      <row id="germany" si="2">
+        <value>Capital on Germany is Berlin</value>
+        <lang id="de" st="4" rw="0" time="20220426T124316Z">Deutschland</lang>
+      </row>
+      <row id="usa" si="3">Capital of United States is Washington</row>
+      <row id="japan" si="4">Capital of Japan is Tokyo</row>
+      <row id="sweden" si="5">Capital of Sweden is Stockholm</row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

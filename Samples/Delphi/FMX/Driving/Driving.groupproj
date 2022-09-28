@@ -9,6 +9,9 @@
         <Projects Include="Localized\Localized.dproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="Binary\Binary.dproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="Localized:Make">
         <MSBuild Projects="Localized\Localized.dproj" Targets="Make"/>
     </Target>
+    <Target Name="Binary">
+        <MSBuild Projects="Binary\Binary.dproj"/>
+    </Target>
+    <Target Name="Binary:Clean">
+        <MSBuild Projects="Binary\Binary.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Binary:Make">
+        <MSBuild Projects="Binary\Binary.dproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Original;Localized"/>
+        <CallTarget Targets="Original;Localized;Binary"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Original:Clean;Localized:Clean"/>
+        <CallTarget Targets="Original:Clean;Localized:Clean;Binary:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Original:Make;Localized:Make"/>
+        <CallTarget Targets="Original:Make;Localized:Make;Binary:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

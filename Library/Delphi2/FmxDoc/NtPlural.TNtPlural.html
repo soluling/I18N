@@ -1,0 +1,313 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NtPlural: Class TNtPlural</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtPlural"></a><h1 class="cio">Class TNtPlural</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtPlural.html">NtPlural</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtPlural = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class that contains plural routines.</p>
+<p>
+ </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtPlural.html">NtPlural</a></dt>
+  <dd>Implements a plural enabled Format function <a class="normal"  href="NtPlural.TNtPlural.html#Format">TNtPlural.Format</a>.</dd>
+</dl>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TNtPlural</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtPlural.TNtPlural.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#GetIndexProc">GetIndexProc</a></b>(const locale: String = ''): <a   href="NtPlural.html#TPluralIndexProc">TPluralIndexProc</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#GetRuleCount">GetRuleCount</a></b>(const locale: String = ''): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#GetKind">GetKind</a></b>(const locale: String): <a   href="NtPlural.html#TPluralKind">TPluralKind</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtPlural.TNtPlural.html#GetForm">GetForm</a></b>( count: Integer; const format: String; var form, customForm: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#GetFormName">GetFormName</a></b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#GetPattern">GetPattern</a></b>( const pattern: String; count: Integer; includeZero: Boolean = False): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#Format">Format</a></b>( const pattern: String; count: Integer): String; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#Format">Format</a></b>( const pattern: String; count: Integer; const args: array of const): String; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#Format">Format</a></b>( const pattern: String; const counts: array of const): String; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#StringToPlural">StringToPlural</a></b>(const value: String): <a   href="NtPlural.html#TPluralForm">TPluralForm</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#TryStringToPlural">TryStringToPlural</a></b>(const value: String; out form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#FormToString">FormToString</a></b>(value: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPlural.TNtPlural.html#IsPluralForm">IsPluralForm</a></b>(const value: String): Boolean;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>class procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Clear internal plural data. Call this after langauge change.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetIndexProc"></a><code>class function <b>GetIndexProc</b>(const locale: String = ''): <a   href="NtPlural.html#TPluralIndexProc">TPluralIndexProc</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural index procedure.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language or locale to be used.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The pointer to the plural index procedure.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetRuleCount"></a><code>class function <b>GetRuleCount</b>(const locale: String = ''): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural rule count.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language or locale to be used.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Plural form rule count</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetKind"></a><code>class function <b>GetKind</b>(const locale: String): <a   href="NtPlural.html#TPluralKind">TPluralKind</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural kind the language uses.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language or locale to be used.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The plural kind the language uses.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetForm"></a><code>class procedure <b>GetForm</b>( count: Integer; const format: String; var form, customForm: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural kind the language uses.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>count</dt>
+<dd>Specifies the count. This is used to calculate the right pattern index.</dd>
+<dt>format</dt>
+<dd>Pattern string that contains patterns for all plural forms used by the language.</dd>
+<dt>form</dt>
+<dd>The standard form that should be used.</dd>
+<dt>customForm</dt>
+<dd>The actual form that ise used. This can differ from the form if pattern contained custom forms.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFormName"></a><code>class function <b>GetFormName</b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetPattern"></a><code>class function <b>GetPattern</b>( const pattern: String; count: Integer; includeZero: Boolean = False): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parses the right pattern from the multi-pattern resource string. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">The pattern that is used with passed count and active language.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Format"></a><code>class function <b>Format</b>( const pattern: String; count: Integer): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+This is like normal Format but it parses the right part from the multi-pattern.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>format</dt>
+<dd>Multi-pattern string that contains patterns for all plural forms used by the language.</dd>
+<dt>count</dt>
+<dd>Specifies the count. This is used to calculate the right pattern index.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Format"></a><code>class function <b>Format</b>( const pattern: String; count: Integer; const args: array of const): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+This is like normal Format but it parses the right part from the multi-pattern.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>format</dt>
+<dd>Multi-pattern string that contains patterns for all plural forms used by the language.</dd>
+<dt>count</dt>
+<dd>Specifies the count. This is used to calculate the right pattern index.</dd>
+<dt>args</dt>
+<dd>Arguments like in the standard Format function.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Format"></a><code>class function <b>Format</b>( const pattern: String; const counts: array of const): String; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+This is like Format but it can have any number of plural enabled parameters.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>format</dt>
+<dd>Multi-pattern string that contains patterns for all plural forms used by the language.</dd>
+<dt>counts</dt>
+<dd>Specifies the counts. This contains the count paramaters.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StringToPlural"></a><code>class function <b>StringToPlural</b>(const value: String): <a   href="NtPlural.html#TPluralForm">TPluralForm</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural form from string code.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Plural form code.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The plural form matching the code.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TryStringToPlural"></a><code>class function <b>TryStringToPlural</b>(const value: String; out form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural form from string code.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Plural form code.</dd>
+<dt>form</dt>
+<dd>Plural form.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True of the passed code was a valid.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormToString"></a><code>class function <b>FormToString</b>(value: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the plural code from plural form.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Plural form.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The plural code matching the plural form.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsPluralForm"></a><code>class function <b>IsPluralForm</b>(const value: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if the plural code is a valid code.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Plural form code.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if the passed code was a valid code.</p></td></tr>
+</table>
+</body></html>

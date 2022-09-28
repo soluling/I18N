@@ -1,0 +1,90 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>FMX.NtFmxTranslator: Class TNtFmxTranslator</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtFmxTranslator"></a><h1 class="cio">Class TNtFmxTranslator</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="FMX.NtFmxTranslator.html">FMX.NtFmxTranslator</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtFmxTranslator = class(<a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that translates FMX forms.</p>
+<p>
+ This class performs runtime language switch by going through each component and property on the host form. Call <a class="normal"  href="FMX.NtFmxTranslator.TNtFmxTranslator.html#TranslateForms">TNtFmxTranslator.TranslateForms</a> to translate all forms.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a></li>
+<li class="thisitem">TNtFmxTranslator</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="FMX.NtFmxTranslator.TNtFmxTranslator.html#TranslateForms">TranslateForms</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="FMX.NtFmxTranslator.TNtFmxTranslator.html#RegisterForm">RegisterForm</a></b>(form: TCustomForm);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="FMX.NtFmxTranslator.TNtFmxTranslator.html#UnregisterForm">UnregisterForm</a></b>(form: TCustomForm);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TranslateForms"></a><code>class procedure <b>TranslateForms</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Translate all registered forms.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="RegisterForm"></a><code>class procedure <b>RegisterForm</b>(form: TCustomForm);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register a form to be translated automatically after a language switch. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Form</dt>
+<dd>to be registered.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnregisterForm"></a><code>class procedure <b>UnregisterForm</b>(form: TCustomForm);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Unregister a form.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>Form</dt>
+<dd>to be unregistered.</dd>
+</dl>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="FMX.NtFmxTranslator.TNtFmxTranslator.html#RegisterForm">RegisterForm</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+</body></html>

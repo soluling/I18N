@@ -1,0 +1,108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtChecker: Class TNtCheckerExtension</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtCheckerExtension"></a><h1 class="cio">Class TNtCheckerExtension</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtChecker.html">NtChecker</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtCheckerExtension = class(<a class="normal"  href="NtBase.TNtExtension.html">TNtExtension</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that extends <a class="normal"  href="NtChecker.TFormChecker.html">TFormChecker</a>.</p>
+<p>
+ <a class="normal"  href="NtChecker.TFormChecker.html">TFormChecker</a> can check all controls but can not propely take a screenshot of controls that belong to a container that is not currently visible. The purpose of this class is to provide code to temporary show the hidden panel so a proper screenshot can be taken and then to restore the control into its original state. If you have a 3rd party components that contain multi panel container you may have to implement an extension for it. Derive your extension from this class and implement <a class="normal"  href="NtChecker.TNtCheckerExtension.html#Show">TNtCheckerExtension.Show</a> and <a class="normal"  href="NtChecker.TNtCheckerExtension.html#Restore">TNtCheckerExtension.Restore</a> functions. You may also have to implement <a class="normal"  href="NtChecker.TNtCheckerExtension.html#Ignore">TNtCheckerExtension.Ignore</a> function to prevent false issues.  </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtChecker.TNtTabControlChecker.html">TNtTabControlChecker</a></dt>
+  <dd>Checker extension class that checks TTabControl.</dd>
+  <dt><a class="normal"  href="NtRaizeChecker.TNtRaizeChecker.html">TNtRaizeChecker</a></dt>
+  <dd>Checker extension class that checks some complex Raize controls.</dd>
+</dl>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="NtBase.TNtExtension.html">TNtExtension</a></li>
+<li class="thisitem">TNtCheckerExtension</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtChecker.TNtCheckerExtension.html#Show">Show</a></b>(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; control: TControl; var restoreControl: TControl): Boolean; virtual;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtChecker.TNtCheckerExtension.html#Restore">Restore</a></b>(control, restoreControl: TControl): Boolean; virtual;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtChecker.TNtCheckerExtension.html#Ignore">Ignore</a></b>(control: TControl; issueTypes: <a   href="NtChecker.html#TFormIssueTypes">TFormIssueTypes</a>): Boolean; virtual;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Show"></a><code>function <b>Show</b>(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; control: TControl; var restoreControl: TControl): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If the container control of the passed control is hidden and it is a part of multi panel control shows a parent so the control becomes visible for screenshot purposes.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>checker</dt>
+<dd>Form checker.</dd>
+<dt>control</dt>
+<dd>Control that is has an issues.</dd>
+<dt>restoreControl</dt>
+<dd>Return the panel that was put topmost if any.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if a panel was moved topmost, <code>False</code> if not.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Restore"></a><code>function <b>Restore</b>(control, restoreControl: TControl): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Restores a shown panel into its previous state.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>control</dt>
+<dd>Control that is has an issues.</dd>
+<dt>restoreControl</dt>
+<dd>The object to be transalted.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the panel as restored, <code>False</code> if not.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Ignore"></a><code>function <b>Ignore</b>(control: TControl; issueTypes: <a   href="NtChecker.html#TFormIssueTypes">TFormIssueTypes</a>): Boolean; virtual;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks if a control checking should be ignored.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>control</dt>
+<dd>Control to be checked.</dd>
+<dt>issueTypes</dt>
+<dd>Issue type to be checked.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if checking should be ignored, <code>False</code> if control should be checked normally.</p></td></tr>
+</table>
+</body></html>

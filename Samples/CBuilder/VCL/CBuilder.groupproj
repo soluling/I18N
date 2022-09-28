@@ -9,6 +9,9 @@
         <Projects Include="Inherited\Inherited.cbproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="SimpleRC\SimpleRC.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -35,14 +38,23 @@
     <Target Name="Inherited:Make">
         <MSBuild Projects="Inherited\Inherited.cbproj" Targets="Make"/>
     </Target>
+    <Target Name="SimpleRC">
+        <MSBuild Projects="SimpleRC\SimpleRC.cbproj"/>
+    </Target>
+    <Target Name="SimpleRC:Clean">
+        <MSBuild Projects="SimpleRC\SimpleRC.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="SimpleRC:Make">
+        <MSBuild Projects="SimpleRC\SimpleRC.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Simple;Inherited"/>
+        <CallTarget Targets="Simple;Inherited;SimpleRC"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Simple:Clean;Inherited:Clean"/>
+        <CallTarget Targets="Simple:Clean;Inherited:Clean;SimpleRC:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Simple:Make;Inherited:Make"/>
+        <CallTarget Targets="Simple:Make;Inherited:Make;SimpleRC:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

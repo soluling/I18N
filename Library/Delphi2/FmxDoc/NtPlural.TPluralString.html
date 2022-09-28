@@ -1,0 +1,199 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NtPlural: Class TPluralString</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TPluralString"></a><h1 class="cio">Class TPluralString</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtPlural.html">NtPlural</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPluralString = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that contains patterns of a single plural enabled string.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPluralString</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="NtPlural.TPluralString.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="NtPlural.TPluralString.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtPlural.TPluralString.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPlural.TPluralString.html#Find">Find</a></b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>; all: Boolean = True): <a   href="NtPlural.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPlural.TPluralString.html#Exists">Exists</a></b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPlural.TPluralString.html#AddParameter">AddParameter</a></b>(const name: String = ''): <a   href="NtPlural.TPluralParameter.html">TPluralParameter</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPlural.TPluralString.html#AddValue">AddValue</a></b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>; const value: String): <a   href="NtPlural.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtPlural.TPluralString.html#ParsePattern">ParsePattern</a></b>(pattern: String);</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPlural.TPluralString.html#Count">Count</a></b>: Integer read GetCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPlural.TPluralString.html#Items">Items</a></b>[i: Integer]: <a   href="NtPlural.TPluralParameter.html">TPluralParameter</a> read GetItem;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPlural.TPluralString.html#StartPattern">StartPattern</a></b>: String read FStartPattern write FStartPattern;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPlural.TPluralString.html#Text">Text</a></b>: String read GetText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPlural.TPluralString.html#Values">Values</a></b>[form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>]: String read GetValue;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>; all: Boolean = True): <a   href="NtPlural.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exists"></a><code>function <b>Exists</b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddParameter"></a><code>function <b>AddParameter</b>(const name: String = ''): <a   href="NtPlural.TPluralParameter.html">TPluralParameter</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddValue"></a><code>function <b>AddValue</b>(form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>; const value: String): <a   href="NtPlural.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParsePattern"></a><code>procedure <b>ParsePattern</b>(pattern: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parse pattern into parts.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>pattern</dt>
+<dd>Original multi pattern string.</dd>
+<dt>values</dt>
+<dd>String list to hold parsed patterns.</dd>
+</dl>
+</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read GetCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[i: Integer]: <a   href="NtPlural.TPluralParameter.html">TPluralParameter</a> read GetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartPattern"></a><code>property <b>StartPattern</b>: String read FStartPattern write FStartPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Text"></a><code>property <b>Text</b>: String read GetText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Values"></a><code>property <b>Values</b>[form: <a   href="NtPlural.html#TPluralForm">TPluralForm</a>]: String read GetValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+</body></html>

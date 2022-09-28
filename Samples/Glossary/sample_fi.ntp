@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20220427T134341Z" version="1.0.916" stringid="5" ex="1" exchangelanguages="fi">
+  <lang id="fi"/>
+  <node class="TIniSource" name="sample.ini" original="en" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="value">
+      <row id="finland" changed="20130130T230920Z" si="1" created="20130130T230707Z">
+        <value>Capital of Finland is Helsinki</value>
+        <lang id="fi" time="20190826T002625Z">Suomen pääkaupunki on Helsinki</lang>
+      </row>
+      <row id="germany" si="2" created="20170930T004203Z">
+        <value>Capital on Germany is Berlin</value>
+        <lang id="fi" time="20190825T183040Z" fuzzy="5">Saksan pääkaupunki on Berliini</lang>
+      </row>
+      <row id="usa" changed="20190825T205844Z" si="3" created="20170930T004203Z">
+        <value>Capital of United States is Washington</value>
+        <prev>Capital of United States is Washington </prev>
+        <lang id="fi" time="20190826T134846Z">Yhdysvaltojen pääkaupunki on Washington</lang>
+      </row>
+      <row id="japan" si="4" created="20170930T004203Z" locked="1" st="0">
+        <value>Capital of Japan is Tokyo</value>
+        <lang id="fi" time="20190825T183045Z" fuzzy="5">Japanin pääkaupunki on Tokio</lang>
+      </row>
+      <row id="sweden" changed="20130130T230920Z" si="5" created="20130130T230707Z">
+        <value>Capital of Sweden is Stockholm</value>
+        <lang id="fi" time="20190825T183047Z" fuzzy="5">Ruotsin pääkaupunki on Tukholma</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <items>
+      <glossary kind="TTbxGlossary" filename="D:\NT\Deploy\Samples\Glossary\Countries.tbx"/>
+    </items>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

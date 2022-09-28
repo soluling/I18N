@@ -1,0 +1,151 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: All Variables</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="allitems">All Variables</h1>
+<table class="itemstable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemunit">Unit</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBase.html#DefaultLocale">DefaultLocale</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores the default language of the application.</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBase.html#FirstDayOfWeek">FirstDayOfWeek</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores the first day of the week of the current locale.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBase.html#FirstWeekOfYear">FirstWeekOfYear</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores the first week of the year of the current locale.</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBase.html#LoadedResourceLocale">LoadedResourceLocale</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Currently loaded locale.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtAfterTranslate">NtAfterTranslate</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">Event that is called after a property value has been translated. If you assing this value make sure that the event is as fast as possible because this event is called on every single property of the application. </td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtBeforeTranslate">NtBeforeTranslate</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">An event that is called before translating a property value. Use this to disable or change the translation process. If you assign this value, make sure that the event is as fast as possible because this event is called on every single property of the application.
+
+<p>See <i>Samples\Delphi\VCL\DualLanguage</i> sample to see how to use the event. </td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtBeforeTranslateEx">NtBeforeTranslateEx</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">An event that is called before translating a property value. Use this to disable or change the translation process. If you assign this value, make sure that the event is as fast as possible because this event is called on every single property of the application.
+
+<p>See <i>Samples\Delphi\VCL\DualLanguage</i> sample to see how to use the event. </td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtChecker.html#NtCheckerExtensions">NtCheckerExtensions</a></td>
+<td class="itemunit"><a class="bold"  href="NtChecker.html">NtChecker</a></td>
+<td class="itemdesc">Form checker extension. Use this to register your custom checker extensions.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtEnabledProperties">NtEnabledProperties</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">Set of types that are translated. If empty then all properties are translated. If not empty then only those properties whose type is include in this set are translated.
+
+<p>The following sample shows how to translate only string properties. </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> Unit1;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">initialization</span>
+  NtEnabledProperties := STRING_TYPES;
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtChecker.html#NtFormChecker">NtFormChecker</a></td>
+<td class="itemunit"><a class="bold"  href="NtChecker.html">NtChecker</a></td>
+<td class="itemdesc">Form checker. Use this to check your forms.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtFormPositionTranslationEnabled">NtFormPositionTranslationEnabled</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">If <code>True</code> the form position (Left and Top properties) is also translated (e.g. changed if the new resource file contains different Left or Top properties). If <code>False</code> postion is not changed.</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtResource.html#NtResources">NtResources</a></td>
+<td class="itemunit"><a class="bold"  href="NtResource.html">NtResource</a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBaseTranslator.html#NtTranslatorExtensions">NtTranslatorExtensions</a></td>
+<td class="itemunit"><a class="bold"  href="NtBaseTranslator.html">NtBaseTranslator</a></td>
+<td class="itemdesc">Collections of registered extensions. Use it to register your custom extension. </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> MyExtension;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">initialization</span>
+  NtTranslatorExtensions.<span class="pascal_keyword">Register</span>(TMyExtension);
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtPattern.html#OperatorDelta">OperatorDelta</a></td>
+<td class="itemunit"><a class="bold"  href="NtPattern.html">NtPattern</a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBase.html#OriginalLanguage">OriginalLanguage</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores the original language of the application.</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBase.html#PreviouslyLoadedResourceLocale">PreviouslyLoadedResourceLocale</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Previously loaded locale. If empty the current locale is the only locale that has been loaded.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtQuotation.html#QuotationFixer">QuotationFixer</a></td>
+<td class="itemunit"><a class="bold"  href="NtQuotation.html">NtQuotation</a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtPattern.html#RaiseExceptionOnInvalidPattern">RaiseExceptionOnInvalidPattern</a></td>
+<td class="itemunit"><a class="bold"  href="NtPattern.html">NtPattern</a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBase.html#ResourceDllDir">ResourceDllDir</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBase.html#ResourceOptions">ResourceOptions</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Resource options.</td>
+</tr>
+<tr class="list">
+<td class="itemname"><a class="bold"  href="NtBase.html#SystemLanguage">SystemLanguage</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores the language of the operating system.</td>
+</tr>
+<tr class="list2">
+<td class="itemname"><a class="bold"  href="NtBase.html#UiLayout">UiLayout</a></td>
+<td class="itemunit"><a class="bold"  href="NtBase.html">NtBase</a></td>
+<td class="itemdesc">Variable that stores current layout of the user interface.</td>
+</tr>
+</table>
+</body></html>

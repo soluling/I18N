@@ -1,0 +1,642 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtBase: Class TNtBase</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtBase"></a><h1 class="cio">Class TNtBase</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtBase.html">NtBase</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtBase = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class that contains localization routines.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TNtBase</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#CheckThatDllsExist">CheckThatDllsExist</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#IsLocaleCompatible">IsLocaleCompatible</a></b>(locale: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetAvailable">GetAvailable</a></b>( languages: <a   href="NtBase.TNtLanguages.html">TNtLanguages</a>; exeFileName: String = ''; compatibleOnly: Boolean = False; checkVersions: Boolean = False): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetAvailableCount">GetAvailableCount</a></b>( exeFileName: String = ''; compatibleOnly: Boolean = False; checkVersions: Boolean = False): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetResourceFile">GetResourceFile</a></b>(const fileName, id: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#ResourceFileExist">ResourceFileExist</a></b>(const fileName, id: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#SetInitialLocale">SetInitialLocale</a></b>( localeSelect: <a   href="NtBase.html#TLocaleSelect">TLocaleSelect</a>; const defaultLocale: String = '');</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#SetResourceDllDir">SetResourceDllDir</a></b>(const value: String; localeSelect: <a   href="NtBase.html#TLocaleSelect">TLocaleSelect</a> = lsUI);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#LoadNew">LoadNew</a></b>( code: String = ''; fileName: String = ''): HModule;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#ExtractFiles">ExtractFiles</a></b>( options: <a   href="NtBase.html#TExtractOptions">TExtractOptions</a> = [eoCheckDate]; resourceName: String = ''): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#DisableResourceDlls">DisableResourceDlls</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetFolderPath">GetFolderPath</a></b>(nFolder: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#ParseLocaleString">ParseLocaleString</a></b>(value: String; var language, country, variant: String);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtBase.TNtBase.html#ParseLocaleId">ParseLocaleId</a></b>( id: String; var language: String; var script: String; var country, variant: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#IsLoaded">IsLoaded</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetActiveLocale">GetActiveLocale</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#MakeLangId">MakeLangId</a></b>(primaryLanguage, subLanguage: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#LocaleToPrimary">LocaleToPrimary</a></b>(locale: Integer): Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#LocaleToSub">LocaleToSub</a></b>(locale: Integer): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetRunningFileName">GetRunningFileName</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetLanguageFile">GetLanguageFile</a></b>(const exeFileName: String; const code: String): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetCurrentLanguageFile">GetCurrentLanguageFile</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetResourceInstance">GetResourceInstance</a></b>: LongWord;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetUserLanguage">GetUserLanguage</a></b>: Integer;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetSystemLanguage">GetSystemLanguage</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetDefaultLanguage">GetDefaultLanguage</a></b>: String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#GetDefaultLocale">GetDefaultLocale</a></b>: String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#LocaleToIsoCode">LocaleToIsoCode</a></b>(locale: Integer): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#IsoToLocale">IsoToLocale</a></b>(const locale: String): Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtBase.html#IsoLanguageToLocale">IsoLanguageToLocale</a></b>(const language: String; const country: String = ''): Integer;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CheckThatDllsExist"></a><code>class procedure <b>CheckThatDllsExist</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks the resource DLL count. If this is 0 raises an exception.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsLocaleCompatible"></a><code>class function <b>IsLocaleCompatible</b>(locale: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if the given locale is compatible to the system.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Locale to be checked.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if the locale is compatible, <code>False</code> if not. On Delphi 2009 later return always <code>True</code>.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetAvailable"></a><code>class function <b>GetAvailable</b>( languages: <a   href="NtBase.TNtLanguages.html">TNtLanguages</a>; exeFileName: String = ''; compatibleOnly: Boolean = False; checkVersions: Boolean = False): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a list of available resource DLL languages.     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>languages</dt>
+<dd>Returns a list of available languages.</dd>
+<dt>exeFileName</dt>
+<dd>Specifies the name of the application. If empty the current application is used.</dd>
+<dt>compatibleOnly</dt>
+<dd>If <code>True</code> only those resource DLL languages are added that are compatible to the current system settings. Not used in Delphi 2009 or later.</dd>
+<dt>checkVersions</dt>
+<dd>If <code>True</code> only those resource DLL languages are added where the version resource of the DLL matches the EXE.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Amount of lanugages.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetAvailableCount"></a><code>class function <b>GetAvailableCount</b>( exeFileName: String = ''; compatibleOnly: Boolean = False; checkVersions: Boolean = False): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the number of the available resource DLLs.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>exeFileName</dt>
+<dd>Specifies the name of the application. If empty the current application is used.</dd>
+<dt>compatibleOnly</dt>
+<dd>If <code>True</code> only those resource DLL languages are added that are compatible to the current system settings. Not used in Delphi 2009 or later.</dd>
+<dt>checkVersions</dt>
+<dd>If <code>True</code> only those resource DLL languages are added where the version resource of the DLL matches the EXE.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Amount of lanugages.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetResourceFile"></a><code>class function <b>GetResourceFile</b>(const fileName, id: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the resource DLL file for the given locale.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>fileName</dt>
+<dd></dd>
+<dt>id</dt>
+<dd></dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Resource DLL file name. Empty if not found.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ResourceFileExist"></a><code>class function <b>ResourceFileExist</b>(const fileName, id: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if a resource DLL file for the given locale exists.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>fileName</dt>
+<dd></dd>
+<dt>id</dt>
+<dd></dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">True if a resource file exists.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetInitialLocale"></a><code>class procedure <b>SetInitialLocale</b>( localeSelect: <a   href="NtBase.html#TLocaleSelect">TLocaleSelect</a>; const defaultLocale: String = '');</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Set the initial locale to match the current settings in the Regional Settings of Control Panel.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>localeSelect</dt>
+<dd>Specifies how to select the dfault locale.</dd>
+<dt>defaultLocale</dt>
+<dd>Specifies the default locale. If empty the default locale is not set.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetResourceDllDir"></a><code>class procedure <b>SetResourceDllDir</b>(const value: String; localeSelect: <a   href="NtBase.html#TLocaleSelect">TLocaleSelect</a> = lsUI);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Sets the directory where the resource DLL file locates. </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">program</span> CustomDir;
+
+<span class="pascal_keyword">uses</span>
+  NtBase,
+  Forms,
+  Unit1 <span class="pascal_keyword">in</span> <span class="pascal_string">'Unit1.pas'</span>;
+
+</pre>
+
+<p>  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Directory. Can be abosulte or relative to the application file.</dd>
+<dt>localeSelect</dt>
+<dd>Specifies how to select the dfault locale.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LoadNew"></a><code>class function <b>LoadNew</b>( code: String = ''; fileName: String = ''): HModule;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load a new resource DLL file. If you call <a class="normal"  href="NtTranslator.TNtTranslator.html#SetNew">TNtTranslator.SetNew</a> this should not be called.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>code</dt>
+<dd>The locale code of the resource to be loaded.</dd>
+<dt>fileName</dt>
+<dd>The file to be loaded. If empty then function looks the standard resource file name and location.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The module handle of the loaded resource DLL.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ExtractFiles"></a><code>class function <b>ExtractFiles</b>( options: <a   href="NtBase.html#TExtractOptions">TExtractOptions</a> = [eoCheckDate]; resourceName: String = ''): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Extracts embedded resource DLLs from EXE to the application directory. If the user has write access to the directory where the EXE locates, then resource files are exteracted there. Otherwise the files are extracted to the user's personal directory.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>options</dt>
+<dd>Specifies the extract options</dd>
+<dt>resourceName</dt>
+<dd>Specifies the resource type name of the resource DLLs. If empty SOLULING is used.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DisableResourceDlls"></a><code>class procedure <b>DisableResourceDlls</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Disables the resource DLLs.</p>
+<p>
+ If you call this application does not load any resource DLL. See Samples\Delphi\VCL\IgnoreResourceDll to see how to use this procedure.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetFolderPath"></a><code>class function <b>GetFolderPath</b>(nFolder: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a special folder. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Full path name to the folder.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseLocaleString"></a><code>class procedure <b>ParseLocaleString</b>(value: String; var language, country, variant: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parse locale into language, country and variant parts.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Locale to be parsed.</dd>
+<dt>language</dt>
+<dd>Returns the language part.</dd>
+<dt>country</dt>
+<dd>Returns the country part.</dd>
+<dt>variant</dt>
+<dd>Returns the variant part.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseLocaleId"></a><code>class procedure <b>ParseLocaleId</b>( id: String; var language: String; var script: String; var country, variant: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parse language id into language, script, country and variant parts.     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>value</dt>
+<dd>Locale to be parsed.</dd>
+<dt>language</dt>
+<dd>Returns the language part.</dd>
+<dt>script</dt>
+<dd>Returns the script part.</dd>
+<dt>country</dt>
+<dd>Returns the country part.</dd>
+<dt>variant</dt>
+<dd>Returns the variant part.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsLoaded"></a><code>class function <b>IsLoaded</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Check if a resource DLL has been loaded. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if a resource DLL has been loaded. <code>False</code> if no resource DLL has been loaded and the application uses the EXE resources.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetActiveLocale"></a><code>class function <b>GetActiveLocale</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the locale code of the currently loaded resource DLL. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Language or locale code. This is either code of the loaded resource DLL or default language.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MakeLangId"></a><code>class function <b>MakeLangId</b>(primaryLanguage, subLanguage: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Combine primary and sub language ids into a language id.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>primaryLanguage</dt>
+<dd>Primary language id.</dd>
+<dt>subLanguage</dt>
+<dd>Sub language id.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Language id.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBase.TNtBase.html#LocaleToPrimary">LocaleToPrimary</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocaleToPrimary"></a><code>class function <b>LocaleToPrimary</b>(locale: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get primary language id part from locale id.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language id.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Primary language id.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBase.TNtBase.html#MakeLangId">MakeLangId</a></dt>
+  <dd></dd>
+  <dt><a class="normal"  href="NtBase.TNtBase.html#LocaleToSub">LocaleToSub</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocaleToSub"></a><code>class function <b>LocaleToSub</b>(locale: Integer): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get sub language id part from locale id.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language id.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Sub language id.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBase.TNtBase.html#MakeLangId">MakeLangId</a></dt>
+  <dd></dd>
+  <dt><a class="normal"  href="NtBase.TNtBase.html#LocaleToPrimary">LocaleToPrimary</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetRunningFileName"></a><code>class function <b>GetRunningFileName</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get file name of the currently running application. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Full file name of the application.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetLanguageFile"></a><code>class function <b>GetLanguageFile</b>(const exeFileName: String; const code: String): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the resource file name for the given application or library file.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>exeFileName</dt>
+<dd>Application (.exe) or library (.dll, .bpl) file.</dd>
+<dt>code</dt>
+<dd>Language or locale of the resource file that is needed.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Resource file name.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetCurrentLanguageFile"></a><code>class function <b>GetCurrentLanguageFile</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the currently loaded resource DLL file of the current application. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Resource DLL file.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetResourceInstance"></a><code>class function <b>GetResourceInstance</b>: LongWord;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the resource instance. </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Resource instance. If a resource DLL has been loaded then return the resource handle of that DLL. If no resource DLL has been loaded returns the resource handle of the application itself.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetUserLanguage"></a><code>class function <b>GetUserLanguage</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the default language of the user.  </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Language or locale id.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBase.TNtBase.html#GetSystemLanguage">GetSystemLanguage</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetSystemLanguage"></a><code>class function <b>GetSystemLanguage</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the default language of the system.  </p>
+<h6 class="description_section">Returns</h6>
+<p class="return">Language or locale id.</p><h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBase.TNtBase.html#GetUserLanguage">GetUserLanguage</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDefaultLanguage"></a><code>class function <b>GetDefaultLanguage</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetDefaultLocale"></a><code>class function <b>GetDefaultLocale</b>: String;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LocaleToIsoCode"></a><code>class function <b>LocaleToIsoCode</b>(locale: Integer): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert locale id into locale code.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Language or locale id</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Language or locale code.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsoToLocale"></a><code>class function <b>IsoToLocale</b>(const locale: String): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert ISO locale into locale id.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>locale</dt>
+<dd>Locale code.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Locale id.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsoLanguageToLocale"></a><code>class function <b>IsoLanguageToLocale</b>(const language: String; const country: String = ''): Integer;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Convert ISO language and country into locale id.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>language</dt>
+<dd>Language code.</dd>
+<dt>country</dt>
+<dd>Country code.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Locale id.</p></td></tr>
+</table>
+</body></html>

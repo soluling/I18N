@@ -115,6 +115,8 @@ type
 
   public
     destructor Destroy; override;
+
+    class function IsString(varType: TVarType): Boolean;
   end;
 
   { @abstract Class that extends @link(TNtTranslator).
@@ -137,6 +139,7 @@ type
     @seealso(TNtPictureTranslator)
     @seealso(TNtTreeViewTranslator)
     @seealso(TNtListViewTranslator)
+    @seealso(TNtShortcutItemsTranslator)
     @seealso(TNtVirtualTreeViewTranslator) }
   TNtTranslatorExtension = class(TNtExtension)
   public
@@ -699,7 +702,7 @@ begin  //FI:C101
   end;
 end;
 
-function IsString(varType: TVarType): Boolean;
+class function TNtBaseTranslator.IsString(varType: TVarType): Boolean;
 begin
   Result :=
     (varType = varString) or
@@ -707,7 +710,7 @@ begin
     (varType = varUString) or
 {$ENDIF}
     (varType = varOleStr);
-  end;
+end;
 
 procedure TNtBaseTranslator.SetPropValue(
   instance: TObject;

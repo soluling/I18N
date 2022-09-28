@@ -1,0 +1,106 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtHiddenId</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtHiddenId</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td><a class="section"  href="#%40Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements a class thats injects a hidden id into a string.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="NtHiddenId.TDecodedString.html"><code>TDecodedString</code></a></td>
+<td class="itemdesc">Class that contains one decoded string that is the string id and the string value.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtHiddenId.THiddenId.html"><code>THiddenId</code></a></td>
+<td class="itemdesc">Class that provided the API methods.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtHiddenId.html#TZeroWidthCharacter">TZeroWidthCharacter</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtHiddenId.html#TZeroWidthCharacters">TZeroWidthCharacters</a></b> = set of <a   href="NtHiddenId.html#TZeroWidthCharacter">TZeroWidthCharacter</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtHiddenId.html#REQUIRED_ZERO_WIDTH_CHARACTER_COUNT_C">REQUIRED_ZERO_WIDTH_CHARACTER_COUNT_C</a></b> = 4;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtHiddenId.html#DEFAULT_ZERO_WIDTH_CHARACTERS_C">DEFAULT_ZERO_WIDTH_CHARACTERS_C</a></b> = [zwNonJoiner, zwJoiner, zwPopDirectionalFormatting, zwLeftToRightOverwrite];</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TZeroWidthCharacter"></a><code><b>TZeroWidthCharacter</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;<h6 class="description_section">Values</h6>
+<ul>
+<li>
+zwSpace: 200B</li>
+<li>
+zwNonJoiner: 200C</li>
+<li>
+zwJoiner: 200D</li>
+<li>
+zwLeftToRightMark: 200E</li>
+<li>
+zwLeftToRightEmbedding: 202A</li>
+<li>
+zwPopDirectionalFormatting: 202C</li>
+<li>
+zwLeftToRightOverwrite: 202D</li>
+<li>
+zwWordJoiner: 2060</li>
+<li>
+zwInvisibleTimes: 2062</li>
+<li>
+zwInvisibleSeparator: 2063</li>
+<li>
+zwNoBreakSpace: FEFF</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TZeroWidthCharacters"></a><code><b>TZeroWidthCharacters</b> = set of <a   href="NtHiddenId.html#TZeroWidthCharacter">TZeroWidthCharacter</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="REQUIRED_ZERO_WIDTH_CHARACTER_COUNT_C"></a><code><b>REQUIRED_ZERO_WIDTH_CHARACTER_COUNT_C</b> = 4;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DEFAULT_ZERO_WIDTH_CHARACTERS_C"></a><code><b>DEFAULT_ZERO_WIDTH_CHARACTERS_C</b> = [zwNonJoiner, zwJoiner, zwPopDirectionalFormatting, zwLeftToRightOverwrite];</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+</body></html>

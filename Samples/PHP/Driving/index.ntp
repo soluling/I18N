@@ -1,22 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D7533B4B-F53E-4F44-94AC-17DB0E230E0E" created="20130923T081151Z" lastmodified="20200316T230330Z" version="1.0.714" stringid="16">
+<project id="D7533B4B-F53E-4F44-94AC-17DB0E230E0E" created="20130923T081151Z" lastmodified="20220923T161746Z" version="1.0.944" stringid="24">
   <lang id="fi"/>
-  <node class="THtmlSource" name="index.php" fullpath="D:\NT\Deploy\Samples\PHP\Driving\index.php" original="en" encoding="windows-1252">
-    <row id="!DOCTYPE.text" si="7" created="20200316T230330Z" st="0">&amp;gt;</row>
+  <node class="THtmlSource" name="index.php" fullpath="D:\NT\Deploy\Samples\PHP\Driving\index.php" original="en" lastmodified="20220923T161746Z" encoding="windows-1252">
     <row id="title.text" si="1">Driving Time Calculator</row>
     <row id="h1.text" si="2">Driving Time</row>
     <row id="input.attributes.value" si="3" created="20190417T210244Z">yes</row>
     <row id="td.text" si="4">Driving distance:</row>
-    <row id="input[1].attributes.value" changed="20190418T120807Z" si="5" created="20190418T120807Z" st="2">
-      <value>&lt;?=$distance?&gt;</value>
-      <prev>&lt;?=$speed?&gt;
-      &lt;/td&gt;
-      &lt;td valign&gt;</prev>
-    </row>
-    <row id="td[1].text" si="13" created="20200316T230330Z" st="0">Speed:</row>
-    <row id="input[2].attributes.value" si="14" created="20200316T230330Z" st="0">&lt;?=$speed?&gt;</row>
+    <row id="input[1].attributes.value" changed="20190418T120807Z" si="5" created="20190418T120807Z">&lt;?=$distance?></row>
+    <row id="td[1].text" si="13" created="20200316T230330Z">Speed:</row>
+    <row id="input[2].attributes.value" si="14" created="20200316T230330Z">&lt;?=$speed?></row>
     <row id="input[3].attributes.value" si="6">Calculate</row>
-    <row id="td[4].text" si="16" created="20200316T230330Z" st="0">&amp;gt;</row>
     <tags usage="tuOnlyIncluded"/>
     <data>
       PCEtLSBUaGlzIHNhbXBsZSBzaG93cyBob3cgdG8gbG9jYWxpemUgYSBQSFAgYXBwbGljYXRpb24gd2l0aG91dCBHZXRUZXh0IC0t
@@ -47,15 +40,25 @@
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Countries.csv" type="TCsvGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

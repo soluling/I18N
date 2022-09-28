@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{837F13CC-D687-4B79-A6E2-D48131626B05}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ReportBuilder\ReportBuilder.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="QuickReport\QuickReport.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ReportBuilder">
+        <MSBuild Projects="ReportBuilder\ReportBuilder.dproj"/>
+    </Target>
+    <Target Name="ReportBuilder:Clean">
+        <MSBuild Projects="ReportBuilder\ReportBuilder.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ReportBuilder:Make">
+        <MSBuild Projects="ReportBuilder\ReportBuilder.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="QuickReport">
+        <MSBuild Projects="QuickReport\QuickReport.dproj"/>
+    </Target>
+    <Target Name="QuickReport:Clean">
+        <MSBuild Projects="QuickReport\QuickReport.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="QuickReport:Make">
+        <MSBuild Projects="QuickReport\QuickReport.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ReportBuilder;QuickReport"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ReportBuilder:Clean;QuickReport:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ReportBuilder:Make;QuickReport:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

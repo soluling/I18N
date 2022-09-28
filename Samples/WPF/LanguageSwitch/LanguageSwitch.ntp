@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EAB4E8C3-C4EB-4143-9547-D179CB768791" created="20181207T022423Z" lastmodified="20200316T192708Z" version="1.0.714" stringid="8">
+<project id="EAB4E8C3-C4EB-4143-9547-D179CB768791" created="20181207T022423Z" lastmodified="20220423T020701Z" version="1.0.914" stringid="8">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WPF\LanguageSwitch\LanguageSwitch.csproj" original="en" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="LanguageSwitch.csproj" fullpath="D:\NT\Deploy\Samples\WPF\LanguageSwitch\LanguageSwitch.csproj" original="en" lastmodified="20220423T020701Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192707Z" st="0" kind="xkApplication">
       <data>
@@ -90,7 +90,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="20xkF21xkF22xkF23xkF24xkF3xkF4xkF5xkF6xkF7xkF8xkF9xkFinalM">
         <row id="String1" si="8">
           <value>This is another sample</value>
           <lang id="fi" or="4" rw="0" time="20181207T022423Z">Tämä on toinen esimerkki</lang>
@@ -98,6 +98,10 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+      <assembly>bin\Debug\Soluling.Translator.WPF.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -112,11 +116,13 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>

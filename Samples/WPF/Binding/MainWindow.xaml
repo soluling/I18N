@@ -1,0 +1,36 @@
+﻿<Window 
+  x:Class="Binding.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:local="clr-namespace:Binding"
+  mc:Ignorable="d"
+  Title="Date and Currencies" Height="120" Width="400">
+
+  <Window.DataContext>
+    <local:MainWindowViewModel />
+  </Window.DataContext>
+  
+  <Grid>
+    <Grid.RowDefinitions>
+      <RowDefinition />
+      <RowDefinition />
+      <RowDefinition />
+    </Grid.RowDefinitions>
+    
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition />
+      <ColumnDefinition />
+    </Grid.ColumnDefinitions>
+
+    <Label x:Name="dateLabel" Grid.Row="0" Grid.Column="0">Date:</Label>
+    <TextBlock x:Name="dateValue" Grid.Row="0" Grid.Column="1" Text="{Binding Date, StringFormat=D}" />
+
+    <Label x:Name="amountLabel" Grid.Row="1" Grid.Column="0">Amount:</Label>
+    <TextBlock x:Name="amountValue" Grid.Row="1" Grid.Column="1" Text="{Binding Amount, StringFormat=C}" />
+
+    <Label x:Name="productNameLabel" Grid.Row="2" Grid.Column="0">Product:</Label>
+    <TextBlock x:Name="productValue" Grid.Row="2" Grid.Column="1" Text="{Binding ProductName}" />
+  </Grid>
+</Window>

@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20210211T143139Z" version="1.0.821" stringid="404" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20220501T143551Z" version="1.0.918" stringid="404" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
-  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" platforms="[ptWin32,ptWin64]" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20220501T143551Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" scansourcecode="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -578,6 +578,7 @@
     <platformfiles>
       <item file="..\..\Win64\Release\Localized.exe" drcfile="..\..\Win64\Release\Localized.drc"/>
     </platformfiles>
+    <signature signtool="C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe"/>
     <configurations>
       <configuration name="Default" items="[oiLocalized,oiLanguage]"/>
     </configurations>
@@ -594,6 +595,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -602,12 +604,11 @@
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtInitialLocale</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtInitialLocale</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td>Classes, Interfaces, Objects and Records</td><td>Functions and Procedures</td><td>Types</td><td>Constants</td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements routine that makes the default locale to match the locale of the user instead the language of the operating system.</p>
+<p>
+
+
+<p>The default locale of a Delphi application depends on the Delphi version. Up to Delphi 2009 the default locale was locale set in the Regional Settings of Control Panel. Starting from Delphi 2010 this no longer the case. The default locale is the language of the operating system itself.
+
+<p>If you want to have the old behaviour with Delphi 2010 or later use this unit. The unit does not expose any functions but you just add this into your project such way that the unit is called first. A suitable place is the first item in the uses clause of the program.
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">program</span> Project1;
+
+<span class="pascal_keyword">uses</span>
+  NtInitialLocale,
+  Forms,
+  Unit1 <span class="pascal_keyword">in</span> <span class="pascal_string">'Unit1.pas'</span>;
+</pre>
+
+<p>
+
+<p>This makes sure that the initialization block of the unit is called before calling any other initialization block.
+
+<p>See <i>Samples\Delphi\VCL\LanguageSwitch</i> sample to see how to use the unit.</p>
+<a name="%40Uses"></a></body></html>

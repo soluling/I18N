@@ -1,0 +1,244 @@
+@title(Soluling's VCL Classes)
+
+@image(Images\user_earth.png)
+
+Use these classes to implement runtime language switch for your Delphi applications.
+If you don't want to implement runtime language switch you can still use some of
+the functions such as plural and gender functions in @link(NtPattern), abbreviated numbers in @link(NtNumber),
+ordinal numbers in @link(NtOrdinal), file dialog functions in @link(NtDialog),
+database functions in @link(NtDatabaseUtils), and form layout checking in @link(NtChecker).
+
+Implementing a runtime language switch is very easy with Soluling. First step is
+to create resource DLL files. Soluling makes them for you. Once you have at least
+one resource DLL you can perform runtime language switch.
+
+@image(Images\ExeAndResourceDlls.png)
+
+In a simple application you only have to add one line of code. Following sample
+contains an event that is called after user has clicked LanguageButton on your form.
+
+@longcode(#
+procedure TForm1.LanguageButtonClick(Sender: TObject);
+begin
+  TNtLanguageDialog.Select('en');
+end;
+#)
+
+@link(TNtLanguageDialog.Select) shows a language dialog that contains list of
+available language (e.g. available resource DLLs). User can select a new language.
+Once selected the function loads the resource DLL matching the selected language and
+automatically translates all forms that have been created.
+
+If you want to implement your own language selection user interface you can do that
+very easily. Use @link(TNtBase.GetAvailable) function to get available languages.
+Use the language list it returned to populate your language selection. Write an event
+handler to response to a language selection. In the event call @link(TNtTranslator.SetNew)
+to load a resource DLL matching the selected language and to translate the forms
+of your application. See @italic(Samples\Delphi\VCL\CustomSelect) sample to see
+how to implement your own language selecting user interface.
+
+@bold(Properties that are set on run time)
+
+@link(TNtTranslator) translates automatically everything that is stored in the form
+files (DFM). So all components you have added and all the properties you have set
+on design time get automatically translated. However the class can not automatically
+translate properties that you have set on run time. To translate them you have to
+write a code that translates them after you have selected a new language. See the
+following sample.
+
+@longcode(#
+procedure TForm1.UpdateItems;
+resourcestring
+  SSample = 'This is sample';
+begin
+  Label1.Caption := SSample;
+end;
+
+procedure TForm1.FormShow(Sender: TObject);
+begin
+  UpdateItems;
+end;
+
+procedure TForm1.LanguageButtonClick(Sender: TObject);
+begin
+  if TNtLanguageDialog.Select('en') then
+    UpdateItems;
+end;
+#)
+
+The form contains UpdateItems procedure that set a property value. Once you create
+the form you call the function in order set the property values on run time.
+Once language have been selected in LanguageButtonClick event the loaded resource
+DLL is different and the value SSample is not necessary the same as in the
+application start up. This is why we have to call UpdateItems procedure again
+in order to translate the property that were set on run time.
+See @italic(Samples\Delphi\VCL\LanguageSwitch) sample to see how to translate
+runtime properties.
+
+@bold(Original language)
+
+Original language is the language you use when you write your application. In most
+cases this is English but programmers for example in France, Germany and Japan tend
+to user their own languages. By default a Delphi application does not have any
+information about the language that has been used on forms and messages. Most
+applications do not need this information. However it is needed on same cases.
+@link(NtBase) unit contains @link(NtBase.DefaultLocale) variable that specifies
+the original language. If your original language is not English assign the right
+value in this variable in the initialization code of your application.
+
+@bold(Initial language)
+
+The default locale of a Delphi application depends on the Delphi version. Up to
+Delphi 2009 the default locale was locale set in the Regional Settings of
+Control Panel. Starting from Delphi 2010 this no longer the case. The default
+locale is the language of the operating system itself. If you want to have the
+old behavior with Delphi 2010 or later use @link(NtInitialLocale) unit.
+
+@bold(Single file deployment)
+
+Normally resource DLL files are external files that locate on the sample directory
+as the application. For example if we have Project1.exe then the German resource
+DLL would be Project1.de.
+
+One of the great feature of Delphi is the possibility to create single EXE
+applications that require no DLLs. Using resource DLLs breaks this. Fortunately
+Soluling's classes provide a solution for this. Soluling contains a tool called
+AddResource. It is a command line tool that adds a file into an EXE or DLL file
+as a resource. So the external file is moved inside EXE or DLL and stored in a
+resource block. When application start it extract data from these resource into
+external resource DLL that VCL requires.
+
+First you call @link(TNtBase.ExtractFiles) procedure in the initialization block
+of your main unit. Then you use Soluling to create resource DLL file(s). Finally
+you use AddResource.exe add the resource DLL into your EXE file. Now you have
+an EXE file that requires no other files.
+
+@bold(Extending translator)
+
+@link(TNtTranslator) can perform runtime language switch for all normal properties.
+It can not translate some binary or defined properties of certain components.
+These properties are called complex properties. For example TImage contains the
+image data in a binary format in the Picture.Data property of the form file.
+To translate this @link(TNtTranslator) uses @link(TNtPictureTranslator). Translator extensions
+are add-on to for @link(TNtTranslator). They perform the translation of complex
+properties. Soluling contains several extension for @link(TNtPictureTranslator picture),
+@link(TNtStringsTranslator string list), @link(TNtTreeViewTranslator tree views) and
+@link(TNtListViewTranslator list view). Some extension are for 3rd party components
+such as @link(TNtVirtualTreeViewTranslator Virtual tree view). You can easily implement
+your own extension if needed.
+
+@bold(Grammatical numbers and genders)
+
+Standard VCL contains Format function that is used to combine message pattern
+with parameters to create composite message string. Format function is very useful but
+it lacks one important feature: grammatical plurals and genders. In most languages you have to
+write sentence in a different way depending on the grammatical number and/or gender. To make this possible
+use @link(NtPattern) unit.
+
+See samples in @italic(Samples\Delphi\VCL\Patterns) directory.
+
+@bold(Abbreviated numbers)
+
+Standard VCL does not contain a function to convert a number into its abbreviated form.
+For example number 12000 would be "12K" or "12 thousand" or "$12K" when abbreviated in English (United States).
+Use @link(NtNumber) unit to convert numbers into abbreviated form strings.
+
+See @italic(Samples\Delphi\VCL\Driving\Number) sample.
+
+@bold(Ordinal numbers)
+
+Standard VCL does not contain a function to convert an ordinal number into string.
+For example ordinal 1 in English would be either "1st" or "first" depending if short or long
+form is used. Use @link(NtOrdinal) unit to convert ordinal numbers into strings.
+
+See @italic(Samples\Delphi\VCL\Driving\Ordinal) sample.
+
+@bold(Filters in file dialogs)
+
+TOpenDialog and TSaveDialog have Filter property that let's you populate the file
+type combo box of the dialog. The required format of the filter string is quite complex
+and it may break during the translation. To avoid this use @link(TNtDialogFilter)
+class to easily create filter string such way that the text in the filter is easy
+and safe to translate.
+
+See @italic(Samples\Delphi\VCL\Driving\FileDialog) sample.
+
+@bold(Form checking)
+
+In many cases translations are longer than original strings. Thay my cause some
+controls in you forms to overlap and some text in the controls to truncate.
+It may be difficult to manually detect these. This is why you can use @link(TFormChecker)
+to automatically check you forms once you run your application. The checker will
+write a report and take screenshots that show each problem you have.
+
+You will get best use of @link(TFormChecker) class if you use automated tests that
+are run each time you build your software.
+
+@link(TFormChecker) can perform runtime checking for most of the controls.
+However it can not check some controls that have multiple panels and only one of those
+panels is visislbe at the time. Such controls are from exampel page/tab controls and
+various expander controls. To check those @link(TFormChecker) uses extensions.
+They are add-on to for @link(TFormChecker). They provide helper functions for checking
+of complex controls. Soluling contains several extension for @link(TNtTabControlChecker tab control),
+@link(TNtRaizeChecker Raize controls), @link(TNtTmsChecker TMS controls) and
+@link(TNtDevExpressChecker DevExpress controls). You can easily implement your own extension if needed.
+
+@bold(Samples)
+
+@italic(Samples\Delphi\VCL) directory contains several simple samples that cover
+different properties of Soluling's VCL classes. Go through to samples to learn
+how to use the classes.
+
+@bold(Tutorial)
+
+Study first @italic(Samples\Delphi\VCL\Driving\Original) sample. It is not localized
+but English only. In fact it can not be localized property because the project
+has not been internationalized. It contains hard coded string and code that is not
+world ready.
+
+@italic(Samples\Delphi\VCL\Driving\Localized) contains the same sample application but
+internationalized and localized to several languages. Compare the code of these
+two application to see what is the different between world ready and English-only
+application.
+
+Finally @italic(Samples\Delphi\VCL\Driving\Multilingual) contains the same applications
+but now runtime language switch has been enabled. These three applications demonstrate
+the three different levels of localization:
+
+@orderedList(
+   @item(Single language application. Not internationalized. Not localized.)
+   @item(World enabled application. Localized.)
+   @item(Runtime language switch enabled application. Localized.)
+)
+
+When you localize your application your target is at least #2. Depending on your
+needs and resources you can go further. Soluling's add-on product, Resourcer, helps you to
+replace hard coded strings with resource strings.
+
+@bold(Bi-directional languages)
+
+It is relatively easy to internationalize for languages that do use left to right reading
+order such as English, German and Japanese. However things get a lot harder if you want to
+support languages that use right to left reading order such as Arabic, Hebrew and Persian.
+
+You have to provide "mirrored" user interface. There are two ways to do that.
+First is to let Soluling mirror each forms. Another is to used VCL' TForm.FlipChildren
+function to mirror forms on run time. The later is recommended but also requires
+you to modify your code more. You have to be carefully when to mirror the form.
+It should be done before the forms gets visible but after you have added any
+possible runtime controls on the form. @link(TNtTranslator) has a built-in support
+for BiDi languages. It can automatically mirror the forms when needed.
+See @italic(Samples\Delphi\VCL\BiDi\Localized) sample to see how to implement
+localized BiDi-enabled application.
+See @italic(Samples\Delphi\VCL\BiDi\Multilingual) sample to see how to imlement
+runtime language switch and BiDi-enabled application.
+
+@bold(C++Builder)
+
+These classes are compatible to C++Builder compiler. However C++Builder is not
+officially supported.
+
+Soluling covers most if not all your needs for Delphi internatioalization and
+localization. Soluling itself has been written in Delphi by Delphi gurus. We know
+Delphi and we know localization. Soluling provides you the easiest and fastest
+way to localize your Delphi applications.

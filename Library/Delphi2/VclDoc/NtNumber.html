@@ -1,0 +1,107 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtNumber</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtNumber</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td><a class="section"  href="#%40Constants">Constants</a></td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements an API to abbreviated numbers.</p>
+<p>
+
+
+<p>If you have something like this
+
+<p><code>str := Format('There are %d hits', [hitCount]);</code>
+
+<p>and you want to localize it and use abbreviated numbers convert code to
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">resourcestring</span>
+  SHits = <span class="pascal_string">'There are %s hits'</span>;
+<span class="pascal_numeric"></span>...
+  str := Format(SHits, [TAbbreviatedNumber.FormatShort(hitCount)]);
+
+  Delphi XE <span class="pascal_keyword">or</span> later required.
+</pre>
+
+<p></p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="NtNumber.TAbbreviationRule.html"><code>TAbbreviationRule</code></a></td>
+<td class="itemdesc">Record that stores one abbreviation rule.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtNumber.TAbbreviatedNumber.html"><code>TAbbreviatedNumber</code></a></td>
+<td class="itemdesc">Static class that contains abbreviated number routines.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtNumber.html#TAbbreviatedNumberForm">TAbbreviatedNumberForm</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtNumber.html#TAbbreviationRules">TAbbreviationRules</a></b> = array of <a   href="NtNumber.TAbbreviationRule.html">TAbbreviationRule</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtNumber.html#DEFAULT_PRECISION">DEFAULT_PRECISION</a></b> = 2;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAbbreviatedNumberForm"></a><code><b>TAbbreviatedNumberForm</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the format of the abbreviation type.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+anLong: Long string form such as &quot;1 thousand&quot; and &quot;10 millions&quot;</li>
+<li>
+anShort: Short string form such as &quot;1K&quot; or &quot;10M&quot;</li>
+<li>
+anCurrency: Currency string form such as &quot;$1K&quot; and &quot;$10M&quot;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TAbbreviationRules"></a><code><b>TAbbreviationRules</b> = array of <a   href="NtNumber.TAbbreviationRule.html">TAbbreviationRule</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Type that stores all abbreviation rules.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="DEFAULT_PRECISION"></a><code><b>DEFAULT_PRECISION</b> = 2;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Default amount of precision digits.</p>
+</td></tr>
+</table>
+</body></html>

@@ -101,6 +101,11 @@ type
       @param mask    Mask or extension of the file type. }
     procedure Add(const pattern: String; mask: String);
 
+    class function AddOne(
+      const pattern: String;
+      mask: String;
+      const allPattern: String = ''): String;
+
     property Value: String read GetValue;
   end;
 
@@ -212,6 +217,26 @@ begin
 
   if FSecondPart <> '' then
     Result := AppendSeparator(Result) + FSecondPart;
+end;
+
+class function TNtDialogFilter.AddOne(
+  const pattern: String;
+  mask: String;
+  const allPattern: String = ''): String;
+var
+  filter: TNtDialogFilter;
+begin
+  filter := TNtDialogFilter.Create;
+  try
+    filter.Add(pattern, mask);
+
+    if allPattern <> '' then
+      filter.All(allPattern);
+
+    Result := filter.Value;
+  finally
+    filter.Free;
+  end;
 end;
 
 end.

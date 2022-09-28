@@ -1,0 +1,448 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtPattern</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtPattern</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td><a class="section"  href="#%40Constants">Constants</a></td><td><a class="section"  href="#%40Variables">Variables</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements a multi pattern enabled Format function <a class="normal"  href="NtPattern.TMultiPattern.html#Format">TMultiPattern.Format</a> that supports plurals, genders and selects.</p>
+<p>
+
+
+<p>Most languages have a singular and plural forms. However this is not case with every language. Asian languages do not have plural form at all. They only have singular form. Most Slavic languages have three forms: singular, plural and one between them (dual or paucal). Sometimes 0 is handled as plural, sometimes as singular. Some languages have four different forms. Arabic has six different forms.
+
+<p>This is why you can not use the standard Format if you want to create grammatically correct dynamic messages that contain counts and genders. Instead you can use <a class="normal"  href="NtPattern.TMultiPattern.html#Format">TMultiPattern.Format</a> function. It works little bit like GetText's ngettext funtion. You pass combined pattern and count, gender or select parameter(s). The functions calculates what pattern to use based on the passed parameters and returns that pattern.
+
+<p>In English and most Western languages this is very simple. There are only two items in the combined pattern: singular and plural. If count is 1 then the singualar pattern is used. If the count is other than 1 then the plural pattern is used.
+
+<p>If you have something like this
+
+<p><code>str := Format('%d files', [fileCount]);</code>
+
+<p>and you want to localize it convert code to
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">resourcestring</span>
+  SFileCountPlural = <span class="pascal_string">'{plural, one {%d file} other {%d files}}'</span>;
+<span class="pascal_numeric"></span>...
+  str := TMultiPattern.Format(SFileCountPlural, fileCount);
+</pre>
+
+<p>
+
+<p>As you can see instead of single pattern the markup contains two parts: singular and plural. Add a plural form code in the begining of each part.
+
+<p>Plural form codes are: zero is for nullar. one is for singular. two is for dual. few is for trial, paucal, sexal, minority plural and plural-100 many is for large plural other is for plural
+
+<p>Other part should be on every pattern. If the language requires more forms add them too. In addition you can add zero, one or two parts to any string. For example following are valid for English: &quot;{, plural one {One file} other {%d files}}&quot; &quot;{, plural zero;No files} one {One file} other {%d files}}&quot; &quot;{, plural zero;No files} one {One file} two {Two files} other {%d files}}&quot;
+
+<p>If you pattern contains { or } characters you must escape them with \. Also \ must be escaped. 'Item {example\two} %d car(s)' -&gt; '{cars, plural, one {Item \{example\\two\} %d car} other {Item \{example\\two\} %d cars}}'
+
+<p>In addition you can use operators: [o]N where o is the operator and N is the operamd (i.e. count). Possible operators are: = Used if the count equals the operand &tilde; Used if the count a about the same as operand. The dela is specified by OperatorDelta. &lt; Used if the count is less than the operand &gt; Used if the count is greater than the operand &lt;= Used if the count is less or equal to the operand &gt;= Used if the count is equal or greater than the operand a..b Used if the count is between a and b
+
+<p>If no operator is given but just number then equal operatori is assumed. &quot;1&quot; is same as &quot;=1&quot;.
+
+<p>For example following &quot;{, plural, 0 {No files} =1 {One file} other {%d files}}&quot;
+
+<p>Most languages also use genders. There might be male, female and neutral genders.
+
+<p>Gender codes are: male is for male female is for female other is for neutral or other
+
+<p>Plural and gender engines need to know the language that the application uses. Compiled application file does not contain this information. This is why you should create a resource string that contains the locale id and set that value to <a class="normal"  href="NtBase.html#DefaultLocale">NtBase.DefaultLocale</a>. A good place to set <a class="normal"  href="NtBase.html#DefaultLocale">NtBase.DefaultLocale</a> is the initialization block of the main unit.
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> Unit1;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">resourcestring</span>
+  SNtLocale = <span class="pascal_string">'en'</span>;
+<span class="pascal_keyword">initialization</span>
+  DefaultLocale := SNtLocale;
+<span class="pascal_keyword">end</span>.
+</pre>
+
+<p>
+
+<p>Grammatical number rules have been extracted from CLDR to Delphi code that exists in <a class="normal"  href="NtPluralData.html">NtPluralData</a>.
+
+<p>If you name the resource string as <b>SNtLocale</b> Soluling automatically translates it to hold the locale code of the target language. So German column will have &quot;de&quot; and French colum will have &quot;fr&quot;.
+
+<p><i>See Samples\Delphi\VCL\Patterns</i> or <i>Samples\Delphi\FMX\Patterns</i> samples to see how to use the unit.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TPattern.html"><code>TPattern</code></a></td>
+<td class="itemdesc">Class that contain one pattern.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TNumberPattern.html"><code>TNumberPattern</code></a></td>
+<td class="itemdesc">Base class for plural patterns.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TPluralPattern.html"><code>TPluralPattern</code></a></td>
+<td class="itemdesc">Class that contain one plural pattern.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TOperatorPattern.html"><code>TOperatorPattern</code></a></td>
+<td class="itemdesc">Class that contain one operator pattern.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TGenderPattern.html"><code>TGenderPattern</code></a></td>
+<td class="itemdesc">Class that contain one gender pattern.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TSelectPattern.html"><code>TSelectPattern</code></a></td>
+<td class="itemdesc">Class that contain one select pattern.</td>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="NtPattern.TFormatParameter.html"><code>TFormatParameter</code></a></td>
+<td class="itemdesc">Record that contains payload for one parameter for TMultiPattern.FormatMulti.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TFormatPartEnumerator.html"><code>TFormatPartEnumerator</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TFormatPart.html"><code>TFormatPart</code></a></td>
+<td class="itemdesc">Class that contains one part of a plural and gender enabed format string.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TFormatStringEnumerator.html"><code>TFormatStringEnumerator</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TFormatString.html"><code>TFormatString</code></a></td>
+<td class="itemdesc">Class that contains patterns of plural and/or gender enabled format string.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TPluralInfo.html"><code>TPluralInfo</code></a></td>
+<td class="itemdesc">Class that contains information about plural rules of a single language.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPattern.TMultiPattern.html"><code>TMultiPattern</code></a></td>
+<td class="itemdesc">Static class that contains multi pattern (e.g. plural, gender and select) routines.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPlural">TPlural</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPlurals">TPlurals</a></b> = set of <a   href="NtPattern.html#TPlural">TPlural</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TGender">TGender</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TGenders">TGenders</a></b> = set of <a   href="NtPattern.html#TGender">TGender</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TOperatorKind">TOperatorKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPluralProc">TPluralProc</a></b> = function(n: Double; i: Integer; v: Integer; w: Integer; f: Integer; t: Integer): <a   href="NtPattern.html#TPlural">TPlural</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TFormatParameterKind">TFormatParameterKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TFormatParameterKinds">TFormatParameterKinds</a></b> = set of <a   href="NtPattern.html#TFormatParameterKind">TFormatParameterKind</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPluralUsage">TPluralUsage</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPluralUsages">TPluralUsages</a></b> = set of <a   href="NtPattern.html#TPluralUsage">TPluralUsage</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TPlaceholderKind">TPlaceholderKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TIcuMessageEscape">TIcuMessageEscape</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#TFormatStringSyntax">TFormatStringSyntax</a></b> = (...);</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#OTHER_C">OTHER_C</a></b> = 'other';</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPattern.html#OperatorDelta">OperatorDelta</a></b>: Integer;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPattern.html#RaiseExceptionOnInvalidPattern">RaiseExceptionOnInvalidPattern</a></b>: Boolean;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPlural"></a><code><b>TPlural</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the plural form.</p>
+<p>
+ There are six different plural forms from singular to various plurals. How many forms a language uses depends on the language. Most languages use only singular and plural.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pfZero: Nullar. Used when count is zero. Few languages support this but you can include a =0 pattern into your pattern string if you want to handle 0 in a different way.</li>
+<li>
+pfOne: Singular. Used when count is one. Most languages support this.</li>
+<li>
+pfTwo: Dual. Used when count is two. Few languages support this.</li>
+<li>
+pfFew: Trial, paucal, sexal, minority plural or plural-100. Used when count is few. Few languages support this. The range depends on the language. Most often this is something between 2 and 4.</li>
+<li>
+pfMany: Greater paucal. Used when count is many. Few languages support this. The range depends on the language. Most often this is more than 4.</li>
+<li>
+pfOther: Plural or universal. Used when count does not belong to any other group. All languages support this. Most often this is the plural form.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPlurals"></a><code><b>TPlurals</b> = set of <a   href="NtPattern.html#TPlural">TPlural</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set that contains plural forms.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGender"></a><code><b>TGender</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the different gender values.</p>
+<p>
+ There are three different genders: neutral, male and female. How many values a language uses depends on the language.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+geMale: Male.</li>
+<li>
+geFemale: Female.</li>
+<li>
+geNeutral: Neutral, other or no gender used.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGenders"></a><code><b>TGenders</b> = set of <a   href="NtPattern.html#TGender">TGender</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set that contains gender values.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOperatorKind"></a><code><b>TOperatorKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the operator.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+okEqual: Equal (e.g. =1).</li>
+<li>
+okAround: Around (e.g. &tilde;1).</li>
+<li>
+okLess: Less than (e.g. &lt;1).</li>
+<li>
+okLessOrEqual: Less or equal than (e.g. &lt;=1).</li>
+<li>
+okGreater: Greater than (e.g. &gt;1).</li>
+<li>
+okGreaterOrEqual: Greater or equal than (e.g. &gt;=1).</li>
+<li>
+okRange: Range (e.g 3..5).</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralProc"></a><code><b>TPluralProc</b> = function(n: Double; i: Integer; v: Integer; w: Integer; f: Integer; t: Integer): <a   href="NtPattern.html#TPlural">TPlural</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Represents the method that will get the plural form matching the given number.</p>
+<p>
+       </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>n</dt>
+<dd>Absolute value of the source number (integer and decimals) (e.g. 9.870 =&gt; 9.87)</dd>
+<dt>i</dt>
+<dd>Integer digits of n (e.g. 9.870 =&gt; 9)</dd>
+<dt>v</dt>
+<dd>Number of visible fraction digits in n, with trailing zeros (e.g. 9.870 =&gt; 3)</dd>
+<dt>w</dt>
+<dd>Number of visible fraction digits in n, without trailing zeros (e.g. 9.870 =&gt; 2)</dd>
+<dt>f</dt>
+<dd>Visible fractional digits in n, with trailing zeros (e.g. 9.870 =&gt; 870)</dd>
+<dt>t</dt>
+<dd>Visible fractional digits in n, without trailing zeros (e.g. 9.870 =&gt; 87)</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The plural fomr that the passed number uses.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormatParameterKind"></a><code><b>TFormatParameterKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the different parameter types for TMultiPattern.FormatMulti.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fpPlural: Plural parameter (e.g. singular or plural)</li>
+<li>
+fpOperator: Operator parameter (e.g. =1, &tilde;1, &gt;1, &lt;1, &gt;=1, &lt;=1)</li>
+<li>
+fpGender: Gender parameter (e.g. male or female)</li>
+<li>
+fpSelect: Select parameter. Select among multiple patterns by a name.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormatParameterKinds"></a><code><b>TFormatParameterKinds</b> = set of <a   href="NtPattern.html#TFormatParameterKind">TFormatParameterKind</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set that contains format parameter types.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralUsage"></a><code><b>TPluralUsage</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the plural usages.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+puInteger: Get rules that are used with interger numbers.</li>
+<li>
+puDecimal: Get rules that are used with decimal or floating point numbers.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralUsages"></a><code><b>TPluralUsages</b> = set of <a   href="NtPattern.html#TPluralUsage">TPluralUsage</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set that contains plural usages.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPlaceholderKind"></a><code><b>TPlaceholderKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the placeholder syntax.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pkPrintf: %0:d</li>
+<li>
+pkDoubleBrace: {{0}}</li>
+<li>
+pkSingleBrace: {0}</li>
+<li>
+pkHashtag: #</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TIcuMessageEscape"></a><code><b>TIcuMessageEscape</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies how braces in ICU message are escaped.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ieDefault: Single backslash is used a escape character. This is \\ \{sample's\} text -&gt; This is \ {sample's} text</li>
+<li>
+ieReact: Double backslash is used a escape character. TThis is \\\\ \\{sample's\\} text -&gt; This is \ {sample's} text</li>
+<li>
+ieOriginal: Original ICU specification when single quote escaping is used. This is \ '{sample''s}' text -&gt; This is \ {sample's} text</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormatStringSyntax"></a><code><b>TFormatStringSyntax</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the pattern format.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fsIcu: ICU message format</li>
+<li>
+fsLegacy: Soluling's legacy format</li>
+</ul>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OTHER_C"></a><code><b>OTHER_C</b> = 'other';</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="OperatorDelta"></a><code><b>OperatorDelta</b>: Integer;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="RaiseExceptionOnInvalidPattern"></a><code><b>RaiseExceptionOnInvalidPattern</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+</body></html>

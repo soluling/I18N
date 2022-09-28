@@ -1,0 +1,142 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtTranslator: Class TNtTranslator</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtTranslator"></a><h1 class="cio">Class TNtTranslator</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtTranslator.html">NtTranslator</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtTranslator = class(<a class="normal"  href="NtBaseTranslator.TNtBaseTranslator.html">TNtBaseTranslator</a>)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that translates VCL forms, frames and data modules.</p>
+<p>
+ This class performs runtime language switch by going through each component and property on the host component (form, frame or data module). Call <a class="normal"  href="NtTranslator.TNtTranslator.html#TranslateForms">TNtTranslator.TranslateForms</a> to translate all forms.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="NtBaseTranslator.TNtBaseTranslator.html">TNtBaseTranslator</a></li>
+<li class="thisitem">TNtTranslator</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtTranslator.TNtTranslator.html#AfterProcessComponent">AfterProcessComponent</a></b>(component: TComponent); override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtTranslator.TNtTranslator.html#Translate">Translate</a></b>(component: TComponent); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtTranslator.TNtTranslator.html#InitializeApplication">InitializeApplication</a></b>(layout: <a   href="NtBase.html#TNtLayout">TNtLayout</a> = laLeftToRight);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtTranslator.TNtTranslator.html#InitializeForm">InitializeForm</a></b>(form: TCustomForm);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtTranslator.TNtTranslator.html#SetNew">SetNew</a></b>( const code: String = ''; options: <a   href="NtBase.html#TNtResourceOptions">TNtResourceOptions</a> = []; const originalCode: String = ''; const fileName: String = ''): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtTranslator.TNtTranslator.html#TranslateForms">TranslateForms</a></b>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="AfterProcessComponent"></a><code>procedure <b>AfterProcessComponent</b>(component: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Called after a component has been translated. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>component</dt>
+<dd>Component that has been translated.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="protected.gif" alt="Protected" title="Protected"></a></td>
+<td class="itemcode"><a name="Translate"></a><code>procedure <b>Translate</b>(component: TComponent); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InitializeApplication"></a><code>class procedure <b>InitializeApplication</b>(layout: <a   href="NtBase.html#TNtLayout">TNtLayout</a> = laLeftToRight);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Call this function in the initialization section of your main form. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>layout</dt>
+<dd>The original layout of the application.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="InitializeForm"></a><code>class procedure <b>InitializeForm</b>(form: TCustomForm);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Flips the form layout if needed. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>form</dt>
+<dd>Form to be initialized.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SetNew"></a><code>class function <b>SetNew</b>( const code: String = ''; options: <a   href="NtBase.html#TNtResourceOptions">TNtResourceOptions</a> = []; const originalCode: String = ''; const fileName: String = ''): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Load a new resource DLL file, initialize the language depend values, and finally translate the forms.     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>code</dt>
+<dd>Specifies the file extension without period of the new resource DLL.</dd>
+<dt>options</dt>
+<dd>Language change options.</dd>
+<dt>originalCode</dt>
+<dd>Language used in the original application.</dd>
+<dt>fileName</dt>
+<dd>The file to be loaded. If empty then function looks the standard resource file name and location.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return"><code>True</code> if succesful, <code>False</code> if failed.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="TranslateForms"></a><code>class procedure <b>TranslateForms</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Translate all created forms, frames and data modules.</p>
+</td></tr>
+</table>
+</body></html>

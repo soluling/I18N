@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="A4DB72AE-2DC7-443E-9B0C-01CE991B8949" created="20220914T131200Z" lastmodified="20220915T005938Z" version="1.0.944" stringid="6">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Binding.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Binding\Binding.csproj" original="en" lastmodified="20220915T005938Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net45" toolsversion="nt150"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkJpbmRpbmcuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3Nj
+        aGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3Bh
+        Y2U6QmluZGluZyINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5S
+        ZXNvdXJjZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title" si="1">
+        <value>Date and Currencies</value>
+        <lang id="fi" rw="0" time="20220914T132209Z" fuzzy="99.5">Päivämäärä ja valuutat</lang>
+      </row>
+      <item name="DataContext">
+        <item name="local:MainWindowViewModel[0]" type="local:MainWindowViewModel"/>
+      </item>
+      <item name="Grid[0]" type="Grid">
+        <item name="RowDefinitions">
+          <item name="RowDefinition[0]" type="RowDefinition"/>
+          <item name="RowDefinition[1]" type="RowDefinition"/>
+          <item name="RowDefinition[2]" type="RowDefinition"/>
+        </item>
+        <item name="ColumnDefinitions">
+          <item name="ColumnDefinition[0]" type="ColumnDefinition"/>
+          <item name="ColumnDefinition[1]" type="ColumnDefinition"/>
+        </item>
+        <item name="dateLabel" type="Label">
+          <row id="Content" si="2">
+            <value>Date:</value>
+            <lang id="fi" rw="0" time="20220914T132216Z" fuzzy="99.5">Päivämäärä:</lang>
+          </row>
+        </item>
+        <item name="dateValue" type="TextBlock">
+          <row id="Text.StringFormat" class="TPatternRow" si="3" locked="1">D</row>
+        </item>
+        <item name="amountLabel" type="Label">
+          <row id="Content" si="4">
+            <value>Amount:</value>
+            <lang id="fi" rw="0" time="20220914T132223Z" fuzzy="99.5">Määrä:</lang>
+          </row>
+        </item>
+        <item name="amountValue" type="TextBlock">
+          <row id="Text.StringFormat" class="TPatternRow" si="5" locked="1">C</row>
+        </item>
+        <item name="productNameLabel" type="Label">
+          <row id="Content" si="6">
+            <value>Product:</value>
+            <lang id="fi" rw="0" time="20220914T132230Z" fuzzy="99.5">Tuote:</lang>
+          </row>
+        </item>
+        <item name="productValue" type="TextBlock"/>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iQmluZGluZy5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9z
+        b2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
+        Y29tL3dpbmZ4LzIwMDYveGFtbCINCiAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2Js
+        ZW5kLzIwMDgiDQogIHhtbG5zOm1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxp
+        dHkvMjAwNiINCiAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6QmluZGluZyINCiAgbWM6SWdub3JhYmxlPSJkIg0KICBUaXRs
+        ZT0iRGF0ZSBhbmQgQ3VycmVuY2llcyIgSGVpZ2h0PSIxMjAiIFdpZHRoPSI0MDAiPg0KDQogIDxXaW5kb3cuRGF0YUNvbnRleHQ+
+        DQogICAgPGxvY2FsOk1haW5XaW5kb3dWaWV3TW9kZWwgLz4NCiAgPC9XaW5kb3cuRGF0YUNvbnRleHQ+DQogIA0KICA8R3JpZD4N
+        CiAgICA8R3JpZC5Sb3dEZWZpbml0aW9ucz4NCiAgICAgIDxSb3dEZWZpbml0aW9uIC8+DQogICAgICA8Um93RGVmaW5pdGlvbiAv
+        Pg0KICAgICAgPFJvd0RlZmluaXRpb24gLz4NCiAgICA8L0dyaWQuUm93RGVmaW5pdGlvbnM+DQogICAgDQogICAgPEdyaWQuQ29s
+        dW1uRGVmaW5pdGlvbnM+DQogICAgICA8Q29sdW1uRGVmaW5pdGlvbiAvPg0KICAgICAgPENvbHVtbkRlZmluaXRpb24gLz4NCiAg
+        ICA8L0dyaWQuQ29sdW1uRGVmaW5pdGlvbnM+DQoNCiAgICA8TGFiZWwgeDpOYW1lPSJkYXRlTGFiZWwiIEdyaWQuUm93PSIwIiBH
+        cmlkLkNvbHVtbj0iMCI+RGF0ZTo8L0xhYmVsPg0KICAgIDxUZXh0QmxvY2sgeDpOYW1lPSJkYXRlVmFsdWUiIEdyaWQuUm93PSIw
+        IiBHcmlkLkNvbHVtbj0iMSIgVGV4dD0ie0JpbmRpbmcgRGF0ZSwgU3RyaW5nRm9ybWF0PUR9IiAvPg0KDQogICAgPExhYmVsIHg6
+        TmFtZT0iYW1vdW50TGFiZWwiIEdyaWQuUm93PSIxIiBHcmlkLkNvbHVtbj0iMCI+QW1vdW50OjwvTGFiZWw+DQogICAgPFRleHRC
+        bG9jayB4Ok5hbWU9ImFtb3VudFZhbHVlIiBHcmlkLlJvdz0iMSIgR3JpZC5Db2x1bW49IjEiIFRleHQ9IntCaW5kaW5nIEFtb3Vu
+        dCwgU3RyaW5nRm9ybWF0PUN9IiAvPg0KDQogICAgPExhYmVsIHg6TmFtZT0icHJvZHVjdE5hbWVMYWJlbCIgR3JpZC5Sb3c9IjIi
+        IEdyaWQuQ29sdW1uPSIwIj5Qcm9kdWN0OjwvTGFiZWw+DQogICAgPFRleHRCbG9jayB4Ok5hbWU9InByb2R1Y3RWYWx1ZSIgR3Jp
+        ZC5Sb3c9IjIiIEdyaWQuQ29sdW1uPSIxIiBUZXh0PSJ7QmluZGluZyBQcm9kdWN0TmFtZX0iIC8+DQogIDwvR3JpZD4NCjwvV2lu
+        ZG93Pg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Properties">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
+    </node>
+    <configurations>
+      <configuration name="Default" xamllang="xlAdd"/>
+    </configurations>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Countries.csv" type="TCsvGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

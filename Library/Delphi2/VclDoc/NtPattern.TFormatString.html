@@ -1,0 +1,463 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtPattern: Class TFormatString</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TFormatString"></a><h1 class="cio">Class TFormatString</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtPattern.html">NtPattern</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TFormatString = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that contains patterns of plural and/or gender enabled format string.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TFormatString</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="NtPattern.TFormatString.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="NtPattern.TFormatString.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#GetEnumerator">GetEnumerator</a></b>: <a   href="NtPattern.TFormatStringEnumerator.html">TFormatStringEnumerator</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtPattern.TFormatString.html#Clear">Clear</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Find">Find</a></b>(pattern: <a   href="NtPattern.TPattern.html">TPattern</a>): <a   href="NtPattern.TPattern.html">TPattern</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#FindAny">FindAny</a></b>(pattern: <a   href="NtPattern.TPattern.html">TPattern</a>): <a   href="NtPattern.TPattern.html">TPattern</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Find">Find</a></b>(gender: <a   href="NtPattern.html#TGender">TGender</a>; all: Boolean = True): <a   href="NtPattern.TGenderPattern.html">TGenderPattern</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Exists">Exists</a></b>(gender: <a   href="NtPattern.html#TGender">TGender</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#AddValue">AddValue</a></b>(gender: <a   href="NtPattern.html#TGender">TGender</a>; const value: String): <a   href="NtPattern.TGenderPattern.html">TGenderPattern</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Find">Find</a></b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>; all: Boolean = True): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Exists">Exists</a></b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>): Boolean; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#AddValue">AddValue</a></b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>; const value: String): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Find">Find</a></b>(kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer; all: Boolean = True): <a   href="NtPattern.TOperatorPattern.html">TOperatorPattern</a>; overload;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#Exists">Exists</a></b>(kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer): Boolean; overload;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#FindMatching">FindMatching</a></b>(operand: Integer; all: Boolean = True): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#ExistsMatching">ExistsMatching</a></b>(operand: Integer): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#AddParameter">AddParameter</a></b>(const name: String = ''): <a   href="NtPattern.TFormatPart.html">TFormatPart</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtPattern.TFormatString.html#ParsePattern">ParsePattern</a></b>(const pattern: String);</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#ParseLegacy">ParseLegacy</a></b>(pattern: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtPattern.TFormatString.html#ParseIcu">ParseIcu</a></b>(pattern: String): Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPattern.TFormatString.html#IsPattern">IsPattern</a></b>(const pattern: String): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPattern.TFormatString.html#IsMultiPattern">IsMultiPattern</a></b>(const pattern: String): Boolean;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#Count">Count</a></b>: Integer read GetCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#Items">Items</a></b>[i: Integer]: <a   href="NtPattern.TFormatPart.html">TFormatPart</a> read GetItem;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#StartPattern">StartPattern</a></b>: String read FStartPattern write FStartPattern;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#Text">Text</a></b>: String read GetText;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#OperatorValues">OperatorValues</a></b>[kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer]: String read GetOperatorValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#EqualOperatorValues">EqualOperatorValues</a></b>[value: Integer]: String read GetEqualOperatorValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#PluralValues">PluralValues</a></b>[value: <a   href="NtPattern.html#TPlural">TPlural</a>]: String read GetPluralValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#MatchingValues">MatchingValues</a></b>[value: Integer]: String read GetMatchingValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#GenderValues">GenderValues</a></b>[value: <a   href="NtPattern.html#TGender">TGender</a>]: String read GetGenderValue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#SelectValues">SelectValues</a></b>[const value: String]: String read GetSelectValue;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#PlaceholderKind">PlaceholderKind</a></b>: <a   href="NtPattern.html#TPlaceholderKind">TPlaceholderKind</a> read FPlaceholderKind write FPlaceholderKind;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#Escape">Escape</a></b>: <a   href="NtPattern.html#TIcuMessageEscape">TIcuMessageEscape</a> read FEscape write FEscape;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TFormatString.html#Syntax">Syntax</a></b>: <a   href="NtPattern.html#TFormatStringSyntax">TFormatStringSyntax</a> read FSyntax write FSyntax;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetEnumerator"></a><code>function <b>GetEnumerator</b>: <a   href="NtPattern.TFormatStringEnumerator.html">TFormatStringEnumerator</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Clear"></a><code>procedure <b>Clear</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(pattern: <a   href="NtPattern.TPattern.html">TPattern</a>): <a   href="NtPattern.TPattern.html">TPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindAny"></a><code>function <b>FindAny</b>(pattern: <a   href="NtPattern.TPattern.html">TPattern</a>): <a   href="NtPattern.TPattern.html">TPattern</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(gender: <a   href="NtPattern.html#TGender">TGender</a>; all: Boolean = True): <a   href="NtPattern.TGenderPattern.html">TGenderPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exists"></a><code>function <b>Exists</b>(gender: <a   href="NtPattern.html#TGender">TGender</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddValue"></a><code>function <b>AddValue</b>(gender: <a   href="NtPattern.html#TGender">TGender</a>; const value: String): <a   href="NtPattern.TGenderPattern.html">TGenderPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>; all: Boolean = True): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exists"></a><code>function <b>Exists</b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddValue"></a><code>function <b>AddValue</b>(plural: <a   href="NtPattern.html#TPlural">TPlural</a>; const value: String): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>function <b>Find</b>(kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer; all: Boolean = True): <a   href="NtPattern.TOperatorPattern.html">TOperatorPattern</a>; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Exists"></a><code>function <b>Exists</b>(kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer): Boolean; overload;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FindMatching"></a><code>function <b>FindMatching</b>(operand: Integer; all: Boolean = True): <a   href="NtPattern.TPluralPattern.html">TPluralPattern</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ExistsMatching"></a><code>function <b>ExistsMatching</b>(operand: Integer): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AddParameter"></a><code>function <b>AddParameter</b>(const name: String = ''): <a   href="NtPattern.TFormatPart.html">TFormatPart</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParsePattern"></a><code>procedure <b>ParsePattern</b>(const pattern: String);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Parse pattern into parts.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>pattern</dt>
+<dd>Original multi pattern string.</dd>
+<dt>values</dt>
+<dd>String list to hold parsed patterns.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseLegacy"></a><code>function <b>ParseLegacy</b>(pattern: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ParseIcu"></a><code>function <b>ParseIcu</b>(pattern: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsPattern"></a><code>class function <b>IsPattern</b>(const pattern: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsMultiPattern"></a><code>class function <b>IsMultiPattern</b>(const pattern: String): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read GetCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Items"></a><code>property <b>Items</b>[i: Integer]: <a   href="NtPattern.TFormatPart.html">TFormatPart</a> read GetItem;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="StartPattern"></a><code>property <b>StartPattern</b>: String read FStartPattern write FStartPattern;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Text"></a><code>property <b>Text</b>: String read GetText;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OperatorValues"></a><code>property <b>OperatorValues</b>[kind: <a   href="NtPattern.html#TOperatorKind">TOperatorKind</a>; operand, operand2: Integer]: String read GetOperatorValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="EqualOperatorValues"></a><code>property <b>EqualOperatorValues</b>[value: Integer]: String read GetEqualOperatorValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PluralValues"></a><code>property <b>PluralValues</b>[value: <a   href="NtPattern.html#TPlural">TPlural</a>]: String read GetPluralValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="MatchingValues"></a><code>property <b>MatchingValues</b>[value: Integer]: String read GetMatchingValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GenderValues"></a><code>property <b>GenderValues</b>[value: <a   href="NtPattern.html#TGender">TGender</a>]: String read GetGenderValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="SelectValues"></a><code>property <b>SelectValues</b>[const value: String]: String read GetSelectValue;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="PlaceholderKind"></a><code>property <b>PlaceholderKind</b>: <a   href="NtPattern.html#TPlaceholderKind">TPlaceholderKind</a> read FPlaceholderKind write FPlaceholderKind;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Escape"></a><code>property <b>Escape</b>: <a   href="NtPattern.html#TIcuMessageEscape">TIcuMessageEscape</a> read FEscape write FEscape;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Syntax"></a><code>property <b>Syntax</b>: <a   href="NtPattern.html#TFormatStringSyntax">TFormatStringSyntax</a> read FSyntax write FSyntax;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+</body></html>

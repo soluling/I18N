@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CB6849C0-CD62-42EE-8CBF-6B5EE1735BBA" created="20160628T031114Z" lastmodified="20210829T001354Z" version="1.0.873" stringid="72">
+<project id="CB6849C0-CD62-42EE-8CBF-6B5EE1735BBA" created="20160628T031114Z" lastmodified="20220917T210543Z" version="1.0.944" stringid="192">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="THtmlSource" name="Sport.htm" fullpath="D:\NT\Deploy\Samples\HTML\Sport\Sport.htm" original="en" encoding="windows-1252">
+  <node class="THtmlSource" name="Sport.htm" fullpath="D:\NT\Deploy\Samples\HTML\Sport\Sport.htm" original="en" lastmodified="20220917T210548Z" encoding="windows-1252">
     <row id="title.text" si="1">
       <value>Sports</value>
       <lang id="fi" rw="0" time="20210829T001350Z">Urheilulajit</lang>
@@ -123,6 +123,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Countries.csv" type="TCsvGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -135,6 +136,8 @@
   <mt optimizeusage="0">
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
   <duplicates>

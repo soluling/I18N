@@ -1,0 +1,295 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtChecker: Class TFormChecker</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TFormChecker"></a><h1 class="cio">Class TFormChecker</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtChecker.html">NtChecker</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TFormChecker = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that check overlapped controls and truncated text on VCL forms.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TFormChecker</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="NtChecker.TFormChecker.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>destructor <b><a   href="NtChecker.TFormChecker.html#Destroy">Destroy</a></b>; override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtChecker.TFormChecker.html#Check">Check</a></b>(control: TWinControl);</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtChecker.TFormChecker.html#LanguageChanged">LanguageChanged</a></b>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtChecker.TFormChecker.html#GetParent">GetParent</a></b>(control: TControl; parentClass: TControlClass): TControl;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#ActiveOutputDir">ActiveOutputDir</a></b>: String read FActiveOutputDir;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#Charset">Charset</a></b>: TFontCharSet read GetCharset;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#Count">Count</a></b>: Integer read GetCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#DisabledTypes">DisabledTypes</a></b>: <a   href="NtChecker.html#TFormIssueTypes">TFormIssueTypes</a> read FDisabledTypes write FDisabledTypes;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#Issues">Issues</a></b>[i: Integer]: <a   href="NtChecker.TFormIssue.html">TFormIssue</a> read GetIssue;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#HighlightColors">HighlightColors</a></b>: <a   href="NtChecker.html#THighlightColors">THighlightColors</a> read FHighlightColors write FHighlightColors;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#HighlightIssues">HighlightIssues</a></b>: Boolean read FHighlightIssues write FHighlightIssues;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#HighlightMargin">HighlightMargin</a></b>: Integer read FHighlightMargin write FHighlightMargin;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#HighlightWidth">HighlightWidth</a></b>: Integer read FHighlightWidth write FHighlightWidth;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#OutputDir">OutputDir</a></b>: String read FOutputDir write FOutputDir;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#Screenshots">Screenshots</a></b>: Boolean read FScreenshots write FScreenshots;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#OnControl">OnControl</a></b>: <a   href="NtChecker.html#TFormControlEvent">TFormControlEvent</a> read FOnControl write FOnControl;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtChecker.TFormChecker.html#OnIssue">OnIssue</a></b>: <a   href="NtChecker.html#TFormIssueEvent">TFormIssueEvent</a> read FOnIssue write FOnIssue;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Destroy"></a><code>destructor <b>Destroy</b>; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Check"></a><code>procedure <b>Check</b>(control: TWinControl);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Checks a control, form or frame. </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>control</dt>
+<dd>A control that will be checked.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="LanguageChanged"></a><code>procedure <b>LanguageChanged</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Call this when language of the applications changes.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetParent"></a><code>function <b>GetParent</b>(control: TControl; parentClass: TControlClass): TControl;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get the first ancestor (e.g. parent, parent's parent, etc) matching th given type.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>control</dt>
+<dd>Control whose ancestor is to be found.</dd>
+<dt>parentClass</dt>
+<dd>Type of the ancestor.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Control.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="ActiveOutputDir"></a><code>property <b>ActiveOutputDir</b>: String read FActiveOutputDir;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Active output directory. If your application use resource DLLs then this is a language specific sub directory of <a class="normal"  href="NtChecker.TFormChecker.html#OutputDir">TFormChecker.OutputDir</a>.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Charset"></a><code>property <b>Charset</b>: TFontCharSet read GetCharset;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Default charset.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Count"></a><code>property <b>Count</b>: Integer read GetCount;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Amount of issues.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DisabledTypes"></a><code>property <b>DisabledTypes</b>: <a   href="NtChecker.html#TFormIssueTypes">TFormIssueTypes</a> read FDisabledTypes write FDisabledTypes;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Issue types that are not checked</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Issues"></a><code>property <b>Issues</b>[i: Integer]: <a   href="NtChecker.TFormIssue.html">TFormIssue</a> read GetIssue;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Issues.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HighlightColors"></a><code>property <b>HighlightColors</b>: <a   href="NtChecker.html#THighlightColors">THighlightColors</a> read FHighlightColors write FHighlightColors;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Specifies the hightlist colors.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HighlightIssues"></a><code>property <b>HighlightIssues</b>: Boolean read FHighlightIssues write FHighlightIssues;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If True each issues is highlighted in the screenshot.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HighlightMargin"></a><code>property <b>HighlightMargin</b>: Integer read FHighlightMargin write FHighlightMargin;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Margin between of control(s) and highlight rectangle in pixels.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="HighlightWidth"></a><code>property <b>HighlightWidth</b>: Integer read FHighlightWidth write FHighlightWidth;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Width of the highlight rectange.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OutputDir"></a><code>property <b>OutputDir</b>: String read FOutputDir write FOutputDir;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Directory where screenshots and result file are written.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Screenshots"></a><code>property <b>Screenshots</b>: Boolean read FScreenshots write FScreenshots;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+If True screenshot fiels are writting into output directory.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnControl"></a><code>property <b>OnControl</b>: <a   href="NtChecker.html#TFormControlEvent">TFormControlEvent</a> read FOnControl write FOnControl;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that let you control if a control is checked or not.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="OnIssue"></a><code>property <b>OnIssue</b>: <a   href="NtChecker.html#TFormIssueEvent">TFormIssueEvent</a> read FOnIssue write FOnIssue;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Event that let you act each time when an issues is found.</p>
+</td></tr>
+</table>
+</body></html>

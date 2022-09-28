@@ -1,0 +1,281 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtBaseTranslator</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtBaseTranslator</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td><a class="section"  href="#%40Constants">Constants</a></td><td><a class="section"  href="#%40Variables">Variables</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements classes that are used when performing runtime language switch.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtBaseTranslator.TNtBaseTranslator.html"><code>TNtBaseTranslator</code></a></td>
+<td class="itemdesc">Abstract translator class.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtBaseTranslator.TNtTranslatorExtension.html"><code>TNtTranslatorExtension</code></a></td>
+<td class="itemdesc">Class that extends <a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtBaseTranslator.TNtStringsTranslator.html"><code>TNtStringsTranslator</code></a></td>
+<td class="itemdesc">Extension class that translates TStrings objects.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtBaseTranslator.TNtTranslatorExtensions.html"><code>TNtTranslatorExtensions</code></a></td>
+<td class="itemdesc">Class that stores installed extension.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtBaseTranslator.TNtStream.html"><code>TNtStream</code></a></td>
+<td class="itemdesc">Binary stream class that read integer and strings values.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#TNtBeforeTranslateEvent">TNtBeforeTranslateEvent</a></b> = procedure( host: TComponent; obj: TObject; propertyInfo: PPropInfo; const currentValue: Variant; var newValue: Variant; var cancel: Boolean);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#TNtBeforeTranslateEventEx">TNtBeforeTranslateEventEx</a></b> = procedure( translator: <a   href="NtBaseTranslator.TNtBaseTranslator.html">TNtBaseTranslator</a>; host: TComponent; component: TComponent; obj: TObject; propertyInfo: PPropInfo; const currentValue: Variant; var newValue: Variant; var cancel: Boolean);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#TNtAfterTranslateEvent">TNtAfterTranslateEvent</a></b> = procedure( host: TComponent; obj: TObject; propertyInfo: PPropInfo);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#TNtTranslatorExtensionClass">TNtTranslatorExtensionClass</a></b> = class of <a   href="NtBaseTranslator.TNtTranslatorExtension.html">TNtTranslatorExtension</a>;</code></td>
+</tr>
+</table>
+<a name="%40Constants"></a><h3 class="summary">Constants</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#STRING_TYPES">STRING_TYPES</a></b> = [  
+    tkString,
+    tkLString,
+    tkWString
+
+  ];</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtEnabledProperties">NtEnabledProperties</a></b>: TTypeKinds;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtFormPositionTranslationEnabled">NtFormPositionTranslationEnabled</a></b>: Boolean;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtBeforeTranslate">NtBeforeTranslate</a></b>: <a   href="NtBaseTranslator.html#TNtBeforeTranslateEvent">TNtBeforeTranslateEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtBeforeTranslateEx">NtBeforeTranslateEx</a></b>: <a   href="NtBaseTranslator.html#TNtBeforeTranslateEventEx">TNtBeforeTranslateEventEx</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtAfterTranslate">NtAfterTranslate</a></b>: <a   href="NtBaseTranslator.html#TNtAfterTranslateEvent">TNtAfterTranslateEvent</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtBaseTranslator.html#NtTranslatorExtensions">NtTranslatorExtensions</a></b>: <a   href="NtBaseTranslator.TNtTranslatorExtensions.html">TNtTranslatorExtensions</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TNtBeforeTranslateEvent"></a><code><b>TNtBeforeTranslateEvent</b> = procedure( host: TComponent; obj: TObject; propertyInfo: PPropInfo; const currentValue: Variant; var newValue: Variant; var cancel: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This event is called before translating a property value.      </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>host</dt>
+<dd>Either form or data module where the object belongs to.</dd>
+<dt>obj</dt>
+<dd>Component or a sub component that is currenty being translated.</dd>
+<dt>propertyInfo</dt>
+<dd>Property info.</dd>
+<dt>currentValue</dt>
+<dd>Current value of the property.</dd>
+<dt>newValue</dt>
+<dd>New value of the property. Change it if you want to use different value.</dd>
+<dt>cancel</dt>
+<dd>Set True if you want to cancel the translation.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TNtBeforeTranslateEventEx"></a><code><b>TNtBeforeTranslateEventEx</b> = procedure( translator: <a   href="NtBaseTranslator.TNtBaseTranslator.html">TNtBaseTranslator</a>; host: TComponent; component: TComponent; obj: TObject; propertyInfo: PPropInfo; const currentValue: Variant; var newValue: Variant; var cancel: Boolean);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This event is called before translating a property value.        </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>translator</dt>
+<dd>Instance of translator that is performing the translation.</dd>
+<dt>host</dt>
+<dd>Either form or data module where the object belongs to.</dd>
+<dt>component</dt>
+<dd>Component that is current being translated.</dd>
+<dt>obj</dt>
+<dd>Component or a sub component that is currenty being translated.</dd>
+<dt>propertyInfo</dt>
+<dd>Property info.</dd>
+<dt>currentValue</dt>
+<dd>Current value of the property.</dd>
+<dt>newValue</dt>
+<dd>New value of the property. Change it if you want to use different value.</dd>
+<dt>cancel</dt>
+<dd>Set True if you want to cancel the translation.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TNtAfterTranslateEvent"></a><code><b>TNtAfterTranslateEvent</b> = procedure( host: TComponent; obj: TObject; propertyInfo: PPropInfo);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This event is called after translating a property value.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>host</dt>
+<dd>Either form or data module where the object belongs to.</dd>
+<dt>obj</dt>
+<dd>Component or a sub component that was translated.</dd>
+<dt>propertyInfo</dt>
+<dd>Property info.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TNtTranslatorExtensionClass"></a><code><b>TNtTranslatorExtensionClass</b> = class of <a   href="NtBaseTranslator.TNtTranslatorExtension.html">TNtTranslatorExtension</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class type of the translator extension class.</p>
+</td></tr>
+</table>
+<h3 class="detail">Constants</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="STRING_TYPES"></a><code><b>STRING_TYPES</b> = [  
+    tkString,
+    tkLString,
+    tkWString
+
+  ];</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+All string types.</p>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtEnabledProperties"></a><code><b>NtEnabledProperties</b>: TTypeKinds;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Set of types that are translated. If empty then all properties are translated. If not empty then only those properties whose type is include in this set are translated.
+
+<p>The following sample shows how to translate only string properties. </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> Unit1;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">initialization</span>
+  NtEnabledProperties := STRING_TYPES;
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtFormPositionTranslationEnabled"></a><code><b>NtFormPositionTranslationEnabled</b>: Boolean;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+If <code>True</code> the form position (Left and Top properties) is also translated (e.g. changed if the new resource file contains different Left or Top properties). If <code>False</code> postion is not changed.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtBeforeTranslate"></a><code><b>NtBeforeTranslate</b>: <a   href="NtBaseTranslator.html#TNtBeforeTranslateEvent">TNtBeforeTranslateEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+An event that is called before translating a property value. Use this to disable or change the translation process. If you assign this value, make sure that the event is as fast as possible because this event is called on every single property of the application.
+
+<p>See <i>Samples\Delphi\VCL\DualLanguage</i> sample to see how to use the event. </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.html#NtAfterTranslate">NtAfterTranslate</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtBeforeTranslateEx"></a><code><b>NtBeforeTranslateEx</b>: <a   href="NtBaseTranslator.html#TNtBeforeTranslateEventEx">TNtBeforeTranslateEventEx</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+An event that is called before translating a property value. Use this to disable or change the translation process. If you assign this value, make sure that the event is as fast as possible because this event is called on every single property of the application.
+
+<p>See <i>Samples\Delphi\VCL\DualLanguage</i> sample to see how to use the event. </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.html#NtAfterTranslate">NtAfterTranslate</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtAfterTranslate"></a><code><b>NtAfterTranslate</b>: <a   href="NtBaseTranslator.html#TNtAfterTranslateEvent">TNtAfterTranslateEvent</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Event that is called after a property value has been translated. If you assing this value make sure that the event is as fast as possible because this event is called on every single property of the application. </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.html#NtBeforeTranslate">NtBeforeTranslate</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtTranslatorExtensions"></a><code><b>NtTranslatorExtensions</b>: <a   href="NtBaseTranslator.TNtTranslatorExtensions.html">TNtTranslatorExtensions</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Collections of registered extensions. Use it to register your custom extension. </p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> MyExtension;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">initialization</span>
+  NtTranslatorExtensions.<span class="pascal_keyword">Register</span>(TMyExtension);
+<span class="pascal_keyword">end</span>.</pre>
+
+<p></p>
+</td></tr>
+</table>
+</body></html>

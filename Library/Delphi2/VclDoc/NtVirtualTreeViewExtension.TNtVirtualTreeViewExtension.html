@@ -1,0 +1,114 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NewTool's VCL Classes: NtVirtualTreeViewExtension: Class TNtVirtualTreeViewExtension</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtVirtualTreeViewExtension"></a><h1 class="cio">Class TNtVirtualTreeViewExtension</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtVirtualTreeViewExtension.html">NtVirtualTreeViewExtension</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtVirtualTreeViewExtension = class(<a class="normal"  href="NtBaseTranslator.TNtExtension.html">TNtExtension</a>)</code></p>
+<h2 class="description">Description</h2>
+<div class="nodescription">no description available, TNtExtension description follows</div><p>
+Class that extends <a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a>.</p>
+<p>
+ <a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a> can translate all normal properties but can not translate complex properties. A complex property is either a property that contains a string list, defined property or defined binary property. Defined properties can contain anything and the format can either be the same as normal properties (defined property) or propiertary binary format (defined binary property). In either case <a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a> does not know the format can not either read it or map the data into the real properties of the object. This is where extensions are used. An extension is derived from TNtExtension class and it implements translations of a defined property of a component. For example <a class="normal"  href="NtPictureExtension.TNtPictureExtension.html">TNtPictureExtension</a> translation the binary image data of the TPicture. If you have a 3rd party component that does not translate you may have to implement an extension for it. Derive your extension from this class and implement <a class="normal"  href="NtBaseTranslator.TNtExtension.html#Translate">TNtExtension.Translate</a> function. You may also have to implement <a class="normal"  href="NtBaseTranslator.TNtExtension.html#GetActualObject">TNtExtension.GetActualObject</a> and/or <a class="normal"  href="NtBaseTranslator.TNtExtension.html#GetActualName">TNtExtension.GetActualName</a> functions.     </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.TNtStringsExtension.html">TNtStringsExtension</a></dt>
+  <dd>Extension class that translates TStrings objects.</dd>
+  <dt><a class="normal"  href="NtPictureExtension.TNtPictureExtension.html">TNtPictureExtension</a></dt>
+  <dd>Extension class that translates TPicture objects.</dd>
+  <dt><a class="normal"  href="NtTreeViewExtension.TNtTreeViewExtension.html">TNtTreeViewExtension</a></dt>
+  <dd>Extension class that translates TTreeView component.</dd>
+  <dt><a class="normal"  href="NtListViewExtension.TNtListViewExtension.html">TNtListViewExtension</a></dt>
+  <dd>Extension class that translates TListView component.</dd>
+  <dt><a class="normal"  href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html">TNtVirtualTreeViewExtension</a></dt>
+  <dd></dd>
+</dl>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="ancestor"><a class="normal"  href="NtBaseTranslator.TNtExtension.html">TNtExtension</a></li>
+<li class="thisitem">TNtVirtualTreeViewExtension</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html#CanTranslate">CanTranslate</a></b>(obj: TObject): Boolean; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>procedure <b><a   href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html#Translate">Translate</a></b>( component: TComponent; obj: TObject; const name: String; value: Variant; index: Integer); override;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html#GetActualObject">GetActualObject</a></b>(obj: TObject; const propName: String): TObject; override;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>function <b><a   href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html#GetActualName">GetActualName</a></b>(obj: TObject; const propName: String): String; override;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="CanTranslate"></a><code>function <b>CanTranslate</b>(obj: TObject): Boolean; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.TNtExtension.html#CanTranslate">TNtExtension.CanTranslate</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Translate"></a><code>procedure <b>Translate</b>( component: TComponent; obj: TObject; const name: String; value: Variant; index: Integer); override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.TNtExtension.html#Translate">TNtExtension.Translate</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetActualObject"></a><code>function <b>GetActualObject</b>(obj: TObject; const propName: String): TObject; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.TNtExtension.html#GetActualObject">TNtExtension.GetActualObject</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="GetActualName"></a><code>function <b>GetActualName</b>(obj: TObject; const propName: String): String; override;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtBaseTranslator.TNtExtension.html#GetActualName">TNtExtension.GetActualName</a></dt>
+  <dd></dd>
+</dl>
+</td></tr>
+</table>
+</body></html>

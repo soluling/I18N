@@ -1,0 +1,2 @@
+#define SMessage            0
+

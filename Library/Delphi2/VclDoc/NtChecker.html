@@ -1,0 +1,210 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtChecker</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtChecker</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td>Constants</td><td><a class="section"  href="#%40Variables">Variables</a></td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements form checker that finds controls that are overlapped or out of bounds, or has text that is truncated.</p>
+<p>
+
+
+<p>The unit contains following classes: <a class="normal"  href="NtChecker.TFormIssue.html">TFormIssue</a>, <a class="normal"  href="NtChecker.TTruncationIssue.html">TTruncationIssue</a>, <a class="normal"  href="NtChecker.TOverlapIssue.html">TOverlapIssue</a>, <a class="normal"  href="NtChecker.TOutOfBoundsIssue.html">TOutOfBoundsIssue</a> and <a class="normal"  href="NtChecker.TFormChecker.html">TFormChecker</a>. They are used to check the forms and report issues.
+
+<p>The class will automatically take screenshots of every issue and writes them to the output directory specified by <a class="normal"  href="NtChecker.TFormChecker.html#OutputDir">TFormChecker.OutputDir</a> property. If your application uses a localized resource DLL then the output is written into a language specific sub directory of <a class="normal"  href="NtChecker.TFormChecker.html#OutputDir">TFormChecker.OutputDir</a>.
+
+<p>For example if you application is C:\Files\Sample\Win32\Debug\Project1.exe then the default output directory is C:\Files\Sample\Win32\Debug and the German output directory is C:\Files\Sample\Win32\Debug\de.
+
+<p>The class is available if you use Delphi XE2 or later. If you are using Delphi XE6 or later the class also writes a JSON file that contains information about the issues found.
+
+<p>You can customize how checking is done by using <a class="normal"  href="NtChecker.TFormChecker.html#OnControl">TFormChecker.OnControl</a> and <a class="normal"  href="NtChecker.TFormChecker.html#OnIssue">TFormChecker.OnIssue</a> events.
+
+<p>See <i>Samples\Delphi\VCL\Checker</i>, <i>Samples\Delphi\VCL\Raize\Checker</i>, <i>Samples\Delphi\VCL\TMS\Checker</i> and <i>Samples\Delphi\VCL\DevExpress\Checker</i> samples to see how to use this unit and the extension units.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TFormIssue.html"><code>TFormIssue</code></a></td>
+<td class="itemdesc">Specifies an abstract issue class.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TTruncationIssue.html"><code>TTruncationIssue</code></a></td>
+<td class="itemdesc">Truncation issue that is used when the text is not completely shown on the control.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TOverlapIssue.html"><code>TOverlapIssue</code></a></td>
+<td class="itemdesc">Specifies an overlap issue.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TOutOfBoundsIssue.html"><code>TOutOfBoundsIssue</code></a></td>
+<td class="itemdesc">Specifies a truncation issue.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TFormChecker.html"><code>TFormChecker</code></a></td>
+<td class="itemdesc">Class that check overlapped controls and truncated text on VCL forms.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TNtCheckerExtension.html"><code>TNtCheckerExtension</code></a></td>
+<td class="itemdesc">Class that extends <a class="normal"  href="NtChecker.TFormChecker.html">TFormChecker</a>.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TNtTabControlChecker.html"><code>TNtTabControlChecker</code></a></td>
+<td class="itemdesc">Checker extension class that checks TTabControl.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtChecker.TNtCheckerExtensions.html"><code>TNtCheckerExtensions</code></a></td>
+<td class="itemdesc">Class that stores installed checker extension.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TFormIssueType">TFormIssueType</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TFormIssueTypes">TFormIssueTypes</a></b> = set of <a   href="NtChecker.html#TFormIssueType">TFormIssueType</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TFormIssueClass">TFormIssueClass</a></b> = class of <a   href="NtChecker.TFormIssue.html">TFormIssue</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TFormControlEvent">TFormControlEvent</a></b> = procedure(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; control: TControl; var skip: Boolean) of object;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TFormIssueEvent">TFormIssueEvent</a></b> = procedure(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; issue: <a   href="NtChecker.TFormIssue.html">TFormIssue</a>; var ignore: Boolean) of object;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtChecker.html#THighlightColors">THighlightColors</a></b> = array[<a   href="NtChecker.html#TFormIssueType">TFormIssueType</a>] of TColor;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtChecker.html#TNtCheckerExtensionClass">TNtCheckerExtensionClass</a></b> = class of <a   href="NtChecker.TNtCheckerExtension.html">TNtCheckerExtension</a>;</code></td>
+</tr>
+</table>
+<a name="%40Variables"></a><h3 class="summary">Variables</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtChecker.html#NtFormChecker">NtFormChecker</a></b>: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtChecker.html#NtCheckerExtensions">NtCheckerExtensions</a></b>: <a   href="NtChecker.TNtCheckerExtensions.html">TNtCheckerExtensions</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormIssueType"></a><code><b>TFormIssueType</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Form issue type.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+itTruncation: Part of the text is truncated.</li>
+<li>
+itOverlap: Two or more controls overlap.</li>
+<li>
+itOutOfBounds: Part of the control is out ot parent pounds.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormIssueTypes"></a><code><b>TFormIssueTypes</b> = set of <a   href="NtChecker.html#TFormIssueType">TFormIssueType</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormIssueClass"></a><code><b>TFormIssueClass</b> = class of <a   href="NtChecker.TFormIssue.html">TFormIssue</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormControlEvent"></a><code><b>TFormControlEvent</b> = procedure(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; control: TControl; var skip: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This event is called before checking a control.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>checker</dt>
+<dd>Either form or data module where the object belongs to.</dd>
+<dt>control</dt>
+<dd>Component or a sub component that is currenty being translated.</dd>
+<dt>skip</dt>
+<dd>Set to True if you want that the checker skips this control.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormIssueEvent"></a><code><b>TFormIssueEvent</b> = procedure(checker: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>; issue: <a   href="NtChecker.TFormIssue.html">TFormIssue</a>; var ignore: Boolean) of object;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+This event is called before storing the issue and writing the screenshot.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>checker</dt>
+<dd>Either form or data module where the object belongs to.</dd>
+<dt>issue</dt>
+<dd>Issues object.</dd>
+<dt>ignore</dt>
+<dd>Set to True if you want that the checker ignore this issue.</dd>
+</dl>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="THighlightColors"></a><code><b>THighlightColors</b> = array[<a   href="NtChecker.html#TFormIssueType">TFormIssueType</a>] of TColor;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array that specifies the highlight color of each issue type.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TNtCheckerExtensionClass"></a><code><b>TNtCheckerExtensionClass</b> = class of <a   href="NtChecker.TNtCheckerExtension.html">TNtCheckerExtension</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Class type of the checker extension class.</p>
+</td></tr>
+</table>
+<h3 class="detail">Variables</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtFormChecker"></a><code><b>NtFormChecker</b>: <a   href="NtChecker.TFormChecker.html">TFormChecker</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Form checker. Use this to check your forms.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="NtCheckerExtensions"></a><code><b>NtCheckerExtensions</b>: <a   href="NtChecker.TNtCheckerExtensions.html">TNtCheckerExtensions</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Form checker extension. Use this to register your custom checker extensions.</p>
+</td></tr>
+</table>
+</body></html>

@@ -1,0 +1,161 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtOrdinal</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtOrdinal</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td>Constants</td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements an ordinal number API.</p>
+<p>
+
+
+<p>If you have something like this
+
+<p><code>str := Format('This is the %d attempt', [attemptCount]);</code>
+
+<p>and you want to localize it convert code to
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">resourcestring</span>
+  SAttemptCount = <span class="pascal_string">'This is the %s attempt'</span>;
+<span class="pascal_numeric"></span>...
+  str := Format(SAttemptCount, [TNtOrdinal.FormatShort(attemptCount)]);
+</pre>
+
+<p>
+
+<p>As you can see instead of passing the attempt count to the Format function we first format the attempt count into string and pass that to Format.
+
+<p>This unit supports following languages: en, fr, de, nl, fi, et, sv, da, no, nb, nn, is, ja, ko, zh-Hans
+
+<p>You can add your own languages by implementing conversion functions and registering them by using <a class="normal"  href="NtOrdinal.TNtOrdinal.html#Register">TNtOrdinal.Register</a>.
+
+<p>Delphi XE or later required.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtOrdinal.TNtOrdinal.html"><code>TNtOrdinal</code></a></td>
+<td class="itemdesc">Static class that contains ordinal number routines.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TOrdinal">TOrdinal</a></b> = 1..MaxInt;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TSmallOrdinal">TSmallOrdinal</a></b> = 1..10;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TOrdinalForm">TOrdinalForm</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TOrdinalShortProc">TOrdinalShortProc</a></b> = function(ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a>; gender: <a   href="NtPattern.html#TGender">TGender</a>): String;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TOrdinalLongProc">TOrdinalLongProc</a></b> = function(ordinal: <a   href="NtOrdinal.html#TSmallOrdinal">TSmallOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a>; gender: <a   href="NtPattern.html#TGender">TGender</a>): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtOrdinal.html#TOrdinalArray">TOrdinalArray</a></b> = array[<a   href="NtOrdinal.html#TSmallOrdinal">TSmallOrdinal</a>] of String;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOrdinal"></a><code><b>TOrdinal</b> = 1..MaxInt;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Ordinal number type.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TSmallOrdinal"></a><code><b>TSmallOrdinal</b> = 1..10;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Small ordinal number type.</p>
+<p>
+ A subset of ordinal numbers containing the first 10 ordinals. When an ordinal number belongs to this subset it also can be written as word. For example &quot;first&quot; vs &quot;1st&quot;.</p>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOrdinalForm"></a><code><b>TOrdinalForm</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the string form of an ordinal.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+ofShort: Short string form such as &quot;1st&quot; and &quot;4th&quot;</li>
+<li>
+ofLong: Long string form such as &quot;first&quot; and &quot;fourth&quot;</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOrdinalShortProc"></a><code><b>TOrdinalShortProc</b> = function(ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a>; gender: <a   href="NtPattern.html#TGender">TGender</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function that returns ordinal in a short form such as &quot;1st&quot; and &quot;4th&quot;.</p>
+<p>
+    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ordinal</dt>
+<dd>Ordinal number.</dd>
+<dt>plural</dt>
+<dd>Plural form.</dd>
+<dt>gender</dt>
+<dd>Gender.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The ordinal in a short string form.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOrdinalLongProc"></a><code><b>TOrdinalLongProc</b> = function(ordinal: <a   href="NtOrdinal.html#TSmallOrdinal">TSmallOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a>; gender: <a   href="NtPattern.html#TGender">TGender</a>): String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function that returns ordinal in a long form (e.g. &quot;first&quot;).</p>
+<p>
+  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ordinal</dt>
+<dd>Small ordinal number.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The ordinal in a long string form.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TOrdinalArray"></a><code><b>TOrdinalArray</b> = array[<a   href="NtOrdinal.html#TSmallOrdinal">TSmallOrdinal</a>] of String;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Array type to hold the small ordinal words.</p>
+</td></tr>
+</table>
+</body></html>

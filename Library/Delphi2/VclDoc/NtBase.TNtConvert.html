@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtBase: Class TNtConvert</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtConvert"></a><h1 class="cio">Class TNtConvert</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtBase.html">NtBase</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtConvert = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class that contains routines to convert between Ansi and Unicode.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TNtConvert</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtConvert.html#AnsiToUnicode">AnsiToUnicode</a></b>(const str: <a   href="NtBase.html#RawByteString">RawByteString</a>; codePage: Integer = 0): <a   href="NtBase.html#UnicodeString">UnicodeString</a>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtBase.TNtConvert.html#UnicodeToAnsi">UnicodeToAnsi</a></b>(const str: <a   href="NtBase.html#UnicodeString">UnicodeString</a>; codePage: Integer = 0): <a   href="NtBase.html#RawByteString">RawByteString</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="AnsiToUnicode"></a><code>class function <b>AnsiToUnicode</b>(const str: <a   href="NtBase.html#RawByteString">RawByteString</a>; codePage: Integer = 0): <a   href="NtBase.html#UnicodeString">UnicodeString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts an Ansi string into a Unicode string.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>str</dt>
+<dd>Ansi string to be converted.</dd>
+<dt>codePage</dt>
+<dd>Code page that the Ansi string uses.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">String as a Unicode string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="UnicodeToAnsi"></a><code>class function <b>UnicodeToAnsi</b>(const str: <a   href="NtBase.html#UnicodeString">UnicodeString</a>; codePage: Integer = 0): <a   href="NtBase.html#RawByteString">RawByteString</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts a Unicode string into an Ansi string.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>str</dt>
+<dd>Unicode string to be converted.</dd>
+<dt>codePage</dt>
+<dd>Code page that the Ansi string uses.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">String as an Ansi string.</p></td></tr>
+</table>
+</body></html>

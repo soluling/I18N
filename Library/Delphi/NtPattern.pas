@@ -2155,6 +2155,15 @@ begin
 end;
 
 function IsIcuPattern(const pattern: String): Boolean;
+
+  function HasTags: Boolean;
+  begin
+    Result :=
+      (Pos('plural,', pattern) > 1) or
+      (Pos('gender,', pattern) > 1) or
+      (Pos('select,', pattern) > 1)
+  end;
+
 var
   i, level, maxLevel: Integer;
   c: Char;
@@ -2182,6 +2191,38 @@ begin
 
     if level < 0 then
       Exit;
+  end;
+
+  Result := (maxLevel >= 2) and (maxLevel <= 4) and (level = 0) and HasTags;
+end;
+
+function IsIcuPatternStart(const pattern: String): Boolean;
+var
+  i, level, maxLevel: Integer;
+  c: Char;
+begin
+  Result := pattern[1] = '{';
+
+  if not Result then
+    Exit;
+
+  level := 0;
+  maxLevel := 0;
+
+  for i := 1 to Length(pattern) do
+  begin
+    c := pattern[i];
+
+    if (c = '{') and ((i = 1) or (pattern[i - 1] <> '\')) then
+      Inc(level)
+    else if (c = '}') and ((i = 1) or (pattern[i - 1] <> '\')) then
+      Dec(level);
+
+    if level > maxLevel then
+      maxLevel := level;
+
+    if level = 0 then
+      Break;
   end;
 
   Result := (maxLevel >= 2) and (maxLevel <= 4) and (level = 0);
@@ -2251,6 +2292,11 @@ class function TFormatString.IsMultiPattern(const pattern: String): Boolean;
 var
   str: TFormatString;
 begin
+  Result := False;
+
+  if Pos('{\rtf1', pattern) = 1 then
+    Exit;
+
   Result := IsIcuPattern(pattern); // or IsLegacyPatternStrict(pattern);
 
   if not Result then
@@ -2403,6 +2449,17 @@ begin
 end;
 
 function TFormatString.ParseIcu(pattern: String): Boolean;
+
+  function IsIcuStart(index: Integer): Boolean;
+  begin
+    var c := pattern[index];
+
+    if c <> '{' then
+      Result := False
+    else
+      Result := IsIcuPatternStart(Copy(pattern, index, Length(pattern)));
+  end;
+
 var
   index, placeholderIndex: Integer;
   c: Char;
@@ -2443,7 +2500,7 @@ begin //FI:C101
   begin
     c := pattern[index];
 
-    if c = '{' then
+    if IsIcuStart(index) then
     begin
       ParseIcuPattern(pattern, index);
 

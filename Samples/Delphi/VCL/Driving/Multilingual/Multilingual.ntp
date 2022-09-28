@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210919T105101Z" version="1.0.880" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20220501T142346Z" version="1.0.918" stringid="411">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" platforms="[ptWin32,ptWin64]">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20220501T142346Z" platforms="[ptWin32,ptWin64]" hassignature="1">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -534,6 +534,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -546,6 +547,7 @@
   <mt>
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <duplicates>

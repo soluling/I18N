@@ -1,0 +1,146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtOrdinal: Class TNtOrdinal</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TNtOrdinal"></a><h1 class="cio">Class TNtOrdinal</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td>Properties</td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtOrdinal.html">NtOrdinal</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TNtOrdinal = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Static class that contains ordinal number routines.</p>
+<p>
+ </p>
+<h6 class="description_section">See also</h6>
+<dl class="see_also">
+  <dt><a class="normal"  href="NtOrdinal.html">NtOrdinal</a></dt>
+  <dd>Implements an ordinal number API.</dd>
+</dl>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TNtOrdinal</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtOrdinal.TNtOrdinal.html#IsShortOrdinal">IsShortOrdinal</a></b>(value: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>): Boolean;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtOrdinal.TNtOrdinal.html#Format">Format</a></b>( form: <a   href="NtOrdinal.html#TOrdinalForm">TOrdinalForm</a>; ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtOrdinal.TNtOrdinal.html#FormatShort">FormatShort</a></b>( ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtOrdinal.TNtOrdinal.html#FormatLong">FormatLong</a></b>( ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class procedure <b><a   href="NtOrdinal.TNtOrdinal.html#Register">Register</a></b>( const id: String; longProc: <a   href="NtOrdinal.html#TOrdinalLongProc">TOrdinalLongProc</a>; shortProc: <a   href="NtOrdinal.html#TOrdinalShortProc">TOrdinalShortProc</a>);</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IsShortOrdinal"></a><code>class function <b>IsShortOrdinal</b>(value: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>): Boolean;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Format"></a><code>class function <b>Format</b>( form: <a   href="NtOrdinal.html#TOrdinalForm">TOrdinalForm</a>; ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts an ordinal number to a string such as &quot;1st&quot; or &quot;first&quot;.     </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>form</dt>
+<dd>String form to be used.</dd>
+<dt>ordinal</dt>
+<dd>Ordinal number.</dd>
+<dt>plural</dt>
+<dd>Specifies the plural form.</dd>
+<dt>gender</dt>
+<dd>Specifies the gender.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatShort"></a><code>class function <b>FormatShort</b>( ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts an ordinal number to a string using the short format such as &quot;1st&quot; and &quot;4th&quot;.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ordinal</dt>
+<dd>Ordinal number.</dd>
+<dt>plural</dt>
+<dd>Specifies the plural form.</dd>
+<dt>gender</dt>
+<dd>Specifies the gender.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="FormatLong"></a><code>class function <b>FormatLong</b>( ordinal: <a   href="NtOrdinal.html#TOrdinal">TOrdinal</a>; plural: <a   href="NtPattern.html#TPlural">TPlural</a> = pfOne; gender: <a   href="NtPattern.html#TGender">TGender</a> = geNeutral): String;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Converts an ordinal number to a string using the long format such as &quot;first&quot; and &quot;fourth&quot;. Only the first 10 ordinals can be formatted to the long format. The rest of the ordinals will always be formatted using the short format such as &quot;21st&quot; and &quot;24th&quot;.    </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>ordinal</dt>
+<dd>Ordinal number.</dd>
+<dt>plural</dt>
+<dd>Specifies the plural form.</dd>
+<dt>gender</dt>
+<dd>Specifies the gender.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The formatted string.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Register"></a><code>class procedure <b>Register</b>( const id: String; longProc: <a   href="NtOrdinal.html#TOrdinalLongProc">TOrdinalLongProc</a>; shortProc: <a   href="NtOrdinal.html#TOrdinalShortProc">TOrdinalShortProc</a>);</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Register formatting functions for a language.   </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>id</dt>
+<dd>IETF language tag of the language/locale.</dd>
+<dt>shortProc</dt>
+<dd>Function that converts an ordianal to a short string.</dd>
+<dt>longProc</dt>
+<dd>Function that converts a small ordianal to a long string.</dd>
+</dl>
+</td></tr>
+</table>
+</body></html>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D00B7BAA-00B0-48F2-9E05-5F90388398DA" created="20210720T011822Z" lastmodified="20210720T011832Z" version="1.0.866" lockedrowcomplete="0" stringid="6">
+<project id="D00B7BAA-00B0-48F2-9E05-5F90388398DA" created="20210720T011822Z" lastmodified="20220427T215646Z" version="1.0.916" lockedrowcomplete="0" stringid="6">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en-US" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]" readprojectreferences="0">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en-US" lastmodified="20220427T215646Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -66,7 +66,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
     </node>
   </node>
   <excludedoriginals>
@@ -76,6 +76,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -83,10 +84,16 @@
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

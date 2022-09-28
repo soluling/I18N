@@ -1,0 +1,293 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NewTool's VCL Classes: NtPlural</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtPlural</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td><a class="section"  href="#%40Types">Types</a></td><td>Constants</td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements a plural and gender enabled Format function <a class="normal"  href="NtPlural.TNtPlural.html#Format">TNtPlural.Format</a>.</p>
+<p>
+
+
+<p>Most languages have only single and plural forms. However this is not case with every language. Asian languages do not have plural form at all. They only have single form. Most Slavic languages have three forms: singular, plural and one between them (dual or paucal). Sometimes zero is handled as plural, sometimes as singular. Some languages have four different forms. Arabic has six different forms.
+
+<p>This is why you can not use the standard Format if you want to create grammatically correct dynamic messages that contain counts and genders. Instead you can use <a class="normal"  href="NtPlural.TNtPlural.html#Format">TNtPlural.Format</a> function. It works little bit like GetText's ngettext funtion. You pass combined pattern and count, noun or gender parameter(s). The functions calculates what pattern to use based on the passed parameters and returns that pattern.
+
+<p>In English and most Western languages this is very simple. There are only two items in the combined pattern: singular and plural. If count is 1 then the singualar pattern is used. If the count is other than 1 then the plural pattern is used.
+
+<p>If you have something like this
+
+<p><code>str := Format('%d files', [fileCount]);</code>
+
+<p>and you want to localize it convert code to
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">resourcestring</span>
+  SFileCountPlural = <span class="pascal_string">'one;%d file;other;%d files'</span>;
+<span class="pascal_numeric"></span>...
+  str := TNtPlural.Format(SFileCountPlural, fileCount, [fileCount]);
+</pre>
+
+<p>
+
+<p>As you can see instead of single pattern the new pattern contains two parts: singular and plural (note that English contains two indexes). Separate parts with ; character. Add a plural form code in the begining of each part.
+
+<p>Plural form codes are: zero is for nullar. one is for singular. two is for dual. few is for trial, paucal, sexal, minority plural and plural-100 many is for large plural other is for plural
+
+<p>Other part should be on any string. If the language requires more forms add them too. In addition you can add zero, one or two parts to any string. For example following are valid for English: &quot;one;One file;other;%d files&quot; &quot;zero;No files;one;One file;other;%d files&quot; &quot;zero;No files;one;One file;two;Two files;other;%d files&quot;
+
+<p>If you pattern contains ; characters you must double them 'Item; %d car(s)' -&gt; 'one;Item;; %d car;other;Item;; %d cars'
+
+<p>In addition you can use count specific codes: =N where N is the count. = is optional and the code can be just N. For example following &quot;=0;No files;=1;One file;other;%d files&quot; &quot;0;No files;1;One file;other;%d files&quot;
+
+<p>Most languages also use gender. There might be male, female and neutral genders.
+
+<p>Gender codes are: male is for male female is for female neutral is for neutral or other
+
+<p>Remember to end the resource string item name with Plural or Gender. That way NewTool can identify the pattern as multipattern string and it can enable advanced plural/gender translation editor.
+
+<p>Plural engine need to know the language that the application uses. Compiled application file does not contain this information. This is why you should create a resource string that contains the locale id and set that value to <a class="normal"  href="NtBase.html#DefaultLocale">NtBase.DefaultLocale</a>. A good place to set <a class="normal"  href="NtBase.html#DefaultLocale">NtBase.DefaultLocale</a> is the initialization block of the main unit.
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">unit</span> Unit1;
+<span class="pascal_numeric"></span>...
+<span class="pascal_keyword">resourcestring</span>
+  SNtLocale = <span class="pascal_string">'en'</span>;
+<span class="pascal_keyword">initialization</span>
+  DefaultLocale := SNtLocale;
+<span class="pascal_keyword">end</span>.
+</pre>
+
+<p>
+
+<p>If you name the resource string as <b>SNtLocale</b> NewTool automatically translates it to hold the locale code of the target language. So German column will have &quot;de&quot; and French colum will have &quot;fr&quot;.
+
+<p><i>See Samples\Delphi\VCL\Plural</i> or <i>Samples\Delphi\FMX\Plural</i> samples to see how to use the unit.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">record&nbsp;<a class="bold"  href="NtPlural.TPluralValue.html"><code>TPluralValue</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+<tr class="list2">
+<td class="itemname">record&nbsp;<a class="bold"  href="NtPlural.TFormatParameter.html"><code>TFormatParameter</code></a></td>
+<td class="itemdesc">Record tthat contains payload for one paremeter for TNtPlural.FormatMulti.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TPattern.html"><code>TPattern</code></a></td>
+<td class="itemdesc">Class that contain one pattern.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TPluralPattern.html"><code>TPluralPattern</code></a></td>
+<td class="itemdesc">Class that contain one plural pattern.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TGenderPattern.html"><code>TGenderPattern</code></a></td>
+<td class="itemdesc">Class that contain one gender pattern.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TFormatPart.html"><code>TFormatPart</code></a></td>
+<td class="itemdesc">Class that contains one part of a plural and gender enabed format string.</td>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TFormatString.html"><code>TFormatString</code></a></td>
+<td class="itemdesc">Class that contains patterns of plural and/or gender enabled format string.</td>
+</tr>
+<tr class="list2">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtPlural.TNtPlural.html"><code>TNtPlural</code></a></td>
+<td class="itemdesc">Static class that contains plural and gender routines.</td>
+</tr>
+</table>
+<a name="%40Types"></a><h3 class="summary">Types</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TPluralGroup">TPluralGroup</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TPluralForm">TPluralForm</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TPluralValueKind">TPluralValueKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TGender">TGender</a></b> = (...);</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TFormatParameterKind">TFormatParameterKind</a></b> = (...);</code></td>
+</tr>
+<tr class="list2">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TFormatParameterKinds">TFormatParameterKinds</a></b> = set of <a   href="NtPlural.html#TFormatParameterKind">TFormatParameterKind</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="itemcode"><code><b><a   href="NtPlural.html#TPluralIndexProc">TPluralIndexProc</a></b> = function(count: Cardinal): <a   href="NtPlural.html#TPluralForm">TPluralForm</a>;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Types</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralGroup"></a><code><b>TPluralGroup</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies what plural group a language belongs to.</p>
+<p>
+ The algorithm is named based on the main language of the group. For example pgJapanese is not only applied to Japanese but many other languages working like Japanese (for example some other Asian languages).</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pgDefault: Languages that have same plural forms as English: singular and plural.</li>
+<li>
+pgArabic: Languages that have same plural forms as Arabic: six different forms.</li>
+<li>
+pgCzech: Languages that have same plural forms as Czech: singular, paucal (2-4) and plural.</li>
+<li>
+pgFrench: Languages that have same plural forms as French: singular (0-1) and plural.</li>
+<li>
+pgIcelandic: Languages that have same plural forms as Icelandic: singular (1, 11, 21, ...) and plural.</li>
+<li>
+pgIrish: Languages that have same plural forms as Irish: singular, dual and plural.</li>
+<li>
+pgJapanese: Languages that have same plural forms as Japanese: only singular.</li>
+<li>
+pgLatvian: Languages that have same plural forms as Latvian: zero, singular and plural.</li>
+<li>
+pgLithuanian: Languages that have same plural forms as Lithuanian: singular (1, 11, 21, ...), dual (2, 12, 22, ...) and plural.</li>
+<li>
+pgMacedonian: Languages that have same plural forms as Macedonian: singular, dual and plural.</li>
+<li>
+pgMaltese: Languages that have same plural forms as Maltese</li>
+<li>
+pgPolish: Languages that have same plural forms as Polish: singular, paucal and plural.</li>
+<li>
+pgRomanian: Languages that have same plural forms as Romanian: singular, few and plural.</li>
+<li>
+pgRussian: Languages that have same plural forms as Russian: singular, paucal and plural.</li>
+<li>
+pgSlovenian: Languages that have same plural forms as Slovenian: singular, dual, few and plural.</li>
+<li>
+pgWelsh: Languages that have same plural forms as Welsh</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralForm"></a><code><b>TPluralForm</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the plural form.</p>
+<p>
+ There are six different plural forms from singular to various plurals. How many forms a language uses depends on the language. Most languages use only singular and plural.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pfZero: Nullar. Used when count is zero. Few languages support this but you can include a 0 pattern into your pattern string if you want to handle 0 in a different way.</li>
+<li>
+pfOne: Singular. Used when count is one. Most languages support this.</li>
+<li>
+pfTwo: Dual. Used when count is two. Few languages support this.</li>
+<li>
+pfFew: Trial, paucal, sexal, minority plural or plural-100. Used when count is few. Few languages support this. The range depends on the language. Most often this is something between 2 and 4.</li>
+<li>
+pfMany: Greater paucal. Used when count is many. Few languages support this. The range depends on the language. Most often this is more than 4.</li>
+<li>
+pfOther: Plural or universal. Used when count does not belong to any other group. All languages support this. Most often this is the plural form.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralValueKind"></a><code><b>TPluralValueKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the plural kind.</p>
+<p>
+ There are two different plural kinds: rule based and fixed.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+pkForm: Rule based form</li>
+<li>
+pkFixed: Fixed</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TGender"></a><code><b>TGender</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the different gender values.</p>
+<p>
+ There are three different genders: neutral, male and female. How many values a language uses depends on the language.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+geMale: Male.</li>
+<li>
+geFemale: Female.</li>
+<li>
+geNeutral: Neutral, other or no gender used.</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormatParameterKind"></a><code><b>TFormatParameterKind</b> = (...);</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Enumeration that specifies the different parameter types for TNtPlural.FormatMulti.</p>
+<h6 class="description_section">Values</h6>
+<ul>
+<li>
+fpPlural: Plural parameter</li>
+<li>
+fpGender: Gender parameter</li>
+</ul>
+</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TFormatParameterKinds"></a><code><b>TFormatParameterKinds</b> = set of <a   href="NtPlural.html#TFormatParameterKind">TFormatParameterKind</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="itemcode"><a name="TPluralIndexProc"></a><code><b>TPluralIndexProc</b> = function(count: Cardinal): <a   href="NtPlural.html#TPluralForm">TPluralForm</a>;</code></td>
+</tr>
+<tr><td colspan="1">
+<p>
+Function that calculates the group index.</p>
+<p>
+  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>count</dt>
+<dd>Count value.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">The group where the count belongs to.</p></td></tr>
+</table>
+</body></html>

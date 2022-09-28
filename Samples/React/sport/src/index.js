@@ -65,7 +65,7 @@ class Sports extends React.Component
             <thead>
               <tr>
                 <th><FormattedMessage id="Id" /></th>
-                <th><FormattedMessage id="Sport name" /></th>
+                <th><FormattedMessage id="Sport_name" defaultMessage="Sport name" description="Some text" /></th>
                 <th><FormattedMessage id="Olympic" /></th>
                 <th><FormattedMessage id="Number of payers" /></th>
                 <th><FormattedMessage id="Goalkeeper" /></th>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>NewTool's VCL Classes: NtVirtualTreeViewExtension</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<h1 class="unit">Unit NtVirtualTreeViewExtension</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td>Uses</td><td><a class="section"  href="#%40Classes">Classes, Interfaces, Objects and Records</a></td><td>Functions and Procedures</td><td>Types</td><td>Constants</td><td>Variables</td></tr></table>
+<a name="%40Description"></a><h2 class="description">Description</h2>
+<p>
+Implements <a class="normal"  href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html">TNtVirtualTreeViewExtension</a> extension class that</p>
+<p>
+ translates columns of TVirtualTreeView. TVirtualTreeView is an old control that was designed before Delphi properly supported Unicode. This is why the makers of TVirtualTreeView decided to stored Text and Hint properties of the column item in a defined custom property. <a class="normal"  href="NtTranslator.TNtTranslator.html">TNtTranslator</a> can not automatically translate defined properties because there is no direct mapping between form properties and runtime properties. This extension enables runtime language switch for columns of TVirtualTreeView.
+
+<p>To enable runtime language switch of TVirtualTreeView just add this unit into your project or add unit into any uses block.
+
+<p></p>
+
+<pre class="longcode">
+<span class="pascal_keyword">implementation</span>
+
+<span class="pascal_keyword">uses</span>
+  NtVirtualTreeViewExtension;
+</pre>
+
+<p>
+
+<p>See <i>Samples\Delphi\VCL\VirtualTree</i> sample to see how to use the unit.</p>
+<a name="%40Uses"></a><h2 class="overview">Overview</h2>
+<a name="%40Classes"></a><h3 class="cio">Classes, Interfaces, Objects and Records</h3>
+<table class="classestable wide_list">
+<tr class="listheader">
+<th class="itemname">Name</th>
+<th class="itemdesc">Description</th>
+</tr>
+<tr class="list">
+<td class="itemname">Class&nbsp;<a class="bold"  href="NtVirtualTreeViewExtension.TNtVirtualTreeViewExtension.html"><code>TNtVirtualTreeViewExtension</code></a></td>
+<td class="itemdesc">&nbsp;</td>
+</tr>
+</table>
+</body></html>

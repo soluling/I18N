@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{9CA90A54-DD8C-4435-B83B-B8C1EDF218C8}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="PackageFormApplication.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="FormsPackage.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="PackageFormApplication">
+        <MSBuild Projects="PackageFormApplication.dproj"/>
+    </Target>
+    <Target Name="PackageFormApplication:Clean">
+        <MSBuild Projects="PackageFormApplication.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="PackageFormApplication:Make">
+        <MSBuild Projects="PackageFormApplication.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="FormsPackage">
+        <MSBuild Projects="FormsPackage.dproj"/>
+    </Target>
+    <Target Name="FormsPackage:Clean">
+        <MSBuild Projects="FormsPackage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="FormsPackage:Make">
+        <MSBuild Projects="FormsPackage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="PackageFormApplication;FormsPackage"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="PackageFormApplication:Clean;FormsPackage:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="PackageFormApplication:Make;FormsPackage:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

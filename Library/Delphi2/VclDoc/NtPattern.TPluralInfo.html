@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/1999/REC-html401-19991224/loose.dtd">
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1">
+<title>Soluling's VCL Classes: NtPattern: Class TPluralInfo</title>
+<link rel="StyleSheet" type="text/css" href="pasdoc.css">
+</head>
+<body bgcolor="#ffffff" text="#000000" link="#0000ff" vlink="#800080" alink="#FF0000">
+<a name="TPluralInfo"></a><h1 class="cio">Class TPluralInfo</h1>
+<table class="sections wide_list">
+<tr>
+<td><a class="section"  href="#%40Description">Description</a></td><td><a class="section"  href="#%40Hierarchy">Hierarchy</a></td><td>Fields</td><td><a class="section"  href="#%40Methods">Methods</a></td><td><a class="section"  href="#%40Properties">Properties</a></td></tr></table>
+<a name="%40Description"></a><h2 class="unit">Unit</h2>
+<p class="unitlink">
+<a   href="NtPattern.html">NtPattern</a></p>
+<h2 class="declaration">Declaration</h2>
+<p class="declaration">
+<code>type TPluralInfo = class(TObject)</code></p>
+<h2 class="description">Description</h2>
+<p>
+Class that contains information about plural rules of a single language.</p>
+<a name="%40Hierarchy"></a><h2 class="hierarchy">Hierarchy</h2>
+<ul class="hierarchy"><li class="ancestor">TObject</li>
+<li class="thisitem">TPluralInfo</li></ul><h2 class="overview">Overview</h2>
+<a name="%40Methods"></a><h3 class="summary">Methods</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>constructor <b><a   href="NtPattern.TPluralInfo.html#Create">Create</a></b>;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPattern.TPluralInfo.html#Get">Get</a></b>(id: String = ''): <a   href="NtPattern.TPluralInfo.html">TPluralInfo</a>;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>class function <b><a   href="NtPattern.TPluralInfo.html#Find">Find</a></b>(const id: String): <a   href="NtPattern.TPluralInfo.html">TPluralInfo</a>;</code></td>
+</tr>
+</table>
+<a name="%40Properties"></a><h3 class="summary">Properties</h3>
+<table class="summary wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#Id">Id</a></b>: String read FId write FId;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#Proc">Proc</a></b>: <a   href="NtPattern.html#TPluralProc">TPluralProc</a> read FProc write FProc;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#IntegerCount">IntegerCount</a></b>: Integer read FIntegerCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#IntegerPlurals">IntegerPlurals</a></b>: <a   href="NtPattern.html#TPlurals">TPlurals</a> read FIntegerPlurals write SetIntegerPlurals;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#Integers">Integers</a></b>[i: Integer]: <a   href="NtPattern.html#TPlural">TPlural</a> read GetInteger;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#DefaultInteger">DefaultInteger</a></b>: <a   href="NtPattern.html#TPlural">TPlural</a> read FDefaultInteger;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#DecimalCount">DecimalCount</a></b>: Integer read FDecimalCount;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#DecimalPlurals">DecimalPlurals</a></b>: <a   href="NtPattern.html#TPlurals">TPlurals</a> read FDecimalPlurals write SetDecimalPlurals;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#Decimals">Decimals</a></b>[i: Integer]: <a   href="NtPattern.html#TPlural">TPlural</a> read GetDecimal;</code></td>
+</tr>
+<tr class="list2">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#DefaultDecimal">DefaultDecimal</a></b>: <a   href="NtPattern.html#TPlural">TPlural</a> read FDefaultDecimal;</code></td>
+</tr>
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><code>property <b><a   href="NtPattern.TPluralInfo.html#Expression">Expression</a></b>: String read FExpression write FExpression;</code></td>
+</tr>
+</table>
+<h2 class="description">Description</h2>
+<h3 class="detail">Methods</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Create"></a><code>constructor <b>Create</b>;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Get"></a><code>class function <b>Get</b>(id: String = ''): <a   href="NtPattern.TPluralInfo.html">TPluralInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a plural info of a language. If direct match is not found try to find a matching and if not found return the default.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>id</dt>
+<dd>Language or locale to be used. If empty the active locale id is used.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Plural info.</p></td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Find"></a><code>class function <b>Find</b>(const id: String): <a   href="NtPattern.TPluralInfo.html">TPluralInfo</a>;</code></td>
+</tr>
+<tr><td colspan="2">
+<p>
+Get a plural info of a language. If a direct match is not found return null.  </p>
+<h6 class="description_section">Parameters</h6>
+<dl class="parameters">
+<dt>id</dt>
+<dd>Language or locale to be used.</dd>
+</dl>
+<h6 class="description_section">Returns</h6>
+<p class="return">Plural info.</p></td></tr>
+</table>
+<h3 class="detail">Properties</h3>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Id"></a><code>property <b>Id</b>: String read FId write FId;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Proc"></a><code>property <b>Proc</b>: <a   href="NtPattern.html#TPluralProc">TPluralProc</a> read FProc write FProc;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IntegerCount"></a><code>property <b>IntegerCount</b>: Integer read FIntegerCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="IntegerPlurals"></a><code>property <b>IntegerPlurals</b>: <a   href="NtPattern.html#TPlurals">TPlurals</a> read FIntegerPlurals write SetIntegerPlurals;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Integers"></a><code>property <b>Integers</b>[i: Integer]: <a   href="NtPattern.html#TPlural">TPlural</a> read GetInteger;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultInteger"></a><code>property <b>DefaultInteger</b>: <a   href="NtPattern.html#TPlural">TPlural</a> read FDefaultInteger;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecimalCount"></a><code>property <b>DecimalCount</b>: Integer read FDecimalCount;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DecimalPlurals"></a><code>property <b>DecimalPlurals</b>: <a   href="NtPattern.html#TPlurals">TPlurals</a> read FDecimalPlurals write SetDecimalPlurals;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Decimals"></a><code>property <b>Decimals</b>[i: Integer]: <a   href="NtPattern.html#TPlural">TPlural</a> read GetDecimal;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="DefaultDecimal"></a><code>property <b>DefaultDecimal</b>: <a   href="NtPattern.html#TPlural">TPlural</a> read FDefaultDecimal;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+<table class="detail wide_list">
+<tr class="list">
+<td class="visibility"><a   href="legend.html"><img  src="public.gif" alt="Public" title="Public"></a></td>
+<td class="itemcode"><a name="Expression"></a><code>property <b>Expression</b>: String read FExpression write FExpression;</code></td>
+</tr>
+<tr><td colspan="2">
+&nbsp;</td></tr>
+</table>
+</body></html>
