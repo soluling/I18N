@@ -374,7 +374,7 @@ uses
 
     { Get the resource instance.
       @return Resource instance. If a resource DLL has been loaded then return the resource handle of that DLL. If no resource DLL has been loaded returns the resource handle of the application itself. }
-    class function GetResourceInstance: LongWord;
+    class function GetResourceInstance: THandle;
 
     { Get the default language of the user.
       @return Language or locale id.
@@ -999,7 +999,7 @@ begin
     Result := DefaultLocale;
 end;
 
-class function TNtBase.GetResourceInstance: LongWord;
+class function TNtBase.GetResourceInstance: THandle;
 begin
   if LibModuleList <> nil then
     Result := LibModuleList.ResInstance
@@ -1127,7 +1127,7 @@ end;
 {$ENDIF}
 
 {$IFDEF POSIX}
-function LoadModule(moduleName, resModuleName: string; checkOwner: Boolean): LongWord;
+function LoadModule(moduleName, resModuleName: string; checkOwner: Boolean): HModule;
 var
   st1, st2: _stat;
   moduleFileName, resModuleFileName: UTF8String;
@@ -1143,7 +1143,7 @@ begin
   if (not checkOwner) or
     ((stat(MarshaledAString(resModuleFileName), st2) <> -1) and (st1.st_uid = st2.st_uid) and (st1.st_gid = st2.st_gid)) then
   begin
-    Result := dlopen(MarshaledAString(resModuleFileName), RTLD_LAZY);
+    Result := HModule(dlopen(MarshaledAString(resModuleFileName), RTLD_LAZY));
   end;
 end;
 {$ENDIF}

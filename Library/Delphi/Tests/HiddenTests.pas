@@ -3,7 +3,7 @@ unit HiddenTests;
 interface
 
 uses
-  Classes,
+  System.Classes,
   TestFramework,
   NtHiddenId;
 

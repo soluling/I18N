@@ -1,24 +1,87 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EEDC41F4-A58B-4D56-A74F-CF5D7C2FF457" created="20180411T220906Z" lastmodified="20201010T232329Z" version="1.0.790" stringid="60">
+<project id="EEDC41F4-A58B-4D56-A74F-CF5D7C2FF457" created="20180411T220906Z" lastmodified="20221118T132753Z" version="1.0.964" stringid="60">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Sport\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Sport\src\locale\messages.xlf" original="en" lastmodified="20221118T132753Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
     <row id="src\app\app.component.ts.header" importid="7435492258621955017" si="31" created="20201010T232225Z">
       <value>Sports</value>
       <lang id="fi" rw="0" tm="1" time="20180411T220918Z">Urheilulajit</lang>
       <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">スポーツ</lang>
     </row>
-    <row id="src\app\sports\sports.component.html.addButton" importid="5333241360009441144" si="32" created="20201010T232225Z">
-      <value>Add...</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221103Z">Lisää...</lang>
+    <row id="src\app\sports\sport-dialog.component.html.header" importid="4546456403011516690" si="44" created="20201010T232225Z">
+      <value>Sport</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T220928Z">Urheilulaji</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">スポーツ</lang>
     </row>
-    <row id="src\app\sports\sports.component.html.addWaterpoloButton" importid="939013059329229990" si="33" created="20201010T232225Z">
-      <value>Add water polo</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221158Z">Lisää vesipallo</lang>
+    <row id="src\app\sports\sport-dialog.component.html.bodyText" importid="3965769458978027538" si="45" created="20201010T232225Z">
+      <value>Enter properties of a sport.</value>
+      <lang id="fi" rw="0" time="20200317T002348Z">Anna urheilulajin tiedot.</lang>
     </row>
-    <row id="src\app\sports\sports.component.html.addVolleyballButton" importid="4405779790348275177" si="34" created="20201010T232225Z">
-      <value>Add volleyball</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221133Z">Lisää lentopallo</lang>
+    <row id="src\app\sports\sport-dialog.component.html.namePlaceholder" importid="5412061639190455352" si="46" created="20201010T232225Z">
+      <value>Name</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T220959Z">Nimi</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021857Z">名前</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.nameValidation" importid="347807346634661578" si="58" created="20201010T232225Z">
+      <value>Name is required</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221004Z">Nimi vaaditaan</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.olympicPlaceholder" importid="3269565461533850890" si="47" created="20201010T232225Z">
+      <value>Olympic Games</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180548Z">Olympialaiset</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.olympicNo" importid="4688893772139292089" si="48" created="20201010T232225Z">
+      <value>No</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180536Z">Ei</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">いいえ</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.olympicWinter" importid="7934930583635021943" si="49" created="20201010T232225Z">
+      <value>Winter</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180538Z">Talvi</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">冬</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.olympicSummer" importid="6808028743397309818" si="50" created="20201010T232225Z">
+      <value>Summer</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180541Z">Kesä</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">夏</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.individualRadio" importid="1420851080984555630" si="51" created="20201010T232225Z">
+      <value>Individual sport</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180554Z">Yksilölaji</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.teamRadio" importid="6470115951635736337" si="52" created="20201010T232225Z">
+      <value>Team sport</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180559Z">Joukkuelaji</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.goalieCheck" importid="5221578937020973418" si="53" created="20201010T232225Z">
+      <value>Has goalkeeper</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180606Z">Maalivahti</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.originPlaceholder" importid="7799738110858474651" si="54" created="20201010T232225Z">
+      <value>Origin</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221008Z">Alkuperä</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">起源</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.originValidation" importid="9009367376684363386" si="59" created="20201010T232225Z">
+      <value>Origin is required</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221016Z">Alkuperä vaaditaan</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.descriptionPlaceholder" importid="5324477523368767674" si="55" created="20201010T232225Z">
+      <value>Description</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221019Z">Selitys</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">説明</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.descriptionValidation" importid="3129937959724086916" si="60" created="20201010T232225Z">
+      <value>Description is required</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221025Z">Selitys vaaditaan</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.okButton" importid="5803239427440846208" si="56" created="20201010T232225Z">
+      <value>OK</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221026Z">OK</lang>
+    </row>
+    <row id="src\app\sports\sport-dialog.component.html.cancelButton" importid="7310365732728276921" si="57" created="20201010T232225Z">
+      <value>Cancel</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221028Z">Peru</lang>
     </row>
     <row id="src\app\sports\sports.component.html.id" importid="8975348987833106233" si="35" created="20201010T232225Z">
       <value>Id</value>
@@ -63,80 +126,17 @@
       <value>Delete</value>
       <lang id="fi" rw="0" tm="1" time="20180411T221056Z">Poista</lang>
     </row>
-    <row id="src\app\sports\sport-dialog.component.html.header" importid="4546456403011516690" si="44" created="20201010T232225Z">
-      <value>Sport</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T220928Z">Urheilulaji</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">スポーツ</lang>
+    <row id="src\app\sports\sports.component.html.addButton" importid="5333241360009441144" si="32" created="20201010T232225Z">
+      <value>Add...</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221103Z">Lisää...</lang>
     </row>
-    <row id="src\app\sports\sport-dialog.component.html.bodyText" importid="3965769458978027538" si="45" created="20201010T232225Z">
-      <value>Enter properties of a sport.</value>
-      <lang id="fi" rw="0" time="20200317T002348Z">Anna urheilulajin tiedot.</lang>
+    <row id="src\app\sports\sports.component.html.addWaterpoloButton" importid="939013059329229990" si="33" created="20201010T232225Z">
+      <value>Add water polo</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221158Z">Lisää vesipallo</lang>
     </row>
-    <row id="src\app\sports\sport-dialog.component.html.namePlaceholder" importid="5412061639190455352" si="46" created="20201010T232225Z">
-      <value>Name</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T220959Z">Nimi</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021857Z">名前</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.olympicPlaceholder" importid="3269565461533850890" si="47" created="20201010T232225Z">
-      <value>Olympic Games</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180548Z">Olympialaiset</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.olympicNo" importid="4688893772139292089" si="48" created="20201010T232225Z">
-      <value>No</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180536Z">Ei</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">いいえ</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.olympicWinter" importid="7934930583635021943" si="49" created="20201010T232225Z">
-      <value>Winter</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180538Z">Talvi</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">冬</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.olympicSummer" importid="6808028743397309818" si="50" created="20201010T232225Z">
-      <value>Summer</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180541Z">Kesä</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">夏</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.individualRadio" importid="1420851080984555630" si="51" created="20201010T232225Z">
-      <value>Individual sport</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180554Z">Yksilölaji</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.teamRadio" importid="6470115951635736337" si="52" created="20201010T232225Z">
-      <value>Team sport</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180559Z">Joukkuelaji</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.goalieCheck" importid="5221578937020973418" si="53" created="20201010T232225Z">
-      <value>Has goalkeeper</value>
-      <lang id="fi" rw="0" tm="1" time="20190128T180606Z">Maalivahti</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.originPlaceholder" importid="7799738110858474651" si="54" created="20201010T232225Z">
-      <value>Origin</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221008Z">Alkuperä</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">起源</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.descriptionPlaceholder" importid="5324477523368767674" si="55" created="20201010T232225Z">
-      <value>Description</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221019Z">Selitys</lang>
-      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">説明</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.okButton" importid="5803239427440846208" si="56" created="20201010T232225Z">
-      <value>OK</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221026Z">OK</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.cancelButton" importid="7310365732728276921" si="57" created="20201010T232225Z">
-      <value>Cancel</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221028Z">Peru</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.nameValidation" importid="347807346634661578" si="58" created="20201010T232225Z">
-      <value>Name is required</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221004Z">Nimi vaaditaan</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.originValidation" importid="9009367376684363386" si="59" created="20201010T232225Z">
-      <value>Origin is required</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221016Z">Alkuperä vaaditaan</lang>
-    </row>
-    <row id="src\app\sports\sport-dialog.component.html.descriptionValidation" importid="3129937959724086916" si="60" created="20201010T232225Z">
-      <value>Description is required</value>
-      <lang id="fi" rw="0" tm="1" time="20180411T221025Z">Selitys vaaditaan</lang>
+    <row id="src\app\sports\sports.component.html.addVolleyballButton" importid="4405779790348275177" si="34" created="20201010T232225Z">
+      <value>Add volleyball</value>
+      <lang id="fi" rw="0" tm="1" time="20180411T221133Z">Lisää lentopallo</lang>
     </row>
   </node>
   <excludedoriginals>
@@ -152,13 +152,11 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

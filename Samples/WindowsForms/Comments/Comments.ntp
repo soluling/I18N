@@ -1,10 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="507ED7F4-F680-4A41-8A01-7B0D09BF785C" created="20161117T033039Z" lastmodified="20200316T191309Z" version="1.0.714" stringid="7">
+<project id="507ED7F4-F680-4A41-8A01-7B0D09BF785C" created="20161117T033039Z" lastmodified="20221117T120741Z" version="1.0.963" stringid="7">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Comments.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Comments\Comments.csproj" original="en" lastmodified="20221117T120741Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T120741Z" st="0">8, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T120741Z" st="0">40, 13</row>
       <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="label2.Location" class="TCoordinatePointRow" created="20221117T120741Z" st="0">8, 32</row>
+      <row id="label2.Size" class="TCoordinateSizeRow" created="20221117T120741Z" st="0">40, 13</row>
       <row id="label2.Text" si="2" excluded="2">dummy</row>
       <row id="$this.Text" si="3">
         <value>Sample</value>
@@ -136,7 +140,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="FormatComment" class="TPatternRow" si="4" scannedcomment="Name and place" created="20180506T033317Z">
           <value>Hello {0}, welcome to {1}</value>
           <lang id="fi" rw="0" time="20180506T033419Z">Moi {0}, tervetuloa {1}in</lang>
@@ -169,12 +173,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

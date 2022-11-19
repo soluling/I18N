@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="84BB9811-B263-4D53-B2F4-FBA0D2C4D57A" created="20140920T070611Z" lastmodified="20200207T234831Z" version="1.0.691" stringid="378">
+<project id="84BB9811-B263-4D53-B2F4-FBA0D2C4D57A" created="20140920T070611Z" lastmodified="20221107T000727Z" version="1.0.960" stringid="378">
   <lang id="fi"/>
   <lang id="fr"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="Win32\Release\Audio.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Audio\Win32\Release\Audio.exe" original="en" platforms="[ptWin32,ptWin64]">
+  <node class="TDelphiSource" name="Win32\Release\Audio.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Audio\Win32\Release\Audio.exe" original="en" lastmodified="20221107T000727Z" platforms="[ptWin32,ptWin64]" hassignature="1">
     <node class="TWindowsBinaryFolder" name="&quot;AUDIO&quot;" resname="AUDIO">
       <node class="TWindowsBinaryNode" name="SAMPLE" resname="SAMPLE" langid="1035" binaryformat="bfAudio">
         <row id="value" class="TAudioRow">
@@ -947,7 +947,7 @@
         </row>
         <row id="ClientHeight" changed="20151018T165506Z">131</row>
         <row id="ClientWidth" changed="20170404T143928Z">321</row>
-        <item name="SampleLabel" type="TLabel">
+        <item name="SampleLabel" type="TLabel" autosize="0">
           <row id="Left">8</row>
           <row id="Top">112</row>
           <row id="Width" changed="20170404T143928Z">305</row>
@@ -1228,15 +1228,20 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

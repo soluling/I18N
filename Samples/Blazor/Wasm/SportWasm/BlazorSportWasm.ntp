@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20210916T091820Z" version="1.0.878" lockedrowcomplete="0" stringid="15">
+<project id="10BE063A-693C-4F83-B20B-6729C45FBB6A" created="20200328T173646Z" lastmodified="20221118T132845Z" version="1.0.964" lockedrowcomplete="0" stringid="15">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="SportWasm.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Wasm\SportWasm\SportWasm.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
+  <node class="TNetProjectSource" name="SportWasm.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Wasm\SportWasm\SportWasm.csproj" original="en" lastmodified="20221118T132845Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
     <netproperties version="standard21" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources" created="20200328T175152Z">
       <node class="TDirectoryFolder" name="Pages">
-        <node class="TResXNode" name="Index.resx">
+        <node class="TResXNode" name="Index.resx" windowsforms="wfCore">
           <row id="Sports" si="10" created="20200418T021553Z">
             <value>Sports</value>
             <lang id="fi" rw="0" time="20200418T021603Z">Urheilu</lang>
@@ -35,14 +35,14 @@
         </node>
       </node>
       <node class="TDirectoryFolder" name="Shared" created="20200417T031628Z">
-        <node class="TResXNode" name="MainLayout.resx" created="20200417T031728Z">
+        <node class="TResXNode" name="MainLayout.resx" created="20200417T031728Z" windowsforms="wfCore">
           <row id="About" si="8">
             <value>About</value>
             <lang id="fi" rw="0" time="20200417T031735Z">Tietoa</lang>
             <lang id="ja" st="4" or="5" rw="0" time="20200417T043109Z" fuzzy="99">バージョン情報</lang>
           </row>
         </node>
-        <node class="TResXNode" name="NavMenu.resx">
+        <node class="TResXNode" name="NavMenu.resx" windowsforms="wfCore">
           <row id="Sport" si="9" created="20200417T031903Z">
             <value>Sport</value>
             <lang id="fi" rw="0" time="20200417T031910Z" fuzzy="100">Urheilu</lang>
@@ -56,6 +56,20 @@
         </node>
       </node>
     </node>
+    <assemblies>
+      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
+    </assemblies>
     <extractor category="lcBlazor"/>
   </node>
   <terminology>
@@ -72,9 +86,7 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

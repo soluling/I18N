@@ -1,18 +1,38 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20200316T185741Z" version="1.0.714" stringid="13">
+<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20221117T130644Z" version="1.0.963" stringid="13">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20221117T130644Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 24</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="label2.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 40</row>
+      <row id="label2.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="label3.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 56</row>
+      <row id="label3.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label3.Text" si="3" excluded="2">dummy</row>
+      <row id="label4.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 72</row>
+      <row id="label4.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label4.Text" si="4" excluded="2">dummy</row>
+      <row id="label5.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 88</row>
+      <row id="label5.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label5.Text" si="5" excluded="2">dummy</row>
+      <row id="label11.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 104</row>
+      <row id="label11.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label11.Text" si="6" excluded="2">dummy</row>
+      <row id="label21.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 120</row>
+      <row id="label21.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label21.Text" si="7" excluded="2">dummy</row>
+      <row id="label101.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 136</row>
+      <row id="label101.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label101.Text" si="8" excluded="2">dummy</row>
+      <row id="label111.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 152</row>
+      <row id="label111.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label111.Text" si="9" excluded="2">dummy</row>
+      <row id="label0.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 8</row>
+      <row id="label0.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label0.Text" si="10" excluded="2">dummy</row>
       <row id="$this.Text" si="11">
         <value>Plural Sample</value>
@@ -253,7 +273,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="Language" si="12" scannedcomment="ISO 639 language code">
           <value>en</value>
           <lang id="fi" time="20161130T152251Z">fi</lang>
@@ -268,6 +288,9 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -281,12 +304,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

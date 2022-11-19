@@ -1158,14 +1158,14 @@ begin
   AfterProcessComponent(thisComponent);
 end;
 
-function FindInstance(classType: TClass): LongWord;
+function FindInstance(classType: TClass): THandle;
 begin
   Result := FindResourceHInstance(FindClassHInstance(classType));
 end;
 
 function TNtBaseTranslator.DoTranslate(component: TComponent; resourceName: String): Boolean;
 var
-  instance: LongWord;
+  instance: THandle;
   header: array[0..3] of Byte;
   stream: TStream;
 begin

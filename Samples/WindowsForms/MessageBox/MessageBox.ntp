@@ -1,8 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3CAA9F4A-6ED1-42CB-8F5A-2E9F319945C5" created="20210104T224953Z" lastmodified="20210105T022046Z" version="1.0.815" lockedrowcomplete="0" stringid="5">
+<project id="3CAA9F4A-6ED1-42CB-8F5A-2E9F319945C5" created="20210104T224953Z" lastmodified="20221117T125516Z" version="1.0.963" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="MessageBox.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\MessageBox\MessageBox.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+  <node class="TNetProjectSource" name="MessageBox.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\MessageBox\MessageBox.csproj" original="en" lastmodified="20221117T125516Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties toolsversion="nt150"/>
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="showButton.Location" class="TCoordinatePointRow" created="20221117T125516Z" st="0">12, 12</row>
+      <row id="showButton.Size" class="TCoordinateSizeRow" created="20221117T125516Z" st="0">75, 23</row>
       <row id="showButton.Text" si="1">
         <value>&amp;Show...</value>
         <lang id="fi" rw="0" time="20210104T224958Z" fuzzy="1">&amp;Näytä...</lang>
@@ -120,7 +123,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="MessageBoxCaption" si="3">
           <value>Sample</value>
           <lang id="fi" rw="0" time="20210104T225019Z">Esimerkki</lang>
@@ -141,15 +144,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
-      <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

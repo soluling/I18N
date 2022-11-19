@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20211229T202122Z" version="1.0.895" stringid="26">
+<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20221117T121413Z" version="1.0.963" stringid="29">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" lastmodified="20221117T121413Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wfCore">
       <formats>
         <item name="sampleLabel1.CustomExpression" format="sfStructured"/>
         <item name="sampleLabel1.CustomHtml" format="sfHtml"/>
@@ -15,7 +15,7 @@
         <value>a</value>
         <lang id="fi" rw="0" time="20180506T040011Z">b</lang>
       </row>
-      <row id="sampleLabel1.CustomImage" class="TImageRow" created="20190602T234757Z" st="0">
+      <row id="sampleLabel1.CustomImage" class="TImageRow" created="20190602T234757Z">
           iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAACt0RVh0Q29weXJpZ2h0AENvcHlyaWdo
           dCCpIDIwMDgtMjAxMSBJTkNPUlMgR21iSBCOIU8AAANDSURBVDhPdZJ5SJNxGMdfLYMIalj+GZR2O0em2YFpdrjN3OHSzTl1w+U0
           C7TStqlpHlMzs7Ls8MrMPPKuxMooSzokQgtJuimI7HDzna90Ed9+e3sh/+mB7x8vL58P3+d5X8oxPL/QNNcg3RBvo46euU6NGT6K
@@ -34,11 +34,15 @@
         <value>This is a sample</value>
         <lang id="fi" rw="0" time="20180506T035959Z">Tämä on esimerkki</lang>
       </row>
+      <row id="sampleLabel1.Location" class="TCoordinatePointRow" created="20221117T121404Z">8, 8</row>
+      <row id="sampleLabel1.Size" class="TCoordinateSizeRow" created="20221117T121404Z">62, 13</row>
       <row id="sampleLabel1.Text" si="4">
         <value>Hello World</value>
         <lang id="fi" rw="0" time="20180506T040002Z">Moi maailma</lang>
       </row>
-      <row id="label1.Text" si="26" created="20211229T202116Z" st="0">Hello</row>
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T121404Z">8, 24</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T121404Z">31, 13</row>
+      <row id="label1.Text" si="26" created="20211229T202116Z">Hello</row>
       <row id="$this.Text" si="5">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20180506T040005Z">Esimerkki</lang>
@@ -301,11 +305,14 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <rules kind="crWinForms">
       <rule component="SampleControl.SampleLabel" property="CustomImage" operation="roLocalize" format="wfImageArray"/>
     </rules>
+    <assemblies>
+      <assembly>bin\Debug\SampleControl.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -314,13 +321,11 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

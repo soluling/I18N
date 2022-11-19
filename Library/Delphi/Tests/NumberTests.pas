@@ -4,7 +4,7 @@ unit NumberTests;
 interface
 
 uses
-  Classes,
+  System.Classes,
   TestFramework;
 
 type
@@ -29,8 +29,8 @@ type
 implementation
 
 uses
-  SysUtils,
-  Windows,
+  System.SysUtils,
+  WinApi.Windows,
   NtBase,
   NtLocalization,
   NtNumber,

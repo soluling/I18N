@@ -1,9 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5F67A006-1ABB-4F3C-97D1-4B90EA3B3E77" created="20180506T134908Z" lastmodified="20200316T191303Z" version="1.0.714" stringid="9">
+<project id="5F67A006-1ABB-4F3C-97D1-4B90EA3B3E77" created="20180506T134908Z" lastmodified="20221117T122055Z" version="1.0.963" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Database.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Database\Database.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Database.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Database\Database.csproj" original="en" lastmodified="20221117T122055Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <row id="dataGridView1.Location" class="TCoordinatePointRow" created="20221117T122049Z">0, 0</row>
+      <row id="dataGridView1.Size" class="TCoordinateSizeRow" created="20221117T122049Z">592, 224</row>
+      <row id="button1.Location" class="TCoordinatePointRow" created="20221117T122049Z">8, 232</row>
+      <row id="button1.Size" class="TCoordinateSizeRow" created="20221117T122049Z">120, 23</row>
       <row id="button1.Text" si="1">
         <value>&amp;Language...</value>
         <lang id="fi" or="5" rw="0" time="20180506T134914Z">&amp;Kieli...</lang>
@@ -136,7 +140,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="DescriptionColumn" si="3">
           <value>Description</value>
           <lang id="fi" or="5" rw="0" time="20180506T134914Z">Selitys</lang>
@@ -167,6 +171,10 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+      <assembly>bin\Debug\Soluling.Translator.Forms.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -180,12 +188,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20220406T002929Z" version="1.0.913" stringid="5">
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20221113T162611Z" version="1.0.963" stringid="6">
   <lang id="fi"/>
   <lang id="he"/>
-  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" encoding="windows-1252">
+  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" lastmodified="20221113T162611Z" encoding="windows-1252">
     <ini detectstringformat="1"/>
     <item name="value">
       <row id="finland" changed="20130130T230920Z" si="1" created="20130130T230707Z">
@@ -26,31 +26,30 @@
         <value>Capital of Sweden is Stockholm</value>
         <lang id="fi" time="20190825T183047Z" fuzzy="5">Ruotsin pääkaupunki on Tukholma</lang>
       </row>
+      <row id="all" changed="20221113T162610Z" si="6" created="20221113T162353Z" st="2">
+        <value>Finland|Germany|Sweden United States</value>
+        <prev>Finland|Germany|Sweden</prev>
+      </row>
     </item>
   </node>
   <terminology>
     <items>
-      <glossary kind="TTbxGlossary" filename="D:\NT\Deploy\Samples\Glossary\Countries.tbx"/>
+      <glossary kind="TTbxGlossary" filename="Countries.tbx"/>
     </items>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>

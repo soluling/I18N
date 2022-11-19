@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="63399457-D457-445E-AD1F-0AC5AC7F1AE6" created="20181103T192720Z" lastmodified="20200316T234600Z" version="1.0.714" stringid="21">
+<project id="63399457-D457-445E-AD1F-0AC5AC7F1AE6" created="20181103T192720Z" lastmodified="20221118T133017Z" version="1.0.964" stringid="49">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TDitaSource" name="Sample.dita" fullpath="D:\NT\Deploy\Samples\Dita\Sample.dita" original="en" encoding="utf-8">
+  <node class="TDitaSource" name="Sample.dita" fullpath="D:\NT\Deploy\Samples\Dita\Sample.dita" original="en" lastmodified="20221118T133017Z" encoding="utf-8">
     <row id="title[0]" si="1" created="20181103T193612Z">
       <value>Sample</value>
       <lang id="fi" rw="0" time="20181103T194337Z">Esimerkki</lang>
@@ -14,9 +14,9 @@
       <lang id="de" st="1" or="6" rw="0" time="20190420T032908Z">Dies ist eine Stichprobe</lang>
     </row>
     <row id="body[0].p[1]" class="TTagRow" si="3" created="20181105T143218Z">
-      <value>This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt; and &lt;u&gt;underline&lt;/u&gt;.</value>
-      <lang id="fi" rw="0" time="20181105T143248Z">Tämä on &lt;b&gt;vahvennettu&lt;/b&gt;, &lt;i&gt;kursiivi&lt;/i&gt; ja &lt;u&gt;alleviivattu&lt;/u&gt;.</lang>
-      <lang id="de" st="1" or="6" rw="0" time="20190420T032908Z">Das ist &lt;b&gt; mutige &lt;/b&gt;, &lt;i&gt; kursive &lt;/i&gt; und &lt;u&gt; &lt;/u&gt; unterstreichen.</lang>
+      <value>This is &lt;b>bold&lt;/b>, &lt;i>italic&lt;/i> and &lt;u>underline&lt;/u>.</value>
+      <lang id="fi" rw="0" time="20181105T143248Z">Tämä on &lt;b>vahvennettu&lt;/b>, &lt;i>kursiivi&lt;/i> ja &lt;u>alleviivattu&lt;/u>.</lang>
+      <lang id="de" st="1" or="6" rw="0" time="20190420T032908Z">Das ist &lt;b> mutige &lt;/b>, &lt;i> kursive &lt;/i> und &lt;u> &lt;/u> unterstreichen.</lang>
     </row>
     <row id="body[0].p[2].[0]" si="4" created="20181103T201816Z">
       <value>This is a list:</value>
@@ -38,6 +38,7 @@
       <lang id="fi" rw="0" time="20181103T194350Z">Kolme</lang>
       <lang id="de" st="4" rw="0" time="20190420T033025Z">Drei</lang>
     </row>
+    <item class="TUnusedItem" name="_unused" created="20221118T132932Z"/>
     <data>
       PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+DQo8IS0tVGhpcyBkb2N1bWVudCB3
       YXMgY3JlYXRlZCB3aXRoIENvZGV4Li0tPjx0b3BpYyB4bWxuczp4c2k9Imh0dHA6Ly93d3cudzMub3JnLzIwMDEvWE1MU2NoZW1h
@@ -49,17 +50,20 @@
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

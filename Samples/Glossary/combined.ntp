@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="87358B05-631F-434A-A7E8-E4B658263024" created="20221113T165315Z" lastmodified="20221113T173535Z" version="1.0.963" stringid="3">
+  <lang id="fi"/>
+  <node class="TIniSource" name="combined.ini" fullpath="D:\NT\Deploy\Samples\Glossary\combined.ini" original="en" lastmodified="20221113T173535Z" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="value">
+      <row id="all" si="1">Finland|Germany|Sweden United States</row>
+      <row id="all2" si="2" created="20221113T171602Z" st="0">>Finland&lt;>Germany&lt;</row>
+      <node class="THtmlDataNode" name="one" created="20221113T173535Z" st="0">
+        <row id="text" class="THtmlRow" si="3" st="0">This is &lt;b>Finland&lt;/b>.</row>
+        <data>VABoAGkAcwAgAGkAcwAgADwAYgA+AEYAaQBuAGwAYQBuAGQAPAAvAGIAPgAuAA==</data>
+      </node>
+    </item>
+  </node>
+  <excludedoriginals>
+    <item>exclude</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

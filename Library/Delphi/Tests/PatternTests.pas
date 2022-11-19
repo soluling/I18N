@@ -3,7 +3,7 @@ unit PatternTests;
 interface
 
 uses
-  Classes,
+  System.Classes,
   TestFramework,
   NtPattern;
 
@@ -198,7 +198,7 @@ end;
 
 procedure TPatternTests.StandardIcu;
 const
-  VALUE = '{file, plural one {%d file} other {%d files}}';
+  VALUE = '{file, plural, one {%d file} other {%d files}}';
 begin
   DefaultLocale := 'en';
   Pattern(0, VALUE, '%d files');
@@ -218,7 +218,7 @@ end;
 
 procedure TPatternTests.EscapeIcu;
 const
-  VALUE = 'I have \{ \\  \} {files, plural one {%d \{ \\ \} file} other {%d \{ \\ \} files}}';
+  VALUE = 'I have \{ \\  \} {files, plural, one {%d \{ \\ \} file} other {%d \{ \\ \} files}}';
 begin
   DefaultLocale := 'en';
   Pattern(0, VALUE, '%d { \ } files');
@@ -238,7 +238,7 @@ end;
 
 procedure TPatternTests.OperatorRangeIcu;
 const
-  VALUE = 'I have {file, plural 3..4 {few cars} other {%d cars}}.';
+  VALUE = 'I have {file, plural, 3..4 {few cars} other {%d cars}}.';
 begin
   DefaultLocale := 'en';
   Pattern(3, VALUE, 'few cars');
@@ -248,7 +248,7 @@ end;
 
 procedure TPatternTests.OperatorIcu;
 const
-  VALUE = 'I have {file, plural =0 {no cars} =1 {one car} =2 {two cars} 3..4 {few cars} ~12 {dozen cars} other {%d cars}}.';
+  VALUE = 'I have {file, plural, =0 {no cars} =1 {one car} =2 {two cars} 3..4 {few cars} ~12 {dozen cars} other {%d cars}}.';
 begin
   DefaultLocale := 'en';
   Same(TMultiPattern.Format(VALUE, 0), 'I have no cars.');
@@ -265,7 +265,7 @@ end;
 
 procedure TPatternTests.OperatorLessThanIcu;
 const
-  VALUE = 'I have {file, plural <5 {a few cars} >=5 {many cars} >=10 {plenty of cars}}.';
+  VALUE = 'I have {file, plural, <5 {a few cars} >=5 {many cars} >=10 {plenty of cars}}.';
 begin
   DefaultLocale := 'en';
   Same(TMultiPattern.Format(VALUE, 0), 'I have a few cars.');
@@ -281,7 +281,7 @@ end;
 
 procedure TPatternTests.CustomIcu;
 const
-  VALUE = '{files, plural, zero {No files} one {One file} two [Two files} other {%d files}}';
+  VALUE = '{files, plural, zero {No files} one {One file} two {Two files} other {%d files}}';
 begin
   DefaultLocale := 'en';
   Pattern(0, VALUE, 'No files');
@@ -480,8 +480,8 @@ end;
 
 procedure TPatternTests.EnglishShared;
 const
-  PATTERN_C = 'I have {file, plural one {%d file} other {%d files}}.';
-  ZERO_PATTERN_C = 'I have {file, plural =0 {no files} one {%d file} other {%d files}}.';
+  PATTERN_C = 'I have {file, plural, one {%d file} other {%d files}}.';
+  ZERO_PATTERN_C = 'I have {file, plural, =0 {no files} one {%d file} other {%d files}}.';
 begin
   DefaultLocale := 'en';
   Format(0, PATTERN_C, 'I have 0 files.');

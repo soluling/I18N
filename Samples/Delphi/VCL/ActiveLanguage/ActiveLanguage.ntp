@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0C49E348-789E-4C07-8BC3-7ED0FAB1308F" created="20160919T034725Z" lastmodified="20200207T234812Z" version="1.0.691" stringid="387">
+<project id="0C49E348-789E-4C07-8BC3-7ED0FAB1308F" created="20160919T034725Z" lastmodified="20221107T000655Z" version="1.0.960" stringid="387">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\ActiveLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ActiveLanguage\Win32\Release\ActiveLanguage.exe" original="en" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\ActiveLanguage.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ActiveLanguage\Win32\Release\ActiveLanguage.exe" original="en" lastmodified="20221107T000655Z" hassignature="1" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -168,6 +168,7 @@
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
+    <signature signtool="C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe"/>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
@@ -178,15 +179,20 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

@@ -1,12 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="698324B3-C088-47E1-8BBD-E7AB88B94E77" created="20180506T025948Z" lastmodified="20200316T191321Z" version="1.0.714" stringid="4">
+<project id="698324B3-C088-47E1-8BBD-E7AB88B94E77" created="20180506T025948Z" lastmodified="20221117T120836Z" version="1.0.963" stringid="4">
   <lang id="fi"/>
   <lang id="ar"/>
-  <node class="TNetProjectSource" name="BidiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiEnglish\BidiEnglish.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="BidiEnglish.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiEnglish\BidiEnglish.csproj" original="en" lastmodified="20221117T120836Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt120"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T120825Z">8, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T120825Z">37, 13</row>
       <row id="label1.Text" si="1">&amp;Value:</row>
+      <row id="textBox.Location" class="TCoordinatePointRow" created="20221117T120825Z">8, 24</row>
+      <row id="textBox.Size" class="TCoordinateSizeRow" created="20221117T120825Z">312, 20</row>
+      <row id="browseButton.Location" class="TCoordinatePointRow" created="20221117T120825Z">328, 22</row>
+      <row id="browseButton.Size" class="TCoordinateSizeRow" created="20221117T120825Z">75, 23</row>
       <row id="browseButton.Text" si="2">&amp;Clear</row>
+      <row id="checkBox1.Location" class="TCoordinatePointRow" created="20221117T120825Z">8, 48</row>
+      <row id="checkBox1.Size" class="TCoordinateSizeRow" created="20221117T120825Z">51, 17</row>
       <row id="checkBox1.Text" si="3">&amp;Save</row>
       <row id="$this.Text" si="4">Sample</row>
       <data>
@@ -156,7 +164,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
   </node>
   <terminology>
@@ -168,12 +176,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

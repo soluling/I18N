@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0B04BA30-7EA0-4A42-967D-A273E695876E" created="20180507T133810Z" lastmodified="20200316T191250Z" version="1.0.714" stringid="37">
+<project id="0B04BA30-7EA0-4A42-967D-A273E695876E" created="20180507T133810Z" lastmodified="20221117T122629Z" version="1.0.963" stringid="37">
   <lang id="fi"/>
   <lang id="no"/>
   <lang id="nb"/>
   <lang id="nn"/>
   <lang id="zh"/>
   <lang id="zh-Hant"/>
-  <node class="TNetProjectSource" name="EmbeddedResources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\EmbeddedResources\EmbeddedResources.csproj" original="en" resources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml]" availableresources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="EmbeddedResources.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\EmbeddedResources\EmbeddedResources.csproj" original="en" lastmodified="20221117T122629Z" resources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml]" availableresources="[nrResx,nrForm,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt140"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="$this.Text" changed="20180507T133944Z" si="1">
         <value>Resource Sample</value>
         <lang id="fi" rw="0" time="20180507T133953Z">Resurssiesimerkki</lang>
@@ -539,7 +539,7 @@
       </row>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <node class="TIniDataNode" name="Sport.ini" filename="..\..\Common\Sport.ini" encoding="windows-1252">
       <item class="TIniItem" name="soccer">
@@ -855,12 +855,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

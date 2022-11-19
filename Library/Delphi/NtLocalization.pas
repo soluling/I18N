@@ -39,7 +39,7 @@ type
 
     { Check if the version of given resource instance matches the version of the application.
       @return @true if the version match, @false if not. }
-    class function DoesVersionMatch(resInstance: LongWord): Boolean; overload;
+    class function DoesVersionMatch(resInstance: THandle): Boolean; overload;
 
     { Check if the version of resource DLL of the give language code matches the version of the application.
       @return @true if the version match, @false if not. }
@@ -778,7 +778,7 @@ var
   enumVersion1, enumVersion2, enumVersion3, enumVersion4: Integer;
 
 function EnumEnumVersionProcLanguagesProc(
-  module: Integer;
+  module: THandle;
   resType: PChar;
   resName: PChar;
   language: Word;  //FI:O804
@@ -801,7 +801,7 @@ begin
 end;
 
 function EnumVersionProc(
-  module: Integer;
+  module: THandle;
   resType: PChar;
   resName: PChar;
   param: Integer): Bool; stdcall;  //FI:O804
@@ -811,7 +811,7 @@ begin
   Result := Bool(0);
 end;
 
-class function TNtResource.DoesVersionMatch(resInstance: LongWord): Boolean;
+class function TNtResource.DoesVersionMatch(resInstance: THandle): Boolean;
 var
   exeVersion1, exeVersion2, exeVersion3, exeVersion4: Integer;
 begin
@@ -851,7 +851,7 @@ end;
 
 class function TNtResource.DoesLocaleVersionMatch(const code: String): Boolean;
 var
-  instance: HModule;
+  instance: THandle;
 begin
   instance := LoadLibraryEx(
     PChar(TNtBase.GetLanguageFile(TNtBase.GetRunningFileName, code)),
@@ -866,7 +866,7 @@ end;
 
 class function TNtResource.DoesLocaleVersionMatchFile(const fileName: String): Boolean;
 var
-  instance: HModule;
+  instance: THandle;
 begin
   instance := LoadLibraryEx(
     PChar(fileName),

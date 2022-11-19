@@ -1,13 +1,27 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4A4BEF93-685A-42E0-8970-FE21B07168AC" created="20181129T160905Z" lastmodified="20200316T191037Z" version="1.0.714" stringid="17">
+<project id="4A4BEF93-685A-42E0-8970-FE21B07168AC" created="20181129T160905Z" lastmodified="20221117T125350Z" version="1.0.963" stringid="25">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Links.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Links\Links.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Links.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Links\Links.csproj" original="en" lastmodified="20221117T125350Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="pictureBox1.Location" class="TCoordinatePointRow" created="20221117T125343Z">8, 8</row>
+      <row id="pictureBox1.Size" class="TCoordinateSizeRow" created="20221117T125343Z">128, 128</row>
+      <row id="pictureBox2.Location" class="TCoordinatePointRow" created="20221117T125343Z">144, 8</row>
+      <row id="pictureBox2.Size" class="TCoordinateSizeRow" created="20221117T125343Z">128, 128</row>
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T125343Z">280, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T125343Z">40, 13</row>
       <row id="label1.Text" si="1" excluded="2">dummy</row>
+      <row id="textXml.Location" class="TCoordinatePointRow" created="20221117T125343Z">8, 160</row>
+      <row id="textXml.Size" class="TCoordinateSizeRow" created="20221117T125343Z">40, 13</row>
       <row id="textXml.Text" si="2" excluded="2">dummy</row>
+      <row id="binaryXml.Location" class="TCoordinatePointRow" created="20221117T125343Z">8, 352</row>
+      <row id="binaryXml.Size" class="TCoordinateSizeRow" created="20221117T125343Z">40, 13</row>
       <row id="binaryXml.Text" si="3" excluded="2">dummy</row>
+      <row id="label2.Location" class="TCoordinatePointRow" created="20221117T125343Z">8, 144</row>
+      <row id="label2.Size" class="TCoordinateSizeRow" created="20221117T125343Z">65, 13</row>
       <row id="label2.Text" si="4">Text XML:</row>
+      <row id="label3.Location" class="TCoordinatePointRow" created="20221117T125343Z">8, 336</row>
+      <row id="label3.Size" class="TCoordinateSizeRow" created="20221117T125343Z">71, 13</row>
       <row id="label3.Text" si="5">Binary XML</row>
       <row id="$this.Text" si="6">Sample</row>
       <data>
@@ -204,7 +218,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="String" si="7">One</row>
         <node class="TXmlDataNode" name="XmlBinary">
           <item class="TXmlItem" name="simple">
@@ -212,13 +226,13 @@
               <row id="value" si="8">Skim milk</row>
             </item>
             <item class="TXmlItem" name="price">
-              <row id="value" changed="20200316T191036Z" class="TFloatRow" st="2">
+              <row id="value" changed="20200316T191036Z" si="18" created="20221117T125343Z">
                 <value>1.15</value>
                 <prev>0</prev>
               </row>
             </item>
             <item class="TXmlItem" name="onsale">
-              <row id="value" class="TIntegerRow">0</row>
+              <row id="value" si="19" created="20221117T125343Z">0</row>
             </item>
           </item>
           <data>
@@ -230,8 +244,8 @@
           <item class="TXmlItem" name="sports">
             <item class="TXmlItem" name="soccer">
               <row id="=name" si="9">Soccer</row>
-              <row id="=fieldplayers" class="TIntegerRow">10</row>
-              <row id="=goalie" class="TIntegerRow">1</row>
+              <row id="=fieldplayers" si="20" created="20221117T125343Z">10</row>
+              <row id="=goalie" si="21" created="20221117T125343Z">1</row>
               <row id="=origin" si="10">England</row>
               <item class="TXmlItem" name="description">
                 <row id="value" si="11">Soccer is a sport played between two teams of eleven players with a spherical ball.</row>
@@ -239,8 +253,8 @@
             </item>
             <item class="TXmlItem" name="hockey">
               <row id="=name" si="12">Ice hockey</row>
-              <row id="=fieldplayers" class="TIntegerRow">5</row>
-              <row id="=goalie" class="TIntegerRow">1</row>
+              <row id="=fieldplayers" si="22" created="20221117T125343Z">5</row>
+              <row id="=goalie" si="23" created="20221117T125343Z">1</row>
               <row id="=origin" si="13">Canada</row>
               <item class="TXmlItem" name="description">
                 <row id="value" si="14">Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</row>
@@ -248,8 +262,8 @@
             </item>
             <item class="TXmlItem" name="basketball">
               <row id="=name" si="15">Basketball</row>
-              <row id="=fieldplayers" class="TIntegerRow">5</row>
-              <row id="=goalie" class="TIntegerRow">0</row>
+              <row id="=fieldplayers" si="24" created="20221117T125343Z">5</row>
+              <row id="=goalie" si="25" created="20221117T125343Z">0</row>
               <row id="=origin" si="16">United States</row>
               <item class="TXmlItem" name="description">
                 <row id="value" si="17">Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</row>
@@ -298,12 +312,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

@@ -1,33 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6108C03E-4879-4AEF-9A22-C951B7610B42" created="20180509T141849Z" lastmodified="20200316T191514Z" version="1.0.714" stringid="8">
+<project id="6108C03E-4879-4AEF-9A22-C951B7610B42" created="20180509T141849Z" lastmodified="20221117T123335Z" version="1.0.963" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Font.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Font\Font.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Font.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Font\Font.csproj" original="en" lastmodified="20221117T123335Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt120"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T123327Z">8, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T123327Z">50, 13</row>
       <row id="label1.Text" si="1">
         <value>Standard</value>
         <lang id="fi" rw="0" time="20180509T141920Z">Perus</lang>
       </row>
+      <row id="label2.Location" class="TCoordinatePointRow" created="20221117T123327Z">8, 80</row>
+      <row id="label2.Size" class="TCoordinateSizeRow" created="20221117T123327Z">93, 40</row>
       <row id="label2.Text" si="2">
         <value>Arial</value>
         <lang id="fi" rw="0" time="20180509T141856Z">Arial</lang>
       </row>
+      <row id="label3.Location" class="TCoordinatePointRow" created="20221117T123327Z">8, 136</row>
+      <row id="label3.Size" class="TCoordinateSizeRow" created="20221117T123327Z">77, 54</row>
       <row id="label3.Text" si="3">
         <value>Onyx</value>
         <lang id="fi" rw="0" time="20180509T141856Z">Onyx</lang>
       </row>
+      <row id="label4.Location" class="TCoordinatePointRow" created="20221117T123327Z">16, 208</row>
+      <row id="label4.Size" class="TCoordinateSizeRow" created="20221117T123327Z">92, 25</row>
       <row id="label4.Text" si="4">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
       </row>
+      <row id="label5.Location" class="TCoordinatePointRow" created="20221117T123327Z">16, 248</row>
+      <row id="label5.Size" class="TCoordinateSizeRow" created="20221117T123327Z">115, 29</row>
       <row id="label5.Text" si="5">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
       </row>
+      <row id="label6.Location" class="TCoordinatePointRow" created="20221117T123327Z">16, 288</row>
+      <row id="label6.Size" class="TCoordinateSizeRow" created="20221117T123327Z">29, 20</row>
       <row id="label6.Text" si="6">
         <value>All</value>
         <lang id="fi" rw="0" time="20180509T141924Z">Kaikki</lang>
       </row>
+      <row id="label7.Location" class="TCoordinatePointRow" created="20221117T123327Z">8, 40</row>
+      <row id="label7.Size" class="TCoordinateSizeRow" created="20221117T123327Z">75, 20</row>
       <row id="label7.Text" si="7">
         <value>Standard</value>
         <lang id="fi" or="3" rw="0" time="20180509T141921Z">Perus</lang>
@@ -249,7 +263,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
   </node>
   <excludedoriginals>
@@ -264,12 +278,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

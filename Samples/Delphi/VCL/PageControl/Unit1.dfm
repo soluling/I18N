@@ -10,7 +10,6 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
   PixelsPerInch = 96
   TextHeight = 13
   object PageControl1: TPageControl
@@ -18,7 +17,7 @@ object Form1: TForm1
     Top = 8
     Width = 449
     Height = 233
-    ActivePage = TabSheet1
+    ActivePage = TabSheet3
     TabOrder = 0
     object TabSheet1: TTabSheet
       Caption = 'One'
@@ -33,10 +32,6 @@ object Form1: TForm1
     object TabSheet2: TTabSheet
       Caption = 'Two'
       ImageIndex = 1
-      ExplicitLeft = 0
-      ExplicitTop = 0
-      ExplicitWidth = 281
-      ExplicitHeight = 165
       object CheckBox1: TCheckBox
         Left = 8
         Top = 8
@@ -44,6 +39,49 @@ object Form1: TForm1
         Height = 17
         Caption = 'Check'
         TabOrder = 0
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'Three'
+      ImageIndex = 2
+      object StackPanel1: TStackPanel
+        Left = 0
+        Top = 0
+        Width = 441
+        Height = 205
+        Align = alClient
+        BevelOuter = bvNone
+        ControlCollection = <
+          item
+            Control = Label2
+          end
+          item
+            Control = CheckBox2
+          end>
+        Padding.Left = 8
+        Padding.Top = 8
+        Padding.Right = 8
+        Padding.Bottom = 8
+        TabOrder = 0
+        ExplicitLeft = 120
+        ExplicitTop = 8
+        ExplicitWidth = 185
+        ExplicitHeight = 200
+        object Label2: TLabel
+          Left = 8
+          Top = 8
+          Width = 23
+          Height = 13
+          Caption = 'Hello'
+        end
+        object CheckBox2: TCheckBox
+          Left = 8
+          Top = 23
+          Width = 97
+          Height = 17
+          Caption = 'Check me'
+          TabOrder = 0
+        end
       end
     end
   end

@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C77A95A8-4EFE-4437-AB73-6B5ADE99763C" created="20180506T025843Z" lastmodified="20200316T191508Z" version="1.0.714" stringid="1">
+<project id="C77A95A8-4EFE-4437-AB73-6B5ADE99763C" created="20180506T025843Z" lastmodified="20221117T120847Z" version="1.0.963" stringid="1">
   <lang id="ar"/>
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="BidiSimple.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiSimple\BidiSimple.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="BidiSimple.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\BiDi\BidiSimple\BidiSimple.csproj" original="en" lastmodified="20221117T120847Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt120"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="$this.Text" si="1">
         <value>Sample</value>
         <lang id="ar" st="4" or="4" rw="0" time="20180506T025843Z">SAMPLE</lang>
@@ -104,7 +104,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
   </node>
   <terminology>
@@ -116,12 +116,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

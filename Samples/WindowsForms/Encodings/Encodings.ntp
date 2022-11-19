@@ -1,27 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="06F01DBC-B947-45E9-964D-7181C3515E72" created="20180509T031151Z" lastmodified="20200316T191244Z" version="1.0.714" stringid="27">
+<project id="06F01DBC-B947-45E9-964D-7181C3515E72" created="20180509T031151Z" lastmodified="20221117T122701Z" version="1.0.963" stringid="27">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Encodings.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Encodings\Encodings.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Encodings.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Encodings\Encodings.csproj" original="en" lastmodified="20221117T122701Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt120"/>
-    <node class="TResXNode" name="Ansi.resx">
+    <node class="TResXNode" name="Ansi.resx" windowsforms="wfCore">
       <row id="String1" si="1">
         <value>Ansi ångström</value>
         <lang id="fi" rw="0" time="20180509T031209Z">Ansi ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="utf8Label.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 40</row>
+      <row id="utf8Label.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf8Label.Text" si="2" excluded="2">dummy</row>
+      <row id="ansiLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 8</row>
+      <row id="ansiLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="ansiLabel.Text" si="3" excluded="2">dummy</row>
+      <row id="isoLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 24</row>
+      <row id="isoLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="isoLabel.Text" si="4" excluded="2">dummy</row>
+      <row id="utf16LeLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 72</row>
+      <row id="utf16LeLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf16LeLabel.Text" si="5" excluded="2">dummy</row>
+      <row id="utf16BeLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 88</row>
+      <row id="utf16BeLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf16BeLabel.Text" si="6" excluded="2">dummy</row>
+      <row id="utf32LeLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 136</row>
+      <row id="utf32LeLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf32LeLabel.Text" si="7" excluded="2">dummy</row>
+      <row id="utf32BeLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 152</row>
+      <row id="utf32BeLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf32BeLabel.Text" si="8" excluded="2">dummy</row>
+      <row id="gb18030NoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 200</row>
+      <row id="gb18030NoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="gb18030NoBomLabel.Text" si="9" excluded="2">dummy</row>
+      <row id="utf8NoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 56</row>
+      <row id="utf8NoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf8NoBomLabel.Text" si="10" excluded="2">dummy</row>
+      <row id="utf16BeNoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 120</row>
+      <row id="utf16BeNoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf16BeNoBomLabel.Text" si="11" excluded="2">dummy</row>
+      <row id="utf16LeNoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 104</row>
+      <row id="utf16LeNoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf16LeNoBomLabel.Text" si="12" excluded="2">dummy</row>
+      <row id="utf32BeNoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 184</row>
+      <row id="utf32BeNoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf32BeNoBomLabel.Text" si="13" excluded="2">dummy</row>
+      <row id="utf32LeNoBomLabel.Location" class="TCoordinatePointRow" created="20221117T122646Z">8, 168</row>
+      <row id="utf32LeNoBomLabel.Size" class="TCoordinateSizeRow" created="20221117T122646Z">40, 13</row>
       <row id="utf32LeNoBomLabel.Text" si="14" excluded="2">dummy</row>
       <row id="$this.Text" si="15">
         <value>Sample</value>
@@ -332,76 +358,76 @@
         NzdhNWM1NjE5MzRlMDg5PC92YWx1ZT4NCiAgPC9kYXRhPg0KPC9yb290Pg==
       </data>
     </node>
-    <node class="TResXNode" name="GB18030NoBom.resx">
+    <node class="TResXNode" name="GB18030NoBom.resx" windowsforms="wfCore">
       <row id="String1" si="16">
         <value>GB18030 ångström</value>
         <lang id="fi" rw="0" time="20180509T031214Z">GB18030 ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Iso.resx">
+    <node class="TResXNode" name="Iso.resx" windowsforms="wfCore">
       <row id="String1" si="17">
         <value>ISO ångström</value>
         <lang id="fi" rw="0" time="20180509T031216Z">ISO ångström</lang>
       </row>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
-    <node class="TResXNode" name="Utf8.resx">
+    <node class="TResXNode" name="Utf8.resx" windowsforms="wfCore">
       <row id="String1" si="18" scannedcomment="This is a comment">
         <value>UTF-8 ångström</value>
         <lang id="fi" rw="0" time="20180509T031217Z">UTF-8 ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf8NoBom.resx">
+    <node class="TResXNode" name="Utf8NoBom.resx" windowsforms="wfCore">
       <row id="String1" si="19">
         <value>UTF-8 no BOM ångström</value>
         <lang id="fi" rw="0" time="20180509T031229Z">UTF-8 ei BOM:a ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf16BE.resx">
+    <node class="TResXNode" name="Utf16BE.resx" windowsforms="wfCore">
       <row id="String1" si="20">
         <value>UTF-16 BE ångström</value>
         <lang id="fi" rw="0" time="20180509T031231Z">UTF-16 BE ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf16BENoBom.resx">
+    <node class="TResXNode" name="Utf16BENoBom.resx" windowsforms="wfCore">
       <row id="String1" si="21">
         <value>UTF-16 BE no BOM ångström</value>
         <lang id="fi" rw="0" time="20180509T031242Z">UTF-16 BE ei BOM:a ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf16LE.resx">
+    <node class="TResXNode" name="Utf16LE.resx" windowsforms="wfCore">
       <row id="String1" si="22">
         <value>UTF-16 LE ångström</value>
         <lang id="fi" rw="0" time="20180509T031245Z">UTF-16 LE ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf16LENoBom.resx">
+    <node class="TResXNode" name="Utf16LENoBom.resx" windowsforms="wfCore">
       <row id="String1" si="23">
         <value>UTF-16 LE no BOM ångström</value>
         <lang id="fi" rw="0" time="20180509T031254Z">UTF-16 LE ei BOM:a ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf32BE.resx">
+    <node class="TResXNode" name="Utf32BE.resx" windowsforms="wfCore">
       <row id="String1" si="24">
         <value>UTF-32 BE ångström</value>
         <lang id="fi" rw="0" time="20180509T031257Z">UTF-32 BE ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf32BENoBom.resx">
+    <node class="TResXNode" name="Utf32BENoBom.resx" windowsforms="wfCore">
       <row id="String1" si="25">
         <value>UTF-32 BE no BOM ångström</value>
         <lang id="fi" rw="0" time="20180509T031305Z">UTF-32 BE ei BOM:a ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf32LE.resx">
+    <node class="TResXNode" name="Utf32LE.resx" windowsforms="wfCore">
       <row id="String1" si="26">
         <value>UTF-32 LE ångström</value>
         <lang id="fi" rw="0" time="20180509T031306Z">UTF-32 LE ångström</lang>
       </row>
     </node>
-    <node class="TResXNode" name="Utf32LENoBom.resx">
+    <node class="TResXNode" name="Utf32LENoBom.resx" windowsforms="wfCore">
       <row id="String1" si="27">
         <value>UTF-32 LE no BOM ångström</value>
         <lang id="fi" rw="0" time="20180509T031315Z">UTF-32 LE ei BOM:a ångström</lang>
@@ -420,12 +446,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

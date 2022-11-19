@@ -2451,8 +2451,10 @@ end;
 function TFormatString.ParseIcu(pattern: String): Boolean;
 
   function IsIcuStart(index: Integer): Boolean;
+  var
+    c: Char;
   begin
-    var c := pattern[index];
+    c := pattern[index];
 
     if c <> '{' then
       Result := False

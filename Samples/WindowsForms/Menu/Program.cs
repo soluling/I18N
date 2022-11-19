@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Windows.Forms;
+using System.Threading;
+using System.Globalization;
 
 namespace Menu
 {
@@ -11,6 +13,9 @@ namespace Menu
     [STAThread]
     static void Main()
     {
+      Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+      Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
+
       Application.EnableVisualStyles();
       Application.SetCompatibleTextRenderingDefault(false);
       Application.Run(new Form1());

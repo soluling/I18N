@@ -1,13 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CF31E2F8-1719-48CC-B16C-322515B46011" created="20181129T154158Z" lastmodified="20200316T191103Z" version="1.0.714" stringid="5">
+<project id="CF31E2F8-1719-48CC-B16C-322515B46011" created="20181129T154158Z" lastmodified="20221117T123941Z" version="1.0.963" stringid="5">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="Ime.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Ime\Ime.csproj" original="en" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Ime.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Ime\Ime.csproj" original="en" lastmodified="20221117T123941Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt120"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="defaultLabel.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 8</row>
+      <row id="defaultLabel.Size" class="TCoordinateSizeRow" created="20221117T123935Z">108, 13</row>
       <row id="defaultLabel.Text" si="1">&amp;Default input method:</row>
+      <row id="defaultTextBox.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 24</row>
+      <row id="defaultTextBox.Size" class="TCoordinateSizeRow" created="20221117T123935Z">312, 20</row>
+      <row id="onTextBox.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 120</row>
+      <row id="onTextBox.Size" class="TCoordinateSizeRow" created="20221117T123935Z">312, 20</row>
+      <row id="onLabel.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 104</row>
+      <row id="onLabel.Size" class="TCoordinateSizeRow" created="20221117T123935Z">87, 13</row>
       <row id="onLabel.Text" si="2">&amp;Input method on:</row>
+      <row id="defaultDesciptionLabel.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 48</row>
+      <row id="defaultDesciptionLabel.Size" class="TCoordinateSizeRow" created="20221117T123935Z">312, 48</row>
       <row id="defaultDesciptionLabel.Text" si="3">The above text box component has the default ImeMode: NoControl. The default value is not stored to RESX, so it will not be scanned and it cannot be localized.</row>
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T123935Z">8, 144</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T123935Z">312, 48</row>
       <row id="label1.Text" si="4">The above text box component has ImeMode property set to On. This will add the property to RESX, it will be scanned and it can be localized.</row>
       <row id="$this.Text" si="5">Sample</row>
       <data>
@@ -196,7 +208,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
   </node>
   <terminology>
@@ -208,12 +220,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

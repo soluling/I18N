@@ -114,9 +114,6 @@ begin
   ShowMessage(SAbout);
 end;
 
-resourcestring
-  SNtLocale = 'en';
 initialization
-  DefaultLocale := SNtLocale;
   //NtEnabledProperties := STRING_TYPES;
 end.

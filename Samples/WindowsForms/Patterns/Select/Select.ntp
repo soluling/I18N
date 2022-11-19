@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="BE970C10-979A-4A9C-B4AA-A1D666D3BEC8" created="20181130T005604Z" lastmodified="20200316T190948Z" version="1.0.714" stringid="1">
+<project id="BE970C10-979A-4A9C-B4AA-A1D666D3BEC8" created="20181130T005604Z" lastmodified="20221117T130624Z" version="1.0.963" stringid="1">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Select.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Select\Select.csproj" original="en" netconfiguration="Debug|AnyCPU">
-    <netproperties version="net462"/>
+  <node class="TNetProjectSource" name="Select.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Select\Select.csproj" original="en" lastmodified="20221117T130624Z" netconfiguration="Debug|AnyCPU">
+    <netproperties version="net462" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="SportSelect" class="TPatternRow" si="1" scannedcomment="0: Name of the player">
           <value select="soccer">{0} is the best soccer player</value>
           <pattern select="basketball">{0} is the best basketball player</pattern>
@@ -17,6 +17,106 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Microsoft.Win32.Primitives.dll</assembly>
+      <assembly>bin\Debug\netstandard.dll</assembly>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+      <assembly>bin\Debug\Soluling.Translator.Forms.dll</assembly>
+      <assembly>bin\Debug\System.AppContext.dll</assembly>
+      <assembly>bin\Debug\System.Collections.Concurrent.dll</assembly>
+      <assembly>bin\Debug\System.Collections.dll</assembly>
+      <assembly>bin\Debug\System.Collections.NonGeneric.dll</assembly>
+      <assembly>bin\Debug\System.Collections.Specialized.dll</assembly>
+      <assembly>bin\Debug\System.ComponentModel.dll</assembly>
+      <assembly>bin\Debug\System.ComponentModel.EventBasedAsync.dll</assembly>
+      <assembly>bin\Debug\System.ComponentModel.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.ComponentModel.TypeConverter.dll</assembly>
+      <assembly>bin\Debug\System.Console.dll</assembly>
+      <assembly>bin\Debug\System.Data.Common.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.Contracts.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.Debug.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.FileVersionInfo.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.Process.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.StackTrace.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.TextWriterTraceListener.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.Tools.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.TraceSource.dll</assembly>
+      <assembly>bin\Debug\System.Diagnostics.Tracing.dll</assembly>
+      <assembly>bin\Debug\System.Drawing.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.Dynamic.Runtime.dll</assembly>
+      <assembly>bin\Debug\System.Globalization.Calendars.dll</assembly>
+      <assembly>bin\Debug\System.Globalization.dll</assembly>
+      <assembly>bin\Debug\System.Globalization.Extensions.dll</assembly>
+      <assembly>bin\Debug\System.IO.Compression.dll</assembly>
+      <assembly>bin\Debug\System.IO.Compression.ZipFile.dll</assembly>
+      <assembly>bin\Debug\System.IO.dll</assembly>
+      <assembly>bin\Debug\System.IO.FileSystem.dll</assembly>
+      <assembly>bin\Debug\System.IO.FileSystem.DriveInfo.dll</assembly>
+      <assembly>bin\Debug\System.IO.FileSystem.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.IO.FileSystem.Watcher.dll</assembly>
+      <assembly>bin\Debug\System.IO.IsolatedStorage.dll</assembly>
+      <assembly>bin\Debug\System.IO.MemoryMappedFiles.dll</assembly>
+      <assembly>bin\Debug\System.IO.Pipes.dll</assembly>
+      <assembly>bin\Debug\System.IO.UnmanagedMemoryStream.dll</assembly>
+      <assembly>bin\Debug\System.Linq.dll</assembly>
+      <assembly>bin\Debug\System.Linq.Expressions.dll</assembly>
+      <assembly>bin\Debug\System.Linq.Parallel.dll</assembly>
+      <assembly>bin\Debug\System.Linq.Queryable.dll</assembly>
+      <assembly>bin\Debug\System.Net.Http.dll</assembly>
+      <assembly>bin\Debug\System.Net.NameResolution.dll</assembly>
+      <assembly>bin\Debug\System.Net.NetworkInformation.dll</assembly>
+      <assembly>bin\Debug\System.Net.Ping.dll</assembly>
+      <assembly>bin\Debug\System.Net.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.Net.Requests.dll</assembly>
+      <assembly>bin\Debug\System.Net.Security.dll</assembly>
+      <assembly>bin\Debug\System.Net.Sockets.dll</assembly>
+      <assembly>bin\Debug\System.Net.WebHeaderCollection.dll</assembly>
+      <assembly>bin\Debug\System.Net.WebSockets.Client.dll</assembly>
+      <assembly>bin\Debug\System.Net.WebSockets.dll</assembly>
+      <assembly>bin\Debug\System.ObjectModel.dll</assembly>
+      <assembly>bin\Debug\System.Reflection.dll</assembly>
+      <assembly>bin\Debug\System.Reflection.Extensions.dll</assembly>
+      <assembly>bin\Debug\System.Reflection.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.Resources.Reader.dll</assembly>
+      <assembly>bin\Debug\System.Resources.ResourceManager.dll</assembly>
+      <assembly>bin\Debug\System.Resources.Writer.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.CompilerServices.VisualC.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Extensions.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Handles.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.InteropServices.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Numerics.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Serialization.Formatters.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Serialization.Json.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Serialization.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.Runtime.Serialization.Xml.dll</assembly>
+      <assembly>bin\Debug\System.Security.Claims.dll</assembly>
+      <assembly>bin\Debug\System.Security.Cryptography.Algorithms.dll</assembly>
+      <assembly>bin\Debug\System.Security.Cryptography.Csp.dll</assembly>
+      <assembly>bin\Debug\System.Security.Cryptography.Encoding.dll</assembly>
+      <assembly>bin\Debug\System.Security.Cryptography.Primitives.dll</assembly>
+      <assembly>bin\Debug\System.Security.Cryptography.X509Certificates.dll</assembly>
+      <assembly>bin\Debug\System.Security.Principal.dll</assembly>
+      <assembly>bin\Debug\System.Security.SecureString.dll</assembly>
+      <assembly>bin\Debug\System.Text.Encoding.dll</assembly>
+      <assembly>bin\Debug\System.Text.Encoding.Extensions.dll</assembly>
+      <assembly>bin\Debug\System.Text.RegularExpressions.dll</assembly>
+      <assembly>bin\Debug\System.Threading.dll</assembly>
+      <assembly>bin\Debug\System.Threading.Overlapped.dll</assembly>
+      <assembly>bin\Debug\System.Threading.Tasks.dll</assembly>
+      <assembly>bin\Debug\System.Threading.Tasks.Parallel.dll</assembly>
+      <assembly>bin\Debug\System.Threading.Thread.dll</assembly>
+      <assembly>bin\Debug\System.Threading.ThreadPool.dll</assembly>
+      <assembly>bin\Debug\System.Threading.Timer.dll</assembly>
+      <assembly>bin\Debug\System.ValueTuple.dll</assembly>
+      <assembly>bin\Debug\System.Xml.ReaderWriter.dll</assembly>
+      <assembly>bin\Debug\System.Xml.XDocument.dll</assembly>
+      <assembly>bin\Debug\System.Xml.XmlDocument.dll</assembly>
+      <assembly>bin\Debug\System.Xml.XmlSerializer.dll</assembly>
+      <assembly>bin\Debug\System.Xml.XPath.dll</assembly>
+      <assembly>bin\Debug\System.Xml.XPath.XDocument.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -30,12 +130,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

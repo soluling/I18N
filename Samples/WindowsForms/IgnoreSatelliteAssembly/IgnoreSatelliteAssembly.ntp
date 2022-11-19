@@ -1,11 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C30CD01C-CE23-4C05-9993-F4EAE7EB4BFE" created="20180509T143111Z" lastmodified="20200316T191128Z" version="1.0.714" stringid="2">
+<project id="C30CD01C-CE23-4C05-9993-F4EAE7EB4BFE" created="20180509T143111Z" lastmodified="20221117T123428Z" version="1.0.963" stringid="2">
   <lang id="en"/>
   <lang id="en-US"/>
   <lang id="en-GB"/>
-  <node class="TNetProjectSource" name="IgnoreSatelliteAssembly.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="IgnoreSatelliteAssembly.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" lastmodified="20221117T123428Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
-    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+    <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20221117T123421Z">8, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T123421Z">82, 13</row>
       <row id="label1.Text" si="1">
         <value>This is a sample</value>
         <lang id="en" st="4" rw="0" time="20180509T143131Z">This is an English sample</lang>
@@ -125,7 +127,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
   </node>
   <excludedoriginals>
@@ -140,12 +142,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>
