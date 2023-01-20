@@ -1,0 +1,156 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{A8461F76-0CC9-4342-AF76-A99E736FB85D}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ActiveLanguage\ActiveLanguage.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="CustomSelect\CustomSelect.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LanguageParam\LanguageParam.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LanguageSwitch\LanguageSwitch.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Simple\Simple.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="TreeView\TreeView.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Image\Image.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Device\Device.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Comments\Comments.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="MessageDlg\MessageDialog.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="ExternalFile\ExternalFile.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ActiveLanguage">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj"/>
+    </Target>
+    <Target Name="ActiveLanguage:Clean">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ActiveLanguage:Make">
+        <MSBuild Projects="ActiveLanguage\ActiveLanguage.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="CustomSelect">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj"/>
+    </Target>
+    <Target Name="CustomSelect:Clean">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="CustomSelect:Make">
+        <MSBuild Projects="CustomSelect\CustomSelect.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LanguageParam">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj"/>
+    </Target>
+    <Target Name="LanguageParam:Clean">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LanguageParam:Make">
+        <MSBuild Projects="LanguageParam\LanguageParam.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LanguageSwitch">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj"/>
+    </Target>
+    <Target Name="LanguageSwitch:Clean">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LanguageSwitch:Make">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Simple">
+        <MSBuild Projects="Simple\Simple.dproj"/>
+    </Target>
+    <Target Name="Simple:Clean">
+        <MSBuild Projects="Simple\Simple.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Simple:Make">
+        <MSBuild Projects="Simple\Simple.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="TreeView">
+        <MSBuild Projects="TreeView\TreeView.dproj"/>
+    </Target>
+    <Target Name="TreeView:Clean">
+        <MSBuild Projects="TreeView\TreeView.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="TreeView:Make">
+        <MSBuild Projects="TreeView\TreeView.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Image">
+        <MSBuild Projects="Image\Image.dproj"/>
+    </Target>
+    <Target Name="Image:Clean">
+        <MSBuild Projects="Image\Image.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Image:Make">
+        <MSBuild Projects="Image\Image.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Device">
+        <MSBuild Projects="Device\Device.dproj"/>
+    </Target>
+    <Target Name="Device:Clean">
+        <MSBuild Projects="Device\Device.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Device:Make">
+        <MSBuild Projects="Device\Device.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Comments">
+        <MSBuild Projects="Comments\Comments.dproj"/>
+    </Target>
+    <Target Name="Comments:Clean">
+        <MSBuild Projects="Comments\Comments.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Comments:Make">
+        <MSBuild Projects="Comments\Comments.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="MessageDialog">
+        <MSBuild Projects="MessageDlg\MessageDialog.dproj"/>
+    </Target>
+    <Target Name="MessageDialog:Clean">
+        <MSBuild Projects="MessageDlg\MessageDialog.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="MessageDialog:Make">
+        <MSBuild Projects="MessageDlg\MessageDialog.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="ExternalFile">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj"/>
+    </Target>
+    <Target Name="ExternalFile:Clean">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ExternalFile:Make">
+        <MSBuild Projects="ExternalFile\ExternalFile.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ActiveLanguage;CustomSelect;LanguageParam;LanguageSwitch;Simple;TreeView;Image;Device;Comments;MessageDialog;ExternalFile"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ActiveLanguage:Clean;CustomSelect:Clean;LanguageParam:Clean;LanguageSwitch:Clean;Simple:Clean;TreeView:Clean;Image:Clean;Device:Clean;Comments:Clean;MessageDialog:Clean;ExternalFile:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ActiveLanguage:Make;CustomSelect:Make;LanguageParam:Make;LanguageSwitch:Make;Simple:Make;TreeView:Make;Image:Make;Device:Make;Comments:Make;MessageDialog:Make;ExternalFile:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

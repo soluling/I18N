@@ -1045,7 +1045,7 @@ begin
   Move(oldProc^, data.Data, PROCEDURE_DATA_SIZE);
   data.Address := oldProc;
 
-  i := Integer(newProc) - Integer(p) - PROCEDURE_DATA_SIZE + 1;
+  i := NativeInt(newProc) - NativeInt(p) - PROCEDURE_DATA_SIZE + 1;
 
   address := PAnsiChar(oldProc);
   address[0] := AnsiChar($E9);

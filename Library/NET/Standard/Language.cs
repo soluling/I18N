@@ -63,6 +63,7 @@ namespace Soluling
     private static Assembly mainAssembly = null;
     private static string assemblyName = "";
     private static CultureInfo culture;
+    private static string defaultOriginalId = "en";
 
     /// <summary>
     /// Get and set the current culture.
@@ -126,12 +127,30 @@ namespace Soluling
     }
 
     /// <summary>
+    /// Get the default locale id of the original assembly.
+    /// </summary>
+    /// <seealso cref="P:Soluling.Language.OriginalId"/>
+    public static string DefaultOriginalId
+    {
+      get
+      {
+        return defaultOriginalId;
+      }
+
+      set
+      {
+        defaultOriginalId = value;
+      }
+    }
+
+    /// <summary>
     /// Get the locale id of the original assembly.
     /// </summary>
     /// <remarks>
     /// Original language is read from the value NeutralResourcesLanguage attribute. If there are no NeutralResourcesLanguage attribute then
     /// English (en) is returned.
     /// </remarks>
+    /// <seealso cref="P:Soluling.Language.DefaultOriginalId"/>
     /// <seealso cref="P:Soluling.Language.OriginalCulture"/>
     public static string OriginalId
     {
@@ -140,14 +159,14 @@ namespace Soluling
         var assembly = Assembly.GetEntryAssembly();
 
         if (assembly == null)
-          return "en";
+          return DefaultOriginalId;
 
         var attributes = assembly.GetCustomAttributes(typeof(NeutralResourcesLanguageAttribute), false);
 
         if (attributes.Length > 0)
           return ((NeutralResourcesLanguageAttribute)attributes[0]).CultureName;
         else
-          return "en";
+          return DefaultOriginalId;
       }
     }
 

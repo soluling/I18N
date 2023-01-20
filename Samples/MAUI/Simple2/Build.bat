@@ -1,0 +1,1 @@
+"C:\Program Files (x86)\Microsoft SDKs\Windows\v10.0A\bin\NETFX 4.8 Tools\x64\al.exe" /culture:fi /out:bin\Debug\net7.0-windows10.0.19041.0\win10-x64\fi\Simple2.resources.dll /platform:x64 /template:obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Simple2.dll /embed:obj\Debug\net7.0-windows10.0.19041.0\win10-x64\Simple2.Resource1.fi.resources

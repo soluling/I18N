@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -40,6 +40,7 @@ implementation
 uses
   NtPattern,
   NtResource,
+  NtResourceString,  // Turns on resource string translation
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
 
@@ -60,8 +61,10 @@ begin
 end;
 
 procedure TForm1.UpdateStrings;
+resourcestring
+  SMessagePlural = 'I have {plural, zero {no skis} one {one ski} other {%d skis}} {plural, zero {and no bicycles} one {and one bicycle} other {and %d bicycles}}';  //loc 0: ski or bicyle count
 begin
-  Label1.Text := TMultiPattern.Format(_T('I have {plural, zero {no skis} one {one ski} other {%d skis}} {plural, zero {and no bicycles} one {and one bicycle} other {and %d bicycles}}', 'MessagePlural'), [SkiAmount, BicycleAmount]);
+  Label1.Text := TMultiPattern.Format(SMessagePlural, [SkiAmount, BicycleAmount]);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -72,12 +75,18 @@ procedure TForm1.FormCreate(Sender: TObject);
     BicycleCombo.Items.Add(IntToStr(value));
   end;
 
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SJapanese = 'Japanese';
 begin
-  NtResources._T('English', 'en');
-  NtResources._T('Finnish', 'fi');
-  NtResources._T('German', 'de');
-  NtResources._T('French', 'fr');
-  NtResources._T('Japanese', 'ja');
+  NtResources.Add('English', 'English', SEnglish, 'en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de');
+  NtResources.Add('French', 'français', SFrench, 'fr');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja');
 
   _T(Self);
 

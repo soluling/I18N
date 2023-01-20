@@ -1,3 +1,3 @@
 del *.zip
-zip -R PowerPoint *.ntp
+zip -R PowerPoint *.md *.ntp
 zip PowerPoint *.pptx

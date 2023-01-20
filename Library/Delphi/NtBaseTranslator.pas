@@ -862,7 +862,7 @@ begin  //FI:C101
     begin
       dynArray := nil;
       DynArrayFromVariant(dynArray, value, FPropInfo^.PropType^);
-      SetOrdProp(instance, FPropInfo, Integer(dynArray));
+      SetOrdProp(instance, FPropInfo, NativeInt(dynArray));
     end;
   end;
 

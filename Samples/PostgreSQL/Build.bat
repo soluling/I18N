@@ -1,2 +1,2 @@
 del *.zip
-zip -R PostgreSQL *.sql *.ntp
+zip -R PostgreSQL *.md *.sql *.ntp

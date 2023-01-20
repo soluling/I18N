@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20220126T134252Z" version="1.0.900" lockedrowcomplete="0" stringid="4">
+<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20221121T224802Z" version="1.0.965" lockedrowcomplete="0" stringid="4">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" lastmodified="20220126T134252Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" lastmodified="20221121T224802Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core31" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -40,14 +40,26 @@
         ZHVtbXk8L0xhYmVsPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
       </data>
     </node>
-    <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
+    <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
       <row id="String1" si="1">
         <value>This is a resource string</value>
         <lang id="fi" rw="0" time="20190818T194915Z" fuzzy="5">Tämä on resurssimerkkijono</lang>
       </row>
     </node>
     <assemblies>
-      <assembly>bin\Debug\netcoreapp3.1\Core.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -67,7 +79,10 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

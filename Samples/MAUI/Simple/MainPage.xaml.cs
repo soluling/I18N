@@ -12,9 +12,13 @@ public partial class MainPage : ContentPage
 	private void OnCounterClicked(object sender, EventArgs e)
 	{
 		count++;
-		CounterLabel.Text = $"Current count: {count}";
 
-		SemanticScreenReader.Announce(CounterLabel.Text);
+		if (count == 1)
+			CounterBtn.Text = String.Format(Resource1.ClickedSingular, count);
+		else
+      CounterBtn.Text = String.Format(Resource1.ClickedPlural, count);
+
+		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
 

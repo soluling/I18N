@@ -30,9 +30,11 @@ uses
   FMX.NtTranslator;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SHello = 'Hello World';
 begin
   _T(Self);
-  Label2.Text := _T('Hello World');
+  Label2.Text := SHello;
 end;
 
 end.

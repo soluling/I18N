@@ -1,2 +1,2 @@
 del *.zip
-zip -R SRT *.ntp *.srt
+zip -R SRT *.md *.ntp *.srt

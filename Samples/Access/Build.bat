@@ -1,2 +1,2 @@
 del *.zip
-zip -R Access *.ntp *.sql *.accdb -x */??/*
+zip -R Access *.md *.ntp *.sql *.accdb -x */??/*

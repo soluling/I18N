@@ -1,2 +1,2 @@
 del *.zip
-zip -R Interbase *.sql *.ntp *.gdb Create.bat
+zip -R Interbase *.md *.sql *.ntp *.gdb Create.bat

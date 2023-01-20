@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -39,23 +39,24 @@ implementation
 uses
   NtPattern,
   NtResource,
+  NtResourceString,  // Turns on resource string translation
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
 
 procedure TForm1.UpdateStrings;
 
   function Process(count: Integer): String;
+  resourcestring
+    // Contains two patterns: one and other.
+    SMessagePlural = '{plural, one {%d file} other {%d files}}';  //loc 0: file count
+
+    // Contains three patterns: zero, one and other.
+    SZeroMessagePlural = '{plural, zero {No files} one {%d file} other {%d files}}';  //loc 0: file count
   begin
     if not ZeroCheck.IsChecked then
-    begin
-      // Contains two patterns: one and other.
-      Result := TMultiPattern.Format(_T('{plural, one {%d file} other {%d files}}', 'MessagePlural'), count, [count]);
-    end
+      Result := TMultiPattern.Format(SMessagePlural, count, [count])
     else
-    begin
-      // Contains three patterns: zero, one and other.
-      Result := TMultiPattern.Format(_T('{plural, zero {No files} one {%d file} other {%d files}}', 'ZeroMessagePlural'), count, [count]);
-    end;
+      Result := TMultiPattern.Format(SZeroMessagePlural, count, [count]);
   end;
 
 begin
@@ -72,12 +73,18 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SJapanese = 'Japanese';
 begin
-  NtResources._T('English', 'en');
-  NtResources._T('Finnish', 'fi');
-  NtResources._T('German', 'de');
-  NtResources._T('French', 'fr');
-  NtResources._T('Japanese', 'ja');
+  NtResources.Add('English', 'English', SEnglish, 'en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de');
+  NtResources.Add('French', 'français', SFrench, 'fr');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja');
 
   _T(Self);
   UpdateStrings;

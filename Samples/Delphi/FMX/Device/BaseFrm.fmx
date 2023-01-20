@@ -7,12 +7,13 @@ object BaseForm: TBaseForm
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Label1: TLabel
     AutoSize = True
     Position.X = 8.000000000000000000
     Position.Y = 8.000000000000000000
-    Size.Width = 33.000000000000000000
+    Size.Width = 32.000000000000000000
     Size.Height = 16.000000000000000000
     Size.PlatformDefault = False
     TextSettings.WordWrap = False

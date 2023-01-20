@@ -81,11 +81,19 @@ cd Java
 call Build.bat
 cd ..
 
+cd JavaScript
+call Build.bat
+cd ..
+
 cd JSON
 call Build.bat
 cd ..
 
 cd JSP
+call Build.bat
+cd ..
+
+cd Lazarus
 call Build.bat
 cd ..
 
@@ -165,6 +173,10 @@ cd SVG
 call Build.bat
 cd ..
 
+cd Svelte
+call Build.bat
+cd ..
+
 cd Text
 call Build.bat
 cd ..
@@ -205,6 +217,10 @@ cd WindowsForms
 call Build.bat
 cd ..
 
+cd WinUI
+call Build.bat
+cd ..
+
 cd WindowsPhone
 call Build.bat
 cd ..
@@ -226,6 +242,10 @@ call Build.bat
 cd ..
 
 cd XML
+call Build.bat
+cd ..
+
+cd XSL
 call Build.bat
 cd ..
 

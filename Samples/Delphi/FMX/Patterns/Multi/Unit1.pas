@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 {$DEFINE ZERO}
 
@@ -41,31 +41,32 @@ implementation
 uses
   NtPattern,
   NtResource,
+  NtResourceString,  // Turns on resource string translation
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
 
 procedure TForm1.UpdateStrings;
 
   function Process(ski, bicycle: Integer): String;
+  resourcestring
+    // Contains five patterns:
+    // - Pattern 0 is the top level pattern without pluralized parameters.
+    // - Patterns 1-2 are one and other for ski parameter.
+    //   These contain additional second placeholder (%s or %1:s) for the rest of the message
+    // - Patterns 3-4 are one and other for bicycle parameter.
+    SMessagePlural = 'I have {plural, one {one ski} other {%d skis}} {plural, one {and one bicycle} other {and %d bicycles}}';  //loc 0: ski or bicyle count
+
+    // Same as above but with special zero case. Contains seven patterns:
+    // - Pattern 0 is the top level pattern without pluralized parameters.
+    // - Patterns 1-3 are zero, one and other for ski parameter.
+    //   These contain additional second placeholder (%s or %1:s) for the rest of the message
+    // - Patterns 4-6 are zero, one and other for bicycle parameter.
+    SZeroMessagePlural = 'I have {plural, zero {no skis} one {one ski} other {%d skis}} {plural, zero {and no bicycles} one {and one bicycle} other {and %d bicycles}}';  //loc 0: ski or bicyle count
   begin
     if not ZeroCheck.IsChecked then
-    begin
-      // Contains five patterns:
-      // - Pattern 0 is the top level pattern without pluralized parameters.
-      // - Patterns 1-2 are one and other for ski parameter.
-      //   These contain additional second placeholder (%s or %1:s) for the rest of the message
-      // - Patterns 3-4 are one and other for bicycle parameter.
-      Result := TMultiPattern.Format(_T('I have {plural, one {one ski} other {%d skis}} {plural, one {and one bicycle} other {and %d bicycles}}', 'MessagePlural'), [ski, bicycle]);
-    end
+      Result := TMultiPattern.Format(SMessagePlural, [ski, bicycle])
     else
-    begin
-      // Same as above but with special zero case. Contains seven patterns:
-      // - Pattern 0 is the top level pattern without pluralized parameters.
-      // - Patterns 1-3 are zero, one and other for ski parameter.
-      //   These contain additional second placeholder (%s or %1:s) for the rest of the message
-      // - Patterns 4-6 are zero, one and other for bicycle parameter.
-      Result := TMultiPattern.Format(_T('I have {plural, zero {no skis} one {one ski} other {%d skis}} {plural, zero {and no bicycles} one {and one bicycle} other {and %d bicycles}}', 'ZeroMessagePlural'), [ski, bicycle]);
-    end;
+      Result := TMultiPattern.Format(SZeroMessagePlural, [ski, bicycle]);
   end;
 
 begin
@@ -82,12 +83,18 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SJapanese = 'Japanese';
 begin
-  NtResources._T('English', 'en');
-  NtResources._T('Finnish', 'fi');
-  NtResources._T('German', 'de');
-  NtResources._T('French', 'fr');
-  NtResources._T('Japanese', 'ja');
+  NtResources.Add('English', 'English', SEnglish, 'en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de');
+  NtResources.Add('French', 'français', SFrench, 'fr');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja');
 
   _T(Self);
   UpdateStrings;

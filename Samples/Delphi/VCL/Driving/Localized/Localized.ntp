@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20220501T143551Z" version="1.0.918" stringid="404" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20221209T161209Z" version="1.0.969" stringid="404" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
-  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20220501T143551Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" scansourcecode="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20221209T161209Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" scansourcecode="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -323,7 +323,7 @@
             <lang id="fr" st="1" or="6" rw="0" time="20190125T035825Z">&amp;Speed :</lang>
           </row>
         </item>
-        <item name="ResultLabel" type="TLabel">
+        <item name="ResultLabel" type="TLabel" autosize="0">
           <row id="Left">64</row>
           <row id="Top">56</row>
           <row id="Width">217</row>
@@ -595,19 +595,16 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>

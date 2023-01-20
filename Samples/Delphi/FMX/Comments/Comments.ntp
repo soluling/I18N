@@ -1,35 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8987FC76-00B7-40DB-8A58-1FD117F7928D" created="20180223T023830Z" lastmodified="20200209T162354Z" version="1.0.691" stringid="11">
+<project id="8987FC76-00B7-40DB-8A58-1FD117F7928D" created="20180223T023830Z" lastmodified="20221231T025410Z" version="1.0.972" stringid="1300">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiProjectSource" name="Comments.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Comments\Comments.dproj" original="en" library="dlFireMonkey">
-    <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
+  <node class="TDelphiProjectSource" name="Comments.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Comments\Comments.dproj" original="en" lastmodified="20221231T025410Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+    <node class="TDelphiFormFolder" name="RCData" created="20221228T000036Z">
+      <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="clouds" resname="clouds" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="dvclal" resname="dvclal" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="fmux" resname="fmux" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="gnomestyle" resname="gnomestyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="ios13darkstyle" resname="ios13darkstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="iosstyle" resname="iosstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="lionstyle" resname="lionstyle" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="ntlangres" resname="ntlangres" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="osxstyle" resname="osxstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="packageinfo" resname="packageinfo" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" excluded="1"/>
+      <node class="TDelphiFormNode" name="tform1" type="TForm1" resname="tform1" objectname="Form1">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="1">
+        <row id="Caption" si="1213">
           <value>Comment Sample</value>
-          <lang id="fi" rw="0" time="20180223T023852Z">Komenttiesimerkki</lang>
+          <lang id="fi" st="4" or="3" rw="0" time="20221228T000338Z">Kommenttiesimerkki</lang>
         </row>
         <row id="ClientHeight">180</row>
         <row id="ClientWidth">400</row>
         <item name="Label1" type="TLabel">
-          <row id="Text" si="2" excluded="2">dummy</row>
+          <row id="Text" si="1214" excluded="2">dummy</row>
         </item>
         <item name="Label2" type="TLabel">
-          <row id="Text" si="3" excluded="2">dummy</row>
+          <row id="Text" si="1215" excluded="2">dummy</row>
         </item>
         <item name="Label3" type="TLabel">
-          <row id="Text" si="4" excluded="2">dummy</row>
+          <row id="Text" si="1216" excluded="2">dummy</row>
         </item>
         <item name="Label4" type="TLabel">
-          <row id="Text" si="5" excluded="2">dummy</row>
+          <row id="Text" si="1217" excluded="2">dummy</row>
         </item>
         <item name="Label5" type="TLabel">
-          <row id="Text" si="6" excluded="2">dummy</row>
+          <row id="Text" si="1218" excluded="2">dummy</row>
         </item>
         <item name="Label6" type="TLabel">
-          <row id="Text" si="7" excluded="2">dummy</row>
+          <row id="Text" si="1219" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDkNvbW1lbnQgU2FtcGxlDENsaWVudEhlaWdodAO0AAtDbGll
@@ -52,24 +64,45 @@
           eHQGBWR1bW15CFRhYk9yZGVyAgEAAAA=
         </data>
       </node>
+      <node class="TWindowsBinaryNode" name="ubuntustyle" resname="ubuntustyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN10STYLE" resname="WIN10STYLE" langid="1033" excluded="1"/>
     </node>
-    <node class="TDelphiProjectStringFolder" name="Strings">
-      <node class="TDelphiStringNode" name="_">
-        <row id="Hello World" si="8" scannedcomment="This is a comment">
+    <node class="TWindowsStringFolder" name="String" created="20221228T000036Z">
+      <node class="TWindowsStringNode" name="Androidapi.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="Fmx.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
+      <node class="TWindowsStringNode" name="Macapi.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Regularexpressionsconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Rtlconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SHelloWorld" si="1250" scannedcomment="This is a comment">
           <value>Hello World</value>
-          <lang id="fi" rw="0" time="20180223T023905Z">Moi maailma</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023905Z">Moi maailma</lang>
         </row>
-        <row id="Characters" si="9" scannedcomment="This is characters comment" scannedmaxcharacters="20">
+        <row id="SCharacters" si="1251" scannedcomment="This is characters comment" scannedmaxcharacters="20">
           <value>Characters</value>
-          <lang id="fi" rw="0" time="20180223T023911Z">Merkkiä</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023911Z">Merkkiä</lang>
         </row>
-        <row id="Pixels" si="10" scannedcomment="This is pixels comment" scannedmaxpixels="100">
+        <row id="SPixels" si="1252" scannedcomment="This is pixels comment" scannedmaxpixels="100">
           <value>Pixels</value>
-          <lang id="fi" rw="0" time="20180223T023916Z">Pikseliä</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023916Z">Pikseliä</lang>
         </row>
-        <row id="Hello %s, welcome to %s" class="TPatternRow" si="11" scannedcomment="0: Name of the person, 1: Name of the place">
+        <row id="SHello1" class="TPatternRow" si="1253">
           <value>Hello {0}, welcome to {1}</value>
-          <lang id="fi" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
+        </row>
+        <row id="SHello2" class="TPatternRow" si="1254" scannedcomment="This is comment but no placeholder descriptions">
+          <value>Hello {0}, welcome to {1}</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
+        </row>
+        <row id="SHello3" class="TPatternRow" si="1255" scannedcomment="0: Name of the person, 1: Name of the place">
+          <value>Hello {0}, welcome to {1}</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
         </row>
       </node>
     </node>
@@ -86,12 +119,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

@@ -1,0 +1,957 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="04584EF9-187B-404A-A94D-B0348F18A2E6" created="20221120T013946Z" lastmodified="20221125T031550Z" version="1.0.967" stringid="10">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Simple.csproj" fullpath="D:\NT\Deploy\Samples\MAUI\Simple\Simple.csproj" original="en" lastmodified="20221125T031550Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20221125T031550Z" st="0" kind="xkApplication">
+      <item name="Resources" st="0">
+        <item name="ResourceDictionary[0]" type="ResourceDictionary" st="0">
+          <item name="MergedDictionaries" st="0">
+            <item name="ResourceDictionary[0]" type="ResourceDictionary" st="0"/>
+            <item name="ResourceDictionary[1]" type="ResourceDictionary" st="0"/>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PD94bWwgdmVyc2lvbiA9ICIxLjAiIGVuY29kaW5nID0gIlVURi04IiA/Pg0KPEFwcGxpY2F0aW9uIHhtbG5zPSJodHRwOi8v
+        c2NoZW1hcy5taWNyb3NvZnQuY29tL2RvdG5ldC8yMDIxL21hdWkiDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA5L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6
+        U2ltcGxlIg0KICAgICAgICAgICAgIHg6Q2xhc3M9IlNpbXBsZS5BcHAiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQog
+        ICAgICAgIDxSZXNvdXJjZURpY3Rpb25hcnk+DQogICAgICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25h
+        cmllcz4NCiAgICAgICAgICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iUmVzb3VyY2VzL1N0eWxlcy9Db2xvcnMu
+        eGFtbCIgLz4NCiAgICAgICAgICAgICAgICA8UmVzb3VyY2VEaWN0aW9uYXJ5IFNvdXJjZT0iUmVzb3VyY2VzL1N0eWxlcy9TdHls
+        ZXMueGFtbCIgLz4NCiAgICAgICAgICAgIDwvUmVzb3VyY2VEaWN0aW9uYXJ5Lk1lcmdlZERpY3Rpb25hcmllcz4NCiAgICAgICAg
+        PC9SZXNvdXJjZURpY3Rpb25hcnk+DQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8L0FwcGxpY2F0aW9uPg0K
+      </data>
+    </node>
+    <node class="TXamlNode" name="AppShell.xaml" type="Shell" created="20221125T031550Z" st="0" kind="xkUnknown">
+      <item name="ShellContent[0]" type="ShellContent" st="0">
+        <row id="Title" si="7" st="0">Home</row>
+      </item>
+      <data>
+        PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8U2hlbGwNCiAgICB4OkNsYXNzPSJTaW1wbGUuQXBwU2hl
+        bGwiDQogICAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZG90bmV0LzIwMjEvbWF1aSINCiAgICB4bWxuczp4
+        PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDkveGFtbCINCiAgICB4bWxuczpsb2NhbD0iY2xyLW5hbWVz
+        cGFjZTpTaW1wbGUiDQogICAgU2hlbGwuRmx5b3V0QmVoYXZpb3I9IkRpc2FibGVkIj4NCg0KICAgIDxTaGVsbENvbnRlbnQNCiAg
+        ICAgICAgVGl0bGU9IkhvbWUiDQogICAgICAgIENvbnRlbnRUZW1wbGF0ZT0ie0RhdGFUZW1wbGF0ZSBsb2NhbDpNYWluUGFnZX0i
+        DQogICAgICAgIFJvdXRlPSJNYWluUGFnZSIgLz4NCg0KPC9TaGVsbD4NCg==
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainPage.xaml" type="ContentPage" created="20221125T031550Z" st="0" kind="xkUnknown">
+      <item name="ScrollView[0]" type="ScrollView" st="0">
+        <item name="VerticalStackLayout[0]" type="VerticalStackLayout" st="0">
+          <item name="Image[0]" type="Image" st="0"/>
+          <item name="Label[0]" type="Label" st="0">
+            <row id="Text" si="8" st="0">Hello, World!</row>
+          </item>
+          <item name="Label[1]" type="Label" st="0">
+            <row id="Text" si="9" st="0">Welcome to .NET Multi-platform App UI</row>
+          </item>
+          <item name="CounterBtn" type="Button" st="0">
+            <row id="Text" si="10" st="0">Click me</row>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiID8+DQo8Q29udGVudFBhZ2UgeG1sbnM9Imh0dHA6Ly9zY2hl
+        bWFzLm1pY3Jvc29mdC5jb20vZG90bmV0LzIwMjEvbWF1aSINCiAgICAgICAgICAgICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDkveGFtbCINCiAgICAgICAgICAgICB4OkNsYXNzPSJTaW1wbGUuTWFpblBhZ2UiPg0KDQog
+        ICAgPFNjcm9sbFZpZXc+DQogICAgICAgIDxWZXJ0aWNhbFN0YWNrTGF5b3V0DQogICAgICAgICAgICBTcGFjaW5nPSIyNSINCiAg
+        ICAgICAgICAgIFBhZGRpbmc9IjMwLDAiDQogICAgICAgICAgICBWZXJ0aWNhbE9wdGlvbnM9IkNlbnRlciI+DQoNCiAgICAgICAg
+        ICAgIDxJbWFnZQ0KICAgICAgICAgICAgICAgIFNvdXJjZT0iZG90bmV0X2JvdC5wbmciDQogICAgICAgICAgICAgICAgU2VtYW50
+        aWNQcm9wZXJ0aWVzLkRlc2NyaXB0aW9uPSJDdXRlIGRvdCBuZXQgYm90IHdhdmluZyBoaSB0byB5b3UhIg0KICAgICAgICAgICAg
+        ICAgIEhlaWdodFJlcXVlc3Q9IjIwMCINCiAgICAgICAgICAgICAgICBIb3Jpem9udGFsT3B0aW9ucz0iQ2VudGVyIiAvPg0KDQog
+        ICAgICAgICAgICA8TGFiZWwNCiAgICAgICAgICAgICAgICBUZXh0PSJIZWxsbywgV29ybGQhIg0KICAgICAgICAgICAgICAgIFNl
+        bWFudGljUHJvcGVydGllcy5IZWFkaW5nTGV2ZWw9IkxldmVsMSINCiAgICAgICAgICAgICAgICBGb250U2l6ZT0iMzIiDQogICAg
+        ICAgICAgICAgICAgSG9yaXpvbnRhbE9wdGlvbnM9IkNlbnRlciIgLz4NCg0KICAgICAgICAgICAgPExhYmVsDQogICAgICAgICAg
+        ICAgICAgVGV4dD0iV2VsY29tZSB0byAuTkVUIE11bHRpLXBsYXRmb3JtIEFwcCBVSSINCiAgICAgICAgICAgICAgICBTZW1hbnRp
+        Y1Byb3BlcnRpZXMuSGVhZGluZ0xldmVsPSJMZXZlbDIiDQogICAgICAgICAgICAgICAgU2VtYW50aWNQcm9wZXJ0aWVzLkRlc2Ny
+        aXB0aW9uPSJXZWxjb21lIHRvIGRvdCBuZXQgTXVsdGkgcGxhdGZvcm0gQXBwIFUgSSINCiAgICAgICAgICAgICAgICBGb250U2l6
+        ZT0iMTgiDQogICAgICAgICAgICAgICAgSG9yaXpvbnRhbE9wdGlvbnM9IkNlbnRlciIgLz4NCg0KICAgICAgICAgICAgPEJ1dHRv
+        bg0KICAgICAgICAgICAgICAgIHg6TmFtZT0iQ291bnRlckJ0biINCiAgICAgICAgICAgICAgICBUZXh0PSJDbGljayBtZSINCiAg
+        ICAgICAgICAgICAgICBTZW1hbnRpY1Byb3BlcnRpZXMuSGludD0iQ291bnRzIHRoZSBudW1iZXIgb2YgdGltZXMgeW91IGNsaWNr
+        Ig0KICAgICAgICAgICAgICAgIENsaWNrZWQ9Ik9uQ291bnRlckNsaWNrZWQiDQogICAgICAgICAgICAgICAgSG9yaXpvbnRhbE9w
+        dGlvbnM9IkNlbnRlciIgLz4NCg0KICAgICAgICA8L1ZlcnRpY2FsU3RhY2tMYXlvdXQ+DQogICAgPC9TY3JvbGxWaWV3Pg0KDQo8
+        L0NvbnRlbnRQYWdlPg0K
+      </data>
+    </node>
+    <node class="TDirectoryFolder" name="Platforms">
+      <node class="TDirectoryFolder" name="Windows">
+        <node class="TXamlNode" name="App.xaml" type="maui:MauiWinUIApplication" created="20221125T031550Z" st="0" kind="xkUnknown">
+          <data>
+            77u/PG1hdWk6TWF1aVdpblVJQXBwbGljYXRpb24NCiAgICB4OkNsYXNzPSJTaW1wbGUuV2luVUkuQXBwIg0KICAgIHhtbG5zPSJo
+            dHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgeG1sbnM6eD0iaHR0
+            cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgeG1sbnM6bWF1aT0idXNpbmc6TWljcm9zb2Z0
+            Lk1hdWkiDQogICAgeG1sbnM6bG9jYWw9InVzaW5nOlNpbXBsZS5XaW5VSSI+DQoNCjwvbWF1aTpNYXVpV2luVUlBcHBsaWNhdGlv
+            bj4NCg==
+          </data>
+        </node>
+      </node>
+    </node>
+    <node class="TResXNode" name="Resource1.resx" windowsforms="wfCore">
+      <row id="ClickedPlural" class="TPatternRow" si="1">
+        <value>Clicked {0} times</value>
+        <lang id="fi" st="1" or="6" rw="0" time="20221120T014042Z" fuzzy="99.5">Klikattu {0} kertaa</lang>
+      </row>
+      <row id="ClickedSingular" class="TPatternRow" si="2">
+        <value>Clicked {0} time</value>
+        <lang id="fi" st="4" rw="0" time="20221120T014059Z" fuzzy="99.5">Klikattu {0} kertaa</lang>
+      </row>
+    </node>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Styles">
+        <node class="TXamlNode" name="Colors.xaml" type="ResourceDictionary" created="20221125T031550Z" st="0" kind="xkResourceDictionary">
+          <item name="Primary" type="Color" st="0"/>
+          <item name="Secondary" type="Color" st="0"/>
+          <item name="Tertiary" type="Color" st="0"/>
+          <item name="White" type="Color" st="0"/>
+          <item name="Black" type="Color" st="0"/>
+          <item name="Gray100" type="Color" st="0"/>
+          <item name="Gray200" type="Color" st="0"/>
+          <item name="Gray300" type="Color" st="0"/>
+          <item name="Gray400" type="Color" st="0"/>
+          <item name="Gray500" type="Color" st="0"/>
+          <item name="Gray600" type="Color" st="0"/>
+          <item name="Gray900" type="Color" st="0"/>
+          <item name="Gray950" type="Color" st="0"/>
+          <item name="PrimaryBrush" type="SolidColorBrush" st="0"/>
+          <item name="SecondaryBrush" type="SolidColorBrush" st="0"/>
+          <item name="TertiaryBrush" type="SolidColorBrush" st="0"/>
+          <item name="WhiteBrush" type="SolidColorBrush" st="0"/>
+          <item name="BlackBrush" type="SolidColorBrush" st="0"/>
+          <item name="Gray100Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray200Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray300Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray400Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray500Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray600Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray900Brush" type="SolidColorBrush" st="0"/>
+          <item name="Gray950Brush" type="SolidColorBrush" st="0"/>
+          <item name="Yellow100Accent" type="Color" st="0"/>
+          <item name="Yellow200Accent" type="Color" st="0"/>
+          <item name="Yellow300Accent" type="Color" st="0"/>
+          <item name="Cyan100Accent" type="Color" st="0"/>
+          <item name="Cyan200Accent" type="Color" st="0"/>
+          <item name="Cyan300Accent" type="Color" st="0"/>
+          <item name="Blue100Accent" type="Color" st="0"/>
+          <item name="Blue200Accent" type="Color" st="0"/>
+          <item name="Blue300Accent" type="Color" st="0"/>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8P3hhbWwtY29tcCBjb21waWxlPSJ0cnVlIiA/Pg0K
+            PFJlc291cmNlRGljdGlvbmFyeSANCiAgICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9kb3RuZXQvMjAyMS9t
+            YXVpIg0KICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwOS94YW1sIj4NCg0KICAgIDxD
+            b2xvciB4OktleT0iUHJpbWFyeSI+IzUxMkJENDwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJTZWNvbmRhcnkiPiNERkQ4Rjc8
+            L0NvbG9yPg0KICAgIDxDb2xvciB4OktleT0iVGVydGlhcnkiPiMyQjBCOTg8L0NvbG9yPg0KICAgIDxDb2xvciB4OktleT0iV2hp
+            dGUiPldoaXRlPC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IkJsYWNrIj5CbGFjazwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5
+            PSJHcmF5MTAwIj4jRTFFMUUxPC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IkdyYXkyMDAiPiNDOEM4Qzg8L0NvbG9yPg0KICAg
+            IDxDb2xvciB4OktleT0iR3JheTMwMCI+I0FDQUNBQzwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJHcmF5NDAwIj4jOTE5MTkx
+            PC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IkdyYXk1MDAiPiM2RTZFNkU8L0NvbG9yPg0KICAgIDxDb2xvciB4OktleT0iR3Jh
+            eTYwMCI+IzQwNDA0MDwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJHcmF5OTAwIj4jMjEyMTIxPC9Db2xvcj4NCiAgICA8Q29s
+            b3IgeDpLZXk9IkdyYXk5NTAiPiMxNDE0MTQ8L0NvbG9yPg0KICAgIDxTb2xpZENvbG9yQnJ1c2ggeDpLZXk9IlByaW1hcnlCcnVz
+            aCIgQ29sb3I9IntTdGF0aWNSZXNvdXJjZSBQcmltYXJ5fSIvPg0KICAgIDxTb2xpZENvbG9yQnJ1c2ggeDpLZXk9IlNlY29uZGFy
+            eUJydXNoIiBDb2xvcj0ie1N0YXRpY1Jlc291cmNlIFNlY29uZGFyeX0iLz4NCiAgICA8U29saWRDb2xvckJydXNoIHg6S2V5PSJU
+            ZXJ0aWFyeUJydXNoIiBDb2xvcj0ie1N0YXRpY1Jlc291cmNlIFRlcnRpYXJ5fSIvPg0KICAgIDxTb2xpZENvbG9yQnJ1c2ggeDpL
+            ZXk9IldoaXRlQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgV2hpdGV9Ii8+DQogICAgPFNvbGlkQ29sb3JCcnVzaCB4Oktl
+            eT0iQmxhY2tCcnVzaCIgQ29sb3I9IntTdGF0aWNSZXNvdXJjZSBCbGFja30iLz4NCiAgICA8U29saWRDb2xvckJydXNoIHg6S2V5
+            PSJHcmF5MTAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTEwMH0iLz4NCiAgICA8U29saWRDb2xvckJydXNoIHg6
+            S2V5PSJHcmF5MjAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTIwMH0iLz4NCiAgICA8U29saWRDb2xvckJydXNo
+            IHg6S2V5PSJHcmF5MzAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTMwMH0iLz4NCiAgICA8U29saWRDb2xvckJy
+            dXNoIHg6S2V5PSJHcmF5NDAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTQwMH0iLz4NCiAgICA8U29saWRDb2xv
+            ckJydXNoIHg6S2V5PSJHcmF5NTAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTUwMH0iLz4NCiAgICA8U29saWRD
+            b2xvckJydXNoIHg6S2V5PSJHcmF5NjAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTYwMH0iLz4NCiAgICA8U29s
+            aWRDb2xvckJydXNoIHg6S2V5PSJHcmF5OTAwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTkwMH0iLz4NCiAgICA8
+            U29saWRDb2xvckJydXNoIHg6S2V5PSJHcmF5OTUwQnJ1c2giIENvbG9yPSJ7U3RhdGljUmVzb3VyY2UgR3JheTk1MH0iLz4NCg0K
+            ICAgIDxDb2xvciB4OktleT0iWWVsbG93MTAwQWNjZW50Ij4jRjdCNTQ4PC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IlllbGxv
+            dzIwMEFjY2VudCI+I0ZGRDU5MDwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJZZWxsb3czMDBBY2NlbnQiPiNGRkU1Qjk8L0Nv
+            bG9yPg0KICAgIDxDb2xvciB4OktleT0iQ3lhbjEwMEFjY2VudCI+IzI4QzJEMTwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJD
+            eWFuMjAwQWNjZW50Ij4jN0JEREVGPC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IkN5YW4zMDBBY2NlbnQiPiNDM0YyRjQ8L0Nv
+            bG9yPg0KICAgIDxDb2xvciB4OktleT0iQmx1ZTEwMEFjY2VudCI+IzNFOEVFRDwvQ29sb3I+DQogICAgPENvbG9yIHg6S2V5PSJC
+            bHVlMjAwQWNjZW50Ij4jNzJBQ0YxPC9Db2xvcj4NCiAgICA8Q29sb3IgeDpLZXk9IkJsdWUzMDBBY2NlbnQiPiNBN0NCRjY8L0Nv
+            bG9yPg0KDQo8L1Jlc291cmNlRGljdGlvbmFyeT4=
+          </data>
+        </node>
+        <node class="TXamlNode" name="Styles.xaml" type="ResourceDictionary" created="20221125T031550Z" st="0" kind="xkResourceDictionary">
+          <item name="Style[0]" type="Style" st="0">
+            <item name="Style[ActivityIndicator]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[1]" type="Style" st="0">
+            <item name="Style[IndicatorView]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[2]" type="Style" st="0">
+            <item name="Style[Border]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[3]" type="Style" st="0">
+            <item name="Style[BoxView]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[4]" type="Style" st="0">
+            <item name="Style[Button]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0"/>
+              <item name="Setter[8]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[5]" type="Style" st="0">
+            <item name="Style[CheckBox]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[6]" type="Style" st="0">
+            <item name="Style[DatePicker]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[7]" type="Style" st="0">
+            <item name="Style[Editor]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[8]" type="Style" st="0">
+            <item name="Style[Entry]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[9]" type="Style" st="0">
+            <item name="Style[Frame]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[10]" type="Style" st="0">
+            <item name="Style[ImageButton]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[11]" type="Style" st="0">
+            <item name="Style[Label]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[12]" type="Style" st="0">
+            <item name="Style[ListView]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[13]" type="Style" st="0">
+            <item name="Style[Picker]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[14]" type="Style" st="0">
+            <item name="Style[ProgressBar]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[15]" type="Style" st="0">
+            <item name="Style[RadioButton]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[16]" type="Style" st="0">
+            <item name="Style[RefreshView]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[17]" type="Style" st="0">
+            <item name="Style[SearchBar]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0"/>
+              <item name="Setter[8]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[18]" type="Style" st="0">
+            <item name="Style[SearchHandler]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[19]" type="Style" st="0">
+            <item name="Style[Shadow]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[20]" type="Style" st="0">
+            <item name="Style[Slider]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                        <item name="Setter[2]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[21]" type="Style" st="0">
+            <item name="Style[SwipeItem]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[22]" type="Style" st="0">
+            <item name="Style[Switch]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                    <item name="On" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                        <item name="Setter[1]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                    <item name="Off" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[23]" type="Style" st="0">
+            <item name="Style[TimePicker]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0">
+                <item name="VisualStateGroupList[0]" type="VisualStateGroupList" st="0">
+                  <item name="CommonStates" type="VisualStateGroup" st="0">
+                    <item name="Normal" type="VisualState" st="0"/>
+                    <item name="Disabled" type="VisualState" st="0">
+                      <item name="Setters" st="0">
+                        <item name="Setter[0]" type="Setter" st="0"/>
+                      </item>
+                    </item>
+                  </item>
+                </item>
+              </item>
+            </item>
+          </item>
+          <item name="Style[24]" type="Style" st="0">
+            <item name="Style[Page]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[25]" type="Style" st="0">
+            <item name="Style[Shell]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+              <item name="Setter[4]" type="Setter" st="0"/>
+              <item name="Setter[5]" type="Setter" st="0"/>
+              <item name="Setter[6]" type="Setter" st="0"/>
+              <item name="Setter[7]" type="Setter" st="0"/>
+              <item name="Setter[8]" type="Setter" st="0"/>
+              <item name="Setter[9]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[26]" type="Style" st="0">
+            <item name="Style[NavigationPage]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <item name="Style[27]" type="Style" st="0">
+            <item name="Style[TabbedPage]" st="0">
+              <item name="Setter[0]" type="Setter" st="0"/>
+              <item name="Setter[1]" type="Setter" st="0"/>
+              <item name="Setter[2]" type="Setter" st="0"/>
+              <item name="Setter[3]" type="Setter" st="0"/>
+            </item>
+          </item>
+          <data>
+            77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8P3hhbWwtY29tcCBjb21waWxlPSJ0cnVlIiA/Pg0K
+            PFJlc291cmNlRGljdGlvbmFyeSANCiAgICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9kb3RuZXQvMjAyMS9t
+            YXVpIg0KICAgIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwOS94YW1sIj4NCg0KICAgIDxT
+            dHlsZSBUYXJnZXRUeXBlPSJBY3Rpdml0eUluZGljYXRvciI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkNvbG9yIiBWYWx1
+            ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdo
+            aXRlfX0iIC8+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJJbmRpY2F0b3JWaWV3Ij4NCiAgICAgICAg
+            PFNldHRlciBQcm9wZXJ0eT0iSW5kaWNhdG9yQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNv
+            dXJjZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTUwMH19Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            IlNlbGVjdGVkSW5kaWNhdG9yQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5
+            OTUwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTEwMH19Ii8+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRU
+            eXBlPSJCb3JkZXIiPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTdHJva2UiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExp
+            Z2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTUwMH19IiAvPg0KICAgICAgICA8
+            U2V0dGVyIFByb3BlcnR5PSJTdHJva2VTaGFwZSIgVmFsdWU9IlJlY3RhbmdsZSIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5
+            PSJTdHJva2VUaGlja25lc3MiIFZhbHVlPSIxIi8+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJCb3hW
+            aWV3Ij4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0
+            aWNSZXNvdXJjZSBHcmF5OTUwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTIwMH19IiAvPg0KICAgIDwvU3R5bGU+DQoNCiAg
+            ICA8U3R5bGUgVGFyZ2V0VHlwZT0iQnV0dG9uIj4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0i
+            e0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgV2hpdGV9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBQcmltYXJ5
+            fX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkJhY2tncm91bmRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcg
+            TGlnaHQ9e1N0YXRpY1Jlc291cmNlIFByaW1hcnl9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBXaGl0ZX19IiAvPg0KICAgICAgICA8
+            U2V0dGVyIFByb3BlcnR5PSJGb250RmFtaWx5IiBWYWx1ZT0iT3BlblNhbnNSZWd1bGFyIi8+DQogICAgICAgIDxTZXR0ZXIgUHJv
+            cGVydHk9IkZvbnRTaXplIiBWYWx1ZT0iMTQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQ29ybmVyUmFkaXVzIiBWYWx1
+            ZT0iOCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJQYWRkaW5nIiBWYWx1ZT0iMTQsMTAiLz4NCiAgICAgICAgPFNldHRl
+            ciBQcm9wZXJ0eT0iTWluaW11bUhlaWdodFJlcXVlc3QiIFZhbHVlPSI0NCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJN
+            aW5pbXVtV2lkdGhSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVmlzdWFsU3RhdGVNYW5h
+            Z2VyLlZpc3VhbFN0YXRlR3JvdXBzIj4NCiAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgICAgICAg
+            ICA8VmlzdWFsU3RhdGVHcm91cCB4Ok5hbWU9IkNvbW1vblN0YXRlcyI+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0
+            ZSB4Ok5hbWU9Ik5vcm1hbCIgLz4NCiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iRGlzYWJsZWQiPg0K
+            ICAgICAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+            PFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2Ug
+            R3JheTk1MH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXkyMDB9fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+            U2V0dGVyIFByb3BlcnR5PSJCYWNrZ3JvdW5kQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNv
+            dXJjZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICAgICAgICAgICAgICAgICAg
+            PC9WaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlPg0KICAgICAgICAgICAgICAg
+            IDwvVmlzdWFsU3RhdGVHcm91cD4NCiAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgIDwvU2V0dGVy
+            Pg0KICAgIDwvU3R5bGU+DQoNCiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iQ2hlY2tCb3giPg0KICAgICAgICA8U2V0dGVyIFByb3Bl
+            cnR5PSJDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIFByaW1hcnl9LCBEYXJrPXtT
+            dGF0aWNSZXNvdXJjZSBXaGl0ZX19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJNaW5pbXVtSGVpZ2h0UmVxdWVzdCIg
+            VmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1pbmltdW1XaWR0aFJlcXVlc3QiIFZhbHVlPSI0NCIvPg0K
+            ICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJWaXN1YWxTdGF0ZU1hbmFnZXIuVmlzdWFsU3RhdGVHcm91cHMiPg0KICAgICAgICAg
+            ICAgPFZpc3VhbFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdyb3VwIHg6TmFtZT0iQ29tbW9u
+            U3RhdGVzIj4NCiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iTm9ybWFsIiAvPg0KICAgICAgICAgICAg
+            ICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJEaXNhYmxlZCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3Rh
+            dGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJDb2xvciIgVmFsdWU9IntB
+            cHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdyYXkzMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAw
+            fX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAg
+            IDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxT
+            dGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0ZXI+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJE
+            YXRlUGlja2VyIj4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBM
+            aWdodD17U3RhdGljUmVzb3VyY2UgR3JheTkwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxT
+            ZXR0ZXIgUHJvcGVydHk9IkJhY2tncm91bmRDb2xvciIgVmFsdWU9IlRyYW5zcGFyZW50IiAvPg0KICAgICAgICA8U2V0dGVyIFBy
+            b3BlcnR5PSJGb250RmFtaWx5IiBWYWx1ZT0iT3BlblNhbnNSZWd1bGFyIi8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkZv
+            bnRTaXplIiBWYWx1ZT0iMTQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWluaW11bUhlaWdodFJlcXVlc3QiIFZhbHVl
+            PSI0NCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJNaW5pbXVtV2lkdGhSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iVmlzdWFsU3RhdGVNYW5hZ2VyLlZpc3VhbFN0YXRlR3JvdXBzIj4NCiAgICAgICAgICAgIDxW
+            aXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cCB4Ok5hbWU9IkNvbW1vblN0YXRl
+            cyI+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9Ik5vcm1hbCIgLz4NCiAgICAgICAgICAgICAgICAg
+            ICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iRGlzYWJsZWQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlLlNl
+            dHRlcnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0Fw
+            cFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTIwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk1MDB9
+            fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAg
+            PC9WaXN1YWxTdGF0ZT4NCiAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlR3JvdXA+DQogICAgICAgICAgICA8L1Zpc3VhbFN0
+            YXRlR3JvdXBMaXN0Pg0KICAgICAgICA8L1NldHRlcj4NCiAgICA8L1N0eWxlPg0KDQogICAgPFN0eWxlIFRhcmdldFR5cGU9IkVk
+            aXRvciI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9
+            e1N0YXRpY1Jlc291cmNlIEJsYWNrfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRlciBQ
+            cm9wZXJ0eT0iQmFja2dyb3VuZENvbG9yIiBWYWx1ZT0iVHJhbnNwYXJlbnQiIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            IkZvbnRGYW1pbHkiIFZhbHVlPSJPcGVuU2Fuc1JlZ3VsYXIiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNpemUi
+            IFZhbHVlPSIxNCIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iUGxhY2Vob2xkZXJDb2xvciIgVmFsdWU9IntBcHBUaGVt
+            ZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdyYXkyMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NTAwfX0iIC8+
+            DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1pbmltdW1IZWlnaHRSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAgICAgPFNl
+            dHRlciBQcm9wZXJ0eT0iTWluaW11bVdpZHRoUmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            IlZpc3VhbFN0YXRlTWFuYWdlci5WaXN1YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+
+            DQogICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAg
+            ICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJOb3JtYWwiIC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5h
+            bWU9IkRpc2FibGVkIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAg
+            ICAgICAgICAgICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9
+            e1N0YXRpY1Jlc291cmNlIEdyYXkzMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAwfX0iIC8+DQogICAgICAgICAgICAg
+            ICAgICAgICAgICA8L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAg
+            ICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAg
+            ICAgPC9TZXR0ZXI+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJFbnRyeSI+DQogICAgICAgIDxTZXR0
+            ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEJsYWNr
+            fSwgRGFyaz17U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQmFja2dyb3VuZENv
+            bG9yIiBWYWx1ZT0iVHJhbnNwYXJlbnQiIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkZvbnRGYW1pbHkiIFZhbHVlPSJP
+            cGVuU2Fuc1JlZ3VsYXIiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNpemUiIFZhbHVlPSIxNCIgLz4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iUGxhY2Vob2xkZXJDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRp
+            Y1Jlc291cmNlIEdyYXkyMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NTAwfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJv
+            cGVydHk9Ik1pbmltdW1IZWlnaHRSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWluaW11
+            bVdpZHRoUmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFuYWdlci5W
+            aXN1YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAgICAgPFZp
+            c3VhbFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpO
+            YW1lPSJOb3JtYWwiIC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4NCiAgICAg
+            ICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTZXR0
+            ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdyYXkz
+            MDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAwfX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0
+            YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAgPC9WaXN1YWxT
+            dGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0ZXI+DQogICAgPC9T
+            dHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJGcmFtZSI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ikhhc1NoYWRv
+            dyIgVmFsdWU9IkZhbHNlIiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJCb3JkZXJDb2xvciIgVmFsdWU9IntBcHBUaGVt
+            ZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdyYXkyMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5OTUwfX0iIC8+
+            DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkNvcm5lclJhZGl1cyIgVmFsdWU9IjgiIC8+DQogICAgPC9TdHlsZT4NCg0KICAg
+            IDxTdHlsZSBUYXJnZXRUeXBlPSJJbWFnZUJ1dHRvbiI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik9wYWNpdHkiIFZhbHVl
+            PSIxIiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJCb3JkZXJDb2xvciIgVmFsdWU9IlRyYW5zcGFyZW50Ii8+DQogICAg
+            ICAgIDxTZXR0ZXIgUHJvcGVydHk9IkJvcmRlcldpZHRoIiBWYWx1ZT0iMCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJD
+            b3JuZXJSYWRpdXMiIFZhbHVlPSIwIi8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1pbmltdW1IZWlnaHRSZXF1ZXN0IiBW
+            YWx1ZT0iNDQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWluaW11bVdpZHRoUmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQog
+            ICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFuYWdlci5WaXN1YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAg
+            ICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25T
+            dGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJOb3JtYWwiIC8+DQogICAgICAgICAgICAg
+            ICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4NCiAgICAgICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0
+            ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik9wYWNpdHkiIFZhbHVlPSIw
+            LjUiIC8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAg
+            IDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxT
+            dGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0ZXI+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJM
+            YWJlbCI+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9
+            e1N0YXRpY1Jlc291cmNlIEdyYXk5MDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBXaGl0ZX19IiAvPg0KICAgICAgICA8U2V0dGVy
+            IFByb3BlcnR5PSJCYWNrZ3JvdW5kQ29sb3IiIFZhbHVlPSJUcmFuc3BhcmVudCIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0
+            eT0iRm9udEZhbWlseSIgVmFsdWU9Ik9wZW5TYW5zUmVndWxhciIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNp
+            emUiIFZhbHVlPSIxNCIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVmlzdWFsU3RhdGVNYW5hZ2VyLlZpc3VhbFN0YXRl
+            R3JvdXBzIj4NCiAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGVH
+            cm91cCB4Ok5hbWU9IkNvbW1vblN0YXRlcyI+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9Ik5vcm1h
+            bCIgLz4NCiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iRGlzYWJsZWQiPg0KICAgICAgICAgICAgICAg
+            ICAgICAgICAgPFZpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPFNldHRlciBQcm9wZXJ0
+            eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTMwMH0sIERhcms9
+            e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGUuU2V0dGVy
+            cz4NCiAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZT4NCiAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlR3JvdXA+
+            DQogICAgICAgICAgICA8L1Zpc3VhbFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICA8L1NldHRlcj4NCiAgICA8L1N0eWxlPg0KDQog
+            ICAgPFN0eWxlIFRhcmdldFR5cGU9Ikxpc3RWaWV3Ij4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iU2VwYXJhdG9yQ29sb3Ii
+            IFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3Vy
+            Y2UgR3JheTUwMH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJSZWZyZXNoQ29udHJvbENvbG9yIiBWYWx1ZT0ie0Fw
+            cFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTkwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXkyMDB9
+            fSIgLz4NCiAgICA8L1N0eWxlPg0KDQogICAgPFN0eWxlIFRhcmdldFR5cGU9IlBpY2tlciI+DQogICAgICAgIDxTZXR0ZXIgUHJv
+            cGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdyYXk5MDB9LCBE
+            YXJrPXtTdGF0aWNSZXNvdXJjZSBXaGl0ZX19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJUaXRsZUNvbG9yIiBWYWx1
+            ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTkwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdy
+            YXkyMDB9fSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQmFja2dyb3VuZENvbG9yIiBWYWx1ZT0iVHJhbnNwYXJlbnQi
+            IC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkZvbnRGYW1pbHkiIFZhbHVlPSJPcGVuU2Fuc1JlZ3VsYXIiLz4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNpemUiIFZhbHVlPSIxNCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJNaW5p
+            bXVtSGVpZ2h0UmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1pbmltdW1XaWR0aFJlcXVl
+            c3QiIFZhbHVlPSI0NCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJWaXN1YWxTdGF0ZU1hbmFnZXIuVmlzdWFsU3RhdGVH
+            cm91cHMiPg0KICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdy
+            b3VwIHg6TmFtZT0iQ29tbW9uU3RhdGVzIj4NCiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iTm9ybWFs
+            IiAvPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJEaXNhYmxlZCI+DQogICAgICAgICAgICAgICAg
+            ICAgICAgICA8VmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5
+            PSJUZXh0Q29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MzAwfSwgRGFyaz17
+            U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            IlRpdGxlQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MzAwfSwgRGFyaz17
+            U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZS5TZXR0ZXJz
+            Pg0KICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlPg0KICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cD4N
+            CiAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgIDwvU2V0dGVyPg0KICAgIDwvU3R5bGU+DQoNCiAg
+            ICA8U3R5bGUgVGFyZ2V0VHlwZT0iUHJvZ3Jlc3NCYXIiPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJQcm9ncmVzc0NvbG9y
+            IiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERhcms9e1N0YXRpY1Jlc291
+            cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFuYWdlci5WaXN1YWxTdGF0ZUdy
+            b3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3Jv
+            dXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJOb3JtYWwi
+            IC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4NCiAgICAgICAgICAgICAgICAg
+            ICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            IlByb2dyZXNzQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MzAwfSwgRGFy
+            az17U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZS5TZXR0
+            ZXJzPg0KICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlPg0KICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91
+            cD4NCiAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgIDwvU2V0dGVyPg0KICAgIDwvU3R5bGU+DQoN
+            CiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iUmFkaW9CdXR0b24iPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJCYWNrZ3JvdW5k
+            Q29sb3IiIFZhbHVlPSJUcmFuc3BhcmVudCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJUZXh0Q29sb3IiIFZhbHVlPSJ7
+            QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBCbGFja30sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0i
+            IC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkZvbnRGYW1pbHkiIFZhbHVlPSJPcGVuU2Fuc1JlZ3VsYXIiLz4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNpemUiIFZhbHVlPSIxNCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJNaW5p
+            bXVtSGVpZ2h0UmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9Ik1pbmltdW1XaWR0aFJlcXVl
+            c3QiIFZhbHVlPSI0NCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJWaXN1YWxTdGF0ZU1hbmFnZXIuVmlzdWFsU3RhdGVH
+            cm91cHMiPg0KICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdy
+            b3VwIHg6TmFtZT0iQ29tbW9uU3RhdGVzIj4NCiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iTm9ybWFs
+            IiAvPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1lPSJEaXNhYmxlZCI+DQogICAgICAgICAgICAgICAg
+            ICAgICAgICA8VmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5
+            PSJUZXh0Q29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MzAwfSwgRGFyaz17
+            U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZS5TZXR0ZXJz
+            Pg0KICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlPg0KICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cD4N
+            CiAgICAgICAgICAgIDwvVmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgIDwvU2V0dGVyPg0KICAgIDwvU3R5bGU+DQoNCiAg
+            ICA8U3R5bGUgVGFyZ2V0VHlwZT0iUmVmcmVzaFZpZXciPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJSZWZyZXNoQ29sb3Ii
+            IFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5OTAwfSwgRGFyaz17U3RhdGljUmVzb3Vy
+            Y2UgR3JheTIwMH19IiAvPg0KICAgIDwvU3R5bGU+DQoNCiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iU2VhcmNoQmFyIj4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3Vy
+            Y2UgR3JheTkwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlBs
+            YWNlaG9sZGVyQ29sb3IiIFZhbHVlPSJ7U3RhdGljUmVzb3VyY2UgR3JheTUwMH0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVy
+            dHk9IkNhbmNlbEJ1dHRvbkNvbG9yIiBWYWx1ZT0ie1N0YXRpY1Jlc291cmNlIEdyYXk1MDB9IiAvPg0KICAgICAgICA8U2V0dGVy
+            IFByb3BlcnR5PSJCYWNrZ3JvdW5kQ29sb3IiIFZhbHVlPSJUcmFuc3BhcmVudCIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0
+            eT0iRm9udEZhbWlseSIgVmFsdWU9Ik9wZW5TYW5zUmVndWxhciIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udFNp
+            emUiIFZhbHVlPSIxNCIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWluaW11bUhlaWdodFJlcXVlc3QiIFZhbHVlPSI0
+            NCIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJNaW5pbXVtV2lkdGhSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAgICAg
+            PFNldHRlciBQcm9wZXJ0eT0iVmlzdWFsU3RhdGVNYW5hZ2VyLlZpc3VhbFN0YXRlR3JvdXBzIj4NCiAgICAgICAgICAgIDxWaXN1
+            YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cCB4Ok5hbWU9IkNvbW1vblN0YXRlcyI+
+            DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9Ik5vcm1hbCIgLz4NCiAgICAgICAgICAgICAgICAgICAg
+            PFZpc3VhbFN0YXRlIHg6TmFtZT0iRGlzYWJsZWQiPg0KICAgICAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlLlNldHRl
+            cnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iVGV4dENvbG9yIiBWYWx1ZT0ie0FwcFRo
+            ZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIg
+            Lz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJQbGFjZWhvbGRlckNvbG9yIiBWYWx1ZT0i
+            e0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2
+            MDB9fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAg
+            ICAgPC9WaXN1YWxTdGF0ZT4NCiAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlR3JvdXA+DQogICAgICAgICAgICA8L1Zpc3Vh
+            bFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICA8L1NldHRlcj4NCiAgICA8L1N0eWxlPg0KDQogICAgPFN0eWxlIFRhcmdldFR5cGU9
+            IlNlYXJjaEhhbmRsZXIiPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJUZXh0Q29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5k
+            aW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5OTAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iUGxhY2Vob2xkZXJDb2xvciIgVmFsdWU9IntTdGF0aWNSZXNvdXJjZSBHcmF5NTAwfSIgLz4N
+            CiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQmFja2dyb3VuZENvbG9yIiBWYWx1ZT0iVHJhbnNwYXJlbnQiIC8+DQogICAgICAg
+            IDxTZXR0ZXIgUHJvcGVydHk9IkZvbnRGYW1pbHkiIFZhbHVlPSJPcGVuU2Fuc1JlZ3VsYXIiIC8+DQogICAgICAgIDxTZXR0ZXIg
+            UHJvcGVydHk9IkZvbnRTaXplIiBWYWx1ZT0iMTQiIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFu
+            YWdlci5WaXN1YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAg
+            ICAgPFZpc3VhbFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3Rh
+            dGUgeDpOYW1lPSJOb3JtYWwiIC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4N
+            CiAgICAgICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAg
+            IDxTZXR0ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNl
+            IEdyYXkzMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAwfX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAg
+            PFNldHRlciBQcm9wZXJ0eT0iUGxhY2Vob2xkZXJDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jl
+            c291cmNlIEdyYXkzMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAwfX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAg
+            ICA8L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAg
+            ICAgPC9WaXN1YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0
+            ZXI+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJTaGFkb3ciPg0KICAgICAgICA8U2V0dGVyIFByb3Bl
+            cnR5PSJSYWRpdXMiIFZhbHVlPSIxNSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iT3BhY2l0eSIgVmFsdWU9IjAuNSIg
+            Lz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQnJ1c2giIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNS
+            ZXNvdXJjZSBXaGl0ZX0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9
+            Ik9mZnNldCIgVmFsdWU9IjEwLDEwIiAvPg0KICAgIDwvU3R5bGU+DQoNCiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iU2xpZGVyIj4N
+            CiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWluaW11bVRyYWNrQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0
+            PXtTdGF0aWNSZXNvdXJjZSBQcmltYXJ5fSwgRGFyaz17U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRl
+            ciBQcm9wZXJ0eT0iTWF4aW11bVRyYWNrQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJj
+            ZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTYwMH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJU
+            aHVtYkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERhcms9e1N0
+            YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFuYWdlci5WaXN1
+            YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAgICAgPFZpc3Vh
+            bFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUgeDpOYW1l
+            PSJOb3JtYWwiIC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4NCiAgICAgICAg
+            ICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxTZXR0ZXIg
+            UHJvcGVydHk9Ik1pbmltdW1UcmFja0NvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2Ug
+            R3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIvPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxT
+            ZXR0ZXIgUHJvcGVydHk9Ik1heGltdW1UcmFja0NvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVz
+            b3VyY2UgR3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIvPg0KICAgICAgICAgICAgICAgICAgICAgICAg
+            ICAgIDxTZXR0ZXIgUHJvcGVydHk9IlRodW1iQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNv
+            dXJjZSBHcmF5MzAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTYwMH19Ii8+DQogICAgICAgICAgICAgICAgICAgICAgICA8
+            L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAg
+            PC9WaXN1YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0ZXI+
+            DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJTd2lwZUl0ZW0iPg0KICAgICAgICA8U2V0dGVyIFByb3Bl
+            cnR5PSJCYWNrZ3JvdW5kQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBXaGl0ZX0s
+            IERhcms9e1N0YXRpY1Jlc291cmNlIEJsYWNrfX0iIC8+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJT
+            d2l0Y2giPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJPbkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17
+            U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIg
+            UHJvcGVydHk9IlRodW1iQ29sb3IiIFZhbHVlPSJ7U3RhdGljUmVzb3VyY2UgV2hpdGV9IiAvPg0KICAgICAgICA8U2V0dGVyIFBy
+            b3BlcnR5PSJWaXN1YWxTdGF0ZU1hbmFnZXIuVmlzdWFsU3RhdGVHcm91cHMiPg0KICAgICAgICAgICAgPFZpc3VhbFN0YXRlR3Jv
+            dXBMaXN0Pg0KICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZUdyb3VwIHg6TmFtZT0iQ29tbW9uU3RhdGVzIj4NCiAgICAgICAg
+            ICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iTm9ybWFsIiAvPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3Rh
+            dGUgeDpOYW1lPSJEaXNhYmxlZCI+DQogICAgICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAg
+            ICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJPbkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBM
+            aWdodD17U3RhdGljUmVzb3VyY2UgR3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIgLz4NCiAgICAgICAg
+            ICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJUaHVtYkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBM
+            aWdodD17U3RhdGljUmVzb3VyY2UgR3JheTMwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk2MDB9fSIgLz4NCiAgICAgICAg
+            ICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZT4N
+            CiAgICAgICAgICAgICAgICAgICAgPFZpc3VhbFN0YXRlIHg6TmFtZT0iT24iPg0KICAgICAgICAgICAgICAgICAgICAgICAgPFZp
+            c3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgICAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iT25Db2xvciIg
+            VmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIFNlY29uZGFyeX0sIERhcms9e1N0YXRpY1Jlc291
+            cmNlIEdyYXkyMDB9fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJUaHVtYkNvbG9y
+            IiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERhcms9e1N0YXRpY1Jlc291
+            cmNlIFdoaXRlfX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L1Zpc3VhbFN0YXRlLlNldHRlcnM+DQogICAgICAgICAg
+            ICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9Ik9mZiI+DQog
+            ICAgICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgICAgICAgICA8
+            U2V0dGVyIFByb3BlcnR5PSJUaHVtYkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2Ug
+            R3JheTQwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXk1MDB9fSIgLz4NCiAgICAgICAgICAgICAgICAgICAgICAgIDwvVmlz
+            dWFsU3RhdGUuU2V0dGVycz4NCiAgICAgICAgICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZT4NCiAgICAgICAgICAgICAgICA8L1Zp
+            c3VhbFN0YXRlR3JvdXA+DQogICAgICAgICAgICA8L1Zpc3VhbFN0YXRlR3JvdXBMaXN0Pg0KICAgICAgICA8L1NldHRlcj4NCiAg
+            ICA8L1N0eWxlPg0KDQogICAgPFN0eWxlIFRhcmdldFR5cGU9IlRpbWVQaWNrZXIiPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5
+            PSJUZXh0Q29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5OTAwfSwgRGFyaz17
+            U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQmFja2dyb3VuZENvbG9yIiBWYWx1
+            ZT0iVHJhbnNwYXJlbnQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iRm9udEZhbWlseSIgVmFsdWU9Ik9wZW5TYW5zUmVn
+            dWxhciIvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJGb250U2l6ZSIgVmFsdWU9IjE0Ii8+DQogICAgICAgIDxTZXR0ZXIg
+            UHJvcGVydHk9Ik1pbmltdW1IZWlnaHRSZXF1ZXN0IiBWYWx1ZT0iNDQiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iTWlu
+            aW11bVdpZHRoUmVxdWVzdCIgVmFsdWU9IjQ0Ii8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlZpc3VhbFN0YXRlTWFuYWdl
+            ci5WaXN1YWxTdGF0ZUdyb3VwcyI+DQogICAgICAgICAgICA8VmlzdWFsU3RhdGVHcm91cExpc3Q+DQogICAgICAgICAgICAgICAg
+            PFZpc3VhbFN0YXRlR3JvdXAgeDpOYW1lPSJDb21tb25TdGF0ZXMiPg0KICAgICAgICAgICAgICAgICAgICA8VmlzdWFsU3RhdGUg
+            eDpOYW1lPSJOb3JtYWwiIC8+DQogICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZSB4Ok5hbWU9IkRpc2FibGVkIj4NCiAg
+            ICAgICAgICAgICAgICAgICAgICAgIDxWaXN1YWxTdGF0ZS5TZXR0ZXJzPg0KICAgICAgICAgICAgICAgICAgICAgICAgICAgIDxT
+            ZXR0ZXIgUHJvcGVydHk9IlRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIEdy
+            YXkzMDB9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5NjAwfX0iIC8+DQogICAgICAgICAgICAgICAgICAgICAgICA8L1Zpc3Vh
+            bFN0YXRlLlNldHRlcnM+DQogICAgICAgICAgICAgICAgICAgIDwvVmlzdWFsU3RhdGU+DQogICAgICAgICAgICAgICAgPC9WaXN1
+            YWxTdGF0ZUdyb3VwPg0KICAgICAgICAgICAgPC9WaXN1YWxTdGF0ZUdyb3VwTGlzdD4NCiAgICAgICAgPC9TZXR0ZXI+DQogICAg
+            PC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJQYWdlIiBBcHBseVRvRGVyaXZlZFR5cGVzPSJUcnVlIj4NCiAgICAg
+            ICAgPFNldHRlciBQcm9wZXJ0eT0iUGFkZGluZyIgVmFsdWU9IjAiLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iQmFja2dy
+            b3VuZENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgV2hpdGV9LCBEYXJrPXtTdGF0
+            aWNSZXNvdXJjZSBCbGFja319IiAvPg0KICAgIDwvU3R5bGU+DQoNCiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iU2hlbGwiIEFwcGx5
+            VG9EZXJpdmVkVHlwZXM9IlRydWUiPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTaGVsbC5CYWNrZ3JvdW5kQ29sb3IiIFZh
+            bHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBQcmltYXJ5fSwgRGFyaz17U3RhdGljUmVzb3VyY2Ug
+            R3JheTk1MH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTaGVsbC5Gb3JlZ3JvdW5kQ29sb3IiIFZhbHVlPSJ7T25Q
+            bGF0Zm9ybSBXaW5VST17U3RhdGljUmVzb3VyY2UgUHJpbWFyeX0sIERlZmF1bHQ9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+
+            DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IlNoZWxsLlRpdGxlQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0
+            PXtTdGF0aWNSZXNvdXJjZSBXaGl0ZX0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRlfX0iIC8+DQogICAgICAgIDxTZXR0ZXIg
+            UHJvcGVydHk9IlNoZWxsLkRpc2FibGVkQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJj
+            ZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTk1MH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJT
+            aGVsbC5VbnNlbGVjdGVkQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MjAw
+            fSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTIwMH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTaGVsbC5OYXZC
+            YXJIYXNTaGFkb3ciIFZhbHVlPSJGYWxzZSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iU2hlbGwuVGFiQmFyQmFja2dy
+            b3VuZENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgV2hpdGV9LCBEYXJrPXtTdGF0
+            aWNSZXNvdXJjZSBCbGFja319IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTaGVsbC5UYWJCYXJGb3JlZ3JvdW5kQ29s
+            b3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBQcmltYXJ5fSwgRGFyaz17U3RhdGljUmVz
+            b3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iU2hlbGwuVGFiQmFyVGl0bGVDb2xvciIgVmFsdWU9
+            IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIFByaW1hcnl9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBXaGl0
+            ZX19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTaGVsbC5UYWJCYXJVbnNlbGVjdGVkQ29sb3IiIFZhbHVlPSJ7QXBw
+            VGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5OTAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTIwMH19
+            IiAvPg0KICAgIDwvU3R5bGU+DQoNCiAgICA8U3R5bGUgVGFyZ2V0VHlwZT0iTmF2aWdhdGlvblBhZ2UiPg0KICAgICAgICA8U2V0
+            dGVyIFByb3BlcnR5PSJCYXJCYWNrZ3JvdW5kQ29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNv
+            dXJjZSBQcmltYXJ5fSwgRGFyaz17U3RhdGljUmVzb3VyY2UgR3JheTk1MH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5
+            PSJCYXJUZXh0Q29sb3IiIFZhbHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MjAwfSwgRGFy
+            az17U3RhdGljUmVzb3VyY2UgV2hpdGV9fSIgLz4NCiAgICAgICAgPFNldHRlciBQcm9wZXJ0eT0iSWNvbkNvbG9yIiBWYWx1ZT0i
+            e0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTIwMH0sIERhcms9e1N0YXRpY1Jlc291cmNlIFdoaXRl
+            fX0iIC8+DQogICAgPC9TdHlsZT4NCg0KICAgIDxTdHlsZSBUYXJnZXRUeXBlPSJUYWJiZWRQYWdlIj4NCiAgICAgICAgPFNldHRl
+            ciBQcm9wZXJ0eT0iQmFyQmFja2dyb3VuZENvbG9yIiBWYWx1ZT0ie0FwcFRoZW1lQmluZGluZyBMaWdodD17U3RhdGljUmVzb3Vy
+            Y2UgV2hpdGV9LCBEYXJrPXtTdGF0aWNSZXNvdXJjZSBHcmF5OTUwfX0iIC8+DQogICAgICAgIDxTZXR0ZXIgUHJvcGVydHk9IkJh
+            clRleHRDb2xvciIgVmFsdWU9IntBcHBUaGVtZUJpbmRpbmcgTGlnaHQ9e1N0YXRpY1Jlc291cmNlIFByaW1hcnl9LCBEYXJrPXtT
+            dGF0aWNSZXNvdXJjZSBXaGl0ZX19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJVbnNlbGVjdGVkVGFiQ29sb3IiIFZh
+            bHVlPSJ7QXBwVGhlbWVCaW5kaW5nIExpZ2h0PXtTdGF0aWNSZXNvdXJjZSBHcmF5MjAwfSwgRGFyaz17U3RhdGljUmVzb3VyY2Ug
+            R3JheTk1MH19IiAvPg0KICAgICAgICA8U2V0dGVyIFByb3BlcnR5PSJTZWxlY3RlZFRhYkNvbG9yIiBWYWx1ZT0ie0FwcFRoZW1l
+            QmluZGluZyBMaWdodD17U3RhdGljUmVzb3VyY2UgR3JheTk1MH0sIERhcms9e1N0YXRpY1Jlc291cmNlIEdyYXkyMDB9fSIgLz4N
+            CiAgICA8L1N0eWxlPg0KDQo8L1Jlc291cmNlRGljdGlvbmFyeT4NCg==
+          </data>
+        </node>
+      </node>
+    </node>
+    <assemblies>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
+      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+    </assemblies>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

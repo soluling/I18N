@@ -1,2 +1,2 @@
 del *.zip
-zip -R SVG *.ntp *.svg
+zip -R SVG *.md *.ntp *.svg

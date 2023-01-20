@@ -1,2 +1,2 @@
 del *.zip
-zip -R Java *.ntp *.java *.properties
+zip -R Java *.md *.ntp *.java *.properties

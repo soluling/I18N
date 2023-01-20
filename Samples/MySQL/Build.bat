@@ -1,2 +1,2 @@
 del *.zip
-zip -R MySQL *.sql *.ntp
+zip -R MySQL *.md *.sql *.ntp

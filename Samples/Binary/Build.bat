@@ -1,2 +1,2 @@
 del *.zip
-zip -R Binary *.ntp *.bf*
+zip -R Binary *.md *.ntp *.bf*

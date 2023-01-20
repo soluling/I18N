@@ -1,2 +1,2 @@
 del *.zip
-zip -R Go *.ntp *.go *.toml *.json *.yaml
+zip -R Go *.md *.ntp *.go *.toml *.json *.yaml

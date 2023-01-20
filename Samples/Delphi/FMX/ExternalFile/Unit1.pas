@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -33,16 +33,23 @@ implementation
 uses
   NtBase,
   NtResource,
+  NtResourceString,
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
 
 procedure TForm1.UpdateStrings;
+resourcestring
+  SSample = 'This is a sample';  //loc This is a comment
+  SNone = 'None';
+  SResource = 'Resource:';
+  SFile = 'File:';
+  SDirectory = 'Directory:';
 var
   i: Integer;
   str: String;
   directories: TStringDynArray;
 begin
-  Label2.Text := _T('This is a sample');  //loc This is a comment
+  Label2.Text := SSample;
 
   directories := NtResources.ResourceDirectories;
   str := directories[0];
@@ -53,22 +60,28 @@ begin
   Label3.Text := str;
 
   case NtResources.TranslationSource of
-    tsNone: str := _T('None');
-    tsResource: str := _T('Resource:');
-    tsFile: str := _T('File:');
-    tsDirectory: str := _T('Directory:');
+    tsNone: str := SNone;
+    tsResource: str := SResource;
+    tsFile: str := SFile;
+tsDirectory: str := SDirectory;
   end;
 
   LoadedLabel.Text := Format('%s %s', [str, NtResources.TranslationSourceValue]);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SJapanese = 'Japanese';
 begin
-  NtResources._T('English', 'en');
-  NtResources._T('Finnish', 'fi');
-  NtResources._T('German', 'de');
-  NtResources._T('French', 'fr');
-  NtResources._T('Japanese', 'ja');
+  NtResources.Add('English', 'English', SEnglish, 'en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de');
+  NtResources.Add('French', 'français', SFrench, 'fr');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja');
 
   if ParamCount > 0 then
     NtResources.LanguageId := ParamStr(1);

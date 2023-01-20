@@ -8,12 +8,14 @@
   use it with VLC application although the resource DLL based method is the prefered way.
 
   The basic idea is to store all localized forms, strings and resources into a
-  single file that can be added as custom RCDATA resource inside the application
+  single .ntres file that can be added as custom RCDATA resource inside the application
   executable.
 
   You will have full control of form localization. This mean that you can override
-  any form properties including dimension, colors and fonts. However you cannot
-  use resourcestring feature. If your code likes like this.
+  any form properties including dimension, colors and fonts.
+
+  Note! If you use Delphi 10.3 (Rio) or earlier you cannot use the resourcestring feature.
+  If your code is like this.
 
   @longCode(#
 resourcestring
@@ -40,15 +42,15 @@ end;
   Delphi project and will be embedded inside the application executable.
 
   Numbers and offsets are 4 bit integers.
-  All strings are without null termination. Strings lengths are specified in the index.
-  Length is length in bytes NOT charcters.
-  Language id ara in ASCII. All other strings are UTF16-LE strings.
+  All strings are without null termination. Strings lengths are specified in a word.
+  String length is length in characters NOT in bytes.
+  Language ids are in ASCII. All other strings are UTF16-LE strings.
   ~ means variable length.
 
 
   File format:
   [header]      4  'NTRE'
-  [version]     4  File format version
+  [version]     4  File format version (2 or 1)
   [count]       4  Language count
   [idIndex1]    8  Language id offset + length
   [idIndex2]    8
@@ -68,7 +70,77 @@ end;
   [dataN]       ~
 
 
-  Language data
+  Language data version 2
+
+  There is one language data or file per language.
+  Format:
+  [header]       4  'NTLB'
+  [version]      4  File format version (2)
+  [id]           16 IETF language tag in Ansi characters (e.g. fi-FI)
+  [win32idcount] 4  String Win32 id count
+  [win64idcount] 4  String Win64 id count
+  [symbolcount]  4  String symbol name count
+  [stringcount]  4  String count
+  [formcount]    4  Form count
+  [rescount]     4  Resource count
+
+  [stringId1]    4  Sorted string Win32 id index: offset to string id data: string id + offset to string data
+  [stringId2]    4
+  ...
+  [stringIdN]    4
+
+  [stringId1]    4  Sorted string Win64 id index: offset to string id data: string id + offset to string data
+  [stringId2]    4
+  ...
+  [stringIdN]    4
+
+  [stringName1]  4  Sorted string symbol name index: offset to string symbol name data: string symbol name + offset to string data
+  [stringName2]  4
+  ...
+  [stringNameN]  4
+
+  [formName1]    4  Sorted form name index: offset to form data: name + length + data
+  [formName2]    4
+  ...
+  [formNameN]    4
+
+  [resName1]     4  Sorted resource name index: offet to resource data: name + length + data
+  [resName2]     4
+  ...
+  [resNameN]     4
+
+  [idValue1]     6  String Win32 id data: id (Word) + offset to string data
+  [idValue2]     6
+  ...
+  [idValueN]     6
+
+  [idValue1]     6  String Win64 id data: id (Word) + offset to string data
+  [idValue2]     6
+  ...
+  [idValueN]     6
+
+  [symbolName1]  ~  String symbol name data: name + offset to string data
+  [symbolName2]  ~
+  ...
+  [symbolNameN]  ~
+
+  [string1]      ~  String data: length + characters
+  [string2]      ~
+  ...
+  [stringN]      ~
+
+  [form1]        ~  Form data: name + length + Standard binary form data: TPF0...
+  [form2]        ~
+  ...
+  [formN]        ~
+
+  [resource1]    ~  Resource data: name + length + Plain resource data such as PNG or MP3
+  [resource2]    ~
+  ...
+  [resourceN]    ~
+
+
+  Language data version 1 (will be deprected in 2024)
 
   There is one language data per language.
   Format:
@@ -138,6 +210,7 @@ end;
   [str2]         ~
   ...
   [strN]         ~
+
 }
 
 unit NtResource;
@@ -155,15 +228,37 @@ uses
 const
   NTRES_RESOURCE_NAME_C = 'NtLangRes';
   NTRES_MAGIC_C: array[0..3] of Byte = ($4e, $54, $52, $45);  // 'NTRE'
-  NTLANG_MAGIC_C: array[0..3] of Byte = ($4e, $54, $4c, $41);  // 'NTLA'
+  NTLANG1_MAGIC_C: array[0..3] of Byte = ($4e, $54, $4c, $41);  // 'NTLA'
+  NTLANG2_MAGIC_C: array[0..3] of Byte = ($4e, $54, $4c, $42);  // 'NTLB'
+  LANG_ID_LENGTH_C = 16;
+
+  //NTRES_VALUE_VERSION_C = 1;
+  //NTRES_RESOURCE_STRING_VERSION_C = 2;
 
 type
+  TNtResourceVersion =
+  (
+    nr1 = 1,
+    nr2
+  );
+
+  TNtResourceStringId =
+  (
+    rsWin32,
+    rsWin64,
+    rsSymbol
+  );
+
+  TNtResourceStringIds = set of TNtResourceStringId;
+
   TNtDelphiResources = class;
 
   { @abstract Contains information about the language such as id, name and image. }
   TNtResourceLanguage = class(TObject)
   private
     FOriginal: String;
+    FNative: String;
+    FLocalized: String;
     FId: String;
     FImage: String;
 
@@ -175,33 +270,67 @@ type
     function AddImage(const value: String): TNtResourceLanguage;
 
     property Original: String read FOriginal;
+    property Native: String read FNative;
+    property Localized: String read FLocalized;
     property Id: String read FId;
     property Image: String read FImage;
   end;
 
   TNtDelphiResource = class(TObject)
   private
+    FVersion: TNtResourceVersion;
+    FLangId: String;
     FOffset: Integer;
     FStream: TStream;
     FFileName: String;
     FId: String;
 
+    // All versions
     FFormCount: Integer;
+    FResourceCount: Integer;
+
+    // Version 1
     FFormNameOffset: Integer;
     FStringGroupCount: Integer;
     FStringGroupNameOffset : Integer;
-    FResourceCount: Integer;
     FResourceNameOffset: Integer;
+
+    // Version 2
+    FWin32StringCount: Integer;
+    FWin64StringCount: Integer;
+    FSymbolStringCount: Integer;
+    FStringCount: Integer;
+    FWin32IndexOffset: Integer;
+    FWin64IndexOffset: Integer;
+    FSymbolIndexOffset: Integer;
+    FFormIndexOffset: Integer;
+    FResourceIndexOffset: Integer;
 
     procedure SetOffset(value: Integer);
 
     procedure CheckStream;
     procedure ReadHeader;
 
+{$IFDEF DELPHIDX4}
+  {$IF defined(EXTERNALLINKER)}
+    function FindStringSymbol(const unitName, itemName: String): String;
+  {$ELSE}
+    function FindStringWin(id: Word): String;
+  {$IFEND}
+{$ENDIF}
+
   public
     function FindForm(const name: String): TStream;
-    function FindString(const original: String; id: String; const group: String): String;
+
+{$IFDEF DELPHIDX4}
+    function FindString(resStringRec: PResStringRec): String; overload;
+{$ENDIF}
+    function FindString(const original: String; id: String; const group: String): String; overload;
+
     function FindResource(const id: String): TStream;
+
+    //class procedure ParseKey(const key: String; var group, id: String);
+    class function ParseKey(name: String; var unitName, itemName: String): Boolean;
 
     property Id: String read FId;
     property Offset: Integer read FOffset write SetOffset;
@@ -217,6 +346,7 @@ type
 
   TNtDelphiResources = class(TObject)
   private
+    FVersion: TNtResourceVersion;
     FLoaded: Boolean;
     FResourceName: String;
     FResourcePath: String;
@@ -234,6 +364,8 @@ type
     function GetLanguage(i: Integer): TNtDelphiResource;
     function GetLanguageId: String;
     function GetOriginal(const id: String): String;
+    function GetNative(const id: String): String;
+    function GetLocalized(const id: String): String;
     function GetLanguageImage(const id: String): String;
     function GetResourceDirectories: TStringDynArray;
 
@@ -248,15 +380,24 @@ type
     procedure Load;
 
     function Find(const id: String): Integer;
+    function FindLanguage(const id: String): TNtResourceLanguage;
 
     function FindForm(const name: String): TStream;
     function FormExists(const name: String): Boolean;
 
-    function GetString(const original, id, group: String): String;
+{$IFDEF DELPHIDX4}
+    function GetString(resStringRec: PResStringRec): String; overload;
 
     function GetStringInLanguage(
       const language: String;
-      const original, id, group: String): String;
+      resStringRec: PResStringRec): String; overload;
+{$ENDIF}
+
+    function GetString(const original, id, group: String): String; overload;
+
+    function GetStringInLanguage(
+      const language: String;
+      const original, id, group: String): String; overload;
 
     function GetResource(const id: String; resType: PChar = RT_RCDATA): TStream;
 
@@ -267,6 +408,8 @@ type
       @param id        Language id such as "en".
       @return Language resource. }
     function _T(const original, id: String): TNtResourceLanguage;
+
+    function Add(const original, native, localized, id: String): TNtResourceLanguage;
 
     class function GetResources: TNtDelphiResources;
 
@@ -281,10 +424,20 @@ type
     property Stream: TStream read FStream;
     property ResourceDirectories: TStringDynArray read GetResourceDirectories;
     property Originals[const id: String]: String read GetOriginal;
+    property Natives[const id: String]: String read GetNative;
+    property Localizeds[const id: String]: String read GetLocalized;
     property LanguageImages[const id: String]: String read GetLanguageImage;
     property TranslationSource: TTranslationSource read FTranslationSource;
     property TranslationSourceValue: String read FTranslationSourceValue;
   end;
+
+{$IFDEF DELPHIDX4}
+function _T(
+  resStringRec: PResStringRec;
+  const language: String = ''): String; overload;
+
+procedure InitializeResourceStringTranslation;
+{$ENDIF}
 
 { Get the string value in the current language or in the specific language.
   @param original Original string value.
@@ -342,6 +495,7 @@ type
     function ReadAnsi(length: Integer): String; overload;
     function ReadAnsi(offset, length: Integer): String; overload;
 
+    function ReadString: String; overload;
     function ReadString(length: Integer): String; overload;
     function ReadString(offset, length: Integer): String; overload;
 
@@ -361,7 +515,7 @@ var
 begin
   SetLength(data, length);
   Read(data, length);
-  Result := TEncoding.Default.GetString(data);
+  Result := TEncoding.ANSI.GetString(data);
 end;
 
 function TStreamHelper.ReadAnsi(offset, length: Integer): String;
@@ -372,6 +526,11 @@ begin
   Position := offset;
   Result := ReadAnsi(length);
   Position := currentOffset;
+end;
+
+function TStreamHelper.ReadString: String;
+begin
+  Result := ReadString(ReadWord);
 end;
 
 function TStreamHelper.ReadString(length: Integer): String;
@@ -408,6 +567,18 @@ begin
   Read(Result, SizeOf(Result));
 end;
 
+
+{$IFDEF DELPHIDX4}
+function _T(
+  resStringRec: PResStringRec;
+  const language: String = ''): String;
+begin
+  if language <> '' then
+    Result := NtResources.GetStringInLanguage(language, resStringRec)
+  else
+    Result := NtResources.GetString(resStringRec);
+end;
+{$ENDIF}
 
 function _T(
   const original: String;
@@ -459,22 +630,60 @@ end;
 
 // TNtDelphiResource
 
+function Convert(const bytes: TBytes): String;
+var
+  b: Byte;
+begin
+  Result := '';
+
+  for b in bytes do
+  begin
+    if b = 0 then
+      Exit;
+
+    Result := Result + Char(b)
+  end;
+end;
+
 procedure TNtDelphiResource.ReadHeader;
 var
   header: TBytes;
 begin
-  header := FStream.ReadBytes(Length(NTLANG_MAGIC_C));
+  header := FStream.ReadBytes(Length(NTLANG1_MAGIC_C));
 
-  if not CompareMem(@NTLANG_MAGIC_C, @header[0], Length(NTLANG_MAGIC_C)) then
+  if CompareMem(@NTLANG1_MAGIC_C, @header[0], Length(NTLANG1_MAGIC_C)) then
+  begin
+    FVersion := nr1;
+    FLangId := '';
+
+    FFormCount := FStream.ReadInt32;
+    FStringGroupCount := FStream.ReadInt32;
+    FResourceCount := FStream.ReadInt32;
+
+    FFormNameOffset := FStream.Position;
+    FStringGroupNameOffset := FFormNameOffset + 16*FFormCount;
+    FResourceNameOffset := FStringGroupNameOffset + 16*FStringGroupCount;
+  end
+  else if CompareMem(@NTLANG2_MAGIC_C, @header[0], Length(NTLANG2_MAGIC_C)) then
+  begin
+    FVersion := TNtResourceVersion(FStream.ReadInt32);
+    FLangId := Convert(FStream.ReadBytes(LANG_ID_LENGTH_C));
+
+    FWin32StringCount := FStream.ReadInt32;
+    FWin64StringCount := FStream.ReadInt32;
+    FSymbolStringCount := FStream.ReadInt32;
+    FStringCount := FStream.ReadInt32;
+    FFormCount := FStream.ReadInt32;
+    FResourceCount := FStream.ReadInt32;
+
+    FWin32IndexOffset := FStream.Position;
+    FWin64IndexOffset := FWin32IndexOffset + 4*FWin32StringCount;
+    FSymbolIndexOffset := FWin64IndexOffset + 4*FWin64StringCount;
+    FFormIndexOffset := FSymbolIndexOffset + 4*FSymbolStringCount;
+    FResourceIndexOffset := FFormIndexOffset + 4*FFormCount;
+  end
+  else
     raise EInvalidImage.CreateRes(@SInvalidImage);
-
-  FFormCount := FStream.ReadInt32;
-  FStringGroupCount := FStream.ReadInt32;
-  FResourceCount := FStream.ReadInt32;
-
-  FFormNameOffset := FStream.Position;
-  FStringGroupNameOffset := FFormNameOffset + 16*FFormCount;
-  FResourceNameOffset := FStringGroupNameOffset + 16*FStringGroupCount;
 end;
 
 procedure TNtDelphiResource.CheckStream;
@@ -500,38 +709,406 @@ end;
 function TNtDelphiResource.FindForm(const name: String): TStream;
 var
   i, offsetValue, len: Integer;
+  left, right, mid: Integer;
   formOffset, formSize: Integer;
   formData: TBytes;
   str: String;
 begin
   CheckStream;
-  FStream.Position := FFormNameOffset;
 
-  for i := 0 to FFormCount - 1 do
+  if FVersion = nr1 then
   begin
-    offsetValue := FStream.ReadInt32;
-    len := FStream.ReadInt32 div 2;
+    FStream.Position := FFormNameOffset;
 
-    str := FStream.ReadString(FOffset + offsetValue, len);
-
-    if str = name then
+    for i := 0 to FFormCount - 1 do
     begin
-      FStream.Position := FFormNameOffset + 8*FFormCount + 8*i;
+      offsetValue := FStream.ReadInt32;
+      len := FStream.ReadInt32 div 2;
+
+      str := FStream.ReadString(FOffset + offsetValue, len);
+
+      if str = name then
+      begin
+        FStream.Position := FFormNameOffset + 8*FFormCount + 8*i;
+        formOffset := FOffset + FStream.ReadInt32;
+        formSize := FStream.ReadInt32;
+
+        FStream.Position := formOffset;
+        formData := FStream.ReadBytes(formSize);
+
+        Result := TMemoryStream.Create;
+        Result.Write(formData[0], formSize);
+        Result.Position := 0;
+        Exit;
+      end;
+    end;
+  end
+  else
+  begin
+    // Use the binary search to find the form
+    left := 0;
+    right := FFormCount - 1;
+
+    while left <= right do
+    begin
+      mid := (left + right) div 2;
+
+      FStream.Position := FFormIndexOffset + 4*mid;
       formOffset := FOffset + FStream.ReadInt32;
-      formSize := FStream.ReadInt32;
 
       FStream.Position := formOffset;
-      formData := FStream.ReadBytes(formSize);
+      str := FStream.ReadString;
 
-      Result := TMemoryStream.Create;
-      Result.Write(formData[0], formSize);
-      Result.Position := 0;
-      Exit;
+      if str = name then
+      begin
+        FStream.Position := formOffset;
+        FStream.ReadString;
+        formSize := FStream.ReadInt32;
+        formData := FStream.ReadBytes(formSize);
+
+        Result := TMemoryStream.Create;
+        Result.Write(formData[0], formSize);
+        Result.Position := 0;
+        Exit;
+      end
+      else if str < name then
+        left := mid + 1
+      else
+        right := mid - 1;
     end;
   end;
 
   Result := nil;
 end;
+
+function TNtDelphiResource.FindResource(const id: String): TStream;
+var
+  i, offsetValue, len: Integer;
+  left, right, mid: Integer;
+  resourceOffset, resourceSize: Integer;
+  resourceData: TBytes;
+  str: String;
+begin
+  CheckStream;
+
+  if FVersion = nr1 then
+  begin
+    FStream.Position := FResourceNameOffset;
+
+    for i := 0 to FResourceCount - 1 do
+    begin
+      offsetValue := FStream.ReadInt32;
+      len := FStream.ReadInt32 div 2;
+
+      str := FStream.ReadString(FOffset + offsetValue, len);
+
+      if str = id then
+      begin
+        FStream.Position := FResourceNameOffset + 8*FResourceCount + 8*i;
+        resourceOffset := FOffset + FStream.ReadInt32;
+        resourceSize := FStream.ReadInt32;
+
+        FStream.Position := resourceOffset;
+        resourceData := FStream.ReadBytes(resourceSize);
+
+        Result := TMemoryStream.Create;
+        Result.Write(resourceData[0], resourceSize);
+        Result.Position := 0;
+        Exit;
+      end;
+    end;
+  end
+  else
+  begin
+    // Use the binary search to find the resource
+    left := 0;
+    right := FResourceCount - 1;
+
+    while left <= right do
+    begin
+      mid := (left + right) div 2;
+
+      FStream.Position := FResourceIndexOffset + 4*mid;
+      resourceOffset := FOffset + FStream.ReadInt32;
+
+      FStream.Position := resourceOffset;
+      str := FStream.ReadString;
+
+      if str = id then
+      begin
+        FStream.Position := resourceOffset;
+        FStream.ReadString;
+        resourceSize := FStream.ReadInt32;
+        resourceData := FStream.ReadBytes(resourceSize);
+
+        Result := TMemoryStream.Create;
+        Result.Write(resourceData[0], resourceSize);
+        Result.Position := 0;
+        Exit;
+      end
+      else if str < id then
+        left := mid + 1
+      else
+        right := mid - 1;
+    end;
+  end;
+
+  Result := nil;
+end;
+
+class function TNtDelphiResource.ParseKey(name: String; var unitName, itemName: String): Boolean;
+
+  function IsDigit(c: Char): Boolean;
+  begin
+    Result := (c >= '0') and (c <= '9');
+  end;
+
+  function GetNumber(var str: String): Integer;
+  begin
+    Result := 0;
+
+    while (str <> '') and IsDigit(str[1]) do
+    begin
+      Result := 10*Result + (Ord(str[1]) - Ord('0'));
+      Delete(str, 1, 1);
+    end;
+  end;
+
+  function Take(var str: String; first, count: Integer): String;
+  var
+    temp: String;
+  begin
+    Result := System.Copy(str, first, count);
+    temp := System.Copy(str, 1, first - 1);
+
+    if first + count <= Length(str) then
+      temp := temp + System.Copy(str, first + count, Length(str));
+
+    str := temp;
+  end;
+
+  function TakeLeft(var str: String; count: Integer): String;
+  begin
+    Result := Take(str, 1, count);
+  end;
+
+  function Check(const tag: String): Boolean;
+  var
+    p: Integer;
+  begin
+    p := Pos(tag, name);
+    Result := p > 0;
+
+    if Result then
+      Delete(name, 1, Length(tag) + p - 1);
+  end;
+
+const
+  RSRC_C = '__rsrc_N';
+  RSTR_ZN_C = '__rstr__ZN';
+  RSTR_ZZN_C = '__rstr__ZZN';
+var
+  ignoreRest: Boolean;
+  len: Integer;
+  str: String;
+begin
+  // ___rstr__ZN3Fmx6Consts10_SEditCopyE   00AA39A6
+  // ___rstr__ZN6System9Rtlconsts24_SCentimetersDescriptionE
+  // ___rstr__ZN6System9Rtlconsts24_SConvUnknownDescriptionE
+  // ___rstr__ZN5Unit16_SStr1E
+  // ___rstr__ZZN5Unit13OneEiE5SStr1
+  // ___rstr__ZZN5Unit13OneEvE5SStr1
+  // ___rstr__ZZN5Unit13OneEiN6System13UnicodeStringEE5SStr1
+  // ___rstr__ZZN5Unit16TForm110FormCreateEPN6System7TObjectEE4SStr
+  // ___rstr__ZZN5Unit16TForm110FormCreateEPN6System7TObjectEE13SThisIsSample
+  unitName := '';
+  itemName := '';
+
+  if Check(RSRC_C) then
+  begin
+    Result := True;
+
+    len := GetNumber(name);
+    unitName := TakeLeft(name, len);
+
+    itemName := name;
+    Delete(itemName, Length(itemName), 1);
+  end
+  else if Check(RSTR_ZN_C) then
+  begin
+    // ___rstr__ZN5Unit16_SStr1E
+    Result := True;
+
+    while (name <> '') and (name[1] <> 'E') do
+    begin
+      len := GetNumber(name);
+      str := TakeLeft(name, len);
+
+      if name[1] = 'E' then
+      begin
+        itemName := str;
+
+        if (itemName[1] = '_') then
+          Delete(itemName, 1, 1);
+
+        Break;
+      end
+      else
+      begin
+        if unitName <> '' then
+          unitName := unitName + '.';
+
+        unitName := unitName + str;
+      end;
+    end;
+  end
+  else if Check(RSTR_ZZN_C) then
+  begin
+    // ___rstr__ZZN5Unit13OneEiE5SStr1
+    // ___rstr__ZZN5Unit13OneEvE5SStr1
+    // ___rstr__ZZN5Unit13OneEiN6System13UnicodeStringEE5SStr1
+    // ___rstr__ZZN5Unit16TForm110FormCreateEPN6System7TObjectEE4SStr
+    // ___rstr__ZZN5Unit16TForm110FormCreateEPN6System7TObjectEE13SThisIsSample
+    Result := True;
+    str := '';
+    ignoreRest := False;
+
+    while (name <> '') do
+    begin
+      if name[1] = 'E' then
+      begin
+        ignoreRest := True;
+
+        Delete(name, 1, 1);
+        str := '';
+
+        while (name <> '') and not IsDigit(name[1]) do
+        begin
+          str := str + name[1];
+          Delete(name, 1, 1);
+        end;
+
+        if str = 'E' then
+          str := '';
+      end
+      else
+      begin
+        len := GetNumber(name);
+        str := TakeLeft(name, len);
+      end;
+
+      if name = '' then
+      begin
+        itemName := str;
+
+        if (itemName[1] = '_') then
+          Delete(itemName, 1, 1);
+
+        Break;
+      end
+      else if (str <> '') and not ignoreRest and (unitName = '') then
+      begin
+        if unitName <> '' then
+          unitName := unitName + '.';
+
+        unitName := unitName + str;
+      end;
+    end;
+  end
+  else
+  begin
+    Result := False;
+  end;
+end;
+
+{$IFDEF DELPHIDX4}
+
+{$IF defined(EXTERNALLINKER)}
+function TNtDelphiResource.FindStringSymbol(const unitName, itemName: String): String;
+var
+  id, thisId: String;
+  left, right, mid: Integer;
+begin
+  id := unitName + '.' + itemName;
+
+  // Use the binary search to find the string
+  left := 0;
+  right := FSymbolStringCount - 1;
+
+  while left <= right do
+  begin
+    mid := (left + right) div 2;
+
+    FStream.Position := FSymbolIndexOffset + 4*mid;
+
+    FStream.Position := FOffset + FStream.ReadInt32;
+    thisId := FStream.ReadString;
+
+    if thisId = id then
+    begin
+      FStream.Position := FOffset + FStream.ReadInt32;
+      Result := FStream.ReadString;
+      Exit;
+    end
+    else if thisId < id then
+      left := mid + 1
+    else
+      right := mid - 1;
+  end;
+
+  Result := '';
+end;
+{$ELSE}
+function TNtDelphiResource.FindStringWin(id: Word): String;
+var
+  thisId: Word;
+  left, right, mid: Integer;
+begin
+  // Use the binary search to find the string
+  left := 0;
+  right := {$IFDEF WIN32}FWin32StringCount{$ELSE}FWin64StringCount{$ENDIF} - 1;
+
+  while left <= right do
+  begin
+    mid := (left + right) div 2;
+
+    FStream.Position := {$IFDEF WIN32}FWin32IndexOffset{$ELSE}FWin64IndexOffset{$ENDIF} + 4*mid;
+
+    FStream.Position := FOffset + FStream.ReadInt32;
+    thisId := FStream.ReadWord;
+
+    if thisId = id then
+    begin
+      FStream.Position := FOffset + FStream.ReadInt32;
+      Result := FStream.ReadString;
+      Exit;
+    end
+    else if thisId < id then
+      left := mid + 1
+    else
+      right := mid - 1;
+  end;
+
+  Result := '';
+end;
+{$IFEND}
+
+function TNtDelphiResource.FindString(resStringRec: PResStringRec): String;
+{$IF defined(EXTERNALLINKER)}
+var
+  unitName, itemName: String;
+{$IFEND}
+begin
+  CheckStream;
+
+{$IF defined(EXTERNALLINKER)}
+  ParseKey(String(resStringRec.Key), unitName, itemName);
+  Result := FindStringSymbol(unitName, itemName);
+{$ELSE}
+  Result := FindStringWin(resStringRec.Identifier);
+{$IFEND}
+end;
+{$ENDIF}
 
 function TNtDelphiResource.FindString(const original: String; id: String; const group: String): String;  //FI:C103
 var
@@ -585,42 +1162,6 @@ begin
   Result := original;
 end;
 
-function TNtDelphiResource.FindResource(const id: String): TStream;
-var
-  i, offsetValue, len: Integer;
-  resourceOffset, resourceSize: Integer;
-  resourceData: TBytes;
-  str: String;
-begin
-  CheckStream;
-  FStream.Position := FResourceNameOffset;
-
-  for i := 0 to FResourceCount - 1 do
-  begin
-    offsetValue := FStream.ReadInt32;
-    len := FStream.ReadInt32 div 2;
-
-    str := FStream.ReadString(FOffset + offsetValue, len);
-
-    if str = id then
-    begin
-      FStream.Position := FResourceNameOffset + 8*FResourceCount + 8*i;
-      resourceOffset := FOffset + FStream.ReadInt32;
-      resourceSize := FStream.ReadInt32;
-
-      FStream.Position := resourceOffset;
-      resourceData := FStream.ReadBytes(resourceSize);
-
-      Result := TMemoryStream.Create;
-      Result.Write(resourceData[0], resourceSize);
-      Result.Position := 0;
-      Exit;
-    end;
-  end;
-
-  Result := nil;
-end;
-
 
 // TNtDelphiResources
 
@@ -660,23 +1201,55 @@ begin
   inherited;
 end;
 
-function TNtDelphiResources.GetOriginal(const id: String): String;
+function TNtDelphiResources.FindLanguage(const id: String): TNtResourceLanguage;
 var
   i: Integer;
-  language: TNtResourceLanguage;
 begin
   for i := 0 to FLanguageNames.Count - 1 do
   begin
-    language := FLanguageNames[i];
+    Result := FLanguageNames[i];
 
-    if language.Id = id then
-    begin
-      Result := language.Original;
+    if Result.Id = id then
       Exit;
-    end;
   end;
 
-  Result := '';
+  Result := nil;
+end;
+
+function TNtDelphiResources.GetOriginal(const id: String): String;
+var
+  language: TNtResourceLanguage;
+begin
+  language := FindLanguage(id);
+
+  if language <> nil then
+    Result := language.Original
+  else
+    Result := '';
+end;
+
+function TNtDelphiResources.GetNative(const id: String): String;
+var
+  language: TNtResourceLanguage;
+begin
+  language := FindLanguage(id);
+
+  if language <> nil then
+    Result := language.Native
+  else
+    Result := '';
+end;
+
+function TNtDelphiResources.GetLocalized(const id: String): String;
+var
+  language: TNtResourceLanguage;
+begin
+  language := FindLanguage(id);
+
+  if language <> nil then
+    Result := language.Localized
+  else
+    Result := '';
 end;
 
 function TNtDelphiResources.GetLanguageImage(const id: String): String;
@@ -702,6 +1275,17 @@ function TNtDelphiResources._T(const original, id: String): TNtResourceLanguage;
 begin
   Result := TNtResourceLanguage.Create;
   Result.FOriginal := original;
+  Result.FId := id;
+
+  FLanguageNames.Add(Result);
+end;
+
+function TNtDelphiResources.Add(const original, native, localized, id: String): TNtResourceLanguage;
+begin
+  Result := TNtResourceLanguage.Create;
+  Result.FOriginal := original;
+  Result.FNative := native;
+  Result.FLocalized := localized;
   Result.FId := id;
 
   FLanguageNames.Add(Result);
@@ -901,7 +1485,7 @@ procedure TNtDelphiResources.Load;
     if not CompareMem(@NTRES_MAGIC_C, @header[0], Length(NTRES_MAGIC_C)) then
       raise EInvalidImage.CreateRes(@SInvalidImage);
 
-    FStream.ReadInt32;  // Version number
+    FVersion := TNtResourceVersion(FStream.ReadInt32);
 
     // Read language ids
     idCount := FStream.ReadInt32;
@@ -1021,6 +1605,18 @@ begin
     Result := nil;
 end;
 
+{$IFDEF DELPHIDX4}
+function TNtDelphiResources.GetString(resStringRec: PResStringRec): String;
+begin
+  CheckLoad;
+
+  if Current <> nil then
+    Result := Current.FindString(resStringRec)
+  else
+    Result := '';
+end;
+{$ENDIF}
+
 function TNtDelphiResources.GetString(const original, id, group: String): String;
 begin
   CheckLoad;
@@ -1030,6 +1626,24 @@ begin
   else
     Result := original;
 end;
+
+{$IFDEF DELPHIDX4}
+function TNtDelphiResources.GetStringInLanguage(
+  const language: String;
+  resStringRec: PResStringRec): String;
+var
+  index: Integer;
+begin
+  CheckLoad;
+
+  index := Find(language);
+
+  if index >= 0 then
+    Result := Languages[index].FindString(resStringRec)
+  else
+    Result := '';
+end;
+{$ENDIF}
 
 function TNtDelphiResources.GetStringInLanguage(
   const language: String;
@@ -1064,6 +1678,18 @@ begin
 
   Result := NtResources;
 end;
+
+{$IFDEF DELPHIDX4}
+function TranslateResourceString(resStringRec: PResStringRec): String;
+begin
+  Result := _T(resStringRec);
+end;
+
+procedure InitializeResourceStringTranslation;
+begin
+  LoadResStringFunc := TranslateResourceString;
+end;
+{$ENDIF}
 
 initialization
   TNtDelphiResources.GetResources;

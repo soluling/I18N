@@ -1,2 +1,2 @@
 del *.zip
-zip -R XLIFF *.ntp *.xlf -x */fi/*
+zip -R XLIFF *.md *.ntp *.xlf -x */fi/*

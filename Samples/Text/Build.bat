@@ -1,2 +1,2 @@
 del *.zip
-zip -R Text *.ntp *.txt
+zip -R Text *.md *.ntp *.txt

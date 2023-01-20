@@ -1,12 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4116DE74-7704-452A-9FDB-EE5E0334AE09" created="20160815T022120Z" lastmodified="20200317T003906Z" version="1.0.714" stringid="7">
+<project id="4116DE74-7704-452A-9FDB-EE5E0334AE09" created="20160815T022120Z" lastmodified="20221231T023530Z" version="1.0.972" stringid="1281">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="TreeView.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\TreeView\TreeView.dproj" original="en" library="dlFireMonkey">
-    <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
+  <node class="TDelphiProjectSource" name="TreeView.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\TreeView\TreeView.dproj" original="en" lastmodified="20221231T023530Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+    <node class="TDelphiFormFolder" name="RCData" created="20221231T023246Z">
+      <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="clouds" resname="clouds" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="dvclal" resname="dvclal" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="fmux" resname="fmux" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="gnomestyle" resname="gnomestyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="ios13darkstyle" resname="ios13darkstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="iosstyle" resname="iosstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="lionstyle" resname="lionstyle" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="ntlangres" resname="ntlangres" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="osxstyle" resname="osxstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="packageinfo" resname="packageinfo" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" excluded="1"/>
+      <node class="TDelphiFormNode" name="tform1" type="TForm1" resname="tform1" objectname="Form1">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="1">
+        <row id="Caption" si="1158">
           <value>Sample</value>
           <lang id="fi">Esimerkki</lang>
         </row>
@@ -14,19 +26,19 @@
         <row id="ClientWidth">362</row>
         <item name="TreeView1" type="TTreeView">
           <item name="TreeViewItem1" type="TTreeViewItem">
-            <row id="Text" si="2">
+            <row id="Text" si="1159">
               <value>One</value>
               <lang id="fi" time="20160815T022139Z">Yksi</lang>
             </row>
             <item name="TreeViewItem2" type="TTreeViewItem">
-              <row id="Text" si="3">
+              <row id="Text" si="1160">
                 <value>Two</value>
                 <lang id="fi" time="20160815T022141Z">Kaksi</lang>
               </row>
             </item>
           </item>
           <item name="TreeViewItem3" type="TTreeViewItem">
-            <row id="Text" si="4">
+            <row id="Text" si="1161">
               <value>Three</value>
               <lang id="fi" time="20160815T022144Z">Kolme</lang>
             </row>
@@ -50,25 +62,38 @@
           U2l6ZS5QbGF0Zm9ybURlZmF1bHQICFRhYk9yZGVyAgEAAAA=
         </data>
       </node>
+      <node class="TWindowsBinaryNode" name="ubuntustyle" resname="ubuntustyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN10STYLE" resname="WIN10STYLE" langid="1033" excluded="1"/>
     </node>
-    <node class="TDelphiProjectStringFolder" name="Strings">
-      <node class="TDelphiStringNode" name="_">
-        <row id="SOne" si="5">
+    <node class="TWindowsStringFolder" name="String" created="20221231T023246Z">
+      <node class="TWindowsStringNode" name="Androidapi.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Fmx.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
+      <node class="TWindowsStringNode" name="Macapi.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Regularexpressionsconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Rtlconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SOne" si="1162">
           <value>One</value>
           <lang id="fi" time="20160815T022139Z">Yksi</lang>
         </row>
-        <row id="STwo" si="6">
+        <row id="STwo" si="1163">
           <value>Two</value>
           <lang id="fi" time="20160815T022141Z">Kaksi</lang>
         </row>
-        <row id="SThree" si="7">
+        <row id="SThree" si="1164">
           <value>Three</value>
           <lang id="fi" time="20160815T022144Z">Kolme</lang>
         </row>
       </node>
     </node>
   </node>
-  <rules kind="crFireMonkey">
+  <rules kind="crFmx">
     <rule component="TListView" property="*ClassName"/>
   </rules>
   <terminology>
@@ -80,13 +105,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

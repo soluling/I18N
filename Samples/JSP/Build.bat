@@ -1,2 +1,2 @@
 del *.zip
-zip -R JSP *.ntp *.jsp *.png *.htm* *.properties -x .metadata/*
+zip -R JSP *.md *.ntp *.jsp *.png *.htm* *.properties -x .metadata/*

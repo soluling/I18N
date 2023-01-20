@@ -1,0 +1,16 @@
+<Window
+  x:Class="Tutorial.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  mc:Ignorable="d">
+
+  <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+    <TextBlock>Click the button below</TextBlock>
+    <Button x:Name="myButton" Click="myButton_Click">Click Me</Button>
+    <TextBlock x:Name="text2" Text="dummy" />
+    <TextBlock x:Name="text3" />
+    <TextBlock x:Name="text4" />
+  </StackPanel>
+</Window>

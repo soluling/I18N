@@ -1,2 +1,2 @@
 del *.zip
-zip -R WebVTT *.ntp *.vtt
+zip -R WebVTT *.md *.ntp *.vtt

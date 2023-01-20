@@ -30,7 +30,9 @@ implementation
 {$R *.fmx}
 
 uses
+  NtBase,
   NtResource,
+  NtResourceString,
   FMX.NtTranslator;
 
 procedure TForm1.FormCreate(Sender: TObject);
@@ -43,12 +45,18 @@ procedure TForm1.FormCreate(Sender: TObject);
     item.Text := str;
   end;
 
+resourcestring
+  SOne = 'One';
+  STwo = 'Two';
+  SThree = 'Three';
 begin
   _T(Self);
 
-  Add(_T('One', 'SOne'));
-  Add(_T('Two', 'STwo'));
-  Add(_T('Three', 'SThree'));
+  Add(SOne);
+  Add(STwo);
+  Add(SThree);
 end;
 
+initialization
+  //DefaultLocale := 'fi';
 end.

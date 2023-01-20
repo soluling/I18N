@@ -58,10 +58,10 @@ namespace Soluling.Forms
     /// <summary>
     /// Initializes a new instance of the SelectLanguage class.
     /// </summary>
-    public SelectLanguage()
+    public SelectLanguage(string originalLanguage)
     {
       InitializeComponent();
-      Populate(Language.OriginalId);
+      Populate(originalLanguage);
     }
 
     /// <summary>
@@ -117,9 +117,17 @@ namespace Soluling.Forms
     {
       CultureInfo[] languages = Language.GetAvailableLanguages();
 
-      cultureInfos = new CultureInfo[languages.Length + 1];
+      var len = languages.Length;
+
+      if (originalLanguage != "")
+        len++;
+
+      cultureInfos = new CultureInfo[len];
+
       listBox.BeginUpdate();
-      AddLanguage(new CultureInfo(originalLanguage));
+
+      if (originalLanguage != "")
+        AddLanguage(new CultureInfo(originalLanguage));
 
       for (int i = 0; i < languages.Length; i++)
         AddLanguage(languages[i]);
@@ -152,7 +160,29 @@ namespace Soluling.Forms
     /// </example>
     static public bool Select(LanguageName displayLanguage = LanguageName.Both)
     {
-      SelectLanguage dialog = new SelectLanguage();
+      return Select(Soluling.Language.DefaultOriginalId, displayLanguage);
+    }
+
+    /// <summary>
+    /// Shows language dialog that users can use to select a new language. If the user selects a language and clicks OK the method translates all current user interface (e.g. all forms) to the new language.
+    /// </summary>
+    /// <param name="originalLanguage">Language used in the original application. If empty original language is not shown.</param>
+    /// <param name="displayLanguage">The type of the display language.</param>
+    /// <returns><b>true</b> is user has selected a new language. <b>false</b> is user has clicked Cancel button.</returns>
+    /// <example>
+    /// <para>
+    /// The following example shows the language dialog when user clicks the language button.
+    /// </para>
+    /// <code>
+    /// private void languageButton_Click(object sender, EventArgs e)
+    /// {
+    ///   SelectLanguage.Select("en");
+    /// }    
+    /// </code>
+    /// </example>
+    static public bool Select(string originalLanguage, LanguageName displayLanguage = LanguageName.Both)
+    {
+      SelectLanguage dialog = new SelectLanguage(originalLanguage);
       dialog.DisplayLanguage = displayLanguage;
 
       if (dialog.ShowDialog() == DialogResult.OK)

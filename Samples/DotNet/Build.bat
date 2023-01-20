@@ -1,2 +1,2 @@
 del *.zip
-zip -R DotNet *.ntp *.sln *.csproj *.cs *.resx -x */obj/*
+zip -R DotNet *.md *.ntp *.sln *.csproj *.cs *.resx -x */obj/*

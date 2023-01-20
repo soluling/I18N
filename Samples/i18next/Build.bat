@@ -1,2 +1,2 @@
 del *.zip
-zip -R i18next *.ntp *.json
+zip -R i18next *.md *.ntp *.json

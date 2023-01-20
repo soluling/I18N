@@ -1,2 +1,2 @@
 del *.zip
-zip -R SQLCE *.ntp *.sql *.sdf
+zip -R SQLCE *.md *.ntp *.sql *.sdf

@@ -1,2 +1,2 @@
 del *.zip
-zip -R SQLServer *.ntp *.sql
+zip -R SQLServer *.md *.ntp *.sql

@@ -1,4 +1,4 @@
-del *.zip
+del *.md *.zip
 zip -R JSON *.ntp
 zip JSON Color\*.json
 zip JSON Context\*.json

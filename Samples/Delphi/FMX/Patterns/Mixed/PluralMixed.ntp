@@ -1,159 +1,98 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8B4E9D3E-0163-49D8-B8A4-F39D517267A0" created="20170804T231623Z" lastmodified="20200209T162851Z" version="1.0.691" stringid="33">
+<project id="8B4E9D3E-0163-49D8-B8A4-F39D517267A0" created="20170804T231623Z" lastmodified="20221231T021626Z" version="1.0.972" stringid="1341">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="PluralMixed.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Mixed\PluralMixed.dproj" original="en" library="dlFireMonkey">
-    <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDirectoryFolder" name="..">
-        <node class="TDirectoryFolder" name="..">
-          <node class="TDirectoryFolder" name="..">
-            <node class="TDirectoryFolder" name="..">
-              <node class="TDirectoryFolder" name="..">
-                <node class="TDirectoryFolder" name="Library">
-                  <node class="TDirectoryFolder" name="Delphi">
-                    <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
-                      <row id="Left">0</row>
-                      <row id="Top">0</row>
-                      <row id="Caption" si="1">
-                        <value>Select Language</value>
-                        <lang id="fi" time="20170804T231738Z">Valitse kieli</lang>
-                      </row>
-                      <row id="ClientHeight">193</row>
-                      <row id="ClientWidth">291</row>
-                      <item name="LanguageList" type="TListBox">
-                        <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
-                        <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
-                      </item>
-                      <item name="OkButton" type="TButton">
-                        <row id="Text" si="4">
-                          <value>OK</value>
-                          <lang id="fi" time="20170804T231740Z">OK</lang>
-                        </row>
-                      </item>
-                      <item name="CancelButton" type="TButton">
-                        <row id="Text" si="5">
-                          <value>Cancel</value>
-                          <lang id="fi" time="20170804T231743Z">Peru</lang>
-                        </row>
-                      </item>
-                      <item name="Resources1" type="TStyleBook">
-                        <row id="Left">231</row>
-                        <row id="Top">85</row>
-                      </item>
-                      <data>
-                        VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcGU2luZ2xlB0Nh
-                        cHRpb24GD1NlbGVjdCBMYW5ndWFnZQxDbGllbnRIZWlnaHQDwQALQ2xpZW50V2lkdGgDIwEJU3R5bGVCb29rBwpSZXNvdXJjZXMx
-                        EEZvcm1GYWN0b3IuV2lkdGgDQAERRm9ybUZhY3Rvci5IZWlnaHQD4AESRm9ybUZhY3Rvci5EZXZpY2VzCwdEZXNrdG9wBmlQaG9u
-                        ZQRpUGFkAApPbkFjdGl2YXRlBwxGb3JtQWN0aXZhdGUIT25DcmVhdGUHCkZvcm1DcmVhdGUHT25DbG9zZQcJRm9ybUNsb3NlE0Rl
-                        c2lnbmVyTWFzdGVyU3R5bGUCAAAIVExpc3RCb3gMTGFuZ3VhZ2VMaXN0ClBvc2l0aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5Z
-                        BQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwQZAC1NpemUuSGVpZ2h0BQAAAAAAAACxBkAUU2l6ZS5QbGF0Zm9ybURlZmF1
-                        bHQIC1N0eWxlTG9va3VwBgxsaXN0Ym94c3R5bGUIVGFiT3JkZXICAApPbkRibENsaWNrBxRMYW5ndWFnZUxpc3REYmxDbGljaxJE
-                        aXNhYmxlRm9jdXNFZmZlY3QJG0RlZmF1bHRJdGVtU3R5bGVzLkl0ZW1TdHlsZRIAAAAAIkRlZmF1bHRJdGVtU3R5bGVzLkdyb3Vw
-                        SGVhZGVyU3R5bGUSAAAAACJEZWZhdWx0SXRlbVN0eWxlcy5Hcm91cEZvb3RlclN0eWxlEgAAAAAOVmlld3BvcnQuV2lkdGgFAAAA
-                        AAAAAL0GQA9WaWV3cG9ydC5IZWlnaHQFAAAAAAAAAK0GQAAAB1RCdXR0b24IT2tCdXR0b24HRGVmYXVsdAkLTW9kYWxSZXN1bHQC
-                        AQpQb3NpdGlvbi5YBQAAAAAAAADQBkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAJYFQAtTaXplLkhl
-                        aWdodAUAAAAAAAAAsANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYOT2tCdXR0b25TdHlsZTEIVGFiT3JkZXIC
-                        AQRUZXh0BgJPSwAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBkNhbmNlbAkLTW9kYWxSZXN1bHQCAgpQb3NpdGlvbi5YBQAAAAAAAADQ
-                        BkAKUG9zaXRpb24uWQUAAAAAAAAAoARAClNpemUuV2lkdGgFAAAAAAAAAJIFQAtTaXplLkhlaWdodAUAAAAAAAAAsANAFFNpemUu
-                        UGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYSQ2FuY2VsQnV0dG9uU3R5bGUxCFRhYk9yZGVyAgIEVGV4dAYGQ2FuY2VsAAAK
-                        VFN0eWxlQm9vawpSZXNvdXJjZXMxBlN0eWxlcw4BDFJlc291cmNlc0JpbgpIAwAARk1YX1NUWUxFIDIuNQEGCkN1c3RvbUl0ZW0D
-                        KgMAVFBGMAdUTGF5b3V0AAlTdHlsZU5hbWUGCkN1c3RvbUl0ZW0FQWxpZ24HBkNlbnRlcgxQYWRkaW5nLkxlZnQFAAAAAAAAAMAA
-                        QAtQYWRkaW5nLlRvcAUAAAAAAAAAwABADVBhZGRpbmcuUmlnaHQFAAAAAAAAAMAAQA5QYWRkaW5nLkJvdHRvbQUAAAAAAAAAwABA
-                        ClNpemUuV2lkdGgFAAAAAAAAAJQHQAtTaXplLkhlaWdodAUAAAAAAAAAiARAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAhUYWJPcmRl
-                        cgIAAAZUSW1hZ2UACVN0eWxlTmFtZQYEaWNvbg5NdWx0aVJlc0JpdG1hcA4BBVdpZHRoAgEGSGVpZ2h0AgEDUE5HCmMAAACJUE5H
-                        DQoaCgAAAA1JSERSAAAAAQAAAAEIBgAAAB8VxIkAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAA1JREFUGFdjYGBgYAAA
-                        AAUAAYoz4wAAAAAASUVORK5CYIIAAQVTY2FsZQUAAAAAAAAAgABAAAAFQWxpZ24HCE1vc3RMZWZ0B0hpdFRlc3QIDU1hcmdpbnMu
-                        UmlnaHQFAAAAAAAAAMAAQApQb3NpdGlvbi5YBQAAAAAAAADAAEAKUG9zaXRpb24uWQUAAAAAAAAAwABAClNpemUuV2lkdGgFAAAA
-                        AAAAAOADQAtTaXplLkhlaWdodAUAAAAAAAAA4ANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAAABVRUZXh0AAlTdHlsZU5hbWUGBHRl
-                        eHQFQWxpZ24HBExlZnQHQW5jaG9ycwsAB0hpdFRlc3QIClBvc2l0aW9uLlgFAAAAAAAAAIgEQApQb3NpdGlvbi5ZBQAAAAAAAADA
-                        AEAKU2l6ZS5XaWR0aAUAAAAAAACAgwdAC1NpemUuSGVpZ2h0BQAAAAAAAADgA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIBFRleHQG
-                        BFRleHQVVGV4dFNldHRpbmdzLldvcmRXcmFwCBZUZXh0U2V0dGluZ3MuSG9yekFsaWduBwdMZWFkaW5nAAAAAAAETGVmdAPnAANU
-                        b3ACVQAAAA==
-                      </data>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
+  <node class="TDelphiProjectSource" name="PluralMixed.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Mixed\PluralMixed.dproj" original="en" lastmodified="20221231T021626Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+    <node class="TWindowsBinaryFolder" name="0" st="0" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData" created="20221230T210920Z">
+      <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="clouds" resname="clouds" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="dvclal" resname="dvclal" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="fmux" resname="fmux" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="gnomestyle" resname="gnomestyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="ios13darkstyle" resname="ios13darkstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="iosstyle" resname="iosstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="lionstyle" resname="lionstyle" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="ntlangres" resname="ntlangres" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="osxstyle" resname="osxstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="packageinfo" resname="packageinfo" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" excluded="1"/>
+      <node class="TDelphiFormNode" name="tform1" type="TForm1" resname="tform1" objectname="Form1">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="6">
+        <row id="Caption" si="1198">
           <value>Plural Sample</value>
           <lang id="fi" time="20140430T074310Z">Monikko-esimerkki</lang>
         </row>
         <row id="ClientHeight">337</row>
         <row id="ClientWidth">500</row>
         <item name="NoPluralLabel" type="TLabel">
-          <row id="Text" si="7">
+          <row id="Text" si="1199">
             <value>A dynamic string without plural support:</value>
             <lang id="fi" time="20170723T235252Z">Dynaaminen merkkijono ilman monikkotukea:</lang>
           </row>
         </item>
         <item name="NoPluralLabel1" type="TLabel">
-          <row id="Text" si="8" excluded="2">dummy</row>
+          <row id="Text" si="1200" excluded="2">dummy</row>
         </item>
         <item name="NoPluralLabel2" type="TLabel">
-          <row id="Text" si="9" excluded="2">dummy</row>
+          <row id="Text" si="1201" excluded="2">dummy</row>
         </item>
         <item name="PluralLabel" type="TLabel">
-          <row id="Text" si="10">
+          <row id="Text" si="1202">
             <value>Using a proper plural enabled format function:</value>
             <lang id="fi" time="20170723T235317Z">Käyttää oikeaa monikkoa tukevaa format-funktiota:</lang>
           </row>
         </item>
         <item name="PluralLabel1" type="TLabel">
-          <row id="Text" si="11" excluded="2">dummy</row>
+          <row id="Text" si="1203" excluded="2">dummy</row>
         </item>
         <item name="PluralLabel2" type="TLabel">
-          <row id="Text" si="12" excluded="2">dummy</row>
+          <row id="Text" si="1204" excluded="2">dummy</row>
         </item>
         <item name="MultiPluralLabel" type="TLabel">
-          <row id="Text" si="13">
+          <row id="Text" si="1205">
             <value>You can have two or more plural enabled parameters:</value>
             <lang id="fi" time="20170723T235349Z">Voi käyttää kahta tai useampaa monikkoparametria:</lang>
           </row>
         </item>
         <item name="MultiPluralLabel1" type="TLabel">
-          <row id="Text" si="14" excluded="2">dummy</row>
+          <row id="Text" si="1206" excluded="2">dummy</row>
         </item>
         <item name="MultiPluralLabel2" type="TLabel">
-          <row id="Text" si="15" excluded="2">dummy</row>
+          <row id="Text" si="1207" excluded="2">dummy</row>
         </item>
         <item name="MultiPluralLabel3" type="TLabel">
-          <row id="Text" si="16" excluded="2">dummy</row>
+          <row id="Text" si="1208" excluded="2">dummy</row>
         </item>
         <item name="MultiPluralLabel4" type="TLabel">
-          <row id="Text" si="17" excluded="2">dummy</row>
+          <row id="Text" si="1209" excluded="2">dummy</row>
         </item>
         <item name="LanguageButton" type="TButton">
-          <row id="Text" si="18">
+          <row id="Text" si="1210">
             <value>Language...</value>
             <lang id="fi" time="20170804T232054Z">Kieli...</lang>
           </row>
         </item>
         <item name="NoPluralLabel0" type="TLabel">
-          <row id="Text" si="19" excluded="2">dummy</row>
+          <row id="Text" si="1211" excluded="2">dummy</row>
         </item>
         <item name="HomeLabel" type="TLabel">
-          <row id="Text" si="20">
+          <row id="Text" si="1212">
             <value>A home-brewed solution that works on English and few other languages:</value>
             <lang id="fi" time="20170723T235439Z">Kotitekoinen ratkaisu, joka toimii englannilla ja muutamalla muulla kielellä:</lang>
           </row>
         </item>
         <item name="HomeLabel0" type="TLabel">
-          <row id="Text" si="21" excluded="2">dummy</row>
+          <row id="Text" si="1213" excluded="2">dummy</row>
         </item>
         <item name="HomeLabel1" type="TLabel">
-          <row id="Text" si="22" excluded="2">dummy</row>
+          <row id="Text" si="1214" excluded="2">dummy</row>
         </item>
         <item name="HomeLabel2" type="TLabel">
-          <row id="Text" si="23" excluded="2">dummy</row>
+          <row id="Text" si="1215" excluded="2">dummy</row>
         </item>
         <item name="PluralLabel0" type="TLabel">
-          <row id="Text" si="24" excluded="2">dummy</row>
+          <row id="Text" si="1216" excluded="2">dummy</row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDVBsdXJhbCBTYW1wbGUMQ2xpZW50SGVpZ2h0A1EBC0NsaWVu
@@ -214,28 +153,105 @@
           b3JkV3JhcAgEVGV4dAYFZHVtbXkIVGFiT3JkZXICBgAAAA==
         </data>
       </node>
+      <node class="TDelphiFormNode" name="tntlanguagedialog" type="TNtLanguageDialog" resname="tntlanguagedialog" objectname="NtLanguageDialog">
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption" si="1193">
+          <value>Select Language</value>
+          <lang id="fi" time="20170804T231738Z">Valitse kieli</lang>
+        </row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="DefaultItemStyles.GroupHeaderStyle" si="1194" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupFooterStyle" si="1195" excluded="3"></row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Text" si="1196">
+            <value>OK</value>
+            <lang id="fi" time="20170804T231740Z">OK</lang>
+          </row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Text" si="1197">
+            <value>Cancel</value>
+            <lang id="fi" time="20170804T231743Z">Peru</lang>
+          </row>
+        </item>
+        <item name="Resources1" type="TStyleBook">
+          <row id="Left">231</row>
+          <row id="Top">85</row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcGU2luZ2xlB0Nh
+          cHRpb24GD1NlbGVjdCBMYW5ndWFnZQxDbGllbnRIZWlnaHQDwQALQ2xpZW50V2lkdGgDIwEJU3R5bGVCb29rBwpSZXNvdXJjZXMx
+          EEZvcm1GYWN0b3IuV2lkdGgDQAERRm9ybUZhY3Rvci5IZWlnaHQD4AESRm9ybUZhY3Rvci5EZXZpY2VzCwdEZXNrdG9wBmlQaG9u
+          ZQRpUGFkAApPbkFjdGl2YXRlBwxGb3JtQWN0aXZhdGUIT25DcmVhdGUHCkZvcm1DcmVhdGUHT25DbG9zZQcJRm9ybUNsb3NlE0Rl
+          c2lnbmVyTWFzdGVyU3R5bGUCAAAIVExpc3RCb3gMTGFuZ3VhZ2VMaXN0ClBvc2l0aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5Z
+          BQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwQZAC1NpemUuSGVpZ2h0BQAAAAAAAACxBkAUU2l6ZS5QbGF0Zm9ybURlZmF1
+          bHQIC1N0eWxlTG9va3VwBgxsaXN0Ym94c3R5bGUIVGFiT3JkZXICAApPbkRibENsaWNrBxRMYW5ndWFnZUxpc3REYmxDbGljaxJE
+          aXNhYmxlRm9jdXNFZmZlY3QJG0RlZmF1bHRJdGVtU3R5bGVzLkl0ZW1TdHlsZRIAAAAAIkRlZmF1bHRJdGVtU3R5bGVzLkdyb3Vw
+          SGVhZGVyU3R5bGUSAAAAACJEZWZhdWx0SXRlbVN0eWxlcy5Hcm91cEZvb3RlclN0eWxlEgAAAAAOVmlld3BvcnQuV2lkdGgFAAAA
+          AAAAAL0GQA9WaWV3cG9ydC5IZWlnaHQFAAAAAAAAAK0GQAAAB1RCdXR0b24IT2tCdXR0b24HRGVmYXVsdAkLTW9kYWxSZXN1bHQC
+          AQpQb3NpdGlvbi5YBQAAAAAAAADQBkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAJYFQAtTaXplLkhl
+          aWdodAUAAAAAAAAAsANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYOT2tCdXR0b25TdHlsZTEIVGFiT3JkZXIC
+          AQRUZXh0BgJPSwAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBkNhbmNlbAkLTW9kYWxSZXN1bHQCAgpQb3NpdGlvbi5YBQAAAAAAAADQ
+          BkAKUG9zaXRpb24uWQUAAAAAAAAAoARAClNpemUuV2lkdGgFAAAAAAAAAJIFQAtTaXplLkhlaWdodAUAAAAAAAAAsANAFFNpemUu
+          UGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYSQ2FuY2VsQnV0dG9uU3R5bGUxCFRhYk9yZGVyAgIEVGV4dAYGQ2FuY2VsAAAK
+          VFN0eWxlQm9vawpSZXNvdXJjZXMxBlN0eWxlcw4BDFJlc291cmNlc0JpbgpIAwAARk1YX1NUWUxFIDIuNQEGCkN1c3RvbUl0ZW0D
+          KgMAVFBGMAdUTGF5b3V0AAlTdHlsZU5hbWUGCkN1c3RvbUl0ZW0FQWxpZ24HBkNlbnRlcgxQYWRkaW5nLkxlZnQFAAAAAAAAAMAA
+          QAtQYWRkaW5nLlRvcAUAAAAAAAAAwABADVBhZGRpbmcuUmlnaHQFAAAAAAAAAMAAQA5QYWRkaW5nLkJvdHRvbQUAAAAAAAAAwABA
+          ClNpemUuV2lkdGgFAAAAAAAAAJQHQAtTaXplLkhlaWdodAUAAAAAAAAAiARAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAhUYWJPcmRl
+          cgIAAAZUSW1hZ2UACVN0eWxlTmFtZQYEaWNvbg5NdWx0aVJlc0JpdG1hcA4BBVdpZHRoAgEGSGVpZ2h0AgEDUE5HCmMAAACJUE5H
+          DQoaCgAAAA1JSERSAAAAAQAAAAEIBgAAAB8VxIkAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAA1JREFUGFdjYGBgYAAA
+          AAUAAYoz4wAAAAAASUVORK5CYIIAAQVTY2FsZQUAAAAAAAAAgABAAAAFQWxpZ24HCE1vc3RMZWZ0B0hpdFRlc3QIDU1hcmdpbnMu
+          UmlnaHQFAAAAAAAAAMAAQApQb3NpdGlvbi5YBQAAAAAAAADAAEAKUG9zaXRpb24uWQUAAAAAAAAAwABAClNpemUuV2lkdGgFAAAA
+          AAAAAOADQAtTaXplLkhlaWdodAUAAAAAAAAA4ANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAAABVRUZXh0AAlTdHlsZU5hbWUGBHRl
+          eHQFQWxpZ24HBExlZnQHQW5jaG9ycwsAB0hpdFRlc3QIClBvc2l0aW9uLlgFAAAAAAAAAIgEQApQb3NpdGlvbi5ZBQAAAAAAAADA
+          AEAKU2l6ZS5XaWR0aAUAAAAAAACAgwdAC1NpemUuSGVpZ2h0BQAAAAAAAADgA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIBFRleHQG
+          BFRleHQVVGV4dFNldHRpbmdzLldvcmRXcmFwCBZUZXh0U2V0dGluZ3MuSG9yekFsaWduBwdMZWFkaW5nAAAAAAAETGVmdAPnAANU
+          b3ACVQAAAA==
+        </data>
+      </node>
+      <node class="TWindowsBinaryNode" name="ubuntustyle" resname="ubuntustyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN10STYLE" resname="WIN10STYLE" langid="1033" excluded="1"/>
     </node>
-    <node class="TDelphiProjectStringFolder" name="Strings">
-      <node class="TDelphiStringNode" name="_">
-        <row id="%d file" class="TPatternRow" si="25">
+    <node class="TWindowsStringFolder" name="String" created="20221230T210920Z">
+      <node class="TWindowsStringNode" name="Androidapi.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Fmx.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
+      <node class="TWindowsStringNode" name="Macapi.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="Ntpattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Regularexpressionsconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Rtlconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SFile" class="TPatternRow" si="1222">
           <value>{0} file</value>
           <lang id="fi" time="20170804T232241Z">{0} tiedosto</lang>
         </row>
-        <row id="%d files" class="TPatternRow" si="26">
+        <row id="SFile1" class="TPatternRow" si="1223">
+          <value>{0} file</value>
+          <lang id="fi" time="20170804T232241Z">{0} tiedosto</lang>
+        </row>
+        <row id="SFile2" class="TPatternRow" si="1224">
           <value>{0} files</value>
           <lang id="fi" time="20170804T232245Z">{0} tiedostoa</lang>
         </row>
-        <row id="FilesPlural" class="TPatternRow" si="27">
+        <row id="SFilesPlural" class="TPatternRow" si="1225" scannedcomment="0: file count">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170804T232249Z">
+          <lang id="fi" rw="0" time="20221230T210946Z">
             <value>{0} tiedostoa</value>
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
         </row>
-        <row id="MessagePlural" changed="20180524T030045Z" class="TPatternRow" si="28">
+        <row id="SMessagePlural" class="TPatternRow" si="1226">
           <value startpattern="1">I have completed {0} {1}</value>
-          <prev startpattern="1">I have completed {0}</prev>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
           <pattern plural="pfOther" index="0">{0}</pattern>
@@ -252,23 +268,23 @@
             <pattern plural="pfOther" index="1">{0} vaiheesta</pattern>
           </lang>
         </row>
-        <row id="en" si="29">
+        <row id="SEnglish" si="1217">
           <value>English</value>
           <lang id="fi" time="20170804T232112Z">englanti</lang>
         </row>
-        <row id="fi" si="30">
+        <row id="SFinnish" si="1218">
           <value>Finnish</value>
           <lang id="fi" time="20170804T232152Z">suomi</lang>
         </row>
-        <row id="de" si="31">
+        <row id="SGerman" si="1219">
           <value>German</value>
           <lang id="fi" time="20170804T232154Z">saksa</lang>
         </row>
-        <row id="fr" si="32">
+        <row id="SFrench" si="1220">
           <value>French</value>
           <lang id="fi" time="20170804T232156Z">ranska</lang>
         </row>
-        <row id="ja" si="33">
+        <row id="SJapanese" si="1221">
           <value>Japanese</value>
           <lang id="fi" time="20170804T232158Z">japani</lang>
         </row>
@@ -278,7 +294,7 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <rules kind="crFireMonkey">
+  <rules kind="crFmx">
     <rule component="*" property="StyleLookup"/>
     <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
   </rules>
@@ -291,12 +307,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

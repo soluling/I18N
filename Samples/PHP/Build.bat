@@ -1,2 +1,2 @@
 del *.zip
-zip -R PHP *.ntp *.php *.png *.htm* *.po -x .metadata/*
+zip -R PHP *.md *.ntp *.php *.png *.htm* *.po -x .metadata/*

@@ -1,4 +1,4 @@
 del *.zip
-zip -R Word *.ntp
+zip -R Word *.md *.ntp
 zip Word *.docx
 zip Word Sport\*.docx

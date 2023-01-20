@@ -1,2 +1,2 @@
 del *.zip
-zip -R Wix *.ntp *.wixproj *.wxl *.wxs
+zip -R Wix *.md *.ntp *.wixproj *.wxl *.wxs

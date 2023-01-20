@@ -1,113 +1,50 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20200317T003816Z" version="1.0.714" stringid="16">
+<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20221231T022008Z" version="1.0.972" stringid="1280">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" library="dlFireMonkey">
-    <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDirectoryFolder" name=".." created="20160820T024247Z">
-        <node class="TDirectoryFolder" name="..">
-          <node class="TDirectoryFolder" name="..">
-            <node class="TDirectoryFolder" name="..">
-              <node class="TDirectoryFolder" name="..">
-                <node class="TDirectoryFolder" name="Library">
-                  <node class="TDirectoryFolder" name="Delphi">
-                    <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" objectname="NtLanguageDialog" filename="..\..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
-                      <row id="Left">0</row>
-                      <row id="Top">0</row>
-                      <row id="Caption" si="1">
-                        <value>Select Language</value>
-                        <lang id="fi" time="20160820T024259Z">Valitse kieli</lang>
-                      </row>
-                      <row id="ClientHeight">193</row>
-                      <row id="ClientWidth">291</row>
-                      <item name="LanguageList" type="TListBox">
-                        <row id="DefaultItemStyles.GroupHeaderStyle" si="2" excluded="3"></row>
-                        <row id="DefaultItemStyles.GroupFooterStyle" si="3" excluded="3"></row>
-                      </item>
-                      <item name="OkButton" type="TButton">
-                        <row id="Text" si="4">
-                          <value>OK</value>
-                          <lang id="fi" time="20160820T024250Z">OK</lang>
-                        </row>
-                      </item>
-                      <item name="CancelButton" type="TButton">
-                        <row id="Text" si="5">
-                          <value>Cancel</value>
-                          <lang id="fi" time="20160820T024252Z">Peru</lang>
-                        </row>
-                      </item>
-                      <item name="Resources1" type="TStyleBook" created="20170805T010447Z">
-                        <row id="Left">231</row>
-                        <row id="Top">85</row>
-                      </item>
-                      <data>
-                        VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcGU2luZ2xlB0Nh
-                        cHRpb24GD1NlbGVjdCBMYW5ndWFnZQxDbGllbnRIZWlnaHQDwQALQ2xpZW50V2lkdGgDIwEJU3R5bGVCb29rBwpSZXNvdXJjZXMx
-                        EEZvcm1GYWN0b3IuV2lkdGgDQAERRm9ybUZhY3Rvci5IZWlnaHQD4AESRm9ybUZhY3Rvci5EZXZpY2VzCwdEZXNrdG9wBmlQaG9u
-                        ZQRpUGFkAApPbkFjdGl2YXRlBwxGb3JtQWN0aXZhdGUIT25DcmVhdGUHCkZvcm1DcmVhdGUHT25DbG9zZQcJRm9ybUNsb3NlE0Rl
-                        c2lnbmVyTWFzdGVyU3R5bGUCAAAIVExpc3RCb3gMTGFuZ3VhZ2VMaXN0ClBvc2l0aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5Z
-                        BQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwQZAC1NpemUuSGVpZ2h0BQAAAAAAAACxBkAUU2l6ZS5QbGF0Zm9ybURlZmF1
-                        bHQIC1N0eWxlTG9va3VwBgxsaXN0Ym94c3R5bGUIVGFiT3JkZXICAApPbkRibENsaWNrBxRMYW5ndWFnZUxpc3REYmxDbGljaxJE
-                        aXNhYmxlRm9jdXNFZmZlY3QJG0RlZmF1bHRJdGVtU3R5bGVzLkl0ZW1TdHlsZRIAAAAAIkRlZmF1bHRJdGVtU3R5bGVzLkdyb3Vw
-                        SGVhZGVyU3R5bGUSAAAAACJEZWZhdWx0SXRlbVN0eWxlcy5Hcm91cEZvb3RlclN0eWxlEgAAAAAOVmlld3BvcnQuV2lkdGgFAAAA
-                        AAAAAL0GQA9WaWV3cG9ydC5IZWlnaHQFAAAAAAAAAK0GQAAAB1RCdXR0b24IT2tCdXR0b24HRGVmYXVsdAkLTW9kYWxSZXN1bHQC
-                        AQpQb3NpdGlvbi5YBQAAAAAAAADQBkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAJYFQAtTaXplLkhl
-                        aWdodAUAAAAAAAAAsANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYOT2tCdXR0b25TdHlsZTEIVGFiT3JkZXIC
-                        AQRUZXh0BgJPSwAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBkNhbmNlbAkLTW9kYWxSZXN1bHQCAgpQb3NpdGlvbi5YBQAAAAAAAADQ
-                        BkAKUG9zaXRpb24uWQUAAAAAAAAAoARAClNpemUuV2lkdGgFAAAAAAAAAJIFQAtTaXplLkhlaWdodAUAAAAAAAAAsANAFFNpemUu
-                        UGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYSQ2FuY2VsQnV0dG9uU3R5bGUxCFRhYk9yZGVyAgIEVGV4dAYGQ2FuY2VsAAAK
-                        VFN0eWxlQm9vawpSZXNvdXJjZXMxBlN0eWxlcw4BDFJlc291cmNlc0JpbgpIAwAARk1YX1NUWUxFIDIuNQEGCkN1c3RvbUl0ZW0D
-                        KgMAVFBGMAdUTGF5b3V0AAlTdHlsZU5hbWUGCkN1c3RvbUl0ZW0FQWxpZ24HBkNlbnRlcgxQYWRkaW5nLkxlZnQFAAAAAAAAAMAA
-                        QAtQYWRkaW5nLlRvcAUAAAAAAAAAwABADVBhZGRpbmcuUmlnaHQFAAAAAAAAAMAAQA5QYWRkaW5nLkJvdHRvbQUAAAAAAAAAwABA
-                        ClNpemUuV2lkdGgFAAAAAAAAAJQHQAtTaXplLkhlaWdodAUAAAAAAAAAiARAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAhUYWJPcmRl
-                        cgIAAAZUSW1hZ2UACVN0eWxlTmFtZQYEaWNvbg5NdWx0aVJlc0JpdG1hcA4BBVdpZHRoAgEGSGVpZ2h0AgEDUE5HCmMAAACJUE5H
-                        DQoaCgAAAA1JSERSAAAAAQAAAAEIBgAAAB8VxIkAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAA1JREFUGFdjYGBgYAAA
-                        AAUAAYoz4wAAAAAASUVORK5CYIIAAQVTY2FsZQUAAAAAAAAAgABAAAAFQWxpZ24HCE1vc3RMZWZ0B0hpdFRlc3QIDU1hcmdpbnMu
-                        UmlnaHQFAAAAAAAAAMAAQApQb3NpdGlvbi5YBQAAAAAAAADAAEAKUG9zaXRpb24uWQUAAAAAAAAAwABAClNpemUuV2lkdGgFAAAA
-                        AAAAAOADQAtTaXplLkhlaWdodAUAAAAAAAAA4ANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAAABVRUZXh0AAlTdHlsZU5hbWUGBHRl
-                        eHQFQWxpZ24HBExlZnQHQW5jaG9ycwsAB0hpdFRlc3QIClBvc2l0aW9uLlgFAAAAAAAAAIgEQApQb3NpdGlvbi5ZBQAAAAAAAADA
-                        AEAKU2l6ZS5XaWR0aAUAAAAAAACAgwdAC1NpemUuSGVpZ2h0BQAAAAAAAADgA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIBFRleHQG
-                        BFRleHQVVGV4dFNldHRpbmdzLldvcmRXcmFwCBZUZXh0U2V0dGluZ3MuSG9yekFsaWduBwdMZWFkaW5nAAAAAAAETGVmdAPnAANU
-                        b3ACVQAAAA==
-                      </data>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
+  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" lastmodified="20221231T022008Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+    <node class="TDelphiFormFolder" name="RCData" created="20221230T211555Z">
+      <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="clouds" resname="clouds" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="dvclal" resname="dvclal" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="fmux" resname="fmux" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="gnomestyle" resname="gnomestyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="ios13darkstyle" resname="ios13darkstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="iosstyle" resname="iosstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="lionstyle" resname="lionstyle" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="ntlangres" resname="ntlangres" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="osxstyle" resname="osxstyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="packageinfo" resname="packageinfo" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" st="0" excluded="1"/>
+      <node class="TDelphiFormNode" name="tform1" type="TForm1" resname="tform1" objectname="Form1">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" changed="20160820T021422Z" si="6">
+        <row id="Caption" si="1181">
           <value>Skies and Bicycles</value>
-          <prev>Skies and Bicycles</prev>
-          <lang id="fi" time="20160820T021433Z">Sukset ja polkupyörät</lang>
+          <lang id="fi" st="2" or="3" time="20160820T021433Z">Sukset ja polkupyörät</lang>
         </row>
-        <row id="ClientHeight" changed="20160820T014555Z">82</row>
+        <row id="ClientHeight">82</row>
         <row id="ClientWidth">403</row>
         <item name="Label1" type="TLabel">
-          <row id="Text" si="7" excluded="2">dummy</row>
+          <row id="Text" si="1182" excluded="2">dummy</row>
         </item>
-        <item name="SkiLabel" type="TLabel" created="20160820T014555Z">
-          <row id="Text" si="8">
+        <item name="SkiLabel" type="TLabel">
+          <row id="Text" si="1183">
             <value>&amp;Ski amount:</value>
-            <lang id="fi" time="20160820T014719Z">&amp;Suksien määrä:</lang>
+            <lang id="fi" st="2" or="3" time="20160820T014719Z">&amp;Suksien määrä:</lang>
           </row>
         </item>
-        <item name="SkiCombo" type="TComboBox" created="20160820T014555Z"/>
-        <item name="BicycleLabel" type="TLabel" created="20160820T014555Z">
-          <row id="Text" changed="20160820T014645Z" si="9">
+        <item name="SkiCombo" type="TComboBox"/>
+        <item name="BicycleLabel" type="TLabel">
+          <row id="Text" si="1184">
             <value>&amp;Bicycle amount:</value>
-            <lang id="fi" time="20160820T014716Z">&amp;Polkupyörien määrä:</lang>
+            <lang id="fi" st="2" or="3" time="20160820T014716Z">&amp;Polkupyörien määrä:</lang>
           </row>
         </item>
-        <item name="BicycleCombo" type="TComboBox" created="20160820T014555Z"/>
-        <item name="LanguageButton" type="TButton" created="20160820T024247Z">
-          <row id="Text" si="10">
+        <item name="BicycleCombo" type="TComboBox"/>
+        <item name="LanguageButton" type="TButton">
+          <row id="Text" si="1185">
             <value>Language...</value>
-            <lang id="fi" time="20160820T024328Z">Kieli...</lang>
+            <lang id="fi" st="2" or="3" time="20160820T024328Z">Kieli...</lang>
           </row>
         </item>
         <data>
@@ -132,12 +69,85 @@
           Y2sAAAA=
         </data>
       </node>
+      <node class="TDelphiFormNode" name="tntlanguagedialog" type="TNtLanguageDialog" resname="tntlanguagedialog" objectname="NtLanguageDialog">
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption" si="1176">
+          <value>Select Language</value>
+          <lang id="fi" st="2" or="3" time="20160820T024259Z">Valitse kieli</lang>
+        </row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="DefaultItemStyles.GroupHeaderStyle" si="1177" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupFooterStyle" si="1178" excluded="3"></row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Text" si="1179">
+            <value>OK</value>
+            <lang id="fi" st="2" or="3" time="20160820T024250Z">OK</lang>
+          </row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Text" si="1180">
+            <value>Cancel</value>
+            <lang id="fi" st="2" or="3" time="20160820T024252Z">Peru</lang>
+          </row>
+        </item>
+        <item name="Resources1" type="TStyleBook">
+          <row id="Left">231</row>
+          <row id="Top">85</row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcGU2luZ2xlB0Nh
+          cHRpb24GD1NlbGVjdCBMYW5ndWFnZQxDbGllbnRIZWlnaHQDwQALQ2xpZW50V2lkdGgDIwEJU3R5bGVCb29rBwpSZXNvdXJjZXMx
+          EEZvcm1GYWN0b3IuV2lkdGgDQAERRm9ybUZhY3Rvci5IZWlnaHQD4AESRm9ybUZhY3Rvci5EZXZpY2VzCwdEZXNrdG9wBmlQaG9u
+          ZQRpUGFkAApPbkFjdGl2YXRlBwxGb3JtQWN0aXZhdGUIT25DcmVhdGUHCkZvcm1DcmVhdGUHT25DbG9zZQcJRm9ybUNsb3NlE0Rl
+          c2lnbmVyTWFzdGVyU3R5bGUCAAAIVExpc3RCb3gMTGFuZ3VhZ2VMaXN0ClBvc2l0aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5Z
+          BQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwQZAC1NpemUuSGVpZ2h0BQAAAAAAAACxBkAUU2l6ZS5QbGF0Zm9ybURlZmF1
+          bHQIC1N0eWxlTG9va3VwBgxsaXN0Ym94c3R5bGUIVGFiT3JkZXICAApPbkRibENsaWNrBxRMYW5ndWFnZUxpc3REYmxDbGljaxJE
+          aXNhYmxlRm9jdXNFZmZlY3QJG0RlZmF1bHRJdGVtU3R5bGVzLkl0ZW1TdHlsZRIAAAAAIkRlZmF1bHRJdGVtU3R5bGVzLkdyb3Vw
+          SGVhZGVyU3R5bGUSAAAAACJEZWZhdWx0SXRlbVN0eWxlcy5Hcm91cEZvb3RlclN0eWxlEgAAAAAOVmlld3BvcnQuV2lkdGgFAAAA
+          AAAAAL0GQA9WaWV3cG9ydC5IZWlnaHQFAAAAAAAAAK0GQAAAB1RCdXR0b24IT2tCdXR0b24HRGVmYXVsdAkLTW9kYWxSZXN1bHQC
+          AQpQb3NpdGlvbi5YBQAAAAAAAADQBkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAJYFQAtTaXplLkhl
+          aWdodAUAAAAAAAAAsANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYOT2tCdXR0b25TdHlsZTEIVGFiT3JkZXIC
+          AQRUZXh0BgJPSwAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBkNhbmNlbAkLTW9kYWxSZXN1bHQCAgpQb3NpdGlvbi5YBQAAAAAAAADQ
+          BkAKUG9zaXRpb24uWQUAAAAAAAAAoARAClNpemUuV2lkdGgFAAAAAAAAAJIFQAtTaXplLkhlaWdodAUAAAAAAAAAsANAFFNpemUu
+          UGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYSQ2FuY2VsQnV0dG9uU3R5bGUxCFRhYk9yZGVyAgIEVGV4dAYGQ2FuY2VsAAAK
+          VFN0eWxlQm9vawpSZXNvdXJjZXMxBlN0eWxlcw4BDFJlc291cmNlc0JpbgpIAwAARk1YX1NUWUxFIDIuNQEGCkN1c3RvbUl0ZW0D
+          KgMAVFBGMAdUTGF5b3V0AAlTdHlsZU5hbWUGCkN1c3RvbUl0ZW0FQWxpZ24HBkNlbnRlcgxQYWRkaW5nLkxlZnQFAAAAAAAAAMAA
+          QAtQYWRkaW5nLlRvcAUAAAAAAAAAwABADVBhZGRpbmcuUmlnaHQFAAAAAAAAAMAAQA5QYWRkaW5nLkJvdHRvbQUAAAAAAAAAwABA
+          ClNpemUuV2lkdGgFAAAAAAAAAJQHQAtTaXplLkhlaWdodAUAAAAAAAAAiARAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAhUYWJPcmRl
+          cgIAAAZUSW1hZ2UACVN0eWxlTmFtZQYEaWNvbg5NdWx0aVJlc0JpdG1hcA4BBVdpZHRoAgEGSGVpZ2h0AgEDUE5HCmMAAACJUE5H
+          DQoaCgAAAA1JSERSAAAAAQAAAAEIBgAAAB8VxIkAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAA1JREFUGFdjYGBgYAAA
+          AAUAAYoz4wAAAAAASUVORK5CYIIAAQVTY2FsZQUAAAAAAAAAgABAAAAFQWxpZ24HCE1vc3RMZWZ0B0hpdFRlc3QIDU1hcmdpbnMu
+          UmlnaHQFAAAAAAAAAMAAQApQb3NpdGlvbi5YBQAAAAAAAADAAEAKUG9zaXRpb24uWQUAAAAAAAAAwABAClNpemUuV2lkdGgFAAAA
+          AAAAAOADQAtTaXplLkhlaWdodAUAAAAAAAAA4ANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAAABVRUZXh0AAlTdHlsZU5hbWUGBHRl
+          eHQFQWxpZ24HBExlZnQHQW5jaG9ycwsAB0hpdFRlc3QIClBvc2l0aW9uLlgFAAAAAAAAAIgEQApQb3NpdGlvbi5ZBQAAAAAAAADA
+          AEAKU2l6ZS5XaWR0aAUAAAAAAACAgwdAC1NpemUuSGVpZ2h0BQAAAAAAAADgA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIBFRleHQG
+          BFRleHQVVGV4dFNldHRpbmdzLldvcmRXcmFwCBZUZXh0U2V0dGluZ3MuSG9yekFsaWduBwdMZWFkaW5nAAAAAAAETGVmdAPnAANU
+          b3ACVQAAAA==
+        </data>
+      </node>
+      <node class="TWindowsBinaryNode" name="ubuntustyle" resname="ubuntustyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" st="0" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" st="0" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN10STYLE" resname="WIN10STYLE" langid="1033" st="0" excluded="1"/>
     </node>
-    <node class="TDelphiProjectStringFolder" name="Strings">
-      <node class="TDelphiStringNode" name="_">
-        <row id="MessagePlural" changed="20180524T030254Z" class="TPatternRow" si="11" created="20170805T010447Z">
+    <node class="TWindowsStringFolder" name="String" created="20221230T211555Z">
+      <node class="TWindowsStringNode" name="Androidapi.Consts" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Fmx.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="FMX.Edit.Win" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Macapi.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="Ntpattern" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Regularexpressionsconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Rtlconsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SMessagePlural" class="TPatternRow" si="1186" scannedcomment="0: ski or bicyle count">
           <value startpattern="1">I have {0} {1}</value>
-          <prev startpattern="1">I have {0}</prev>
           <pattern plural="pfZero" index="0">no skis</pattern>
           <pattern plural="pfOne" index="0">one ski</pattern>
           <pattern plural="pfOther" index="0">{0} skis</pattern>
@@ -154,23 +164,23 @@
             <pattern plural="pfOther" index="1">ja {0} polkupyörä</pattern>
           </lang>
         </row>
-        <row id="en" si="12" created="20160820T024247Z">
+        <row id="SEnglish" si="1187">
           <value>English</value>
           <lang id="fi" time="20160820T024305Z">englanti</lang>
         </row>
-        <row id="fi" si="13" created="20160820T024247Z">
+        <row id="SFinnish" si="1188">
           <value>Finnish</value>
           <lang id="fi" time="20160820T024309Z">suomi</lang>
         </row>
-        <row id="de" si="14" created="20160820T024247Z">
+        <row id="SGerman" si="1189">
           <value>German</value>
           <lang id="fi" time="20160820T024311Z">saksa</lang>
         </row>
-        <row id="fr" si="15" created="20160820T024247Z">
+        <row id="SFrench" si="1190">
           <value>French</value>
           <lang id="fi" time="20160820T024313Z">ranska</lang>
         </row>
-        <row id="ja" si="16" created="20160820T024247Z">
+        <row id="SJapanese" si="1191">
           <value>Japanese</value>
           <lang id="fi" time="20160820T024315Z">japani</lang>
         </row>
@@ -180,7 +190,7 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <rules kind="crFireMonkey">
+  <rules kind="crFmx">
     <rule component="*" property="StyleLookup"/>
     <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
   </rules>
@@ -193,13 +203,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

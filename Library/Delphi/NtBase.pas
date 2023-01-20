@@ -615,7 +615,12 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
     if id = OriginalLanguage then
       Result := NtResources.Originals[id]
     else
-      Result := NtResources.GetStringInLanguage(id, '', id, '');
+    begin
+      Result := NtResources.Natives[id];
+
+      if Result = '' then
+        Result := NtResources.GetStringInLanguage(id, '', id, '');
+    end;
   end;
 
   function GetLocalized: String;
@@ -623,7 +628,20 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
     if LoadedResourceLocale = '' then
       Result := NtResources.Originals[id]
     else
-      Result := NtResources.GetString('', id, '');
+    begin
+      Result := NtResources.Localizeds[id];
+
+      if Result = '' then
+        Result := NtResources.GetString('', id, '');
+    end;
+  end;
+
+  function GetSystem: String;
+  begin
+    Result := NtResources.GetStringInLanguage(SystemLanguage, '', id, '');
+
+    if Result = '' then
+      Result := GetNative;
   end;
 {$ENDIF}
 begin
@@ -635,7 +653,7 @@ begin
       lnLocalized: Result := GetLocalized;
       lnBoth: Result := GetBoth(GetNative, GetLocalized);
       lnEnglish: Result := NtResources.Originals[id];
-      lnSystem: Result := NtResources.GetStringInLanguage(SystemLanguage, '', id, '');
+      lnSystem: Result := GetSystem;
     else
       raise Exception.Create('Not implemented');
     end;

@@ -26,16 +26,22 @@ implementation
 {$R *.fmx}
 
 uses
+  NtBase,
   NtResource,
+  NtResourceString,
   FMX.NtTranslator;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SSample = 'This is a sample';
 begin
   // Translate form
   _T(Self);
 
   // Set property on runtime
-  Label2.Text := _T('This is a sample');  //loc This is a comment
+  Label2.Text := SSample;  //loc This is a comment
 end;
 
+initialization
+  //DefaultLocale := 'fi';
 end.

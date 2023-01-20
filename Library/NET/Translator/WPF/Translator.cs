@@ -124,15 +124,14 @@ namespace Soluling.WPF
 
         foreach (PropertyInfo property in properties)
         {
-          Object value;
+          object value;
 
           if (property.Name == "Content")
             value = baml.Value;
           else
             value = baml.FindProperty(property.Name);
 
-          if ((value != null) && property.CanWrite && (value is string))
-            //property.SetValue(element, ((string)value).ToUpper(), null);
+          if ((value != null) && property.CanWrite && (property.PropertyType == typeof(string)) && (value is string))
             property.SetValue(element, value, null);
         }
       }
@@ -189,6 +188,16 @@ namespace Soluling.WPF
       resourceName = resourceName + ".resources";
 
       Stream stream = assembly.GetManifestResourceStream(resourceName);
+
+      if ((stream == null) && (language != "") && (language == Language.OriginalId))
+      {
+        resourceName = assemblyName + ".g." + language + ".resources";
+        stream = assembly.GetManifestResourceStream(resourceName);
+      }
+
+      if (stream == null)
+        return null;
+
       BamlControl current = null;
 
       using (var resourceReader = new ResourceReader(stream))
@@ -288,12 +297,22 @@ namespace Soluling.WPF
       return controls.Find(control => control.MemberName == name);
     }
 
-    public BamlControl Find(string name)
+    public BamlControl Find(string name, FrameworkElement element)
     {
+      // Find by Name or x:Name attribute
       var item = controls.Find(control => control.Name == name);
 
+      // Find bu Uid or x:Uid attribute
       if (item == null)
         item = controls.Find(control => control.Uid == name);
+
+      // Find by type name
+      if (item == null)
+      {
+        var typeName = element.GetType().FullName;
+
+        item = controls.Find(control => control.ElementName == typeName);
+      }
 
       return item;
     }
@@ -305,7 +324,7 @@ namespace Soluling.WPF
       if (name == "")
         name = element.Uid;
 
-      BamlControl result = Find(name);
+      BamlControl result = Find(name, element);
 
       if (result != null)
         return result;
@@ -314,7 +333,7 @@ namespace Soluling.WPF
       result = FindMemberName("Children");
 
       if (result != null)
-        result = result.Find(name);
+        result = result.Find(name, element);
 
       if (result != null)
         return result;
@@ -323,7 +342,7 @@ namespace Soluling.WPF
       result = FindMemberName("Items");
 
       if (result != null)
-        result = result.Find(name);
+        result = result.Find(name, element);
 
       return result;
     }

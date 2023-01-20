@@ -10,7 +10,7 @@ using System.Runtime.InteropServices;
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
 [assembly: AssemblyProduct("Soluling.WPF")]
-[assembly: AssemblyCopyright("Copyright © Soluling 2010-2019")]
+[assembly: AssemblyCopyright("Copyright © Soluling 2010-2023")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
 

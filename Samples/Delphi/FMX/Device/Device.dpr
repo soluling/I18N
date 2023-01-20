@@ -1,5 +1,7 @@
 program Device;
 
+{$R *.dres}
+
 uses
   System.StartUpCopy,
   FMX.Forms,

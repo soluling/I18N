@@ -11,6 +11,7 @@ type
   TBaseForm = class(TForm)
     Label1: TLabel;
     Edit1: TEdit;
+    procedure FormCreate(Sender: TObject);
   private
     { Private declarations }
   public
@@ -23,5 +24,14 @@ var
 implementation
 
 {$R *.fmx}
+
+uses
+  FMX.NtTranslator;
+
+procedure TBaseForm.FormCreate(Sender: TObject);
+begin
+  // When you call _T in the base form you do not have to call it in the inherited forms
+  _T(Self);
+end;
 
 end.

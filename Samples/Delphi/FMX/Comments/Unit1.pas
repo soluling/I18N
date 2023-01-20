@@ -30,23 +30,38 @@ implementation
 {$R *.fmx}
 
 uses
-  NtResource;
+  NtBase,
+  NtResource,
+  NtResourceString,
+  FMX.NtTranslator;
 
 procedure TForm1.FormCreate(Sender: TObject);
 const
   NAME_C = 'Bill';
   PLACE_C = 'Helsinki';
-begin
-  Label1.Text := _T('Hello World');  //loc This is a comment
-  Label2.Text := _T('Characters');   //loc MaxChars=20 This is characters comment
-  Label3.Text := _T('Pixels');       //loc MaxPixels=100 This is pixels comment
+resourcestring
+  SHelloWorld = 'Hello World';  //loc This is a comment
+  SCharacters = 'Characters';  //loc MaxChars=20 This is characters comment
+  SPixels = 'Pixels';  //loc MaxPixels=100 This is pixels comment
 
   // Same pattern string three times.
   // First without a comment, then with comment but without placeholder description.
   // Finally with proper descriptions.
-  Label4.Text := Format(_T('Hello %s, welcome to %s'), [NAME_C, PLACE_C]);
-  Label5.Text := Format(_T('Hello %s, welcome to %s'), [NAME_C, PLACE_C]);  //loc This is comment but no placeholder descriptions
-  Label6.Text := Format(_T('Hello %s, welcome to %s'), [NAME_C, PLACE_C]);  //loc 0: Name of the person, 1: Name of the place
+  SHello1 = 'Hello %s, welcome to %s';
+  SHello2 = 'Hello %s, welcome to %s';  //loc This is comment but no placeholder descriptions
+  SHello3 = 'Hello %s, welcome to %s';  //loc 0: Name of the person, 1: Name of the place
+begin
+  _T(Self);
+
+  Label1.Text := SHelloWorld;
+  Label2.Text := SCharacters;
+  Label3.Text := SPixels;
+
+  Label4.Text := Format(SHello1, [NAME_C, PLACE_C]);
+  Label5.Text := Format(SHello2, [NAME_C, PLACE_C]);
+  Label6.Text := Format(SHello3, [NAME_C, PLACE_C]);
 end;
 
+initialization
+  //DefaultLocale := 'fi';
 end.

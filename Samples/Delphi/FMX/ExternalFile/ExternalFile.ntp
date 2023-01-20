@@ -1,48 +1,59 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8E08B829-F7F6-4F83-B754-DE54C09BD2A1" created="20200411T191755Z" lastmodified="20200411T214254Z" version="1.0.732" lockedrowcomplete="0" stringid="19">
+<project id="8E08B829-F7F6-4F83-B754-DE54C09BD2A1" created="20200411T191755Z" lastmodified="20221231T031000Z" version="1.0.972" lockedrowcomplete="0" stringid="1300">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="ExternalFile.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\ExternalFile\ExternalFile.dproj" original="en" scanformsvisualproperties="[]" library="dlFireMonkey">
-    <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
+  <node class="TDelphiProjectSource" name="ExternalFile.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\ExternalFile\ExternalFile.dproj" original="en" lastmodified="20221231T031000Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+    <node class="TDelphiFormFolder" name="RCData" created="20221231T030746Z">
+      <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="CLOUDS" resname="CLOUDS" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="DVCLAL" resname="DVCLAL" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="fmux" resname="fmux" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="gnomestyle" resname="gnomestyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="ios13darkstyle" resname="ios13darkstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="iosstyle" resname="iosstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="lionstyle" resname="lionstyle" st="0" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="osxstyle" resname="osxstyle" st="0" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="PACKAGEINFO" resname="PACKAGEINFO" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" excluded="1"/>
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="1">
+        <row id="Caption" si="460">
           <value>Translation Loading Sample</value>
-          <lang id="fi" rw="0" time="20200411T192214Z">Käännösten latausesimerki</lang>
+          <lang id="fi" st="2" or="3" rw="0" time="20200411T192214Z">Käännösten latausesimerki</lang>
         </row>
-        <row id="ClientHeight" changed="20200411T214244Z">190</row>
-        <row id="ClientWidth" changed="20200411T192148Z">567</row>
+        <row id="ClientHeight">190</row>
+        <row id="ClientWidth">567</row>
         <item name="Label1" type="TLabel">
-          <row id="Text" si="2">
+          <row id="Text" si="461">
             <value>This application loads translations from an external file or files</value>
-            <lang id="fi" rw="0" time="20200411T191816Z" fuzzy="5">Tämä sovellus lataa käännökset ulkoisesta tiedostosta tai tiedostoista</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20200411T191816Z" fuzzy="5">Tämä sovellus lataa käännökset ulkoisesta tiedostosta tai tiedostoista</lang>
           </row>
         </item>
         <item name="Label2" type="TLabel">
-          <row id="Text" si="3" excluded="2">dummy</row>
+          <row id="Text" si="462" excluded="2">dummy</row>
         </item>
         <item name="Label3" type="TLabel">
-          <row id="Text" si="4" excluded="2">dummy</row>
+          <row id="Text" si="463" excluded="2">dummy</row>
         </item>
         <item name="Label4" type="TLabel">
-          <row id="Text" si="5">
+          <row id="Text" si="464">
             <value>Resource directories:</value>
-            <lang id="fi" rw="0" time="20200411T191821Z" fuzzy="5">Resurssihakemistot:</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20200411T191821Z" fuzzy="5">Resurssihakemistot:</lang>
           </row>
         </item>
         <item name="LanguageButton" type="TButton">
-          <row id="Text" si="6">
+          <row id="Text" si="465">
             <value>Language...</value>
-            <lang id="fi" rw="0" time="20200411T191825Z" fuzzy="5">Kieli...</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20200411T191825Z" fuzzy="5">Kieli...</lang>
           </row>
         </item>
         <item name="LoadedLabel" type="TLabel">
-          <row id="Text" si="7" excluded="2">dummy</row>
+          <row id="Text" si="466" excluded="2">dummy</row>
         </item>
-        <item name="Label5" type="TLabel" created="20200411T195141Z">
-          <row id="Text" si="15">
+        <item name="Label5" type="TLabel">
+          <row id="Text" si="467">
             <value>Translation source</value>
-            <lang id="fi" rw="0" time="20200411T195205Z" fuzzy="90">Käännöslähde</lang>
+            <lang id="fi" st="2" or="3" rw="0" time="20200411T195205Z" fuzzy="90">Käännöslähde</lang>
           </row>
         </item>
         <data>
@@ -70,46 +81,198 @@
           aW9uIHNvdXJjZQhUYWJPcmRlcgICAAAA
         </data>
       </node>
+      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption" si="468">Select Language</row>
+        <row id="ClientHeight">193</row>
+        <row id="ClientWidth">291</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="StyleLookup" si="469">listboxstyle</row>
+          <row id="DefaultItemStyles.ItemStyle" si="470" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupHeaderStyle" si="471" excluded="3"></row>
+          <row id="DefaultItemStyles.GroupFooterStyle" si="472" excluded="3"></row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="StyleLookup" si="473">OkButtonStyle1</row>
+          <row id="Text" si="474">OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="StyleLookup" si="475">CancelButtonStyle1</row>
+          <row id="Text" si="476">Cancel</row>
+        </item>
+        <item name="Resources1" type="TStyleBook">
+          <row id="Left">231</row>
+          <row id="Top">85</row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQCAANUb3ACAAtCb3JkZXJTdHlsZQcGU2luZ2xlB0Nh
+          cHRpb24GD1NlbGVjdCBMYW5ndWFnZQxDbGllbnRIZWlnaHQDwQALQ2xpZW50V2lkdGgDIwEJU3R5bGVCb29rBwpSZXNvdXJjZXMx
+          EEZvcm1GYWN0b3IuV2lkdGgDQAERRm9ybUZhY3Rvci5IZWlnaHQD4AESRm9ybUZhY3Rvci5EZXZpY2VzCwdEZXNrdG9wBmlQaG9u
+          ZQRpUGFkAApPbkFjdGl2YXRlBwxGb3JtQWN0aXZhdGUIT25DcmVhdGUHCkZvcm1DcmVhdGUHT25DbG9zZQcJRm9ybUNsb3NlE0Rl
+          c2lnbmVyTWFzdGVyU3R5bGUCAAAIVExpc3RCb3gMTGFuZ3VhZ2VMaXN0ClBvc2l0aW9uLlgFAAAAAAAAAIACQApQb3NpdGlvbi5Z
+          BQAAAAAAAACAAkAKU2l6ZS5XaWR0aAUAAAAAAAAAwQZAC1NpemUuSGVpZ2h0BQAAAAAAAACxBkAUU2l6ZS5QbGF0Zm9ybURlZmF1
+          bHQIC1N0eWxlTG9va3VwBgxsaXN0Ym94c3R5bGUIVGFiT3JkZXICAApPbkRibENsaWNrBxRMYW5ndWFnZUxpc3REYmxDbGljaxJE
+          aXNhYmxlRm9jdXNFZmZlY3QJG0RlZmF1bHRJdGVtU3R5bGVzLkl0ZW1TdHlsZRIAAAAAIkRlZmF1bHRJdGVtU3R5bGVzLkdyb3Vw
+          SGVhZGVyU3R5bGUSAAAAACJEZWZhdWx0SXRlbVN0eWxlcy5Hcm91cEZvb3RlclN0eWxlEgAAAAAOVmlld3BvcnQuV2lkdGgFAAAA
+          AAAAAL0GQA9WaWV3cG9ydC5IZWlnaHQFAAAAAAAAAK0GQAAAB1RCdXR0b24IT2tCdXR0b24HRGVmYXVsdAkLTW9kYWxSZXN1bHQC
+          AQpQb3NpdGlvbi5YBQAAAAAAAADQBkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAJYFQAtTaXplLkhl
+          aWdodAUAAAAAAAAAsANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYOT2tCdXR0b25TdHlsZTEIVGFiT3JkZXIC
+          AQRUZXh0BgJPSwAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBkNhbmNlbAkLTW9kYWxSZXN1bHQCAgpQb3NpdGlvbi5YBQAAAAAAAADQ
+          BkAKUG9zaXRpb24uWQUAAAAAAAAAoARAClNpemUuV2lkdGgFAAAAAAAAAJIFQAtTaXplLkhlaWdodAUAAAAAAAAAsANAFFNpemUu
+          UGxhdGZvcm1EZWZhdWx0CAtTdHlsZUxvb2t1cAYSQ2FuY2VsQnV0dG9uU3R5bGUxCFRhYk9yZGVyAgIEVGV4dAYGQ2FuY2VsAAAK
+          VFN0eWxlQm9vawpSZXNvdXJjZXMxBlN0eWxlcw4BDFJlc291cmNlc0JpbgpIAwAARk1YX1NUWUxFIDIuNQEGCkN1c3RvbUl0ZW0D
+          KgMAVFBGMAdUTGF5b3V0AAlTdHlsZU5hbWUGCkN1c3RvbUl0ZW0FQWxpZ24HBkNlbnRlcgxQYWRkaW5nLkxlZnQFAAAAAAAAAMAA
+          QAtQYWRkaW5nLlRvcAUAAAAAAAAAwABADVBhZGRpbmcuUmlnaHQFAAAAAAAAAMAAQA5QYWRkaW5nLkJvdHRvbQUAAAAAAAAAwABA
+          ClNpemUuV2lkdGgFAAAAAAAAAJQHQAtTaXplLkhlaWdodAUAAAAAAAAAiARAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAhUYWJPcmRl
+          cgIAAAZUSW1hZ2UACVN0eWxlTmFtZQYEaWNvbg5NdWx0aVJlc0JpdG1hcA4BBVdpZHRoAgEGSGVpZ2h0AgEDUE5HCmMAAACJUE5H
+          DQoaCgAAAA1JSERSAAAAAQAAAAEIBgAAAB8VxIkAAAABc1JHQgCuzhzpAAAABGdBTUEAALGPC/xhBQAAAA1JREFUGFdjYGBgYAAA
+          AAUAAYoz4wAAAAAASUVORK5CYIIAAQVTY2FsZQUAAAAAAAAAgABAAAAFQWxpZ24HCE1vc3RMZWZ0B0hpdFRlc3QIDU1hcmdpbnMu
+          UmlnaHQFAAAAAAAAAMAAQApQb3NpdGlvbi5YBQAAAAAAAADAAEAKUG9zaXRpb24uWQUAAAAAAAAAwABAClNpemUuV2lkdGgFAAAA
+          AAAAAOADQAtTaXplLkhlaWdodAUAAAAAAAAA4ANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CAAABVRUZXh0AAlTdHlsZU5hbWUGBHRl
+          eHQFQWxpZ24HBExlZnQHQW5jaG9ycwsAB0hpdFRlc3QIClBvc2l0aW9uLlgFAAAAAAAAAIgEQApQb3NpdGlvbi5ZBQAAAAAAAADA
+          AEAKU2l6ZS5XaWR0aAUAAAAAAACAgwdAC1NpemUuSGVpZ2h0BQAAAAAAAADgA0AUU2l6ZS5QbGF0Zm9ybURlZmF1bHQIBFRleHQG
+          BFRleHQVVGV4dFNldHRpbmdzLldvcmRXcmFwCBZUZXh0U2V0dGluZ3MuSG9yekFsaWduBwdMZWFkaW5nAAAAAAAETGVmdAPnAANU
+          b3ACVQAAAA==
+        </data>
+      </node>
+      <node class="TWindowsBinaryNode" name="ubuntustyle" resname="ubuntustyle" binaryformat="bfBinary"/>
+      <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" excluded="1"/>
+      <node class="TWindowsBinaryNode" name="WIN10STYLE" resname="WIN10STYLE" langid="1033" excluded="1"/>
     </node>
-    <node class="TDelphiProjectStringFolder" name="Strings">
-      <node class="TDelphiStringNode" name="_">
-        <row id="This is a sample" si="8" scannedcomment="This is a comment">
+    <node class="TWindowsStringFolder" name="String" created="20221231T030746Z">
+      <node class="TWindowsStringNode" name="Androidapi.Consts" created="20221231T030958Z" st="0">
+        <row id="SJNIRTTINotAvailable" class="TPatternRow" si="1219" st="0">RTTI for type {0} was not found.  Perhaps missing {{$M+}?</row>
+        <row id="SJNIClassNotFound" class="TPatternRow" si="1220" st="0">Java type {0} could not be found</row>
+        <row id="SJNIType" class="TPatternRow" si="1221" st="0">{0} is not a valid Java type</row>
+        <row id="SInternalBindingError" class="TPatternRow" si="1222" st="0">Internal error creating binding for '{0}'</row>
+        <row id="SBadJNIClass" class="TPatternRow" si="1223" st="0">'{0}' must be an interface derived from IJavaClass</row>
+        <row id="SBadJNIInstance" class="TPatternRow" si="1224" st="0">'{0}' must be an interface derived from IJavaInstance</row>
+        <row id="SErrorCreatingJNIObject" class="TPatternRow" si="1225" st="0">Unable to create Java object for instance of '{0}'</row>
+        <row id="SJNIInvokeError" si="1226" st="0">Fatal error invoking interface</row>
+        <row id="SInvalidJNIType" class="TPatternRow" si="1227" st="0">The type '{0}' is not supported with jni interoperability</row>
+        <row id="SJNINoInterface" class="TPatternRow" si="1228" st="0">No implemented interface found in '{0}'</row>
+        <row id="SJNIMethodNotFound" class="TPatternRow" si="1229" st="0">Invoke error: method '{0}' not found</row>
+        <row id="SJNIUnknownMethod" si="1230" st="0">Invoke error: method not found</row>
+        <row id="SJNIInvalidSetter" class="TPatternRow" si="1231" st="0">Method '{0}' is not a valid property setter</row>
+        <row id="SJNIInvalidGetter" class="TPatternRow" si="1232" st="0">Method '{0}' is not a valid property getter</row>
+        <row id="SJNIMangleErrorInvalidClassType" class="TPatternRow" si="1233" st="0">Mangle error: the type '{0}' is invalid for describing a Java array type. The former must be a class derived from TJavaBasicArray</row>
+        <row id="SJNIMangleErrorInvalidInterfaceType" class="TPatternRow" si="1234" st="0">Mangle error: the type '{0}' is invalid for describing a Java class type. The former must be an interface annotated with the JavaSignature attribute</row>
+        <row id="SJNIMangleErrorInvalidFloatingPointType" class="TPatternRow" si="1235" st="0">Mangle error: the type '{0}' is invalid for describing a Java float-pointing type. Single and Double are the only supported floating-point types</row>
+        <row id="SJNIMangleErrorInvalidJavaType" class="TPatternRow" si="1236" st="0">Mangle error: the type '{0}' is invalid for describing a Java type</row>
+        <row id="SUnknown" si="1237" st="0">Unknown</row>
+        <row id="SOk" si="1238" st="0">OK</row>
+        <row id="SUserCanceled" si="1239" st="0">User Canceled</row>
+        <row id="SBillingUnavailable" si="1240" st="0">Billing Unavailable</row>
+        <row id="SItemUnavailable" si="1241" st="0">Item unavailable</row>
+        <row id="SDeveloperError" si="1242" st="0">Developer Error</row>
+        <row id="SError" si="1243" st="0">Error</row>
+        <row id="SItemAlreadyOwned" si="1244" st="0">Item Already Owned</row>
+        <row id="SItemNotOwned" si="1245" st="0">Item not owned</row>
+        <row id="SRemoteExceptionOccurred" si="1246" st="0">Remote exception during initialization</row>
+        <row id="SBadResponse" si="1247" st="0">Bad response received</row>
+        <row id="SVerificationFailed" si="1248" st="0">Purchase signature verification failed</row>
+        <row id="SSendIntentFailed" si="1249" st="0">Send intent failed</row>
+        <row id="SUnknownPurchaseResponse" si="1250" st="0">Unknown purchase response</row>
+        <row id="SMissingToken" si="1251" st="0">Missing token</row>
+        <row id="SUnknownError" si="1252" st="0">Unknown error</row>
+        <row id="SSubscriptionsNotavailable" si="1253" st="0">Subscriptions not available</row>
+        <row id="SInvalidConsumption" si="1254" st="0">Invalid consumption attempt</row>
+        <row id="SIABUnavailable" si="1255" st="0">Billing service unavailable on device.</row>
+        <row id="SIABv3NotFound" si="1256" st="0">Error checking for billing v3 support.</row>
+        <row id="SSuccess" si="1257" st="0">Success</row>
+        <row id="SPurchaseDataParse" si="1258" st="0">Failed to parse purchase data.</row>
+        <row id="SNullReturn" si="1259" st="0">IAB returned null purchaseData or dataSignature</row>
+        <row id="SNullInResultData" si="1260" st="0">Null data in IAB result</row>
+        <row id="SSignatureFailureFmt" class="TPatternRow" si="1261" st="0">Signature verification failed for sku {0}</row>
+        <row id="SBuyFailure" si="1262" st="0">Unable to buy item</row>
+        <row id="SPurchaseProblem" si="1263" st="0">Problem purchashing item.</row>
+        <row id="SSetupOK" si="1264" st="0">Setup successful.</row>
+        <row id="SConsumeOKFmt" class="TPatternRow" si="1265" st="0">Successful consume of sku {0}</row>
+        <row id="SInventoryRefreshOK" si="1266" st="0">Inventory refresh successful.</row>
+        <row id="SNoSubscriptions" si="1267" st="0">Subscriptions are not available.</row>
+        <row id="sSetupException" si="1268" st="0">RemoteException while setting up in-app billing.</row>
+        <row id="SConsumeErrorFmt" class="TPatternRow" si="1269" st="0">Remote exception while consuming. PurchaseInfo: {0}</row>
+        <row id="SIABNotSetUpErrorFmt" class="TPatternRow" si="1270" st="0">IAB helper is not set up. Can't perform operation: {0}</row>
+        <row id="SCantConsumeThoseErrorFmt" class="TPatternRow" si="1271" st="0">Items of type '{0}' can't be consumed.</row>
+        <row id="SSkuTokenMissingErrorFmt" class="TPatternRow" si="1272" st="0">PurchaseInfo is missing token for sku: {0} {1}</row>
+        <row id="SIntentSendError" si="1273" st="0">Failed to send intent.</row>
+        <row id="SBadIntentResponseCodeType" class="TPatternRow" si="1274" st="0">Unexpected type for intent response code: {0}</row>
+        <row id="SBadBundleResponseCodeType" class="TPatternRow" si="1275" st="0">Unexpected type for bundle response code: {0}</row>
+        <row id="SAsyncInProgressError" class="TPatternRow" si="1276" st="0">Can't start async operation ({0}) because another async operation({1}) is in progress.</row>
+        <row id="SSkuConsumptionErrorFmt" class="TPatternRow" si="1277" st="0">Error consuming sku {0}</row>
+        <row id="SPurchaseFlowError" si="1278" st="0">Remote exception while starting purchase flow</row>
+        <row id="SInventoryRefreshRemoteError" si="1279" st="0">Remote exception while refreshing inventory.</row>
+        <row id="SInventoryJSONError" si="1280" st="0">Error parsing JSON response while refreshing inventory.</row>
+        <row id="SInventoryRefreshOwnedItemsError" si="1281" st="0">Error refreshing inventory (querying owned items).</row>
+        <row id="SInventoryRefreshItemPricesError" si="1282" st="0">Error refreshing inventory (querying prices of items).</row>
+        <row id="SInventoryRefreshOwnedSubsError" si="1283" st="0">Error refreshing inventory (querying owned subscriptions).</row>
+        <row id="SInventoryRefreshSubsPricesError" si="1284" st="0">Error refreshing inventory (querying prices of subscriptions).</row>
+        <row id="SIABFeatureNotSupported" si="1285" st="0">Billing service feature is not supported</row>
+        <row id="SIABServiceDisconnected" si="1286" st="0">Billing service disconnected</row>
+        <row id="SIABServiceTimeout" si="1287" st="0">Billing service connection timeout</row>
+        <row id="SIABServiceUnavailable" si="1288" st="0">Billing service unavailable</row>
+      </node>
+      <node class="TWindowsStringNode" name="FMX.Consts" excluded="1"/>
+      <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
+      <node class="TWindowsStringNode" name="Macapi.Consts" created="20221231T030958Z" st="0">
+        <row id="SObjectiveCRTTINotAvailable" class="TPatternRow" si="1289" st="0">RTTI for type {0} was not found.  Perhaps missing {{$M+}?</row>
+        <row id="SObjectiveCClassNotFound" class="TPatternRow" si="1290" st="0">ObjectiveC class {0} could not be found</row>
+        <row id="SInvalidObjectiveCType" class="TPatternRow" si="1291" st="0">{0} is not a valid ObjectiveC type</row>
+        <row id="SInternalBindingError" class="TPatternRow" si="1292" st="0">Internal error creating binding for '{0}'</row>
+        <row id="SMethodMustBeCDecl" class="TPatternRow" si="1293" st="0">Method '{0}' of type '{1}' must have cdecl calling convention</row>
+        <row id="SBadObjectiveCClass" class="TPatternRow" si="1294" st="0">'{0}' must be an interface derived from IObjectiveCClass</row>
+        <row id="SBadObjectiveCInstance" class="TPatternRow" si="1295" st="0">'{0}' must be an interface derived from IObjectiveCInstance</row>
+        <row id="SBadObjectiveCProtocol" class="TPatternRow" si="1296" st="0">'{0}' must be an interface derived from IObjectiveCProtocol</row>
+        <row id="SErrorCreatingOCObject" class="TPatternRow" si="1297" st="0">Unable to create ObjectiveC persona for instance of '{0}'</row>
+        <row id="SOCInvokeError" si="1298" st="0">Fatal error invoking interface</row>
+        <row id="SInvalidObjCType" class="TPatternRow" si="1299" st="0">The type '{0}' is not supported with ObjectiveC interoperability</row>
+        <row id="SUnspecificStateOfLocationSensor" si="1300" st="0">Unspecific state of location sensor</row>
+      </node>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RegularExpressionsConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SSample" si="42" scannedcomment="This is a comment">
           <value>This is a sample</value>
           <lang id="fi" rw="0" time="20200411T191831Z" fuzzy="100">Tämä on esimerkki</lang>
         </row>
-        <row id="None" si="16" created="20200411T195141Z">
+        <row id="SNone" si="43">
           <value>None</value>
           <lang id="fi" rw="0" time="20200411T195146Z" fuzzy="99">Ei mitään</lang>
         </row>
-        <row id="Resource:" si="17" created="20200411T195141Z">
+        <row id="SResource" si="20">
           <value>Resource:</value>
           <lang id="fi" rw="0" time="20200411T195148Z" fuzzy="5">Resurssi:</lang>
         </row>
-        <row id="File:" si="18" created="20200411T195141Z">
+        <row id="SFile" si="21">
           <value>File:</value>
           <lang id="fi" rw="0" time="20200411T195150Z" fuzzy="5">Tiedosto:</lang>
         </row>
-        <row id="Directory:" si="19" created="20200411T195141Z">
+        <row id="SDirectory" si="22">
           <value>Directory:</value>
           <lang id="fi" rw="0" time="20200411T195155Z" fuzzy="5">Hakemisto:</lang>
         </row>
-        <row id="en" si="10" created="20200411T192148Z">
+        <row id="SEnglish" si="23">
           <value>English</value>
           <lang id="fi" rw="0" time="20200411T192152Z" fuzzy="99">englanti</lang>
         </row>
-        <row id="fi" si="11" created="20200411T192148Z">
+        <row id="SFinnish" si="24">
           <value>Finnish</value>
           <lang id="fi" rw="0" time="20200411T192154Z" fuzzy="5">suomi</lang>
         </row>
-        <row id="de" si="12" created="20200411T192148Z">
+        <row id="SGerman" si="25">
           <value>German</value>
           <lang id="fi" rw="0" time="20200411T192156Z" fuzzy="5">saksa</lang>
         </row>
-        <row id="fr" si="13" created="20200411T192148Z">
+        <row id="SFrench" si="26">
           <value>French</value>
           <lang id="fi" rw="0" time="20200411T192158Z" fuzzy="5">ranska</lang>
         </row>
-        <row id="ja" si="14" created="20200411T192148Z">
+        <row id="SJapanese" si="27">
           <value>Japanese</value>
           <lang id="fi" rw="0" time="20200411T192200Z" fuzzy="5">japani</lang>
         </row>
@@ -131,14 +294,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

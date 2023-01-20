@@ -2,11 +2,12 @@ object MainForm: TMainForm
   Left = 0
   Top = 0
   Caption = 'Sample'
-  ClientHeight = 172
+  ClientHeight = 225
   ClientWidth = 178
   FormFactor.Width = 320
   FormFactor.Height = 480
   FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
   DesignerMasterStyle = 0
   object Label1: TLabel
     Position.X = 8.000000000000000000
@@ -38,5 +39,12 @@ object MainForm: TMainForm
     Position.Y = 88.000000000000000000
     TabOrder = 4
     Text = 'CheckBox1'
+  end
+  object ShowButton: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 168.000000000000000000
+    TabOrder = 6
+    Text = '&Show...'
+    OnClick = ShowButtonClick
   end
 end

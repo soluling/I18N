@@ -1,11 +1,16 @@
-﻿namespace Simple;
+﻿using System.Globalization;
+
+namespace Simple;
 
 public partial class App : Application
 {
 	public App()
 	{
-		InitializeComponent();
+    Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
+    Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
+    
+    InitializeComponent();
 
-		MainPage = new MainPage();
+    MainPage = new AppShell();
 	}
 }

@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -49,8 +49,10 @@ implementation
 {$R *.fmx}
 
 uses
+  NtBase,
   NtPattern,
   NtResource,
+  NtResourceString,
   FMX.NtImageTranslator,
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
@@ -66,13 +68,20 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SSpanish = 'Spanish';
+  SJapanese = 'Japanese';
 begin
-  NtResources._T('English', 'en');
-  NtResources._T('Finnish', 'fi');
-  NtResources._T('German', 'de');
-  NtResources._T('French', 'fr');
-  NtResources._T('Spanish', 'es');
-  NtResources._T('Japanese', 'ja');
+  NtResources.Add('English', 'English', SEnglish, 'en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de');
+  NtResources.Add('French', 'français', SFrench, 'fr');
+  NtResources.Add('Spanish', 'español', SSpanish, 'es');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja');
 
   _T(Self);
 
@@ -86,6 +95,10 @@ begin
 end;
 
 procedure TForm1.CalculateButtonClick(Sender: TObject);
+resourcestring
+  // This multi-plural pattern has two parameters (hours and minutes).
+  // It uses standard plural rules of English (1 = singular, all other are plurals) plus special zero case in hours.
+  SResultPlural = 'Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.';
 var
   time: Double;
   hours, minutes: Integer;
@@ -97,9 +110,7 @@ begin
   hours := Trunc(time);
   minutes := Round(60*(time - hours));
 
-  // This multi-plural pattern has two parameters (hours and minutes).
-  // It uses standard plural rules of English (1 = singular, all other are plurals) plus special zero case in hours.
-  ResultLabel.Text := TMultiPattern.Format(_T('Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.', 'ResultPlural'), [hours, minutes]);
+  ResultLabel.Text := TMultiPattern.Format(SResultPlural, [hours, minutes]);
 end;
 
 procedure TForm1.Language1Click(Sender: TObject);
@@ -116,8 +127,12 @@ begin
 end;
 
 procedure TForm1.About1Click(Sender: TObject);
+resourcestring
+  SAbout = 'Driving time calculator';
 begin
-  ShowMessage(_T('Driving time calculator'));
+  ShowMessage(SAbout);
 end;
 
+initialization
+  DefaultLocale := 'fi';
 end.

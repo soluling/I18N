@@ -1,0 +1,168 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Sample'
+  ClientHeight = 405
+  ClientWidth = 369
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop, iPhone, iPad]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Button1: TButton
+    Position.X = 8.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 97.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Text = 'Language...'
+    OnClick = Button1Click
+  end
+  object ListBox1: TListBox
+    Position.X = 272.000000000000000000
+    Position.Y = 96.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 73.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    DisableFocusEffect = True
+    ItemIndex = 0
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 77.000000000000000000
+    Viewport.Height = 69.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      IsSelected = True
+      TabOrder = 0
+      Text = 'One'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 19.000000000000000000
+      TabOrder = 1
+      Text = 'Two'
+    end
+  end
+  object ComboBox1: TComboBox
+    ItemIndex = 0
+    Position.X = 264.000000000000000000
+    Position.Y = 8.000000000000000000
+    Size.Width = 81.000000000000000000
+    Size.Height = 22.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    object ListBoxItem3: TListBoxItem
+      IsSelected = True
+      Position.X = 5000.000000000000000000
+      Position.Y = 5000.000000000000000000
+      Size.Width = 56.000000000000000000
+      Size.Height = 18.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'One'
+    end
+    object ListBoxItem4: TListBoxItem
+      Position.X = 5000.000000000000000000
+      Position.Y = 5000.000000000000000000
+      TabOrder = 1
+      Text = 'Two'
+    end
+  end
+  object TreeView1: TTreeView
+    Position.X = 8.000000000000000000
+    Position.Y = 40.000000000000000000
+    Size.Width = 100.000000000000000000
+    Size.Height = 100.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Viewport.Width = 96.000000000000000000
+    Viewport.Height = 96.000000000000000000
+    object TreeViewItem1: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 0
+      Text = 'One'
+    end
+    object TreeViewItem2: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 1
+      Text = 'Two'
+    end
+    object TreeViewItem3: TTreeViewItem
+      IsChecked = False
+      IsExpanded = False
+      IsSelected = False
+      TabOrder = 2
+      Text = 'Three'
+    end
+  end
+  object Label1: TLabel
+    AutoSize = True
+    Position.X = 8.000000000000000000
+    Position.Y = 160.000000000000000000
+    Size.Width = 41.000000000000000000
+    Size.Height = 16.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.WordWrap = False
+    Text = 'dummy'
+  end
+  object TabControl1: TTabControl
+    Position.X = 8.000000000000000000
+    Position.Y = 192.000000000000000000
+    Size.Width = 200.000000000000000000
+    Size.Height = 168.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 5
+    TabPosition = PlatformDefault
+    Sizes = (
+      200s
+      142s
+      200s
+      142s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 43.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'One'
+      ExplicitSize.cx = 43.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object Label2: TLabel
+        Position.X = 56.000000000000000000
+        Position.Y = 38.000000000000000000
+        Text = 'One'
+        TabOrder = 0
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 42.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Two'
+      ExplicitSize.cx = 42.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object CheckBox: TCheckBox
+        Position.X = 32.000000000000000000
+        Position.Y = 54.000000000000000000
+        TabOrder = 0
+        Text = 'Checkbox'
+      end
+    end
+  end
+end

@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -30,6 +30,7 @@ implementation
 
 uses
   NtResource,
+  NtResourceString,
   FMX.NtImageTranslator,
   FMX.NtLanguageDlg,
   FMX.NtTranslator;
@@ -47,14 +48,20 @@ begin
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);
+resourcestring
+  SEnglish = 'English';
+  SFinnish = 'Finnish';
+  SGerman = 'German';
+  SFrench = 'French';
+  SJapanese = 'Japanese';
 begin
   // Add language names so they can be localized
   // Attach a flag image to each name so the language dialog can show the flag with language name
-  NtResources._T('English', 'en').AddImage('en');
-  NtResources._T('Finnish', 'fi').AddImage('fi');
-  NtResources._T('German', 'de').AddImage('de');
-  NtResources._T('French', 'fr').AddImage('fr');
-  NtResources._T('Japanese', 'ja').AddImage('ja');
+  NtResources.Add('English', 'English', SEnglish, 'en').AddImage('en');
+  NtResources.Add('Finnish', 'suomi', SFinnish, 'fi').AddImage('fi');
+  NtResources.Add('German', 'Deutsch', SGerman, 'de').AddImage('de');
+  NtResources.Add('French', 'français', SFrench, 'fr').AddImage('fr');
+  NtResources.Add('Japanese', '日本語', SJapanese, 'ja').AddImage('ja');
 
   _T(Self);
 

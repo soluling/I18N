@@ -1,5 +1,5 @@
 del *.zip
-zip -R Ini *.ntp *.rsp
+zip -R Ini *.md *.ntp *.rsp
 zip Ini Boolean\*.ini
 zip Ini Data\*.ini
 zip Ini Encoding\*.ini

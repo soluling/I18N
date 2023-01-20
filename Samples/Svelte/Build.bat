@@ -1,2 +1,2 @@
 del *.zip
-zip -R Svelte *.ntp *.json
+zip -R Svelte *.md *.ntp *.json

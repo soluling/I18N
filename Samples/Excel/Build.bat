@@ -1,5 +1,5 @@
 del *.zip
-zip -R Excel *.ntp *.sql
+zip -R Excel *.md *.ntp *.sql
 
 zip Excel Ods\Comment\*.ods
 zip Excel Ods\Image\*.ods

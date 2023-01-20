@@ -1,3 +1,3 @@
 del *.zip
-zip -R Rtf *.ntp *.rsp
+zip -R Rtf *.md *.ntp *.rsp
 zip Rtf *.rtf

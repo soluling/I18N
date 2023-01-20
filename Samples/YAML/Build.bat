@@ -1,2 +1,2 @@
 del *.zip
-zip -R YAML *.ntp *.yml
+zip -R YAML *.md *.ntp *.yml

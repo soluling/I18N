@@ -1,3 +1,3 @@
 del *.zip
-zip -R DITA *.ntp
+zip -R DITA *.md *.ntp
 zip DITA *.dita
