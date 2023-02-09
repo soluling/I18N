@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle>
+  <msg id="1238358838717941284"><source>src/app/app.component.html:0</source>Sample</msg>
+  <msg id="8195429391839583561"><source>src/app/app.component.html:1</source>Static text</msg>
+  <msg id="3536303920536194408"><source>src/app/app.component.html:2</source>This is a <ph name="START_BOLD_TEXT"/>new<ph name="CLOSE_BOLD_TEXT"/> sample</msg>
+  <msg id="5078016957909331967"><source>src/app/app.component.html:3</source>My name is <ph name="INTERPOLATION"/></msg>
+  <msg id="3938815228928675456"><source>src/app/app.component.html:4</source><ph name="INTERPOLATION"/> and <ph name="INTERPOLATION_1"/> are my friends</msg>
+  <msg id="224905756619582507"><source>src/app/app.component.html:14</source>This is a sample.</msg>
+  <msg id="6670089302499357264"><source>src/app/app.component.html:15</source>My name is <ph name="INTERPOLATION"/></msg>
+  <msg id="8508734183248173875"><source>src/app/app.component.html:16</source><ph name="INTERPOLATION"/> and <ph name="INTERPOLATION_1"/> will come</msg>
+  <msg id="4231664889986575153"><source>src/app/app.component.ts:12</source>My name is <ph name="PH"/></msg>
+  <msg id="3501459928511353606"><source>src/app/app.component.ts:13</source><ph name="PH"/> and <ph name="PH_1"/> will come</msg>
+</messagebundle>

@@ -110,6 +110,8 @@ Then add the following command to the `package.json` file un the `"scripts"` sec
 }
 ```
 
+**Note!** On Windows you need to put the full path to the localize-extract.
+
 Then run the extractor to extract strings and to create the `messages.json` file.
 
 ```bash
