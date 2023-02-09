@@ -3,7 +3,7 @@ import { DataSource } from '@angular/cdk/collections';
 
 import { Observable ,  BehaviorSubject } from 'rxjs';
 
-import { MatDialog } from '@angular/material/dialog';
+import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
 
 import { Sport, Olympic } from './sport'
 import { SportsService, URL } from './sports.service'
