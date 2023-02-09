@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B845848A-4738-4FD7-B622-F7440C043FB4" created="20230128T141630Z" lastmodified="20230128T211213Z" version="1.0.976" stringid="2">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="ProductsAttributes.xml" fullpath="D:\NT\Deploy\Samples\XML\Rules\ProductsAttributes.xml" original="en" lastmodified="20230128T211213Z" encoding="utf-8" bom="1">
+    <xml encoding="utf-8">
+      <rules>
+        <rule value="@name"/>
+        <rule value="product" id="@id" kind="rkContext"/>
+      </rules>
+    </xml>
+    <item name="products">
+      <item name="skimmilk">
+        <row id="=name" si="1">
+          <value>Skim milk</value>
+          <lang id="fi" st="2" or="5" rw="0" time="20230128T141706Z" fuzzy="100">Rasvaton maito</lang>
+        </row>
+      </item>
+      <item name="apple">
+        <row id="=name" si="2">
+          <value>Apple</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20230128T141712Z" fuzzy="99.5">Omena</lang>
+        </row>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0cz4NCiAgPHByb2R1Y3QgaWQ9InNraW1t
+      aWxrIiBuYW1lPSJTa2ltIG1pbGsiIHByaWNlPSIxLjE1IiBjb3VudD0iMSIgLz4NCiAgPHByb2R1Y3QgaWQ9ImFwcGxlIiBuYW1l
+      PSJBcHBsZSIgcHJpY2U9IjAuOTkiIGNvdW50PSIxMCIgLz4NCjwvcHJvZHVjdHM+DQo=
+    </data>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+    <item>exclude</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

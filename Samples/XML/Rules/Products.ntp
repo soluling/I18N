@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E1DD2630-6A85-461E-B550-025360D482FB" created="20230124T135648Z" lastmodified="20230128T154803Z" version="1.0.976" stringid="10">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="Products.xml" fullpath="D:\NT\Deploy\Samples\XML\Rules\Products.xml" original="en" lastmodified="20230128T154803Z" encoding="utf-8" bom="1">
+    <xml encoding="utf-8">
+      <rules>
+        <rule value="product" id="@id" kind="rkContext"/>
+        <rule value="name"/>
+      </rules>
+    </xml>
+    <item name="products">
+      <item name="skimmilk" created="20230124T233514Z">
+        <item name="name" created="20230125T001023Z">
+          <row id="value" si="9">Skim milk</row>
+        </item>
+        <item name="price" created="20230125T001023Z"/>
+        <item name="count" created="20230125T001023Z"/>
+      </item>
+      <item name="apple" created="20230124T233514Z">
+        <item name="name" created="20230125T001023Z">
+          <row id="value" si="10">Apple</row>
+        </item>
+        <item name="price" created="20230125T001023Z"/>
+        <item name="count" created="20230125T001023Z"/>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0cz4NCiAgPHByb2R1Y3QgaWQ9InNraW1t
+      aWxrIj4NCiAgICA8bmFtZT5Ta2ltIG1pbGs8L25hbWU+DQogICAgPHByaWNlPjEuMTU8L3ByaWNlPg0KICAgIDxjb3VudD4xPC9j
+      b3VudD4NCiAgPC9wcm9kdWN0Pg0KICA8cHJvZHVjdCBpZD0iYXBwbGUiPg0KICAgIDxuYW1lPkFwcGxlPC9uYW1lPg0KICAgIDxw
+      cmljZT4wLjk5PC9wcmljZT4NCiAgICA8Y291bnQ+MTA8L2NvdW50Pg0KICA8L3Byb2R1Y3Q+DQo8L3Byb2R1Y3RzPg0K
+    </data>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+    <item>exclude</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

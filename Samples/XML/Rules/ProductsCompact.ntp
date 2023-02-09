@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C59107C1-8EF9-45FC-BF14-D697BE1FB293" created="20230127T130344Z" lastmodified="20230127T130526Z" version="1.0.976" stringid="3">
+  <lang id="fi"/>
+  <node class="TXmlSource" name="ProductsCompact.xml" fullpath="D:\NT\Deploy\Samples\XML\Rules\ProductsCompact.xml" original="en" lastmodified="20230127T130526Z" encoding="utf-8" bom="1">
+    <xml encoding="utf-8">
+      <rules>
+        <rule value="product" id="@id"/>
+      </rules>
+    </xml>
+    <item name="products">
+      <item name="skimmilk">
+        <row id="value" si="1">
+          <value>Skim milk</value>
+          <lang id="fi" rw="0" time="20230127T130424Z" fuzzy="100">Rasvaton maito</lang>
+        </row>
+      </item>
+      <item name="apple">
+        <row id="value" si="2">
+          <value>Apple</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20230127T130429Z" fuzzy="99.5">Omena</lang>
+        </row>
+      </item>
+      <item name="ski">
+        <row id="value" si="3">
+          <value>Ski</value>
+          <lang id="fi" st="4" rw="0" time="20230127T130448Z" fuzzy="99.5">Suksi</lang>
+        </row>
+      </item>
+    </item>
+    <data>
+      77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxwcm9kdWN0cz4NCiAgPHByb2R1Y3QgaWQ9InNraW1t
+      aWxrIiBwcmljZT0iMS4xNSIgY291bnQ9IjEiPlNraW0gbWlsazwvcHJvZHVjdD4NCiAgPHByb2R1Y3QgaWQ9ImFwcGxlIiBwcmlj
+      ZT0iMC45OSIgY291bnQ9IjEwIj5BcHBsZTwvcHJvZHVjdD4NCiAgPHByb2R1Y3QgaWQ9InNraSIgcHJpY2U9Ijk1MCIgY291bnQ9
+      IjEiPlNraTwvcHJvZHVjdD4NCjwvcHJvZHVjdHM+DQo=
+    </data>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+    <item>exclude</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>
