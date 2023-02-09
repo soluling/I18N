@@ -1,8 +1,9 @@
 import { Injectable } from '@angular/core';
-import { eMessageId, ɵTargetMessage } from '@angular/localize';
+import { ɵTargetMessage } from '@angular/localize';
+import { MessageId } from '@angular/localize/src/utils';
 
 // A type that contains the translations
-export type Translations = Record<ɵMessageId, ɵTargetMessage>;
+export type Translations = Record<MessageId, ɵTargetMessage>;
 
 // Stores the locale id of the loaded resource
 let resourceLocale: string = 'en-US';
