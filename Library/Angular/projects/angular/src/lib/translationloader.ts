@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ɵMessageId, ɵTargetMessage } from '@angular/localize';
+import { eMessageId, ɵTargetMessage } from '@angular/localize';
 
 // A type that contains the translations
 export type Translations = Record<ɵMessageId, ɵTargetMessage>;
