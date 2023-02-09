@@ -1,5 +1,5 @@
 import { Component, Inject, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Sport, SportKind, Olympic } from './sport'
  
@@ -10,13 +10,13 @@ import { Sport, SportKind, Olympic } from './sport'
 })
 export class SportDialogComponent implements OnInit
 {
-  form: FormGroup;
+  form: UntypedFormGroup;
   isNew: boolean;
 
   constructor(
     public dialogRef: MatDialogRef<SportDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public sport: Sport,
-    private formBuilder: FormBuilder) 
+    private formBuilder: UntypedFormBuilder) 
   {
   }
 
