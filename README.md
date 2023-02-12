@@ -6,7 +6,7 @@ Soluling has implemented a collection of internationalization (I18N) APIs for [.
 
 ## API Implementation
 
-Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. in the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
+Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. In the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
 
 ## Grammatical numbers and genders
 
