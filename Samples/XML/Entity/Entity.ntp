@@ -1,39 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="412751DC-D780-466A-A0A4-15AA4EE39F52" created="20140323T035950Z" lastmodified="20200316T215645Z" version="1.0.714" stringid="2">
+<project id="412751DC-D780-466A-A0A4-15AA4EE39F52" created="20140323T035950Z" lastmodified="20230225T120008Z" version="1.0.981" stringid="5">
   <lang id="fi"/>
-  <node class="TXmlSource" name="Entity.xml" fullpath="D:\NT\Deploy\Samples\XML\Entity\Entity.xml" original="en" encoding="utf-8" bom="1">
+  <node class="TXmlSource" name="Entity.xml" fullpath="D:\NT\Deploy\Samples\XML\Entity\Entity.xml" original="en" lastmodified="20230225T120008Z" encoding="utf-8" bom="1">
     <xml encoding="UTF-8"/>
     <item name="values">
       <item name="1" created="20181126T021725Z">
-        <row id="value" si="1">This a “small” sample</row>
+        <row id="value" si="1">
+          <value>This a “small” sample</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20230225T115942Z" fuzzy="99.5">Tämä on "pieni" näyte</lang>
+        </row>
       </item>
       <item name="2" created="20181126T021725Z">
-        <row id="value" si="2">This a “small” sample</row>
+        <row id="value" si="2">
+          <value>This a “small” sample</value>
+          <lang id="fi" st="1" or="3" rw="0" time="20230225T115942Z">Tämä on "pieni" näyte</lang>
+        </row>
+      </item>
+      <item name="one
+two" created="20230225T115747Z" st="0">
+        <row id="value" si="3" st="0">
+          <value>Multiline
+sample</value>
+          <lang id="fi" st="4" rw="0" time="20230225T115952Z" fuzzy="99.5">Monirivinen
+näyte</lang>
+        </row>
+      </item>
+      <item name="one
+three" created="20230225T115747Z" st="0">
+        <row id="value" si="4" st="0">
+          <value>Multiline
+sample</value>
+          <lang id="fi" st="4" rw="0" time="20230225T115959Z" fuzzy="99.5">Monirivinen
+näyte</lang>
+        </row>
+      </item>
+      <item name="one
+four" created="20230225T115747Z" st="0">
+        <row id="value" si="5" st="0">
+          <value>Yet another multiline
+sample</value>
+          <lang id="fi" st="4" rw="0" time="20230225T120008Z" fuzzy="99.5">Vielä yksi monirivinen
+näyte</lang>
+        </row>
       </item>
     </item>
     <data>
       77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQoNPCFET0NUWVBFIEh0bWxDb2RlcyBbIDwhRU5USVRZ
       IGxkcXVvICImIzgyMjA7Ij4gPCFFTlRJVFkgcmRxdW8gIiYjODIyMTsiPiBdPg0KPHZhbHVlcw0+DQogIDxzdHJpbmcgaWQ9IjEi
       PlRoaXMgYSAmbGRxdW87c21hbGwmcmRxdW87IHNhbXBsZTwvc3RyaW5nPg0KICA8c3RyaW5nIGlkPSIyIj5UaGlzIGEg4oCcc21h
-      bGzigJ0gc2FtcGxlPC9zdHJpbmc+DQo8L3ZhbHVlcz4=
+      bGzigJ0gc2FtcGxlPC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9Im9uZQ0KdHdvIj5NdWx0aWxpbmUNCnNhbXBsZTwvc3RyaW5nPg0K
+      ICA8c3RyaW5nIGlkPSJvbmUmI3gwYTt0aHJlZSI+TXVsdGlsaW5lJiN4MGE7c2FtcGxlPC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9
+      Im9uZSYjeDBkOyYjeDBhO2ZvdXIiPllldCBhbm90aGVyIG11bHRpbGluZSYjeDBEOyYjeDBhO3NhbXBsZTwvc3RyaW5nPg0KPC92
+      YWx1ZXM+
     </data>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>

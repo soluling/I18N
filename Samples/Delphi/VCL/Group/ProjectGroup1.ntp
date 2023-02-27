@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1B4C0E97-75EE-490B-A3EB-6133DDD72B0C" created="20201126T001527Z" lastmodified="20201126T001534Z" version="1.0.804" lockedrowcomplete="0" stringid="746">
+<project id="1B4C0E97-75EE-490B-A3EB-6133DDD72B0C" created="20201126T001527Z" lastmodified="20230219T134428Z" version="1.0.980" lockedrowcomplete="0" stringid="746">
   <lang id="fi"/>
   <node class="TRadStudioGroupSource" name="ProjectGroup1.groupproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Group\ProjectGroup1.groupproj" original="en-US" encoding="windows-1252" enabledconfigurations="Debug|Win64" disabledconfigurations="Debug|Win32" mainconfiguration="Debug" mainplatform="Win64">
-    <node class="TDelphiSource" name="Project1\Win64\Debug\Project1.exe" original="en-US" platforms="[ptWin64]">
+    <node class="TDelphiSource" name="Project1\Win64\Debug\Project1.exe" original="en-US" lastmodified="20230219T134428Z" platforms="[ptWin64]" hassignatureread="1">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -28,7 +28,7 @@
             <row id="Top">24</row>
             <row id="Width">34</row>
             <row id="Height">13</row>
-            <row id="Caption" si="371">dummy</row>
+            <row id="Caption" si="371" excluded="2">dummy</row>
           </item>
           <data>
             VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDYQELQ2xpZW50V2lkdGgD
@@ -123,7 +123,7 @@
           <row id="RTLConsts_SDriveNotFound" si="201">The drive cannot be found</row>
           <row id="RTLConsts_hNoFilterViewer" si="202">No help viewer that supports filters</row>
           <row id="RTLConsts_sArgumentInvalid" si="203">Invalid argument</row>
-          <row id="RTLConsts_sArgumentOutOfRange_Index" class="TPatternRow" si="204">Index out of range ({0}).  Must be &gt;= 0 and &lt; {1}</row>
+          <row id="RTLConsts_sArgumentOutOfRange_Index" class="TPatternRow" si="204">Index out of range ({0}).  Must be >= 0 and &lt; {1}</row>
           <row id="RTLConsts_sInvalidStringAndObjectArrays" si="205">Length of Strings and Objects arrays must be equal</row>
           <row id="RTLConsts_sSameArrays" si="206">Source and Destination arrays must not be the same</row>
           <row id="RTLConsts_sNoConstruct" class="TPatternRow" si="207">Class {0} is not intended to be constructed</row>
@@ -144,7 +144,7 @@
           <row id="RTLConsts_SThreadStartError" si="222">Cannot call Start on a running or suspended thread</row>
           <row id="RTLConsts_SThreadExternalCheckTerminated" si="223">Cannot call CheckTerminated on an externally created thread</row>
           <row id="RTLConsts_SThreadExternalSetReturnValue" si="224">Cannot call SetReturnValue on an externally create thread</row>
-          <row id="RTLConsts_SFOpenErrorEx" class="TPatternRow" si="225">Cannot open file &quot;{0}&quot;. {1}</row>
+          <row id="RTLConsts_SFOpenErrorEx" class="TPatternRow" si="225">Cannot open file "{0}". {1}</row>
           <row id="RTLConsts_SInvalidImage" si="226">Invalid stream format</row>
           <row id="RTLConsts_SInvalidMask" class="TPatternRow" si="227">'{0}' is an invalid mask at ({1})</row>
           <row id="RTLConsts_SInvalidName" class="TPatternRow" si="228">''{0}'' is not a valid component name</row>
@@ -175,7 +175,7 @@
           <row id="RTLConsts_SDuplicateItem" class="TPatternRow" si="253">List does not allow duplicates ($0{0})</row>
           <row id="RTLConsts_SDuplicateName" class="TPatternRow" si="254">A component named {0} already exists</row>
           <row id="RTLConsts_SDuplicateString" si="255">String list does not allow duplicates</row>
-          <row id="RTLConsts_SFCreateErrorEx" class="TPatternRow" si="256">Cannot create file &quot;{0}&quot;. {1}</row>
+          <row id="RTLConsts_SFCreateErrorEx" class="TPatternRow" si="256">Cannot create file "{0}". {1}</row>
           <row id="SysConst_SShortDayNameWed" si="257">Wed</row>
           <row id="SysConst_SShortDayNameThu" si="258">Thu</row>
           <row id="SysConst_SShortDayNameFri" si="259">Fri</row>
@@ -253,11 +253,11 @@
           <row id="SysConst_SInvalidVarCast" si="330">Invalid variant type conversion</row>
           <row id="SysConst_SInvalidVarOp" si="331">Invalid variant operation</row>
           <row id="SysConst_SInvalidVarNullOp" si="332">Invalid NULL variant operation</row>
-          <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" class="TPatternRow" si="333">Invalid variant operation ({0}{1}
+          <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="333">Invalid variant operation ({0}{1})
 {2}</row>
-          <row id="SysConst_SVarTypeOutOfRangeWithPrefix" class="TPatternRow" si="334">Custom variant type ({0}{1} is out of range</row>
-          <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" class="TPatternRow" si="335">Custom variant type ({0}{1} already used by {2}</row>
-          <row id="SysConst_SVarTypeNotUsableWithPrefix" class="TPatternRow" si="336">Custom variant type ({0}{1} is not usable</row>
+          <row id="SysConst_SVarTypeOutOfRangeWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="334">Custom variant type ({0}{1}) is out of range</row>
+          <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="335">Custom variant type ({0}{1}) already used by {2}</row>
+          <row id="SysConst_SVarTypeNotUsableWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="336">Custom variant type ({0}{1}) is not usable</row>
           <row id="SysConst_SRangeError" si="337">Range check error</row>
           <row id="SysConst_SIntOverflow" si="338">Integer overflow</row>
           <row id="SysConst_SInvalidOp" si="339">Invalid floating point operation</row>
@@ -276,7 +276,7 @@
 </row>
           <row id="SysConst_SExceptTitle" si="351">Application Error</row>
           <row id="SysConst_SInvalidFormat" class="TPatternRow" si="352">Format '{0}' invalid or incompatible with argument</row>
-          <row id="SysConst_SUnknown" si="353">&lt;unknown&gt;</row>
+          <row id="SysConst_SUnknown" si="353">&lt;unknown></row>
           <row id="SysConst_SInvalidInteger" class="TPatternRow" si="354">'{0}' is not a valid integer value</row>
           <row id="SysConst_SInvalidTimeStamp" class="TPatternRow" si="355">'{0}.{1}' is not a valid timestamp</row>
           <row id="SysConst_SInvalidGUID" class="TPatternRow" si="356">'{0}' is not a valid GUID value</row>
@@ -308,7 +308,7 @@
           <row id="Consts_SStyleUnregisterError" si="9">Cannot unregister the system style</row>
           <row id="Consts_SStyleNotRegisteredNoName" si="10">Style not registered</row>
           <row id="Consts_sBeginInvokeNoHandle" si="11">Cannot call BeginInvoke on a control with no parent or window handle</row>
-          <row id="Consts_SPromptArrayTooShort" si="17">Length of value array must be &gt;= length of prompt array</row>
+          <row id="Consts_SPromptArrayTooShort" si="17">Length of value array must be >= length of prompt array</row>
           <row id="Consts_SPromptArrayEmpty" si="18">Prompt array must not be empty</row>
           <row id="Consts_SUsername" si="19">&amp;Username</row>
           <row id="Consts_SPassword" si="20">&amp;Password</row>
@@ -440,7 +440,7 @@
         </node>
       </node>
     </node>
-    <node class="TDelphiSource" name="Project2\Win64\Debug\Project2.exe" original="en-US" platforms="[ptWin64]">
+    <node class="TDelphiSource" name="Project2\Win64\Debug\Project2.exe" original="en-US" lastmodified="20230219T134428Z" platforms="[ptWin64]">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -553,7 +553,7 @@
           <row id="RTLConsts_SDriveNotFound" si="574">The drive cannot be found</row>
           <row id="RTLConsts_hNoFilterViewer" si="575">No help viewer that supports filters</row>
           <row id="RTLConsts_sArgumentInvalid" si="576">Invalid argument</row>
-          <row id="RTLConsts_sArgumentOutOfRange_Index" class="TPatternRow" si="577">Index out of range ({0}).  Must be &gt;= 0 and &lt; {1}</row>
+          <row id="RTLConsts_sArgumentOutOfRange_Index" class="TPatternRow" si="577">Index out of range ({0}).  Must be >= 0 and &lt; {1}</row>
           <row id="RTLConsts_sInvalidStringAndObjectArrays" si="578">Length of Strings and Objects arrays must be equal</row>
           <row id="RTLConsts_sSameArrays" si="579">Source and Destination arrays must not be the same</row>
           <row id="RTLConsts_sNoConstruct" class="TPatternRow" si="580">Class {0} is not intended to be constructed</row>
@@ -574,7 +574,7 @@
           <row id="RTLConsts_SThreadStartError" si="595">Cannot call Start on a running or suspended thread</row>
           <row id="RTLConsts_SThreadExternalCheckTerminated" si="596">Cannot call CheckTerminated on an externally created thread</row>
           <row id="RTLConsts_SThreadExternalSetReturnValue" si="597">Cannot call SetReturnValue on an externally create thread</row>
-          <row id="RTLConsts_SFOpenErrorEx" class="TPatternRow" si="598">Cannot open file &quot;{0}&quot;. {1}</row>
+          <row id="RTLConsts_SFOpenErrorEx" class="TPatternRow" si="598">Cannot open file "{0}". {1}</row>
           <row id="RTLConsts_SInvalidImage" si="599">Invalid stream format</row>
           <row id="RTLConsts_SInvalidMask" class="TPatternRow" si="600">'{0}' is an invalid mask at ({1})</row>
           <row id="RTLConsts_SInvalidName" class="TPatternRow" si="601">''{0}'' is not a valid component name</row>
@@ -605,7 +605,7 @@
           <row id="RTLConsts_SDuplicateItem" class="TPatternRow" si="626">List does not allow duplicates ($0{0})</row>
           <row id="RTLConsts_SDuplicateName" class="TPatternRow" si="627">A component named {0} already exists</row>
           <row id="RTLConsts_SDuplicateString" si="628">String list does not allow duplicates</row>
-          <row id="RTLConsts_SFCreateErrorEx" class="TPatternRow" si="629">Cannot create file &quot;{0}&quot;. {1}</row>
+          <row id="RTLConsts_SFCreateErrorEx" class="TPatternRow" si="629">Cannot create file "{0}". {1}</row>
           <row id="SysConst_SShortDayNameWed" si="630">Wed</row>
           <row id="SysConst_SShortDayNameThu" si="631">Thu</row>
           <row id="SysConst_SShortDayNameFri" si="632">Fri</row>
@@ -683,11 +683,11 @@
           <row id="SysConst_SInvalidVarCast" si="703">Invalid variant type conversion</row>
           <row id="SysConst_SInvalidVarOp" si="704">Invalid variant operation</row>
           <row id="SysConst_SInvalidVarNullOp" si="705">Invalid NULL variant operation</row>
-          <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" class="TPatternRow" si="706">Invalid variant operation ({0}{1}
+          <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="706">Invalid variant operation ({0}{1})
 {2}</row>
-          <row id="SysConst_SVarTypeOutOfRangeWithPrefix" class="TPatternRow" si="707">Custom variant type ({0}{1} is out of range</row>
-          <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" class="TPatternRow" si="708">Custom variant type ({0}{1} already used by {2}</row>
-          <row id="SysConst_SVarTypeNotUsableWithPrefix" class="TPatternRow" si="709">Custom variant type ({0}{1} is not usable</row>
+          <row id="SysConst_SVarTypeOutOfRangeWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="707">Custom variant type ({0}{1}) is out of range</row>
+          <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="708">Custom variant type ({0}{1}) already used by {2}</row>
+          <row id="SysConst_SVarTypeNotUsableWithPrefix" changed="20230219T134418Z" class="TPatternRow" si="709">Custom variant type ({0}{1}) is not usable</row>
           <row id="SysConst_SRangeError" si="710">Range check error</row>
           <row id="SysConst_SIntOverflow" si="711">Integer overflow</row>
           <row id="SysConst_SInvalidOp" si="712">Invalid floating point operation</row>
@@ -706,7 +706,7 @@
 </row>
           <row id="SysConst_SExceptTitle" si="724">Application Error</row>
           <row id="SysConst_SInvalidFormat" class="TPatternRow" si="725">Format '{0}' invalid or incompatible with argument</row>
-          <row id="SysConst_SUnknown" si="726">&lt;unknown&gt;</row>
+          <row id="SysConst_SUnknown" si="726">&lt;unknown></row>
           <row id="SysConst_SInvalidInteger" class="TPatternRow" si="727">'{0}' is not a valid integer value</row>
           <row id="SysConst_SInvalidTimeStamp" class="TPatternRow" si="728">'{0}.{1}' is not a valid timestamp</row>
           <row id="SysConst_SInvalidGUID" class="TPatternRow" si="729">'{0}' is not a valid GUID value</row>
@@ -735,7 +735,7 @@
           <row id="Consts_SStyleUnregisterError" si="383">Cannot unregister the system style</row>
           <row id="Consts_SStyleNotRegisteredNoName" si="384">Style not registered</row>
           <row id="Consts_sBeginInvokeNoHandle" si="385">Cannot call BeginInvoke on a control with no parent or window handle</row>
-          <row id="Consts_SPromptArrayTooShort" si="390">Length of value array must be &gt;= length of prompt array</row>
+          <row id="Consts_SPromptArrayTooShort" si="390">Length of value array must be >= length of prompt array</row>
           <row id="Consts_SPromptArrayEmpty" si="391">Prompt array must not be empty</row>
           <row id="Consts_SUsername" si="392">&amp;Username</row>
           <row id="Consts_SPassword" si="393">&amp;Password</row>
@@ -877,14 +877,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

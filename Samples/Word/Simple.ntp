@@ -1,37 +1,44 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="26382042-9E4A-481A-9D7F-F16F24B699E8" created="20190630T044615Z" lastmodified="20190705T161659Z" version="1.0.455" stringid="11">
+<project id="26382042-9E4A-481A-9D7F-F16F24B699E8" created="20190630T044615Z" lastmodified="20230220T154855Z" version="1.0.980" stringid="11">
   <lang id="fi"/>
-  <node class="TWordSource" name="Simple.docx" fullpath="D:\NT\Deploy\Samples\Word\Simple.docx" original="en" onlyids="1">
+  <node class="TWordSource" name="Simple.docx" fullpath="D:\NT\Deploy\Samples\Word\Simple.docx" original="en" lastmodified="20230220T154854Z" onlyids="1">
     <node class="TWordDocumentNode" name="document" created="20190705T011524Z">
       <row id="4B487598" si="6">
         <value>Hello</value>
-        <lang id="fi" rw="0" time="20190705T011626Z">Moi</lang>
+        <lang id="fi" st="3" rw="0" time="20190705T011626Z">Moi</lang>
       </row>
       <row id="35D4352A" si="7">
         <value>This is a sample.</value>
         <lang id="fi" rw="0" time="20190705T011634Z">Tämä on esimerkki.</lang>
       </row>
       <row id="01AADBF3" class="TTagRow" si="8">
-        <value>This is &lt;b&gt;another&lt;/b&gt; sample.</value>
-        <lang id="fi" rw="0" time="20190705T011647Z">Tämä on &lt;b&gt;toinen&lt;/b&gt; esimerkki.</lang>
+        <value>This is &lt;b>another&lt;/b> sample.</value>
+        <lang id="fi" rw="0" time="20190705T011647Z">Tämä on &lt;b>toinen&lt;/b> esimerkki.</lang>
       </row>
     </node>
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Amazon" type="TAmazonTranslate"/>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
+  <duplicates>
+  </duplicates>
 </project>
