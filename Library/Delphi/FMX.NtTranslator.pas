@@ -53,6 +53,12 @@ procedure _T(form: TCustomForm); overload;
   @param form Form to be initialized. }
 procedure Translate(form: TCustomForm); overload;
 
+{ Makes the initial translation.
+  @param component Component to be initialized. }
+procedure _T(component: TComponent); overload;
+
+procedure Translate(component: TComponent); overload;
+
 implementation
 
 uses
@@ -80,6 +86,23 @@ end;
 procedure Translate(form: TCustomForm);
 begin
   _T(form);
+end;
+
+procedure _T(component: TComponent);
+var
+  translator: TNtTranslator;
+begin
+  translator := TNtTranslator.Create;
+  try
+    translator.Translate(component);
+  finally
+    translator.Free;
+  end;
+end;
+
+procedure Translate(component: TComponent);
+begin
+  _T(component);
 end;
 
 procedure TNtTranslator.AfterProcessComponent(component: TComponent);

@@ -5,27 +5,40 @@ interface
 implementation
 
 uses
+  System.SyncObjs,
   NtResource;
+
+var
+  cs: TCriticalSection;
 
 function TranslateResourceString(resStringRec: PResStringRec): String;
 var
   oldLoadResStringFunc: function (ResStringRec: PResStringRec): string;
 begin
-  Result := _T(resStringRec);
-
-  if Result <> '' then
-    Exit;
-
-  oldLoadResStringFunc := LoadResStringFunc;
+  cs.Acquire;
   try
-    LoadResStringFunc := nil;
-    Result := LoadResString(resStringRec);
+    Result := _T(resStringRec);
+
+    if Result <> '' then
+      Exit;
+
+    oldLoadResStringFunc := LoadResStringFunc;
+    try
+      LoadResStringFunc := nil;
+      Result := LoadResString(resStringRec);
+    finally
+      LoadResStringFunc := oldLoadResStringFunc;
+    end;
   finally
-    LoadResStringFunc := oldLoadResStringFunc;
+    cs.Release;
   end;
 end;
 
 initialization
   // Enable resource string translation
   LoadResStringFunc := TranslateResourceString;
+
+  cs := TCriticalSection.Create;
+finalization
+  cs.Free;
 end.

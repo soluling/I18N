@@ -1,10 +1,74 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20230224T131044Z" version="1.0.981" stringid="13">
+<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20230227T134544Z" version="1.0.982" stringid="16">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20230224T131044Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="..\..\..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" original="en" lastmodified="20230227T134544Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net40" toolsversion="nt150"/>
+    <node class="TXamlNode" name="SelectLanguage.xaml" type="Window" created="20230227T134348Z">
+      <row id="Title" si="14">
+        <value>Select Language</value>
+        <lang id="fi" st="4" or="4" rw="0" time="20230227T134348Z">Valitse kieli</lang>
+        <lang id="ja" st="4" or="4" rw="0" time="20230227T134348Z">言語の選択</lang>
+      </row>
+      <item name="grid" type="Grid">
+        <item name="ColumnDefinitions">
+          <item name="ColumnDefinition[0]" type="ColumnDefinition"/>
+          <item name="ColumnDefinition[1]" type="ColumnDefinition"/>
+        </item>
+        <item name="listBox" type="ListBox"/>
+        <item name="buttonPanel" type="StackPanel">
+          <item name="okButton" type="Button">
+            <row id="Content" si="15">
+              <value>OK</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20230227T134348Z">OK</lang>
+              <lang id="ja" st="4" or="4" rw="0" time="20230227T134348Z">わかりました</lang>
+            </row>
+          </item>
+          <item name="cancelButton" type="Button">
+            <row id="Content" si="16">
+              <value>Cancel</value>
+              <lang id="fi" st="4" or="4" rw="0" time="20230227T134348Z">Peru</lang>
+              <lang id="ja" st="4" or="4" rw="0" time="20230227T134348Z">キャンセル</lang>
+            </row>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iU29sdWxpbmcuV1BGLlNlbGVjdExhbmd1YWdlIg0KICB4bWxucz0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNlbGVjdCBMYW5ndWFnZSIgU2l6ZVRvQ29udGVudD0iV2lk
+        dGhBbmRIZWlnaHQiIE1pbldpZHRoPSIyODAiIE1pbkhlaWdodD0iMTUwIj4NCiAgDQogIDxHcmlkIHg6VWlkPSJncmlkIiBNYXJn
+        aW49IjgiPg0KICAgIDxHcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjIqIiAv
+        Pg0KICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IioiIC8+DQogICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KICAg
+        ICAgDQogICAgPExpc3RCb3ggTmFtZT0ibGlzdEJveCIgR3JpZC5Db2x1bW49IjAiIE1vdXNlRG91YmxlQ2xpY2s9Imxpc3RCb3hf
+        TW91c2VEb3VibGVDbGljayIgLz4NCg0KICAgIDxTdGFja1BhbmVsIHg6VWlkPSJidXR0b25QYW5lbCIgR3JpZC5Db2x1bW49IjEi
+        IE9yaWVudGF0aW9uPSJWZXJ0aWNhbCIgTWFyZ2luPSI4LDAsMCwwIj4NCiAgICAgIDxCdXR0b24gTmFtZT0ib2tCdXR0b24iIE1p
+        bldpZHRoPSI3NSIgSXNEZWZhdWx0PSJUcnVlIiBDbGljaz0ib2tCdXR0b25fQ2xpY2siPk9LPC9CdXR0b24+DQogICAgICA8QnV0
+        dG9uIHg6VWlkPSJjYW5jZWxCdXR0b24iIE1pbldpZHRoPSI3NSIgTWFyZ2luPSIwLDgsMCwwIiBJc0NhbmNlbD0iVHJ1ZSI+Q2Fu
+        Y2VsPC9CdXR0b24+DQogICAgPC9TdGFja1BhbmVsPg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4NCg==
+      </data>
+    </node>
+    <assemblies>
+      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
+    </assemblies>
+    <configurations>
+      <configuration name="Default" dir="bin\Release" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
+    </configurations>
+  </node>
+  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20230227T134348Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
-    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192800Z" st="0" kind="xkApplication">
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192800Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IkRyaXZpbmcuQXBwIg0KICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQu
         Y29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNv
@@ -444,8 +508,8 @@
       </node>
     </node>
     <assemblies>
-      <assembly>bin\Debug\Soluling.dll</assembly>
-      <assembly>bin\Debug\Soluling.Translator.WPF.dll</assembly>
+      <assembly>bin\Release\Soluling.dll</assembly>
+      <assembly>bin\Release\Soluling.Translator.WPF.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -465,7 +529,9 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>
