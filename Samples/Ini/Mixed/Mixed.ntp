@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="465E04F3-9E7E-465C-80C9-7508A312731E" created="20230314T004534Z" lastmodified="20230314T030215Z" version="1.0.985" stringid="6">
+  <lang id="en"/>
+  <lang id="fi"/>
+  <node class="TIniSource" name="Mixed.ini" fullpath="D:\NT\Deploy\Samples\Ini\Mixed\Mixed.ini" lastmodified="20230314T024119Z" encoding="utf-8">
+    <ini detectstringformat="1"/>
+    <item name="Numbers">
+      <row id="one" si="1">
+        <value>One</value>
+        <lang id="en" st="4" rw="0" time="20230314T014216Z">One</lang>
+        <lang id="fi" st="4" rw="0" time="20230314T012628Z">Yksi</lang>
+      </row>
+      <row id="two" si="2">
+        <value>Two</value>
+        <lang id="en" st="4" rw="0" time="20230314T014219Z">Two</lang>
+      </row>
+      <row id="three" si="3">
+        <value>Three</value>
+        <lang id="en" st="4" rw="0" time="20230314T014223Z">Three</lang>
+      </row>
+    </item>
+    <item name="Countries">
+      <row id="finland" si="4">
+        <value>Suomi</value>
+        <lang id="en" st="1" or="6" rw="0" time="20230314T014208Z" fuzzy="99.5">Finland</lang>
+      </row>
+      <row id="sweden" si="5">
+        <value>Ruotsi</value>
+        <lang id="en" st="1" or="6" rw="0" time="20230314T014211Z" fuzzy="99.5">Sweden</lang>
+      </row>
+      <row id="japan" si="6">
+        <value>Japani</value>
+        <lang id="en" st="1" or="6" rw="0" time="20230314T014213Z" fuzzy="99.5">Japani</lang>
+      </row>
+    </item>
+    <configurations>
+      <configuration name="Default">
+        <encodings>
+          <encoding language="fi" value="windows-1252"/>
+        </encodings>
+      </configuration>
+    </configurations>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

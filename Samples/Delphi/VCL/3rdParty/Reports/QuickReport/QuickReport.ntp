@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="361FDC8B-ED92-4837-891D-1FB7414F0874" created="20220501T214442Z" lastmodified="20220503T074005Z" version="1.0.919" lockedrowcomplete="0" stringid="1078">
+<project id="361FDC8B-ED92-4837-891D-1FB7414F0874" created="20220501T214442Z" lastmodified="20230329T124305Z" version="1.0.989" lockedrowcomplete="0" stringid="1081">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\QuickReport.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\3rdParty\Reports\QuickReport\Win32\Release\QuickReport.exe" original="en" lastmodified="20220503T074005Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\QuickReport.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\3rdParty\Reports\QuickReport\Win32\Release\QuickReport.exe" original="en" lastmodified="20230329T124305Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
@@ -134,7 +134,7 @@
         <row id="ClientHeight">43</row>
         <row id="ClientWidth">306</row>
         <item name="LanguageButton" type="TButton">
-          <row id="Left">88</row>
+          <row id="Left">168</row>
           <row id="Top">8</row>
           <row id="Width">75</row>
           <row id="Height">25</row>
@@ -153,14 +153,25 @@
             <lang id="fi" rw="0" time="20220502T013022Z" fuzzy="99.5">&amp;Esikatselu...</lang>
           </row>
         </item>
+        <item name="PrintButton" type="TButton" created="20230329T122133Z" st="0">
+          <row id="Left" st="0">89</row>
+          <row id="Top" st="0">8</row>
+          <row id="Width" st="0">75</row>
+          <row id="Height" st="0">25</row>
+          <row id="Caption" si="1081" st="0">
+            <value>P&amp;rint...</value>
+            <lang id="fi" rw="0" time="20230329T122146Z" fuzzy="99">T&amp;ulosta...</lang>
+          </row>
+        </item>
         <data>
           VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAIAA1RvcAIAB0NhcHRpb24GElF1aWNrUmVwb3J0IFNhbXBsZQxDbGllbnRIZWln
           aHQCKwtDbGllbnRXaWR0aAMyAQVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29s
-          b3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL0CUZvbnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsADVBpeGVsc1Blcklu
-          Y2gCYApUZXh0SGVpZ2h0Ag8AB1RCdXR0b24OTGFuZ3VhZ2VCdXR0b24ETGVmdAJYA1RvcAIIBVdpZHRoAksGSGVpZ2h0AhkHQ2Fw
-          dGlvbgYMJkxhbmd1YWdlLi4uCFRhYk9yZGVyAgAHT25DbGljawcTTGFuZ3VhZ2VCdXR0b25DbGljawAAB1RCdXR0b24NUHJldmll
-          d0J1dHRvbgRMZWZ0AggDVG9wAggFV2lkdGgCSwZIZWlnaHQCGQdDYXB0aW9uBgsmUHJldmlldy4uLghUYWJPcmRlcgIBB09uQ2xp
-          Y2sHElByZXZpZXdCdXR0b25DbGljawAAAA==
+          b3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL0CUZvbnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsAClRleHRIZWlnaHQC
+          DwAHVEJ1dHRvbg5MYW5ndWFnZUJ1dHRvbgRMZWZ0A6gAA1RvcAIIBVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYMJkxhbmd1YWdl
+          Li4uCFRhYk9yZGVyAgAHT25DbGljawcTTGFuZ3VhZ2VCdXR0b25DbGljawAAB1RCdXR0b24NUHJldmlld0J1dHRvbgRMZWZ0AggD
+          VG9wAggFV2lkdGgCSwZIZWlnaHQCGQdDYXB0aW9uBgsmUHJldmlldy4uLghUYWJPcmRlcgICB09uQ2xpY2sHElByZXZpZXdCdXR0
+          b25DbGljawAAB1RCdXR0b24LUHJpbnRCdXR0b24ETGVmdAJZA1RvcAIIBVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYJUCZyaW50
+          Li4uCFRhYk9yZGVyAgEHT25DbGljawcQUHJpbnRCdXR0b25DbGljawAAAA==
         </data>
       </node>
       <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
@@ -203,13 +214,12 @@
           VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
           ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
           Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
-          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
-          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
-          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
-          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
-          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
-          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
-          AAA=
+          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlCU9uRGVzdHJveQcLRm9ybURlc3Ryb3kGT25TaG93
+          BwhGb3JtU2hvdw1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAhUTGlzdEJveAxMYW5ndWFnZUxpc3QETGVmdAIIA1RvcAII
+          BVdpZHRoA8EABkhlaWdodAOxAApJdGVtSGVpZ2h0Ag0GU29ydGVkCQhUYWJPcmRlcgIACk9uRGJsQ2xpY2sHFExhbmd1YWdlTGlz
+          dERibENsaWNrAAAHVEJ1dHRvbghPa0J1dHRvbgRMZWZ0A9AAA1RvcAIIBVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYCT0sHRGVm
+          YXVsdAkLTW9kYWxSZXN1bHQCAQhUYWJPcmRlcgIBAAAHVEJ1dHRvbgxDYW5jZWxCdXR0b24ETGVmdAPQAANUb3ACKAVXaWR0aAJL
+          BkhlaWdodAIZBkNhbmNlbAkHQ2FwdGlvbgYGQ2FuY2VsC01vZGFsUmVzdWx0AgIIVGFiT3JkZXICAgAAAA==
         </data>
       </node>
       <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" objectname="PasswordDialog">
@@ -379,7 +389,7 @@
             <row id="Height">22</row>
             <row id="Caption" si="745">Copyright (c) 2016 - 2021 QBS Software Ltd</row>
           </item>
-          <item name="VisitLabel" type="TLabel">
+          <item name="VisitLabel" type="TLabel" autosize="0">
             <row id="Left">20</row>
             <row id="Top">177</row>
             <row id="Width">404</row>
@@ -429,7 +439,7 @@
           <row id="Top">403</row>
           <row id="Width">461</row>
           <row id="Height">132</row>
-          <item name="Label5" type="TLabel">
+          <item name="Label5" type="TLabel" autosize="0">
             <font id="Font" name="Arial" size="10"/>
             <row id="Left">20</row>
             <row id="Top">19</row>
@@ -1500,7 +1510,7 @@
               <lang id="fi" st="1" or="6" rw="0" time="20220503T073842Z" fuzzy="99.5">Oikea</lang>
             </row>
           </item>
-          <item name="Label7" type="TLabel">
+          <item name="Label7" type="TLabel" autosize="0">
             <row id="Left">274</row>
             <row id="Top">14</row>
             <row id="Width">105</row>
@@ -1510,7 +1520,7 @@
               <lang id="fi" st="4" rw="0" time="20220503T073900Z">Sarakkeen tila</lang>
             </row>
           </item>
-          <item name="Label8" type="TLabel">
+          <item name="Label8" type="TLabel" autosize="0">
             <row id="Left">274</row>
             <row id="Top">44</row>
             <row id="Width">105</row>
@@ -1579,7 +1589,7 @@
             <value>Other</value>
             <lang id="fi" st="1" or="6" rw="0" time="20220503T073923Z" fuzzy="99.5">Muut</lang>
           </row>
-          <item name="Label9" type="TLabel">
+          <item name="Label9" type="TLabel" autosize="0">
             <row id="Left">276</row>
             <row id="Top">20</row>
             <row id="Width">36</row>
@@ -1599,7 +1609,7 @@
               <lang id="fi" st="1" or="6" rw="0" time="20220503T073928Z" fuzzy="99.5">Fontti</lang>
             </row>
           </item>
-          <item name="Label11" type="TLabel">
+          <item name="Label11" type="TLabel" autosize="0">
             <row id="Left">152</row>
             <row id="Top">20</row>
             <row id="Width">39</row>
@@ -1657,7 +1667,7 @@
             <value>Page frame</value>
             <lang id="fi" st="1" or="6" rw="0" time="20220503T074001Z" fuzzy="99.5">Sivun kehys</lang>
           </row>
-          <item name="Label12" type="TLabel">
+          <item name="Label12" type="TLabel" autosize="0">
             <row id="Left">142</row>
             <row id="Top">18</row>
             <row id="Width">39</row>
@@ -1673,7 +1683,7 @@
             <row id="Width">17</row>
             <row id="Height">17</row>
           </item>
-          <item name="Label13" type="TLabel">
+          <item name="Label13" type="TLabel" autosize="0">
             <row id="Left">276</row>
             <row id="Top">18</row>
             <row id="Width">69</row>
@@ -3130,7 +3140,7 @@
               <row id="Height">13</row>
               <row id="Caption" si="847">FuncName</row>
             </item>
-            <item name="FuncDescription" type="TLabel">
+            <item name="FuncDescription" type="TLabel" autosize="0">
               <row id="Left">18</row>
               <row id="Top">174</row>
               <row id="Width">307</row>
@@ -3181,7 +3191,7 @@
               <row id="Height">13</row>
               <row id="Caption" si="858">FuncName</row>
             </item>
-            <item name="CopyFuncDescription" type="TLabel">
+            <item name="CopyFuncDescription" type="TLabel" autosize="0">
               <row id="Left">16</row>
               <row id="Top">30</row>
               <row id="Width">307</row>
@@ -4492,7 +4502,7 @@
         <row id="Caption" si="924">Printing progress</row>
         <row id="ClientHeight">97</row>
         <row id="ClientWidth">149</row>
-        <item name="Info" type="TLabel">
+        <item name="Info" type="TLabel" autosize="0">
           <row id="Left">0</row>
           <row id="Top">44</row>
           <row id="Width">145</row>
@@ -4731,7 +4741,7 @@
               <row id="Width">185</row>
               <row id="Height">41</row>
               <row id="Caption" si="970">Search text</row>
-              <item name="SearchTextLabel" type="TLabel">
+              <item name="SearchTextLabel" type="TLabel" autosize="0">
                 <row id="Left">10</row>
                 <row id="Top">18</row>
                 <row id="Width">169</row>
@@ -5453,7 +5463,7 @@
               <row id="Width">136</row>
               <row id="Height">41</row>
               <row id="Caption" si="1030">Search text</row>
-              <item name="SearchTextLabel" type="TLabel">
+              <item name="SearchTextLabel" type="TLabel" autosize="0">
                 <row id="Left">2</row>
                 <row id="Top">18</row>
                 <row id="Width">127</row>
@@ -5887,7 +5897,7 @@
             <row id="Top">38</row>
             <row id="Width">718</row>
             <row id="Height">67</row>
-            <item name="DescriptionText" type="TQRDBText">
+            <item name="DescriptionText" type="TQRDBText" autosize="0">
               <row id="Left">0</row>
               <row id="Top">24</row>
               <row id="Width">713</row>
@@ -5914,41 +5924,41 @@
           VFBGMAtUUmVwb3J0Rm9ybQpSZXBvcnRGb3JtBExlZnQCAANUb3ACAAdDYXB0aW9uBhJRdWlja1JlcG9ydCBTYW1wbGUMQ2xpZW50
           SGVpZ2h0A2MEC0NsaWVudFdpZHRoAxoDBUNvbG9yBwljbEJ0bkZhY2UMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9u
           dC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1lBghTZWdvZSBVSQpGb250LlN0eWxlCwAGU2NhbGVk
-          CAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQ1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAIPAAlUUXVpY2tSZXAJUXVpY2tSZXAxBExl
-          ZnQCAANUb3ACAAVXaWR0aAMaAwZIZWlnaHQDYwQOU2hvd2luZ1ByZXZpZXcIB0RhdGFTZXQHBlF1ZXJ5MQxGb250LkNoYXJzZXQH
-          D0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQLRm9udC5IZWlnaHQC8wlGb250Lk5hbWUGBUFyaWFsCkZv
-          bnQuU3R5bGULABFGdW5jdGlvbnMuU3RyaW5ncwEGClBBR0VOVU1CRVIGDENPTFVNTk5VTUJFUgYLUkVQT1JUVElUTEUADkZ1bmN0
-          aW9ucy5EQVRBAQYBMAYBMAYCJycAB09wdGlvbnMLD0ZpcnN0UGFnZUhlYWRlcg5MYXN0UGFnZUZvb3RlcgAMUGFnZS5Db2x1bW5z
-          AgEQUGFnZS5PcmllbnRhdGlvbgcKcG9Qb3J0cmFpdA5QYWdlLlBhcGVyU2l6ZQcCQTQPUGFnZS5Db250aW51b3VzCAtQYWdlLlZh
-          bHVlcwEFAAAAAAAAAMgFQAUAAAAAAACguQpABQAAAAAAAADIBUAFAAAAAAAAQIMKQAUAAAAAAAAAyAVABQAAAAAAAADIBUAFAAAA
-          AAAAAAAAAAAWUHJpbnRlclNldHRpbmdzLkNvcGllcwIBGVByaW50ZXJTZXR0aW5ncy5PdXRwdXRCaW4HBEF1dG8WUHJpbnRlclNl
-          dHRpbmdzLkR1cGxleAgZUHJpbnRlclNldHRpbmdzLkZpcnN0UGFnZQIAGFByaW50ZXJTZXR0aW5ncy5MYXN0UGFnZQIAIlByaW50
-          ZXJTZXR0aW5ncy5Vc2VTdGFuZGFyZHByaW50ZXIIIFByaW50ZXJTZXR0aW5ncy5Vc2VDdXN0b21CaW5Db2RlCB1QcmludGVyU2V0
-          dGluZ3MuQ3VzdG9tQmluQ29kZQIAHlByaW50ZXJTZXR0aW5ncy5FeHRlbmRlZER1cGxleAIAIlByaW50ZXJTZXR0aW5ncy5Vc2VD
-          dXN0b21QYXBlckNvZGUIH1ByaW50ZXJTZXR0aW5ncy5DdXN0b21QYXBlckNvZGUCAB1QcmludGVyU2V0dGluZ3MuUHJpbnRNZXRh
-          RmlsZQgbUHJpbnRlclNldHRpbmdzLk1lbW9yeUxpbWl0BEBCDwAXUHJpbnRlclNldHRpbmdzLkNvbGxhdGUCABtQcmludGVyU2V0
-          dGluZ3MuQ29sb3JPcHRpb24CAgxQcmludElmRW1wdHkJClNuYXBUb0dyaWQJBVVuaXRzBwJNTQRab29tAmQNUHJldkZvcm1TdHls
-          ZQcIZnNOb3JtYWwTUHJldmlld0luaXRpYWxTdGF0ZQcId3NOb3JtYWwMUHJldmlld1dpZHRoAyADDVByZXZpZXdIZWlnaHQDIAMP
-          UHJldkluaXRpYWxab29tBwtxclpvb21Ub0ZpdBZQcmV2aWV3RGVmYXVsdFNhdmVUeXBlBwVzdFBERgtQcmV2aWV3TGVmdAIAClBy
-          ZXZpZXdUb3ACAAAHVFFSQmFuZAtEZXRhaWxCYW5kMQRMZWZ0AiYDVG9wAiYFV2lkdGgDzgIGSGVpZ2h0AkMNQWxpZ25Ub0JvdHRv
-          bQgPVHJhbnNwYXJlbnRCYW5kCA5Gb3JjZU5ld0NvbHVtbggMRm9yY2VOZXdQYWdlCAtTaXplLlZhbHVlcwEF80tVVVVVRbEGQAXw
-          nqqqqqp27QlAABdQcmVDYWx1Y3VsYXRlQmFuZEhlaWdodAgNS2VlcE9uT25lUGFnZQgIQmFuZFR5cGUHCHJiRGV0YWlsAAlUUVJE
-          QlRleHQPRGVzY3JpcHRpb25UZXh0BExlZnQCAANUb3ACGAVXaWR0aAPJAgZIZWlnaHQCIQtTaXplLlZhbHVlcwEFAAAAAAAAoK4F
-          QAUAAAAAAAAAAAAABQAAAAAAAAD+BEAFEGFVVVVVz+sJQAAIWExDb2x1bW4CAAtYTE51bUZvcm1hdAcJbmZHZW5lcmFsD0FjdGl2
-          ZUluUHJldmlldwkJQWxpZ25tZW50Bw10YUxlZnRKdXN0aWZ5C0FsaWduVG9CYW5kCAhBdXRvU2l6ZQgFQ29sb3IHB2NsV2hpdGUH
-          RGF0YVNldAcGUXVlcnkxCURhdGFGaWVsZAYLRGVzY3JpcHRpb24LVHJhbnNwYXJlbnQICEV4cG9ydEFzBwhleHB0VGV4dAlXcmFw
-          U3R5bGUHDUJyZWFrT25TcGFjZXMLRnVsbEp1c3RpZnkIDU1heEJyZWFrQ2hhcnMCABFWZXJ0aWNhbEFsaWdubWVudAcFdGxUb3AI
-          Rm9udFNpemUCCgAACVRRUkRCVGV4dAhOYW1lVGV4dARMZWZ0AgADVG9wAgAFV2lkdGgCJgZIZWlnaHQCEQtTaXplLlZhbHVlcwEF
-          a66qqqqq6rMEQAUAAAAAAAAAAAAABQAAAAAAAAAAAAAFGWhVVVVVFckFQAAIWExDb2x1bW4CAAtYTE51bUZvcm1hdAcJbmZHZW5l
-          cmFsD0FjdGl2ZUluUHJldmlldwkJQWxpZ25tZW50Bw10YUxlZnRKdXN0aWZ5C0FsaWduVG9CYW5kCAVDb2xvcgcHY2xXaGl0ZQdE
-          YXRhU2V0BwZRdWVyeTEJRGF0YUZpZWxkBgROYW1lDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNs
-          V2luZG93VGV4dAtGb250LkhlaWdodALzCUZvbnQuTmFtZQYFQXJpYWwKRm9udC5TdHlsZQsGZnNCb2xkAApQYXJlbnRGb250CAtU
-          cmFuc3BhcmVudAgIRXhwb3J0QXMHCGV4cHRUZXh0CVdyYXBTdHlsZQcNQnJlYWtPblNwYWNlcwtGdWxsSnVzdGlmeQgNTWF4QnJl
-          YWtDaGFycwIAEVZlcnRpY2FsQWxpZ25tZW50BwV0bFRvcAhGb250U2l6ZQIKAAAAAA5UQURPQ29ubmVjdGlvbgtDb25uZWN0aW9u
-          MQlDb25uZWN0ZWQJEENvbm5lY3Rpb25TdHJpbmcGW1Byb3ZpZGVyPU1pY3Jvc29mdC5KZXQuT0xFREIuNC4wO0RhdGEgU291cmNl
-          PS4uXC4uXC4uXFNwb3J0Lm1kYjtQZXJzaXN0IFNlY3VyaXR5IEluZm89RmFsc2ULTG9naW5Qcm9tcHQIBE1vZGUHD2NtU2hhcmVE
-          ZW55Tm9uZQhQcm92aWRlcgYXTWljcm9zb2Z0LkpldC5PTEVEQi40LjAETGVmdAO4AANUb3ADmAAAAAlUQURPUXVlcnkGUXVlcnkx
-          CkNvbm5lY3Rpb24HC0Nvbm5lY3Rpb24xClBhcmFtZXRlcnMOAARMZWZ0A0kBA1RvcAOYAAAAAA==
+          CAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQpUZXh0SGVpZ2h0Ag8ACVRRdWlja1JlcAlRdWlja1JlcDEETGVmdAIAA1RvcAIABVdpZHRo
+          AxoDBkhlaWdodANjBA5TaG93aW5nUHJldmlldwgHRGF0YVNldAcGUXVlcnkxDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VU
+          CkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodALzCUZvbnQuTmFtZQYFQXJpYWwKRm9udC5TdHlsZQsAEUZ1bmN0
+          aW9ucy5TdHJpbmdzAQYKUEFHRU5VTUJFUgYMQ09MVU1OTlVNQkVSBgtSRVBPUlRUSVRMRQAORnVuY3Rpb25zLkRBVEEBBgEwBgEw
+          BgInJwAHT3B0aW9ucwsPRmlyc3RQYWdlSGVhZGVyDkxhc3RQYWdlRm9vdGVyAAxQYWdlLkNvbHVtbnMCARBQYWdlLk9yaWVudGF0
+          aW9uBwpwb1BvcnRyYWl0DlBhZ2UuUGFwZXJTaXplBwJBNA9QYWdlLkNvbnRpbnVvdXMIC1BhZ2UuVmFsdWVzAQUAAAAAAAAAyAVA
+          BQAAAAAAAKC5CkAFAAAAAAAAAMgFQAUAAAAAAABAgwpABQAAAAAAAADIBUAFAAAAAAAAAMgFQAUAAAAAAAAAAAAAABZQcmludGVy
+          U2V0dGluZ3MuQ29waWVzAgEZUHJpbnRlclNldHRpbmdzLk91dHB1dEJpbgcEQXV0bxZQcmludGVyU2V0dGluZ3MuRHVwbGV4CBlQ
+          cmludGVyU2V0dGluZ3MuRmlyc3RQYWdlAgAYUHJpbnRlclNldHRpbmdzLkxhc3RQYWdlAgAiUHJpbnRlclNldHRpbmdzLlVzZVN0
+          YW5kYXJkcHJpbnRlcgggUHJpbnRlclNldHRpbmdzLlVzZUN1c3RvbUJpbkNvZGUIHVByaW50ZXJTZXR0aW5ncy5DdXN0b21CaW5D
+          b2RlAgAeUHJpbnRlclNldHRpbmdzLkV4dGVuZGVkRHVwbGV4AgAiUHJpbnRlclNldHRpbmdzLlVzZUN1c3RvbVBhcGVyQ29kZQgf
+          UHJpbnRlclNldHRpbmdzLkN1c3RvbVBhcGVyQ29kZQIAHVByaW50ZXJTZXR0aW5ncy5QcmludE1ldGFGaWxlCBtQcmludGVyU2V0
+          dGluZ3MuTWVtb3J5TGltaXQEQEIPABdQcmludGVyU2V0dGluZ3MuQ29sbGF0ZQIAG1ByaW50ZXJTZXR0aW5ncy5Db2xvck9wdGlv
+          bgICDFByaW50SWZFbXB0eQkKU25hcFRvR3JpZAkFVW5pdHMHAk1NBFpvb20CZA1QcmV2Rm9ybVN0eWxlBwhmc05vcm1hbBNQcmV2
+          aWV3SW5pdGlhbFN0YXRlBwh3c05vcm1hbAxQcmV2aWV3V2lkdGgDIAMNUHJldmlld0hlaWdodAMgAw9QcmV2SW5pdGlhbFpvb20H
+          C3FyWm9vbVRvRml0FlByZXZpZXdEZWZhdWx0U2F2ZVR5cGUHBXN0UERGC1ByZXZpZXdMZWZ0AgAKUHJldmlld1RvcAIAAAdUUVJC
+          YW5kC0RldGFpbEJhbmQxBExlZnQCJgNUb3ACJgVXaWR0aAPOAgZIZWlnaHQCQw1BbGlnblRvQm90dG9tCA9UcmFuc3BhcmVudEJh
+          bmQIDkZvcmNlTmV3Q29sdW1uCAxGb3JjZU5ld1BhZ2UIC1NpemUuVmFsdWVzAQXzS1VVVVVFsQZABfCeqqqqqnbtCUAAF1ByZUNh
+          bHVjdWxhdGVCYW5kSGVpZ2h0CA1LZWVwT25PbmVQYWdlCAhCYW5kVHlwZQcIcmJEZXRhaWwACVRRUkRCVGV4dA9EZXNjcmlwdGlv
+          blRleHQETGVmdAIAA1RvcAIYBVdpZHRoA8kCBkhlaWdodAIhC1NpemUuVmFsdWVzAQUAAAAAAACgrgVABQAAAAAAAAAAAAAFAAAA
+          AAAAAP4EQAUQYVVVVVXP6wlAAAhYTENvbHVtbgIAC1hMTnVtRm9ybWF0BwluZkdlbmVyYWwPQWN0aXZlSW5QcmV2aWV3CQlBbGln
+          bm1lbnQHDXRhTGVmdEp1c3RpZnkLQWxpZ25Ub0JhbmQICEF1dG9TaXplCAVDb2xvcgcHY2xXaGl0ZQdEYXRhU2V0BwZRdWVyeTEJ
+          RGF0YUZpZWxkBgtEZXNjcmlwdGlvbgtUcmFuc3BhcmVudAgIRXhwb3J0QXMHCGV4cHRUZXh0CVdyYXBTdHlsZQcNQnJlYWtPblNw
+          YWNlcwtGdWxsSnVzdGlmeQgNTWF4QnJlYWtDaGFycwIAEVZlcnRpY2FsQWxpZ25tZW50BwV0bFRvcAhGb250U2l6ZQIKAAAJVFFS
+          REJUZXh0CE5hbWVUZXh0BExlZnQCAANUb3ACAAVXaWR0aAImBkhlaWdodAIRC1NpemUuVmFsdWVzAQVrrqqqqqrqswRABQAAAAAA
+          AAAAAAAFAAAAAAAAAAAAAAUZaFVVVVUVyQVAAAhYTENvbHVtbgIAC1hMTnVtRm9ybWF0BwluZkdlbmVyYWwPQWN0aXZlSW5QcmV2
+          aWV3CQlBbGlnbm1lbnQHDXRhTGVmdEp1c3RpZnkLQWxpZ25Ub0JhbmQIBUNvbG9yBwdjbFdoaXRlB0RhdGFTZXQHBlF1ZXJ5MQlE
+          YXRhRmllbGQGBE5hbWUMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQu
+          SGVpZ2h0AvMJRm9udC5OYW1lBgVBcmlhbApGb250LlN0eWxlCwZmc0JvbGQAClBhcmVudEZvbnQIC1RyYW5zcGFyZW50CAhFeHBv
+          cnRBcwcIZXhwdFRleHQJV3JhcFN0eWxlBw1CcmVha09uU3BhY2VzC0Z1bGxKdXN0aWZ5CA1NYXhCcmVha0NoYXJzAgARVmVydGlj
+          YWxBbGlnbm1lbnQHBXRsVG9wCEZvbnRTaXplAgoAAAAADlRBRE9Db25uZWN0aW9uC0Nvbm5lY3Rpb24xEENvbm5lY3Rpb25TdHJp
+          bmcGXFByb3ZpZGVyPU1pY3Jvc29mdC5KZXQuT0xFREIuNC4wO0RhdGEgU291cmNlPS4uXC4uXC4uXFNwb3J0Lm1kYjtQZXJzaXN0
+          IFNlY3VyaXR5IEluZm89RmFsc2U7C0xvZ2luUHJvbXB0CARNb2RlBw9jbVNoYXJlRGVueU5vbmUIUHJvdmlkZXIGF01pY3Jvc29m
+          dC5KZXQuT0xFREIuNC4wBExlZnQDuAADVG9wA5gAAAAJVEFET1F1ZXJ5BlF1ZXJ5MQpDb25uZWN0aW9uBwtDb25uZWN0aW9uMQpQ
+          YXJhbWV0ZXJzDgAETGVmdANJAQNUb3ADmAAAAAA=
         </data>
       </node>
       <node class="TDelphiFormNode" name="TSEARCHDLG" type="TSearchDlg" resname="TSEARCHDLG" objectname="SearchDlg">
@@ -5961,7 +5971,7 @@
         </row>
         <row id="ClientHeight">118</row>
         <row id="ClientWidth">305</row>
-        <item name="Label1" type="TLabel">
+        <item name="Label1" type="TLabel" autosize="0">
           <font id="Font" name="Tahoma" size="10"/>
           <row id="Left">8</row>
           <row id="Top">8</row>
@@ -6033,18 +6043,6 @@
     </node>
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="Data.DBConsts">
-        <row id="SInvalidBcdValue" class="TPatternRow" si="241">{0} is not a valid BCD value</row>
-        <row id="SCouldNotParseTimeStamp" si="242">Could not parse SQL TimeStamp string</row>
-        <row id="SInvalidSqlTimeStamp" si="243">Invalid SQL date/time values</row>
-        <row id="SNotEditing" si="257">Dataset not in edit or insert mode</row>
-        <row id="SDataSetClosed" si="258">Cannot perform this operation on a closed dataset</row>
-        <row id="SDataSetEmpty" si="259">Cannot perform this operation on an empty dataset</row>
-        <row id="SDataSetReadOnly" si="260">Cannot modify a read-only dataset</row>
-        <row id="SNestedDataSetClass" class="TPatternRow" si="261">Nested dataset must inherit from {0}</row>
-        <row id="STextFalse" si="262">
-          <value>False</value>
-          <lang id="fi" st="4" or="3" rw="0" time="20220503T073430Z">Epätosi</lang>
-        </row>
         <row id="STextTrue" si="263">
           <value>True</value>
           <lang id="fi" st="1" or="3" rw="0" time="20220503T073422Z">Tosi</lang>
@@ -6058,12 +6056,9 @@
         <row id="SUnassignedVar" si="270">Unassigned variant value</row>
         <row id="SRecordNotFound" si="271">Record not found</row>
         <row id="SBcdOverflow" si="272">BCD overflow</row>
-        <row id="SFieldTypeMismatch" class="TPatternRow" si="273">Type mismatch for field '{0}', expecting: {1} actual: {2}</row>
-        <row id="SFieldSizeMismatch" class="TPatternRow" si="274">Size mismatch for field '{0}', expecting: {1} actual: {2}</row>
-        <row id="SInvalidVarByteArray" class="TPatternRow" si="275">Invalid variant type or size for field '{0}'</row>
-        <row id="SFieldOutOfRange" class="TPatternRow" si="276">Value of field '{0}' is out of range</row>
-        <row id="SFieldRequired" class="TPatternRow" si="277">Field '{0}' must have a value</row>
-        <row id="SDataSetMissing" class="TPatternRow" si="278">Field '{0}' has no dataset</row>
+        <row id="SInvalidBcdValue" class="TPatternRow" si="241">{0} is not a valid BCD value</row>
+        <row id="SCouldNotParseTimeStamp" si="242">Could not parse SQL TimeStamp string</row>
+        <row id="SInvalidSqlTimeStamp" si="243">Invalid SQL date/time values</row>
         <row id="SInvalidCalcType" class="TPatternRow" si="279">Field '{0}' cannot be a calculated or lookup field</row>
         <row id="SFieldReadOnly" class="TPatternRow" si="280">Field '{0}' cannot be modified</row>
         <row id="SDuplicateIndexName" class="TPatternRow" si="281">Duplicate index name '{0}'</row>
@@ -6074,9 +6069,15 @@
         <row id="SLookupInfoError" class="TPatternRow" si="286">Lookup information for field '{0}' is incomplete</row>
         <row id="SDataSourceChange" si="287">DataSource cannot be changed</row>
         <row id="SDataSetOpen" si="288">Cannot perform this operation on an open dataset</row>
-        <row id="SInvalidFieldSize" si="292">Invalid field size</row>
-        <row id="SInvalidFieldKind" si="293">Invalid FieldKind</row>
-        <row id="SUnknownFieldType" class="TPatternRow" si="294">Field '{0}' is of an unknown type</row>
+        <row id="SNotEditing" si="257">Dataset not in edit or insert mode</row>
+        <row id="SDataSetClosed" si="258">Cannot perform this operation on a closed dataset</row>
+        <row id="SDataSetEmpty" si="259">Cannot perform this operation on an empty dataset</row>
+        <row id="SDataSetReadOnly" si="260">Cannot modify a read-only dataset</row>
+        <row id="SNestedDataSetClass" class="TPatternRow" si="261">Nested dataset must inherit from {0}</row>
+        <row id="STextFalse" si="262">
+          <value>False</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20220503T073430Z">Epätosi</lang>
+        </row>
         <row id="SFieldNameMissing" si="295">Field name missing</row>
         <row id="SDuplicateFieldName" class="TPatternRow" si="296">Duplicate field name '{0}'</row>
         <row id="SFieldNotFound" class="TPatternRow" si="297">Field '{0}' not found</row>
@@ -6087,16 +6088,17 @@
         <row id="SInvalidIntegerValue" class="TPatternRow" si="302">'{0}' is not a valid integer value for field '{1}'</row>
         <row id="SInvalidBoolValue" class="TPatternRow" si="303">'{0}' is not a valid boolean value for field '{1}'</row>
         <row id="SInvalidFloatValue" class="TPatternRow" si="304">'{0}' is not a valid floating point value for field '{1}'</row>
+        <row id="SFieldTypeMismatch" class="TPatternRow" si="273">Type mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="SFieldSizeMismatch" class="TPatternRow" si="274">Size mismatch for field '{0}', expecting: {1} actual: {2}</row>
+        <row id="SInvalidVarByteArray" class="TPatternRow" si="275">Invalid variant type or size for field '{0}'</row>
+        <row id="SFieldOutOfRange" class="TPatternRow" si="276">Value of field '{0}' is out of range</row>
+        <row id="SFieldRequired" class="TPatternRow" si="277">Field '{0}' must have a value</row>
+        <row id="SDataSetMissing" class="TPatternRow" si="278">Field '{0}' has no dataset</row>
+        <row id="SInvalidFieldSize" si="292">Invalid field size</row>
+        <row id="SInvalidFieldKind" si="293">Invalid FieldKind</row>
+        <row id="SUnknownFieldType" class="TPatternRow" si="294">Field '{0}' is of an unknown type</row>
       </node>
       <node class="TWindowsStringNode" name="Data.Win.ADOConst">
-        <row id="sNameAttr" si="225">
-          <value>Name</value>
-          <lang id="fi" st="1" or="3" rw="0" time="20220503T072417Z">Nimi</lang>
-        </row>
-        <row id="sValueAttr" si="226">Value</row>
-        <row id="SMissingConnection" si="244">Missing Connection or ConnectionString</row>
-        <row id="SNoDetailFilter" si="245">Filter property cannot be used for detail tables</row>
-        <row id="SBookmarksRequired" si="246">Dataset does not support bookmarks, which are required for multi-record data controls</row>
         <row id="SMissingCommandText" class="TPatternRow" si="247">Missing {0} property</row>
         <row id="SNoResultSet" si="248">CommandText does not return a result set</row>
         <row id="SADOCreateError" si="249">Error creating object.  Please verify that the Microsoft Data Access Components 2.1 (or later) have been properly installed</row>
@@ -6107,8 +6109,17 @@
         <row id="SCantRequery" si="254">Cannot perform a requery after connection has changed</row>
         <row id="SNoFilterOptions" si="255">FilterOptions are not supported</row>
         <row id="SRecordsetNotOpen" si="256">Recordset is not open</row>
+        <row id="sNameAttr" si="225">
+          <value>Name</value>
+          <lang id="fi" st="1" or="3" rw="0" time="20220503T072417Z">Nimi</lang>
+        </row>
+        <row id="sValueAttr" si="226">Value</row>
+        <row id="SMissingConnection" si="244">Missing Connection or ConnectionString</row>
+        <row id="SNoDetailFilter" si="245">Filter property cannot be used for detail tables</row>
+        <row id="SBookmarksRequired" si="246">Dataset does not support bookmarks, which are required for multi-record data controls</row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern">
+        <row id="SNeutral" si="16">Neutral</row>
         <row id="SZero" si="8">Nullar</row>
         <row id="SOne" si="9">Singular</row>
         <row id="STwo" si="10">Dual</row>
@@ -6117,9 +6128,10 @@
         <row id="SPlural" si="13">Plural</row>
         <row id="SMale" si="14">Male</row>
         <row id="SFemale" si="15">Female</row>
-        <row id="SNeutral" si="16">Neutral</row>
       </node>
       <node class="TWindowsStringNode" name="NtWindows">
+        <row id="STraditionalSort" si="31">traditional sort</row>
+        <row id="SInternationalSort" si="32">international sort</row>
         <row id="SModern" si="1">modern</row>
         <row id="SValencia" si="2">Valencia</row>
         <row id="STechnicalSort" si="3">technical sort</row>
@@ -6127,34 +6139,8 @@
         <row id="SStrokeSort" si="5">stroke sort</row>
         <row id="SRadicalSort" si="6">radical/stroke sort</row>
         <row id="SBopomofoSort" si="7">Bopomofo sort</row>
-        <row id="STraditionalSort" si="31">traditional sort</row>
-        <row id="SInternationalSort" si="32">international sort</row>
       </node>
       <node class="TWindowsStringNode" name="qr6const">
-        <row id="sqrExitButtonCaption" si="33">
-          <value>&amp;Close</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071929Z" fuzzy="99.5">&amp;Sulje</lang>
-        </row>
-        <row id="sqrSearchNoResult" si="34">
-          <value>No matching text</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071932Z" fuzzy="99.5">Ei vastaavaa tekstiä</lang>
-        </row>
-        <row id="sqrCancelButtonHint" si="35">
-          <value>Cancel the report</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071935Z" fuzzy="99.5">Peruuta raportti</lang>
-        </row>
-        <row id="sqrCopyButtonHint" si="36">
-          <value>Copy page to clipboard</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071939Z" fuzzy="99.5">Kopioi sivu leikepöydälle</lang>
-        </row>
-        <row id="sqrSetZoomHint" si="37">
-          <value>Set Display Zoom</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071944Z" fuzzy="99.5">Aseta näytön zoomaus</lang>
-        </row>
-        <row id="sqrExportProgress" si="38">
-          <value>Export Progress</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T071952Z" fuzzy="99.5">Vie edistyminen</lang>
-        </row>
         <row id="sqrStatusZoom" si="39">
           <value>Zoom</value>
           <lang id="fi" st="4" or="3" rw="0" time="20220503T073620Z" fuzzy="99.5">Zoomaus</lang>
@@ -6162,30 +6148,6 @@
         <row id="sqrFileInUseError" si="40">
           <value>The file is read-only or in use - save abandoned.</value>
           <lang id="fi" st="4" rw="0" time="20220503T072027Z" fuzzy="99.5">Tiedosto on vain luku -tilassa tai käytössä - tallennus hylätty.</lang>
-        </row>
-        <row id="SqrDivisionByZero" si="49">
-          <value>Division by Zero</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072035Z" fuzzy="99.5">Nollalla jakaminen</lang>
-        </row>
-        <row id="SqrInvalidFormatnumeric" si="50">
-          <value>Invalid format or value specified</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072039Z" fuzzy="99.5">Virheellinen muoto tai arvo määritetty</lang>
-        </row>
-        <row id="SqrSQRTInvalid" si="51">
-          <value>Invalid argument to SQRT function</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072045Z" fuzzy="99.5">Virheellinen argumentti SQRT-funktiolle</lang>
-        </row>
-        <row id="SqrInvalidNot" si="52">
-          <value>Invalid use of NOT</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072052Z" fuzzy="99.5">Virheellinen NOT-käyttö</lang>
-        </row>
-        <row id="SqrGotoPage" class="TPatternRow" si="53">
-          <value>Select a page from 1 to {0}</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072057Z" fuzzy="99.5">Valitse sivu väliltä 1 - {0}</lang>
-        </row>
-        <row id="sqrSearchResults" si="54">
-          <value>Search Results</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20220503T072102Z" fuzzy="99.5">Hakutulokset</lang>
         </row>
         <row id="sqrThumbNails" si="55">
           <value>ThumbNails</value>
@@ -6227,6 +6189,74 @@
           <value>Report Preview : </value>
           <lang id="fi" st="1" or="6" rw="0" time="20220503T072123Z" fuzzy="99.5">Raportin esikatselu : </lang>
         </row>
+        <row id="sqrExitButtonCaption" si="33">
+          <value>&amp;Close</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071929Z" fuzzy="99.5">&amp;Sulje</lang>
+        </row>
+        <row id="sqrSearchNoResult" si="34">
+          <value>No matching text</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071932Z" fuzzy="99.5">Ei vastaavaa tekstiä</lang>
+        </row>
+        <row id="sqrCancelButtonHint" si="35">
+          <value>Cancel the report</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071935Z" fuzzy="99.5">Peruuta raportti</lang>
+        </row>
+        <row id="sqrCopyButtonHint" si="36">
+          <value>Copy page to clipboard</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071939Z" fuzzy="99.5">Kopioi sivu leikepöydälle</lang>
+        </row>
+        <row id="sqrSetZoomHint" si="37">
+          <value>Set Display Zoom</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071944Z" fuzzy="99.5">Aseta näytön zoomaus</lang>
+        </row>
+        <row id="sqrExportProgress" si="38">
+          <value>Export Progress</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T071952Z" fuzzy="99.5">Vie edistyminen</lang>
+        </row>
+        <row id="SqrQRXDocumentForWeb" si="71">QRX document (XML)</row>
+        <row id="SqrExpBldNumeric" class="TPatternRow" si="72">Argument {0} - numeric value</row>
+        <row id="SqrExpBldLogical" class="TPatternRow" si="73">Argument {0} - logical value</row>
+        <row id="SqrExpBldText" class="TPatternRow" si="74">Argument {0} - text Value</row>
+        <row id="SqrExpBldValue" class="TPatternRow" si="75">Argument {0} - value</row>
+        <row id="SqrExpBldEnterParam" class="TPatternRow" si="76">Enter {0}. parameter for {1}</row>
+        <row id="SqrExpBldError" si="77">ERROR: </row>
+        <row id="SqrExpBldNoError" si="78">There are no errors. The result is : </row>
+        <row id="SqrMissingArgument" class="TPatternRow" si="79">Missing argument for {0}</row>
+        <row id="SqrConversionError" si="80">Conversion error</row>
+        <row id="SqrDivisionByZero" si="49">
+          <value>Division by Zero</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072035Z" fuzzy="99.5">Nollalla jakaminen</lang>
+        </row>
+        <row id="SqrInvalidFormatnumeric" si="50">
+          <value>Invalid format or value specified</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072039Z" fuzzy="99.5">Virheellinen muoto tai arvo määritetty</lang>
+        </row>
+        <row id="SqrSQRTInvalid" si="51">
+          <value>Invalid argument to SQRT function</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072045Z" fuzzy="99.5">Virheellinen argumentti SQRT-funktiolle</lang>
+        </row>
+        <row id="SqrInvalidNot" si="52">
+          <value>Invalid use of NOT</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072052Z" fuzzy="99.5">Virheellinen NOT-käyttö</lang>
+        </row>
+        <row id="SqrGotoPage" class="TPatternRow" si="53">
+          <value>Select a page from 1 to {0}</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072057Z" fuzzy="99.5">Valitse sivu väliltä 1 - {0}</lang>
+        </row>
+        <row id="sqrSearchResults" si="54">
+          <value>Search Results</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20220503T072102Z" fuzzy="99.5">Hakutulokset</lang>
+        </row>
+        <row id="SqrExpDivideByZero" si="87">Cannot divide by 0</row>
+        <row id="SqrExpOperatorNotCompatible" class="TPatternRow" si="88">Operator {0} is not compatible with {1} expressions</row>
+        <row id="SqrExpUnknownFieldType" class="TPatternRow" si="89">Field {0} is of unknown type</row>
+        <row id="SqrExpIllegalCharInNumeric" class="TPatternRow" si="90">Illegal character in numeric contant "{0}"</row>
+        <row id="SqrExpMissing" class="TPatternRow" si="91">Missing {0}</row>
+        <row id="SqrExpUnknownFunction" class="TPatternRow" si="92">Unknown function : {0}</row>
+        <row id="SqrExpError" class="TPatternRow" si="93">Error in expression : {0}</row>
+        <row id="SqrExpRecursive" si="94">Recursive calls not allowed</row>
+        <row id="SqrExpTooManyArgs" si="95">Too many arguments</row>
+        <row id="SqrExpWrongArguments" class="TPatternRow" si="96">Wrong arguments for {0}</row>
         <row id="SqrExpUnknownType" si="65">
           <value>Unknown type</value>
           <lang id="fi" st="1" or="6" rw="0" time="20220503T072151Z" fuzzy="99.5">Tuntematon tyyppi</lang>
@@ -6248,38 +6278,6 @@
           <lang id="fi" st="1" or="6" rw="0" time="20220503T072417Z" fuzzy="99.5">Nimi</lang>
         </row>
         <row id="SqrQRXDocument" si="70">QRX document (XML)</row>
-        <row id="SqrQRXDocumentForWeb" si="71">QRX document (XML)</row>
-        <row id="SqrExpBldNumeric" class="TPatternRow" si="72">Argument {0} - numeric value</row>
-        <row id="SqrExpBldLogical" class="TPatternRow" si="73">Argument {0} - logical value</row>
-        <row id="SqrExpBldText" class="TPatternRow" si="74">Argument {0} - text Value</row>
-        <row id="SqrExpBldValue" class="TPatternRow" si="75">Argument {0} - value</row>
-        <row id="SqrExpBldEnterParam" class="TPatternRow" si="76">Enter {0}. parameter for {1}</row>
-        <row id="SqrExpBldError" si="77">ERROR: </row>
-        <row id="SqrExpBldNoError" si="78">There are no errors. The result is : </row>
-        <row id="SqrMissingArgument" class="TPatternRow" si="79">Missing argument for {0}</row>
-        <row id="SqrConversionError" si="80">Conversion error</row>
-        <row id="SqrExpMultiply" si="81">multiply</row>
-        <row id="SqrExpDivide" si="82">divide</row>
-        <row id="SqrExpBoolean" si="83">boolean</row>
-        <row id="SqrExpString" si="84">string</row>
-        <row id="SqrExpNumeric" si="85">numeric</row>
-        <row id="SqrNotValue" class="TPatternRow" si="86">Not a {0} value</row>
-        <row id="SqrExpDivideByZero" si="87">Cannot divide by 0</row>
-        <row id="SqrExpOperatorNotCompatible" class="TPatternRow" si="88">Operator {0} is not compatible with {1} expressions</row>
-        <row id="SqrExpUnknownFieldType" class="TPatternRow" si="89">Field {0} is of unknown type</row>
-        <row id="SqrExpIllegalCharInNumeric" class="TPatternRow" si="90">Illegal character in numeric contant "{0}"</row>
-        <row id="SqrExpMissing" class="TPatternRow" si="91">Missing {0}</row>
-        <row id="SqrExpUnknownFunction" class="TPatternRow" si="92">Unknown function : {0}</row>
-        <row id="SqrExpError" class="TPatternRow" si="93">Error in expression : {0}</row>
-        <row id="SqrExpRecursive" si="94">Recursive calls not allowed</row>
-        <row id="SqrExpTooManyArgs" si="95">Too many arguments</row>
-        <row id="SqrExpWrongArguments" class="TPatternRow" si="96">Wrong arguments for {0}</row>
-        <row id="SqrMaxDesc" si="97">Returns the highest &lt;X></row>
-        <row id="SqrMinDesc" si="98">Returns the lowest &lt;X></row>
-        <row id="SqrAverageDesc" si="99">Returns the average of numeric &lt;X></row>
-        <row id="SqrBoolDesc" si="100">boolean value</row>
-        <row id="SqrIntDesc" si="101">Returns the integer part of &lt;X></row>
-        <row id="SqrFracDesc" si="102">Returns the fractional part of &lt;X></row>
         <row id="SqrSqrtDesc" si="103">Returns square root of &lt;X></row>
         <row id="SqrTypeofDesc" si="104">Returns the data type of &lt;Exp></row>
         <row id="SqrNoCircular" si="105">Circular linking not allowed</row>
@@ -6290,12 +6288,12 @@
         <row id="SqrExpCannotOperator" class="TPatternRow" si="110">Cannot {0} {1} expressions</row>
         <row id="SqrExpAdd" si="111">add</row>
         <row id="SqrExpSubtract" si="112">subtract</row>
-        <row id="SqrExpression" si="113">Expression</row>
-        <row id="SqrQuSoft" si="114">QBS Software</row>
-        <row id="SqrAbstractFilterDescription" si="115">Abstract non-working export filter</row>
-        <row id="SqrAbstractFilterName" si="116">Abstract filter</row>
-        <row id="SqrNone" si="117">none</row>
-        <row id="SqrFileNotExist" si="118">File does not exist</row>
+        <row id="SqrExpMultiply" si="81">multiply</row>
+        <row id="SqrExpDivide" si="82">divide</row>
+        <row id="SqrExpBoolean" si="83">boolean</row>
+        <row id="SqrExpString" si="84">string</row>
+        <row id="SqrExpNumeric" si="85">numeric</row>
+        <row id="SqrNotValue" class="TPatternRow" si="86">Not a {0} value</row>
         <row id="SqrCompleted" si="119"> Completed</row>
         <row id="SqrQRFile" si="120">QuickReport file</row>
         <row id="SqrIfDesc" si="121">Returns &lt;X> or &lt;Y> depending on the boolean expression &lt;Exp></row>
@@ -6306,21 +6304,12 @@
         <row id="SqrCopyDesc" si="126">Returns a substring of string X</row>
         <row id="SqrDivDesc" si="127">Integer division of &lt;X> by &lt;Y></row>
         <row id="SqrCountDesc" si="128">Increments for each iteration</row>
-        <row id="SqrCancel" si="129">
-          <value>Cancel</value>
-          <lang id="fi" or="3" rw="0" time="20220502T124612Z">Peru</lang>
-        </row>
-        <row id="SqrZoomToFit" si="130">
-          <value>Zoom to fit</value>
-          <lang id="fi" st="1" or="3" rw="0" time="20220503T073634Z">Zoomaa sopivaksi</lang>
-        </row>
-        <row id="SqrZoom100" si="131">100% Size</row>
-        <row id="SqrZoomToWidth" si="132">
-          <value>Zoom to width</value>
-          <lang id="fi" st="1" or="3" rw="0" time="20220503T073638Z">Zoomaa leveyteen</lang>
-        </row>
-        <row id="SqrFirstPage" si="133">First page</row>
-        <row id="SqrPrevPage" si="134">Previous page</row>
+        <row id="SqrMaxDesc" si="97">Returns the highest &lt;X></row>
+        <row id="SqrMinDesc" si="98">Returns the lowest &lt;X></row>
+        <row id="SqrAverageDesc" si="99">Returns the average of numeric &lt;X></row>
+        <row id="SqrBoolDesc" si="100">boolean value</row>
+        <row id="SqrIntDesc" si="101">Returns the integer part of &lt;X></row>
+        <row id="SqrFracDesc" si="102">Returns the fractional part of &lt;X></row>
         <row id="SqrNextPage" si="135">Next page</row>
         <row id="SqrLastPage" si="136">Last page</row>
         <row id="SqrPrinterSetup" si="137">Printer setup</row>
@@ -6337,12 +6326,12 @@
         <row id="SqrIllegalNewPage" si="142">Illegal call to NewPage</row>
         <row id="SqrQRPrinterNotReady" si="143">QRPrinter not ready</row>
         <row id="SqrPrint" si="144">Print</row>
-        <row id="SqrColumnHeader" si="145">Column Header</row>
-        <row id="SqrOverlay" si="146">Overlay</row>
-        <row id="SqrChild" si="147">Child</row>
-        <row id="SqrWild" si="148">Wild</row>
-        <row id="SqrTitleBandName" si="149">TitleBand</row>
-        <row id="SqrPageHeaderBandName" si="150">PageHeaderBand</row>
+        <row id="SqrExpression" si="113">Expression</row>
+        <row id="SqrQuSoft" si="114">QBS Software</row>
+        <row id="SqrAbstractFilterDescription" si="115">Abstract non-working export filter</row>
+        <row id="SqrAbstractFilterName" si="116">Abstract filter</row>
+        <row id="SqrNone" si="117">none</row>
+        <row id="SqrFileNotExist" si="118">File does not exist</row>
         <row id="SqrDetailBandName" si="151">DetailBand</row>
         <row id="SqrPageFooterBandName" si="152">PageFooterBand</row>
         <row id="SqrSummaryBandName" si="153">SummaryBand</row>
@@ -6353,12 +6342,21 @@
         <row id="SqrOverlayBandName" si="158">OverlayBand</row>
         <row id="SqrChildBandName" si="159">ChildBand</row>
         <row id="SqrWildBandName" si="160">WildBand</row>
-        <row id="SqrPaperSize62" si="161">B5 (JIS) Transverse 257 x 182 mm</row>
-        <row id="SqrPaperSize63" si="162">A3 Extra 322 x 445 mm</row>
-        <row id="SqrPaperSize64" si="163">A5 Extra 174 x 235 mm</row>
-        <row id="SqrPaperSize65" si="164">B5 (ISO) Extra 201 x 276 mm</row>
-        <row id="SqrPaperSize66" si="165">A2 420 x 594 mm</row>
-        <row id="SqrPaperSize67" si="166">A3 Transverse 420 z 297 mm</row>
+        <row id="SqrCancel" si="129">
+          <value>Cancel</value>
+          <lang id="fi" or="3" rw="0" time="20220502T124612Z">Peru</lang>
+        </row>
+        <row id="SqrZoomToFit" si="130">
+          <value>Zoom to fit</value>
+          <lang id="fi" st="1" or="3" rw="0" time="20220503T073634Z">Zoomaa sopivaksi</lang>
+        </row>
+        <row id="SqrZoom100" si="131">100% Size</row>
+        <row id="SqrZoomToWidth" si="132">
+          <value>Zoom to width</value>
+          <lang id="fi" st="1" or="3" rw="0" time="20220503T073638Z">Zoomaa leveyteen</lang>
+        </row>
+        <row id="SqrFirstPage" si="133">First page</row>
+        <row id="SqrPrevPage" si="134">Previous page</row>
         <row id="SqrPaperSize68" si="167">A3 Extra Transverse 445 z 322 mm</row>
         <row id="SqrPaperSize69" si="168">Custom Size</row>
         <row id="SqrTitle" si="169">Title</row>
@@ -6369,12 +6367,12 @@
         <row id="SqrGroupHeader" si="174">Group Header</row>
         <row id="SqrGroupFooter" si="175">Group Footer</row>
         <row id="SqrSubDetail" si="176">Sub Detail</row>
-        <row id="SqrPaperSize46" si="177">15 x 11 in</row>
-        <row id="SqrPaperSize47" si="178">Envelope Invite 220 x 220 mm</row>
-        <row id="SqrPaperSize48" si="179">RESERVED--DO NOT USE</row>
-        <row id="SqrPaperSize49" si="180">RESERVED--DO NOT USE</row>
-        <row id="SqrPaperSize50" si="181">Letter Extra 9 1/2 x 12 in</row>
-        <row id="SqrPaperSize51" si="182">Legal Extra 9 1/2 x 15 in</row>
+        <row id="SqrColumnHeader" si="145">Column Header</row>
+        <row id="SqrOverlay" si="146">Overlay</row>
+        <row id="SqrChild" si="147">Child</row>
+        <row id="SqrWild" si="148">Wild</row>
+        <row id="SqrTitleBandName" si="149">TitleBand</row>
+        <row id="SqrPageHeaderBandName" si="150">PageHeaderBand</row>
         <row id="SqrPaperSize52" si="183">Tabloid Extra 11.69 x 18 in</row>
         <row id="SqrPaperSize53" si="184">A4 Extra 236 x 322 mm</row>
         <row id="SqrPaperSize54" si="185">Letter Transverse 11 x 8 1/2 in</row>
@@ -6385,12 +6383,12 @@
         <row id="SqrPaperSize59" si="190">Letter Plus 8.5 x 12.69 in</row>
         <row id="SqrPaperSize60" si="191">A4 Plus 210 x 330 mm</row>
         <row id="SqrPaperSize61" si="192">A5 Transverse 210 x 148 mm</row>
-        <row id="SqrPaperSize30" si="193">Envelope C4 229 x 324 mm</row>
-        <row id="SqrPaperSize31" si="194">Envelope C6 114 x 162 mm</row>
-        <row id="SqrPaperSize32" si="195">Envelope C65 114 x 229 mm</row>
-        <row id="SqrPaperSize33" si="196">Envelope B4 (JIS) 250 x 353 mm</row>
-        <row id="SqrPaperSize34" si="197">Envelope B5 (JIS) 176 x 250 mm</row>
-        <row id="SqrPaperSize35" si="198">Envelope B6 176 x 125 mm</row>
+        <row id="SqrPaperSize62" si="161">B5 (JIS) Transverse 257 x 182 mm</row>
+        <row id="SqrPaperSize63" si="162">A3 Extra 322 x 445 mm</row>
+        <row id="SqrPaperSize64" si="163">A5 Extra 174 x 235 mm</row>
+        <row id="SqrPaperSize65" si="164">B5 (ISO) Extra 201 x 276 mm</row>
+        <row id="SqrPaperSize66" si="165">A2 420 x 594 mm</row>
+        <row id="SqrPaperSize67" si="166">A3 Transverse 420 z 297 mm</row>
         <row id="SqrPaperSize36" si="199">Envelope 110 x 230 mm</row>
         <row id="SqrPaperSize37" si="200">Envelope Monarch 3.875 x 7.5 in</row>
         <row id="SqrPaperSize38" si="201">6 3/4 Envelope 3 5/8 x 6 1/2 in</row>
@@ -6401,12 +6399,12 @@
         <row id="SqrPaperSize43" si="206">Japanese Postcard 100 x 148 mm</row>
         <row id="SqrPaperSize44" si="207">9 x 11 in</row>
         <row id="SqrPaperSize45" si="208">10 x 11 in</row>
-        <row id="SqrPaperSize14" si="209">Folio 8 1/2 x 13 in</row>
-        <row id="SqrPaperSize15" si="210">Quarto 215 x 275 mm</row>
-        <row id="SqrPaperSize16" si="211">10 x 14 in</row>
-        <row id="SqrPaperSize17" si="212">11 x 17 in</row>
-        <row id="SqrPaperSize18" si="213">Note 8 1/2 x 11 in</row>
-        <row id="SqrPaperSize19" si="214">Envelope ##9 3 7/8 x 8 7/8</row>
+        <row id="SqrPaperSize46" si="177">15 x 11 in</row>
+        <row id="SqrPaperSize47" si="178">Envelope Invite 220 x 220 mm</row>
+        <row id="SqrPaperSize48" si="179">RESERVED--DO NOT USE</row>
+        <row id="SqrPaperSize49" si="180">RESERVED--DO NOT USE</row>
+        <row id="SqrPaperSize50" si="181">Letter Extra 9 1/2 x 12 in</row>
+        <row id="SqrPaperSize51" si="182">Legal Extra 9 1/2 x 15 in</row>
         <row id="SqrPaperSize20" si="215">Envelope ##10 4 1/8 x 9 1/2</row>
         <row id="SqrPaperSize21" si="216">Envelope ##11 4 1/2 x 10 3/8</row>
         <row id="SqrPaperSize22" si="217">Envelope ##12 4 3/4 x 11</row>
@@ -6417,10 +6415,12 @@
         <row id="SqrPaperSize27" si="222">Envelope DL 110 x 220 mm</row>
         <row id="SqrPaperSize28" si="223">Envelope C5 162 x 229 mm</row>
         <row id="SqrPaperSize29" si="224">Envelope C3 324 x 458 mm</row>
-        <row id="SqrPaperSize0" si="227">Default size</row>
-        <row id="SqrPaperSize1" si="228">Letter 8 1/2 x 11 in</row>
-        <row id="SqrPaperSize2" si="229">Letter Small 8 1/2 x 11 in</row>
-        <row id="SqrPaperSize3" si="230">Tabloid 11 x 17 in</row>
+        <row id="SqrPaperSize30" si="193">Envelope C4 229 x 324 mm</row>
+        <row id="SqrPaperSize31" si="194">Envelope C6 114 x 162 mm</row>
+        <row id="SqrPaperSize32" si="195">Envelope C65 114 x 229 mm</row>
+        <row id="SqrPaperSize33" si="196">Envelope B4 (JIS) 250 x 353 mm</row>
+        <row id="SqrPaperSize34" si="197">Envelope B5 (JIS) 176 x 250 mm</row>
+        <row id="SqrPaperSize35" si="198">Envelope B6 176 x 125 mm</row>
         <row id="SqrPaperSize4" si="231">Ledger 17 x 11 in</row>
         <row id="SqrPaperSize5" si="232">Legal 8 1/2 x 14 in</row>
         <row id="SqrPaperSize6" si="233">Statement 5 1/2 x 8 1/2 in</row>
@@ -6431,11 +6431,23 @@
         <row id="SqrPaperSize11" si="238">A5 148 x 210 mm</row>
         <row id="SqrPaperSize12" si="239">B4 250 x 354 mm</row>
         <row id="SqrPaperSize13" si="240">B5 182 x 257 mm</row>
+        <row id="SqrPaperSize14" si="209">Folio 8 1/2 x 13 in</row>
+        <row id="SqrPaperSize15" si="210">Quarto 215 x 275 mm</row>
+        <row id="SqrPaperSize16" si="211">10 x 14 in</row>
+        <row id="SqrPaperSize17" si="212">11 x 17 in</row>
+        <row id="SqrPaperSize18" si="213">Note 8 1/2 x 11 in</row>
+        <row id="SqrPaperSize19" si="214">Envelope ##9 3 7/8 x 8 7/8</row>
+        <row id="SqrPaperSize0" si="227">Default size</row>
+        <row id="SqrPaperSize1" si="228">Letter 8 1/2 x 11 in</row>
+        <row id="SqrPaperSize2" si="229">Letter Small 8 1/2 x 11 in</row>
+        <row id="SqrPaperSize3" si="230">Tabloid 11 x 17 in</row>
       </node>
       <node class="TWindowsStringNode" name="System">
         <row id="RTLConsts_hNoFilterViewer" si="536">No help viewer that supports filters</row>
       </node>
       <node class="TWindowsStringNode" name="System.RTLConsts">
+        <row id="sObserverNoMulticastFound" class="TPatternRow" si="495">No multi cast observer with ID {0} was added to the observer collection</row>
+        <row id="sObserverNotAvailable" si="496">Observer is not available</row>
         <row id="SInvalidDateString" class="TPatternRow" si="465">Invalid date string: {0}</row>
         <row id="SInvalidTimeString" class="TPatternRow" si="466">Invalid time string: {0}</row>
         <row id="SInvalidOffsetString" class="TPatternRow" si="467">Invalid time Offset string: {0}</row>
@@ -6447,16 +6459,16 @@
         <row id="SWindowsServer2012R2" si="484">Windows Server 2012 R2</row>
         <row id="SWindowsServer2016" si="485">Windows Server 2016</row>
         <row id="SWindowsServer2019" si="486">Windows Server 2019</row>
+        <row id="SWindowsServer2022" si="1079" created="20230329T120542Z">Windows Server 2022</row>
         <row id="SWindows8" si="487">Windows 8</row>
         <row id="SWindows8Point1" si="488">Windows 8.1</row>
         <row id="SWindows10" si="489">Windows 10</row>
+        <row id="SWindows11" si="1080" created="20230329T120542Z">Windows 11</row>
         <row id="SWinRTInstanceError" class="TPatternRow" si="490">Cannot create instance of class {0}</row>
         <row id="sObserverUnsupported" si="491">Observer is not supported</row>
         <row id="sObserverMultipleSingleCast" si="492">Cannot have multiple single cast observers added to the observers collection</row>
         <row id="sObserverNoInterface" si="493">The object does not implement the observer interface</row>
         <row id="sObserverNoSinglecastFound" class="TPatternRow" si="494">No single cast observer with ID {0} was added to the observer collection</row>
-        <row id="sObserverNoMulticastFound" class="TPatternRow" si="495">No multi cast observer with ID {0} was added to the observer collection</row>
-        <row id="sObserverNotAvailable" si="496">Observer is not available</row>
         <row id="SInsufficientRtti" si="497">Insufficient RTTI available to support this operation</row>
         <row id="SParameterCountMismatch" si="498">Parameter count mismatch</row>
         <row id="SNonPublicType" class="TPatternRow" si="499">Type '{0}' is not declared in the interface section of a unit</row>
@@ -6688,21 +6700,13 @@
         <row id="SAccessDenied" si="720">File access denied</row>
       </node>
       <node class="TWindowsStringNode" name="System.Win.ComConst">
+        <row id="SDCOMNotInstalled" si="311">DCOM not installed</row>
         <row id="SOleError" class="TPatternRow" si="307">OLE error {0}</row>
         <row id="SNoMethod" class="TPatternRow" si="308">Method '{0}' not supported by automation object</row>
         <row id="SVarNotObject" si="309">Variant does not reference an automation object</row>
         <row id="STooManyParams" si="310">Dispatch methods do not support more than 64 parameters</row>
-        <row id="SDCOMNotInstalled" si="311">DCOM not installed</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl">
-        <row id="Consts_SmkcShift" si="353">Shift+</row>
-        <row id="Consts_SmkcCtrl" si="354">Ctrl+</row>
-        <row id="Consts_SmkcAlt" si="355">Alt+</row>
-        <row id="Consts_SmkcBkSp" si="370">BkSp</row>
-        <row id="Consts_SmkcTab" si="371">Tab</row>
-        <row id="Consts_SmkcEsc" si="372">Esc</row>
-        <row id="Consts_SmkcEnter" si="373">Enter</row>
-        <row id="Consts_SmkcSpace" si="374">Space</row>
         <row id="Consts_SmkcPgUp" si="375">PgUp</row>
         <row id="Consts_SmkcPgDn" si="376">PgDn</row>
         <row id="Consts_SmkcEnd" si="377">End</row>
@@ -6719,11 +6723,16 @@
         <row id="Consts_SmkcDown" si="382">Down</row>
         <row id="Consts_SmkcIns" si="383">Ins</row>
         <row id="Consts_SmkcDel" si="384">Del</row>
+        <row id="Consts_SmkcShift" si="353">Shift+</row>
+        <row id="Consts_SmkcCtrl" si="354">Ctrl+</row>
+        <row id="Consts_SmkcAlt" si="355">Alt+</row>
+        <row id="Consts_SmkcBkSp" si="370">BkSp</row>
+        <row id="Consts_SmkcTab" si="371">Tab</row>
+        <row id="Consts_SmkcEsc" si="372">Esc</row>
+        <row id="Consts_SmkcEnter" si="373">Enter</row>
+        <row id="Consts_SmkcSpace" si="374">Space</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl.ComStrs">
-        <row id="sInvalidIndex" si="289">Invalid index</row>
-        <row id="sInsertError" si="290">Unable to insert an item</row>
-        <row id="sPageIndexError" class="TPatternRow" si="291">{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</row>
         <row id="sTabFailClear" si="312">Failed to clear tab control</row>
         <row id="sTabFailDelete" class="TPatternRow" si="313">Failed to delete tab at index {0}</row>
         <row id="sTabFailRetrieve" class="TPatternRow" si="314">Failed to retrieve tab at index {0}</row>
@@ -6733,16 +6742,11 @@
         <row id="sTabMustBeMultiLine" si="318">MultiLine must be True when TabPosition is tpLeft or tpRight</row>
         <row id="sInvalidLevel" si="319">Invalid item level assignment</row>
         <row id="sInvalidLevelEx" class="TPatternRow" si="320">Invalid level ({0}) for item "{1}"</row>
+        <row id="sInvalidIndex" si="289">Invalid index</row>
+        <row id="sInsertError" si="290">Unable to insert an item</row>
+        <row id="sPageIndexError" class="TPatternRow" si="291">{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl.Consts">
-        <row id="SStyleNotRegisteredNoName" si="305">Style not registered</row>
-        <row id="sBeginInvokeNoHandle" si="306">Cannot call BeginInvoke on a control with no parent or window handle</row>
-        <row id="STaskDlgRadioButtonCaption" class="TPatternRow" si="321">RadioButton{0}</row>
-        <row id="SInvalidTaskDlgButtonCaption" si="322">Caption cannot be empty</row>
-        <row id="SStyleLoadError" class="TPatternRow" si="323">Unable to load style '{0}'</row>
-        <row id="SStyleLoadErrors" class="TPatternRow" si="324">Unable to load styles: {0}</row>
-        <row id="SStyleRegisterError" class="TPatternRow" si="325">Style '{0}' already registered</row>
-        <row id="SStyleClassRegisterError" class="TPatternRow" si="326">Style class '{0}' already registered</row>
         <row id="SStyleNotFound" class="TPatternRow" si="327">Style '{0}' not found</row>
         <row id="SStyleClassNotFound" class="TPatternRow" si="328">Style class '{0}' not found</row>
         <row id="SStyleInvalidHandle" si="329">Invalid style handle</row>
@@ -6753,12 +6757,8 @@
         <row id="SStyleFeatureNotSupported" si="334">Feature not supported by this style</row>
         <row id="SStyleNotRegistered" class="TPatternRow" si="335">Style '{0}' is not registered</row>
         <row id="SStyleUnregisterError" si="336">Cannot unregister the system style</row>
-        <row id="SDockZoneVersionConflict" class="TPatternRow" si="337">Error loading dock zone from the stream. Expecting version {0}, but found {1}.</row>
-        <row id="SMultiSelectRequired" si="338">Multiselect mode must be on for this feature</row>
-        <row id="SPromptArrayTooShort" si="339">Length of value array must be >= length of prompt array</row>
-        <row id="SPromptArrayEmpty" si="340">Prompt array must not be empty</row>
-        <row id="SUsername" si="341">&amp;Username</row>
-        <row id="SPassword" si="342">&amp;Password</row>
+        <row id="SStyleNotRegisteredNoName" si="305">Style not registered</row>
+        <row id="sBeginInvokeNoHandle" si="306">Cannot call BeginInvoke on a control with no parent or window handle</row>
         <row id="SDomain" si="343">&amp;Domain</row>
         <row id="SLogin" si="344">Login</row>
         <row id="SSeparator" si="345">Separator</row>
@@ -6769,9 +6769,12 @@
         <row id="SPageControlNotSet" si="350">PageControl must first be assigned</row>
         <row id="SWindowsVistaRequired" class="TPatternRow" si="351">{0} requires Windows Vista or later</row>
         <row id="STaskDlgButtonCaption" class="TPatternRow" si="352">Button{0}</row>
-        <row id="SOutOfRange" class="TPatternRow" si="356">Value must be between {0} and {1}</row>
-        <row id="sAllFilter" si="357">All</row>
-        <row id="SInsertLineError" si="358">Unable to insert a line</row>
+        <row id="STaskDlgRadioButtonCaption" class="TPatternRow" si="321">RadioButton{0}</row>
+        <row id="SInvalidTaskDlgButtonCaption" si="322">Caption cannot be empty</row>
+        <row id="SStyleLoadError" class="TPatternRow" si="323">Unable to load style '{0}'</row>
+        <row id="SStyleLoadErrors" class="TPatternRow" si="324">Unable to load styles: {0}</row>
+        <row id="SStyleRegisterError" class="TPatternRow" si="325">Style '{0}' already registered</row>
+        <row id="SStyleClassRegisterError" class="TPatternRow" si="326">Style class '{0}' already registered</row>
         <row id="SInvalidClipFmt" si="359">Invalid clipboard format</row>
         <row id="SIconToClipboard" si="360">Clipboard does not support Icons</row>
         <row id="SCannotOpenClipboard" class="TPatternRow" si="361">Cannot open clipboard: {0}</row>
@@ -6782,16 +6785,15 @@
         <row id="SDockTreeRemoveError" si="366">Error removing control from dock tree</row>
         <row id="SDockZoneNotFound" si="367"> - Dock zone not found</row>
         <row id="SDockZoneHasNoCtl" si="368"> - Dock zone has no control</row>
-        <row id="SMsgDlgClose" si="369">
-          <value>&amp;Close</value>
-          <lang id="fi" st="1" or="3" rw="0" time="20220503T071929Z">&amp;Sulje</lang>
-        </row>
-        <row id="SMaskEditErr" si="385">Invalid input value.  Use escape key to abandon changes</row>
-        <row id="SMsgDlgWarning" si="386">Warning</row>
-        <row id="SMsgDlgError" si="387">Error</row>
-        <row id="SMsgDlgInformation" si="388">Information</row>
-        <row id="SMsgDlgConfirm" si="389">Confirm</row>
-        <row id="SMsgDlgYes" si="390">&amp;Yes</row>
+        <row id="SDockZoneVersionConflict" class="TPatternRow" si="337">Error loading dock zone from the stream. Expecting version {0}, but found {1}.</row>
+        <row id="SMultiSelectRequired" si="338">Multiselect mode must be on for this feature</row>
+        <row id="SPromptArrayTooShort" si="339">Length of value array must be >= length of prompt array</row>
+        <row id="SPromptArrayEmpty" si="340">Prompt array must not be empty</row>
+        <row id="SUsername" si="341">&amp;Username</row>
+        <row id="SPassword" si="342">&amp;Password</row>
+        <row id="SOutOfRange" class="TPatternRow" si="356">Value must be between {0} and {1}</row>
+        <row id="sAllFilter" si="357">All</row>
+        <row id="SInsertLineError" si="358">Unable to insert a line</row>
         <row id="SMsgDlgNo" si="391">&amp;No</row>
         <row id="SMsgDlgOK" si="392">
           <value>OK</value>
@@ -6808,12 +6810,10 @@
         <row id="SMsgDlgAll" si="398">&amp;All</row>
         <row id="SMsgDlgNoToAll" si="399">N&amp;o to All</row>
         <row id="SMsgDlgYesToAll" si="400">Yes to &amp;All</row>
-        <row id="SRetryButton" si="401">&amp;Retry</row>
-        <row id="SAbortButton" si="402">Abort</row>
-        <row id="SAllButton" si="403">&amp;All</row>
-        <row id="SCannotDragForm" si="404">Cannot drag a form</row>
-        <row id="SVMetafiles" si="405">Metafiles</row>
-        <row id="SVEnhMetafiles" si="406">Enhanced Metafiles</row>
+        <row id="SMsgDlgClose" si="369">
+          <value>&amp;Close</value>
+          <lang id="fi" st="1" or="3" rw="0" time="20220503T071929Z">&amp;Sulje</lang>
+        </row>
         <row id="SVIcons" si="407">Icons</row>
         <row id="SVBitmaps" si="408">Bitmaps</row>
         <row id="SVTIFFImages" si="409">TIFF Images</row>
@@ -6824,12 +6824,12 @@
         <row id="SFixedRowTooBig" si="414">Fixed row count must be less than row count</row>
         <row id="SInvalidStringGridOp" si="415">Cannot insert or delete rows from grid</row>
         <row id="SMaskErr" si="416">Invalid input value</row>
-        <row id="SPrinting" si="417">Printing in progress</row>
-        <row id="SPrinterIndexError" si="418">Printer index out of range</row>
-        <row id="SInvalidPrinter" si="419">Printer selected is not valid</row>
-        <row id="SDeviceOnPort" class="TPatternRow" si="420">{0} on {1}</row>
-        <row id="SGroupIndexTooLow" si="421">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
-        <row id="SNoMDIForm" si="422">Cannot create form. No MDI forms are currently active</row>
+        <row id="SMaskEditErr" si="385">Invalid input value.  Use escape key to abandon changes</row>
+        <row id="SMsgDlgWarning" si="386">Warning</row>
+        <row id="SMsgDlgError" si="387">Error</row>
+        <row id="SMsgDlgInformation" si="388">Information</row>
+        <row id="SMsgDlgConfirm" si="389">Confirm</row>
+        <row id="SMsgDlgYes" si="390">&amp;Yes</row>
         <row id="SImageCanvasNeedsBitmap" si="423">Can only modify an image if it contains a bitmap</row>
         <row id="SControlParentSetToSelf" si="424">A control cannot have itself as its parent</row>
         <row id="SControlNonMainThreadUsage" class="TPatternRow" si="425">Control '{0}' is used on a not main thread</row>
@@ -6849,28 +6849,31 @@
           <lang id="fi" st="1" or="3" rw="0" time="20220503T071929Z">&amp;Sulje</lang>
         </row>
         <row id="SIgnoreButton" si="432">&amp;Ignore</row>
-        <row id="SParentRequired" class="TPatternRow" si="433">Control '{0}' has no parent window</row>
-        <row id="SControlPath" class="TPatternRow" si="434">. Path:
-{0}</row>
-        <row id="SParentGivenNotAParent" class="TPatternRow" si="435">Parent given is not a parent of '{0}'</row>
-        <row id="SMDIChildNotVisible" si="436">Cannot hide an MDI Child Form</row>
-        <row id="SInRemoteSession" si="437">Cannot change SingleBufferingInRemoteSessions in a remote session</row>
-        <row id="SVisibleChanged" si="438">Cannot change Visible in OnShow or OnHide</row>
+        <row id="SRetryButton" si="401">&amp;Retry</row>
+        <row id="SAbortButton" si="402">Abort</row>
+        <row id="SAllButton" si="403">&amp;All</row>
+        <row id="SCannotDragForm" si="404">Cannot drag a form</row>
+        <row id="SVMetafiles" si="405">Metafiles</row>
+        <row id="SVEnhMetafiles" si="406">Enhanced Metafiles</row>
         <row id="SCannotShowModal" si="439">Cannot make a visible window modal</row>
         <row id="SScrollBarRange" si="440">Scrollbar property out of range</row>
         <row id="SPropertyOutOfRange" class="TPatternRow" si="441">{0} property out of range</row>
-        <row id="SCannotSetCheckState" si="442">Check state can only be set when CheckStyles is True</row>
+        <row id="SCannotSetCheckState" changed="20230329T120542Z" si="442">
+          <value>Check state can only be set when CheckBoxes is True</value>
+          <prev>Check state can only be set when CheckStyles is True</prev>
+        </row>
         <row id="SInvalidCheckState" si="443">Check state incompatible with treeview's CheckStyles</row>
         <row id="SMenuIndexError" si="444">Menu index out of range</row>
         <row id="SMenuReinserted" si="445">Menu inserted twice</row>
         <row id="SMenuNotFound" si="446">Sub-menu is not in menu</row>
         <row id="SNoTimers" si="447">Not enough timers available</row>
         <row id="SNotPrinting" si="448">Printer is not currently printing</row>
-        <row id="SUnknownClipboardFormat" si="449">Unsupported clipboard format</row>
-        <row id="SUnknownStreamFormat" si="450">Unsupported stream format</row>
-        <row id="SOutOfResources" si="451">Out of system resources</row>
-        <row id="SNoCanvasHandle" si="452">Canvas does not allow drawing</row>
-        <row id="SInvalidTextFormatFlag" class="TPatternRow" si="453">Text format flag '{0}' not supported</row>
+        <row id="SPrinting" si="417">Printing in progress</row>
+        <row id="SPrinterIndexError" si="418">Printer index out of range</row>
+        <row id="SInvalidPrinter" si="419">Printer selected is not valid</row>
+        <row id="SDeviceOnPort" class="TPatternRow" si="420">{0} on {1}</row>
+        <row id="SGroupIndexTooLow" si="421">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
+        <row id="SNoMDIForm" si="422">Cannot create form. No MDI forms are currently active</row>
         <row id="SInvalidFrameIndex" class="TPatternRow" si="454">Invalid image frame index {0}: there are {1} frames (0-{2})</row>
         <row id="SInvalidImageSize" si="455">Invalid image size</row>
         <row id="SInvalidImageList" si="456">Invalid ImageList</row>
@@ -6882,6 +6885,12 @@
         <row id="SWindowDCError" si="462">Error creating window device context</row>
         <row id="SWindowClass" si="463">Error creating window class</row>
         <row id="SCannotFocus" si="464">Cannot focus a disabled or invisible window</row>
+        <row id="SParentRequired" class="TPatternRow" si="433">Control '{0}' has no parent window</row>
+        <row id="SControlPath" class="TPatternRow" si="434">. Path:
+{0}</row>
+        <row id="SParentGivenNotAParent" class="TPatternRow" si="435">Parent given is not a parent of '{0}'</row>
+        <row id="SMDIChildNotVisible" si="436">Cannot hide an MDI Child Form</row>
+        <row id="SVisibleChanged" si="438">Cannot change Visible in OnShow or OnHide</row>
         <row id="SInvalidTabPosition" si="470">Tab position incompatible with current tab style</row>
         <row id="SInvalidTabStyle" si="471">Tab style incompatible with current tab position</row>
         <row id="SInvalidBitmap" si="472">Bitmap image is not valid</row>
@@ -6893,11 +6902,16 @@
         <row id="SChangeWicSize" si="478">Cannot change the size of a WIC Image</row>
         <row id="SOleGraphic" si="479">Invalid operation on TOleGraphic</row>
         <row id="SUnknownExtension" class="TPatternRow" si="480">Unknown picture file extension (.{0})</row>
+        <row id="SUnknownClipboardFormat" si="449">Unsupported clipboard format</row>
+        <row id="SUnknownStreamFormat" si="450">Unsupported stream format</row>
+        <row id="SOutOfResources" si="451">Out of system resources</row>
+        <row id="SNoCanvasHandle" si="452">Canvas does not allow drawing</row>
+        <row id="SInvalidTextFormatFlag" class="TPatternRow" si="453">Text format flag '{0}' not supported</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl.Imaging.JConsts">
-        <row id="sJPEGImageFile" si="17">JPEG Image File</row>
         <row id="sChangeJPGSize" si="47">Cannot change the size of a JPEG image</row>
         <row id="sJPEGError" class="TPatternRow" si="48">JPEG error ##{0}</row>
+        <row id="sJPEGImageFile" si="17">JPEG Image File</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl.OleConst">
         <row id="SBadPropValue" class="TPatternRow" si="41">'{0}' is not a valid property value</row>
@@ -6908,11 +6922,6 @@
         <row id="sNoRunningObject" class="TPatternRow" si="46">Unable to retrieve a pointer to a running object registered with OLE for {0}/{1}</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl.VDBConsts">
-        <row id="SFirstRecord" si="18">First record</row>
-        <row id="SPriorRecord" si="19">Prior record</row>
-        <row id="SNextRecord" si="20">Next record</row>
-        <row id="SLastRecord" si="21">Last record</row>
-        <row id="SInsertRecord" si="22">Insert record</row>
         <row id="SDeleteRecord" si="23">Delete record</row>
         <row id="SEditRecord" si="24">Edit record</row>
         <row id="SPostEdit" si="25">Post edit</row>
@@ -6921,6 +6930,11 @@
         <row id="SApplyUpdates" si="28">Apply updates</row>
         <row id="SCancelUpdates" si="29">Cancel updates</row>
         <row id="SRemoteLogin" si="30">Remote Login</row>
+        <row id="SFirstRecord" si="18">First record</row>
+        <row id="SPriorRecord" si="19">Prior record</row>
+        <row id="SNextRecord" si="20">Next record</row>
+        <row id="SLastRecord" si="21">Last record</row>
+        <row id="SInsertRecord" si="22">Insert record</row>
       </node>
     </node>
     <node class="TWindowsVersionFolder" name="Version">
@@ -6956,7 +6970,6 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -6967,12 +6980,7 @@
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

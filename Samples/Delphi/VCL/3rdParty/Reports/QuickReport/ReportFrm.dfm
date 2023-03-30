@@ -12,7 +12,6 @@ object ReportForm: TReportForm
   Font.Style = []
   Scaled = False
   OnCreate = FormCreate
-  PixelsPerInch = 96
   TextHeight = 15
   object QuickRep1: TQuickRep
     Left = 0
@@ -151,9 +150,9 @@ object ReportForm: TReportForm
     end
   end
   object Connection1: TADOConnection
-    Connected = True
     ConnectionString = 
-      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\..\Sport.mdb;Persist Security Info=False'
+      'Provider=Microsoft.Jet.OLEDB.4.0;Data Source=..\..\..\Sport.mdb;' +
+      'Persist Security Info=False;'
     LoginPrompt = False
     Mode = cmShareDenyNone
     Provider = 'Microsoft.Jet.OLEDB.4.0'

@@ -11,7 +11,9 @@ type
   TMainForm = class(TForm)
     LanguageButton: TButton;
     PreviewButton: TButton;
+    PrintButton: TButton;
     procedure PreviewButtonClick(Sender: TObject);
+    procedure PrintButtonClick(Sender: TObject);
     procedure LanguageButtonClick(Sender: TObject);
   end;
 
@@ -28,6 +30,14 @@ uses
 procedure TMainForm.PreviewButtonClick(Sender: TObject);
 begin
   ReportForm.QuickRep1.Preview;
+end;
+
+procedure TMainForm.PrintButtonClick(Sender: TObject);
+begin
+  ReportForm.QuickRep1.PrinterSetup;
+
+  if ReportForm.QuickRep1.Tag = 0 then
+    ReportForm.QuickRep1.Print;
 end;
 
 procedure TMainForm.LanguageButtonClick(Sender: TObject);

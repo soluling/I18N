@@ -1,6 +1,7 @@
 program QuickReport;
 
 uses
+  NtInitialLocale,
   Vcl.Forms,
   ReportFrm in 'ReportFrm.pas' {ReportForm},
   MainFrm in 'MainFrm.pas' {MainForm};

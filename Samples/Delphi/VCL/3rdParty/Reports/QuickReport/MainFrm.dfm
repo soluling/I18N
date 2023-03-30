@@ -10,10 +10,9 @@ object MainForm: TMainForm
   Font.Height = -12
   Font.Name = 'Segoe UI'
   Font.Style = []
-  PixelsPerInch = 96
   TextHeight = 15
   object LanguageButton: TButton
-    Left = 88
+    Left = 168
     Top = 8
     Width = 75
     Height = 25
@@ -27,7 +26,16 @@ object MainForm: TMainForm
     Width = 75
     Height = 25
     Caption = '&Preview...'
-    TabOrder = 1
+    TabOrder = 2
     OnClick = PreviewButtonClick
+  end
+  object PrintButton: TButton
+    Left = 89
+    Top = 8
+    Width = 75
+    Height = 25
+    Caption = 'P&rint...'
+    TabOrder = 1
+    OnClick = PrintButtonClick
   end
 end
