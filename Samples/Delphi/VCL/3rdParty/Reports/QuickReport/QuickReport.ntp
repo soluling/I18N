@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="361FDC8B-ED92-4837-891D-1FB7414F0874" created="20220501T214442Z" lastmodified="20230329T124305Z" version="1.0.989" lockedrowcomplete="0" stringid="1081">
+<project id="361FDC8B-ED92-4837-891D-1FB7414F0874" created="20220501T214442Z" lastmodified="20230401T163657Z" version="1.0.990" lockedrowcomplete="0" stringid="1081">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\QuickReport.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\3rdParty\Reports\QuickReport\Win32\Release\QuickReport.exe" original="en" lastmodified="20230329T124305Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\QuickReport.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\3rdParty\Reports\QuickReport\Win32\Release\QuickReport.exe" original="en" lastmodified="20230401T163657Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
@@ -5898,9 +5898,15 @@
             <row id="Width">718</row>
             <row id="Height">67</row>
             <item name="DescriptionText" type="TQRDBText" autosize="0">
-              <row id="Left">0</row>
+              <row id="Left">
+                <value>0</value>
+                <lang id="fi" rw="0" time="20230401T163657Z">32</lang>
+              </row>
               <row id="Top">24</row>
-              <row id="Width">713</row>
+              <row id="Width">
+                <value>713</value>
+                <lang id="fi" rw="0" time="20230401T163657Z">681</lang>
+              </row>
               <row id="Height">33</row>
             </item>
             <item name="NameText" type="TQRDBText">
@@ -6970,6 +6976,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -6980,7 +6987,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>
