@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A03A43B1-7B85-4526-A35E-30281374F8C3" created="20190424T210027Z" lastmodified="20210719T142348Z" version="1.0.866" stringid="6">
+<project id="A03A43B1-7B85-4526-A35E-30281374F8C3" created="20190424T210027Z" lastmodified="20230416T171137Z" version="1.0.991" stringid="6">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="..\WpfUserControl\WpfUserControl.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfUserControl\WpfUserControl.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="..\WpfUserControl\WpfUserControl.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20230416T171128Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Properties" created="20190425T143943Z">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" created="20190425T143943Z" kind="xkUserControl" id="userControl">
       <item name="StackPanel[0]" type="StackPanel">
@@ -35,8 +35,11 @@
         bGFzdE5hbWVFZGl0Ij48L1RleHRCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvVXNlckNvbnRyb2w+DQo=
       </data>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\WpfUserControl.dll</assembly>
+    </assemblies>
   </node>
-  <node class="TNetProjectSource" name="WpfApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="WpfApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.csproj" original="en" lastmodified="20230416T171137Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -87,16 +90,21 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <rules kind="crWpf">
       <rule component="custom:CustomLabel" property="TextValue"/>
     </rules>
+    <assemblies>
+      <assembly>bin\Debug\WpfControl.dll</assembly>
+      <assembly>bin\Debug\WpfUserControl.dll</assembly>
+    </assemblies>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -107,7 +115,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
   <duplicates>
   </duplicates>

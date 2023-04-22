@@ -1,20 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<result created="20230329T125932Z">
+<result created="20230419T121514Z">
   <rows>
-    <statuses new="0" inuse="86" changed="5" contextchanged="0" unused="0"/>
-    <lastscan new="5" inuse="0" changed="5" contextchanged="0" unused="0"/>
+    <statuses new="0" inuse="3" changed="2" contextchanged="0" unused="0"/>
+    <lastscan new="0" inuse="0" changed="0" contextchanged="0" unused="0"/>
   </rows>
   <translations>
-    <statuses nottranslated="412" bestguess="26" autotranslated="0" forreview="9" translated="0" complete="8"/>
-    <lastimport clear="0" import="0" overwrite="0">
-      <language id="fi" clear="0" import="0" overwrite="0"/>
-      <language id="fi-FI" clear="0" import="0" overwrite="0"/>
-      <language id="de" clear="0" import="0" overwrite="0"/>
-      <language id="nl" clear="0" import="0" overwrite="0"/>
-      <language id="he" clear="0" import="0" overwrite="0"/>
+    <statuses nottranslated="2" bestguess="0" autotranslated="0" forreview="0" translated="3" complete="0"/>
+    <lastimport clear="0" import="3" overwrite="0">
+      <language id="fi" clear="0" import="3" overwrite="0"/>
     </lastimport>
   </translations>
   <imports>
+    <language id="fi">
+      <import context="Win32\Release\Format.exe.String.Unit1.SHello" original="Hello %s!" value="Moi %s&quot;"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SHello2" original="Hello %s and %s!" value="Moi %s ja %s!"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SCount" original="%s has %d cars" value="%s:lla on %d autoa"/>
+    </language>
   </imports>
   <outputfiles>
   </outputfiles>

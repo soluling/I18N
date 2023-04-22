@@ -1,48 +1,55 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="584673C9-D56D-4B72-B046-7A1E0CA680DD" created="20190705T011204Z" lastmodified="20200316T230234Z" version="1.0.714" stringid="12">
+<project id="FB5AB034-1809-456B-9483-C3E963C6F814" created="20230415T004201Z" lastmodified="20230415T004215Z" version="1.0.991" stringid="6">
   <lang id="fi"/>
-  <node class="TPowerPointSource" name="Image.pptx" fullpath="D:\NT\Deploy\Samples\PowerPoint\Image.pptx" original="en">
+  <lang id="sv"/>
+  <node class="TPowerPointSource" name="Image.pptx" fullpath="D:\NT\Deploy\Samples\PowerPoint\Image.pptx" original="en" lastmodified="20230415T004215Z">
     <node class="TPowerPointMediaNode" name="media"/>
     <node class="TPowerPointFolder" name="slides">
       <node class="TPowerPointSlideNode" name="slide1">
         <row id="2[0]" importid="0" si="1">
           <value>Hello</value>
-          <lang id="fi" st="4" rw="0" time="20190705T011209Z">Moi</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Hei</lang>
         </row>
         <row id="3[0]" importid="1" si="2">
           <value>This is a sample</value>
-          <lang id="fi" st="4" rw="0" time="20190705T011300Z">Tämä on esimerkki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Tämä on esimerkki</lang>
         </row>
-        <row id="3[1]" importid="2" class="TTagRow" si="3">
-          <value>This is a &lt;b&gt;sub&lt;/b&gt; text</value>
-          <lang id="fi" st="4" rw="0" time="20190705T011255Z">Tämä on &lt;b&gt;ali&lt;/b&gt;teksti</lang>
+        <row id="3[1]" importid="1" class="TTagRow" si="3">
+          <value>This is a &lt;b>sub&lt;/b> text</value>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Tämä on &lt;b>alateksti&lt;/b></lang>
         </row>
-        <row id="3[2]" importid="3" si="4">
+        <row id="3[2]" importid="1" si="4">
           <value>Capital of Finland is Helsinki</value>
-          <lang id="fi" st="4" or="6" rw="0" time="20190705T011212Z">Suomen pääkaupunki on Helsinki</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Suomen pääkaupunki on Helsinki</lang>
         </row>
-        <row id="3[3]" importid="4" si="5">
+        <row id="3[3]" importid="1" si="5">
           <value>Helsinki has population of 1 million</value>
-          <lang id="fi" st="4" rw="0" time="20190705T011222Z">Helsingin asukasluku on 1 000 000</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Helsingissä on miljoona asukasta</lang>
         </row>
-        <row id="3[4]" importid="5" si="6">
+        <row id="3[4]" importid="1" si="6">
           <value>This is a new text</value>
-          <lang id="fi" st="4" or="6" rw="0" time="20190705T011228Z">Tämä on uusi teksti</lang>
+          <lang id="fi" st="4" or="4" rw="0" time="20230415T004201Z">Tämä on uusi teksti</lang>
         </row>
       </node>
     </node>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <duplicates>

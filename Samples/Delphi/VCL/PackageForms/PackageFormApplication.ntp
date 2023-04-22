@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="92145C03-77B9-4CD7-9BFC-30A074A33DF0" created="20220401T001155Z" lastmodified="20220411T015849Z" version="1.0.913" lockedrowcomplete="0" stringid="28">
+<project id="92145C03-77B9-4CD7-9BFC-30A074A33DF0" created="20220401T001155Z" lastmodified="20230420T131155Z" version="1.0.991" lockedrowcomplete="0" stringid="28">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Debug\FormsPackage.bpl" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\PackageForms\Win32\Debug\FormsPackage.bpl" original="en-US" lastmodified="20220411T015849Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Debug\FormsPackage.bpl" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\PackageForms\Win32\Debug\FormsPackage.bpl" original="en-US" lastmodified="20230420T131155Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <node class="TDelphiFormFolder" name="RCData" created="20220401T002750Z">
       <node class="TDelphiFormNode" name="TBASEFORM" type="TBaseForm" resname="TBASEFORM" objectname="BaseForm">
         <font id="Font" name="Segoe UI" size="9"/>
@@ -71,12 +71,12 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
-  <node class="TDelphiSource" name="Win32\Debug\PackageFormApplication.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\PackageForms\Win32\Debug\PackageFormApplication.exe" original="en" lastmodified="20220411T015849Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Debug\PackageFormApplication.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\PackageForms\Win32\Debug\PackageFormApplication.exe" original="en" lastmodified="20230420T125906Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
     <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData">
-      <node class="TDelphiFormNode" name="TDERIVEDFORM" type="TDerivedForm" resname="TDERIVEDFORM" objectname="DerivedForm" manualparent="TBaseForm" manualparentsource="Win32\Debug\FormsPackage.bpl" flags="[ffInherited]">
+      <node class="TDelphiFormNode" name="TDERIVEDFORM" type="TDerivedForm" resname="TDERIVEDFORM" objectname="DerivedForm" parent="TBaseForm" manualparent="TBaseForm" manualparentsource="Win32\Debug\FormsPackage.bpl" flags="[ffInherited]">
         <row id="Caption" si="3">
           <value>Derived Form</value>
           <lang id="fi" st="1" or="6" rw="0" time="20220408T225129Z" fuzzy="99.5">Johdettu lomake</lang>
@@ -203,7 +203,7 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Food.tbx" type="TTbxGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -211,14 +211,11 @@
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <duplicates>

@@ -1,289 +1,53 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20230204T151358Z" version="1.0.977" stringid="393" scanextendplaceholders="1">
+<project id="C1890695-40CB-49E1-9FC0-D34D0446B7A7" created="20230419T103805Z" lastmodified="20230419T125912Z" version="1.0.991" stringid="419">
   <lang id="fi"/>
-  <lang id="fi-FI"/>
-  <lang id="de"/>
-  <lang id="nl"/>
-  <lang id="he"/>
-  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en-US" lastmodified="20230204T151358Z" scansourcecode="1" hassignature="1" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en" lastmodified="20230419T125912Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
     <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
-    <node class="TDelphiFormFolder" name="RCData">
-      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
-        <font id="Font" name="Tahoma" size="8"/>
-        <row id="Left">0</row>
-        <row id="Top">0</row>
-        <row id="Caption" si="1">
-          <value>Sample</value>
-          <lang id="fi" time="20180321T192932Z">Esimerkki</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190153Z">Probe</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192400Z">Steekproef</lang>
-        </row>
-        <row id="ClientHeight">146</row>
-        <row id="ClientWidth">338</row>
-        <item name="Label1" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">56</row>
-          <row id="Width">34</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="2" excluded="2">dummy</row>
-        </item>
-        <item name="Label2" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">72</row>
-          <row id="Width">34</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="3" excluded="2">dummy</row>
-        </item>
-        <item name="Label3" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">88</row>
-          <row id="Width">34</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="4" excluded="2">dummy</row>
-        </item>
-        <item name="Label4" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">104</row>
-          <row id="Width">34</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="5" excluded="2">dummy</row>
-        </item>
-        <item name="Label5" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">120</row>
-          <row id="Width">34</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="6" excluded="2">dummy</row>
-        </item>
-        <item name="FirstNameLabel" type="TLabel">
-          <row id="Left">8</row>
-          <row id="Top">8</row>
-          <row id="Width">54</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="7">
-            <value>&amp;First name:</value>
-            <lang id="fi" time="20171212T235719Z">&amp;Ensimmäinen nimi:</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190156Z">&amp;Vorname, Vorname:</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192402Z">&amp;Voornaam:</lang>
-          </row>
-        </item>
-        <item name="CountLabel" type="TLabel">
-          <row id="Left">264</row>
-          <row id="Top">8</row>
-          <row id="Width">33</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="8">
-            <value>&amp;Count:</value>
-            <lang id="fi" time="20171212T235723Z">&amp;Määrä:</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190157Z">&amp;Anzahl:</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192403Z">&amp;Telling:</lang>
-          </row>
-        </item>
-        <item name="SecondNameLabel" type="TLabel">
-          <row id="Left">136</row>
-          <row id="Top">8</row>
-          <row id="Width">68</row>
-          <row id="Height">13</row>
-          <row id="Caption" si="9">
-            <value>&amp;Second name:</value>
-            <lang id="fi" time="20171212T235728Z">&amp;Toinen nimi:</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190159Z">&amp;Zweiter Name:</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192404Z">&amp;Secondenaam:</lang>
-          </row>
-        </item>
-        <item name="FirstNameEdit" type="TEdit">
-          <row id="Left">8</row>
-          <row id="Top">24</row>
-          <row id="Width">121</row>
-          <row id="Height">21</row>
-        </item>
-        <item name="SecondNameEdit" type="TEdit">
-          <row id="Left">136</row>
-          <row id="Top">24</row>
-          <row id="Width">121</row>
-          <row id="Height">21</row>
-        </item>
-        <item name="CountEdit" type="TEdit">
-          <row id="Left">264</row>
-          <row id="Top">24</row>
-          <row id="Width">49</row>
-          <row id="Height">21</row>
-          <row id="Text" si="10" locked="1">0</row>
-        </item>
-        <item name="CountUpDown" type="TUpDown">
-          <row id="Left">313</row>
-          <row id="Top">24</row>
-          <row id="Width">16</row>
-          <row id="Height">21</row>
-        </item>
-        <item name="LanguageButton" type="TButton" created="20171212T235604Z">
-          <row id="Left">248</row>
-          <row id="Top">112</row>
-          <row id="Width">83</row>
-          <row id="Height">25</row>
-          <row id="Caption" si="11">
-            <value>&amp;Language...</value>
-            <lang id="fi" time="20171212T235742Z">&amp;Kieli...</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190200Z">&amp;Sprache....</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192409Z">&amp;Taal...</lang>
-          </row>
-        </item>
-        <data>
-          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQDkgALQ2xpZW50V2lkdGgD
-          UgEFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQL
-          Rm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAOT2xkQ3JlYXRlT3JkZXIICE9uQ3JlYXRlBwpGb3Jt
-          Q3JlYXRlDVBpeGVsc1BlckluY2gCYApUZXh0SGVpZ2h0Ag0ABlRMYWJlbAZMYWJlbDEETGVmdAIIA1RvcAI4BVdpZHRoAiIGSGVp
-          Z2h0Ag0HQ2FwdGlvbgYFZHVtbXkAAAZUTGFiZWwGTGFiZWwyBExlZnQCCANUb3ACSAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24G
-          BWR1bW15AAAGVExhYmVsBkxhYmVsMwRMZWZ0AggDVG9wAlgFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQAABlRMYWJl
-          bAZMYWJlbDQETGVmdAIIA1RvcAJoBVdpZHRoAiIGSGVpZ2h0Ag0HQ2FwdGlvbgYFZHVtbXkAAAZUTGFiZWwGTGFiZWw1BExlZnQC
-          CANUb3ACeAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15AAAGVExhYmVsDkZpcnN0TmFtZUxhYmVsBExlZnQCCANUb3AC
-          CAVXaWR0aAI2BkhlaWdodAINB0NhcHRpb24GDCZGaXJzdCBuYW1lOgAABlRMYWJlbApDb3VudExhYmVsBExlZnQDCAEDVG9wAggF
-          V2lkdGgCIQZIZWlnaHQCDQdDYXB0aW9uBgcmQ291bnQ6AAAGVExhYmVsD1NlY29uZE5hbWVMYWJlbARMZWZ0A4gAA1RvcAIIBVdp
-          ZHRoAkQGSGVpZ2h0Ag0HQ2FwdGlvbgYNJlNlY29uZCBuYW1lOgAABVRFZGl0DUZpcnN0TmFtZUVkaXQETGVmdAIIA1RvcAIYBVdp
-          ZHRoAnkGSGVpZ2h0AhUIVGFiT3JkZXICAAhPbkNoYW5nZQcKRWRpdENoYW5nZQAABVRFZGl0DlNlY29uZE5hbWVFZGl0BExlZnQD
-          iAADVG9wAhgFV2lkdGgCeQZIZWlnaHQCFQhUYWJPcmRlcgIBCE9uQ2hhbmdlBwpFZGl0Q2hhbmdlAAAFVEVkaXQJQ291bnRFZGl0
-          BExlZnQDCAEDVG9wAhgFV2lkdGgCMQZIZWlnaHQCFQhUYWJPcmRlcgICBFRleHQGATAIT25DaGFuZ2UHCkVkaXRDaGFuZ2UAAAdU
-          VXBEb3duC0NvdW50VXBEb3duBExlZnQDOQEDVG9wAhgFV2lkdGgCEAZIZWlnaHQCFQlBc3NvY2lhdGUHCUNvdW50RWRpdAhUYWJP
-          cmRlcgIDAAAHVEJ1dHRvbg5MYW5ndWFnZUJ1dHRvbgRMZWZ0A/gAA1RvcAJwBVdpZHRoAlMGSGVpZ2h0AhkHQ2FwdGlvbgYMJkxh
-          bmd1YWdlLi4uCFRhYk9yZGVyAgQHT25DbGljawcTTGFuZ3VhZ2VCdXR0b25DbGljawAAAA==
-        </data>
-      </node>
-      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" created="20171212T235604Z" objectname="NtLanguageDialog">
-        <font id="Font" name="Tahoma" size="8"/>
-        <row id="Left">256</row>
-        <row id="Top">347</row>
-        <row id="Caption" si="12">
-          <value>Select Language</value>
-          <lang id="fi" time="20171212T235755Z">Valitse kieli</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190201Z">Sprache auswählen</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192410Z">Selecteer Taal</lang>
-        </row>
-        <row id="ClientHeight">193</row>
-        <row id="ClientWidth">291</row>
-        <item name="LanguageList" type="TListBox">
-          <row id="Left">8</row>
-          <row id="Top">8</row>
-          <row id="Width">193</row>
-          <row id="Height">177</row>
-        </item>
-        <item name="OkButton" type="TButton">
-          <row id="Left">208</row>
-          <row id="Top">8</row>
-          <row id="Width">75</row>
-          <row id="Height">25</row>
-          <row id="Caption" si="13">
-            <value>OK</value>
-            <lang id="fi" time="20171212T235756Z">OK</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190203Z">OK</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192411Z">OK</lang>
-          </row>
-        </item>
-        <item name="CancelButton" type="TButton">
-          <row id="Left">208</row>
-          <row id="Top">40</row>
-          <row id="Width">75</row>
-          <row id="Height">25</row>
-          <row id="Caption" si="14">
-            <value>Cancel</value>
-            <lang id="fi" time="20171212T235759Z">Peru</lang>
-            <lang id="de" st="1" or="6" rw="0" time="20180321T190204Z">Abbrechen</lang>
-            <lang id="nl" st="1" or="6" rw="0" time="20180321T192413Z">Annuleren</lang>
-          </row>
-        </item>
-        <data>
-          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
-          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
-          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
-          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQlPbkRlc3Ryb3kHC0Zv
-          cm1EZXN0cm95Bk9uU2hvdwcIRm9ybVNob3cNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAIVExpc3RCb3gMTGFuZ3VhZ2VM
-          aXN0BExlZnQCCANUb3ACCAVXaWR0aAPBAAZIZWlnaHQDsQAKSXRlbUhlaWdodAINBlNvcnRlZAkIVGFiT3JkZXICAApPbkRibENs
-          aWNrBxRMYW5ndWFnZUxpc3REYmxDbGljawAAB1RCdXR0b24IT2tCdXR0b24ETGVmdAPQAANUb3ACCAVXaWR0aAJLBkhlaWdodAIZ
-          B0NhcHRpb24GAk9LB0RlZmF1bHQJC01vZGFsUmVzdWx0AgEIVGFiT3JkZXICAQAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQD
-          0AADVG9wAigFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIA
-          AAA=
-        </data>
-      </node>
-    </node>
+    <node class="TDelphiFormFolder" name="RCData" excluded="1"/>
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SCount2" changed="20230204T151354Z" class="TPatternRow" si="18" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person">
-          <value>{0:d} cars will pick up {1:s} and {2:s}</value>
-          <prev>{0} cars will pick up {1} and {2}</prev>
-          <lang id="fi" st="3" fixed="1" invalidated="1" time="20171212T235856Z">{0:d} autoa hakee {1:s}:in ja {2:s}:in</lang>
-          <lang id="de" st="1" or="6" invalidated="1" rw="0" time="20180321T190210Z">Autos nehmen {1} und {2} auf.</lang>
-          <lang id="nl" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T192418Z">Auto's zullen {0:d} ophalen {1:s} en {2:s}.</lang>
-          <lang id="he" st="3" fixed="1" invalidated="1" rw="0" time="20220405T150102Z">{0:d} מכוניות יאספו {1:s} ו-{2:s}</lang>
-        </row>
-        <row id="SDouble" changed="20230204T151354Z" class="TPatternRow" si="19" scannedcomment="0: Name of a person. This parameter occurs twice.">
-          <value>{0:s} swims and {0:s} skis</value>
-          <prev>{0} swims and {0} skis</prev>
-          <lang id="fi" st="3" fixed="1" invalidated="1" time="20200208T023336Z">{0:s} ui ja {0} hiihtää</lang>
-          <lang id="fi-FI" st="3" fixed="1" invalidated="1" rw="0" time="20171213T003658Z">{0:s} ui ja {0} hiihtää</lang>
-          <lang id="de" st="1" or="6" invalidated="1" rw="0" time="20180321T190211Z">Schwimmen und Skier</lang>
-          <lang id="nl" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T192420Z">{0:s} Zwemmen en {0} ski's</lang>
-        </row>
-        <row id="SHello" changed="20230204T151354Z" class="TPatternRow" si="15" scannedcomment="0: Name of a person">
-          <value>Hello {0:s}!</value>
-          <prev>Hello {0}!</prev>
-          <lang id="fi" st="3" fixed="1" invalidated="1" time="20200209T151047Z">Moi {0:s}!</lang>
-          <lang id="de" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T190205Z">Hallo {0:s}!</lang>
-          <lang id="nl" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T192414Z">Hallo {0:s}!</lang>
-        </row>
-        <row id="SHello2" changed="20230204T151354Z" class="TPatternRow" si="16" scannedcomment="0: Name of the first person, 1: Name of the second person">
-          <value>Hello {0:s} and {1:s}!</value>
-          <prev>Hello {0} and {1}!</prev>
-          <lang id="fi" st="3" fixed="1" invalidated="1" time="20171212T235819Z">Moi {0:s} ja {1:s}!</lang>
-          <lang id="fi-FI" st="3" fixed="1" invalidated="1" rw="0" time="20171213T001404Z">Moi {1:s} ja {0:s}!</lang>
-          <lang id="de" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T190207Z">Hallo {0:s} und {1:s}!</lang>
-          <lang id="nl" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T192415Z">Hallo {0:s} en {1:s}!</lang>
-          <lang id="he" st="3" fixed="1" invalidated="1" rw="0" time="20220405T150119Z">שלום {0:s} {1:s}!</lang>
-        </row>
-        <row id="SCount" changed="20230204T151354Z" class="TPatternRow" si="17" scannedcomment="0: Name of a person, 1: Number of cars">
-          <value>{0:s} has {1:d} cars</value>
-          <prev>{0} has {1} cars</prev>
-          <lang id="fi" st="3" fixed="1" invalidated="1" time="20171212T235840Z">{0:s}:lla on {1:d} autoa</lang>
-          <lang id="de" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T190208Z">{0:s} hat {1:d} Autos</lang>
-          <lang id="nl" st="1" or="6" fixed="1" invalidated="1" rw="0" time="20180321T192417Z">{0:s} heeft {1:d} auto's</lang>
-        </row>
+        <row id="SHello" changed="20230419T125907Z" class="TPatternRow" si="4" scannedcomment="0: Name of a person" created="20230419T125907Z" original="Hello %s!">Hello {0}!</row>
+        <row id="SHello2" changed="20230419T125907Z" class="TPatternRow" si="5" scannedcomment="0: Name of the first person, 1: Name of the second person" created="20230419T125907Z" original="Hello %s and %s!">Hello {0} and {1}!</row>
+        <row id="SCount" changed="20230419T125907Z" class="TPatternRow" si="6" scannedcomment="0: Name of a person, 1: Number of cars" created="20230419T125907Z" original="%s has %d cars">{0} has {1} cars</row>
+        <row id="SCount2" changed="20230419T125907Z" class="TPatternRow" si="7" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person" created="20230419T125907Z" original="%d cars will pick up %s and %s">{0} cars will pick up {1} and {2}</row>
+        <row id="SDouble" changed="20230419T125907Z" class="TPatternRow" si="8" scannedcomment="0: Name of a person. This parameter occurs twice." created="20230419T125907Z" original="%0:s swims and %0:s skis">{0} swims and {0} skis</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.ComStrs" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
-    <signature signtool="C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe"/>
-    <configurations>
-      <configuration name="Default" items="[oiLanguage]"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <rules kind="crVcl">
-    <rule component="*" property="*Font.Name"/>
-  </rules>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
       <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
   <duplicates>
