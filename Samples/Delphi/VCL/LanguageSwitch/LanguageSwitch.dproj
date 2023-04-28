@@ -3,7 +3,7 @@
         <ProjectGuid>{D9596950-454E-47C8-941C-26F7E8D6C0A0}</ProjectGuid>
         <MainSource>LanguageSwitch.dpr</MainSource>
         <Base>True</Base>
-        <Config Condition="'$(Config)'==''">Release</Config>
+        <Config Condition="'$(Config)'==''">Debug</Config>
         <TargetedPlatforms>3</TargetedPlatforms>
         <AppType>Application</AppType>
         <FrameworkType>VCL</FrameworkType>
@@ -124,6 +124,8 @@
         <DCCReference Include="Unit1.pas">
             <Form>Form1</Form>
         </DCCReference>
+        <DCCReference Include="..\..\..\..\Library\Delphi\NtTranslatorEx.pas"/>
+        <DCCReference Include="..\..\..\..\Library\Delphi\NtResourceEx.pas"/>
         <BuildConfiguration Include="Base">
             <Key>Base</Key>
         </BuildConfiguration>
@@ -184,6 +186,12 @@
             </Platforms>
             <Deployment Version="4">
                 <DeployFile LocalName="Win32\Debug\LanguageSwitch.exe" Configuration="Debug" Class="ProjectOutput"/>
+                <DeployFile LocalName="Win32\Debug\LanguageSwitch.exe" Configuration="Debug" Class="ProjectOutput">
+                    <Platform Name="Win32">
+                        <RemoteName>LanguageSwitch.exe</RemoteName>
+                        <Overwrite>true</Overwrite>
+                    </Platform>
+                </DeployFile>
                 <DeployClass Name="AdditionalDebugSymbols">
                     <Platform Name="iOSSimulator">
                         <Operation>1</Operation>

@@ -33,7 +33,8 @@ implementation
 uses
   NtBase,
   NtResource,
-  NtTranslator;
+  NtResourceEx,
+  NtTranslatorEx;
 
 procedure TForm1.Translate;
 resourcestring

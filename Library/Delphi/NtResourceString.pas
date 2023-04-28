@@ -6,7 +6,7 @@ implementation
 
 uses
   System.SyncObjs,
-  NtResource;
+  NtResourceEx;
 
 var
   cs: TCriticalSection;

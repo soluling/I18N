@@ -407,7 +407,7 @@ type
       @param original  Original language name such as "English".
       @param id        Language id such as "en".
       @return Language resource. }
-    function _T(const original, id: String): TNtResourceLanguage;
+    function Translate(const original, id: String): TNtResourceLanguage;
 
     function Add(const original, native, localized, id: String): TNtResourceLanguage;
 
@@ -432,24 +432,10 @@ type
   end;
 
 {$IFDEF DELPHIDX4}
-function _T(
-  resStringRec: PResStringRec;
-  const language: String = ''): String; overload;
+// _T has been moved to NtResourceEx.pas
 
 procedure InitializeResourceStringTranslation;
 {$ENDIF}
-
-{ Get the string value in the current language or in the specific language.
-  @param original Original string value.
-  @param id       Optional id value. If not present the original value is used.
-  @param group    String group.
-  @param language Optional language id. If not present the current language is used.
-  @return String value in the current languages.}
-function _T(
-  const original: String;
-  const id: String = '';
-  const group: String = '';
-  const language: String = ''): String; overload;
 
 function Translate(
   const original: String;
@@ -483,7 +469,8 @@ uses
 {$IFDEF DELPHIXE2}
   System.IOUtils,
 {$ENDIF}
-  NtBase;
+  NtBase,
+  NtResourceEx;
 
 
 // TStreamHelper
@@ -565,31 +552,6 @@ end;
 function TStreamHelper.ReadInt32: Int32;
 begin
   Read(Result, SizeOf(Result));
-end;
-
-
-{$IFDEF DELPHIDX4}
-function _T(
-  resStringRec: PResStringRec;
-  const language: String = ''): String;
-begin
-  if language <> '' then
-    Result := NtResources.GetStringInLanguage(language, resStringRec)
-  else
-    Result := NtResources.GetString(resStringRec);
-end;
-{$ENDIF}
-
-function _T(
-  const original: String;
-  const id: String = '';
-  const group: String = '';
-  const language: String = ''): String;
-begin
-  if language <> '' then
-    Result := NtResources.GetStringInLanguage(language, original, id, group)
-  else
-    Result := NtResources.GetString(original, id, group);
 end;
 
 function Translate(
@@ -1271,7 +1233,7 @@ begin
   Result := '';
 end;
 
-function TNtDelphiResources._T(const original, id: String): TNtResourceLanguage;
+function TNtDelphiResources.Translate(const original, id: String): TNtResourceLanguage;
 begin
   Result := TNtResourceLanguage.Create;
   Result.FOriginal := original;
@@ -1682,7 +1644,7 @@ end;
 {$IFDEF DELPHIDX4}
 function TranslateResourceString(resStringRec: PResStringRec): String;
 begin
-  Result := _T(resStringRec);
+  Result := NtResourceEx._T(resStringRec);
 end;
 
 procedure InitializeResourceStringTranslation;

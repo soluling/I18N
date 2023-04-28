@@ -25,7 +25,7 @@ implementation
 {$R *.dfm}
 
 uses
-  NtResource;
+  NtResourceEx;
 
 procedure TForm2.FormCreate(Sender: TObject);
 begin

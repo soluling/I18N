@@ -277,6 +277,10 @@ end.#) }
     If @false postion is not changed. }
   NtFormPositionTranslationEnabled: Boolean;
 
+  { If @true data modiles are also translated
+    If @false data modules are not translated. }
+  NtTranslateDataModules: Boolean;
+
   { An event that is called before translating a property value.
     Use this to disable or change the translation process.
     If you assign this value, make sure that the event is as fast as possible because
@@ -1433,6 +1437,7 @@ end;
 initialization
   NtEnabledProperties := [];
   NtFormPositionTranslationEnabled := False;
+  NtTranslateDataModules := True;
   NtBeforeTranslate := nil;
   NtAfterTranslate := nil;
 

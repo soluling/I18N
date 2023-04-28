@@ -116,7 +116,7 @@
         <ILINK_AdditionalOptions>-GD</ILINK_AdditionalOptions>
         <VerInfo_IncludeVerInfo>true</VerInfo_IncludeVerInfo>
         <VerInfo_Locale>1033</VerInfo_Locale>
-        <LinkPackageStatics>NtVcl.lib</LinkPackageStatics>
+        <LinkPackageStatics>NtVcl.lib;NtLib.lib</LinkPackageStatics>
     </PropertyGroup>
     <PropertyGroup Condition="'$(Cfg_2)'!=''">
         <Defines>NDEBUG;$(Defines)</Defines>

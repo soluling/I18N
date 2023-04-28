@@ -24,8 +24,6 @@ type
     property on the host component (form, frame or data module).
     Call @link(TNtTranslator.TranslateForms) to translate all forms. }
   TNtTranslator = class(TNtBaseTranslator)
-  private
-    procedure TranslateForm(form: TCustomForm);
 
   protected
     { Called after a component has been translated.
@@ -35,6 +33,8 @@ type
     procedure Translate(component: TComponent); override;
 
   public
+    procedure TranslateForm(form: TCustomForm);
+
     { Call this function in the initialization section of your main form.
       @param layout The original layout of the application. }
     class procedure InitializeApplication(layout: TNtLayout = laLeftToRight);
@@ -60,26 +60,12 @@ type
     class procedure TranslateForms;
   end;
 
-{ Translates the form.
-  @param form Form to be translated. }
-procedure _T(form: TCustomForm); overload;
+// _T has been moved to NtTranslatorEx.pas
 
 implementation
 
 uses
   Windows, Controls, NtLocalization, NtPattern;
-
-procedure _T(form: TCustomForm);
-var
-  translator: TNtTranslator;
-begin
-  translator := TNtTranslator.Create;
-  try
-    translator.TranslateForm(form);
-  finally
-    translator.Free;
-  end;
-end;
 
 class function TNtTranslator.SetNew(
   const code: String;
@@ -170,8 +156,9 @@ begin
     else if not TNtLocale.IsActiveLocaleBidi and (UiLayout = laRightToLeft) then
       SetNewLayout(laLeftToRight);
 
-    for i := 0 to Screen.DataModuleCount - 1 do
-      translator.Translate(Screen.DataModules[i]);
+    if NtTranslateDataModules then
+      for i := 0 to Screen.DataModuleCount - 1 do
+        translator.Translate(Screen.DataModules[i]);
 
     for i := 0 to Screen.FormCount - 1 do
       translator.TranslateForm(Screen.Forms[i]);
