@@ -41,6 +41,8 @@ type
       const name: String;
       value: Variant;
       index: Integer); override;
+
+    class procedure ForceUse;
   end;
 
 implementation
@@ -212,6 +214,10 @@ begin
   finally
     stream.Free;
   end;
+end;
+
+class procedure TNtTreeViewTranslator.ForceUse;
+begin
 end;
 
 initialization

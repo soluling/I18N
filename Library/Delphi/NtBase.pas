@@ -35,13 +35,13 @@ const
   { Character that is used to separate country part from language part in the locale id. }
   LOCALE_SEPARATOR = '-';
 
-  LOCALE_ALL = 0;          // enumerate all named based locales
+  NT_LOCALE_ALL = 0;          // enumerate all named based locales
 
   { Form header. }
   VCL_FORM_HEADER: array[0..3] of Byte = ($54, $50, $46, $30);  // 'TPF0'
 
   { The virtual folder that represents the My Documents desktop item. }
-  CSIDL_PERSONAL = $0005;
+  NT_CSIDL_PERSONAL = $0005;
 
 {$IFNDEF MSWINDOWS}
   { Neutral sub language id. }
@@ -1335,7 +1335,7 @@ begin
 
   // Look finally from Soluling's personal directory such as C:\Users\<user>\Documents\Soluling
 {$IFDEF MSWINDOWS}
-  Result := GetFolderPath(CSIDL_PERSONAL) + '\' + APPLICATION_DIR + '\' + ChangeFileExt(ExtractFileName(fileName), ext);
+  Result := GetFolderPath(NT_CSIDL_PERSONAL) + '\' + APPLICATION_DIR + '\' + ChangeFileExt(ExtractFileName(fileName), ext);
 
   if FileExists(Result) then
     Exit;
@@ -1580,7 +1580,7 @@ begin
     enumFileName := TNtBase.GetRunningFileName
   else
   begin
-    dir := TNtBase.GetFolderPath(CSIDL_PERSONAL) + '\' + APPLICATION_DIR;
+    dir := TNtBase.GetFolderPath(NT_CSIDL_PERSONAL) + '\' + APPLICATION_DIR;
     CreateDir(dir);
     enumFileName := dir + '\' + ExtractFileName(TNtBase.GetRunningFileName);
   end;

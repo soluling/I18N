@@ -22,8 +22,8 @@ namespace Strings
 //-- forward type declarations -----------------------------------------------
 //-- type declarations -------------------------------------------------------
 //-- var, const, procedure ---------------------------------------------------
-extern DELPHI_PACKAGE System::ResourceString _SMessage;
-#define Strings_SMessage System::LoadResourceString(&Strings::_SMessage)
+extern DELPHI_PACKAGE System::ResourceString _SSample;
+#define Strings_SSample System::LoadResourceString(&Strings::_SSample)
 }	/* namespace Strings */
 #if !defined(DELPHIHEADER_NO_IMPLICIT_NAMESPACE_USE) && !defined(NO_USING_NAMESPACE_STRINGS)
 using namespace Strings;

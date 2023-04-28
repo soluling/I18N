@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20221113T162611Z" version="1.0.963" stringid="6">
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20230423T140846Z" version="1.0.992" stringid="6">
   <lang id="fi"/>
   <lang id="he"/>
   <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" lastmodified="20221113T162611Z" encoding="windows-1252">
@@ -45,11 +45,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <duplicates>

@@ -12,12 +12,12 @@ object Form1: TForm1
   Font.Style = []
   OnShow = FormShow
   TextHeight = 13
-  object Label1: TLabel
-    Left = 8
+  object Label2: TLabel
+    Left = 208
     Top = 8
-    Width = 74
+    Width = 34
     Height = 13
-    Caption = 'This is a sample'
+    Caption = 'dummy'
   end
   object Image1: TImage
     Left = 208
@@ -231,36 +231,12 @@ object Form1: TForm1
       AE426082}
     Transparent = True
   end
-  object Label2: TLabel
-    Left = 208
-    Top = 8
-    Width = 34
-    Height = 13
-    Caption = 'dummy'
-  end
-  object LanguageButton: TButton
-    Left = 289
-    Top = 199
-    Width = 113
-    Height = 25
-    Caption = '&Language...'
-    TabOrder = 3
-    OnClick = LanguageButtonClick
-  end
-  object TreeView1: TTreeView
+  object Label1: TLabel
     Left = 8
-    Top = 24
-    Width = 193
-    Height = 129
-    Indent = 19
-    TabOrder = 0
-    Items.NodeData = {
-      0303000000240000000000000000000000FFFFFFFFFFFFFFFF00000000000000
-      000100000001034F006E006500240000000000000000000000FFFFFFFFFFFFFF
-      FF00000000000000000000000001034F006E0065002400000000000000000000
-      00FFFFFFFFFFFFFFFF0000000000000000000000000103540077006F00280000
-      000000000000000000FFFFFFFFFFFFFFFF000000000000000000000000010554
-      006800720065006500}
+    Top = 8
+    Width = 74
+    Height = 13
+    Caption = 'This is a sample'
   end
   object ListView1: TListView
     Left = 208
@@ -278,7 +254,7 @@ object Form1: TForm1
       05510000000200000000000000FFFFFFFFFFFFFFFF00000000FFFFFFFF000000
       00034F006E00650000000000FFFFFFFFFFFFFFFF01000000FFFFFFFF00000000
       03540077006F000554006800720065006500982B7D0EFFFF}
-    TabOrder = 1
+    TabOrder = 3
     ViewStyle = vsReport
   end
   object ListBox1: TListBox
@@ -291,6 +267,30 @@ object Form1: TForm1
       'One'
       'Two'
       'Three')
+    TabOrder = 1
+  end
+  object LanguageButton: TButton
+    Left = 289
+    Top = 199
+    Width = 113
+    Height = 25
+    Caption = '&Language...'
     TabOrder = 2
+    OnClick = LanguageButtonClick
+  end
+  object TreeView1: TTreeView
+    Left = 8
+    Top = 24
+    Width = 193
+    Height = 129
+    Indent = 19
+    TabOrder = 0
+    Items.NodeData = {
+      0303000000240000000000000000000000FFFFFFFFFFFFFFFF00000000000000
+      000100000001034F006E006500240000000000000000000000FFFFFFFFFFFFFF
+      FF00000000000000000000000001034F006E0065002400000000000000000000
+      00FFFFFFFFFFFFFFFF0000000000000000000000000103540077006F00280000
+      000000000000000000FFFFFFFFFFFFFFFF000000000000000000000000010554
+      006800720065006500}
   end
 end

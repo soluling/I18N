@@ -12,6 +12,9 @@
         <Projects Include="SimpleRC\SimpleRC.cbproj">
             <Dependencies/>
         </Projects>
+        <Projects Include="LanguageSwitch\LanguageSwitch.cbproj">
+            <Dependencies/>
+        </Projects>
     </ItemGroup>
     <ProjectExtensions>
         <Borland.Personality>Default.Personality.12</Borland.Personality>
@@ -47,14 +50,23 @@
     <Target Name="SimpleRC:Make">
         <MSBuild Projects="SimpleRC\SimpleRC.cbproj" Targets="Make"/>
     </Target>
+    <Target Name="LanguageSwitch">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.cbproj"/>
+    </Target>
+    <Target Name="LanguageSwitch:Clean">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LanguageSwitch:Make">
+        <MSBuild Projects="LanguageSwitch\LanguageSwitch.cbproj" Targets="Make"/>
+    </Target>
     <Target Name="Build">
-        <CallTarget Targets="Simple;Inherited;SimpleRC"/>
+        <CallTarget Targets="Simple;Inherited;SimpleRC;LanguageSwitch"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="Simple:Clean;Inherited:Clean;SimpleRC:Clean"/>
+        <CallTarget Targets="Simple:Clean;Inherited:Clean;SimpleRC:Clean;LanguageSwitch:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="Simple:Make;Inherited:Make;SimpleRC:Make"/>
+        <CallTarget Targets="Simple:Make;Inherited:Make;SimpleRC:Make;LanguageSwitch:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

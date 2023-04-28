@@ -1,7 +1,6 @@
 package NtVcl;
 
 {$R *.res}
-{$R *.otares}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
 {$ASSERTIONS ON}
@@ -55,6 +54,9 @@ contains
   NtTreeViewTranslator in 'NtTreeViewTranslator.pas',
   NtWindows in 'NtWindows.pas',
   NtPluralData in 'NtPluralData.pas',
-  NtNumber in 'NtNumber.pas';
+  NtNumber in 'NtNumber.pas',
+  NtGraphic in 'NtGraphic.pas',
+  NtHiddenId in 'NtHiddenId.pas',
+  NtResourceString in 'NtResourceString.pas';
 
 end.

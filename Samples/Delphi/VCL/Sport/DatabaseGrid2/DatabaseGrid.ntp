@@ -1,8 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20230425T125759Z" version="1.0.992" stringid="1017">
+<project id="08D54274-F4C7-412C-968C-7BB89289042C" created="20200317T004225Z" lastmodified="20230425T131006Z" version="1.0.992" stringid="1028">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Debug\DatabaseGrid.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\DatabaseGrid\Win32\Debug\DatabaseGrid.exe" original="en" lastmodified="20230425T125759Z" hassignatureread="1" version="dvXE2">
+  <lang id="ru"/>
+  <lang id="zh"/>
+  <node class="TDelphiSource" name="Win32\Debug\DatabaseGrid.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\DatabaseGrid2\Win32\Debug\DatabaseGrid.exe" original="en" lastmodified="20230425T125951Z" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData" created="20200530T205110Z">
@@ -11,8 +13,9 @@
         <row id="Top">131</row>
         <row id="Caption" si="505">
           <value>Database Login</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Kirjautuminen tietokantaan</lang>
-          <lang id="ja" rw="0" time="20230424T210809Z">データベース ログイン</lang>
+          <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Kirjautuminen tietokantaan</lang>
+          <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">データベース ログイン</lang>
+          <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Вход в базу данных</lang>
         </row>
         <row id="ClientHeight">147</row>
         <row id="ClientWidth">283</row>
@@ -23,8 +26,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="506">
             <value>&amp;OK</value>
-            <lang id="fi" rw="0" time="20230424T210725Z">&amp;OK</lang>
-            <lang id="ja" rw="0" time="20230424T210828Z">OK(&amp;O)</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;OK</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">OK(&amp;O)</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">&amp;ХОРОШО</lang>
           </row>
         </item>
         <item name="CancelButton" type="TButton">
@@ -34,8 +38,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="507">
             <value>Cancel</value>
-            <lang id="fi" rw="0" time="20230424T211003Z">Peru</lang>
-            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Peru</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">キャンセル</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Отмена</lang>
           </row>
         </item>
         <item name="Panel" type="TPanel">
@@ -50,8 +55,9 @@
             <row id="Height">13</row>
             <row id="Caption" si="508">
               <value>Database:</value>
-              <lang id="fi" rw="0" time="20230424T210725Z">Tietokanta:</lang>
-              <lang id="ja" rw="0" time="20230424T210809Z">データベース:</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">Tietokanta:</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">データベース:</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">База данных:</lang>
             </row>
           </item>
           <item name="DatabaseName" type="TLabel">
@@ -78,8 +84,9 @@
               <row id="Height">13</row>
               <row id="Caption" si="509">
                 <value>&amp;User Name:</value>
-                <lang id="fi" rw="0" time="20230424T210725Z">&amp;Käyttäjänimi:</lang>
-                <lang id="ja" rw="0" time="20230424T210839Z">ユーザー名(&amp;U):</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;Käyttäjänimi:</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">ユーザー名(&amp;U):</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">&amp;Имя пользователя:</lang>
               </row>
             </item>
             <item name="Label2" type="TLabel">
@@ -89,8 +96,9 @@
               <row id="Height">13</row>
               <row id="Caption" si="510">
                 <value>&amp;Password:</value>
-                <lang id="fi" rw="0" time="20230424T210725Z">&amp;Salasana:</lang>
-                <lang id="ja" rw="0" time="20230424T210834Z">パスワード(&amp;P):</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;Salasana:</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">パスワード(&amp;P):</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">&amp;Пароль:</lang>
               </row>
             </item>
             <item name="UserName" type="TEdit">
@@ -132,16 +140,41 @@
         <row id="Top">126</row>
         <row id="Caption" si="512">
           <value>Data Sample</value>
-          <lang id="fi" rw="0" time="20230424T210942Z">Data-esimerkki</lang>
-          <lang id="ja" rw="0" time="20230424T210809Z">データサンプル</lang>
+          <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Data-esimerkki</lang>
+          <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">データサンプル</lang>
+          <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Образец данных</lang>
         </row>
-        <row id="ClientHeight">103</row>
-        <row id="ClientWidth">733</row>
+        <row id="ClientHeight">102</row>
+        <row id="ClientWidth">729</row>
         <item name="DBGrid1" type="TDBGrid">
           <row id="Left">0</row>
           <row id="Top">0</row>
-          <row id="Width">733</row>
-          <row id="Height">103</row>
+          <row id="Width">729</row>
+          <row id="Height">102</row>
+          <row id="Columns[0].Title.Caption" si="1019" created="20230425T124528Z">
+            <value>ID</value>
+            <lang id="fi" st="4" rw="0" time="20230425T125311Z">Tunnus</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125833Z" fuzzy="99">神奈川県</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">ИДЕНТИФИКАТОР</lang>
+          </row>
+          <row id="Columns[1].Title.Caption" si="1027" created="20230425T125618Z">
+            <value>Language</value>
+            <lang id="fi" st="1" or="6" rw="0" time="20230425T125622Z" fuzzy="99.5">Kieli</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">言語</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Язык</lang>
+          </row>
+          <row id="Columns[3].Title.Caption" si="1023" created="20230425T124528Z">
+            <value>Field players</value>
+            <lang id="fi" st="1" or="5" rw="0" time="20230425T124610Z" fuzzy="92.3076934814453">Kenttäpelaajat</lang>
+            <lang id="ja" st="1" or="5" rw="0" time="20230425T125822Z" fuzzy="92.3076934814453">フィールドプレーヤー</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Полевые игроки</lang>
+          </row>
+          <row id="Columns[4].Title.Caption" si="1028" created="20230425T125618Z">
+            <value>Goalkeeper</value>
+            <lang id="fi" st="1" or="6" rw="0" time="20230425T125624Z" fuzzy="99.5">Maalivahti</lang>
+            <lang id="ja" st="1" or="6" rw="0" time="20230425T125836Z" fuzzy="99.5">ゴールキーパー</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Вратарь</lang>
+          </row>
         </item>
         <item name="MainMenu" type="TMainMenu">
           <row id="Left">16</row>
@@ -149,51 +182,58 @@
           <item name="DatabaseMenu" type="TMenuItem">
             <row id="Caption" si="513">
               <value>Database</value>
-              <lang id="fi" rw="0" time="20230424T210725Z">Tietokanta</lang>
-              <lang id="ja" rw="0" time="20230424T210809Z">データベース</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Tietokanta</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">データベース</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">База данных</lang>
             </row>
             <item name="OpenMenu" type="TMenuItem">
               <row id="Caption" si="514">
                 <value>Open</value>
-                <lang id="fi" rw="0" time="20230424T210948Z">Avaa</lang>
-                <lang id="ja" rw="0" time="20230424T210809Z">開ける</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Avaa</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">開ける</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Открыть</lang>
               </row>
             </item>
             <item name="CloseMenu" type="TMenuItem">
               <row id="Caption" si="515">
                 <value>Close</value>
-                <lang id="fi" rw="0" time="20230424T210951Z">Sulje</lang>
-                <lang id="ja" rw="0" time="20230424T210809Z">近い</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Sulje</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">近い</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Закрывать</lang>
               </row>
             </item>
             <item name="N1" type="TMenuItem"/>
             <item name="LanguageMenu" type="TMenuItem">
               <row id="Caption" si="516">
                 <value>Language...</value>
-                <lang id="fi" rw="0" time="20230424T210725Z">Kieli...</lang>
-                <lang id="ja" rw="0" time="20230424T210809Z">言語...</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">Kieli...</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">言語...</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Язык...</lang>
               </row>
             </item>
             <item name="N2" type="TMenuItem"/>
             <item name="ExitMenu" type="TMenuItem">
               <row id="Caption" si="517">
                 <value>Exit</value>
-                <lang id="fi" rw="0" time="20230424T210725Z">Poistu</lang>
-                <lang id="ja" rw="0" time="20230424T210809Z">出口</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Poistu</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">出口</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Выход</lang>
               </row>
             </item>
           </item>
           <item name="HelpMenu" type="TMenuItem">
             <row id="Caption" si="518">
               <value>Help</value>
-              <lang id="fi" rw="0" time="20230424T210923Z">Ohje</lang>
-              <lang id="ja" rw="0" time="20230424T210809Z">ヘルプ</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Ohje</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">ヘルプ</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Помощь</lang>
             </row>
             <item name="AboutMenu" type="TMenuItem">
               <row id="Caption" si="519">
                 <value>About</value>
-                <lang id="fi" rw="0" time="20230424T210958Z">Tietoa</lang>
-                <lang id="ja" rw="0" time="20230424T210809Z">だいたい</lang>
+                <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Tietoa</lang>
+                <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">だいたい</lang>
+                <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">О</lang>
               </row>
             </item>
           </item>
@@ -211,23 +251,30 @@
           <row id="Top">48</row>
         </item>
         <data>
-          VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAPNAANUb3ACfgdDYXB0aW9uBgtEYXRhIFNhbXBsZQxDbGllbnRIZWlnaHQCZwtD
-          bGllbnRXaWR0aAPdAgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNs
+          VFBGMAlUTWFpbkZvcm0ITWFpbkZvcm0ETGVmdAPNAANUb3ACfgdDYXB0aW9uBgtEYXRhIFNhbXBsZQxDbGllbnRIZWlnaHQCZgtD
+          bGllbnRXaWR0aAPZAgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNs
           V2luZG93VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYNTVMgU2FucyBTZXJpZgpGb250LlN0eWxlCwAETWVudQcITWFpbk1l
-          bnUGT25TaG93BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0AB1REQkdyaWQHREJHcmlkMQRMZWZ0AgADVG9wAgAFV2lkdGgD3QIGSGVp
-          Z2h0AmcFQWxpZ24HCGFsQ2xpZW50CkRhdGFTb3VyY2UHC0RhdGFTb3VyY2UxCFRhYk9yZGVyAgARVGl0bGVGb250LkNoYXJzZXQH
+          bnUGT25TaG93BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0AB1REQkdyaWQHREJHcmlkMQRMZWZ0AgADVG9wAgAFV2lkdGgD2QIGSGVp
+          Z2h0AmYFQWxpZ24HCGFsQ2xpZW50CkRhdGFTb3VyY2UHC0RhdGFTb3VyY2UxCFRhYk9yZGVyAgARVGl0bGVGb250LkNoYXJzZXQH
           D0RFRkFVTFRfQ0hBUlNFVA9UaXRsZUZvbnQuQ29sb3IHDGNsV2luZG93VGV4dBBUaXRsZUZvbnQuSGVpZ2h0AvUOVGl0bGVGb250
-          Lk5hbWUGDU1TIFNhbnMgU2VyaWYPVGl0bGVGb250LlN0eWxlCwAAAAlUTWFpbk1lbnUITWFpbk1lbnUETGVmdAIQA1RvcAIwAAlU
-          TWVudUl0ZW0MRGF0YWJhc2VNZW51B0NhcHRpb24GCERhdGFiYXNlB09uQ2xpY2sHEURhdGFiYXNlTWVudUNsaWNrAAlUTWVudUl0
-          ZW0IT3Blbk1lbnUHQ2FwdGlvbgYET3BlbgdPbkNsaWNrBw1PcGVuTWVudUNsaWNrAAAJVE1lbnVJdGVtCUNsb3NlTWVudQdDYXB0
-          aW9uBgVDbG9zZQdPbkNsaWNrBw5DbG9zZU1lbnVDbGljawAACVRNZW51SXRlbQJOMQdDYXB0aW9uBgEtAAAJVE1lbnVJdGVtDExh
-          bmd1YWdlTWVudQdDYXB0aW9uBgtMYW5ndWFnZS4uLgdPbkNsaWNrBxFMYW5ndWFnZU1lbnVDbGljawAACVRNZW51SXRlbQJOMgdD
-          YXB0aW9uBgEtAAAJVE1lbnVJdGVtCEV4aXRNZW51B0NhcHRpb24GBEV4aXQHT25DbGljawcNRXhpdE1lbnVDbGljawAAAAlUTWVu
-          dUl0ZW0ISGVscE1lbnUHQ2FwdGlvbgYESGVscAAJVE1lbnVJdGVtCUFib3V0TWVudQdDYXB0aW9uBgVBYm91dAdPbkNsaWNrBw5B
-          Ym91dE1lbnVDbGljawAAAAALVERhdGFTb3VyY2ULRGF0YVNvdXJjZTEETGVmdAPYAANUb3ACMAAACVRBRE9RdWVyeQZRdWVyeTEK
-          Q29ubmVjdGlvbgcLQ29ubmVjdGlvbjEKUGFyYW1ldGVycw4ABExlZnQDmAADVG9wAjAAAA5UQURPQ29ubmVjdGlvbgtDb25uZWN0
-          aW9uMRBDb25uZWN0aW9uU3RyaW5nBltQcm92aWRlcj1NaWNyb3NvZnQuSmV0Lk9MRURCLjQuMDtEYXRhIFNvdXJjZT0uLlwuLlwu
-          LlxTcG9ydC5tZGI7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlC0xvZ2luUHJvbXB0CAhQcm92aWRlcgYXTWljcm9zb2Z0Lkpl
+          Lk5hbWUGDU1TIFNhbnMgU2VyaWYPVGl0bGVGb250LlN0eWxlCwAHQ29sdW1ucw4BCEV4cGFuZGVkCAlGaWVsZE5hbWUGAklkDVRp
+          dGxlLkNhcHRpb24GAklEB1Zpc2libGUJAAEIRXhwYW5kZWQICUZpZWxkTmFtZQYETGFuZw1UaXRsZS5DYXB0aW9uBghMYW5ndWFn
+          ZQdWaXNpYmxlCQABCEV4cGFuZGVkCAlGaWVsZE5hbWUGBE5hbWUHVmlzaWJsZQkAAQhFeHBhbmRlZAgJRmllbGROYW1lBgxGaWVs
+          ZFBsYXllcnMNVGl0bGUuQ2FwdGlvbgYNRmllbGQgcGxheWVycwdWaXNpYmxlCQABCEV4cGFuZGVkCAlGaWVsZE5hbWUGBkdvYWxp
+          ZQ1UaXRsZS5DYXB0aW9uBgpHb2Fsa2VlcGVyB1Zpc2libGUJAAEIRXhwYW5kZWQICUZpZWxkTmFtZQYGT3JpZ2luB1Zpc2libGUJ
+          AAEIRXhwYW5kZWQICUZpZWxkTmFtZQYLRGVzY3JpcHRpb24HVmlzaWJsZQkAAAAACVRNYWluTWVudQhNYWluTWVudQRMZWZ0AhAD
+          VG9wAjAACVRNZW51SXRlbQxEYXRhYmFzZU1lbnUHQ2FwdGlvbgYIRGF0YWJhc2UHT25DbGljawcRRGF0YWJhc2VNZW51Q2xpY2sA
+          CVRNZW51SXRlbQhPcGVuTWVudQdDYXB0aW9uBgRPcGVuB09uQ2xpY2sHDU9wZW5NZW51Q2xpY2sAAAlUTWVudUl0ZW0JQ2xvc2VN
+          ZW51B0NhcHRpb24GBUNsb3NlB09uQ2xpY2sHDkNsb3NlTWVudUNsaWNrAAAJVE1lbnVJdGVtAk4xB0NhcHRpb24GAS0AAAlUTWVu
+          dUl0ZW0MTGFuZ3VhZ2VNZW51B0NhcHRpb24GC0xhbmd1YWdlLi4uB09uQ2xpY2sHEUxhbmd1YWdlTWVudUNsaWNrAAAJVE1lbnVJ
+          dGVtAk4yB0NhcHRpb24GAS0AAAlUTWVudUl0ZW0IRXhpdE1lbnUHQ2FwdGlvbgYERXhpdAdPbkNsaWNrBw1FeGl0TWVudUNsaWNr
+          AAAACVRNZW51SXRlbQhIZWxwTWVudQdDYXB0aW9uBgRIZWxwAAlUTWVudUl0ZW0JQWJvdXRNZW51B0NhcHRpb24GBUFib3V0B09u
+          Q2xpY2sHDkFib3V0TWVudUNsaWNrAAAAAAtURGF0YVNvdXJjZQtEYXRhU291cmNlMQdEYXRhU2V0BwZRdWVyeTEETGVmdAPYAANU
+          b3ACMAAACVRBRE9RdWVyeQZRdWVyeTEGQWN0aXZlCQpDb25uZWN0aW9uBwtDb25uZWN0aW9uMQpDdXJzb3JUeXBlBwhjdFN0YXRp
+          YwpQYXJhbWV0ZXJzDgALU1FMLlN0cmluZ3MBBhNTRUxFQ1QgKiBGUk9NIFNwb3J0AARMZWZ0A5gAA1RvcAIwAAAOVEFET0Nvbm5l
+          Y3Rpb24LQ29ubmVjdGlvbjEJQ29ubmVjdGVkCRBDb25uZWN0aW9uU3RyaW5nBnhQcm92aWRlcj1NaWNyb3NvZnQuSmV0Lk9MRURC
+          LjQuMDtEYXRhIFNvdXJjZT1EOlxOVFxEZXBsb3lcU2FtcGxlc1xEZWxwaGlcVkNMXFNwb3J0XFNwb3J0Lm1kYjtQZXJzaXN0IFNl
+          Y3VyaXR5IEluZm89RmFsc2ULTG9naW5Qcm9tcHQIBE1vZGUHD2NtU2hhcmVEZW55Tm9uZQhQcm92aWRlcgYXTWljcm9zb2Z0Lkpl
           dC5PTEVEQi40LjAETGVmdAJYA1RvcAIwAAAA
         </data>
       </node>
@@ -237,8 +284,9 @@
         <row id="Top">347</row>
         <row id="Caption" si="520">
           <value>Select Language</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Valitse kieli</lang>
-          <lang id="ja" rw="0" time="20230424T210809Z">言語を選択する</lang>
+          <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Valitse kieli</lang>
+          <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">言語を選択する</lang>
+          <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Выберите язык</lang>
         </row>
         <row id="ClientHeight">193</row>
         <row id="ClientWidth">291</row>
@@ -255,8 +303,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="521">
             <value>OK</value>
-            <lang id="fi" rw="0" time="20230424T210725Z">OK</lang>
-            <lang id="ja" rw="0" time="20230424T210809Z">OK</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">OK</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">OK</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">ХОРОШО</lang>
           </row>
         </item>
         <item name="CancelButton" type="TButton">
@@ -266,8 +315,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="522">
             <value>Cancel</value>
-            <lang id="fi" rw="0" time="20230424T211002Z">Peru</lang>
-            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Peru</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">キャンセル</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Отмена</lang>
           </row>
         </item>
         <data>
@@ -287,8 +337,9 @@
         <row id="Top">184</row>
         <row id="Caption" si="523">
           <value>Enter password</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Kirjoita salasana</lang>
-          <lang id="ja" rw="0" time="20230424T210809Z">パスワードを入力する</lang>
+          <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Kirjoita salasana</lang>
+          <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">パスワードを入力する</lang>
+          <lang id="ru" st="1" or="6" rw="0" time="20230425T125950Z">Введите пароль</lang>
         </row>
         <row id="ClientHeight">132</row>
         <row id="ClientWidth">273</row>
@@ -299,8 +350,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="524">
             <value>&amp;OK</value>
-            <lang id="fi" rw="0" time="20230424T210725Z">&amp;OK</lang>
-            <lang id="ja" rw="0" time="20230424T210829Z">OK(&amp;O)</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;OK</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">OK(&amp;O)</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">&amp;ХОРОШО</lang>
           </row>
         </item>
         <item name="CancelButton" type="TButton">
@@ -310,8 +362,9 @@
           <row id="Height">25</row>
           <row id="Caption" si="525">
             <value>Cancel</value>
-            <lang id="fi" rw="0" time="20230424T211003Z">Peru</lang>
-            <lang id="ja" rw="0" time="20230424T210809Z">キャンセル</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Peru</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">キャンセル</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">Отмена</lang>
           </row>
         </item>
         <item name="GroupBox1" type="TGroupBox">
@@ -321,8 +374,9 @@
           <row id="Height">81</row>
           <row id="Caption" si="526">
             <value>Password</value>
-            <lang id="fi" rw="0" time="20230424T210725Z">Salasana</lang>
-            <lang id="ja" rw="0" time="20230424T210809Z">パスワード</lang>
+            <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="100">Salasana</lang>
+            <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="100">パスワード</lang>
+            <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">Пароль</lang>
           </row>
           <item name="Edit" type="TEdit">
             <row id="Left">16</row>
@@ -337,8 +391,9 @@
             <row id="Height">25</row>
             <row id="Caption" si="528">
               <value>&amp;Add</value>
-              <lang id="fi" rw="0" time="20230424T211011Z">&amp;Lisää</lang>
-              <lang id="ja" rw="0" time="20230424T210820Z">追加(&amp;A)</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;Lisää</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">追加(&amp;A)</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">&amp;Добавлять</lang>
             </row>
           </item>
           <item name="RemoveButton" type="TButton">
@@ -348,8 +403,9 @@
             <row id="Height">25</row>
             <row id="Caption" si="529">
               <value>&amp;Remove</value>
-              <lang id="fi" rw="0" time="20230424T210725Z">&amp;Poista</lang>
-              <lang id="ja" rw="0" time="20230424T210822Z">削除(&amp;R)</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;Poista</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125822Z" fuzzy="99">削除(&amp;R)</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">&amp;Удалять</lang>
             </row>
           </item>
           <item name="RemoveAllButton" type="TButton">
@@ -359,8 +415,9 @@
             <row id="Height">25</row>
             <row id="Caption" si="530">
               <value>Re&amp;move all</value>
-              <lang id="fi" rw="0" time="20230424T210737Z">Poista &amp;kaikki</lang>
-              <lang id="ja" rw="0" time="20230424T210815Z">すべて削除する(&amp;M)</lang>
+              <lang id="fi" st="2" or="5" rw="0" time="20230425T124610Z" fuzzy="99">&amp;Poista kaikki</lang>
+              <lang id="ja" st="2" or="5" rw="0" time="20230425T125823Z" fuzzy="99">すべて削除する(&amp;M)</lang>
+              <lang id="ru" st="1" or="6" rw="0" time="20230425T125951Z">Убрать все</lang>
             </row>
           </item>
         </item>
@@ -387,35 +444,9 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1" created="20200530T205132Z">
-        <row id="SOrigin" si="535">
-          <value>Origin</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Alkuperä</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">元</lang>
-        </row>
-        <row id="SDescription" si="536">
-          <value>Description</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Kuvaus</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">説明</lang>
-        </row>
         <row id="SAboutMessage" si="537">
           <value>This application shows how to localize database content.</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Tämä sovellus näyttää kuinka lokalisoidaan tietokannan sisältö.</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">このアプリケーションでは、データベース コンテンツをローカライズする方法を示します。</lang>
-        </row>
-        <row id="SName" si="532">
-          <value>Name</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Nimi</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">名前</lang>
-        </row>
-        <row id="SFieldplayers" si="533">
-          <value>Fieldplayers</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Kenttäpelaajat</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">フィールドプレーヤー</lang>
-        </row>
-        <row id="SGoalie" si="534">
-          <value>Goalie</value>
-          <lang id="fi" rw="0" time="20230424T210725Z">Maalivahti</lang>
-          <lang id="ja" rw="0" time="20230424T210755Z">ゴールキーパー</lang>
+          <lang id="fi" st="1" or="6" rw="0" time="20230425T124535Z" fuzzy="99.5">Tämä sovellus näyttää kuinka lokalisoidaan tietokannan sisältö.</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>

@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="50BB158B-1DFB-4F8B-A970-3D498CD42228" created="20130130T230707Z" lastmodified="20230423T150328Z" version="1.0.992" stringid="6">
+  <lang id="fi"/>
+  <lang id="he"/>
+  <node class="TIniSource" name="sample.ini" fullpath="D:\NT\Deploy\Samples\Glossary\sample.ini" original="en" lastmodified="20230423T150328Z" encoding="windows-1252">
+    <ini detectstringformat="1"/>
+    <item name="value">
+      <row id="finland" changed="20130130T230920Z" si="1" created="20130130T230707Z">Capital of Finland is Helsinki</row>
+      <row id="germany" si="2" created="20170930T004203Z">Capital on Germany is Berlin</row>
+      <row id="usa" changed="20190825T205844Z" si="3" created="20170930T004203Z">
+        <value>Capital of United States is Washington</value>
+        <prev>Capital of United States is Washington </prev>
+      </row>
+      <row id="japan" si="4" created="20170930T004203Z">Capital of Japan is Tokyo</row>
+      <row id="sweden" changed="20130130T230920Z" si="5" created="20130130T230707Z">Capital of Sweden is Stockholm</row>
+      <row id="all" changed="20221113T162610Z" si="6" created="20221113T162353Z">
+        <value>Finland|Germany|Sweden United States</value>
+        <prev>Finland|Germany|Sweden</prev>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <items>
+      <glossary kind="TTbxGlossary" filename="Countries.tbx"/>
+    </items>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

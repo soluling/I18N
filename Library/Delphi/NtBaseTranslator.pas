@@ -909,7 +909,7 @@ var
   var
     typeKind: TypInfo.TTypeKind;
   begin
-    if (FName = 'Charset') or (NtEnabledProperties = []) then
+    if (FName = 'Font.Charset') or (NtEnabledProperties = []) then
       Result := False
     else
     begin
