@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F8B7EB4F-43D2-40F6-8849-99B8D8F2998A" created="20210429T025251Z" lastmodified="20210430T145834Z" version="1.0.850" lockedrowcomplete="0" stringid="16">
+<project id="F8B7EB4F-43D2-40F6-8849-99B8D8F2998A" created="20210429T025251Z" lastmodified="20230429T162223Z" version="1.0.993" lockedrowcomplete="0" stringid="16">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Debug\Inherited.exe" fullpath="D:\NT\Deploy\Samples\CBuilder\VCL\Inherited\Win32\Debug\Inherited.exe" original="en-US" platforms="[ptWin32]" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Debug\Inherited.exe" fullpath="D:\NT\Deploy\Samples\CBuilder\VCL\Inherited\Win32\Debug\Inherited.exe" original="en-US" lastmodified="20230429T162223Z" hassignatureread="1">
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
     <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
@@ -10,94 +10,123 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="5">Base</row>
+        <row id="Caption" changed="20230429T162208Z" si="5">
+          <value>Base Form</value>
+          <prev>Base</prev>
+        </row>
         <row id="ClientHeight">241</row>
         <row id="ClientWidth">574</row>
         <item name="Label1" type="TLabel">
           <row id="Left">24</row>
           <row id="Top">16</row>
-          <row id="Width">31</row>
+          <row id="Width">103</row>
           <row id="Height">13</row>
-          <row id="Caption" si="6">Label1</row>
+          <row id="Caption" changed="20230429T162208Z" si="6">
+            <value>Text in the base form</value>
+            <prev>Label1</prev>
+          </row>
         </item>
         <data>
-          VFBGMAlUQmFzZUZvcm0IQmFzZUZvcm0ETGVmdAIAA1RvcAIAB0NhcHRpb24GBEJhc2UMQ2xpZW50SGVpZ2h0A/EAC0NsaWVudFdp
-          ZHRoAz4CBUNvbG9yBwljbEJ0bkZhY2UMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dU
-          ZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5OYW1lBgZUYWhvbWEKRm9udC5TdHlsZQsADk9sZENyZWF0ZU9yZGVyCA1QaXhlbHNQZXJJ
-          bmNoAmAKVGV4dEhlaWdodAINAAZUTGFiZWwGTGFiZWwxBExlZnQCGANUb3ACEAVXaWR0aAIfBkhlaWdodAINB0NhcHRpb24GBkxh
-          YmVsMQAAAA==
+          VFBGMAlUQmFzZUZvcm0IQmFzZUZvcm0ETGVmdAIAA1RvcAIAB0NhcHRpb24GCUJhc2UgRm9ybQxDbGllbnRIZWlnaHQD8QALQ2xp
+          ZW50V2lkdGgDPgIFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdp
+          bmRvd1RleHQLRm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwANUGl4ZWxzUGVySW5jaAJgClRleHRI
+          ZWlnaHQCDQAGVExhYmVsBkxhYmVsMQRMZWZ0AhgDVG9wAhAFV2lkdGgCZwZIZWlnaHQCDQdDYXB0aW9uBhVUZXh0IGluIHRoZSBi
+          YXNlIGZvcm0AAAA=
         </data>
       </node>
       <node class="TDelphiFormNode" name="TDERIVEDFORM" type="TDerivedForm" resname="TDERIVEDFORM" objectname="DerivedForm" manualparent="TBaseForm" flags="[ffInherited]">
-        <row id="Caption" si="7">DerivedForm</row>
+        <row id="Caption" changed="20230429T162208Z" si="7">
+          <value>Derived Form</value>
+          <prev>DerivedForm</prev>
+        </row>
         <item name="CheckBox1" type="TCheckBox">
-          <row id="Left">144</row>
+          <row id="Left">24</row>
           <row id="Top">72</row>
           <row id="Width">97</row>
           <row id="Height">17</row>
-          <row id="Caption" si="8">CheckBox1</row>
+          <row id="Caption" changed="20230429T162208Z" si="8">
+            <value>Check</value>
+            <prev>CheckBox1</prev>
+          </row>
         </item>
         <data>
-          VFBGMPEMVERlcml2ZWRGb3JtC0Rlcml2ZWRGb3JtB0NhcHRpb24GC0Rlcml2ZWRGb3JtDVBpeGVsc1BlckluY2gCYApUZXh0SGVp
-          Z2h0Ag0ACVRDaGVja0JveAlDaGVja0JveDEETGVmdAOQAANUb3ACSAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GCUNoZWNrQm94
-          MQhUYWJPcmRlcgIAAAAA
+          VFBGMPEMVERlcml2ZWRGb3JtC0Rlcml2ZWRGb3JtB0NhcHRpb24GDERlcml2ZWQgRm9ybQ1QaXhlbHNQZXJJbmNoAmAKVGV4dEhl
+          aWdodAINAAlUQ2hlY2tCb3gJQ2hlY2tCb3gxBExlZnQCGANUb3ACSAVXaWR0aAJhBkhlaWdodAIRB0NhcHRpb24GBUNoZWNrCFRh
+          Yk9yZGVyAgAAAAA=
         </data>
       </node>
       <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="9" excluded="2">Form1</row>
-        <row id="ClientHeight">355</row>
-        <row id="ClientWidth">652</row>
+        <row id="Caption" changed="20230429T162208Z" si="9">
+          <value>Form Sample</value>
+          <prev>Form1</prev>
+        </row>
+        <row id="ClientHeight">171</row>
+        <row id="ClientWidth">478</row>
         <item name="Label1" type="TLabel">
-          <row id="Left">80</row>
-          <row id="Top">160</row>
-          <row id="Width">31</row>
+          <row id="Left">8</row>
+          <row id="Top">48</row>
+          <row id="Width">34</row>
           <row id="Height">13</row>
-          <row id="Caption" si="10">Label1</row>
+          <row id="Caption" si="10" excluded="2">
+            <value>dummy</value>
+            <prev>Label1</prev>
+          </row>
         </item>
-        <item name="Label2" type="TLabel" created="20210430T144055Z" st="0">
-          <row id="Left" st="0">80</row>
-          <row id="Top" st="0">192</row>
-          <row id="Width" st="0">31</row>
-          <row id="Height" st="0">13</row>
-          <row id="Caption" si="16" st="0">Label1</row>
+        <item name="Label2" type="TLabel" created="20210430T144055Z">
+          <row id="Left">8</row>
+          <row id="Top">88</row>
+          <row id="Width">34</row>
+          <row id="Height">13</row>
+          <row id="Caption" si="16" excluded="2">
+            <value>dummy</value>
+            <prev>Label1</prev>
+          </row>
         </item>
         <item name="Button1" type="TButton">
-          <row id="Left">120</row>
-          <row id="Top">64</row>
-          <row id="Width">75</row>
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">121</row>
           <row id="Height">25</row>
-          <row id="Caption" si="11">Button1</row>
+          <row id="Caption" changed="20230429T162208Z" si="11">
+            <value>Show base form</value>
+            <prev>Button1</prev>
+          </row>
         </item>
         <item name="Button2" type="TButton">
-          <row id="Left">248</row>
-          <row id="Top">64</row>
-          <row id="Width">75</row>
+          <row id="Left">136</row>
+          <row id="Top">8</row>
+          <row id="Width">121</row>
           <row id="Height">25</row>
-          <row id="Caption" si="12">Button1</row>
+          <row id="Caption" changed="20230429T162208Z" si="12">
+            <value>Show derived form</value>
+            <prev>Button1</prev>
+          </row>
         </item>
         <data>
-          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBUZvcm0xDENsaWVudEhlaWdodANjAQtDbGllbnRXaWR0aAOM
-          AgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtG
-          b250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAA5PbGRDcmVhdGVPcmRlcggIT25DcmVhdGUHCkZvcm1D
-          cmVhdGUNUGl4ZWxzUGVySW5jaAJgClRleHRIZWlnaHQCDQAGVExhYmVsBkxhYmVsMQRMZWZ0AlADVG9wA6AABVdpZHRoAh8GSGVp
-          Z2h0Ag0HQ2FwdGlvbgYGTGFiZWwxAAAGVExhYmVsBkxhYmVsMgRMZWZ0AlADVG9wA8AABVdpZHRoAh8GSGVpZ2h0Ag0HQ2FwdGlv
-          bgYGTGFiZWwxAAAHVEJ1dHRvbgdCdXR0b24xBExlZnQCeANUb3ACQAVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GB0J1dHRvbjEI
-          VGFiT3JkZXICAAdPbkNsaWNrBwxCdXR0b24xQ2xpY2sAAAdUQnV0dG9uB0J1dHRvbjIETGVmdAP4AANUb3ACQAVXaWR0aAJLBkhl
-          aWdodAIZB0NhcHRpb24GB0J1dHRvbjEIVGFiT3JkZXICAQdPbkNsaWNrBwxCdXR0b24yQ2xpY2sAAAA=
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GC0Zvcm0gU2FtcGxlDENsaWVudEhlaWdodAOrAAtDbGllbnRX
+          aWR0aAPeAQVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93
+          VGV4dAtGb250LkhlaWdodAL1CUZvbnQuTmFtZQYGVGFob21hCkZvbnQuU3R5bGULAAhPbkNyZWF0ZQcKRm9ybUNyZWF0ZQ1QaXhl
+          bHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAZUTGFiZWwGTGFiZWwxBExlZnQCCANUb3ACMAVXaWR0aAIiBkhlaWdodAINB0NhcHRp
+          b24GBWR1bW15AAAGVExhYmVsBkxhYmVsMgRMZWZ0AggDVG9wAlgFV2lkdGgCIgZIZWlnaHQCDQdDYXB0aW9uBgVkdW1teQAAB1RC
+          dXR0b24HQnV0dG9uMQRMZWZ0AggDVG9wAggFV2lkdGgCeQZIZWlnaHQCGQdDYXB0aW9uBg5TaG93IGJhc2UgZm9ybQhUYWJPcmRl
+          cgIAB09uQ2xpY2sHDEJ1dHRvbjFDbGljawAAB1RCdXR0b24HQnV0dG9uMgRMZWZ0A4gAA1RvcAIIBVdpZHRoAnkGSGVpZ2h0AhkH
+          Q2FwdGlvbgYRU2hvdyBkZXJpdmVkIGZvcm0IVGFiT3JkZXICAQdPbkNsaWNrBwxCdXR0b24yQ2xpY2sAAAA=
         </data>
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="Unit2">
         <row id="SStr1" si="3" scannedcomment="One" excluded="2">One</row>
-        <row id="SStr2" changed="20210430T144055Z" si="4" scannedcomment="Two" st="2">
-          <value>Two
+        <row id="SStr2" changed="20230429T162208Z" si="4" scannedcomment="Two">
+          <value>One
 
 Two</value>
-          <prev>Two</prev>
+          <prev>Two
+
+Two</prev>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Unit3">
@@ -107,16 +136,25 @@ Two</value>
     </node>
     <node class="TWindowsVersionFolder" name="Version">
       <node class="TWindowsVersionNode" name="1" resid="1" langid="1033">
-        <row id="FileDescription" si="13">Project1</row>
-        <row id="ProgramID" si="14">com.embarcadero.Project1</row>
-        <row id="ProductName" si="15">Project1</row>
+        <row id="FileDescription" changed="20230429T162208Z" si="13">
+          <value>Inherited</value>
+          <prev>Project1</prev>
+        </row>
+        <row id="ProgramID" changed="20230429T162208Z" si="14">
+          <value>com.embarcadero.Inherited</value>
+          <prev>com.embarcadero.Project1</prev>
+        </row>
+        <row id="ProductName" changed="20230429T162208Z" si="15">
+          <value>Inherited</value>
+          <prev>Project1</prev>
+        </row>
         <data>
           AAI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
           AAEAAAAAAAAAAAAAAAAAAABgAQAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAA8AQAAAQAwADQAMAA5ADAANABFADQA
-          AAA6AAkAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUAByAG8AagBlAGMAdAAxAAAAAAAwAAgAAQBGAGkAbABl
-          AFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABOABkAAQBQAHIAbwBnAHIAYQBtAEkARAAAAAAAYwBvAG0ALgBlAG0A
-          YgBhAHIAYwBhAGQAZQByAG8ALgBQAHIAbwBqAGUAYwB0ADEAAAAAADIACQABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUABy
-          AG8AagBlAGMAdAAxAAAAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAARAAAAAEA
+          AAA8AAoAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAASQBuAGgAZQByAGkAdABlAGQAAAAwAAgAAQBGAGkAbABl
+          AFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABQABoAAQBQAHIAbwBnAHIAYQBtAEkARAAAAAAAYwBvAG0ALgBlAG0A
+          YgBhAHIAYwBhAGQAZQByAG8ALgBJAG4AaABlAHIAaQB0AGUAZAAAADQACgABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAASQBu
+          AGgAZQByAGkAdABlAGQAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAARAAAAAEA
           VgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAkE5AQ=
         </data>
       </node>
@@ -143,7 +181,7 @@ Two</value>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <duplicates>

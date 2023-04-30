@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{77CA6C57-E3DF-489E-AF0A-E5E864C2F740}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Original\Original.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Localized\Localized.cbproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="Multilingual\Multilingual.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Original">
+        <MSBuild Projects="Original\Original.cbproj"/>
+    </Target>
+    <Target Name="Original:Clean">
+        <MSBuild Projects="Original\Original.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Original:Make">
+        <MSBuild Projects="Original\Original.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Localized">
+        <MSBuild Projects="Localized\Localized.cbproj"/>
+    </Target>
+    <Target Name="Localized:Clean">
+        <MSBuild Projects="Localized\Localized.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Localized:Make">
+        <MSBuild Projects="Localized\Localized.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Multilingual">
+        <MSBuild Projects="Multilingual\Multilingual.cbproj"/>
+    </Target>
+    <Target Name="Multilingual:Clean">
+        <MSBuild Projects="Multilingual\Multilingual.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Multilingual:Make">
+        <MSBuild Projects="Multilingual\Multilingual.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Original;Localized;Multilingual"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Original:Clean;Localized:Clean;Multilingual:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Original:Make;Localized:Make;Multilingual:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="576BF58E-C173-4341-9076-B339B54A2EC2" created="20210507T020516Z" lastmodified="20220504T230144Z" version="1.0.920" lockedrowcomplete="0" stringid="30">
+<project id="576BF58E-C173-4341-9076-B339B54A2EC2" created="20210507T020516Z" lastmodified="20230429T162000Z" version="1.0.993" lockedrowcomplete="0" stringid="71">
   <lang id="fi"/>
   <node class="TRadStudioGroupSource" name="CBuilder.groupproj" fullpath="D:\NT\Deploy\Samples\CBuilder\VCL\CBuilder.groupproj" original="en" encoding="windows-1252" enabledconfigurations="Debug|Win32" mainconfiguration="Debug" mainplatform="Win32">
-    <node class="TDelphiSource" name="Inherited\Win32\Debug\Inherited.exe" original="en" lastmodified="20220504T230144Z" hassignatureread="1" version="dvXE2">
+    <node class="TDelphiSource" name="Inherited\Win32\Debug\Inherited.exe" original="en" lastmodified="20230429T161929Z" hassignatureread="1" version="dvXE2">
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
       <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
       <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
@@ -127,11 +127,11 @@
       </node>
       <node class="TWindowsStringFolder" name="String">
         <node class="TWindowsStringNode" name="Unit2">
-          <row id="SStr1" si="10">
+          <row id="SStr1" si="10" scannedcomment="One">
             <value>One</value>
             <lang id="fi" rw="0" time="20220504T222422Z" fuzzy="99.5">Yksi</lang>
           </row>
-          <row id="SStr2" changed="20220504T224618Z" si="11">
+          <row id="SStr2" changed="20220504T224618Z" si="11" scannedcomment="Two">
             <value>One
 
 Two</value>
@@ -144,11 +144,11 @@ Kaksi</lang>
           </row>
         </node>
         <node class="TWindowsStringNode" name="Unit3">
-          <row id="SStr1" si="8">
+          <row id="SStr1" si="8" scannedcomment="Sub one">
             <value>One</value>
             <lang id="fi" rw="0" time="20220504T222422Z">Yksi</lang>
           </row>
-          <row id="SStr2" si="9">
+          <row id="SStr2" si="9" scannedcomment="Sub two">
             <value>Two</value>
             <lang id="fi" rw="0" time="20220504T222427Z" fuzzy="99.5">Kaksi</lang>
           </row>
@@ -156,7 +156,233 @@ Kaksi</lang>
       </node>
       <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     </node>
-    <node class="TDelphiSource" name="Simple\Win32\Debug\Simple.exe" original="en" lastmodified="20220504T224750Z" hassignatureread="1" version="dvXE2">
+    <node class="TDelphiSource" name="LanguageSwitch\Win32\Debug\LanguageSwitch.exe" created="20230429T161929Z" original="en" lastmodified="20230429T162000Z" hassignatureread="1" version="dvXE2">
+      <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
+      <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
+      <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
+      <node class="TDelphiFormFolder" name="RCData">
+        <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">0</row>
+          <row id="Top">0</row>
+          <row id="Caption" si="50">
+            <value>Sample</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20220504T222301Z">Esimerkki</lang>
+          </row>
+          <row id="ClientHeight">232</row>
+          <row id="ClientWidth">410</row>
+          <item name="Label2" type="TLabel">
+            <row id="Left">208</row>
+            <row id="Top">8</row>
+            <row id="Width">34</row>
+            <row id="Height">13</row>
+            <row id="Caption" si="51" excluded="2">dummy</row>
+          </item>
+          <item name="Image1" type="TImage">
+            <row id="Left">208</row>
+            <row id="Top">160</row>
+            <row id="Width">64</row>
+            <row id="Height">64</row>
+          </item>
+          <item name="Label1" type="TLabel">
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">74</row>
+            <row id="Height">13</row>
+            <row id="Caption" si="52">This is a sample</row>
+          </item>
+          <item name="ListView1" type="TListView">
+            <row id="Left">208</row>
+            <row id="Top">24</row>
+            <row id="Width">193</row>
+            <row id="Height">129</row>
+            <row id="Columns[0].Caption" si="53">One</row>
+            <row id="Columns[1].Caption" si="54">Two</row>
+            <row id="Items[0]" si="55">One</row>
+            <row id="Items[1]" si="56">Two</row>
+            <row id="Items[1].Items[0]" si="57">Three</row>
+          </item>
+          <item name="ListBox1" type="TListBox">
+            <row id="Left">8</row>
+            <row id="Top">160</row>
+            <row id="Width">193</row>
+            <row id="Height">64</row>
+            <row id="Items.Strings[0]" si="58">One</row>
+            <row id="Items.Strings[1]" si="59">Two</row>
+            <row id="Items.Strings[2]" si="60">Three</row>
+          </item>
+          <item name="LanguageButton" type="TButton">
+            <row id="Left">289</row>
+            <row id="Top">199</row>
+            <row id="Width">113</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="61">&amp;Language...</row>
+          </item>
+          <item name="TreeView1" type="TTreeView">
+            <row id="Left">8</row>
+            <row id="Top">24</row>
+            <row id="Width">193</row>
+            <row id="Height">129</row>
+            <row id="Items[0].Text" si="62">One</row>
+            <row id="Items[0].Items[0].Text" si="63">One</row>
+            <row id="Items[1].Text" si="64">Two</row>
+            <row id="Items[2].Text" si="65">Three</row>
+          </item>
+          <data>
+            VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQD6AALQ2xpZW50V2lkdGgD
+            mgEFQ29sb3IHCWNsQnRuRmFjZQxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1RleHQL
+            Rm9udC5IZWlnaHQC9QlGb250Lk5hbWUGBlRhaG9tYQpGb250LlN0eWxlCwAGT25TaG93BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0A
+            BlRMYWJlbAZMYWJlbDIETGVmdAPQAANUb3ACCAVXaWR0aAIiBkhlaWdodAINB0NhcHRpb24GBWR1bW15AAAGVEltYWdlBkltYWdl
+            MQRMZWZ0A9AAA1RvcAOgAAVXaWR0aAJABkhlaWdodAJACEF1dG9TaXplCQxQaWN0dXJlLkRhdGEKRBkAAAlUUG5nSW1hZ2WJUE5H
+            DQoaCgAAAA1JSERSAAAAQAAAAEAIBgAAAKppcd4AABjKSURBVHja7VoJmBTVtf5771l6pqd7NmYFZgOZYRgWZUcENAioCH5i3GIW
+            Y4wx8jTmy0vee/Ez8fmiMRvGJGZBjUTFGBNFCCAhMqzDOsy+7z093dP7Ul1V3fXOvdMNIxIlxmTyXiy53urq6u77/+ec/5xza1T4
+            Fz9UE72AiT4+JmCiFzDRx8cETPQCJvr4mICJXsBEHx8TMNELSBw3fbNRn5daN18bUxZHVXJ5fXOHOOx0dbs8gc5RT6BDskdaYd8d
+            /H9FwAPf+9VklYhrYzFpjU6nX1o8uTB1ckEBCvJyMTLqRmfvAFq7etHQ0oHG1vbYsN3ZB0muh0Z9EgpOQDbWofsP9v9TBDz45IvF
+            UTF8cxTSxszMrJppZWXa6eVTkJtpAoGCKAOyrCCq0NLUQIw+E6PrURqDzgBON7Wj7vRZHD9Vj66WZhlypA1qzX66eS9i7rfRcdT3
+            T0fA7U88n5ImiTfGZPnTVmvGkpqq6ZrqGRWwpukRIcASARblGKKEVozRzF4rCl2n96JRyPxcxUlgZECtRpSW7g4IOHG2HceOHUPT
+            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
+            4Uhc18Tv1cQJVOF8x6y6YNHR+OtoHDyb5Tg4NsRxg4Een+P/LselPBtUx8ElgGovcp4Y6nFDdZHvTwhXAnxiThAxfkjx+SMRu7+F
+            gIsR8n5DNW6+8DeUcXNs3HwhIYlrf/fjo/orsfHWVuG91v9LJIwf49/7hx3/NH8uP1HHxwRM9AIm+viYgIlewEQfHxMw0QuY6ONf
+            noD/BcDnNplraCZJAAAAK3RFWHRDb3B5cmlnaHQAQ29weXJpZ2h0IKkgMjAwOC0yMDExIElOQ09SUyBHbWJIEI4hTwAAAABJRU5E
+            rkJgggtUcmFuc3BhcmVudAkAAAZUTGFiZWwGTGFiZWwxBExlZnQCCANUb3ACCAVXaWR0aAJKBkhlaWdodAINB0NhcHRpb24GEFRo
+            aXMgaXMgYSBzYW1wbGUAAAlUTGlzdFZpZXcJTGlzdFZpZXcxBExlZnQD0AADVG9wAhgFV2lkdGgDwQAGSGVpZ2h0A4EAB0NvbHVt
+            bnMOAQdDYXB0aW9uBgNPbmUAAQdDYXB0aW9uBgNUd28AAA5JdGVtcy5JdGVtRGF0YQpYAAAABVEAAAACAAAAAAAAAP//////////
+            AAAAAP////8AAAAAA08AbgBlAAAAAAD//////////wEAAAD/////AAAAAANUAHcAbwAFVABoAHIAZQBlAJgrfQ7//whUYWJPcmRl
+            cgIDCVZpZXdTdHlsZQcIdnNSZXBvcnQAAAhUTGlzdEJveAhMaXN0Qm94MQRMZWZ0AggDVG9wA6AABVdpZHRoA8EABkhlaWdodAJA
+            Ckl0ZW1IZWlnaHQCDQ1JdGVtcy5TdHJpbmdzAQYDT25lBgNUd28GBVRocmVlAAhUYWJPcmRlcgIBAAAHVEJ1dHRvbg5MYW5ndWFn
+            ZUJ1dHRvbgRMZWZ0AyEBA1RvcAPHAAVXaWR0aAJxBkhlaWdodAIZB0NhcHRpb24GDCZMYW5ndWFnZS4uLghUYWJPcmRlcgICB09u
+            Q2xpY2sHE0xhbmd1YWdlQnV0dG9uQ2xpY2sAAAlUVHJlZVZpZXcJVHJlZVZpZXcxBExlZnQCCANUb3ACGAVXaWR0aAPBAAZIZWln
+            aHQDgQAGSW5kZW50AhMIVGFiT3JkZXICAA5JdGVtcy5Ob2RlRGF0YQqpAAAAAwMAAAAkAAAAAAAAAAAAAAD//////////wAAAAAA
+            AAAAAQAAAAEDTwBuAGUAJAAAAAAAAAAAAAAA//////////8AAAAAAAAAAAAAAAABA08AbgBlACQAAAAAAAAAAAAAAP//////////
+            AAAAAAAAAAAAAAAAAQNUAHcAbwAoAAAAAAAAAAAAAAD//////////wAAAAAAAAAAAAAAAAEFVABoAHIAZQBlAAAAAA==
+          </data>
+        </node>
+        <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+          <font id="Font" name="Tahoma" size="8"/>
+          <row id="Left">256</row>
+          <row id="Top">347</row>
+          <row id="Caption" si="66">Select Language</row>
+          <row id="ClientHeight">193</row>
+          <row id="ClientWidth">291</row>
+          <item name="LanguageList" type="TListBox">
+            <row id="Left">8</row>
+            <row id="Top">8</row>
+            <row id="Width">193</row>
+            <row id="Height">177</row>
+          </item>
+          <item name="OkButton" type="TButton">
+            <row id="Left">208</row>
+            <row id="Top">8</row>
+            <row id="Width">75</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="67">OK</row>
+          </item>
+          <item name="CancelButton" type="TButton">
+            <row id="Left">208</row>
+            <row id="Top">40</row>
+            <row id="Width">75</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="68">Cancel</row>
+          </item>
+          <data>
+            VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
+            ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
+            Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
+            YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlCU9uRGVzdHJveQcLRm9ybURlc3Ryb3kGT25TaG93
+            BwhGb3JtU2hvdw1QaXhlbHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAhUTGlzdEJveAxMYW5ndWFnZUxpc3QETGVmdAIIA1RvcAII
+            BVdpZHRoA8EABkhlaWdodAOxAApJdGVtSGVpZ2h0Ag0GU29ydGVkCQhUYWJPcmRlcgIACk9uRGJsQ2xpY2sHFExhbmd1YWdlTGlz
+            dERibENsaWNrAAAHVEJ1dHRvbghPa0J1dHRvbgRMZWZ0A9AAA1RvcAIIBVdpZHRoAksGSGVpZ2h0AhkHQ2FwdGlvbgYCT0sHRGVm
+            YXVsdAkLTW9kYWxSZXN1bHQCAQhUYWJPcmRlcgIBAAAHVEJ1dHRvbgxDYW5jZWxCdXR0b24ETGVmdAPQAANUb3ACKAVXaWR0aAJL
+            BkhlaWdodAIZBkNhbmNlbAkHQ2FwdGlvbgYGQ2FuY2VsC01vZGFsUmVzdWx0AgIIVGFiT3JkZXICAgAAAA==
+          </data>
+        </node>
+      </node>
+      <node class="TWindowsStringFolder" name="String">
+        <node class="TWindowsStringNode" name="Ntpattern" excluded="1"/>
+        <node class="TWindowsStringNode" name="Ntwindows" excluded="1"/>
+        <node class="TWindowsStringNode" name="Strings">
+          <row id="SSample" si="34">This is another sample</row>
+        </node>
+      </node>
+      <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
+    </node>
+    <node class="TDelphiSource" name="Simple\Win32\Debug\Simple.exe" original="en" lastmodified="20230429T161929Z" hassignatureread="1" version="dvXE2">
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
       <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
       <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
@@ -200,7 +426,7 @@ Kaksi</lang>
       </node>
       <node class="TWindowsStringFolder" name="String">
         <node class="TWindowsStringNode" name="Strings">
-          <row id="SMessage" si="1">
+          <row id="SMessage" si="1" scannedcomment="A sample comment">
             <value>This is a sample</value>
             <lang id="fi" rw="0" time="20220504T222316Z" fuzzy="99.5">Tämä on esimerkki</lang>
           </row>
@@ -268,7 +494,6 @@ Kaksi</lang>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -281,9 +506,6 @@ Kaksi</lang>
   <mt>
     <shared>
       <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
   <duplicates>
