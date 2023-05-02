@@ -139,6 +139,7 @@ type
     FId: Integer;
     FFileName: String;
 
+    function GetActiveCode: String;
     function GetName(i: TNtLanguageName): String;
 
   public
@@ -157,6 +158,7 @@ type
       locale: Integer = 0;
       languageName: TNtLanguageName = lnSystem): String;
 
+    property ActiveCode: String read GetActiveCode;
     property Code: String read FCode write FCode;                  //< ISO language or locale code.
     property Id: Integer read FId write FId;                       //< Windows locale id.
     property FileName: String read FFileName write FFileName;      //< Resource DLL file name.
@@ -597,6 +599,17 @@ var
 
 
 // TNtLanguage
+
+function TNtLanguage.GetActiveCode: String;
+begin
+  if FFileName <> '' then
+  begin
+    Result := ExtractFileExt(FFileName);
+    Delete(Result, 1, 1);
+  end
+  else
+    Result := FCode
+end;
 
 function TNtLanguage.GetName(i: TNtLanguageName): String;
 begin

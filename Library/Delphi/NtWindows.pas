@@ -364,7 +364,7 @@ begin
 
   if FileExists(thisFileName) {$IFDEF DELPHI2009}and IsPeFile(thisFileName){$ENDIF} then
   begin
-    enumLanguages.Add(code, TNtWindows.CodeToId(code));
+    enumLanguages.Add(code, TNtWindows.CodeToId(code), thisFileName);
   end;
 
   Result := 1;

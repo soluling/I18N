@@ -334,7 +334,7 @@ procedure TNtLanguageDialog.FormShow(Sender: TObject);
     if not CheckVersion or TNtResource.DoesLocaleVersionMatch(language.Code) then
       LanguageList.Items.AddObject(
         language.Names[FLanguageName],
-        TLanguageCode.Create(language.Code));
+        TLanguageCode.Create(language.ActiveCode));
   end;
 
 var
