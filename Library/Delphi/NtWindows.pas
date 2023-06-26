@@ -63,7 +63,8 @@ type
     class function GetDisplayName(
       const id: String;
       locale: Integer;
-      languageName: TNtLanguageName): String;
+      languageName: TNtLanguageName;
+      languageNameCase: TNtLanguageNameCase = lcDefault): String;
 
     { Gets a list of available languages.
       @param language        Language list.
@@ -205,7 +206,8 @@ end;
 class function TNtWindows.GetDisplayName(
   const id: String;
   locale: Integer;
-  languageName: TNtLanguageName): String;
+  languageName: TNtLanguageName;
+  languageNameCase: TNtLanguageNameCase): String;
 
   function LoadResString(id: Integer): String;
   var
@@ -222,6 +224,7 @@ class function TNtWindows.GetDisplayName(
   function ProcessNew(localeType: Integer): String; overload;
   begin
     Result := GetLocaleStr(id, locale, localeType, '');
+    TNtLanguage.CheckCase(Result, languageNameCase);
   end;
 
   function ProcessLegacy(languageLocaleType, countryLocaleType: Integer): String; overload;
@@ -254,6 +257,8 @@ class function TNtWindows.GetDisplayName(
         Result := Result + ' (' + str + ')';
       end;
     end;
+
+    TNtLanguage.CheckCase(Result, languageNameCase);
   end;
 
   function GetEnglish: String;
@@ -262,6 +267,8 @@ class function TNtWindows.GetDisplayName(
       Result := ProcessNew(LOCALE_SENGLISHDISPLAYNAME)
     else
       Result := ProcessLegacy(LOCALE_SENGLANGUAGE, LOCALE_SENGCOUNTRY);
+
+    TNtLanguage.CheckCase(Result, languageNameCase);
   end;
 
   function GetNative: String;
@@ -270,6 +277,8 @@ class function TNtWindows.GetDisplayName(
       Result := ProcessNew(LOCALE_SNATIVEDISPLAYNAME)
     else
       Result := ProcessLegacy(LOCALE_SNATIVELANGNAME, LOCALE_SNATIVECTRYNAME);
+
+    TNtLanguage.CheckCase(Result, languageNameCase);
   end;
 
   function GetLocalized: String;
@@ -278,6 +287,8 @@ class function TNtWindows.GetDisplayName(
 
     if Result = '' then
       Result := GetEnglish;
+
+    TNtLanguage.CheckCase(Result, languageNameCase);
   end;
 
 begin

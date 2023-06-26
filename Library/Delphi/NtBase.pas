@@ -132,12 +132,21 @@ type
     lnSystem      //< Lanugage of the operation system is used.
   );
 
+  { Specifies what case the language name should use. }
+  TNtLanguageNameCase =
+  (
+    lcDefault,  //< Default case of the language name
+    lcUpper,    //< Language name starts in upper case (e.g. English)
+    lcLower     //< Language name starts in lower case (e.g. english)
+  );
+
   { @abstract Contains infomation about resource DLL language. }
   TNtLanguage = class(TObject)
   private
     FCode: String;
     FId: Integer;
     FFileName: String;
+    FLanguageNameCase: TNtLanguageNameCase;
 
     function GetActiveCode: String;
     function GetName(i: TNtLanguageName): String;
@@ -150,13 +159,19 @@ type
     class function GetBoth(const native, localize: String): String;
 
     { Get the display name of a language or locale.
-      @param locale       Windows language or locale id.
-      @param languageName Specifies what kind of name is returned.
+      @param locale           Windows language or locale id.
+      @param languageName     Specifies what kind of name is returned.
+      @param languageNameCase Specifies what case to use in language names.
       @return Display name such as English or English (United States). }
     class function GetDisplayName(
       const id: String;
       locale: Integer = 0;
-      languageName: TNtLanguageName = lnSystem): String;
+      languageName: TNtLanguageName = lnSystem;
+      languageNameCase: TNtLanguageNameCase = lcDefault): String;
+
+    class procedure CheckCase(
+      var value: String;
+      languageNameCase: TNtLanguageNameCase);
 
     property ActiveCode: String read GetActiveCode;
     property Code: String read FCode write FCode;                  //< ISO language or locale code.
@@ -167,6 +182,7 @@ type
     property EnglishName: String index lnEnglish read GetName;     //< English name.
     property SystemName: String index lnSystem read GetName;       //< System name. Uses language of the operating system.
     property Names[i: TNtLanguageName]: String read GetName;       //< Array of names.
+    property LanguageNameCase: TNtLanguageNameCase read FLanguageNameCase write FLanguageNameCase;
   end;
 
   { Specifies how the default locale is selected. }
@@ -206,6 +222,8 @@ type
     procedure Add(language: TNtLanguage); overload;
 
     procedure AddDefault;
+
+    function FindByFile(const fileName: String): TNtLanguage;
 
     property Count: Integer read GetCount;                          //< Language count.
     property Items[i: Integer]: TNtLanguage read GetItem; default;  //< Languages.
@@ -613,7 +631,7 @@ end;
 
 function TNtLanguage.GetName(i: TNtLanguageName): String;
 begin
-  Result := GetDisplayName(FCode, FId, i);
+  Result := GetDisplayName(FCode, FId, i, FLanguageNameCase);
 end;
 
 class function TNtLanguage.GetBoth(const native, localize: String): String;
@@ -621,7 +639,21 @@ begin
   Result := Format('%s - %s', [native, localize]);
 end;
 
-class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; languageName: TNtLanguageName): String;
+class procedure TNtLanguage.CheckCase(
+  var value: String;
+  languageNameCase: TNtLanguageNameCase);
+begin
+  case languageNameCase of
+    lcUpper: value := UpperCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
+    lcLower: value := LowerCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
+  end;
+end;
+
+class function TNtLanguage.GetDisplayName(
+  const id: String;
+  locale: Integer;
+  languageName: TNtLanguageName;
+  languageNameCase: TNtLanguageNameCase): String;
 {$IFDEF DELPHIXE}
   function GetNative: String;
   begin
@@ -634,6 +666,8 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
       if Result = '' then
         Result := NtResources.GetStringInLanguage(id, '', id, '');
     end;
+
+    CheckCase(Result, languageNameCase);
   end;
 
   function GetLocalized: String;
@@ -647,6 +681,8 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
       if Result = '' then
         Result := NtResources.GetString('', id, '');
     end;
+
+    CheckCase(Result, languageNameCase);
   end;
 
   function GetSystem: String;
@@ -655,6 +691,8 @@ class function TNtLanguage.GetDisplayName(const id: String; locale: Integer; lan
 
     if Result = '' then
       Result := GetNative;
+
+    CheckCase(Result, languageNameCase);
   end;
 {$ENDIF}
 begin
@@ -675,7 +713,7 @@ begin
 {$ENDIF}
   begin
 {$IFDEF MSWINDOWS}
-    Result := TNtWindows.GetDisplayName(id, locale, languageName);
+    Result := TNtWindows.GetDisplayName(id, locale, languageName, languageNameCase);
 {$ENDIF}
   end;
 end;
@@ -718,6 +756,21 @@ begin
   Result := FItems[i];
 end;
 
+function TNtLanguages.FindByFile(const fileName: String): TNtLanguage;
+var
+  i: Integer;
+begin
+  for i := 0 to Count - 1 do
+  begin
+    Result := Items[i];
+
+    if SameText(Result.FileName, fileName) then
+      Exit;
+  end;
+
+  Result := nil;
+end;
+
 procedure TNtLanguages.AddDefault;
 begin
   Add(DefaultLocale);
@@ -725,6 +778,12 @@ end;
 
 function TNtLanguages.Add(const code: String; id: Integer; const fileName: String): TNtLanguage;
 begin
+  if FindByFile(fileName) <> nil then
+  begin
+    Result := nil;
+    Exit;
+  end;
+
   Result := TNtLanguage.Create;
   Result.Code := code;
 

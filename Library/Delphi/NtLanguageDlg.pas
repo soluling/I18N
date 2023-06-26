@@ -74,6 +74,7 @@ type
     FCheckVersion: Boolean;
     FCompatible: Boolean;
     FLanguageName: TNtLanguageName;
+    FLanguageNameCase: TNtLanguageNameCase;
     FOriginalLanguage: String;
     FOriginalLanguageName: String;
 
@@ -90,12 +91,14 @@ type
       @param dialogOptions     Dialog options.
       @param languageOptions   Language change options.
       @param position          Initial position of the form.
+      @param languageNameCase  Specifies what case to use in language names.
       @return @true on success, @false if cancelled by user. }
     class function Select(
       languageName: TNtLanguageName = lnNative;
       dialogOptions: TNtLanguageDialogOptions = [];
       languageOptions: TNtResourceOptions = [];
-      position: TPosition = poMainFormCenter): Boolean; overload;
+      position: TPosition = poMainFormCenter;
+      languageNameCase: TNtLanguageNameCase = lcDefault): Boolean; overload;
 
     { Shows a dialog that contains a list of available languages. After user
       has selected a new language the function turns that language active.
@@ -106,6 +109,7 @@ type
       @param dialogOptions         Dialog options.
       @param languageOptions       Language change options.
       @param position              Initial position of the form.
+      @param languageNameCase      Specifies what case to use in language names.
       @return @true on success, @false if cancelled by user. }
     class function Select(
       var language: String;
@@ -114,7 +118,8 @@ type
       languageName: TNtLanguageName = lnNative;
       dialogOptions: TNtLanguageDialogOptions = [];
       languageOptions: TNtResourceOptions = [];
-      position: TPosition = poMainFormCenter): Boolean; overload;
+      position: TPosition = poMainFormCenter;
+      languageNameCase: TNtLanguageNameCase = lcDefault): Boolean; overload;
 
     { As @link(TNtLanguageDialog.Select) but no language parameter.}
     class function Select(
@@ -123,7 +128,8 @@ type
       languageName: TNtLanguageName = lnNative;
       dialogOptions: TNtLanguageDialogOptions = [];
       languageOptions: TNtResourceOptions = [];
-      position: TPosition = poMainFormCenter): Boolean; overload;
+      position: TPosition = poMainFormCenter;
+      languageNameCase: TNtLanguageNameCase = lcDefault): Boolean; overload;
 
     { As @link(TNtLanguageDialog.Select) but does not turn on the selected language active.
       This function just shows a dialog that let you choose a new language. }
@@ -133,7 +139,8 @@ type
       const originalLanguageName: String = '';
       languageName: TNtLanguageName = lnNative;
       options: TNtLanguageDialogOptions = [];
-      position: TPosition = poMainFormCenter): Boolean;
+      position: TPosition = poMainFormCenter;
+      languageNameCase: TNtLanguageNameCase = lcDefault): Boolean;
 
     { If @true the dialog shows only those languages that are compatible to the current version of the application.
       If @false all languages are shown. }
@@ -160,6 +167,9 @@ type
 
     { Specifies how language names are shown. }
     property LanguageName: TNtLanguageName read FLanguageName write FLanguageName;
+
+    { Specifies what language name case is used. }
+    property LanguageNameCase: TNtLanguageNameCase read FLanguageNameCase write FLanguageNameCase;
   end;
 
 implementation
@@ -227,9 +237,10 @@ class function TNtLanguageDialog.Select(
   languageName: TNtLanguageName;
   dialogOptions: TNtLanguageDialogOptions;
   languageOptions: TNtResourceOptions;
-  position: TPosition): Boolean;
+  position: TPosition;
+  languageNameCase: TNtLanguageNameCase): Boolean;
 begin
-  Result := Choose(language, originalLanguage, originalLanguageName, languageName, dialogOptions, position);
+  Result := Choose(language, originalLanguage, originalLanguageName, languageName, dialogOptions, position, languageNameCase);
 
   if Result then
   begin
@@ -246,7 +257,8 @@ class function TNtLanguageDialog.Select(
   languageName: TNtLanguageName;
   dialogOptions: TNtLanguageDialogOptions;
   languageOptions: TNtResourceOptions;
-  position: TPosition): Boolean;
+  position: TPosition;
+  languageNameCase: TNtLanguageNameCase): Boolean;
 var
   language: String;
 begin
@@ -257,14 +269,16 @@ begin
     languageName,
     dialogOptions,
     languageOptions,
-    position);
+    position,
+    languageNameCase);
 end;
 
 class function TNtLanguageDialog.Select(
   languageName: TNtLanguageName;
   dialogOptions: TNtLanguageDialogOptions;
   languageOptions: TNtResourceOptions;
-  position: TPosition): Boolean;
+  position: TPosition;
+  languageNameCase: TNtLanguageNameCase): Boolean;
 var
   language: String;
 begin
@@ -275,7 +289,8 @@ begin
     languageName,
     dialogOptions,
     languageOptions,
-    position);
+    position,
+    languageNameCase);
 end;
 
 class function TNtLanguageDialog.Choose(
@@ -284,7 +299,8 @@ class function TNtLanguageDialog.Choose(
   const originalLanguageName: String;
   languageName: TNtLanguageName;
   options: TNtLanguageDialogOptions;
-  position: TPosition): Boolean;
+  position: TPosition;
+  languageNameCase: TNtLanguageNameCase): Boolean;
 var
   dialog: TNtLanguageDialog;
 begin
@@ -300,6 +316,7 @@ begin
     dialog.OriginalLanguageName := originalLanguageName;
     dialog.Position := position;
     dialog.LanguageName := languageName;
+    dialog.LanguageNameCase := languageNameCase;
 
     if dialog.ShowModal = mrOk then
     begin
@@ -322,6 +339,7 @@ begin
   FCompatible := False;
   FOriginalLanguage := '';
   FLanguageName := lnNative;
+  FLanguageNameCase := lcDefault;
 
   if roFlipChildren in ResourceOptions then
     TNtTranslator.InitializeForm(Self);
@@ -339,6 +357,7 @@ procedure TNtLanguageDialog.FormShow(Sender: TObject);
 
 var
   i: Integer;
+  language: TNtLanguage;
   availableLanguages: TNtLanguages;
 begin
   availableLanguages := TNtLanguages.Create;
@@ -356,7 +375,11 @@ begin
     TNtBase.GetAvailable(availableLanguages, '', FCompatible, FCheckVersion);
 
     for i := 0 to availableLanguages.Count - 1 do
-      Add(availableLanguages[i]);
+    begin
+      language := availableLanguages[i];
+      language.LanguageNameCase := FLanguageNameCase;
+      Add(language);
+    end;
   finally
     availableLanguages.Free;
   end;

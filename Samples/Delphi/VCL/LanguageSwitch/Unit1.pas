@@ -58,7 +58,7 @@ end;
 procedure TForm1.LanguageButtonClick(Sender: TObject);
 begin
   // Show a language select dialog and turn on the selected language
-  if TNtLanguageDialog.Select('en', '', lnBoth) then
+  if TNtLanguageDialog.Select('en', '', lnBoth, [], [], poMainFormCenter, lcUpper) then
   begin
     // Language has been changed.
     // Properties that were set on run time must be reset.
