@@ -1,13 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="RazorDriving.nds" />
-    <None Remove="RazorDriving.ntp" />
-  </ItemGroup>
   
   <ItemGroup>
     <Folder Include="wwwroot\images\fi\" />
@@ -15,7 +11,13 @@
   </ItemGroup>
   
   <ItemGroup>
-    <PackageReference Include="Soluling" Version="1.0.40" />
+    <ProjectReference Include="..\..\..\..\..\Library\NET\ASP.NET\SolulingAspNet.csproj" />
   </ItemGroup>
-  
+
+  <ItemGroup>
+    <None Remove="RazorDriving.nds" />
+    <None Remove="RazorDriving.ntp" />
+    <None Remove="RazorDriving.ntr" />
+  </ItemGroup>
+
 </Project>

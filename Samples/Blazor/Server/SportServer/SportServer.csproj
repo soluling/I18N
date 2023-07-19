@@ -1,15 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.0</TargetFramework>
-    <RootNamespace>SportServer</RootNamespace>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="BlazorSportServer.nds" />
-    <None Remove="BlazorSportServer.ntp" />
-    <None Remove="BlazorSportServer.ntr" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -17,6 +11,13 @@
 
   <ItemGroup>
     <ProjectReference Include="..\..\..\ASP.NET\Core\SportLibrary\SportLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SportServer.nds" />
+    <None Remove="SportServer.ntp" />
+    <None Remove="SportServer.ntr" />
+    <None Remove="SportServer.~ntp" />
   </ItemGroup>
 
 </Project>

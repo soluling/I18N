@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="42A895AD-C7E5-4DCE-878C-FEDBB1C2DEF3" created="20181214T184734Z" lastmodified="20201107T142327Z" version="1.0.802" stringid="6">
+<project id="42A895AD-C7E5-4DCE-878C-FEDBB1C2DEF3" created="20181214T184734Z" lastmodified="20230718T065235Z" version="1.0.1000" stringid="6">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\Driving\Driving.csproj" original="en" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
-    <netproperties version="core22"/>
+  <node class="TNetProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\Driving\Driving.csproj" original="en" lastmodified="20230718T065235Z" availableresources="[nrResx,nrHtml,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core70" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers" created="20181214T190608Z">
-        <node class="TResXNode" name="DefaultController.resx">
-          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="1" scannedcomment="0: Hours or minutes">
+        <node class="TResXNode" name="DefaultController.resx" windowsforms="wfCore">
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="1" scannedcomment="0: Hours or minutes" original="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}">
             <value startpattern="1">Driving time is{0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -27,7 +27,7 @@
       </node>
       <node class="TDirectoryFolder" name="Views">
         <node class="TDirectoryFolder" name="Default">
-          <node class="TResXNode" name="Index.resx">
+          <node class="TResXNode" name="Index.resx" windowsforms="wfCore">
             <row id="Driving Time Calculator" si="2">
               <value>Driving Time Calculator</value>
               <lang id="fi" or="5" rw="0" time="20181214T184802Z">Ajoaikalaskin</lang>
@@ -52,9 +52,21 @@
         </node>
       </node>
     </node>
-    <configurations>
-      <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]" compilemethod="cmAl"/>
-    </configurations>
+    <assemblies>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
+      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -68,11 +80,14 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>

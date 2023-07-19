@@ -1,14 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="RazorSport.nds" />
-    <None Remove="RazorSport.ntp" />
-    <None Remove="RazorSport.ntr" />
-  </ItemGroup>
 
   <ItemGroup>
     <Compile Include="..\..\SportLibrary\Sport.cs" Link="Sport.cs" />
@@ -36,6 +31,12 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>LanguageNames.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="RazorSport.nds" />
+    <None Remove="RazorSport.ntp" />
+    <None Remove="RazorSport.ntr" />
   </ItemGroup>
 
 </Project>

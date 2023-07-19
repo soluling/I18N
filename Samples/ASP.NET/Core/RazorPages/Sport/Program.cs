@@ -1,20 +1,31 @@
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Hosting;
+using System.Reflection;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Soluling.AspNet;
+using Soluling.Sport;
 
-namespace RazorSport
-{
-  public class Program
-  {
-    public static void Main(string[] args)
-    {
-      CreateHostBuilder(args).Build().Run();
-    }
+var builder = WebApplication.CreateBuilder(args);
 
-    public static IHostBuilder CreateHostBuilder(string[] args) =>
-        Host.CreateDefaultBuilder(args)
-            .ConfigureWebHostDefaults(webBuilder =>
-            {
-              webBuilder.UseStartup<Startup>();
-            });
-  }
-}
+builder.Services.AddScoped<SportService, SportService>();
+
+// 1) Specify .resx directory.
+builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+
+// 2) Add the view and data annotation localization.
+builder.Services.AddRazorPages()
+  .AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix)
+  .AddDataAnnotationsLocalization();
+
+var app = builder.Build();
+
+// 3) Add available languages and English as a default language
+app.UseRequestLocalizationWithAvailableLanguages(Assembly.GetExecutingAssembly().Location, "en");
+
+if (!app.Environment.IsDevelopment())
+  app.UseExceptionHandler("/Error");
+
+app.UseStaticFiles();
+app.UseRouting();
+app.UseAuthorization();
+app.MapRazorPages();
+
+app.Run();

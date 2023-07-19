@@ -1,17 +1,11 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <IsTransformWebConfigDisabled>true</IsTransformWebConfigDisabled>
     <ANCMPreConfiguredForIIS>true</ANCMPreConfiguredForIIS>
     <UserSecretsId>8ab5702f-55d3-4fbb-a05c-20201cc8f806</UserSecretsId>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="SportAPI.nds" />
-    <None Remove="SportAPI.ntp" />
-    <None Remove="SportAPI.ntr" />
-  </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -19,13 +13,19 @@
   </ItemGroup>
 
   <ItemGroup>
-    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="3.0.0" />
-    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="7.0.9" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="7.0.9" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\..\MachineTranslationLibrary\MachineTranslationLibrary.csproj" />
     <ProjectReference Include="..\..\SportLibrary\SportLibrary.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="SportAPI.nds" />
+    <None Remove="SportAPI.ntp" />
+    <None Remove="SportAPI.ntr" />
   </ItemGroup>
 
 </Project>

@@ -1,41 +1,29 @@
-using System;
 using System.Globalization;
-using System.Net.Http;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
-using Microsoft.Extensions.DependencyInjection;
 using Microsoft.JSInterop;
 using Soluling.Sport;
+using SportWasm;
 
-namespace SportWasm
-{
-  public class Program
-  {
-    public static async Task Main(string[] args)
-    {
-      var builder = WebAssemblyHostBuilder.CreateDefault(args);
-      builder.RootComponents.Add<App>("app");
-      
-      builder.Services.AddSingleton(new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
-      builder.Services.AddSingleton<SportService, SportService>();
+var builder = WebAssemblyHostBuilder.CreateDefault(args);
+builder.RootComponents.Add<App>("#app");
+builder.RootComponents.Add<HeadOutlet>("head::after");
 
-      // Set the folder that contains the resource files
-      builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+builder.Services.AddScoped(sp => new HttpClient { BaseAddress = new Uri(builder.HostEnvironment.BaseAddress) });
+builder.Services.AddSingleton<SportService, SportService>();
 
-      var host = builder.Build();
+// 1) Specify .resx directory.
+builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
 
-      // Get the language. blazorCulture.get return the active language.
-      // By default it is the language of the browser. However, if the language has been save to the local storage
-      // by calling blazorCulture.set then the fucntion returns the stored language.
-      var jsInterop = host.Services.GetRequiredService<IJSRuntime>();
-      var language = await jsInterop.InvokeAsync<string>("getLanguage");
+var host = builder.Build();
 
-      // Set the default culture to match the language.
-      var culture = new CultureInfo(language);
-      CultureInfo.DefaultThreadCurrentCulture = culture;
-      CultureInfo.DefaultThreadCurrentUICulture = culture;
+// Get the language. getLanguage returns the active language. It is the language of the browser.
+var jsInterop = host.Services.GetRequiredService<IJSRuntime>();
+var language = await jsInterop.InvokeAsync<string>("getLanguage");
 
-      await host.RunAsync();
-    }
-  }
-}
+// Set the default culture to match the language.
+var culture = new CultureInfo(language);
+CultureInfo.DefaultThreadCurrentCulture = culture;
+CultureInfo.DefaultThreadCurrentUICulture = culture;
+
+await host.RunAsync();

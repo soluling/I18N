@@ -1,14 +1,9 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
-    <RootNamespace>DrivingView</RootNamespace>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
-
-  <ItemGroup>
-    <None Remove="Driving.nds" />
-    <None Remove="Driving.ntp" />
-  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Soluling" Version="1.0.45" />
@@ -16,6 +11,14 @@
 
   <ItemGroup>
     <DotNetCliToolReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Tools" Version="2.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Driving.nds" />
+    <None Remove="Driving.ntp" />
+    <None Remove="DrivingView.nds" />
+    <None Remove="DrivingView.ntp" />
+    <None Remove="DrivingView.ntr" />
   </ItemGroup>
 
 </Project>

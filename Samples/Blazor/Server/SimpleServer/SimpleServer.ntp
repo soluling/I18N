@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C8D4A29C-DA91-437A-816E-F72C86261CD5" created="20200328T192851Z" lastmodified="20230717T170441Z" version="1.0.1000" lockedrowcomplete="0" stringid="2">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <node class="TNetProjectSource" name="SimpleServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\SimpleServer\SimpleServer.csproj" original="en" lastmodified="20230717T170441Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
+    <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TDirectoryFolder" name="Resources">
+      <node class="TDirectoryFolder" name="Pages">
+        <node class="TResXNode" name="Index.resx" windowsforms="wfCore">
+          <row id="Hello, world!" si="1">
+            <value>Hello, world!</value>
+            <lang id="fi" st="4" or="5" rw="0" time="20200328T192902Z" fuzzy="99">Hei maailma!</lang>
+            <lang id="de" st="1" or="6" rw="0" time="20230717T170339Z" fuzzy="99.5">Hallo Welt!</lang>
+          </row>
+          <row id="Welcome to your new app." si="2">
+            <value>Welcome to your new app.</value>
+            <lang id="fi" st="4" or="6" rw="0" time="20200328T192900Z" fuzzy="5">Tervetuloa uuteen sovellukseesi.</lang>
+            <lang id="de" st="1" or="6" rw="0" time="20230717T170342Z" fuzzy="99.5">Willkommen in Ihrer neuen App.</lang>
+          </row>
+        </node>
+      </node>
+    </node>
+    <assemblies>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
+      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+    </assemblies>
+    <extractor category="lcBlazor"/>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt optimizeusage="0">
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates>
+  </duplicates>
+</project>

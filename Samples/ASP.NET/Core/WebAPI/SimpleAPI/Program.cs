@@ -1,18 +1,28 @@
-﻿using Microsoft.AspNetCore;
-using Microsoft.AspNetCore.Hosting;
+﻿var builder = WebApplication.CreateBuilder(args);
 
-namespace SimpleAPI
-{
-  public class Program
-  {
-    public static void Main(string[] args)
-    {
-      BuildWebHost(args).Run();
-    }
+builder.Services
+  .AddControllers()
+  .AddNewtonsoftJson(options => options.SerializerSettings.Formatting = Newtonsoft.Json.Formatting.Indented);
 
-    public static IWebHost BuildWebHost(string[] args) =>
-      WebHost.CreateDefaultBuilder(args)
-        .UseStartup<Startup>()
-        .Build();
-  }
-}
+builder.Services.AddEndpointsApiExplorer();
+
+// 1) Specify .resx directory.
+builder.Services.AddLocalization(opts => { opts.ResourcesPath = "Resources"; });
+
+var app = builder.Build();
+
+// 2) Add supported languages: Finnish and German
+var supportedCultures = new[] { "en", "fi" };
+
+// 3) Configure application to use the above locales
+var options = new RequestLocalizationOptions()
+  .SetDefaultCulture(supportedCultures[0])
+  .AddSupportedCultures(supportedCultures)
+  .AddSupportedUICultures(supportedCultures);
+
+app.UseRequestLocalization(options);
+
+app.UseAuthorization();
+app.MapControllers();
+
+app.Run();
