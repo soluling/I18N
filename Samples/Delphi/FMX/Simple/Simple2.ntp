@@ -1,13 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="95B0711C-B093-46D0-B791-EE0BB891DAB1" created="20160814T195528Z" lastmodified="20230820T152223Z" version="1.0.1003" stringid="1273">
+<project id="95B0711C-B093-46D0-B791-EE0BB891DAB1" created="20160814T195528Z" lastmodified="20230819T155606Z" version="1.0.1003" stringid="1273">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
   <lang id="nl"/>
   <lang id="it"/>
   <lang id="es"/>
-  <lang id="ru"/>
-  <node class="TDelphiProjectSource" name="Simple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Simple\Simple.dproj" original="en" lastmodified="20230820T152223Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release">
+  <node class="TDelphiProjectSource" name="Simple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Simple\Simple.dproj" original="en" lastmodified="20230819T155606Z" scanformsvisualproperties="0" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release">
     <node class="TDelphiFormFolder" name="RCData" created="20221227T151713Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
       <node class="TWindowsBinaryNode" name="clouds" resname="clouds" langid="1033" excluded="1"/>
@@ -18,8 +17,6 @@
       <node class="TWindowsBinaryNode" name="packageinfo" resname="packageinfo" excluded="1"/>
       <node class="TWindowsBinaryNode" name="PLATFORMTARGETS" resname="PLATFORMTARGETS" langid="1033" excluded="1"/>
       <node class="TDelphiFormNode" name="tform1" type="TForm1" resname="tform1" objectname="Form1">
-        <row id="Left">0</row>
-        <row id="Top">0</row>
         <row id="Caption" si="1155">
           <value>Sample</value>
           <lang id="fi">Esimerkki</lang>
@@ -28,10 +25,7 @@
           <lang id="nl" st="2" or="3" rw="0" time="20180324T152256Z">Steekproef</lang>
           <lang id="it" st="2" or="3" rw="0" time="20180324T152309Z">Campione</lang>
           <lang id="es" st="2" or="3" rw="0" time="20180324T152321Z">Muestra</lang>
-          <lang id="ru" st="1" or="6" rw="0" time="20230820T152025Z">Образец</lang>
         </row>
-        <row id="ClientHeight">126</row>
-        <row id="ClientWidth">281</row>
         <item name="Label1" type="TLabel">
           <row id="Text" si="1156">
             <value>Hello World</value>
@@ -41,22 +35,11 @@
             <lang id="nl" st="2" or="3" rw="0" time="20180324T152257Z">Hallo wereld</lang>
             <lang id="it" st="2" or="3" rw="0" time="20180324T152310Z">Ciao Mondo</lang>
             <lang id="es" st="2" or="3" rw="0" time="20180324T152322Z">Hola Mundo</lang>
-            <lang id="ru" st="1" or="6" rw="0" time="20230820T152025Z">Привет, мир</lang>
           </row>
         </item>
         <item name="Label2" type="TLabel">
           <row id="Text" si="1157" excluded="2">dummy</row>
         </item>
-        <data>
-          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBlNhbXBsZQxDbGllbnRIZWlnaHQCfgtDbGllbnRXaWR0aAMZ
-          ARBGb3JtRmFjdG9yLldpZHRoA4AHEUZvcm1GYWN0b3IuSGVpZ2h0AzgEEkZvcm1GYWN0b3IuRGV2aWNlcwsHRGVza3RvcAZpUGhv
-          bmUEaVBhZAAIT25DcmVhdGUHCkZvcm1DcmVhdGUTRGVzaWduZXJNYXN0ZXJTdHlsZQIAAAZUTGFiZWwGTGFiZWwxCEF1dG9TaXpl
-          CQpQb3NpdGlvbi5YBQAAAAAAAACAAkAKUG9zaXRpb24uWQUAAAAAAAAAgAJAClNpemUuV2lkdGgFAAAAAAAAAPwEQAtTaXplLkhl
-          aWdodAUAAAAAAAAAgANAFFNpemUuUGxhdGZvcm1EZWZhdWx0CBVUZXh0U2V0dGluZ3MuV29yZFdyYXAIBFRleHQGC0hlbGxvIFdv
-          cmxkCFRhYk9yZGVyAgAAAAZUTGFiZWwGTGFiZWwyCEF1dG9TaXplCQpQb3NpdGlvbi5YBQAAAAAAAACAAkAKUG9zaXRpb24uWQUA
-          AAAAAAAAwANAClNpemUuV2lkdGgFAAAAAAAAAKQEQAtTaXplLkhlaWdodAUAAAAAAAAAgANAFFNpemUuUGxhdGZvcm1EZWZhdWx0
-          CBVUZXh0U2V0dGluZ3MuV29yZFdyYXAIBFRleHQGBWR1bW15CFRhYk9yZGVyAgEAAAA=
-        </data>
       </node>
       <node class="TWindowsBinaryNode" name="WIN7STYLE" resname="WIN7STYLE" langid="1033" excluded="1"/>
       <node class="TWindowsBinaryNode" name="WIN8STYLE" resname="WIN8STYLE" langid="1033" excluded="1"/>
@@ -81,7 +64,6 @@
           <lang id="nl" st="2" or="3" rw="0" time="20180324T152258Z">Dit is een steekproef</lang>
           <lang id="it" st="2" or="3" rw="0" time="20180324T152311Z">Questo è un campione</lang>
           <lang id="es" st="2" or="3" rw="0" time="20180324T152323Z">Esta es una muestra</lang>
-          <lang id="ru" st="1" or="6" rw="0" time="20230820T152025Z">это образец</lang>
         </row>
       </node>
     </node>

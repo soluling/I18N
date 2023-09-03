@@ -61,6 +61,10 @@ cd Glossary
 call Build.bat
 cd ..
 
+cd HelpAndManual
+call Build.bat
+cd ..
+
 cd HTML
 call Build.bat
 cd ..

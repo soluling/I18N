@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6B0769C4-E401-4914-860A-7715725FC3D4" created="20160814T233415Z" lastmodified="20200214T200221Z" version="1.0.696" stringid="27">
+<project id="6B0769C4-E401-4914-860A-7715725FC3D4" created="20160814T233415Z" lastmodified="20230820T152423Z" version="1.0.1003" stringid="27">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="LanguageSwitch.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\LanguageSwitch\LanguageSwitch.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="LanguageSwitch.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\LanguageSwitch\LanguageSwitch.dproj" original="en" lastmodified="20230820T152423Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release;Win64 - Release">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDirectoryFolder" name="..">
         <node class="TDirectoryFolder" name="..">
@@ -82,10 +82,7 @@
           <value>Sample</value>
           <lang id="fi" time="20160814T233515Z">Esimerkki</lang>
         </row>
-        <row id="ClientHeight" changed="20200214T200156Z" st="2">
-          <value>405</value>
-          <prev>237</prev>
-        </row>
+        <row id="ClientHeight" changed="20200214T200156Z">405</row>
         <row id="ClientWidth">369</row>
         <item name="Button1" type="TButton">
           <row id="Text" si="7">
@@ -146,26 +143,26 @@
         <item name="Label1" type="TLabel">
           <row id="Text" si="17" excluded="2">dummy</row>
         </item>
-        <item name="TabControl1" type="TTabControl" created="20200214T200156Z" st="0">
-          <item name="TabItem1" type="TTabItem" st="0">
-            <row id="Text" si="24" st="0">
+        <item name="TabControl1" type="TTabControl" created="20200214T200156Z">
+          <item name="TabItem1" type="TTabItem">
+            <row id="Text" si="24">
               <value>One</value>
               <lang id="fi" time="20200214T200202Z" fuzzy="100">Yksi</lang>
             </row>
-            <item name="Label2" type="TLabel" st="0">
-              <row id="Text" si="25" st="0">
+            <item name="Label2" type="TLabel">
+              <row id="Text" si="25">
                 <value>One</value>
                 <lang id="fi" time="20200214T200202Z">Yksi</lang>
               </row>
             </item>
           </item>
-          <item name="TabItem2" type="TTabItem" st="0">
-            <row id="Text" si="26" st="0">
+          <item name="TabItem2" type="TTabItem">
+            <row id="Text" si="26">
               <value>Two</value>
               <lang id="fi" time="20200214T200205Z" fuzzy="100">Kaksi</lang>
             </row>
-            <item name="CheckBox" type="TCheckBox" st="0">
-              <row id="Text" si="27" st="0">
+            <item name="CheckBox" type="TCheckBox">
+              <row id="Text" si="27">
                 <value>Checkbox</value>
                 <lang id="fi" time="20200214T200209Z" fuzzy="5">Valintaruutu</lang>
               </row>
@@ -243,7 +240,7 @@
   <excludedoriginals>
     <item>dummy</item>
   </excludedoriginals>
-  <rules kind="crFireMonkey">
+  <rules kind="crFmx">
     <rule component="*" property="StyleLookup"/>
     <rule component="TListBox" property="DefaultItemStyles.ItemStyle"/>
   </rules>
@@ -257,11 +254,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates>
