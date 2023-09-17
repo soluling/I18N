@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Menu
+﻿namespace Menu
 {
   public partial class Form1 : Form
   {
