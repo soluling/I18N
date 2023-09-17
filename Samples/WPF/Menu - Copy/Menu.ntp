@@ -1,18 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20230917T041328Z" version="1.0.1006" stringid="9">
+<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20230418T013252Z" version="1.0.991" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20230917T041328Z" resources="[nrXaml,nrAssemblyInfo]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="core70" toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20230418T013252Z" resources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net30" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20230418T013252Z" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9Ik1lbnUuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
         b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
-        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6
-        TWVudSINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJj
-        ZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgU3RhcnR1cFVyaT0iTWFpbldpbmRvdy54YW1s
+        Ij4NCiAgICA8QXBwbGljYXRpb24uUmVzb3VyY2VzPg0KICAgICAgICAgDQogICAgPC9BcHBsaWNhdGlvbi5SZXNvdXJjZXM+DQo8
+        L0FwcGxpY2F0aW9uPg0K
       </data>
     </node>
-    <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20230917T040944Z" fromassemblyinfo="1"/>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" created="20230418T013252Z" id="mainWindow">
       <row id="Title" si="1">
         <value>Sample</value>
@@ -66,28 +65,24 @@
         R3JpZD4NCjwvV2luZG93Pg0K
       </data>
     </node>
+    <node class="TDirectoryFolder" name="Properties" created="20230418T013252Z">
+      <node class="TWindowsVersionNode" name="AssemblyInfo.cs" fromassemblyinfo="1">
+        <row id="AssemblyTitle" si="7">Menu</row>
+        <row id="AssemblyProduct" si="8">Menu</row>
+        <row id="AssemblyCopyright" si="9">Copyright ©  2014</row>
+      </node>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
+    </node>
     <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
-    <assemblies>
-      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
-    </assemblies>
+    <configurations>
+      <configuration name="Default"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -98,8 +93,10 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
+  <duplicates>
   </duplicates>
 </project>
