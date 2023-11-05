@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="2D7035A3-1A9D-402D-B3AB-0394E8AAC0AA" created="20140624T223316Z" lastmodified="20191223T020316Z" version="1.0.632" stringid="5">
+<project id="2D7035A3-1A9D-402D-B3AB-0394E8AAC0AA" created="20140624T223316Z" lastmodified="20231027T030417Z" version="1.0.1009" stringid="5">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Font.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Font\Win32\Release\Font.exe" original="en" platforms="[ptWin32]">
+  <lang id="ja"/>
+  <node class="TDelphiSource" name="Win32\Release\Font.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Font\Win32\Release\Font.exe" original="en" lastmodified="20231027T030417Z">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -15,6 +16,7 @@
         <row id="Caption" si="1">
           <value>Font Sample</value>
           <lang id="fi" time="20160702T155832Z">Fonttiesimerkki</lang>
+          <lang id="ja" st="1" or="6" rw="0" time="20231027T030417Z">フォントサンプル</lang>
         </row>
         <row id="ClientHeight">211</row>
         <row id="ClientWidth">482</row>
@@ -26,6 +28,7 @@
           <row id="Caption" si="2">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
+            <lang id="ja" st="1" or="6" rw="0" time="20231027T030417Z">デフォルト</lang>
           </row>
         </item>
         <item name="Label2" type="TLabel">
@@ -37,6 +40,7 @@
           <row id="Caption" si="3">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
+            <lang id="ja" st="1" or="6" rw="0" time="20231027T030417Z">デフォルト</lang>
           </row>
         </item>
         <item name="Label3" type="TLabel">
@@ -48,6 +52,7 @@
           <row id="Caption" si="4">
             <value>Default</value>
             <lang id="fi" time="20160702T155834Z">Oletus</lang>
+            <lang id="ja" st="1" or="6" rw="0" time="20231027T030417Z">デフォルト</lang>
           </row>
         </item>
         <item name="Label4" type="TLabel">
@@ -59,6 +64,7 @@
           <row id="Caption" si="5">
             <value>All</value>
             <lang id="fi" time="20160702T155838Z">Kaikki</lang>
+            <lang id="ja" st="1" or="6" rw="0" time="20231027T030417Z">全て</lang>
           </row>
         </item>
         <data>
@@ -77,7 +83,7 @@
         </data>
       </node>
     </node>
-    <node class="TWindowsStringFolder" name="String" st="0" excluded="1" needsconversion="0"/>
+    <node class="TWindowsStringFolder" name="String" st="0" excluded="1"/>
     <node class="TWindowsVersionFolder" name="Version" st="0" excluded="1"/>
   </node>
   <rules kind="crVcl">
@@ -86,16 +92,21 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
+  <duplicates promptoverwritetranslated="1">
+  </duplicates>
 </project>

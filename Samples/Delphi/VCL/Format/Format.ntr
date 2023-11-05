@@ -1,20 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<result created="20230419T121514Z">
+<result created="20230930T084219Z">
   <rows>
-    <statuses new="0" inuse="3" changed="2" contextchanged="0" unused="0"/>
+    <statuses new="0" inuse="91" changed="0" contextchanged="0" unused="0"/>
     <lastscan new="0" inuse="0" changed="0" contextchanged="0" unused="0"/>
   </rows>
   <translations>
-    <statuses nottranslated="2" bestguess="0" autotranslated="0" forreview="0" translated="3" complete="0"/>
-    <lastimport clear="0" import="3" overwrite="0">
-      <language id="fi" clear="0" import="3" overwrite="0"/>
+    <statuses nottranslated="412" bestguess="26" autotranslated="0" forreview="2" translated="2" complete="13"/>
+    <lastimport clear="0" import="13" overwrite="0">
+      <language id="fi" clear="0" import="13" overwrite="0"/>
+      <language id="fi-FI" clear="0" import="0" overwrite="0"/>
+      <language id="de" clear="0" import="0" overwrite="0"/>
+      <language id="nl" clear="0" import="0" overwrite="0"/>
+      <language id="he" clear="0" import="0" overwrite="0"/>
     </lastimport>
   </translations>
   <imports>
     <language id="fi">
-      <import context="Win32\Release\Format.exe.String.Unit1.SHello" original="Hello %s!" value="Moi %s&quot;"/>
-      <import context="Win32\Release\Format.exe.String.Unit1.SHello2" original="Hello %s and %s!" value="Moi %s ja %s!"/>
-      <import context="Win32\Release\Format.exe.String.Unit1.SCount" original="%s has %d cars" value="%s:lla on %d autoa"/>
+      <import context="Win32\Release\Format.exe.RCData.TFORM1.Caption" original="Sample" value="Esimerkki"/>
+      <import context="Win32\Release\Format.exe.RCData.TFORM1.FirstNameLabel.Caption" original="&amp;First name:" value="&amp;Ensimmäinen nimi:"/>
+      <import context="Win32\Release\Format.exe.RCData.TFORM1.CountLabel.Caption" original="&amp;Count:" value="&amp;Määrä:"/>
+      <import context="Win32\Release\Format.exe.RCData.TFORM1.SecondNameLabel.Caption" original="&amp;Second name:" value="&amp;Toinen nimi:"/>
+      <import context="Win32\Release\Format.exe.RCData.TFORM1.LanguageButton.Caption" original="&amp;Language..." value="&amp;Kieli..."/>
+      <import context="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.Caption" original="Select Language" value="Valitse kieli"/>
+      <import context="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.OkButton.Caption" original="OK" value="OK"/>
+      <import context="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.CancelButton.Caption" original="Cancel" value="Peru"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SHello" original="Hello {0}!" value="Moi {0}!"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SHello2" original="Hello {0} and {1}!" value="Moi {0} ja {1}!"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SCount" original="{0} has {1} cars" value="{0}:lla on {1} autoa"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SCount2" original="{0} cars will pick up {1} and {2}" value="{0} autoa hakee {1}:in ja {2}:in"/>
+      <import context="Win32\Release\Format.exe.String.Unit1.SDouble" original="{0} swims and {0} skis" value="{0} ui ja {0} hiihtää"/>
     </language>
   </imports>
   <outputfiles>

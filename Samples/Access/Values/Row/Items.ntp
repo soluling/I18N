@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="DFB0A99F-2514-4824-B729-361943A22FE0" created="20230930T142755Z" lastmodified="20230930T150910Z" version="1.0.1007" stringid="5">
+  <lang id="fi"/>
+  <node class="TSqlDatabaseSource" name="Items.accdb" original="en" lastmodified="20230930T150910Z" encoding="unicode" hasunicodefields="1" rowssorted="0">
+    <database kind="TAccessDatabase" file="Items.accdb"/>
+    <tables>
+      <table name="Items" method="dlRow" language="LangId">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Items" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="zero" si="1">Zero</row>
+        <row id="one" si="2">One</row>
+        <row id="two" si="3">Two</row>
+        <row id="three" si="4">Three</row>
+        <row id="four" si="5">Four</row>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>+</item>
+    <item>-</item>
+    <item>...</item>
+    <item>0</item>
+    <item>1</item>
+    <item>10</item>
+    <item>100</item>
+    <item>16</item>
+    <item>3</item>
+    <item>360</item>
+    <item>45</item>
+    <item>8</item>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates promptoverwritetranslated="1">
+  </duplicates>
+</project>

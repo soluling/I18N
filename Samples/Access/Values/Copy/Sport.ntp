@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="DAEB777D-4106-4562-8A92-70F6E0CCBD6B" created="20160914T002007Z" lastmodified="20181207T004513Z" version="1.0.401" stringid="9">
+  <lang id="fi"/>
+  <lang id="fr"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TSqlDatabaseSource" name="Sport.accdb" original="en" encoding="unicode" hasunicodefields="1">
+    <database kind="TAccessDatabase" file="Sport.accdb" provider="Microsoft.ACE.OLEDB.13.0"/>
+    <tables>
+      <table name="Sport" method="dlCopy">
+        <id name="Id"/>
+        <field name="Name" format="sfPlain" marked="1"/>
+        <field name="Origin" format="sfPlain" marked="1"/>
+        <field name="Description" format="sfPlain" marked="1"/>
+      </table>
+    </tables>
+    <node class="TSqlDatabaseTableNode" name="Sport" keyfields="Id">
+      <node class="TDatabaseFieldNode" name="Description">
+        <row id="0" si="1">
+          <value>Soccer is a sport played between two teams of eleven players with a spherical ball.</value>
+          <lang id="fi" or="5" rw="0" tm="1" time="20181128T200534Z">Jalkapallo on urheilulaji, jossa kaksi yksitoistahenkistä joukkuetta pelaavat pallolla.</lang>
+        </row>
+        <row id="1" si="2">
+          <value>Ice hockey is a team sport played on ice, in which skaters use sticks to direct a puck into the opposing team's goal.</value>
+          <lang id="fi" or="5" rw="0" tm="1" time="20181128T200534Z">Jääkiekko on jäällä pelattava joukkuelaji, jossa luistelijat käyttävät mailaa saadakseen kiekon vastajoukkueen maaliin.</lang>
+        </row>
+        <row id="2" si="3">
+          <value>Basketball is a team sport in which two teams of five players try to score points by throwing a ball through the top of a basketball hoop while following a set of rules.</value>
+          <lang id="fi" or="5" rw="0" tm="1" time="20181128T200534Z">Koripallo on joukkuelaji, jossa kaksi viisihenkistä joukkuetta yrittää tehdä pisteitä heittämällä pallon korin läpi samalla noudattaen sääntöjä.</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Name">
+        <row id="0" si="4">
+          <value>Soccer</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Jalkapallo</lang>
+          <lang id="fr" time="20160914T002031Z">Football</lang>
+          <lang id="de" time="20160914T002031Z">Fußball</lang>
+          <lang id="ja" time="20160914T002031Z">サッカー</lang>
+        </row>
+        <row id="1" si="5">
+          <value>Ice hockey</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Jääkiekko</lang>
+          <lang id="fr" time="20160914T002031Z">Hockey sur glace</lang>
+          <lang id="de" time="20160914T002031Z">Eishockey</lang>
+          <lang id="ja" time="20160914T002031Z">アイス ホッケー</lang>
+        </row>
+        <row id="2" si="6">
+          <value>Basketball</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Koripallo</lang>
+          <lang id="fr" time="20160914T002031Z">Basket-ball</lang>
+          <lang id="de" time="20160914T002031Z">Basketball</lang>
+          <lang id="ja" time="20160914T002031Z">バスケット ボール</lang>
+        </row>
+      </node>
+      <node class="TDatabaseFieldNode" name="Origin">
+        <row id="0" si="7">
+          <value>England</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Englanti</lang>
+          <lang id="fr" time="20160914T002031Z">L’Angleterre</lang>
+          <lang id="de" time="20160914T002031Z">England</lang>
+          <lang id="ja" time="20160914T002031Z">イギリス</lang>
+        </row>
+        <row id="1" si="8">
+          <value>Canada</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Kanada</lang>
+          <lang id="fr" time="20160914T002031Z">Canada</lang>
+          <lang id="de" time="20160914T002031Z">Kanada</lang>
+          <lang id="ja" time="20160914T002031Z">カナダ</lang>
+        </row>
+        <row id="2" si="9">
+          <value>United States</value>
+          <lang id="fi" tm="1" time="20160914T002031Z">Yhdysvallat</lang>
+          <lang id="fr" time="20160914T002031Z">États-Unis</lang>
+          <lang id="de" time="20160914T002031Z">USA</lang>
+          <lang id="ja" time="20160914T002031Z">米国</lang>
+        </row>
+      </node>
+    </node>
+    <configurations>
+      <configuration name="Default" incompleterowaction="irUseOriginal"/>
+    </configurations>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Amazon" type="TAmazonTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
+  </mt>
+</project>
