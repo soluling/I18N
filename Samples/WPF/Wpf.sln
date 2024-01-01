@@ -43,7 +43,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Pages", "Pages\Pages.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WindowsForms", "WindowsForms\WindowsForms.csproj", "{C6B8E05C-201F-495C-827A-4815DCBAE04B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Menu", "Menu\Menu.csproj", "{EB5A689F-8CC3-4EEC-9FBE-28B1E11F08E8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Menu", "Menu\Menu.csproj", "{EB5A689F-8CC3-4EEC-9FBE-28B1E11F08E8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FileDialog", "FileDialog\FileDialog.csproj", "{614937AA-5781-4FCC-97D2-AD435BBF68CC}"
 EndProject
@@ -79,25 +79,35 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Library", "Library", "{3788
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Soluling", "..\..\Library\NET\Standard\Soluling.csproj", "{D676B286-072D-45BB-8170-9AD230136B8D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SolulingTranslatorWpf", "..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj", "{9D55615C-98F2-40CA-BEF9-903DFA73C268}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SolulingTranslatorWpf", "..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj", "{9D55615C-98F2-40CA-BEF9-903DFA73C268}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Text", "Text\Text.csproj", "{57C26847-526E-457C-9CD8-78A862306AD8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Format", "Format\Format.csproj", "{095231E4-656F-4EA2-9400-5D7B37247CB5}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomControl", "CustomControl", "{C220C559-64D9-4098-AFA8-307956CDA9E9}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomControlFramework", "CustomControlFramework", "{C220C559-64D9-4098-AFA8-307956CDA9E9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "CustomControl\WpfApplication\WpfApplication.csproj", "{AC6731B3-D492-4F40-8A36-819CAEA7823E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfApplication", "CustomControlFramework\WpfApplication\WpfApplication.csproj", "{AC6731B3-D492-4F40-8A36-819CAEA7823E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControl", "CustomControl\WpfControl\WpfControl.csproj", "{B2E2E201-4097-4C20-83CD-1874D2C0BF24}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfControl", "CustomControlFramework\WpfControl\WpfControl.csproj", "{B2E2E201-4097-4C20-83CD-1874D2C0BF24}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControl", "CustomControl\WpfUserControl\WpfUserControl.csproj", "{FF88E65D-C60F-4FC2-92A2-1A18EF70C034}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfUserControl", "CustomControlFramework\WpfUserControl\WpfUserControl.csproj", "{FF88E65D-C60F-4FC2-92A2-1A18EF70C034}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Core", "Core\Core.csproj", "{98C4754A-599B-4D78-B90D-DD382EBEBBD9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Binding", "Binding\Binding.csproj", "{9FA20AF6-9E88-4416-88BF-D2FBF448282A}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MultiTarget", "MultiTarget\MultiTarget.csproj", "{7D846AA4-86F1-4D1E-8E83-B0F577CFFE23}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomControl", "CustomControl", "{A3D26CEF-300C-4519-8FC3-82ED7DF423E0}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfApplication", "CustomControl\WpfApplication\WpfApplication.csproj", "{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfControl", "CustomControl\WpfControl\WpfControl.csproj", "{320C17D7-480A-492F-BBA4-B585FCD78B99}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WpfUserControl", "CustomControl\WpfUserControl\WpfUserControl.csproj", "{6A4F8358-D76A-476F-A69A-7560CADF4630}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GenderApp", "Patterns\Gender\GenderApp.csproj", "{9B2FA283-BBED-4E9A-B15F-FD0ADA894854}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -269,6 +279,22 @@ Global
 		{7D846AA4-86F1-4D1E-8E83-B0F577CFFE23}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7D846AA4-86F1-4D1E-8E83-B0F577CFFE23}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7D846AA4-86F1-4D1E-8E83-B0F577CFFE23}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{320C17D7-480A-492F-BBA4-B585FCD78B99}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{320C17D7-480A-492F-BBA4-B585FCD78B99}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{320C17D7-480A-492F-BBA4-B585FCD78B99}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{320C17D7-480A-492F-BBA4-B585FCD78B99}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6A4F8358-D76A-476F-A69A-7560CADF4630}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A4F8358-D76A-476F-A69A-7560CADF4630}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A4F8358-D76A-476F-A69A-7560CADF4630}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A4F8358-D76A-476F-A69A-7560CADF4630}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9B2FA283-BBED-4E9A-B15F-FD0ADA894854}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B2FA283-BBED-4E9A-B15F-FD0ADA894854}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B2FA283-BBED-4E9A-B15F-FD0ADA894854}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B2FA283-BBED-4E9A-B15F-FD0ADA894854}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -292,6 +318,10 @@ Global
 		{AC6731B3-D492-4F40-8A36-819CAEA7823E} = {C220C559-64D9-4098-AFA8-307956CDA9E9}
 		{B2E2E201-4097-4C20-83CD-1874D2C0BF24} = {C220C559-64D9-4098-AFA8-307956CDA9E9}
 		{FF88E65D-C60F-4FC2-92A2-1A18EF70C034} = {C220C559-64D9-4098-AFA8-307956CDA9E9}
+		{1CD22BFB-A5CA-46B5-83BA-F4454611EB0B} = {A3D26CEF-300C-4519-8FC3-82ED7DF423E0}
+		{320C17D7-480A-492F-BBA4-B585FCD78B99} = {A3D26CEF-300C-4519-8FC3-82ED7DF423E0}
+		{6A4F8358-D76A-476F-A69A-7560CADF4630} = {A3D26CEF-300C-4519-8FC3-82ED7DF423E0}
+		{9B2FA283-BBED-4E9A-B15F-FD0ADA894854} = {134F308E-D8CF-4FFA-9434-4461A8ED0707}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C8B471E0-7FF9-4D96-9857-12A1BFDEE9E3}

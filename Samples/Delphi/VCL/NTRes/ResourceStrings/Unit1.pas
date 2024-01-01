@@ -34,6 +34,7 @@ uses
   NtBase,
   NtResource,
   NtResourceEx,
+  NtResourceString,
   NtTranslatorEx;
 
 procedure TForm1.Translate;
@@ -67,12 +68,6 @@ begin
   Translate;
 end;
 
-function TranslateResourceString(resStringRec: PResStringRec): String;
-begin
-  Result := _T(resStringRec);
-end;
-
 initialization
-  LoadResStringFunc := TranslateResourceString;
   DefaultLocale := 'en';
 end.

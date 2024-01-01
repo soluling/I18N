@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C8D4A29C-DA91-437A-816E-F72C86261CD5" created="20200328T192851Z" lastmodified="20230717T170441Z" version="1.0.1000" lockedrowcomplete="0" stringid="2">
+<project id="C8D4A29C-DA91-437A-816E-F72C86261CD5" created="20200328T192851Z" lastmodified="20231218T054415Z" version="1.0.1014" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="SimpleServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\SimpleServer\SimpleServer.csproj" original="en" lastmodified="20230717T170441Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
+  <node class="TNetProjectSource" name="SimpleServer.csproj" fullpath="D:\NT\Deploy\Samples\Blazor\Server\SimpleServer\SimpleServer.csproj" original="en" lastmodified="20231218T054415Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" blazor="1" defaultresourcedir="Resources">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages">
@@ -19,21 +19,36 @@
           </row>
         </node>
       </node>
+      <node class="TDirectoryFolder" name="Shared" created="20231218T053633Z" st="0">
+        <node class="TResXNode" name="MainLayout.resx" created="20231218T054415Z" st="0" windowsforms="wfCore">
+          <row id="About" si="5" st="0">
+            <value>About</value>
+            <lang id="fi" st="2" or="3" rw="0" time="20231218T053640Z">Tietoa</lang>
+          </row>
+        </node>
+        <node class="TResXNode" name="NavMenu.resx" st="0" windowsforms="wfCore">
+          <row id="Home" si="4" st="0">
+            <value>Home</value>
+            <lang id="fi" st="4" rw="0" time="20231218T053642Z">Koti</lang>
+          </row>
+        </node>
+      </node>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net80.dll</assembly>
+      <assembly>C:\Program Files\Soluling\Net80x86.dll</assembly>
+      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
     </assemblies>
     <extractor category="lcBlazor"/>
   </node>
@@ -52,10 +67,9 @@
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

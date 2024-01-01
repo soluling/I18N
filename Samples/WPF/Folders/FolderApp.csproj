@@ -1,0 +1,17 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="FolderApp.nds" />
+    <None Remove="FolderApp.ntp" />
+    <None Remove="FolderApp.ntr" />
+    <None Remove="FolderApp.~ntp" />
+  </ItemGroup>
+
+</Project>

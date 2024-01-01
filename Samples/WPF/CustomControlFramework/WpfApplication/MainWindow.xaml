@@ -1,0 +1,18 @@
+﻿<Window 
+  x:Uid="mainWindow"
+  x:Class="WpfApplication.MainWindow"
+  xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+  xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+  xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+  xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+  xmlns:custom="clr-namespace:WpfControl;assembly=WpfControl"
+  xmlns:user="clr-namespace:WpfUserControl;assembly=WpfUserControl"
+  mc:Ignorable="d"
+  Title="Sample" Height="200" Width="300">
+
+  <StackPanel>
+    <Label x:Uid="label1">Hello</Label>
+    <custom:CustomLabel x:Uid="customLabel" TextValue="Some text">Custom hello</custom:CustomLabel>
+    <user:UserControl1 x:Uid="userControl" />
+  </StackPanel>
+</Window>

@@ -1469,7 +1469,12 @@ namespace Soluling
     {
       var str = new FormatString(format);
       startPattern = str.StartPattern;
-      return str[gender];
+      var result = str[gender];
+
+      if ((result == "") && (gender != Gender.Neutral))
+        result = str[Gender.Neutral];
+
+      return result;
     }
 
     /// <summary>

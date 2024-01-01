@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20221117T130644Z" version="1.0.963" stringid="13">
+<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20231231T075734Z" version="1.0.1014" stringid="13">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20221117T130644Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20231231T075734Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="label1.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 24</row>
@@ -278,7 +278,7 @@
           <value>en</value>
           <lang id="fi" time="20161130T152251Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" si="13" scannedcomment="{0}: File count" created="20170510T190538Z">
+        <row id="MessagePlural" class="TPatternRow" si="13" scannedcomment="{0}: File count" created="20170510T190538Z" original="{plural, one {{0} file} other {{0} files}}">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" time="20170510T190558Z">
@@ -305,6 +305,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -312,6 +313,6 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

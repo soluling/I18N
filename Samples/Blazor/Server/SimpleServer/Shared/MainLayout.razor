@@ -1,4 +1,5 @@
 ﻿@inherits LayoutComponentBase
+@inject IStringLocalizer<MainLayout> localizer
 
 <div class="sidebar">
     <NavMenu />
@@ -6,7 +7,7 @@
 
 <div class="main">
     <div class="top-row px-4">
-        <a href="https://soluling.com" target="_blank">About</a>
+        <a href="https://soluling.com" target="_blank">@localizer["About"]</a>
     </div>
 
     <div class="content px-4">

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C24576C8-85A3-485F-9519-8A8FA8FD4A6A" created="20181129T161824Z" lastmodified="20221117T125802Z" version="1.0.963" stringid="10">
+<project id="C24576C8-85A3-485F-9519-8A8FA8FD4A6A" created="20181129T161824Z" lastmodified="20231231T150545Z" version="1.0.1014" stringid="10">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20221117T125802Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20231231T150545Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="maleLabel.Location" class="TCoordinatePointRow" created="20221117T125753Z">8, 8</row>
@@ -17,7 +17,7 @@
       <row id="languageButton.Size" class="TCoordinateSizeRow" created="20221117T125753Z">99, 23</row>
       <row id="languageButton.Text" si="4">
         <value>&amp;Language...</value>
-        <lang id="fi" st="4" rw="0" time="20181129T161841Z">&amp;Kieli...</lang>
+        <lang id="fi" st="4" rw="0" time="20231231T133703Z">&amp;Kieli..</lang>
       </row>
       <row id="neutralInfo.Location" class="TCoordinatePointRow" created="20221117T125753Z">368, 40</row>
       <row id="neutralInfo.Size" class="TCoordinateSizeRow" created="20221117T125753Z">40, 13</row>
@@ -28,7 +28,10 @@
       <row id="maleInfo.Location" class="TCoordinatePointRow" created="20221117T125753Z">368, 8</row>
       <row id="maleInfo.Size" class="TCoordinateSizeRow" created="20221117T125753Z">40, 13</row>
       <row id="maleInfo.Text" si="7" excluded="2">dummy</row>
-      <row id="$this.Text" si="8">Gender Sample</row>
+      <row id="$this.Text" si="8">
+        <value>Gender Sample</value>
+        <lang id="fi" st="4" rw="0" time="20231231T071419Z" fuzzy="99.5">Sukupuoliesimerkki</lang>
+      </row>
       <data>
         77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
         ZXNYIFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9y
@@ -239,14 +242,16 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="MessageGender" class="TPatternRow" si="9" scannedcomment="0: Name of a person">
+        <row id="MessageGender" class="TPatternRow" si="9" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle}}">
           <value gender="geMale">{0} will bring his bicycle</value>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
+          <lang id="fi" st="1" or="6" rw="0" time="20231231T135413Z" fuzzy="99.5">{0} tuo polkupyöränsä</lang>
         </row>
-        <row id="OtherMessageGender" class="TPatternRow" si="10" scannedcomment="0: Name of a person">
+        <row id="OtherMessageGender" class="TPatternRow" si="10" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle} other {{0} will bring a bicycle}}">
           <value gender="geNeutral">{0} will bring a bicycle</value>
           <pattern gender="geMale">{0} will bring his bicycle</pattern>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
+          <lang id="fi" st="1" or="6" rw="0" time="20231231T135416Z" fuzzy="99.5">{0} tuo polkupyörän</lang>
         </row>
       </node>
     </node>
@@ -350,6 +355,9 @@
       <assembly>bin\Debug\System.Xml.XPath.dll</assembly>
       <assembly>bin\Debug\System.Xml.XPath.XDocument.dll</assembly>
     </assemblies>
+    <configurations>
+      <configuration name="Default"/>
+    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -364,6 +372,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -371,6 +380,6 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

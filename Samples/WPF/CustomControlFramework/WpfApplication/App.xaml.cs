@@ -1,8 +1,8 @@
-﻿using System.Globalization;
+﻿using System.Windows;
 using System.Threading;
-using System.Windows;
+using System.Globalization;
 
-namespace Menu
+namespace WpfApplication
 {
   /// <summary>
   /// Interaction logic for App.xaml

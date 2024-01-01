@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="79C0B455-9FEB-4278-9436-69B9772330DC" created="20210720T013133Z" lastmodified="20230422T142528Z" version="1.0.991" lockedrowcomplete="0" stringid="5">
+<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20231106T172003Z" version="1.0.1011" stringid="5">
   <lang id="fi"/>
-  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en-US" encoding="windows-1252" enabledconfigurations="Debug|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en-US" lastmodified="20230422T142528Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net30" toolsversion="nt150"/>
+  <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en" lastmodified="20231106T151827Z" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]">
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20231106T171919Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core70" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3Nj
@@ -14,107 +14,143 @@
           dGlvbj4NCg==
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="mainWindow">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
         <row id="Title" si="1">
           <value>Sample</value>
-          <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Näyte</lang>
+          <lang id="fi" st="4" rw="0" time="20231106T151835Z">Esimerkki</lang>
         </row>
         <item name="StackPanel[0]" type="StackPanel">
           <item name="label1" type="Label">
             <row id="Content" si="2">
               <value>Hello</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Moi</lang>
+              <lang id="fi" st="4" rw="0" time="20231106T151837Z">Moi</lang>
             </row>
           </item>
           <item name="customLabel" type="custom:CustomLabel">
             <row id="Content" si="3">
               <value>Custom hello</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Muokattu moi</lang>
+              <lang id="fi" st="4" rw="0" time="20231106T151843Z">Muokattu moi</lang>
             </row>
           </item>
           <item name="userControl" type="user:UserControl1"/>
         </item>
         <data>
-          77u/PFdpbmRvdyANCiAgeDpVaWQ9Im1haW5XaW5kb3ciDQogIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLk1haW5XaW5kb3ciDQog
-          IHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5z
-          Ong9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICB4bWxuczpkPSJodHRwOi8vc2NoZW1h
-          cy5taWNyb3NvZnQuY29tL2V4cHJlc3Npb24vYmxlbmQvMjAwOCINCiAgeG1sbnM6bWM9Imh0dHA6Ly9zY2hlbWFzLm9wZW54bWxm
-          b3JtYXRzLm9yZy9tYXJrdXAtY29tcGF0aWJpbGl0eS8yMDA2Ig0KICB4bWxuczpjdXN0b209ImNsci1uYW1lc3BhY2U6V3BmQ29u
-          dHJvbDthc3NlbWJseT1XcGZDb250cm9sIg0KICB4bWxuczp1c2VyPSJjbHItbmFtZXNwYWNlOldwZlVzZXJDb250cm9sO2Fzc2Vt
-          Ymx5PVdwZlVzZXJDb250cm9sIg0KICBtYzpJZ25vcmFibGU9ImQiDQogIFRpdGxlPSJTYW1wbGUiIEhlaWdodD0iMjAwIiBXaWR0
-          aD0iMzAwIj4NCg0KICA8U3RhY2tQYW5lbD4NCiAgICA8TGFiZWwgeDpVaWQ9ImxhYmVsMSI+SGVsbG88L0xhYmVsPg0KICAgIDxj
-          dXN0b206Q3VzdG9tTGFiZWwgeDpVaWQ9ImN1c3RvbUxhYmVsIiBUZXh0VmFsdWU9IlNvbWUgdGV4dCI+Q3VzdG9tIGhlbGxvPC9j
-          dXN0b206Q3VzdG9tTGFiZWw+DQogICAgPHVzZXI6VXNlckNvbnRyb2wxIHg6VWlkPSJ1c2VyQ29udHJvbCIgLz4NCiAgPC9TdGFj
-          a1BhbmVsPg0KPC9XaW5kb3c+DQo=
+          77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iV3BmQXBwbGljYXRpb24uTWFpbldpbmRvdyINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFz
+          Lm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiINCiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWlj
+          cm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOmQ9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVz
+          c2lvbi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21w
+          YXRpYmlsaXR5LzIwMDYiDQogIHhtbG5zOmN1c3RvbT0iY2xyLW5hbWVzcGFjZTpXcGZDb250cm9sO2Fzc2VtYmx5PVdwZkNvbnRy
+          b2wiDQogIHhtbG5zOnVzZXI9ImNsci1uYW1lc3BhY2U6V3BmVXNlckNvbnRyb2w7YXNzZW1ibHk9V3BmVXNlckNvbnRyb2wiDQog
+          IG1jOklnbm9yYWJsZT0iZCINCiAgVGl0bGU9IlNhbXBsZSIgSGVpZ2h0PSIyMDAiIFdpZHRoPSIzMDAiPg0KDQogIDxTdGFja1Bh
+          bmVsPg0KICAgIDxMYWJlbCB4OlVpZD0ibGFiZWwxIj5IZWxsbzwvTGFiZWw+DQogICAgPGN1c3RvbTpDdXN0b21MYWJlbCB4OlVp
+          ZD0iY3VzdG9tTGFiZWwiIFRleHRWYWx1ZT0iU29tZSB0ZXh0Ij5DdXN0b20gaGVsbG88L2N1c3RvbTpDdXN0b21MYWJlbD4NCiAg
+          ICA8dXNlcjpVc2VyQ29udHJvbDEgeDpVaWQ9InVzZXJDb250cm9sIiAvPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
         </data>
       </node>
-      <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
-      </node>
       <assemblies>
-        <assembly>bin\Debug\WpfControl.dll</assembly>
-        <assembly>bin\Debug\WpfUserControl.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en-US" lastmodified="20230422T142528Z" groupname="WpfControl\WpfControl.csproj" netconfiguration="Debug|AnyCPU">
-      <netproperties version="net30" toolsversion="nt150"/>
-      <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
-      </node>
+    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" lastmodified="20231106T151821Z" groupname="WpfControl\WpfControl.csproj" resources="[]" netconfiguration="Release|AnyCPU">
+      <netproperties version="core70" toolsversion="nt150"/>
       <assemblies>
-        <assembly>bin\Debug\WpfControl.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en-US" lastmodified="20230422T142528Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrResx,nrXaml]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="net30" toolsversion="nt150"/>
-      <node class="TDirectoryFolder" name="Properties">
-        <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
-      </node>
-      <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl" id="userControl">
+    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20231106T172003Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core70" toolsversion="nt150"/>
+      <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl">
         <item name="StackPanel[0]" type="StackPanel">
           <item name="firstName" type="Label">
             <row id="Content" si="4">
               <value>First name:</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Etunimi:</lang>
+              <lang id="fi" st="4" rw="0" time="20231106T151846Z">Etunimi:</lang>
             </row>
           </item>
           <item name="firstNameEdit" type="TextBox"/>
           <item name="lastName" type="Label">
             <row id="Content" si="5">
               <value>Last name:</value>
-              <lang id="fi" st="4" or="4" rw="0" time="20210720T013133Z">Sukunimi:</lang>
+              <lang id="fi" st="4" rw="0" time="20231106T151851Z">Sukunimi:</lang>
             </row>
           </item>
           <item name="lastNameEdit" type="TextBox"/>
         </item>
         <data>
-          77u/PFVzZXJDb250cm9sIA0KICB4OlVpZD0idXNlckNvbnRyb2wiDQogIHg6Q2xhc3M9IldwZlVzZXJDb250cm9sLlVzZXJDb250
-          cm9sMSINCiAgeG1sbnM9Imh0dHA6Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sL3ByZXNlbnRhdGlvbiIN
-          CiAgeG1sbnM6eD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogIHhtbG5zOm1jPSJodHRw
-          Oi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxpdHkvMjAwNiIgDQogIHhtbG5zOmQ9Imh0dHA6
-          Ly9zY2hlbWFzLm1pY3Jvc29mdC5jb20vZXhwcmVzc2lvbi9ibGVuZC8yMDA4IiANCiAgbWM6SWdub3JhYmxlPSJkIiANCiAgZDpE
-          ZXNpZ25IZWlnaHQ9IjEwMCIgZDpEZXNpZ25XaWR0aD0iMzAwIj4NCg0KICA8U3RhY2tQYW5lbD4NCiAgICA8TGFiZWwgeDpVaWQ9
-          ImZpcnN0TmFtZSI+Rmlyc3QgbmFtZTo8L0xhYmVsPg0KICAgIDxUZXh0Qm94IHg6TmFtZT0iZmlyc3ROYW1lRWRpdCI+PC9UZXh0
-          Qm94Pg0KICAgIDxMYWJlbCB4OlVpZD0ibGFzdE5hbWUiPkxhc3QgbmFtZTo8L0xhYmVsPg0KICAgIDxUZXh0Qm94IHg6TmFtZT0i
-          bGFzdE5hbWVFZGl0Ij48L1RleHRCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvVXNlckNvbnRyb2w+DQo=
+          PFVzZXJDb250cm9sIA0KICB4OkNsYXNzPSJXcGZVc2VyQ29udHJvbC5Vc2VyQ29udHJvbDEiDQogIHhtbG5zPSJodHRwOi8vc2No
+          ZW1hcy5taWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogIHhtbG5zOng9Imh0dHA6Ly9zY2hlbWFz
+          Lm1pY3Jvc29mdC5jb20vd2luZngvMjAwNi94YW1sIg0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMu
+          b3JnL21hcmt1cC1jb21wYXRpYmlsaXR5LzIwMDYiIA0KICB4bWxuczpkPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL2V4
+          cHJlc3Npb24vYmxlbmQvMjAwOCIgDQogIG1jOklnbm9yYWJsZT0iZCIgDQogIGQ6RGVzaWduSGVpZ2h0PSIxMDAiIGQ6RGVzaWdu
+          V2lkdGg9IjMwMCI+DQoNCiAgPFN0YWNrUGFuZWw+DQogICAgPExhYmVsIHg6VWlkPSJmaXJzdE5hbWUiPkZpcnN0IG5hbWU6PC9M
+          YWJlbD4NCiAgICA8VGV4dEJveCB4Ok5hbWU9ImZpcnN0TmFtZUVkaXQiPjwvVGV4dEJveD4NCiAgICA8TGFiZWwgeDpVaWQ9Imxh
+          c3ROYW1lIj5MYXN0IG5hbWU6PC9MYWJlbD4NCiAgICA8VGV4dEJveCB4Ok5hbWU9Imxhc3ROYW1lRWRpdCI+PC9UZXh0Qm94Pg0K
+          ICA8L1N0YWNrUGFuZWw+PC9Vc2VyQ29udHJvbD4NCg==
         </data>
       </node>
       <assemblies>
-        <assembly>bin\Debug\WpfUserControl.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
+        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
       </assemblies>
     </node>
-    <configurations>
-      <configuration name="Default" items="[oiLanguage]"/>
-    </configurations>
   </node>
   <excludedoriginals>
+    <item>+</item>
+    <item>-</item>
+    <item>...</item>
+    <item>0</item>
+    <item>1</item>
+    <item>10</item>
+    <item>100</item>
+    <item>16</item>
+    <item>3</item>
+    <item>360</item>
+    <item>45</item>
+    <item>8</item>
     <item>dummy</item>
   </excludedoriginals>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -126,9 +162,9 @@
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

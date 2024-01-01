@@ -1,0 +1,1 @@
+"C:\Program Files\dotnet\dotnet.exe" "C:\Program Files\dotnet\sdk\7.0.402\MsBuild.dll" -p:Configuration=ADN-Release-NetCore -p:Platform=AnyCPU -p:Language=C# -t:Restore;ResolveReferences;MarkupCompilePass1;MarkupCompilePass2 "D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.proj"
