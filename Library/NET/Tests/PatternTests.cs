@@ -65,6 +65,17 @@ namespace Tests
 
     [TestMethod]
     [TestCategory("Plural")]
+    public void StandardIcuCompact2()
+    {
+      const string VALUE = "{plural one{{0} file}other{{0} files}}";
+
+      Pattern(0, VALUE, "{0} files", "en");
+      Pattern(1, VALUE, "{0} file");
+      Pattern(2, VALUE, "{0} files");
+    }
+
+    [TestMethod]
+    [TestCategory("Plural")]
     public void StandardLegacy()
     {
       const string VALUE = "one;{0} file;other;{0} files";
@@ -147,6 +158,50 @@ namespace Tests
     public void MultiIcu()
     {
       const string MULTI = "{name, gender, male {{0} will bring his} female {{0} will bring her}} {cars, plural, one {car} other {{0} cars}}.";
+      Language.Id = "en";
+
+      Same(
+        MultiPattern.FormatMulti(
+          MULTI,
+          new
+          {
+            Gender = Gender.Male,
+            Value = "John"
+          },
+          2),
+        "John will bring his 2 cars.");
+
+      Same(
+        MultiPattern.FormatMulti(
+          MULTI,
+          new { Gender = Gender.Male, Value = "Bill" },
+          1),
+        "Bill will bring his car.");
+
+      Same(
+        MultiPattern.FormatMulti(
+          MULTI,
+          new { Gender = Gender.Female, Value = "Jill" },
+          3),
+        "Jill will bring her 3 cars.");
+
+      Same(
+        MultiPattern.FormatMulti(
+          MULTI,
+          new
+          {
+            Gender = Gender.Female,
+            Value = "Alma"
+          },
+          1),
+        "Alma will bring her car.");
+    }
+
+    [TestMethod]
+    [TestCategory("Plural")]
+    public void MultiIcuCompact()
+    {
+      const string MULTI = "{gender, male {{0} will bring his} female {{0} will bring her}} {cars, plural, one {car} other {{0} cars}}.";
       Language.Id = "en";
 
       Same(
@@ -1108,6 +1163,28 @@ namespace Tests
 
       Same(MultiPattern.Format(GENDER, Gender.Male, "John"), "John will bring his car");
       Same(MultiPattern.Format(GENDER, Gender.Female, "Jill"), "Jill will bring her car");
+      Same(MultiPattern.Format(GENDER, Gender.Neutral, "Somebody"), "Somebody will bring the car");
+    }
+
+    [TestMethod]
+    [TestCategory("Gender")]
+    public void GendersIcuCompact()
+    {
+      const string GENDER = "{gender, neutral {{0} will bring the car} male {{0} will bring his car} female {{0} will bring her car}}";
+
+      Same(MultiPattern.Format(GENDER, Gender.Male, "John"), "John will bring his car");
+      Same(MultiPattern.Format(GENDER, Gender.Female, "Jill"), "Jill will bring her car");
+      Same(MultiPattern.Format(GENDER, Gender.Neutral, "Somebody"), "Somebody will bring the car");
+    }
+
+    [TestMethod]
+    [TestCategory("Gender")]
+    public void GendersIcuNeutral()
+    {
+      const string GENDER = "{gender, neutral {{0} will bring the car}}";
+
+      Same(MultiPattern.Format(GENDER, Gender.Male, "John"), "John will bring the car");
+      Same(MultiPattern.Format(GENDER, Gender.Female, "Jill"), "Jill will bring the car");
       Same(MultiPattern.Format(GENDER, Gender.Neutral, "Somebody"), "Somebody will bring the car");
     }
 

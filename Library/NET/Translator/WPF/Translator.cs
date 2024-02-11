@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
 using System.IO;
@@ -28,13 +27,15 @@ namespace Soluling.WPF
   /// <param name="sender"></param>
   /// <param name="obj"></param>
   /// <returns><b>true</b> if the event handled the object.</returns>
-  public delegate bool TranslateObjectEventHandler(object sender, Object obj);
+  public delegate bool TranslateObjectEventHandler(object sender, object obj);
 
   /// <summary>
   /// Translates a specific form or all currently opened windows to the active language.
   /// </summary>
   public class Translator
   {
+    public static string RUN = "System.Windows.Documents.Run";
+
     private Assembly assembly = null;
     private string assemblyName = "";
     private string assemblyFileName = "";
@@ -90,7 +91,7 @@ namespace Soluling.WPF
       }
     }
 
-    private bool ShouldTranslateObject(Object obj)
+    private bool ShouldTranslateObject(object obj)
     {
       return (TranslateObjectEvent == null) || TranslateObjectEvent(this, obj);
     }
@@ -122,8 +123,10 @@ namespace Soluling.WPF
       IEnumerable childrenEnum = LogicalTreeHelper.GetChildren(element);
       object[] children = childrenEnum.Cast<object>().ToArray();
 
-      foreach (object child in children)
+      for (var i  = 0; i < children.Length; i++)
       {
+        object child = children[i];
+
         if (child is FrameworkElement)
         {
           FrameworkElement childElement = (FrameworkElement)child;
@@ -132,7 +135,7 @@ namespace Soluling.WPF
         else if (child is Run)
         {
           Run run = (Run)child;
-          TranslateRun(run, baml.FindInline(run));
+          TranslateRun(run, baml.FindInline(run, i));
         }
       }
 
@@ -190,6 +193,17 @@ namespace Soluling.WPF
     {
       Language.Culture = language;
       Translate();
+    }
+
+    private BamlControl GetPrevious(BamlControl control)
+    {
+      var parent = control.Parent;
+      var index = parent.controls.IndexOf(control);
+
+      if (index > 0)
+        return parent.controls[index - 1];
+
+      return null;
     }
 
     private BamlControl LoadBaml(string name)
@@ -250,12 +264,35 @@ namespace Soluling.WPF
               {
                 case XamlNodeType.StartObject:
                   if (current == null)
+                  {
                     current = baml;
-                  else
-                    current = current.Add(new BamlControl());
 
-                  if (bamlReader.Type != null)
-                    current.ElementName = bamlReader.Type.ToString();
+                    if (bamlReader.Type != null)
+                      current.ElementName = bamlReader.Type.ToString();
+                  }
+                  else
+                  {
+                    var newCurrent = new BamlControl();
+
+                    if (bamlReader.Type != null)
+                      newCurrent.ElementName = bamlReader.Type.ToString();
+
+                    if (newCurrent.ElementName == RUN)
+                    {
+                      var itemsProperty = current.DeleteProperty("_Items");
+
+                      if( (itemsProperty != null) && !string.IsNullOrWhiteSpace(itemsProperty.ToString()))
+                      {
+                        var run = new BamlControl();
+                        run.ElementName = newCurrent.ElementName;
+                        run.AddProperty("Text", itemsProperty.ToString());
+
+                        current.Add(run);
+                      }
+                    }
+
+                    current = current.Add(newCurrent);
+                  }
 
                   break;
 
@@ -286,7 +323,33 @@ namespace Soluling.WPF
                   else if (memberName == "Content")
                     current.Value = bamlReader.Value;
                   else if (memberName != "")
+                  {
                     current.AddProperty(memberName, bamlReader.Value);
+
+                    if (current.ElementName == RUN)
+                    {
+                      var previous = GetPrevious(current);
+
+                      if ((previous != null) && 
+                        (previous.ElementName == RUN) && 
+                        string.IsNullOrWhiteSpace(bamlReader.Value.ToString()) &&
+                        string.IsNullOrWhiteSpace(previous.Text))
+                      {
+                        current.Parent.controls.Remove(previous);
+                      }
+                    }
+                  }
+                  else if (current.IsRun)
+                  {
+                    // If this and previous are all white space, ignore this
+                    if (string.IsNullOrWhiteSpace(bamlReader.Value.ToString()) && string.IsNullOrWhiteSpace(current.controls.Last().Text))
+                      break;
+
+                    var run = new BamlControl();
+                    run.ElementName = RUN;
+                    run.AddProperty("Text", bamlReader.Value.ToString());
+                    current.Add(run);
+                  }
 
                   break;
               }
@@ -303,15 +366,46 @@ namespace Soluling.WPF
 
   class BamlControl
   {
-    private List<BamlControl> controls = new List<BamlControl>();
-    private Dictionary<string, Object> properties = new Dictionary<string, Object>();
+    internal List<BamlControl> controls = new List<BamlControl>();
+    private Dictionary<string, object> properties = new Dictionary<string, object>();
 
     public BamlControl Parent { get; set; }
     public string ElementName { get; set; }
     public string MemberName { get; set; }
     public string Name { get; set; }
     public string Uid { get; set; }
-    public Object Value { get; set; }
+    public object Value { get; set; }
+
+    public bool IsRun 
+    { 
+      get
+      { 
+        var result = false;
+
+        foreach (var control in controls) 
+        { 
+          if (control.ElementName != Translator.RUN)
+            return false;
+          else
+            result = true;
+        }
+
+        return result;
+      }
+    }
+
+    public string Text
+    {
+      get
+      {
+        var property = FindProperty("Text");
+
+        if (property != null)
+          return property.ToString();
+        else
+          return "";
+      }
+    }
 
     public BamlControl Add(BamlControl value)
     {
@@ -325,7 +419,7 @@ namespace Soluling.WPF
       return controls.Find(control => control.MemberName == name);
     }
 
-    public BamlControl FindInline(Inline element)
+    public BamlControl FindInline(Inline element, int index)
     {
       foreach (var control in controls)
       {
@@ -342,6 +436,17 @@ namespace Soluling.WPF
         {
           if (subControl.Uid == element.Name)
             return subControl;
+        }
+      }
+
+      if ((element.Name == "") && controls.Count > 0)
+      {
+        if (controls[0].MemberName == "Inlines")
+        {
+          var parent = controls[0];
+
+          if (index < parent.controls.Count)
+            return parent.controls[index];
         }
       }
 
@@ -398,12 +503,24 @@ namespace Soluling.WPF
       return result;
     }
 
-    public void AddProperty(string name, Object value)
+    public void AddProperty(string name, object value)
     {
       properties.Add(name, value);
     }
 
-    public Object FindProperty(string name)
+    public object DeleteProperty(string name)
+    {
+      var result = FindProperty(name);
+
+      if (result != null)
+      {
+        properties.Remove(name);
+      }
+
+      return result;
+    }
+
+    public object FindProperty(string name)
     {
       if (properties.ContainsKey(name))
         return properties[name];
