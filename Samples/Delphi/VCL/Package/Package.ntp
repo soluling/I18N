@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="05954186-B4A4-4EB6-9F54-F2428C55739B" created="20151020T123030Z" lastmodified="20230110T224503Z" version="1.0.975" stringid="566">
+<project id="05954186-B4A4-4EB6-9F54-F2428C55739B" created="20151020T123030Z" lastmodified="20240214T131853Z" version="1.0.1018" stringid="578">
   <lang id="fi"/>
   <node class="TDelphiSource" name="Win32\Release\Project1.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Package\Win32\Release\Project1.exe" original="en" lastmodified="20230110T224447Z" hassignature="1">
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -215,7 +215,7 @@
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <node class="TDelphiSource" name="Win32\Release\vcl260.bpl" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Package\Win32\Release\vcl260.bpl" original="en" lastmodified="20230110T224503Z" hassignature="1" stringcontextmethod="scmStringValue">
+  <node class="TDelphiSource" name="Win32\Release\vcl280.bpl" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Package\Win32\Release\vcl280.bpl" original="en" lastmodified="20240214T131853Z" hassignature="1" stringcontextmethod="scmStringValue">
     <node class="TWindowsBinaryFolder" name="&quot;AVI&quot;" resname="AVI" excluded="1"/>
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -227,695 +227,700 @@
     <node class="TDelphiFormFolder" name="RCData" created="20170517T165549Z"/>
     <node class="TWindowsStringFolder" name="String" created="20151020T125832Z">
       <node class="TWindowsStringNode" name="All">
-        <row id="Could not obtain OLE control window handle" importid="65072" si="23" created="20170517T180222Z">Could not obtain OLE control window handle</row>
-        <row id="OLE error %.8x" importid="65073" changed="20230110T224446Z" class="TPatternRow" si="24" created="20170517T180222Z">
-          <value>OLE error {0}</value>
-          <prev>OLE error {0:#00}</prev>
-        </row>
-        <row id="Variant does not reference an OLE object" importid="65074" si="25" created="20170517T180222Z">Variant does not reference an OLE object</row>
-        <row id="Variant does not reference an automation object" importid="65075" si="26" created="20170517T180222Z">Variant does not reference an automation object</row>
-        <row id="Method '%s' not supported by OLE object" importid="65076" changed="20230110T224446Z" class="TPatternRow" si="27" created="20170517T180222Z">
-          <value>Method '{0}' not supported by OLE object</value>
-          <prev>Method '{0:s}' not supported by OLE object</prev>
-        </row>
-        <row id="Link Properties" importid="65077" si="28" created="20170517T180222Z">Link Properties</row>
-        <row id="Cannot link to an invalid source." importid="65078" si="29" created="20170517T180222Z">Cannot link to an invalid source.</row>
-        <row id="Break link operation is not supported." importid="65079" si="30" created="20170517T180222Z">Break link operation is not supported.</row>
-        <row id="Linked %s" importid="65080" changed="20230110T224446Z" class="TPatternRow" si="31" created="20170517T180222Z">
-          <value>Linked {0}</value>
-          <prev>Linked {0:s}</prev>
-        </row>
-        <row id="Operation not allowed on an empty OLE container" importid="65081" si="32" created="20170517T180222Z">Operation not allowed on an empty OLE container</row>
-        <row id="Invalid object verb" importid="65082" si="33" created="20170517T180222Z">Invalid object verb</row>
-        <row id="%s Properties" importid="65083" changed="20230110T224446Z" class="TPatternRow" si="34" created="20170517T180222Z">
+        <row id="Operation not allowed on an empty OLE container" importid="65056" si="32" created="20170517T180222Z">Operation not allowed on an empty OLE container</row>
+        <row id="Invalid object verb" importid="65057" si="33" created="20170517T180222Z">Invalid object verb</row>
+        <row id="%s Properties" importid="65058" changed="20230110T224446Z" class="TPatternRow" si="34" created="20170517T180222Z" original="%s Properties">
           <value>{0} Properties</value>
           <prev>{0:s} Properties</prev>
         </row>
-        <row id="Invalid stream format" importid="65084" si="35" created="20170517T180222Z">Invalid stream format</row>
-        <row id="License information for %s is invalid" importid="65085" changed="20230110T224446Z" class="TPatternRow" si="36" created="20170517T180222Z">
+        <row id="Invalid stream format" importid="65059" si="35" created="20170517T180222Z">Invalid stream format</row>
+        <row id="License information for %s is invalid" importid="65060" changed="20230110T224446Z" class="TPatternRow" si="36" created="20170517T180222Z" original="License information for %s is invalid">
           <value>License information for {0} is invalid</value>
           <prev>License information for {0:s} is invalid</prev>
         </row>
-        <row id="License information for %s not found. You cannot use this control in design mode" importid="65086" changed="20230110T224446Z" class="TPatternRow" si="493" created="20191223T024538Z">
+        <row id="License information for %s not found. You cannot use this control in design mode" importid="65061" changed="20230110T224446Z" class="TPatternRow" si="493" created="20191223T024538Z" original="License information for %s not found. You cannot use this control in design mode">
           <value>License information for {0} not found. You cannot use this control in design mode</value>
           <prev>License information for {0:s} not found. You cannot use this control in design mode</prev>
         </row>
-        <row id="Unable to retrieve a pointer to a running object registered with OLE for %s/%s" importid="65087" changed="20230110T224446Z" class="TPatternRow" si="494" created="20191223T024538Z">
+        <row id="Unable to retrieve a pointer to a running object registered with OLE for %s/%s" importid="65062" changed="20230110T224446Z" class="TPatternRow" si="494" created="20191223T024538Z" original="Unable to retrieve a pointer to a running object registered with OLE for %s/%s">
           <value>Unable to retrieve a pointer to a running object registered with OLE for {0}/{1}</value>
           <prev>Unable to retrieve a pointer to a running object registered with OLE for {0:s}/{1:s}</prev>
         </row>
-        <row id="Hot-Key is invalid" importid="65088" si="39" created="20170517T180222Z">Hot-Key is invalid</row>
-        <row id="Window is invalid or a child window" importid="65089" si="40" created="20170517T180222Z">Window is invalid or a child window</row>
-        <row id="Hot-Key is assigned to another window" importid="65090" si="41" created="20170517T180222Z">Hot-Key is assigned to another window</row>
-        <row id="%s is already associated with %s" importid="65091" changed="20230110T224446Z" class="TPatternRow" si="42" created="20170517T180222Z">
-          <value>{0} is already associated with {1}</value>
-          <prev>{0:s} is already associated with {1:s}</prev>
-        </row>
-        <row id="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d" importid="65092" changed="20230110T224446Z" class="TPatternRow" si="43" created="20170517T180222Z">
-          <value>{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</value>
-          <prev>{0:d} is an invalid PageIndex value.  PageIndex must be between 0 and {1:d}</prev>
-        </row>
-        <row id="This control requires version 4.70 or greater of COMCTL32.DLL" importid="65093" si="44" created="20170517T180222Z">This control requires version 4.70 or greater of COMCTL32.DLL</row>
-        <row id="Date exceeds maximum of %s" importid="65094" changed="20230110T224446Z" class="TPatternRow" si="45" created="20170517T180222Z">
-          <value>Date exceeds maximum of {0}</value>
-          <prev>Date exceeds maximum of {0:s}</prev>
-        </row>
-        <row id="Date is less than minimum of %s" importid="65095" changed="20230110T224446Z" class="TPatternRow" si="46" created="20170517T180222Z">
-          <value>Date is less than minimum of {0}</value>
-          <prev>Date is less than minimum of {0:s}</prev>
-        </row>
-        <row id="You must be in ShowCheckbox mode to set to this date" importid="65096" si="47" created="20170517T180222Z">You must be in ShowCheckbox mode to set to this date</row>
-        <row id="Failed to set calendar date or time" importid="65097" si="48" created="20170517T180222Z">Failed to set calendar date or time</row>
-        <row id="Failed to set maximum selection range" importid="65098" si="49" created="20170517T180222Z">Failed to set maximum selection range</row>
-        <row id="Failed to set calendar min/max range" importid="65099" si="50" created="20170517T180222Z">Failed to set calendar min/max range</row>
-        <row id="Date range can only be used in multiselect mode" importid="65100" si="51" created="20170517T180222Z">Date range can only be used in multiselect mode</row>
-        <row id="Failed to set calendar selected range" importid="65101" si="52" created="20170517T180222Z">Failed to set calendar selected range</row>
-        <row id="'%s' is not a valid property value" importid="65102" changed="20230110T224446Z" class="TPatternRow" si="495" created="20191223T024538Z">
+        <row id="Failed to set calendar date or time" importid="65072" si="48" created="20170517T180222Z">Failed to set calendar date or time</row>
+        <row id="Failed to set maximum selection range" importid="65073" si="49" created="20170517T180222Z">Failed to set maximum selection range</row>
+        <row id="Failed to set calendar min/max range" importid="65074" si="50" created="20170517T180222Z">Failed to set calendar min/max range</row>
+        <row id="Date range can only be used in multiselect mode" importid="65075" si="51" created="20170517T180222Z">Date range can only be used in multiselect mode</row>
+        <row id="Failed to set calendar selected range" importid="65076" si="52" created="20170517T180222Z">Failed to set calendar selected range</row>
+        <row id="'%s' is not a valid property value" importid="65077" changed="20230110T224446Z" class="TPatternRow" si="495" created="20191223T024538Z" original="'%s' is not a valid property value">
           <value>'{0}' is not a valid property value</value>
           <prev>'{0:s}' is not a valid property value</prev>
         </row>
-        <row id="OLE control activation failed" importid="65103" si="496" created="20191223T024538Z">OLE control activation failed</row>
-        <row id="Failed to get object at index %d" importid="65104" changed="20230110T224446Z" class="TPatternRow" si="55" created="20170517T180222Z">
-          <value>Failed to get object at index {0}</value>
-          <prev>Failed to get object at index {0:d}</prev>
+        <row id="OLE control activation failed" importid="65078" si="496" created="20191223T024538Z">OLE control activation failed</row>
+        <row id="Could not obtain OLE control window handle" importid="65079" si="23" created="20170517T180222Z">Could not obtain OLE control window handle</row>
+        <row id="OLE error %.8x" importid="65080" changed="20230110T224446Z" class="TPatternRow" si="24" created="20170517T180222Z" original="OLE error %.8x">
+          <value>OLE error {0}</value>
+          <prev>OLE error {0:#00}</prev>
         </row>
-        <row id="Failed to set tab &quot;%s&quot; at index %d" importid="65105" changed="20230110T224446Z" class="TPatternRow" si="56" created="20170517T180222Z">
-          <value>Failed to set tab "{0}" at index {1}</value>
-          <prev>Failed to set tab "{0:s}" at index {1:d}</prev>
+        <row id="Variant does not reference an OLE object" importid="65081" si="25" created="20170517T180222Z">Variant does not reference an OLE object</row>
+        <row id="Variant does not reference an automation object" importid="65082" si="26" created="20170517T180222Z">Variant does not reference an automation object</row>
+        <row id="Method '%s' not supported by OLE object" importid="65083" changed="20230110T224446Z" class="TPatternRow" si="27" created="20170517T180222Z" original="Method '%s' not supported by OLE object">
+          <value>Method '{0}' not supported by OLE object</value>
+          <prev>Method '{0:s}' not supported by OLE object</prev>
         </row>
-        <row id="Failed to set object at index %d" importid="65106" changed="20230110T224446Z" class="TPatternRow" si="57" created="20170517T180222Z">
-          <value>Failed to set object at index {0}</value>
-          <prev>Failed to set object at index {0:d}</prev>
+        <row id="Link Properties" importid="65084" si="28" created="20170517T180222Z">Link Properties</row>
+        <row id="Cannot link to an invalid source." importid="65085" si="29" created="20170517T180222Z">Cannot link to an invalid source.</row>
+        <row id="Break link operation is not supported." importid="65086" si="30" created="20170517T180222Z">Break link operation is not supported.</row>
+        <row id="Linked %s" importid="65087" changed="20230110T224446Z" class="TPatternRow" si="31" created="20170517T180222Z" original="Linked %s">
+          <value>Linked {0}</value>
+          <prev>Linked {0:s}</prev>
         </row>
-        <row id="MultiLine must be True when TabPosition is tpLeft or tpRight" importid="65107" si="58" created="20170517T180222Z">MultiLine must be True when TabPosition is tpLeft or tpRight</row>
-        <row id="Invalid item level assignment" importid="65108" si="59" created="20170517T180222Z">Invalid item level assignment</row>
-        <row id="Invalid level (%d) for item &quot;%s&quot;" importid="65109" changed="20230110T224446Z" class="TPatternRow" si="60" created="20170517T180222Z">
-          <value>Invalid level ({0}) for item "{1}"</value>
-          <prev>Invalid level ({0:d}) for item "{1:s}"</prev>
-        </row>
-        <row id="Invalid index" importid="65110" si="61" created="20170517T180222Z">Invalid index</row>
-        <row id="Unable to insert an item" importid="65111" si="62" created="20170517T180222Z">Unable to insert an item</row>
-        <row id="Invalid owner" importid="65112" si="63" created="20170517T180222Z">Invalid owner</row>
-        <row id="Unable to create new column" importid="65113" si="64" created="20170517T180222Z">Unable to create new column</row>
-        <row id="Unable to create new item" importid="65114" si="65" created="20170517T180222Z">Unable to create new item</row>
-        <row id="RichEdit line insertion error" importid="65115" si="66" created="20170517T180222Z">RichEdit line insertion error</row>
-        <row id="Failed to Load Stream" importid="65116" si="67" created="20170517T180222Z">Failed to Load Stream</row>
-        <row id="Failed to Save Stream" importid="65117" si="68" created="20170517T180222Z">Failed to Save Stream</row>
-        <row id="StatusBar cannot have more than 64 panels" importid="65118" si="497" created="20191223T024538Z">StatusBar cannot have more than 64 panels</row>
-        <row id="Error assigning Hot-Key to %s. %s" importid="65119" changed="20230110T224446Z" class="TPatternRow" si="498" created="20191223T024538Z">
+        <row id="Unable to create new column" importid="65088" si="64" created="20170517T180222Z">Unable to create new column</row>
+        <row id="Unable to create new item" importid="65089" si="65" created="20170517T180222Z">Unable to create new item</row>
+        <row id="RichEdit line insertion error" importid="65090" si="66" created="20170517T180222Z">RichEdit line insertion error</row>
+        <row id="Failed to Load Stream" importid="65091" si="67" created="20170517T180222Z">Failed to Load Stream</row>
+        <row id="Failed to Save Stream" importid="65092" si="68" created="20170517T180222Z">Failed to Save Stream</row>
+        <row id="StatusBar cannot have more than 64 panels" importid="65093" si="497" created="20191223T024538Z">StatusBar cannot have more than 64 panels</row>
+        <row id="Error assigning Hot-Key to %s. %s" importid="65094" changed="20230110T224446Z" class="TPatternRow" si="498" created="20191223T024538Z" original="Error assigning Hot-Key to %s. %s">
           <value>Error assigning Hot-Key to {0}. {1}</value>
           <prev>Error assigning Hot-Key to {0:s}. {1:s}</prev>
         </row>
-        <row id="Appending an item to the frequent files category of a new jump list" importid="65120" si="71" created="20170517T180222Z">Appending an item to the frequent files category of a new jump list</row>
-        <row id="Adding your tasks to a new jump list" importid="65121" si="72" created="20170517T180222Z">Adding your tasks to a new jump list</row>
-        <row id="Adding a custom category ('%s') and its child items to a new jump list" importid="65122" changed="20230110T224446Z" class="TPatternRow" si="73" created="20170517T180222Z">
-          <value>Adding a custom category ('{0}') and its child items to a new jump list</value>
-          <prev>Adding a custom category ('{0:s}') and its child items to a new jump list</prev>
+        <row id="Hot-Key is invalid" importid="65095" si="39" created="20170517T180222Z">Hot-Key is invalid</row>
+        <row id="Window is invalid or a child window" importid="65096" si="40" created="20170517T180222Z">Window is invalid or a child window</row>
+        <row id="Hot-Key is assigned to another window" importid="65097" si="41" created="20170517T180222Z">Hot-Key is assigned to another window</row>
+        <row id="%s is already associated with %s" importid="65098" changed="20230110T224446Z" class="TPatternRow" si="42" created="20170517T180222Z" original="%s is already associated with %s">
+          <value>{0} is already associated with {1}</value>
+          <prev>{0:s} is already associated with {1:s}</prev>
         </row>
-        <row id="Committing a new jump list" importid="65123" si="74" created="20170517T180222Z">Committing a new jump list</row>
-        <row id="The current operating system does not support jump lists" importid="65124" si="75" created="20170517T180222Z">The current operating system does not support jump lists</row>
-        <row id="The current process already has an application ID: %s" importid="65125" changed="20230110T224446Z" class="TPatternRow" si="76" created="20170517T180222Z">
-          <value>The current process already has an application ID: {0}</value>
-          <prev>The current process already has an application ID: {0:s}</prev>
+        <row id="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d" importid="65099" changed="20230110T224446Z" class="TPatternRow" si="43" created="20170517T180222Z" original="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d">
+          <value>{0} is an invalid PageIndex value.  PageIndex must be between 0 and {1}</value>
+          <prev>{0:d} is an invalid PageIndex value.  PageIndex must be between 0 and {1:d}</prev>
         </row>
-        <row id="Cannot call BeginInvoke on a control with no parent or window handle" importid="65126" si="77" created="20170517T180222Z">Cannot call BeginInvoke on a control with no parent or window handle</row>
-        <row id="On" importid="65127" si="78" created="20170517T180222Z">On</row>
-        <row id="Off" importid="65128" si="79" created="20170517T180222Z">Off</row>
-        <row id="ControlItem.Control cannot be set to owning RelativePanel" importid="65129" si="80" created="20170517T180222Z">ControlItem.Control cannot be set to owning RelativePanel</row>
-        <row id="Control is not a sibling within RelativePanel" importid="65130" si="81" created="20170517T180222Z">Control is not a sibling within RelativePanel</row>
-        <row id="Control cannot be positioned relative to itself" importid="65131" si="82" created="20170517T180222Z">Control cannot be positioned relative to itself</row>
-        <row id="RelativePanel error: Circular dependency detected. Layout could not complete" importid="65132" si="83" created="20170517T180222Z">RelativePanel error: Circular dependency detected. Layout could not complete</row>
-        <row id="Failed to clear tab control" importid="65133" si="84" created="20170517T180222Z">Failed to clear tab control</row>
-        <row id="Failed to delete tab at index %d" importid="65134" changed="20230110T224446Z" class="TPatternRow" si="499" created="20191223T024538Z">
+        <row id="This control requires version 4.70 or greater of COMCTL32.DLL" importid="65100" si="44" created="20170517T180222Z">This control requires version 4.70 or greater of COMCTL32.DLL</row>
+        <row id="Date exceeds maximum of %s" importid="65101" changed="20230110T224446Z" class="TPatternRow" si="45" created="20170517T180222Z" original="Date exceeds maximum of %s">
+          <value>Date exceeds maximum of {0}</value>
+          <prev>Date exceeds maximum of {0:s}</prev>
+        </row>
+        <row id="Date is less than minimum of %s" importid="65102" changed="20230110T224446Z" class="TPatternRow" si="46" created="20170517T180222Z" original="Date is less than minimum of %s">
+          <value>Date is less than minimum of {0}</value>
+          <prev>Date is less than minimum of {0:s}</prev>
+        </row>
+        <row id="You must be in ShowCheckbox mode to set to this date" importid="65103" si="47" created="20170517T180222Z">You must be in ShowCheckbox mode to set to this date</row>
+        <row id="RelativePanel error: Circular dependency detected. Layout could not complete" importid="65104" si="83" created="20170517T180222Z">RelativePanel error: Circular dependency detected. Layout could not complete</row>
+        <row id="CardPanel card index is out of range" importid="65105" si="567" created="20240214T131853Z" st="0">CardPanel card index is out of range</row>
+        <row id="CardPanel.ActiveCard cannot be nil" importid="65106" si="568" created="20240214T131853Z" st="0">CardPanel.ActiveCard cannot be nil</row>
+        <row id="Only TGraphicControl class descendants are supported by ControlList" importid="65107" si="569" created="20240214T131853Z" st="0">Only TGraphicControl class descendants are supported by ControlList</row>
+        <row id="Failed to clear tab control" importid="65108" si="84" created="20170517T180222Z">Failed to clear tab control</row>
+        <row id="Failed to delete tab at index %d" importid="65109" changed="20230110T224446Z" class="TPatternRow" si="499" created="20191223T024538Z" original="Failed to delete tab at index %d">
           <value>Failed to delete tab at index {0}</value>
           <prev>Failed to delete tab at index {0:d}</prev>
         </row>
-        <row id="Failed to retrieve tab at index %d" importid="65135" changed="20230110T224446Z" class="TPatternRow" si="500" created="20191223T024538Z">
+        <row id="Failed to retrieve tab at index %d" importid="65110" changed="20230110T224446Z" class="TPatternRow" si="500" created="20191223T024538Z" original="Failed to retrieve tab at index %d">
           <value>Failed to retrieve tab at index {0}</value>
           <prev>Failed to retrieve tab at index {0:d}</prev>
         </row>
-        <row id="Window Text" importid="65136" si="87" created="20170517T180222Z">Window Text</row>
-        <row id="Invalid bitmap pixel format, should be a 32 bit image" importid="65137" si="88" created="20170517T180222Z">Invalid bitmap pixel format, should be a 32 bit image</row>
-        <row id="Querying the IPropertyStore interface" importid="65138" si="89" created="20170517T180222Z">Querying the IPropertyStore interface</row>
-        <row id="Initializing a variant property" importid="65139" si="90" created="20170517T180222Z">Initializing a variant property</row>
-        <row id="Setting the value of a property store" importid="65140" si="91" created="20170517T180222Z">Setting the value of a property store</row>
-        <row id="Committing a property store" importid="65141" si="92" created="20170517T180222Z">Committing a property store</row>
-        <row id="Setting the arguments of a jump list item" importid="65142" si="93" created="20170517T180222Z">Setting the arguments of a jump list item</row>
-        <row id="Setting the path of a jump list item" importid="65143" si="94" created="20170517T180222Z">Setting the path of a jump list item</row>
-        <row id="Setting the icon location of a jump list item" importid="65144" si="95" created="20170517T180222Z">Setting the icon location of a jump list item</row>
-        <row id="Adding an item to an object array" importid="65145" si="96" created="20170517T180222Z">Adding an item to an object array</row>
-        <row id="Querying the IObjectArray interface" importid="65146" si="97" created="20170517T180222Z">Querying the IObjectArray interface</row>
-        <row id="The FriendlyName property of an item must not be empty" importid="65147" si="98" created="20170517T180222Z">The FriendlyName property of an item must not be empty</row>
-        <row id="JumpListItem exception: Error %d: %s" importid="65148" changed="20230110T224446Z" class="TPatternRow" si="99" created="20170517T180222Z">
+        <row id="Failed to get object at index %d" importid="65111" changed="20230110T224446Z" class="TPatternRow" si="55" created="20170517T180222Z" original="Failed to get object at index %d">
+          <value>Failed to get object at index {0}</value>
+          <prev>Failed to get object at index {0:d}</prev>
+        </row>
+        <row id="Failed to set tab &quot;%s&quot; at index %d" importid="65112" changed="20230110T224446Z" class="TPatternRow" si="56" created="20170517T180222Z" original="Failed to set tab &quot;%s&quot; at index %d">
+          <value>Failed to set tab "{0}" at index {1}</value>
+          <prev>Failed to set tab "{0:s}" at index {1:d}</prev>
+        </row>
+        <row id="Failed to set object at index %d" importid="65113" changed="20230110T224446Z" class="TPatternRow" si="57" created="20170517T180222Z" original="Failed to set object at index %d">
+          <value>Failed to set object at index {0}</value>
+          <prev>Failed to set object at index {0:d}</prev>
+        </row>
+        <row id="MultiLine must be True when TabPosition is tpLeft or tpRight" importid="65114" si="58" created="20170517T180222Z">MultiLine must be True when TabPosition is tpLeft or tpRight</row>
+        <row id="Invalid item level assignment" importid="65115" si="59" created="20170517T180222Z">Invalid item level assignment</row>
+        <row id="Invalid level (%d) for item &quot;%s&quot;" importid="65116" changed="20230110T224446Z" class="TPatternRow" si="60" created="20170517T180222Z" original="Invalid level (%d) for item &quot;%s&quot;">
+          <value>Invalid level ({0}) for item "{1}"</value>
+          <prev>Invalid level ({0:d}) for item "{1:s}"</prev>
+        </row>
+        <row id="Invalid index" importid="65117" si="61" created="20170517T180222Z">Invalid index</row>
+        <row id="Unable to insert an item" importid="65118" si="62" created="20170517T180222Z">Unable to insert an item</row>
+        <row id="Invalid owner" importid="65119" si="63" created="20170517T180222Z">Invalid owner</row>
+        <row id="JumpListItem exception: Error %d: %s" importid="65120" changed="20230110T224446Z" class="TPatternRow" si="99" created="20170517T180222Z" original="JumpListItem exception: Error %d: %s">
           <value>JumpListItem exception: Error {0}: {1}</value>
           <prev>JumpListItem exception: Error {0:d}: {1:s}</prev>
         </row>
-        <row id="JumpList exception: Error %d: %s" importid="65149" changed="20230110T224446Z" class="TPatternRow" si="100" created="20170517T180222Z">
+        <row id="JumpList exception: Error %d: %s" importid="65121" changed="20230110T224446Z" class="TPatternRow" si="100" created="20170517T180222Z" original="JumpList exception: Error %d: %s">
           <value>JumpList exception: Error {0}: {1}</value>
           <prev>JumpList exception: Error {0:d}: {1:s}</prev>
         </row>
-        <row id="Initiating a building session for a new jump list" importid="65150" si="501" created="20191223T024538Z">Initiating a building session for a new jump list</row>
-        <row id="Appending an item to the recent files category of a new jump list" importid="65151" si="502" created="20191223T024538Z">Appending an item to the recent files category of a new jump list</row>
-        <row id="Hot Light" importid="65152" si="103" created="20170517T180222Z">Hot Light</row>
-        <row id="Inactive Border" importid="65153" si="104" created="20170517T180222Z">Inactive Border</row>
-        <row id="Inactive Caption" importid="65154" si="105" created="20170517T180222Z">Inactive Caption</row>
-        <row id="Inactive Caption Text" importid="65155" si="106" created="20170517T180222Z">Inactive Caption Text</row>
-        <row id="Info Background" importid="65156" si="107" created="20170517T180222Z">Info Background</row>
-        <row id="Info Text" importid="65157" si="108" created="20170517T180222Z">Info Text</row>
-        <row id="Menu Background" importid="65158" si="109" created="20170517T180222Z">Menu Background</row>
-        <row id="Menu Bar" importid="65159" si="110" created="20170517T180222Z">Menu Bar</row>
-        <row id="Menu Highlight" importid="65160" si="111" created="20170517T180222Z">Menu Highlight</row>
-        <row id="Menu Text" importid="65161" si="112" created="20170517T180222Z">Menu Text</row>
-        <row id="None" importid="65162" si="113" created="20170517T180222Z">None</row>
-        <row id="Scroll Bar" importid="65163" si="114" created="20170517T180222Z">Scroll Bar</row>
-        <row id="3D Dark Shadow" importid="65164" si="115" created="20170517T180222Z">3D Dark Shadow</row>
-        <row id="3D Light" importid="65165" si="116" created="20170517T180222Z">3D Light</row>
-        <row id="Window Background" importid="65166" si="503" created="20191223T024538Z">Window Background</row>
-        <row id="Window Frame" importid="65167" si="504" created="20191223T024538Z">Window Frame</row>
-        <row id="Medium Gray" importid="65168" si="119" created="20170517T180222Z">Medium Gray</row>
-        <row id="Active Border" importid="65169" si="120" created="20170517T180222Z">Active Border</row>
-        <row id="Active Caption" importid="65170" si="121" created="20170517T180222Z">Active Caption</row>
-        <row id="Application Workspace" importid="65171" si="122" created="20170517T180222Z">Application Workspace</row>
-        <row id="Background" importid="65172" si="123" created="20170517T180222Z">Background</row>
-        <row id="Button Face" importid="65173" si="124" created="20170517T180222Z">Button Face</row>
-        <row id="Button Highlight" importid="65174" si="125" created="20170517T180222Z">Button Highlight</row>
-        <row id="Button Shadow" importid="65175" si="126" created="20170517T180222Z">Button Shadow</row>
-        <row id="Button Text" importid="65176" si="127" created="20170517T180222Z">Button Text</row>
-        <row id="Caption Text" importid="65177" si="128" created="20170517T180222Z">Caption Text</row>
-        <row id="Default" importid="65178" si="545" created="20230110T224446Z">Default</row>
-        <row id="Gradient Active Caption" importid="65179" si="130" created="20170517T180222Z">Gradient Active Caption</row>
-        <row id="Gradient Inactive Caption" importid="65180" si="131" created="20170517T180222Z">Gradient Inactive Caption</row>
-        <row id="Gray Text" importid="65181" si="132" created="20170517T180222Z">Gray Text</row>
-        <row id="Highlight Background" importid="65182" si="505" created="20191223T024538Z">Highlight Background</row>
-        <row id="Highlight Text" importid="65183" si="506" created="20191223T024538Z">Highlight Text</row>
-        <row id="Olive" importid="65184" si="135" created="20170517T180222Z">Olive</row>
-        <row id="Navy" importid="65185" si="136" created="20170517T180222Z">Navy</row>
-        <row id="Purple" importid="65186" si="137" created="20170517T180222Z">Purple</row>
-        <row id="Teal" importid="65187" si="138" created="20170517T180222Z">Teal</row>
-        <row id="Gray" importid="65188" si="139" created="20170517T180222Z">Gray</row>
-        <row id="Silver" importid="65189" si="140" created="20170517T180222Z">Silver</row>
-        <row id="Red" importid="65190" si="141" created="20170517T180222Z">Red</row>
-        <row id="Lime" importid="65191" si="142" created="20170517T180222Z">Lime</row>
-        <row id="Yellow" importid="65192" si="143" created="20170517T180222Z">Yellow</row>
-        <row id="Blue" importid="65193" si="144" created="20170517T180222Z">Blue</row>
-        <row id="Fuchsia" importid="65194" si="145" created="20170517T180222Z">Fuchsia</row>
-        <row id="Aqua" importid="65195" si="146" created="20170517T180222Z">Aqua</row>
-        <row id="White" importid="65196" si="147" created="20170517T180222Z">White</row>
-        <row id="Money Green" importid="65197" si="148" created="20170517T180222Z">Money Green</row>
-        <row id="Sky Blue" importid="65198" si="507" created="20191223T024538Z">Sky Blue</row>
-        <row id="Cream" importid="65199" si="508" created="20191223T024538Z">Cream</row>
-        <row id="Style '%s' not found" importid="65200" changed="20230110T224446Z" class="TPatternRow" si="151" created="20170517T180222Z">
-          <value>Style '{0}' not found</value>
-          <prev>Style '{0:s}' not found</prev>
+        <row id="Initiating a building session for a new jump list" importid="65122" si="501" created="20191223T024538Z">Initiating a building session for a new jump list</row>
+        <row id="Appending an item to the recent files category of a new jump list" importid="65123" si="502" created="20191223T024538Z">Appending an item to the recent files category of a new jump list</row>
+        <row id="Appending an item to the frequent files category of a new jump list" importid="65124" si="71" created="20170517T180222Z">Appending an item to the frequent files category of a new jump list</row>
+        <row id="Adding your tasks to a new jump list" importid="65125" si="72" created="20170517T180222Z">Adding your tasks to a new jump list</row>
+        <row id="Adding a custom category ('%s') and its child items to a new jump list" importid="65126" changed="20230110T224446Z" class="TPatternRow" si="73" created="20170517T180222Z" original="Adding a custom category ('%s') and its child items to a new jump list">
+          <value>Adding a custom category ('{0}') and its child items to a new jump list</value>
+          <prev>Adding a custom category ('{0:s}') and its child items to a new jump list</prev>
         </row>
-        <row id="Style class '%s' not found" importid="65201" changed="20230110T224446Z" class="TPatternRow" si="152" created="20170517T180222Z">
-          <value>Style class '{0}' not found</value>
-          <prev>Style class '{0:s}' not found</prev>
+        <row id="Committing a new jump list" importid="65127" si="74" created="20170517T180222Z">Committing a new jump list</row>
+        <row id="The current operating system does not support jump lists" importid="65128" si="75" created="20170517T180222Z">The current operating system does not support jump lists</row>
+        <row id="The current process already has an application ID: %s" importid="65129" changed="20230110T224446Z" class="TPatternRow" si="76" created="20170517T180222Z" original="The current process already has an application ID: %s">
+          <value>The current process already has an application ID: {0}</value>
+          <prev>The current process already has an application ID: {0:s}</prev>
         </row>
-        <row id="Invalid style handle" importid="65202" si="153" created="20170517T180222Z">Invalid style handle</row>
-        <row id="Invalid style format" importid="65203" si="154" created="20170517T180222Z">Invalid style format</row>
-        <row id="VCL Style File" importid="65204" si="155" created="20170517T180222Z">VCL Style File</row>
-        <row id="Class '%s' is already registered for '%s'" importid="65205" changed="20230110T224446Z" class="TPatternRow" si="156" created="20170517T180222Z">
-          <value>Class '{0}' is already registered for '{1}'</value>
-          <prev>Class '{0:s}' is already registered for '{1:s}'</prev>
-        </row>
-        <row id="Class '%s' is not registered for '%s'" importid="65206" changed="20230110T224446Z" class="TPatternRow" si="157" created="20170517T180222Z">
-          <value>Class '{0}' is not registered for '{1}'</value>
-          <prev>Class '{0:s}' is not registered for '{1:s}'</prev>
-        </row>
-        <row id="%s parameter cannot be nil" importid="65207" changed="20230110T224446Z" class="TPatternRow" si="158" created="20170517T180222Z">
-          <value>{0} parameter cannot be nil</value>
-          <prev>{0:s} parameter cannot be nil</prev>
-        </row>
-        <row id="A StyleHook class has not been registered for %s" importid="65208" changed="20230110T224446Z" class="TPatternRow" si="159" created="20170517T180222Z">
-          <value>A StyleHook class has not been registered for {0}</value>
-          <prev>A StyleHook class has not been registered for {0:s}</prev>
-        </row>
-        <row id="Feature not supported by this style" importid="65209" si="160" created="20170517T180222Z">Feature not supported by this style</row>
-        <row id="Style '%s' is not registered" importid="65210" changed="20230110T224446Z" class="TPatternRow" si="161" created="20170517T180222Z">
-          <value>Style '{0}' is not registered</value>
-          <prev>Style '{0:s}' is not registered</prev>
-        </row>
-        <row id="Cannot unregister the system style" importid="65211" si="162" created="20170517T180222Z">Cannot unregister the system style</row>
-        <row id="Style not registered" importid="65212" si="163" created="20170517T180222Z">Style not registered</row>
-        <row id="Black" importid="65213" si="164" created="20170517T180222Z">Black</row>
-        <row id="Maroon" importid="65214" si="509" created="20191223T024538Z">Maroon</row>
-        <row id="Green" importid="65215" si="510" created="20191223T024538Z">Green</row>
-        <row id="CategoryPanel must have a CategoryPanelGroup as its parent" importid="65216" si="167" created="20170517T180222Z">CategoryPanel must have a CategoryPanelGroup as its parent</row>
-        <row id="Only CategoryPanels can be inserted into a CategoryPanelGroup" importid="65217" si="168" created="20170517T180222Z">Only CategoryPanels can be inserted into a CategoryPanelGroup</row>
-        <row id="Invalid canvas operation" importid="65218" si="169" created="20170517T180222Z">Invalid canvas operation</row>
-        <row id="%s has no owner" importid="65219" changed="20230110T224446Z" class="TPatternRow" si="170" created="20170517T180222Z">
-          <value>{0} has no owner</value>
-          <prev>{0:s} has no owner</prev>
-        </row>
-        <row id="Source and destination require the same owner" importid="65220" si="171" created="20170517T180222Z">Source and destination require the same owner</row>
-        <row id="%s cannot be owned by a different canvas" importid="65221" changed="20230110T224446Z" class="TPatternRow" si="172" created="20170517T180222Z">
-          <value>{0} cannot be owned by a different canvas</value>
-          <prev>{0:s} cannot be owned by a different canvas</prev>
-        </row>
-        <row id="Not a solid color brush" importid="65222" si="173" created="20170517T180222Z">Not a solid color brush</row>
-        <row id="Invalid brush style" importid="65223" si="174" created="20170517T180222Z">Invalid brush style</row>
-        <row id="Error retrieving locale information" importid="65224" si="175" created="20170517T180222Z">Error retrieving locale information</row>
-        <row id="Failed to change input language" importid="65225" si="176" created="20170517T180222Z">Failed to change input language</row>
-        <row id="You can only tab dock TWinControl based Controls" importid="65226" si="177" created="20170517T180222Z">You can only tab dock TWinControl based Controls</row>
-        <row id="No help keyword specified." importid="65227" si="178" created="20170517T180222Z">No help keyword specified.</row>
-        <row id="Unable to load style '%s'" importid="65228" changed="20230110T224446Z" class="TPatternRow" si="179" created="20170517T180222Z">
+        <row id="Cannot call BeginInvoke on a control with no parent or window handle" importid="65130" si="77" created="20170517T180222Z">Cannot call BeginInvoke on a control with no parent or window handle</row>
+        <row id="On" importid="65131" si="78" created="20170517T180222Z">On</row>
+        <row id="Off" importid="65132" si="79" created="20170517T180222Z">Off</row>
+        <row id="ControlItem.Control cannot be set to owning RelativePanel" importid="65133" si="80" created="20170517T180222Z">ControlItem.Control cannot be set to owning RelativePanel</row>
+        <row id="Control is not a sibling within RelativePanel" importid="65134" si="81" created="20170517T180222Z">Control is not a sibling within RelativePanel</row>
+        <row id="Control cannot be positioned relative to itself" importid="65135" si="82" created="20170517T180222Z">Control cannot be positioned relative to itself</row>
+        <row id="3D Dark Shadow" importid="65136" si="115" created="20170517T180222Z">3D Dark Shadow</row>
+        <row id="3D Light" importid="65137" si="116" created="20170517T180222Z">3D Light</row>
+        <row id="Window Background" importid="65138" si="503" created="20191223T024538Z">Window Background</row>
+        <row id="Window Frame" importid="65139" si="504" created="20191223T024538Z">Window Frame</row>
+        <row id="Window Text" importid="65140" si="87" created="20170517T180222Z">Window Text</row>
+        <row id="Invalid bitmap pixel format, should be a 32 bit image" importid="65141" si="88" created="20170517T180222Z">Invalid bitmap pixel format, should be a 32 bit image</row>
+        <row id="Querying the IPropertyStore interface" importid="65142" si="89" created="20170517T180222Z">Querying the IPropertyStore interface</row>
+        <row id="Initializing a variant property" importid="65143" si="90" created="20170517T180222Z">Initializing a variant property</row>
+        <row id="Setting the value of a property store" importid="65144" si="91" created="20170517T180222Z">Setting the value of a property store</row>
+        <row id="Committing a property store" importid="65145" si="92" created="20170517T180222Z">Committing a property store</row>
+        <row id="Setting the arguments of a jump list item" importid="65146" si="93" created="20170517T180222Z">Setting the arguments of a jump list item</row>
+        <row id="Setting the path of a jump list item" importid="65147" si="94" created="20170517T180222Z">Setting the path of a jump list item</row>
+        <row id="Setting the icon location of a jump list item" importid="65148" si="95" created="20170517T180222Z">Setting the icon location of a jump list item</row>
+        <row id="Adding an item to an object array" importid="65149" si="96" created="20170517T180222Z">Adding an item to an object array</row>
+        <row id="Querying the IObjectArray interface" importid="65150" si="97" created="20170517T180222Z">Querying the IObjectArray interface</row>
+        <row id="The FriendlyName property of an item must not be empty" importid="65151" si="98" created="20170517T180222Z">The FriendlyName property of an item must not be empty</row>
+        <row id="Gradient Inactive Caption" importid="65152" si="131" created="20170517T180222Z">Gradient Inactive Caption</row>
+        <row id="Gray Text" importid="65153" si="132" created="20170517T180222Z">Gray Text</row>
+        <row id="Highlight Background" importid="65154" si="505" created="20191223T024538Z">Highlight Background</row>
+        <row id="Highlight Text" importid="65155" si="506" created="20191223T024538Z">Highlight Text</row>
+        <row id="Hot Light" importid="65156" si="103" created="20170517T180222Z">Hot Light</row>
+        <row id="Inactive Border" importid="65157" si="104" created="20170517T180222Z">Inactive Border</row>
+        <row id="Inactive Caption" importid="65158" si="105" created="20170517T180222Z">Inactive Caption</row>
+        <row id="Inactive Caption Text" importid="65159" si="106" created="20170517T180222Z">Inactive Caption Text</row>
+        <row id="Info Background" importid="65160" si="107" created="20170517T180222Z">Info Background</row>
+        <row id="Info Text" importid="65161" si="108" created="20170517T180222Z">Info Text</row>
+        <row id="Menu Background" importid="65162" si="109" created="20170517T180222Z">Menu Background</row>
+        <row id="Menu Bar" importid="65163" si="110" created="20170517T180222Z">Menu Bar</row>
+        <row id="Menu Highlight" importid="65164" si="111" created="20170517T180222Z">Menu Highlight</row>
+        <row id="Menu Text" importid="65165" si="112" created="20170517T180222Z">Menu Text</row>
+        <row id="None" importid="65166" si="113" created="20170517T180222Z">None</row>
+        <row id="Scroll Bar" importid="65167" si="114" created="20170517T180222Z">Scroll Bar</row>
+        <row id="White" importid="65168" si="147" created="20170517T180222Z">White</row>
+        <row id="Money Green" importid="65169" si="148" created="20170517T180222Z">Money Green</row>
+        <row id="Sky Blue" importid="65170" si="507" created="20191223T024538Z">Sky Blue</row>
+        <row id="Cream" importid="65171" si="508" created="20191223T024538Z">Cream</row>
+        <row id="Medium Gray" importid="65172" si="119" created="20170517T180222Z">Medium Gray</row>
+        <row id="Active Border" importid="65173" si="120" created="20170517T180222Z">Active Border</row>
+        <row id="Active Caption" importid="65174" si="121" created="20170517T180222Z">Active Caption</row>
+        <row id="Application Workspace" importid="65175" si="122" created="20170517T180222Z">Application Workspace</row>
+        <row id="Background" importid="65176" si="123" created="20170517T180222Z">Background</row>
+        <row id="Button Face" importid="65177" si="124" created="20170517T180222Z">Button Face</row>
+        <row id="Button Highlight" importid="65178" si="125" created="20170517T180222Z">Button Highlight</row>
+        <row id="Button Shadow" importid="65179" si="126" created="20170517T180222Z">Button Shadow</row>
+        <row id="Button Text" importid="65180" si="127" created="20170517T180222Z">Button Text</row>
+        <row id="Caption Text" importid="65181" si="128" created="20170517T180222Z">Caption Text</row>
+        <row id="Default" importid="65182" si="545" created="20230110T224446Z">Default</row>
+        <row id="Gradient Active Caption" importid="65183" si="130" created="20170517T180222Z">Gradient Active Caption</row>
+        <row id="Style not registered" importid="65184" si="163" created="20170517T180222Z">Style not registered</row>
+        <row id="Black" importid="65185" si="164" created="20170517T180222Z">Black</row>
+        <row id="Maroon" importid="65186" si="509" created="20191223T024538Z">Maroon</row>
+        <row id="Green" importid="65187" si="510" created="20191223T024538Z">Green</row>
+        <row id="Olive" importid="65188" si="135" created="20170517T180222Z">Olive</row>
+        <row id="Navy" importid="65189" si="136" created="20170517T180222Z">Navy</row>
+        <row id="Purple" importid="65190" si="137" created="20170517T180222Z">Purple</row>
+        <row id="Teal" importid="65191" si="138" created="20170517T180222Z">Teal</row>
+        <row id="Gray" importid="65192" si="139" created="20170517T180222Z">Gray</row>
+        <row id="Silver" importid="65193" si="140" created="20170517T180222Z">Silver</row>
+        <row id="Red" importid="65194" si="141" created="20170517T180222Z">Red</row>
+        <row id="Lime" importid="65195" si="142" created="20170517T180222Z">Lime</row>
+        <row id="Yellow" importid="65196" si="143" created="20170517T180222Z">Yellow</row>
+        <row id="Blue" importid="65197" si="144" created="20170517T180222Z">Blue</row>
+        <row id="Fuchsia" importid="65198" si="145" created="20170517T180222Z">Fuchsia</row>
+        <row id="Aqua" importid="65199" si="146" created="20170517T180222Z">Aqua</row>
+        <row id="Unable to load style '%s'" importid="65200" changed="20230110T224446Z" class="TPatternRow" si="179" created="20170517T180222Z" original="Unable to load style '%s'">
           <value>Unable to load style '{0}'</value>
           <prev>Unable to load style '{0:s}'</prev>
         </row>
-        <row id="Unable to load styles: %s" importid="65229" changed="20230110T224446Z" class="TPatternRow" si="180" created="20170517T180222Z">
+        <row id="Unable to load styles: %s" importid="65201" changed="20230110T224446Z" class="TPatternRow" si="180" created="20170517T180222Z" original="Unable to load styles: %s">
           <value>Unable to load styles: {0}</value>
           <prev>Unable to load styles: {0:s}</prev>
         </row>
-        <row id="Style '%s' already registered" importid="65230" changed="20230110T224446Z" class="TPatternRow" si="511" created="20191223T024538Z">
+        <row id="Style '%s' already registered" importid="65202" changed="20230110T224446Z" class="TPatternRow" si="511" created="20191223T024538Z" original="Style '%s' already registered">
           <value>Style '{0}' already registered</value>
           <prev>Style '{0:s}' already registered</prev>
         </row>
-        <row id="Style class '%s' already registered" importid="65231" changed="20230110T224446Z" class="TPatternRow" si="512" created="20191223T024538Z">
+        <row id="Style class '%s' already registered" importid="65203" changed="20230110T224446Z" class="TPatternRow" si="512" created="20191223T024538Z" original="Style class '%s' already registered">
           <value>Style class '{0}' already registered</value>
           <prev>Style class '{0:s}' already registered</prev>
         </row>
-        <row id="Member" importid="65232" si="183" created="20170517T180222Z">Member</row>
-        <row id="Size Type" importid="65233" si="184" created="20170517T180222Z">Size Type</row>
-        <row id="Value" importid="65234" si="546" created="20230110T224446Z">Value</row>
-        <row id="Auto" importid="65235" si="186" created="20170517T180222Z">Auto</row>
-        <row id="Percent" importid="65236" si="187" created="20170517T180222Z">Percent</row>
-        <row id="Absolute" importid="65237" si="188" created="20170517T180222Z">Absolute</row>
-        <row id="Column%d" importid="65238" changed="20230110T224446Z" class="TPatternRow" si="189" created="20170517T180222Z">
-          <value>Column{0}</value>
-          <prev>Column{0:d}</prev>
+        <row id="Style '%s' not found" importid="65204" changed="20230110T224446Z" class="TPatternRow" si="151" created="20170517T180222Z" original="Style '%s' not found">
+          <value>Style '{0}' not found</value>
+          <prev>Style '{0:s}' not found</prev>
         </row>
-        <row id="Row%d" importid="65239" changed="20230110T224446Z" class="TPatternRow" si="190" created="20170517T180222Z">
-          <value>Row{0}</value>
-          <prev>Row{0:d}</prev>
+        <row id="Style class '%s' not found" importid="65205" changed="20230110T224446Z" class="TPatternRow" si="152" created="20170517T180222Z" original="Style class '%s' not found">
+          <value>Style class '{0}' not found</value>
+          <prev>Style class '{0:s}' not found</prev>
         </row>
-        <row id="Cannot remove shell notification icon" importid="65240" si="191" created="20170517T180222Z">Cannot remove shell notification icon</row>
-        <row id="Cannot create shell notification icon" importid="65241" si="192" created="20170517T180222Z">Cannot create shell notification icon</row>
-        <row id="PageControl must first be assigned" importid="65242" si="193" created="20170517T180222Z">PageControl must first be assigned</row>
-        <row id="%s requires Windows Vista or later" importid="65243" changed="20230110T224446Z" class="TPatternRow" si="194" created="20170517T180222Z">
-          <value>{0} requires Windows Vista or later</value>
-          <prev>{0:s} requires Windows Vista or later</prev>
+        <row id="Invalid style handle" importid="65206" si="153" created="20170517T180222Z">Invalid style handle</row>
+        <row id="Invalid style format" importid="65207" si="154" created="20170517T180222Z">Invalid style format</row>
+        <row id="VCL Style File" importid="65208" si="155" created="20170517T180222Z">VCL Style File</row>
+        <row id="Class '%s' is already registered for '%s'" importid="65209" changed="20230110T224446Z" class="TPatternRow" si="156" created="20170517T180222Z" original="Class '%s' is already registered for '%s'">
+          <value>Class '{0}' is already registered for '{1}'</value>
+          <prev>Class '{0:s}' is already registered for '{1:s}'</prev>
         </row>
-        <row id="%s requires themes to be enabled" importid="65244" changed="20230110T224446Z" class="TPatternRow" si="195" created="20170517T180222Z">
+        <row id="Class '%s' is not registered for '%s'" importid="65210" changed="20230110T224446Z" class="TPatternRow" si="157" created="20170517T180222Z" original="Class '%s' is not registered for '%s'">
+          <value>Class '{0}' is not registered for '{1}'</value>
+          <prev>Class '{0:s}' is not registered for '{1:s}'</prev>
+        </row>
+        <row id="%s parameter cannot be nil" importid="65211" changed="20230110T224446Z" class="TPatternRow" si="158" created="20170517T180222Z" original="%s parameter cannot be nil">
+          <value>{0} parameter cannot be nil</value>
+          <prev>{0:s} parameter cannot be nil</prev>
+        </row>
+        <row id="A StyleHook class has not been registered for %s" importid="65212" changed="20230110T224446Z" class="TPatternRow" si="159" created="20170517T180222Z" original="A StyleHook class has not been registered for %s">
+          <value>A StyleHook class has not been registered for {0}</value>
+          <prev>A StyleHook class has not been registered for {0:s}</prev>
+        </row>
+        <row id="Feature not supported by this style" importid="65213" si="160" created="20170517T180222Z">Feature not supported by this style</row>
+        <row id="Style '%s' is not registered" importid="65214" changed="20230110T224446Z" class="TPatternRow" si="161" created="20170517T180222Z" original="Style '%s' is not registered">
+          <value>Style '{0}' is not registered</value>
+          <prev>Style '{0:s}' is not registered</prev>
+        </row>
+        <row id="Cannot unregister the system style" importid="65215" si="162" created="20170517T180222Z">Cannot unregister the system style</row>
+        <row id="%s requires themes to be enabled" importid="65216" changed="20230110T224446Z" class="TPatternRow" si="195" created="20170517T180222Z" original="%s requires themes to be enabled">
           <value>{0} requires themes to be enabled</value>
           <prev>{0:s} requires themes to be enabled</prev>
         </row>
-        <row id="Button%d" importid="65245" changed="20230110T224446Z" class="TPatternRow" si="196" created="20170517T180222Z">
+        <row id="Button%d" importid="65217" changed="20230110T224446Z" class="TPatternRow" si="196" created="20170517T180222Z" original="Button%d">
           <value>Button{0}</value>
           <prev>Button{0:d}</prev>
         </row>
-        <row id="RadioButton%d" importid="65246" changed="20230110T224446Z" class="TPatternRow" si="513" created="20191223T024538Z">
+        <row id="RadioButton%d" importid="65218" changed="20230110T224446Z" class="TPatternRow" si="513" created="20191223T024538Z" original="RadioButton%d">
           <value>RadioButton{0}</value>
           <prev>RadioButton{0:d}</prev>
         </row>
-        <row id="Caption cannot be empty" importid="65247" si="514" created="20191223T024538Z">Caption cannot be empty</row>
-        <row id="&quot;%s&quot; is an invalid path" importid="65248" changed="20230110T224446Z" class="TPatternRow" si="199" created="20170517T180222Z">
-          <value>"{0}" is an invalid path</value>
-          <prev>"{0:s}" is an invalid path</prev>
+        <row id="Caption cannot be empty" importid="65219" si="514" created="20191223T024538Z">Caption cannot be empty</row>
+        <row id="CategoryPanel must have a CategoryPanelGroup as its parent" importid="65220" si="167" created="20170517T180222Z">CategoryPanel must have a CategoryPanelGroup as its parent</row>
+        <row id="Only CategoryPanels can be inserted into a CategoryPanelGroup" importid="65221" si="168" created="20170517T180222Z">Only CategoryPanels can be inserted into a CategoryPanelGroup</row>
+        <row id="Invalid canvas operation" importid="65222" si="169" created="20170517T180222Z">Invalid canvas operation</row>
+        <row id="%s has no owner" importid="65223" changed="20230110T224446Z" class="TPatternRow" si="170" created="20170517T180222Z" original="%s has no owner">
+          <value>{0} has no owner</value>
+          <prev>{0:s} has no owner</prev>
         </row>
-        <row id="Invalid path" importid="65249" si="200" created="20170517T180222Z">Invalid path</row>
-        <row id="ANSI" importid="65250" si="201" created="20170517T180222Z">ANSI</row>
-        <row id="ASCII" importid="65251" si="202" created="20170517T180222Z">ASCII</row>
-        <row id="Unicode" importid="65252" si="203" created="20170517T180222Z">Unicode</row>
-        <row id="Big Endian Unicode" importid="65253" si="204" created="20170517T180222Z">Big Endian Unicode</row>
-        <row id="UTF-8" importid="65254" si="205" created="20170517T180222Z">UTF-8</row>
-        <row id="UTF-7" importid="65255" si="206" created="20170517T180222Z">UTF-7</row>
-        <row id="Encoding:" importid="65256" si="207" created="20170517T180222Z">Encoding:</row>
-        <row id="Cannot add columns or rows while expand style is fixed size" importid="65257" si="208" created="20170517T180222Z">Cannot add columns or rows while expand style is fixed size</row>
-        <row id="'%d' is not a valid span" importid="65258" changed="20230110T224446Z" class="TPatternRow" si="209" created="20170517T180222Z">
-          <value>'{0}' is not a valid span</value>
-          <prev>'{0:d}' is not a valid span</prev>
+        <row id="Source and destination require the same owner" importid="65224" si="171" created="20170517T180222Z">Source and destination require the same owner</row>
+        <row id="%s cannot be owned by a different canvas" importid="65225" changed="20230110T224446Z" class="TPatternRow" si="172" created="20170517T180222Z" original="%s cannot be owned by a different canvas">
+          <value>{0} cannot be owned by a different canvas</value>
+          <prev>{0:s} cannot be owned by a different canvas</prev>
         </row>
-        <row id="Row index, %d, out of bounds" importid="65259" changed="20230110T224446Z" class="TPatternRow" si="210" created="20170517T180222Z">
-          <value>Row index, {0}, out of bounds</value>
-          <prev>Row index, {0:d}, out of bounds</prev>
-        </row>
-        <row id="Column index, %d, out of bounds" importid="65260" changed="20230110T224446Z" class="TPatternRow" si="211" created="20170517T180222Z">
+        <row id="Not a solid color brush" importid="65226" si="173" created="20170517T180222Z">Not a solid color brush</row>
+        <row id="Invalid brush style" importid="65227" si="174" created="20170517T180222Z">Invalid brush style</row>
+        <row id="Error retrieving locale information" importid="65228" si="175" created="20170517T180222Z">Error retrieving locale information</row>
+        <row id="Failed to change input language" importid="65229" si="176" created="20170517T180222Z">Failed to change input language</row>
+        <row id="You can only tab dock TWinControl based Controls" importid="65230" si="177" created="20170517T180222Z">You can only tab dock TWinControl based Controls</row>
+        <row id="No help keyword specified." importid="65231" si="178" created="20170517T180222Z">No help keyword specified.</row>
+        <row id="Column index, %d, out of bounds" importid="65232" changed="20230110T224446Z" class="TPatternRow" si="211" created="20170517T180222Z" original="Column index, %d, out of bounds">
           <value>Column index, {0}, out of bounds</value>
           <prev>Column index, {0:d}, out of bounds</prev>
         </row>
-        <row id="ControlItem.Control cannot be set to owning GridPanel" importid="65261" si="212" created="20170517T180222Z">ControlItem.Control cannot be set to owning GridPanel</row>
-        <row id="Cannot delete a column that contains controls" importid="65262" si="515" created="20191223T024538Z">Cannot delete a column that contains controls</row>
-        <row id="Cannot delete a row that contains controls" importid="65263" si="516" created="20191223T024538Z">Cannot delete a row that contains controls</row>
-        <row id="Circular references not allowed" importid="65264" si="215" created="20170517T180222Z">Circular references not allowed</row>
-        <row id="%s does not allow hiding" importid="65265" changed="20230110T224446Z" class="TPatternRow" si="216" created="20170517T180222Z">
-          <value>{0} does not allow hiding</value>
-          <prev>{0:s} does not allow hiding</prev>
+        <row id="ControlItem.Control cannot be set to owning GridPanel" importid="65233" si="212" created="20170517T180222Z">ControlItem.Control cannot be set to owning GridPanel</row>
+        <row id="Cannot delete a column that contains controls" importid="65234" si="515" created="20191223T024538Z">Cannot delete a column that contains controls</row>
+        <row id="Cannot delete a row that contains controls" importid="65235" si="516" created="20191223T024538Z">Cannot delete a row that contains controls</row>
+        <row id="Member" importid="65236" si="183" created="20170517T180222Z">Member</row>
+        <row id="Size Type" importid="65237" si="184" created="20170517T180222Z">Size Type</row>
+        <row id="Value" importid="65238" si="546" created="20230110T224446Z">Value</row>
+        <row id="Auto" importid="65239" si="186" created="20170517T180222Z">Auto</row>
+        <row id="Percent" importid="65240" si="187" created="20170517T180222Z">Percent</row>
+        <row id="Absolute" importid="65241" si="188" created="20170517T180222Z">Absolute</row>
+        <row id="Column%d" importid="65242" changed="20230110T224446Z" class="TPatternRow" si="189" created="20170517T180222Z" original="Column%d">
+          <value>Column{0}</value>
+          <prev>Column{0:d}</prev>
         </row>
-        <row id="Error setting %s.Count" importid="65266" changed="20230110T224446Z" class="TPatternRow" si="217" created="20170517T180222Z">
-          <value>Error setting {0}.Count</value>
-          <prev>Error setting {0:s}.Count</prev>
+        <row id="Row%d" importid="65243" changed="20230110T224446Z" class="TPatternRow" si="190" created="20170517T180222Z" original="Row%d">
+          <value>Row{0}</value>
+          <prev>Row{0:d}</prev>
         </row>
-        <row id="Listbox (%s) style must be virtual in order to set Count" importid="65267" changed="20230110T224446Z" class="TPatternRow" si="218" created="20170517T180222Z">
-          <value>Listbox ({0}) style must be virtual in order to set Count</value>
-          <prev>Listbox ({0:s}) style must be virtual in order to set Count</prev>
+        <row id="Cannot remove shell notification icon" importid="65244" si="191" created="20170517T180222Z">Cannot remove shell notification icon</row>
+        <row id="Cannot create shell notification icon" importid="65245" si="192" created="20170517T180222Z">Cannot create shell notification icon</row>
+        <row id="PageControl must first be assigned" importid="65246" si="193" created="20170517T180222Z">PageControl must first be assigned</row>
+        <row id="%s requires Windows Vista or later" importid="65247" changed="20230110T224446Z" class="TPatternRow" si="194" created="20170517T180222Z" original="%s requires Windows Vista or later">
+          <value>{0} requires Windows Vista or later</value>
+          <prev>{0:s} requires Windows Vista or later</prev>
         </row>
-        <row id="Unable to save settings" importid="65268" si="219" created="20170517T180222Z">Unable to save settings</row>
-        <row id="Would you like to reset to the default Priority Schedule?" importid="65269" si="220" created="20170517T180222Z">Would you like to reset to the default Priority Schedule?</row>
-        <row id="No OnGetItem event handler assigned" importid="65270" si="221" created="20170517T180222Z">No OnGetItem event handler assigned</row>
-        <row id="Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx" importid="65271" si="222" created="20170517T180222Z">Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx</row>
-        <row id="A style named %s has already been registered" importid="65272" changed="20230110T224446Z" class="TPatternRow" si="223" created="20170517T180222Z">
-          <value>A style named {0} has already been registered</value>
-          <prev>A style named {0:s} has already been registered</prev>
-        </row>
-        <row id="A style named %s has not been registered" importid="65273" changed="20230110T224446Z" class="TPatternRow" si="224" created="20170517T180222Z">
-          <value>A style named {0} has not been registered</value>
-          <prev>A style named {0:s} has not been registered</prev>
-        </row>
-        <row id="Standard Style" importid="65274" si="225" created="20170517T180222Z">Standard Style</row>
-        <row id="XP Style" importid="65275" si="226" created="20170517T180222Z">XP Style</row>
-        <row id="No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause" importid="65276" si="227" created="20170517T180222Z">No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause</row>
-        <row id="%s parameter in call to %s cannot be nil" importid="65277" changed="20230110T224446Z" class="TPatternRow" si="228" created="20170517T180222Z">
-          <value>{0} parameter in call to {1} cannot be nil</value>
-          <prev>{0:s} parameter in call to {1:s} cannot be nil</prev>
-        </row>
-        <row id="Invalid Color string" importid="65278" si="517" created="20191223T024538Z">Invalid Color string</row>
-        <row id="%s ActionManager property has not been assigned" importid="65279" changed="20230110T224446Z" class="TPatternRow" si="518" created="20191223T024538Z">
+        <row id="Invalid Color string" importid="65248" si="517" created="20191223T024538Z">Invalid Color string</row>
+        <row id="Bitmap PixelFormat must be pf24bit or p32bit" importid="65249" si="570" created="20240214T131853Z" st="0">Bitmap PixelFormat must be pf24bit or p32bit</row>
+        <row id="%s ActionManager property has not been assigned" importid="65250" changed="20230110T224446Z" class="TPatternRow" si="518" created="20191223T024538Z" original="%s ActionManager property has not been assigned">
           <value>{0} ActionManager property has not been assigned</value>
           <prev>{0:s} ActionManager property has not been assigned</prev>
         </row>
-        <row id="Error downloading URL: %s" importid="65280" changed="20230110T224446Z" class="TPatternRow" si="231" created="20170517T180222Z">
-          <value>Error downloading URL: {0}</value>
-          <prev>Error downloading URL: {0:s}</prev>
+        <row id="&quot;%s&quot; is an invalid path" importid="65251" changed="20230110T224446Z" class="TPatternRow" si="199" created="20170517T180222Z" original="&quot;%s&quot; is an invalid path">
+          <value>"{0}" is an invalid path</value>
+          <prev>"{0:s}" is an invalid path</prev>
         </row>
-        <row id="Unable to load %s" importid="65281" changed="20230110T224446Z" class="TPatternRow" si="232" created="20170517T180222Z">
-          <value>Unable to load {0}</value>
-          <prev>Unable to load {0:s}</prev>
+        <row id="Invalid path" importid="65252" si="200" created="20170517T180222Z">Invalid path</row>
+        <row id="ANSI" importid="65253" si="201" created="20170517T180222Z">ANSI</row>
+        <row id="ASCII" importid="65254" si="202" created="20170517T180222Z">ASCII</row>
+        <row id="Unicode" importid="65255" si="203" created="20170517T180222Z">Unicode</row>
+        <row id="Big Endian Unicode" importid="65256" si="204" created="20170517T180222Z">Big Endian Unicode</row>
+        <row id="UTF-8" importid="65257" si="205" created="20170517T180222Z">UTF-8</row>
+        <row id="UTF-7" importid="65258" si="206" created="20170517T180222Z">UTF-7</row>
+        <row id="Encoding:" importid="65259" si="207" created="20170517T180222Z">Encoding:</row>
+        <row id="Cannot add columns or rows while expand style is fixed size" importid="65260" si="208" created="20170517T180222Z">Cannot add columns or rows while expand style is fixed size</row>
+        <row id="Cannot add a control to GridPanel with empty rows and columns" importid="65261" si="571" created="20240214T131853Z" st="0">Cannot add a control to GridPanel with empty rows and columns</row>
+        <row id="'%d' is not a valid span" importid="65262" changed="20230110T224446Z" class="TPatternRow" si="209" created="20170517T180222Z" original="'%d' is not a valid span">
+          <value>'{0}' is not a valid span</value>
+          <prev>'{0:d}' is not a valid span</prev>
         </row>
-        <row id="(All Actions)" importid="65282" si="233" created="20170517T180222Z">(All Actions)</row>
-        <row id="(No Category)" importid="65283" si="234" created="20170517T180222Z">(No Category)</row>
-        <row id="Expand" importid="65284" si="235" created="20170517T180222Z">Expand</row>
-        <row id="Error setting path: &quot;%s&quot;" importid="65285" changed="20230110T224446Z" class="TPatternRow" si="236" created="20170517T180222Z">
-          <value>Error setting path: "{0}"</value>
-          <prev>Error setting path: "{0:s}"</prev>
+        <row id="Row index, %d, out of bounds" importid="65263" changed="20230110T224446Z" class="TPatternRow" si="210" created="20170517T180222Z" original="Row index, %d, out of bounds">
+          <value>Row index, {0}, out of bounds</value>
+          <prev>Row index, {0:d}, out of bounds</prev>
         </row>
-        <row id="Attempting to put items into a virtual style listbox" importid="65286" si="237" created="20170517T180222Z">Attempting to put items into a virtual style listbox</row>
-        <row id="Error loading previously saved settings file: %sWould you like to delete it?" importid="65287" changed="20230110T224446Z" class="TPatternRow" si="238" created="20170517T180222Z">
-          <value>Error loading previously saved settings file: {0}Would you like to delete it?</value>
-          <prev>Error loading previously saved settings file: {0:s}Would you like to delete it?</prev>
+        <row id="&amp;Customize..." importid="65264" si="519" created="20191223T024538Z">&amp;Customize...</row>
+        <row id="Separator" importid="65265" si="520" created="20191223T024538Z">Separator</row>
+        <row id="Circular references not allowed" importid="65266" si="215" created="20170517T180222Z">Circular references not allowed</row>
+        <row id="%s does not allow hiding" importid="65267" changed="20230110T224446Z" class="TPatternRow" si="216" created="20170517T180222Z" original="%s does not allow hiding">
+          <value>{0} does not allow hiding</value>
+          <prev>{0:s} does not allow hiding</prev>
         </row>
-        <row id="Reset all usage data?" importid="65288" si="239" created="20170517T180222Z">Reset all usage data?</row>
-        <row id="Run" importid="65289" si="240" created="20170517T180222Z">Run</row>
-        <row id="(No Name)" importid="65290" si="241" created="20170517T180222Z">(No Name)</row>
-        <row id="ActionManager must first be assigned" importid="65291" si="242" created="20170517T180222Z">ActionManager must first be assigned</row>
-        <row id="&amp;Add or Remove Buttons" importid="65292" si="243" created="20170517T180222Z">&amp;Add or Remove Buttons</row>
-        <row id="Reset Toolbar" importid="65293" si="244" created="20170517T180222Z">Reset Toolbar</row>
-        <row id="&amp;Customize..." importid="65294" si="519" created="20191223T024538Z">&amp;Customize...</row>
-        <row id="Separator" importid="65295" si="520" created="20191223T024538Z">Separator</row>
-        <row id="&amp;Username" importid="65296" si="247" created="20170517T180222Z">&amp;Username</row>
-        <row id="&amp;Password" importid="65297" si="248" created="20170517T180222Z">&amp;Password</row>
-        <row id="&amp;Domain" importid="65298" si="249" created="20170517T180222Z">&amp;Domain</row>
-        <row id="Login" importid="65299" si="250" created="20170517T180222Z">Login</row>
-        <row id="Key" importid="65300" si="251" created="20170517T180222Z">Key</row>
-        <row id="Value" importid="65301" si="547" created="20230110T224446Z">Value</row>
-        <row id="A key with the name of &quot;%s&quot; already exists" importid="65302" changed="20230110T224446Z" class="TPatternRow" si="253" created="20170517T180222Z">
-          <value>A key with the name of "{0}" already exists</value>
-          <prev>A key with the name of "{0:s}" already exists</prev>
+        <row id="Error setting %s.Count" importid="65268" changed="20230110T224446Z" class="TPatternRow" si="217" created="20170517T180222Z" original="Error setting %s.Count">
+          <value>Error setting {0}.Count</value>
+          <prev>Error setting {0:s}.Count</prev>
         </row>
-        <row id="Key &quot;%s&quot; not found" importid="65303" changed="20230110T224446Z" class="TPatternRow" si="254" created="20170517T180222Z">
-          <value>Key "{0}" not found</value>
-          <prev>Key "{0:s}" not found</prev>
+        <row id="Listbox (%s) style must be virtual in order to set Count" importid="65269" changed="20230110T224446Z" class="TPatternRow" si="218" created="20170517T180222Z" original="Listbox (%s) style must be virtual in order to set Count">
+          <value>Listbox ({0}) style must be virtual in order to set Count</value>
+          <prev>Listbox ({0:s}) style must be virtual in order to set Count</prev>
         </row>
-        <row id="goColMoving is not a supported option" importid="65304" si="255" created="20170517T180222Z">goColMoving is not a supported option</row>
-        <row id="Key may not contain equals sign (&quot;=&quot;)" importid="65305" si="256" created="20170517T180222Z">Key may not contain equals sign ("=")</row>
-        <row id="Error sending mail" importid="65306" si="257" created="20170517T180222Z">Error sending mail</row>
-        <row id="Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar" importid="65307" si="258" created="20170517T180222Z">Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar</row>
-        <row id="Item %s has subitems, delete anyway?" importid="65308" changed="20230110T224446Z" class="TPatternRow" si="259" created="20170517T180222Z">
-          <value>Item {0} has subitems, delete anyway?</value>
-          <prev>Item {0:s} has subitems, delete anyway?</prev>
+        <row id="Unable to save settings" importid="65270" si="219" created="20170517T180222Z">Unable to save settings</row>
+        <row id="Would you like to reset to the default Priority Schedule?" importid="65271" si="220" created="20170517T180222Z">Would you like to reset to the default Priority Schedule?</row>
+        <row id="No OnGetItem event handler assigned" importid="65272" si="221" created="20170517T180222Z">No OnGetItem event handler assigned</row>
+        <row id="Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx" importid="65273" si="222" created="20170517T180222Z">Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx</row>
+        <row id="A style named %s has already been registered" importid="65274" changed="20230110T224446Z" class="TPatternRow" si="223" created="20170517T180222Z" original="A style named %s has already been registered">
+          <value>A style named {0} has already been registered</value>
+          <prev>A style named {0:s} has already been registered</prev>
         </row>
-        <row id="You are not allowed to delete this item" importid="65309" si="260" created="20170517T180222Z">You are not allowed to delete this item</row>
-        <row id="Item %s is not allowed to be moved" importid="65310" changed="20230110T224446Z" class="TPatternRow" si="521" created="20191223T024538Z">
+        <row id="A style named %s has not been registered" importid="65275" changed="20230110T224446Z" class="TPatternRow" si="224" created="20170517T180222Z" original="A style named %s has not been registered">
+          <value>A style named {0} has not been registered</value>
+          <prev>A style named {0:s} has not been registered</prev>
+        </row>
+        <row id="Standard Style" importid="65276" si="225" created="20170517T180222Z">Standard Style</row>
+        <row id="XP Style" importid="65277" si="226" created="20170517T180222Z">XP Style</row>
+        <row id="No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause" importid="65278" si="572" created="20240214T131853Z" st="0">No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause</row>
+        <row id="%s parameter in call to %s cannot be nil" importid="65279" changed="20230110T224446Z" class="TPatternRow" si="228" created="20170517T180222Z" original="%s parameter in call to %s cannot be nil">
+          <value>{0} parameter in call to {1} cannot be nil</value>
+          <prev>{0:s} parameter in call to {1:s} cannot be nil</prev>
+        </row>
+        <row id="Item %s is not allowed to be moved" importid="65280" changed="20230110T224446Z" class="TPatternRow" si="521" created="20191223T024538Z" original="Item %s is not allowed to be moved">
           <value>Item {0} is not allowed to be moved</value>
           <prev>Item {0:s} is not allowed to be moved</prev>
         </row>
-        <row id="More Buttons" importid="65311" si="522" created="20191223T024538Z">More Buttons</row>
-        <row id="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;" importid="65312" changed="20230110T224446Z" class="TPatternRow" si="263" created="20170517T180222Z">
-          <value>Service "{0}" failed to install with error: "{1}"</value>
-          <prev>Service "{0:s}" failed to install with error: "{1:s}"</prev>
+        <row id="More Buttons" importid="65281" si="522" created="20191223T024538Z">More Buttons</row>
+        <row id="Error downloading URL: %s" importid="65282" changed="20230110T224446Z" class="TPatternRow" si="231" created="20170517T180222Z" original="Error downloading URL: %s">
+          <value>Error downloading URL: {0}</value>
+          <prev>Error downloading URL: {0:s}</prev>
         </row>
-        <row id="Service uninstalled successfully" importid="65313" si="264" created="20170517T180222Z">Service uninstalled successfully</row>
-        <row id="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;" importid="65314" changed="20230110T224446Z" class="TPatternRow" si="265" created="20170517T180222Z">
-          <value>Service "{0}" failed to uninstall with error: "{1}"</value>
-          <prev>Service "{0:s}" failed to uninstall with error: "{1:s}"</prev>
+        <row id="Unable to load %s" importid="65283" changed="20230110T224446Z" class="TPatternRow" si="232" created="20170517T180222Z" original="Unable to load %s">
+          <value>Unable to load {0}</value>
+          <prev>Unable to load {0:s}</prev>
         </row>
-        <row id="Docked control must have a name" importid="65315" si="266" created="20170517T180222Z">Docked control must have a name</row>
-        <row id="Error removing control from dock tree" importid="65316" si="267" created="20170517T180222Z">Error removing control from dock tree</row>
-        <row id=" - Dock zone not found" importid="65317" si="268" created="20170517T180222Z"> - Dock zone not found</row>
-        <row id=" - Dock zone has no control" importid="65318" si="269" created="20170517T180222Z"> - Dock zone has no control</row>
-        <row id="Error loading dock zone from the stream. Expecting version %d, but found %d." importid="65319" changed="20230110T224446Z" class="TPatternRow" si="270" created="20170517T180222Z">
-          <value>Error loading dock zone from the stream. Expecting version {0}, but found {1}.</value>
-          <prev>Error loading dock zone from the stream. Expecting version {0:d}, but found {1:d}.</prev>
+        <row id="(All Actions)" importid="65284" si="233" created="20170517T180222Z">(All Actions)</row>
+        <row id="(No Category)" importid="65285" si="234" created="20170517T180222Z">(No Category)</row>
+        <row id="Expand" importid="65286" si="235" created="20170517T180222Z">Expand</row>
+        <row id="Error setting path: &quot;%s&quot;" importid="65287" changed="20230110T224446Z" class="TPatternRow" si="236" created="20170517T180222Z" original="Error setting path: &quot;%s&quot;">
+          <value>Error setting path: "{0}"</value>
+          <prev>Error setting path: "{0:s}"</prev>
         </row>
-        <row id="All Commands" importid="65320" si="271" created="20170517T180222Z">All Commands</row>
-        <row id="List does not allow duplicates ($0%x)" importid="65321" changed="20230110T224446Z" class="TPatternRow" si="272" created="20170517T180222Z">
-          <value>List does not allow duplicates ($0{0})</value>
-          <prev>List does not allow duplicates ($0{0:x})</prev>
+        <row id="Attempting to put items into a virtual style listbox" importid="65288" si="237" created="20170517T180222Z">Attempting to put items into a virtual style listbox</row>
+        <row id="Error loading previously saved settings file: %sWould you like to delete it?" importid="65289" class="TPatternRow" si="573" created="20240214T131853Z" st="0" original="Error loading previously saved settings file: %sWould you like to delete it?">Error loading previously saved settings file: {0}Would you like to delete it?</row>
+        <row id="Reset all usage data?" importid="65290" si="239" created="20170517T180222Z">Reset all usage data?</row>
+        <row id="Run" importid="65291" si="240" created="20170517T180222Z">Run</row>
+        <row id="(No Name)" importid="65292" si="241" created="20170517T180222Z">(No Name)</row>
+        <row id="ActionManager must first be assigned" importid="65293" si="242" created="20170517T180222Z">ActionManager must first be assigned</row>
+        <row id="&amp;Add or Remove Buttons" importid="65294" si="243" created="20170517T180222Z">&amp;Add or Remove Buttons</row>
+        <row id="Reset Toolbar" importid="65295" si="244" created="20170517T180222Z">Reset Toolbar</row>
+        <row id="Length of value array must be &gt;= length of prompt array" importid="65296" si="523" created="20191223T024538Z">Length of value array must be >= length of prompt array</row>
+        <row id="Prompt array must not be empty" importid="65297" si="524" created="20191223T024538Z">Prompt array must not be empty</row>
+        <row id="&amp;Username" importid="65298" si="247" created="20170517T180222Z">&amp;Username</row>
+        <row id="&amp;Password" importid="65299" si="248" created="20170517T180222Z">&amp;Password</row>
+        <row id="&amp;Domain" importid="65300" si="249" created="20170517T180222Z">&amp;Domain</row>
+        <row id="Login" importid="65301" si="250" created="20170517T180222Z">Login</row>
+        <row id="Key" importid="65302" si="251" created="20170517T180222Z">Key</row>
+        <row id="Value" importid="65303" si="547" created="20230110T224446Z">Value</row>
+        <row id="A key with the name of &quot;%s&quot; already exists" importid="65304" changed="20230110T224446Z" class="TPatternRow" si="253" created="20170517T180222Z" original="A key with the name of &quot;%s&quot; already exists">
+          <value>A key with the name of "{0}" already exists</value>
+          <prev>A key with the name of "{0:s}" already exists</prev>
         </row>
-        <row id="Text not found: &quot;%s&quot;" importid="65322" changed="20230110T224446Z" class="TPatternRow" si="273" created="20170517T180222Z">
-          <value>Text not found: "{0}"</value>
-          <prev>Text not found: "{0:s}"</prev>
+        <row id="Key &quot;%s&quot; not found" importid="65305" changed="20230110T224446Z" class="TPatternRow" si="254" created="20170517T180222Z" original="Key &quot;%s&quot; not found">
+          <value>Key "{0}" not found</value>
+          <prev>Key "{0:s}" not found</prev>
         </row>
-        <row id="No default browser is specified" importid="65323" si="274" created="20170517T180222Z">No default browser is specified</row>
-        <row id="Custom..." importid="65324" si="275" created="20170517T180222Z">Custom...</row>
-        <row id="Multiselect mode must be on for this feature" importid="65325" si="276" created="20170517T180222Z">Multiselect mode must be on for this feature</row>
-        <row id="Length of value array must be &gt;= length of prompt array" importid="65326" si="523" created="20191223T024538Z">Length of value array must be >= length of prompt array</row>
-        <row id="Prompt array must not be empty" importid="65327" si="524" created="20191223T024538Z">Prompt array must not be empty</row>
-        <row id="Unknown error code" importid="65328" si="279" created="20170517T180222Z">Unknown error code</row>
-        <row id="Bold Italic" importid="65329" si="280" created="20170517T180222Z">Bold Italic</row>
-        <row id="Bold" importid="65330" si="281" created="20170517T180222Z">Bold</row>
-        <row id="Italic" importid="65331" si="282" created="20170517T180222Z">Italic</row>
-        <row id="Regular" importid="65332" si="283" created="20170517T180222Z">Regular</row>
-        <row id="Properties" importid="65333" si="284" created="20170517T180222Z">Properties</row>
-        <row id="Service failed on %s: %s" importid="65334" changed="20230110T224446Z" class="TPatternRow" si="285" created="20170517T180222Z">
-          <value>Service failed on {0}: {1}</value>
-          <prev>Service failed on {0:s}: {1:s}</prev>
+        <row id="goColMoving is not a supported option" importid="65306" si="255" created="20170517T180222Z">goColMoving is not a supported option</row>
+        <row id="Key may not contain equals sign (&quot;=&quot;)" importid="65307" si="256" created="20170517T180222Z">Key may not contain equals sign ("=")</row>
+        <row id="Error sending mail" importid="65308" si="257" created="20170517T180222Z">Error sending mail</row>
+        <row id="Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar" importid="65309" si="258" created="20170517T180222Z">Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar</row>
+        <row id="Item %s has subitems, delete anyway?" importid="65310" changed="20230110T224446Z" class="TPatternRow" si="259" created="20170517T180222Z" original="Item %s has subitems, delete anyway?">
+          <value>Item {0} has subitems, delete anyway?</value>
+          <prev>Item {0:s} has subitems, delete anyway?</prev>
         </row>
-        <row id="execute" importid="65335" si="286" created="20170517T180222Z">execute</row>
-        <row id="start" importid="65336" si="287" created="20170517T180222Z">start</row>
-        <row id="stop" importid="65337" si="288" created="20170517T180222Z">stop</row>
-        <row id="pause" importid="65338" si="289" created="20170517T180222Z">pause</row>
-        <row id="continue" importid="65339" si="290" created="20170517T180222Z">continue</row>
-        <row id="interrogate" importid="65340" si="291" created="20170517T180222Z">interrogate</row>
-        <row id="shutdown" importid="65341" si="292" created="20170517T180222Z">shutdown</row>
-        <row id="Service failed in custom message(%d): %s" importid="65342" changed="20230110T224446Z" class="TPatternRow" si="525" created="20191223T024538Z">
+        <row id="You are not allowed to delete this item" importid="65311" si="260" created="20170517T180222Z">You are not allowed to delete this item</row>
+        <row id="Service failed in custom message(%d): %s" importid="65312" changed="20230110T224446Z" class="TPatternRow" si="525" created="20191223T024538Z" original="Service failed in custom message(%d): %s">
           <value>Service failed in custom message({0}): {1}</value>
           <prev>Service failed in custom message({0:d}): {1:s}</prev>
         </row>
-        <row id="Service installed successfully" importid="65343" si="526" created="20191223T024538Z">Service installed successfully</row>
-        <row id="Cannot open AVI" importid="65344" si="295" created="20170517T180222Z">Cannot open AVI</row>
-        <row id="No MCI device open" importid="65345" si="296" created="20170517T180222Z">No MCI device open</row>
-        <row id="All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi" importid="65346" si="297" created="20170517T180222Z">All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi</row>
-        <row id="AVIVideo" importid="65348" si="298" created="20170517T180222Z">AVIVideo</row>
-        <row id="CDAudio" importid="65349" si="299" created="20170517T180222Z">CDAudio</row>
-        <row id="DAT" importid="65350" si="300" created="20170517T180222Z">DAT</row>
-        <row id="DigitalVideo" importid="65351" si="301" created="20170517T180222Z">DigitalVideo</row>
-        <row id="MMMovie" importid="65352" si="302" created="20170517T180222Z">MMMovie</row>
-        <row id="Other" importid="65353" si="303" created="20170517T180222Z">Other</row>
-        <row id="Overlay" importid="65354" si="304" created="20170517T180222Z">Overlay</row>
-        <row id="Scanner" importid="65355" si="305" created="20170517T180222Z">Scanner</row>
-        <row id="Sequencer" importid="65356" si="306" created="20170517T180222Z">Sequencer</row>
-        <row id="VCR" importid="65357" si="307" created="20170517T180222Z">VCR</row>
-        <row id="Videodisc" importid="65358" si="527" created="20191223T024538Z">Videodisc</row>
-        <row id="WaveAudio" importid="65359" si="528" created="20191223T024538Z">WaveAudio</row>
-        <row id="Clipboard does not support Icons" importid="65360" si="310" created="20170517T180222Z">Clipboard does not support Icons</row>
-        <row id="Cannot open clipboard: %s" importid="65361" changed="20230110T224446Z" class="TPatternRow" si="311" created="20170517T180222Z">
-          <value>Cannot open clipboard: {0}</value>
-          <prev>Cannot open clipboard: {0:s}</prev>
+        <row id="Service installed successfully" importid="65313" si="526" created="20191223T024538Z">Service installed successfully</row>
+        <row id="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;" importid="65314" changed="20230110T224446Z" class="TPatternRow" si="263" created="20170517T180222Z" original="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;">
+          <value>Service "{0}" failed to install with error: "{1}"</value>
+          <prev>Service "{0:s}" failed to install with error: "{1:s}"</prev>
         </row>
-        <row id="Default" importid="65362" si="548" created="20230110T224446Z">Default</row>
-        <row id="Text exceeds memo capacity" importid="65363" si="313" created="20170517T180222Z">Text exceeds memo capacity</row>
-        <row id="Custom Colors" importid="65364" si="314" created="20170517T180222Z">Custom Colors</row>
-        <row id="Operation not supported on selected printer" importid="65365" si="315" created="20170517T180222Z">Operation not supported on selected printer</row>
-        <row id="There is no default printer currently selected" importid="65366" si="316" created="20170517T180222Z">There is no default printer currently selected</row>
-        <row id="Unable to write to %s" importid="65367" changed="20230110T224446Z" class="TPatternRow" si="317" created="20170517T180222Z">
-          <value>Unable to write to {0}</value>
-          <prev>Unable to write to {0:s}</prev>
+        <row id="Service uninstalled successfully" importid="65315" si="264" created="20170517T180222Z">Service uninstalled successfully</row>
+        <row id="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;" importid="65316" changed="20230110T224446Z" class="TPatternRow" si="265" created="20170517T180222Z" original="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;">
+          <value>Service "{0}" failed to uninstall with error: "{1}"</value>
+          <prev>Service "{0:s}" failed to uninstall with error: "{1:s}"</prev>
         </row>
-        <row id="Bits index out of range" importid="65368" si="318" created="20170517T180222Z">Bits index out of range</row>
-        <row id="(Untitled)" importid="65369" si="319" created="20170517T180222Z">(Untitled)</row>
-        <row id="Invalid data type for '%s'" importid="65370" changed="20230110T224446Z" class="TPatternRow" si="320" created="20170517T180222Z">
-          <value>Invalid data type for '{0}'</value>
-          <prev>Invalid data type for '{0:s}'</prev>
+        <row id="Docked control must have a name" importid="65317" si="266" created="20170517T180222Z">Docked control must have a name</row>
+        <row id="Error removing control from dock tree" importid="65318" si="267" created="20170517T180222Z">Error removing control from dock tree</row>
+        <row id=" - Dock zone not found" importid="65319" si="268" created="20170517T180222Z"> - Dock zone not found</row>
+        <row id=" - Dock zone has no control" importid="65320" si="269" created="20170517T180222Z"> - Dock zone has no control</row>
+        <row id="Error loading dock zone from the stream. Expecting version %d, but found %d." importid="65321" changed="20230110T224446Z" class="TPatternRow" si="270" created="20170517T180222Z" original="Error loading dock zone from the stream. Expecting version %d, but found %d.">
+          <value>Error loading dock zone from the stream. Expecting version {0}, but found {1}.</value>
+          <prev>Error loading dock zone from the stream. Expecting version {0:d}, but found {1:d}.</prev>
         </row>
-        <row id="Unknown RichEdit conversion file extension (.%s)" importid="65371" changed="20230110T224446Z" class="TPatternRow" si="321" created="20170517T180222Z">
-          <value>Unknown RichEdit conversion file extension (.{0})</value>
-          <prev>Unknown RichEdit conversion file extension (.{0:s})</prev>
+        <row id="All Commands" importid="65322" si="271" created="20170517T180222Z">All Commands</row>
+        <row id="List does not allow duplicates ($0%x)" importid="65323" changed="20230110T224446Z" class="TPatternRow" si="272" created="20170517T180222Z" original="List does not allow duplicates ($0%x)">
+          <value>List does not allow duplicates ($0{0})</value>
+          <prev>List does not allow duplicates ($0{0:x})</prev>
         </row>
-        <row id="Menu '%s' is already being used by another form" importid="65372" changed="20230110T224446Z" class="TPatternRow" si="322" created="20170517T180222Z">
-          <value>Menu '{0}' is already being used by another form</value>
-          <prev>Menu '{0:s}' is already being used by another form</prev>
+        <row id="Text not found: &quot;%s&quot;" importid="65324" changed="20230110T224446Z" class="TPatternRow" si="273" created="20170517T180222Z" original="Text not found: &quot;%s&quot;">
+          <value>Text not found: "{0}"</value>
+          <prev>Text not found: "{0:s}"</prev>
         </row>
-        <row id="Picture:" importid="65373" si="323" created="20170517T180222Z">Picture:</row>
-        <row id=" (%dx%d)" importid="65374" changed="20230110T224446Z" class="TPatternRow" si="529" created="20191223T024538Z">
+        <row id="No default browser is specified" importid="65325" si="274" created="20170517T180222Z">No default browser is specified</row>
+        <row id="Custom..." importid="65326" si="275" created="20170517T180222Z">Custom...</row>
+        <row id="Multiselect mode must be on for this feature" importid="65327" si="276" created="20170517T180222Z">Multiselect mode must be on for this feature</row>
+        <row id="Videodisc" importid="65328" si="527" created="20191223T024538Z">Videodisc</row>
+        <row id="WaveAudio" importid="65329" si="528" created="20191223T024538Z">WaveAudio</row>
+        <row id="Unknown error code" importid="65330" si="279" created="20170517T180222Z">Unknown error code</row>
+        <row id="Bold Italic" importid="65331" si="280" created="20170517T180222Z">Bold Italic</row>
+        <row id="Bold" importid="65332" si="281" created="20170517T180222Z">Bold</row>
+        <row id="Italic" importid="65333" si="282" created="20170517T180222Z">Italic</row>
+        <row id="Regular" importid="65334" si="283" created="20170517T180222Z">Regular</row>
+        <row id="Properties" importid="65335" si="284" created="20170517T180222Z">Properties</row>
+        <row id="Service failed on %s: %s" importid="65336" changed="20230110T224446Z" class="TPatternRow" si="285" created="20170517T180222Z" original="Service failed on %s: %s">
+          <value>Service failed on {0}: {1}</value>
+          <prev>Service failed on {0:s}: {1:s}</prev>
+        </row>
+        <row id="execute" importid="65337" si="286" created="20170517T180222Z">execute</row>
+        <row id="start" importid="65338" si="287" created="20170517T180222Z">start</row>
+        <row id="stop" importid="65339" si="288" created="20170517T180222Z">stop</row>
+        <row id="pause" importid="65340" si="289" created="20170517T180222Z">pause</row>
+        <row id="continue" importid="65341" si="290" created="20170517T180222Z">continue</row>
+        <row id="interrogate" importid="65342" si="291" created="20170517T180222Z">interrogate</row>
+        <row id="shutdown" importid="65343" si="292" created="20170517T180222Z">shutdown</row>
+        <row id=" (%dx%d)" importid="65344" changed="20230110T224446Z" class="TPatternRow" si="529" created="20191223T024538Z" original=" (%dx%d)">
           <value> ({0}x{1})</value>
           <prev> ({0:d}x{1:d})</prev>
         </row>
-        <row id="Preview" importid="65375" si="530" created="20191223T024538Z">Preview</row>
-        <row id="Value must be between %d and %d" importid="65376" changed="20230110T224446Z" class="TPatternRow" si="326" created="20170517T180222Z">
+        <row id="Preview" importid="65345" si="530" created="20191223T024538Z">Preview</row>
+        <row id="Cannot open AVI" importid="65346" si="295" created="20170517T180222Z">Cannot open AVI</row>
+        <row id="No MCI device open" importid="65347" si="296" created="20170517T180222Z">No MCI device open</row>
+        <row id="All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi" importid="65348" si="297" created="20170517T180222Z">All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi</row>
+        <row id="AVIVideo" importid="65350" si="298" created="20170517T180222Z">AVIVideo</row>
+        <row id="CDAudio" importid="65351" si="299" created="20170517T180222Z">CDAudio</row>
+        <row id="DAT" importid="65352" si="300" created="20170517T180222Z">DAT</row>
+        <row id="DigitalVideo" importid="65353" si="301" created="20170517T180222Z">DigitalVideo</row>
+        <row id="MMMovie" importid="65354" si="302" created="20170517T180222Z">MMMovie</row>
+        <row id="Other" importid="65355" si="303" created="20170517T180222Z">Other</row>
+        <row id="Overlay" importid="65356" si="304" created="20170517T180222Z">Overlay</row>
+        <row id="Scanner" importid="65357" si="305" created="20170517T180222Z">Scanner</row>
+        <row id="Sequencer" importid="65358" si="306" created="20170517T180222Z">Sequencer</row>
+        <row id="VCR" importid="65359" si="307" created="20170517T180222Z">VCR</row>
+        <row id="ABCDEFGHIJKLMNOP" importid="65360" si="531" created="20191223T024538Z">ABCDEFGHIJKLMNOP</row>
+        <row id="Invalid clipboard format" importid="65361" si="532" created="20191223T024538Z">Invalid clipboard format</row>
+        <row id="Clipboard does not support Icons" importid="65362" si="310" created="20170517T180222Z">Clipboard does not support Icons</row>
+        <row id="Cannot open clipboard: %s" importid="65363" changed="20230110T224446Z" class="TPatternRow" si="311" created="20170517T180222Z" original="Cannot open clipboard: %s">
+          <value>Cannot open clipboard: {0}</value>
+          <prev>Cannot open clipboard: {0:s}</prev>
+        </row>
+        <row id="Default" importid="65364" si="548" created="20230110T224446Z">Default</row>
+        <row id="Text exceeds memo capacity" importid="65365" si="313" created="20170517T180222Z">Text exceeds memo capacity</row>
+        <row id="Custom Colors" importid="65366" si="314" created="20170517T180222Z">Custom Colors</row>
+        <row id="Operation not supported on selected printer" importid="65367" si="315" created="20170517T180222Z">Operation not supported on selected printer</row>
+        <row id="There is no default printer currently selected" importid="65368" si="316" created="20170517T180222Z">There is no default printer currently selected</row>
+        <row id="Unable to write to %s" importid="65369" changed="20230110T224446Z" class="TPatternRow" si="317" created="20170517T180222Z" original="Unable to write to %s">
+          <value>Unable to write to {0}</value>
+          <prev>Unable to write to {0:s}</prev>
+        </row>
+        <row id="Bits index out of range" importid="65370" si="318" created="20170517T180222Z">Bits index out of range</row>
+        <row id="(Untitled)" importid="65371" si="319" created="20170517T180222Z">(Untitled)</row>
+        <row id="Invalid data type for '%s'" importid="65372" changed="20230110T224446Z" class="TPatternRow" si="320" created="20170517T180222Z" original="Invalid data type for '%s'">
+          <value>Invalid data type for '{0}'</value>
+          <prev>Invalid data type for '{0:s}'</prev>
+        </row>
+        <row id="Unknown RichEdit conversion file extension (.%s)" importid="65373" changed="20230110T224446Z" class="TPatternRow" si="321" created="20170517T180222Z" original="Unknown RichEdit conversion file extension (.%s)">
+          <value>Unknown RichEdit conversion file extension (.{0})</value>
+          <prev>Unknown RichEdit conversion file extension (.{0:s})</prev>
+        </row>
+        <row id="Menu '%s' is already being used by another form" importid="65374" changed="20230110T224446Z" class="TPatternRow" si="322" created="20170517T180222Z" original="Menu '%s' is already being used by another form">
+          <value>Menu '{0}' is already being used by another form</value>
+          <prev>Menu '{0:s}' is already being used by another form</prev>
+        </row>
+        <row id="Picture:" importid="65375" si="323" created="20170517T180222Z">Picture:</row>
+        <row id="(Unknown)" importid="65376" si="533" created="20191223T024538Z">(Unknown)</row>
+        <row id="(None)" importid="65377" si="534" created="20191223T024538Z">(None)</row>
+        <row id="Value must be between %d and %d" importid="65378" changed="20230110T224446Z" class="TPatternRow" si="326" created="20170517T180222Z" original="Value must be between %d and %d">
           <value>Value must be between {0} and {1}</value>
           <prev>Value must be between {0:d} and {1:d}</prev>
         </row>
-        <row id="Invalid argument to date encode" importid="65377" si="327" created="20170517T180222Z">Invalid argument to date encode</row>
-        <row id="All files (*.*)|*.*" importid="65378" si="328" created="20170517T180222Z">All files (*.*)|*.*</row>
-        <row id="All" importid="65379" si="329" created="20170517T180222Z">All</row>
-        <row id=": [ - no volume label - ]" importid="65380" si="330" created="20170517T180222Z">: [ - no volume label - ]</row>
-        <row id="Unable to insert a line" importid="65381" si="331" created="20170517T180222Z">Unable to insert a line</row>
-        <row id="The specified directory does not exist. Create it?" importid="65382" si="332" created="20170517T180222Z">The specified directory does not exist. Create it?</row>
-        <row id="Select Directory" importid="65383" si="333" created="20170517T180222Z">Select Directory</row>
-        <row id="Directory &amp;Name:" importid="65384" si="334" created="20170517T180222Z">Directory &amp;Name:</row>
-        <row id="D&amp;rives:" importid="65385" si="335" created="20170517T180222Z">D&amp;rives:</row>
-        <row id="&amp;Directories:" importid="65386" si="336" created="20170517T180222Z">&amp;Directories:</row>
-        <row id="&amp;Files: (*.*)" importid="65387" si="337" created="20170517T180222Z">&amp;Files: (*.*)</row>
-        <row id="Ne&amp;twork..." importid="65388" si="338" created="20170517T180222Z">Ne&amp;twork...</row>
-        <row id="Color" importid="65389" si="339" created="20170517T180222Z">Color</row>
-        <row id="ABCDEFGHIJKLMNOP" importid="65390" si="531" created="20191223T024538Z">ABCDEFGHIJKLMNOP</row>
-        <row id="Invalid clipboard format" importid="65391" si="532" created="20191223T024538Z">Invalid clipboard format</row>
-        <row id="Space" importid="65392" si="342" created="20170517T180222Z">Space</row>
-        <row id="PgUp" importid="65393" si="343" created="20170517T180222Z">PgUp</row>
-        <row id="PgDn" importid="65394" si="344" created="20170517T180222Z">PgDn</row>
-        <row id="End" importid="65395" si="345" created="20170517T180222Z">End</row>
-        <row id="Home" importid="65396" si="346" created="20170517T180222Z">Home</row>
-        <row id="Left" importid="65397" si="347" created="20170517T180222Z">Left</row>
-        <row id="Up" importid="65398" si="348" created="20170517T180222Z">Up</row>
-        <row id="Right" importid="65399" si="349" created="20170517T180222Z">Right</row>
-        <row id="Down" importid="65400" si="350" created="20170517T180222Z">Down</row>
-        <row id="Ins" importid="65401" si="351" created="20170517T180222Z">Ins</row>
-        <row id="Del" importid="65402" si="352" created="20170517T180222Z">Del</row>
-        <row id="Shift+" importid="65403" si="353" created="20170517T180222Z">Shift+</row>
-        <row id="Ctrl+" importid="65404" si="354" created="20170517T180222Z">Ctrl+</row>
-        <row id="Alt+" importid="65405" si="355" created="20170517T180222Z">Alt+</row>
-        <row id="(Unknown)" importid="65406" si="533" created="20191223T024538Z">(Unknown)</row>
-        <row id="(None)" importid="65407" si="534" created="20191223T024538Z">(None)</row>
-        <row id="OK" importid="65408" si="549" created="20230110T224446Z">OK</row>
-        <row id="Cancel" importid="65409" si="550" created="20230110T224446Z">Cancel</row>
-        <row id="&amp;Help" importid="65410" si="551" created="20230110T224446Z">&amp;Help</row>
-        <row id="No help available" importid="65411" si="361" created="20170517T180222Z">No help available</row>
-        <row id="Help" importid="65412" si="362" created="20170517T180222Z">Help</row>
-        <row id="&amp;Abort" importid="65413" si="363" created="20170517T180222Z">&amp;Abort</row>
-        <row id="&amp;Retry" importid="65414" si="552" created="20230110T224446Z">&amp;Retry</row>
-        <row id="&amp;Ignore" importid="65415" si="553" created="20230110T224446Z">&amp;Ignore</row>
-        <row id="&amp;All" importid="65416" si="554" created="20230110T224446Z">&amp;All</row>
-        <row id="N&amp;o to All" importid="65417" si="367" created="20170517T180222Z">N&amp;o to All</row>
-        <row id="Yes to &amp;All" importid="65418" si="368" created="20170517T180222Z">Yes to &amp;All</row>
-        <row id="&amp;Close" importid="65419" si="555" created="20230110T224446Z">&amp;Close</row>
-        <row id="BkSp" importid="65420" si="370" created="20170517T180222Z">BkSp</row>
-        <row id="Tab" importid="65421" si="371" created="20170517T180222Z">Tab</row>
-        <row id="Esc" importid="65422" si="535" created="20191223T024538Z">Esc</row>
-        <row id="Enter" importid="65423" si="536" created="20191223T024538Z">Enter</row>
-        <row id="Parent must be expanded" importid="65424" si="374" created="20170517T180222Z">Parent must be expanded</row>
-        <row id="Invalid value for current item" importid="65425" si="375" created="20170517T180222Z">Invalid value for current item</row>
-        <row id="Invalid input value" importid="65426" si="376" created="20170517T180222Z">Invalid input value</row>
-        <row id="Invalid input value.  Use escape key to abandon changes" importid="65427" si="377" created="20170517T180222Z">Invalid input value.  Use escape key to abandon changes</row>
-        <row id="Invalid outline index" importid="65428" si="378" created="20170517T180222Z">Invalid outline index</row>
-        <row id="Incorrect level assignment" importid="65429" si="379" created="20170517T180222Z">Incorrect level assignment</row>
-        <row id="Invalid selection" importid="65430" si="380" created="20170517T180222Z">Invalid selection</row>
-        <row id="File load error" importid="65431" si="381" created="20170517T180222Z">File load error</row>
-        <row id="Line too long" importid="65432" si="382" created="20170517T180222Z">Line too long</row>
-        <row id="Maximum outline depth exceeded" importid="65433" si="383" created="20170517T180222Z">Maximum outline depth exceeded</row>
-        <row id="Warning" importid="65434" si="384" created="20170517T180222Z">Warning</row>
-        <row id="Error" importid="65435" si="385" created="20170517T180222Z">Error</row>
-        <row id="Information" importid="65436" si="386" created="20170517T180222Z">
+        <row id="Invalid argument to date encode" importid="65379" si="327" created="20170517T180222Z">Invalid argument to date encode</row>
+        <row id="All files (*.*)|*.*" importid="65380" si="328" created="20170517T180222Z">All files (*.*)|*.*</row>
+        <row id="All" importid="65381" si="329" created="20170517T180222Z">All</row>
+        <row id=": [ - no volume label - ]" importid="65382" si="330" created="20170517T180222Z">: [ - no volume label - ]</row>
+        <row id="Unable to insert a line" importid="65383" si="331" created="20170517T180222Z">Unable to insert a line</row>
+        <row id="The specified directory does not exist. Create it?" importid="65384" si="332" created="20170517T180222Z">The specified directory does not exist. Create it?</row>
+        <row id="Select Directory" importid="65385" si="333" created="20170517T180222Z">Select Directory</row>
+        <row id="Directory &amp;Name:" importid="65386" si="334" created="20170517T180222Z">Directory &amp;Name:</row>
+        <row id="D&amp;rives:" importid="65387" si="335" created="20170517T180222Z">D&amp;rives:</row>
+        <row id="&amp;Directories:" importid="65388" si="336" created="20170517T180222Z">&amp;Directories:</row>
+        <row id="&amp;Files: (*.*)" importid="65389" si="337" created="20170517T180222Z">&amp;Files: (*.*)</row>
+        <row id="Ne&amp;twork..." importid="65390" si="338" created="20170517T180222Z">Ne&amp;twork...</row>
+        <row id="Color" importid="65391" si="339" created="20170517T180222Z">Color</row>
+        <row id="Esc" importid="65392" si="535" created="20191223T024538Z">Esc</row>
+        <row id="Enter" importid="65393" si="536" created="20191223T024538Z">Enter</row>
+        <row id="Space" importid="65394" si="342" created="20170517T180222Z">Space</row>
+        <row id="PgUp" importid="65395" si="343" created="20170517T180222Z">PgUp</row>
+        <row id="PgDn" importid="65396" si="344" created="20170517T180222Z">PgDn</row>
+        <row id="End" importid="65397" si="345" created="20170517T180222Z">End</row>
+        <row id="Home" importid="65398" si="346" created="20170517T180222Z">Home</row>
+        <row id="Left" importid="65399" si="347" created="20170517T180222Z">Left</row>
+        <row id="Up" importid="65400" si="348" created="20170517T180222Z">Up</row>
+        <row id="Right" importid="65401" si="349" created="20170517T180222Z">Right</row>
+        <row id="Down" importid="65402" si="350" created="20170517T180222Z">Down</row>
+        <row id="Ins" importid="65403" si="351" created="20170517T180222Z">Ins</row>
+        <row id="Del" importid="65404" si="352" created="20170517T180222Z">Del</row>
+        <row id="Shift+" importid="65405" si="353" created="20170517T180222Z">Shift+</row>
+        <row id="Ctrl+" importid="65406" si="354" created="20170517T180222Z">Ctrl+</row>
+        <row id="Alt+" importid="65407" si="355" created="20170517T180222Z">Alt+</row>
+        <row id="&amp;Yes" importid="65408" si="556" created="20230110T224446Z">&amp;Yes</row>
+        <row id="&amp;No" importid="65409" si="557" created="20230110T224446Z">&amp;No</row>
+        <row id="OK" importid="65410" si="549" created="20230110T224446Z">OK</row>
+        <row id="Cancel" importid="65411" si="550" created="20230110T224446Z">Cancel</row>
+        <row id="&amp;Help" importid="65412" si="551" created="20230110T224446Z">&amp;Help</row>
+        <row id="No help available" importid="65413" si="361" created="20170517T180222Z">No help available</row>
+        <row id="Help" importid="65414" si="362" created="20170517T180222Z">Help</row>
+        <row id="&amp;Abort" importid="65415" si="363" created="20170517T180222Z">&amp;Abort</row>
+        <row id="&amp;Retry" importid="65416" si="552" created="20230110T224446Z">&amp;Retry</row>
+        <row id="&amp;Ignore" importid="65417" si="553" created="20230110T224446Z">&amp;Ignore</row>
+        <row id="&amp;All" importid="65418" si="554" created="20230110T224446Z">&amp;All</row>
+        <row id="N&amp;o to All" importid="65419" si="367" created="20170517T180222Z">N&amp;o to All</row>
+        <row id="Yes to &amp;All" importid="65420" si="368" created="20170517T180222Z">Yes to &amp;All</row>
+        <row id="&amp;Close" importid="65421" si="555" created="20230110T224446Z">&amp;Close</row>
+        <row id="BkSp" importid="65422" si="370" created="20170517T180222Z">BkSp</row>
+        <row id="Tab" importid="65423" si="371" created="20170517T180222Z">Tab</row>
+        <row id="Invalid numeric value" importid="65424" si="540" created="20191223T024538Z">Invalid numeric value</row>
+        <row id="Outline index not found" importid="65425" si="541" created="20191223T024538Z">Outline index not found</row>
+        <row id="Parent must be expanded" importid="65426" si="374" created="20170517T180222Z">Parent must be expanded</row>
+        <row id="Invalid value for current item" importid="65427" si="375" created="20170517T180222Z">Invalid value for current item</row>
+        <row id="Invalid input value" importid="65428" si="376" created="20170517T180222Z">Invalid input value</row>
+        <row id="Invalid input value.  Use escape key to abandon changes" importid="65429" si="377" created="20170517T180222Z">Invalid input value.  Use escape key to abandon changes</row>
+        <row id="Invalid outline index" importid="65430" si="378" created="20170517T180222Z">Invalid outline index</row>
+        <row id="Incorrect level assignment" importid="65431" si="379" created="20170517T180222Z">Incorrect level assignment</row>
+        <row id="Invalid selection" importid="65432" si="380" created="20170517T180222Z">Invalid selection</row>
+        <row id="File load error" importid="65433" si="381" created="20170517T180222Z">File load error</row>
+        <row id="Line too long" importid="65434" si="382" created="20170517T180222Z">Line too long</row>
+        <row id="Maximum outline depth exceeded" importid="65435" si="383" created="20170517T180222Z">Maximum outline depth exceeded</row>
+        <row id="Warning" importid="65436" si="384" created="20170517T180222Z">Warning</row>
+        <row id="Error" importid="65437" si="385" created="20170517T180222Z">Error</row>
+        <row id="Information" importid="65438" si="386" created="20170517T180222Z">
           <value>Information</value>
           <lang id="fi" time="20170517T180300Z">Tietoa</lang>
         </row>
-        <row id="Confirm" importid="65437" si="387" created="20170517T180222Z">Confirm</row>
-        <row id="&amp;Yes" importid="65438" si="556" created="20230110T224446Z">&amp;Yes</row>
-        <row id="&amp;No" importid="65439" si="557" created="20230110T224446Z">&amp;No</row>
-        <row id="BG" importid="65440" si="539" created="20191223T024538Z">BG</row>
-        <row id="Cannot load older version of TShape" importid="65441" si="388" created="20170517T180222Z">Cannot load older version of TShape</row>
-        <row id="Metafiles" importid="65442" si="389" created="20170517T180222Z">Metafiles</row>
-        <row id="Enhanced Metafiles" importid="65443" si="390" created="20170517T180222Z">Enhanced Metafiles</row>
-        <row id="Icons" importid="65444" si="391" created="20170517T180222Z">Icons</row>
-        <row id="Bitmaps" importid="65445" si="392" created="20170517T180222Z">Bitmaps</row>
-        <row id="TIFF Images" importid="65446" si="393" created="20170517T180222Z">TIFF Images</row>
-        <row id="Grid too large for operation" importid="65447" si="397" created="20170517T180222Z">Grid too large for operation</row>
-        <row id="Too many rows or columns deleted" importid="65448" si="398" created="20170517T180222Z">Too many rows or columns deleted</row>
-        <row id="Grid index out of range" importid="65449" si="399" created="20170517T180222Z">Grid index out of range</row>
-        <row id="Fixed column count must be less than column count" importid="65450" si="400" created="20170517T180222Z">Fixed column count must be less than column count</row>
-        <row id="Fixed row count must be less than row count" importid="65451" si="401" created="20170517T180222Z">Fixed row count must be less than row count</row>
-        <row id="Cannot insert or delete rows from grid" importid="65452" si="402" created="20170517T180222Z">Cannot insert or delete rows from grid</row>
-        <row id="Invalid Enum Value" importid="65453" si="403" created="20170517T180222Z">Invalid Enum Value</row>
-        <row id="Invalid numeric value" importid="65454" si="540" created="20191223T024538Z">Invalid numeric value</row>
-        <row id="Outline index not found" importid="65455" si="541" created="20191223T024538Z">Outline index not found</row>
-        <row id="&amp;Help" importid="65456" si="558" created="20230110T224446Z">&amp;Help</row>
-        <row id="&amp;Close" importid="65457" si="559" created="20230110T224446Z">&amp;Close</row>
-        <row id="&amp;Ignore" importid="65458" si="560" created="20230110T224446Z">&amp;Ignore</row>
-        <row id="&amp;Retry" importid="65459" si="561" created="20230110T224446Z">&amp;Retry</row>
-        <row id="Abort" importid="65460" si="407" created="20170517T180222Z">Abort</row>
-        <row id="&amp;All" importid="65461" si="562" created="20230110T224446Z">&amp;All</row>
-        <row id="Cannot drag a form" importid="65462" si="409" created="20170517T180222Z">Cannot drag a form</row>
-        <row id="PutObject to undefined item" importid="65463" si="410" created="20170517T180222Z">PutObject to undefined item</row>
-        <row id="Could not load CARDS.DLL" importid="65464" si="411" created="20170517T180222Z">Could not load CARDS.DLL</row>
-        <row id="Duplicate CardId found" importid="65465" si="412" created="20170517T180222Z">Duplicate CardId found</row>
-        <row id="An error returned from DDE  ($0%x)" importid="65466" changed="20230110T224446Z" class="TPatternRow" si="413" created="20170517T180222Z">
+        <row id="Confirm" importid="65439" si="387" created="20170517T180222Z">Confirm</row>
+        <row id="FB" importid="65440" si="417" created="20170517T180222Z">FB</row>
+        <row id="FG" importid="65441" si="418" created="20170517T180222Z">FG</row>
+        <row id="BG" importid="65442" si="539" created="20191223T024538Z">BG</row>
+        <row id="Cannot load older version of TShape" importid="65443" si="388" created="20170517T180222Z">Cannot load older version of TShape</row>
+        <row id="Metafiles" importid="65444" si="389" created="20170517T180222Z">Metafiles</row>
+        <row id="Enhanced Metafiles" importid="65445" si="390" created="20170517T180222Z">Enhanced Metafiles</row>
+        <row id="Icons" importid="65446" si="391" created="20170517T180222Z">Icons</row>
+        <row id="Bitmaps" importid="65447" si="392" created="20170517T180222Z">Bitmaps</row>
+        <row id="TIFF Images" importid="65448" si="393" created="20170517T180222Z">TIFF Images</row>
+        <row id="Grid too large for operation" importid="65449" si="397" created="20170517T180222Z">Grid too large for operation</row>
+        <row id="Too many rows or columns deleted" importid="65450" si="398" created="20170517T180222Z">Too many rows or columns deleted</row>
+        <row id="Grid index out of range" importid="65451" si="399" created="20170517T180222Z">Grid index out of range</row>
+        <row id="Fixed column count must be less than column count" importid="65452" si="400" created="20170517T180222Z">Fixed column count must be less than column count</row>
+        <row id="Fixed row count must be less than row count" importid="65453" si="401" created="20170517T180222Z">Fixed row count must be less than row count</row>
+        <row id="Cannot insert or delete rows from grid" importid="65454" si="402" created="20170517T180222Z">Cannot insert or delete rows from grid</row>
+        <row id="Invalid Enum Value" importid="65455" si="403" created="20170517T180222Z">Invalid Enum Value</row>
+        <row id="Control '%s' is used on a not main thread" importid="65456" class="TPatternRow" si="574" created="20240214T131853Z" st="0" original="Control '%s' is used on a not main thread">Control '{0}' is used on a not main thread</row>
+        <row id="OK" importid="65457" si="563" created="20230110T224446Z">OK</row>
+        <row id="Cancel" importid="65458" si="564" created="20230110T224446Z">Cancel</row>
+        <row id="&amp;Yes" importid="65459" si="565" created="20230110T224446Z">&amp;Yes</row>
+        <row id="&amp;No" importid="65460" si="566" created="20230110T224446Z">&amp;No</row>
+        <row id="&amp;Help" importid="65461" si="558" created="20230110T224446Z">&amp;Help</row>
+        <row id="&amp;Close" importid="65462" si="559" created="20230110T224446Z">&amp;Close</row>
+        <row id="&amp;Ignore" importid="65463" si="560" created="20230110T224446Z">&amp;Ignore</row>
+        <row id="&amp;Retry" importid="65464" si="561" created="20230110T224446Z">&amp;Retry</row>
+        <row id="Abort" importid="65465" si="407" created="20170517T180222Z">Abort</row>
+        <row id="&amp;All" importid="65466" si="562" created="20230110T224446Z">&amp;All</row>
+        <row id="Cannot drag a form" importid="65467" si="409" created="20170517T180222Z">Cannot drag a form</row>
+        <row id="An error returned from DDE  ($0%x)" importid="65468" changed="20230110T224446Z" class="TPatternRow" si="413" created="20170517T180222Z" original="An error returned from DDE  ($0%x)">
           <value>An error returned from DDE  ($0{0})</value>
           <prev>An error returned from DDE  ($0{0:x})</prev>
         </row>
-        <row id="DDE Error - conversation not established ($0%x)" importid="65467" changed="20230110T224446Z" class="TPatternRow" si="414" created="20170517T180222Z">
+        <row id="DDE Error - conversation not established ($0%x)" importid="65469" changed="20230110T224446Z" class="TPatternRow" si="414" created="20170517T180222Z" original="DDE Error - conversation not established ($0%x)">
           <value>DDE Error - conversation not established ($0{0})</value>
           <prev>DDE Error - conversation not established ($0{0:x})</prev>
         </row>
-        <row id="Error occurred when DDE ran out of memory ($0%x)" importid="65468" changed="20230110T224446Z" class="TPatternRow" si="415" created="20170517T180222Z">
+        <row id="Error occurred when DDE ran out of memory ($0%x)" importid="65470" changed="20230110T224446Z" class="TPatternRow" si="415" created="20170517T180222Z" original="Error occurred when DDE ran out of memory ($0%x)">
           <value>Error occurred when DDE ran out of memory ($0{0})</value>
           <prev>Error occurred when DDE ran out of memory ($0{0:x})</prev>
         </row>
-        <row id="Unable to connect DDE conversation" importid="65469" si="416" created="20170517T180222Z">Unable to connect DDE conversation</row>
-        <row id="FB" importid="65470" si="417" created="20170517T180222Z">FB</row>
-        <row id="FG" importid="65471" si="418" created="20170517T180222Z">FG</row>
-        <row id="Sub-menu is not in menu" importid="65472" si="543" created="20191223T024538Z">Sub-menu is not in menu</row>
-        <row id="Not enough timers available" importid="65473" si="420" created="20170517T180222Z">Not enough timers available</row>
-        <row id="Printer is not currently printing" importid="65474" si="421" created="20170517T180222Z">Printer is not currently printing</row>
-        <row id="Printing in progress" importid="65475" si="422" created="20170517T180222Z">Printing in progress</row>
-        <row id="Printer index out of range" importid="65476" si="423" created="20170517T180222Z">Printer index out of range</row>
-        <row id="Printer selected is not valid" importid="65477" si="424" created="20170517T180222Z">Printer selected is not valid</row>
-        <row id="%s on %s" importid="65478" changed="20230110T224446Z" class="TPatternRow" si="425" created="20170517T180222Z">
+        <row id="Unable to connect DDE conversation" importid="65471" si="416" created="20170517T180222Z">Unable to connect DDE conversation</row>
+        <row id="Check state can only be set when CheckBoxes is True" importid="65472" si="575" created="20240214T131853Z" st="0">Check state can only be set when CheckBoxes is True</row>
+        <row id="Check state incompatible with treeview's CheckStyles" importid="65473" si="576" created="20240214T131853Z" st="0">Check state incompatible with treeview's CheckStyles</row>
+        <row id="Menu index out of range" importid="65474" si="449" created="20170517T180222Z">Menu index out of range</row>
+        <row id="Menu inserted twice" importid="65475" si="450" created="20170517T180222Z">Menu inserted twice</row>
+        <row id="Sub-menu is not in menu" importid="65476" si="543" created="20191223T024538Z">Sub-menu is not in menu</row>
+        <row id="Not enough timers available" importid="65477" si="420" created="20170517T180222Z">Not enough timers available</row>
+        <row id="Printer is not currently printing" importid="65478" si="421" created="20170517T180222Z">Printer is not currently printing</row>
+        <row id="Printing in progress" importid="65479" si="422" created="20170517T180222Z">Printing in progress</row>
+        <row id="Printer index out of range" importid="65480" si="423" created="20170517T180222Z">Printer index out of range</row>
+        <row id="Printer selected is not valid" importid="65481" si="424" created="20170517T180222Z">Printer selected is not valid</row>
+        <row id="%s on %s" importid="65482" changed="20230110T224446Z" class="TPatternRow" si="425" created="20170517T180222Z" original="%s on %s">
           <value>{0} on {1}</value>
           <prev>{0:s} on {1:s}</prev>
         </row>
-        <row id="GroupIndex cannot be less than a previous menu item's GroupIndex" importid="65479" si="426" created="20170517T180222Z">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
-        <row id="Cannot have more than one MDI form per application" importid="65480" si="427" created="20170517T180222Z">Cannot have more than one MDI form per application</row>
-        <row id="Cannot create form. No MDI forms are currently active" importid="65481" si="428" created="20170517T180222Z">Cannot create form. No MDI forms are currently active</row>
-        <row id="Can only modify an image if it contains a bitmap" importid="65482" si="429" created="20170517T180222Z">Can only modify an image if it contains a bitmap</row>
-        <row id="A control cannot have itself as its parent" importid="65483" si="430" created="20170517T180222Z">A control cannot have itself as its parent</row>
-        <row id="OK" importid="65484" si="563" created="20230110T224446Z">OK</row>
-        <row id="Cancel" importid="65485" si="564" created="20230110T224446Z">Cancel</row>
-        <row id="&amp;Yes" importid="65486" si="565" created="20230110T224446Z">&amp;Yes</row>
-        <row id="&amp;No" importid="65487" si="566" created="20230110T224446Z">&amp;No</row>
-        <row id="Failed to write ImageList data to stream" importid="65488" si="436" created="20170517T180222Z">Failed to write ImageList data to stream</row>
-        <row id="Error creating window device context" importid="65489" si="437" created="20170517T180222Z">Error creating window device context</row>
-        <row id="Client of TDrag not initialized" importid="65490" si="438" created="20170517T180222Z">Client of TDrag not initialized</row>
-        <row id="Error creating window class" importid="65491" si="439" created="20170517T180222Z">Error creating window class</row>
-        <row id="Error creating window" importid="65492" si="440" created="20170517T180222Z">Error creating window</row>
-        <row id="Cannot focus a disabled or invisible window" importid="65493" si="441" created="20170517T180222Z">Cannot focus a disabled or invisible window</row>
-        <row id="Control '%s' has no parent window" importid="65494" changed="20230110T224446Z" class="TPatternRow" si="442" created="20170517T180222Z">
+        <row id="GroupIndex cannot be less than a previous menu item's GroupIndex" importid="65483" si="426" created="20170517T180222Z">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
+        <row id="Cannot have more than one MDI form per application" importid="65484" si="427" created="20170517T180222Z">Cannot have more than one MDI form per application</row>
+        <row id="Cannot create form. No MDI forms are currently active" importid="65485" si="428" created="20170517T180222Z">Cannot create form. No MDI forms are currently active</row>
+        <row id="Can only modify an image if it contains a bitmap" importid="65486" si="429" created="20170517T180222Z">Can only modify an image if it contains a bitmap</row>
+        <row id="A control cannot have itself as its parent" importid="65487" si="430" created="20170517T180222Z">A control cannot have itself as its parent</row>
+        <row id="Failed to read ImageList data from stream" importid="65488" si="467" created="20170517T180222Z">Failed to read ImageList data from stream</row>
+        <row id="Failed to write ImageList data to stream" importid="65489" si="436" created="20170517T180222Z">Failed to write ImageList data to stream</row>
+        <row id="Error creating window device context" importid="65490" si="437" created="20170517T180222Z">Error creating window device context</row>
+        <row id="Client of TDrag not initialized" importid="65491" si="438" created="20170517T180222Z">Client of TDrag not initialized</row>
+        <row id="Error creating window class" importid="65492" si="439" created="20170517T180222Z">Error creating window class</row>
+        <row id="Error creating window" importid="65493" si="440" created="20170517T180222Z">Error creating window</row>
+        <row id="Cannot focus a disabled or invisible window" importid="65494" si="441" created="20170517T180222Z">Cannot focus a disabled or invisible window</row>
+        <row id="Control '%s' has no parent window" importid="65495" changed="20230110T224446Z" class="TPatternRow" si="442" created="20170517T180222Z" original="Control '%s' has no parent window">
           <value>Control '{0}' has no parent window</value>
           <prev>Control '{0:s}' has no parent window</prev>
         </row>
         <row id=". Path:
-%s" importid="65495" changed="20230110T224446Z" class="TPatternRow" si="544" created="20191223T024538Z">
+%s" importid="65496" changed="20230110T224446Z" class="TPatternRow" si="544" created="20191223T024538Z" original=". Path:
+%s">
           <value>. Path:
 {0}</value>
           <prev>. Path:
 {0:s}</prev>
         </row>
-        <row id="Parent given is not a parent of '%s'" importid="65496" changed="20230110T224446Z" class="TPatternRow" si="443" created="20170517T180222Z">
+        <row id="Parent given is not a parent of '%s'" importid="65497" changed="20230110T224446Z" class="TPatternRow" si="443" created="20170517T180222Z" original="Parent given is not a parent of '%s'">
           <value>Parent given is not a parent of '{0}'</value>
           <prev>Parent given is not a parent of '{0:s}'</prev>
         </row>
-        <row id="Cannot hide an MDI Child Form" importid="65497" si="444" created="20170517T180222Z">Cannot hide an MDI Child Form</row>
-        <row id="Cannot change Visible in OnShow or OnHide" importid="65498" si="445" created="20170517T180222Z">Cannot change Visible in OnShow or OnHide</row>
-        <row id="Cannot make a visible window modal" importid="65499" si="446" created="20170517T180222Z">Cannot make a visible window modal</row>
-        <row id="Scrollbar property out of range" importid="65500" si="447" created="20170517T180222Z">Scrollbar property out of range</row>
-        <row id="%s property out of range" importid="65501" changed="20230110T224446Z" class="TPatternRow" si="448" created="20170517T180222Z">
+        <row id="Cannot hide an MDI Child Form" importid="65498" si="444" created="20170517T180222Z">Cannot hide an MDI Child Form</row>
+        <row id="Cannot change SingleBufferingInRemoteSessions in a remote session" importid="65499" si="577" created="20240214T131853Z" st="0">Cannot change SingleBufferingInRemoteSessions in a remote session</row>
+        <row id="Cannot change Visible in OnShow or OnHide" importid="65500" si="445" created="20170517T180222Z">Cannot change Visible in OnShow or OnHide</row>
+        <row id="Cannot make a visible window modal" importid="65501" si="446" created="20170517T180222Z">Cannot make a visible window modal</row>
+        <row id="Scrollbar property out of range" importid="65502" si="447" created="20170517T180222Z">Scrollbar property out of range</row>
+        <row id="%s property out of range" importid="65503" changed="20230110T224446Z" class="TPatternRow" si="448" created="20170517T180222Z" original="%s property out of range">
           <value>{0} property out of range</value>
           <prev>{0:s} property out of range</prev>
         </row>
-        <row id="Menu index out of range" importid="65502" si="449" created="20170517T180222Z">Menu index out of range</row>
-        <row id="Menu inserted twice" importid="65503" si="450" created="20170517T180222Z">Menu inserted twice</row>
         <row id="Cannot change the size of a WIC Image" importid="65504" si="452" created="20170517T180222Z">Cannot change the size of a WIC Image</row>
         <row id="Invalid operation on TOleGraphic" importid="65505" si="453" created="20170517T180222Z">Invalid operation on TOleGraphic</row>
-        <row id="Unknown picture file extension (.%s)" importid="65506" changed="20230110T224446Z" class="TPatternRow" si="454" created="20170517T180222Z">
+        <row id="Unknown picture file extension (.%s)" importid="65506" changed="20230110T224446Z" class="TPatternRow" si="454" created="20170517T180222Z" original="Unknown picture file extension (.%s)">
           <value>Unknown picture file extension (.{0})</value>
           <prev>Unknown picture file extension (.{0:s})</prev>
         </row>
@@ -923,23 +928,23 @@
         <row id="Unsupported stream format" importid="65508" si="456" created="20170517T180222Z">Unsupported stream format</row>
         <row id="Out of system resources" importid="65509" si="457" created="20170517T180222Z">Out of system resources</row>
         <row id="Canvas does not allow drawing" importid="65510" si="458" created="20170517T180222Z">Canvas does not allow drawing</row>
-        <row id="Text format flag '%s' not supported" importid="65511" changed="20230110T224446Z" class="TPatternRow" si="459" created="20170517T180222Z">
+        <row id="Text format flag '%s' not supported" importid="65511" changed="20230110T224446Z" class="TPatternRow" si="459" created="20170517T180222Z" original="Text format flag '%s' not supported">
           <value>Text format flag '{0}' not supported</value>
           <prev>Text format flag '{0:s}' not supported</prev>
         </row>
-        <row id="Invalid image size" importid="65512" si="460" created="20170517T180222Z">Invalid image size</row>
-        <row id="Too many images" importid="65513" si="461" created="20170517T180222Z">Too many images</row>
-        <row id="Image dimensions do not match image list dimensions" importid="65514" si="462" created="20170517T180222Z">Image dimensions do not match image list dimensions</row>
-        <row id="Invalid ImageList" importid="65515" si="463" created="20170517T180222Z">Invalid ImageList</row>
-        <row id="Unable to Replace Image" importid="65516" si="464" created="20170517T180222Z">Unable to Replace Image</row>
-        <row id="Unable to Insert Image" importid="65517" si="465" created="20170517T180222Z">Unable to Insert Image</row>
-        <row id="Invalid ImageList Index" importid="65518" si="466" created="20170517T180222Z">Invalid ImageList Index</row>
-        <row id="Failed to read ImageList data from stream" importid="65519" si="467" created="20170517T180222Z">Failed to read ImageList data from stream</row>
+        <row id="Invalid image frame index %d: there are %d frames (0-%d)" importid="65512" class="TPatternRow" si="578" created="20240214T131853Z" st="0" original="Invalid image frame index %d: there are %d frames (0-%d)">Invalid image frame index {0}: there are {1} frames (0-{2})</row>
+        <row id="Invalid image size" importid="65513" si="460" created="20170517T180222Z">Invalid image size</row>
+        <row id="Too many images" importid="65514" si="461" created="20170517T180222Z">Too many images</row>
+        <row id="Image dimensions do not match image list dimensions" importid="65515" si="462" created="20170517T180222Z">Image dimensions do not match image list dimensions</row>
+        <row id="Invalid ImageList" importid="65516" si="463" created="20170517T180222Z">Invalid ImageList</row>
+        <row id="Unable to Replace Image" importid="65517" si="464" created="20170517T180222Z">Unable to Replace Image</row>
+        <row id="Unable to Insert Image" importid="65518" si="465" created="20170517T180222Z">Unable to Insert Image</row>
+        <row id="Invalid ImageList Index" importid="65519" si="466" created="20170517T180222Z">Invalid ImageList Index</row>
         <row id="select a date" importid="65520" si="468" created="20170517T180222Z">select a date</row>
         <row id="Open" importid="65521" si="469" created="20170517T180222Z">Open</row>
         <row id="Can't write to a read-only resource stream" importid="65522" si="470" created="20170517T180222Z">Can't write to a read-only resource stream</row>
         <row id="WriteObject called twice for the same instance" importid="65523" si="471" created="20170517T180222Z">WriteObject called twice for the same instance</row>
-        <row id="Resource %s is of incorrect class" importid="65524" changed="20230110T224446Z" class="TPatternRow" si="472" created="20170517T180222Z">
+        <row id="Resource %s is of incorrect class" importid="65524" changed="20230110T224446Z" class="TPatternRow" si="472" created="20170517T180222Z" original="Resource %s is of incorrect class">
           <value>Resource {0} is of incorrect class</value>
           <prev>Resource {0:s} is of incorrect class</prev>
         </row>
@@ -983,6 +988,6 @@
   <mt optimizeusage="0">
     <shared/>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

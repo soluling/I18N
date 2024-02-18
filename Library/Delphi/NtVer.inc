@@ -22,6 +22,11 @@
 //  DELPHI11    Delphi 11 Alexandria or higher
 //  DELPHI12    Delphi 12 or higher
 
+{$A8}
+{$B-}
+{$H+}
+{$P+}
+
 {$IF CompilerVersion >= 24}
   {$LEGACYIFEND ON}
 {$IFEND}

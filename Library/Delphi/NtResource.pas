@@ -509,13 +509,32 @@ begin
   Read(Result[0], length)
 end;
 
+function Convert(const bytes: TBytes): String;
+var
+  b: Byte;
+begin
+  Result := '';
+
+  for b in bytes do
+  begin
+    if b = 0 then
+      Exit;
+
+    Result := Result + Char(b)
+  end;
+end;
+
 function TStreamHelper.ReadAnsi(length: Integer): String;
 var
   data: TBytes;
 begin
   SetLength(data, length);
   Read(data, length);
+{$IFDEF DELPHIXE3}
   Result := TEncoding.ANSI.GetString(data);
+{$ELSE}
+  Result := Convert(data);
+{$ENDIF}
 end;
 
 function TStreamHelper.ReadAnsi(offset, length: Integer): String;
@@ -567,6 +586,7 @@ begin
   Read(Result, SizeOf(Result));
 end;
 
+
 function Translate(
   const original: String;
   const id: String = '';
@@ -604,21 +624,6 @@ end;
 
 
 // TNtDelphiResource
-
-function Convert(const bytes: TBytes): String;
-var
-  b: Byte;
-begin
-  Result := '';
-
-  for b in bytes do
-  begin
-    if b = 0 then
-      Exit;
-
-    Result := Result + Char(b)
-  end;
-end;
 
 procedure TNtDelphiResource.ReadHeader;
 var
@@ -1559,6 +1564,7 @@ procedure TNtDelphiResources.Load(resourceFileName: String);
   function FindResourceFile(directories: TStringDynArray; var fileName: String): Boolean;
   var
     i: Integer;
+    thisFileName: String;
   begin
     // If a resource file is specified and it exists use it.
     // Otherwise try to find the resource file from the default directories
@@ -1571,11 +1577,14 @@ procedure TNtDelphiResources.Load(resourceFileName: String);
     begin
       for i := 0 to Length(directories) - 1 do
       begin
-        fileName := directories[i] + PathDelim + ResourceName + '.ntres';
-        Result := FileExists(fileName);
+        thisFileName := directories[i] + PathDelim + ResourceName + '.ntres';
+        Result := FileExists(thisFileName);
 
         if Result then
+        begin
+          fileName := thisFileName;
           Exit;
+        end;
       end;
 
       Result := False;

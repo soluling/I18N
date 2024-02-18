@@ -1,7 +1,7 @@
 program Project1;
 
 uses
-  NtInitialLocale,
+  //NtInitialLocale,
   Vcl.Forms,
   Unit1 in 'Unit1.pas' {Form1};
 
