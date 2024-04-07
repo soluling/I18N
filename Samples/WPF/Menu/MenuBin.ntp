@@ -1,44 +1,47 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F048CA30-AE0E-4C30-AB09-345DAC16A40F" created="20201022T144821Z" lastmodified="20201022T144851Z" version="1.0.796" lockedrowcomplete="0" stringid="14">
+<project id="F048CA30-AE0E-4C30-AB09-345DAC16A40F" created="20201022T144821Z" lastmodified="20240330T074035Z" version="1.0.1024" lockedrowcomplete="0" stringid="15">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\Menu.exe" fullpath="D:\NT\Deploy\Samples\WPF\Menu\bin\Debug\Menu.exe" original="en" resources="[nrResx,nrXaml,nrVersion]" availableresources="[nrResx,nrXaml,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Menu.csproj" libraries="[nlWpf]">
-    <node class="TNetResXFolder" name="ResX">
-      <node class="TResXNode" name="Menu.Properties.Resources.resources"/>
-    </node>
+  <node class="TAssemblySource" name="bin\Release\net7.0-windows\Menu.dll" fullpath="D:\NT\Deploy\Samples\WPF\Menu\bin\Release\net7.0-windows\Menu.dll" original="en" lastmodified="20240330T074035Z" resources="[nrXaml,nrVersion]" availableresources="[nrXaml,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Menu.csproj" libraries="[nlWpf]">
+    <netproperties version="core70"/>
     <node class="TWindowsVersionFolder" name="Version">
       <node class="TWindowsVersionNode" name="1" resid="1">
+        <row id="CompanyName" si="15" created="20240330T074009Z">
+          <value>Menu</value>
+          <lang id="fi" st="2" or="3" rw="0" time="20201022T144821Z">Valikko</lang>
+        </row>
         <row id="FileDescription" si="10">
           <value>Menu</value>
           <lang id="fi" rw="0" time="20201022T144821Z">Valikko</lang>
         </row>
-        <row id="InternalName" si="11">
-          <value>Menu.exe</value>
-          <lang id="fi" rw="0" time="20201022T144821Z">Menu.resources.dll</lang>
+        <row id="InternalName" changed="20240330T074009Z" si="11">
+          <value>Menu.dll</value>
+          <prev>Menu.exe</prev>
+          <lang id="fi" st="3" invalidated="1" rw="0" time="20201022T144821Z">Menu.resources.dll</lang>
         </row>
-        <row id="LegalCopyright" si="12">
-          <value>Copyright ©  2014</value>
-          <lang id="fi" rw="0" time="20201022T144821Z">Tekijänoikeudet ©  2014</lang>
+        <row id="LegalCopyright" changed="20240330T074009Z" si="12">
+          <value> </value>
+          <prev>Copyright ©  2014</prev>
+          <lang id="fi" st="3" invalidated="1" rw="0" time="20201022T144821Z">Tekijänoikeudet ©  2014</lang>
         </row>
-        <row id="OriginalFilename" si="13">
-          <value>Menu.exe</value>
-          <lang id="fi" rw="0" time="20201022T144821Z">Menu.resources.dll</lang>
+        <row id="OriginalFilename" changed="20240330T074009Z" si="13">
+          <value>Menu.dll</value>
+          <prev>Menu.exe</prev>
+          <lang id="fi" st="3" invalidated="1" rw="0" time="20201022T144821Z">Menu.resources.dll</lang>
         </row>
         <row id="ProductName" si="14">
           <value>Menu</value>
           <lang id="fi" rw="0" time="20201022T144821Z">Valikko</lang>
         </row>
         <data>
-          /AI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
+          mAI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
           AAEAAAAAAAAAAAAAAAAAAABEAAAAAQBWAGEAcgBGAGkAbABlAEkAbgBmAG8AAAAAACQABAAAAFQAcgBhAG4AcwBsAGEAdABpAG8A
-          bgAAAAAAAACwBFwCAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAADgCAAABADAAMAAwADAAMAA0AGIAMAAAABoAAQAB
-          AEMAbwBtAG0AZQBuAHQAcwAAAAAAAAAiAAEAAQBDAG8AbQBwAGEAbgB5AE4AYQBtAGUAAAAAAAAAAAAyAAUAAQBGAGkAbABlAEQA
-          ZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAATQBlAG4AdQAAAAAAMAAIAAEARgBpAGwAZQBWAGUAcgBzAGkAbwBuAAAAAAAxAC4AMAAu
-          ADAALgAwAAAAMgAJAAEASQBuAHQAZQByAG4AYQBsAE4AYQBtAGUAAABNAGUAbgB1AC4AZQB4AGUAAAAAAEgAEgABAEwAZQBnAGEA
-          bABDAG8AcAB5AHIAaQBnAGgAdAAAAEMAbwBwAHkAcgBpAGcAaAB0ACAAqQAgACAAMgAwADEANAAAACoAAQABAEwAZQBnAGEAbABU
-          AHIAYQBkAGUAbQBhAHIAawBzAAAAAAAAAAAAOgAJAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAE0AZQBuAHUA
-          LgBlAHgAZQAAAAAAKgAFAAEAUAByAG8AZAB1AGMAdABOAGEAbQBlAAAAAABNAGUAbgB1AAAAAAA0AAgAAQBQAHIAbwBkAHUAYwB0
-          AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAAOAAIAAEAQQBzAHMAZQBtAGIAbAB5ACAAVgBlAHIAcwBpAG8AbgAAADEA
-          LgAwAC4AMAAuADAAAAA=
+          bgAAAAAAAACwBPgBAAABAFMAdAByAGkAbgBnAEYAaQBsAGUASQBuAGYAbwAAANQBAAABADAAMAAwADAAMAA0AGIAMAAAACoABQAB
+          AEMAbwBtAHAAYQBuAHkATgBhAG0AZQAAAAAATQBlAG4AdQAAAAAAMgAFAAEARgBpAGwAZQBEAGUAcwBjAHIAaQBwAHQAaQBvAG4A
+          AAAAAE0AZQBuAHUAAAAAADAACAABAEYAaQBsAGUAVgBlAHIAcwBpAG8AbgAAAAAAMQAuADAALgAwAC4AMAAAADIACQABAEkAbgB0
+          AGUAcgBuAGEAbABOAGEAbQBlAAAATQBlAG4AdQAuAGQAbABsAAAAAAAoAAIAAQBMAGUAZwBhAGwAQwBvAHAAeQByAGkAZwBoAHQA
+          AAAgAAAAOgAJAAEATwByAGkAZwBpAG4AYQBsAEYAaQBsAGUAbgBhAG0AZQAAAE0AZQBuAHUALgBkAGwAbAAAAAAAKgAFAAEAUABy
+          AG8AZAB1AGMAdABOAGEAbQBlAAAAAABNAGUAbgB1AAAAAAAwAAYAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4A
+          MAAuADAAAAA4AAgAAQBBAHMAcwBlAG0AYgBsAHkAIABWAGUAcgBzAGkAbwBuAAAAMQAuADAALgAwAC4AMAAAAA==
         </data>
       </node>
     </node>
@@ -86,11 +89,14 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>
