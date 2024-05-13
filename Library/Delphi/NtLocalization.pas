@@ -667,7 +667,7 @@ function EnumResourceLanguagesProc(
   languageId: Word;
   param: DWord): Bool; stdcall;  //FI:O804
 begin
-  languageIds.Add(Pointer(languageId));
+  languageIds.Add(Pointer(languageId)); //FI:W541
   Result := True;
 end;
 
@@ -1030,7 +1030,7 @@ begin
 
   if Word(p^) = $25FF then
   begin
-    Inc(Integer(p), 2);
+    Inc(Integer(p), 2); //FI:W541
     p := Pointer(Pointer(p^)^);
 
     if not VirtualProtect(oldProc, PROCEDURE_DATA_SIZE, protect1, @protect2) then

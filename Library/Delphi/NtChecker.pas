@@ -1053,17 +1053,17 @@ end;
 
 // TNtCheckerExtension
 
-function TNtCheckerExtension.Show(checker: TFormChecker; control: TControl; var restoreControl: TControl): Boolean;
+function TNtCheckerExtension.Show(checker: TFormChecker; control: TControl; var restoreControl: TControl): Boolean; //FI:O804
 begin
   Result := False;
 end;
 
-function TNtCheckerExtension.Restore(control, restoreControl: TControl): Boolean;
+function TNtCheckerExtension.Restore(control, restoreControl: TControl): Boolean; //FI:O804
 begin
   Result := False;
 end;
 
-function TNtCheckerExtension.Ignore(control: TControl; issueTypes: TFormIssueTypes): Boolean;
+function TNtCheckerExtension.Ignore(control: TControl; issueTypes: TFormIssueTypes): Boolean; //FI:O804
 begin
   Result := False;
 end;

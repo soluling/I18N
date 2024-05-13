@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20230918T031127Z" version="1.0.1006" stringid="8">
+<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20240408T131403Z" version="1.0.1025" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" lastmodified="20230918T031127Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-    <netproperties version="core70" toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" lastmodified="20240408T131403Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <netproperties version="core80" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
       <row id="newToolStripMenuItem.Size" class="TCoordinateSizeRow" created="20221020T130221Z">222, 22</row>
@@ -238,9 +238,6 @@
       <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
       <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
     </assemblies>
-    <configurations>
-      <configuration name="Default"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -259,10 +256,7 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates promptoverwritetranslated="1">
   </duplicates>

@@ -331,7 +331,7 @@ begin
   position := stream.Position;
 
   try
-    for i := 0 to start - 1 do
+    for i := 0 to start - 1 do //FI:W528
       GetByte;
 
     for i := 0 to Length(stamp) - 1 do

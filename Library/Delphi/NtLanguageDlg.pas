@@ -230,7 +230,7 @@ begin
     end;
 end;
 
-class function TNtLanguageDialog.Select(
+class function TNtLanguageDialog.Select( //FI:C102
   var language: String;
   const originalLanguage: String;
   const originalLanguageName: String;

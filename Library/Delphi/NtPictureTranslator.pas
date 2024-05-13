@@ -51,7 +51,7 @@ begin
   Result := obj is TPicture;
 end;
 
-procedure TNtPictureTranslator.Translate(
+procedure TNtPictureTranslator.Translate( //FI:C103
   component: TComponent;
   obj: TObject;
   const name: String;
@@ -123,7 +123,7 @@ begin
 end;
 
 class procedure TNtPictureTranslator.ForceUse;
-begin
+begin //FI:W519
 end;
 
 initialization

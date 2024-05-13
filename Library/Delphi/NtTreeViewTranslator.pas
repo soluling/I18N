@@ -217,7 +217,7 @@ begin
 end;
 
 class procedure TNtTreeViewTranslator.ForceUse;
-begin
+begin //FI:W519
 end;
 
 initialization

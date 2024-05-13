@@ -643,7 +643,7 @@ class procedure TNtLanguage.CheckCase(
   var value: String;
   languageNameCase: TNtLanguageNameCase);
 begin
-  case languageNameCase of
+  case languageNameCase of //FI:W535
     lcUpper: value := UpperCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
     lcLower: value := LowerCase(Copy(value, 1, 1)) + Copy(value, 2, Length(value));
   end;

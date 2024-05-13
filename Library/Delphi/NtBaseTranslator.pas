@@ -1050,11 +1050,6 @@ begin  //FI:C101
       try
         current := GetPropValue(FObj);
 
-        if FObj.ClassName = 'TFieldDef' then
-        begin
-          FObj := FObj;
-        end;
-
         if TypesEqual and (current <> value) and not IgnoreProperty then
         begin
           SetPropValue(FObj, value);
@@ -1229,7 +1224,7 @@ procedure TNtBaseTranslator.Translate(component: TComponent);
     Result := FindResource(FindInstance(classType), PChar(resourceName), RT_RCDATA) <> 0;
   end;
 
-var
+var //FI:W538
   i: Integer;
   thisClass: TClass;
   names: TStringList;
@@ -1254,12 +1249,12 @@ end;
 
 // TNtTranslatorExtension
 
-function TNtTranslatorExtension.GetActualObject(obj: TObject; const propName: String): TObject;
+function TNtTranslatorExtension.GetActualObject(obj: TObject; const propName: String): TObject; //FI:O804
 begin
   Result := nil;
 end;
 
-function TNtTranslatorExtension.GetActualName(obj: TObject; const propName: String): String;
+function TNtTranslatorExtension.GetActualName(obj: TObject; const propName: String): String; //FI:O804
 begin
   Result := '';
 end;

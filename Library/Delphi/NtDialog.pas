@@ -103,7 +103,7 @@ type
 
     class function AddOne(
       const pattern: String;
-      mask: String;
+      const mask: String;
       const allPattern: String = ''): String;
 
     property Value: String read GetValue;
@@ -221,7 +221,7 @@ end;
 
 class function TNtDialogFilter.AddOne(
   const pattern: String;
-  mask: String;
+  const mask: String;
   const allPattern: String = ''): String;
 var
   filter: TNtDialogFilter;

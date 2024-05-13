@@ -136,12 +136,12 @@ var
 
 
 // These are used if there is no language specific ordinal function
-function GetDefaultShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String;
+function GetDefaultShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 begin
   Result := IntToStr(ordinal);
 end;
 
-function GetDefaultLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetDefaultLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 begin
   Result := IntToStr(ordinal);
 end;

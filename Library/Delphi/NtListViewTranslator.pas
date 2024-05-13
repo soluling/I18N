@@ -251,7 +251,7 @@ begin
 end;
 
 class procedure TNtListViewTranslator.ForceUse;
-begin
+begin //FI:W519
 end;
 
 initialization

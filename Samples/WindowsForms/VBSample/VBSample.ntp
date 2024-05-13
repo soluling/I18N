@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0EAD45C8-19B6-4B34-938B-889E4A76BD55" created="20230210T022652Z" lastmodified="20230210T022832Z" version="1.0.978" stringid="9">
+<project id="0EAD45C8-19B6-4B34-938B-889E4A76BD55" created="20230210T022652Z" lastmodified="20240415T154747Z" version="1.0.1025" stringid="9">
   <lang id="fi"/>
   <lang id="pt"/>
-  <node class="TNetProjectSource" name="VBSample.vbproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VBSample\VBSample.vbproj" original="en" lastmodified="20230210T022832Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="VBSample.vbproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VBSample\VBSample.vbproj" original="en" lastmodified="20240415T154747Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="Button1.Location" class="TCoordinatePointRow">280, 8</row>
@@ -194,16 +194,13 @@
           <lang id="fi" st="1" or="6" rw="0" time="20230210T022738Z" fuzzy="99.5">Tämä on merkkijono</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Isso é uma corda</lang>
         </row>
-        <row id="String2" class="TPatternRow" si="9">
+        <row id="String2" class="TPatternRow" si="9" original="Hello {0}">
           <value>Hello {0}</value>
           <lang id="fi" st="1" or="6" rw="0" time="20230210T022740Z" fuzzy="99.5">Hei {0}</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Olá {0}</lang>
         </row>
       </node>
     </node>
-    <configurations>
-      <configuration name="Default"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -219,13 +216,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

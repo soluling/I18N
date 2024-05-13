@@ -12,14 +12,14 @@ uses
 
 
 // Many European languages use just period to indicate an ordinal number
-function GetPeriodShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String;
+function GetPeriodShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 begin
   Result := IntToStr(ordinal) + '.';
 end;
 
 
 // English
-function GetEnglishShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String;
+function GetEnglishShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 var
   str: String;
 begin
@@ -35,7 +35,7 @@ begin
   Result := IntToStr(ordinal) + str;
 end;
 
-function GetEnglishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetEnglishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -117,12 +117,12 @@ end;
 
 
 // Dutch
-function GetDutchShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String;
+function GetDutchShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 begin
   Result := IntToStr(ordinal) + 'e';
 end;
 
-function GetDutchLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetDutchLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -143,7 +143,7 @@ end;
 
 
 // French
-function GetFrenchShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String;
+function GetFrenchShort(ordinal: TOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 var
   str: String;
 begin
@@ -160,7 +160,7 @@ begin
   Result := IntToStr(ordinal) + str;
 end;
 
-function GetFrenchLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetFrenchLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -189,7 +189,7 @@ end;
 
 
 // Finnish
-function GetFinnishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetFinnishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   SINGULARS: TOrdinalArray =
   (
@@ -227,7 +227,7 @@ end;
 
 
 // Estonian, TODO: plural forms
-function GetEstonianLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetEstonianLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   SINGULARS: TOrdinalArray =
   (
@@ -248,7 +248,7 @@ end;
 
 
 // Danish
-function GetDanishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetDanishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -269,7 +269,7 @@ end;
 
 
 // Swedish
-function GetSwedishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetSwedishLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -290,7 +290,7 @@ end;
 
 
 // Norwegian, Bokmål
-function GetNorwegianBokmalLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetNorwegianBokmalLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -311,7 +311,7 @@ end;
 
 
 // Norwegian, Nynorsk
-function GetNorwegianNynorskLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetNorwegianNynorskLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   VALUES: TOrdinalArray =
   (
@@ -332,7 +332,7 @@ end;
 
 
 // Icelandic
-function GetIcelandicLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetIcelandicLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   ICELANDIC: TOrdinalArray =
   (
@@ -353,7 +353,7 @@ end;
 
 
 // Japanese
-function GetJapaneseLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetJapaneseLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   JAPANESE: TOrdinalArray =
   (
@@ -382,7 +382,7 @@ end;
 
 
 // Korean
-function GetKoreanLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetKoreanLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   KOREAN: TOrdinalArray =
   (
@@ -411,7 +411,7 @@ end;
 
 
 // Simplified Chinese
-function GetSimplifiedChineseLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String;
+function GetSimplifiedChineseLong(ordinal: TSmallOrdinal; plural: TPlural; gender: TGender): String; //FI:O804
 const
   CHINESE: TOrdinalArray =
   (

@@ -698,7 +698,7 @@ begin
   begin
     FStream.Position := FFormNameOffset;
 
-    for i := 0 to FFormCount - 1 do
+    for i := 0 to FFormCount - 1 do //FI:W528
     begin
       offsetValue := FStream.ReadInt32;
       len := FStream.ReadInt32 div 2;
@@ -721,14 +721,14 @@ begin
   end;
 end;
 
-function TNtDelphiResource.FindForm(const name: String): TStream;
+function TNtDelphiResource.FindForm(const name: String): TStream; //FI:C103
 var
   i, offsetValue, len: Integer;
   left, right, mid: Integer;
   formOffset, formSize: Integer;
   formData: TBytes;
   str: String;
-begin
+begin //FI:C101
   CheckStream;
 
   if FVersion = nr1 then
@@ -808,7 +808,7 @@ begin
   begin
     FStream.Position := FResourceNameOffset;
 
-    for i := 0 to FResourceCount - 1 do
+    for i := 0 to FResourceCount - 1 do //FI:W528
     begin
       offsetValue := FStream.ReadInt32;
       len := FStream.ReadInt32 div 2;
@@ -831,14 +831,14 @@ begin
   end;
 end;
 
-function TNtDelphiResource.FindResource(const id: String): TStream;
+function TNtDelphiResource.FindResource(const id: String): TStream; //FI:C103
 var
   i, offsetValue, len: Integer;
   left, right, mid: Integer;
   resourceOffset, resourceSize: Integer;
   resourceData: TBytes;
   str: String;
-begin
+begin //FI:C101
   CheckStream;
 
   if FVersion = nr1 then
@@ -961,7 +961,7 @@ var
   ignoreRest: Boolean;
   len: Integer;
   str: String;
-begin
+begin //FI:C101
   // ___rstr__ZN3Fmx6Consts10_SEditCopyE   00AA39A6
   // ___rstr__ZN6System9Rtlconsts24_SCentimetersDescriptionE
   // ___rstr__ZN6System9Rtlconsts24_SConvUnknownDescriptionE
@@ -1219,7 +1219,7 @@ end;
 procedure TNtDelphiResource.GetSymbolStrings(ids, values: TStrings);
 var
   i, stringOffset: Integer;
-  id, str: String;
+  id, str: String; //FI:W517
 begin
   CheckStream;
 
@@ -1559,7 +1559,7 @@ begin
   end;
 end;
 
-procedure TNtDelphiResources.Load(resourceFileName: String);
+procedure TNtDelphiResources.Load(resourceFileName: String); //FI:O801
 
   function FindResourceFile(directories: TStringDynArray; var fileName: String): Boolean;
   var

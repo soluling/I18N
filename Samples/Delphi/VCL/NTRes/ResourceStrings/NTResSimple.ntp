@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="90D3A8DD-D4B6-4992-85A9-A14F6DB750AC" created="20160810T010204Z" lastmodified="20221227T131331Z" version="1.0.972" stringid="417">
+<project id="90D3A8DD-D4B6-4992-85A9-A14F6DB750AC" created="20160810T010204Z" lastmodified="20240510T114424Z" version="1.0.1029" stringid="417">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="ja"/>
   <lang id="de"/>
-  <node class="TDelphiProjectSource" name="NTResSimple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\NTRes\ResourceStrings\NTResSimple.dproj" original="en" lastmodified="20221227T131331Z" scanconfigurations="Release" scanfiles="Win32 - Release;Win64 - Release">
+  <node class="TDelphiProjectSource" name="NTResSimple.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\NTRes\ResourceStrings\NTResSimple.dproj" original="en" lastmodified="20240510T114424Z" scanconfigurations="Release" scanfiles="Win32 - Release;Win64 - Release">
     <node class="TDelphiFormFolder" name="RCData" created="20221226T132640Z">
       <node class="TWindowsBinaryNode" name="DVCLAL" resname="DVCLAL" excluded="1"/>
       <node class="TWindowsBinaryNode" name="MSG_ERROR" resname="MSG_ERROR" langid="1033" binaryformat="bfImage"/>
@@ -140,6 +140,24 @@
       <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SSample" si="17">
+          <value>This is a sample</value>
+          <lang id="fi" st="2" or="3" time="20160814T014224Z">Tämä on esimerkki</lang>
+          <lang id="ja" st="2" or="3" time="20160814T160559Z">これはサンプルです。</lang>
+          <lang id="de" st="2" or="3" time="20160814T162651Z">Dies ist ein Beispiel</lang>
+        </row>
+        <row id="SStr1" si="18">
+          <value>Str1</value>
+          <lang id="fi" st="4" rw="0" time="20240510T114414Z">Merkkijono 1</lang>
+        </row>
+        <row id="SStr2" si="19">
+          <value>Str2</value>
+          <lang id="fi" st="4" rw="0" time="20240510T114417Z">Merkkijono 2</lang>
+        </row>
+        <row id="SHelloName" class="TPatternRow" si="20" original="Hello %s">
+          <value>Hello {0}</value>
+          <lang id="fi" st="2" or="3" time="20200209T161108Z">Moi {0}</lang>
+        </row>
         <row id="SHello" si="38">
           <value>Hello</value>
           <lang id="fi" st="2" or="3" time="20160810T010225Z">Moi</lang>
@@ -147,22 +165,16 @@
           <lang id="ja" st="2" or="3" time="20160814T160559Z">こんにちは</lang>
           <lang id="de" st="2" or="3" time="20160814T162650Z">Hallo</lang>
         </row>
-        <row id="SSample" si="17">
-          <value>This is a sample</value>
-          <lang id="fi" st="2" or="3" time="20160814T014224Z">Tämä on esimerkki</lang>
-          <lang id="ja" st="2" or="3" time="20160814T160559Z">これはサンプルです。</lang>
-          <lang id="de" st="2" or="3" time="20160814T162651Z">Dies ist ein Beispiel</lang>
-        </row>
-        <row id="SStr1" si="18">Str1</row>
-        <row id="SStr2" si="19">Str2</row>
-        <row id="SHelloName" class="TPatternRow" si="20">
-          <value>Hello {0}</value>
-          <lang id="fi" st="2" or="3" time="20200209T161108Z">Moi {0}</lang>
-        </row>
       </node>
       <node class="TWindowsStringNode" name="Unit2">
-        <row id="SHello" si="21">Hello</row>
-        <row id="SSample" si="22">This is a sample</row>
+        <row id="SHello" si="21">
+          <value>Hello</value>
+          <lang id="fi" st="4" rw="0" time="20240510T114421Z">Moi</lang>
+        </row>
+        <row id="SSample" si="22">
+          <value>This is a sample</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20240510T114424Z" fuzzy="100">Tämä on esimerkki</lang>
+        </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
       <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1"/>
@@ -187,6 +199,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
@@ -194,6 +207,6 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>
