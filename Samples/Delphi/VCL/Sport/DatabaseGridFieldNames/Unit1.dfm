@@ -11,9 +11,7 @@ object MainForm: TMainForm
   Font.Name = 'MS Sans Serif'
   Font.Style = []
   Menu = MainMenu
-  OldCreateOrder = False
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object DBGrid1: TDBGrid
     Left = 0
@@ -72,7 +70,6 @@ object MainForm: TMainForm
     Top = 48
   end
   object Query1: TADOQuery
-    Active = True
     Connection = Connection1
     CursorType = ctStatic
     Parameters = <
@@ -92,11 +89,11 @@ object MainForm: TMainForm
     Left = 152
     Top = 48
     object QueryId: TIntegerField
-      DisplayLabel = 'Id2'
+      DisplayLabel = 'Id '
       FieldName = 'Id'
     end
     object QueryName: TWideStringField
-      DisplayLabel = 'Name2'
+      DisplayLabel = 'Name '
       FieldName = 'Name'
       Size = 30
     end
@@ -109,12 +106,12 @@ object MainForm: TMainForm
       FieldName = 'Goalie'
     end
     object Query1Origin: TWideStringField
-      DisplayLabel = 'Origin2'
+      DisplayLabel = 'Origin '
       FieldName = 'Origin'
       Size = 30
     end
     object Query1Description: TWideStringField
-      DisplayLabel = 'Description2'
+      DisplayLabel = 'Description '
       FieldName = 'Description'
       Size = 200
     end

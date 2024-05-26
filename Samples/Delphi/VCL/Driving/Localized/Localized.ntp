@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20230521T213809Z" version="1.0.996" stringid="412" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20240523T030052Z" version="1.0.1031" stringid="412" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
-  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20230521T213809Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20240523T030052Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -423,6 +423,7 @@
           <row id="Top">22</row>
           <row id="Width">105</row>
           <row id="Height">25</row>
+          <row id="Action" class="TVclActionRow" created="20240523T025642Z" st="0" hidden="1">CalculateAction</row>
         </item>
         <item name="MainMenu1" type="TMainMenu">
           <row id="Left">240</row>
@@ -434,14 +435,16 @@
               <lang id="de" st="2" or="3" rw="0" time="20180410T013803Z">Datei</lang>
               <lang id="fr" st="2" or="3" rw="0" time="20190125T035825Z">Fichier</lang>
             </row>
-            <item name="Calculate1" type="TMenuItem"/>
+            <item name="Calculate1" type="TMenuItem">
+              <row id="Action" class="TVclActionRow" created="20240523T025642Z" st="0" hidden="1">CalculateAction</row>
+            </item>
             <item name="N1" type="TMenuItem"/>
             <item name="Exit1" type="TMenuItem">
               <row id="Caption" si="409">
                 <value>Exit</value>
                 <lang id="fi" st="2" or="3" rw="0" tm="1" time="20170412T214241Z">Lopeta</lang>
                 <lang id="de" st="2" or="3" rw="0" time="20180410T013804Z">Beenden</lang>
-                <lang id="fr" st="2" or="3" rw="0" time="20190125T035825Z">Sortie</lang>
+                <lang id="fr" st="4" rw="0" time="20240523T030052Z">Sortie</lang>
               </row>
             </item>
           </item>
@@ -684,9 +687,8 @@
   <mt>
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>
