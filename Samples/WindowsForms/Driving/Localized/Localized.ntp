@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20221117T120650Z" version="1.0.963" stringid="15">
+<project id="DB5ECDF7-5302-47A0-9915-AD9B1C3A74AE" created="20170828T135713Z" lastmodified="20240807T025037Z" version="1.0.1034" stringid="15">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en-US" lastmodified="20221117T120650Z" resources="[nrResx,nrForm,nrAssemblyInfo]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Localized.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Localized\Localized.csproj" original="en-US" lastmodified="20240807T025037Z" resources="[nrResx,nrForm,nrAssemblyInfo]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
@@ -2756,7 +2756,7 @@
           <value>Driving time calculator</value>
           <lang id="fi" rw="0" tm="1" time="20180505T165557Z">Ajoaikalaskin</lang>
         </row>
-        <row id="ResultPlural" changed="20181129T153354Z" class="TPatternRow" si="11" created="20181129T151450Z">
+        <row id="ResultPlural" changed="20181129T153354Z" class="TPatternRow" si="11" created="20181129T151450Z" original="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}">
           <value startpattern="1">Driving time is{0}{1}</value>
           <prev startpattern="1">Driving time is%0:s%1:s</prev>
           <pattern plural="pfZero" index="0"> </pattern>
@@ -2975,6 +2975,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
@@ -2982,6 +2983,6 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
+  <duplicates promptoverwritetranslated="1">
   </duplicates>
 </project>

@@ -25,8 +25,8 @@ uses
 {$IFDEF AUTOREFCOUNT}
   System.Generics.Collections,
 {$ENDIF}
-  SysUtils,
-  Classes;
+  System.SysUtils,
+  System.Classes;
 
 const
   APPLICATION_RESOURCE = 'SOLULING';
@@ -592,8 +592,8 @@ implementation
 
 uses
 {$IFDEF MSWINDOWS}
-  Windows,
-  Registry,
+  Winapi.Windows,
+  System.Win.Registry,
   NtWindows,
 {$ENDIF}
 {$IFDEF POSIX}
@@ -1590,7 +1590,7 @@ begin
     pointer := LockResource(LoadResource(instance, resource));
     size := SizeofResource(instance, resource);
 
-    SysUtils.DeleteFile(fileName);
+    System.SysUtils.DeleteFile(fileName);
 
     stream := TFileStream.Create(fileName, fmCreate);
     try
@@ -1633,7 +1633,7 @@ begin
 
     while FExtractedResourceFiles.Count > 0 do
     begin
-      SysUtils.DeleteFile(FExtractedResourceFiles[0]);
+      System.SysUtils.DeleteFile(FExtractedResourceFiles[0]);
       FExtractedResourceFiles.Delete(0);
     end;
   end;
@@ -1701,7 +1701,7 @@ begin
         Write(f, 10);
       finally
         Close(f);
-        SysUtils.DeleteFile(fileName);
+        System.SysUtils.DeleteFile(fileName);
       end;
     end
     else

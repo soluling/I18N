@@ -20,7 +20,7 @@
 //  DELPHIDX3   Delphi 10.3 Rio or higher
 //  DELPHIDX4   Delphi 10.4 Sydney or higher
 //  DELPHI11    Delphi 11 Alexandria or higher
-//  DELPHI12    Delphi 12 or higher
+//  DELPHI12    Delphi 12 Athens or higher
 
 {$A8}
 {$B-}
