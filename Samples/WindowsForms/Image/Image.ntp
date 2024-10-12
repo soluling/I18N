@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20221117T123535Z" version="1.0.963" stringid="6">
+<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20241005T154700Z" version="1.0.1039" stringid="6">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en-US" lastmodified="20221117T123535Z" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en-US" lastmodified="20241005T154700Z" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
@@ -4334,20 +4334,19 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

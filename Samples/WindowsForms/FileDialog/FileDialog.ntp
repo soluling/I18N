@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="46B780F5-EE41-4CF9-8C63-B5AD00ACE2D9" created="20180509T134818Z" lastmodified="20221117T122810Z" version="1.0.963" stringid="22">
+<project id="46B780F5-EE41-4CF9-8C63-B5AD00ACE2D9" created="20180509T134818Z" lastmodified="20241012T133256Z" version="1.0.1042" stringid="22">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" lastmodified="20221117T122810Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties toolsversion="nt120"/>
+  <node class="TNetProjectSource" name="FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" lastmodified="20241012T133256Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties version="net481" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="openButton1.Location" class="TCoordinatePointRow" created="20221117T122731Z">8, 8</row>
       <row id="openButton1.Size" class="TCoordinateSizeRow" created="20221117T122731Z">75, 23</row>
       <row id="openButton1.Text" si="1">
         <value>&amp;Open...</value>
-        <lang id="fi" rw="0" time="20180509T134826Z">&amp;Avaa...</lang>
+        <lang id="fi" rw="0" time="20241012T133250Z">&amp;Avaa...</lang>
       </row>
       <row id="saveButton1.Location" class="TCoordinatePointRow" created="20221117T122731Z">8, 112</row>
       <row id="saveButton1.Size" class="TCoordinateSizeRow" created="20221117T122731Z">75, 23</row>
@@ -68,7 +68,7 @@
       <row id="label5.Size" class="TCoordinateSizeRow" created="20221117T122731Z">110, 13</row>
       <row id="label5.Text" si="11">
         <value>Filter as a single string</value>
-        <lang id="fi" or="3" rw="0" time="20180509T134934Z">Suodin yhtenä merkkijonona</lang>
+        <lang id="fi" rw="0" time="20180509T134934Z">Suodin yhtenä merkkijonona</lang>
       </row>
       <row id="label6.Location" class="TCoordinatePointRow" created="20221117T122731Z">96, 141</row>
       <row id="label6.Size" class="TCoordinateSizeRow" created="20221117T122731Z">79, 13</row>
@@ -350,7 +350,7 @@
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="AllFiles" si="14">
           <value>All files</value>
-          <lang id="fi" rw="0" time="20180509T135125Z">Kaikki tiedostot</lang>
+          <lang id="fi" st="4" rw="0" time="20241012T114514Z">Kaikki tiedostot</lang>
         </row>
         <row id="AllSupportedFiles" si="15">
           <value>All supported files</value>
@@ -400,13 +400,13 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

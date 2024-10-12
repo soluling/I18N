@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="20337E7A-CC26-4688-B898-3CB77214D269" created="20180328T223333Z" lastmodified="20200316T192625Z" version="1.0.714" stringid="1">
+<project id="20337E7A-CC26-4688-B898-3CB77214D269" created="20180328T223333Z" lastmodified="20241010T032250Z" version="1.0.1041" stringid="1">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Image\Image.csproj" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Image\Image.csproj" original="en" lastmodified="20241010T032250Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt140"/>
     <node class="TImageDataNode" name="about.png">
       <row id="value" class="TImageRow">
@@ -371,7 +371,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <node class="TDirectoryFolder" name="Sub" created="20190613T021706Z">
       <node class="TImageDataNode" name="about.png">
@@ -672,20 +672,26 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

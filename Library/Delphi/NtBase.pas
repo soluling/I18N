@@ -460,6 +460,10 @@ uses
     { Save the current locale of the current application as locale override. }
     class procedure SetCurrentDefaultLocale;
 
+    { Set the locale override value of current application.
+      @param code     Locale override value.}
+    class procedure SetCurrentDefaultLocaleValue(code: String);
+
     { Get the locale override of the current application.
       @return The locale override value.}
     class function GetCurrentDefaultLocale: String;
@@ -467,6 +471,7 @@ uses
     { Clear the locale override value of the current application in the registry.
       @return @true if succesful, @false if failed. }
     class function ClearCurrentDefaultLocale: Boolean;
+
 
     { Set the locale override value of the given application.
       @param fileName Application.
@@ -1786,6 +1791,14 @@ var
 begin
   if GetModuleFileName(0, fileName, SizeOf(fileName)) > 0 then
     SetDefaultLocale(fileName, LoadedResourceLocale);
+end;
+
+class procedure TNtLocaleRegistry.SetCurrentDefaultLocaleValue(code: String);
+var
+  fileName: array[0..MAX_PATH] of Char;
+begin
+  if GetModuleFileName(0, fileName, SizeOf(fileName)) > 0 then
+    SetDefaultLocale(fileName, code);
 end;
 
 class function TNtLocaleRegistry.GetCurrentDefaultLocale: String;

@@ -1,17 +1,35 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="49C82E13-6662-497D-908E-985668DA6711" created="20240422T080125Z" lastmodified="20240422T080136Z" version="1.0.1026" stringid="9">
+<project id="49C82E13-6662-497D-908E-985668DA6711" created="20240422T080125Z" lastmodified="20241006T073722Z" version="1.0.1039" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="ListView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\ListView.csproj" original="en" lastmodified="20240422T080136Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="ListView.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\ListView\ListView.csproj" original="en" lastmodified="20241006T073722Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-      <row id="columnHeader1.Text" si="1">One</row>
-      <row id="columnHeader2.Text" si="2">Two</row>
-      <row id="columnHeader3.Text" si="3">Three</row>
-      <row id="listView1.Items.Text" si="4">One</row>
-      <row id="listView1.Items1.Text" si="5">One</row>
+      <row id="columnHeader1.Text" si="1">
+        <value>One</value>
+        <lang id="fi" st="4" rw="0" time="20241006T071904Z">Yksi</lang>
+      </row>
+      <row id="columnHeader2.Text" si="2">
+        <value>Two</value>
+        <lang id="fi" st="4" rw="0" time="20241006T071909Z">Kaksi</lang>
+      </row>
+      <row id="columnHeader3.Text" si="3">
+        <value>Three</value>
+        <lang id="fi" st="4" rw="0" time="20241006T071913Z">Kolme</lang>
+      </row>
+      <row id="listView1.Items.Text" si="4">
+        <value>One</value>
+        <lang id="fi" st="4" or="3" rw="0" time="20241006T071904Z">Yksi</lang>
+      </row>
+      <row id="listView1.Items1.Text" si="5">
+        <value>One</value>
+        <lang id="fi" st="4" or="3" rw="0" time="20241006T071904Z">Yksi</lang>
+      </row>
       <row id="listView1.Location" class="TCoordinatePointRow">8, 8</row>
       <row id="listView1.Size" class="TCoordinateSizeRow">320, 240</row>
-      <row id="$this.Text" si="6">Sample</row>
+      <row id="$this.Text" si="6">
+        <value>Sample</value>
+        <lang id="fi" st="4" rw="0" time="20241006T071859Z">Esimerkki</lang>
+      </row>
       <codeproperties>
         <collection component="listView1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ListViewItem"/>
       </codeproperties>
@@ -176,14 +194,20 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="String1" si="7">One</row>
-        <row id="String2" si="8">Two</row>
-        <row id="String3" si="9">Three</row>
+        <row id="String1" si="7">
+          <value>One</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20241006T071904Z">Yksi</lang>
+        </row>
+        <row id="String2" si="8">
+          <value>Two</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20241006T071909Z">Kaksi</lang>
+        </row>
+        <row id="String3" si="9">
+          <value>Three</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20241006T071913Z">Kolme</lang>
+        </row>
       </node>
     </node>
-    <configurations>
-      <configuration name="Default"/>
-    </configurations>
   </node>
   <terminology>
     <shared>
@@ -201,6 +225,5 @@
   <mt>
     <shared/>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>
