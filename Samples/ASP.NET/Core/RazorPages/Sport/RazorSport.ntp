@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20201107T135142Z" version="1.0.802" lockedrowcomplete="0" stringid="53">
+<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20241019T040415Z" version="1.0.1044" lockedrowcomplete="0" stringid="53">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
-    <netproperties version="core31"/>
+  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" lastmodified="20241019T040415Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core70" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Pages">
-      <node class="TResXNode" name="LanguageNames.resx">
+      <node class="TResXNode" name="LanguageNames.resx" windowsforms="wfCore">
         <row id="English" si="1">
           <value>English</value>
           <lang id="fi" rw="0" time="20191113T150941Z" fuzzy="100">englanti</lang>
@@ -37,7 +37,7 @@
     </node>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages">
-        <node class="TResXNode" name="Add.resx">
+        <node class="TResXNode" name="Add.resx" windowsforms="wfCore">
           <row id="Add Message" si="14">
             <value>Add Message</value>
             <lang id="fi" rw="0" time="20191113T151259Z">Lisää viesti</lang>
@@ -51,13 +51,13 @@
             <lang id="fi" rw="0" time="20191208T033904Z" fuzzy="100">Takaisin luetteloon</lang>
           </row>
         </node>
-        <node class="TResXNode" name="AddModel.resx">
+        <node class="TResXNode" name="AddModel.resx" windowsforms="wfCore">
           <row id="New sport added successfully" si="39" created="20191113T150719Z">
             <value>New sport added successfully</value>
             <lang id="fi" rw="0" time="20191113T151313Z" fuzzy="5">Uusi laji lisättiin onnistuneesti</lang>
           </row>
         </node>
-        <node class="TResXNode" name="Delete.resx">
+        <node class="TResXNode" name="Delete.resx" windowsforms="wfCore">
           <row id="Delete Sport" si="18">
             <value>Delete Sport</value>
             <lang id="fi" rw="0" time="20191113T151320Z" fuzzy="5">Poista laji</lang>
@@ -71,14 +71,14 @@
             <lang id="fi" rw="0" time="20191113T151305Z">Takaisin luetteloon</lang>
           </row>
         </node>
-        <node class="TResXNode" name="DeleteModel.resx">
+        <node class="TResXNode" name="DeleteModel.resx" windowsforms="wfCore">
           <row id="Sport Deleted Successfully!" si="41" created="20191113T151550Z">
             <value>Sport Deleted Successfully!</value>
             <lang id="fi" rw="0" time="20191113T151557Z" fuzzy="5">Urheilu poistettiin onnistuneesti!</lang>
           </row>
         </node>
-        <node class="TResXNode" name="Details.resx">
-          <row id="Sport {0}" class="TPatternRow" si="22">
+        <node class="TResXNode" name="Details.resx" windowsforms="wfCore">
+          <row id="Sport {0}" class="TPatternRow" si="22" original="Sport {0}">
             <value>Sport {0}</value>
             <lang id="fi" rw="0" time="20191113T151631Z">Urheilulaji {0}</lang>
           </row>
@@ -91,19 +91,19 @@
             <lang id="fi" rw="0" time="20191113T151305Z">Takaisin luetteloon</lang>
           </row>
         </node>
-        <node class="TResXNode" name="Edit.resx">
+        <node class="TResXNode" name="Edit.resx" windowsforms="wfCore">
           <row id="Edit Sport" si="25">
             <value>Edit Sport</value>
             <lang id="fi" rw="0" time="20191113T151700Z" fuzzy="5">Muokkaa urheilulajia</lang>
           </row>
         </node>
-        <node class="TResXNode" name="EditModel.resx">
+        <node class="TResXNode" name="EditModel.resx" windowsforms="wfCore">
           <row id="Sport updated successfully" si="40" created="20191113T150813Z">
             <value>Sport updated successfully</value>
             <lang id="fi" rw="0" time="20191113T151722Z" fuzzy="74.0740737915039">Urheilulaji on päivitetty onnistuneesti</lang>
           </row>
         </node>
-        <node class="TResXNode" name="Index.resx">
+        <node class="TResXNode" name="Index.resx" windowsforms="wfCore">
           <row id="Sports" si="27">
             <value>Sports</value>
             <lang id="fi" rw="0" time="20191113T151731Z" fuzzy="100">Urheilulajit</lang>
@@ -113,7 +113,7 @@
             <lang id="fi" rw="0" time="20191113T151733Z" fuzzy="99">Lisää laji</lang>
           </row>
         </node>
-        <node class="TResXNode" name="SetDefault.resx">
+        <node class="TResXNode" name="SetDefault.resx" windowsforms="wfCore">
           <row id="Default Sports" si="29">
             <value>Default Sports</value>
             <lang id="fi" rw="0" time="20191113T151746Z" fuzzy="5">Oletus urheilulajit</lang>
@@ -127,15 +127,15 @@
             <lang id="fi" rw="0" time="20191113T151305Z">Takaisin luetteloon</lang>
           </row>
         </node>
-        <node class="TResXNode" name="SetDefaultModel.resx" created="20191113T151550Z">
+        <node class="TResXNode" name="SetDefaultModel.resx" created="20191113T151550Z" windowsforms="wfCore">
           <row id="Default sport successfully set!" si="42">
             <value>Default sport successfully set!</value>
             <lang id="fi" rw="0" time="20191113T151343Z">Oletus laji on asetettu onnistuneesti!</lang>
           </row>
         </node>
         <node class="TDirectoryFolder" name="Shared">
-          <node class="TResXNode" name="_LanguagePartial.resx">
-            <row id="Browser default language, currently {0}" class="TPatternRow" si="32" scannedcomment="0: language name">
+          <node class="TResXNode" name="_LanguagePartial.resx" windowsforms="wfCore">
+            <row id="Browser default language, currently {0}" class="TPatternRow" si="32" scannedcomment="0: language name" original="Browser default language, currently {0}">
               <value>Browser default language, currently {0}</value>
               <lang id="fi" rw="0" time="20191208T033915Z">Selaimen oletuskieli, tällä hetkellä {0}</lang>
             </row>
@@ -148,7 +148,7 @@
               <lang id="fi" rw="0" time="20191113T151046Z" fuzzy="100">Tallenna</lang>
             </row>
           </node>
-          <node class="TResXNode" name="_Layout.resx">
+          <node class="TResXNode" name="_Layout.resx" windowsforms="wfCore">
             <row id="Sport" si="35">
               <value>Sport</value>
               <lang id="fi" rw="0" time="20191113T151055Z" fuzzy="83.3333358764648">Urheilulajit</lang>
@@ -168,7 +168,7 @@
           </node>
         </node>
       </node>
-      <node class="TResXNode" name="Soluling.Sport.Olympic.resx">
+      <node class="TResXNode" name="Soluling.Sport.Olympic.resx" windowsforms="wfCore">
         <row id="No" si="8">
           <value>No</value>
           <lang id="fi" rw="0" time="20191113T151135Z" fuzzy="100">Ei</lang>
@@ -182,7 +182,7 @@
           <lang id="fi" rw="0" time="20191113T151142Z" fuzzy="5">Kesä</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Soluling.Sport.Sport.resx" created="20191113T152837Z">
+      <node class="TResXNode" name="Soluling.Sport.Sport.resx" created="20191113T152837Z" windowsforms="wfCore">
         <row id="Id" si="43">
           <value>Id</value>
           <lang id="fi" rw="0" time="20191113T152846Z" fuzzy="99">Tunnus</lang>
@@ -204,7 +204,7 @@
           <lang id="fi" rw="0" time="20201107T135107Z">Tyyppi</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Soluling.Sport.SportKind.resx">
+      <node class="TResXNode" name="Soluling.Sport.SportKind.resx" windowsforms="wfCore">
         <row id="Individual" si="11">
           <value>Individual</value>
           <lang id="fi" rw="0" time="20191113T151210Z">Henkilökohtainen</lang>
@@ -214,7 +214,7 @@
           <lang id="fi" rw="0" time="20191113T151158Z">Joukkue</lang>
         </row>
       </node>
-      <node class="TResXNode" name="Soluling.Sport.SportLanguage.resx">
+      <node class="TResXNode" name="Soluling.Sport.SportLanguage.resx" windowsforms="wfCore">
         <row id="Id" si="47" created="20191113T152837Z">
           <value>Id</value>
           <lang id="fi" rw="0" time="20191113T152846Z">Tunnus</lang>
@@ -245,25 +245,26 @@
         </row>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\net7.0\Newtonsoft.Json.dll</assembly>
+      <assembly>bin\Debug\net7.0\RazorSport.dll</assembly>
+      <assembly>bin\Debug\net7.0\Soluling.AspNet.dll</assembly>
+      <assembly>bin\Debug\net7.0\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

@@ -1,41 +1,33 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AC869407-C82D-4DEC-8CB5-971692B77698" created="20221015T203807Z" lastmodified="20241012T123937Z" version="1.0.1042" stringid="4">
+<project id="AC869407-C82D-4DEC-8CB5-971692B77698" created="20221015T203807Z" lastmodified="20241013T142915Z" version="1.0.1043" stringid="4">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Layout.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Layout\Layout.csproj" original="en" lastmodified="20241012T123937Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
-    <netproperties toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="Layout.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Layout\Layout.csproj" original="en" lastmodified="20241013T142915Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+    <netproperties version="net481" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
-      <row id="button1.Location" class="TCoordinatePointRow">
-        <value>8, 8</value>
-        <lang id="fi" rw="0" time="20241012T123935Z">64, 8</lang>
-      </row>
+      <row id="button1.Location" class="TCoordinatePointRow">8, 8</row>
       <row id="button1.Size" class="TCoordinateSizeRow">
         <value>75, 23</value>
-        <lang id="fi" rw="0" time="20241012T123937Z">112, 23</lang>
+        <lang id="fi" rw="0" time="20241013T142913Z">128, 23</lang>
       </row>
       <row id="button1.Text" si="1">
         <value>Click here</value>
         <lang id="fi" st="2" or="5" rw="0" time="20221015T210846Z" fuzzy="100">Klikkaa tästä</lang>
       </row>
-      <row id="checkBox1.Location" class="TCoordinatePointRow">
-        <value>72, 40</value>
-        <lang id="fi" rw="0" time="20241012T123923Z">96, 40</lang>
-      </row>
-      <row id="checkBox1.Size" class="TCoordinateSizeRow">
-        <value>52, 17</value>
-        <lang id="fi" rw="0" time="20241012T123920Z">42, 18</lang>
-      </row>
+      <row id="checkBox1.Location" class="TCoordinatePointRow">72, 40</row>
+      <row id="checkBox1.Size" class="TCoordinateSizeRow">52, 17</row>
       <row id="checkBox1.Text" si="2">
         <value>Read</value>
         <lang id="fi" st="4" rw="0" time="20221015T210905Z">Lue</lang>
       </row>
       <row id="checkBox2.Location" class="TCoordinatePointRow">8, 40</row>
-      <row id="checkBox2.Size" class="TCoordinateSizeRow">
-        <value>51, 17</value>
-        <lang id="fi" rw="0" time="20241012T123926Z">58, 18</lang>
-      </row>
+      <row id="checkBox2.Size" class="TCoordinateSizeRow">51, 17</row>
       <row id="checkBox2.Text" si="3">
         <value>Write</value>
         <lang id="fi" st="4" rw="0" time="20221015T210856Z">Kirjoita</lang>
+      </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241012T180613Z" st="0">
+        <value>275, 64</value>
+        <lang id="fi" rw="0" time="20241013T142915Z">339, 64</lang>
       </row>
       <row id="$this.Text" si="4">
         <value>Sample</value>
@@ -186,6 +178,7 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -196,6 +189,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+      <item name="Microsoft" type="TMicrosoftTranslator"/>
+    </shared>
   </mt>
 </project>

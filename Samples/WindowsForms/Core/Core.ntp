@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A1A77EC7-18AA-4A4A-8223-AC83E448D301" created="20221005T122504Z" lastmodified="20221117T121337Z" version="1.0.963" stringid="2">
+<project id="A1A77EC7-18AA-4A4A-8223-AC83E448D301" created="20221005T122504Z" lastmodified="20241019T115650Z" version="1.0.1045" stringid="2">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Core\Core.csproj" original="en" lastmodified="20221117T121337Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Core\Core.csproj" original="en" lastmodified="20241019T115650Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="core31" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wfCore">
       <row id="label1.Location" class="TCoordinatePointRow" created="20221117T121336Z" st="0">8, 8</row>
@@ -10,6 +10,7 @@
         <value>Hello world!</value>
         <lang id="fi" rw="0" time="20221005T122517Z" fuzzy="91.6666641235352">Moi maailma!</lang>
       </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241019T115650Z" st="0">544, 276</row>
       <row id="$this.Text" si="2">
         <value>Sample</value>
         <lang id="fi" rw="0" time="20221005T122510Z">Esimerkki</lang>
@@ -83,18 +84,7 @@
       </data>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Debug\netcoreapp3.1\Core.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -110,13 +100,10 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

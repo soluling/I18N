@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20230129T014029Z" version="1.0.976" lockedrowcomplete="0" stringid="4">
+<project id="ECD51F85-46DC-430D-81D8-8247DCDC4048" created="20190818T194847Z" lastmodified="20241019T115959Z" version="1.0.1045" lockedrowcomplete="0" stringid="4">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" lastmodified="20230129T014029Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Core.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Core\Core.csproj" original="en" lastmodified="20241019T115959Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core31" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -47,23 +47,8 @@
       </row>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Release\netcoreapp3.1\Core.dll</assembly>
     </assemblies>
-    <configurations>
-      <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -78,13 +63,10 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

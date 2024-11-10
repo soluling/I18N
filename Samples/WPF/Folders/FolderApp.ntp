@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="99E90078-C25F-48CE-99DF-F28E1377B58E" created="20231107T115918Z" lastmodified="20231107T115952Z" version="1.0.1011" stringid="2">
+<project id="99E90078-C25F-48CE-99DF-F28E1377B58E" created="20231107T115918Z" lastmodified="20241019T115928Z" version="1.0.1045" stringid="2">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="FolderApp.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Folders\FolderApp.csproj" original="en" lastmodified="20231107T115952Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="FolderApp.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Folders\FolderApp.csproj" original="en" lastmodified="20241019T115928Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -15,7 +15,7 @@
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
       <row id="Title" si="1">
         <value>MainWindow</value>
-        <lang id="fi" st="4" rw="0" time="20231107T115937Z">Pääikkuna</lang>
+        <lang id="fi" st="4" rw="0" time="20241019T115928Z">Pääikkuna</lang>
       </row>
       <item name="Grid[0]" type="Grid"/>
       <data>
@@ -47,20 +47,7 @@
       </node>
     </node>
     <assemblies>
-      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows\FolderApp.dll</assembly>
     </assemblies>
     <configurations>
       <configuration name="Default"/>
@@ -82,6 +69,5 @@
   <mt>
     <shared/>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

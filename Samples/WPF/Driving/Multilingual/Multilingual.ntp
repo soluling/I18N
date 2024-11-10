@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20230227T134544Z" version="1.0.982" stringid="16">
+<project id="EFB7FAC1-723E-4A1B-96D8-538A6746C8BB" created="20181207T012041Z" lastmodified="20241019T123129Z" version="1.0.1045" stringid="16">
   <lang id="fi"/>
   <lang id="ja"/>
   <node class="TNetProjectSource" name="..\..\..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" original="en" lastmodified="20230227T134544Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
@@ -49,24 +49,14 @@
       </data>
     </node>
     <assemblies>
-      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
+      <assembly>bin\Release\net40\Soluling.dll</assembly>
+      <assembly>bin\Release\net40\Soluling.Translator.WPF.dll</assembly>
     </assemblies>
     <configurations>
       <configuration name="Default" dir="bin\Release" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
     </configurations>
   </node>
-  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20230227T134348Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20241019T123129Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192800Z" kind="xkApplication">
       <data>
@@ -483,7 +473,7 @@
           <lang id="fi" rw="0" time="20181207T012141Z">fi</lang>
           <lang id="ja" st="1" or="6" rw="0" time="20230224T130846Z" fuzzy="99.5">ja</lang>
         </row>
-        <row id="ResultPlural" class="TPatternRow" si="13">
+        <row id="ResultPlural" class="TPatternRow" si="13" original="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}">
           <value startpattern="1">Driving time is{0}{1}</value>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -533,6 +523,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

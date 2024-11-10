@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0B443BE7-E19A-4B10-9FF4-2721D1923177" created="20231106T145838Z" lastmodified="20231106T150003Z" version="1.0.1011" stringid="3">
+<project id="0B443BE7-E19A-4B10-9FF4-2721D1923177" created="20231106T145838Z" lastmodified="20241019T120152Z" version="1.0.1045" stringid="3">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="WpfApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.csproj" original="en" lastmodified="20231106T150003Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="WpfApplication.csproj" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\WpfApplication\WpfApplication.csproj" original="en" lastmodified="20241019T120152Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -47,24 +47,8 @@
       </data>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
-      <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Release\net7.0-windows\WpfApplication.dll</assembly>
     </assemblies>
-    <configurations>
-      <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>+</item>
@@ -95,10 +79,7 @@
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

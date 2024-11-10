@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="42A895AD-C7E5-4DCE-878C-FEDBB1C2DEF3" created="20181214T184734Z" lastmodified="20230718T065235Z" version="1.0.1000" stringid="6">
+<project id="42A895AD-C7E5-4DCE-878C-FEDBB1C2DEF3" created="20181214T184734Z" lastmodified="20241019T123341Z" version="1.0.1045" stringid="6">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\Driving\Driving.csproj" original="en" lastmodified="20230718T065235Z" availableresources="[nrResx,nrHtml,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+  <node class="TNetProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\Driving\Driving.csproj" original="en" lastmodified="20241019T123341Z" availableresources="[nrResx,nrHtml,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers" created="20181214T190608Z">
@@ -53,19 +53,9 @@
       </node>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Debug\net7.0\Driving.dll</assembly>
+      <assembly>bin\Debug\net7.0\Soluling.AspNet.dll</assembly>
+      <assembly>bin\Debug\net7.0\Soluling.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -86,10 +76,7 @@
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

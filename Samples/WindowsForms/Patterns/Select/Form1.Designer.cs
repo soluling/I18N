@@ -28,6 +28,7 @@
     /// </summary>
     private void InitializeComponent()
     {
+      System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
       this.soccerLabel = new System.Windows.Forms.Label();
       this.hockeyLabel = new System.Windows.Forms.Label();
       this.basketballLabel = new System.Windows.Forms.Label();
@@ -36,53 +37,35 @@
       // 
       // soccerLabel
       // 
-      this.soccerLabel.AutoSize = true;
-      this.soccerLabel.Location = new System.Drawing.Point(8, 8);
+      resources.ApplyResources(this.soccerLabel, "soccerLabel");
       this.soccerLabel.Name = "soccerLabel";
-      this.soccerLabel.Size = new System.Drawing.Size(40, 13);
-      this.soccerLabel.TabIndex = 0;
-      this.soccerLabel.Text = "dummy";
       // 
       // hockeyLabel
       // 
-      this.hockeyLabel.AutoSize = true;
-      this.hockeyLabel.Location = new System.Drawing.Point(8, 24);
+      resources.ApplyResources(this.hockeyLabel, "hockeyLabel");
       this.hockeyLabel.Name = "hockeyLabel";
-      this.hockeyLabel.Size = new System.Drawing.Size(40, 13);
-      this.hockeyLabel.TabIndex = 1;
-      this.hockeyLabel.Text = "dummy";
       // 
       // basketballLabel
       // 
-      this.basketballLabel.AutoSize = true;
-      this.basketballLabel.Location = new System.Drawing.Point(8, 40);
+      resources.ApplyResources(this.basketballLabel, "basketballLabel");
       this.basketballLabel.Name = "basketballLabel";
-      this.basketballLabel.Size = new System.Drawing.Size(40, 13);
-      this.basketballLabel.TabIndex = 2;
-      this.basketballLabel.Text = "dummy";
       // 
       // languageButton
       // 
-      this.languageButton.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-      this.languageButton.Location = new System.Drawing.Point(320, 56);
+      resources.ApplyResources(this.languageButton, "languageButton");
       this.languageButton.Name = "languageButton";
-      this.languageButton.Size = new System.Drawing.Size(91, 23);
-      this.languageButton.TabIndex = 3;
-      this.languageButton.Text = "&Language...";
       this.languageButton.UseVisualStyleBackColor = true;
       this.languageButton.Click += new System.EventHandler(this.languageButton_Click);
       // 
       // Form1
       // 
-      this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+      resources.ApplyResources(this, "$this");
       this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-      this.ClientSize = new System.Drawing.Size(418, 88);
       this.Controls.Add(this.languageButton);
       this.Controls.Add(this.basketballLabel);
       this.Controls.Add(this.hockeyLabel);
       this.Controls.Add(this.soccerLabel);
       this.Name = "Form1";
-      this.Text = "Select Sample";
       this.Load += new System.EventHandler(this.Form1_Load);
       this.ResumeLayout(false);
       this.PerformLayout();

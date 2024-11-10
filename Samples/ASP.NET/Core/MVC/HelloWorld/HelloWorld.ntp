@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="30F08103-BFAD-45A2-A46A-B15AC3A6555C" created="20230718T042139Z" lastmodified="20230718T042245Z" version="1.0.1000" stringid="1">
+<project id="30F08103-BFAD-45A2-A46A-B15AC3A6555C" created="20230718T042139Z" lastmodified="20241019T123416Z" version="1.0.1045" stringid="1">
   <lang id="de"/>
   <lang id="en"/>
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="HelloWorld.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\HelloWorld\HelloWorld.csproj" original="en" lastmodified="20230718T042245Z" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+  <node class="TNetProjectSource" name="HelloWorld.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\HelloWorld\HelloWorld.csproj" original="en" lastmodified="20241019T123416Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers">
@@ -18,19 +18,7 @@
       </node>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\Phone40Library.dll</assembly>
-      <assembly>..\..\..\..\..\..\Desktop\Bin\Win32\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Debug\net7.0\HelloWorld.dll</assembly>
     </assemblies>
     <configurations>
       <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
@@ -54,10 +42,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

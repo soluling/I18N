@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20240408T131403Z" version="1.0.1025" stringid="8">
+<project id="B05229DE-2C17-4BAD-88AD-29636E027FEB" created="20181129T160954Z" lastmodified="20241019T100306Z" version="1.0.1045" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" lastmodified="20240408T131403Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Menu\Menu.csproj" original="en" lastmodified="20241019T100306Z" resources="[nrForm]" availableresources="[nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="core80" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
@@ -41,6 +41,7 @@
         <value>&amp;About...</value>
         <lang id="fi" st="4" rw="0" time="20181129T161434Z">&amp;Tietoa...</lang>
       </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241019T100306Z" st="0">488, 239</row>
       <row id="$this.Text" si="8">
         <value>Menu Sample</value>
         <lang id="fi" st="4" rw="0" time="20210630T223628Z">Valikkoesimerkki</lang>
@@ -223,20 +224,7 @@
       </data>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Release\net8.0-windows7.0\Menu.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -258,6 +246,5 @@
   <mt optimizeusage="0">
     <shared/>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

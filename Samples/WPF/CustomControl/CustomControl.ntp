@@ -1,8 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20231106T172003Z" version="1.0.1011" stringid="5">
+<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20241019T122712Z" version="1.0.1045" stringid="5">
   <lang id="fi"/>
+  <lang id="de"/>
   <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en" lastmodified="20231106T151827Z" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20231106T171919Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20241019T122650Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="core70" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -17,19 +18,22 @@
       <node class="TXamlNode" name="MainWindow.xaml" type="Window">
         <row id="Title" si="1">
           <value>Sample</value>
-          <lang id="fi" st="4" rw="0" time="20231106T151835Z">Esimerkki</lang>
+          <lang id="fi" st="4" rw="0" time="20241019T120057Z">Esimerkki</lang>
+          <lang id="de" st="4" or="6" rw="0" time="20241019T122650Z" fuzzy="99.5">Beispiel</lang>
         </row>
         <item name="StackPanel[0]" type="StackPanel">
           <item name="label1" type="Label">
             <row id="Content" si="2">
               <value>Hello</value>
               <lang id="fi" st="4" rw="0" time="20231106T151837Z">Moi</lang>
+              <lang id="de" st="1" or="6" rw="0" time="20241019T122544Z" fuzzy="99.5">Hallo</lang>
             </row>
           </item>
           <item name="customLabel" type="custom:CustomLabel">
             <row id="Content" si="3">
               <value>Custom hello</value>
               <lang id="fi" st="4" rw="0" time="20231106T151843Z">Muokattu moi</lang>
+              <lang id="de" st="1" or="6" rw="0" time="20241019T122546Z" fuzzy="99.5">Benutzerdefiniertes Hallo</lang>
             </row>
           </item>
           <item name="userControl" type="user:UserControl1"/>
@@ -48,42 +52,18 @@
         </data>
       </node>
       <assemblies>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfApplication.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfControl.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfUserControl.dll</assembly>
       </assemblies>
     </node>
     <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" lastmodified="20231106T151821Z" groupname="WpfControl\WpfControl.csproj" resources="[]" netconfiguration="Release|AnyCPU">
       <netproperties version="core70" toolsversion="nt150"/>
       <assemblies>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfControl.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20231106T172003Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20241019T122712Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="core70" toolsversion="nt150"/>
       <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl">
         <item name="StackPanel[0]" type="StackPanel">
@@ -91,6 +71,7 @@
             <row id="Content" si="4">
               <value>First name:</value>
               <lang id="fi" st="4" rw="0" time="20231106T151846Z">Etunimi:</lang>
+              <lang id="de" st="1" or="6" rw="0" time="20241019T122710Z" fuzzy="99.5">Vorname:</lang>
             </row>
           </item>
           <item name="firstNameEdit" type="TextBox"/>
@@ -98,6 +79,7 @@
             <row id="Content" si="5">
               <value>Last name:</value>
               <lang id="fi" st="4" rw="0" time="20231106T151851Z">Sukunimi:</lang>
+              <lang id="de" st="1" or="6" rw="0" time="20241019T122712Z" fuzzy="99.5">Nachname:</lang>
             </row>
           </item>
           <item name="lastNameEdit" type="TextBox"/>
@@ -115,20 +97,7 @@
         </data>
       </node>
       <assemblies>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\Net80x86.dll</assembly>
-        <assembly>..\..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfUserControl.dll</assembly>
       </assemblies>
     </node>
   </node>
@@ -165,6 +134,5 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

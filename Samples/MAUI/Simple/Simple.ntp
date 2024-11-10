@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="04584EF9-187B-404A-A94D-B0348F18A2E6" created="20221120T013946Z" lastmodified="20221125T031550Z" version="1.0.967" stringid="10">
+<project id="04584EF9-187B-404A-A94D-B0348F18A2E6" created="20221120T013946Z" lastmodified="20241019T123632Z" version="1.0.1045" stringid="10">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Simple.csproj" fullpath="D:\NT\Deploy\Samples\MAUI\Simple\Simple.csproj" original="en" lastmodified="20221125T031550Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Simple.csproj" fullpath="D:\NT\Deploy\Samples\MAUI\Simple\Simple.csproj" original="en" lastmodified="20241019T123632Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core70" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20221125T031550Z" st="0" kind="xkApplication">
       <item name="Resources" st="0">
@@ -26,7 +26,10 @@
     </node>
     <node class="TXamlNode" name="AppShell.xaml" type="Shell" created="20221125T031550Z" st="0" kind="xkUnknown">
       <item name="ShellContent[0]" type="ShellContent" st="0">
-        <row id="Title" si="7" st="0">Home</row>
+        <row id="Title" si="7" st="0">
+          <value>Home</value>
+          <lang id="fi" st="4" rw="0" time="20241019T123632Z" fuzzy="99.5">Koti</lang>
+        </row>
       </item>
       <data>
         PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQo8U2hlbGwNCiAgICB4OkNsYXNzPSJTaW1wbGUuQXBwU2hl
@@ -89,11 +92,11 @@
       </node>
     </node>
     <node class="TResXNode" name="Resource1.resx" windowsforms="wfCore">
-      <row id="ClickedPlural" class="TPatternRow" si="1">
+      <row id="ClickedPlural" class="TPatternRow" si="1" original="Clicked {0} times">
         <value>Clicked {0} times</value>
         <lang id="fi" st="1" or="6" rw="0" time="20221120T014042Z" fuzzy="99.5">Klikattu {0} kertaa</lang>
       </row>
-      <row id="ClickedSingular" class="TPatternRow" si="2">
+      <row id="ClickedSingular" class="TPatternRow" si="2" original="Clicked {0} time">
         <value>Clicked {0} time</value>
         <lang id="fi" st="4" rw="0" time="20221120T014059Z" fuzzy="99.5">Klikattu {0} kertaa</lang>
       </row>
@@ -918,18 +921,205 @@
       </node>
     </node>
     <assemblies>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Core30x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net20Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net40Library.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net50x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net60x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\Net70x86.dll</assembly>
-      <assembly>..\..\..\..\Desktop\Bin\Win64\Debug\WinRtLibrary.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.CSharp.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.Abstractions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Configuration.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.Abstractions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.DependencyInjection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Abstractions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.Debug.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Logging.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Options.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Extensions.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Graphics.Canvas.Interop.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.InteractiveExperiences.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Compatibility.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Controls.Xaml.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Essentials.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Maui.Graphics.Win2D.WinUI.Desktop.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.VisualBasic.Core.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.VisualBasic.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Win32.Registry.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.DynamicDependency.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.Resources.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.ApplicationModel.WindowsAppRuntime.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppLifecycle.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.AppNotifications.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.PushNotifications.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.SDK.NET.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Power.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.Windows.System.Projection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WindowsAppRuntime.Bootstrap.Net.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Microsoft.WinUI.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\mscorlib.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\netstandard.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\Simple.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.AppContext.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Buffers.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Collections.Concurrent.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Collections.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Collections.Immutable.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Collections.NonGeneric.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Collections.Specialized.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.Annotations.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.DataAnnotations.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.EventBasedAsync.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ComponentModel.TypeConverter.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Configuration.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Console.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Core.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Data.Common.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Data.DataSetExtensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Data.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.Contracts.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.Debug.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.DiagnosticSource.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.FileVersionInfo.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.Process.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.StackTrace.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.TextWriterTraceListener.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.Tools.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.TraceSource.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Diagnostics.Tracing.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Drawing.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Drawing.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Dynamic.Runtime.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Formats.Asn1.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Formats.Tar.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Globalization.Calendars.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Globalization.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Globalization.Extensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Compression.Brotli.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Compression.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Compression.FileSystem.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Compression.ZipFile.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.FileSystem.AccessControl.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.FileSystem.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.FileSystem.DriveInfo.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.FileSystem.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.FileSystem.Watcher.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.IsolatedStorage.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.MemoryMappedFiles.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Pipes.AccessControl.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.Pipes.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.IO.UnmanagedMemoryStream.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Linq.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Linq.Expressions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Linq.Parallel.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Linq.Queryable.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Memory.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Http.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Http.Json.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.HttpListener.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Mail.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.NameResolution.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.NetworkInformation.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Ping.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Quic.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Requests.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Security.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.ServicePoint.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.Sockets.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.WebClient.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.WebHeaderCollection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.WebProxy.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.WebSockets.Client.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Net.WebSockets.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Numerics.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Numerics.Vectors.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ObjectModel.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.CoreLib.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.DataContractSerialization.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.Uri.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.Xml.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Private.Xml.Linq.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.DispatchProxy.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Emit.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Emit.ILGeneration.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Emit.Lightweight.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Extensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Metadata.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Reflection.TypeExtensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Resources.Reader.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Resources.ResourceManager.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Resources.Writer.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.CompilerServices.Unsafe.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.CompilerServices.VisualC.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Extensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Handles.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.InteropServices.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.InteropServices.JavaScript.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.InteropServices.RuntimeInformation.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Intrinsics.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Loader.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Numerics.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Serialization.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Serialization.Formatters.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Serialization.Json.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Serialization.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Runtime.Serialization.Xml.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.AccessControl.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Claims.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Algorithms.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Cng.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Csp.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Encoding.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.OpenSsl.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.Primitives.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Cryptography.X509Certificates.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Principal.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.Principal.Windows.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Security.SecureString.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ServiceModel.Web.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ServiceProcess.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.Encoding.CodePages.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.Encoding.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.Encoding.Extensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.Encodings.Web.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.Json.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Text.RegularExpressions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Channels.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Overlapped.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Tasks.Dataflow.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Tasks.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Tasks.Extensions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Tasks.Parallel.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Thread.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.ThreadPool.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Threading.Timer.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Transactions.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Transactions.Local.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.ValueTuple.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Web.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Web.HttpUtility.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Windows.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.Linq.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.ReaderWriter.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.Serialization.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.XDocument.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.XmlDocument.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.XmlSerializer.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.XPath.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\System.Xml.XPath.XDocument.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\WindowsBase.dll</assembly>
+      <assembly>bin\Debug\net7.0-windows10.0.19041.0\win10-x64\WinRT.Runtime.dll</assembly>
     </assemblies>
   </node>
   <excludedoriginals>
@@ -945,6 +1135,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
@@ -952,6 +1143,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

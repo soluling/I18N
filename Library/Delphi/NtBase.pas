@@ -23,10 +23,10 @@ interface
 
 uses
 {$IFDEF AUTOREFCOUNT}
-  System.Generics.Collections,
+  Generics.Collections,
 {$ENDIF}
-  System.SysUtils,
-  System.Classes;
+  SysUtils,
+  Classes;
 
 const
   APPLICATION_RESOURCE = 'SOLULING';
@@ -462,7 +462,7 @@ uses
 
     { Set the locale override value of current application.
       @param code     Locale override value.}
-    class procedure SetCurrentDefaultLocaleValue(code: String);
+    class procedure SetCurrentDefaultLocaleValue(const code: String);
 
     { Get the locale override of the current application.
       @return The locale override value.}
@@ -597,8 +597,8 @@ implementation
 
 uses
 {$IFDEF MSWINDOWS}
-  Winapi.Windows,
-  System.Win.Registry,
+  Windows,
+  Registry,
   NtWindows,
 {$ENDIF}
 {$IFDEF POSIX}
@@ -1595,7 +1595,7 @@ begin
     pointer := LockResource(LoadResource(instance, resource));
     size := SizeofResource(instance, resource);
 
-    System.SysUtils.DeleteFile(fileName);
+    SysUtils.DeleteFile(fileName);
 
     stream := TFileStream.Create(fileName, fmCreate);
     try
@@ -1638,7 +1638,7 @@ begin
 
     while FExtractedResourceFiles.Count > 0 do
     begin
-      System.SysUtils.DeleteFile(FExtractedResourceFiles[0]);
+      SysUtils.DeleteFile(FExtractedResourceFiles[0]);
       FExtractedResourceFiles.Delete(0);
     end;
   end;
@@ -1706,7 +1706,7 @@ begin
         Write(f, 10);
       finally
         Close(f);
-        System.SysUtils.DeleteFile(fileName);
+        SysUtils.DeleteFile(fileName);
       end;
     end
     else
@@ -1793,7 +1793,7 @@ begin
     SetDefaultLocale(fileName, LoadedResourceLocale);
 end;
 
-class procedure TNtLocaleRegistry.SetCurrentDefaultLocaleValue(code: String);
+class procedure TNtLocaleRegistry.SetCurrentDefaultLocaleValue(const code: String);
 var
   fileName: array[0..MAX_PATH] of Char;
 begin
