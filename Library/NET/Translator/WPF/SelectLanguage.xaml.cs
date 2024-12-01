@@ -1,4 +1,5 @@
-﻿using System.Globalization;
+﻿using System;
+using System.Globalization;
 using System.Threading;
 using System.Windows;
 
@@ -64,8 +65,16 @@ namespace Soluling.WPF
       }
     }
 
+    private bool HasLanguage(CultureInfo cultureInfo)
+    {
+      return Array.IndexOf(cultureInfos, cultureInfo) != -1;
+    }
+
     private void AddLanguage(CultureInfo cultureInfo)
     {
+      if (HasLanguage(cultureInfo))
+        return;
+
       cultureInfos[listBox.Items.Count] = cultureInfo;
       listBox.Items.Add(Soluling.Language.GetLanguageDisplayName(cultureInfo, DisplayLanguage));
     }

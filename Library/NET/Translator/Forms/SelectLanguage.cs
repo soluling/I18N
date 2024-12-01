@@ -1,3 +1,4 @@
+using System.ComponentModel;
 using System.Globalization;
 using System.Threading;
 using System.Windows.Forms;
@@ -67,6 +68,7 @@ namespace Soluling.Forms
     /// <summary>
     /// Gets and sets the type of display language.
     /// </summary>
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public LanguageName DisplayLanguage
     {
       get { return displayLanguage; }
@@ -76,6 +78,7 @@ namespace Soluling.Forms
     /// <summary>
     /// Gets and sets the selected language.
     /// </summary>
+    [DesignerSerializationVisibility(DesignerSerializationVisibility.Hidden)]
     public CultureInfo SelectedLanguage
     {
       get

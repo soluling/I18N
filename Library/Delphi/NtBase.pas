@@ -783,7 +783,7 @@ end;
 
 function TNtLanguages.Add(const code: String; id: Integer; const fileName: String): TNtLanguage;
 begin
-  if FindByFile(fileName) <> nil then
+  if (fileName <> '') and (FindByFile(fileName) <> nil) then
   begin
     Result := nil;
     Exit;

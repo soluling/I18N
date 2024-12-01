@@ -339,7 +339,6 @@ procedure TNtLanguageDialog.FormActivate(Sender: TObject);
   begin
     item := TListBoxItem.Create(nil);
     item.Parent := LanguageList;
-    //item.StyleLookup := 'CustomItem';
     item.Text := language.Names[LanguageName];
     item.Data := TLanguageCode.Create(language.Code);
     LoadBitmap(item.ItemData.Bitmap, NtResources.LanguageImages[language.Code]);

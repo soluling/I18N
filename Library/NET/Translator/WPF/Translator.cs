@@ -60,6 +60,11 @@ namespace Soluling.WPF
 
       for (int i = 0; i < windows.Count; i++)
         TranslateWindow(windows[i]);
+
+      //ResourceDictionary resources = Application.Current.Resources;
+
+      //foreach (var resource in resources.MergedDictionaries)
+      //  TranslateResourceDictionary(resource);
     }
 
     /// <summary>
@@ -91,10 +96,12 @@ namespace Soluling.WPF
       }
     }
 
+/*
     private bool ShouldTranslateObject(object obj)
     {
       return (TranslateObjectEvent == null) || TranslateObjectEvent(this, obj);
     }
+*/
 
     private void TranslateWindow(Window window)
     {
@@ -102,6 +109,26 @@ namespace Soluling.WPF
       BamlControl baml = LoadBaml(name);
       TranslateElement(window, baml);
     }
+
+    //private void TranslateResourceDictionary(ResourceDictionary resourceDictionary)
+    //{
+    //  if (resourceDictionary == null)
+    //    return;
+          
+    //  var source = resourceDictionary.Source;
+    //  var name = Path.GetFileNameWithoutExtension(source.ToString());
+
+    //  BamlControl baml = LoadBaml(name);
+
+    //  if (baml == null)
+    //    return;
+
+    //  foreach (var key in resourceDictionary.Keys)
+    //  {
+    //    var item = baml.Find(key.ToString());
+    //    //TranslateElement(childElement, );
+    //  }
+    //}
 
     private void TranslateRun(Run run, BamlControl baml)
     {
@@ -258,8 +285,6 @@ namespace Soluling.WPF
 
             while (bamlReader.Read())
             {
-              XamlNodeType nodeType = bamlReader.NodeType;
-
               switch (bamlReader.NodeType)
               {
                 case XamlNodeType.StartObject:
@@ -325,6 +350,15 @@ namespace Soluling.WPF
                   else if (memberName != "")
                   {
                     current.AddProperty(memberName, bamlReader.Value);
+
+                    //if (bamlReader.Value is MemoryStream)
+                    //{
+                    //  MemoryStream valueStream = (MemoryStream)bamlReader.Value;
+                    //  var buffer = new byte[valueStream.Length];
+                    //  valueStream.Read(buffer, 0, (int)valueStream.Length);
+
+                    //  DeferrableContentConverter converter = new DeferrableContentConverter();
+                    //}
 
                     if (current.ElementName == RUN)
                     {
@@ -451,6 +485,18 @@ namespace Soluling.WPF
       }
 
       return null;
+    }
+
+    public BamlControl Find(string name)
+    {
+      // Find by Name or x:Name attribute
+      var item = controls.Find(control => control.Name == name);
+
+      // Find bu Uid or x:Uid attribute
+      if (item == null)
+        item = controls.Find(control => control.Uid == name);
+
+      return item;
     }
 
     public BamlControl Find(string name, FrameworkElement element)
