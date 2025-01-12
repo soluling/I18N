@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3FE249E4-760A-4478-A3CC-2E1A4FB227EA" created="20181129T161505Z" lastmodified="20221117T125559Z" version="1.0.963" stringid="37">
+<project id="3FE249E4-760A-4478-A3CC-2E1A4FB227EA" created="20181129T161505Z" lastmodified="20241228T060626Z" version="1.0.1054" stringid="39">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Number.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Number\Number.csproj" original="en" lastmodified="20221117T125559Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Number.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Number\Number.csproj" original="en" lastmodified="20241228T060626Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="abbreviated4.Location" class="TCoordinatePointRow" created="20221117T125544Z">8, 56</row>
@@ -108,6 +108,7 @@
       <row id="original14.Location" class="TCoordinatePointRow" created="20221117T125544Z">256, 216</row>
       <row id="original14.Size" class="TCoordinateSizeRow" created="20221117T125544Z">224, 13</row>
       <row id="original14.Text" si="34" excluded="2">dummy</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241228T060619Z">487, 326</row>
       <row id="$this.Text" si="35">
         <value>Number Abbreviation Sample</value>
         <lang id="fi" st="4" rw="0" time="20181129T161527Z">Numeron lyhennys -esimerkki</lang>
@@ -783,8 +784,8 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="CurrencySample" class="TPatternRow" si="36" scannedcomment="0: Abbreviated currency amount such as &quot;$1K&quot; or &quot;12M €&quot;">I have {0} in my account.</row>
-        <row id="NumberSample" class="TPatternRow" si="37" scannedcomment="0: Abbreviated number such as &quot;1K&quot; or &quot;12 million&quot;">There are {0} users.</row>
+        <row id="CurrencySample" si="36" scannedcomment="0: Abbreviated currency amount such as &quot;$1K&quot; or &quot;12M €&quot;" created="20241228T060619Z" codep="1">I have {0} in my account.</row>
+        <row id="NumberSample" si="37" scannedcomment="0: Abbreviated number such as &quot;1K&quot; or &quot;12 million&quot;" created="20241228T060619Z" codep="1">There are {0} users.</row>
       </node>
     </node>
     <assemblies>
@@ -901,6 +902,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -908,6 +910,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

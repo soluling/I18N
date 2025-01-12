@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20210427T144534Z" version="1.0.850" stringid="371">
+<project id="EC42AE62-AEDD-4777-8543-59E8A836196F" created="20150115T030511Z" lastmodified="20241227T093429Z" version="1.0.1054" stringid="371">
   <lang id="fi"/>
   <lang id="es"/>
-  <node class="TDelphiSource" name="Win32\Release\FileDialog.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\FileDialog\Win32\Release\FileDialog.exe" original="en" platforms="[ptWin32,ptWin64]">
+  <node class="TDelphiSource" name="Win32\Release\FileDialog.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\FileDialog\Win32\Release\FileDialog.exe" original="en" lastmodified="20241227T093429Z" platforms="[ptWin32,ptWin64]" hassignature="1">
     <node class="TWindowsCursorFolder" name="Cursor" st="0" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" st="0" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" st="0" excluded="1"/>
@@ -169,6 +169,10 @@
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SOpenTitle" si="20">
+          <value>Open File</value>
+          <lang id="fi" time="20150116T231523Z">Avaa tiedosto</lang>
+        </row>
         <row id="SSaveTitle" si="21">
           <value>Save File</value>
           <lang id="fi" time="20150116T231519Z">Talleta tiedosto</lang>
@@ -177,19 +181,19 @@
           <value>SampleFile.xml</value>
           <lang id="fi" time="20150116T231510Z">EsimerkkiTiedosto.xml</lang>
         </row>
-        <row id="SAllFiles" si="14" created="20150116T231407Z">
+        <row id="SAllFiles" si="14" scannedcomment="Part of file dialog filter: All files (*.*)" created="20150116T231407Z">
           <value>All files</value>
           <lang id="fi" time="20150116T231504Z">Kaikki tiedostot</lang>
         </row>
-        <row id="SAllSupportedFiles" si="15" created="20150116T231407Z">
+        <row id="SAllSupportedFiles" si="15" scannedcomment="Part of file dialog filter: All supported files (...)" created="20150116T231407Z">
           <value>All supported files</value>
           <lang id="fi" time="20150116T231500Z">Kaikki tuetut tiedostot</lang>
         </row>
-        <row id="SXmlFiles" si="16" created="20150116T231407Z">
+        <row id="SXmlFiles" si="16" scannedcomment="Part of file dialog filter: XML files (*.xml)" created="20150116T231407Z">
           <value>XML files</value>
           <lang id="fi" time="20150116T231452Z">XML-tiedostot</lang>
         </row>
-        <row id="SIniFiles" si="17" created="20150116T231407Z">
+        <row id="SIniFiles" si="17" scannedcomment="Part of file dialog filter: Ini files (*.ini)" created="20150116T231407Z">
           <value>Ini files</value>
           <lang id="fi" time="20150116T231444Z">Ini-tiedostot</lang>
         </row>
@@ -201,10 +205,6 @@
         <row id="SSaveFilter" si="19">
           <value>XML files (*.xml)|*.xml|Ini files (*.ini)|*.ini</value>
           <lang id="fi" time="20200208T023046Z">XML-tiedostot (*.xml)|*.xml|Ini-tiedostot (*.ini)|*.ini</lang>
-        </row>
-        <row id="SOpenTitle" si="20">
-          <value>Open File</value>
-          <lang id="fi" time="20150116T231523Z">Avaa tiedosto</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
@@ -235,11 +235,7 @@
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

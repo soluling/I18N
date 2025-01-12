@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20210919T105101Z" version="1.0.880" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20241227T093231Z" version="1.0.1054" stringid="411">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\DevExpress.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\DevExpress\Win32\Release\DevExpress.exe" original="en" platforms="[ptWin32,ptWin64]">
+  <node class="TDelphiSource" name="Win32\Release\DevExpress.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\DevExpress\Win32\Release\DevExpress.exe" original="en" lastmodified="20241227T093231Z" platforms="[ptWin32,ptWin64]" library="dlAnsi">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -12,7 +12,6 @@
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData">
       <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
-        <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T020107Z">0</row>
         <row id="Top" created="20151019T020107Z">0</row>
         <row id="Caption" si="1">
@@ -436,7 +435,6 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
-        <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T020107Z">256</row>
         <row id="Top" created="20151019T020107Z">347</row>
         <row id="Caption" si="10">
@@ -519,7 +517,7 @@
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <platformfiles>
-      <item file="..\..\Win64\Release\Multilingual.exe" drcfile="..\..\Win64\Release\Multilingual.drc"/>
+      <item file="D:\NT\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.exe" drcfile="D:\NT\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.drc"/>
     </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -548,6 +546,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

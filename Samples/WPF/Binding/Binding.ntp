@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A4DB72AE-2DC7-443E-9B0C-01CE991B8949" created="20220914T131200Z" lastmodified="20220915T005938Z" version="1.0.944" stringid="6">
+<project id="A4DB72AE-2DC7-443E-9B0C-01CE991B8949" created="20220914T131200Z" lastmodified="20241227T055712Z" version="1.0.1054" stringid="6">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Binding.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Binding\Binding.csproj" original="en" lastmodified="20220915T005938Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Binding.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Binding\Binding.csproj" original="en" lastmodified="20241227T055712Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net45" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -37,7 +37,7 @@
           </row>
         </item>
         <item name="dateValue" type="TextBlock">
-          <row id="Text.StringFormat" class="TPatternRow" si="3" locked="1">D</row>
+          <row id="Text.StringFormat" class="TPatternRow" si="3" locked="1" original="D">D</row>
         </item>
         <item name="amountLabel" type="Label">
           <row id="Content" si="4">
@@ -46,7 +46,7 @@
           </row>
         </item>
         <item name="amountValue" type="TextBlock">
-          <row id="Text.StringFormat" class="TPatternRow" si="5" locked="1">C</row>
+          <row id="Text.StringFormat" class="TPatternRow" si="5" locked="1" original="C">C</row>
         </item>
         <item name="productNameLabel" type="Label">
           <row id="Content" si="6">
@@ -79,7 +79,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx" windowsforms="wf20"/>
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
     </node>
     <configurations>
       <configuration name="Default" xamllang="xlAdd"/>
@@ -89,7 +89,6 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Countries.csv" type="TCsvGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -101,10 +100,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

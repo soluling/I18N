@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="DA52598F-F033-4ED2-AC01-C509FF060873" created="20140908T095101Z" lastmodified="20200316T232017Z" version="1.0.714" stringid="4">
+<project id="DA52598F-F033-4ED2-AC01-C509FF060873" created="20140908T095101Z" lastmodified="20241228T064639Z" version="1.0.1054" stringid="4">
   <lang id="fi"/>
-  <node class="TPropertiesSource" name="Sample.properties" fullpath="D:\NT\Deploy\Samples\Java\Test\src\Sample.properties" original="en" encoding="iso-8859-1">
+  <node class="TPropertiesSource" name="Sample.properties" fullpath="D:\NT\Deploy\Samples\Java\Test\src\Sample.properties" original="en" lastmodified="20241228T064639Z" encoding="iso-8859-1">
     <row id="single'1" si="1">
       <value>quote in key</value>
       <lang id="fi" time="20140908T200804Z">koe hölmö 'avain'</lang>
@@ -22,6 +22,7 @@
         </encodings>
       </configuration>
     </configurations>
+    <data>c2luZ2xlXCcxPXF1b3RlIGluIGtleQ0KDQojIENvbW1lbnQNCm9uZT1PbmUNCnR3bz1Ud28NCnNpc3U9U2lzdQ==</data>
   </node>
   <terminology>
     <shared>
@@ -33,14 +34,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

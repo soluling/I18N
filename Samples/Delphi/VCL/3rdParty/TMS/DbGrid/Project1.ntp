@@ -1,0 +1,1117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="38314E1E-1AC1-4376-A264-AEB697ED7882" created="20240825T163343Z" lastmodified="20241228T054851Z" version="1.0.1054" stringid="829">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Debug\Project1.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\3rdParty\TMS\DbGrid\Win32\Debug\Project1.exe" original="en" lastmodified="20241228T054851Z" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+    <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
+    <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
+    <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
+    <node class="TWindowsIconFolder" name="Icon" excluded="1"/>
+    <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+        <font id="Font" name="Segoe UI" size="9"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption" si="607">Form1</row>
+        <row id="ClientHeight">441</row>
+        <row id="ClientWidth">624</row>
+        <item name="DBAdvGrid1" type="TDBAdvGrid">
+          <font id="Columns[0].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[1].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[2].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[3].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[4].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[5].Font" name="Segoe UI" size="9"/>
+          <font id="Columns[6].Font" name="Segoe UI" size="9"/>
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">608</row>
+          <row id="Height">369</row>
+          <row id="FilterDropDown.TextChecked" si="608">Checked</row>
+          <row id="FilterDropDown.TextUnChecked" si="609">Unchecked</row>
+          <row id="FilterDropDownClear" si="610">(All)</row>
+          <row id="FilterEdit.TypeNames.Strings[0]" si="611">Starts with</row>
+          <row id="FilterEdit.TypeNames.Strings[1]" si="612">Ends with</row>
+          <row id="FilterEdit.TypeNames.Strings[2]" si="613">Contains</row>
+          <row id="FilterEdit.TypeNames.Strings[3]" si="614">Not contains</row>
+          <row id="FilterEdit.TypeNames.Strings[4]" si="615">Equal</row>
+          <row id="FilterEdit.TypeNames.Strings[5]" si="616">Not equal</row>
+          <row id="FilterEdit.TypeNames.Strings[6]" si="617">Larger than</row>
+          <row id="FilterEdit.TypeNames.Strings[7]" si="618">Smaller than</row>
+          <row id="FilterEdit.TypeNames.Strings[8]" si="619">Clear</row>
+          <row id="FloatFormat" si="620">%.2f</row>
+          <row id="HTMLSettings.ImageFolder" si="621">images</row>
+          <row id="HTMLSettings.ImageBaseName" si="622">img</row>
+          <row id="PrintSettings.DateFormat" si="623">dd/mm/yyyy</row>
+          <row id="PrintSettings.PageNumSep" si="624">/</row>
+          <row id="SearchFooter.FindNextCaption" si="625">Find &amp;next</row>
+          <row id="SearchFooter.FindPrevCaption" si="626">Find &amp;previous</row>
+          <row id="SearchFooter.HighLightCaption" si="627">Highlight</row>
+          <row id="SearchFooter.HintClose" si="628">Close</row>
+          <row id="SearchFooter.HintFindNext" si="629">Find next occurrence</row>
+          <row id="SearchFooter.HintFindPrev" si="630">Find previous occurrence</row>
+          <row id="SearchFooter.HintHighlight" si="631">Highlight occurrences</row>
+          <row id="SearchFooter.MatchCaseCaption" si="632">Match case</row>
+          <row id="SearchFooter.ResultFormat" si="633">(%d of %d)</row>
+          <row id="Columns[0].CheckFalse" si="634">N</row>
+          <row id="Columns[0].CheckTrue" si="635">Y</row>
+          <row id="Columns[1].CheckFalse" si="636">N</row>
+          <row id="Columns[1].CheckTrue" si="637">Y</row>
+          <row id="Columns[1].FieldName" si="638">Id</row>
+          <row id="Columns[1].Header" si="670" created="20240825T164834Z">Identified</row>
+          <row id="Columns[2].CheckFalse" si="639">N</row>
+          <row id="Columns[2].CheckTrue" si="640">Y</row>
+          <row id="Columns[2].FieldName" si="641">Name</row>
+          <row id="Columns[3].CheckFalse" si="642">N</row>
+          <row id="Columns[3].CheckTrue" si="643">Y</row>
+          <row id="Columns[3].FieldName" si="644">FieldPlayers</row>
+          <row id="Columns[3].Header" si="672" created="20240825T164834Z">Field players</row>
+          <row id="Columns[4].CheckFalse" si="645">N</row>
+          <row id="Columns[4].CheckTrue" si="646">Y</row>
+          <row id="Columns[4].FieldName" si="647">Goalie</row>
+          <row id="Columns[4].Header" si="673" created="20240825T164834Z">Goal keeper</row>
+          <row id="Columns[5].CheckFalse" si="648">N</row>
+          <row id="Columns[5].CheckTrue" si="649">Y</row>
+          <row id="Columns[5].FieldName" si="650">Origin</row>
+          <row id="Columns[6].CheckFalse" si="651">N</row>
+          <row id="Columns[6].CheckTrue" si="652">Y</row>
+          <row id="Columns[6].FieldName" si="653">Description</row>
+        </item>
+        <item name="Connection1" type="TADOConnection">
+          <row id="Left">96</row>
+          <row id="Top">384</row>
+        </item>
+        <item name="Query1" type="TADOQuery">
+          <row id="Left">160</row>
+          <row id="Top">384</row>
+        </item>
+        <item name="DataSource1" type="TDataSource">
+          <row id="Left">224</row>
+          <row id="Top">384</row>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GBUZvcm0xDENsaWVudEhlaWdodAO5AQtDbGllbnRXaWR0aANw
+          AgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtG
+          b250LkhlaWdodAL0CUZvbnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsAClRleHRIZWlnaHQCDwAKVERCQWR2R3JpZApEQkFk
+          dkdyaWQxBExlZnQCCANUb3ACCAVXaWR0aANgAgZIZWlnaHQDcQEIQ29sQ291bnQCBwxEcmF3aW5nU3R5bGUHCmdkc0NsYXNzaWMK
+          Rml4ZWRDb2xvcgcHY2xXaGl0ZQhSb3dDb3VudAIDCUZpeGVkUm93cwIBCFRhYk9yZGVyAgAWQWN0aXZlQ2VsbEZvbnQuQ2hhcnNl
+          dAcPREVGQVVMVF9DSEFSU0VUFEFjdGl2ZUNlbGxGb250LkNvbG9yBEhGRAAVQWN0aXZlQ2VsbEZvbnQuSGVpZ2h0AvQTQWN0aXZl
+          Q2VsbEZvbnQuTmFtZQYIU2Vnb2UgVUkUQWN0aXZlQ2VsbEZvbnQuU3R5bGULBmZzQm9sZAAPQWN0aXZlQ2VsbENvbG9yBEp4sAAR
+          QWN0aXZlQ2VsbENvbG9yVG8ESniwAAtCb3JkZXJDb2xvcgSrq6sAHUNvbnRyb2xMb29rLkZpeGVkR3JhZGllbnRGcm9tBwdjbFdo
+          aXRlG0NvbnRyb2xMb29rLkZpeGVkR3JhZGllbnRUbwcHY2xXaGl0ZSJDb250cm9sTG9vay5GaXhlZEdyYWRpZW50SG92ZXJGcm9t
+          BwZjbEdyYXkgQ29udHJvbExvb2suRml4ZWRHcmFkaWVudEhvdmVyVG8HB2NsV2hpdGUoQ29udHJvbExvb2suRml4ZWRHcmFkaWVu
+          dEhvdmVyTWlycm9yRnJvbQcHY2xXaGl0ZSZDb250cm9sTG9vay5GaXhlZEdyYWRpZW50SG92ZXJNaXJyb3JUbwcHY2xXaGl0ZSRD
+          b250cm9sTG9vay5GaXhlZEdyYWRpZW50SG92ZXJCb3JkZXIEsbGxACFDb250cm9sTG9vay5GaXhlZEdyYWRpZW50RG93bkZyb20H
+          B2NsV2hpdGUfQ29udHJvbExvb2suRml4ZWRHcmFkaWVudERvd25UbwcHY2xXaGl0ZSdDb250cm9sTG9vay5GaXhlZEdyYWRpZW50
+          RG93bk1pcnJvckZyb20HB2NsV2hpdGUlQ29udHJvbExvb2suRml4ZWRHcmFkaWVudERvd25NaXJyb3JUbwcHY2xXaGl0ZSNDb250
+          cm9sTG9vay5GaXhlZEdyYWRpZW50RG93bkJvcmRlcgSrq6sAJ0NvbnRyb2xMb29rLkRyb3BEb3duSGVhZGVyLkZvbnQuQ2hhcnNl
+          dAcPREVGQVVMVF9DSEFSU0VUJUNvbnRyb2xMb29rLkRyb3BEb3duSGVhZGVyLkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dCZDb250
+          cm9sTG9vay5Ecm9wRG93bkhlYWRlci5Gb250LkhlaWdodAL1JENvbnRyb2xMb29rLkRyb3BEb3duSGVhZGVyLkZvbnQuTmFtZQYI
+          U2Vnb2UgVUklQ29udHJvbExvb2suRHJvcERvd25IZWFkZXIuRm9udC5TdHlsZQsAIkNvbnRyb2xMb29rLkRyb3BEb3duSGVhZGVy
+          LlZpc2libGUJIkNvbnRyb2xMb29rLkRyb3BEb3duSGVhZGVyLkJ1dHRvbnMOACdDb250cm9sTG9vay5Ecm9wRG93bkZvb3Rlci5G
+          b250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVCVDb250cm9sTG9vay5Ecm9wRG93bkZvb3Rlci5Gb250LkNvbG9yBwxjbFdpbmRv
+          d1RleHQmQ29udHJvbExvb2suRHJvcERvd25Gb290ZXIuRm9udC5IZWlnaHQC9SRDb250cm9sTG9vay5Ecm9wRG93bkZvb3Rlci5G
+          b250Lk5hbWUGCFNlZ29lIFVJJUNvbnRyb2xMb29rLkRyb3BEb3duRm9vdGVyLkZvbnQuU3R5bGULACJDb250cm9sTG9vay5Ecm9w
+          RG93bkZvb3Rlci5WaXNpYmxlCSJDb250cm9sTG9vay5Ecm9wRG93bkZvb3Rlci5CdXR0b25zDgAuQ29udHJvbExvb2suVG9nZ2xl
+          U3dpdGNoLkJhY2tncm91bmRCb3JkZXJXaWR0aAUAAAAAAAAAgP8/KkNvbnRyb2xMb29rLlRvZ2dsZVN3aXRjaC5CdXR0b25Cb3Jk
+          ZXJXaWR0aAUAAAAAAAAAgP8/LENvbnRyb2xMb29rLlRvZ2dsZVN3aXRjaC5DYXB0aW9uRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NI
+          QVJTRVQqQ29udHJvbExvb2suVG9nZ2xlU3dpdGNoLkNhcHRpb25Gb250LkNvbG9yBwxjbFdpbmRvd1RleHQrQ29udHJvbExvb2su
+          VG9nZ2xlU3dpdGNoLkNhcHRpb25Gb250LkhlaWdodAL0KUNvbnRyb2xMb29rLlRvZ2dsZVN3aXRjaC5DYXB0aW9uRm9udC5OYW1l
+          BghTZWdvZSBVSSpDb250cm9sTG9vay5Ub2dnbGVTd2l0Y2guQ2FwdGlvbkZvbnQuU3R5bGULAB9Db250cm9sTG9vay5Ub2dnbGVT
+          d2l0Y2guU2hhZG93CAZGaWx0ZXIOABtGaWx0ZXJEcm9wRG93bi5Gb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVBlGaWx0ZXJE
+          cm9wRG93bi5Gb250LkNvbG9yBwxjbFdpbmRvd1RleHQaRmlsdGVyRHJvcERvd24uRm9udC5IZWlnaHQC9BhGaWx0ZXJEcm9wRG93
+          bi5Gb250Lk5hbWUGCFNlZ29lIFVJGUZpbHRlckRyb3BEb3duLkZvbnQuU3R5bGULABpGaWx0ZXJEcm9wRG93bi5UZXh0Q2hlY2tl
+          ZAYHQ2hlY2tlZBxGaWx0ZXJEcm9wRG93bi5UZXh0VW5DaGVja2VkBglVbmNoZWNrZWQTRmlsdGVyRHJvcERvd25DbGVhcgYFKEFs
+          bCkcRmlsdGVyRWRpdC5UeXBlTmFtZXMuU3RyaW5ncwEGC1N0YXJ0cyB3aXRoBglFbmRzIHdpdGgGCENvbnRhaW5zBgxOb3QgY29u
+          dGFpbnMGBUVxdWFsBglOb3QgZXF1YWwGC0xhcmdlciB0aGFuBgxTbWFsbGVyIHRoYW4GBUNsZWFyAA1GaXhlZENvbFdpZHRoAhQO
+          Rml4ZWRSb3dIZWlnaHQCFhFGaXhlZEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUD0ZpeGVkRm9udC5Db2xvcgcMY2xXaW5k
+          b3dUZXh0EEZpeGVkRm9udC5IZWlnaHQC9Q5GaXhlZEZvbnQuTmFtZQYIU2Vnb2UgVUkPRml4ZWRGb250LlN0eWxlCwZmc0JvbGQA
+          C0Zsb2F0Rm9ybWF0BgQlLjJmFEhvdmVyQnV0dG9ucy5CdXR0b25zDgAYSFRNTFNldHRpbmdzLkltYWdlRm9sZGVyBgZpbWFnZXMa
+          SFRNTFNldHRpbmdzLkltYWdlQmFzZU5hbWUGA2ltZwRMb29rBwhnbEN1c3RvbRhQcmludFNldHRpbmdzLkRhdGVGb3JtYXQGCmRk
+          L21tL3l5eXkaUHJpbnRTZXR0aW5ncy5Gb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVBhQcmludFNldHRpbmdzLkZvbnQuQ29s
+          b3IHDGNsV2luZG93VGV4dBlQcmludFNldHRpbmdzLkZvbnQuSGVpZ2h0AvQXUHJpbnRTZXR0aW5ncy5Gb250Lk5hbWUGCFNlZ29l
+          IFVJGFByaW50U2V0dGluZ3MuRm9udC5TdHlsZQsAH1ByaW50U2V0dGluZ3MuRml4ZWRGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hB
+          UlNFVB1QcmludFNldHRpbmdzLkZpeGVkRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0HlByaW50U2V0dGluZ3MuRml4ZWRGb250Lkhl
+          aWdodAL0HFByaW50U2V0dGluZ3MuRml4ZWRGb250Lk5hbWUGCFNlZ29lIFVJHVByaW50U2V0dGluZ3MuRml4ZWRGb250LlN0eWxl
+          CwAgUHJpbnRTZXR0aW5ncy5IZWFkZXJGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVB5QcmludFNldHRpbmdzLkhlYWRlckZv
+          bnQuQ29sb3IHDGNsV2luZG93VGV4dB9QcmludFNldHRpbmdzLkhlYWRlckZvbnQuSGVpZ2h0AvQdUHJpbnRTZXR0aW5ncy5IZWFk
+          ZXJGb250Lk5hbWUGCFNlZ29lIFVJHlByaW50U2V0dGluZ3MuSGVhZGVyRm9udC5TdHlsZQsAIFByaW50U2V0dGluZ3MuRm9vdGVy
+          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQeUHJpbnRTZXR0aW5ncy5Gb290ZXJGb250LkNvbG9yBwxjbFdpbmRvd1RleHQf
+          UHJpbnRTZXR0aW5ncy5Gb290ZXJGb250LkhlaWdodAL0HVByaW50U2V0dGluZ3MuRm9vdGVyRm9udC5OYW1lBghTZWdvZSBVSR5Q
+          cmludFNldHRpbmdzLkZvb3RlckZvbnQuU3R5bGULABhQcmludFNldHRpbmdzLlBhZ2VOdW1TZXAGAS8UU2VhcmNoRm9vdGVyLkNv
+          bG9yVG8HBmNsTm9uZRxTZWFyY2hGb290ZXIuRmluZE5leHRDYXB0aW9uBgpGaW5kICZuZXh0HFNlYXJjaEZvb3Rlci5GaW5kUHJl
+          dkNhcHRpb24GDkZpbmQgJnByZXZpb3VzGVNlYXJjaEZvb3Rlci5Gb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVBdTZWFyY2hG
+          b290ZXIuRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0GFNlYXJjaEZvb3Rlci5Gb250LkhlaWdodAL0FlNlYXJjaEZvb3Rlci5Gb250
+          Lk5hbWUGCFNlZ29lIFVJF1NlYXJjaEZvb3Rlci5Gb250LlN0eWxlCwAdU2VhcmNoRm9vdGVyLkhpZ2hMaWdodENhcHRpb24GCUhp
+          Z2hsaWdodBZTZWFyY2hGb290ZXIuSGludENsb3NlBgVDbG9zZRlTZWFyY2hGb290ZXIuSGludEZpbmROZXh0BhRGaW5kIG5leHQg
+          b2NjdXJyZW5jZRlTZWFyY2hGb290ZXIuSGludEZpbmRQcmV2BhhGaW5kIHByZXZpb3VzIG9jY3VycmVuY2UaU2VhcmNoRm9vdGVy
+          LkhpbnRIaWdobGlnaHQGFUhpZ2hsaWdodCBvY2N1cnJlbmNlcx1TZWFyY2hGb290ZXIuTWF0Y2hDYXNlQ2FwdGlvbgYKTWF0Y2gg
+          Y2FzZRlTZWFyY2hGb290ZXIuUmVzdWx0Rm9ybWF0BgooJWQgb2YgJWQpDlNlbGVjdGlvbkNvbG9yBKW50QASU2VsZWN0aW9uVGV4
+          dENvbG9yBwxjbFdpbmRvd1RleHQYU29ydFNldHRpbmdzLkhlYWRlckNvbG9yBwdjbFdoaXRlGlNvcnRTZXR0aW5ncy5IZWFkZXJD
+          b2xvclRvBwdjbFdoaXRlHlNvcnRTZXR0aW5ncy5IZWFkZXJNaXJyb3JDb2xvcgcHY2xXaGl0ZSBTb3J0U2V0dGluZ3MuSGVhZGVy
+          TWlycm9yQ29sb3JUbwcHY2xXaGl0ZQdWZXJzaW9uBgcyLjUuMi4wEUF1dG9DcmVhdGVDb2x1bW5zCRFBdXRvUmVtb3ZlQ29sdW1u
+          cwkHQ29sdW1ucw4BB0JvcmRlcnMLAA9Cb3JkZXJQZW4uQ29sb3IHCGNsU2lsdmVyDEJ1dHRvbkhlaWdodAISCkNoZWNrRmFsc2UG
+          AU4JQ2hlY2tUcnVlBgFZBUNvbG9yBwhjbFdpbmRvdwxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxj
+          bFdpbmRvd1RleHQLRm9udC5IZWlnaHQC9AlGb250Lk5hbWUGCFNlZ29lIFVJCkZvbnQuU3R5bGULABJIZWFkZXJGb250LkNoYXJz
+          ZXQHD0RFRkFVTFRfQ0hBUlNFVBBIZWFkZXJGb250LkNvbG9yBDs7OwARSGVhZGVyRm9udC5IZWlnaHQC9A9IZWFkZXJGb250Lk5h
+          bWUGCFNlZ29lIFVJEEhlYWRlckZvbnQuU3R5bGULAAxQcmludEJvcmRlcnMLBWNiVG9wBmNiTGVmdAdjYlJpZ2h0CGNiQm90dG9t
+          ABFQcmludEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUD1ByaW50Rm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0EFByaW50Rm9u
+          dC5IZWlnaHQC9A5QcmludEZvbnQuTmFtZQYIU2Vnb2UgVUkPUHJpbnRGb250LlN0eWxlCwAFV2lkdGgCFAABCUFsaWdubWVudAcO
+          dGFSaWdodEp1c3RpZnkHQm9yZGVycwsAD0JvcmRlclBlbi5Db2xvcgcIY2xTaWx2ZXIMQnV0dG9uSGVpZ2h0AhIKQ2hlY2tGYWxz
+          ZQYBTglDaGVja1RydWUGAVkFQ29sb3IHCGNsV2luZG93CUZpZWxkTmFtZQYCSWQMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJT
+          RVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1lBghTZWdvZSBVSQpGb250LlN0eWxlCwAG
+          SGVhZGVyBgpJZGVudGlmaWVkEkhlYWRlckZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUEEhlYWRlckZvbnQuQ29sb3IEOzs7
+          ABFIZWFkZXJGb250LkhlaWdodAL0D0hlYWRlckZvbnQuTmFtZQYIU2Vnb2UgVUkQSGVhZGVyRm9udC5TdHlsZQsADFByaW50Qm9y
+          ZGVycwsFY2JUb3AGY2JMZWZ0B2NiUmlnaHQIY2JCb3R0b20AEVByaW50Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQPUHJp
+          bnRGb250LkNvbG9yBwxjbFdpbmRvd1RleHQQUHJpbnRGb250LkhlaWdodAL0DlByaW50Rm9udC5OYW1lBghTZWdvZSBVSQ9Qcmlu
+          dEZvbnQuU3R5bGULAAVXaWR0aAJAAAEHQm9yZGVycwsAD0JvcmRlclBlbi5Db2xvcgcIY2xTaWx2ZXIMQnV0dG9uSGVpZ2h0AhIK
+          Q2hlY2tGYWxzZQYBTglDaGVja1RydWUGAVkFQ29sb3IHCGNsV2luZG93CkVkaXRMZW5ndGgCHglGaWVsZE5hbWUGBE5hbWUMRm9u
+          dC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1l
+          BghTZWdvZSBVSQpGb250LlN0eWxlCwASSGVhZGVyRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQQSGVhZGVyRm9udC5Db2xv
+          cgQ7OzsAEUhlYWRlckZvbnQuSGVpZ2h0AvQPSGVhZGVyRm9udC5OYW1lBghTZWdvZSBVSRBIZWFkZXJGb250LlN0eWxlCwAMUHJp
+          bnRCb3JkZXJzCwVjYlRvcAZjYkxlZnQHY2JSaWdodAhjYkJvdHRvbQARUHJpbnRGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNF
+          VA9QcmludEZvbnQuQ29sb3IHDGNsV2luZG93VGV4dBBQcmludEZvbnQuSGVpZ2h0AvQOUHJpbnRGb250Lk5hbWUGCFNlZ29lIFVJ
+          D1ByaW50Rm9udC5TdHlsZQsABVdpZHRoAkAAAQlBbGlnbm1lbnQHDnRhUmlnaHRKdXN0aWZ5B0JvcmRlcnMLAA9Cb3JkZXJQZW4u
+          Q29sb3IHCGNsU2lsdmVyDEJ1dHRvbkhlaWdodAISCkNoZWNrRmFsc2UGAU4JQ2hlY2tUcnVlBgFZBUNvbG9yBwhjbFdpbmRvdwlG
+          aWVsZE5hbWUGDEZpZWxkUGxheWVycwxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9yBwxjbFdpbmRvd1Rl
+          eHQLRm9udC5IZWlnaHQC9AlGb250Lk5hbWUGCFNlZ29lIFVJCkZvbnQuU3R5bGULAAZIZWFkZXIGDUZpZWxkIHBsYXllcnMSSGVh
+          ZGVyRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQQSGVhZGVyRm9udC5Db2xvcgQ7OzsAEUhlYWRlckZvbnQuSGVpZ2h0AvQP
+          SGVhZGVyRm9udC5OYW1lBghTZWdvZSBVSRBIZWFkZXJGb250LlN0eWxlCwAMUHJpbnRCb3JkZXJzCwVjYlRvcAZjYkxlZnQHY2JS
+          aWdodAhjYkJvdHRvbQARUHJpbnRGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVA9QcmludEZvbnQuQ29sb3IHDGNsV2luZG93
+          VGV4dBBQcmludEZvbnQuSGVpZ2h0AvQOUHJpbnRGb250Lk5hbWUGCFNlZ29lIFVJD1ByaW50Rm9udC5TdHlsZQsABVdpZHRoAmQA
+          AQdCb3JkZXJzCwAPQm9yZGVyUGVuLkNvbG9yBwhjbFNpbHZlcgxCdXR0b25IZWlnaHQCEgpDaGVja0ZhbHNlBgFOCUNoZWNrVHJ1
+          ZQYBWQVDb2xvcgcIY2xXaW5kb3cJRmllbGROYW1lBgZHb2FsaWUMRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5D
+          b2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1lBghTZWdvZSBVSQpGb250LlN0eWxlCwAGSGVhZGVyBgtH
+          b2FsIGtlZXBlchJIZWFkZXJGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVBBIZWFkZXJGb250LkNvbG9yBDs7OwARSGVhZGVy
+          Rm9udC5IZWlnaHQC9A9IZWFkZXJGb250Lk5hbWUGCFNlZ29lIFVJEEhlYWRlckZvbnQuU3R5bGULAAxQcmludEJvcmRlcnMLBWNi
+          VG9wBmNiTGVmdAdjYlJpZ2h0CGNiQm90dG9tABFQcmludEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUD1ByaW50Rm9udC5D
+          b2xvcgcMY2xXaW5kb3dUZXh0EFByaW50Rm9udC5IZWlnaHQC9A5QcmludEZvbnQuTmFtZQYIU2Vnb2UgVUkPUHJpbnRGb250LlN0
+          eWxlCwAFV2lkdGgCZAABB0JvcmRlcnMLAA9Cb3JkZXJQZW4uQ29sb3IHCGNsU2lsdmVyDEJ1dHRvbkhlaWdodAISCkNoZWNrRmFs
+          c2UGAU4JQ2hlY2tUcnVlBgFZBUNvbG9yBwhjbFdpbmRvdwpFZGl0TGVuZ3RoAh4JRmllbGROYW1lBgZPcmlnaW4MRm9udC5DaGFy
+          c2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1lBghTZWdv
+          ZSBVSQpGb250LlN0eWxlCwASSGVhZGVyRm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQQSGVhZGVyRm9udC5Db2xvcgQ7OzsA
+          EUhlYWRlckZvbnQuSGVpZ2h0AvQPSGVhZGVyRm9udC5OYW1lBghTZWdvZSBVSRBIZWFkZXJGb250LlN0eWxlCwAMUHJpbnRCb3Jk
+          ZXJzCwVjYlRvcAZjYkxlZnQHY2JSaWdodAhjYkJvdHRvbQARUHJpbnRGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVA9Qcmlu
+          dEZvbnQuQ29sb3IHDGNsV2luZG93VGV4dBBQcmludEZvbnQuSGVpZ2h0AvQOUHJpbnRGb250Lk5hbWUGCFNlZ29lIFVJD1ByaW50
+          Rm9udC5TdHlsZQsABVdpZHRoAkAAAQdCb3JkZXJzCwAPQm9yZGVyUGVuLkNvbG9yBwhjbFNpbHZlcgxCdXR0b25IZWlnaHQCEgpD
+          aGVja0ZhbHNlBgFOCUNoZWNrVHJ1ZQYBWQVDb2xvcgcIY2xXaW5kb3cKRWRpdExlbmd0aAPIAAlGaWVsZE5hbWUGC0Rlc2NyaXB0
+          aW9uDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250LkhlaWdodAL0CUZv
+          bnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsAEkhlYWRlckZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUEEhlYWRlckZv
+          bnQuQ29sb3IEOzs7ABFIZWFkZXJGb250LkhlaWdodAL0D0hlYWRlckZvbnQuTmFtZQYIU2Vnb2UgVUkQSGVhZGVyRm9udC5TdHls
+          ZQsADFByaW50Qm9yZGVycwsFY2JUb3AGY2JMZWZ0B2NiUmlnaHQIY2JCb3R0b20AEVByaW50Rm9udC5DaGFyc2V0Bw9ERUZBVUxU
+          X0NIQVJTRVQPUHJpbnRGb250LkNvbG9yBwxjbFdpbmRvd1RleHQQUHJpbnRGb250LkhlaWdodAL0DlByaW50Rm9udC5OYW1lBghT
+          ZWdvZSBVSQ9QcmludEZvbnQuU3R5bGULAAVXaWR0aAJAAAAKRGF0YVNvdXJjZQcLRGF0YVNvdXJjZTETSW52YWxpZFBpY3R1cmUu
+          RGF0YQrEEAAABVRJY29uAAABAAEAICAgAAAAAACoEAAAFgAAACgAAAAgAAAAQAAAAAEAIAAAAAAAABAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamprJWpqa2BqamuUamprwGpqa+Fqamv4ampr+Gpqa+Fq
+          amvAamprlGpqa2BqamslAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAamprQHV1dp54eHnxn5+f9sDAwP3a2tr/7e3u//v7+//7+/v/7e3u/9ra2v/AwMD9n5+f9nh4efF1dXaeampr
+          QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamprInx8fJiIiInwvb29/Onp
+          6/7Z2en+tbXd/ouLzf5ZWrf/Nzmo/ysspP9KSbH/cXHB/6Gi1//T0+j/6urr/r6+v/yIiInwfHx8mGpqayIAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGpqa0ODg4PYt7e4+uzs7/7AwN//eXfE/yIhoP8SEpv/EBCk/wwMqP8KCqz/
+          Cgq0/woKuf8NDb7/Dw+x/xERpv9WVrj/rq3c/+zs7/63t7j6g4OD2Gpqa0MAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAABqamtOh4eI6tPT0/7Kyuj/REOw/xcXmf8REZz/DAyY/wsLm/8LC6D/Cgqm/wkJrP8JCbL/CAi6/wcHv/8LCcj/DQ3O/xER
+          zP8QEK//Skmy/8/P6//T09P+h4eI6mpqa04AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamprQ4eHiOrh4eH/qKja/yMjoP8V
+          FZz/DQ2S/wwMlf8MDJn/Cwue/wsLoP8KCqb/CQms/wkJsv8ICLj/CAi8/wgIw/8MDMn/DAzQ/w0N1v8TE8//IiKp/6+v3v/h4eH/
+          h4eI6mpqa0MAAAAAAAAAAAAAAAAAAAAAAAAAAGpqayKDg4PY09PT/qio2f8gIKT/ExOb/wwMkv8MDJX/DAyX/wwMmf8LC57/Cwug
+          /woKpP8KCqn/CQmw/wgItP8ICLv/BwfA/woKxv8JCcz/DAzT/w0N2P8TE9P/Ghqo/66t3v/U1NT+g4OD2GpqayIAAAAAAAAAAAAA
+          AAAAAAAAfHx8mLe3uPrKyuj/JSSj/xMTn/8MDJf/DAyV/wwMlf8MDJH/DAyV/wsLnv8LC6D/Cgqk/woKqP8JCa3/CQmy/wgIuP8I
+          CLz/BwfA/wgIvP8HB8X/DAzT/w0N1/8SEtH/ICCn/83N6/+4uLn6fHx8mAAAAAAAAAAAAAAAAGpqa0CIiInw7Ozv/kVFsf8WFqT/
+          Cwub/wwMmf8MDJb/MzOi/7m50P85Opv/DAyV/wsLof8KCqT/Cgqn/woKq/8JCbD/CAi0/wgIt/8vL8L/rq7i/0tLv/8HB77/CwvR
+          /wwM0/8UE8z/SEix/+zs7/6IiInwamprQAAAAAAAAAAAdXV2nr+/v/2bm9X/HBym/wwMof8LC5//Cwua/zU1p/+1tb7/5ubf/+3t
+          7/88PJz/DAyX/woKpP8KCqb/Cgqp/wkJrf8JCbD/Jia1/87O3v////v/7u7x/0hIuv8ICLz/CgrN/wsLzv8REav/vsDg/7/Av/11
+          dXaeAAAAAGpqayV4eHnx4+Pl/kZGsv8UFKj/Cgqk/wsLoP8hIan/vb3K/9DQyP/FxcX/4+Ph/+3t7/8+Pp7/DAyY/woKpv8KCqj/
+          Cgqp/ysrsP/AwM3/6uri/+vr6//+/vj/7e3u/ygovf8HB8T/CAnH/w8PxP+HiMv/6+vs/nl5evFqamslamprYJ2enfbW1+T/Ojqz
+          /xISrf8KCqj/Cgqk/xMTqv+rq8//1tbL/8rKyv/Gxsb/5OTg/+7u7/8/P6D/DAyZ/woKpv8oKKv/srK//9jYzv/W1tj/4ODg//b1
+          7f/R0e3/HhzA/wcHvv8HB7//BwfA/yEgqv/T1en+n6Cg9mpqa2BqamuUvb29+7q73P86Obf/Ly+4/wkJrf8KCqn/Cgqm/xUVrP+t
+          rc//1tbL/8vLyv/Gxsb/5OTh/+7u7/84OKH/IiKi/6yruP/IyMD/x8fI/83Nzf/h4dn/yMrh/yQkvP8ICLT/CAi5/wgIuv8ICLv/
+          Dw6r/6Gi1f7AwMD8amprlGpqa8DZ2Nf+mZnR/zg4u/82Nrz/LCy3/wkJrf8KCqn/Cgqk/xwcr/+xsc//1tbL/8zMy//Hx8f/5OTh
+          /+zs7v+srLf/wsK8/76+v//AwMD/z8/G/8HB1f8nJ7j/CQms/wkJsv8JCbL/CQm0/wgItP8ODrX/bm6//9nZ2f5qamvAampr4evq
+          6/99fMf/ODi//zQ0vv81Nr7/Kiq4/wkJsP8JCaz/Cgqo/xwcsf+ystD/19fM/8vLy//Hx8j/yMjD/8bGw/+/v8H/vb29/8XFvP+4
+          uM7/KSm1/woKqP8JCaz/CQmt/wkJr/8JCa//CQmv/wwMsP9HR6//7Ozt/2pqa+Fqamv4+fn5/2Zmwf84OMT/NTXC/zQ0wP81Nb7/
+          MDC8/xMTtP8JCa3/Cgqo/x4es/+qqtD/09PN/8zMzP/IyMj/w8PD/8LCwf/ExL//srLL/ysrtP8KCqT/Cgqo/woKqP8KCqn/Cgqp
+          /woKqf8KCqn/Cwup/zExpv/6+vr/ampr+Gpqa/j7+/v/WVm+/zs7yv86Osj/NzfE/zU1wv82NsD/Nja+/yMjuP8JCbH/Cgqn/0lJ
+          vv/W1tT/09PR/83Nzf/IyMj/xMTD/+3t7f9fX7P/DAyY/woKp/8KCqb/Cgqm/woKpv8KCqT/Cgqm/woKpP8LC6T/LS2m//v7+/9q
+          amv4ampr4e3t7v9/gMv/QEHM/zw8yv86Osj/ODrI/zg4xP82NsL/OTnA/yEjt/9KSsL/y8ve/+Dg3P/W1tb/0tLT/83Nzv/Jycn/
+          4uLh//Hx8v9CQqP/DAyZ/woKpP8KCqT/Cgqk/wsLo/8LC6P/Cwuh/w4Oof9EQ7D/7e3u/2pqa+FqamvA2tra/5yb1f5JSc3/Pj3Q
+          /zw9zv88PMr/OjrI/zs5x/8oKL3/XFzM/+Xl7f/09O3/5eXm/97e3v/c3Nn/2dnT/83Nzf/IyMj/5eXh//Hx8/8/P6D/DAyZ/woK
+          pP8LC6H/Cwug/wsLoP8LC5//ExOi/2trwP/a2tr/amprwGpqa5TAwMD9vbrh/lZVz/9BQdT/Pz/S/z8/zv89Pcz/LCrD/15e0//r
+          6/b////6//Hx8f/t7e7/8PDp/9LS5v+9vdb/2trT/8/Pz//Jycr/5eXi//Hx8/86OqD/DAyY/wsLo/8LC5//Cwue/wsLnv8cHKT/
+          nJzT/8HBwf1qamuUamprYJ+fn/ba2er/a2vP/0RE1/9BQ9b/QkLT/zQ0zf9kZNv/7+/////////8/Pz/9vb2//z89P/i4fD/UFDM
+          /0BAwf/Dw9v/4eHY/9TU1f/Pz8//6Ojl//Ly9P9AQKL/DAyZ/w8Pov8PD6D/Dw+d/zAvqf/R0ej+oKCg9mpqa2BqamsleHh58enp
+          6/6np9r/YGDb/0VH2/88PNb/WFfe//Ly////////////////////////6Oj4/1tb1P8oKL3/Kiu9/0lJxf/Dw9v/5OTa/9XV1f/O
+          ztD/6Ojl//T09P9JSa//ISGm/yoqpv8sK6n/VVe4/+rq7P54eHnxamprJQAAAAB1dXaevr6+/cnK5v96edv/TEzf/0FB2/9XV+D/
+          6ur//////////////////+jn//9bW9f/Li7G/z4+yf86OsX/LC7B/0pJyP/Cwt3/4+Pa/9XV1P/a2tP/ysvZ/0dHu/8lJa3/LCus
+          /zMyrv+lpNj/v7+//XV1dp4AAAAAAAAAAGpqa0CIiInw7Ozv/paW1v97e+P/TUvg/0FB2/9fX+b/5+f////////p6f//Wlrc/zMz
+          yv9CQs//QEDL/z09yf89Psj/MDDC/0hIyf/AwN3/7O7e/9DQ4P9VVMf/KCiz/zIytP80NLH/VFO3/+zs7/6IiInwamprQAAAAAAA
+          AAAAAAAAAHx8fJi3t7j60NDs/4+P2/9oaOP/Tk7i/z5A2/9lZen/srL3/2Vl5P85O9L/RkbX/0ND1P9DQ9H/QkLP/0BAy/8/P8r/
+          MzPE/05Oy/+enuL/XFvP/ykquv82Nrz/OTi4/z8+sf/Ly+n/t7e4+nx8fJgAAAAAAAAAAAAAAAAAAAAAamprIoODg9jT09P+tbXi
+          /56e5P9nZuL/TlDm/0ZG4P89Pdr/RETc/0tL3P9ISNv/SEfZ/0ZG1f9EQ9P/Q0PR/0JCz/9BQ83/OjrI/zEvxf81NcP/PDzD/z09
+          vv9AP7X/rKzc/9PT0/6Dg4PYamprIgAAAAAAAAAAAAAAAAAAAAAAAAAAamprQ4eHiOrh4eH/tbXi/6em5P94d+X/UVHl/09P5P9O
+          TuL/TU3g/0xM3v9LS9z/SUnb/0hI1/9HR9X/RUXT/0VF0f9DQ8//QkLM/z8/y/9DQ8L/RkW2/62t3P/h4eH/h4eI6mpqa0MAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamprToeHiOrT09P+0NDs/6qp3/+iouz/ZWXj/1FR5v9PT+T/T03k/01N4P9NTd//TU3c
+          /0xJ2/9KStj/R0nW/0dH1P9JScv/S0vD/46O0P/NzOj/09PT/oeHiOpqamtOAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAamprQ4ODg9i3t7j67Ozv/sPC5f+truH/np3o/29v4P9cXOH/VFLi/1BR4f9PT9//T0/b/1FQ1v9RUc//X1/I/6Gh0/7H
+          yOD+5OTn/re3uPqDg4PYamprQwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAamprInx8fJiIiInw
+          v7+//evr7P7Y2ev+vb3k/qin3P+Wldf/iIbU/399zv+Mi9L/oaLZ/8C+4f7Z2er+6urs/r+/v/2IiInwfHx8mGpqayIAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAGpqa0B1dXaeeHh58Z+fn/bAwMD92tra/+3t
+          7v/7+/v/+/v7/+3t7v/a2tr/wMDA/Z+fn/Z4eHnxdXV2nmpqa0AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+          AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABqamslamprYGpqa5RqamvAampr4Wpqa/hqamv4ampr4Wpqa8BqamuU
+          amprYGpqayUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA/8AD//8AAP/8AAA/+AAAH/AAAA/gAAAHwAAA
+          A8AAAAOAAAABgAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAGAAAABwAAAA8AA
+          AAPgAAAH8AAAD/gAAB/8AAA//wAA///AA/8LU2hvd1VuaWNvZGUICUNvbFdpZHRocwECFAJAAkACZAJkAkACQAAKUm93SGVpZ2h0
+          cwECFgIWAhYAAAAOVEFET0Nvbm5lY3Rpb24LQ29ubmVjdGlvbjEJQ29ubmVjdGVkCRBDb25uZWN0aW9uU3RyaW5nBnFQcm92aWRl
+          cj1NaWNyb3NvZnQuSmV0Lk9MRURCLjQuMDtEYXRhIFNvdXJjZT1FOlxTdXBwb3J0XFZpdGVjXERhdGFiYXNlR3JpZFxTcG9ydC5t
+          ZGI7UGVyc2lzdCBTZWN1cml0eSBJbmZvPUZhbHNlOwtMb2dpblByb21wdAgETW9kZQcPY21TaGFyZURlbnlOb25lCFByb3ZpZGVy
+          BhdNaWNyb3NvZnQuSmV0Lk9MRURCLjQuMARMZWZ0AmADVG9wA4ABAAAJVEFET1F1ZXJ5BlF1ZXJ5MQZBY3RpdmUJCkNvbm5lY3Rp
+          b24HC0Nvbm5lY3Rpb24xCkN1cnNvclR5cGUHCGN0U3RhdGljClBhcmFtZXRlcnMOAAtTUUwuU3RyaW5ncwEGE1NFTEVDVCAqIEZS
+          T00gU3BvcnQABExlZnQDoAADVG9wA4ABAAALVERhdGFTb3VyY2ULRGF0YVNvdXJjZTEHRGF0YVNldAcGUXVlcnkxBExlZnQD4AAD
+          VG9wA4ABAAAA
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TLOGINDIALOG" type="TLoginDialog" resname="TLOGINDIALOG" objectname="LoginDialog">
+        <row id="Left">307</row>
+        <row id="Top">131</row>
+        <row id="Caption" si="654">Database Login</row>
+        <row id="ClientHeight">147</row>
+        <row id="ClientWidth">283</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">119</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="655">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">200</row>
+          <row id="Top">114</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="656">Cancel</row>
+        </item>
+        <item name="Panel" type="TPanel">
+          <row id="Left">8</row>
+          <row id="Top">7</row>
+          <row id="Width">267</row>
+          <row id="Height">98</row>
+          <item name="Label3" type="TLabel">
+            <row id="Left">10</row>
+            <row id="Top">6</row>
+            <row id="Width">50</row>
+            <row id="Height">13</row>
+            <row id="Caption" si="657">Database:</row>
+          </item>
+          <item name="DatabaseName" type="TLabel">
+            <row id="Left">106</row>
+            <row id="Top">6</row>
+            <row id="Width">3</row>
+            <row id="Height">13</row>
+          </item>
+          <item name="Bevel" type="TBevel">
+            <row id="Left">1</row>
+            <row id="Top">24</row>
+            <row id="Width">264</row>
+            <row id="Height">9</row>
+          </item>
+          <item name="Panel1" type="TPanel">
+            <row id="Left">2</row>
+            <row id="Top">31</row>
+            <row id="Width">263</row>
+            <row id="Height">65</row>
+            <item name="Label1" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">8</row>
+              <row id="Width">56</row>
+              <row id="Height">13</row>
+              <row id="Caption" si="658">&amp;User Name:</row>
+            </item>
+            <item name="Label2" type="TLabel">
+              <row id="Left">8</row>
+              <row id="Top">36</row>
+              <row id="Width">50</row>
+              <row id="Height">13</row>
+              <row id="Caption" si="659">&amp;Password:</row>
+            </item>
+            <item name="UserName" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">5</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+            </item>
+            <item name="Password" type="TEdit">
+              <row id="Left">101</row>
+              <row id="Top">33</row>
+              <row id="Width">153</row>
+              <row id="Height">21</row>
+            </item>
+          </item>
+        </item>
+        <data>
+          VFBGMAxUTG9naW5EaWFsb2cLTG9naW5EaWFsb2cETGVmdAMzAQNUb3ADgwANQWN0aXZlQ29udHJvbAcIUGFzc3dvcmQLQm9yZGVy
+          U3R5bGUHCGJzRGlhbG9nB0NhcHRpb24GDkRhdGFiYXNlIExvZ2luDENsaWVudEhlaWdodAOTAAtDbGllbnRXaWR0aAMbAQVDb2xv
+          cgcJY2xCdG5GYWNlDk9sZENyZWF0ZU9yZGVyCQhQb3NpdGlvbgcOcG9TY3JlZW5DZW50ZXIGT25TaG93BwhGb3JtU2hvdw1QaXhl
+          bHNQZXJJbmNoAmAKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9LQnV0dG9uBExlZnQCdwNUb3ACcgVXaWR0aAJLBkhlaWdodAIZB0Nh
+          cHRpb24GAyZPSwdEZWZhdWx0CQtNb2RhbFJlc3VsdAIBCFRhYk9yZGVyAgAAAAdUQnV0dG9uDENhbmNlbEJ1dHRvbgRMZWZ0A8gA
+          A1RvcAJyBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2VsCQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghUYWJPcmRlcgIBAAAG
+          VFBhbmVsBVBhbmVsBExlZnQCCANUb3ACBwVXaWR0aAMLAQZIZWlnaHQCYgpCZXZlbElubmVyBwhidlJhaXNlZApCZXZlbE91dGVy
+          Bwlidkxvd2VyZWQIVGFiT3JkZXICAgAGVExhYmVsBkxhYmVsMwRMZWZ0AgoDVG9wAgYFV2lkdGgCMgZIZWlnaHQCDQdDYXB0aW9u
+          BglEYXRhYmFzZToAAAZUTGFiZWwMRGF0YWJhc2VOYW1lBExlZnQCagNUb3ACBgVXaWR0aAIDBkhlaWdodAINAAAGVEJldmVsBUJl
+          dmVsBExlZnQCAQNUb3ACGAVXaWR0aAMIAQZIZWlnaHQCCQVTaGFwZQcJYnNUb3BMaW5lAAAGVFBhbmVsBlBhbmVsMQRMZWZ0AgID
+          VG9wAh8FV2lkdGgDBwEGSGVpZ2h0AkEFQWxpZ24HCGFsQm90dG9tCkJldmVsT3V0ZXIHBmJ2Tm9uZQhUYWJPcmRlcgIAAAZUTGFi
+          ZWwGTGFiZWwxBExlZnQCCANUb3ACCAVXaWR0aAI4BkhlaWdodAINB0NhcHRpb24GCyZVc2VyIE5hbWU6DEZvY3VzQ29udHJvbAcI
+          VXNlck5hbWUAAAZUTGFiZWwGTGFiZWwyBExlZnQCCANUb3ACJAVXaWR0aAIyBkhlaWdodAINB0NhcHRpb24GCiZQYXNzd29yZDoM
+          Rm9jdXNDb250cm9sBwhQYXNzd29yZAAABVRFZGl0CFVzZXJOYW1lBExlZnQCZQNUb3ACBQVXaWR0aAOZAAZIZWlnaHQCFQlNYXhM
+          ZW5ndGgCHwhUYWJPcmRlcgIAAAAFVEVkaXQIUGFzc3dvcmQETGVmdAJlA1RvcAIhBVdpZHRoA5kABkhlaWdodAIVCU1heExlbmd0
+          aAIfDFBhc3N3b3JkQ2hhcgYBKghUYWJPcmRlcgIBAAAAAAA=
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TPASSWORDDIALOG" type="TPasswordDialog" resname="TPASSWORDDIALOG" objectname="PasswordDialog">
+        <row id="Left">260</row>
+        <row id="Top">184</row>
+        <row id="Caption" si="660">Enter password</row>
+        <row id="ClientHeight">132</row>
+        <row id="ClientWidth">273</row>
+        <item name="OKButton" type="TButton">
+          <row id="Left">109</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="661">&amp;OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">190</row>
+          <row id="Top">98</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="662">Cancel</row>
+        </item>
+        <item name="GroupBox1" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">257</row>
+          <row id="Height">81</row>
+          <row id="Caption" si="663">Password</row>
+          <item name="Edit" type="TEdit">
+            <row id="Left">16</row>
+            <row id="Top">18</row>
+            <row id="Width">225</row>
+            <row id="Height">20</row>
+          </item>
+          <item name="AddButton" type="TButton">
+            <row id="Left">16</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="664">&amp;Add</row>
+          </item>
+          <item name="RemoveButton" type="TButton">
+            <row id="Left">88</row>
+            <row id="Top">46</row>
+            <row id="Width">65</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="665">&amp;Remove</row>
+          </item>
+          <item name="RemoveAllButton" type="TButton">
+            <row id="Left">160</row>
+            <row id="Top">46</row>
+            <row id="Width">81</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="666">Re&amp;move all</row>
+          </item>
+        </item>
+        <data>
+          VFBGMA9UUGFzc3dvcmREaWFsb2cOUGFzc3dvcmREaWFsb2cETGVmdAMEAQNUb3ADuAANQWN0aXZlQ29udHJvbAcERWRpdAtCb3Jk
+          ZXJTdHlsZQcIYnNEaWFsb2cHQ2FwdGlvbgYORW50ZXIgcGFzc3dvcmQMQ2xpZW50SGVpZ2h0A4QAC0NsaWVudFdpZHRoAxEBClBh
+          cmVudEZvbnQJDVBpeGVsc1BlckluY2gCYAhQb3NpdGlvbgcOcG9TY3JlZW5DZW50ZXIKVGV4dEhlaWdodAINAAdUQnV0dG9uCE9L
+          QnV0dG9uBExlZnQCbQNUb3ACYgVXaWR0aAJLBkhlaWdodAIZB0NhcHRpb24GAyZPSwdEZWZhdWx0CQdFbmFibGVkCAtNb2RhbFJl
+          c3VsdAIBCFRhYk9yZGVyAgEHT25DbGljawcNT0tCdXR0b25DbGljawAAB1RCdXR0b24MQ2FuY2VsQnV0dG9uBExlZnQDvgADVG9w
+          AmIFV2lkdGgCSwZIZWlnaHQCGQZDYW5jZWwJB0NhcHRpb24GBkNhbmNlbAtNb2RhbFJlc3VsdAICCFRhYk9yZGVyAgIAAAlUR3Jv
+          dXBCb3gJR3JvdXBCb3gxBExlZnQCCANUb3ACCAVXaWR0aAMBAQZIZWlnaHQCUQdDYXB0aW9uBghQYXNzd29yZAhUYWJPcmRlcgIA
+          AAVURWRpdARFZGl0BExlZnQCEANUb3ACEgVXaWR0aAPhAAZIZWlnaHQCFAxQYXNzd29yZENoYXIGASoIVGFiT3JkZXICAAhPbkNo
+          YW5nZQcKRWRpdENoYW5nZQAAB1RCdXR0b24JQWRkQnV0dG9uBExlZnQCEANUb3ACLgVXaWR0aAJBBkhlaWdodAIZB0NhcHRpb24G
+          BCZBZGQHRW5hYmxlZAgIVGFiT3JkZXICAQdPbkNsaWNrBw5BZGRCdXR0b25DbGljawAAB1RCdXR0b24MUmVtb3ZlQnV0dG9uBExl
+          ZnQCWANUb3ACLgVXaWR0aAJBBkhlaWdodAIZB0NhcHRpb24GByZSZW1vdmUHRW5hYmxlZAgIVGFiT3JkZXICAgdPbkNsaWNrBxFS
+          ZW1vdmVCdXR0b25DbGljawAAB1RCdXR0b24PUmVtb3ZlQWxsQnV0dG9uBExlZnQDoAADVG9wAi4FV2lkdGgCUQZIZWlnaHQCGQdD
+          YXB0aW9uBgtSZSZtb3ZlIGFsbAhUYWJPcmRlcgIDB09uQ2xpY2sHFFJlbW92ZUFsbEJ1dHRvbkNsaWNrAAAAAA==
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="Data.DBConsts">
+        <row id="SProviderSQLNotSupported" si="36">SQL not supported</row>
+        <row id="SProviderExecuteNotSupported" si="37">Execute not supported</row>
+        <row id="SDataSetUnidirectional" si="38">Operation not allowed on a unidirectional dataset</row>
+        <row id="SUnassignedVar" si="39">Unassigned variant value</row>
+        <row id="SRecordNotFound" si="40">Record not found</row>
+        <row id="SBcdOverflow" si="41">BCD overflow</row>
+        <row id="SInvalidBcdValue" changed="20241228T054850Z" si="42" created="20241228T054850Z" codep="1">%s is not a valid BCD value</row>
+        <row id="SCouldNotParseTimeStamp" si="43">Could not parse SQL TimeStamp string</row>
+        <row id="SInvalidSqlTimeStamp" si="44">Invalid SQL date/time values</row>
+        <row id="SIndexNotFound" changed="20241228T054850Z" si="52" created="20241228T054850Z" codep="1">Index '%s' not found</row>
+        <row id="SDBDuplicateName" changed="20241228T054850Z" si="53" created="20241228T054850Z" codep="1">Duplicate name '%s' in %s</row>
+        <row id="SCircularDataLink" si="54">Circular datalinks are not allowed</row>
+        <row id="SLookupInfoError" changed="20241228T054850Z" si="55" created="20241228T054850Z" codep="1">Lookup information for field '%s' is incomplete</row>
+        <row id="SDataSourceChange" si="56">DataSource cannot be changed</row>
+        <row id="SDataSetOpen" si="57">Cannot perform this operation on an open dataset</row>
+        <row id="SNotEditing" si="58">Dataset not in edit or insert mode</row>
+        <row id="SDataSetClosed" si="59">Cannot perform this operation on a closed dataset</row>
+        <row id="SDataSetEmpty" si="60">Cannot perform this operation on an empty dataset</row>
+        <row id="SDataSetReadOnly" si="61">Cannot modify a read-only dataset</row>
+        <row id="SNestedDataSetClass" changed="20241228T054850Z" si="62" created="20241228T054850Z" codep="1">Nested dataset must inherit from %s</row>
+        <row id="STextFalse" si="31">False</row>
+        <row id="STextTrue" si="32">True</row>
+        <row id="SParameterNotFound" changed="20241228T054850Z" si="33" created="20241228T054850Z" codep="1">Parameter '%s' not found</row>
+        <row id="SInvalidVersion" si="34">Unable to load bind parameters</row>
+        <row id="SBadFieldType" changed="20241228T054850Z" si="35" created="20241228T054850Z" codep="1">Field '%s' is of an unsupported type</row>
+        <row id="SFieldValueError" changed="20241228T054850Z" si="68" created="20241228T054850Z" codep="1">Invalid value for field '%s'</row>
+        <row id="SFieldRangeError" changed="20241228T054850Z" si="69" created="20241228T054850Z" codep="1">%g is not a valid value for field '%s'. The allowed range is %g to %g</row>
+        <row id="SBcdFieldRangeError" changed="20241228T054850Z" si="70" created="20241228T054850Z" codep="1">%s is not a valid value for field '%s'. The allowed range is %s to %s</row>
+        <row id="SInvalidIntegerValue" changed="20241228T054850Z" si="71" created="20241228T054850Z" codep="1">'%s' is not a valid integer value for field '%s'</row>
+        <row id="SInvalidBoolValue" changed="20241228T054850Z" si="72" created="20241228T054850Z" codep="1">'%s' is not a valid boolean value for field '%s'</row>
+        <row id="SInvalidFloatValue" changed="20241228T054850Z" si="73" created="20241228T054850Z" codep="1">'%s' is not a valid floating point value for field '%s'</row>
+        <row id="SFieldTypeMismatch" changed="20241228T054850Z" si="74" created="20241228T054850Z" codep="1">Type mismatch for field '%s', expecting: %s actual: %s</row>
+        <row id="SFieldSizeMismatch" changed="20241228T054850Z" si="75" created="20241228T054850Z" codep="1">Size mismatch for field '%s', expecting: %d actual: %d</row>
+        <row id="SInvalidVarByteArray" changed="20241228T054850Z" si="76" created="20241228T054850Z" codep="1">Invalid variant type or size for field '%s'</row>
+        <row id="SFieldOutOfRange" changed="20241228T054850Z" si="77" created="20241228T054850Z" codep="1">Value of field '%s' is out of range</row>
+        <row id="SFieldRequired" changed="20241228T054850Z" si="78" created="20241228T054850Z" codep="1">Field '%s' must have a value</row>
+        <row id="SDataSetMissing" changed="20241228T054850Z" si="47" created="20241228T054850Z" codep="1">Field '%s' has no dataset</row>
+        <row id="SInvalidCalcType" changed="20241228T054850Z" si="48" created="20241228T054850Z" codep="1">Field '%s' cannot be a calculated or lookup field</row>
+        <row id="SFieldReadOnly" changed="20241228T054850Z" si="49" created="20241228T054850Z" codep="1">Field '%s' cannot be modified</row>
+        <row id="SDuplicateIndexName" changed="20241228T054850Z" si="50" created="20241228T054850Z" codep="1">Duplicate index name '%s'</row>
+        <row id="SNoIndexForFields" changed="20241228T054850Z" si="51" created="20241228T054850Z" codep="1">No index for fields '%s'</row>
+        <row id="SInvalidFieldSize" si="93">Invalid field size</row>
+        <row id="SInvalidFieldKind" si="94">Invalid FieldKind</row>
+        <row id="SUnknownFieldType" changed="20241228T054850Z" si="63" created="20241228T054850Z" codep="1">Field '%s' is of an unknown type</row>
+        <row id="SFieldNameMissing" si="64">Field name missing</row>
+        <row id="SDuplicateFieldName" changed="20241228T054850Z" si="65" created="20241228T054850Z" codep="1">Duplicate field name '%s'</row>
+        <row id="SFieldNotFound" changed="20241228T054850Z" si="66" created="20241228T054850Z" codep="1">Field '%s' not found</row>
+        <row id="SFieldAccessError" changed="20241228T054850Z" si="67" created="20241228T054850Z" codep="1">Cannot access field '%s' as type %s</row>
+      </node>
+      <node class="TWindowsStringNode" name="Data.Win.ADOConst">
+        <row id="SEventsNotSupported" si="6">Events are not supported with server side TableDirect cursors</row>
+        <row id="SUsupportedFieldType" changed="20241228T054850Z" si="7" created="20241228T054850Z" codep="1">Unsupported field type (%s) in field %s</row>
+        <row id="SNoMatchingADOType" changed="20241228T054850Z" si="8" created="20241228T054850Z" codep="1">No matching ADO data type for %s</row>
+        <row id="SConnectionRequired" si="9">A connection component is required for async ExecuteOptions</row>
+        <row id="SCantRequery" si="10">Cannot perform a requery after connection has changed</row>
+        <row id="SNoFilterOptions" si="11">FilterOptions are not supported</row>
+        <row id="SRecordsetNotOpen" si="12">Recordset is not open</row>
+        <row id="sNameAttr" si="13">Name</row>
+        <row id="sValueAttr" si="14">Value</row>
+        <row id="SMissingConnection" si="30">Missing Connection or ConnectionString</row>
+        <row id="SNoDetailFilter" si="1">Filter property cannot be used for detail tables</row>
+        <row id="SBookmarksRequired" si="2">Dataset does not support bookmarks, which are required for multi-record data controls</row>
+        <row id="SMissingCommandText" changed="20241228T054850Z" si="3" created="20241228T054850Z" codep="1">Missing %s property</row>
+        <row id="SNoResultSet" si="4">CommandText does not return a result set</row>
+        <row id="SADOCreateError" si="5">Error creating object.  Please verify that the Microsoft Data Access Components 2.1 (or later) have been properly installed</row>
+      </node>
+      <node class="TWindowsStringNode" name="DBAdvGrid">
+        <row id="SResExUnidirectional" si="26">UniDirectional DataSet</row>
+        <row id="SResExCheckBoxField" si="27">Can not assign true when CheckBoxField or ProgressField is also true.</row>
+        <row id="SResExPictureField" si="28">Can not assign true when PictureField or ProgressField is also true.</row>
+        <row id="SResExCheckPicField" si="29">Can not assign true when CheckBoxField or PictureField is also true.</row>
+      </node>
+      <node class="TWindowsStringNode" name="GDIPicture">
+        <row id="GDIPERRMSG" si="92">Could not allocate memory for image</row>
+      </node>
+      <node class="TWindowsStringNode" name="System">
+        <row id="RTLConsts_hNoFilterViewer" si="424">No help viewer that supports filters</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.JSONConsts">
+        <row id="SUTF8Start" si="182">UTF8: A start byte not followed by enough continuation bytes</row>
+        <row id="SUTF8UnexpectedByte" changed="20241228T054850Z" si="183" created="20241228T054850Z" codep="1">UTF8: An unexpected continuation byte in %d-byte UTF8</row>
+        <row id="SUTF8InvalidHeaderByte" si="184">UTF8: Type cannot be determined out of header byte</row>
+        <row id="SJSONSyntaxError" si="185">The input value is not a valid JSON</row>
+        <row id="SJSONLocation" changed="20241228T054850Z" si="186" created="20241228T054850Z" codep="1">. Path '%s', line %d, position %d (offset %d)</row>
+        <row id="STooMuchNesting" changed="20241228T054850Z" si="187" created="20241228T054850Z" codep="1">The nesting level of JSON arrays / objects is greater than %d</row>
+        <row id="SValueNotFound" changed="20241228T054850Z" si="188" created="20241228T054850Z" codep="1">Value '%s' not found</row>
+        <row id="SCannotAddJSONValue" changed="20241228T054850Z" si="189" created="20241228T054850Z" codep="1">Value %s cannot be added to %s</row>
+        <row id="SJSONPathUnexpectedRootChar" si="190">Unexpected char for root element: .</row>
+        <row id="SJSONPathEndedOpenBracket" si="159">Path ended with an open bracket</row>
+        <row id="SJSONPathEndedOpenString" si="160">Path ended with an open string</row>
+        <row id="SJSONPathInvalidArrayIndex" changed="20241228T054850Z" si="161" created="20241228T054850Z" codep="1">Invalid index for array: %s</row>
+        <row id="SJSONPathUnexpectedIndexedChar" changed="20241228T054850Z" si="162" created="20241228T054850Z" codep="1">Unexpected character while parsing indexer: %s</row>
+        <row id="SJSONPathDotsEmptyName" si="163">Empty name not allowed in dot notation, use ['']</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.RTLConsts">
+        <row id="sObserverNoSinglecastFound" changed="20241228T054850Z" si="355" created="20241228T054850Z" codep="1">No single cast observer with ID %d was added to the observer collection</row>
+        <row id="sObserverNoMulticastFound" changed="20241228T054850Z" si="356" created="20241228T054850Z" codep="1">No multi cast observer with ID %d was added to the observer collection</row>
+        <row id="sObserverNotAvailable" si="357">Observer is not available</row>
+        <row id="SInvalidDateString" changed="20241228T054850Z" si="358" created="20241228T054850Z" codep="1">Invalid date string: %s</row>
+        <row id="SInvalidTimeString" changed="20241228T054850Z" si="359" created="20241228T054850Z" codep="1">Invalid time string: %s</row>
+        <row id="SInvalidOffsetString" changed="20241228T054850Z" si="360" created="20241228T054850Z" codep="1">Invalid time Offset string: %s</row>
+        <row id="sMustWaitOnOneEvent" si="361">Must wait on at least one event</row>
+        <row id="sBeginInvokeDestroying" si="362">Cannot call BeginInvoke on a TComponent in the process of destruction</row>
+        <row id="SWindowsXP" si="371">Windows XP</row>
+        <row id="SWindowsServer2003" si="372">Windows Server 2003</row>
+        <row id="SWindowsServer2003R2" si="373">Windows Server 2003 R2</row>
+        <row id="SWindowsServer2012" si="374">Windows Server 2012</row>
+        <row id="SWindowsServer2012R2" si="375">Windows Server 2012 R2</row>
+        <row id="SWindowsServer2016" si="376">Windows Server 2016</row>
+        <row id="SWindowsServer2019" si="377">Windows Server 2019</row>
+        <row id="SWindowsServer2022" si="378">Windows Server 2022</row>
+        <row id="SWindows8" si="379">Windows 8</row>
+        <row id="SWindows8Point1" si="380">Windows 8.1</row>
+        <row id="SWindows10" si="381">Windows 10</row>
+        <row id="SWindows11" si="382">Windows 11</row>
+        <row id="SWinRTInstanceError" changed="20241228T054850Z" si="351" created="20241228T054850Z" codep="1">Cannot create instance of class %s</row>
+        <row id="sObserverUnsupported" si="352">Observer is not supported</row>
+        <row id="sObserverMultipleSingleCast" si="353">Cannot have multiple single cast observers added to the observers collection</row>
+        <row id="sObserverNoInterface" si="354">The object does not implement the observer interface</row>
+        <row id="SGenericDuplicateItem" si="384">Duplicates not allowed</row>
+        <row id="SInsufficientRtti" si="385">Insufficient RTTI available to support this operation</row>
+        <row id="SParameterCountMismatch" si="386">Parameter count mismatch</row>
+        <row id="SNonPublicType" changed="20241228T054850Z" si="387" created="20241228T054850Z" codep="1">Type '%s' is not declared in the interface section of a unit</row>
+        <row id="SByRefArgMismatch" si="388">VAR and OUT arguments must match parameter type exactly</row>
+        <row id="SServiceNotFound" si="392">Specified Login Credential Service not found</row>
+        <row id="SVersionStr" changed="20241228T054850Z" si="393" created="20241228T054850Z" codep="1">%s (Version %d.%d, Build %d, %5:s)</row>
+        <row id="SSPVersionStr" changed="20241228T054850Z" si="394" created="20241228T054850Z" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
+        <row id="SVersion32" si="395">32-bit Edition</row>
+        <row id="SVersion64" si="396">64-bit Edition</row>
+        <row id="SWindows" si="397">Windows</row>
+        <row id="SWindowsVista" si="398">Windows Vista</row>
+        <row id="SWindowsServer2008" si="367">Windows Server 2008</row>
+        <row id="SWindows7" si="368">Windows 7</row>
+        <row id="SWindowsServer2008R2" si="369">Windows Server 2008 R2</row>
+        <row id="SWindows2000" si="370">Windows 2000</row>
+        <row id="sTimespanTooLong" si="400">Timespan too long</row>
+        <row id="sInvalidTimespanDuration" si="401">The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue</row>
+        <row id="sTimespanValueCannotBeNan" si="402">Value cannot be NaN</row>
+        <row id="sCannotNegateTimespan" si="403">Negating the minimum value of a Timespan is invalid</row>
+        <row id="sInvalidTimespanFormat" si="404">Invalid Timespan format</row>
+        <row id="sTimespanElementTooLong" si="405">Timespan element too long</row>
+        <row id="SNoContext" si="406">No context-sensitive help installed</row>
+        <row id="SNoContextFound" changed="20241228T054850Z" si="407" created="20241228T054850Z" codep="1">No help found for context %d</row>
+        <row id="SNoIndex" si="408">Unable to open Index</row>
+        <row id="SNoSearch" si="409">Unable to open Search</row>
+        <row id="SNoTableOfContents" si="410">Unable to find a Table of Contents</row>
+        <row id="SNoTopics" si="411">No topic-based help system installed</row>
+        <row id="SNothingFound" changed="20241228T054850Z" si="412" created="20241228T054850Z" codep="1">No help found for %s</row>
+        <row id="SArgumentOutOfRange" si="413">Argument out of range</row>
+        <row id="SArgumentNil" si="414">Argument must not be nil</row>
+        <row id="SGenericItemNotFound" si="383">Item not found</row>
+        <row id="SPathNotFound" si="416">The specified path was not found</row>
+        <row id="SPathFormatNotSupported" si="417">The path format is not supported</row>
+        <row id="SSpecifiedFileNotFound" si="418">The specified file was not found</row>
+        <row id="SFileTooLong" si="419">The specified file is too long.</row>
+        <row id="SInvalidDateDay" changed="20241228T054850Z" si="420" created="20241228T054850Z" codep="1">(%d, %d) is not a valid DateDay pair</row>
+        <row id="SInvalidDateWeek" changed="20241228T054850Z" si="421" created="20241228T054850Z" codep="1">(%d, %d, %d) is not a valid DateWeek triplet</row>
+        <row id="SMissingDateTimeField" si="422">?</row>
+        <row id="SLocalTimeInvalid" changed="20241228T054850Z" si="423" created="20241228T054850Z" codep="1">The given "%s" local time is invalid (situated within the missing period prior to DST).</row>
+        <row id="sArgumentInvalid" si="425">Invalid argument</row>
+        <row id="sArgumentOutOfRange_InvalidUTF32" si="426">Invalid UTF32 character value.  Must be >= 0 and &lt;= $10FFFF, excluding surrogate pair ranges</row>
+        <row id="sInvalidStringAndObjectArrays" si="427">Length of Strings and Objects arrays must be equal</row>
+        <row id="sSameArrays" si="428">Source and Destination arrays must not be the same</row>
+        <row id="sNoConstruct" changed="20241228T054850Z" si="429" created="20241228T054850Z" codep="1">Class %s is not intended to be constructed</row>
+        <row id="sInvalidTimeoutValue" changed="20241228T054850Z" si="430" created="20241228T054850Z" codep="1">Invalid Timeout value: %s</row>
+        <row id="sSpinCountOutOfRange" changed="20241228T054850Z" si="399" created="20241228T054850Z" codep="1">SpinCount out of range. Must be between 0 and %d</row>
+        <row id="SUnknownGroup" changed="20241228T054850Z" si="432" created="20241228T054850Z" codep="1">%s not in a class registration group</row>
+        <row id="SUnknownProperty" changed="20241228T054850Z" si="433" created="20241228T054850Z" codep="1">Property %s does not exist</row>
+        <row id="SWriteError" si="434">Stream write error</row>
+        <row id="SThreadCreateError" changed="20241228T054850Z" si="435" created="20241228T054850Z" codep="1">Thread creation error: %s</row>
+        <row id="SThreadError" changed="20241228T054850Z" si="436" created="20241228T054850Z" codep="1">Thread Error: %s (%d)</row>
+        <row id="SThreadExternalTerminate" si="437">Cannot terminate an externally created thread</row>
+        <row id="SThreadExternalWait" si="438">Cannot wait for an externally created thread</row>
+        <row id="SThreadStartError" si="439">Cannot call Start on a running or suspended thread</row>
+        <row id="SThreadExternalCheckTerminated" si="440">Cannot call CheckTerminated on an externally created thread</row>
+        <row id="SThreadExternalSetReturnValue" si="441">Cannot call SetReturnValue on an externally create thread</row>
+        <row id="SParamIsNil" changed="20241228T054850Z" si="442" created="20241228T054850Z" codep="1">Parameter %s cannot be nil</row>
+        <row id="SParamIsNegative" changed="20241228T054850Z" si="443" created="20241228T054850Z" codep="1">Parameter %s cannot be a negative value</row>
+        <row id="SInputBufferExceed" changed="20241228T054850Z" si="444" created="20241228T054850Z" codep="1">Input buffer exceeded for %s = %d, %s = %d</row>
+        <row id="SInvalidCharsInPath" si="445">Invalid characters in path</row>
+        <row id="SEmptyPath" si="446">Path is empty</row>
+        <row id="SPathTooLong" si="415">The specified path is too long</row>
+        <row id="SInvalidRegType" changed="20241228T054850Z" si="447" created="20241228T054850Z" codep="1">Invalid data type for '%s'</row>
+        <row id="SListCapacityError" changed="20241228T054850Z" si="448" created="20241228T054850Z" codep="1">List capacity out of bounds (%d)</row>
+        <row id="SListCountError" changed="20241228T054850Z" si="449" created="20241228T054850Z" codep="1">List count out of bounds (%d)</row>
+        <row id="SListIndexError" changed="20241228T054850Z" si="450" created="20241228T054850Z" codep="1">List index out of bounds (%d)</row>
+        <row id="SListIndexErrorExt" changed="20241228T054850Z" si="676" created="20241228T054850Z" codep="1">List index out of bounds (%0:d).  %2:s object range is 0..%1:d</row>
+        <row id="SMemoryStreamError" si="453">Out of memory while expanding memory stream</row>
+        <row id="SNoComSupport" changed="20241228T054850Z" si="454" created="20241228T054850Z" codep="1">%s has not been registered as a COM class</row>
+        <row id="SPropertyException" changed="20241228T054850Z" si="455" created="20241228T054850Z" codep="1">Error reading %s%s%s: %s</row>
+        <row id="SReadError" si="456">Stream read error</row>
+        <row id="SReadOnlyProperty" si="457">Property is read-only</row>
+        <row id="SRegCreateFailed" changed="20241228T054850Z" si="458" created="20241228T054850Z" codep="1">Failed to create key %s</row>
+        <row id="SRegGetDataFailed" changed="20241228T054850Z" si="459" created="20241228T054850Z" codep="1">Failed to get data for '%s'</row>
+        <row id="SRegSetDataFailed" changed="20241228T054850Z" si="460" created="20241228T054850Z" codep="1">Failed to set data for '%s'</row>
+        <row id="SResNotFound" changed="20241228T054850Z" si="461" created="20241228T054850Z" codep="1">Resource %s not found</row>
+        <row id="SSeekNotImplemented" changed="20241228T054850Z" si="462" created="20241228T054850Z" codep="1">%s.Seek not implemented</row>
+        <row id="SSortedListError" si="431">Operation not allowed on sorted list</row>
+        <row id="SCheckSynchronizeError" changed="20241228T054850Z" si="463" created="20241228T054850Z" codep="1">CheckSynchronize called from thread $%x, which is NOT the main thread</row>
+        <row id="SClassNotFound" changed="20241228T054850Z" si="464" created="20241228T054850Z" codep="1">Class %s not found</row>
+        <row id="SDuplicateClass" changed="20241228T054850Z" si="465" created="20241228T054850Z" codep="1">A class named %s already exists</row>
+        <row id="SDuplicateItem" changed="20241228T054850Z" si="466" created="20241228T054850Z" codep="1">List does not allow duplicates ($0%x)</row>
+        <row id="SDuplicateName" changed="20241228T054850Z" si="467" created="20241228T054850Z" codep="1">A component named %s already exists</row>
+        <row id="SDuplicateString" si="468">String list does not allow duplicates</row>
+        <row id="SFCreateErrorEx" changed="20241228T054850Z" si="469" created="20241228T054850Z" codep="1">Cannot create file "%s". %s</row>
+        <row id="SFOpenErrorEx" changed="20241228T054850Z" si="470" created="20241228T054850Z" codep="1">Cannot open file "%s". %s</row>
+        <row id="SIniFileWriteError" changed="20241228T054850Z" si="471" created="20241228T054850Z" codep="1">Unable to write to %s</row>
+        <row id="SInvalidImage" si="472">Invalid stream format</row>
+        <row id="SInvalidName" changed="20241228T054850Z" si="473" created="20241228T054850Z" codep="1">''%s'' is not a valid component name</row>
+        <row id="SInvalidProperty" si="474">Invalid property value</row>
+        <row id="SInvalidPropertyElement" changed="20241228T054850Z" si="475" created="20241228T054850Z" codep="1">Invalid property element: %s</row>
+        <row id="SInvalidPropertyPath" si="476">Invalid property path</row>
+        <row id="SInvalidPropertyType" changed="20241228T054850Z" si="477" created="20241228T054850Z" codep="1">Invalid property type: %s</row>
+        <row id="SInvalidPropertyValue" si="478">Invalid property value</row>
+        <row id="SAncestorNotFound" changed="20241228T054850Z" si="491" created="20241228T054850Z" codep="1">Ancestor for '%s' not found</row>
+        <row id="SAssignError" changed="20241228T054850Z" si="492" created="20241228T054850Z" codep="1">Cannot assign a %s to a %s</row>
+        <row id="SBitsIndexError" si="493">Bits index out of range</row>
+        <row id="SCantWriteResourceStreamError" si="494">Can't write to a read-only resource stream</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.SysConst">
+        <row id="SLongDayNameFri" si="479">Friday</row>
+        <row id="SLongDayNameSat" si="480">Saturday</row>
+        <row id="SInvalidSourceArray" si="481">Invalid source array</row>
+        <row id="SInvalidDestinationArray" si="482">Invalid destination array</row>
+        <row id="SCharIndexOutOfBounds" changed="20241228T054850Z" si="483" created="20241228T054850Z" codep="1">Character index out of bounds (%d)</row>
+        <row id="SByteIndexOutOfBounds" changed="20241228T054850Z" si="484" created="20241228T054850Z" codep="1">Start index out of bounds (%d)</row>
+        <row id="SInvalidCharCount" changed="20241228T054850Z" si="485" created="20241228T054850Z" codep="1">Invalid count (%d)</row>
+        <row id="SInvalidDestinationIndex" changed="20241228T054850Z" si="486" created="20241228T054850Z" codep="1">Invalid destination index (%d)</row>
+        <row id="SInvalidCodePage" si="487">Invalid code page</row>
+        <row id="SInvalidEncodingName" si="488">Invalid encoding name</row>
+        <row id="SNoMappingForUnicodeCharacter" si="489">No mapping for the Unicode character exists in the target multi-byte code page</row>
+        <row id="SInvalidStringBaseIndex" si="490">Invalid StringBaseIndex</row>
+        <row id="SLongMonthNameSep" si="495">September</row>
+        <row id="SLongMonthNameOct" si="496">October</row>
+        <row id="SLongMonthNameNov" si="497">November</row>
+        <row id="SLongMonthNameDec" si="498">December</row>
+        <row id="SShortDayNameSun" si="499">Sun</row>
+        <row id="SShortDayNameMon" si="500">Mon</row>
+        <row id="SShortDayNameTue" si="501">Tue</row>
+        <row id="SShortDayNameWed" si="502">Wed</row>
+        <row id="SShortDayNameThu" si="503">Thu</row>
+        <row id="SShortDayNameFri" si="504">Fri</row>
+        <row id="SShortDayNameSat" si="505">Sat</row>
+        <row id="SLongDayNameSun" si="506">Sunday</row>
+        <row id="SLongDayNameMon" si="507">Monday</row>
+        <row id="SLongDayNameTue" si="508">Tuesday</row>
+        <row id="SLongDayNameWed" si="509">Wednesday</row>
+        <row id="SLongDayNameThu" si="510">Thursday</row>
+        <row id="SShortMonthNameMay" si="511">May</row>
+        <row id="SShortMonthNameJun" si="512">Jun</row>
+        <row id="SShortMonthNameJul" si="513">Jul</row>
+        <row id="SShortMonthNameAug" si="514">Aug</row>
+        <row id="SShortMonthNameSep" si="515">Sep</row>
+        <row id="SShortMonthNameOct" si="516">Oct</row>
+        <row id="SShortMonthNameNov" si="517">Nov</row>
+        <row id="SShortMonthNameDec" si="518">Dec</row>
+        <row id="SLongMonthNameJan" si="519">January</row>
+        <row id="SLongMonthNameFeb" si="520">February</row>
+        <row id="SLongMonthNameMar" si="521">March</row>
+        <row id="SLongMonthNameApr" si="522">April</row>
+        <row id="SLongMonthNameMay" si="523">May</row>
+        <row id="SLongMonthNameJun" si="524">June</row>
+        <row id="SLongMonthNameJul" si="525">July</row>
+        <row id="SLongMonthNameAug" si="526">August</row>
+        <row id="SAssertionFailed" si="527">Assertion failed</row>
+        <row id="SIntfCastError" si="528">Interface not supported</row>
+        <row id="SSafecallException" si="529">Exception in safecall method</row>
+        <row id="SMonitorLockException" si="530">Object lock not owned</row>
+        <row id="SNoMonitorSupportException" si="531">Monitor support function not initialized</row>
+        <row id="SNotImplemented" si="532">Feature not implemented</row>
+        <row id="SObjectDisposed" si="533">Method called on disposed object</row>
+        <row id="SAssertError" changed="20241228T054850Z" si="534" created="20241228T054850Z" codep="1">%s (%s, line %d)</row>
+        <row id="SAbstractError" si="535">Abstract Error</row>
+        <row id="SModuleAccessViolation" changed="20241228T054850Z" si="536" created="20241228T054850Z" codep="1">Access violation at address %p in module '%s'. %s of address %p</row>
+        <row id="SOSError" changed="20241228T054850Z" si="537" created="20241228T054850Z" codep="1">System Error.  Code: %d.
+%s%s</row>
+        <row id="SUnkOSError" si="538">A call to an OS function failed</row>
+        <row id="SShortMonthNameJan" si="539">Jan</row>
+        <row id="SShortMonthNameFeb" si="540">Feb</row>
+        <row id="SShortMonthNameMar" si="541">Mar</row>
+        <row id="SShortMonthNameApr" si="542">Apr</row>
+        <row id="SInvalidVarCast" si="543">Invalid variant type conversion</row>
+        <row id="SInvalidVarOp" si="544">Invalid variant operation</row>
+        <row id="SInvalidVarNullOp" si="545">Invalid NULL variant operation</row>
+        <row id="SInvalidVarOpWithHResultWithPrefix" changed="20241228T054850Z" si="546" created="20241228T054850Z" codep="1">Invalid variant operation (%s%.8x)
+%s</row>
+        <row id="SVarTypeOutOfRangeWithPrefix" changed="20241228T054850Z" si="547" created="20241228T054850Z" codep="1">Custom variant type (%s%.4x) is out of range</row>
+        <row id="SVarTypeAlreadyUsedWithPrefix" changed="20241228T054850Z" si="548" created="20241228T054850Z" codep="1">Custom variant type (%s%.4x) already used by %s</row>
+        <row id="SVarTypeNotUsableWithPrefix" changed="20241228T054850Z" si="549" created="20241228T054850Z" codep="1">Custom variant type (%s%.4x) is not usable</row>
+        <row id="SVarTypeTooManyCustom" si="550">Too many custom variant types have been registered</row>
+        <row id="SVarTypeCouldNotConvert" changed="20241228T054850Z" si="551" created="20241228T054850Z" codep="1">Could not convert variant of type (%s) into type (%s)</row>
+        <row id="SVarTypeConvertOverflow" changed="20241228T054850Z" si="552" created="20241228T054850Z" codep="1">Overflow while converting variant of type (%s) into type (%s)</row>
+        <row id="SVarOverflow" si="553">Variant overflow</row>
+        <row id="SVarInvalid" si="554">Invalid argument</row>
+        <row id="SVarBadType" si="555">Invalid variant type</row>
+        <row id="SVarNotImplemented" si="556">Operation not supported</row>
+        <row id="SVarUnexpected" si="557">Unexpected variant error</row>
+        <row id="SExternalException" changed="20241228T054850Z" si="558" created="20241228T054850Z" codep="1">External exception %x</row>
+        <row id="SControlC" si="559">Control-C hit</row>
+        <row id="SPrivilege" si="560">Privileged instruction</row>
+        <row id="SOperationAborted" si="561">Operation aborted</row>
+        <row id="SException" changed="20241228T054850Z" si="562" created="20241228T054850Z" codep="1">Exception %s in module %s at %p.
+%s%s
+</row>
+        <row id="SExceptTitle" si="563">Application Error</row>
+        <row id="SInvalidFormat" changed="20241228T054850Z" si="564" created="20241228T054850Z" codep="1">Format '%s' invalid or incompatible with argument</row>
+        <row id="SArgumentMissing" changed="20241228T054850Z" si="565" created="20241228T054850Z" codep="1">No argument for format '%s'</row>
+        <row id="SDispatchError" si="566">Variant method calls not supported</row>
+        <row id="SReadAccess" si="567">Read</row>
+        <row id="SWriteAccess" si="568">Write</row>
+        <row id="SExecuteAccess" si="569">Execution</row>
+        <row id="SInvalidAccess" si="570">Invalid access</row>
+        <row id="SFormatTooLong" si="571">Format string too long</row>
+        <row id="SVarArrayCreate" si="572">Error creating variant or safe array</row>
+        <row id="SVarArrayBounds" si="573">Variant or safe array index out of bounds</row>
+        <row id="SVarArrayLocked" si="574">Variant or safe array is locked</row>
+        <row id="SAccessDenied" si="575">File access denied</row>
+        <row id="SEndOfFile" si="576">Read beyond end of file</row>
+        <row id="SDiskFull" si="577">Disk full</row>
+        <row id="SInvalidInput" si="578">Invalid numeric input</row>
+        <row id="SDivByZero" si="579">Division by zero</row>
+        <row id="SRangeError" si="580">Range check error</row>
+        <row id="SIntOverflow" si="581">Integer overflow</row>
+        <row id="SInvalidOp" si="582">Invalid floating point operation</row>
+        <row id="SZeroDivide" si="583">Floating point division by zero</row>
+        <row id="SOverflow" si="584">Floating point overflow</row>
+        <row id="SUnderflow" si="585">Floating point underflow</row>
+        <row id="SInvalidPointer" si="586">Invalid pointer operation</row>
+        <row id="SInvalidCast" si="587">Invalid class typecast</row>
+        <row id="SAccessViolationArg3" changed="20241228T054850Z" si="588" created="20241228T054850Z" codep="1">Access violation at address %p. %s of address %p</row>
+        <row id="SAccessViolationNoArg" si="589">Access violation</row>
+        <row id="SStackOverflow" si="590">Stack overflow</row>
+        <row id="SUnknown" si="591">&lt;unknown></row>
+        <row id="SInvalidInteger" changed="20241228T054850Z" si="592" created="20241228T054850Z" codep="1">'%s' is not a valid integer value</row>
+        <row id="SInvalidFloat" changed="20241228T054850Z" si="593" created="20241228T054850Z" codep="1">'%s' is not a valid floating point value</row>
+        <row id="SInvalidDate" changed="20241228T054850Z" si="594" created="20241228T054850Z" codep="1">'%s' is not a valid date</row>
+        <row id="SInvalidTime" changed="20241228T054850Z" si="595" created="20241228T054850Z" codep="1">'%s' is not a valid time</row>
+        <row id="SInvalidDateTime" changed="20241228T054850Z" si="596" created="20241228T054850Z" codep="1">'%s' is not a valid date and time</row>
+        <row id="SInvalidTimeStamp" changed="20241228T054850Z" si="597" created="20241228T054850Z" codep="1">'%d.%d' is not a valid timestamp</row>
+        <row id="SInvalidGUID" changed="20241228T054850Z" si="598" created="20241228T054850Z" codep="1">'%s' is not a valid GUID value</row>
+        <row id="SInvalidBoolean" changed="20241228T054850Z" si="599" created="20241228T054850Z" codep="1">'%s' is not a valid boolean value</row>
+        <row id="STimeEncodeError" si="600">Invalid argument to time encode</row>
+        <row id="SDateEncodeError" si="601">Invalid argument to date encode</row>
+        <row id="SOutOfMemory" si="602">Out of memory</row>
+        <row id="SInOutError" changed="20241228T054850Z" si="603" created="20241228T054850Z" codep="1">I/O error %d</row>
+        <row id="SFileNotFound" si="604">File not found</row>
+        <row id="SInvalidUnknownFilename" si="605">Invalid filename</row>
+        <row id="STooManyOpenFiles" si="606">Too many open files</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.Win.ComConst">
+        <row id="SOleError" changed="20241228T054850Z" si="199" created="20241228T054850Z" codep="1">OLE error %.8x</row>
+        <row id="SNoMethod" changed="20241228T054850Z" si="200" created="20241228T054850Z" codep="1">Method '%s' not supported by automation object</row>
+        <row id="SVarNotObject" si="201">Variant does not reference an automation object</row>
+        <row id="STooManyParams" si="202">Dispatch methods do not support more than 64 parameters</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl">
+        <row id="Imaging_pnglang_EPNGCannotAssignChunkText" si="148">The chunks must be compatible to be assigned.</row>
+        <row id="Imaging_pnglang_EPNGUnexpectedEndText" si="149">This "Portable Network Graphics" image is invalid because the decoder found an unexpected end of the file.</row>
+        <row id="Imaging_pnglang_EPNGNoImageDataText" si="150">This "Portable Network Graphics" image contains no data.</row>
+        <row id="Imaging_pnglang_EPNGCannotAddChunkText" si="151">The program tried to add a existent critical chunk to the current image which is not allowed.</row>
+        <row id="Imaging_pnglang_EPNGCannotAddInvalidImageText" si="152">It's not allowed to add a new chunk because the current image is invalid.</row>
+        <row id="Imaging_pnglang_EPNGCouldNotLoadResourceText" si="153">The png image could not be loaded from the resource ID.</row>
+        <row id="Imaging_pnglang_EPNGOutMemoryText" si="154">Some operation could not be performed because the system is out of resources. Close some windows and try again.</row>
+        <row id="Imaging_pnglang_EPNGCannotChangeTransparentText" si="155">Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)</row>
+        <row id="Imaging_pnglang_EPNGHeaderNotPresentText" si="156">This operation is not valid because the current image contains no valid header.</row>
+        <row id="Imaging_pnglang_EInvalidNewSize" si="157">The new size provided for image resizing is invalid.</row>
+        <row id="Imaging_pnglang_EInvalidSpec" si="158">The "Portable Network Graphics" could not be created because invalid image type parameters have being provided.</row>
+        <row id="Imaging_pnglang_EPNGInvalidBitDepthText" si="127">The "Portable Network Graphics" image could not be loaded because it uses an invalid image bit depth.</row>
+        <row id="Imaging_pnglang_EPngInvalidCRCText" si="167">This "Portable Network Graphics" image is not valid because it contains invalid pieces of data (crc error)</row>
+        <row id="Imaging_pnglang_EPNGInvalidIHDRText" si="168">The "Portable Network Graphics" image could not be loaded because one of its main piece of data (ihdr) might be corrupted</row>
+        <row id="Imaging_pnglang_EPNGMissingMultipleIDATText" si="169">This "Portable Network Graphics" image is invalid because it has missing image parts.</row>
+        <row id="Imaging_pnglang_EPNGZLIBErrorText" si="170">Could not decompress the image because it contains invalid compressed data.
+ Description: </row>
+        <row id="Imaging_pnglang_EPNGInvalidPaletteText" si="171">The "Portable Network Graphics" image contains an invalid palette.</row>
+        <row id="Imaging_pnglang_EPNGInvalidFileHeaderText" si="172">The file being read is not a valid "Portable Network Graphics" image because it contains an invalid header. This file may be corrupted, try obtaining it again</row>
+        <row id="Imaging_pnglang_EPNGIHDRNotFirstText" si="173">This "Portable Network Graphics" image is not supported or it might be invalid.
+(IHDR chunk is not the first)</row>
+        <row id="Imaging_pnglang_EPNGSizeExceedsText" si="174">This "Portable Network Graphics" image is not supported because either its width or height exceeds the maximum size of 65535 pixels.</row>
+        <row id="Imaging_pnglang_EPNGUnknownPalEntryText" si="143">There is no such palette entry.</row>
+        <row id="Imaging_pnglang_EPNGUnknownCriticalChunkText" si="144">This "Portable Network Graphics" image contains an unknown critical part which could not be decoded.</row>
+        <row id="Imaging_pnglang_EPNGUnknownCompressionText" si="145">This "Portable Network Graphics" image is encoded with an unknown compression scheme which could not be decoded.</row>
+        <row id="Imaging_pnglang_EPNGUnknownInterlaceText" si="146">This "Portable Network Graphics" image uses an unknown interlace scheme which could not be decoded.</row>
+        <row id="Imaging_pnglang_EPNGUnknownColorTypeText" si="147">This "Portable Network Graphics" image uses an unknown color type which could not be decoded.</row>
+        <row id="Consts_SmkcAlt" si="244">Alt+</row>
+        <row id="Consts_SmkcTab" si="260">Tab</row>
+        <row id="Consts_SmkcEsc" si="261">Esc</row>
+        <row id="Consts_SmkcEnter" si="262">Enter</row>
+        <row id="Consts_SmkcSpace" si="263">Space</row>
+        <row id="Consts_SmkcPgUp" si="264">PgUp</row>
+        <row id="Consts_SmkcPgDn" si="265">PgDn</row>
+        <row id="Consts_SmkcEnd" si="266">End</row>
+        <row id="Consts_SmkcHome" si="267">Home</row>
+        <row id="Consts_SmkcLeft" si="268">Left</row>
+        <row id="Consts_SmkcUp" si="269">Up</row>
+        <row id="Consts_SmkcRight" si="270">Right</row>
+        <row id="Consts_SmkcDown" si="239">Down</row>
+        <row id="Consts_SmkcIns" si="240">Ins</row>
+        <row id="Consts_SmkcDel" si="241">Del</row>
+        <row id="Consts_SmkcShift" si="242">Shift+</row>
+        <row id="Consts_SmkcCtrl" si="243">Ctrl+</row>
+        <row id="Consts_SmkcBkSp" si="259">BkSp</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.ComStrs">
+        <row id="sFailSetCalMinMaxRange" si="180">Failed to set calendar min/max range</row>
+        <row id="sFailsetCalSelRange" si="181">Failed to set calendar selected range</row>
+        <row id="sRichEditInsertError" si="203">RichEdit line insertion error</row>
+        <row id="sRichEditLoadFail" si="204">Failed to Load Stream</row>
+        <row id="sRichEditSaveFail" si="205">Failed to Save Stream</row>
+        <row id="sInvalidComCtl32" si="206">This control requires version 4.70 or greater of COMCTL32.DLL</row>
+        <row id="sDateTimeMax" changed="20241228T054850Z" si="175" created="20241228T054850Z" codep="1">Date exceeds maximum of %s</row>
+        <row id="sDateTimeMin" changed="20241228T054850Z" si="176" created="20241228T054850Z" codep="1">Date is less than minimum of %s</row>
+        <row id="sNeedAllowNone" si="177">You must be in ShowCheckbox mode to set to this date</row>
+        <row id="sFailSetCalDateTime" si="178">Failed to set calendar date or time</row>
+        <row id="sFailSetCalMaxSelRange" si="179">Failed to set maximum selection range</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.Consts">
+        <row id="SStyleUnregisterError" si="196">Cannot unregister the system style</row>
+        <row id="SStyleNotRegisteredNoName" si="197">Style not registered</row>
+        <row id="sBeginInvokeNoHandle" si="198">Cannot call BeginInvoke on a control with no parent or window handle</row>
+        <row id="SDirect2DInvalidOwner" changed="20241228T054850Z" si="212" created="20241228T054850Z" codep="1">%s cannot be owned by a different canvas</row>
+        <row id="SDirect2DInvalidSolidBrush" si="213">Not a solid color brush</row>
+        <row id="SDirect2DInvalidBrushStyle" si="214">Invalid brush style</row>
+        <row id="SStyleLoadError" changed="20241228T054850Z" si="215" created="20241228T054850Z" codep="1">Unable to load style '%s'</row>
+        <row id="SStyleLoadErrors" changed="20241228T054850Z" si="216" created="20241228T054850Z" codep="1">Unable to load styles: %s</row>
+        <row id="SStyleRegisterError" changed="20241228T054850Z" si="217" created="20241228T054850Z" codep="1">Style '%s' already registered</row>
+        <row id="SStyleClassRegisterError" changed="20241228T054850Z" si="218" created="20241228T054850Z" codep="1">Style class '%s' already registered</row>
+        <row id="SStyleNotFound" changed="20241228T054850Z" si="219" created="20241228T054850Z" codep="1">Style '%s' not found</row>
+        <row id="SStyleClassNotFound" changed="20241228T054850Z" si="220" created="20241228T054850Z" codep="1">Style class '%s' not found</row>
+        <row id="SStyleInvalidHandle" si="221">Invalid style handle</row>
+        <row id="SStyleFormatError" si="222">Invalid style format</row>
+        <row id="SStyleHookClassRegistered" changed="20241228T054850Z" si="191" created="20241228T054850Z" codep="1">Class '%s' is already registered for '%s'</row>
+        <row id="SStyleHookClassNotRegistered" changed="20241228T054850Z" si="192" created="20241228T054850Z" codep="1">Class '%s' is not registered for '%s'</row>
+        <row id="SStyleInvalidParameter" changed="20241228T054850Z" si="193" created="20241228T054850Z" codep="1">%s parameter cannot be nil</row>
+        <row id="SStyleFeatureNotSupported" si="194">Feature not supported by this style</row>
+        <row id="SStyleNotRegistered" changed="20241228T054850Z" si="195" created="20241228T054850Z" codep="1">Style '%s' is not registered</row>
+        <row id="SPromptArrayTooShort" si="228">Length of value array must be >= length of prompt array</row>
+        <row id="SPromptArrayEmpty" si="229">Prompt array must not be empty</row>
+        <row id="SUsername" si="230">&amp;Username</row>
+        <row id="SPassword" si="231">&amp;Password</row>
+        <row id="SDomain" si="232">&amp;Domain</row>
+        <row id="SLogin" si="233">Login</row>
+        <row id="SErrorSettingCount" changed="20241228T054850Z" si="234" created="20241228T054850Z" codep="1">Error setting %s.Count</row>
+        <row id="SListBoxMustBeVirtual" changed="20241228T054850Z" si="235" created="20241228T054850Z" codep="1">Listbox (%s) style must be virtual in order to set Count</row>
+        <row id="STrayIconRemoveError" si="236">Cannot remove shell notification icon</row>
+        <row id="SWindowsVistaRequired" changed="20241228T054850Z" si="237" created="20241228T054850Z" codep="1">%s requires Windows Vista or later</row>
+        <row id="STaskDlgButtonCaption" changed="20241228T054850Z" si="238" created="20241228T054850Z" codep="1">Button%d</row>
+        <row id="STaskDlgRadioButtonCaption" changed="20241228T054850Z" si="207" created="20241228T054850Z" codep="1">RadioButton%d</row>
+        <row id="SInvalidTaskDlgButtonCaption" si="208">Caption cannot be empty</row>
+        <row id="SInvalidCanvasOperation" si="209">Invalid canvas operation</row>
+        <row id="SNoOwner" changed="20241228T054850Z" si="210" created="20241228T054850Z" codep="1">%s has no owner</row>
+        <row id="SRequireSameOwner" si="211">Source and destination require the same owner</row>
+        <row id="SOutOfRange" changed="20241228T054850Z" si="245" created="20241228T054850Z" codep="1">Value must be between %d and %d</row>
+        <row id="sAllFilter" si="246">All</row>
+        <row id="SInsertLineError" si="247">Unable to insert a line</row>
+        <row id="SInvalidClipFmt" si="248">Invalid clipboard format</row>
+        <row id="SIconToClipboard" si="249">Clipboard does not support Icons</row>
+        <row id="SCannotOpenClipboard" changed="20241228T054850Z" si="250" created="20241228T054850Z" codep="1">Cannot open clipboard: %s</row>
+        <row id="SInvalidMemoSize" si="251">Text exceeds memo capacity</row>
+        <row id="SInvalidPrinterOp" si="252">Operation not supported on selected printer</row>
+        <row id="SNoDefaultPrinter" si="253">There is no default printer currently selected</row>
+        <row id="SDuplicateMenus" changed="20241228T054850Z" si="254" created="20241228T054850Z" codep="1">Menu '%s' is already being used by another form</row>
+        <row id="SDockedCtlNeedsName" si="223">Docked control must have a name</row>
+        <row id="SDockTreeRemoveError" si="224">Error removing control from dock tree</row>
+        <row id="SDockZoneNotFound" si="225"> - Dock zone not found</row>
+        <row id="SDockZoneHasNoCtl" si="226"> - Dock zone has no control</row>
+        <row id="SDockZoneVersionConflict" changed="20241228T054850Z" si="227" created="20241228T054850Z" codep="1">Error loading dock zone from the stream. Expecting version %d, but found %d.</row>
+        <row id="SMsgDlgError" si="276">Error</row>
+        <row id="SMsgDlgInformation" si="277">Information</row>
+        <row id="SMsgDlgConfirm" si="278">Confirm</row>
+        <row id="SMsgDlgYes" si="279">&amp;Yes</row>
+        <row id="SMsgDlgNo" si="280">&amp;No</row>
+        <row id="SMsgDlgOK" si="281">OK</row>
+        <row id="SMsgDlgCancel" si="282">Cancel</row>
+        <row id="SMsgDlgHelp" si="283">&amp;Help</row>
+        <row id="SMsgDlgAbort" si="284">&amp;Abort</row>
+        <row id="SMsgDlgRetry" si="285">&amp;Retry</row>
+        <row id="SMsgDlgIgnore" si="286">&amp;Ignore</row>
+        <row id="SMsgDlgAll" si="255">&amp;All</row>
+        <row id="SMsgDlgNoToAll" si="256">N&amp;o to All</row>
+        <row id="SMsgDlgYesToAll" si="257">Yes to &amp;All</row>
+        <row id="SMsgDlgClose" si="258">&amp;Close</row>
+        <row id="SAllButton" si="292">&amp;All</row>
+        <row id="SCannotDragForm" si="293">Cannot drag a form</row>
+        <row id="SVMetafiles" si="294">Metafiles</row>
+        <row id="SVEnhMetafiles" si="295">Enhanced Metafiles</row>
+        <row id="SVIcons" si="296">Icons</row>
+        <row id="SVBitmaps" si="297">Bitmaps</row>
+        <row id="SVTIFFImages" si="298">TIFF Images</row>
+        <row id="SGridTooLarge" si="299">Grid too large for operation</row>
+        <row id="STooManyDeleted" si="300">Too many rows or columns deleted</row>
+        <row id="SIndexOutOfRange" si="301">Grid index out of range</row>
+        <row id="SFixedColTooBig" si="302">Fixed column count must be less than column count</row>
+        <row id="SFixedRowTooBig" si="271">Fixed row count must be less than row count</row>
+        <row id="SInvalidStringGridOp" si="272">Cannot insert or delete rows from grid</row>
+        <row id="SMaskErr" si="273">Invalid input value</row>
+        <row id="SMaskEditErr" si="274">Invalid input value.  Use escape key to abandon changes</row>
+        <row id="SMsgDlgWarning" si="275">Warning</row>
+        <row id="SInvalidPrinter" si="308">Printer selected is not valid</row>
+        <row id="SDeviceOnPort" changed="20241228T054850Z" si="309" created="20241228T054850Z" codep="1">%s on %s</row>
+        <row id="SGroupIndexTooLow" si="310">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
+        <row id="SNoMDIForm" si="311">Cannot create form. No MDI forms are currently active</row>
+        <row id="SImageCanvasNeedsBitmap" si="312">Can only modify an image if it contains a bitmap</row>
+        <row id="SControlParentSetToSelf" si="313">A control cannot have itself as its parent</row>
+        <row id="SControlNonMainThreadUsage" changed="20241228T054850Z" si="314" created="20241228T054850Z" codep="1">Control '%s' is used on a not main thread</row>
+        <row id="SOKButton" si="315">OK</row>
+        <row id="SCancelButton" si="316">Cancel</row>
+        <row id="SYesButton" si="317">&amp;Yes</row>
+        <row id="SNoButton" si="318">&amp;No</row>
+        <row id="SHelpButton" si="287">&amp;Help</row>
+        <row id="SCloseButton" si="288">&amp;Close</row>
+        <row id="SIgnoreButton" si="289">&amp;Ignore</row>
+        <row id="SRetryButton" si="290">&amp;Retry</row>
+        <row id="SAbortButton" si="291">Abort</row>
+        <row id="SCannotFocus" si="324">Cannot focus a disabled or invisible window</row>
+        <row id="SParentRequired" changed="20241228T054850Z" si="325" created="20241228T054850Z" codep="1">Control '%s' has no parent window</row>
+        <row id="SControlPath" changed="20241228T054850Z" si="326" created="20241228T054850Z" codep="1">. Path:
+%s</row>
+        <row id="SParentGivenNotAParent" changed="20241228T054850Z" si="327" created="20241228T054850Z" codep="1">Parent given is not a parent of '%s'</row>
+        <row id="SMDIChildNotVisible" si="328">Cannot hide an MDI Child Form</row>
+        <row id="SVisibleChanged" si="329">Cannot change Visible in OnShow or OnHide</row>
+        <row id="SCannotShowModal" si="330">Cannot make a visible window modal</row>
+        <row id="SScrollBarRange" si="331">Scrollbar property out of range</row>
+        <row id="SPropertyOutOfRange" changed="20241228T054850Z" si="332" created="20241228T054850Z" codep="1">%s property out of range</row>
+        <row id="SMenuIndexError" si="333">Menu index out of range</row>
+        <row id="SMenuReinserted" si="334">Menu inserted twice</row>
+        <row id="SMenuNotFound" si="303">Sub-menu is not in menu</row>
+        <row id="SNoTimers" si="304">Not enough timers available</row>
+        <row id="SNotPrinting" si="305">Printer is not currently printing</row>
+        <row id="SPrinting" si="306">Printing in progress</row>
+        <row id="SPrinterIndexError" si="307">Printer index out of range</row>
+        <row id="SUnknownExtension" changed="20241228T054850Z" si="340" created="20241228T054850Z" codep="1">Unknown picture file extension (.%s)</row>
+        <row id="SUnknownClipboardFormat" si="341">Unsupported clipboard format</row>
+        <row id="SUnknownStreamFormat" si="342">Unsupported stream format</row>
+        <row id="SOutOfResources" si="343">Out of system resources</row>
+        <row id="SNoCanvasHandle" si="344">Canvas does not allow drawing</row>
+        <row id="SInvalidTextFormatFlag" changed="20241228T054850Z" si="345" created="20241228T054850Z" codep="1">Text format flag '%s' not supported</row>
+        <row id="SInvalidFrameIndex" changed="20241228T054850Z" si="346" created="20241228T054850Z" codep="1">Invalid image frame index %d: there are %d frames (0-%d)</row>
+        <row id="SInvalidImageSize" si="347">Invalid image size</row>
+        <row id="SInvalidImageList" si="348">Invalid ImageList</row>
+        <row id="SReplaceImage" si="349">Unable to Replace Image</row>
+        <row id="SInsertImage" si="350">Unable to Insert Image</row>
+        <row id="SImageIndexError" si="319">Invalid ImageList Index</row>
+        <row id="SImageReadFail" si="320">Failed to read ImageList data from stream</row>
+        <row id="SImageWriteFail" si="321">Failed to write ImageList data to stream</row>
+        <row id="SWindowDCError" si="322">Error creating window device context</row>
+        <row id="SWindowClass" si="323">Error creating window class</row>
+        <row id="SInvalidBitmap" si="363">Bitmap image is not valid</row>
+        <row id="SInvalidIcon" si="364">Icon image is not valid</row>
+        <row id="SInvalidMetafile" si="365">Metafile is not valid</row>
+        <row id="SInvalidPixelFormat" si="366">Invalid pixel format</row>
+        <row id="SScanLine" si="336">Scan line index out of range</row>
+        <row id="SChangeIconSize" si="337">Cannot change the size of an icon</row>
+        <row id="SChangeWicSize" si="338">Cannot change the size of a WIC Image</row>
+        <row id="SOleGraphic" si="339">Invalid operation on TOleGraphic</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.Imaging.GIFConsts">
+        <row id="sProgressConverting" si="100">Converting</row>
+        <row id="sProgressRendering" si="101">Rendering</row>
+        <row id="sProgressCopying" si="102">Copying</row>
+        <row id="sProgressOptimizing" si="103">Optimizing</row>
+        <row id="sScreenSizeExceeded" si="116">Image exceeds Logical Screen size</row>
+        <row id="sNoColorTable" si="117">No global or local color table defined</row>
+        <row id="sBadPixelCoordinates" si="118">Invalid pixel coordinates</row>
+        <row id="sInvalidPixelFormat" si="119">Unsupported PixelFormat</row>
+        <row id="sBadDimension" si="120">Invalid image dimensions</row>
+        <row id="sNoDIB" si="121">Image has no DIB</row>
+        <row id="sInvalidStream" si="122">Invalid stream operation</row>
+        <row id="sInvalidColor" si="123">Color not in color table</row>
+        <row id="sInvalidBitSize" si="124">Invalid Bits Per Pixel value</row>
+        <row id="sEmptyColorMap" si="125">Color table is empty</row>
+        <row id="sEmptyImage" si="126">Image is empty</row>
+        <row id="sMultipleGCE" si="95">Frame contains multiple Graphic Control Extension blocks</row>
+        <row id="sNoPalette" si="96">Missing, invalid or empty palette</row>
+        <row id="sGIFImageFile" si="97">GIF Image</row>
+        <row id="sProgressLoading" si="98">Loading</row>
+        <row id="sProgressSaving" si="99">Saving</row>
+        <row id="sGIFErrorSaveEmpty" si="132">Cannot save empty GIF</row>
+        <row id="sBadSignature" si="133">Invalid GIF signature</row>
+        <row id="sScreenBadColorSize" si="134">Invalid number of colors specified in Screen Descriptor</row>
+        <row id="sImageBadColorSize" si="135">Invalid number of colors specified in Image Descriptor</row>
+        <row id="sUnknownExtension" si="136">Unknown extension type</row>
+        <row id="sBadExtensionLabel" si="137">Invalid extension introducer</row>
+        <row id="sOutOfMemDIB" si="138">Failed to allocate memory for GIF DIB</row>
+        <row id="sDecodeTooFewBits" si="139">Decoder bit buffer under-run</row>
+        <row id="sDecodeCircular" si="140">Circular decoder table entry</row>
+        <row id="sBadTrailer" si="141">Invalid Image trailer</row>
+        <row id="sBadExtensionInstance" si="142">Internal error: Extension Instance does not match Extension Label</row>
+        <row id="sBadBlockSize" si="111">Unsupported Application Extension block size</row>
+        <row id="sBadBlock" si="112">Unknown GIF block type</row>
+        <row id="sUnsupportedClass" si="113">Object type not supported for operation</row>
+        <row id="sInvalidData" si="114">Invalid GIF data</row>
+        <row id="sBadSize" si="115">Invalid image size</row>
+        <row id="sOutOfData" si="128">Premature end of data</row>
+        <row id="sTooManyColors" si="129">Color table overflow</row>
+        <row id="sBadColorIndex" si="130">Invalid color index</row>
+        <row id="sBadColorIndexFixed" si="131">Invalid color index - color map expanded</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.Imaging.JConsts">
+        <row id="sChangeJPGSize" si="164">Cannot change the size of a JPEG image</row>
+        <row id="sJPEGError" changed="20241228T054850Z" si="165" created="20241228T054850Z" codep="1">JPEG error ##%d</row>
+        <row id="sJPEGImageFile" si="166">JPEG Image File</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.VDBConsts">
+        <row id="SPostEdit" si="20">Post edit</row>
+        <row id="SCancelEdit" si="21">Cancel edit</row>
+        <row id="SRefreshRecord" si="22">Refresh data</row>
+        <row id="SApplyUpdates" si="23">Apply updates</row>
+        <row id="SCancelUpdates" si="24">Cancel updates</row>
+        <row id="SRemoteLogin" si="25">Remote Login</row>
+        <row id="SFirstRecord" si="45">First record</row>
+        <row id="SPriorRecord" si="46">Prior record</row>
+        <row id="SNextRecord" si="15">Next record</row>
+        <row id="SLastRecord" si="16">Last record</row>
+        <row id="SInsertRecord" si="17">Insert record</row>
+        <row id="SDeleteRecord" si="18">Delete record</row>
+        <row id="SEditRecord" si="19">Edit record</row>
+      </node>
+      <node class="TWindowsStringNode" name="Xml.XMLConst">
+        <row id="SMismatchedRegItems" si="84">Mismatched paramaters to RegisterChildNodes</row>
+        <row id="SNotSingleTextNode" changed="20241228T054850Z" si="85" created="20241228T054850Z" codep="1">Element "%s" does not contain a single text node</row>
+        <row id="SNoDOMParseOptions" si="86">DOM Implementation does not support IDOMParseOptions</row>
+        <row id="SMissingItemTag" si="87">ItemTag property is not initialized</row>
+        <row id="SNodeReadOnly" si="88">Node is readonly</row>
+        <row id="SNoRefresh" si="89">Refresh is only supported if the FileName or XML properties are set</row>
+        <row id="SMissingFileName" si="90">FileName cannot be blank</row>
+        <row id="SLine" si="91">Line</row>
+        <row id="SDuplicateRegistration" changed="20241228T054850Z" si="104" created="20241228T054850Z" codep="1">"%s" DOMImplementation already registered</row>
+        <row id="SNoMatchingDOMVendor" changed="20241228T054850Z" si="105" created="20241228T054850Z" codep="1">No matching DOM Vendor: "%s"</row>
+        <row id="SNoDOMNodeEx" si="106">Selected DOM Vendor does not support this property or method</row>
+        <row id="SDOMNotSupported" changed="20241228T054850Z" si="107" created="20241228T054850Z" codep="1">Property or Method "%s" is not supported by DOM Vendor "%s"</row>
+        <row id="SNoDOMVendorSelected" si="108">No selected DOM Vendor</row>
+        <row id="SNodeExpected" si="109">Node cannot be null</row>
+        <row id="SMSDOMNotInstalled" si="110">Microsoft MSXML is not installed</row>
+        <row id="SNotActive" si="79">No active document</row>
+        <row id="SNodeNotFound" changed="20241228T054850Z" si="80" created="20241228T054850Z" codep="1">Node "%s" not found</row>
+        <row id="SMissingNode" si="81">IDOMNode required</row>
+        <row id="SNoAttributes" si="82">Attributes are not supported on this node type</row>
+        <row id="SInvalidNodeType" si="83">Invalid node type</row>
+      </node>
+    </node>
+    <node class="TWindowsVersionFolder" name="Version">
+      <node class="TWindowsVersionNode" name="1" resid="1" langid="1033">
+        <row id="FileDescription" si="667">Project1</row>
+        <row id="ProgramID" si="668">com.embarcadero.Project1</row>
+        <row id="ProductName" si="669">Project1</row>
+        <data>
+          AAI0AAAAVgBTAF8AVgBFAFIAUwBJAE8ATgBfAEkATgBGAE8AAAAAAL0E7/4AAAEAAAABAAAAAAAAAAEAAAAAAD8AAAAAAAAABAAA
+          AAEAAAAAAAAAAAAAAAAAAABgAQAAAQBTAHQAcgBpAG4AZwBGAGkAbABlAEkAbgBmAG8AAAA8AQAAAQAwADQAMAA5ADAANABFADQA
+          AAA6AAkAAQBGAGkAbABlAEQAZQBzAGMAcgBpAHAAdABpAG8AbgAAAAAAUAByAG8AagBlAGMAdAAxAAAAAAAwAAgAAQBGAGkAbABl
+          AFYAZQByAHMAaQBvAG4AAAAAADEALgAwAC4AMAAuADAAAABOABkAAQBQAHIAbwBnAHIAYQBtAEkARAAAAAAAYwBvAG0ALgBlAG0A
+          YgBhAHIAYwBhAGQAZQByAG8ALgBQAHIAbwBqAGUAYwB0ADEAAAAAADIACQABAFAAcgBvAGQAdQBjAHQATgBhAG0AZQAAAAAAUABy
+          AG8AagBlAGMAdAAxAAAAAAA0AAgAAQBQAHIAbwBkAHUAYwB0AFYAZQByAHMAaQBvAG4AAAAxAC4AMAAuADAALgAwAAAARAAAAAEA
+          VgBhAHIARgBpAGwAZQBJAG4AZgBvAAAAAAAkAAQAAABUAHIAYQBuAHMAbABhAHQAaQBvAG4AAAAAAAkE5AQ=
+        </data>
+      </node>
+    </node>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+  <duplicates promptoverwritetranslated="1"/>
+</project>

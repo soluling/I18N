@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9E28A0D3-691D-482D-A7F0-D4F085BC8C1B" created="20170507T200753Z" lastmodified="20200316T191525Z" version="1.0.714" stringid="11">
+<project id="9E28A0D3-691D-482D-A7F0-D4F085BC8C1B" created="20170507T200753Z" lastmodified="20241228T060426Z" version="1.0.1054" stringid="16">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\StringFormat.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\bin\Debug\StringFormat.exe" original="en" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="StringFormat.csproj" libraries="[nlWinForms]">
+  <node class="TAssemblySource" name="bin\Debug\StringFormat.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\StringFormat\bin\Debug\StringFormat.exe" original="en" lastmodified="20241228T060426Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="StringFormat.csproj" libraries="[nlWinForms]">
     <node class="TNetFormFolder" name="Form">
       <node class="TResXNode" name="StringFormat.Form1.resources" resourcekind="nkForm">
         <row id="$this.Text" si="1">String Format Sample</row>
@@ -109,15 +109,11 @@
     </node>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="StringFormat.Properties.Resources.resources">
-        <row id="CalculationNone" class="TPatternRow" si="7">Sample: {0} + {1} = {2}</row>
-        <row id="CalculationPartial" class="TPatternRow" si="8" scannedcomment="0: First number">Sample: {0} + {1} = {2}</row>
-        <row id="Hello" class="TPatternRow" si="9" scannedcomment="0: Name of the user">Hello {0}</row>
-        <row id="ServerError" class="TPatternRow" si="10" scannedcomment="0: Server name, 1: Error message">Error in server {0}: {1}</row>
-        <row id="Test" changed="20200316T191524Z" class="TPatternRow" si="11" st="2">
-          <value startpattern="1">{0} and {1}</value>
-          <prev>{{, } and {0} characters</prev>
-          <pattern select="" index="0">, </pattern>
-        </row>
+        <row id="CalculationNone" si="7" created="20241228T060422Z" codep="1">Sample: {0} + {1} = {2}</row>
+        <row id="CalculationPartial" si="8" scannedcomment="0: First number" created="20241228T060422Z" codep="1">Sample: {0} + {1} = {2}</row>
+        <row id="Hello" si="9" scannedcomment="0: Name of the user" created="20241228T060422Z" codep="1">Hello {0}</row>
+        <row id="ServerError" si="10" scannedcomment="0: Server name, 1: Error message" created="20241228T060422Z" codep="1">Error in server {0}: {1}</row>
+        <row id="Test" changed="20241228T060422Z" si="11" created="20241228T060422Z" codep="1">{{, }} and {0} characters</row>
       </node>
     </node>
   </node>
@@ -131,13 +127,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

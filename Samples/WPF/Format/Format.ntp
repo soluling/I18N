@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0DD66084-B3CC-4E74-A823-41FB1316D1DA" created="20180331T192219Z" lastmodified="20220331T220512Z" version="1.0.912" stringid="11">
+<project id="0DD66084-B3CC-4E74-A823-41FB1316D1DA" created="20180331T192219Z" lastmodified="20241228T061912Z" version="1.0.1054" stringid="16">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
@@ -7,7 +7,7 @@
   <lang id="it"/>
   <lang id="es"/>
   <lang id="pl"/>
-  <node class="TNetProjectSource" name="Format.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Format\Format.csproj" original="en" lastmodified="20220331T220512Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Format.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Format\Format.csproj" original="en" lastmodified="20241228T061912Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net30" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20220331T220505Z" kind="xkApplication">
       <data>
@@ -60,8 +60,8 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx" windowsforms="xkCrSel">
-        <row id="Hello" class="TPatternRow" si="7" scannedcomment="0: Name of the person">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
+        <row id="Hello" si="7" scannedcomment="0: Name of the person" created="20241228T061912Z" codep="1">
           <value>Hello {0}!</value>
           <lang id="fi" st="4" rw="0" time="20180331T192240Z">Moi {0}!</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192451Z">Hallo {0}!</lang>
@@ -71,7 +71,7 @@
           <lang id="es" st="1" or="6" rw="0" time="20180331T192728Z">¡Hola {0}!</lang>
           <lang id="pl" st="1" or="6" rw="0" time="20180331T192758Z">Witaj {0}!</lang>
         </row>
-        <row id="Hello2" class="TPatternRow" si="8" scannedcomment="0, 1: Names">
+        <row id="Hello2" si="8" scannedcomment="0, 1: Names" created="20241228T061912Z" codep="1">
           <value>Hello {0} and {1}!</value>
           <lang id="fi" st="4" rw="0" time="20180331T192245Z">Moi {0} ja {1}!</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192452Z">Hallo {0} und {1}!</lang>
@@ -81,7 +81,7 @@
           <lang id="es" st="1" or="6" rw="0" time="20180331T192729Z">¡Hola {0} y {1}!</lang>
           <lang id="pl" st="1" or="6" rw="0" time="20180331T192759Z">Witaj {0} i {1}!</lang>
         </row>
-        <row id="Hello3" class="TPatternRow" si="9" scannedcomment="0, 1, 2: Names">
+        <row id="Hello3" si="9" scannedcomment="0, 1, 2: Names" created="20241228T061912Z" codep="1">
           <value>Hello {0}, {1} and {2}!</value>
           <lang id="fi" st="4" rw="0" time="20180331T192252Z">Moi {0}, {1} ja {2}!</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192453Z">Hallo {0}, {1} und {2}!</lang>
@@ -91,7 +91,7 @@
           <lang id="es" st="1" or="6" rw="0" time="20180331T192730Z">¡Hello {0}, {1} and {2}!</lang>
           <lang id="pl" st="1" or="6" rw="0" time="20180331T192800Z">Witaj {0}, {1} i {2}!</lang>
         </row>
-        <row id="Trip" class="TPatternRow" si="10" scannedcomment="0: Name of the destination city">
+        <row id="Trip" si="10" scannedcomment="0: Name of the destination city" created="20241228T061912Z" codep="1">
           <value>I will go to {0} by car.</value>
           <lang id="fi" st="4" rw="0" time="20180331T192335Z">Menen {0}:iin autolla.</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192455Z">Ich werde mit dem Auto nach {0} fahren.</lang>
@@ -101,7 +101,7 @@
           <lang id="es" st="1" or="6" rw="0" time="20180331T192731Z">Iré a {0} en coche.</lang>
           <lang id="pl" st="1" or="6" rw="0" time="20180331T192801Z">Jadę do {0} samochodem.</lang>
         </row>
-        <row id="Trip2" class="TPatternRow" si="11" scannedcomment="0, 1: Names of the destination cities">
+        <row id="Trip2" si="11" scannedcomment="0, 1: Names of the destination cities" created="20241228T061912Z" codep="1">
           <value>I will go to {0} by car and to {1} by train.</value>
           <lang id="fi" st="4" rw="0" time="20180331T192359Z">Menen {0}:iin autolla ja {1}:iin junalla.</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192456Z">Ich werde mit dem Auto nach {0} und mit dem Zug nach {1} fahren.</lang>
@@ -135,6 +135,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

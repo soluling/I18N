@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8E08B829-F7F6-4F83-B754-DE54C09BD2A1" created="20200411T191755Z" lastmodified="20221231T031000Z" version="1.0.972" lockedrowcomplete="0" stringid="1300">
+<project id="8E08B829-F7F6-4F83-B754-DE54C09BD2A1" created="20200411T191755Z" lastmodified="20241228T055800Z" version="1.0.1054" lockedrowcomplete="0" stringid="1366">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="ExternalFile.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\ExternalFile\ExternalFile.dproj" original="en" lastmodified="20221231T031000Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+  <node class="TDelphiProjectSource" name="ExternalFile.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\ExternalFile\ExternalFile.dproj" original="en" lastmodified="20241228T055800Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
     <node class="TDelphiFormFolder" name="RCData" created="20221231T030746Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
       <node class="TWindowsBinaryNode" name="CLOUDS" resname="CLOUDS" excluded="1"/>
@@ -143,24 +143,24 @@
     </node>
     <node class="TWindowsStringFolder" name="String" created="20221231T030746Z">
       <node class="TWindowsStringNode" name="Androidapi.Consts" created="20221231T030958Z" st="0">
-        <row id="SJNIRTTINotAvailable" class="TPatternRow" si="1219" st="0">RTTI for type {0} was not found.  Perhaps missing {{$M+}?</row>
-        <row id="SJNIClassNotFound" class="TPatternRow" si="1220" st="0">Java type {0} could not be found</row>
-        <row id="SJNIType" class="TPatternRow" si="1221" st="0">{0} is not a valid Java type</row>
-        <row id="SInternalBindingError" class="TPatternRow" si="1222" st="0">Internal error creating binding for '{0}'</row>
-        <row id="SBadJNIClass" class="TPatternRow" si="1223" st="0">'{0}' must be an interface derived from IJavaClass</row>
-        <row id="SBadJNIInstance" class="TPatternRow" si="1224" st="0">'{0}' must be an interface derived from IJavaInstance</row>
-        <row id="SErrorCreatingJNIObject" class="TPatternRow" si="1225" st="0">Unable to create Java object for instance of '{0}'</row>
+        <row id="SJNIRTTINotAvailable" changed="20241228T055758Z" si="1219" created="20241228T055758Z" codep="1">RTTI for type %s was not found.  Perhaps missing {$M+}?</row>
+        <row id="SJNIClassNotFound" changed="20241228T055758Z" si="1220" created="20241228T055758Z" codep="1">Java type %s could not be found</row>
+        <row id="SJNIType" changed="20241228T055758Z" si="1221" created="20241228T055758Z" codep="1">%s is not a valid Java type</row>
+        <row id="SInternalBindingError" changed="20241228T055758Z" si="1222" created="20241228T055758Z" codep="1">Internal error creating binding for '%s'</row>
+        <row id="SBadJNIClass" changed="20241228T055758Z" si="1223" created="20241228T055758Z" codep="1">'%s' must be an interface derived from IJavaClass</row>
+        <row id="SBadJNIInstance" changed="20241228T055758Z" si="1224" created="20241228T055758Z" codep="1">'%s' must be an interface derived from IJavaInstance</row>
+        <row id="SErrorCreatingJNIObject" changed="20241228T055758Z" si="1225" created="20241228T055758Z" codep="1">Unable to create Java object for instance of '%s'</row>
         <row id="SJNIInvokeError" si="1226" st="0">Fatal error invoking interface</row>
-        <row id="SInvalidJNIType" class="TPatternRow" si="1227" st="0">The type '{0}' is not supported with jni interoperability</row>
-        <row id="SJNINoInterface" class="TPatternRow" si="1228" st="0">No implemented interface found in '{0}'</row>
-        <row id="SJNIMethodNotFound" class="TPatternRow" si="1229" st="0">Invoke error: method '{0}' not found</row>
+        <row id="SInvalidJNIType" changed="20241228T055758Z" si="1227" created="20241228T055758Z" codep="1">The type '%s' is not supported with jni interoperability</row>
+        <row id="SJNINoInterface" changed="20241228T055758Z" si="1228" created="20241228T055758Z" codep="1">No implemented interface found in '%s'</row>
+        <row id="SJNIMethodNotFound" changed="20241228T055758Z" si="1229" created="20241228T055758Z" codep="1">Invoke error: method '%s' not found</row>
         <row id="SJNIUnknownMethod" si="1230" st="0">Invoke error: method not found</row>
-        <row id="SJNIInvalidSetter" class="TPatternRow" si="1231" st="0">Method '{0}' is not a valid property setter</row>
-        <row id="SJNIInvalidGetter" class="TPatternRow" si="1232" st="0">Method '{0}' is not a valid property getter</row>
-        <row id="SJNIMangleErrorInvalidClassType" class="TPatternRow" si="1233" st="0">Mangle error: the type '{0}' is invalid for describing a Java array type. The former must be a class derived from TJavaBasicArray</row>
-        <row id="SJNIMangleErrorInvalidInterfaceType" class="TPatternRow" si="1234" st="0">Mangle error: the type '{0}' is invalid for describing a Java class type. The former must be an interface annotated with the JavaSignature attribute</row>
-        <row id="SJNIMangleErrorInvalidFloatingPointType" class="TPatternRow" si="1235" st="0">Mangle error: the type '{0}' is invalid for describing a Java float-pointing type. Single and Double are the only supported floating-point types</row>
-        <row id="SJNIMangleErrorInvalidJavaType" class="TPatternRow" si="1236" st="0">Mangle error: the type '{0}' is invalid for describing a Java type</row>
+        <row id="SJNIInvalidSetter" changed="20241228T055758Z" si="1231" created="20241228T055758Z" codep="1">Method '%s' is not a valid property setter</row>
+        <row id="SJNIInvalidGetter" changed="20241228T055758Z" si="1232" created="20241228T055758Z" codep="1">Method '%s' is not a valid property getter</row>
+        <row id="SJNIMangleErrorInvalidClassType" changed="20241228T055758Z" si="1233" created="20241228T055758Z" codep="1">Mangle error: the type '%s' is invalid for describing a Java array type. The former must be a class derived from TJavaBasicArray</row>
+        <row id="SJNIMangleErrorInvalidInterfaceType" changed="20241228T055758Z" si="1234" created="20241228T055758Z" codep="1">Mangle error: the type '%s' is invalid for describing a Java class type. The former must be an interface annotated with the JavaSignature attribute</row>
+        <row id="SJNIMangleErrorInvalidFloatingPointType" changed="20241228T055758Z" si="1235" created="20241228T055758Z" codep="1">Mangle error: the type '%s' is invalid for describing a Java float-pointing type. Single and Double are the only supported floating-point types</row>
+        <row id="SJNIMangleErrorInvalidJavaType" changed="20241228T055758Z" si="1236" created="20241228T055758Z" codep="1">Mangle error: the type '%s' is invalid for describing a Java type</row>
         <row id="SUnknown" si="1237" st="0">Unknown</row>
         <row id="SOk" si="1238" st="0">OK</row>
         <row id="SUserCanceled" si="1239" st="0">User Canceled</row>
@@ -185,23 +185,23 @@
         <row id="SPurchaseDataParse" si="1258" st="0">Failed to parse purchase data.</row>
         <row id="SNullReturn" si="1259" st="0">IAB returned null purchaseData or dataSignature</row>
         <row id="SNullInResultData" si="1260" st="0">Null data in IAB result</row>
-        <row id="SSignatureFailureFmt" class="TPatternRow" si="1261" st="0">Signature verification failed for sku {0}</row>
+        <row id="SSignatureFailureFmt" changed="20241228T055758Z" si="1261" created="20241228T055758Z" codep="1">Signature verification failed for sku %s</row>
         <row id="SBuyFailure" si="1262" st="0">Unable to buy item</row>
         <row id="SPurchaseProblem" si="1263" st="0">Problem purchashing item.</row>
         <row id="SSetupOK" si="1264" st="0">Setup successful.</row>
-        <row id="SConsumeOKFmt" class="TPatternRow" si="1265" st="0">Successful consume of sku {0}</row>
+        <row id="SConsumeOKFmt" changed="20241228T055758Z" si="1265" created="20241228T055758Z" codep="1">Successful consume of sku %s</row>
         <row id="SInventoryRefreshOK" si="1266" st="0">Inventory refresh successful.</row>
         <row id="SNoSubscriptions" si="1267" st="0">Subscriptions are not available.</row>
         <row id="sSetupException" si="1268" st="0">RemoteException while setting up in-app billing.</row>
-        <row id="SConsumeErrorFmt" class="TPatternRow" si="1269" st="0">Remote exception while consuming. PurchaseInfo: {0}</row>
-        <row id="SIABNotSetUpErrorFmt" class="TPatternRow" si="1270" st="0">IAB helper is not set up. Can't perform operation: {0}</row>
-        <row id="SCantConsumeThoseErrorFmt" class="TPatternRow" si="1271" st="0">Items of type '{0}' can't be consumed.</row>
-        <row id="SSkuTokenMissingErrorFmt" class="TPatternRow" si="1272" st="0">PurchaseInfo is missing token for sku: {0} {1}</row>
+        <row id="SConsumeErrorFmt" changed="20241228T055758Z" si="1269" created="20241228T055758Z" codep="1">Remote exception while consuming. PurchaseInfo: %s</row>
+        <row id="SIABNotSetUpErrorFmt" changed="20241228T055758Z" si="1270" created="20241228T055758Z" codep="1">IAB helper is not set up. Can't perform operation: %s</row>
+        <row id="SCantConsumeThoseErrorFmt" changed="20241228T055758Z" si="1271" created="20241228T055758Z" codep="1">Items of type '%s' can't be consumed.</row>
+        <row id="SSkuTokenMissingErrorFmt" changed="20241228T055758Z" si="1272" created="20241228T055758Z" codep="1">PurchaseInfo is missing token for sku: %s %s</row>
         <row id="SIntentSendError" si="1273" st="0">Failed to send intent.</row>
-        <row id="SBadIntentResponseCodeType" class="TPatternRow" si="1274" st="0">Unexpected type for intent response code: {0}</row>
-        <row id="SBadBundleResponseCodeType" class="TPatternRow" si="1275" st="0">Unexpected type for bundle response code: {0}</row>
-        <row id="SAsyncInProgressError" class="TPatternRow" si="1276" st="0">Can't start async operation ({0}) because another async operation({1}) is in progress.</row>
-        <row id="SSkuConsumptionErrorFmt" class="TPatternRow" si="1277" st="0">Error consuming sku {0}</row>
+        <row id="SBadIntentResponseCodeType" changed="20241228T055758Z" si="1274" created="20241228T055758Z" codep="1">Unexpected type for intent response code: %s</row>
+        <row id="SBadBundleResponseCodeType" changed="20241228T055758Z" si="1275" created="20241228T055758Z" codep="1">Unexpected type for bundle response code: %s</row>
+        <row id="SAsyncInProgressError" changed="20241228T055758Z" si="1276" created="20241228T055758Z" codep="1">Can't start async operation (%s) because another async operation(%s) is in progress.</row>
+        <row id="SSkuConsumptionErrorFmt" changed="20241228T055758Z" si="1277" created="20241228T055758Z" codep="1">Error consuming sku %s</row>
         <row id="SPurchaseFlowError" si="1278" st="0">Remote exception while starting purchase flow</row>
         <row id="SInventoryRefreshRemoteError" si="1279" st="0">Remote exception while refreshing inventory.</row>
         <row id="SInventoryJSONError" si="1280" st="0">Error parsing JSON response while refreshing inventory.</row>
@@ -217,17 +217,47 @@
       <node class="TWindowsStringNode" name="FMX.Consts" excluded="1"/>
       <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
       <node class="TWindowsStringNode" name="Macapi.Consts" created="20221231T030958Z" st="0">
-        <row id="SObjectiveCRTTINotAvailable" class="TPatternRow" si="1289" st="0">RTTI for type {0} was not found.  Perhaps missing {{$M+}?</row>
-        <row id="SObjectiveCClassNotFound" class="TPatternRow" si="1290" st="0">ObjectiveC class {0} could not be found</row>
-        <row id="SInvalidObjectiveCType" class="TPatternRow" si="1291" st="0">{0} is not a valid ObjectiveC type</row>
-        <row id="SInternalBindingError" class="TPatternRow" si="1292" st="0">Internal error creating binding for '{0}'</row>
-        <row id="SMethodMustBeCDecl" class="TPatternRow" si="1293" st="0">Method '{0}' of type '{1}' must have cdecl calling convention</row>
-        <row id="SBadObjectiveCClass" class="TPatternRow" si="1294" st="0">'{0}' must be an interface derived from IObjectiveCClass</row>
-        <row id="SBadObjectiveCInstance" class="TPatternRow" si="1295" st="0">'{0}' must be an interface derived from IObjectiveCInstance</row>
-        <row id="SBadObjectiveCProtocol" class="TPatternRow" si="1296" st="0">'{0}' must be an interface derived from IObjectiveCProtocol</row>
-        <row id="SErrorCreatingOCObject" class="TPatternRow" si="1297" st="0">Unable to create ObjectiveC persona for instance of '{0}'</row>
+        <row id="SObjectiveCRTTINotAvailable" changed="20241228T055758Z" si="1289" created="20241228T055758Z" codep="1">RTTI for type %s was not found.  Perhaps missing {$M+}?</row>
+        <row id="SObjectiveCClassNotFound" changed="20241228T055758Z" si="1290" created="20241228T055758Z" codep="1">ObjectiveC class %s could not be found</row>
+        <row id="SInvalidObjectiveCType" changed="20241228T055758Z" si="1291" created="20241228T055758Z" codep="1">%s is not a valid ObjectiveC type</row>
+        <row id="SInternalBindingError" changed="20241228T055758Z" si="1292" created="20241228T055758Z" codep="1">Internal error creating binding for '%s'</row>
+        <row id="SMethodMustBeCDecl" changed="20241228T055758Z" si="1293" created="20241228T055758Z" codep="1">Method '%s' of type '%s' must have cdecl calling convention</row>
+        <row id="SBadObjectiveCClass" changed="20241228T055758Z" si="1294" created="20241228T055758Z" codep="1">'%s' must be an interface derived from IObjectiveCClass</row>
+        <row id="SBadObjectiveCInstance" changed="20241228T055758Z" si="1295" created="20241228T055758Z" codep="1">'%s' must be an interface derived from IObjectiveCInstance</row>
+        <row id="SBadObjectiveCProtocol" changed="20241228T055758Z" si="1296" created="20241228T055758Z" codep="1">'%s' must be an interface derived from IObjectiveCProtocol</row>
+        <row id="SErrorCreatingOCObject" changed="20241228T055758Z" si="1297" created="20241228T055758Z" codep="1">Unable to create ObjectiveC persona for instance of '%s'</row>
+        <row id="SInvalidObjCType" changed="20241228T055758Z" si="1299" created="20241228T055758Z" codep="1">The type '%s' is not supported with ObjectiveC interoperability</row>
+        <row id="SObjectiveCRTTINotAvailable.iOSSim64" si="1337" created="20241228T055758Z" st="0" codep="1">RTTI for type %s was not found.  Perhaps missing {$M+}?</row>
+        <row id="SObjectiveCClassNotFound.iOSSim64" si="1338" created="20241228T055758Z" st="0" codep="1">ObjectiveC class %s could not be found</row>
+        <row id="SInvalidObjectiveCType.iOSSim64" si="1339" created="20241228T055758Z" st="0" codep="1">%s is not a valid ObjectiveC type</row>
+        <row id="SInternalBindingError.iOSSim64" si="1340" created="20241228T055758Z" st="0" codep="1">Internal error creating binding for '%s'</row>
+        <row id="SMethodMustBeCDecl.iOSSim64" si="1341" created="20241228T055758Z" st="0" codep="1">Method '%s' of type '%s' must have cdecl calling convention</row>
+        <row id="SBadObjectiveCClass.iOSSim64" si="1342" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCClass</row>
+        <row id="SBadObjectiveCInstance.iOSSim64" si="1343" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCInstance</row>
+        <row id="SBadObjectiveCProtocol.iOSSim64" si="1344" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCProtocol</row>
+        <row id="SErrorCreatingOCObject.iOSSim64" si="1345" created="20241228T055758Z" st="0" codep="1">Unable to create ObjectiveC persona for instance of '%s'</row>
+        <row id="SInvalidObjCType.iOSSim64" si="1346" created="20241228T055758Z" st="0" codep="1">The type '%s' is not supported with ObjectiveC interoperability</row>
+        <row id="SObjectiveCRTTINotAvailable.macOS64" si="1347" created="20241228T055758Z" st="0" codep="1">RTTI for type %s was not found.  Perhaps missing {$M+}?</row>
+        <row id="SObjectiveCClassNotFound.macOS64" si="1348" created="20241228T055758Z" st="0" codep="1">ObjectiveC class %s could not be found</row>
+        <row id="SInvalidObjectiveCType.macOS64" si="1349" created="20241228T055758Z" st="0" codep="1">%s is not a valid ObjectiveC type</row>
+        <row id="SInternalBindingError.macOS64" si="1350" created="20241228T055758Z" st="0" codep="1">Internal error creating binding for '%s'</row>
+        <row id="SMethodMustBeCDecl.macOS64" si="1351" created="20241228T055758Z" st="0" codep="1">Method '%s' of type '%s' must have cdecl calling convention</row>
+        <row id="SBadObjectiveCClass.macOS64" si="1352" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCClass</row>
+        <row id="SBadObjectiveCInstance.macOS64" si="1353" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCInstance</row>
+        <row id="SBadObjectiveCProtocol.macOS64" si="1354" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCProtocol</row>
+        <row id="SErrorCreatingOCObject.macOS64" si="1355" created="20241228T055758Z" st="0" codep="1">Unable to create ObjectiveC persona for instance of '%s'</row>
+        <row id="SInvalidObjCType.macOS64" si="1356" created="20241228T055758Z" st="0" codep="1">The type '%s' is not supported with ObjectiveC interoperability</row>
+        <row id="SObjectiveCRTTINotAvailable.macOSARM64" si="1357" created="20241228T055758Z" st="0" codep="1">RTTI for type %s was not found.  Perhaps missing {$M+}?</row>
+        <row id="SObjectiveCClassNotFound.macOSARM64" si="1358" created="20241228T055758Z" st="0" codep="1">ObjectiveC class %s could not be found</row>
+        <row id="SInvalidObjectiveCType.macOSARM64" si="1359" created="20241228T055758Z" st="0" codep="1">%s is not a valid ObjectiveC type</row>
+        <row id="SInternalBindingError.macOSARM64" si="1360" created="20241228T055758Z" st="0" codep="1">Internal error creating binding for '%s'</row>
+        <row id="SMethodMustBeCDecl.macOSARM64" si="1361" created="20241228T055758Z" st="0" codep="1">Method '%s' of type '%s' must have cdecl calling convention</row>
+        <row id="SBadObjectiveCClass.macOSARM64" si="1362" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCClass</row>
+        <row id="SBadObjectiveCInstance.macOSARM64" si="1363" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCInstance</row>
+        <row id="SBadObjectiveCProtocol.macOSARM64" si="1364" created="20241228T055758Z" st="0" codep="1">'%s' must be an interface derived from IObjectiveCProtocol</row>
+        <row id="SErrorCreatingOCObject.macOSARM64" si="1365" created="20241228T055758Z" st="0" codep="1">Unable to create ObjectiveC persona for instance of '%s'</row>
         <row id="SOCInvokeError" si="1298" st="0">Fatal error invoking interface</row>
-        <row id="SInvalidObjCType" class="TPatternRow" si="1299" st="0">The type '{0}' is not supported with ObjectiveC interoperability</row>
+        <row id="SInvalidObjCType.macOSARM64" si="1366" created="20241228T055758Z" st="0" codep="1">The type '%s' is not supported with ObjectiveC interoperability</row>
         <row id="SUnspecificStateOfLocationSensor" si="1300" st="0">Unspecific state of location sensor</row>
       </node>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
@@ -236,7 +266,7 @@
       <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSample" si="42" scannedcomment="This is a comment">
+        <row id="SSample" si="42">
           <value>This is a sample</value>
           <lang id="fi" rw="0" time="20200411T191831Z" fuzzy="100">Tämä on esimerkki</lang>
         </row>
@@ -295,6 +325,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -302,6 +333,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

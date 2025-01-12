@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A300EFAC-3678-402D-B6BA-26721749A67C" created="20180521T033026Z" lastmodified="20200316T230009Z" version="1.0.714" stringid="6">
+<project id="A300EFAC-3678-402D-B6BA-26721749A67C" created="20180521T033026Z" lastmodified="20241228T070423Z" version="1.0.1054" stringid="7">
   <lang id="fi"/>
   <lang id="fi-FI"/>
-  <node class="TReactIntlSource" name="translations.json" fullpath="D:\NT\Deploy\Samples\React\Intl\hello\src\translations\translations.json" original="en" encoding="utf-8">
+  <node class="TReactIntlSource" name="translations.json" fullpath="D:\NT\Deploy\Samples\React\Intl\hello\src\translations\translations.json" original="en" lastmodified="20241228T070423Z" encoding="utf-8">
     <row id="app.header" si="1" created="20180525T140410Z">
       <value>Sample</value>
       <lang id="fi-FI" st="4" rw="0" time="20180525T201529Z">Esimerkki</lang>
     </row>
-    <row id="app.title" class="TPatternRow" si="2">
+    <row id="app.title" si="2" created="20241228T070408Z" codep="1">
       <value>Welcome {who}</value>
       <lang id="fi" rw="0" time="20180521T134706Z">Moi {who}</lang>
       <lang id="fi-FI" st="4" rw="0" time="20180521T160419Z">Moikka {who}</lang>
     </row>
     <row id="app.intro" class="TTagRow" si="3">
-      <value>To get started, edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.</value>
-      <lang id="fi" rw="0" time="20180521T134718Z">Aloita &lt;code&gt;fsfsdsfd&lt;/code&gt; dfsdsdffddf.</lang>
+      <value>To get started, edit &lt;code>src/App.js&lt;/code> and save to reload.</value>
+      <lang id="fi" rw="0" time="20180521T134718Z">Aloita &lt;code>fsfsdsfd&lt;/code> dfsdsdffddf.</lang>
     </row>
-    <row id="app.plural" changed="20180525T140326Z" class="TPatternRow" si="4">
+    <row id="app.plural" changed="20180525T140326Z" class="TPatternRow" si="4" original="{ski, plural, one {I have {ski} ski} other {I have {ski} skis}}">
       <value>I have {ski} skis</value>
       <prev startpattern="1">I have {0}.</prev>
       <pattern plural="pfOne">I have {ski} ski</pattern>
@@ -25,7 +25,7 @@
         <pattern plural="pfOne">{ski} suksi</pattern>
       </lang>
     </row>
-    <row id="app.plural2" class="TPatternRow" si="5" created="20180525T140927Z">
+    <row id="app.plural2" class="TPatternRow" si="5" created="20180525T140927Z" original="I have {ski, plural, one {{ski} ski} other {{ski} skis}}.">
       <value startpattern="1">I have {0}.</value>
       <pattern plural="pfOne">{ski} ski</pattern>
       <pattern plural="pfOther">{ski} skis</pattern>
@@ -35,7 +35,7 @@
         <pattern plural="pfOther">{ski} suksea</pattern>
       </lang>
     </row>
-    <row id="app.gender" class="TPatternRow" si="6" created="20180525T144426Z">
+    <row id="app.gender" class="TPatternRow" si="6" created="20180525T144426Z" original="{name, gender, male {{name} brings his car} female {{name} brings her car}}">
       <value gender="geMale">{name} brings his car</value>
       <pattern gender="geFemale">{name} brings her car</pattern>
       <lang id="fi" rw="0" time="20180525T184308Z">{name} tuo autonsa</lang>
@@ -59,14 +59,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

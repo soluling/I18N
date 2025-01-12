@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="99AB0090-7A20-483C-B848-24CC82450468" created="20170515T131040Z" lastmodified="20200317T004004Z" version="1.0.714" stringid="23">
+<project id="99AB0090-7A20-483C-B848-24CC82450468" created="20170515T131040Z" lastmodified="20241228T050357Z" version="1.0.1054" stringid="25">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Debug\JsonResource.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\JsonResource\Win32\Debug\JsonResource.exe" original="en-US">
+  <node class="TDelphiSource" name="Win32\Debug\JsonResource.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\JsonResource\Win32\Debug\JsonResource.exe" original="en-US" lastmodified="20241228T050357Z">
     <node class="TWindowsBinaryFolder" name="&quot;SPORT&quot;" resname="SPORT">
       <node class="TWindowsBinaryNode" name="SPORT" resname="SPORT" langid="1035" created="20170515T131135Z" binaryformat="bfJson" binaryformatkind="bkManual">
         <binary autoformat="0" manualformat="bfJson"/>
@@ -119,7 +119,7 @@
           <row id="Height">19</row>
           <row id="Caption" si="5" excluded="2">dummy</row>
         </item>
-        <item name="DescriptionLabel" type="TLabel">
+        <item name="DescriptionLabel" type="TLabel" autosize="0">
           <row id="Left">8</row>
           <row id="Top">32</row>
           <row id="Width">361</row>
@@ -303,13 +303,13 @@
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="SportFrm">
-        <row id="SOrigin" class="TPatternRow" si="11">
-          <value>Origin: {0}</value>
-          <lang id="fi" rw="0" tm="1" time="20180223T192942Z">Lähdemaa: {0}</lang>
+        <row id="SOrigin" changed="20241228T050357Z" si="11" created="20241228T050357Z" codep="1">
+          <value>Origin: %s</value>
+          <lang id="fi" rw="0" tm="1" time="20180223T192942Z">Lähdemaa: %s</lang>
         </row>
-        <row id="SPlayers" class="TPatternRow" si="12">
-          <value>{0} players</value>
-          <lang id="fi" rw="0" tm="1" time="20180223T192946Z">{0} pelaajaa</lang>
+        <row id="SPlayers" changed="20241228T050357Z" si="12" created="20241228T050357Z" codep="1">
+          <value>%d players</value>
+          <lang id="fi" rw="0" tm="1" time="20180223T192946Z">%d pelaajaa</lang>
         </row>
         <row id="SHasGoalie" si="13">
           <value>Has a goalie</value>
@@ -346,14 +346,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

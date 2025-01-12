@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="2641C8DF-669C-47A3-9BA1-16F868672B79" created="20120303T075959Z" lastmodified="20200316T232022Z" version="1.0.714" stringid="27">
+<project id="2641C8DF-669C-47A3-9BA1-16F868672B79" created="20120303T075959Z" lastmodified="20241228T064619Z" version="1.0.1054" stringid="33">
   <lang id="fi"/>
-  <node class="TPropertiesSource" name="Messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Test\src\Messages.properties" original="en-US" encoding="iso-8859-1">
+  <node class="TPropertiesSource" name="Messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Test\src\Messages.properties" original="en-US" lastmodified="20241228T064619Z" encoding="iso-8859-1">
     <row id="Title" si="1">
       <value>Sample</value>
       <lang id="fi" time="20120303T080018Z">Esimerkki</lang>
@@ -15,12 +15,12 @@
       <lang id="fi" time="20140908T095205Z">'esimerkki'</lang>
     </row>
     <row id="double1" si="4" created="20140908T095155Z">
-      <value>&quot;sample&quot;</value>
-      <lang id="fi" time="20140908T095214Z">&quot;esimerkki&quot;</lang>
+      <value>"sample"</value>
+      <lang id="fi" time="20140908T095214Z">"esimerkki"</lang>
     </row>
     <row id="double2" si="5" created="20140908T095155Z">
-      <value>&quot;sample&quot;</value>
-      <lang id="fi" time="20140908T095214Z">&quot;esimerkki&quot;</lang>
+      <value>"sample"</value>
+      <lang id="fi" time="20140908T095214Z">"esimerkki"</lang>
     </row>
     <row id="single'1" si="6" created="20140908T095155Z">quote in key</row>
     <row id="Plain" si="7">
@@ -44,12 +44,24 @@
     <row id="colon " si="13"> Colon space</row>
     <row id="unicode" si="14">NT</row>
     <row id="NT" si="15">NT</row>
-    <row id="message1" class="TPatternRow" si="16" created="20200316T232021Z" st="0">test {0} {1} {2}</row>
-    <row id="message2" class="TPatternRow" si="17" created="20200316T232021Z" st="0">test {0} '{1}' {2}</row>
-    <row id="message3" class="TPatternRow" si="18" created="20200316T232021Z" st="0">test {0} ''{1}'' {2}</row>
-    <row id="message4" class="TPatternRow" si="19" created="20200316T232021Z" st="0">test {0} '''{1}''' {2}</row>
-    <row id="message5" class="TPatternRow" si="20" created="20200316T232021Z" st="0">test {0} '{1} {2}</row>
-    <row id="message6" class="TPatternRow" si="21" created="20200316T232021Z" st="0">test {0} ''{1} {2}</row>
+    <row id="message1" si="16" created="20241228T064619Z" codep="1">test {0} {1} {2}</row>
+    <row id="message2" si="17" created="20241228T064619Z" codep="1">test {0} '{1}' {2}</row>
+    <row id="message3" si="18" created="20241228T064619Z" codep="1">test {0} ''{1}'' {2}</row>
+    <row id="message4" si="19" created="20241228T064619Z" codep="1">test {0} '''{1}''' {2}</row>
+    <row id="message5" si="20" created="20241228T064619Z" codep="1">test {0} '{1} {2}</row>
+    <row id="message6" si="21" created="20241228T064619Z" codep="1">test {0} ''{1} {2}</row>
+    <data>
+      IyBTdGFuZGFyZA0KVGl0bGU9U2FtcGxlDQpzaW5nbGUxPSdzYW1wbGUnDQpzaW5nbGUyPVwnc2FtcGxlXCcNCmRvdWJsZTE9InNh
+      bXBsZSINCmRvdWJsZTI9XCJzYW1wbGVcIg0Kc2luZ2xlXCcxPXF1b3RlIGluIGtleQ0KISBDYXNlIGRpZmZlcmVuY2UgYW5kIGR1
+      cGxpY2F0ZXMNClBsYWluPVBsYWluDQpwbGFpbj1wbGFpbg0KcGxhaW49ZHVwbGljYXRlIGtleQ0KIyBTcGFjZSBpbiBrZXkNCk9u
+      ZVwgVHdvPU9uZSBUd28NCiMgTXVsdGlsaW5lDQptdWx0aWxpbmU9SGVsbG8gXA0KICAgV29ybGQNCiMgQ29sb24gc2VwYXJhdG9y
+      ICAgDQpjb2xvbiA6IENvbG9uDQojIEVxdWFsIGNocmFjdGVyIGluIGtleQ0Kb25lXD10d28gOiBPbmU9VHdvOg0KIyBMZWFkaW5n
+      IHNwYWNlIGluIHZhbHVlDQpjb2xvblwgOlwgQ29sb24gc3BhY2UNCiMgRW5jb2RlZCB2YWx1ZQ0KdW5pY29kZSA9IFx1MDA0RVx1
+      MDA1NA0KIyBFbmNvZGVkIGtleQ0KXHUwMDRFXHUwMDU0ID0gXHUwMDRFXHUwMDU0DQoNCm1lc3NhZ2UxPXRlc3QgezB9IHsxfSB7
+      Mn0NCm1lc3NhZ2UyPXRlc3QgezB9ICd7MX0nIHsyfQ0KbWVzc2FnZTM9dGVzdCB7MH0gJyd7MX0nJyB7Mn0NCm1lc3NhZ2U0PXRl
+      c3QgezB9ICcnJ3sxfScnJyB7Mn0NCm1lc3NhZ2U1PXRlc3QgezB9ICd7MX0gezJ9DQptZXNzYWdlNj10ZXN0IHswfSAnJ3sxfSB7
+      Mn0NCg==
+    </data>
   </node>
   <terminology>
     <shared>
@@ -61,14 +73,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20200209T162125Z" version="1.0.691" stringid="380">
+<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20241228T051129Z" version="1.0.1054" stringid="380">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" platforms="[ptWin32]" scansourcecode="1">
+  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" lastmodified="20241228T051129Z" hassignature="1" hassignatureread="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -118,7 +118,7 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSportSelect" changed="20200209T162053Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player">
+        <row id="SSportSelect" changed="20200209T162053Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player" original="{select, soccer {%s is the best soccer player.} hockey {%s is the best ice hockey player.} basketball {%s is the best basketball player.}}">
           <value select="soccer">{0} is the best soccer player.</value>
           <prev select="soccer">{0:s} is the best soccer player.</prev>
           <pattern select="basketball">{0} is the best basketball player.</pattern>
@@ -144,18 +144,21 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

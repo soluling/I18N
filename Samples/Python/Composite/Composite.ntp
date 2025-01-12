@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="7D399E91-42D4-4BC8-841A-CB85F68164ED" created="20190411T104324Z" lastmodified="20200316T230124Z" version="1.0.714" stringid="10">
+<project id="7D399E91-42D4-4BC8-841A-CB85F68164ED" created="20190411T104324Z" lastmodified="20241228T073458Z" version="1.0.1054" stringid="17">
   <lang id="fi"/>
-  <node class="TPoSource" name="Composite.po" fullpath="D:\NT\Deploy\Samples\Python\Composite\Composite.po" original="en" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1">
+  <node class="TPoSource" name="Composite.po" fullpath="D:\NT\Deploy\Samples\Python\Composite\Composite.po" original="en" lastmodified="20241228T073458Z" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1">
     <row id="My name is " si="1" scannedcomment="DO NOT write code like this!
 The problem is that you will have three fragments of a sentance. They are hard to translate and impossible to change order">
       <value>My name is </value>
@@ -15,49 +15,49 @@ The problem is that you will have three fragments of a sentance. They are hard t
       <value> years old</value>
       <lang id="fi" rw="0" time="20190411T104345Z"> vuotta vanha</lang>
     </row>
-    <row id="My name is {name} and I am {age} years old" class="TPatternRow" si="4" scannedcomment="DO NOT write code like this!
+    <row id="My name is {name} and I am {age} years old" si="4" scannedcomment="DO NOT write code like this!
 f-string is basically just a syntax sugar that makes compisite string more readable but f-string cannot be localized because
 they don't provide a single string that can be stored as a resource item. Do not use!
 name: Name of the person
-age: Age of the person">
+age: Age of the person" created="20241228T073458Z" codep="1">
       <value>My name is {name} and I am {age} years old</value>
       <lang id="fi" rw="0" time="20190411T111516Z">Nimeni on {name} ja olen {age} vuotta vanha</lang>
     </row>
-    <row id="My name is {}" changed="20190411T110511Z" class="TPatternRow" si="5" scannedcomment="This is the preferred way to localize composite strings.
-{}: Name of the person">
+    <row id="My name is {}" changed="20241228T073458Z" si="5" scannedcomment="This is the preferred way to localize composite strings.
+{}: Name of the person" created="20241228T073458Z" codep="1">
       <value>My name is { }</value>
       <lang id="fi" rw="0" time="20190411T111520Z">Nimeni on { }</lang>
     </row>
-    <row id="My name is {} and I am {} years old" changed="20190411T110511Z" class="TPatternRow" si="6" scannedcomment="DO NOT write code like this!
+    <row id="My name is {} and I am {} years old" changed="20241228T073458Z" si="6" scannedcomment="DO NOT write code like this!
 It is hard for translators to chnage the order of the placheolder
 1st {}: Name of the person
-2nd {}: Age of the person">
+2nd {}: Age of the person" created="20241228T073458Z" codep="1">
       <value>My name is { } and I am { } years old</value>
       <lang id="fi" rw="0" time="20190411T111533Z">Nimeni on { } ja olen { } vuotta vanha</lang>
     </row>
-    <row id="My name is {0} and I am {1} years old" class="TPatternRow" si="7" scannedcomment="Either add indexes to the placehoders or use named paramters.
+    <row id="My name is {0} and I am {1} years old" si="7" scannedcomment="Either add indexes to the placehoders or use named paramters.
 This allows to reorder parameters in the localized patterns.
 0: Name of the person
-1: Age of the person">
+1: Age of the person" created="20241228T073458Z" codep="1">
       <value>My name is {0} and I am {1} years old</value>
       <lang id="fi" rw="0" time="20190411T111547Z">Nimeni on {0} ja olen {1} vuotta vanha</lang>
     </row>
-    <row id="My name is %s" changed="20190411T104933Z" class="TPatternRow" si="8" scannedcomment="You can also use the old format syntax that uses %
-%s: Name of the person">
-      <value>My name is {0}</value>
-      <lang id="fi" rw="0" time="20190411T111553Z">Nimeni on {0}</lang>
+    <row id="My name is %s" changed="20241228T073458Z" si="8" scannedcomment="You can also use the old format syntax that uses %
+%s: Name of the person" created="20241228T073458Z" codep="1">
+      <value>My name is %s</value>
+      <lang id="fi" rw="0" time="20190411T111553Z">Nimeni on %s</lang>
     </row>
-    <row id="My name is %s and I am %d years old" class="TPatternRow" si="9" scannedcomment="However if you have more than do not use the old syntax: the parameter order cannot be changed
+    <row id="My name is %s and I am %d years old" changed="20241228T073458Z" si="9" scannedcomment="However if you have more than do not use the old syntax: the parameter order cannot be changed
 %s: Name of the person
-%d: Age of the person">
-      <value>My name is {0} and I am {1} years old</value>
-      <lang id="fi" or="3" rw="0" time="20190411T111547Z">Nimeni on {0} ja olen {1} vuotta vanha</lang>
+%d: Age of the person" created="20241228T073458Z" codep="1">
+      <value>My name is %s and I am %d years old</value>
+      <lang id="fi" or="3" rw="0" time="20190411T111547Z">Nimeni on %s ja olen %d vuotta vanha</lang>
     </row>
-    <row id="My name is %(name)s and I am %(age)d years old" class="TPatternRow" si="10" scannedcomment="Instead use the named parameters
+    <row id="My name is %(name)s and I am %(age)d years old" changed="20241228T073458Z" si="10" scannedcomment="Instead use the named parameters
 name: Name of the person
-age: Age of the person">
-      <value>My name is {name} and I am {age} years old</value>
-      <lang id="fi" or="3" rw="0" time="20190411T111516Z">Nimeni on {name} ja olen {age} vuotta vanha</lang>
+age: Age of the person" created="20241228T073458Z" codep="1">
+      <value>My name is %(name)s and I am %(age)d years old</value>
+      <lang id="fi" or="3" rw="0" time="20190411T111516Z">Nimeni on %(name)s ja olen %(age)d vuotta vanha</lang>
     </row>
     <data>
       IyBTT01FIERFU0NSSVBUSVZFIFRJVExFLgojIENvcHlyaWdodCAoQykgWUVBUiBUSEUgUEFDS0FHRSdTIENPUFlSSUdIVCBIT0xE
@@ -97,16 +97,21 @@ age: Age of the person">
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

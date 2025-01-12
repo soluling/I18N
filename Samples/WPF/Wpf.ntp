@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20241019T115853Z" version="1.0.1045" lockedrowcomplete="0" stringid="346">
+<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20241228T061843Z" version="1.0.1054" lockedrowcomplete="0" stringid="354">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="Wpf.sln" fullpath="D:\NT\Deploy\Samples\WPF\Wpf.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms,nlWpf]" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]">
     <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" original="en" lastmodified="20230416T135812Z" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
@@ -256,7 +256,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Binding\Binding.csproj" created="20230416T135806Z" st="0" original="en" lastmodified="20230422T144955Z" groupname="Binding\Binding.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Binding\Binding.csproj" created="20230416T135806Z" st="0" original="en" lastmodified="20241228T061843Z" groupname="Binding\Binding.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net45" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" st="0" kind="xkApplication">
         <data>
@@ -286,13 +286,13 @@
             <row id="Content" si="324" st="0">Date:</row>
           </item>
           <item name="dateValue" type="TextBlock" st="0">
-            <row id="Text.StringFormat" class="TPatternRow" si="325" st="0" original="D">D</row>
+            <row id="Text.StringFormat" si="325" created="20241228T061839Z">D</row>
           </item>
           <item name="amountLabel" type="Label" st="0">
             <row id="Content" si="326" st="0">Amount:</row>
           </item>
           <item name="amountValue" type="TextBlock" st="0">
-            <row id="Text.StringFormat" class="TPatternRow" si="327" st="0" original="C">C</row>
+            <row id="Text.StringFormat" si="327" created="20241228T061839Z">C</row>
           </item>
           <item name="productNameLabel" type="Label" st="0">
             <row id="Content" si="328" st="0">Product:</row>
@@ -421,6 +421,8 @@
       </node>
       <assemblies>
         <assembly>bin\Release\net7.0-windows\WpfApplication.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfControl.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\WpfUserControl.dll</assembly>
       </assemblies>
     </node>
     <node class="TNetProjectSource" name="CustomControl\WpfControl\WpfControl.csproj" original="en" lastmodified="20241005T164335Z" groupname="CustomControl\WpfControl\WpfControl.csproj" availableresources="[nrResx,nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
@@ -1520,7 +1522,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Format\Format.csproj" original="en" lastmodified="20230422T144954Z" groupname="Format\Format.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Format\Format.csproj" original="en" lastmodified="20241228T061842Z" groupname="Format\Format.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -1568,23 +1570,23 @@
       </node>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-          <row id="Hello" class="TPatternRow" si="308" scannedcomment="0: Name of the person" original="Hello {0}!">
+          <row id="Hello" si="308" scannedcomment="0: Name of the person" created="20241228T061839Z" codep="1">
             <value>Hello {0}!</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Moi {0}!</lang>
           </row>
-          <row id="Hello2" class="TPatternRow" si="309" scannedcomment="0, 1: Names" original="Hello {0} and {1}!">
+          <row id="Hello2" si="309" scannedcomment="0, 1: Names" created="20241228T061839Z" codep="1">
             <value>Hello {0} and {1}!</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Moi {0} ja {1}!</lang>
           </row>
-          <row id="Hello3" class="TPatternRow" si="310" scannedcomment="0, 1, 2: Names" original="Hello {0}, {1} and {2}!">
+          <row id="Hello3" si="310" scannedcomment="0, 1, 2: Names" created="20241228T061839Z" codep="1">
             <value>Hello {0}, {1} and {2}!</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Moi {0}, {1} ja {2}!</lang>
           </row>
-          <row id="Trip" class="TPatternRow" si="311" scannedcomment="0: Name of the destination city" original="I will go to {0} by car.">
+          <row id="Trip" si="311" scannedcomment="0: Name of the destination city" created="20241228T061839Z" codep="1">
             <value>I will go to {0} by car.</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Menen {0}:iin autolla.</lang>
           </row>
-          <row id="Trip2" class="TPatternRow" si="312" scannedcomment="0, 1: Names of the destination cities" original="I will go to {0} by car and to {1} by train.">
+          <row id="Trip2" si="312" scannedcomment="0, 1: Names of the destination cities" created="20241228T061839Z" codep="1">
             <value>I will go to {0} by car and to {1} by train.</value>
             <lang id="fi" st="4" or="4" rw="0" time="20200827T150637Z">Menen {0}:iin autolla ja {1}:iin junalla.</lang>
           </row>
@@ -2002,8 +2004,8 @@
         <assembly>bin\Release\Soluling.Translator.WPF.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20241005T164335Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20241228T061841Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core80" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9Ik1lbnUuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
@@ -2067,7 +2069,7 @@
         </data>
       </node>
       <assemblies>
-        <assembly>bin\Release\net7.0-windows\Menu.dll</assembly>
+        <assembly>bin\Release\net8.0-windows\Menu.dll</assembly>
       </assemblies>
     </node>
     <node class="TNetProjectSource" name="MultiTarget\MultiTarget.csproj" created="20230416T135806Z" st="0" original="en" lastmodified="20230416T135813Z" groupname="MultiTarget\MultiTarget.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
@@ -3446,7 +3448,7 @@ Tämä on toinen esimerkki</lang>
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20230422T144952Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20241228T061843Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3525,7 +3527,7 @@ Tämä on toinen esimerkki</lang>
             <value>I have {0} skis.</value>
             <pattern plural="pfOne">I have {0} ski.</pattern>
           </row>
-          <row id="TodayIs" class="TPatternRow" si="259" scannedcomment="{0}: date as short string such as 6/12/15" original="Today is {0}">Today is {0}</row>
+          <row id="TodayIs" si="259" scannedcomment="{0}: date as short string such as 6/12/15" created="20241228T061839Z" codep="1">Today is {0}</row>
           <row id="XmlFiles" si="260" scannedcomment="XML files in file dialog filter">XML files</row>
         </node>
       </node>
@@ -3754,6 +3756,8 @@ Tämä on toinen esimerkki</lang>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
 </project>

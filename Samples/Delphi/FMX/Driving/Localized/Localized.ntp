@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CD7552E7-F835-4E75-8697-32779CFB2D46" created="20160822T022921Z" lastmodified="20221231T005640Z" version="1.0.972" stringid="1322">
+<project id="CD7552E7-F835-4E75-8697-32779CFB2D46" created="20160822T022921Z" lastmodified="20241228T055623Z" version="1.0.1054" stringid="1322">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
   <lang id="es"/>
   <lang id="it"/>
   <lang id="nl"/>
-  <node class="TDelphiProjectSource" name="Localized.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Driving\Localized\Localized.dproj" original="en" lastmodified="20221231T005640Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release">
+  <node class="TDelphiProjectSource" name="Localized.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Driving\Localized\Localized.dproj" original="en" lastmodified="20241228T055623Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -738,7 +738,7 @@
           <lang id="it" st="2" or="3" rw="0" time="20180325T231635Z">nipponica</lang>
           <lang id="nl" st="2" or="3" rw="0" time="20180325T231859Z">Japans</lang>
         </row>
-        <row id="SResultPlural" class="TPatternRow" si="1206">
+        <row id="SResultPlural" class="TPatternRow" si="1206" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
           <value startpattern="1">Driving time{0}{1}.</value>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -823,6 +823,7 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
@@ -830,6 +831,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

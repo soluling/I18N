@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="77BD5D47-06DB-4A9F-8149-5CC9FD2912F8" created="20170625T232132Z" lastmodified="20200316T230156Z" version="1.0.714" stringid="6">
+<project id="77BD5D47-06DB-4A9F-8149-5CC9FD2912F8" created="20170625T232132Z" lastmodified="20241228T073318Z" version="1.0.1054" stringid="7">
   <lang id="fi"/>
-  <node class="TPoSource" name="Driving.po" fullpath="D:\NT\Deploy\Samples\Python\Driving\Driving.po" original="en-US" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="hours:" commenttagdetected="1" frameworkdetected="1">
+  <node class="TPoSource" name="Driving.po" fullpath="D:\NT\Deploy\Samples\Python\Driving\Driving.po" original="en-US" lastmodified="20241228T073318Z" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="hours:" commenttagdetected="1" frameworkdetected="1">
     <row id="Driving Time" si="1">
       <value>Driving Time</value>
       <lang id="fi" time="20170625T232149Z">Ajoaika</lang>
@@ -30,7 +30,7 @@
         <pattern plural="pfOne"> {minutes} minuutti</pattern>
       </lang>
     </row>
-    <row id="Driving time is{drivingTime}" class="TPatternRow" si="6" scannedcomment="drivingTime: Driving time string in format of &quot;x hours y minutes&quot; or &quot;x hours&quot; or &quot;y minutes&quot;">
+    <row id="Driving time is{drivingTime}" si="6" scannedcomment="drivingTime: Driving time string in format of &quot;x hours y minutes&quot; or &quot;x hours&quot; or &quot;y minutes&quot;" created="20241228T073309Z" codep="1">
       <value>Driving time is{drivingTime}</value>
       <lang id="fi" time="20170625T232317Z">Ajoaika on{drivingTime}</lang>
     </row>
@@ -65,14 +65,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

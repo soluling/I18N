@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="296E58A9-76E4-4AF7-96FD-809A424CB689" created="20150228T180150Z" lastmodified="20190817T040804Z" version="1.0.492" stringid="3">
+<project id="296E58A9-76E4-4AF7-96FD-809A424CB689" created="20150228T180150Z" lastmodified="20241228T063554Z" version="1.0.1054" stringid="4">
   <lang id="fi"/>
-  <node class="TWxlSource" name="en-US.wxl" fullpath="D:\NT\Deploy\Samples\Wix\Driving\en-US.wxl" original="en" encoding="utf-8" localeidname="LocaleId" summarycodepagename="SummaryCodepage">
+  <node class="TWxlSource" name="en-US.wxl" fullpath="D:\NT\Deploy\Samples\Wix\Driving\en-US.wxl" original="en" lastmodified="20241228T063554Z" encoding="utf-8" localeidname="LocaleId" summarycodepagename="SummaryCodepage">
     <row id="ProductName" si="1" scannedcomment="Product name" created="20150228T182403Z">
       <value>Driving</value>
       <lang id="fi" time="20150228T230036Z">Ajoaika</lang>
@@ -10,7 +10,10 @@
       <value>Driving</value>
       <lang id="fi" time="20150228T230036Z">Ajoaika</lang>
     </row>
-    <row id="DowngradeErrorMessage" class="TPatternRow" si="3" scannedcomment="[ProductName] is a placeholder for product name" created="20181127T033311Z" st="0">A newer version of {0}[ProductName] is already installed.</row>
+    <row id="DowngradeErrorMessage" changed="20241228T063539Z" si="3" scannedcomment="[ProductName] is a placeholder for product name" created="20241228T063539Z" codep="1">
+      <value>A newer version of [ProductName] is already installed.</value>
+      <lang id="fi" rw="0" time="20241228T063548Z">[ProductName]:n uudempi versio on jo asennettu.</lang>
+    </row>
     <data>
       PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxXaXhMb2NhbGl6YXRpb24gQ3VsdHVyZT0iZW4tVVMiIHht
       bG5zPSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dpeC8yMDA2L2xvY2FsaXphdGlvbiI+DQogIDxTdHJpbmcgSWQ9IlBy
@@ -25,17 +28,20 @@
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteGlossary"/>
+      <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
 </project>

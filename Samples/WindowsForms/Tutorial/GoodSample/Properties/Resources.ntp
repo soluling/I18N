@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="39B2CEF8-5A20-4B0F-9E55-6386E82D8D76" created="20161116T170435Z" lastmodified="20200316T191533Z" version="1.0.714" stringid="10">
+<project id="39B2CEF8-5A20-4B0F-9E55-6386E82D8D76" created="20161116T170435Z" lastmodified="20241228T060344Z" version="1.0.1054" stringid="11">
   <lang id="fi"/>
-  <node class="TResXSource" name="Resources.resx" fullpath="D:\NT\Deploy\Samples\WindowsForms\Tutorial\GoodSample\Properties\Resources.resx" original="en" encoding="utf-8" formatstringcommentcheck="fcComment" bom="1">
+  <node class="TResXSource" name="Resources.resx" fullpath="D:\NT\Deploy\Samples\WindowsForms\Tutorial\GoodSample\Properties\Resources.resx" original="en" lastmodified="20241228T060344Z" encoding="utf-8" formatstringcommentcheck="fcComment" bom="1" windowsforms="wfCore">
     <row id="AllFiles" si="1" scannedcomment="All files in file dialog filter">All files</row>
     <row id="AllSupportedFiles" si="2" scannedcomment="All supported files in file dialog filter">All supported files</row>
     <row id="IniFiles" si="3" scannedcomment="INI files in file dialog filter">Ini files</row>
     <row id="OpenTitle" si="4" scannedcomment="Title of open file dialog">Open File</row>
     <row id="SampleText" si="5">This is a sample</row>
-    <row id="SkisPlural" class="TPatternRow" si="6" scannedcomment="{0}: amount of skis" created="20200316T191531Z" st="0">
+    <row id="SkisPlural" class="TPatternRow" si="6" scannedcomment="{0}: amount of skis" created="20200316T191531Z" st="0" original="{plural, one {I have {0} ski.} other {I have {0} skis.}}">
       <value>I have {0} skis.</value>
       <pattern plural="pfOne">I have {0} ski.</pattern>
     </row>
-    <row id="TodayIs" class="TPatternRow" si="7" scannedcomment="{0}: date as short string such as 6/12/15" created="20200316T191531Z" st="0">Today is {0}</row>
+    <row id="TodayIs" si="7" scannedcomment="{0}: date as short string such as 6/12/15" created="20241228T060344Z" codep="1">Today is {0}</row>
     <row id="XmlFiles" si="8" scannedcomment="XML files in file dialog filter">XML files</row>
     <netproperties version="net461"/>
   </node>
@@ -25,13 +25,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

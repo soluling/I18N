@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20240505T110328Z" version="1.0.1028" stringid="458">
+<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20241227T094926Z" version="1.0.1054" stringid="460">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="de"/>
   <lang id="en"/>
-  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" lastmodified="20240505T110328Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1">
+  <node class="TDelphiSource" name="Win32\Release\Forms.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\Forms.exe" original="en" lastmodified="20241227T094926Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
@@ -1033,14 +1033,14 @@
           <lang id="fi" time="20150321T190349Z">Ajonaikainen viesti</lang>
           <lang id="ja" time="20151019T031055Z">ランタイム メッセージ</lang>
         </row>
-        <row id="SDynamic" class="TPatternRow" si="42" scannedcomment="0: Name of the user" created="20170507T194529Z" original="Hello %s!">
-          <value>Hello {0}!</value>
-          <lang id="fi" time="20170507T194615Z">Moi {0}!</lang>
-          <lang id="ja" time="20170508T140750Z">こんにちは{0}！</lang>
+        <row id="SDynamic" changed="20241227T094926Z" si="42" scannedcomment="0: Name of the user" created="20241227T094926Z" codep="1">
+          <value>Hello %s!</value>
+          <lang id="fi" time="20170507T194615Z">Moi %s!</lang>
+          <lang id="ja" time="20170508T140750Z">こんにちは%s！</lang>
         </row>
-        <row id="SDynamic2" class="TPatternRow" si="43" scannedcomment="0: Name of the first user, 1: Name of the second user" created="20170507T194529Z" original="Hello %s and %s!">
-          <value>Hello {0} and {1}!</value>
-          <lang id="fi" time="20170507T194548Z">Moi {0} ja {1}!</lang>
+        <row id="SDynamic2" changed="20241227T094926Z" si="43" scannedcomment="0: Name of the first user, 1: Name of the second user" created="20241227T094926Z" codep="1">
+          <value>Hello %s and %s!</value>
+          <lang id="fi" time="20170507T194548Z">Moi %s ja %s!</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
@@ -1082,6 +1082,5 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

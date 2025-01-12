@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20230521T213523Z" version="1.0.996" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20241227T081655Z" version="1.0.1054" stringid="418">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20230521T213523Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20241227T081655Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -15,8 +15,9 @@
         <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T020107Z">0</row>
         <row id="Top" created="20151019T020107Z">0</row>
-        <row id="Caption" si="1">
+        <row id="Caption" changed="20241227T081301Z" si="1">
           <value>Driving Time</value>
+          <prev>Application Form</prev>
           <lang id="fi" time="20180524T033719Z">Ajoaika</lang>
         </row>
         <row id="ClientHeight" created="20151019T020107Z">113</row>
@@ -262,6 +263,7 @@
           <row id="Top" created="20151019T020107Z">22</row>
           <row id="Width" created="20151019T020107Z">105</row>
           <row id="Height" created="20151019T020107Z">25</row>
+          <row id="Action" class="TVclActionRow" created="20241227T081301Z" st="0" hidden="1">CalculateAction</row>
         </item>
         <item name="MainMenu1" type="TMainMenu">
           <row id="Left" created="20151019T020107Z">240</row>
@@ -271,7 +273,9 @@
               <value>File</value>
               <lang id="fi" time="20180524T033719Z">Tiedosto</lang>
             </row>
-            <item name="Calculate1" type="TMenuItem"/>
+            <item name="Calculate1" type="TMenuItem">
+              <row id="Action" class="TVclActionRow" created="20241227T081301Z" st="0" hidden="1">CalculateAction</row>
+            </item>
             <item name="Language1" type="TMenuItem">
               <row id="Caption" si="5">
                 <value>Language...</value>
@@ -472,7 +476,7 @@
         </item>
         <data>
           VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
-          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
+          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8AAC0NsaWVudFdpZHRoAx8BBUNvbG9yBwljbEJ0bkZhY2UM
           Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
           YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlCU9uRGVzdHJveQcLRm9ybURlc3Ryb3kGT25TaG93
           BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0ACFRMaXN0Qm94DExhbmd1YWdlTGlzdARMZWZ0AggDVG9wAggFV2lkdGgDwQAGSGVpZ2h0
@@ -540,10 +544,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

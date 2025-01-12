@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20241001T121443Z" version="1.0.1039" stringid="393">
+<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20250110T091206Z" version="1.0.1054" stringid="398">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="de"/>
   <lang id="nl"/>
   <lang id="he"/>
-  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en-US" lastmodified="20241001T121443Z" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en-US" lastmodified="20250110T091206Z" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -212,39 +212,39 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SHello" changed="20200209T151023Z" class="TPatternRow" si="15" scannedcomment="0: Name of a person" original="Hello %s!">
-          <value>Hello {0}!</value>
-          <lang id="fi" time="20200209T151047Z">Moi {0}!</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190205Z">Hallo {0}!</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192414Z">Hallo {0}!</lang>
+        <row id="SHello" changed="20241227T061018Z" si="15" scannedcomment="0: Name of a person" created="20241227T061018Z" codep="1">
+          <value>Hello %s!</value>
+          <lang id="fi" rw="0" time="20200209T151047Z">Moi %s!</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190205Z">Hallo %s!</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192414Z">Hallo %s!</lang>
         </row>
-        <row id="SHello2" changed="20200209T151023Z" class="TPatternRow" si="16" scannedcomment="0: Name of the first person, 1: Name of the second person" original="Hello %s and %s!">
-          <value>Hello {0} and {1}!</value>
-          <lang id="fi" time="20171212T235819Z">Moi {0} ja {1}!</lang>
-          <lang id="fi-FI" st="3" rw="0" time="20171213T001404Z">Moi {1} ja {0}!</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190207Z">Hallo {0} und {1}!</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192415Z">Hallo {0} en {1}!</lang>
-          <lang id="he" st="4" rw="0" time="20220405T150119Z">שלום {0} {1}!</lang>
+        <row id="SHello2" changed="20241227T061018Z" si="16" scannedcomment="0: Name of the first person, 1: Name of the second person" created="20241227T061018Z" codep="1">
+          <value>Hello %s and %s!</value>
+          <lang id="fi" rw="0" time="20250105T080859Z">Moi %s ja %s!</lang>
+          <lang id="fi-FI" st="4" rw="0" time="20250110T091206Z">Moikka %1:s ja %0:s!</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190207Z">Hallo %s und %s!</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192415Z">Hallo %s en %s!</lang>
+          <lang id="he" st="4" rw="0" time="20220405T150119Z">שלום %s %s!</lang>
         </row>
-        <row id="SCount" changed="20200209T151023Z" class="TPatternRow" si="17" scannedcomment="0: Name of a person, 1: Number of cars" original="%s has %d cars">
-          <value>{0} has {1} cars</value>
-          <lang id="fi" time="20171212T235840Z">{0}:lla on {1} autoa</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190208Z">{0} hat {1} Autos</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192417Z">{0} heeft {1} auto's</lang>
+        <row id="SCount" changed="20241227T061018Z" si="17" scannedcomment="0: Name of a person, 1: Number of cars" created="20241227T061018Z" codep="1">
+          <value>%s has %d cars</value>
+          <lang id="fi" rw="0" time="20171212T235840Z">%s:lla on %d autoa</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190208Z">%s hat %d Autos</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192417Z">%s heeft %d auto's</lang>
         </row>
-        <row id="SCount2" changed="20200209T151023Z" class="TPatternRow" si="18" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person" original="%d cars will pick up %s and %s">
-          <value>{0} cars will pick up {1} and {2}</value>
-          <lang id="fi" time="20171212T235856Z">{0} autoa hakee {1}:in ja {2}:in</lang>
-          <lang id="de" st="1" or="6" rw="0" time="20180321T190210Z">Autos nehmen {1} und {2} auf.</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192418Z">Auto's zullen {0} ophalen {1} en {2}.</lang>
-          <lang id="he" st="4" rw="0" time="20220405T150102Z">{0} מכוניות יאספו {1} ו-{2}</lang>
+        <row id="SCount2" changed="20241227T061018Z" si="18" scannedcomment="0: Number of cars, 1: Name of the first person, 2: Name of the second person" created="20241227T061018Z" codep="1">
+          <value>%d cars will pick up %s and %s</value>
+          <lang id="fi" rw="0" time="20171212T235856Z">%d autoa hakee %s:in ja %s:in</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20180321T190210Z">Autos nehmen %1:s und %2:s auf.</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192418Z">Auto's zullen %d ophalen %s en %s.</lang>
+          <lang id="he" st="4" rw="0" time="20220405T150102Z">%d מכוניות יאספו %s ו-%s</lang>
         </row>
-        <row id="SDouble" changed="20200209T151023Z" class="TPatternRow" si="19" scannedcomment="0: Name of a person. This parameter occurs twice." original="%0:s swims and %0:s skis">
-          <value>{0} swims and {0} skis</value>
-          <lang id="fi" time="20200208T023336Z">{0} ui ja {0} hiihtää</lang>
-          <lang id="fi-FI" st="3" rw="0" time="20171213T003658Z">{0} ui ja {0} hiihtää</lang>
+        <row id="SDouble" changed="20241227T061018Z" si="19" scannedcomment="0: Name of a person. This parameter occurs twice." created="20241227T061018Z" codep="1">
+          <value>%0:s swims and %0:s skis</value>
+          <lang id="fi" rw="0" time="20200208T023336Z">%0:s ui ja %0:s hiihtää</lang>
+          <lang id="fi-FI" st="3" rw="0" time="20171213T003658Z">%0:s ui ja %0:s hiihtää</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180321T190211Z">Schwimmen und Skier</lang>
-          <lang id="nl" st="1" or="6" rw="0" time="20180321T192420Z">{0} Zwemmen en {0} ski's</lang>
+          <lang id="nl" st="1" or="6" rw="0" time="20180321T192420Z">%0:s Zwemmen en %0:s ski's</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
@@ -275,7 +275,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

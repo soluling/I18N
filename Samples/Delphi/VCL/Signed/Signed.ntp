@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F6B601BC-E0C1-4672-A2F9-B6CA2DFC2ED6" created="20220312T135654Z" lastmodified="20220312T135701Z" version="1.0.910" lockedrowcomplete="0" stringid="360">
+<project id="F6B601BC-E0C1-4672-A2F9-B6CA2DFC2ED6" created="20220312T135654Z" lastmodified="20241228T050507Z" version="1.0.1054" lockedrowcomplete="0" stringid="453">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Debug\Signed.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Signed\Win32\Debug\Signed.exe" original="en-US" lastmodified="20220312T135701Z" hassignature="1" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Debug\Signed.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Signed\Win32\Debug\Signed.exe" original="en-US" lastmodified="20241228T050507Z" hassignature="1" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -12,7 +12,10 @@
         <font id="Font" name="Segoe UI" size="9"/>
         <row id="Left">0</row>
         <row id="Top">0</row>
-        <row id="Caption" si="356">Signed Sample</row>
+        <row id="Caption" si="356">
+          <value>Signed Sample</value>
+          <lang id="fi" rw="0" time="20241228T050503Z">Allekirjoitettu esimerkki</lang>
+        </row>
         <row id="ClientHeight">189</row>
         <row id="ClientWidth">560</row>
         <item name="Label1" type="TLabel">
@@ -20,7 +23,10 @@
           <row id="Top">8</row>
           <row id="Width">228</row>
           <row id="Height">15</row>
-          <row id="Caption" si="357">This application contains a digital signature</row>
+          <row id="Caption" si="357">
+            <value>This application contains a digital signature</value>
+            <lang id="fi" rw="0" time="20241228T050455Z">Tämä sovellus sisältää digitaalisen allekirjoituksen</lang>
+          </row>
         </item>
         <data>
           VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDVNpZ25lZCBTYW1wbGUMQ2xpZW50SGVpZ2h0A70AC0NsaWVu
@@ -33,30 +39,30 @@
     </node>
     <node class="TWindowsStringFolder" name="String">
       <node class="TWindowsStringNode" name="System">
-        <row id="Win_ComConst_SNoMethod" class="TPatternRow" si="1">Method '{0}' not supported by automation object</row>
+        <row id="Win_ComConst_SNoMethod" changed="20241228T050443Z" si="1" created="20241228T050443Z" codep="1">Method '%s' not supported by automation object</row>
         <row id="Win_ComConst_SVarNotObject" si="2">Variant does not reference an automation object</row>
         <row id="Win_ComConst_STooManyParams" si="3">Dispatch methods do not support more than 64 parameters</row>
-        <row id="Win_ComConst_SOleError" class="TPatternRow" si="19">OLE error {0}</row>
+        <row id="Win_ComConst_SOleError" changed="20241228T050443Z" si="19" created="20241228T050443Z" codep="1">OLE error %.8x</row>
         <row id="RTLConsts_sBeginInvokeDestroying" si="116">Cannot call BeginInvoke on a TComponent in the process of destruction</row>
         <row id="RTLConsts_SWindowsServer2016" si="132">Windows Server 2016</row>
         <row id="RTLConsts_SWindowsServer2019" si="133">Windows Server 2019</row>
         <row id="RTLConsts_SWindows8" si="134">Windows 8</row>
         <row id="RTLConsts_SWindows8Point1" si="135">Windows 8.1</row>
         <row id="RTLConsts_SWindows10" si="136">Windows 10</row>
-        <row id="RTLConsts_SWinRTInstanceError" class="TPatternRow" si="137">Cannot create instance of class {0}</row>
+        <row id="RTLConsts_SWinRTInstanceError" changed="20241228T050443Z" si="137" created="20241228T050443Z" codep="1">Cannot create instance of class %s</row>
         <row id="RTLConsts_sObserverUnsupported" si="138">Observer is not supported</row>
         <row id="RTLConsts_sObserverMultipleSingleCast" si="139">Cannot have multiple single cast observers added to the observers collection</row>
         <row id="RTLConsts_sObserverNoInterface" si="140">The object does not implement the observer interface</row>
-        <row id="RTLConsts_sObserverNoSinglecastFound" class="TPatternRow" si="141">No single cast observer with ID {0} was added to the observer collection</row>
-        <row id="RTLConsts_sObserverNoMulticastFound" class="TPatternRow" si="142">No multi cast observer with ID {0} was added to the observer collection</row>
+        <row id="RTLConsts_sObserverNoSinglecastFound" changed="20241228T050443Z" si="141" created="20241228T050443Z" codep="1">No single cast observer with ID %d was added to the observer collection</row>
+        <row id="RTLConsts_sObserverNoMulticastFound" changed="20241228T050443Z" si="142" created="20241228T050443Z" codep="1">No multi cast observer with ID %d was added to the observer collection</row>
         <row id="RTLConsts_sObserverNotAvailable" si="143">Observer is not available</row>
-        <row id="RTLConsts_SInvalidDateString" class="TPatternRow" si="144">Invalid date string: {0}</row>
-        <row id="RTLConsts_SInvalidTimeString" class="TPatternRow" si="145">Invalid time string: {0}</row>
-        <row id="RTLConsts_SInvalidOffsetString" class="TPatternRow" si="146">Invalid time Offset string: {0}</row>
+        <row id="RTLConsts_SInvalidDateString" changed="20241228T050443Z" si="144" created="20241228T050443Z" codep="1">Invalid date string: %s</row>
+        <row id="RTLConsts_SInvalidTimeString" changed="20241228T050443Z" si="145" created="20241228T050443Z" codep="1">Invalid time string: %s</row>
+        <row id="RTLConsts_SInvalidOffsetString" changed="20241228T050443Z" si="146" created="20241228T050443Z" codep="1">Invalid time Offset string: %s</row>
         <row id="RTLConsts_sMustWaitOnOneEvent" si="147">Must wait on at least one event</row>
         <row id="RTLConsts_SServiceNotFound" si="148">Specified Login Credential Service not found</row>
-        <row id="RTLConsts_SVersionStr" class="TPatternRow" si="149">{0} (Version {1}.{2}, Build {3}, {5})</row>
-        <row id="RTLConsts_SSPVersionStr" class="TPatternRow" si="150">{0} Service Pack {4} (Version {1}.{2}, Build {3}, {5})</row>
+        <row id="RTLConsts_SVersionStr" changed="20241228T050443Z" si="149" created="20241228T050443Z" codep="1">%s (Version %d.%d, Build %d, %5:s)</row>
+        <row id="RTLConsts_SSPVersionStr" changed="20241228T050443Z" si="150" created="20241228T050443Z" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
         <row id="RTLConsts_SVersion32" si="151">32-bit Edition</row>
         <row id="RTLConsts_SVersion64" si="152">64-bit Edition</row>
         <row id="RTLConsts_SWindows" si="153">Windows</row>
@@ -72,84 +78,84 @@
         <row id="RTLConsts_SWindowsServer2012R2" si="163">Windows Server 2012 R2</row>
         <row id="RTLConsts_sTimespanElementTooLong" si="164">Timespan element too long</row>
         <row id="RTLConsts_SNoContext" si="165">No context-sensitive help installed</row>
-        <row id="RTLConsts_SNoContextFound" class="TPatternRow" si="166">No help found for context {0}</row>
+        <row id="RTLConsts_SNoContextFound" changed="20241228T050443Z" si="166" created="20241228T050443Z" codep="1">No help found for context %d</row>
         <row id="RTLConsts_SNoIndex" si="167">Unable to open Index</row>
         <row id="RTLConsts_SNoSearch" si="168">Unable to open Search</row>
         <row id="RTLConsts_SNoTableOfContents" si="169">Unable to find a Table of Contents</row>
         <row id="RTLConsts_SNoTopics" si="170">No topic-based help system installed</row>
-        <row id="RTLConsts_SNothingFound" class="TPatternRow" si="171">No help found for {0}</row>
+        <row id="RTLConsts_SNothingFound" changed="20241228T050443Z" si="171" created="20241228T050443Z" codep="1">No help found for %s</row>
         <row id="RTLConsts_SArgumentOutOfRange" si="172">Argument out of range</row>
         <row id="RTLConsts_SArgumentNil" si="173">Argument must not be nil</row>
         <row id="RTLConsts_SGenericItemNotFound" si="174">Item not found</row>
         <row id="RTLConsts_SGenericDuplicateItem" si="175">Duplicates not allowed</row>
         <row id="RTLConsts_SInsufficientRtti" si="176">Insufficient RTTI available to support this operation</row>
         <row id="RTLConsts_SParameterCountMismatch" si="177">Parameter count mismatch</row>
-        <row id="RTLConsts_SNonPublicType" class="TPatternRow" si="178">Type '{0}' is not declared in the interface section of a unit</row>
+        <row id="RTLConsts_SNonPublicType" changed="20241228T050443Z" si="178" created="20241228T050443Z" codep="1">Type '%s' is not declared in the interface section of a unit</row>
         <row id="RTLConsts_SByRefArgMismatch" si="179">VAR and OUT arguments must match parameter type exactly</row>
-        <row id="RTLConsts_SParamIsNegative" class="TPatternRow" si="180">Parameter {0} cannot be a negative value</row>
-        <row id="RTLConsts_SInputBufferExceed" class="TPatternRow" si="181">Input buffer exceeded for {0} = {1}, {2} = {3}</row>
+        <row id="RTLConsts_SParamIsNegative" changed="20241228T050443Z" si="180" created="20241228T050443Z" codep="1">Parameter %s cannot be a negative value</row>
+        <row id="RTLConsts_SInputBufferExceed" changed="20241228T050443Z" si="181" created="20241228T050443Z" codep="1">Input buffer exceeded for %s = %d, %s = %d</row>
         <row id="RTLConsts_SInvalidCharsInPath" si="182">Invalid characters in path</row>
         <row id="RTLConsts_hNoFilterViewer" si="183">No help viewer that supports filters</row>
         <row id="RTLConsts_sArgumentInvalid" si="184">Invalid argument</row>
-        <row id="RTLConsts_sArgumentOutOfRange_Index" class="TPatternRow" si="185">Index out of range ({0}).  Must be >= 0 and &lt; {1}</row>
+        <row id="RTLConsts_sArgumentOutOfRange_Index" changed="20241228T050443Z" si="185" created="20241228T050443Z" codep="1">Index out of range (%d).  Must be >= 0 and &lt; %d</row>
         <row id="RTLConsts_sInvalidStringAndObjectArrays" si="186">Length of Strings and Objects arrays must be equal</row>
         <row id="RTLConsts_sSameArrays" si="187">Source and Destination arrays must not be the same</row>
-        <row id="RTLConsts_sNoConstruct" class="TPatternRow" si="188">Class {0} is not intended to be constructed</row>
-        <row id="RTLConsts_sInvalidTimeoutValue" class="TPatternRow" si="189">Invalid Timeout value: {0}</row>
-        <row id="RTLConsts_sSpinCountOutOfRange" class="TPatternRow" si="190">SpinCount out of range. Must be between 0 and {0}</row>
+        <row id="RTLConsts_sNoConstruct" changed="20241228T050443Z" si="188" created="20241228T050443Z" codep="1">Class %s is not intended to be constructed</row>
+        <row id="RTLConsts_sInvalidTimeoutValue" changed="20241228T050443Z" si="189" created="20241228T050443Z" codep="1">Invalid Timeout value: %s</row>
+        <row id="RTLConsts_sSpinCountOutOfRange" changed="20241228T050443Z" si="190" created="20241228T050443Z" codep="1">SpinCount out of range. Must be between 0 and %d</row>
         <row id="RTLConsts_sTimespanTooLong" si="191">Timespan too long</row>
         <row id="RTLConsts_sInvalidTimespanDuration" si="192">The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue</row>
         <row id="RTLConsts_sTimespanValueCannotBeNan" si="193">Value cannot be NaN</row>
         <row id="RTLConsts_sCannotNegateTimespan" si="194">Negating the minimum value of a Timespan is invalid</row>
         <row id="RTLConsts_sInvalidTimespanFormat" si="195">Invalid Timespan format</row>
-        <row id="RTLConsts_SRegGetDataFailed" class="TPatternRow" si="196">Failed to get data for '{0}'</row>
-        <row id="RTLConsts_SRegSetDataFailed" class="TPatternRow" si="197">Failed to set data for '{0}'</row>
-        <row id="RTLConsts_SResNotFound" class="TPatternRow" si="198">Resource {0} not found</row>
-        <row id="RTLConsts_SSeekNotImplemented" class="TPatternRow" si="199">{0}.Seek not implemented</row>
+        <row id="RTLConsts_SRegGetDataFailed" changed="20241228T050443Z" si="196" created="20241228T050443Z" codep="1">Failed to get data for '%s'</row>
+        <row id="RTLConsts_SRegSetDataFailed" changed="20241228T050443Z" si="197" created="20241228T050443Z" codep="1">Failed to set data for '%s'</row>
+        <row id="RTLConsts_SResNotFound" changed="20241228T050443Z" si="198" created="20241228T050443Z" codep="1">Resource %s not found</row>
+        <row id="RTLConsts_SSeekNotImplemented" changed="20241228T050443Z" si="199" created="20241228T050443Z" codep="1">%s.Seek not implemented</row>
         <row id="RTLConsts_SSortedListError" si="200">Operation not allowed on sorted list</row>
-        <row id="RTLConsts_SUnknownGroup" class="TPatternRow" si="201">{0} not in a class registration group</row>
-        <row id="RTLConsts_SUnknownProperty" class="TPatternRow" si="202">Property {0} does not exist</row>
+        <row id="RTLConsts_SUnknownGroup" changed="20241228T050443Z" si="201" created="20241228T050443Z" codep="1">%s not in a class registration group</row>
+        <row id="RTLConsts_SUnknownProperty" changed="20241228T050443Z" si="202" created="20241228T050443Z" codep="1">Property %s does not exist</row>
         <row id="RTLConsts_SWriteError" si="203">Stream write error</row>
-        <row id="RTLConsts_SThreadCreateError" class="TPatternRow" si="204">Thread creation error: {0}</row>
-        <row id="RTLConsts_SThreadError" class="TPatternRow" si="205">Thread Error: {0} ({1})</row>
+        <row id="RTLConsts_SThreadCreateError" changed="20241228T050443Z" si="204" created="20241228T050443Z" codep="1">Thread creation error: %s</row>
+        <row id="RTLConsts_SThreadError" changed="20241228T050443Z" si="205" created="20241228T050443Z" codep="1">Thread Error: %s (%d)</row>
         <row id="RTLConsts_SThreadExternalTerminate" si="206">Cannot terminate an externally created thread</row>
         <row id="RTLConsts_SThreadExternalWait" si="207">Cannot wait for an externally created thread</row>
         <row id="RTLConsts_SThreadStartError" si="208">Cannot call Start on a running or suspended thread</row>
         <row id="RTLConsts_SThreadExternalCheckTerminated" si="209">Cannot call CheckTerminated on an externally created thread</row>
         <row id="RTLConsts_SThreadExternalSetReturnValue" si="210">Cannot call SetReturnValue on an externally create thread</row>
-        <row id="RTLConsts_SParamIsNil" class="TPatternRow" si="211">Parameter {0} cannot be nil</row>
-        <row id="RTLConsts_SFOpenErrorEx" class="TPatternRow" si="212">Cannot open file "{0}". {1}</row>
+        <row id="RTLConsts_SParamIsNil" changed="20241228T050443Z" si="211" created="20241228T050443Z" codep="1">Parameter %s cannot be nil</row>
+        <row id="RTLConsts_SFOpenErrorEx" changed="20241228T050443Z" si="212" created="20241228T050443Z" codep="1">Cannot open file "%s". %s</row>
         <row id="RTLConsts_SInvalidImage" si="213">Invalid stream format</row>
-        <row id="RTLConsts_SInvalidName" class="TPatternRow" si="214">''{0}'' is not a valid component name</row>
+        <row id="RTLConsts_SInvalidName" changed="20241228T050443Z" si="214" created="20241228T050443Z" codep="1">''%s'' is not a valid component name</row>
         <row id="RTLConsts_SInvalidProperty" si="215">Invalid property value</row>
         <row id="RTLConsts_SInvalidPropertyPath" si="216">Invalid property path</row>
         <row id="RTLConsts_SInvalidPropertyValue" si="217">Invalid property value</row>
-        <row id="RTLConsts_SInvalidRegType" class="TPatternRow" si="218">Invalid data type for '{0}'</row>
-        <row id="RTLConsts_SListCapacityError" class="TPatternRow" si="219">List capacity out of bounds ({0})</row>
-        <row id="RTLConsts_SListCountError" class="TPatternRow" si="220">List count out of bounds ({0})</row>
-        <row id="RTLConsts_SListIndexError" class="TPatternRow" si="221">List index out of bounds ({0})</row>
+        <row id="RTLConsts_SInvalidRegType" changed="20241228T050443Z" si="218" created="20241228T050443Z" codep="1">Invalid data type for '%s'</row>
+        <row id="RTLConsts_SListCapacityError" changed="20241228T050443Z" si="219" created="20241228T050443Z" codep="1">List capacity out of bounds (%d)</row>
+        <row id="RTLConsts_SListCountError" changed="20241228T050443Z" si="220" created="20241228T050443Z" codep="1">List count out of bounds (%d)</row>
+        <row id="RTLConsts_SListIndexError" changed="20241228T050443Z" si="221" created="20241228T050443Z" codep="1">List index out of bounds (%d)</row>
         <row id="RTLConsts_SMemoryStreamError" si="222">Out of memory while expanding memory stream</row>
-        <row id="RTLConsts_SNoComSupport" class="TPatternRow" si="223">{0} has not been registered as a COM class</row>
-        <row id="RTLConsts_SPropertyException" class="TPatternRow" si="224">Error reading {0}{1}{2}: {3}</row>
+        <row id="RTLConsts_SNoComSupport" changed="20241228T050443Z" si="223" created="20241228T050443Z" codep="1">%s has not been registered as a COM class</row>
+        <row id="RTLConsts_SPropertyException" changed="20241228T050443Z" si="224" created="20241228T050443Z" codep="1">Error reading %s%s%s: %s</row>
         <row id="RTLConsts_SReadError" si="225">Stream read error</row>
         <row id="RTLConsts_SReadOnlyProperty" si="226">Property is read-only</row>
-        <row id="RTLConsts_SRegCreateFailed" class="TPatternRow" si="227">Failed to create key {0}</row>
-        <row id="SysConst_SInvalidDestinationIndex" class="TPatternRow" si="228">Invalid destination index ({0})</row>
+        <row id="RTLConsts_SRegCreateFailed" changed="20241228T050443Z" si="227" created="20241228T050443Z" codep="1">Failed to create key %s</row>
+        <row id="SysConst_SInvalidDestinationIndex" changed="20241228T050443Z" si="228" created="20241228T050443Z" codep="1">Invalid destination index (%d)</row>
         <row id="SysConst_SInvalidCodePage" si="229">Invalid code page</row>
         <row id="SysConst_SInvalidEncodingName" si="230">Invalid encoding name</row>
         <row id="SysConst_SNoMappingForUnicodeCharacter" si="231">No mapping for the Unicode character exists in the target multi-byte code page</row>
         <row id="SysConst_SInvalidStringBaseIndex" si="232">Invalid StringBaseIndex</row>
-        <row id="RTLConsts_SAncestorNotFound" class="TPatternRow" si="233">Ancestor for '{0}' not found</row>
-        <row id="RTLConsts_SAssignError" class="TPatternRow" si="234">Cannot assign a {0} to a {1}</row>
+        <row id="RTLConsts_SAncestorNotFound" changed="20241228T050443Z" si="233" created="20241228T050443Z" codep="1">Ancestor for '%s' not found</row>
+        <row id="RTLConsts_SAssignError" changed="20241228T050443Z" si="234" created="20241228T050443Z" codep="1">Cannot assign a %s to a %s</row>
         <row id="RTLConsts_SBitsIndexError" si="235">Bits index out of range</row>
         <row id="RTLConsts_SCantWriteResourceStreamError" si="236">Can't write to a read-only resource stream</row>
-        <row id="RTLConsts_SCheckSynchronizeError" class="TPatternRow" si="237">CheckSynchronize called from thread ${0}, which is NOT the main thread</row>
-        <row id="RTLConsts_SClassNotFound" class="TPatternRow" si="238">Class {0} not found</row>
-        <row id="RTLConsts_SDuplicateClass" class="TPatternRow" si="239">A class named {0} already exists</row>
-        <row id="RTLConsts_SDuplicateItem" class="TPatternRow" si="240">List does not allow duplicates ($0{0})</row>
-        <row id="RTLConsts_SDuplicateName" class="TPatternRow" si="241">A component named {0} already exists</row>
+        <row id="RTLConsts_SCheckSynchronizeError" changed="20241228T050443Z" si="237" created="20241228T050443Z" codep="1">CheckSynchronize called from thread $%x, which is NOT the main thread</row>
+        <row id="RTLConsts_SClassNotFound" changed="20241228T050443Z" si="238" created="20241228T050443Z" codep="1">Class %s not found</row>
+        <row id="RTLConsts_SDuplicateClass" changed="20241228T050443Z" si="239" created="20241228T050443Z" codep="1">A class named %s already exists</row>
+        <row id="RTLConsts_SDuplicateItem" changed="20241228T050443Z" si="240" created="20241228T050443Z" codep="1">List does not allow duplicates ($0%x)</row>
+        <row id="RTLConsts_SDuplicateName" changed="20241228T050443Z" si="241" created="20241228T050443Z" codep="1">A component named %s already exists</row>
         <row id="RTLConsts_SDuplicateString" si="242">String list does not allow duplicates</row>
-        <row id="RTLConsts_SFCreateErrorEx" class="TPatternRow" si="243">Cannot create file "{0}". {1}</row>
+        <row id="RTLConsts_SFCreateErrorEx" changed="20241228T050443Z" si="243" created="20241228T050443Z" codep="1">Cannot create file "%s". %s</row>
         <row id="SysConst_SShortDayNameWed" si="244">Wed</row>
         <row id="SysConst_SShortDayNameThu" si="245">Thu</row>
         <row id="SysConst_SShortDayNameFri" si="246">Fri</row>
@@ -163,9 +169,9 @@
         <row id="SysConst_SLongDayNameSat" si="254">Saturday</row>
         <row id="SysConst_SInvalidSourceArray" si="255">Invalid source array</row>
         <row id="SysConst_SInvalidDestinationArray" si="256">Invalid destination array</row>
-        <row id="SysConst_SCharIndexOutOfBounds" class="TPatternRow" si="257">Character index out of bounds ({0})</row>
-        <row id="SysConst_SByteIndexOutOfBounds" class="TPatternRow" si="258">Start index out of bounds ({0})</row>
-        <row id="SysConst_SInvalidCharCount" class="TPatternRow" si="259">Invalid count ({0})</row>
+        <row id="SysConst_SCharIndexOutOfBounds" changed="20241228T050443Z" si="257" created="20241228T050443Z" codep="1">Character index out of bounds (%d)</row>
+        <row id="SysConst_SByteIndexOutOfBounds" changed="20241228T050443Z" si="258" created="20241228T050443Z" codep="1">Start index out of bounds (%d)</row>
+        <row id="SysConst_SInvalidCharCount" changed="20241228T050443Z" si="259" created="20241228T050443Z" codep="1">Invalid count (%d)</row>
         <row id="SysConst_SShortMonthNameDec" si="260">Dec</row>
         <row id="SysConst_SLongMonthNameJan" si="261">January</row>
         <row id="SysConst_SLongMonthNameFeb" si="262">February</row>
@@ -182,11 +188,11 @@
         <row id="SysConst_SShortDayNameSun" si="273">Sun</row>
         <row id="SysConst_SShortDayNameMon" si="274">Mon</row>
         <row id="SysConst_SShortDayNameTue" si="275">Tue</row>
-        <row id="SysConst_SAssertError" class="TPatternRow" si="276">{0} ({1}, line {2})</row>
+        <row id="SysConst_SAssertError" changed="20241228T050443Z" si="276" created="20241228T050443Z" codep="1">%s (%s, line %d)</row>
         <row id="SysConst_SAbstractError" si="277">Abstract Error</row>
-        <row id="SysConst_SModuleAccessViolation" class="TPatternRow" si="278">Access violation at address {0} in module '{1}'. {2} of address {3}</row>
-        <row id="SysConst_SOSError" class="TPatternRow" si="279">System Error.  Code: {0}.
-{1}{2}</row>
+        <row id="SysConst_SModuleAccessViolation" changed="20241228T050443Z" si="278" created="20241228T050443Z" codep="1">Access violation at address %p in module '%s'. %s of address %p</row>
+        <row id="SysConst_SOSError" changed="20241228T050443Z" si="279" created="20241228T050443Z" codep="1">System Error.  Code: %d.
+%s%s</row>
         <row id="SysConst_SUnkOSError" si="280">A call to an OS function failed</row>
         <row id="SysConst_SShortMonthNameJan" si="281">Jan</row>
         <row id="SysConst_SShortMonthNameFeb" si="282">Feb</row>
@@ -200,14 +206,14 @@
         <row id="SysConst_SShortMonthNameOct" si="290">Oct</row>
         <row id="SysConst_SShortMonthNameNov" si="291">Nov</row>
         <row id="SysConst_SVarTypeTooManyCustom" si="292">Too many custom variant types have been registered</row>
-        <row id="SysConst_SVarTypeCouldNotConvert" class="TPatternRow" si="293">Could not convert variant of type ({0}) into type ({1})</row>
-        <row id="SysConst_SVarTypeConvertOverflow" class="TPatternRow" si="294">Overflow while converting variant of type ({0}) into type ({1})</row>
+        <row id="SysConst_SVarTypeCouldNotConvert" changed="20241228T050443Z" si="293" created="20241228T050443Z" codep="1">Could not convert variant of type (%s) into type (%s)</row>
+        <row id="SysConst_SVarTypeConvertOverflow" changed="20241228T050443Z" si="294" created="20241228T050443Z" codep="1">Overflow while converting variant of type (%s) into type (%s)</row>
         <row id="SysConst_SVarOverflow" si="295">Variant overflow</row>
         <row id="SysConst_SVarInvalid" si="296">Invalid argument</row>
         <row id="SysConst_SVarBadType" si="297">Invalid variant type</row>
         <row id="SysConst_SVarNotImplemented" si="298">Operation not supported</row>
         <row id="SysConst_SVarUnexpected" si="299">Unexpected variant error</row>
-        <row id="SysConst_SExternalException" class="TPatternRow" si="300">External exception {0}</row>
+        <row id="SysConst_SExternalException" changed="20241228T050443Z" si="300" created="20241228T050443Z" codep="1">External exception %x</row>
         <row id="SysConst_SAssertionFailed" si="301">Assertion failed</row>
         <row id="SysConst_SIntfCastError" si="302">Interface not supported</row>
         <row id="SysConst_SSafecallException" si="303">Exception in safecall method</row>
@@ -215,7 +221,7 @@
         <row id="SysConst_SNoMonitorSupportException" si="305">Monitor support function not initialized</row>
         <row id="SysConst_SNotImplemented" si="306">Feature not implemented</row>
         <row id="SysConst_SObjectDisposed" si="307">Method called on disposed object</row>
-        <row id="SysConst_SArgumentMissing" class="TPatternRow" si="308">No argument for format '{0}'</row>
+        <row id="SysConst_SArgumentMissing" changed="20241228T050443Z" si="308" created="20241228T050443Z" codep="1">No argument for format '%s'</row>
         <row id="SysConst_SDispatchError" si="309">Variant method calls not supported</row>
         <row id="SysConst_SReadAccess" si="310">Read</row>
         <row id="SysConst_SWriteAccess" si="311">Write</row>
@@ -227,11 +233,11 @@
         <row id="SysConst_SInvalidVarCast" si="317">Invalid variant type conversion</row>
         <row id="SysConst_SInvalidVarOp" si="318">Invalid variant operation</row>
         <row id="SysConst_SInvalidVarNullOp" si="319">Invalid NULL variant operation</row>
-        <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" class="TPatternRow" si="320">Invalid variant operation ({0}{1})
-{2}</row>
-        <row id="SysConst_SVarTypeOutOfRangeWithPrefix" class="TPatternRow" si="321">Custom variant type ({0}{1}) is out of range</row>
-        <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" class="TPatternRow" si="322">Custom variant type ({0}{1}) already used by {2}</row>
-        <row id="SysConst_SVarTypeNotUsableWithPrefix" class="TPatternRow" si="323">Custom variant type ({0}{1}) is not usable</row>
+        <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" changed="20241228T050443Z" si="320" created="20241228T050443Z" codep="1">Invalid variant operation (%s%.8x)
+%s</row>
+        <row id="SysConst_SVarTypeOutOfRangeWithPrefix" changed="20241228T050443Z" si="321" created="20241228T050443Z" codep="1">Custom variant type (%s%.4x) is out of range</row>
+        <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" changed="20241228T050443Z" si="322" created="20241228T050443Z" codep="1">Custom variant type (%s%.4x) already used by %s</row>
+        <row id="SysConst_SVarTypeNotUsableWithPrefix" changed="20241228T050443Z" si="323" created="20241228T050443Z" codep="1">Custom variant type (%s%.4x) is not usable</row>
         <row id="SysConst_SRangeError" si="324">Range check error</row>
         <row id="SysConst_SIntOverflow" si="325">Integer overflow</row>
         <row id="SysConst_SInvalidOp" si="326">Invalid floating point operation</row>
@@ -240,24 +246,24 @@
         <row id="SysConst_SUnderflow" si="329">Floating point underflow</row>
         <row id="SysConst_SInvalidPointer" si="330">Invalid pointer operation</row>
         <row id="SysConst_SInvalidCast" si="331">Invalid class typecast</row>
-        <row id="SysConst_SAccessViolationArg3" class="TPatternRow" si="332">Access violation at address {0}. {1} of address {2}</row>
+        <row id="SysConst_SAccessViolationArg3" changed="20241228T050443Z" si="332" created="20241228T050443Z" codep="1">Access violation at address %p. %s of address %p</row>
         <row id="SysConst_SAccessViolationNoArg" si="333">Access violation</row>
         <row id="SysConst_SStackOverflow" si="334">Stack overflow</row>
         <row id="SysConst_SControlC" si="335">Control-C hit</row>
         <row id="SysConst_SPrivilege" si="336">Privileged instruction</row>
-        <row id="SysConst_SException" class="TPatternRow" si="337">Exception {0} in module {1} at {2}.
-{3}{4}
+        <row id="SysConst_SException" changed="20241228T050443Z" si="337" created="20241228T050443Z" codep="1">Exception %s in module %s at %p.
+%s%s
 </row>
         <row id="SysConst_SExceptTitle" si="338">Application Error</row>
-        <row id="SysConst_SInvalidFormat" class="TPatternRow" si="339">Format '{0}' invalid or incompatible with argument</row>
+        <row id="SysConst_SInvalidFormat" changed="20241228T050443Z" si="339" created="20241228T050443Z" codep="1">Format '%s' invalid or incompatible with argument</row>
         <row id="SysConst_SUnknown" si="340">&lt;unknown></row>
-        <row id="SysConst_SInvalidInteger" class="TPatternRow" si="341">'{0}' is not a valid integer value</row>
-        <row id="SysConst_SInvalidTimeStamp" class="TPatternRow" si="342">'{0}.{1}' is not a valid timestamp</row>
-        <row id="SysConst_SInvalidGUID" class="TPatternRow" si="343">'{0}' is not a valid GUID value</row>
+        <row id="SysConst_SInvalidInteger" changed="20241228T050443Z" si="341" created="20241228T050443Z" codep="1">'%s' is not a valid integer value</row>
+        <row id="SysConst_SInvalidTimeStamp" changed="20241228T050443Z" si="342" created="20241228T050443Z" codep="1">'%d.%d' is not a valid timestamp</row>
+        <row id="SysConst_SInvalidGUID" changed="20241228T050443Z" si="343" created="20241228T050443Z" codep="1">'%s' is not a valid GUID value</row>
         <row id="SysConst_STimeEncodeError" si="344">Invalid argument to time encode</row>
         <row id="SysConst_SDateEncodeError" si="345">Invalid argument to date encode</row>
         <row id="SysConst_SOutOfMemory" si="346">Out of memory</row>
-        <row id="SysConst_SInOutError" class="TPatternRow" si="347">I/O error {0}</row>
+        <row id="SysConst_SInOutError" changed="20241228T050443Z" si="347" created="20241228T050443Z" codep="1">I/O error %d</row>
         <row id="SysConst_SFileNotFound" si="348">File not found</row>
         <row id="SysConst_SInvalidUnknownFilename" si="349">Invalid filename</row>
         <row id="SysConst_STooManyOpenFiles" si="350">Too many open files</row>
@@ -268,25 +274,25 @@
         <row id="SysConst_SDivByZero" si="355">Division by zero</row>
       </node>
       <node class="TWindowsStringNode" name="Vcl">
-        <row id="Consts_SStyleLoadErrors" class="TPatternRow" si="4">Unable to load styles: {0}</row>
-        <row id="Consts_SStyleRegisterError" class="TPatternRow" si="5">Style '{0}' already registered</row>
-        <row id="Consts_SStyleClassRegisterError" class="TPatternRow" si="6">Style class '{0}' already registered</row>
-        <row id="Consts_SStyleNotFound" class="TPatternRow" si="7">Style '{0}' not found</row>
-        <row id="Consts_SStyleClassNotFound" class="TPatternRow" si="8">Style class '{0}' not found</row>
+        <row id="Consts_SStyleLoadErrors" changed="20241228T050443Z" si="4" created="20241228T050443Z" codep="1">Unable to load styles: %s</row>
+        <row id="Consts_SStyleRegisterError" changed="20241228T050443Z" si="5" created="20241228T050443Z" codep="1">Style '%s' already registered</row>
+        <row id="Consts_SStyleClassRegisterError" changed="20241228T050443Z" si="6" created="20241228T050443Z" codep="1">Style class '%s' already registered</row>
+        <row id="Consts_SStyleNotFound" changed="20241228T050443Z" si="7" created="20241228T050443Z" codep="1">Style '%s' not found</row>
+        <row id="Consts_SStyleClassNotFound" changed="20241228T050443Z" si="8" created="20241228T050443Z" codep="1">Style class '%s' not found</row>
         <row id="Consts_SStyleInvalidHandle" si="9">Invalid style handle</row>
         <row id="Consts_SStyleFormatError" si="10">Invalid style format</row>
-        <row id="Consts_SStyleHookClassRegistered" class="TPatternRow" si="11">Class '{0}' is already registered for '{1}'</row>
-        <row id="Consts_SStyleHookClassNotRegistered" class="TPatternRow" si="12">Class '{0}' is not registered for '{1}'</row>
-        <row id="Consts_SStyleInvalidParameter" class="TPatternRow" si="13">{0} parameter cannot be nil</row>
+        <row id="Consts_SStyleHookClassRegistered" changed="20241228T050443Z" si="11" created="20241228T050443Z" codep="1">Class '%s' is already registered for '%s'</row>
+        <row id="Consts_SStyleHookClassNotRegistered" changed="20241228T050443Z" si="12" created="20241228T050443Z" codep="1">Class '%s' is not registered for '%s'</row>
+        <row id="Consts_SStyleInvalidParameter" changed="20241228T050443Z" si="13" created="20241228T050443Z" codep="1">%s parameter cannot be nil</row>
         <row id="Consts_SStyleFeatureNotSupported" si="14">Feature not supported by this style</row>
-        <row id="Consts_SStyleNotRegistered" class="TPatternRow" si="15">Style '{0}' is not registered</row>
+        <row id="Consts_SStyleNotRegistered" changed="20241228T050443Z" si="15" created="20241228T050443Z" codep="1">Style '%s' is not registered</row>
         <row id="Consts_SStyleUnregisterError" si="16">Cannot unregister the system style</row>
         <row id="Consts_SStyleNotRegisteredNoName" si="17">Style not registered</row>
         <row id="Consts_sBeginInvokeNoHandle" si="18">Cannot call BeginInvoke on a control with no parent or window handle</row>
         <row id="Consts_SDockTreeRemoveError" si="20">Error removing control from dock tree</row>
         <row id="Consts_SDockZoneNotFound" si="21"> - Dock zone not found</row>
         <row id="Consts_SDockZoneHasNoCtl" si="22"> - Dock zone has no control</row>
-        <row id="Consts_SDockZoneVersionConflict" class="TPatternRow" si="23">Error loading dock zone from the stream. Expecting version {0}, but found {1}.</row>
+        <row id="Consts_SDockZoneVersionConflict" changed="20241228T050443Z" si="23" created="20241228T050443Z" codep="1">Error loading dock zone from the stream. Expecting version %d, but found %d.</row>
         <row id="Consts_SPromptArrayTooShort" si="24">Length of value array must be >= length of prompt array</row>
         <row id="Consts_SPromptArrayEmpty" si="25">Prompt array must not be empty</row>
         <row id="Consts_SUsername" si="26">&amp;Username</row>
@@ -294,11 +300,11 @@
         <row id="Consts_SDomain" si="28">&amp;Domain</row>
         <row id="Consts_SLogin" si="29">Login</row>
         <row id="Consts_STrayIconRemoveError" si="30">Cannot remove shell notification icon</row>
-        <row id="Consts_SWindowsVistaRequired" class="TPatternRow" si="31">{0} requires Windows Vista or later</row>
-        <row id="Consts_STaskDlgButtonCaption" class="TPatternRow" si="32">Button{0}</row>
-        <row id="Consts_STaskDlgRadioButtonCaption" class="TPatternRow" si="33">RadioButton{0}</row>
+        <row id="Consts_SWindowsVistaRequired" changed="20241228T050443Z" si="31" created="20241228T050443Z" codep="1">%s requires Windows Vista or later</row>
+        <row id="Consts_STaskDlgButtonCaption" changed="20241228T050443Z" si="32" created="20241228T050443Z" codep="1">Button%d</row>
+        <row id="Consts_STaskDlgRadioButtonCaption" changed="20241228T050443Z" si="33" created="20241228T050443Z" codep="1">RadioButton%d</row>
         <row id="Consts_SInvalidTaskDlgButtonCaption" si="34">Caption cannot be empty</row>
-        <row id="Consts_SStyleLoadError" class="TPatternRow" si="35">Unable to load style '{0}'</row>
+        <row id="Consts_SStyleLoadError" changed="20241228T050443Z" si="35" created="20241228T050443Z" codep="1">Unable to load style '%s'</row>
         <row id="Consts_SmkcUp" si="36">Up</row>
         <row id="Consts_SmkcRight" si="37">Right</row>
         <row id="Consts_SmkcDown" si="38">Down</row>
@@ -307,13 +313,13 @@
         <row id="Consts_SmkcShift" si="41">Shift+</row>
         <row id="Consts_SmkcCtrl" si="42">Ctrl+</row>
         <row id="Consts_SmkcAlt" si="43">Alt+</row>
-        <row id="Consts_SOutOfRange" class="TPatternRow" si="44">Value must be between {0} and {1}</row>
+        <row id="Consts_SOutOfRange" changed="20241228T050443Z" si="44" created="20241228T050443Z" codep="1">Value must be between %d and %d</row>
         <row id="Consts_sAllFilter" si="45">All</row>
         <row id="Consts_SIconToClipboard" si="46">Clipboard does not support Icons</row>
-        <row id="Consts_SCannotOpenClipboard" class="TPatternRow" si="47">Cannot open clipboard: {0}</row>
+        <row id="Consts_SCannotOpenClipboard" changed="20241228T050443Z" si="47" created="20241228T050443Z" codep="1">Cannot open clipboard: %s</row>
         <row id="Consts_SInvalidPrinterOp" si="48">Operation not supported on selected printer</row>
         <row id="Consts_SNoDefaultPrinter" si="49">There is no default printer currently selected</row>
-        <row id="Consts_SDuplicateMenus" class="TPatternRow" si="50">Menu '{0}' is already being used by another form</row>
+        <row id="Consts_SDuplicateMenus" changed="20241228T050443Z" si="50" created="20241228T050443Z" codep="1">Menu '%s' is already being used by another form</row>
         <row id="Consts_SDockedCtlNeedsName" si="51">Docked control must have a name</row>
         <row id="Consts_SMsgDlgRetry" si="52">&amp;Retry</row>
         <row id="Consts_SMsgDlgIgnore" si="53">&amp;Ignore</row>
@@ -348,7 +354,7 @@
         <row id="Consts_SMsgDlgHelp" si="82">&amp;Help</row>
         <row id="Consts_SMsgDlgAbort" si="83">&amp;Abort</row>
         <row id="Consts_SScrollBarRange" si="84">Scrollbar property out of range</row>
-        <row id="Consts_SPropertyOutOfRange" class="TPatternRow" si="85">{0} property out of range</row>
+        <row id="Consts_SPropertyOutOfRange" changed="20241228T050443Z" si="85" created="20241228T050443Z" codep="1">%s property out of range</row>
         <row id="Consts_SMenuIndexError" si="86">Menu index out of range</row>
         <row id="Consts_SMenuReinserted" si="87">Menu inserted twice</row>
         <row id="Consts_SMenuNotFound" si="88">Sub-menu is not in menu</row>
@@ -357,12 +363,12 @@
         <row id="Consts_SPrinting" si="91">Printing in progress</row>
         <row id="Consts_SPrinterIndexError" si="92">Printer index out of range</row>
         <row id="Consts_SInvalidPrinter" si="93">Printer selected is not valid</row>
-        <row id="Consts_SDeviceOnPort" class="TPatternRow" si="94">{0} on {1}</row>
+        <row id="Consts_SDeviceOnPort" changed="20241228T050443Z" si="94" created="20241228T050443Z" codep="1">%s on %s</row>
         <row id="Consts_SGroupIndexTooLow" si="95">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
         <row id="Consts_SNoMDIForm" si="96">Cannot create form. No MDI forms are currently active</row>
         <row id="Consts_SImageCanvasNeedsBitmap" si="97">Can only modify an image if it contains a bitmap</row>
         <row id="Consts_SControlParentSetToSelf" si="98">A control cannot have itself as its parent</row>
-        <row id="Consts_SControlNonMainThreadUsage" class="TPatternRow" si="99">Control '{0}' is used on a not main thread</row>
+        <row id="Consts_SControlNonMainThreadUsage" changed="20241228T050443Z" si="99" created="20241228T050443Z" codep="1">Control '%s' is used on a not main thread</row>
         <row id="Consts_SInvalidImageList" si="100">Invalid ImageList</row>
         <row id="Consts_SReplaceImage" si="101">Unable to Replace Image</row>
         <row id="Consts_SInsertImage" si="102">Unable to Insert Image</row>
@@ -372,10 +378,10 @@
         <row id="Consts_SWindowDCError" si="106">Error creating window device context</row>
         <row id="Consts_SWindowClass" si="107">Error creating window class</row>
         <row id="Consts_SCannotFocus" si="108">Cannot focus a disabled or invisible window</row>
-        <row id="Consts_SParentRequired" class="TPatternRow" si="109">Control '{0}' has no parent window</row>
-        <row id="Consts_SControlPath" class="TPatternRow" si="110">. Path:
-{0}</row>
-        <row id="Consts_SParentGivenNotAParent" class="TPatternRow" si="111">Parent given is not a parent of '{0}'</row>
+        <row id="Consts_SParentRequired" changed="20241228T050443Z" si="109" created="20241228T050443Z" codep="1">Control '%s' has no parent window</row>
+        <row id="Consts_SControlPath" changed="20241228T050443Z" si="110" created="20241228T050443Z" codep="1">. Path:
+%s</row>
+        <row id="Consts_SParentGivenNotAParent" changed="20241228T050443Z" si="111" created="20241228T050443Z" codep="1">Parent given is not a parent of '%s'</row>
         <row id="Consts_SMDIChildNotVisible" si="112">Cannot hide an MDI Child Form</row>
         <row id="Consts_SInRemoteSession" si="113">Cannot change SingleBufferingInRemoteSessions in a remote session</row>
         <row id="Consts_SVisibleChanged" si="114">Cannot change Visible in OnShow or OnHide</row>
@@ -387,13 +393,13 @@
         <row id="Consts_SScanLine" si="121">Scan line index out of range</row>
         <row id="Consts_SChangeIconSize" si="122">Cannot change the size of an icon</row>
         <row id="Consts_SChangeWicSize" si="123">Cannot change the size of a WIC Image</row>
-        <row id="Consts_SUnknownExtension" class="TPatternRow" si="124">Unknown picture file extension (.{0})</row>
+        <row id="Consts_SUnknownExtension" changed="20241228T050443Z" si="124" created="20241228T050443Z" codep="1">Unknown picture file extension (.%s)</row>
         <row id="Consts_SUnknownClipboardFormat" si="125">Unsupported clipboard format</row>
         <row id="Consts_SUnknownStreamFormat" si="126">Unsupported stream format</row>
         <row id="Consts_SOutOfResources" si="127">Out of system resources</row>
         <row id="Consts_SNoCanvasHandle" si="128">Canvas does not allow drawing</row>
-        <row id="Consts_SInvalidTextFormatFlag" class="TPatternRow" si="129">Text format flag '{0}' not supported</row>
-        <row id="Consts_SInvalidFrameIndex" class="TPatternRow" si="130">Invalid image frame index {0}: there are {1} frames (0-{2})</row>
+        <row id="Consts_SInvalidTextFormatFlag" changed="20241228T050443Z" si="129" created="20241228T050443Z" codep="1">Text format flag '%s' not supported</row>
+        <row id="Consts_SInvalidFrameIndex" changed="20241228T050443Z" si="130" created="20241228T050443Z" codep="1">Invalid image frame index %d: there are %d frames (0-%d)</row>
         <row id="Consts_SInvalidImageSize" si="131">Invalid image size</row>
       </node>
     </node>
@@ -422,23 +428,18 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Food.tbx" type="TTbxGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="73224067-5B9C-447C-967C-B0A7073999A9" created="20180223T205738Z" lastmodified="20221123T154518Z" version="1.0.966" stringid="1128">
+<project id="73224067-5B9C-447C-967C-B0A7073999A9" created="20180223T205738Z" lastmodified="20241228T050231Z" version="1.0.1054" stringid="1132">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TDelphiSource" name="JsonResource\Win32\Debug\JsonResource.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\JsonResource\Win32\Debug\JsonResource.exe" original="en-US" lastmodified="20221123T154518Z" hassignatureread="1">
+  <node class="TDelphiSource" name="JsonResource\Win32\Debug\JsonResource.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\JsonResource\Win32\Debug\JsonResource.exe" original="en-US" lastmodified="20241228T050231Z" hassignatureread="1">
     <node class="TWindowsBinaryFolder" name="&quot;SPORT&quot;" resname="SPORT">
       <node class="TWindowsBinaryNode" name="SPORT" resname="SPORT" langid="1035" created="20180224T002301Z" binaryformat="bfJson" binaryformatkind="bkManual">
         <binary autoformat="0" manualformat="bfJson"/>
@@ -345,15 +345,15 @@
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="SportFrm">
-        <row id="SOrigin" changed="20200209T162207Z" class="TPatternRow" si="11">
-          <value>Origin: {0}</value>
-          <lang id="fi" st="4" or="3" rw="0" time="20200209T162219Z">Lähdemaa: {0}</lang>
-          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: {0}</lang>
+        <row id="SOrigin" changed="20241228T050227Z" si="11" created="20241228T050227Z" codep="1">
+          <value>Origin: %s</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20200209T162219Z">Lähdemaa: %s</lang>
+          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: %s</lang>
         </row>
-        <row id="SPlayers" changed="20200209T162207Z" class="TPatternRow" si="12">
-          <value>{0} players</value>
-          <lang id="fi" st="4" or="3" rw="0" time="20200209T162227Z">{0} pelaajaa</lang>
-          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">{0} Spieler</lang>
+        <row id="SPlayers" changed="20241228T050227Z" si="12" created="20241228T050227Z" codep="1">
+          <value>%d players</value>
+          <lang id="fi" st="4" or="3" rw="0" time="20200209T162227Z">%d pelaajaa</lang>
+          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">%d Spieler</lang>
         </row>
         <row id="SHasGoalie" si="13">
           <value>Has a goalie</value>
@@ -372,7 +372,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
   </node>
-  <node class="TDelphiSource" name="StringTable\Win32\Debug\StringTable.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\StringTable\Win32\Debug\StringTable.exe" original="en" lastmodified="20221123T154446Z" hassignatureread="1">
+  <node class="TDelphiSource" name="StringTable\Win32\Debug\StringTable.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Sport\StringTable\Win32\Debug\StringTable.exe" original="en" lastmodified="20241228T050231Z" hassignatureread="1">
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
@@ -697,15 +697,15 @@
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="SportFrm">
-        <row id="SOrigin" changed="20200209T162207Z" class="TPatternRow" si="40">
-          <value>Origin: {0}</value>
-          <lang id="fi" time="20200209T162218Z">Lähdemaa: {0}</lang>
-          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: {0}</lang>
+        <row id="SOrigin" changed="20241228T050227Z" si="40" created="20241228T050227Z" codep="1">
+          <value>Origin: %s</value>
+          <lang id="fi" time="20200209T162218Z">Lähdemaa: %s</lang>
+          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">Ursprung: %s</lang>
         </row>
-        <row id="SPlayers" changed="20200209T162207Z" class="TPatternRow" si="41">
-          <value>{0} players</value>
-          <lang id="fi" time="20200209T162226Z">{0} pelaajaa</lang>
-          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">{0} Spieler</lang>
+        <row id="SPlayers" changed="20241228T050227Z" si="41" created="20241228T050227Z" codep="1">
+          <value>%d players</value>
+          <lang id="fi" time="20200209T162226Z">%d pelaajaa</lang>
+          <lang id="de" st="4" or="6" rw="0" time="20180625T071914Z">%d Spieler</lang>
         </row>
         <row id="SHasGoalie" si="42">
           <value>Has a goalie</value>
@@ -748,8 +748,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

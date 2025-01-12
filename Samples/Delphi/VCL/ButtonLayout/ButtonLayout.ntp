@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3EC8FABC-05AA-49E2-8287-89B1BD9D0855" created="20160702T135608Z" lastmodified="20221023T185811Z" version="1.0.958" stringid="4">
+<project id="3EC8FABC-05AA-49E2-8287-89B1BD9D0855" created="20160702T135608Z" lastmodified="20241227T065316Z" version="1.0.1054" stringid="4">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\ButtonLayout.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ButtonLayout\Win32\Release\ButtonLayout.exe" original="en" lastmodified="20221023T185811Z" hassignature="1">
+  <node class="TDelphiSource" name="Win32\Release\ButtonLayout.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\ButtonLayout\Win32\Release\ButtonLayout.exe" original="en" lastmodified="20241227T065316Z">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -113,7 +113,6 @@
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="Countries.csv" type="TCsvGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -124,8 +123,8 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>
