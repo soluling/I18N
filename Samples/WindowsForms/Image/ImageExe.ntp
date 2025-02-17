@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6E593BD5-3B02-4C0C-A016-8FB9482CB0D5" created="20171106T142538Z" lastmodified="20221117T123854Z" version="1.0.963" stringid="6">
+<project id="6E593BD5-3B02-4C0C-A016-8FB9482CB0D5" created="20171106T142538Z" lastmodified="20250122T141132Z" version="1.0.1056" stringid="6">
   <lang id="fi"/>
+  <lang id="zh"/>
   <node class="TAssemblySource" name="bin\Debug\Image.exe" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\bin\Debug\Image.exe" original="en-US" lastmodified="20221117T123854Z" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrImage,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Image.csproj" libraries="[nlWinForms]">
     <netproperties version="net462"/>
     <node class="TNetFormFolder" name="Form">
@@ -3229,13 +3230,10 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

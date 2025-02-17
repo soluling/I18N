@@ -130,6 +130,11 @@ begin
   if (roFlipChildren in ResourceOptions) and TNtLocale.IsPreviousLocaleBidi then
     form.FlipChildren(True);
 
+{$IFDEF DELPHIDX4}
+  FCurrentPpi := form.CurrentPPI;
+  FScreenPpi := Screen.DefaultPixelsPerInch;
+{$ENDIF}
+
   Translate(form);
 
   if (roFlipChildren in ResourceOptions) and TNtLocale.IsActiveLocaleBidi then

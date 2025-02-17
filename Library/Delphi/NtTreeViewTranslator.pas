@@ -61,6 +61,13 @@ procedure TNtTreeViewTranslator.Translate(
   const name: String;
   value: Variant;
   index: Integer);
+const
+  VERSION_32_2 = $03;
+  VERSION_64_2 = $04;
+  VERSION_32_3 = $05;
+  VERSION_64_3 = $06;
+  VERSION_32_4 = $07;
+  VERSION_64_4 = $08;
 var
   stream: TNtStream;
 
@@ -156,9 +163,81 @@ var
   end;
 {$ENDIF}
 
-const
-  VERSION_32_2 = $03;
-  VERSION_64_2 = $04;
+{$IFDEF DELPHI12}
+  procedure ReadNodeClass(Stream: TStream);
+  var
+    LSize: Byte;
+    LInd: Byte;
+    LName: string;
+  begin
+    Stream.ReadBuffer(LSize, SizeOf(LSize));
+
+    if LSize = 0 then
+    begin
+      Stream.ReadBuffer(LInd, SizeOf(LInd));
+    end
+    else
+    begin
+      SetLength(LName, LSize);
+      Stream.ReadBuffer(LName[1], LSize * SizeOf(WideChar));
+    end;
+  end;
+
+  procedure Process332(node: TTreeNode; version: Integer);
+  var
+    i: Integer;
+    info: TNodeDataInfo3x86;
+    str: UnicodeString;
+  begin
+    if version = VERSION_32_4 then
+      ReadNodeClass(stream);
+
+    stream.ReadInteger;
+    stream.Read(info, SizeOf(info));
+
+    SetLength(str, info.TextLen);
+
+    if info.TextLen > 0 then
+      stream.Read(str[1], 2*info.TextLen);
+
+    node.ImageIndex := info.ImageIndex;
+    node.SelectedIndex := info.SelectedIndex;
+    node.OverlayIndex := info.OverlayIndex;
+    node.CheckState := info.CheckState;
+    node.Text := str;
+
+    for i := 0 to info.Count - 1 do
+      Process332(node[i], version);
+  end;
+
+  procedure Process364(node: TTreeNode; version: Integer);
+  var
+    i: Integer;
+    info: TNodeDataInfo3x64;
+    str: UnicodeString;
+  begin
+    if version = VERSION_64_4 then
+      ReadNodeClass(stream);
+
+    stream.ReadInteger;
+    stream.Read(info, SizeOf(info));
+
+    SetLength(str, info.TextLen);
+
+    if info.TextLen > 0 then
+      stream.Read(str[1], 2*info.TextLen);
+
+    node.ImageIndex := info.ImageIndex;
+    node.SelectedIndex := info.SelectedIndex;
+    node.OverlayIndex := info.OverlayIndex;
+    node.CheckState := info.CheckState;
+    node.Text := str;
+
+    for i := 0 to info.Count - 1 do
+      Process364(node[i], version);
+  end;
+{$ENDIF}
+
 var
   i, count: Integer;
   node: TTreeNode;
@@ -166,7 +245,7 @@ var
 {$IFDEF UNICODE}
   version: Byte;
 {$ENDIF}
-begin
+begin //FI:C101
   nodes := obj as TTreeNodes;
 
 {$IFDEF DELPHIXE}
@@ -195,12 +274,23 @@ begin
 
       for i := 0 to count - 1 do  //FI:W528
       begin
-  {$IFDEF UNICODE}
-    {$IFDEF DELPHIXE2}
+  {$IFDEF DELPHI12}
+        if version >= VERSION_64_4 then
+          Process364(node, version)
+        else if version = VERSION_32_4 then
+          Process332(node, version)
+        else if version >= VERSION_64_3 then
+          Process364(node, version)
+        else if version = VERSION_32_3 then
+          Process332(node, version)
+        else
+  {$ENDIF}
+  {$IFDEF DELPHIXE2}
         if version >= VERSION_64_2 then
           Process264(node)
         else
-    {$ENDIF}
+  {$ENDIF}
+  {$IFDEF UNICODE}
         if version = VERSION_32_2 then
           Process2(node)
         else

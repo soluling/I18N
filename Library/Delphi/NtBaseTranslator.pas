@@ -103,6 +103,9 @@ type
     property TypeInfo: PTypeInfo read GetTypeInfo;
 
   protected
+    FCurrentPpi: Integer;
+    FScreenPpi: Integer;
+
     procedure AfterProcessComponent(component: TComponent); virtual;
 
     function DoTranslate(component: TComponent; resourceName: String = ''): Boolean;
@@ -117,6 +120,7 @@ type
     destructor Destroy; override;
 
     class function IsString(varType: TVarType): Boolean;
+    class function IsInteger(varType: TVarType): Boolean;
   end;
 
   { @abstract Class that extends @link(TNtTranslator).
@@ -327,6 +331,7 @@ uses
   NtResource,
 {$ENDIF}
   SysConst,
+  Math,
   Variants;
 
 
@@ -716,6 +721,14 @@ begin
     (varType = varOleStr);
 end;
 
+class function TNtBaseTranslator.IsInteger(varType: TVarType): Boolean;
+begin
+  Result :=
+    (varType = varSmallInt) or
+    (varType = varInteger) or
+    (varType = varInt64);
+end;
+
 procedure TNtBaseTranslator.SetPropValue(
   instance: TObject;
   const value: Variant);
@@ -889,6 +902,7 @@ var
 
     Result :=
       (currentType = newType) or
+      (IsInteger(currentType) and IsInteger(newType)) or
       (IsString(currentType) and IsString(newType));
   end;
 
@@ -945,6 +959,17 @@ var
       Exit;
 
     Result := IgnoreByEvent;
+  end;
+
+  function IsCoordinate(const name: String): Boolean;
+  begin
+    Result :=
+      (name = 'Left') or
+      (name = 'Top') or
+      (name = 'Width') or
+      (name = 'Height') or
+      (name = 'ClientWidth') or
+      (name = 'ClientHeight');
   end;
 
 var
@@ -1049,6 +1074,9 @@ begin  //FI:C101
     begin
       try
         current := GetPropValue(FObj);
+
+        if (FCurrentPpi <> FScreenPpi) and IsCoordinate(String(FPropInfo.Name))then
+          value := Ceil(FCurrentPpi*value/FScreenPpi);
 
         if TypesEqual and (current <> value) and not IgnoreProperty then
         begin

@@ -10,39 +10,35 @@ object Form1: TForm1
   Font.Height = -11
   Font.Name = 'Tahoma'
   Font.Style = []
-  OldCreateOrder = False
-  PixelsPerInch = 96
   TextHeight = 13
   object VirtualStringTree1: TVirtualStringTree
     Left = 8
     Top = 8
     Width = 321
     Height = 113
+    DefaultNodeHeight = 17
     Header.AutoSizeIndex = 0
     Header.DefaultHeight = 17
-    Header.Font.Charset = DEFAULT_CHARSET
-    Header.Font.Color = clWindowText
-    Header.Font.Height = -11
-    Header.Font.Name = 'Tahoma'
-    Header.Font.Style = []
     Header.Height = 17
     Header.Options = [hoColumnResize, hoDrag, hoShowSortGlyphs, hoVisible]
     TabOrder = 0
+    Touch.InteractiveGestures = [igPan, igPressAndTap]
+    Touch.InteractiveGestureOptions = [igoPanSingleFingerHorizontal, igoPanSingleFingerVertical, igoPanInertia, igoPanGutter, igoParentPassthrough]
     Columns = <
       item
         Position = 0
+        Text = 'One'
         Width = 100
-        WideText = 'One'
       end
       item
         Position = 1
+        Text = 'Two'
         Width = 100
-        WideText = 'Two'
       end
       item
         Position = 2
+        Text = 'Three'
         Width = 100
-        WideText = 'Three'
       end>
   end
   object Button1: TButton

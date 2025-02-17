@@ -1,4 +1,4 @@
-program Forms;
+program FormsSample;
 
 uses
   NtInitialLocale,

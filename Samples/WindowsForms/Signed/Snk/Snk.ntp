@@ -1,15 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A162AFD1-EE59-48FD-8B85-5B1EF20A1728" created="20170828T144115Z" lastmodified="20220225T025822Z" version="1.0.908" stringid="4">
+<project id="A162AFD1-EE59-48FD-8B85-5B1EF20A1728" created="20170828T144115Z" lastmodified="20250113T040839Z" version="1.0.1054" stringid="4">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Snk.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Snk\Snk.csproj" original="en-US" lastmodified="20220225T025822Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Snk.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Signed\Snk\Snk.csproj" original="en-US" lastmodified="20250113T040839Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <sign signtool="C:\Program Files (x86)\Windows Kits\10\bin\10.0.16299.0\x64\signtool.exe" kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
     <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
+      <row id="label1.Location" class="TCoordinatePointRow" created="20250113T040832Z" st="0">8, 8</row>
+      <row id="label1.Size" class="TCoordinateSizeRow" created="20250113T040832Z" st="0">62, 13</row>
       <row id="label1.Text" si="1">
         <value>Hello World</value>
         <lang id="fi" st="4" rw="0" time="20170829T013318Z">Moi maailma</lang>
       </row>
+      <row id="label2.Location" class="TCoordinatePointRow" created="20250113T040832Z" st="0">8, 32</row>
+      <row id="label2.Size" class="TCoordinateSizeRow" created="20250113T040832Z" st="0">40, 13</row>
       <row id="label2.Text" si="2" excluded="2">dummy</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20250113T040832Z" st="0">311, 132</row>
       <row id="$this.Text" si="3">
         <value>Signed Sample</value>
         <lang id="fi" st="4" rw="0" time="20170829T014144Z">Allekirjoutusesimerkki</lang>
@@ -137,7 +142,7 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx" windowsforms="wf20">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="String1" si="4">
           <value>This is a sample</value>
           <lang id="fi" st="4" rw="0" time="20170829T013324Z">Tämä on esimerkki</lang>
@@ -158,15 +163,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>
