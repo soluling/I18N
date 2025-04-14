@@ -1,10 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20241119T190749Z" version="1.0.971" storedata="0" stringid="9">
+<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20250223T143036Z" version="1.0.1061" storedata="0" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20241119T190749Z" resources="[nrXaml,nrAssemblyInfo]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-    <netproperties toolsversion="nt150"/>
-    <node class="TXamlNode" name="App.xaml" type="Application" created="20230418T013252Z" kind="xkApplication">
-    </node>
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20250223T143036Z" resources="[nrXaml,nrAssemblyInfo]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core90" toolsversion="nt150"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" created="20230418T013252Z" kind="xkApplication"/>
     <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20230917T040944Z" fromassemblyinfo="1"/>
     <node class="TXamlNode" name="MainWindow.xaml" type="Window" created="20230418T013252Z" id="mainWindow">
       <row id="Title" si="1">
@@ -49,41 +48,21 @@
     </node>
     <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
     <assemblies>
-      <assembly>C:\Program Files\Soluling\Core30.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Core30x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net20Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net40Library.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net50x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net60x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net70x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80.dll</assembly>
-      <assembly>C:\Program Files\Soluling\Net80x86.dll</assembly>
-      <assembly>C:\Program Files\Soluling\System.Resources.Extensions.dll</assembly>
-      <assembly>C:\Program Files\Soluling\WinRtLibrary.dll</assembly>
+      <assembly>bin\Release\net9.0-windows7.0\Menu.dll</assembly>
     </assemblies>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

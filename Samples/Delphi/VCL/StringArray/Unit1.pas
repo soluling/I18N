@@ -59,7 +59,7 @@ const
 // 2)
 // This is another solution. You replace array but a function that returns the
 // right resource string.
-// We at NewTool recommend this.
+// We at Soluling recommend this.
 function GetValue(i: Integer): String;
 begin
   case i of

@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net60;net70</TargetFrameworks>
+    <TargetFrameworks>net90</TargetFrameworks>
     <AssemblyName>Soluling.AspNet</AssemblyName>
     <RootNamespace>Soluling.AspNet</RootNamespace>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>bin\Debug\net7.0\Soluling.AspNet.xml</DocumentationFile>
+    <DocumentationFile>bin\Debug\net9.0\Soluling.AspNet.xml</DocumentationFile>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
-    <DocumentationFile>bin\Release\net7.0\Soluling.AspNet.xml</DocumentationFile>
+    <DocumentationFile>bin\Release\net9.0\Soluling.AspNet.xml</DocumentationFile>
   </PropertyGroup>
 
   <ItemGroup>
