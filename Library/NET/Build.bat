@@ -5,7 +5,9 @@ rem C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe NET.sln /t:Rebuild
 "C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\msbuild.exe" NET.sln /t:Rebuild /p:Configuration=Release
 
 rem Build help file
-C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe NET.shfbproj
+rme C:\Windows\Microsoft.NET\Framework\v4.0.30319\msbuild.exe NET.shfbproj
+"C:\Program Files\Microsoft Visual Studio\2022\Professional\MSBuild\Current\Bin\msbuild.exe" NET.shfbproj
+copy /Y Help\NET.chm .
 
 rem Make zip
 del /S Tempo*.cs

@@ -1,0 +1,102 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="8DCF81DD-126E-4437-9574-97B520F5A836" created="20250417T044216Z" lastmodified="20250418T070854Z" version="1.0.1064" stringid="15">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="Tabs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tabs\Tabs.csproj" original="en" lastmodified="20250418T070854Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core90" toolsversion="nt150"/>
+    <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
+      <data>
+        77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRhYnMuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
+        b3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbC9wcmVzZW50YXRpb24iDQogICAgICAgICAgICAgeG1sbnM6eD0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwiDQogICAgICAgICAgICAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6
+        VGFicyINCiAgICAgICAgICAgICBTdGFydHVwVXJpPSJNYWluV2luZG93LnhhbWwiPg0KICAgIDxBcHBsaWNhdGlvbi5SZXNvdXJj
+        ZXM+DQogICAgICAgICANCiAgICA8L0FwcGxpY2F0aW9uLlJlc291cmNlcz4NCjwvQXBwbGljYXRpb24+DQo=
+      </data>
+    </node>
+    <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <row id="Title" si="1">
+        <value>Tab Sample</value>
+        <lang id="fi" rw="0" time="20250417T044251Z">Välilehden esimerkki</lang>
+      </row>
+      <item name="panel" type="StackPanel" created="20250417T075713Z">
+        <item name="languageButton" type="Button">
+          <row id="Content" si="7">
+            <value>Language</value>
+            <lang id="fi" rw="0" time="20250417T044251Z">Kieli</lang>
+          </row>
+        </item>
+        <item name="tabControl" type="TabControl">
+          <item name="tablItem1" type="TabItem">
+            <row id="Header" si="8">
+              <value>One</value>
+              <lang id="fi" rw="0" time="20250417T044251Z">Yksi</lang>
+            </row>
+            <item name="Grid[0]" type="Grid" created="20250417T083138Z">
+              <item name="text" type="TextBlock" created="20250418T070741Z">
+                <row id="Content" si="14">
+                  <value>This is a sample text.</value>
+                  <lang id="fi" rw="0" time="20250417T083141Z" fuzzy="99.5">Tämä on esimerkkiteksti.</lang>
+                </row>
+              </item>
+              <item name="iotionsButton" type="Button" created="20250418T070741Z">
+                <row id="Content" si="15">
+                  <value>Options</value>
+                  <lang id="fi" rw="0" time="20250417T083144Z" fuzzy="99.5">Vaihtoehdot</lang>
+                </row>
+              </item>
+            </item>
+          </item>
+          <item name="tablItem2" type="TabItem">
+            <row id="Header" si="10">
+              <value>Two</value>
+              <lang id="fi" rw="0" time="20250417T044251Z">Kaksi</lang>
+            </row>
+            <item name="checkBox2" type="CheckBox">
+              <row id="Content" si="11">
+                <value>This is another sample</value>
+                <lang id="fi" rw="0" time="20250417T044251Z">Tämä on toinen näyte</lang>
+              </row>
+            </item>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iVGFicy5NYWluV2luZG93Ig0KICB4bWxucz0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0
+        LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29t
+        L3dpbmZ4LzIwMDYveGFtbCINCiAgeG1sbnM6ZD0iaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS9leHByZXNzaW9uL2JsZW5k
+        LzIwMDgiDQogIHhtbG5zOm1jPSJodHRwOi8vc2NoZW1hcy5vcGVueG1sZm9ybWF0cy5vcmcvbWFya3VwLWNvbXBhdGliaWxpdHkv
+        MjAwNiINCiAgeG1sbnM6bG9jYWw9ImNsci1uYW1lc3BhY2U6VGFicyINCiAgbWM6SWdub3JhYmxlPSJkIg0KICBUaXRsZT0iVGFi
+        IFNhbXBsZSIgSGVpZ2h0PSIzMDAiIFdpZHRoPSI2MDAiPg0KICANCiAgPFN0YWNrUGFuZWwgeDpVaWQ9InBhbmVsIj4NCiAgICA8
+        QnV0dG9uIE5hbWU9Imxhbmd1YWdlQnV0dG9uIiBDbGljaz0ibGFuZ3VhZ2VCdXR0b25fQ2xpY2siPkxhbmd1YWdlPC9CdXR0b24+
+        DQogICAgPFRhYkNvbnRyb2wgTmFtZT0idGFiQ29udHJvbCI+DQogICAgICA8VGFiSXRlbSBOYW1lPSJ0YWJsSXRlbTEiIEhlYWRl
+        cj0iT25lIj4NCiAgICAgICAgPEdyaWQ+DQogICAgICAgICAgPFRleHRCbG9jayB4OlVpZD0idGV4dCI+DQogICAgICAgICAgICBU
+        aGlzIGlzIGEgc2FtcGxlIHRleHQuDQogICAgICAgICAgPC9UZXh0QmxvY2s+DQogICAgICAgICAgPEJ1dHRvbiB4Ok5hbWU9Imlv
+        dGlvbnNCdXR0b24iIENvbnRlbnQ9Ik9wdGlvbnMiIE1hcmdpbj0iMCw1MCwwLDAiIFdpZHRoPSIxNTAiIEhlaWdodD0iMzAiIFZl
+        cnRpY2FsQWxpZ25tZW50PSJUb3AiIC8+DQogICAgICAgIDwvR3JpZD4NCiAgICAgIDwvVGFiSXRlbT4NCg0KICAgICAgPFRhYkl0
+        ZW0gTmFtZT0idGFibEl0ZW0yIiBIZWFkZXI9IlR3byI+DQogICAgICAgIDxDaGVja0JveCBOYW1lPSJjaGVja0JveDIiPlRoaXMg
+        aXMgYW5vdGhlciBzYW1wbGU8L0NoZWNrQm94Pg0KICAgICAgPC9UYWJJdGVtPg0KICAgIDwvVGFiQ29udHJvbD4NCiAgPC9TdGFj
+        a1BhbmVsPg0KPC9XaW5kb3c+DQo=
+      </data>
+    </node>
+    <assemblies>
+      <assembly>bin\Debug\net9.0-windows7.0\Soluling.dll</assembly>
+      <assembly>bin\Debug\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
+      <assembly>bin\Debug\net9.0-windows7.0\Tabs.dll</assembly>
+    </assemblies>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

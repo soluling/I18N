@@ -14,7 +14,7 @@
     <Name>Documentation</Name>
     <!-- SHFB properties -->
     <FrameworkVersion>.NET Framework 4.8</FrameworkVersion>
-    <OutputPath>.\</OutputPath>
+    <OutputPath>Help\</OutputPath>
     <HtmlHelpName>NET</HtmlHelpName>
     <Language>en-US</Language>
     <MaximumGroupParts>2</MaximumGroupParts>
@@ -57,7 +57,7 @@
       <NamespaceSummaryItem name="Soluling.Desktop" isDocumented="True">Soluling internationalization class library contains several usefull classes to make applications world ready.</NamespaceSummaryItem>
     </NamespaceSummaries>
     <VisibleItems>Protected, ProtectedInternalAsProtected, EditorBrowsableNever, NonBrowsable</VisibleItems>
-    <WorkingPath>Help\</WorkingPath>
+    <WorkingPath>Sandcastle\</WorkingPath>
     <SaveComponentCacheCapacity>100</SaveComponentCacheCapacity>
     <BuildAssemblerVerbosity>OnlyWarningsAndErrors</BuildAssemblerVerbosity>
     <HelpFileFormat>HtmlHelp1</HelpFileFormat>
@@ -65,6 +65,8 @@
     <KeepLogFile>True</KeepLogFile>
     <DisableCodeBlockComponent>False</DisableCodeBlockComponent>
     <CleanIntermediates>True</CleanIntermediates>
+    <HtmlHelp1xCompilerPath>C:\Program Files (x86)\HTML Help Workshop\</HtmlHelp1xCompilerPath>
+    <WarnOnMissingSourceContext>False</WarnOnMissingSourceContext>
   </PropertyGroup>
   <!-- There are no properties for these groups.  AnyCPU needs to appear in order for Visual Studio to perform
 			 the build.  The others are optional common platform types that may appear. -->

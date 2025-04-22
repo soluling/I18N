@@ -1,5 +1,5 @@
 del *.zip
-zip Samples *.txt
+zip Samples *.md
 
 cd Access
 call Build.bat

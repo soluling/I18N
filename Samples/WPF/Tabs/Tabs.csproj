@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net9.0-windows7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Tabs.nds" />
+    <None Remove="Tabs.ntp" />
+    <None Remove="Tabs.ntr" />
+    <None Remove="Tabs.~ntp" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Library\NET\Standard\Soluling.csproj" />
+    <ProjectReference Include="..\..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" />
+  </ItemGroup>
+
+</Project>
