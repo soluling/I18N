@@ -11,7 +11,9 @@ type
   TForm1 = class(TForm)
     Button1: TButton;
     Label1: TLabel;
+    Button2: TButton;
     procedure Button1Click(Sender: TObject);
+    procedure Button2Click(Sender: TObject);
   private
     { Private declarations }
   public
@@ -26,11 +28,18 @@ implementation
 {$R *.dfm}
 
 uses
-  SharedFrm;
+  SharedFrm,
+  SharedInheritedFrm;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
   var form := TSharedForm.Create(nil);
+  form.Show;
+end;
+
+procedure TForm1.Button2Click(Sender: TObject);
+begin
+  var form := TSharedInheritedForm.Create(nil);
   form.Show;
 end;
 
