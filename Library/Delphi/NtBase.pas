@@ -247,6 +247,8 @@ type
       @return @true if the locale is compatible, @false if not. On Delphi 2009 later return always @true.}
     class function IsLocaleCompatible(locale: Integer): Boolean;
 
+    class function LocaleToCodePage(locale: Integer): Integer;
+
     { Get a list of available resource DLL languages.
       @param languages      Returns a list of available languages.
       @param exeFileName    Specifies the name of the application. If empty the current application is used.
@@ -815,15 +817,13 @@ begin
   LoadNew('');
 end;
 
-{$IFNDEF UNICODE}
-function LocaleToCodePage(locale: Integer): Integer;
+class function TNtBase.LocaleToCodePage(locale: Integer): Integer;
 begin
   if locale = LANG_CHINESE then
     Result := 936
   else
     Result := StrToInt(GetLocaleStr(locale, LOCALE_IDEFAULTANSICODEPAGE, '0'));
 end;
-{$ENDIF}
 
 class function TNtBase.IsLocaleCompatible(locale: Integer): Boolean;  //FI:O804
 begin

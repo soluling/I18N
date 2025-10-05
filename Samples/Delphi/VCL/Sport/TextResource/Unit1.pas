@@ -20,9 +20,6 @@ implementation
 
 {$R *.dfm}
 
-uses
-  Sport;
-
 procedure TForm1.LoadSports;
 begin
   // Load sport data from a resource

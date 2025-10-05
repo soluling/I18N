@@ -55,10 +55,10 @@ procedure TMainForm.UpdateItems;
 
   function GetLanguageCode: String;
   begin
-    if LoadedResourceLocale = '' then
-      Result := 'en'
-    else
-      Result := TNtLocale.LocaleToIso639(TNtLocale.ExtensionToLocale(LoadedResourceLocale));
+    Result := LoadedResourceLocale;
+
+    if Result = '' then
+      Result := 'en';
   end;
 
 resourcestring

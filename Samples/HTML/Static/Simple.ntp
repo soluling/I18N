@@ -1,25 +1,34 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D47DEDA8-3740-4F40-B194-4E0A2447406C" created="20180124T130117Z" lastmodified="20200316T234201Z" version="1.0.714" stringid="6">
+<project id="D47DEDA8-3740-4F40-B194-4E0A2447406C" created="20180124T130117Z" lastmodified="20250623T044702Z" version="1.0.1070" stringid="10">
   <lang id="fi"/>
-  <node class="THtmlSource" name="Simple.htm" fullpath="D:\NT\Deploy\Samples\HTML\Static\Simple.htm" original="en" encoding="windows-1252">
+  <lang id="ja"/>
+  <node class="THtmlSource" name="Simple.htm" fullpath="D:\NT\Deploy\Samples\HTML\Static\Simple.htm" original="en" lastmodified="20250623T044702Z" encoding="windows-1252">
     <row id="title.text" si="1">
       <value>Sample</value>
-      <lang id="fi" st="4" rw="0" time="20180124T130135Z">Esimerkki</lang>
+      <lang id="fi" rw="0" time="20180124T130135Z">Esimerkki</lang>
+      <lang id="ja" st="1" or="5" rw="0" time="20250623T044702Z" fuzzy="100">サンプル</lang>
     </row>
     <row id="h1.text" si="2">
       <value>Sample</value>
-      <lang id="fi" st="4" or="3" rw="0" time="20180124T130135Z">Esimerkki</lang>
+      <lang id="fi" rw="0" time="20180124T130135Z">Esimerkki</lang>
+      <lang id="ja" st="1" or="5" rw="0" time="20250623T044702Z" fuzzy="100">サンプル</lang>
     </row>
     <row id="p.text" si="3">
-      <value>This is a &lt;b&gt;small&lt;/b&gt; sample</value>
-      <lang id="fi" st="4" rw="0" time="20180124T130150Z">Tämä on &lt;b&gt;pieni&lt;/b&gt; esimerkki</lang>
+      <value>This is a &lt;b>small&lt;/b> sample.</value>
+      <prev>This is a &lt;b>small&lt;/b> sample</prev>
+      <lang id="fi" rw="0" time="20250623T042514Z">Tämä on &lt;b>pieni&lt;/b> esimerkki.</lang>
+      <lang id="ja" st="1" or="5" rw="0" time="20250623T044702Z" fuzzy="99">これは&lt;b>小さな&lt;/b>サンプルです。</lang>
     </row>
-    <tags usage="tuOnlyIncluded"/>
+    <row id="p[1].text" si="10" created="20250623T042423Z">
+      <value>Åström is a name.</value>
+      <lang id="fi" rw="0" time="20250623T042502Z" fuzzy="99.5">Åström on nimi.</lang>
+      <lang id="ja" st="1" or="5" rw="0" time="20250623T044702Z" fuzzy="99">Åströmは名前です。</lang>
+    </row>
     <data>
       PGh0bWw+DQoNCjxoZWFkPg0KPG1ldGEgaHR0cC1lcXVpdj0iQ29udGVudC1MYW5ndWFnZSIgY29udGVudD0iZW4iPg0KPG1ldGEg
       aHR0cC1lcXVpdj0iQ29udGVudC1UeXBlIiBjb250ZW50PSJ0ZXh0L2h0bWw7IGNoYXJzZXQ9d2luZG93cy0xMjUyIj4NCjx0aXRs
       ZT5TYW1wbGU8L3RpdGxlPg0KDQo8L2hlYWQ+DQoNCjxib2R5Pg0KDQo8aDE+U2FtcGxlPC9oMT4NCjxwPlRoaXMgaXMgYSA8Yj5z
-      bWFsbDwvYj4gc2FtcGxlPC9wPg0KDQo8L2JvZHk+DQoNCjwvaHRtbD4NCg==
+      bWFsbDwvYj4gc2FtcGxlLjwvcD4NCjxwPsVzdHL2bSBpcyBhIG5hbWUuPC9wPg0KPC9ib2R5Pg0KDQo8L2h0bWw+DQo=
     </data>
   </node>
   <terminology>
@@ -30,13 +39,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

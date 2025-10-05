@@ -1,6 +1,4 @@
-﻿using System.Net.Http;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Text;
 using Newtonsoft.Json;
 
 namespace Soluling.Sport
@@ -12,7 +10,7 @@ namespace Soluling.Sport
   {
     // By default this library uses the API on Soluling's server
     // If you want to use a local API comment the folloiwng line and uncomment the line after that. Check the port.
-    private const string URL = "https://soluling.com/sportapi/sports";
+    private const string URL = "https://soluling.com/SportApi/sports";
     //private const string URL = "http://localhost:53783/sports";
 
     public async Task<Sport[]> GetAllAsync(string language)

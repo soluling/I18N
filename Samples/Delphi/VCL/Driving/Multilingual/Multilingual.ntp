@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20241227T081655Z" version="1.0.1054" stringid="418">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20250914T120841Z" version="1.0.1076" stringid="418">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20241227T081655Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20250914T120841Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -263,7 +263,7 @@
           <row id="Top" created="20151019T020107Z">22</row>
           <row id="Width" created="20151019T020107Z">105</row>
           <row id="Height" created="20151019T020107Z">25</row>
-          <row id="Action" class="TVclActionRow" created="20241227T081301Z" st="0" hidden="1">CalculateAction</row>
+          <row id="Action" class="TVclActionRow" created="20241227T081301Z" hidden="1">CalculateAction</row>
         </item>
         <item name="MainMenu1" type="TMainMenu">
           <row id="Left" created="20151019T020107Z">240</row>
@@ -274,7 +274,7 @@
               <lang id="fi" time="20180524T033719Z">Tiedosto</lang>
             </row>
             <item name="Calculate1" type="TMenuItem">
-              <row id="Action" class="TVclActionRow" created="20241227T081301Z" st="0" hidden="1">CalculateAction</row>
+              <row id="Action" class="TVclActionRow" created="20241227T081301Z" hidden="1">CalculateAction</row>
             </item>
             <item name="Language1" type="TMenuItem">
               <row id="Caption" si="5">
@@ -446,8 +446,8 @@
           <value>Select Language</value>
           <lang id="fi" time="20180524T033734Z">Valitse kieli</lang>
         </row>
-        <row id="ClientHeight" created="20151019T020107Z">193</row>
-        <row id="ClientWidth" created="20151019T020107Z">291</row>
+        <row id="ClientHeight" created="20151019T020107Z">192</row>
+        <row id="ClientWidth" created="20151019T020107Z">287</row>
         <item name="LanguageList" type="TListBox">
           <row id="Left" created="20151019T020107Z">8</row>
           <row id="Top" created="20151019T020107Z">8</row>
@@ -492,6 +492,10 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
+        <row id="SAbout" si="14">
+          <value>Driving time calculator</value>
+          <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
+        </row>
         <row id="SResultPlural" changed="20200209T160439Z" class="TPatternRow" si="13" created="20170517T034344Z" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
           <value startpattern="1">Driving time{0}{1}.</value>
           <prev startpattern="1">Driving time{0:s}{1:s}.</prev>
@@ -508,10 +512,6 @@
             <pattern plural="pfOne" index="1">{0} minuutti</pattern>
             <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
           </lang>
-        </row>
-        <row id="SAbout" si="14">
-          <value>Driving time calculator</value>
-          <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
@@ -532,19 +532,15 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
 </project>

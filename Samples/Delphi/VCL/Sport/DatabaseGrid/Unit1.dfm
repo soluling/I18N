@@ -12,7 +12,6 @@ object MainForm: TMainForm
   Font.Style = []
   Menu = MainMenu
   OnShow = FormShow
-  PixelsPerInch = 96
   TextHeight = 13
   object DBGrid1: TDBGrid
     Left = 0

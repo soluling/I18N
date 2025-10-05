@@ -23,25 +23,13 @@ implementation
 
 {$R *.dfm}
 
-uses
-  Sport, NtBase, NtLocalization;
-
 procedure TForm1.LoadSports;
-
-  function GetLanguageCode: String;
-  begin
-    if LoadedResourceLocale = '' then
-      Result := 'en'
-    else
-      Result := TNtLocale.LocaleToIso639(TNtLocale.ExtensionToLocale(LoadedResourceLocale));
-  end;
-
 begin
   // Load sport data from a database
   Connection1.Connected := True;
 
   Query1.Close;
-  Query1.SQL.Text := Format('SELECT * FROM Sport WHERE Lang=''%s''', [GetLanguageCode]);
+  Query1.SQL.Text := Format('SELECT * FROM Sport WHERE Lang=''%s''', [ActiveLanguage]);
   Query1.Open;
 
   FSports.LoadDatabase(Query1);

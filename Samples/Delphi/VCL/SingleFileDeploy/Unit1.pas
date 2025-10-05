@@ -1,6 +1,3 @@
-{
-  This sample shows how to make a single file deployment.
-}
 unit Unit1;
 
 interface
@@ -32,7 +29,6 @@ implementation
 {$ENDIF}
 
 uses
-  NtBase,
   NtBaseTranslator,
   NtLanguageDlg;
 

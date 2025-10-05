@@ -21,6 +21,7 @@
 //  DELPHIDX4   Delphi 10.4 Sydney or higher
 //  DELPHI11    Delphi 11 Alexandria or higher
 //  DELPHI12    Delphi 12 Athens or higher
+//  DELPHI13    Delphi 13 Florence or higher
 
 {$A8}
 {$B-}
@@ -119,6 +120,10 @@
 
 {$IF CompilerVersion >= 36}
   {$DEFINE DELPHI12}
+{$IFEND}
+
+{$IF CompilerVersion >= 37}
+  {$DEFINE DELPHI13}
 {$IFEND}
 
 {$WARN SYMBOL_PLATFORM OFF}

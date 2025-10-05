@@ -37,6 +37,9 @@ type
     constructor Create;
     destructor Destroy; override;
 
+    // Load sports from API
+    procedure LoadApi(const language: String);
+
     // Load sports from a dataset
     procedure LoadDatabase(dataset: TDataset);
 
@@ -52,7 +55,11 @@ type
       const resourceType: String = 'SPORT');
 
     // Load sports from a JSON stream, standalone file or file resource
-    procedure LoadJsonStream(stream: TStream);
+    procedure LoadJsonStream(
+      stream: TStream;
+      language: String = '';
+      freeStream: Boolean = True);
+
     procedure LoadJsonFile(const fileName: String);
 
     procedure LoadJsonResource(
@@ -84,6 +91,9 @@ implementation
 uses
   System.IniFiles,
   System.Json,
+  System.Net.HttpClient,
+  System.Net.HttpClientComponent,
+  System.Net.URLClient,
   Xml.XMLIntf,
   Xml.XmlDoc,
   NtBase,
@@ -258,29 +268,49 @@ end;
 
 // JSON
 
-procedure TSports.LoadJsonStream(stream: TStream);
+procedure TSports.LoadJsonStream(
+  stream: TStream;
+  language: String;
+  freeStream: Boolean);
 var
-  jsonItem: TJSONValue;
+  activeJsonItem: TJSONValue;
 
   function GetString(const name: String): String;
   begin
-    Result := jsonItem.GetValue<String>(name);
+    Result := activeJsonItem.GetValue<String>(name);
   end;
 
   function GetInteger(const name: String): Integer;
   begin
-    Result := jsonItem.GetValue<Integer>(name);
+    if not activeJsonItem.TryGetValue<Integer>(name, Result) then
+      Result := 0;
   end;
 
   function GetBoolean(const name: String): Boolean;
   begin
-    Result := jsonItem.GetValue<Boolean>(name);
+    if not activeJsonItem.TryGetValue<Boolean>(name, Result) then
+      Result := False;
+  end;
+
+var
+  languagesArray: TJSONArray;
+
+  function FindLanguage: TJSONValue;
+  begin
+    for Result in languagesArray do
+    begin
+      if Result.GetValue<String>('language') = language then
+        Exit;
+    end;
+
+    Result := nil;
   end;
 
 var
   item: TSport;
   bytes: TArray<Byte>;
   json: TJSONArray;
+  jsonItem: TJSONValue;
 begin
   ClearItems;
 
@@ -291,19 +321,42 @@ begin
   try
     for jsonItem in json do
     begin
+      activeJsonItem := jsonItem;
       item := TSport.Create;
-      item.FId := GetString('id');
-      item.FName := GetString('name');
-      item.FPlayers := GetInteger('fieldplayers');
-      item.FGoalie := GetBoolean('goalie');
-      item.FOrigin := GetString('origin');
-      item.FDescription := GetString('description');
+
+      if language = '' then
+      begin
+        item.FId := GetString('id');
+        item.FPlayers := GetInteger('fieldplayers');
+        item.FGoalie := GetBoolean('goalie');
+        item.FName := GetString('name');
+        item.FOrigin := GetString('origin');
+        item.FDescription := GetString('description');
+      end
+      else
+      begin
+        item.FId := GetString('id');
+        item.FPlayers := GetInteger('fieldPlayers');
+        item.FGoalie := GetBoolean('goalie');
+
+        languagesArray := jsonItem.FindValue('languages') as TJSONArray;
+        activeJsonItem := FindLanguage;
+
+        if activeJsonItem = nil then
+          activeJsonItem := languagesArray[0];
+
+        item.FName := GetString('name');
+        item.FOrigin := GetString('origin');
+        item.FDescription := GetString('description');
+      end;
 
       FItems.Add(item);
     end;
   finally
     json.Free;
-    stream.Free;
+
+    if freeStream then
+      stream.Free;
   end;
 end;
 
@@ -315,6 +368,31 @@ end;
 procedure TSports.LoadJsonFile(const fileName: String);
 begin
   LoadJsonStream(TFileStream.Create(fileName, fmOpenRead));
+end;
+
+procedure TSports.LoadApi(const language: String);
+var
+  http: TNetHttpClient;
+  response: IHTTPResponse;
+  responseStream: TMemoryStream;
+  headers: TNetHeaders;
+begin
+  http := TNetHTTPClient.Create(nil);
+  responseStream := TMemoryStream.Create;
+  try
+    http.Accept := 'application/json';
+    http.AcceptEncoding := '';
+    http.ContentType := 'application/json';
+
+    response := http.Get('https://soluling.com/SportApi/sports', responseStream, headers);
+
+    if response.StatusCode = 200 then
+      LoadJsonStream(responseStream, language, False);
+  finally
+    responseStream.Free;
+    http.Free;
+  end;
+
 end;
 
 
@@ -406,19 +484,33 @@ var
     Result := GetInteger(name) = 1;
   end;
 
+  function GetCodePage: Integer;
+  var
+    language: String;
+  begin
+    language := LoadedResourceLocale;
+
+    if language = '' then
+      language := 'en';
+
+    Result := TNtLocale.LocaleToCodePage(TNtLocale.ExtensionToLocale(language));
+  end;
+
 var
   i: Integer;
   item: TSport;
   stringList, sections: TStringList;
+  encoding: TEncoding;
 begin
   ClearItems;
 
+  encoding := TEncoding.GetEncoding(GetCodePage);
   iniFile := TMemIniFile.Create('');
   stringList := TStringList.Create;
   sections := TStringList.Create;
 
   try
-    stringList.LoadFromStream(stream);
+    stringList.LoadFromStream(stream, encoding);
     iniFile.SetStrings(stringList);
 
     iniFile.ReadSections(sections);
@@ -442,6 +534,7 @@ begin
     stringList.Free;
     iniFile.Free;
     stream.Free;
+    encoding.Free;
   end;
 end;
 

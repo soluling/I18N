@@ -3,6 +3,9 @@
         <ProjectGuid>{147096A2-CD90-4358-953C-052F86066FD2}</ProjectGuid>
     </PropertyGroup>
     <ItemGroup>
+        <Projects Include="ApiResource\ApiResource.dproj">
+            <Dependencies/>
+        </Projects>
         <Projects Include="JsonResource\JsonResource.dproj">
             <Dependencies/>
         </Projects>
@@ -32,6 +35,15 @@
             <Default.Personality/>
         </BorlandProject>
     </ProjectExtensions>
+    <Target Name="ApiResource">
+        <MSBuild Projects="ApiResource\ApiResource.dproj"/>
+    </Target>
+    <Target Name="ApiResource:Clean">
+        <MSBuild Projects="ApiResource\ApiResource.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ApiResource:Make">
+        <MSBuild Projects="ApiResource\ApiResource.dproj" Targets="Make"/>
+    </Target>
     <Target Name="JsonResource">
         <MSBuild Projects="JsonResource\JsonResource.dproj"/>
     </Target>
@@ -96,13 +108,13 @@
         <MSBuild Projects="IniResource\IniResource.dproj" Targets="Make"/>
     </Target>
     <Target Name="Build">
-        <CallTarget Targets="JsonResource;TextResource;XmlResource;StringTable;DatabaseRecord;DatabaseGrid;IniResource"/>
+        <CallTarget Targets="ApiResource;JsonResource;TextResource;XmlResource;StringTable;DatabaseRecord;DatabaseGrid;IniResource"/>
     </Target>
     <Target Name="Clean">
-        <CallTarget Targets="JsonResource:Clean;TextResource:Clean;XmlResource:Clean;StringTable:Clean;DatabaseRecord:Clean;DatabaseGrid:Clean;IniResource:Clean"/>
+        <CallTarget Targets="ApiResource:Clean;JsonResource:Clean;TextResource:Clean;XmlResource:Clean;StringTable:Clean;DatabaseRecord:Clean;DatabaseGrid:Clean;IniResource:Clean"/>
     </Target>
     <Target Name="Make">
-        <CallTarget Targets="JsonResource:Make;TextResource:Make;XmlResource:Make;StringTable:Make;DatabaseRecord:Make;DatabaseGrid:Make;IniResource:Make"/>
+        <CallTarget Targets="ApiResource:Make;JsonResource:Make;TextResource:Make;XmlResource:Make;StringTable:Make;DatabaseRecord:Make;DatabaseGrid:Make;IniResource:Make"/>
     </Target>
     <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
 </Project>

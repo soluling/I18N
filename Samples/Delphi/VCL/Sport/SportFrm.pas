@@ -29,6 +29,8 @@ type
   private
     FItemIndex: Integer;
 
+    function GetActiveLanguage: String;
+
     procedure SetItemIndex(value: Integer);
 
   protected
@@ -38,6 +40,7 @@ type
 
   public
     property ItemIndex: Integer read FItemIndex write SetItemIndex;
+    property ActiveLanguage: String read GetActiveLanguage;
   end;
 
 implementation
@@ -45,7 +48,17 @@ implementation
 {$R *.dfm}
 
 uses
+  NtBase,
+  NtLocalization,
   NtLanguageDlg;
+
+function TSportForm.GetActiveLanguage: String;
+begin
+  if LoadedResourceLocale = '' then
+    Result := 'en'
+  else
+    Result := LoadedResourceLocale;
+end;
 
 procedure TSportForm.SetItemIndex(value: Integer);
 resourcestring

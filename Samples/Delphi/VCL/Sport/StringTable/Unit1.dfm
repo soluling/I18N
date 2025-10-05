@@ -1,6 +1,19 @@
 inherited Form1: TForm1
-  ExplicitWidth = 393
-  ExplicitHeight = 192
-  PixelsPerInch = 96
+  StyleElements = [seFont, seClient, seBorder]
   TextHeight = 13
+  inherited NameLabel: TLabel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited DescriptionLabel: TLabel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited OriginLabel: TLabel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited PlayersLabel: TLabel
+    StyleElements = [seFont, seClient, seBorder]
+  end
+  inherited GoalieLabel: TLabel
+    StyleElements = [seFont, seClient, seBorder]
+  end
 end
