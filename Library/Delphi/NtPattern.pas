@@ -1348,7 +1348,7 @@ begin  //FI:C101
     begin
       Result := TOperatorPattern(pattern);
 
-      if (Result.Kind = okEqual) and (value = Result.Operand) then //FI:W538
+      if (Result.Kind = okEqual) and (value = Result.Operand) then
         Exit;
     end;
   end;

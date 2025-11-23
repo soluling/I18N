@@ -271,4 +271,4 @@ Soluling supports continuous localization, machine translation, interactive fuzz
 
 You can download Soluling from [here](https://www.soluling.com/Download).
 
-**Note!** At the moment, Soluling and SoluMake are Windows applications and work only on Windows. However, we plan to release a web-based version in future and port SoluMake to Linux and macOS.
+`Localization` folder contains Soluling's own localization project. Read `README.md` from that folder to learn more.

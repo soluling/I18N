@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20250110T091206Z" version="1.0.1054" stringid="398">
+<project id="5E1B9790-36F6-454C-A285-38BB6E754636" created="20171212T234856Z" lastmodified="20251118T162039Z" version="1.0.1081" stringid="398">
   <lang id="fi"/>
   <lang id="fi-FI"/>
   <lang id="de"/>
   <lang id="nl"/>
   <lang id="he"/>
-  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en-US" lastmodified="20250110T091206Z" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Format.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Format\Win32\Release\Format.exe" original="en-US" lastmodified="20251118T162039Z" hassignature="1" hassignatureread="1" version="dvXE2">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -162,8 +162,8 @@
           <lang id="de" st="1" or="6" rw="0" time="20180321T190201Z">Sprache auswählen</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180321T192410Z">Selecteer Taal</lang>
         </row>
-        <row id="ClientHeight">193</row>
-        <row id="ClientWidth">291</row>
+        <row id="ClientHeight">192</row>
+        <row id="ClientWidth">287</row>
         <item name="LanguageList" type="TListBox">
           <row id="Left">8</row>
           <row id="Top">8</row>
@@ -196,7 +196,7 @@
         </item>
         <data>
           VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
-          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8EAC0NsaWVudFdpZHRoAyMBBUNvbG9yBwljbEJ0bkZhY2UM
+          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8AAC0NsaWVudFdpZHRoAx8BBUNvbG9yBwljbEJ0bkZhY2UM
           Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
           YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlCU9uRGVzdHJveQcLRm9ybURlc3Ryb3kGT25TaG93
           BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0ACFRMaXN0Qm94DExhbmd1YWdlTGlzdARMZWZ0AggDVG9wAggFV2lkdGgDwQAGSGVpZ2h0
@@ -264,19 +264,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
