@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20241228T060738Z" version="1.0.1054" lockedrowcomplete="0" stringid="620">
+<project id="C17F3EC0-F1CE-44B7-8724-5F814A0B4767" created="20190920T141945Z" lastmodified="20251130T124430Z" version="1.0.1082" lockedrowcomplete="0" stringid="620">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="WindowsForms.sln" fullpath="D:\NT\Deploy\Samples\WindowsForms\WindowsForms.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms]" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrJson,nrText,nrXml,nrGroupIcon,nrIcon,nrManifest]">
     <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" created="20200316T185515Z" original="en" lastmodified="20230422T142627Z" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
@@ -25,8 +25,8 @@
         <assembly>bin\Release\netstandard2.0\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" original="en" lastmodified="20241015T094110Z" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="net40" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" created="20200316T185515Z" original="en" lastmodified="20251130T124428Z" groupname="..\..\Library\NET\Translator\Forms\SolulingTranslatorForms.csproj" resources="[nrForm]" availableresources="[nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="net45" toolsversion="nt150"/>
       <node class="TResXNode" name="SelectLanguage.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="listBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="listBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">160, 108</row>
@@ -36,7 +36,7 @@
         <row id="cancelButton.Location" class="TCoordinatePointRow" created="20230422T142615Z">176, 40</row>
         <row id="cancelButton.Size" class="TCoordinateSizeRow" created="20230422T142615Z">80, 23</row>
         <row id="cancelButton.Text" si="552">Cancel</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">267, 124</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">267, 124</row>
         <row id="$this.Text" si="553">Select Language</row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -174,11 +174,11 @@
         </data>
       </node>
       <assemblies>
-        <assembly>bin\Release\net40\Soluling.dll</assembly>
-        <assembly>bin\Release\net40\Soluling.Translator.Forms.dll</assembly>
+        <assembly>bin\Release\net45\Soluling.dll</assembly>
+        <assembly>bin\Release\net45\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" original="en" lastmodified="20241019T115625Z" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BiDiArabic\BiDiArabic.csproj" original="en" lastmodified="20251130T124428Z" groupname="BiDi\BiDiArabic\BiDiArabic.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="checkBox1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 48</row>
@@ -195,7 +195,7 @@
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">37, 13</row>
         <row id="label1.Text" si="352">&amp;Value:</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">411, 73</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">411, 73</row>
         <row id="$this.Text" si="353">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -357,7 +357,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BidiEnglish\BidiEnglish.csproj" original="en" lastmodified="20241019T115626Z" groupname="BiDi\BidiEnglish\BidiEnglish.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BidiEnglish\BidiEnglish.csproj" original="en" lastmodified="20251130T124428Z" groupname="BiDi\BidiEnglish\BidiEnglish.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -374,7 +374,7 @@
           <value>&amp;Save</value>
           <lang id="fi" st="4" or="3" rw="0" time="20241019T115626Z">&amp;Talleta</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">411, 73</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">411, 73</row>
         <row id="$this.Text" si="349">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -526,10 +526,10 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="BiDi\BidiSimple\BidiSimple.csproj" original="en" lastmodified="20241015T094110Z" groupname="BiDi\BidiSimple\BidiSimple.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="BiDi\BidiSimple\BidiSimple.csproj" original="en" lastmodified="20251130T124428Z" groupname="BiDi\BidiSimple\BidiSimple.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 67</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 67</row>
         <row id="$this.Text" si="359">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -631,7 +631,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Comments\Comments.csproj" original="en" lastmodified="20241228T060738Z" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Comments\Comments.csproj" original="en" lastmodified="20251130T124428Z" groupname="Comments\Comments.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -640,7 +640,7 @@
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="163" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 135</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 135</row>
         <row id="$this.Text" si="164">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -792,13 +792,13 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Core\Core.csproj" created="20230422T142615Z" original="en" lastmodified="20241015T094110Z" groupname="Core\Core.csproj" resources="[nrForm]" availableresources="[nrForm]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Core\Core.csproj" created="20230422T142615Z" original="en" lastmodified="20251130T124428Z" groupname="Core\Core.csproj" resources="[nrForm]" availableresources="[nrForm]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="core31" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wfCore">
         <row id="label1.Location" class="TCoordinatePointRow">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow">71, 15</row>
         <row id="label1.Text" si="578">Hello world!</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">544, 276</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">544, 276</row>
         <row id="$this.Text" si="579">
           <value>Sample</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -875,7 +875,7 @@
         <assembly>bin\Release\netcoreapp3.1\Core.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\Application\Application.csproj" original="en" lastmodified="20241015T094110Z" groupname="CustomControl\Application\Application.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="CustomControl\Application\Application.csproj" original="en" lastmodified="20251130T124428Z" groupname="CustomControl\Application\Application.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="sampleLabel1.CustomC1" si="114">4,1,0,0,0,95,Columns:1{Caption:"One";}	2{Caption:"Two";}	3{Caption:"Three";}	</row>
@@ -897,7 +897,7 @@
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 24</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">31, 13</row>
         <row id="label1.Text" si="562" created="20220121T152517Z">Hello</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">377, 140</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">377, 140</row>
         <row id="$this.Text" si="122">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -1094,13 +1094,13 @@
         <assembly>bin\Release\SampleControl.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" original="en" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="CustomControl\Control\Control.csproj" original="en" lastmodified="20251130T124428Z" groupname="CustomControl\Control\Control.csproj" resources="[]" availableresources="[nrAssemblyInfo]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
       <assemblies>
         <assembly>bin\Release\SampleControl.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Database\Database.csproj" original="en" lastmodified="20241015T094110Z" groupname="Database\Database.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Database\Database.csproj" original="en" lastmodified="20251130T124428Z" groupname="Database\Database.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="dataGridView1.Location" class="TCoordinatePointRow" created="20230422T142615Z">0, 0</row>
@@ -1111,7 +1111,7 @@
           <value>&amp;Language...</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">&amp;Kieli...</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">592, 263</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">592, 263</row>
         <row id="$this.Text" si="2">
           <value>Sport</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Urheilu</lang>
@@ -1276,7 +1276,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" original="en" lastmodified="20241015T094110Z" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Localized\Localized.csproj" original="en" lastmodified="20251130T124428Z" groupname="Driving\Localized\Localized.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Size" class="TCoordinateSizeRow" created="20230422T142615Z">123, 22</row>
@@ -1335,7 +1335,7 @@
         <row id="flagPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
         <row id="carPictureBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 80</row>
         <row id="carPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">345, 137</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">345, 137</row>
         <row id="$this.Text" si="18">
           <value>Driving Time</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Ajoaika</lang>
@@ -4041,7 +4041,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20241015T094110Z" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20251130T124428Z" groupname="Driving\Multilingual\Multilingual.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Size" class="TCoordinateSizeRow" created="20230422T142615Z">135, 22</row>
@@ -4105,7 +4105,7 @@
         <row id="flagPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
         <row id="carPictureBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 80</row>
         <row id="carPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">345, 137</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">345, 137</row>
         <row id="$this.Text" si="420">
           <value>Driving Time</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Ajoaika</lang>
@@ -6821,7 +6821,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" original="en" lastmodified="20241015T094110Z" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Driving\Original\Original.csproj" original="en" lastmodified="20251130T124428Z" groupname="Driving\Original\Original.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="calculateToolStripMenuItem.Size" class="TCoordinateSizeRow" created="20230422T142615Z">123, 22</row>
@@ -6861,7 +6861,7 @@
         <row id="flagPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
         <row id="carPictureBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 80</row>
         <row id="carPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">48, 48</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">345, 137</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">345, 137</row>
         <row id="$this.Text" si="410">Driving Time</row>
         <codeproperties>
           <collection component="menuStrip1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ToolStripItem"/>
@@ -9565,10 +9565,10 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="EmbeddedResources\EmbeddedResources.csproj" original="en" lastmodified="20241015T094110Z" groupname="EmbeddedResources\EmbeddedResources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="EmbeddedResources\EmbeddedResources.csproj" original="en" lastmodified="20251130T124428Z" groupname="EmbeddedResources\EmbeddedResources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrIni,nrJson,nrText,nrXml,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">440, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">440, 261</row>
         <row id="$this.Text" si="452">
           <value>Resource Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Resurssiesimerkki</lang>
@@ -9671,7 +9671,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Encodings\Encodings.csproj" original="en" lastmodified="20241015T094110Z" groupname="Encodings\Encodings.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Encodings\Encodings.csproj" original="en" lastmodified="20251130T124428Z" groupname="Encodings\Encodings.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Ansi.resx" windowsforms="wfCore">
         <row id="String1" si="169">Ansi ångström</row>
@@ -9716,7 +9716,7 @@
         <row id="utf32LeNoBomLabel.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 168</row>
         <row id="utf32LeNoBomLabel.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="utf32LeNoBomLabel.Text" si="182" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">394, 221</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">394, 221</row>
         <row id="$this.Text" si="183">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -10081,7 +10081,7 @@
         </row>
       </node>
     </node>
-    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" original="en" lastmodified="20241015T094110Z" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="FileDialog\FileDialog.csproj" original="en" lastmodified="20251130T124428Z" groupname="FileDialog\FileDialog.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net481" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="openButton1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -10156,7 +10156,7 @@
           <value>Composed filter</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Koottu suodin</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">381, 164</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">381, 164</row>
         <row id="$this.Text" si="380">
           <value>File Dialog Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tiedostodialogiesimerkki</lang>
@@ -10468,7 +10468,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Font\Font.csproj" original="en" lastmodified="20241015T094110Z" groupname="Font\Font.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Font\Font.csproj" original="en" lastmodified="20251130T124428Z" groupname="Font\Font.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -10507,7 +10507,7 @@
           <value>Standard</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Perus</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">433, 322</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">433, 322</row>
         <row id="$this.Text" si="367">
           <value>Font Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Fonttiesimerkki</lang>
@@ -10728,23 +10728,23 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HardCoded\HardCoded.csproj" original="en" lastmodified="20230422T142619Z" groupname="HardCoded\HardCoded.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="HardCoded\HardCoded.csproj" original="en" lastmodified="20251130T124428Z" groupname="HardCoded\HardCoded.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="HelloWorld\HelloWorld.csproj" created="20241015T094103Z" st="0" original="en" lastmodified="20241228T060738Z" groupname="HelloWorld\HelloWorld.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="core80" toolsversion="nt150"/>
-      <node class="TResXNode" name="Form1.resx" st="0" resourcekind="nkForm" windowsforms="wfCore">
-        <row id="label1.Location" class="TCoordinatePointRow" st="0">8, 8</row>
-        <row id="label1.Size" class="TCoordinateSizeRow" st="0">38, 15</row>
-        <row id="label1.Text" si="603" st="0">label1</row>
-        <row id="button1.Location" class="TCoordinatePointRow" st="0">8, 32</row>
-        <row id="button1.Size" class="TCoordinateSizeRow" st="0">75, 23</row>
-        <row id="button1.Text" si="604" st="0">Set</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" st="0">365, 117</row>
-        <row id="$this.Text" si="605" st="0">
+    <node class="TNetProjectSource" name="HelloWorld\HelloWorld.csproj" created="20241015T094103Z" original="en" lastmodified="20251130T124428Z" groupname="HelloWorld\HelloWorld.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="core80" windowsversion="windows" toolsversion="nt150"/>
+      <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wfCore">
+        <row id="label1.Location" class="TCoordinatePointRow">8, 8</row>
+        <row id="label1.Size" class="TCoordinateSizeRow">38, 15</row>
+        <row id="label1.Text" si="603">label1</row>
+        <row id="button1.Location" class="TCoordinatePointRow">8, 32</row>
+        <row id="button1.Size" class="TCoordinateSizeRow">75, 23</row>
+        <row id="button1.Text" si="604">Set</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow">365, 117</row>
+        <row id="$this.Text" si="605">
           <value>Sample</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
         </row>
@@ -10867,9 +10867,9 @@
           bHVlPg0KICA8L2RhdGE+DQo8L3Jvb3Q+
         </data>
       </node>
-      <node class="TResXNode" name="Resources.resx" st="0" windowsforms="wfCore">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="HelloNames" si="601" scannedcomment="0: Person name, 1: Person name" created="20241228T060731Z" codep="1">Hello {0} and {1}</row>
-        <row id="HelloWorld" si="602" st="0">
+        <row id="HelloWorld" si="602">
           <value>Hello World</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Moi maailma</lang>
         </row>
@@ -10878,13 +10878,13 @@
         <assembly>bin\Release\net8.0-windows\HelloWorld.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" lastmodified="20241015T094110Z" groupname="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" original="en" lastmodified="20251130T124428Z" groupname="IgnoreSatelliteAssembly\IgnoreSatelliteAssembly.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">82, 13</row>
         <row id="label1.Text" si="22">This is a sample</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 88</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 88</row>
         <row id="$this.Text" si="23">Sample</row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -10998,7 +10998,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Image\Image.csproj" original="en" lastmodified="20241015T094110Z" groupname="Image\Image.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Image\Image.csproj" original="en" lastmodified="20251130T124428Z" groupname="Image\Image.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="embeddedPictureBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 24</row>
@@ -11041,7 +11041,7 @@
         </row>
         <row id="runtimeResxPictureBox.Location" class="TCoordinatePointRow" created="20230422T142615Z">280, 24</row>
         <row id="runtimeResxPictureBox.Size" class="TCoordinateSizeRow" created="20230422T142615Z">128, 128</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">690, 166</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">690, 166</row>
         <row id="$this.Text" si="29">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -11860,7 +11860,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="ImageList\ImageList.csproj" original="en" lastmodified="20241015T094110Z" groupname="ImageList\ImageList.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ImageList\ImageList.csproj" original="en" lastmodified="20251130T124428Z" groupname="ImageList\ImageList.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="imageList1.ImageStream.Data[0]" class="TImageRow">
@@ -13848,7 +13848,7 @@
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">128, 23</row>
         <row id="label1.Text" si="31" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">225, 169</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">225, 169</row>
         <row id="$this.Text" si="32">Sample</row>
         <codeproperties>
           <property component="imageList1" name="Transparent" kind="npkBoolean" value="1"/>
@@ -16682,7 +16682,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Ime\Ime.csproj" original="en" lastmodified="20241015T094110Z" groupname="Ime\Ime.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Ime\Ime.csproj" original="en" lastmodified="20251130T124428Z" groupname="Ime\Ime.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="defaultLabel.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -16701,7 +16701,7 @@
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 144</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">312, 48</row>
         <row id="label1.Text" si="357">The above text box component has ImeMode property set to On. This will add the property to RESX, it will be scanned and it can be localized.</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">330, 201</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">330, 201</row>
         <row id="$this.Text" si="358">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -16892,13 +16892,13 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Inherited\Inherited.csproj" original="en" lastmodified="20241015T094110Z" groupname="Inherited\Inherited.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Inherited\Inherited.csproj" original="en" lastmodified="20251130T124428Z" groupname="Inherited\Inherited.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="BaseForm.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">31, 13</row>
         <row id="label1.Text" si="143">Base</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">221, 107</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">221, 107</row>
         <row id="$this.Text" si="144">Base</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -17014,7 +17014,7 @@
         <row id="button1.Location" class="TCoordinatePointRow" created="20230422T142615Z">200, 22</row>
         <row id="button1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">75, 23</row>
         <row id="button1.Text" si="145">Browse...</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 82</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 82</row>
         <row id="$this.Text" si="146">Inherited</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -17153,7 +17153,7 @@
         <row id="moreButton.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 104</row>
         <row id="moreButton.Size" class="TCoordinateSizeRow" created="20230422T142615Z">112, 23</row>
         <row id="moreButton.Text" si="150">More</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">337, 135</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">337, 135</row>
         <row id="$this.Text" si="151">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -17307,7 +17307,7 @@
         <row id="checkBox1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 56</row>
         <row id="checkBox1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">56, 17</row>
         <row id="checkBox1.Text" si="153">&amp;Visible</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 124</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 124</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
           ZXNYIFNjaGVtYSANCiAgICANCiAgICBWZXJzaW9uIDIuMA0KICAgIA0KICAgIFRoZSBwcmltYXJ5IGdvYWxzIG9mIHRoaXMgZm9y
@@ -17433,7 +17433,7 @@
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">27, 13</row>
         <row id="label1.Text" si="155">One</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 154</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 154</row>
         <row id="$this.Text" si="156">Simple</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -17544,7 +17544,7 @@
         </data>
       </node>
     </node>
-    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" original="en" lastmodified="20241015T094110Z" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="LanguageSwitch\LanguageSwitch.csproj" original="en" lastmodified="20251130T124428Z" groupname="LanguageSwitch\LanguageSwitch.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -17562,7 +17562,7 @@
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">152, 8</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="38" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">315, 112</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">315, 112</row>
         <row id="$this.Text" si="39">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -17715,7 +17715,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Layout\Layout.csproj" created="20230422T142615Z" original="en" lastmodified="20241015T094110Z" groupname="Layout\Layout.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Layout\Layout.csproj" created="20230422T142615Z" original="en" lastmodified="20251130T124428Z" groupname="Layout\Layout.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net481" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="button1.Location" class="TCoordinatePointRow">8, 8</row>
@@ -17727,7 +17727,7 @@
         <row id="checkBox2.Location" class="TCoordinatePointRow">8, 40</row>
         <row id="checkBox2.Size" class="TCoordinateSizeRow">51, 17</row>
         <row id="checkBox2.Text" si="587">Write</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">275, 64</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">275, 64</row>
         <row id="$this.Text" si="588">
           <value>Sample</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -17871,7 +17871,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Links\Links.csproj" original="en" lastmodified="20241015T094110Z" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Links\Links.csproj" original="en" lastmodified="20251130T124428Z" groupname="Links\Links.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="pictureBox1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -17893,7 +17893,7 @@
         <row id="label3.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 336</row>
         <row id="label3.Size" class="TCoordinateSizeRow" created="20230422T142615Z">71, 13</row>
         <row id="label3.Text" si="45">Binary XML</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">955, 464</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">955, 464</row>
         <row id="$this.Text" si="46">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -18151,7 +18151,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ListView\ListView.csproj" original="en" lastmodified="20241015T094110Z" groupname="ListView\ListView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ListView\ListView.csproj" original="en" lastmodified="20251130T124428Z" groupname="ListView\ListView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net481" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="columnHeader1.Text" si="58">One</row>
@@ -18161,7 +18161,7 @@
         <row id="listView1.Items1.Text" si="62">One</row>
         <row id="listView1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="listView1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">320, 240</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">340, 262</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">340, 262</row>
         <row id="$this.Text" si="63">Sample</row>
         <codeproperties>
           <collection component="listView1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ListViewItem"/>
@@ -18333,8 +18333,8 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20241015T094110Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
-      <netproperties version="core80" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="Menu\Menu.csproj" original="en" lastmodified="20251130T124428Z" groupname="Menu\Menu.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+      <netproperties version="core80" windowsversion="windows7.0" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="newToolStripMenuItem.ShortcutKeys" class="TVclShortCutRow">16462</row>
         <row id="newToolStripMenuItem.Size" class="TCoordinateSizeRow" created="20230422T142615Z">222, 22</row>
@@ -18358,7 +18358,7 @@
           <value>&amp;About...</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Tietoa...</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">488, 239</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">488, 239</row>
         <row id="$this.Text" si="447">
           <value>Menu Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Valokkoesimerkki</lang>
@@ -18544,13 +18544,13 @@
         <assembly>bin\Release\net8.0-windows7.0\Menu.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="MessageBox\MessageBox.csproj" created="20220121T152517Z" original="en" lastmodified="20241015T094110Z" groupname="MessageBox\MessageBox.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="MessageBox\MessageBox.csproj" created="20220121T152517Z" original="en" lastmodified="20251130T124428Z" groupname="MessageBox\MessageBox.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="showButton.Location" class="TCoordinatePointRow" created="20230422T142615Z">12, 12</row>
         <row id="showButton.Size" class="TCoordinateSizeRow" created="20230422T142615Z">75, 23</row>
         <row id="showButton.Text" si="569">&amp;Show...</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">474, 233</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">474, 233</row>
         <row id="$this.Text" si="570">Message Box Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -18670,7 +18670,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Number\Number.csproj" original="en" lastmodified="20241228T060737Z" groupname="Number\Number.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Number\Number.csproj" original="en" lastmodified="20251130T124428Z" groupname="Number\Number.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="abbreviated4.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 56</row>
@@ -18777,7 +18777,7 @@
         <row id="original14.Location" class="TCoordinatePointRow" created="20230422T142615Z">256, 216</row>
         <row id="original14.Size" class="TCoordinateSizeRow" created="20230422T142615Z">224, 13</row>
         <row id="original14.Text" si="516" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">487, 326</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">487, 326</row>
         <row id="$this.Text" si="517">
           <value>Number Abbreviation Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Numeron lyhennys -esimerkki</lang>
@@ -19462,7 +19462,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Custom\CustomPlural.csproj" original="en" lastmodified="20241015T094110Z" groupname="Patterns\Custom\CustomPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Custom\CustomPlural.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Custom\CustomPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">32, 8</row>
@@ -19603,7 +19603,7 @@
           <value>Pattern with operator parts</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Malli, jossa on operaattoriosia</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">1061, 170</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">1061, 170</row>
         <row id="$this.Text" si="288">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
@@ -20420,7 +20420,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20241015T094110Z" groupname="Patterns\Gender\SimpleGender.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Gender\SimpleGender.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="maleLabel.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -20444,7 +20444,7 @@
         <row id="maleInfo.Location" class="TCoordinatePointRow" created="20230422T142615Z">368, 8</row>
         <row id="maleInfo.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="maleInfo.Text" si="535" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">418, 97</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">418, 97</row>
         <row id="$this.Text" si="536">Gender Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -20672,7 +20672,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Mixed\MixedPlural.csproj" original="en" lastmodified="20241228T060738Z" groupname="Patterns\Mixed\MixedPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Mixed\MixedPlural.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Mixed\MixedPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="noPluralLabel.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -20738,7 +20738,7 @@
         <row id="multiPluralLabel4.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 288</row>
         <row id="multiPluralLabel4.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="multiPluralLabel4.Text" si="338" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">418, 313</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">418, 313</row>
         <row id="$this.Text" si="339">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
@@ -21158,7 +21158,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20241015T094110Z" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Multi\MultiPlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label0_1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 24</row>
@@ -21197,7 +21197,7 @@
           <value>&amp;Use zero part</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">&amp;Käytä nolla-osaa</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">453, 190</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">453, 190</row>
         <row id="$this.Text" si="318">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Monikkoesimerkki</lang>
@@ -21495,7 +21495,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Select\Select.csproj" original="en" lastmodified="20241015T094350Z" groupname="Patterns\Select\Select.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Select\Select.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Select\Select.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
@@ -21517,7 +21517,7 @@
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20241015T094110Z" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20251130T124428Z" groupname="Patterns\Single\SinglePlural.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 24</row>
@@ -21550,7 +21550,7 @@
         <row id="label0.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
         <row id="label0.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label0.Text" si="303" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">453, 171</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">453, 171</row>
         <row id="$this.Text" si="304">
           <value>Plural Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -21809,7 +21809,7 @@
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="PlatformFiles\PlatformFiles.csproj" original="en" lastmodified="20241015T094110Z" groupname="PlatformFiles\PlatformFiles.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="PlatformFiles\PlatformFiles.csproj" original="en" lastmodified="20251130T124428Z" groupname="PlatformFiles\PlatformFiles.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -21818,7 +21818,7 @@
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="158" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">241, 117</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">241, 117</row>
         <row id="$this.Text" si="159">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -21949,10 +21949,10 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResourceName\ResourceName.csproj" original="en" lastmodified="20241015T094110Z" groupname="ResourceName\ResourceName.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResourceName\ResourceName.csproj" original="en" lastmodified="20251130T124428Z" groupname="ResourceName\ResourceName.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">387, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">387, 261</row>
         <row id="$this.Text" si="453">
           <value>Form1</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
@@ -22051,7 +22051,7 @@
         </data>
       </node>
       <node class="TResXNode" name="Form2.resx" resourcekind="nkForm">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 261</row>
         <row id="$this.Text" si="454">
           <value>Form2</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
@@ -22150,7 +22150,7 @@
         </data>
       </node>
       <node class="TResXNode" name="Form3.resx" resourcekind="nkForm">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 261</row>
         <row id="$this.Text" si="455">
           <value>Form3</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
@@ -22312,7 +22312,7 @@
       </node>
       <node class="TDirectoryFolder" name="Sub">
         <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-          <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 261</row>
+          <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 261</row>
           <row id="$this.Text" si="468">
             <value>Form1</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
@@ -22422,10 +22422,10 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Resources\Resources.csproj" original="en" lastmodified="20241015T094110Z" groupname="Resources\Resources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Resources\Resources.csproj" original="en" lastmodified="20251130T124428Z" groupname="Resources\Resources.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrAudio,nrImage,nrIni,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">407, 256</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">407, 256</row>
         <row id="$this.Text" si="67">
           <value>Resource Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Resurssiesimerkki</lang>
@@ -22528,7 +22528,7 @@
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" original="en" lastmodified="20241228T060738Z" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResourceStringLocation\ResourceStringLocation.csproj" original="en" lastmodified="20251130T124428Z" groupname="ResourceStringLocation\ResourceStringLocation.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -22540,7 +22540,7 @@
         <row id="label3.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 40</row>
         <row id="label3.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label3.Text" si="392" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">465, 187</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">465, 187</row>
         <row id="$this.Text" si="393">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -22689,7 +22689,7 @@
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 24</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="395" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 167</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 167</row>
         <row id="$this.Text" si="396">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -22827,7 +22827,7 @@
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="ResxData\ResxData.csproj" original="en" lastmodified="20241015T094110Z" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="ResxData\ResxData.csproj" original="en" lastmodified="20251130T124428Z" groupname="ResxData\ResxData.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">152, 8</row>
@@ -22850,7 +22850,7 @@
         <row id="simpleXmlLabel.Location" class="TCoordinatePointRow" created="20230422T142615Z">296, 8</row>
         <row id="simpleXmlLabel.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="simpleXmlLabel.Text" si="200" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">506, 146</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">506, 146</row>
         <row id="$this.Text" si="201">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Esimerkki</lang>
@@ -26136,7 +26136,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Container\Container.csproj" created="20220424T231732Z" original="en" lastmodified="20241015T094110Z" groupname="Signed\Container\Container.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Container\Container.csproj" created="20220424T231732Z" original="en" lastmodified="20251130T124430Z" groupname="Signed\Container\Container.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smContainer" keycontainer="soluling"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -26149,7 +26149,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="574" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">311, 132</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">311, 132</row>
         <row id="$this.Text" si="575">Signed Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -26279,7 +26279,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Delay\Delay.csproj" original="en" lastmodified="20241015T094110Z" groupname="Signed\Delay\Delay.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Delay\Delay.csproj" original="en" lastmodified="20251130T124428Z" groupname="Signed\Delay\Delay.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx" delaysign="1"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -26289,7 +26289,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="124" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">311, 132</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">311, 132</row>
         <row id="$this.Text" si="125">Signed Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -26419,7 +26419,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Pfx\Pfx.csproj" original="en" lastmodified="20241015T094110Z" groupname="Signed\Pfx\Pfx.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Pfx\Pfx.csproj" original="en" lastmodified="20251130T124428Z" groupname="Signed\Pfx\Pfx.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.pfx"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -26429,7 +26429,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="128" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">311, 132</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">311, 132</row>
         <row id="$this.Text" si="129">Signed Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -26559,7 +26559,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\SatelliteContract\SatelliteContract.csproj" original="en" lastmodified="20241015T094110Z" groupname="Signed\SatelliteContract\SatelliteContract.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\SatelliteContract\SatelliteContract.csproj" original="en" lastmodified="20251130T124428Z" groupname="Signed\SatelliteContract\SatelliteContract.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
       <netproperties toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -26572,7 +26572,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="140" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">343, 158</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">343, 158</row>
         <row id="$this.Text" si="141">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -26708,7 +26708,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Snk\Snk.csproj" original="en" lastmodified="20241015T094110Z" groupname="Signed\Snk\Snk.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Snk\Snk.csproj" original="en" lastmodified="20251130T124428Z" groupname="Signed\Snk\Snk.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <sign kinds="[nskStrongName]" strongnamemethod="smFile" keyfile="Key.snk"/>
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
@@ -26721,7 +26721,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="132" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">311, 132</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">311, 132</row>
         <row id="$this.Text" si="133">
           <value>Signed Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitettu esimerkki</lang>
@@ -26857,7 +26857,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Signed\Unsigned\Unsigned.csproj" original="en" lastmodified="20241015T094110Z" groupname="Signed\Unsigned\Unsigned.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Signed\Unsigned\Unsigned.csproj" original="en" lastmodified="20251130T124428Z" groupname="Signed\Unsigned\Unsigned.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -26869,7 +26869,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="136" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">311, 132</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">311, 132</row>
         <row id="$this.Text" si="137">
           <value>Signed Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Allekirjoitusesimerkki</lang>
@@ -27005,7 +27005,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Sound\Sound.csproj" original="en" lastmodified="20241015T094230Z" groupname="Sound\Sound.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Sound\Sound.csproj" original="en" lastmodified="20251130T124428Z" groupname="Sound\Sound.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt150"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
@@ -31421,7 +31421,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Sport\Sport.csproj" original="en" lastmodified="20241015T094110Z" groupname="Sport\Sport.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Sport\Sport.csproj" original="en" lastmodified="20251130T124428Z" groupname="Sport\Sport.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="nameColumn.Text" si="68">Name</row>
@@ -31446,7 +31446,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="button1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">104, 24</row>
         <row id="button1.Text" si="84">&amp;Language...</row>
         <row id="button1.ToolTip" si="85">Click this to change the language</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">473, 154</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">473, 154</row>
         <row id="$this.Text" si="86">Sport</row>
         <codeproperties>
           <collection component="listView1" property="Items" method="AddRange" itemtype="System.Windows.Forms.ListViewItem"/>
@@ -31697,7 +31697,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" original="en" lastmodified="20241228T060738Z" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="StringFormat\StringFormat.csproj" original="en" lastmodified="20251130T124428Z" groupname="StringFormat\StringFormat.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -31715,7 +31715,7 @@ description=Basketball is a team sport in which two teams of five players try to
         <row id="label5.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 72</row>
         <row id="label5.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label5.Text" si="475" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">524, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">524, 261</row>
         <row id="$this.Text" si="476">
           <value>String Format Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Merkkijonon muotoiluesimerkki</lang>
@@ -31916,7 +31916,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="SubDir\SubDir.csproj" original="en" lastmodified="20241015T094110Z" groupname="SubDir\SubDir.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="SubDir\SubDir.csproj" original="en" lastmodified="20251130T124428Z" groupname="SubDir\SubDir.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -31925,7 +31925,7 @@ description=Basketball is a team sport in which two teams of five players try to
           <value>This is a sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tämä on esimerkki</lang>
         </row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">418, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">418, 261</row>
         <row id="$this.Text" si="449">
           <value>Form</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Lomake</lang>
@@ -32049,7 +32049,7 @@ description=Basketball is a team sport in which two teams of five players try to
             <value>This is another sample</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Tämä on toinen esimerkki</lang>
           </row>
-          <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">331, 128</row>
+          <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">331, 128</row>
           <row id="$this.Text" si="451">
             <value>Sub Form</value>
             <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Alilomake</lang>
@@ -32168,7 +32168,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tab\Tab.csproj" created="20230422T142615Z" original="en" lastmodified="20241015T094110Z" groupname="Tab\Tab.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Tab\Tab.csproj" created="20230422T142615Z" original="en" lastmodified="20251130T124428Z" groupname="Tab\Tab.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="button1.Location" class="TCoordinatePointRow">24, 40</row>
@@ -32191,7 +32191,7 @@ description=Basketball is a team sport in which two teams of five players try to
         </row>
         <row id="tabControl1.Location" class="TCoordinatePointRow">8, 8</row>
         <row id="tabControl1.Size" class="TCoordinateSizeRow">488, 312</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">499, 323</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">499, 323</row>
         <row id="$this.Text" si="584">
           <value>Sample</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -32362,10 +32362,10 @@ description=Basketball is a team sport in which two teams of five players try to
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Text\Text.csproj" original="en" lastmodified="20241015T094110Z" groupname="Text\Text.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrText,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Text\Text.csproj" original="en" lastmodified="20251130T124428Z" groupname="Text\Text.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrText,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">353, 209</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">353, 209</row>
         <row id="$this.Text" si="90">Sample</row>
         <data>
           77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -32581,7 +32581,7 @@ Basketball is a team sport in which two teams of five players try to score point
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="TreeView\TreeView.csproj" original="en" lastmodified="20241015T094110Z" groupname="TreeView\TreeView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="TreeView\TreeView.csproj" original="en" lastmodified="20251130T124428Z" groupname="TreeView\TreeView.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="treeView1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -32593,7 +32593,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <row id="treeView1.Nodes1.children0.Text" si="103">One</row>
         <row id="treeView1.Nodes2.Text" si="104">Three</row>
         <row id="treeView1.Size" class="TCoordinateSizeRow" created="20230422T142615Z">376, 248</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">393, 262</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">393, 262</row>
         <row id="$this.Text" si="105">Sample</row>
         <codeproperties>
           <collection component="treeView1" property="Nodes" method="AddRange" itemtype="System.Windows.Forms.TreeNode"/>
@@ -32754,13 +32754,13 @@ Basketball is a team sport in which two teams of five players try to score point
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" original="en" lastmodified="20230422T142624Z" groupname="Tutorial\BadSample\BadSample.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
+    <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" original="en" lastmodified="20251130T124428Z" groupname="Tutorial\BadSample\BadSample.csproj" availableresources="[nrResx,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU">
       <netproperties toolsversion="nt40"/>
       <node class="TDirectoryFolder" name="Properties">
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20241228T060738Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Tutorial\GoodSample\GoodSample.csproj" original="en" lastmodified="20251130T124428Z" groupname="Tutorial\GoodSample\GoodSample.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties version="net462" toolsversion="nt120"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -32786,7 +32786,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <row id="label5.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 120</row>
         <row id="label5.Size" class="TCoordinateSizeRow" created="20230422T142615Z">69, 13</row>
         <row id="label5.Text" si="438">donotlocalize</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">427, 145</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">427, 145</row>
         <row id="$this.Text" si="439">Sample</row>
         <data>
           PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBSZXNY
@@ -33013,7 +33013,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <assembly>bin\Release\Soluling.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="VBSample\VBSample.vbproj" created="20230422T142615Z" original="en" lastmodified="20241228T060738Z" groupname="VBSample\VBSample.vbproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="VBSample\VBSample.vbproj" created="20230422T142615Z" original="en" lastmodified="20251130T124428Z" groupname="VBSample\VBSample.vbproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt150"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
         <row id="Button1.Location" class="TCoordinatePointRow">280, 8</row>
@@ -33028,7 +33028,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <row id="Label3.Location" class="TCoordinatePointRow">8, 40</row>
         <row id="Label3.Size" class="TCoordinateSizeRow">40, 13</row>
         <row id="Label3.Text" si="592" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">363, 198</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">363, 198</row>
         <row id="$this.Text" si="593">
           <value>Sample</value>
           <lang id="fi" st="2" or="3" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -33192,10 +33192,10 @@ Basketball is a team sport in which two teams of five players try to score point
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="Version\Version.csproj" original="en" lastmodified="20241015T094110Z" groupname="Version\Version.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="Version\Version.csproj" original="en" lastmodified="20251130T124428Z" groupname="Version\Version.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt140"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">360, 261</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">360, 261</row>
         <row id="$this.Text" si="482">
           <value>Version Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141948Z">Versioesimerkki</lang>
@@ -33298,7 +33298,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <node class="TResXNode" name="Resources.resx" windowsforms="wfCore"/>
       </node>
     </node>
-    <node class="TNetProjectSource" name="VisualStudioCompile\VisualStudioCompile.csproj" original="en" lastmodified="20241015T094110Z" groupname="VisualStudioCompile\VisualStudioCompile.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+    <node class="TNetProjectSource" name="VisualStudioCompile\VisualStudioCompile.csproj" original="en" lastmodified="20251130T124428Z" groupname="VisualStudioCompile\VisualStudioCompile.csproj" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
       <netproperties toolsversion="nt40"/>
       <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
         <row id="label1.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 8</row>
@@ -33310,7 +33310,7 @@ Basketball is a team sport in which two teams of five players try to score point
         <row id="label2.Location" class="TCoordinatePointRow" created="20230422T142615Z">8, 32</row>
         <row id="label2.Size" class="TCoordinateSizeRow" created="20230422T142615Z">40, 13</row>
         <row id="label2.Text" si="110" excluded="2">dummy</row>
-        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z" st="0">284, 127</row>
+        <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241015T094103Z">284, 127</row>
         <row id="$this.Text" si="111">
           <value>Sample</value>
           <lang id="fi" st="4" or="4" rw="0" time="20190920T141947Z">Esimerkki</lang>
@@ -33460,19 +33460,15 @@ Basketball is a team sport in which two teams of five players try to score point
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
 </project>

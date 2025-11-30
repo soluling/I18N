@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="E9B6DB16-70AD-4981-A845-FAC1F38A67AB" created="20251130T115836Z" lastmodified="20251130T115851Z" version="1.0.1082" stringid="3">
+  <lang id="fi"/>
+  <node class="TNetProjectSource" name="SolulingTranslatorWpf.csproj" fullpath="D:\NT\Deploy\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" original="en" lastmodified="20251130T115851Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="net45" toolsversion="nt150"/>
+    <node class="TXamlNode" name="SelectLanguage.xaml" type="Window">
+      <row id="Title" si="1">
+        <value>Select Language</value>
+        <lang id="fi" rw="0" time="20251130T115847Z" fuzzy="100">Valitse kieli</lang>
+      </row>
+      <item name="grid" type="Grid">
+        <item name="ColumnDefinitions">
+          <item name="ColumnDefinition[0]" type="ColumnDefinition"/>
+          <item name="ColumnDefinition[1]" type="ColumnDefinition"/>
+        </item>
+        <item name="listBox" type="ListBox"/>
+        <item name="buttonPanel" type="StackPanel">
+          <item name="okButton" type="Button">
+            <row id="Content" si="2">
+              <value>OK</value>
+              <lang id="fi" rw="0" time="20251130T115845Z" fuzzy="100">OK</lang>
+            </row>
+          </item>
+          <item name="cancelButton" type="Button">
+            <row id="Content" si="3">
+              <value>Cancel</value>
+              <lang id="fi" rw="0" time="20251130T115849Z" fuzzy="100">Peru</lang>
+            </row>
+          </item>
+        </item>
+      </item>
+      <data>
+        77u/PFdpbmRvdyANCiAgeDpDbGFzcz0iU29sdWxpbmcuV1BGLlNlbGVjdExhbmd1YWdlIg0KICB4bWxucz0iaHR0cDovL3NjaGVt
+        YXMubWljcm9zb2Z0LmNvbS93aW5meC8yMDA2L3hhbWwvcHJlc2VudGF0aW9uIg0KICB4bWxuczp4PSJodHRwOi8vc2NoZW1hcy5t
+        aWNyb3NvZnQuY29tL3dpbmZ4LzIwMDYveGFtbCINCiAgVGl0bGU9IlNlbGVjdCBMYW5ndWFnZSIgU2l6ZVRvQ29udGVudD0iV2lk
+        dGhBbmRIZWlnaHQiIE1pbldpZHRoPSIyODAiIE1pbkhlaWdodD0iMTUwIj4NCiAgDQogIDxHcmlkIHg6VWlkPSJncmlkIiBNYXJn
+        aW49IjgiPg0KICAgIDxHcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IjIqIiAv
+        Pg0KICAgICAgPENvbHVtbkRlZmluaXRpb24gV2lkdGg9IioiIC8+DQogICAgPC9HcmlkLkNvbHVtbkRlZmluaXRpb25zPg0KICAg
+        ICAgDQogICAgPExpc3RCb3ggTmFtZT0ibGlzdEJveCIgR3JpZC5Db2x1bW49IjAiIE1vdXNlRG91YmxlQ2xpY2s9Imxpc3RCb3hf
+        TW91c2VEb3VibGVDbGljayIgLz4NCg0KICAgIDxTdGFja1BhbmVsIHg6VWlkPSJidXR0b25QYW5lbCIgR3JpZC5Db2x1bW49IjEi
+        IE9yaWVudGF0aW9uPSJWZXJ0aWNhbCIgTWFyZ2luPSI4LDAsMCwwIj4NCiAgICAgIDxCdXR0b24gTmFtZT0ib2tCdXR0b24iIE1p
+        bldpZHRoPSI3NSIgSXNEZWZhdWx0PSJUcnVlIiBDbGljaz0ib2tCdXR0b25fQ2xpY2siPk9LPC9CdXR0b24+DQogICAgICA8QnV0
+        dG9uIHg6VWlkPSJjYW5jZWxCdXR0b24iIE1pbldpZHRoPSI3NSIgTWFyZ2luPSIwLDgsMCwwIiBJc0NhbmNlbD0iVHJ1ZSI+Q2Fu
+        Y2VsPC9CdXR0b24+DQogICAgPC9TdGFja1BhbmVsPg0KICA8L0dyaWQ+DQo8L1dpbmRvdz4NCg==
+      </data>
+    </node>
+    <assemblies>
+      <assembly>bin\Debug\net45\Soluling.dll</assembly>
+      <assembly>bin\Debug\net45\Soluling.Translator.WPF.dll</assembly>
+    </assemblies>
+  </node>
+  <excludedoriginals>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
+</project>
