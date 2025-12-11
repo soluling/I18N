@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4A17EAE5-DED4-4968-AA84-73C72EB2B3FF" created="20250417T090253Z" lastmodified="20250418T030428Z" version="1.0.1064" stringid="8">
+<project id="4A17EAE5-DED4-4968-AA84-73C72EB2B3FF" created="20250417T090253Z" lastmodified="20251211T060736Z" version="1.0.1084" stringid="8">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="TextBlocks.csproj" fullpath="D:\NT\Deploy\Samples\WPF\TextBlock\TextBlocks.csproj" original="en" lastmodified="20250418T030428Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="core90" toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="TextBlocks.csproj" fullpath="D:\NT\Deploy\Samples\WPF\TextBlock\TextBlocks.csproj" original="en" lastmodified="20251211T060736Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core90" windowsversion="windows" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRleHRCbG9ja3MuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1h
@@ -24,14 +24,14 @@
             <lang id="fi" st="2" or="3" rw="0" time="20250417T090258Z" fuzzy="100">Kieli</lang>
           </row>
         </item>
-        <item name="text1" type="TextBlock" created="20250418T030428Z" st="0">
-          <row id="Content" si="7" st="0">
+        <item name="text1" type="TextBlock" created="20250418T030428Z">
+          <row id="Content" si="7">
             <value>This is a sample text.</value>
             <lang id="fi" st="2" or="3" rw="0" time="20250417T090300Z" fuzzy="99.5">Tämä on esimerkkiteksti.</lang>
           </row>
         </item>
-        <item name="text2" type="TextBlock" created="20250418T030428Z" st="0">
-          <row id="Content" si="8" st="0">
+        <item name="text2" type="TextBlock" created="20250418T030428Z">
+          <row id="Content" si="8">
             <value>This is another sample text.</value>
             <lang id="fi" st="2" or="3" rw="0" time="20250418T030329Z" fuzzy="99.5">Tämä on toinen esimerkkiteksti.</lang>
           </row>
@@ -51,9 +51,9 @@
       </data>
     </node>
     <assemblies>
-      <assembly>bin\Debug\net9.0-windows7.0\Soluling.dll</assembly>
-      <assembly>bin\Debug\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
-      <assembly>bin\Debug\net9.0-windows7.0\TextBlocks.dll</assembly>
+      <assembly>bin\Release\net9.0-windows7.0\Soluling.dll</assembly>
+      <assembly>bin\Release\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
+      <assembly>bin\Release\net9.0-windows7.0\TextBlocks.dll</assembly>
     </assemblies>
   </node>
   <terminology>
@@ -69,7 +69,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
 </project>

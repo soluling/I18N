@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8DCF81DD-126E-4437-9574-97B520F5A836" created="20250417T044216Z" lastmodified="20250418T070854Z" version="1.0.1064" stringid="15">
+<project id="8DCF81DD-126E-4437-9574-97B520F5A836" created="20250417T044216Z" lastmodified="20251210T174054Z" version="1.0.1084" stringid="15">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Tabs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tabs\Tabs.csproj" original="en" lastmodified="20250418T070854Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
-    <netproperties version="core90" toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="Tabs.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Tabs\Tabs.csproj" original="en" lastmodified="20251210T174054Z" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+    <netproperties version="core90" windowsversion="windows7.0" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
         77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IlRhYnMuQXBwIg0KICAgICAgICAgICAgIHhtbG5zPSJodHRwOi8vc2NoZW1hcy5taWNy
@@ -77,11 +77,9 @@
         a1BhbmVsPg0KPC9XaW5kb3c+DQo=
       </data>
     </node>
-    <assemblies>
-      <assembly>bin\Debug\net9.0-windows7.0\Soluling.dll</assembly>
-      <assembly>bin\Debug\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
-      <assembly>bin\Debug\net9.0-windows7.0\Tabs.dll</assembly>
-    </assemblies>
+    <configurations>
+      <configuration name="Default" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
@@ -96,7 +94,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
 </project>

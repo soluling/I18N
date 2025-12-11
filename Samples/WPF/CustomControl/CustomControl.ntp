@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20241019T122712Z" version="1.0.1045" stringid="5">
+<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20251209T100450Z" version="1.0.1083" stringid="5">
   <lang id="fi"/>
   <lang id="de"/>
   <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en" lastmodified="20231106T151827Z" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20241019T122650Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20251209T100446Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core70" windowsversion="windows" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3Nj
@@ -53,18 +53,18 @@
       </node>
       <assemblies>
         <assembly>bin\Release\net7.0-windows\WpfApplication.dll</assembly>
-        <assembly>bin\Release\net7.0-windows\WpfControl.dll</assembly>
         <assembly>bin\Release\net7.0-windows\WpfUserControl.dll</assembly>
+        <assembly>bin\Release\net7.0-windows\_WpfControl.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" lastmodified="20231106T151821Z" groupname="WpfControl\WpfControl.csproj" resources="[]" netconfiguration="Release|AnyCPU">
-      <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" lastmodified="20251209T100450Z" groupname="WpfControl\WpfControl.csproj" resources="[]" netconfiguration="Release|AnyCPU">
+      <netproperties version="core70" windowsversion="windows" toolsversion="nt150"/>
       <assemblies>
         <assembly>bin\Release\net7.0-windows\WpfControl.dll</assembly>
       </assemblies>
     </node>
-    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20241019T122712Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="core70" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="WpfUserControl\WpfUserControl.csproj" original="en" lastmodified="20251209T100450Z" groupname="WpfUserControl\WpfUserControl.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core70" windowsversion="windows" toolsversion="nt150"/>
       <node class="TXamlNode" name="UserControl1.xaml" type="UserControl" kind="xkUserControl">
         <item name="StackPanel[0]" type="StackPanel">
           <item name="firstName" type="Label">
@@ -119,20 +119,16 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

@@ -16,6 +16,11 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Page Remove="App.fi.xaml" />
+    <Page Remove="MainWindow.fi.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\..\..\Library\NET\Standard\Soluling.csproj" />
     <ProjectReference Include="..\..\..\Library\NET\Translator\WPF\SolulingTranslatorWpf.csproj" />
   </ItemGroup>

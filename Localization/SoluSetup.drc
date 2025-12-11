@@ -8,163 +8,156 @@
   resources were bound to the produced executable.
 */
 
-#define MainFrm_SNext 63504
-#define MainFrm_SNo 63505
-#define MainFrm_SYes 63506
-#define MainFrm_SVersion 63507
-#define MainFrm_SDataDirectory 63508
-#define MainFrm_SUpdate 63509
-#define MainFrm_SModify 63510
-#define MainFrm_SNew 63511
-#define MainFrm_SDefaultLanguage 63512
-#define MainFrm_SNewerVersionExists 63513
-#define MainFrm_SThisSetupIsMostRecent 63514
-#define MainFrm_SCouldNotCheckVersion 63515
-#define MainFrm_SWindows7OrLaterneeded 63516
-#define MainFrm_SUpdateRadio 63520
-#define MainFrm_SModifyRadio 63521
-#define MainFrm_SNewRadio 63522
-#define MainFrm_SUnknownParameter 63523
-#define MainFrm_SNoFirstAndLastName 63524
-#define MainFrm_SWaiting 63525
-#define MainFrm_SSetupRunning 63526
-#define MainFrm_SNoWriteAccess 63527
-#define MainFrm_SNotEnoughDiskSpace 63528
-#define MainFrm_SRootDir 63529
-#define MainFrm_SEnterEvaluationExtensionReason 63530
-#define MainFrm_SReasonCaption 63531
-#define MainFrm_SEnterEvaluationExtensionCode 63532
-#define MainFrm_SCodeCaption 63533
-#define MainFrm_SNoInternet 63534
-#define MainFrm_SCancel 63535
-#define MainFrm_SInstallingLibraryFiles 63536
-#define MainFrm_SInstallingBuildAutomationFiles 63537
-#define MainFrm_SInstallingApplicationFiles 63538
-#define MainFrm_SInstallingSpellCheckFiles 63539
-#define MainFrm_SInstallingI18NLibraryFiles 63540
-#define MainFrm_SInstallingFiles 63541
-#define MainFrm_SCouldNotRegisterInstallation 63542
-#define MainFrm_SCouldNotActivate 63543
-#define MainFrm_SSetupFailed 63544
-#define MainFrm_SPersonalFolder 63545
-#define MainFrm_SPublicFolder 63546
-#define MainFrm_SUnknownVersion 63547
-#define MainFrm_SStart1 63548
-#define MainFrm_SStart2 63549
-#define MainFrm_SStart3 63550
-#define MainFrm_SDirectory 63551
-#define NtDialogFilter_SMp4Files 63552
-#define NtDialogFilter_SMp3Files 63553
-#define NtDialogFilter_SVideoFiles 63554
-#define NtDialogFilter_SMpegFiles 63555
-#define NtDialogFilter_SAviFiles 63556
-#define NtDialogFilter_SQuickTimeFiles 63557
-#define SelectFile_SCaption 63558
-#define VoikkoSpellEngine_SVoikko 63559
-#define MainFrm_SSetup 63560
-#define MainFrm_SSetupTypeCustomDescription 63561
-#define MainFrm_SSetupTypeAllDescription 63562
-#define MainFrm_SSetupTypeMinimalDescription 63563
-#define MainFrm_SSetupTypeBuildAutomationDescription 63564
-#define MainFrm_SCanNotInstall 63565
-#define MainFrm_SApplicationRunning 63566
-#define MainFrm_STotalSelectedSize 63567
-#define NtDialogFilter_SAllFiles 63568
-#define NtDialogFilter_SAllSupportedFiles 63569
-#define NtDialogFilter_SDllFiles 63570
-#define NtDialogFilter_SExeFiles 63571
-#define NtDialogFilter_SImageFiles 63572
-#define NtDialogFilter_SJpegFiles 63573
-#define NtDialogFilter_SBitmapFiles 63574
-#define NtDialogFilter_SPngFiles 63575
-#define NtDialogFilter_SGifFiles 63576
-#define NtDialogFilter_SIconFiles 63577
-#define NtDialogFilter_SLanguageFiles 63578
-#define NtDialogFilter_SSisulizerLanguagesFiles 63579
-#define NtDialogFilter_STextFiles 63580
-#define NtDialogFilter_SAudioFiles 63581
-#define NtDialogFilter_SWaveFiles 63582
-#define NtDialogFilter_SWmaFiles 63583
-#define Installer_SWpfDescription 63584
-#define Installer_SUniversalWindowsPlatformDescription 63585
-#define Installer_SXamarinDescription 63586
-#define Installer_SXliffDescription 63587
-#define Installer_SXmlDescription 63588
-#define Installer_SXslDescription 63589
-#define Installer_SYamlDescription 63590
-#define Installer_SSilverlightDescription 63591
-#define Installer_SWindowsPhoneDescription 63592
-#define Installer_SLocalization 63593
-#define Installer_SLocalizationDescription 63594
-#define Installer_SI18NAPI 63595
-#define Installer_SI18NAPIDescription 63596
-#define Installer_SConfiguringSystem 63597
-#define Installer_SConfiguringLibraryPaths 63598
-#define Installer_SComponentFailed 63599
-#define Installer_SSqlServerDescription 63600
-#define Installer_SSrtDescription 63601
-#define Installer_SSvgDescription 63602
-#define Installer_STextDescription 63603
-#define Installer_STmxDescription 63604
-#define Installer_STranslationMemoryDescription 63605
-#define Installer_STutorialDescription 63606
-#define Installer_STypeScriptDescription 63607
-#define Installer_SVisualCppDescription 63608
-#define Installer_SVisualStudioDescription 63609
-#define Installer_SVueDescription 63610
-#define Installer_SWebVTTDescription 63611
-#define Installer_SWindowsFormsDescription 63612
-#define Installer_SWinUIDescription 63613
-#define Installer_SWixDescription 63614
-#define Installer_SWordDescription 63615
-#define Installer_SMySqlDescription 63616
-#define Installer_SPdfDescription 63617
-#define Installer_SPhpDescription 63618
-#define Installer_SPoDescription 63619
-#define Installer_SPostgreDescription 63620
-#define Installer_SPowerPointDescription 63621
-#define Installer_SPythonDescription 63622
-#define Installer_SOpenDocumentDescription 63623
-#define Installer_SQtDescription 63624
-#define Installer_SRailsDescription 63625
-#define Installer_SReactDescription 63626
-#define Installer_SRtfDescription 63627
-#define Installer_SSalesForceDescription 63628
-#define Installer_SScriptDescription 63629
-#define Installer_SSqlCeDescription 63630
-#define Installer_SSqliteDescription 63631
-#define Installer_SGlossaryDescription 63632
-#define Installer_SGoDescription 63633
-#define Installer_SHelpAndManualDescription 63634
-#define Installer_SHtmlDescription 63635
-#define Installer_SHtmlHelpDescription 63636
-#define Installer_Si18nextDescription 63637
-#define Installer_SIniDescription 63638
-#define Installer_SInterBaseDescription 63639
-#define Installer_SiOSDescription 63640
-#define Installer_SJavaDescription 63641
-#define Installer_SJavaScriptDescription 63642
-#define Installer_SJsonDescription 63643
-#define Installer_SJspDescription 63644
-#define Installer_SLazarusDescription 63645
-#define Installer_SMauiDescription 63646
-#define Installer_SMarkdownDescription 63647
-#define Installer_SGlossary 63648
-#define Installer_SAccessDescription 63649
-#define Installer_SAndroidDescription 63650
-#define Installer_SAngularDescription 63651
-#define Installer_SAspNetDescription 63652
-#define Installer_SBinaryDescription 63653
-#define Installer_SBuildAutomationDescription 63654
-#define Installer_SBlazorDescription 63655
-#define Installer_SBsonDescription 63656
-#define Installer_SCBuilderDescription 63657
-#define Installer_SDelphiDescription 63658
-#define Installer_SDitaDescription 63659
-#define Installer_SDotNetDescription 63660
-#define Installer_SExcelDescription 63661
-#define Installer_SFirebirdDescription 63662
-#define Installer_SFlutterDescription 63663
+#define MainFrm_SNew 63504
+#define MainFrm_SDefaultLanguage 63505
+#define MainFrm_SNewerVersionExists 63506
+#define MainFrm_SThisSetupIsMostRecent 63507
+#define MainFrm_SCouldNotCheckVersion 63508
+#define MainFrm_SWindows7OrLaterneeded 63509
+#define MainFrm_SNoWriteAccess 63520
+#define MainFrm_SNotEnoughDiskSpace 63521
+#define MainFrm_SRootDir 63522
+#define MainFrm_SEnterEvaluationExtensionReason 63523
+#define MainFrm_SReasonCaption 63524
+#define MainFrm_SEnterEvaluationExtensionCode 63525
+#define MainFrm_SCodeCaption 63526
+#define MainFrm_SNoInternet 63527
+#define MainFrm_SCancel 63528
+#define MainFrm_SNext 63529
+#define MainFrm_SNo 63530
+#define MainFrm_SYes 63531
+#define MainFrm_SVersion 63532
+#define MainFrm_SDataDirectory 63533
+#define MainFrm_SUpdate 63534
+#define MainFrm_SModify 63535
+#define MainFrm_SCouldNotActivate 63536
+#define MainFrm_SSetupFailed 63537
+#define MainFrm_SPersonalFolder 63538
+#define MainFrm_SPublicFolder 63539
+#define MainFrm_SUnknownVersion 63540
+#define MainFrm_SStart1 63541
+#define MainFrm_SStart2 63542
+#define MainFrm_SStart3 63543
+#define MainFrm_SDirectory 63544
+#define MainFrm_SUpdateRadio 63545
+#define MainFrm_SModifyRadio 63546
+#define MainFrm_SNewRadio 63547
+#define MainFrm_SUnknownParameter 63548
+#define MainFrm_SNoFirstAndLastName 63549
+#define MainFrm_SWaiting 63550
+#define MainFrm_SSetupRunning 63551
+#define VoikkoSpellEngine_SVoikko 63552
+#define MainFrm_SSetup 63553
+#define MainFrm_SSetupTypeCustomDescription 63554
+#define MainFrm_SSetupTypeAllDescription 63555
+#define MainFrm_SSetupTypeMinimalDescription 63556
+#define MainFrm_SSetupTypeBuildAutomationDescription 63557
+#define MainFrm_SCanNotInstall 63558
+#define MainFrm_SApplicationRunning 63559
+#define MainFrm_STotalSelectedSize 63560
+#define MainFrm_SInstallingLibraryFiles 63561
+#define MainFrm_SInstallingBuildAutomationFiles 63562
+#define MainFrm_SInstallingApplicationFiles 63563
+#define MainFrm_SInstallingSpellCheckFiles 63564
+#define MainFrm_SInstallingI18NLibraryFiles 63565
+#define MainFrm_SInstallingFiles 63566
+#define MainFrm_SCouldNotRegisterInstallation 63567
+#define NtDialogFilter_SPngFiles 63568
+#define NtDialogFilter_SGifFiles 63569
+#define NtDialogFilter_SIconFiles 63570
+#define NtDialogFilter_SLanguageFiles 63571
+#define NtDialogFilter_SSisulizerLanguagesFiles 63572
+#define NtDialogFilter_STextFiles 63573
+#define NtDialogFilter_SAudioFiles 63574
+#define NtDialogFilter_SWaveFiles 63575
+#define NtDialogFilter_SWmaFiles 63576
+#define NtDialogFilter_SMp4Files 63577
+#define NtDialogFilter_SMp3Files 63578
+#define NtDialogFilter_SVideoFiles 63579
+#define NtDialogFilter_SMpegFiles 63580
+#define NtDialogFilter_SAviFiles 63581
+#define NtDialogFilter_SQuickTimeFiles 63582
+#define SelectFile_SCaption 63583
+#define Installer_SSilverlightDescription 63584
+#define Installer_SWindowsPhoneDescription 63585
+#define Installer_SLocalization 63586
+#define Installer_SLocalizationDescription 63587
+#define Installer_SI18NAPI 63588
+#define Installer_SI18NAPIDescription 63589
+#define Installer_SConfiguringSystem 63590
+#define Installer_SConfiguringLibraryPaths 63591
+#define Installer_SComponentFailed 63592
+#define NtDialogFilter_SAllFiles 63593
+#define NtDialogFilter_SAllSupportedFiles 63594
+#define NtDialogFilter_SDllFiles 63595
+#define NtDialogFilter_SExeFiles 63596
+#define NtDialogFilter_SImageFiles 63597
+#define NtDialogFilter_SJpegFiles 63598
+#define NtDialogFilter_SBitmapFiles 63599
+#define Installer_STypeScriptDescription 63600
+#define Installer_SVisualCppDescription 63601
+#define Installer_SVisualStudioDescription 63602
+#define Installer_SVueDescription 63603
+#define Installer_SWebVTTDescription 63604
+#define Installer_SWindowsFormsDescription 63605
+#define Installer_SWinUIDescription 63606
+#define Installer_SWixDescription 63607
+#define Installer_SWordDescription 63608
+#define Installer_SWpfDescription 63609
+#define Installer_SUniversalWindowsPlatformDescription 63610
+#define Installer_SXamarinDescription 63611
+#define Installer_SXliffDescription 63612
+#define Installer_SXmlDescription 63613
+#define Installer_SXslDescription 63614
+#define Installer_SYamlDescription 63615
+#define Installer_SOpenDocumentDescription 63616
+#define Installer_SQtDescription 63617
+#define Installer_SRailsDescription 63618
+#define Installer_SReactDescription 63619
+#define Installer_SRtfDescription 63620
+#define Installer_SSalesForceDescription 63621
+#define Installer_SScriptDescription 63622
+#define Installer_SSqlCeDescription 63623
+#define Installer_SSqliteDescription 63624
+#define Installer_SSqlServerDescription 63625
+#define Installer_SSrtDescription 63626
+#define Installer_SSvgDescription 63627
+#define Installer_STextDescription 63628
+#define Installer_STmxDescription 63629
+#define Installer_STranslationMemoryDescription 63630
+#define Installer_STutorialDescription 63631
+#define Installer_SInterBaseDescription 63632
+#define Installer_SiOSDescription 63633
+#define Installer_SJavaDescription 63634
+#define Installer_SJavaScriptDescription 63635
+#define Installer_SJsonDescription 63636
+#define Installer_SJspDescription 63637
+#define Installer_SLazarusDescription 63638
+#define Installer_SMauiDescription 63639
+#define Installer_SMarkdownDescription 63640
+#define Installer_SMySqlDescription 63641
+#define Installer_SPdfDescription 63642
+#define Installer_SPhpDescription 63643
+#define Installer_SPoDescription 63644
+#define Installer_SPostgreDescription 63645
+#define Installer_SPowerPointDescription 63646
+#define Installer_SPythonDescription 63647
+#define Installer_SBlazorDescription 63648
+#define Installer_SBsonDescription 63649
+#define Installer_SCBuilderDescription 63650
+#define Installer_SDelphiDescription 63651
+#define Installer_SDitaDescription 63652
+#define Installer_SDotNetDescription 63653
+#define Installer_SExcelDescription 63654
+#define Installer_SFirebirdDescription 63655
+#define Installer_SFlutterDescription 63656
+#define Installer_SGlossaryDescription 63657
+#define Installer_SGoDescription 63658
+#define Installer_SHelpAndManualDescription 63659
+#define Installer_SHtmlDescription 63660
+#define Installer_SHtmlHelpDescription 63661
+#define Installer_Si18nextDescription 63662
+#define Installer_SIniDescription 63663
 #define NtConsts_SFileDoesNotExist 63664
 #define NtConsts_SDllDoesNotExist 63665
 #define NtConsts_SDllDoesNotExist2 63666
@@ -175,12 +168,12 @@
 #define NtConsts_SInvalidActivationFile 63671
 #define HunSpellEngine_SOpenOffice 63672
 #define StandardLicense_SNoFeatureLicense 63673
-#define Installer_SBinaryName 63674
-#define Installer_SBuildAutomationName 63675
-#define Installer_SScript 63676
-#define Installer_STextName 63677
-#define Installer_STutorial 63678
-#define Installer_STranslationMemory 63679
+#define Installer_SAccessDescription 63674
+#define Installer_SAndroidDescription 63675
+#define Installer_SAngularDescription 63676
+#define Installer_SAspNetDescription 63677
+#define Installer_SBinaryDescription 63678
+#define Installer_SBuildAutomationDescription 63679
 #define NtFormatItems_SSvelteHtmlSample 63680
 #define NtFormatItems_SObjectiveC 63681
 #define NtFormatItems_SObjectiveCSample 63682
@@ -2039,26 +2032,12 @@
 #define System_SysConst_STooManyOpenFiles 65535
 STRINGTABLE
 BEGIN
-	MainFrm_SNext,	L"&Next"
-	MainFrm_SNo,	L"&No"
-	MainFrm_SYes,	L"&Yes"
-	MainFrm_SVersion,	L"Version: %s"
-	MainFrm_SDataDirectory,	L"Data directory: %s"
-	MainFrm_SUpdate,	L"Updates the existing installation using the same installation options as in the existing installation. If a file in the setup is newer than the existing one it will be replaced."
-	MainFrm_SModify,	L"Modifies the existing installation. The user can change the installation options. If a file in the setup is newer than the existing one it will be replaced."
 	MainFrm_SNew,	L"Makes a new installation to a different directory."
 	MainFrm_SDefaultLanguage,	L"Default language"
 	MainFrm_SNewerVersionExists,	L"Soluling %s is available.\r\nYou can download it from the download page that was just opened."
 	MainFrm_SThisSetupIsMostRecent,	L"This setup is the most recent setup."
 	MainFrm_SCouldNotCheckVersion,	L"Could not check the version."
 	MainFrm_SWindows7OrLaterneeded,	L"You need to have Windows 7 or later to install this application."
-	MainFrm_SUpdateRadio,	L"&Update the existing installation"
-	MainFrm_SModifyRadio,	L"&Modify the existing installation"
-	MainFrm_SNewRadio,	L"M&ake a new installation"
-	MainFrm_SUnknownParameter,	L"Unknown parameter: %s"
-	MainFrm_SNoFirstAndLastName,	L"You have to give the first name and the last name of the serial number"
-	MainFrm_SWaiting,	L"Waiting for %s application to close!"
-	MainFrm_SSetupRunning,	L"Another Soluling setup application is already running.\r\nCannot run this setup application."
 	MainFrm_SNoWriteAccess,	L"You do not have a write access for \"%s\" directory"
 	MainFrm_SNotEnoughDiskSpace,	L"Drive does not contain enough free disk space. Uncheck samples or select another drive."
 	MainFrm_SRootDir,	L"Are you sure that you want to install to the root directory \"%s\"?"
@@ -2068,13 +2047,13 @@ BEGIN
 	MainFrm_SCodeCaption,	L"&You can extend your evaluation period by entering an evaluation extension code:"
 	MainFrm_SNoInternet,	L"You do not have an Internet connection.\r\nWe recommend you turn Internet on. You can install Soluling without an Internet, but unless you install the Basic Translator edition or you have an activation file, you need to activate your Soluling before you can create or open any projects."
 	MainFrm_SCancel,	L"Cancel"
-	MainFrm_SInstallingLibraryFiles,	L"Installing application library files..."
-	MainFrm_SInstallingBuildAutomationFiles,	L"Installing build automation files..."
-	MainFrm_SInstallingApplicationFiles,	L"Installing application files..."
-	MainFrm_SInstallingSpellCheckFiles,	L"Installing spell check dictionaries..."
-	MainFrm_SInstallingI18NLibraryFiles,	L"Installing the I18N library code..."
-	MainFrm_SInstallingFiles,	L"Installing %s samples..."
-	MainFrm_SCouldNotRegisterInstallation,	L"Could not contact the license server. You need to register Soluling later."
+	MainFrm_SNext,	L"&Next"
+	MainFrm_SNo,	L"&No"
+	MainFrm_SYes,	L"&Yes"
+	MainFrm_SVersion,	L"Version: %s"
+	MainFrm_SDataDirectory,	L"Data directory: %s"
+	MainFrm_SUpdate,	L"Updates the existing installation using the same installation options as in the existing installation. If a file in the setup is newer than the existing one it will be replaced."
+	MainFrm_SModify,	L"Modifies the existing installation. The user can change the installation options. If a file in the setup is newer than the existing one it will be replaced."
 	MainFrm_SCouldNotActivate,	L"Could not activate your installation because there is no Internet connection.\r\nSoluling will automatically activate itself once the Internet connection is available.\r\nIf this machine has no Internet at all, you can complete the activation on any other machine having Soluling installed."
 	MainFrm_SSetupFailed,	L"Soluling setup failed: %s"
 	MainFrm_SPersonalFolder,	L"&Personal folder, %s"
@@ -2084,13 +2063,13 @@ BEGIN
 	MainFrm_SStart2,	L"It is strongly recommended that you exit all Windows programs before running this Setup program."
 	MainFrm_SStart3,	L"Click Cancel to quit the Setup and then close any program you have running. Click Next to continue with the Setup program."
 	MainFrm_SDirectory,	L"%s"
-	NtDialogFilter_SMp4Files,	L"MP4 files"
-	NtDialogFilter_SMp3Files,	L"MP3 files"
-	NtDialogFilter_SVideoFiles,	L"Video files"
-	NtDialogFilter_SMpegFiles,	L"MPEG files"
-	NtDialogFilter_SAviFiles,	L"AVI files"
-	NtDialogFilter_SQuickTimeFiles,	L"Quick Time files"
-	SelectFile_SCaption,	L"Select a File"
+	MainFrm_SUpdateRadio,	L"&Update the existing installation"
+	MainFrm_SModifyRadio,	L"&Modify the existing installation"
+	MainFrm_SNewRadio,	L"M&ake a new installation"
+	MainFrm_SUnknownParameter,	L"Unknown parameter: %s"
+	MainFrm_SNoFirstAndLastName,	L"You have to give the first name and the last name of the serial number"
+	MainFrm_SWaiting,	L"Waiting for %s application to close!"
+	MainFrm_SSetupRunning,	L"Another Soluling setup application is already running.\r\nCannot run this setup application."
 	VoikkoSpellEngine_SVoikko,	L"Voikko"
 	MainFrm_SSetup,	L"%s Setup"
 	MainFrm_SSetupTypeCustomDescription,	L"This option lets you choose what to install.\r\nInitially, everything is selected, but you will have a chance to uncheck the components you don't want to install."
@@ -2100,13 +2079,13 @@ BEGIN
 	MainFrm_SCanNotInstall,	L"Cannot install: %s"
 	MainFrm_SApplicationRunning,	L"Soluling application is running. Cannot run this setup application.\r\nPlease close the Soluling application and try again."
 	MainFrm_STotalSelectedSize,	L"Total selected size: %d KB"
-	NtDialogFilter_SAllFiles,	L"All files"
-	NtDialogFilter_SAllSupportedFiles,	L"All supported files"
-	NtDialogFilter_SDllFiles,	L"Windows DLL files"
-	NtDialogFilter_SExeFiles,	L"Windows executable files"
-	NtDialogFilter_SImageFiles,	L"Image files"
-	NtDialogFilter_SJpegFiles,	L"JPEG files"
-	NtDialogFilter_SBitmapFiles,	L"Bitmap files"
+	MainFrm_SInstallingLibraryFiles,	L"Installing application library files..."
+	MainFrm_SInstallingBuildAutomationFiles,	L"Installing build automation files..."
+	MainFrm_SInstallingApplicationFiles,	L"Installing application files..."
+	MainFrm_SInstallingSpellCheckFiles,	L"Installing spell check dictionaries..."
+	MainFrm_SInstallingI18NLibraryFiles,	L"Installing the I18N library code..."
+	MainFrm_SInstallingFiles,	L"Installing %s samples..."
+	MainFrm_SCouldNotRegisterInstallation,	L"Could not contact the license server. You need to register Soluling later."
 	NtDialogFilter_SPngFiles,	L"Portable Network Graphics files"
 	NtDialogFilter_SGifFiles,	L"Graphics Interchange Format files"
 	NtDialogFilter_SIconFiles,	L"Icon files"
@@ -2116,13 +2095,13 @@ BEGIN
 	NtDialogFilter_SAudioFiles,	L"Audio files"
 	NtDialogFilter_SWaveFiles,	L"Wave files"
 	NtDialogFilter_SWmaFiles,	L"Windows Media Audio files"
-	Installer_SWpfDescription,	L"Installs WPF samples."
-	Installer_SUniversalWindowsPlatformDescription,	L"Installs Universal Windows Platform samples."
-	Installer_SXamarinDescription,	L"Installs Xamarin samples."
-	Installer_SXliffDescription,	L"Installs XLIFF samples."
-	Installer_SXmlDescription,	L"Installs XML samples."
-	Installer_SXslDescription,	L"Installs XSL samples."
-	Installer_SYamlDescription,	L"Installs YAML samples."
+	NtDialogFilter_SMp4Files,	L"MP4 files"
+	NtDialogFilter_SMp3Files,	L"MP3 files"
+	NtDialogFilter_SVideoFiles,	L"Video files"
+	NtDialogFilter_SMpegFiles,	L"MPEG files"
+	NtDialogFilter_SAviFiles,	L"AVI files"
+	NtDialogFilter_SQuickTimeFiles,	L"Quick Time files"
+	SelectFile_SCaption,	L"Select a File"
 	Installer_SSilverlightDescription,	L"Installs samples for Silverlight."
 	Installer_SWindowsPhoneDescription,	L"Installs Windows Phone samples."
 	Installer_SLocalization,	L"Soluling's localization project"
@@ -2132,13 +2111,13 @@ BEGIN
 	Installer_SConfiguringSystem,	L"Configuring system"
 	Installer_SConfiguringLibraryPaths,	L"Configuring library paths"
 	Installer_SComponentFailed,	L"Error installing %s component: %s. This is not fatal, but you will not have this sample code or library."
-	Installer_SSqlServerDescription,	L"Installs SQL Server database samples."
-	Installer_SSrtDescription,	L"Installs SubRip subtitle samples."
-	Installer_SSvgDescription,	L"Installs SVG samples."
-	Installer_STextDescription,	L"Installs text file samples."
-	Installer_STmxDescription,	L"Installs TMX samples."
-	Installer_STranslationMemoryDescription,	L"Installs translation memory samples."
-	Installer_STutorialDescription,	L"Installs tutorial files."
+	NtDialogFilter_SAllFiles,	L"All files"
+	NtDialogFilter_SAllSupportedFiles,	L"All supported files"
+	NtDialogFilter_SDllFiles,	L"Windows DLL files"
+	NtDialogFilter_SExeFiles,	L"Windows executable files"
+	NtDialogFilter_SImageFiles,	L"Image files"
+	NtDialogFilter_SJpegFiles,	L"JPEG files"
+	NtDialogFilter_SBitmapFiles,	L"Bitmap files"
 	Installer_STypeScriptDescription,	L"Installs TypeScript samples."
 	Installer_SVisualCppDescription,	L"Installs Visual C++ and MFC samples."
 	Installer_SVisualStudioDescription,	L"Installs Visual Studio project and solution file samples."
@@ -2148,13 +2127,13 @@ BEGIN
 	Installer_SWinUIDescription,	L"Installs Windows App SDK/WinUI samples."
 	Installer_SWixDescription,	L"Installs Wix samples."
 	Installer_SWordDescription,	L"Installs Word samples."
-	Installer_SMySqlDescription,	L"Installs MySQL database samples."
-	Installer_SPdfDescription,	L"Installs PDF samples."
-	Installer_SPhpDescription,	L"Installs PHP samples."
-	Installer_SPoDescription,	L"Installs GetText/PO samples."
-	Installer_SPostgreDescription,	L"Installs PostgreSQL database samples."
-	Installer_SPowerPointDescription,	L"Installs PowerPoint samples."
-	Installer_SPythonDescription,	L"Installs Python samples."
+	Installer_SWpfDescription,	L"Installs WPF samples."
+	Installer_SUniversalWindowsPlatformDescription,	L"Installs Universal Windows Platform samples."
+	Installer_SXamarinDescription,	L"Installs Xamarin samples."
+	Installer_SXliffDescription,	L"Installs XLIFF samples."
+	Installer_SXmlDescription,	L"Installs XML samples."
+	Installer_SXslDescription,	L"Installs XSL samples."
+	Installer_SYamlDescription,	L"Installs YAML samples."
 	Installer_SOpenDocumentDescription,	L"Installs OpenDocument samples."
 	Installer_SQtDescription,	L"Installs Qt samples."
 	Installer_SRailsDescription,	L"Install Ruby on Rails samples."
@@ -2164,13 +2143,13 @@ BEGIN
 	Installer_SScriptDescription,	L"Installs script and source code samples."
 	Installer_SSqlCeDescription,	L"Installs SQL Server Compact database samples."
 	Installer_SSqliteDescription,	L"Installs SQLite database samples."
-	Installer_SGlossaryDescription,	L"Install glossary samples."
-	Installer_SGoDescription,	L"Install Go samples."
-	Installer_SHelpAndManualDescription,	L"Install Help+Manual samples."
-	Installer_SHtmlDescription,	L"Installs HTML samples."
-	Installer_SHtmlHelpDescription,	L"Installs HTML Help samples."
-	Installer_Si18nextDescription,	L"Install i18next samples."
-	Installer_SIniDescription,	L"Installs ini file samples."
+	Installer_SSqlServerDescription,	L"Installs SQL Server database samples."
+	Installer_SSrtDescription,	L"Installs SubRip subtitle samples."
+	Installer_SSvgDescription,	L"Installs SVG samples."
+	Installer_STextDescription,	L"Installs text file samples."
+	Installer_STmxDescription,	L"Installs TMX samples."
+	Installer_STranslationMemoryDescription,	L"Installs translation memory samples."
+	Installer_STutorialDescription,	L"Installs tutorial files."
 	Installer_SInterBaseDescription,	L"Installs InterBase database samples."
 	Installer_SiOSDescription,	L"Installs iOS samples."
 	Installer_SJavaDescription,	L"Installs Java samples."
@@ -2180,13 +2159,13 @@ BEGIN
 	Installer_SLazarusDescription,	L"Installs Lazarus samples."
 	Installer_SMauiDescription,	L"Installs MAUI samples."
 	Installer_SMarkdownDescription,	L"Installs Markdown samples."
-	Installer_SGlossary,	L"Glossary"
-	Installer_SAccessDescription,	L"Installs Access database samples."
-	Installer_SAndroidDescription,	L"Installs Android samples."
-	Installer_SAngularDescription,	L"Installs Angular samples."
-	Installer_SAspNetDescription,	L"Installs ASP.NET and ASP.NET Core samples."
-	Installer_SBinaryDescription,	L"Installs binary file samples."
-	Installer_SBuildAutomationDescription,	L"Installs build automation samples."
+	Installer_SMySqlDescription,	L"Installs MySQL database samples."
+	Installer_SPdfDescription,	L"Installs PDF samples."
+	Installer_SPhpDescription,	L"Installs PHP samples."
+	Installer_SPoDescription,	L"Installs GetText/PO samples."
+	Installer_SPostgreDescription,	L"Installs PostgreSQL database samples."
+	Installer_SPowerPointDescription,	L"Installs PowerPoint samples."
+	Installer_SPythonDescription,	L"Installs Python samples."
 	Installer_SBlazorDescription,	L"Installs Blazor samples."
 	Installer_SBsonDescription,	L"Installs BSON file samples."
 	Installer_SCBuilderDescription,	L"Installs C++Builder samples."
@@ -2196,6 +2175,13 @@ BEGIN
 	Installer_SExcelDescription,	L"Installs Excel samples."
 	Installer_SFirebirdDescription,	L"Installs Firebird database samples."
 	Installer_SFlutterDescription,	L"Installs Flutter samples."
+	Installer_SGlossaryDescription,	L"Install glossary samples."
+	Installer_SGoDescription,	L"Install Go samples."
+	Installer_SHelpAndManualDescription,	L"Install Help+Manual samples."
+	Installer_SHtmlDescription,	L"Installs HTML samples."
+	Installer_SHtmlHelpDescription,	L"Installs HTML Help samples."
+	Installer_Si18nextDescription,	L"Install i18next samples."
+	Installer_SIniDescription,	L"Installs ini file samples."
 	NtConsts_SFileDoesNotExist,	L"\"%s\" file does not exist."
 	NtConsts_SDllDoesNotExist,	L"\"%s\" not found"
 	NtConsts_SDllDoesNotExist2,	L"\"%s\" not found: %s"
@@ -2206,12 +2192,12 @@ BEGIN
 	NtConsts_SInvalidActivationFile,	L"Activation file is invalid or not for serial number you provided."
 	HunSpellEngine_SOpenOffice,	L"OpenOffice"
 	StandardLicense_SNoFeatureLicense,	L"You have %0:s edition that does not support \"%1:s\" feature. In order to use this feature you have to upgrade your license at least to %2:s edition"
-	Installer_SBinaryName,	L"Binary"
-	Installer_SBuildAutomationName,	L"Build automation"
-	Installer_SScript,	L"Script"
-	Installer_STextName,	L"Text"
-	Installer_STutorial,	L"Tutorial"
-	Installer_STranslationMemory,	L"TranslationMemory"
+	Installer_SAccessDescription,	L"Installs Access database samples."
+	Installer_SAndroidDescription,	L"Installs Android samples."
+	Installer_SAngularDescription,	L"Installs Angular samples."
+	Installer_SAspNetDescription,	L"Installs ASP.NET and ASP.NET Core samples."
+	Installer_SBinaryDescription,	L"Installs binary file samples."
+	Installer_SBuildAutomationDescription,	L"Installs build automation samples."
 	NtFormatItems_SSvelteHtmlSample,	L"My name is <b>{name}</b>"
 	NtFormatItems_SObjectiveC,	L"Objective C"
 	NtFormatItems_SObjectiveCSample,	L"My name is %s"
@@ -4095,4 +4081,4 @@ END
 /* D:\NT\Desktop\Bin\JPart\InstallationLimitDlg.dfm */
 /* D:\NT\Desktop\Setup\Install\license.res */
 /* D:\NT\Desktop\Setup\Install\SoluSetup.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtfCF72.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtfA6DE.tmp */

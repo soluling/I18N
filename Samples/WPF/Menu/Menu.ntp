@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20251130T052156Z" version="1.0.1082" storedata="0" stringid="9">
+<project id="52962A0D-C01D-400F-A9A8-2F5FA840071E" created="20141209T061216Z" lastmodified="20251211T095610Z" version="1.0.1084" storedata="0" stringid="9">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20251130T052156Z" resources="[nrXaml,nrAssemblyInfo]" availableresources="[nrXaml,nrAssemblyInfo]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="Menu.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Menu\Menu.csproj" original="en" lastmodified="20251211T095610Z" resources="[nrXaml,nrAssemblyInfo]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="core90" windowsversion="windows7.0" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20230418T013252Z" kind="xkApplication"/>
     <node class="TWindowsVersionNode" name="AssemblyInfo.cs" created="20230917T040944Z" fromassemblyinfo="1"/>
@@ -46,10 +46,12 @@
         </item>
       </item>
     </node>
-    <tags exclude="noslz" include="slz" begin="beginnoslz" end="endnoslz"/>
     <assemblies>
       <assembly>bin\Release\net9.0-windows7.0\Menu.dll</assembly>
     </assemblies>
+    <configurations>
+      <configuration name="Default" notranslation="ntEmpty" satelliteassemblyoptions="[soDeleteLocalizedResources]"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
@@ -63,6 +65,8 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
 </project>
