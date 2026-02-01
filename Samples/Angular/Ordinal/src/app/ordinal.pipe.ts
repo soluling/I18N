@@ -2,7 +2,10 @@ import { Pipe, PipeTransform, Injector, LOCALE_ID } from '@angular/core';
 import { PluralForm, Gender } from './language';
 import { Ordinal, OrdinalStringForm } from './ordinal';
 
-@Pipe({name: 'ordinal'})
+@Pipe({
+    name: 'ordinal',
+    standalone: false
+})
 export class OrdinalPipe implements PipeTransform 
 {
   constructor(private injector: Injector) 

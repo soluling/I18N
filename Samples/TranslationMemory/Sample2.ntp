@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="653CB137-1953-489B-979D-9A33A9246D82" created="20251217T143237Z" lastmodified="20251217T143325Z" version="1.0.1086" stringid="2">
+  <lang id="en"/>
+  <lang id="fi"/>
+  <node class="TIniSource" name="Sample2.ini" fullpath="D:\NT\Deploy\Samples\TranslationMemory\Sample2.ini" original="en" lastmodified="20251217T143325Z" encoding="windows-1252">
+    <item name="car">
+      <row id="one" si="1">
+        <value>This is red car</value>
+        <lang id="en" st="4" rw="0" time="20251217T143305Z">This is a red car</lang>
+      </row>
+      <row id="one1" si="2">
+        <value>This are a red car.</value>
+        <lang id="en" st="4" rw="0" time="20251217T143319Z">These are red cars.</lang>
+      </row>
+    </item>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

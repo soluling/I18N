@@ -1,11 +1,13 @@
-<form [formGroup]="form" (ngSubmit)="onSubmit()">  
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
   <h1 mat-dialog-title i18n="header|">Sport</h1>
   <p class="mat-body-1" i18n="bodyText|">Enter properties of a sport.</p>
 
   <div class="example-container">
     <mat-form-field>
       <input matInput i18n-placeholder="namePlaceholder|" placeholder="Name" [value]="sport.languages[0].name" formControlName="name">
-      <div *ngIf="isFieldValid('name')" class="ui error message" i18n="nameValidation|">Name is required</div>
+      @if (isFieldValid('name')) {
+        <div class="ui error message" i18n="nameValidation|">Name is required</div>
+      }
     </mat-form-field>
 
     <mat-form-field>
@@ -20,7 +22,7 @@
       <mat-radio-button #individual value="Individual" i18n="individualRadio|">Individual sport</mat-radio-button>
       <mat-radio-button value="Team" i18n="teamRadio|">Team sport</mat-radio-button>
     </mat-radio-group>
-    
+
     <br/>
 
     <mat-form-field [hidden]="individual.checked">
@@ -34,12 +36,16 @@
 
     <mat-form-field>
       <input matInput i18n-placeholder="originPlaceholder|"placeholder="Origin" [value]="sport.languages[0].origin" formControlName="origin">
-      <div *ngIf="isFieldValid('origin')" class="ui error message" i18n="originValidation|">Origin is required</div>
+      @if (isFieldValid('origin')) {
+        <div class="ui error message" i18n="originValidation|">Origin is required</div>
+      }
     </mat-form-field>
 
     <mat-form-field>
       <textarea matInput i18n-placeholder="descriptionPlaceholder|" placeholder="Description" [value]="sport.languages[0].description" formControlName="description"></textarea>
-      <div *ngIf="isFieldValid('description')" class="ui error message" i18n="descriptionValidation|">Description is required</div>
+      @if (isFieldValid('description')) {
+        <div class="ui error message" i18n="descriptionValidation|">Description is required</div>
+      }
     </mat-form-field>
   </div>
 
@@ -47,5 +53,5 @@
     <!-- <button mat-button type="submit" [disabled]="!form.valid" i18n="okButton|">OK</button> -->
     <button mat-button type="submit" i18n="okButton|">OK</button>
     <button mat-button type="button" (click)="onCancelClick()" i18n="cancelButton|">Cancel</button>
-  </mat-dialog-actions>  
+  </mat-dialog-actions>
 </form>

@@ -1,9 +1,9 @@
-import { Component, Inject, LOCALE_ID } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
 import { DataSource } from '@angular/cdk/collections';
 
 import { Observable ,  BehaviorSubject } from 'rxjs';
 
-import { MatLegacyDialog as MatDialog } from '@angular/material/legacy-dialog';
+import { MatDialog, MatDialogRef } from '@angular/material/dialog';
 
 import { Sport, Olympic } from './sport'
 import { SportsService, URL } from './sports.service'
@@ -15,23 +15,38 @@ const dialogWidth = '800px';
 @Component({
   selector: 'app-sports',
   templateUrl: './sports.component.html',
-  styleUrls: ['./sports.component.css']
+  styleUrls: ['./sports.component.css'],
+  standalone: false
 })
-export class SportsComponent
+export class SportsComponent implements OnInit
 {
   private url: string;
   private sports: Sport[];
   displayedColumns = ['id', 'name', 'olympic', 'fieldPlayers', 'goalie', 'origin', 'description', 'edit'];
   dataSource = new SportDataSource(this.sportsService);
+  isDialogMode = false;
 
   constructor(
     private sportsService: SportsService, 
-    private dialog: MatDialog, 
     private dialogsService: DialogsService, 
+    private dialog: MatDialog, 
+    public dialogRef: MatDialogRef<SportsComponent>,
     @Inject(LOCALE_ID) private locale: string)
   {
     this.url = URL;
+    this.isDialogMode = !!this.dialogRef;
   }
+
+  ngOnInit() {
+    // Automatically open the dialog when the app starts
+    if (!this.isDialogMode) {
+      this.dialog.open(SportsComponent, {
+        width: '800px',
+        disableClose: false,
+        autoFocus: true
+      });
+    }
+  }  
 
   private doAdd(sport: Sport)
   {

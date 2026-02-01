@@ -19,23 +19,25 @@ class Sport
 }
 
 @Component({
-  selector: 'app-root',
-  template: `
+    selector: 'app-root',
+    template: `
   <h1 i18n="header|">Select Sample</h1>
-
+  
   <label i18n="select|Sport combo box is following">Select the sport:</label>
   <select [(ngModel)]="selected" (ngModelChange)="onChange($event)" >
-    <option *ngFor="let sport of sports; let i = index" [value]="i">{{sport.name}}</option>
+    @for (sport of sports; track sport; let i = $index) {
+      <option [value]="i">{{sport.name}}</option>
+    }
   </select>
-
+  
   <h2 i18n="selectHeader|">Sports</h2>
   <p i18n="selectDescription|">The following text is a result of select states:</p>
   <p i18n="selectText|bestPlayer: Name of the best player">{sport, select, soccer {{{bestPlayer}} is the best soccer player.} hockey {{{bestPlayer}} is the best ice hockey player.} basketball {{{bestPlayer}} is the best basketball player.} }</p>
-
+  
   <h2 i18n="fallbackHeader|">Sports with a fallback</h2>
   <p i18n="fallbackDescription|">The following text is a result the same select states plus a fallback state:</p>
   <p i18n="fallbackText|bestPlayer: Name of the best player">{sport, select, soccer {{{bestPlayer}} is the best soccer player.} hockey {{{bestPlayer}} is the best ice hockey player.} basketball {{{bestPlayer}} is the best basketball player.} other {Somebody is the best player.} }</p>
-
+  
   <!-- This is not used but because the current Angular string extractor does not extract string from .ts file we need to add all the string used in.ts files into a hidden elements. -->
   <p hidden>
     <ng-container i18n>Soccer</ng-container>
@@ -43,7 +45,8 @@ class Sport
     <ng-container i18n>Basketball</ng-container>
     <ng-container i18n>Other</ng-container>
   </p>
-    `
+  `,
+    standalone: false
 })
 export class AppComponent 
 {

@@ -140,7 +140,7 @@ end;
   [resourceN]    ~
 
 
-  Language data version 1 (will be deprected in 2025)
+  Language data version 1 (will be deprected in 2027)
 
   There is one language data per language.
   Format:

@@ -1,22 +1,23 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
-import { MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-import { Sport, SportKind, Olympic } from './sport'
- 
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import { Sport, SportKind } from './sport'
+
 @Component({
-  selector: 'app-sport-dialog',
-  templateUrl: './sport-dialog.component.html',
-  styleUrls: ['./sport-dialog.component.css']
+  selector: 'app-sport-dialog',
+  templateUrl: './sport-dialog.component.html',
+  styleUrls: ['./sport-dialog.component.css'],
+  standalone: false
 })
-export class SportDialogComponent implements OnInit
+export class SportDialogComponent implements OnInit
 {
   form: UntypedFormGroup;
   isNew: boolean;
 
-  constructor(
-    public dialogRef: MatDialogRef<SportDialogComponent>,
+  constructor(
+    public dialogRef: MatDialogRef<SportDialogComponent>,
     @Inject(MAT_DIALOG_DATA) public sport: Sport,
-    private formBuilder: UntypedFormBuilder) 
+    private formBuilder: UntypedFormBuilder)
   {
   }
 

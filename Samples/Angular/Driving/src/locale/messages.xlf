@@ -3,27 +3,51 @@
   <file id="ngi18n" original="ng.template">
     <unit id="5672754662376866280">
       <notes>
-        <note category="location">src/app/app.component.ts:15</note>
+        <note category="location">src/app/app.component.ts:9,11</note>
         <note category="meaning">header</note>
       </notes>
       <segment>
         <source>Driving Time</source>
       </segment>
     </unit>
-    <unit id="7291993246861328570">
+    <unit id="5005141257091855131">
       <notes>
-        <note category="location">src/app/app.component.ts:28</note>
+        <note category="location">src/app/app.component.ts:16,19</note>
+      </notes>
+      <segment>
+        <source>Calculate</source>
+      </segment>
+    </unit>
+    <unit id="5516112325374793270">
+      <notes>
+        <note category="location">src/app/app.component.ts:19,20</note>
+      </notes>
+      <segment>
+        <source>Driving time is <ph id="0" equiv="ICU" disp="{hours, plural, =0 { } one {{{hours}} hour } other {{{hours}} hours }}"/> <ph id="1" equiv="ICU_1" disp="{minutes, plural, one {{{minutes}} minute} other {{{minutes}} minutes}}"/></source>
+      </segment>
+    </unit>
+    <unit id="4892912909971286976">
+      <notes>
+        <note category="location">src/app/app.component.ts:19,21</note>
       </notes>
       <segment>
         <source>{VAR_PLURAL, plural, =0 {} one {<ph id="0" equiv="INTERPOLATION"/> hour } other {<ph id="1" equiv="INTERPOLATION"/> hours }}</source>
       </segment>
     </unit>
-    <unit id="7976621350613050564">
+    <unit id="3023394972653842807">
       <notes>
-        <note category="location">src/app/app.component.ts:28</note>
+        <note category="location">src/app/app.component.ts:19,23</note>
       </notes>
       <segment>
         <source>{VAR_PLURAL, plural, one {<ph id="0" equiv="INTERPOLATION"/> minute} other {<ph id="1" equiv="INTERPOLATION"/> minutes}}</source>
+      </segment>
+    </unit>
+    <unit id="1187906511615154129">
+      <notes>
+        <note category="location">src/app/app.component.ts:23,30</note>
+      </notes>
+      <segment>
+        <source>Opening Driving Time Calculator dialog...</source>
       </segment>
     </unit>
   </file>

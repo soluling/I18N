@@ -1,34 +1,33 @@
-import { Component, Inject, OnInit } from '@angular/core';
-import { Title } from '@angular/platform-browser';
-import { FormsModule, ReactiveFormsModule, FormBuilder, FormControl, FormGroup, Validators, AbstractControl } from '@angular/forms';
-import { MatLegacyDialog as MatDialog, MatLegacyDialogRef as MatDialogRef, MAT_LEGACY_DIALOG_DATA as MAT_DIALOG_DATA } from '@angular/material/legacy-dialog';
-
-class Driving
-{
-  distance: number;
-  speed: number;
-}
+import { Component, Inject, OnInit } from '@angular/core';
+import { Title } from '@angular/platform-browser';
+import {MatDialog, MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 
 @Component({
-  selector: 'app-root',
-  template: `
-  <h1 mat-dialog-title i18n="header|">Driving Time</h1>
-
-  <mat-form-field>
-    <input matInput [(ngModel)]="distance" placeholder="Driving distance">
-  </mat-form-field>
-
-  <mat-form-field>
-    <input matInput [(ngModel)]="speed" placeholder="Driving speed">
-  </mat-form-field>
+    selector: 'app-root',
+    template: `
+  @if (isDialogMode) {
+    <h1 mat-dialog-title i18n="header|">Driving Time</h1>
+    <mat-form-field>
+      <input matInput i18n [(ngModel)]="distance" placeholder="Driving distance">
+    </mat-form-field>
+    <mat-form-field>
+      <input matInput i18n [(ngModel)]="speed" placeholder="Driving speed">
+    </mat-form-field>
+    <button mat-raised-button i18n (click)="calculate()">Calculate</button>
+    <br/>
+    @if (calculated) {
+      <p mat-text i18n>Driving time is {hours, plural, =0 { } one {{{hours}} hour } other {{{hours}} hours }} {minutes, plural, one {{{minutes}} minute} other {{{minutes}} minutes}}</p>
+    }
+  } @else {
+    <div class="main-container">
+      <p i18n>Opening Driving Time Calculator dialog...</p>
+    </div>
+  }
   
-  <button mat-raised-button (click)="calculate()">Calculate</button>
-
-  <br/>
-  <p mat-text *ngIf="calculated">Driving time is {hours, plural, =0 { } one {{{hours}} hour } other {{{hours}} hours }} {minutes, plural, one {{{minutes}} minute} other {{{minutes}} minutes}}</p>
-  `
+  `,
+    standalone: false
 })
-export class AppComponent
+export class AppComponent implements OnInit
 {
   distance: number = 100;
   speed: number = 55;
@@ -36,13 +35,29 @@ export class AppComponent
   hours: number;
   minutes: number;
   calculated: boolean;
+  isDialogMode = false;
   
-  constructor(
+  constructor(
     private titleService: Title, 
-    public dialog: MatDialog) 
+    private dialog: MatDialog,
+    public dialogRef: MatDialogRef<AppComponent>,
+    @Inject(MAT_DIALOG_DATA) public data: any
+  )
   {
     titleService.setTitle("Driving Time Calculator");
+    this.isDialogMode = !!this.dialogRef;
   }
+
+  ngOnInit() {
+    // Automatically open the dialog when the app starts
+    if (!this.isDialogMode) {
+      this.dialog.open(AppComponent, {
+        width: '420px',
+        disableClose: false,
+        autoFocus: true
+      });
+    }
+  }  
 
   calculate()
   {

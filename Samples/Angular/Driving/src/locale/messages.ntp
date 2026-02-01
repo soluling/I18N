@@ -1,30 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="FDDF1861-B18C-42F6-BEE4-727EBA8A4EAE" created="20190309T225210Z" lastmodified="20201010T204748Z" version="1.0.790" stringid="1">
+<project id="FDDF1861-B18C-42F6-BEE4-727EBA8A4EAE" created="20190309T225210Z" lastmodified="20260202T142200Z" version="1.0.1090" stringid="5">
   <lang id="fi"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Driving\src\locale\messages.xlf" original="en" encoding="UTF-8" hasmeaning="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Driving\src\locale\messages.xlf" original="en" lastmodified="20260202T142200Z" encoding="UTF-8" hasmeaning="1">
     <row id="5672754662376866280" si="1">
       <value>Driving Time</value>
       <lang id="fi" st="4" rw="0" time="20201010T204745Z">Ajoaika</lang>
     </row>
+    <row id="5005141257091855131" si="2" created="20260202T142108Z" st="0">
+      <value>Calculate</value>
+      <lang id="fi" st="4" rw="0" time="20260202T142118Z">Laske</lang>
+    </row>
+    <row id="5516112325374793270" class="TPatternRow" si="3" created="20260202T142108Z" st="0">
+      <value startpattern="1">Driving time is {0:{hours}} hour } other {{{{hours}} hours} {1:{minutes}} minute} other {{{{minutes}} minutes}</value>
+      <pattern operator="okEqual" operand="0"></pattern>
+      <pattern plural="pfOne">{0} hour </pattern>
+      <pattern plural="pfOther">{0} hours </pattern>
+    </row>
+    <row id="3023394972653842807" class="TPatternRow" si="4" created="20260202T142108Z" st="0">
+      <value>{0} minutes</value>
+      <pattern plural="pfOne">{0} minute</pattern>
+      <lang id="fi" st="4" rw="0" time="20260202T142130Z">
+        <value>{0} minuuttia</value>
+        <pattern plural="pfOne">{0} minuutti</pattern>
+      </lang>
+    </row>
+    <row id="1187906511615154129" si="5" created="20260202T142108Z" st="0">Opening Driving Time Calculator dialog...</row>
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
+      <item name="Paikallinen" type="TSqliteTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
-      <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Paikallinen" type="TSqliteTranslationMemory"/>
+      <item name="Varjokäännösmuisti" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

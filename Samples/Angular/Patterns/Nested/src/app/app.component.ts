@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
 // without editor's support. Soluling's multi pattern editor does not support nested patters but you have to use chained patterns. 
 // See Multi sample to see how use chained patterns.
 @Component({
-  selector: 'app-root',
-  template: `
+    selector: 'app-root',
+    template: `
   <h1 i18n="header|">Sample</h1>
 
   <p i18n="nested|name: Name of the person, dogs: Amount of dogs">{gender, select,
@@ -23,7 +23,8 @@ import { Component } from '@angular/core';
     =0 {{gender, select, male {{{name}} will not bring his dog} female {{{name}} will not bring her dog} other {Nobody will bring a dog}} }
     one {{gender, select, male {{{name}} will not bring his {{dogs}} dog} female {{{name}} will bring her {{dogs}} dog} other {Somebody will bring {{dogs}} dog}} }
     other {{gender, select, male {{{name}} will bring his {{dogs}} dogs} female {{{name}} will bring her {{dogs}} dogs} other {Somebody will bring {{dogs}} dogs}} }}</p>
-    `
+    `,
+    standalone: false
 })
 export class AppComponent 
 {

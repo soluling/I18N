@@ -1,8 +1,9 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'app-external',
-  templateUrl: './external.component.html'
+    selector: 'app-external',
+    templateUrl: './external.component.html',
+    standalone: false
 })
 export class ExternalComponent 
 {

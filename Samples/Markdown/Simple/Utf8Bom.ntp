@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="72C2912E-FCEF-4EE4-9BB2-D76997167BA1" created="20201021T225123Z" lastmodified="20201021T225445Z" version="1.0.795" lockedrowcomplete="0" stringid="36">
+<project id="72C2912E-FCEF-4EE4-9BB2-D76997167BA1" created="20201021T225123Z" lastmodified="20260124T133129Z" version="1.0.1089" lockedrowcomplete="0" stringid="45">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TMarkdownSource" name="Utf8Bom.md" fullpath="D:\NT\Deploy\Samples\Markdown\Simple\Utf8Bom.md" original="en" encoding="utf-8" bom="1">
+  <node class="TMarkdownSource" name="Utf8Bom.md" fullpath="D:\NT\Deploy\Samples\Markdown\Simple\Utf8Bom.md" original="en" lastmodified="20260124T133129Z" encoding="utf-8" bom="1">
     <row id="header1[0]" si="1">
       <value>Sample</value>
       <lang id="fi" rw="0" time="20201021T225132Z">Esimerkki</lang>
@@ -11,11 +11,11 @@
     <row id="para[0]" si="2">This is a sample.</row>
     <row id="para[1]" si="3">Line one.
 Line two.</row>
-    <row id="para[2]" class="THtmlRow" si="4">This is &lt;b&gt;bold&lt;/b&gt;, &lt;i&gt;italic&lt;/i&gt;, &lt;bi&gt;both&lt;/bi&gt; and &lt;code&gt;code&lt;/code&gt;.</row>
+    <row id="para[2]" class="THtmlRow" si="4">This is &lt;b>bold&lt;/b>, &lt;i>italic&lt;/i>, &lt;i>&lt;b>both&lt;/b>&lt;/i> and &lt;code>code&lt;/code>.</row>
     <row id="header2[0]" si="5">List</row>
-    <row id="ulist[0]" si="6">One
-- Two
-- Three</row>
+    <row id="ulist[0]" si="42" created="20260124T133115Z">One</row>
+    <row id="ulist[1]" si="43" created="20260124T133115Z">Two</row>
+    <row id="ulist[2]" si="44" created="20260124T133115Z">Three</row>
     <data>
       77u/U2FtcGxlDQo9PT09DQoNClRoaXMgaXMgYSBzYW1wbGUuDQoNCkxpbmUgb25lLg0KTGluZSB0d28uDQoNClRoaXMgaXMgKipi
       b2xkKiosICppdGFsaWMqLCAqKipib3RoKioqIGFuZCBgY29kZWAuDQoNCiMjIExpc3QNCg0KLSBPbmUNCi0gVHdvDQotIFRocmVl
@@ -27,18 +27,17 @@ Line two.</row>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>
