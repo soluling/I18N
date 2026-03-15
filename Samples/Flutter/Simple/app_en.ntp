@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="344EC29C-782A-4ED6-AD79-05E2F341B877" created="20240225T104745Z" lastmodified="20241223T080621Z" version="1.0.1054" stringid="7">
+<project id="344EC29C-782A-4ED6-AD79-05E2F341B877" created="20240225T104745Z" lastmodified="20260302T071007Z" version="1.0.1090" stringid="9">
   <lang id="fi"/>
   <lang id="es"/>
-  <node class="TFlutterSource" name="app_en.arb" fullpath="D:\NT\Deploy\Samples\Flutter\Simple\app_en.arb" original="en" lastmodified="20241223T080621Z" encoding="utf-8" useescaping="0">
+  <node class="TFlutterSource" name="app_en.arb" fullpath="D:\NT\Deploy\Samples\Flutter\Simple\app_en.arb" original="en" lastmodified="20260302T071007Z" encoding="utf-8" useescaping="0">
     <row id="helloWorld" si="1" scannedcomment="The conventional newborn programmer greeting">
       <value>Hello World!</value>
       <lang id="fi" rw="0" time="20240225T104752Z" fuzzy="99.5">Hei maailma!</lang>
@@ -12,19 +12,19 @@
       <value>Hello {userName}</value>
       <lang id="fi" rw="0" time="20240225T104755Z" fuzzy="99.5">Hei {userName}</lang>
     </row>
-    <row id="nWombats" changed="20240225T105026Z" class="TPatternRow" si="3" scannedcomment="A plural message" original="{count, plural, one {{count} wombat} other {{count} wombats}}">
+    <row id="nWombats" changed="20260302T071007Z" si="3" scannedcomment="A plural message" created="20260302T071007Z" codep="1">
       <value>{count} wombats</value>
       <pattern plural="pfOne">{count} wombat</pattern>
-      <lang id="fi" rw="0" time="20240225T105046Z" fuzzy="99.5">
+      <lang id="fi" st="3" rw="0" time="20240225T105046Z" fuzzy="99.5">
         <value>{count} vombattia</value>
         <pattern plural="pfOne">{count} vombatti</pattern>
       </lang>
     </row>
-    <row id="pronoun" class="TPatternRow" si="4" scannedcomment="A gendered message" original="{gender, select, male{he} female{she} other{they}}">
+    <row id="pronoun" changed="20260302T071007Z" si="4" scannedcomment="A gendered message" created="20260302T071007Z" codep="1">
       <value select="other">they</value>
       <pattern select="female">she</pattern>
       <pattern select="male">he</pattern>
-      <lang id="fi" rw="0" time="20240225T105114Z" fuzzy="99.5">
+      <lang id="fi" st="3" rw="0" time="20240225T105114Z" fuzzy="99.5">
         <value select="other">hän</value>
         <pattern select="female">hän</pattern>
         <pattern select="male">hän</pattern>
@@ -59,14 +59,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>

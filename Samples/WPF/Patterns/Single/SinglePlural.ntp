@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6FC71771-7895-4678-8AF5-66083CB8BA6E" created="20180331T144803Z" lastmodified="20191018T145516Z" version="1.0.579" stringid="13">
+<project id="6FC71771-7895-4678-8AF5-66083CB8BA6E" created="20180331T144803Z" lastmodified="20260301T123123Z" version="1.0.1090" stringid="14">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Single\SinglePlural.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20260301T123123Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20191018T145442Z" kind="xkApplication">
       <data>
@@ -13,13 +13,13 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="Language" si="1">
           <value>en</value>
           <lang id="fi" rw="0" time="20180331T144839Z">fi</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T144914Z">de</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" si="2">
+        <row id="MessagePlural" changed="20260301T123039Z" si="2" created="20260301T123039Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" rw="0" time="20180331T144848Z">
@@ -85,6 +85,9 @@
         TGFiZWw+DQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
       </data>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -97,12 +100,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
 </project>

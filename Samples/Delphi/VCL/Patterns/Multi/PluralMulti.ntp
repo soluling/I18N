@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="290169B0-4D28-4D91-BD54-5CB20644F7EE" created="20140521T082740Z" lastmodified="20200209T161920Z" version="1.0.691" stringid="391">
+<project id="290169B0-4D28-4D91-BD54-5CB20644F7EE" created="20140521T082740Z" lastmodified="20260301T130402Z" version="1.0.1090" stringid="394">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiSource" name="Win32\Release\PluralMulti.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Multi\Win32\Release\PluralMulti.exe" original="en" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\PluralMulti.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Multi\Win32\Release\PluralMulti.exe" original="en" lastmodified="20260301T130402Z" hassignature="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -201,50 +201,50 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessagePlural" changed="20200209T161731Z" class="TPatternRow" si="18" created="20170510T140544Z">
-          <value startpattern="1">{0} {1}</value>
+        <row id="SMessagePlural" changed="20260301T130401Z" si="18" created="20260301T130401Z" codep="1">
+          <value startpattern="1">%0:s %1:s</value>
           <pattern plural="pfOne" index="0">I have completed one step</pattern>
-          <pattern plural="pfOther" index="0">I have completed {0} steps</pattern>
+          <pattern plural="pfOther" index="0">I have completed %d steps</pattern>
           <pattern plural="pfOne" index="1">out of one step</pattern>
-          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-          <lang id="fi" time="20200209T161836Z">
-            <value startpattern="1">{0} {1}</value>
+          <pattern plural="pfOther" index="1">out of %d steps</pattern>
+          <lang id="fi" st="3" time="20200209T161836Z">
+            <value startpattern="1">%0:s %1:s</value>
             <pattern plural="pfOne" index="0">Olen suorittanut yhden vaiheen</pattern>
-            <pattern plural="pfOther" index="0">Olen suorittanut {0:d} vaihetta</pattern>
+            <pattern plural="pfOther" index="0">Olen suorittanut %d vaihetta</pattern>
             <pattern plural="pfOne" index="1">yhdestä vaiheesta</pattern>
-            <pattern plural="pfOther" index="1">{0}:stä vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">%d:stä vaiheesta</pattern>
           </lang>
         </row>
-        <row id="SStartMessagePlural" changed="20200209T161731Z" class="TPatternRow" si="19" created="20170510T140544Z">
-          <value startpattern="1">I have completed {0} {1}</value>
+        <row id="SStartMessagePlural" changed="20260301T130401Z" si="19" created="20260301T130401Z" codep="1">
+          <value startpattern="1">I have completed %0:s %1:s</value>
           <pattern plural="pfOne" index="0">one step</pattern>
-          <pattern plural="pfOther" index="0">{0} steps</pattern>
+          <pattern plural="pfOther" index="0">%d steps</pattern>
           <pattern plural="pfOne" index="1">out of one step</pattern>
-          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-          <lang id="fi" time="20200209T161856Z">
-            <value startpattern="1">Olen suorittanut {0} {1}</value>
+          <pattern plural="pfOther" index="1">out of %d steps</pattern>
+          <lang id="fi" st="3" time="20200209T161856Z">
+            <value startpattern="1">Olen suorittanut %0:s %1:s</value>
             <pattern plural="pfOne" index="0">yhden vaiheen</pattern>
-            <pattern plural="pfOther" index="0">{0} vaihetta</pattern>
+            <pattern plural="pfOther" index="0">%d vaihetta</pattern>
             <pattern plural="pfOne" index="1">yhdestä vaiheesta</pattern>
-            <pattern plural="pfOther" index="1">{0}:stä vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">%d:stä vaiheesta</pattern>
           </lang>
         </row>
-        <row id="SZeroMessagePlural" changed="20200209T161731Z" class="TPatternRow" si="20" created="20170510T140544Z">
-          <value startpattern="1">I have completed {0} {1}</value>
+        <row id="SZeroMessagePlural" changed="20260301T130401Z" si="20" created="20260301T130401Z" codep="1">
+          <value startpattern="1">I have completed %0:s %1:s</value>
           <pattern plural="pfZero" index="0">no steps</pattern>
           <pattern plural="pfOne" index="0">one step</pattern>
-          <pattern plural="pfOther" index="0">{0} steps</pattern>
+          <pattern plural="pfOther" index="0">%d steps</pattern>
           <pattern plural="pfZero" index="1">out of none steps</pattern>
           <pattern plural="pfOne" index="1">out of one step</pattern>
-          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-          <lang id="fi" time="20200209T161912Z">
-            <value startpattern="1">Olen suorittanut {0} {1}</value>
+          <pattern plural="pfOther" index="1">out of %d steps</pattern>
+          <lang id="fi" st="3" time="20200209T161912Z">
+            <value startpattern="1">Olen suorittanut %0:s %1:s</value>
             <pattern plural="pfZero" index="0">en yhtään vaihetta</pattern>
             <pattern plural="pfOne" index="0">yhden vaiheen</pattern>
-            <pattern plural="pfOther" index="0">{0} vaihetta</pattern>
+            <pattern plural="pfOther" index="0">%d vaihetta</pattern>
             <pattern plural="pfZero" index="1">nollasta vaiheesta</pattern>
             <pattern plural="pfOne" index="1">yhdestä vaiheesta</pattern>
-            <pattern plural="pfOther" index="1">{0}:sta vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">%d:sta vaiheesta</pattern>
           </lang>
         </row>
       </node>
@@ -261,18 +261,19 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

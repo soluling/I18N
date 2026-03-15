@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AAC97836-4ABA-4EEB-9591-605B36E35403" created="20131013T221318Z" lastmodified="20200316T230629Z" version="1.0.714" stringid="11">
+<project id="AAC97836-4ABA-4EEB-9591-605B36E35403" created="20131013T221318Z" lastmodified="20260302T071655Z" version="1.0.1090" stringid="13">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TPropertiesSource" name="Resources.properties" fullpath="D:\NT\Deploy\Samples\JSP\DrivingRes\build\classes\Resources.properties" original="en" encoding="iso-8859-1">
+  <node class="TPropertiesSource" name="Resources.properties" fullpath="D:\NT\Deploy\Samples\JSP\DrivingRes\build\classes\Resources.properties" original="en" lastmodified="20260302T071655Z" encoding="iso-8859-1">
     <row id="driving_time_calculator" si="1">
       <value>Driving Time Calculator</value>
       <lang id="fi" time="20131013T221414Z">Ajoaikalaskin</lang>
@@ -33,32 +33,34 @@
       <lang id="fi" time="20131013T221447Z">Ajoaika on</lang>
       <lang id="ja" time="20131013T225908Z">所要時間は</lang>
     </row>
-    <row id="hours" class="TPatternRow" si="7" created="20200316T230628Z" st="0">{0} hours</row>
-    <row id="minutes" class="TPatternRow" si="8" created="20200316T230628Z" st="0">{0} minutes</row>
+    <row id="hours" changed="20260302T071655Z" si="7" created="20260302T071655Z" codep="1">%d hours</row>
+    <row id="minutes" changed="20260302T071655Z" si="8" created="20260302T071655Z" codep="1">%d minutes</row>
     <row id="invalid_parameters" si="9">
       <value>You must enter a valid distance and a speed!</value>
       <lang id="fi" time="20131013T221518Z">Etäisyys ja nopeus täytyy antaa!</lang>
       <lang id="ja" time="20131013T225909Z">有効な距離と速度を入力する必要があります。</lang>
     </row>
+    <data>
+      ZHJpdmluZ190aW1lX2NhbGN1bGF0b3I9RHJpdmluZyBUaW1lIENhbGN1bGF0b3INCmRyaXZpbmdfdGltZT1Ecml2aW5nIFRpbWUN
+      CmRpc3RhbmNlPURyaXZpbmcgZGlzdGFuY2U6DQpzcGVlZD1TcGVlZDoNCmNhbGN1bGF0ZT1DYWxjdWxhdGUNCmRyaXZpbmdfdGlt
+      ZV9pcz1Ecml2aW5nIHRpbWUgaXMNCmhvdXJzPSVkIGhvdXJzDQptaW51dGVzPSVkIG1pbnV0ZXMNCmludmFsaWRfcGFyYW1ldGVy
+      cz1Zb3UgbXVzdCBlbnRlciBhIHZhbGlkIGRpc3RhbmNlIGFuZCBhIHNwZWVkIQ==
+    </data>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

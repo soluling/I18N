@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20241014T160049Z" version="1.0.1043" stringid="412" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20260301T120644Z" version="1.0.1090" stringid="413" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
-  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20241014T160049Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20260301T120532Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -608,36 +608,36 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" changed="20200209T160313Z" class="TPatternRow" si="9" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-          <value startpattern="1">Driving time{0}{1}.</value>
+        <row id="SResultPlural" changed="20260301T113136Z" si="9" created="20260301T113136Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" time="20200209T160403Z">
-            <value startpattern="1">Ajoaika{0}{1}</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" time="20260301T113146Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti </pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %0:d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %0:d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%0:d minuutti </pattern>
+            <pattern plural="pfOther" index="1">%0:d minuuttia</pattern>
           </lang>
-          <lang id="de" st="4" rw="0" time="20230521T213746Z">
-            <value startpattern="1">Fahrzeit {0}{1}</value>
+          <lang id="de" st="3" rw="0" time="20230521T213746Z">
+            <value startpattern="1">Fahrzeit %0:s%1:s</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} Stunde</pattern>
-            <pattern plural="pfOther" index="0"> {0} Stunden</pattern>
-            <pattern plural="pfOne" index="1"> {0} Minute.</pattern>
-            <pattern plural="pfOther" index="1"> {0} Minuten.</pattern>
+            <pattern plural="pfOne" index="0"> %0:d Stunde</pattern>
+            <pattern plural="pfOther" index="0"> %0:d Stunden</pattern>
+            <pattern plural="pfOne" index="1"> %0:d Minute.</pattern>
+            <pattern plural="pfOther" index="1"> %0:d Minuten.</pattern>
           </lang>
-          <lang id="fr" st="4" rw="0" time="20230521T213809Z">
-            <value startpattern="1">Temps de conduite{0}{1}.</value>
+          <lang id="fr" st="3" rw="0" time="20230521T213809Z">
+            <value startpattern="1">Temps de conduite%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} heure</pattern>
-            <pattern plural="pfOther" index="0"> {0} heures</pattern>
-            <pattern plural="pfOne" index="1">{0} minute</pattern>
-            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <pattern plural="pfOne" index="0"> %0:d heure</pattern>
+            <pattern plural="pfOther" index="0"> %0:d heures</pattern>
+            <pattern plural="pfOne" index="1">%0:d minute</pattern>
+            <pattern plural="pfOther" index="1">%0:d minutes</pattern>
           </lang>
         </row>
         <row id="SAbout" si="10">
@@ -680,11 +680,12 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

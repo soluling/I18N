@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="664394F0-6D8E-49E7-B203-5D248A1E5391" created="20181102T220610Z" lastmodified="20200316T215052Z" version="1.0.714" stringid="5">
+<project id="664394F0-6D8E-49E7-B203-5D248A1E5391" created="20181102T220610Z" lastmodified="20260302T071242Z" version="1.0.1090" stringid="7">
   <lang id="fi"/>
-  <node class="TXliffSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\XLIFF\2.0\messages.xlf" original="en" encoding="utf-8" version="xlf20">
+  <node class="TXliffSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\XLIFF\2.0\messages.xlf" original="en" lastmodified="20260302T071242Z" encoding="utf-8" version="xlf20">
     <item class="TXliffFileItem" name="sample">
       <row id="1538119734082426044" si="1">
         <value>Localization Sample</value>
         <lang id="fi" rw="0" time="20181102T221623Z">Lokalisointiesimerkki</lang>
       </row>
-      <row id="4438291026891864493" class="TPatternRow" si="2">
+      <row id="4438291026891864493" si="2" created="20260302T071242Z" codep="1">
         <value>Hello {0:name}!</value>
         <lang id="fi" rw="0" time="20181102T221628Z">Moi {0:name}!</lang>
       </row>
-      <row id="5978994821803949985" class="TPatternRow" si="3">
+      <row id="5978994821803949985" si="3" created="20260302T071242Z" codep="1">
         <value>Hello {0:name} and {1:name2}!</value>
         <lang id="fi" rw="0" time="20181102T221641Z">Moi {0:name} ja {1:name2}!</lang>
       </row>
@@ -43,21 +43,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

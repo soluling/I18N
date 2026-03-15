@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="53932F52-60C9-485C-89D2-B713985217BB" created="20260217T151232Z" lastmodified="20260302T153156Z" version="1.0.1090" stringid="6" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Nested\src\locale\messages12.xlf" original="en" lastmodified="20260302T153156Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="src\app\app.component.ts.header" importid="8884523860497558714" si="1">Sample</row>
+    <row id="src\app\app.component.ts.nested" importid="6104666937896740108" changed="20260302T153148Z" si="2" scannedcomment="name: Name of the person, dogs: Amount of dogs">{VAR_SELECT, select, male {{VAR_PLURAL, plural, =0 {{0} will not bring his dog} one {{0} will bring his {1} dog} other {{0} will bring his {1} dogs}} } female {{VAR_PLURAL_1, plural, =0 {{0} will not bring her dog} one {{0} will bring her {1} dog} other {{0} will bring her {1} dogs}} } other {{VAR_PLURAL_2, plural, =0 {Nobody will bring a dog} one {Somebody will bring {1} dog} other {Somebody will bring {1} dogs}} }}</row>
+    <row id="src\app\app.component.ts.nested2" importid="2155208799812707149" si="3" scannedcomment="name: Name of the person, dogs: Amount of dogs" created="20260302T153146Z" codep="1">Dogs: {icu0}</row>
+    <row id="5810272167243582289" changed="20260302T153148Z" si="4">{VAR_SELECT, select, male {{VAR_PLURAL, plural, =0 {{0} will not bring his dog} one {{0} will bring his {1} dog} other {{0} will bring his {1} dogs}} } female {{VAR_PLURAL_1, plural, =0 {{0} will not bring her dog} one {{0} will bring her {1} dog} other {{0} will bring her {1} dogs}} } other {{VAR_PLURAL_2, plural, =0 {Nobody will bring a dog} one {Somebody will bring {1} dog} other {Somebody will bring {1} dogs}} }}</row>
+    <row id="src\app\app.component.ts.nested3" importid="1558069205731126286" changed="20260302T153148Z" si="5">{VAR_PLURAL, plural, =0 {{VAR_SELECT, select, male {{0} will not bring his dog} female {{0} will not bring her dog} other {Nobody will bring a dog}} } one {{VAR_SELECT_1, select, male {{0} will not bring his {1} dog} female {{0} will bring her {1} dog} other {Somebody will bring {1} dog}} } other {{VAR_SELECT_2, select, male {{0} will bring his {1} dogs} female {{0} will bring her {1} dogs} other {Somebody will bring {1} dogs}} }}</row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

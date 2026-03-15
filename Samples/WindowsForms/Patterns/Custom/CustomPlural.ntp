@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="15839E6C-98AE-4316-B3C9-B2E3F844E003" created="20181129T162749Z" lastmodified="20221117T125652Z" version="1.0.963" stringid="47">
+<project id="15839E6C-98AE-4316-B3C9-B2E3F844E003" created="20181129T162749Z" lastmodified="20260301T112929Z" version="1.0.1090" stringid="52">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="CustomPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Custom\CustomPlural.csproj" original="en" lastmodified="20221117T125652Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="CustomPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Custom\CustomPlural.csproj" original="en" lastmodified="20260301T112929Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrGroupIcon,nrIcon,nrManifest,nrVersion]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="label1.Location" class="TCoordinatePointRow" created="20221117T125623Z">32, 8</row>
@@ -162,6 +162,7 @@
         <value>Pattern with operator parts</value>
         <lang id="fi" rw="0" time="20181129T163646Z">Malli, jossa on operaattoriosia</lang>
       </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T112914Z" st="0">1061, 170</row>
       <row id="$this.Text" si="42">
         <value>Plural Sample</value>
         <lang id="fi" rw="0" time="20181129T163015Z">Monikkoesimerkki</lang>
@@ -912,7 +913,7 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="MessagePlural" class="TPatternRow" si="43">
+        <row id="MessagePlural" changed="20260301T112914Z" si="43" created="20260301T112914Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" rw="0" time="20181129T163004Z">
@@ -920,7 +921,7 @@
             <pattern plural="pfOne">{0} tiedosto</pattern>
           </lang>
         </row>
-        <row id="TextMessagePlural" class="TPatternRow" si="44">
+        <row id="TextMessagePlural" changed="20260301T112914Z" si="44" created="20260301T112914Z" codep="1">
           <value>Lots of files</value>
           <pattern operator="okEqual" operand="0">No files</pattern>
           <pattern operator="okEqual" operand="1">One file</pattern>
@@ -938,7 +939,7 @@
             <pattern operator="okAround" operand="12">Tusina tiedostoja</pattern>
           </lang>
         </row>
-        <row id="Two2MessagePlural" class="TPatternRow" si="45">
+        <row id="Two2MessagePlural" changed="20260301T112914Z" si="45" created="20260301T112914Z" codep="1">
           <value>{0} files</value>
           <pattern operator="okEqual" operand="0">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
@@ -950,7 +951,7 @@
             <pattern operator="okEqual" operand="2">Kaksi tiedostoa</pattern>
           </lang>
         </row>
-        <row id="TwoMessagePlural" class="TPatternRow" si="46">
+        <row id="TwoMessagePlural" changed="20260301T112914Z" si="46" created="20260301T112914Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfZero">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
@@ -962,7 +963,7 @@
             <pattern plural="pfTwo">Kaksi tiedostoa</pattern>
           </lang>
         </row>
-        <row id="ZeroMessagePlural" class="TPatternRow" si="47">
+        <row id="ZeroMessagePlural" changed="20260301T112914Z" si="47" created="20260301T112914Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfZero">No files</pattern>
           <pattern plural="pfOne">One file</pattern>
@@ -1080,7 +1081,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -1094,6 +1094,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

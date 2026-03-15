@@ -8,1471 +8,1472 @@
   resources were bound to the produced executable.
 */
 
-#define MainFrm_SDataDirectory 63504
-#define MainFrm_SUpdate 63505
-#define MainFrm_SModify 63506
-#define MainFrm_SNew 63507
-#define MainFrm_SDefaultLanguage 63508
-#define MainFrm_SNewerVersionExists 63509
-#define MainFrm_SThisSetupIsMostRecent 63510
-#define MainFrm_SCouldNotCheckVersion 63511
-#define MainFrm_SWindows7OrLaterneeded 63512
-#define MainFrm_SNoFirstAndLastName 63520
-#define MainFrm_SWaiting 63521
-#define MainFrm_SSetupRunning 63522
-#define MainFrm_SNoWriteAccess 63523
-#define MainFrm_SNotEnoughDiskSpace 63524
-#define MainFrm_SRootDir 63525
-#define MainFrm_SEnterEvaluationExtensionReason 63526
-#define MainFrm_SReasonCaption 63527
-#define MainFrm_SEnterEvaluationExtensionCode 63528
-#define MainFrm_SCodeCaption 63529
-#define MainFrm_SNoInternet 63530
-#define MainFrm_SCancel 63531
-#define MainFrm_SNext 63532
-#define MainFrm_SNo 63533
-#define MainFrm_SYes 63534
-#define MainFrm_SVersion 63535
-#define MainFrm_SInstallingI18NLibraryFiles 63536
-#define MainFrm_SInstallingFiles 63537
-#define MainFrm_SCouldNotRegisterInstallation 63538
-#define MainFrm_SCouldNotActivate 63539
-#define MainFrm_SSetupFailed 63540
-#define MainFrm_SPersonalFolder 63541
-#define MainFrm_SPublicFolder 63542
-#define MainFrm_SUnknownVersion 63543
-#define MainFrm_SStart1 63544
-#define MainFrm_SStart2 63545
-#define MainFrm_SStart3 63546
-#define MainFrm_SDirectory 63547
-#define MainFrm_SUpdateRadio 63548
-#define MainFrm_SModifyRadio 63549
-#define MainFrm_SNewRadio 63550
-#define MainFrm_SUnknownParameter 63551
-#define NtDialogFilter_SAviFiles 63552
-#define NtDialogFilter_SQuickTimeFiles 63553
-#define SelectFile_SCaption 63554
-#define VoikkoSpellEngine_SVoikko 63555
-#define MainFrm_SSetup 63556
-#define MainFrm_SSetupTypeCustomDescription 63557
-#define MainFrm_SSetupTypeAllDescription 63558
-#define MainFrm_SSetupTypeMinimalDescription 63559
-#define MainFrm_SSetupTypeBuildAutomationDescription 63560
-#define MainFrm_SCanNotInstall 63561
-#define MainFrm_SApplicationRunning 63562
-#define MainFrm_STotalSelectedSize 63563
-#define MainFrm_SInstallingLibraryFiles 63564
-#define MainFrm_SInstallingBuildAutomationFiles 63565
-#define MainFrm_SInstallingApplicationFiles 63566
-#define MainFrm_SInstallingSpellCheckFiles 63567
-#define NtDialogFilter_SImageFiles 63568
-#define NtDialogFilter_SJpegFiles 63569
-#define NtDialogFilter_SBitmapFiles 63570
-#define NtDialogFilter_SPngFiles 63571
-#define NtDialogFilter_SGifFiles 63572
-#define NtDialogFilter_SIconFiles 63573
-#define NtDialogFilter_SLanguageFiles 63574
-#define NtDialogFilter_SSisulizerLanguagesFiles 63575
-#define NtDialogFilter_STextFiles 63576
-#define NtDialogFilter_SAudioFiles 63577
-#define NtDialogFilter_SWaveFiles 63578
-#define NtDialogFilter_SWmaFiles 63579
-#define NtDialogFilter_SMp4Files 63580
-#define NtDialogFilter_SMp3Files 63581
-#define NtDialogFilter_SVideoFiles 63582
-#define NtDialogFilter_SMpegFiles 63583
-#define Installer_SXmlDescription 63584
-#define Installer_SXslDescription 63585
-#define Installer_SYamlDescription 63586
-#define Installer_SSilverlightDescription 63587
-#define Installer_SWindowsPhoneDescription 63588
-#define Installer_SLocalization 63589
-#define Installer_SLocalizationDescription 63590
-#define Installer_SI18NAPI 63591
-#define Installer_SI18NAPIDescription 63592
-#define Installer_SConfiguringSystem 63593
-#define Installer_SConfiguringLibraryPaths 63594
-#define Installer_SComponentFailed 63595
-#define NtDialogFilter_SAllFiles 63596
-#define NtDialogFilter_SAllSupportedFiles 63597
-#define NtDialogFilter_SDllFiles 63598
-#define NtDialogFilter_SExeFiles 63599
-#define Installer_STmxDescription 63600
-#define Installer_STranslationMemoryDescription 63601
-#define Installer_STutorialDescription 63602
-#define Installer_STypeScriptDescription 63603
-#define Installer_SVisualCppDescription 63604
-#define Installer_SVisualStudioDescription 63605
-#define Installer_SVueDescription 63606
-#define Installer_SWebVTTDescription 63607
-#define Installer_SWindowsFormsDescription 63608
-#define Installer_SWinUIDescription 63609
-#define Installer_SWixDescription 63610
-#define Installer_SWordDescription 63611
-#define Installer_SWpfDescription 63612
-#define Installer_SUniversalWindowsPlatformDescription 63613
-#define Installer_SXamarinDescription 63614
-#define Installer_SXliffDescription 63615
-#define Installer_SPostgreDescription 63616
-#define Installer_SPowerPointDescription 63617
-#define Installer_SPythonDescription 63618
-#define Installer_SOpenDocumentDescription 63619
-#define Installer_SQtDescription 63620
-#define Installer_SRailsDescription 63621
-#define Installer_SReactDescription 63622
-#define Installer_SRtfDescription 63623
-#define Installer_SSalesForceDescription 63624
-#define Installer_SScriptDescription 63625
-#define Installer_SSqlCeDescription 63626
-#define Installer_SSqliteDescription 63627
-#define Installer_SSqlServerDescription 63628
-#define Installer_SSrtDescription 63629
-#define Installer_SSvgDescription 63630
-#define Installer_STextDescription 63631
-#define Installer_SHtmlHelpDescription 63632
-#define Installer_Si18nextDescription 63633
-#define Installer_SIniDescription 63634
-#define Installer_SInterBaseDescription 63635
-#define Installer_SiOSDescription 63636
-#define Installer_SJavaDescription 63637
-#define Installer_SJavaScriptDescription 63638
-#define Installer_SJsonDescription 63639
-#define Installer_SJspDescription 63640
-#define Installer_SLazarusDescription 63641
-#define Installer_SMauiDescription 63642
-#define Installer_SMarkdownDescription 63643
-#define Installer_SMySqlDescription 63644
-#define Installer_SPdfDescription 63645
-#define Installer_SPhpDescription 63646
-#define Installer_SPoDescription 63647
-#define Installer_SAspNetDescription 63648
-#define Installer_SBinaryDescription 63649
-#define Installer_SBuildAutomationDescription 63650
-#define Installer_SBlazorDescription 63651
-#define Installer_SBsonDescription 63652
-#define Installer_SCBuilderDescription 63653
-#define Installer_SDelphiDescription 63654
-#define Installer_SDitaDescription 63655
-#define Installer_SDotNetDescription 63656
-#define Installer_SExcelDescription 63657
-#define Installer_SFirebirdDescription 63658
-#define Installer_SFlutterDescription 63659
-#define Installer_SGlossaryDescription 63660
-#define Installer_SGoDescription 63661
-#define Installer_SHelpAndManualDescription 63662
-#define Installer_SHtmlDescription 63663
-#define NtSpellChecker_SSpellEngineIsWorkingProperly 63664
-#define NtSpellChecker_SLocal 63665
-#define NtSpellChecker_SRemote 63666
-#define NtConsts_SFileDoesNotExist 63667
-#define NtConsts_SDllDoesNotExist 63668
-#define NtConsts_SDllDoesNotExist2 63669
-#define NtConsts_SDllHasNoFunction 63670
-#define NtConsts_SItemsFilter 63671
-#define NtConsts_SSelectActivationFile 63672
-#define NtConsts_SActivationFiles 63673
-#define NtConsts_SInvalidActivationFile 63674
-#define HunSpellEngine_SOpenOffice 63675
-#define StandardLicense_SNoFeatureLicense 63676
-#define Installer_SAccessDescription 63677
-#define Installer_SAndroidDescription 63678
-#define Installer_SAngularDescription 63679
-#define NtFormatItems_SReactHtmlSample 63680
-#define NtFormatItems_SSvelte 63681
-#define NtFormatItems_SSvelteSample 63682
-#define NtFormatItems_SSvelteHtmlSample 63683
-#define NtFormatItems_SObjectiveC 63684
-#define NtFormatItems_SObjectiveCSample 63685
-#define NtFormatItems_SObjectiveCHtmlSample 63686
-#define NtFormatItems_SCpp 63687
-#define NtFormatItems_SCppSample 63688
-#define NtFormatItems_SCppHtmlSample 63689
-#define NtFormatItems_SJava 63690
-#define NtFormatItems_SJavaSample 63691
-#define NtFormatItems_SJavaHtmlSample 63692
-#define NtFormatItems_SJavaSample2 63693
-#define NtFormatItems_SJavaHtmlSample2 63694
-#define NtSpellChecker_SCouldNotOpenSpellEngine 63695
-#define NtFormatItems_SWixSample 63696
-#define NtFormatItems_SWixHtmlSample 63697
-#define NtFormatItems_SDelphi 63698
-#define NtFormatItems_SDelphiSample 63699
-#define NtFormatItems_SDelphiHtmlSample 63700
-#define NtFormatItems_SNet 63701
-#define NtFormatItems_SNetSample 63702
-#define NtFormatItems_SNetHtmlSample 63703
-#define NtFormatItems_SMagento 63704
-#define NtFormatItems_SMagentoSample 63705
-#define NtFormatItems_SMagentoHtmlSample 63706
-#define NtFormatItems_SRails 63707
-#define NtFormatItems_SRailsSample 63708
-#define NtFormatItems_SRailsHtmlSample 63709
-#define NtFormatItems_SReact 63710
-#define NtFormatItems_SReactSample 63711
-#define NtPattern_SNeutral 63712
-#define NtFormatItems_SSoluling 63713
-#define NtFormatItems_SSolulingSample 63714
-#define NtFormatItems_SSolulingHtmlSample 63715
-#define NtFormatItems_SAngular 63716
-#define NtFormatItems_SAngularSample 63717
-#define NtFormatItems_SAngularHtmlSample 63718
-#define NtFormatItems_SPython 63719
-#define NtFormatItems_SPythonSample 63720
-#define NtFormatItems_SPythonHtmlSample 63721
-#define NtFormatItems_SPythonSample2 63722
-#define NtFormatItems_SPythonHtmlSample2 63723
-#define NtFormatItems_SQt 63724
-#define NtFormatItems_SQtSample 63725
-#define NtFormatItems_SQtHtmlSample 63726
-#define NtFormatItems_SWix 63727
-#define Vcl_OleConst_sNoRunningObject 63728
-#define Dll_SLibraryDescription 63729
-#define Dll_SSpellCheckerDescription 63730
-#define Dll_SNetLibraryDescription 63731
-#define Dll_SUnavailable 63732
-#define Dll_SUnregistered 63733
-#define Dll_SInstalled 63734
-#define Dll_SRegisterManually 63735
-#define NtPattern_SZero 63736
-#define NtPattern_SOne 63737
-#define NtPattern_STwo 63738
-#define NtPattern_SFew 63739
-#define NtPattern_SMany 63740
-#define NtPattern_SPlural 63741
-#define NtPattern_SMale 63742
-#define NtPattern_SFemale 63743
-#define JclResources_RsIntelCacheDescrEA 63744
-#define JclResources_RsIntelCacheDescrEB 63745
-#define JclResources_RsIntelCacheDescrEC 63746
-#define JclResources_RsIntelCacheDescrF0 63747
-#define JclResources_RsIntelCacheDescrF1 63748
-#define JclResources_RsIntelCacheDescrFF 63749
-#define JclResources_RsOSVersionWin8 63750
-#define JclResources_RsOSVersionWinServer2012 63751
-#define JclResources_RsOSVersionWin81 63752
-#define JclResources_RsOSVersionWinServer2012R2 63753
-#define JclResources_RsCannotWriteRefStream 63754
-#define JclResources_RsHasNotTD32Info 63755
-#define JclResources_RsEUnexpectedEOSeq 63756
-#define JclResources_RsWin32Error 63757
-#define JclResources_RsELibraryNotFound 63758
-#define JclResources_RsEFunctionNotFound 63759
-#define JclResources_RsIntelCacheDescrB4 63760
-#define JclResources_RsIntelCacheDescrBA 63761
-#define JclResources_RsIntelCacheDescrC0 63762
-#define JclResources_RsIntelCacheDescrCA 63763
-#define JclResources_RsIntelCacheDescrD0 63764
-#define JclResources_RsIntelCacheDescrD1 63765
-#define JclResources_RsIntelCacheDescrD2 63766
-#define JclResources_RsIntelCacheDescrD6 63767
-#define JclResources_RsIntelCacheDescrD7 63768
-#define JclResources_RsIntelCacheDescrD8 63769
-#define JclResources_RsIntelCacheDescrDC 63770
-#define JclResources_RsIntelCacheDescrDD 63771
-#define JclResources_RsIntelCacheDescrDE 63772
-#define JclResources_RsIntelCacheDescrE2 63773
-#define JclResources_RsIntelCacheDescrE3 63774
-#define JclResources_RsIntelCacheDescrE4 63775
-#define JclResources_RsIntelCacheDescr7A 63776
-#define JclResources_RsIntelCacheDescr7B 63777
-#define JclResources_RsIntelCacheDescr7C 63778
-#define JclResources_RsIntelCacheDescr7D 63779
-#define JclResources_RsIntelCacheDescr7F 63780
-#define JclResources_RsIntelCacheDescr80 63781
-#define JclResources_RsIntelCacheDescr82 63782
-#define JclResources_RsIntelCacheDescr83 63783
-#define JclResources_RsIntelCacheDescr84 63784
-#define JclResources_RsIntelCacheDescr85 63785
-#define JclResources_RsIntelCacheDescr86 63786
-#define JclResources_RsIntelCacheDescr87 63787
-#define JclResources_RsIntelCacheDescrB0 63788
-#define JclResources_RsIntelCacheDescrB1 63789
-#define JclResources_RsIntelCacheDescrB2 63790
-#define JclResources_RsIntelCacheDescrB3 63791
-#define JclResources_RsIntelCacheDescr59 63792
-#define JclResources_RsIntelCacheDescr5A 63793
-#define JclResources_RsIntelCacheDescr5B 63794
-#define JclResources_RsIntelCacheDescr5C 63795
-#define JclResources_RsIntelCacheDescr5D 63796
-#define JclResources_RsIntelCacheDescr60 63797
-#define JclResources_RsIntelCacheDescr66 63798
-#define JclResources_RsIntelCacheDescr67 63799
-#define JclResources_RsIntelCacheDescr68 63800
-#define JclResources_RsIntelCacheDescr70 63801
-#define JclResources_RsIntelCacheDescr71 63802
-#define JclResources_RsIntelCacheDescr72 63803
-#define JclResources_RsIntelCacheDescr73 63804
-#define JclResources_RsIntelCacheDescr76 63805
-#define JclResources_RsIntelCacheDescr78 63806
-#define JclResources_RsIntelCacheDescr79 63807
-#define JclResources_RsIntelCacheDescr46 63808
-#define JclResources_RsIntelCacheDescr47 63809
-#define JclResources_RsIntelCacheDescr48 63810
-#define JclResources_RsIntelCacheDescr49 63811
-#define JclResources_RsIntelCacheDescr4A 63812
-#define JclResources_RsIntelCacheDescr4B 63813
-#define JclResources_RsIntelCacheDescr4C 63814
-#define JclResources_RsIntelCacheDescr4D 63815
-#define JclResources_RsIntelCacheDescr4E 63816
-#define JclResources_RsIntelCacheDescr4F 63817
-#define JclResources_RsIntelCacheDescr50 63818
-#define JclResources_RsIntelCacheDescr51 63819
-#define JclResources_RsIntelCacheDescr52 63820
-#define JclResources_RsIntelCacheDescr55 63821
-#define JclResources_RsIntelCacheDescr56 63822
-#define JclResources_RsIntelCacheDescr57 63823
-#define JclResources_RsIntelCacheDescr25 63824
-#define JclResources_RsIntelCacheDescr29 63825
-#define JclResources_RsIntelCacheDescr2C 63826
-#define JclResources_RsIntelCacheDescr30 63827
-#define JclResources_RsIntelCacheDescr39 63828
-#define JclResources_RsIntelCacheDescr3A 63829
-#define JclResources_RsIntelCacheDescr3B 63830
-#define JclResources_RsIntelCacheDescr3C 63831
-#define JclResources_RsIntelCacheDescr3D 63832
-#define JclResources_RsIntelCacheDescr3E 63833
-#define JclResources_RsIntelCacheDescr40 63834
-#define JclResources_RsIntelCacheDescr41 63835
-#define JclResources_RsIntelCacheDescr42 63836
-#define JclResources_RsIntelCacheDescr43 63837
-#define JclResources_RsIntelCacheDescr44 63838
-#define JclResources_RsIntelCacheDescr45 63839
-#define JclResources_RsIntelCacheDescr01 63840
-#define JclResources_RsIntelCacheDescr02 63841
-#define JclResources_RsIntelCacheDescr03 63842
-#define JclResources_RsIntelCacheDescr04 63843
-#define JclResources_RsIntelCacheDescr05 63844
-#define JclResources_RsIntelCacheDescr06 63845
-#define JclResources_RsIntelCacheDescr08 63846
-#define JclResources_RsIntelCacheDescr09 63847
-#define JclResources_RsIntelCacheDescr0A 63848
-#define JclResources_RsIntelCacheDescr0B 63849
-#define JclResources_RsIntelCacheDescr0C 63850
-#define JclResources_RsIntelCacheDescr0D 63851
-#define JclResources_RsIntelCacheDescr0E 63852
-#define JclResources_RsIntelCacheDescr21 63853
-#define JclResources_RsIntelCacheDescr22 63854
-#define JclResources_RsIntelCacheDescr23 63855
-#define JclResources_RsPePkgIgnoreDupUnits 63856
-#define JclResources_RsPePkgV3Produced 63857
-#define JclResources_RsPePkgProducerUndefined 63858
-#define JclResources_RsPePkgBCB4Produced 63859
-#define JclResources_RsPePkgDelphi4Produced 63860
-#define JclResources_RsPePkgMain 63861
-#define JclResources_RsPePkgWeak 63862
-#define JclResources_RsPePkgOrgWeak 63863
-#define JclResources_RsPePkgImplicit 63864
-#define JclResources_RsUnableToOpenKeyRead 63865
-#define JclResources_RsUnableToAccessValue 63866
-#define JclResources_RsWrongDataType 63867
-#define JclResources_RsInconsistentPath 63868
-#define JclResources_RsSynchCreateEvent 63869
-#define JclResources_RsSynchOpenEvent 63870
-#define JclResources_RsIntelCacheDescr00 63871
-#define JclResources_RsPeSUBSYSTEM_RESERVED8 63872
-#define JclResources_RsPeDEBUG_UNKNOWN 63873
-#define JclResources_RsPeDEBUG_COFF 63874
-#define JclResources_RsPeDEBUG_CODEVIEW 63875
-#define JclResources_RsPeDEBUG_FPO 63876
-#define JclResources_RsPeDEBUG_MISC 63877
-#define JclResources_RsPeDEBUG_EXCEPTION 63878
-#define JclResources_RsPeDEBUG_FIXUP 63879
-#define JclResources_RsPeDEBUG_OMAP_TO_SRC 63880
-#define JclResources_RsPeDEBUG_OMAP_FROM_SRC 63881
-#define JclResources_RsPePkgExecutable 63882
-#define JclResources_RsPePkgPackage 63883
-#define JclResources_PsPePkgLibrary 63884
-#define JclResources_RsPePkgNeverBuild 63885
-#define JclResources_RsPePkgDesignOnly 63886
-#define JclResources_RsPePkgRunOnly 63887
-#define JclResources_RsPeMACHINE_MIPS16 63888
-#define JclResources_RsPeMACHINE_AMPHA64 63889
-#define JclResources_RsPeMACHINE_MIPSFPU 63890
-#define JclResources_RsPeMACHINE_MIPSFPU16 63891
-#define JclResources_RsPeMACHINE_TRICORE 63892
-#define JclResources_RsPeMACHINE_CEF 63893
-#define JclResources_RsPeMACHINE_EBC 63894
-#define JclResources_RsPeMACHINE_AMD64 63895
-#define JclResources_RsPeMACHINE_M32R 63896
-#define JclResources_RsPeMACHINE_CEE 63897
-#define JclResources_RsPeSUBSYSTEM_UNKNOWN 63898
-#define JclResources_RsPeSUBSYSTEM_NATIVE 63899
-#define JclResources_RsPeSUBSYSTEM_WINDOWS_GUI 63900
-#define JclResources_RsPeSUBSYSTEM_WINDOWS_CUI 63901
-#define JclResources_RsPeSUBSYSTEM_OS2_CUI 63902
-#define JclResources_RsPeSUBSYSTEM_POSIX_CUI 63903
-#define JclResources_RsPeMACHINE_R3000 63904
-#define JclResources_RsPeMACHINE_R4000 63905
-#define JclResources_RsPeMACHINE_R10000 63906
-#define JclResources_RsPeMACHINE_WCEMIPSV2 63907
-#define JclResources_RsPeMACHINE_ALPHA 63908
-#define JclResources_RsPeMACHINE_SH3 63909
-#define JclResources_RsPeMACHINE_SH3DSP 63910
-#define JclResources_RsPeMACHINE_SH3E 63911
-#define JclResources_RsPeMACHINE_SH4 63912
-#define JclResources_RsPeMACHINE_SH5 63913
-#define JclResources_RsPeMACHINE_ARM 63914
-#define JclResources_RsPeMACHINE_THUMB 63915
-#define JclResources_RsPeMACHINE_AM33 63916
-#define JclResources_RsPeMACHINE_POWERPC 63917
-#define JclResources_RsPeMACHINE_POWERPCFP 63918
-#define JclResources_RsPeMACHINE_IA64 63919
-#define JclResources_RsPeVersion 63920
-#define JclResources_RsPeGlobalFlagsClear 63921
-#define JclResources_RsPeGlobalFlagsSet 63922
-#define JclResources_RsPeCriticalSectionDefaultTimeout 63923
-#define JclResources_RsPeDeCommitFreeBlockThreshold 63924
-#define JclResources_RsPeDeCommitTotalFreeThreshold 63925
-#define JclResources_RsPeLockPrefixTable 63926
-#define JclResources_RsPeMaximumAllocationSize 63927
-#define JclResources_RsPeVirtualMemoryThreshold 63928
-#define JclResources_RsPeProcessHeapFlags 63929
-#define JclResources_RsPeProcessAffinityMask 63930
-#define JclResources_RsPeCSDVersion 63931
-#define JclResources_RsPeReserved 63932
-#define JclResources_RsPeEditList 63933
-#define JclResources_RsPeMACHINE_UNKNOWN 63934
-#define JclResources_RsPeMACHINE_I386 63935
-#define JclResources_RsPeFileAlignment 63936
-#define JclResources_RsPeOperatingSystemVersion 63937
-#define JclResources_RsPeImageVersion 63938
-#define JclResources_RsPeSubsystemVersion 63939
-#define JclResources_RsPeWin32VersionValue 63940
-#define JclResources_RsPeSizeOfImage 63941
-#define JclResources_RsPeSizeOfHeaders 63942
-#define JclResources_RsPeCheckSum 63943
-#define JclResources_RsPeSubsystem 63944
-#define JclResources_RsPeDllCharacteristics 63945
-#define JclResources_RsPeSizeOfStackReserve 63946
-#define JclResources_RsPeSizeOfStackCommit 63947
-#define JclResources_RsPeSizeOfHeapReserve 63948
-#define JclResources_RsPeSizeOfHeapCommit 63949
-#define JclResources_RsPeLoaderFlags 63950
-#define JclResources_RsPeNumberOfRvaAndSizes 63951
-#define JclResources_RsPeNumberOfSections 63952
-#define JclResources_RsPeTimeDateStamp 63953
-#define JclResources_RsPePointerToSymbolTable 63954
-#define JclResources_RsPeNumberOfSymbols 63955
-#define JclResources_RsPeSizeOfOptionalHeader 63956
-#define JclResources_RsPeCharacteristics 63957
-#define JclResources_RsPeMagic 63958
-#define JclResources_RsPeLinkerVersion 63959
-#define JclResources_RsPeSizeOfCode 63960
-#define JclResources_RsPeSizeOfInitializedData 63961
-#define JclResources_RsPeSizeOfUninitializedData 63962
-#define JclResources_RsPeAddressOfEntryPoint 63963
-#define JclResources_RsPeBaseOfCode 63964
-#define JclResources_RsPeBaseOfData 63965
-#define JclResources_RsPeImageBase 63966
-#define JclResources_RsPeSectionAlignment 63967
-#define JclResources_RsPeImg_02 63968
-#define JclResources_RsPeImg_03 63969
-#define JclResources_RsPeImg_04 63970
-#define JclResources_RsPeImg_05 63971
-#define JclResources_RsPeImg_06 63972
-#define JclResources_RsPeImg_07 63973
-#define JclResources_RsPeImg_08 63974
-#define JclResources_RsPeImg_09 63975
-#define JclResources_RsPeImg_10 63976
-#define JclResources_RsPeImg_11 63977
-#define JclResources_RsPeImg_12 63978
-#define JclResources_RsPeImg_13 63979
-#define JclResources_RsPeImg_14 63980
-#define JclResources_RsPeImg_Reserved 63981
-#define JclResources_RsPeSignature 63982
-#define JclResources_RsPeMachine 63983
-#define JclResources_RsFileUtilsFileDoesNotExist 63984
-#define JclResources_RsFileUtilsLanguageIndex 63985
-#define JclResources_RsFileUtilsEmptyValue 63986
-#define JclResources_RsFileUtilsValueNotFound 63987
-#define JclResources_RsCreateFileMapping 63988
-#define JclResources_RsCreateFileMappingView 63989
-#define JclResources_RsFailedToObtainSize 63990
-#define JclResources_RsPeReadOnlyStream 63991
-#define JclResources_RsPeCantOpen 63992
-#define JclResources_RsPeNotPE 63993
-#define JclResources_RsPeUnknownTarget 63994
-#define JclResources_RsPeNotResDir 63995
-#define JclResources_RsPeNotAvailableForAttached 63996
-#define JclResources_RsPeSectionNotFound 63997
-#define JclResources_RsPeImg_00 63998
-#define JclResources_RsPeImg_01 63999
-#define License_SEvaluationExpired 64000
-#define License_SEdition 64001
-#define NtFileAssociation_SProjectDescription 64002
-#define NtFileAssociation_SExchangeDescription 64003
-#define NetTypes_SNet 64004
-#define NetTypes_SFramework 64005
-#define NetTypes_SStandard 64006
-#define NetTypes_SCompact 64007
-#define JclResources_RsEReplacementChar 64008
-#define JclResources_RsDateConversion 64009
-#define JclResources_RsUnknownFunctionAt 64010
-#define JclResources_RsEWindowsVersionNotSupported 64011
-#define JclResources_RsEWindowNotValid 64012
-#define JclResources_RsEProcessNotValid 64013
-#define JclResources_RsEModuleNotValid 64014
-#define JclResources_RsFileUtilsNoVersionInfo 64015
-#define License_SCloud 64016
-#define License_SRemoteTermbase 64017
-#define License_SRemoteTm 64018
-#define License_SMake 64019
-#define License_SHiddenId 64020
-#define License_SVisualEditor 64021
-#define License_SErrorRegister 64022
-#define License_SNotFoundRegister 64023
-#define License_SInvalidNamesRegister 64024
-#define License_SInstallLimitReachedRegister 64025
-#define License_SSubscriptionExpiredRegister 64026
-#define License_SExtendLimitReachedRegister 64027
-#define License_SVersionBuildStr 64028
-#define License_SVersion 64029
-#define License_S32Bit 64030
-#define License_SEvaluationLeft 64031
-#define License_SGui 64032
-#define License_SCreate 64033
-#define License_SScan 64034
-#define License_SBuild 64035
-#define License_SEnter 64036
-#define License_SNoneString 64037
-#define License_SExchange 64038
-#define License_SImport 64039
-#define License_SExport 64040
-#define License_SPseudo 64041
-#define License_SSpell 64042
-#define License_SValidation 64043
-#define License_SFileGlossary 64044
-#define License_SLocalTermbase 64045
-#define License_SMt 64046
-#define License_SLocalTm 64047
-#define License_SMobile 64048
-#define License_SBasicData 64049
-#define License_SAdvancedData 64050
-#define License_SBasicDocument 64051
-#define License_SAdvancedDocument 64052
-#define License_SLocalDatabase 64053
-#define License_SRemoteDatabase 64054
-#define License_SBrowser 64055
-#define License_SWeb 64056
-#define License_SWindows 64057
-#define License_SNet 64058
-#define License_SMicrosoft 64059
-#define License_SEmbarcadero 64060
-#define License_SJava 64061
-#define License_SApple 64062
-#define License_SLinux 64063
-#define License_SError 64064
-#define License_SNoInternet 64065
-#define License_SInvalid 64066
-#define License_SInstallLimitReached 64067
-#define License_SSubscriptionExpired 64068
-#define License_SNeedsExtensionReason 64069
-#define License_SExtendLimitReached 64070
-#define License_SEvaluation 64071
-#define License_SBasicTranslatorEdition 64072
-#define License_SShortEdition 64073
-#define License_SDeveloper 64074
-#define License_STranslator 64075
-#define License_SBuildAutomation 64076
-#define License_SDesktop 64077
-#define License_SModernDesktop 64078
-#define License_SCrossPlatform 64079
-#define uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow 64080
-#define uTPLb_I18n_ES_HugeCardinal_StreamInOverflow 64081
-#define uTPLb_I18n_ES_EratosthenesSievSizeTooSmall 64082
-#define uTPLb_I18n_ES_InternalError_Suffix 64083
-#define uTPLb_I18n_ES_InvalidKey 64084
-#define uTPLb_I18n_ES_PlaintextFN_Empty 64085
-#define uTPLb_I18n_ES_CiphertextFN_Empty 64086
-#define uTPLb_I18n_ES_NoOpenSSLCompat 64087
-#define uTPLb_I18n_ES_OpenSSLCompat_RequiresIV 64088
-#define uTPLb_I18n_RSA_DisplayName 64089
-#define uTPLb_I18n_BlockCipher_DisplayName 64090
-#define uTPLb_I18n_Base64_DisplayName 64091
-#define uTPLb_I18n_CFB8bit_DisplayName 64092
-#define uTPLb_I18n_ECB_DisplayName 64093
-#define License_SNoPlatformLicense 64094
-#define License_SOk 64095
-#define uTPLb_I18n_ES_Asym_CannotSetParam 64096
-#define uTPLb_I18n_ES_Asym_CannotSetCipher 64097
-#define uTPLb_I18n_ES_AsymNotInitByStr 64098
-#define uTPLb_I18n_ES_NotImplementedNot_Suffix 64099
-#define uTPLb_I18n_ES_LibsChainTooDeep 64100
-#define uTPLb_I18n_ES_CircularLibs 64101
-#define uTPLb_I18n_ES_HugeCardinal_CloneOverflow 64102
-#define uTPLb_I18n_ES_HugeCardinal_AddOverflow 64103
-#define uTPLb_I18n_ES_CannotAssignHuge_BecauseSourceTooBig 64104
-#define uTPLb_I18n_ES_HugeCardinal_IncrementOverflow 64105
-#define uTPLb_I18n_ES_HugeCardinal_DivideOverflow 64106
-#define uTPLb_I18n_ES_HugeCardinal_Power2 64107
-#define uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow 64108
-#define uTPLb_I18n_ES_HugeCardinal_ResizeOverflow 64109
-#define uTPLb_I18n_ES_HugeCardinal_PowerOverflow 64110
-#define uTPLb_I18n_ES_HugeCardinal_SubractOverflow 64111
-#define PeUtils_SVxds 64112
-#define NtSourceCode_STruncated 64113
-#define PeFile_SInvalidExeFile 64114
-#define PeFile_SOutOfMemory 64115
-#define uTPLb_I18n_ES_NoPassword 64116
-#define uTPLb_I18n_ES_AsymPassword 64117
-#define uTPLb_I18n_ES_HashFailed 64118
-#define uTPLb_I18n_ES_WrongModeReset 64119
-#define uTPLb_I18n_ES_WrongModeEncrypt 64120
-#define uTPLb_I18n_ES_EncryptNoAlg 64121
-#define uTPLb_I18n_ES_WrongModeDecrypt 64122
-#define uTPLb_I18n_ES_DecryptNoAlg 64123
-#define uTPLb_I18n_ES_WrongModeEncryptMem 64124
-#define uTPLb_I18n_ES_WrongModeDecryptMem 64125
-#define uTPLb_I18n_ES_WrongModeEndDecryptMem 64126
-#define uTPLb_I18n_ES_WrongModeEndEncryptMem 64127
-#define PeUtils_SFonts 64128
-#define PeUtils_SFontDirs 64129
-#define PeUtils_SForms 64130
-#define PeUtils_SGroupCursors 64131
-#define PeUtils_SGroupIcons 64132
-#define PeUtils_SHtmls 64133
-#define PeUtils_SIcons 64134
-#define PeUtils_SManifests 64135
-#define PeUtils_SMenus 64136
-#define PeUtils_SMessageTables 64137
-#define PeUtils_SPlugPlays 64138
-#define PeUtils_SRcDatas 64139
-#define PeUtils_SRibbons 64140
-#define PeUtils_SStrings 64141
-#define PeUtils_SToolbars 64142
-#define PeUtils_SVersions 64143
-#define LicenseTypes_SPersonalEdition 64144
-#define LicenseTypes_SBuildAutomation 64145
-#define LicenseTypes_SProfessionalTranslatorEdition 64146
-#define LicenseTypes_SBasicTransaltorEdition 64147
-#define LicenseTypes_SUnknown 64148
-#define LicenseTypes_SFreeTranslatorName 64149
-#define LicenseTypes_SFreeTranslatorDescription 64150
-#define NtCommon_SVersionStr 64151
-#define PeUtils_SAccelerators 64152
-#define PeUtils_SAniCursors 64153
-#define PeUtils_SAniIcons 64154
-#define PeUtils_SBitmaps 64155
-#define PeUtils_SCursors 64156
-#define PeUtils_SDialogs 64157
-#define PeUtils_SDlgIncludes 64158
-#define PeUtils_SDlgDatas 64159
-#define Data_DBConsts_STextFalse 64160
-#define Data_DBConsts_STextTrue 64161
-#define Data_DBConsts_SParameterNotFound 64162
-#define Data_DBConsts_SInvalidVersion 64163
-#define Data_DBConsts_SBadFieldType 64164
-#define Data_DBConsts_SProviderSQLNotSupported 64165
-#define Data_DBConsts_SProviderExecuteNotSupported 64166
-#define Data_DBConsts_SDataSetUnidirectional 64167
-#define Data_DBConsts_SUnassignedVar 64168
-#define Data_DBConsts_SRecordNotFound 64169
-#define Data_DBConsts_SBcdOverflow 64170
-#define Data_DBConsts_SInvalidBcdValue 64171
-#define Data_DBConsts_SCouldNotParseTimeStamp 64172
-#define Data_DBConsts_SInvalidSqlTimeStamp 64173
-#define LicenseTypes_SEnterpriseEdition 64174
-#define LicenseTypes_SProfessionalEdition 64175
-#define Data_DBConsts_SFieldRequired 64176
-#define Data_DBConsts_SDataSetMissing 64177
-#define Data_DBConsts_SInvalidCalcType 64178
-#define Data_DBConsts_SDuplicateIndexName 64179
-#define Data_DBConsts_SNoIndexForFields 64180
-#define Data_DBConsts_SIndexNotFound 64181
-#define Data_DBConsts_SDBDuplicateName 64182
-#define Data_DBConsts_SCircularDataLink 64183
-#define Data_DBConsts_SLookupInfoError 64184
-#define Data_DBConsts_SDataSourceChange 64185
-#define Data_DBConsts_SDataSetOpen 64186
-#define Data_DBConsts_SNotEditing 64187
-#define Data_DBConsts_SDataSetClosed 64188
-#define Data_DBConsts_SDataSetEmpty 64189
-#define Data_DBConsts_SDataSetReadOnly 64190
-#define Data_DBConsts_SNestedDataSetClass 64191
-#define Data_DBConsts_SInvalidFieldKind 64192
-#define Data_DBConsts_SUnknownFieldType 64193
-#define Data_DBConsts_SFieldNameMissing 64194
-#define Data_DBConsts_SDuplicateFieldName 64195
-#define Data_DBConsts_SFieldNotFound 64196
-#define Data_DBConsts_SFieldAccessError 64197
-#define Data_DBConsts_SFieldValueError 64198
-#define Data_DBConsts_SFieldRangeError 64199
-#define Data_DBConsts_SBcdFieldRangeError 64200
-#define Data_DBConsts_SInvalidIntegerValue 64201
-#define Data_DBConsts_SInvalidBoolValue 64202
-#define Data_DBConsts_SInvalidFloatValue 64203
-#define Data_DBConsts_SFieldTypeMismatch 64204
-#define Data_DBConsts_SFieldSizeMismatch 64205
-#define Data_DBConsts_SInvalidVarByteArray 64206
-#define Data_DBConsts_SFieldOutOfRange 64207
-#define Vcl_Imaging_GIFConsts_sProgressOptimizing 64208
-#define NtIcon_rstInvalidIcon 64209
-#define NtIcon_rstInvalidCursor 64210
-#define NtIcon_rstInvalidBitmap 64211
-#define NtIcon_rstInvalidPixelFormat 64212
-#define NtUninstallFile_SDoesNotExists 64213
-#define NtUninstallFile_SCouldNotDeleteDir 64214
-#define NtUninstallFile_SCouldNotDeleteFile 64215
-#define NtUninstallFile_SChangeSinceInstallation 64216
-#define NtUninstallFile_SCanNotRemoveKey 64217
-#define NtUninstallFile_SCanNotRemoveValue 64218
-#define NtInstaller_SHelpAndManual 64219
-#define NtJson_SUnexpectedClosingBracket 64220
-#define NtJson_SNoFile 64221
-#define NtJson_SErrorParsingJsonData 64222
-#define Data_DBConsts_SInvalidFieldSize 64223
-#define Vcl_Imaging_GIFConsts_sInvalidPixelFormat 64224
-#define Vcl_Imaging_GIFConsts_sBadDimension 64225
-#define Vcl_Imaging_GIFConsts_sNoDIB 64226
-#define Vcl_Imaging_GIFConsts_sInvalidStream 64227
-#define Vcl_Imaging_GIFConsts_sInvalidColor 64228
-#define Vcl_Imaging_GIFConsts_sInvalidBitSize 64229
-#define Vcl_Imaging_GIFConsts_sEmptyColorMap 64230
-#define Vcl_Imaging_GIFConsts_sEmptyImage 64231
-#define Vcl_Imaging_GIFConsts_sMultipleGCE 64232
-#define Vcl_Imaging_GIFConsts_sNoPalette 64233
-#define Vcl_Imaging_GIFConsts_sGIFImageFile 64234
-#define Vcl_Imaging_GIFConsts_sProgressLoading 64235
-#define Vcl_Imaging_GIFConsts_sProgressSaving 64236
-#define Vcl_Imaging_GIFConsts_sProgressConverting 64237
-#define Vcl_Imaging_GIFConsts_sProgressRendering 64238
-#define Vcl_Imaging_GIFConsts_sProgressCopying 64239
-#define Vcl_Imaging_GIFConsts_sImageBadColorSize 64240
-#define Vcl_Imaging_GIFConsts_sUnknownExtension 64241
-#define Vcl_Imaging_GIFConsts_sBadExtensionLabel 64242
-#define Vcl_Imaging_GIFConsts_sOutOfMemDIB 64243
-#define Vcl_Imaging_GIFConsts_sDecodeTooFewBits 64244
-#define Vcl_Imaging_GIFConsts_sDecodeCircular 64245
-#define Vcl_Imaging_GIFConsts_sBadTrailer 64246
-#define Vcl_Imaging_GIFConsts_sBadExtensionInstance 64247
-#define Vcl_Imaging_GIFConsts_sBadBlockSize 64248
-#define Vcl_Imaging_GIFConsts_sBadBlock 64249
-#define Vcl_Imaging_GIFConsts_sUnsupportedClass 64250
-#define Vcl_Imaging_GIFConsts_sInvalidData 64251
-#define Vcl_Imaging_GIFConsts_sBadSize 64252
-#define Vcl_Imaging_GIFConsts_sScreenSizeExceeded 64253
-#define Vcl_Imaging_GIFConsts_sNoColorTable 64254
-#define Vcl_Imaging_GIFConsts_sBadPixelCoordinates 64255
-#define NtString_SInvalidString 64256
-#define NtString_SUnknownCode 64257
-#define NtWiz_SNext 64258
-#define NtWiz_SFinish 64259
-#define Shell_Win32_sNewFolder 64260
-#define Shell_Win32_sInFolder 64261
-#define Vcl_Imaging_JConsts_sChangeJPGSize 64262
-#define Vcl_Imaging_JConsts_sJPEGError 64263
-#define Vcl_Imaging_JConsts_sJPEGImageFile 64264
-#define Vcl_Imaging_GIFConsts_sOutOfData 64265
-#define Vcl_Imaging_GIFConsts_sTooManyColors 64266
-#define Vcl_Imaging_GIFConsts_sBadColorIndex 64267
-#define Vcl_Imaging_GIFConsts_sBadColorIndexFixed 64268
-#define Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty 64269
-#define Vcl_Imaging_GIFConsts_sBadSignature 64270
-#define Vcl_Imaging_GIFConsts_sScreenBadColorSize 64271
-#define NtScript_SJapaneseAuto 64272
-#define NtScript_SKoreanAuto 64273
-#define NtScript_SSimplifiedChineseGb2312 64274
-#define NtScript_SKoreanWansung 64275
-#define NtScript_SExtAlphaLowercase 64276
-#define NtScript_SUkrainianKoi8 64277
-#define NtScript_SEucJapanese 64278
-#define NtScript_SEucSimplifiedChinese 64279
-#define NtScript_SEucKorean 64280
-#define NtScript_SEucTraditionalChinese 64281
-#define NtScript_SSimplifiedChineseHzGb2312 64282
-#define NtScript_SUtf16LittleEndian 64283
-#define NtScript_SUtf16BigEndian 64284
-#define NtScript_SUtf7 64285
-#define NtScript_SNameWithBom 64286
-#define NtScript_SNameWithoutBom 64287
-#define NtScript_SRussianKoi8 64288
-#define NtScript_SKoreanJohab 64289
-#define NtScript_SCnsTaiwan 64290
-#define NtScript_STcaTaiwan 64291
-#define NtScript_SEltenTaiwan 64292
-#define NtScript_SIbm5550Taiwan 64293
-#define NtScript_STeleTextTaiwan 64294
-#define NtScript_SWangTaiwan 64295
-#define NtScript_SIa5International 64296
-#define NtScript_SIa5German 64297
-#define NtScript_SIa5Swedish 64298
-#define NtScript_SIa5Norwegian 64299
-#define NtScript_SUsAscii 64300
-#define NtScript_ST61 64301
-#define NtScript_SIso6937 64302
-#define NtScript_SJapaneseJisX 64303
-#define NtScript_SEbcdicJapanese 64304
-#define NtScript_SEbcdicUsCanadaJapanese 64305
-#define NtScript_SEbcdicKorean 64306
-#define NtScript_SEbcdicSimplifiedChinese 64307
-#define NtScript_SEbcdicTraditionalChineseUs 64308
-#define NtScript_SEbcdicJapaneseLatin 64309
-#define NtScript_SIsciiDevanagari 64310
-#define NtScript_SIsciiBengali 64311
-#define NtScript_SIsciiTamil 64312
-#define NtScript_SIsciiTelugu 64313
-#define NtScript_SIsciiAssamese 64314
-#define NtScript_SIsciiOriya 64315
-#define NtScript_SIsciiKannada 64316
-#define NtScript_SIsciiMalayalam 64317
-#define NtScript_SIsciiGujarati 64318
-#define NtScript_SIsciiPunjabi 64319
-#define NtScript_SEbcdicFinlandSweden 64320
-#define NtScript_SEbcdicItaly 64321
-#define NtScript_SEbcdicLatinAmericaSpain 64322
-#define NtScript_SEbcdicUk 64323
-#define NtScript_SEbcdicJapaneseKatakana 64324
-#define NtScript_SEbcdicFrance 64325
-#define NtScript_SEbcdicArabic 64326
-#define NtScript_SEbcdicGreek 64327
-#define NtScript_SEbcdicHebrew 64328
-#define NtScript_SEbcdicKoreanExtended 64329
-#define NtScript_SEbcdicThai 64330
-#define NtScript_SEbcdicIcelandic 64331
-#define NtScript_SEbcdicCyrillicRussian 64332
-#define NtScript_SEbcdicTurkish 64333
-#define NtScript_SEbcdicLatin1Euro 64334
-#define NtScript_SEbcdicCyrillicSerbian 64335
-#define NtScript_SEbcdicLatin1 64336
-#define NtScript_SEbcdicLatin2 64337
-#define NtScript_SEbcdicModernGreek 64338
-#define NtScript_SEbcdicTurkishLatin5 64339
-#define NtScript_SEbcdicUsaCanadaEuro 64340
-#define NtScript_SEbcdicGermanyEuro 64341
-#define NtScript_SEbcdicDenmarkNorwayEuro 64342
-#define NtScript_SEbcdicFinlandSwedenEuro 64343
-#define NtScript_SEbcdicItalyEuro 64344
-#define NtScript_SEbcdicLatinAmericaSpainEuro 64345
-#define NtScript_SEbcdicUkEuro 64346
-#define NtScript_SEbcdicFranceEuro 64347
-#define NtScript_SEbcdicInternationalEuro 64348
-#define NtScript_SEbcdicIcelandicEuro 64349
-#define NtScript_SEbcdicGermany 64350
-#define NtScript_SEbcdicDenmarkNorway 64351
-#define NtScript_SOemLatin2 64352
-#define NtScript_SOemCyrillic 64353
-#define NtScript_SOemTurkish 64354
-#define NtScript_SOemLatin1Euro 64355
-#define NtScript_SOemPortuguese 64356
-#define NtScript_SOemIcelandic 64357
-#define NtScript_SOemHebrew 64358
-#define NtScript_SOemCanadianFrench 64359
-#define NtScript_SOemArabic 64360
-#define NtScript_SOemNordic 64361
-#define NtScript_SOemRussian 64362
-#define NtScript_SOemModernGreek 64363
-#define NtScript_SOemArabicAsmo 64364
-#define NtScript_SOemArabicTransparentAsmo 64365
-#define NtScript_SEbcdicUsaCanada 64366
-#define NtScript_SEbcdicWestEuropean 64367
-#define NtScript_SMacArabic 64368
-#define NtScript_SMacHebrew 64369
-#define NtScript_SMacGreek 64370
-#define NtScript_SMacCyrillic 64371
-#define NtScript_SMacSimplifiedChinese 64372
-#define NtScript_SMacRomania 64373
-#define NtScript_SMacUkraine 64374
-#define NtScript_SMacThai 64375
-#define NtScript_SMacLatin 64376
-#define NtScript_SMacIcelandic 64377
-#define NtScript_SMacTurkish 64378
-#define NtScript_SMacCroatian 64379
-#define NtScript_SOemUs 64380
-#define NtScript_SOemGreek 64381
-#define NtScript_SOemBaltic 64382
-#define NtScript_SOemLatin1 64383
-#define NtScript_SIso8859_7_Greek 64384
-#define NtScript_SIso8859_8_HebrewVisual 64385
-#define NtScript_SIso8859_8_HebrewLogical 64386
-#define NtScript_SIso8859_9_Latin5 64387
-#define NtScript_SIso8859_13_Estonian 64388
-#define NtScript_SIso8859_15_Latin9 64389
-#define NtScript_SIso2022JapaneseNoHalfWidth 64390
-#define NtScript_SIso2022JapaneseHalfWidth 64391
-#define NtScript_SIso2022JapaneseJisX 64392
-#define NtScript_SIso2022Korean 64393
-#define NtScript_SIso2022SimplifiedChinese 64394
-#define NtScript_SIso2022TraditionalChinese 64395
-#define NtScript_SMacRoman 64396
-#define NtScript_SMacJapanese 64397
-#define NtScript_SMacTraditionalChinese 64398
-#define NtScript_SMacKorean 64399
-#define NtScript_SAnsiTraditionalChinese 64400
-#define NtScript_SAnsiEastEurope 64401
-#define NtScript_SAnsiCyrillic 64402
-#define NtScript_SAnsiWestern 64403
-#define NtScript_SAnsiGreek 64404
-#define NtScript_SAnsiTurkish 64405
-#define NtScript_SAnsiHebrew 64406
-#define NtScript_SAnsiArabic 64407
-#define NtScript_SAnsiBaltic 64408
-#define NtScript_SAnsiVietnamese 64409
-#define NtScript_SIso8859_1_Latin1 64410
-#define NtScript_SIso8859_2_CentralEurope 64411
-#define NtScript_SIso8859_3_Latin3 64412
-#define NtScript_SIso8859_4_Baltic 64413
-#define NtScript_SIso8859_5_Cyrillic 64414
-#define NtScript_SIso8859_6_Arabic 64415
-#define NtScript_SSyriacScript 64416
-#define NtScript_STamilScript 64417
-#define NtScript_STeluguScript 64418
-#define NtScript_SThaanaScript 64419
-#define NtScript_STibetanScript 64420
-#define NtScript_SYiScript 64421
-#define NtScript_SCherokeeScript 64422
-#define NtScript_SMyanmarScript 64423
-#define NtScript_SNkoScript 64424
-#define NtScript_STifinaghScript 64425
-#define NtScript_SJavaneseScript 64426
-#define NtScript_SVaiScript 64427
-#define NtScript_SAnsiThai 64428
-#define NtScript_SAnsiJapanese 64429
-#define NtScript_SAnsiSimplifiedChinese 64430
-#define NtScript_SAnsiKorean 64431
-#define NtScript_SBengaliScript 64432
-#define NtScript_SBrahmiScript 64433
-#define NtScript_SDevanagariScript 64434
-#define NtScript_SEthiopicScript 64435
-#define NtScript_SGeorgianScript 64436
-#define NtScript_SGujaratiScript 64437
-#define NtScript_SGurmukhiScript 64438
-#define NtScript_SInuktitutScript 64439
-#define NtScript_SSyllabicsScript 64440
-#define NtScript_SKannadaScript 64441
-#define NtScript_SKhmerScript 64442
-#define NtScript_SLaoScript 64443
-#define NtScript_SMalayalamScript 64444
-#define NtScript_SMongolianScript 64445
-#define NtScript_SOriyaScript 64446
-#define NtScript_SSinhalaScript 64447
-#define NtScript_SEbcdicCodePage 64448
-#define NtScript_SOtherCodePage 64449
-#define NtScript_SDefaultScript 64450
-#define NtScript_SLatinscript 64451
-#define NtScript_SGreekScript 64452
-#define NtScript_SCyrillicScript 64453
-#define NtScript_SArabicScript 64454
-#define NtScript_SHebrewScript 64455
-#define NtScript_SJapaneseScript 64456
-#define NtScript_STraditionalChineseScript 64457
-#define NtScript_SSimplifiedChineseScript 64458
-#define NtScript_SSimplifiedScript 64459
-#define NtScript_STraditionalScript 64460
-#define NtScript_SKoreanScript 64461
-#define NtScript_SThaiScript 64462
-#define NtScript_SArmenianScript 64463
-#define NtLanguages_SSuriname 64464
-#define NtLanguages_SCaboVerde 64465
-#define NtLanguages_SMozambique 64466
-#define NtLanguages_SSaoTomePrincipe 64467
-#define NtLanguages_STimorLeste 64468
-#define NtLanguages_SMoldova 64469
-#define NtScript_SUtf8 64470
-#define NtScript_SUtf16Le 64471
-#define NtScript_SUtf16Be 64472
-#define NtScript_SUtf32Le 64473
-#define NtScript_SUtf32Be 64474
-#define NtScript_SGb18030 64475
-#define NtScript_SWindowsCodePage 64476
-#define NtScript_SIsoCodePage 64477
-#define NtScript_SMacCodePage 64478
-#define NtScript_SDosCodePage 64479
-#define NtLanguages_SMali 64480
-#define NtLanguages_SMartinique 64481
-#define NtLanguages_SNewCaledonia 64482
-#define NtLanguages_SFrenchPolynesia 64483
-#define NtLanguages_SStPierrMiquelon 64484
-#define NtLanguages_SReunion 64485
-#define NtLanguages_SWallisFutuna 64486
-#define NtLanguages_SMayotte 64487
-#define NtLanguages_SSanMarino 64488
-#define NtLanguages_SVaticanCity 64489
-#define NtLanguages_SNorthKorea 64490
-#define NtLanguages_SAngola 64491
-#define NtLanguages_SSvalbardJanMayen 64492
-#define NtLanguages_SAruba 64493
-#define NtLanguages_SBonaireSintEustatiusSaba 64494
-#define NtLanguages_SCura__ao 64495
-#define NtLanguages_SEquatorialGuinea 64496
-#define NtLanguages_SBurkinaFaso 64497
-#define NtLanguages_SGuinea 64498
-#define NtLanguages_SGuineaBissau 64499
-#define NtLanguages_SNiger 64500
-#define NtLanguages_SBenin 64501
-#define NtLanguages_SStBarthelemy 64502
-#define NtLanguages_SCongoDRC 64503
-#define NtLanguages_SCentralAfricanRepublic 64504
-#define NtLanguages_SCongo 64505
-#define NtLanguages_SCoteDIvoire 64506
-#define NtLanguages_SGabon 64507
-#define NtLanguages_SFrenchGuiana 64508
-#define NtLanguages_SGuadeloupe 64509
-#define NtLanguages_SHaiti 64510
-#define NtLanguages_SStMartin 64511
-#define NtLanguages_SSintMaarten 64512
-#define NtLanguages_SEswatini 64513
-#define NtLanguages_STurksCaicosIslands 64514
-#define NtLanguages_STokelau 64515
-#define NtLanguages_STonga 64516
-#define NtLanguages_STuvalu 64517
-#define NtLanguages_STanzania 64518
-#define NtLanguages_SUganda 64519
-#define NtLanguages_SUsOutlyingIslands 64520
-#define NtLanguages_SStVincentGrenadines 64521
-#define NtLanguages_SBritishVirginIslands 64522
-#define NtLanguages_SUsVirginIslands 64523
-#define NtLanguages_SVanuatu 64524
-#define NtLanguages_SSamoa 64525
-#define NtLanguages_SZambia 64526
-#define NtLanguages_SCuba 64527
-#define NtLanguages_SMarshallIslands 64528
-#define NtLanguages_SNorthernMarianaIslands 64529
-#define NtLanguages_SMontserrat 64530
-#define NtLanguages_SMauritius 64531
-#define NtLanguages_SMalawi 64532
-#define NtLanguages_SNamibia 64533
-#define NtLanguages_SNorfolkIsland 64534
-#define NtLanguages_SNauru 64535
-#define NtLanguages_SNiue 64536
-#define NtLanguages_SPapuaNewGuinea 64537
-#define NtLanguages_SPitcairnIslands 64538
-#define NtLanguages_SPalau 64539
-#define NtLanguages_SSolomonIslands 64540
-#define NtLanguages_SSeychelles 64541
-#define NtLanguages_SStHelenaAscensionTristanDaCunha 64542
-#define NtLanguages_SSierraLeone 64543
-#define NtLanguages_SGrenada 64544
-#define NtLanguages_SGuernsey 64545
-#define NtLanguages_SGibraltar 64546
-#define NtLanguages_SGambia 64547
-#define NtLanguages_SGuam 64548
-#define NtLanguages_SGuyana 64549
-#define NtLanguages_SIsleOfMan 64550
-#define NtLanguages_SBritishIndianOceanTerritory 64551
-#define NtLanguages_SJersey 64552
-#define NtLanguages_SKiribati 64553
-#define NtLanguages_SStKittNevis 64554
-#define NtLanguages_SCaymanIslands 64555
-#define NtLanguages_SStLucia 64556
-#define NtLanguages_SLiberia 64557
-#define NtLanguages_SLesotho 64558
-#define NtLanguages_SMadagascar 64559
-#define NtLanguages_SAntiguaBarbuda 64560
-#define NtLanguages_SAnguilla 64561
-#define NtLanguages_SAmericanSamoa 64562
-#define NtLanguages_SBarbados 64563
-#define NtLanguages_SBurundi 64564
-#define NtLanguages_SBermuda 64565
-#define NtLanguages_SBahamas 64566
-#define NtLanguages_SBotswana 64567
-#define NtLanguages_SCocosKeelingIslands 64568
-#define NtLanguages_SCookIslands 64569
-#define NtLanguages_SCameroon 64570
-#define NtLanguages_SChristmasIsland 64571
-#define NtLanguages_SDominica 64572
-#define NtLanguages_SFiji 64573
-#define NtLanguages_SFalklandIslands 64574
-#define NtLanguages_SMicronesia 64575
-#define NtLanguages_SYemen 64576
-#define NtLanguages_SZimbabwe 64577
-#define NtLanguages_SWorld 64578
-#define NtLanguages_SEurope 64579
-#define NtLanguages_SDjibouti 64580
-#define NtLanguages_SEritrea 64581
-#define NtLanguages_SComoros 64582
-#define NtLanguages_SMauritania 64583
-#define NtLanguages_SPalestinianAuthority 64584
-#define NtLanguages_SSudan 64585
-#define NtLanguages_SSomalia 64586
-#define NtLanguages_SSouthSudan 64587
-#define NtLanguages_SChad 64588
-#define NtLanguages_SAndorra 64589
-#define NtLanguages_SGhana 64590
-#define NtLanguages_STogo 64591
-#define NtLanguages_SSyria 64592
-#define NtLanguages_STaiwan 64593
-#define NtLanguages_STajikistan 64594
-#define NtLanguages_SThailand 64595
-#define NtLanguages_STrinidadAndTobago 64596
-#define NtLanguages_STunisia 64597
-#define NtLanguages_STurkey 64598
-#define NtLanguages_STurkmenistan 64599
-#define NtLanguages_SUAE 64600
-#define NtLanguages_SUkraine 64601
-#define NtLanguages_SUnitedKingdom 64602
-#define NtLanguages_SUnitedStates 64603
-#define NtLanguages_SUruguay 64604
-#define NtLanguages_SUzbekistan 64605
-#define NtLanguages_SVenezuela 64606
-#define NtLanguages_SVietNam 64607
-#define NtLanguages_SPuertoRico 64608
-#define NtLanguages_SQatar 64609
-#define NtLanguages_SRomania 64610
-#define NtLanguages_SRussia 64611
-#define NtLanguages_SRwanda 64612
-#define NtLanguages_SSaudiArabia 64613
-#define NtLanguages_SSenegal 64614
-#define NtLanguages_SSerbia 64615
-#define NtLanguages_SSingapore 64616
-#define NtLanguages_SSlovakia 64617
-#define NtLanguages_SSlovenia 64618
-#define NtLanguages_SSouthAfrica 64619
-#define NtLanguages_SSpain 64620
-#define NtLanguages_SSriLanka 64621
-#define NtLanguages_SSweden 64622
-#define NtLanguages_SSwitzerland 64623
-#define NtLanguages_SMorocco 64624
-#define NtLanguages_SNetherlands 64625
-#define NtLanguages_SNepal 64626
-#define NtLanguages_SNewZealand 64627
-#define NtLanguages_SNicaragua 64628
-#define NtLanguages_SNigeria 64629
-#define NtLanguages_SNorway 64630
-#define NtLanguages_SOman 64631
-#define NtLanguages_SPakistan 64632
-#define NtLanguages_SPanama 64633
-#define NtLanguages_SParaguay 64634
-#define NtLanguages_SPeru 64635
-#define NtLanguages_SPhilippines 64636
-#define NtLanguages_SPoland 64637
-#define NtLanguages_SPortugal 64638
-#define NtLanguages_SPRC 64639
-#define NtLanguages_SLatinAmerica 64640
-#define NtLanguages_SLatvia 64641
-#define NtLanguages_SLebanon 64642
-#define NtLanguages_SLibya 64643
-#define NtLanguages_SLiechtenstein 64644
-#define NtLanguages_SLithuania 64645
-#define NtLanguages_SLuxembourg 64646
-#define NtLanguages_SMacau 64647
-#define NtLanguages_SMacedonia 64648
-#define NtLanguages_SMalaysia 64649
-#define NtLanguages_SMaldives 64650
-#define NtLanguages_SMalta 64651
-#define NtLanguages_SMexico 64652
-#define NtLanguages_SMonaco 64653
-#define NtLanguages_SMongolia 64654
-#define NtLanguages_SMontenegro 64655
-#define NtLanguages_SIndonesia 64656
-#define NtLanguages_SIran 64657
-#define NtLanguages_SIraq 64658
-#define NtLanguages_SIreland 64659
-#define NtLanguages_SIsrael 64660
-#define NtLanguages_SItaly 64661
-#define NtLanguages_SJamaica 64662
-#define NtLanguages_SJapan 64663
-#define NtLanguages_SJordan 64664
-#define NtLanguages_SKazakhstan 64665
-#define NtLanguages_SKenya 64666
-#define NtLanguages_SKorea 64667
-#define NtLanguages_SKosovo 64668
-#define NtLanguages_SKuwait 64669
-#define NtLanguages_SKyrgyzstan 64670
-#define NtLanguages_SLaoPDR 64671
-#define NtLanguages_SElSalvador 64672
-#define NtLanguages_SEstonia 64673
-#define NtLanguages_SEthiopia 64674
-#define NtLanguages_SFaeroeIslands 64675
-#define NtLanguages_SFinland 64676
-#define NtLanguages_SFrance 64677
-#define NtLanguages_SGeorgia 64678
-#define NtLanguages_SGermany 64679
-#define NtLanguages_SGreece 64680
-#define NtLanguages_SGreenland 64681
-#define NtLanguages_SGuatemala 64682
-#define NtLanguages_SHonduras 64683
-#define NtLanguages_SHongKong 64684
-#define NtLanguages_SHungary 64685
-#define NtLanguages_SIceland 64686
-#define NtLanguages_SIndia 64687
-#define NtLanguages_SBrazil 64688
-#define NtLanguages_SBruneiDarussalam 64689
-#define NtLanguages_SBulgaria 64690
-#define NtLanguages_SCambodia 64691
-#define NtLanguages_SCanada 64692
-#define NtLanguages_SCaribbean 64693
-#define NtLanguages_SChile 64694
-#define NtLanguages_SColombia 64695
-#define NtLanguages_SCostaRica 64696
-#define NtLanguages_SCroatia 64697
-#define NtLanguages_SCyprus 64698
-#define NtLanguages_SCzechRepublic 64699
-#define NtLanguages_SDenmark 64700
-#define NtLanguages_SDominicanRepublic 64701
-#define NtLanguages_SEcuador 64702
-#define NtLanguages_SEgypt 64703
-#define NtLanguages_SAfghanistan 64704
-#define NtLanguages_SAland 64705
-#define NtLanguages_SAlbania 64706
-#define NtLanguages_SAlgeria 64707
-#define NtLanguages_SArgentina 64708
-#define NtLanguages_SArmenia 64709
-#define NtLanguages_SAustralia 64710
-#define NtLanguages_SAustria 64711
-#define NtLanguages_SAzerbaijan 64712
-#define NtLanguages_SBangladesh 64713
-#define NtLanguages_SBahrain 64714
-#define NtLanguages_SBelarus 64715
-#define NtLanguages_SBelgium 64716
-#define NtLanguages_SBelize 64717
-#define NtLanguages_SBolivia 64718
-#define NtLanguages_SBosniaAndHerzegovina 64719
-#define NtLanguages_STesoLanguage 64720
-#define NtLanguages_STigreLanguage 64721
-#define NtLanguages_STonganLanguage 64722
-#define NtLanguages_STasawaqLanguage 64723
-#define NtLanguages_SVendaLanguage 64724
-#define NtLanguages_SVolapukLanguage 64725
-#define NtLanguages_SVunjoLanguage 64726
-#define NtLanguages_SWalserLanguage 64727
-#define NtLanguages_SWolayttaLanguage 64728
-#define NtLanguages_SSogaLanguage 64729
-#define NtLanguages_SYangbenLanguage 64730
-#define NtLanguages_SYiddishLanguage 64731
-#define NtLanguages_SNheengatuLanguage 64732
-#define NtLanguages_SStandardMoroccanTamazightLanguage 64733
-#define NtLanguages_SInvariantLanguage 64734
-#define NtLanguages_SSesothoSaLeboaLanguage 64735
-#define NtLanguages_SRajasthaniLanguage 64736
-#define NtLanguages_SRundiLanguage 64737
-#define NtLanguages_SRomboLanguage 64738
-#define NtLanguages_SRwaLanguage 64739
-#define NtLanguages_SSamburuLanguage 64740
-#define NtLanguages_SSanguLanguage 64741
-#define NtLanguages_SSardinianLanguage 64742
-#define NtLanguages_SSenaLanguage 64743
-#define NtLanguages_SKoyraboroSenniLanguage 64744
-#define NtLanguages_SSangoLanguage 64745
-#define NtLanguages_STachelhitLanguage 64746
-#define NtLanguages_SShonaLanguage 64747
-#define NtLanguages_SSomaliLanguage 64748
-#define NtLanguages_SsiSwatiLanguage 64749
-#define NtLanguages_SSahoLanguage 64750
-#define NtLanguages_SSundaneseLanguage 64751
-#define NtLanguages_SBurmeseLanguage 64752
-#define NtLanguages_SMazanderaniLanguage 64753
-#define NtLanguages_SNamaLanguage 64754
-#define NtLanguages_SNorthNdebeleLanguage 64755
-#define NtLanguages_SLowGermanLanguage 64756
-#define NtLanguages_SKwasioLanguage 64757
-#define NtLanguages_SNgiemboonLanguage 64758
-#define NtLanguages_SNkoLanguage 64759
-#define NtLanguages_SSouthNdebeleLanguage 64760
-#define NtLanguages_SNuerLanguage 64761
-#define NtLanguages_SNyankoleLanguage 64762
-#define NtLanguages_SOromoLanguage 64763
-#define NtLanguages_SOsseticLanguage 64764
-#define NtLanguages_SPapiamentoLanguage 64765
-#define NtLanguages_SNigerianPidginLanguage 64766
-#define NtLanguages_SPrussianLanguage 64767
-#define NtLanguages_SGandaLanguage 64768
-#define NtLanguages_SLakotaLanguage 64769
-#define NtLanguages_SLingalaLanguage 64770
-#define NtLanguages_SNorthernLuriLanguage 64771
-#define NtLanguages_SLubaKatangaLanguage 64772
-#define NtLanguages_SLuoLanguage 64773
-#define NtLanguages_SLuyiaLanguage 64774
-#define NtLanguages_SMaithiliLanguage 64775
-#define NtLanguages_SMasaiLanguage 64776
-#define NtLanguages_SMeruLanguage 64777
-#define NtLanguages_SMorisyenLanguage 64778
-#define NtLanguages_SMalagasyLanguage 64779
-#define NtLanguages_SMakhuwaMeettoLanguage 64780
-#define NtLanguages_SMetaLanguage 64781
-#define NtLanguages_SManipuriLanguage 64782
-#define NtLanguages_SMundangLanguage 64783
-#define NtLanguages_SMakondeLanguage 64784
-#define NtLanguages_SKabuverdianuLanguage 64785
-#define NtLanguages_SKaingangLanguage 64786
-#define NtLanguages_SKoyraChiiniLanguage 64787
-#define NtLanguages_SKikuyuLanguage 64788
-#define NtLanguages_SKakoLanguage 64789
-#define NtLanguages_SKalenjinLanguage 64790
-#define NtLanguages_SKanuriLanguage 64791
-#define NtLanguages_SKashmiriLanguage 64792
-#define NtLanguages_SShambalaLanguage 64793
-#define NtLanguages_SBafiaLanguage 64794
-#define NtLanguages_SColognianLanguage 64795
-#define NtLanguages_SCentralKurdishLanguage 64796
-#define NtLanguages_SCornishLanguage 64797
-#define NtLanguages_SLatinLanguage 64798
-#define NtLanguages_SLangiLanguage 64799
-#define NtLanguages_SEweLanguage 64800
-#define NtLanguages_SEwondoLanguage 64801
-#define NtLanguages_SFulaLanguage 64802
-#define NtLanguages_SFilipinoLanguage 64803
-#define NtLanguages_SFriulianLanguage 64804
-#define NtLanguages_SWesternFrisianLanguage 64805
-#define NtLanguages_SGuaraniLanguage 64806
-#define NtLanguages_SGusiiLanguage 64807
-#define NtLanguages_SManxLanguage 64808
-#define NtLanguages_SHawaiianLanguage 64809
-#define NtLanguages_SInterlinguaLanguage 64810
-#define NtLanguages_SIbibioLanguage 64811
-#define NtLanguages_SNgombaLanguage 64812
-#define NtLanguages_SMachameLanguage 64813
-#define NtLanguages_SKabyleLanguage 64814
-#define NtLanguages_SKambaLanguage 64815
-#define NtLanguages_SBodoLanguage 64816
-#define NtLanguages_SBlinLanguage 64817
-#define NtLanguages_SChakmaLanguage 64818
-#define NtLanguages_SChechenLanguage 64819
-#define NtLanguages_SCebuanoLanguage 64820
-#define NtLanguages_SChigaLanguage 64821
-#define NtLanguages_SCherokeeLanguage 64822
-#define NtLanguages_SChurchSlavonicLanguage 64823
-#define NtLanguages_SChuvashLanguage 64824
-#define NtLanguages_STaitaLanguage 64825
-#define NtLanguages_SZarmaLanguage 64826
-#define NtLanguages_SDogriLanguage 64827
-#define NtLanguages_SDualaLanguage 64828
-#define NtLanguages_SJolaFonyiLanguage 64829
-#define NtLanguages_SDzongkhaLanguage 64830
-#define NtLanguages_SEmbuLanguage 64831
-#define NtLanguages_SYakutLanguage 64832
-#define NtLanguages_SYiLanguage 64833
-#define NtLanguages_SYorubaLanguage 64834
-#define NtLanguages_SZuluLanguage 64835
-#define NtLanguages_SAfarLanguage 64836
-#define NtLanguages_SAghemLanguage 64837
-#define NtLanguages_SAkanLanguage 64838
-#define NtLanguages_SAsuLanguage 64839
-#define NtLanguages_SAsturianLanguage 64840
-#define NtLanguages_SBasaaLanguage 64841
-#define NtLanguages_SBembaLanguage 64842
-#define NtLanguages_SBenaLanguage 64843
-#define NtLanguages_SHaryanviLanguage 64844
-#define NtLanguages_SBhojpuriLanguage 64845
-#define NtLanguages_SEdoLanguage 64846
-#define NtLanguages_SBamanankanLanguage 64847
-#define NtLanguages_STibetanLanguage 64848
-#define NtLanguages_STigrinyaLanguage 64849
-#define NtLanguages_SThaiLanguage 64850
-#define NtLanguages_STsongaLanguage 64851
-#define NtLanguages_STurkishLanguage 64852
-#define NtLanguages_STurkmenLanguage 64853
-#define NtLanguages_SUighurLanguage 64854
-#define NtLanguages_SUkrainianLanguage 64855
-#define NtLanguages_SUpperSorbianLanguage 64856
-#define NtLanguages_SUrduLanguage 64857
-#define NtLanguages_SUzbekLanguage 64858
-#define NtLanguages_SVaiLanguage 64859
-#define NtLanguages_SVietnameseLanguage 64860
-#define NtLanguages_SWelshLanguage 64861
-#define NtLanguages_SWolofLanguage 64862
-#define NtLanguages_SXhosaLanguage 64863
-#define NtLanguages_SSerbianLanguage 64864
-#define NtLanguages_SSinhalaLanguage 64865
-#define NtLanguages_SSindhiLanguage 64866
-#define NtLanguages_SSlovakLanguage 64867
-#define NtLanguages_SSloveneLanguage 64868
-#define NtLanguages_SSpanishLanguage 64869
-#define NtLanguages_SSetswanaLanguage 64870
-#define NtLanguages_SSesothoLanguage 64871
-#define NtLanguages_SSwahiliLanguage 64872
-#define NtLanguages_SSwedishLanguage 64873
-#define NtLanguages_SSyriacLanguage 64874
-#define NtLanguages_STajikLanguage 64875
-#define NtLanguages_STamazightLanguage 64876
-#define NtLanguages_STamilLanguage 64877
-#define NtLanguages_STatarLanguage 64878
-#define NtLanguages_STeluguLanguage 64879
-#define NtLanguages_SPersianLanguage 64880
-#define NtLanguages_SPolishLanguage 64881
-#define NtLanguages_SPortugueseLanguage 64882
-#define NtLanguages_SPunjabiLanguage 64883
-#define NtLanguages_SQuechuaLanguage 64884
-#define NtLanguages_SRomanshLanguage 64885
-#define NtLanguages_SRomanianLanguage 64886
-#define NtLanguages_SRussianLanguage 64887
-#define NtLanguages_SSamiNorthernLanguage 64888
-#define NtLanguages_SSamiSouthernLanguage 64889
-#define NtLanguages_SSamiInariLanguage 64890
-#define NtLanguages_SSamiSkoltLanguage 64891
-#define NtLanguages_SSamiLuleLanguage 64892
-#define NtLanguages_SSanskritLanguage 64893
-#define NtLanguages_SSantaliLanguage 64894
-#define NtLanguages_SScotsGaelicLanguage 64895
-#define NtLanguages_SMalayLanguage 64896
-#define NtLanguages_SMalayalamLanguage 64897
-#define NtLanguages_SMalteseLanguage 64898
-#define NtLanguages_SMapudungunLanguage 64899
-#define NtLanguages_SMarathiLanguage 64900
-#define NtLanguages_SMaoriLanguage 64901
-#define NtLanguages_SMongolianLanguage 64902
-#define NtLanguages_SMontenegrinLanguage 64903
-#define NtLanguages_SMohawkLanguage 64904
-#define NtLanguages_SNepaliLanguage 64905
-#define NtLanguages_SNorwegianLanguage 64906
-#define NtLanguages_SNorwegianBokmalLanguage 64907
-#define NtLanguages_SNorwegianNynorskLanguage 64908
-#define NtLanguages_SOccitanLanguage 64909
-#define NtLanguages_SOriyaLanguage 64910
-#define NtLanguages_SPashtoLanguage 64911
-#define NtLanguages_SJapaneseLanguage 64912
-#define NtLanguages_SJavaneseLanguage 64913
-#define NtLanguages_SKannadaLanguage 64914
-#define NtLanguages_SKazakhLanguage 64915
-#define NtLanguages_SKhmerLanguage 64916
-#define NtLanguages_SKicheLanguage 64917
-#define NtLanguages_SKinyarwandaLanguage 64918
-#define NtLanguages_SKonkaniLanguage 64919
-#define NtLanguages_SKoreanLanguage 64920
-#define NtLanguages_SKyrgyzLanguage 64921
-#define NtLanguages_SLaoLanguage 64922
-#define NtLanguages_SLatvianLanguage 64923
-#define NtLanguages_SLithuanianLanguage 64924
-#define NtLanguages_SLowerSorbianLanguage 64925
-#define NtLanguages_SLuxembourgishLanguage 64926
-#define NtLanguages_SMacedonianLanguage 64927
-#define NtLanguages_SGalicianLanguage 64928
-#define NtLanguages_SGeorgianLanguage 64929
-#define NtLanguages_SGermanLanguage 64930
-#define NtLanguages_SGreekLanguage 64931
-#define NtLanguages_SGreenlandicLanguage 64932
-#define NtLanguages_SGujaratiLanguage 64933
-#define NtLanguages_SHausaLanguage 64934
-#define NtLanguages_SHebrewLanguage 64935
-#define NtLanguages_SHindiLanguage 64936
-#define NtLanguages_SHungarianLanguage 64937
-#define NtLanguages_SIcelandicLanguage 64938
-#define NtLanguages_SIgboLanguage 64939
-#define NtLanguages_SIndonesianLanguage 64940
-#define NtLanguages_SInuktitutLanguage 64941
-#define NtLanguages_SIrishLanguage 64942
-#define NtLanguages_SItalianLanguage 64943
-#define NtLanguages_SBulgarianLanguage 64944
-#define NtLanguages_SCatalanLanguage 64945
-#define NtLanguages_SChineseLanguage 64946
-#define NtLanguages_SCorsicanLanguage 64947
-#define NtLanguages_SCroatianLanguage 64948
-#define NtLanguages_SCzechLanguage 64949
-#define NtLanguages_SDanishLanguage 64950
-#define NtLanguages_SDariLanguage 64951
-#define NtLanguages_SDivehiLanguage 64952
-#define NtLanguages_SDutchLanguage 64953
-#define NtLanguages_SEnglishLanguage 64954
-#define NtLanguages_SEstonianLanguage 64955
-#define NtLanguages_SEsperantoLanguage 64956
-#define NtLanguages_SFaeroeseLanguage 64957
-#define NtLanguages_SFinnishLanguage 64958
-#define NtLanguages_SFrenchLanguage 64959
+#define MainFrm_SVersion 63504
+#define MainFrm_SDataDirectory 63505
+#define MainFrm_SUpdate 63506
+#define MainFrm_SModify 63507
+#define MainFrm_SNew 63508
+#define MainFrm_SDefaultLanguage 63509
+#define MainFrm_SNewerVersionExists 63510
+#define MainFrm_SThisSetupIsMostRecent 63511
+#define MainFrm_SCouldNotCheckVersion 63512
+#define MainFrm_SWindows7OrLaterneeded 63513
+#define MainFrm_SUnknownParameter 63520
+#define MainFrm_SNoFirstAndLastName 63521
+#define MainFrm_SWaiting 63522
+#define MainFrm_SSetupRunning 63523
+#define MainFrm_SNoWriteAccess 63524
+#define MainFrm_SNotEnoughDiskSpace 63525
+#define MainFrm_SRootDir 63526
+#define MainFrm_SEnterEvaluationExtensionReason 63527
+#define MainFrm_SReasonCaption 63528
+#define MainFrm_SEnterEvaluationExtensionCode 63529
+#define MainFrm_SCodeCaption 63530
+#define MainFrm_SNoInternet 63531
+#define MainFrm_SCancel 63532
+#define MainFrm_SNext 63533
+#define MainFrm_SNo 63534
+#define MainFrm_SYes 63535
+#define MainFrm_SInstallingSpellCheckFiles 63536
+#define MainFrm_SInstallingI18NLibraryFiles 63537
+#define MainFrm_SInstallingFiles 63538
+#define MainFrm_SCouldNotRegisterInstallation 63539
+#define MainFrm_SCouldNotActivate 63540
+#define MainFrm_SSetupFailed 63541
+#define MainFrm_SPersonalFolder 63542
+#define MainFrm_SPublicFolder 63543
+#define MainFrm_SUnknownVersion 63544
+#define MainFrm_SStart1 63545
+#define MainFrm_SStart2 63546
+#define MainFrm_SStart3 63547
+#define MainFrm_SDirectory 63548
+#define MainFrm_SUpdateRadio 63549
+#define MainFrm_SModifyRadio 63550
+#define MainFrm_SNewRadio 63551
+#define NtDialogFilter_SMpegFiles 63552
+#define NtDialogFilter_SAviFiles 63553
+#define NtDialogFilter_SQuickTimeFiles 63554
+#define SelectFile_SCaption 63555
+#define VoikkoSpellEngine_SVoikko 63556
+#define MainFrm_SSetup 63557
+#define MainFrm_SSetupTypeCustomDescription 63558
+#define MainFrm_SSetupTypeAllDescription 63559
+#define MainFrm_SSetupTypeMinimalDescription 63560
+#define MainFrm_SSetupTypeBuildAutomationDescription 63561
+#define MainFrm_SCanNotInstall 63562
+#define MainFrm_SApplicationRunning 63563
+#define MainFrm_STotalSelectedSize 63564
+#define MainFrm_SInstallingLibraryFiles 63565
+#define MainFrm_SInstallingBuildAutomationFiles 63566
+#define MainFrm_SInstallingApplicationFiles 63567
+#define NtDialogFilter_SExeFiles 63568
+#define NtDialogFilter_SImageFiles 63569
+#define NtDialogFilter_SJpegFiles 63570
+#define NtDialogFilter_SBitmapFiles 63571
+#define NtDialogFilter_SPngFiles 63572
+#define NtDialogFilter_SGifFiles 63573
+#define NtDialogFilter_SIconFiles 63574
+#define NtDialogFilter_SLanguageFiles 63575
+#define NtDialogFilter_SSisulizerLanguagesFiles 63576
+#define NtDialogFilter_STextFiles 63577
+#define NtDialogFilter_SAudioFiles 63578
+#define NtDialogFilter_SWaveFiles 63579
+#define NtDialogFilter_SWmaFiles 63580
+#define NtDialogFilter_SMp4Files 63581
+#define NtDialogFilter_SMp3Files 63582
+#define NtDialogFilter_SVideoFiles 63583
+#define Installer_SXliffDescription 63584
+#define Installer_SXmlDescription 63585
+#define Installer_SXslDescription 63586
+#define Installer_SYamlDescription 63587
+#define Installer_SSilverlightDescription 63588
+#define Installer_SWindowsPhoneDescription 63589
+#define Installer_SLocalization 63590
+#define Installer_SLocalizationDescription 63591
+#define Installer_SI18NAPI 63592
+#define Installer_SI18NAPIDescription 63593
+#define Installer_SConfiguringSystem 63594
+#define Installer_SConfiguringLibraryPaths 63595
+#define Installer_SComponentFailed 63596
+#define NtDialogFilter_SAllFiles 63597
+#define NtDialogFilter_SAllSupportedFiles 63598
+#define NtDialogFilter_SDllFiles 63599
+#define Installer_STextDescription 63600
+#define Installer_STmxDescription 63601
+#define Installer_STranslationMemoryDescription 63602
+#define Installer_STutorialDescription 63603
+#define Installer_STypeScriptDescription 63604
+#define Installer_SVisualCppDescription 63605
+#define Installer_SVisualStudioDescription 63606
+#define Installer_SVueDescription 63607
+#define Installer_SWebVTTDescription 63608
+#define Installer_SWindowsFormsDescription 63609
+#define Installer_SWinUIDescription 63610
+#define Installer_SWixDescription 63611
+#define Installer_SWordDescription 63612
+#define Installer_SWpfDescription 63613
+#define Installer_SUniversalWindowsPlatformDescription 63614
+#define Installer_SXamarinDescription 63615
+#define Installer_SPoDescription 63616
+#define Installer_SPostgreDescription 63617
+#define Installer_SPowerPointDescription 63618
+#define Installer_SPythonDescription 63619
+#define Installer_SOpenDocumentDescription 63620
+#define Installer_SQtDescription 63621
+#define Installer_SRailsDescription 63622
+#define Installer_SReactDescription 63623
+#define Installer_SRtfDescription 63624
+#define Installer_SSalesForceDescription 63625
+#define Installer_SScriptDescription 63626
+#define Installer_SSqlCeDescription 63627
+#define Installer_SSqliteDescription 63628
+#define Installer_SSqlServerDescription 63629
+#define Installer_SSrtDescription 63630
+#define Installer_SSvgDescription 63631
+#define Installer_SHtmlDescription 63632
+#define Installer_SHtmlHelpDescription 63633
+#define Installer_Si18nextDescription 63634
+#define Installer_SIniDescription 63635
+#define Installer_SInterBaseDescription 63636
+#define Installer_SiOSDescription 63637
+#define Installer_SJavaDescription 63638
+#define Installer_SJavaScriptDescription 63639
+#define Installer_SJsonDescription 63640
+#define Installer_SJspDescription 63641
+#define Installer_SLazarusDescription 63642
+#define Installer_SMauiDescription 63643
+#define Installer_SMarkdownDescription 63644
+#define Installer_SMySqlDescription 63645
+#define Installer_SPdfDescription 63646
+#define Installer_SPhpDescription 63647
+#define Installer_SAngularDescription 63648
+#define Installer_SAspNetDescription 63649
+#define Installer_SBinaryDescription 63650
+#define Installer_SBuildAutomationDescription 63651
+#define Installer_SBlazorDescription 63652
+#define Installer_SBsonDescription 63653
+#define Installer_SCBuilderDescription 63654
+#define Installer_SDelphiDescription 63655
+#define Installer_SDitaDescription 63656
+#define Installer_SDotNetDescription 63657
+#define Installer_SExcelDescription 63658
+#define Installer_SFirebirdDescription 63659
+#define Installer_SFlutterDescription 63660
+#define Installer_SGlossaryDescription 63661
+#define Installer_SGoDescription 63662
+#define Installer_SHelpAndManualDescription 63663
+#define NtSpellChecker_SCouldNotOpenSpellEngine 63664
+#define NtSpellChecker_SSpellEngineIsWorkingProperly 63665
+#define NtSpellChecker_SLocal 63666
+#define NtSpellChecker_SRemote 63667
+#define NtConsts_SFileDoesNotExist 63668
+#define NtConsts_SDllDoesNotExist 63669
+#define NtConsts_SDllDoesNotExist2 63670
+#define NtConsts_SDllHasNoFunction 63671
+#define NtConsts_SItemsFilter 63672
+#define NtConsts_SSelectActivationFile 63673
+#define NtConsts_SActivationFiles 63674
+#define NtConsts_SInvalidActivationFile 63675
+#define HunSpellEngine_SOpenOffice 63676
+#define StandardLicense_SNoFeatureLicense 63677
+#define Installer_SAccessDescription 63678
+#define Installer_SAndroidDescription 63679
+#define NtFormatItems_SReactSample 63680
+#define NtFormatItems_SReactHtmlSample 63681
+#define NtFormatItems_SSvelte 63682
+#define NtFormatItems_SSvelteSample 63683
+#define NtFormatItems_SSvelteHtmlSample 63684
+#define NtFormatItems_SObjectiveC 63685
+#define NtFormatItems_SObjectiveCSample 63686
+#define NtFormatItems_SObjectiveCHtmlSample 63687
+#define NtFormatItems_SCpp 63688
+#define NtFormatItems_SCppSample 63689
+#define NtFormatItems_SCppHtmlSample 63690
+#define NtFormatItems_SJava 63691
+#define NtFormatItems_SJavaSample 63692
+#define NtFormatItems_SJavaHtmlSample 63693
+#define NtFormatItems_SJavaSample2 63694
+#define NtFormatItems_SJavaHtmlSample2 63695
+#define NtFormatItems_SWix 63696
+#define NtFormatItems_SWixSample 63697
+#define NtFormatItems_SWixHtmlSample 63698
+#define NtFormatItems_SDelphi 63699
+#define NtFormatItems_SDelphiSample 63700
+#define NtFormatItems_SDelphiHtmlSample 63701
+#define NtFormatItems_SNet 63702
+#define NtFormatItems_SNetSample 63703
+#define NtFormatItems_SNetHtmlSample 63704
+#define NtFormatItems_SMagento 63705
+#define NtFormatItems_SMagentoSample 63706
+#define NtFormatItems_SMagentoHtmlSample 63707
+#define NtFormatItems_SRails 63708
+#define NtFormatItems_SRailsSample 63709
+#define NtFormatItems_SRailsHtmlSample 63710
+#define NtFormatItems_SReact 63711
+#define NtPattern_SFemale 63712
+#define NtPattern_SNeutral 63713
+#define NtFormatItems_SSoluling 63714
+#define NtFormatItems_SSolulingSample 63715
+#define NtFormatItems_SSolulingHtmlSample 63716
+#define NtFormatItems_SAngular 63717
+#define NtFormatItems_SAngularSample 63718
+#define NtFormatItems_SAngularHtmlSample 63719
+#define NtFormatItems_SPython 63720
+#define NtFormatItems_SPythonSample 63721
+#define NtFormatItems_SPythonHtmlSample 63722
+#define NtFormatItems_SPythonSample2 63723
+#define NtFormatItems_SPythonHtmlSample2 63724
+#define NtFormatItems_SQt 63725
+#define NtFormatItems_SQtSample 63726
+#define NtFormatItems_SQtHtmlSample 63727
+#define JclResources_RsEFunctionNotFound 63728
+#define Vcl_OleConst_sNoRunningObject 63729
+#define Dll_SLibraryDescription 63730
+#define Dll_SSpellCheckerDescription 63731
+#define Dll_SNetLibraryDescription 63732
+#define Dll_SUnavailable 63733
+#define Dll_SUnregistered 63734
+#define Dll_SInstalled 63735
+#define Dll_SRegisterManually 63736
+#define NtPattern_SZero 63737
+#define NtPattern_SOne 63738
+#define NtPattern_STwo 63739
+#define NtPattern_SFew 63740
+#define NtPattern_SMany 63741
+#define NtPattern_SPlural 63742
+#define NtPattern_SMale 63743
+#define JclResources_RsIntelCacheDescrE4 63744
+#define JclResources_RsIntelCacheDescrEA 63745
+#define JclResources_RsIntelCacheDescrEB 63746
+#define JclResources_RsIntelCacheDescrEC 63747
+#define JclResources_RsIntelCacheDescrF0 63748
+#define JclResources_RsIntelCacheDescrF1 63749
+#define JclResources_RsIntelCacheDescrFF 63750
+#define JclResources_RsOSVersionWin8 63751
+#define JclResources_RsOSVersionWinServer2012 63752
+#define JclResources_RsOSVersionWin81 63753
+#define JclResources_RsOSVersionWinServer2012R2 63754
+#define JclResources_RsCannotWriteRefStream 63755
+#define JclResources_RsHasNotTD32Info 63756
+#define JclResources_RsEUnexpectedEOSeq 63757
+#define JclResources_RsWin32Error 63758
+#define JclResources_RsELibraryNotFound 63759
+#define JclResources_RsIntelCacheDescrB3 63760
+#define JclResources_RsIntelCacheDescrB4 63761
+#define JclResources_RsIntelCacheDescrBA 63762
+#define JclResources_RsIntelCacheDescrC0 63763
+#define JclResources_RsIntelCacheDescrCA 63764
+#define JclResources_RsIntelCacheDescrD0 63765
+#define JclResources_RsIntelCacheDescrD1 63766
+#define JclResources_RsIntelCacheDescrD2 63767
+#define JclResources_RsIntelCacheDescrD6 63768
+#define JclResources_RsIntelCacheDescrD7 63769
+#define JclResources_RsIntelCacheDescrD8 63770
+#define JclResources_RsIntelCacheDescrDC 63771
+#define JclResources_RsIntelCacheDescrDD 63772
+#define JclResources_RsIntelCacheDescrDE 63773
+#define JclResources_RsIntelCacheDescrE2 63774
+#define JclResources_RsIntelCacheDescrE3 63775
+#define JclResources_RsIntelCacheDescr79 63776
+#define JclResources_RsIntelCacheDescr7A 63777
+#define JclResources_RsIntelCacheDescr7B 63778
+#define JclResources_RsIntelCacheDescr7C 63779
+#define JclResources_RsIntelCacheDescr7D 63780
+#define JclResources_RsIntelCacheDescr7F 63781
+#define JclResources_RsIntelCacheDescr80 63782
+#define JclResources_RsIntelCacheDescr82 63783
+#define JclResources_RsIntelCacheDescr83 63784
+#define JclResources_RsIntelCacheDescr84 63785
+#define JclResources_RsIntelCacheDescr85 63786
+#define JclResources_RsIntelCacheDescr86 63787
+#define JclResources_RsIntelCacheDescr87 63788
+#define JclResources_RsIntelCacheDescrB0 63789
+#define JclResources_RsIntelCacheDescrB1 63790
+#define JclResources_RsIntelCacheDescrB2 63791
+#define JclResources_RsIntelCacheDescr57 63792
+#define JclResources_RsIntelCacheDescr59 63793
+#define JclResources_RsIntelCacheDescr5A 63794
+#define JclResources_RsIntelCacheDescr5B 63795
+#define JclResources_RsIntelCacheDescr5C 63796
+#define JclResources_RsIntelCacheDescr5D 63797
+#define JclResources_RsIntelCacheDescr60 63798
+#define JclResources_RsIntelCacheDescr66 63799
+#define JclResources_RsIntelCacheDescr67 63800
+#define JclResources_RsIntelCacheDescr68 63801
+#define JclResources_RsIntelCacheDescr70 63802
+#define JclResources_RsIntelCacheDescr71 63803
+#define JclResources_RsIntelCacheDescr72 63804
+#define JclResources_RsIntelCacheDescr73 63805
+#define JclResources_RsIntelCacheDescr76 63806
+#define JclResources_RsIntelCacheDescr78 63807
+#define JclResources_RsIntelCacheDescr45 63808
+#define JclResources_RsIntelCacheDescr46 63809
+#define JclResources_RsIntelCacheDescr47 63810
+#define JclResources_RsIntelCacheDescr48 63811
+#define JclResources_RsIntelCacheDescr49 63812
+#define JclResources_RsIntelCacheDescr4A 63813
+#define JclResources_RsIntelCacheDescr4B 63814
+#define JclResources_RsIntelCacheDescr4C 63815
+#define JclResources_RsIntelCacheDescr4D 63816
+#define JclResources_RsIntelCacheDescr4E 63817
+#define JclResources_RsIntelCacheDescr4F 63818
+#define JclResources_RsIntelCacheDescr50 63819
+#define JclResources_RsIntelCacheDescr51 63820
+#define JclResources_RsIntelCacheDescr52 63821
+#define JclResources_RsIntelCacheDescr55 63822
+#define JclResources_RsIntelCacheDescr56 63823
+#define JclResources_RsIntelCacheDescr23 63824
+#define JclResources_RsIntelCacheDescr25 63825
+#define JclResources_RsIntelCacheDescr29 63826
+#define JclResources_RsIntelCacheDescr2C 63827
+#define JclResources_RsIntelCacheDescr30 63828
+#define JclResources_RsIntelCacheDescr39 63829
+#define JclResources_RsIntelCacheDescr3A 63830
+#define JclResources_RsIntelCacheDescr3B 63831
+#define JclResources_RsIntelCacheDescr3C 63832
+#define JclResources_RsIntelCacheDescr3D 63833
+#define JclResources_RsIntelCacheDescr3E 63834
+#define JclResources_RsIntelCacheDescr40 63835
+#define JclResources_RsIntelCacheDescr41 63836
+#define JclResources_RsIntelCacheDescr42 63837
+#define JclResources_RsIntelCacheDescr43 63838
+#define JclResources_RsIntelCacheDescr44 63839
+#define JclResources_RsIntelCacheDescr00 63840
+#define JclResources_RsIntelCacheDescr01 63841
+#define JclResources_RsIntelCacheDescr02 63842
+#define JclResources_RsIntelCacheDescr03 63843
+#define JclResources_RsIntelCacheDescr04 63844
+#define JclResources_RsIntelCacheDescr05 63845
+#define JclResources_RsIntelCacheDescr06 63846
+#define JclResources_RsIntelCacheDescr08 63847
+#define JclResources_RsIntelCacheDescr09 63848
+#define JclResources_RsIntelCacheDescr0A 63849
+#define JclResources_RsIntelCacheDescr0B 63850
+#define JclResources_RsIntelCacheDescr0C 63851
+#define JclResources_RsIntelCacheDescr0D 63852
+#define JclResources_RsIntelCacheDescr0E 63853
+#define JclResources_RsIntelCacheDescr21 63854
+#define JclResources_RsIntelCacheDescr22 63855
+#define JclResources_RsPePkgRunOnly 63856
+#define JclResources_RsPePkgIgnoreDupUnits 63857
+#define JclResources_RsPePkgV3Produced 63858
+#define JclResources_RsPePkgProducerUndefined 63859
+#define JclResources_RsPePkgBCB4Produced 63860
+#define JclResources_RsPePkgDelphi4Produced 63861
+#define JclResources_RsPePkgMain 63862
+#define JclResources_RsPePkgWeak 63863
+#define JclResources_RsPePkgOrgWeak 63864
+#define JclResources_RsPePkgImplicit 63865
+#define JclResources_RsUnableToOpenKeyRead 63866
+#define JclResources_RsUnableToAccessValue 63867
+#define JclResources_RsWrongDataType 63868
+#define JclResources_RsInconsistentPath 63869
+#define JclResources_RsSynchCreateEvent 63870
+#define JclResources_RsSynchOpenEvent 63871
+#define JclResources_RsPeSUBSYSTEM_POSIX_CUI 63872
+#define JclResources_RsPeSUBSYSTEM_RESERVED8 63873
+#define JclResources_RsPeDEBUG_UNKNOWN 63874
+#define JclResources_RsPeDEBUG_COFF 63875
+#define JclResources_RsPeDEBUG_CODEVIEW 63876
+#define JclResources_RsPeDEBUG_FPO 63877
+#define JclResources_RsPeDEBUG_MISC 63878
+#define JclResources_RsPeDEBUG_EXCEPTION 63879
+#define JclResources_RsPeDEBUG_FIXUP 63880
+#define JclResources_RsPeDEBUG_OMAP_TO_SRC 63881
+#define JclResources_RsPeDEBUG_OMAP_FROM_SRC 63882
+#define JclResources_RsPePkgExecutable 63883
+#define JclResources_RsPePkgPackage 63884
+#define JclResources_PsPePkgLibrary 63885
+#define JclResources_RsPePkgNeverBuild 63886
+#define JclResources_RsPePkgDesignOnly 63887
+#define JclResources_RsPeMACHINE_IA64 63888
+#define JclResources_RsPeMACHINE_MIPS16 63889
+#define JclResources_RsPeMACHINE_AMPHA64 63890
+#define JclResources_RsPeMACHINE_MIPSFPU 63891
+#define JclResources_RsPeMACHINE_MIPSFPU16 63892
+#define JclResources_RsPeMACHINE_TRICORE 63893
+#define JclResources_RsPeMACHINE_CEF 63894
+#define JclResources_RsPeMACHINE_EBC 63895
+#define JclResources_RsPeMACHINE_AMD64 63896
+#define JclResources_RsPeMACHINE_M32R 63897
+#define JclResources_RsPeMACHINE_CEE 63898
+#define JclResources_RsPeSUBSYSTEM_UNKNOWN 63899
+#define JclResources_RsPeSUBSYSTEM_NATIVE 63900
+#define JclResources_RsPeSUBSYSTEM_WINDOWS_GUI 63901
+#define JclResources_RsPeSUBSYSTEM_WINDOWS_CUI 63902
+#define JclResources_RsPeSUBSYSTEM_OS2_CUI 63903
+#define JclResources_RsPeMACHINE_I386 63904
+#define JclResources_RsPeMACHINE_R3000 63905
+#define JclResources_RsPeMACHINE_R4000 63906
+#define JclResources_RsPeMACHINE_R10000 63907
+#define JclResources_RsPeMACHINE_WCEMIPSV2 63908
+#define JclResources_RsPeMACHINE_ALPHA 63909
+#define JclResources_RsPeMACHINE_SH3 63910
+#define JclResources_RsPeMACHINE_SH3DSP 63911
+#define JclResources_RsPeMACHINE_SH3E 63912
+#define JclResources_RsPeMACHINE_SH4 63913
+#define JclResources_RsPeMACHINE_SH5 63914
+#define JclResources_RsPeMACHINE_ARM 63915
+#define JclResources_RsPeMACHINE_THUMB 63916
+#define JclResources_RsPeMACHINE_AM33 63917
+#define JclResources_RsPeMACHINE_POWERPC 63918
+#define JclResources_RsPeMACHINE_POWERPCFP 63919
+#define JclResources_RsPeNumberOfRvaAndSizes 63920
+#define JclResources_RsPeVersion 63921
+#define JclResources_RsPeGlobalFlagsClear 63922
+#define JclResources_RsPeGlobalFlagsSet 63923
+#define JclResources_RsPeCriticalSectionDefaultTimeout 63924
+#define JclResources_RsPeDeCommitFreeBlockThreshold 63925
+#define JclResources_RsPeDeCommitTotalFreeThreshold 63926
+#define JclResources_RsPeLockPrefixTable 63927
+#define JclResources_RsPeMaximumAllocationSize 63928
+#define JclResources_RsPeVirtualMemoryThreshold 63929
+#define JclResources_RsPeProcessHeapFlags 63930
+#define JclResources_RsPeProcessAffinityMask 63931
+#define JclResources_RsPeCSDVersion 63932
+#define JclResources_RsPeReserved 63933
+#define JclResources_RsPeEditList 63934
+#define JclResources_RsPeMACHINE_UNKNOWN 63935
+#define JclResources_RsPeSectionAlignment 63936
+#define JclResources_RsPeFileAlignment 63937
+#define JclResources_RsPeOperatingSystemVersion 63938
+#define JclResources_RsPeImageVersion 63939
+#define JclResources_RsPeSubsystemVersion 63940
+#define JclResources_RsPeWin32VersionValue 63941
+#define JclResources_RsPeSizeOfImage 63942
+#define JclResources_RsPeSizeOfHeaders 63943
+#define JclResources_RsPeCheckSum 63944
+#define JclResources_RsPeSubsystem 63945
+#define JclResources_RsPeDllCharacteristics 63946
+#define JclResources_RsPeSizeOfStackReserve 63947
+#define JclResources_RsPeSizeOfStackCommit 63948
+#define JclResources_RsPeSizeOfHeapReserve 63949
+#define JclResources_RsPeSizeOfHeapCommit 63950
+#define JclResources_RsPeLoaderFlags 63951
+#define JclResources_RsPeMachine 63952
+#define JclResources_RsPeNumberOfSections 63953
+#define JclResources_RsPeTimeDateStamp 63954
+#define JclResources_RsPePointerToSymbolTable 63955
+#define JclResources_RsPeNumberOfSymbols 63956
+#define JclResources_RsPeSizeOfOptionalHeader 63957
+#define JclResources_RsPeCharacteristics 63958
+#define JclResources_RsPeMagic 63959
+#define JclResources_RsPeLinkerVersion 63960
+#define JclResources_RsPeSizeOfCode 63961
+#define JclResources_RsPeSizeOfInitializedData 63962
+#define JclResources_RsPeSizeOfUninitializedData 63963
+#define JclResources_RsPeAddressOfEntryPoint 63964
+#define JclResources_RsPeBaseOfCode 63965
+#define JclResources_RsPeBaseOfData 63966
+#define JclResources_RsPeImageBase 63967
+#define JclResources_RsPeImg_01 63968
+#define JclResources_RsPeImg_02 63969
+#define JclResources_RsPeImg_03 63970
+#define JclResources_RsPeImg_04 63971
+#define JclResources_RsPeImg_05 63972
+#define JclResources_RsPeImg_06 63973
+#define JclResources_RsPeImg_07 63974
+#define JclResources_RsPeImg_08 63975
+#define JclResources_RsPeImg_09 63976
+#define JclResources_RsPeImg_10 63977
+#define JclResources_RsPeImg_11 63978
+#define JclResources_RsPeImg_12 63979
+#define JclResources_RsPeImg_13 63980
+#define JclResources_RsPeImg_14 63981
+#define JclResources_RsPeImg_Reserved 63982
+#define JclResources_RsPeSignature 63983
+#define JclResources_RsFileUtilsNoVersionInfo 63984
+#define JclResources_RsFileUtilsFileDoesNotExist 63985
+#define JclResources_RsFileUtilsLanguageIndex 63986
+#define JclResources_RsFileUtilsEmptyValue 63987
+#define JclResources_RsFileUtilsValueNotFound 63988
+#define JclResources_RsCreateFileMapping 63989
+#define JclResources_RsCreateFileMappingView 63990
+#define JclResources_RsFailedToObtainSize 63991
+#define JclResources_RsPeReadOnlyStream 63992
+#define JclResources_RsPeCantOpen 63993
+#define JclResources_RsPeNotPE 63994
+#define JclResources_RsPeUnknownTarget 63995
+#define JclResources_RsPeNotResDir 63996
+#define JclResources_RsPeNotAvailableForAttached 63997
+#define JclResources_RsPeSectionNotFound 63998
+#define JclResources_RsPeImg_00 63999
+#define License_SEvaluationLeft 64000
+#define License_SEvaluationExpired 64001
+#define License_SEdition 64002
+#define NtFileAssociation_SProjectDescription 64003
+#define NtFileAssociation_SExchangeDescription 64004
+#define NetTypes_SNet 64005
+#define NetTypes_SFramework 64006
+#define NetTypes_SStandard 64007
+#define NetTypes_SCompact 64008
+#define JclResources_RsEReplacementChar 64009
+#define JclResources_RsDateConversion 64010
+#define JclResources_RsUnknownFunctionAt 64011
+#define JclResources_RsEWindowsVersionNotSupported 64012
+#define JclResources_RsEWindowNotValid 64013
+#define JclResources_RsEProcessNotValid 64014
+#define JclResources_RsEModuleNotValid 64015
+#define License_SLocalTm 64016
+#define License_SCloud 64017
+#define License_SRemoteTermbase 64018
+#define License_SRemoteTm 64019
+#define License_SMake 64020
+#define License_SHiddenId 64021
+#define License_SVisualEditor 64022
+#define License_SErrorRegister 64023
+#define License_SNotFoundRegister 64024
+#define License_SInvalidNamesRegister 64025
+#define License_SInstallLimitReachedRegister 64026
+#define License_SSubscriptionExpiredRegister 64027
+#define License_SExtendLimitReachedRegister 64028
+#define License_SVersionBuildStr 64029
+#define License_SVersion 64030
+#define License_S32Bit 64031
+#define License_SLinux 64032
+#define License_SGui 64033
+#define License_SCreate 64034
+#define License_SScan 64035
+#define License_SBuild 64036
+#define License_SEnter 64037
+#define License_SNoneString 64038
+#define License_SExchange 64039
+#define License_SImport 64040
+#define License_SExport 64041
+#define License_SPseudo 64042
+#define License_SSpell 64043
+#define License_SValidation 64044
+#define License_SFileGlossary 64045
+#define License_SLocalTermbase 64046
+#define License_SMt 64047
+#define License_SCrossPlatform 64048
+#define License_SMobile 64049
+#define License_SBasicData 64050
+#define License_SAdvancedData 64051
+#define License_SBasicDocument 64052
+#define License_SAdvancedDocument 64053
+#define License_SLocalDatabase 64054
+#define License_SRemoteDatabase 64055
+#define License_SBrowser 64056
+#define License_SWeb 64057
+#define License_SWindows 64058
+#define License_SNet 64059
+#define License_SMicrosoft 64060
+#define License_SEmbarcadero 64061
+#define License_SJava 64062
+#define License_SApple 64063
+#define License_SOk 64064
+#define License_SError 64065
+#define License_SNoInternet 64066
+#define License_SInvalid 64067
+#define License_SInstallLimitReached 64068
+#define License_SSubscriptionExpired 64069
+#define License_SNeedsExtensionReason 64070
+#define License_SExtendLimitReached 64071
+#define License_SEvaluation 64072
+#define License_SBasicTranslatorEdition 64073
+#define License_SShortEdition 64074
+#define License_SDeveloper 64075
+#define License_STranslator 64076
+#define License_SBuildAutomation 64077
+#define License_SDesktop 64078
+#define License_SModernDesktop 64079
+#define uTPLb_I18n_ES_HugeCardinal_SubractOverflow 64080
+#define uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow 64081
+#define uTPLb_I18n_ES_HugeCardinal_StreamInOverflow 64082
+#define uTPLb_I18n_ES_EratosthenesSievSizeTooSmall 64083
+#define uTPLb_I18n_ES_InternalError_Suffix 64084
+#define uTPLb_I18n_ES_InvalidKey 64085
+#define uTPLb_I18n_ES_PlaintextFN_Empty 64086
+#define uTPLb_I18n_ES_CiphertextFN_Empty 64087
+#define uTPLb_I18n_ES_NoOpenSSLCompat 64088
+#define uTPLb_I18n_ES_OpenSSLCompat_RequiresIV 64089
+#define uTPLb_I18n_RSA_DisplayName 64090
+#define uTPLb_I18n_BlockCipher_DisplayName 64091
+#define uTPLb_I18n_Base64_DisplayName 64092
+#define uTPLb_I18n_CFB8bit_DisplayName 64093
+#define uTPLb_I18n_ECB_DisplayName 64094
+#define License_SNoPlatformLicense 64095
+#define uTPLb_I18n_ES_WrongModeEndEncryptMem 64096
+#define uTPLb_I18n_ES_Asym_CannotSetParam 64097
+#define uTPLb_I18n_ES_Asym_CannotSetCipher 64098
+#define uTPLb_I18n_ES_AsymNotInitByStr 64099
+#define uTPLb_I18n_ES_NotImplementedNot_Suffix 64100
+#define uTPLb_I18n_ES_LibsChainTooDeep 64101
+#define uTPLb_I18n_ES_CircularLibs 64102
+#define uTPLb_I18n_ES_HugeCardinal_CloneOverflow 64103
+#define uTPLb_I18n_ES_HugeCardinal_AddOverflow 64104
+#define uTPLb_I18n_ES_CannotAssignHuge_BecauseSourceTooBig 64105
+#define uTPLb_I18n_ES_HugeCardinal_IncrementOverflow 64106
+#define uTPLb_I18n_ES_HugeCardinal_DivideOverflow 64107
+#define uTPLb_I18n_ES_HugeCardinal_Power2 64108
+#define uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow 64109
+#define uTPLb_I18n_ES_HugeCardinal_ResizeOverflow 64110
+#define uTPLb_I18n_ES_HugeCardinal_PowerOverflow 64111
+#define PeUtils_SVersions 64112
+#define PeUtils_SVxds 64113
+#define NtSourceCode_STruncated 64114
+#define PeFile_SInvalidExeFile 64115
+#define PeFile_SOutOfMemory 64116
+#define uTPLb_I18n_ES_NoPassword 64117
+#define uTPLb_I18n_ES_AsymPassword 64118
+#define uTPLb_I18n_ES_HashFailed 64119
+#define uTPLb_I18n_ES_WrongModeReset 64120
+#define uTPLb_I18n_ES_WrongModeEncrypt 64121
+#define uTPLb_I18n_ES_EncryptNoAlg 64122
+#define uTPLb_I18n_ES_WrongModeDecrypt 64123
+#define uTPLb_I18n_ES_DecryptNoAlg 64124
+#define uTPLb_I18n_ES_WrongModeEncryptMem 64125
+#define uTPLb_I18n_ES_WrongModeDecryptMem 64126
+#define uTPLb_I18n_ES_WrongModeEndDecryptMem 64127
+#define PeUtils_SDlgDatas 64128
+#define PeUtils_SFonts 64129
+#define PeUtils_SFontDirs 64130
+#define PeUtils_SForms 64131
+#define PeUtils_SGroupCursors 64132
+#define PeUtils_SGroupIcons 64133
+#define PeUtils_SHtmls 64134
+#define PeUtils_SIcons 64135
+#define PeUtils_SManifests 64136
+#define PeUtils_SMenus 64137
+#define PeUtils_SMessageTables 64138
+#define PeUtils_SPlugPlays 64139
+#define PeUtils_SRcDatas 64140
+#define PeUtils_SRibbons 64141
+#define PeUtils_SStrings 64142
+#define PeUtils_SToolbars 64143
+#define LicenseTypes_SProfessionalEdition 64144
+#define LicenseTypes_SPersonalEdition 64145
+#define LicenseTypes_SBuildAutomation 64146
+#define LicenseTypes_SProfessionalTranslatorEdition 64147
+#define LicenseTypes_SBasicTransaltorEdition 64148
+#define LicenseTypes_SUnknown 64149
+#define LicenseTypes_SFreeTranslatorName 64150
+#define LicenseTypes_SFreeTranslatorDescription 64151
+#define NtCommon_SVersionStr 64152
+#define PeUtils_SAccelerators 64153
+#define PeUtils_SAniCursors 64154
+#define PeUtils_SAniIcons 64155
+#define PeUtils_SBitmaps 64156
+#define PeUtils_SCursors 64157
+#define PeUtils_SDialogs 64158
+#define PeUtils_SDlgIncludes 64159
+#define Data_DBConsts_SNestedDataSetClass 64160
+#define Data_DBConsts_STextFalse 64161
+#define Data_DBConsts_STextTrue 64162
+#define Data_DBConsts_SParameterNotFound 64163
+#define Data_DBConsts_SInvalidVersion 64164
+#define Data_DBConsts_SBadFieldType 64165
+#define Data_DBConsts_SProviderSQLNotSupported 64166
+#define Data_DBConsts_SProviderExecuteNotSupported 64167
+#define Data_DBConsts_SDataSetUnidirectional 64168
+#define Data_DBConsts_SUnassignedVar 64169
+#define Data_DBConsts_SRecordNotFound 64170
+#define Data_DBConsts_SBcdOverflow 64171
+#define Data_DBConsts_SInvalidBcdValue 64172
+#define Data_DBConsts_SCouldNotParseTimeStamp 64173
+#define Data_DBConsts_SInvalidSqlTimeStamp 64174
+#define LicenseTypes_SEnterpriseEdition 64175
+#define Data_DBConsts_SFieldOutOfRange 64176
+#define Data_DBConsts_SFieldRequired 64177
+#define Data_DBConsts_SDataSetMissing 64178
+#define Data_DBConsts_SInvalidCalcType 64179
+#define Data_DBConsts_SDuplicateIndexName 64180
+#define Data_DBConsts_SNoIndexForFields 64181
+#define Data_DBConsts_SIndexNotFound 64182
+#define Data_DBConsts_SDBDuplicateName 64183
+#define Data_DBConsts_SCircularDataLink 64184
+#define Data_DBConsts_SLookupInfoError 64185
+#define Data_DBConsts_SDataSourceChange 64186
+#define Data_DBConsts_SDataSetOpen 64187
+#define Data_DBConsts_SNotEditing 64188
+#define Data_DBConsts_SDataSetClosed 64189
+#define Data_DBConsts_SDataSetEmpty 64190
+#define Data_DBConsts_SDataSetReadOnly 64191
+#define Data_DBConsts_SInvalidFieldSize 64192
+#define Data_DBConsts_SInvalidFieldKind 64193
+#define Data_DBConsts_SUnknownFieldType 64194
+#define Data_DBConsts_SFieldNameMissing 64195
+#define Data_DBConsts_SDuplicateFieldName 64196
+#define Data_DBConsts_SFieldNotFound 64197
+#define Data_DBConsts_SFieldAccessError 64198
+#define Data_DBConsts_SFieldValueError 64199
+#define Data_DBConsts_SFieldRangeError 64200
+#define Data_DBConsts_SBcdFieldRangeError 64201
+#define Data_DBConsts_SInvalidIntegerValue 64202
+#define Data_DBConsts_SInvalidBoolValue 64203
+#define Data_DBConsts_SInvalidFloatValue 64204
+#define Data_DBConsts_SFieldTypeMismatch 64205
+#define Data_DBConsts_SFieldSizeMismatch 64206
+#define Data_DBConsts_SInvalidVarByteArray 64207
+#define Vcl_Imaging_GIFConsts_sProgressCopying 64208
+#define Vcl_Imaging_GIFConsts_sProgressOptimizing 64209
+#define NtIcon_rstInvalidIcon 64210
+#define NtIcon_rstInvalidCursor 64211
+#define NtIcon_rstInvalidBitmap 64212
+#define NtIcon_rstInvalidPixelFormat 64213
+#define NtUninstallFile_SDoesNotExists 64214
+#define NtUninstallFile_SCouldNotDeleteDir 64215
+#define NtUninstallFile_SCouldNotDeleteFile 64216
+#define NtUninstallFile_SChangeSinceInstallation 64217
+#define NtUninstallFile_SCanNotRemoveKey 64218
+#define NtUninstallFile_SCanNotRemoveValue 64219
+#define NtInstaller_SHelpAndManual 64220
+#define NtJson_SUnexpectedClosingBracket 64221
+#define NtJson_SNoFile 64222
+#define NtJson_SErrorParsingJsonData 64223
+#define Vcl_Imaging_GIFConsts_sBadPixelCoordinates 64224
+#define Vcl_Imaging_GIFConsts_sInvalidPixelFormat 64225
+#define Vcl_Imaging_GIFConsts_sBadDimension 64226
+#define Vcl_Imaging_GIFConsts_sNoDIB 64227
+#define Vcl_Imaging_GIFConsts_sInvalidStream 64228
+#define Vcl_Imaging_GIFConsts_sInvalidColor 64229
+#define Vcl_Imaging_GIFConsts_sInvalidBitSize 64230
+#define Vcl_Imaging_GIFConsts_sEmptyColorMap 64231
+#define Vcl_Imaging_GIFConsts_sEmptyImage 64232
+#define Vcl_Imaging_GIFConsts_sMultipleGCE 64233
+#define Vcl_Imaging_GIFConsts_sNoPalette 64234
+#define Vcl_Imaging_GIFConsts_sGIFImageFile 64235
+#define Vcl_Imaging_GIFConsts_sProgressLoading 64236
+#define Vcl_Imaging_GIFConsts_sProgressSaving 64237
+#define Vcl_Imaging_GIFConsts_sProgressConverting 64238
+#define Vcl_Imaging_GIFConsts_sProgressRendering 64239
+#define Vcl_Imaging_GIFConsts_sScreenBadColorSize 64240
+#define Vcl_Imaging_GIFConsts_sImageBadColorSize 64241
+#define Vcl_Imaging_GIFConsts_sUnknownExtension 64242
+#define Vcl_Imaging_GIFConsts_sBadExtensionLabel 64243
+#define Vcl_Imaging_GIFConsts_sOutOfMemDIB 64244
+#define Vcl_Imaging_GIFConsts_sDecodeTooFewBits 64245
+#define Vcl_Imaging_GIFConsts_sDecodeCircular 64246
+#define Vcl_Imaging_GIFConsts_sBadTrailer 64247
+#define Vcl_Imaging_GIFConsts_sBadExtensionInstance 64248
+#define Vcl_Imaging_GIFConsts_sBadBlockSize 64249
+#define Vcl_Imaging_GIFConsts_sBadBlock 64250
+#define Vcl_Imaging_GIFConsts_sUnsupportedClass 64251
+#define Vcl_Imaging_GIFConsts_sInvalidData 64252
+#define Vcl_Imaging_GIFConsts_sBadSize 64253
+#define Vcl_Imaging_GIFConsts_sScreenSizeExceeded 64254
+#define Vcl_Imaging_GIFConsts_sNoColorTable 64255
+#define NtScript_SNameWithoutBom 64256
+#define NtString_SInvalidString 64257
+#define NtString_SUnknownCode 64258
+#define NtWiz_SNext 64259
+#define NtWiz_SFinish 64260
+#define Shell_Win32_sNewFolder 64261
+#define Shell_Win32_sInFolder 64262
+#define Vcl_Imaging_JConsts_sChangeJPGSize 64263
+#define Vcl_Imaging_JConsts_sJPEGError 64264
+#define Vcl_Imaging_JConsts_sJPEGImageFile 64265
+#define Vcl_Imaging_GIFConsts_sOutOfData 64266
+#define Vcl_Imaging_GIFConsts_sTooManyColors 64267
+#define Vcl_Imaging_GIFConsts_sBadColorIndex 64268
+#define Vcl_Imaging_GIFConsts_sBadColorIndexFixed 64269
+#define Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty 64270
+#define Vcl_Imaging_GIFConsts_sBadSignature 64271
+#define NtScript_SJapaneseJisX 64272
+#define NtScript_SJapaneseAuto 64273
+#define NtScript_SKoreanAuto 64274
+#define NtScript_SSimplifiedChineseGb2312 64275
+#define NtScript_SKoreanWansung 64276
+#define NtScript_SExtAlphaLowercase 64277
+#define NtScript_SUkrainianKoi8 64278
+#define NtScript_SEucJapanese 64279
+#define NtScript_SEucSimplifiedChinese 64280
+#define NtScript_SEucKorean 64281
+#define NtScript_SEucTraditionalChinese 64282
+#define NtScript_SSimplifiedChineseHzGb2312 64283
+#define NtScript_SUtf16LittleEndian 64284
+#define NtScript_SUtf16BigEndian 64285
+#define NtScript_SUtf7 64286
+#define NtScript_SNameWithBom 64287
+#define NtScript_SIsciiPunjabi 64288
+#define NtScript_SRussianKoi8 64289
+#define NtScript_SKoreanJohab 64290
+#define NtScript_SCnsTaiwan 64291
+#define NtScript_STcaTaiwan 64292
+#define NtScript_SEltenTaiwan 64293
+#define NtScript_SIbm5550Taiwan 64294
+#define NtScript_STeleTextTaiwan 64295
+#define NtScript_SWangTaiwan 64296
+#define NtScript_SIa5International 64297
+#define NtScript_SIa5German 64298
+#define NtScript_SIa5Swedish 64299
+#define NtScript_SIa5Norwegian 64300
+#define NtScript_SUsAscii 64301
+#define NtScript_ST61 64302
+#define NtScript_SIso6937 64303
+#define NtScript_SEbcdicCyrillicSerbian 64304
+#define NtScript_SEbcdicJapanese 64305
+#define NtScript_SEbcdicUsCanadaJapanese 64306
+#define NtScript_SEbcdicKorean 64307
+#define NtScript_SEbcdicSimplifiedChinese 64308
+#define NtScript_SEbcdicTraditionalChineseUs 64309
+#define NtScript_SEbcdicJapaneseLatin 64310
+#define NtScript_SIsciiDevanagari 64311
+#define NtScript_SIsciiBengali 64312
+#define NtScript_SIsciiTamil 64313
+#define NtScript_SIsciiTelugu 64314
+#define NtScript_SIsciiAssamese 64315
+#define NtScript_SIsciiOriya 64316
+#define NtScript_SIsciiKannada 64317
+#define NtScript_SIsciiMalayalam 64318
+#define NtScript_SIsciiGujarati 64319
+#define NtScript_SEbcdicDenmarkNorway 64320
+#define NtScript_SEbcdicFinlandSweden 64321
+#define NtScript_SEbcdicItaly 64322
+#define NtScript_SEbcdicLatinAmericaSpain 64323
+#define NtScript_SEbcdicUk 64324
+#define NtScript_SEbcdicJapaneseKatakana 64325
+#define NtScript_SEbcdicFrance 64326
+#define NtScript_SEbcdicArabic 64327
+#define NtScript_SEbcdicGreek 64328
+#define NtScript_SEbcdicHebrew 64329
+#define NtScript_SEbcdicKoreanExtended 64330
+#define NtScript_SEbcdicThai 64331
+#define NtScript_SEbcdicIcelandic 64332
+#define NtScript_SEbcdicCyrillicRussian 64333
+#define NtScript_SEbcdicTurkish 64334
+#define NtScript_SEbcdicLatin1Euro 64335
+#define NtScript_SEbcdicWestEuropean 64336
+#define NtScript_SEbcdicLatin1 64337
+#define NtScript_SEbcdicLatin2 64338
+#define NtScript_SEbcdicModernGreek 64339
+#define NtScript_SEbcdicTurkishLatin5 64340
+#define NtScript_SEbcdicUsaCanadaEuro 64341
+#define NtScript_SEbcdicGermanyEuro 64342
+#define NtScript_SEbcdicDenmarkNorwayEuro 64343
+#define NtScript_SEbcdicFinlandSwedenEuro 64344
+#define NtScript_SEbcdicItalyEuro 64345
+#define NtScript_SEbcdicLatinAmericaSpainEuro 64346
+#define NtScript_SEbcdicUkEuro 64347
+#define NtScript_SEbcdicFranceEuro 64348
+#define NtScript_SEbcdicInternationalEuro 64349
+#define NtScript_SEbcdicIcelandicEuro 64350
+#define NtScript_SEbcdicGermany 64351
+#define NtScript_SOemLatin1 64352
+#define NtScript_SOemLatin2 64353
+#define NtScript_SOemCyrillic 64354
+#define NtScript_SOemTurkish 64355
+#define NtScript_SOemLatin1Euro 64356
+#define NtScript_SOemPortuguese 64357
+#define NtScript_SOemIcelandic 64358
+#define NtScript_SOemHebrew 64359
+#define NtScript_SOemCanadianFrench 64360
+#define NtScript_SOemArabic 64361
+#define NtScript_SOemNordic 64362
+#define NtScript_SOemRussian 64363
+#define NtScript_SOemModernGreek 64364
+#define NtScript_SOemArabicAsmo 64365
+#define NtScript_SOemArabicTransparentAsmo 64366
+#define NtScript_SEbcdicUsaCanada 64367
+#define NtScript_SMacKorean 64368
+#define NtScript_SMacArabic 64369
+#define NtScript_SMacHebrew 64370
+#define NtScript_SMacGreek 64371
+#define NtScript_SMacCyrillic 64372
+#define NtScript_SMacSimplifiedChinese 64373
+#define NtScript_SMacRomania 64374
+#define NtScript_SMacUkraine 64375
+#define NtScript_SMacThai 64376
+#define NtScript_SMacLatin 64377
+#define NtScript_SMacIcelandic 64378
+#define NtScript_SMacTurkish 64379
+#define NtScript_SMacCroatian 64380
+#define NtScript_SOemUs 64381
+#define NtScript_SOemGreek 64382
+#define NtScript_SOemBaltic 64383
+#define NtScript_SIso8859_6_Arabic 64384
+#define NtScript_SIso8859_7_Greek 64385
+#define NtScript_SIso8859_8_HebrewVisual 64386
+#define NtScript_SIso8859_8_HebrewLogical 64387
+#define NtScript_SIso8859_9_Latin5 64388
+#define NtScript_SIso8859_13_Estonian 64389
+#define NtScript_SIso8859_15_Latin9 64390
+#define NtScript_SIso2022JapaneseNoHalfWidth 64391
+#define NtScript_SIso2022JapaneseHalfWidth 64392
+#define NtScript_SIso2022JapaneseJisX 64393
+#define NtScript_SIso2022Korean 64394
+#define NtScript_SIso2022SimplifiedChinese 64395
+#define NtScript_SIso2022TraditionalChinese 64396
+#define NtScript_SMacRoman 64397
+#define NtScript_SMacJapanese 64398
+#define NtScript_SMacTraditionalChinese 64399
+#define NtScript_SAnsiKorean 64400
+#define NtScript_SAnsiTraditionalChinese 64401
+#define NtScript_SAnsiEastEurope 64402
+#define NtScript_SAnsiCyrillic 64403
+#define NtScript_SAnsiWestern 64404
+#define NtScript_SAnsiGreek 64405
+#define NtScript_SAnsiTurkish 64406
+#define NtScript_SAnsiHebrew 64407
+#define NtScript_SAnsiArabic 64408
+#define NtScript_SAnsiBaltic 64409
+#define NtScript_SAnsiVietnamese 64410
+#define NtScript_SIso8859_1_Latin1 64411
+#define NtScript_SIso8859_2_CentralEurope 64412
+#define NtScript_SIso8859_3_Latin3 64413
+#define NtScript_SIso8859_4_Baltic 64414
+#define NtScript_SIso8859_5_Cyrillic 64415
+#define NtScript_SSinhalaScript 64416
+#define NtScript_SSyriacScript 64417
+#define NtScript_STamilScript 64418
+#define NtScript_STeluguScript 64419
+#define NtScript_SThaanaScript 64420
+#define NtScript_STibetanScript 64421
+#define NtScript_SYiScript 64422
+#define NtScript_SCherokeeScript 64423
+#define NtScript_SMyanmarScript 64424
+#define NtScript_SNkoScript 64425
+#define NtScript_STifinaghScript 64426
+#define NtScript_SJavaneseScript 64427
+#define NtScript_SVaiScript 64428
+#define NtScript_SAnsiThai 64429
+#define NtScript_SAnsiJapanese 64430
+#define NtScript_SAnsiSimplifiedChinese 64431
+#define NtScript_SArmenianScript 64432
+#define NtScript_SBengaliScript 64433
+#define NtScript_SBrahmiScript 64434
+#define NtScript_SDevanagariScript 64435
+#define NtScript_SEthiopicScript 64436
+#define NtScript_SGeorgianScript 64437
+#define NtScript_SGujaratiScript 64438
+#define NtScript_SGurmukhiScript 64439
+#define NtScript_SInuktitutScript 64440
+#define NtScript_SSyllabicsScript 64441
+#define NtScript_SKannadaScript 64442
+#define NtScript_SKhmerScript 64443
+#define NtScript_SLaoScript 64444
+#define NtScript_SMalayalamScript 64445
+#define NtScript_SMongolianScript 64446
+#define NtScript_SOriyaScript 64447
+#define NtScript_SDosCodePage 64448
+#define NtScript_SEbcdicCodePage 64449
+#define NtScript_SOtherCodePage 64450
+#define NtScript_SDefaultScript 64451
+#define NtScript_SLatinscript 64452
+#define NtScript_SGreekScript 64453
+#define NtScript_SCyrillicScript 64454
+#define NtScript_SArabicScript 64455
+#define NtScript_SHebrewScript 64456
+#define NtScript_SJapaneseScript 64457
+#define NtScript_STraditionalChineseScript 64458
+#define NtScript_SSimplifiedChineseScript 64459
+#define NtScript_SSimplifiedScript 64460
+#define NtScript_STraditionalScript 64461
+#define NtScript_SKoreanScript 64462
+#define NtScript_SThaiScript 64463
+#define NtLanguages_SCura__ao 64464
+#define NtLanguages_SSuriname 64465
+#define NtLanguages_SCaboVerde 64466
+#define NtLanguages_SMozambique 64467
+#define NtLanguages_SSaoTomePrincipe 64468
+#define NtLanguages_STimorLeste 64469
+#define NtLanguages_SMoldova 64470
+#define NtScript_SUtf8 64471
+#define NtScript_SUtf16Le 64472
+#define NtScript_SUtf16Be 64473
+#define NtScript_SUtf32Le 64474
+#define NtScript_SUtf32Be 64475
+#define NtScript_SGb18030 64476
+#define NtScript_SWindowsCodePage 64477
+#define NtScript_SIsoCodePage 64478
+#define NtScript_SMacCodePage 64479
+#define NtLanguages_SStMartin 64480
+#define NtLanguages_SMali 64481
+#define NtLanguages_SMartinique 64482
+#define NtLanguages_SNewCaledonia 64483
+#define NtLanguages_SFrenchPolynesia 64484
+#define NtLanguages_SStPierrMiquelon 64485
+#define NtLanguages_SReunion 64486
+#define NtLanguages_SWallisFutuna 64487
+#define NtLanguages_SMayotte 64488
+#define NtLanguages_SSanMarino 64489
+#define NtLanguages_SVaticanCity 64490
+#define NtLanguages_SNorthKorea 64491
+#define NtLanguages_SAngola 64492
+#define NtLanguages_SSvalbardJanMayen 64493
+#define NtLanguages_SAruba 64494
+#define NtLanguages_SBonaireSintEustatiusSaba 64495
+#define NtLanguages_SCuba 64496
+#define NtLanguages_SEquatorialGuinea 64497
+#define NtLanguages_SBurkinaFaso 64498
+#define NtLanguages_SGuinea 64499
+#define NtLanguages_SGuineaBissau 64500
+#define NtLanguages_SNiger 64501
+#define NtLanguages_SBenin 64502
+#define NtLanguages_SStBarthelemy 64503
+#define NtLanguages_SCongoDRC 64504
+#define NtLanguages_SCentralAfricanRepublic 64505
+#define NtLanguages_SCongo 64506
+#define NtLanguages_SCoteDIvoire 64507
+#define NtLanguages_SGabon 64508
+#define NtLanguages_SFrenchGuiana 64509
+#define NtLanguages_SGuadeloupe 64510
+#define NtLanguages_SHaiti 64511
+#define NtLanguages_SSierraLeone 64512
+#define NtLanguages_SSintMaarten 64513
+#define NtLanguages_SEswatini 64514
+#define NtLanguages_STurksCaicosIslands 64515
+#define NtLanguages_STokelau 64516
+#define NtLanguages_STonga 64517
+#define NtLanguages_STuvalu 64518
+#define NtLanguages_STanzania 64519
+#define NtLanguages_SUganda 64520
+#define NtLanguages_SUsOutlyingIslands 64521
+#define NtLanguages_SStVincentGrenadines 64522
+#define NtLanguages_SBritishVirginIslands 64523
+#define NtLanguages_SUsVirginIslands 64524
+#define NtLanguages_SVanuatu 64525
+#define NtLanguages_SSamoa 64526
+#define NtLanguages_SZambia 64527
+#define NtLanguages_SMadagascar 64528
+#define NtLanguages_SMarshallIslands 64529
+#define NtLanguages_SNorthernMarianaIslands 64530
+#define NtLanguages_SMontserrat 64531
+#define NtLanguages_SMauritius 64532
+#define NtLanguages_SMalawi 64533
+#define NtLanguages_SNamibia 64534
+#define NtLanguages_SNorfolkIsland 64535
+#define NtLanguages_SNauru 64536
+#define NtLanguages_SNiue 64537
+#define NtLanguages_SPapuaNewGuinea 64538
+#define NtLanguages_SPitcairnIslands 64539
+#define NtLanguages_SPalau 64540
+#define NtLanguages_SSolomonIslands 64541
+#define NtLanguages_SSeychelles 64542
+#define NtLanguages_SStHelenaAscensionTristanDaCunha 64543
+#define NtLanguages_SMicronesia 64544
+#define NtLanguages_SGrenada 64545
+#define NtLanguages_SGuernsey 64546
+#define NtLanguages_SGibraltar 64547
+#define NtLanguages_SGambia 64548
+#define NtLanguages_SGuam 64549
+#define NtLanguages_SGuyana 64550
+#define NtLanguages_SIsleOfMan 64551
+#define NtLanguages_SBritishIndianOceanTerritory 64552
+#define NtLanguages_SJersey 64553
+#define NtLanguages_SKiribati 64554
+#define NtLanguages_SStKittNevis 64555
+#define NtLanguages_SCaymanIslands 64556
+#define NtLanguages_SStLucia 64557
+#define NtLanguages_SLiberia 64558
+#define NtLanguages_SLesotho 64559
+#define NtLanguages_STogo 64560
+#define NtLanguages_SAntiguaBarbuda 64561
+#define NtLanguages_SAnguilla 64562
+#define NtLanguages_SAmericanSamoa 64563
+#define NtLanguages_SBarbados 64564
+#define NtLanguages_SBurundi 64565
+#define NtLanguages_SBermuda 64566
+#define NtLanguages_SBahamas 64567
+#define NtLanguages_SBotswana 64568
+#define NtLanguages_SCocosKeelingIslands 64569
+#define NtLanguages_SCookIslands 64570
+#define NtLanguages_SCameroon 64571
+#define NtLanguages_SChristmasIsland 64572
+#define NtLanguages_SDominica 64573
+#define NtLanguages_SFiji 64574
+#define NtLanguages_SFalklandIslands 64575
+#define NtLanguages_SVietNam 64576
+#define NtLanguages_SYemen 64577
+#define NtLanguages_SZimbabwe 64578
+#define NtLanguages_SWorld 64579
+#define NtLanguages_SEurope 64580
+#define NtLanguages_SDjibouti 64581
+#define NtLanguages_SEritrea 64582
+#define NtLanguages_SComoros 64583
+#define NtLanguages_SMauritania 64584
+#define NtLanguages_SPalestinianAuthority 64585
+#define NtLanguages_SSudan 64586
+#define NtLanguages_SSomalia 64587
+#define NtLanguages_SSouthSudan 64588
+#define NtLanguages_SChad 64589
+#define NtLanguages_SAndorra 64590
+#define NtLanguages_SGhana 64591
+#define NtLanguages_SSwitzerland 64592
+#define NtLanguages_SSyria 64593
+#define NtLanguages_STaiwan 64594
+#define NtLanguages_STajikistan 64595
+#define NtLanguages_SThailand 64596
+#define NtLanguages_STrinidadAndTobago 64597
+#define NtLanguages_STunisia 64598
+#define NtLanguages_STurkey 64599
+#define NtLanguages_STurkmenistan 64600
+#define NtLanguages_SUAE 64601
+#define NtLanguages_SUkraine 64602
+#define NtLanguages_SUnitedKingdom 64603
+#define NtLanguages_SUnitedStates 64604
+#define NtLanguages_SUruguay 64605
+#define NtLanguages_SUzbekistan 64606
+#define NtLanguages_SVenezuela 64607
+#define NtLanguages_SPRC 64608
+#define NtLanguages_SPuertoRico 64609
+#define NtLanguages_SQatar 64610
+#define NtLanguages_SRomania 64611
+#define NtLanguages_SRussia 64612
+#define NtLanguages_SRwanda 64613
+#define NtLanguages_SSaudiArabia 64614
+#define NtLanguages_SSenegal 64615
+#define NtLanguages_SSerbia 64616
+#define NtLanguages_SSingapore 64617
+#define NtLanguages_SSlovakia 64618
+#define NtLanguages_SSlovenia 64619
+#define NtLanguages_SSouthAfrica 64620
+#define NtLanguages_SSpain 64621
+#define NtLanguages_SSriLanka 64622
+#define NtLanguages_SSweden 64623
+#define NtLanguages_SMontenegro 64624
+#define NtLanguages_SMorocco 64625
+#define NtLanguages_SNetherlands 64626
+#define NtLanguages_SNepal 64627
+#define NtLanguages_SNewZealand 64628
+#define NtLanguages_SNicaragua 64629
+#define NtLanguages_SNigeria 64630
+#define NtLanguages_SNorway 64631
+#define NtLanguages_SOman 64632
+#define NtLanguages_SPakistan 64633
+#define NtLanguages_SPanama 64634
+#define NtLanguages_SParaguay 64635
+#define NtLanguages_SPeru 64636
+#define NtLanguages_SPhilippines 64637
+#define NtLanguages_SPoland 64638
+#define NtLanguages_SPortugal 64639
+#define NtLanguages_SLaoPDR 64640
+#define NtLanguages_SLatinAmerica 64641
+#define NtLanguages_SLatvia 64642
+#define NtLanguages_SLebanon 64643
+#define NtLanguages_SLibya 64644
+#define NtLanguages_SLiechtenstein 64645
+#define NtLanguages_SLithuania 64646
+#define NtLanguages_SLuxembourg 64647
+#define NtLanguages_SMacau 64648
+#define NtLanguages_SMacedonia 64649
+#define NtLanguages_SMalaysia 64650
+#define NtLanguages_SMaldives 64651
+#define NtLanguages_SMalta 64652
+#define NtLanguages_SMexico 64653
+#define NtLanguages_SMonaco 64654
+#define NtLanguages_SMongolia 64655
+#define NtLanguages_SIndia 64656
+#define NtLanguages_SIndonesia 64657
+#define NtLanguages_SIran 64658
+#define NtLanguages_SIraq 64659
+#define NtLanguages_SIreland 64660
+#define NtLanguages_SIsrael 64661
+#define NtLanguages_SItaly 64662
+#define NtLanguages_SJamaica 64663
+#define NtLanguages_SJapan 64664
+#define NtLanguages_SJordan 64665
+#define NtLanguages_SKazakhstan 64666
+#define NtLanguages_SKenya 64667
+#define NtLanguages_SKorea 64668
+#define NtLanguages_SKosovo 64669
+#define NtLanguages_SKuwait 64670
+#define NtLanguages_SKyrgyzstan 64671
+#define NtLanguages_SEgypt 64672
+#define NtLanguages_SElSalvador 64673
+#define NtLanguages_SEstonia 64674
+#define NtLanguages_SEthiopia 64675
+#define NtLanguages_SFaeroeIslands 64676
+#define NtLanguages_SFinland 64677
+#define NtLanguages_SFrance 64678
+#define NtLanguages_SGeorgia 64679
+#define NtLanguages_SGermany 64680
+#define NtLanguages_SGreece 64681
+#define NtLanguages_SGreenland 64682
+#define NtLanguages_SGuatemala 64683
+#define NtLanguages_SHonduras 64684
+#define NtLanguages_SHongKong 64685
+#define NtLanguages_SHungary 64686
+#define NtLanguages_SIceland 64687
+#define NtLanguages_SBosniaAndHerzegovina 64688
+#define NtLanguages_SBrazil 64689
+#define NtLanguages_SBruneiDarussalam 64690
+#define NtLanguages_SBulgaria 64691
+#define NtLanguages_SCambodia 64692
+#define NtLanguages_SCanada 64693
+#define NtLanguages_SCaribbean 64694
+#define NtLanguages_SChile 64695
+#define NtLanguages_SColombia 64696
+#define NtLanguages_SCostaRica 64697
+#define NtLanguages_SCroatia 64698
+#define NtLanguages_SCyprus 64699
+#define NtLanguages_SCzechRepublic 64700
+#define NtLanguages_SDenmark 64701
+#define NtLanguages_SDominicanRepublic 64702
+#define NtLanguages_SEcuador 64703
+#define NtLanguages_SSesothoSaLeboaLanguage 64704
+#define NtLanguages_SAfghanistan 64705
+#define NtLanguages_SAland 64706
+#define NtLanguages_SAlbania 64707
+#define NtLanguages_SAlgeria 64708
+#define NtLanguages_SArgentina 64709
+#define NtLanguages_SArmenia 64710
+#define NtLanguages_SAustralia 64711
+#define NtLanguages_SAustria 64712
+#define NtLanguages_SAzerbaijan 64713
+#define NtLanguages_SBangladesh 64714
+#define NtLanguages_SBahrain 64715
+#define NtLanguages_SBelarus 64716
+#define NtLanguages_SBelgium 64717
+#define NtLanguages_SBelize 64718
+#define NtLanguages_SBolivia 64719
+#define NtLanguages_SSundaneseLanguage 64720
+#define NtLanguages_STesoLanguage 64721
+#define NtLanguages_STigreLanguage 64722
+#define NtLanguages_STonganLanguage 64723
+#define NtLanguages_STasawaqLanguage 64724
+#define NtLanguages_SVendaLanguage 64725
+#define NtLanguages_SVolapukLanguage 64726
+#define NtLanguages_SVunjoLanguage 64727
+#define NtLanguages_SWalserLanguage 64728
+#define NtLanguages_SWolayttaLanguage 64729
+#define NtLanguages_SSogaLanguage 64730
+#define NtLanguages_SYangbenLanguage 64731
+#define NtLanguages_SYiddishLanguage 64732
+#define NtLanguages_SNheengatuLanguage 64733
+#define NtLanguages_SStandardMoroccanTamazightLanguage 64734
+#define NtLanguages_SInvariantLanguage 64735
+#define NtLanguages_SPrussianLanguage 64736
+#define NtLanguages_SRajasthaniLanguage 64737
+#define NtLanguages_SRundiLanguage 64738
+#define NtLanguages_SRomboLanguage 64739
+#define NtLanguages_SRwaLanguage 64740
+#define NtLanguages_SSamburuLanguage 64741
+#define NtLanguages_SSanguLanguage 64742
+#define NtLanguages_SSardinianLanguage 64743
+#define NtLanguages_SSenaLanguage 64744
+#define NtLanguages_SKoyraboroSenniLanguage 64745
+#define NtLanguages_SSangoLanguage 64746
+#define NtLanguages_STachelhitLanguage 64747
+#define NtLanguages_SShonaLanguage 64748
+#define NtLanguages_SSomaliLanguage 64749
+#define NtLanguages_SsiSwatiLanguage 64750
+#define NtLanguages_SSahoLanguage 64751
+#define NtLanguages_SMundangLanguage 64752
+#define NtLanguages_SBurmeseLanguage 64753
+#define NtLanguages_SMazanderaniLanguage 64754
+#define NtLanguages_SNamaLanguage 64755
+#define NtLanguages_SNorthNdebeleLanguage 64756
+#define NtLanguages_SLowGermanLanguage 64757
+#define NtLanguages_SKwasioLanguage 64758
+#define NtLanguages_SNgiemboonLanguage 64759
+#define NtLanguages_SNkoLanguage 64760
+#define NtLanguages_SSouthNdebeleLanguage 64761
+#define NtLanguages_SNuerLanguage 64762
+#define NtLanguages_SNyankoleLanguage 64763
+#define NtLanguages_SOromoLanguage 64764
+#define NtLanguages_SOsseticLanguage 64765
+#define NtLanguages_SPapiamentoLanguage 64766
+#define NtLanguages_SNigerianPidginLanguage 64767
+#define NtLanguages_SLangiLanguage 64768
+#define NtLanguages_SGandaLanguage 64769
+#define NtLanguages_SLakotaLanguage 64770
+#define NtLanguages_SLingalaLanguage 64771
+#define NtLanguages_SNorthernLuriLanguage 64772
+#define NtLanguages_SLubaKatangaLanguage 64773
+#define NtLanguages_SLuoLanguage 64774
+#define NtLanguages_SLuyiaLanguage 64775
+#define NtLanguages_SMaithiliLanguage 64776
+#define NtLanguages_SMasaiLanguage 64777
+#define NtLanguages_SMeruLanguage 64778
+#define NtLanguages_SMorisyenLanguage 64779
+#define NtLanguages_SMalagasyLanguage 64780
+#define NtLanguages_SMakhuwaMeettoLanguage 64781
+#define NtLanguages_SMetaLanguage 64782
+#define NtLanguages_SManipuriLanguage 64783
+#define NtLanguages_SKambaLanguage 64784
+#define NtLanguages_SMakondeLanguage 64785
+#define NtLanguages_SKabuverdianuLanguage 64786
+#define NtLanguages_SKaingangLanguage 64787
+#define NtLanguages_SKoyraChiiniLanguage 64788
+#define NtLanguages_SKikuyuLanguage 64789
+#define NtLanguages_SKakoLanguage 64790
+#define NtLanguages_SKalenjinLanguage 64791
+#define NtLanguages_SKanuriLanguage 64792
+#define NtLanguages_SKashmiriLanguage 64793
+#define NtLanguages_SShambalaLanguage 64794
+#define NtLanguages_SBafiaLanguage 64795
+#define NtLanguages_SColognianLanguage 64796
+#define NtLanguages_SCentralKurdishLanguage 64797
+#define NtLanguages_SCornishLanguage 64798
+#define NtLanguages_SLatinLanguage 64799
+#define NtLanguages_SEmbuLanguage 64800
+#define NtLanguages_SEweLanguage 64801
+#define NtLanguages_SEwondoLanguage 64802
+#define NtLanguages_SFulaLanguage 64803
+#define NtLanguages_SFilipinoLanguage 64804
+#define NtLanguages_SFriulianLanguage 64805
+#define NtLanguages_SWesternFrisianLanguage 64806
+#define NtLanguages_SGuaraniLanguage 64807
+#define NtLanguages_SGusiiLanguage 64808
+#define NtLanguages_SManxLanguage 64809
+#define NtLanguages_SHawaiianLanguage 64810
+#define NtLanguages_SInterlinguaLanguage 64811
+#define NtLanguages_SIbibioLanguage 64812
+#define NtLanguages_SNgombaLanguage 64813
+#define NtLanguages_SMachameLanguage 64814
+#define NtLanguages_SKabyleLanguage 64815
+#define NtLanguages_SBamanankanLanguage 64816
+#define NtLanguages_SBodoLanguage 64817
+#define NtLanguages_SBlinLanguage 64818
+#define NtLanguages_SChakmaLanguage 64819
+#define NtLanguages_SChechenLanguage 64820
+#define NtLanguages_SCebuanoLanguage 64821
+#define NtLanguages_SChigaLanguage 64822
+#define NtLanguages_SCherokeeLanguage 64823
+#define NtLanguages_SChurchSlavonicLanguage 64824
+#define NtLanguages_SChuvashLanguage 64825
+#define NtLanguages_STaitaLanguage 64826
+#define NtLanguages_SZarmaLanguage 64827
+#define NtLanguages_SDogriLanguage 64828
+#define NtLanguages_SDualaLanguage 64829
+#define NtLanguages_SJolaFonyiLanguage 64830
+#define NtLanguages_SDzongkhaLanguage 64831
+#define NtLanguages_SXhosaLanguage 64832
+#define NtLanguages_SYakutLanguage 64833
+#define NtLanguages_SYiLanguage 64834
+#define NtLanguages_SYorubaLanguage 64835
+#define NtLanguages_SZuluLanguage 64836
+#define NtLanguages_SAfarLanguage 64837
+#define NtLanguages_SAghemLanguage 64838
+#define NtLanguages_SAkanLanguage 64839
+#define NtLanguages_SAsuLanguage 64840
+#define NtLanguages_SAsturianLanguage 64841
+#define NtLanguages_SBasaaLanguage 64842
+#define NtLanguages_SBembaLanguage 64843
+#define NtLanguages_SBenaLanguage 64844
+#define NtLanguages_SHaryanviLanguage 64845
+#define NtLanguages_SBhojpuriLanguage 64846
+#define NtLanguages_SEdoLanguage 64847
+#define NtLanguages_STeluguLanguage 64848
+#define NtLanguages_STibetanLanguage 64849
+#define NtLanguages_STigrinyaLanguage 64850
+#define NtLanguages_SThaiLanguage 64851
+#define NtLanguages_STsongaLanguage 64852
+#define NtLanguages_STurkishLanguage 64853
+#define NtLanguages_STurkmenLanguage 64854
+#define NtLanguages_SUighurLanguage 64855
+#define NtLanguages_SUkrainianLanguage 64856
+#define NtLanguages_SUpperSorbianLanguage 64857
+#define NtLanguages_SUrduLanguage 64858
+#define NtLanguages_SUzbekLanguage 64859
+#define NtLanguages_SVaiLanguage 64860
+#define NtLanguages_SVietnameseLanguage 64861
+#define NtLanguages_SWelshLanguage 64862
+#define NtLanguages_SWolofLanguage 64863
+#define NtLanguages_SScotsGaelicLanguage 64864
+#define NtLanguages_SSerbianLanguage 64865
+#define NtLanguages_SSinhalaLanguage 64866
+#define NtLanguages_SSindhiLanguage 64867
+#define NtLanguages_SSlovakLanguage 64868
+#define NtLanguages_SSloveneLanguage 64869
+#define NtLanguages_SSpanishLanguage 64870
+#define NtLanguages_SSetswanaLanguage 64871
+#define NtLanguages_SSesothoLanguage 64872
+#define NtLanguages_SSwahiliLanguage 64873
+#define NtLanguages_SSwedishLanguage 64874
+#define NtLanguages_SSyriacLanguage 64875
+#define NtLanguages_STajikLanguage 64876
+#define NtLanguages_STamazightLanguage 64877
+#define NtLanguages_STamilLanguage 64878
+#define NtLanguages_STatarLanguage 64879
+#define NtLanguages_SPashtoLanguage 64880
+#define NtLanguages_SPersianLanguage 64881
+#define NtLanguages_SPolishLanguage 64882
+#define NtLanguages_SPortugueseLanguage 64883
+#define NtLanguages_SPunjabiLanguage 64884
+#define NtLanguages_SQuechuaLanguage 64885
+#define NtLanguages_SRomanshLanguage 64886
+#define NtLanguages_SRomanianLanguage 64887
+#define NtLanguages_SRussianLanguage 64888
+#define NtLanguages_SSamiNorthernLanguage 64889
+#define NtLanguages_SSamiSouthernLanguage 64890
+#define NtLanguages_SSamiInariLanguage 64891
+#define NtLanguages_SSamiSkoltLanguage 64892
+#define NtLanguages_SSamiLuleLanguage 64893
+#define NtLanguages_SSanskritLanguage 64894
+#define NtLanguages_SSantaliLanguage 64895
+#define NtLanguages_SMacedonianLanguage 64896
+#define NtLanguages_SMalayLanguage 64897
+#define NtLanguages_SMalayalamLanguage 64898
+#define NtLanguages_SMalteseLanguage 64899
+#define NtLanguages_SMapudungunLanguage 64900
+#define NtLanguages_SMarathiLanguage 64901
+#define NtLanguages_SMaoriLanguage 64902
+#define NtLanguages_SMongolianLanguage 64903
+#define NtLanguages_SMontenegrinLanguage 64904
+#define NtLanguages_SMohawkLanguage 64905
+#define NtLanguages_SNepaliLanguage 64906
+#define NtLanguages_SNorwegianLanguage 64907
+#define NtLanguages_SNorwegianBokmalLanguage 64908
+#define NtLanguages_SNorwegianNynorskLanguage 64909
+#define NtLanguages_SOccitanLanguage 64910
+#define NtLanguages_SOriyaLanguage 64911
+#define NtLanguages_SItalianLanguage 64912
+#define NtLanguages_SJapaneseLanguage 64913
+#define NtLanguages_SJavaneseLanguage 64914
+#define NtLanguages_SKannadaLanguage 64915
+#define NtLanguages_SKazakhLanguage 64916
+#define NtLanguages_SKhmerLanguage 64917
+#define NtLanguages_SKicheLanguage 64918
+#define NtLanguages_SKinyarwandaLanguage 64919
+#define NtLanguages_SKonkaniLanguage 64920
+#define NtLanguages_SKoreanLanguage 64921
+#define NtLanguages_SKyrgyzLanguage 64922
+#define NtLanguages_SLaoLanguage 64923
+#define NtLanguages_SLatvianLanguage 64924
+#define NtLanguages_SLithuanianLanguage 64925
+#define NtLanguages_SLowerSorbianLanguage 64926
+#define NtLanguages_SLuxembourgishLanguage 64927
+#define NtLanguages_SFrenchLanguage 64928
+#define NtLanguages_SGalicianLanguage 64929
+#define NtLanguages_SGeorgianLanguage 64930
+#define NtLanguages_SGermanLanguage 64931
+#define NtLanguages_SGreekLanguage 64932
+#define NtLanguages_SGreenlandicLanguage 64933
+#define NtLanguages_SGujaratiLanguage 64934
+#define NtLanguages_SHausaLanguage 64935
+#define NtLanguages_SHebrewLanguage 64936
+#define NtLanguages_SHindiLanguage 64937
+#define NtLanguages_SHungarianLanguage 64938
+#define NtLanguages_SIcelandicLanguage 64939
+#define NtLanguages_SIgboLanguage 64940
+#define NtLanguages_SIndonesianLanguage 64941
+#define NtLanguages_SInuktitutLanguage 64942
+#define NtLanguages_SIrishLanguage 64943
+#define NtLanguages_SBretonLanguage 64944
+#define NtLanguages_SBulgarianLanguage 64945
+#define NtLanguages_SCatalanLanguage 64946
+#define NtLanguages_SChineseLanguage 64947
+#define NtLanguages_SCorsicanLanguage 64948
+#define NtLanguages_SCroatianLanguage 64949
+#define NtLanguages_SCzechLanguage 64950
+#define NtLanguages_SDanishLanguage 64951
+#define NtLanguages_SDariLanguage 64952
+#define NtLanguages_SDivehiLanguage 64953
+#define NtLanguages_SDutchLanguage 64954
+#define NtLanguages_SEnglishLanguage 64955
+#define NtLanguages_SEstonianLanguage 64956
+#define NtLanguages_SEsperantoLanguage 64957
+#define NtLanguages_SFaeroeseLanguage 64958
+#define NtLanguages_SFinnishLanguage 64959
 #define NtHtmlHelp_SStringTopicNeeded 64960
-#define NtLanguages_SDifferentItem 64961
-#define NtLanguages_SAfrikaansLanguage 64962
-#define NtLanguages_SAlbanianLanguage 64963
-#define NtLanguages_SAlsatianLanguage 64964
-#define NtLanguages_SAmharicLanguage 64965
-#define NtLanguages_SArabicLanguage 64966
-#define NtLanguages_SArmenianLanguage 64967
-#define NtLanguages_SAssameseLanguage 64968
-#define NtLanguages_SAzerbaijaniLanguage 64969
-#define NtLanguages_SBashkirLanguage 64970
-#define NtLanguages_SBasqueLanguage 64971
-#define NtLanguages_SBelarusianLanguage 64972
-#define NtLanguages_SBengaliLanguage 64973
-#define NtLanguages_SBosnianLanguage 64974
-#define NtLanguages_SBretonLanguage 64975
+#define NtLanguages_SUnknown 64961
+#define NtLanguages_SDifferentItem 64962
+#define NtLanguages_SAfrikaansLanguage 64963
+#define NtLanguages_SAlbanianLanguage 64964
+#define NtLanguages_SAlsatianLanguage 64965
+#define NtLanguages_SAmharicLanguage 64966
+#define NtLanguages_SArabicLanguage 64967
+#define NtLanguages_SArmenianLanguage 64968
+#define NtLanguages_SAssameseLanguage 64969
+#define NtLanguages_SAzerbaijaniLanguage 64970
+#define NtLanguages_SBashkirLanguage 64971
+#define NtLanguages_SBasqueLanguage 64972
+#define NtLanguages_SBelarusianLanguage 64973
+#define NtLanguages_SBengaliLanguage 64974
+#define NtLanguages_SBosnianLanguage 64975
 #define Vcl_Imaging_pnglang_EPNGUnknownColorTypeText 64976
 #define Vcl_Imaging_pnglang_EPNGCannotAssignChunkText 64977
 #define Vcl_Imaging_pnglang_EPNGUnexpectedEndText 64978
@@ -2035,6 +2036,7 @@
 #define System_SysConst_STooManyOpenFiles 65535
 STRINGTABLE
 BEGIN
+	MainFrm_SVersion,	L"Version: %s"
 	MainFrm_SDataDirectory,	L"Data directory: %s"
 	MainFrm_SUpdate,	L"Updates the existing installation using the same installation options as in the existing installation. If a file in the setup is newer than the existing one it will be replaced."
 	MainFrm_SModify,	L"Modifies the existing installation. The user can change the installation options. If a file in the setup is newer than the existing one it will be replaced."
@@ -2044,6 +2046,7 @@ BEGIN
 	MainFrm_SThisSetupIsMostRecent,	L"This setup is the most recent setup."
 	MainFrm_SCouldNotCheckVersion,	L"Could not check the version."
 	MainFrm_SWindows7OrLaterneeded,	L"You need to have Windows 7 or later to install this application."
+	MainFrm_SUnknownParameter,	L"Unknown parameter: %s"
 	MainFrm_SNoFirstAndLastName,	L"You have to give the first name and the last name of the serial number"
 	MainFrm_SWaiting,	L"Waiting for %s application to close!"
 	MainFrm_SSetupRunning,	L"Another Soluling setup application is already running.\r\nCannot run this setup application."
@@ -2059,7 +2062,7 @@ BEGIN
 	MainFrm_SNext,	L"&Next"
 	MainFrm_SNo,	L"&No"
 	MainFrm_SYes,	L"&Yes"
-	MainFrm_SVersion,	L"Version: %s"
+	MainFrm_SInstallingSpellCheckFiles,	L"Installing spell check dictionaries..."
 	MainFrm_SInstallingI18NLibraryFiles,	L"Installing the I18N library code..."
 	MainFrm_SInstallingFiles,	L"Installing %s samples..."
 	MainFrm_SCouldNotRegisterInstallation,	L"Could not contact the license server. You need to register Soluling later."
@@ -2075,7 +2078,7 @@ BEGIN
 	MainFrm_SUpdateRadio,	L"&Update the existing installation"
 	MainFrm_SModifyRadio,	L"&Modify the existing installation"
 	MainFrm_SNewRadio,	L"M&ake a new installation"
-	MainFrm_SUnknownParameter,	L"Unknown parameter: %s"
+	NtDialogFilter_SMpegFiles,	L"MPEG files"
 	NtDialogFilter_SAviFiles,	L"AVI files"
 	NtDialogFilter_SQuickTimeFiles,	L"Quick Time files"
 	SelectFile_SCaption,	L"Select a File"
@@ -2091,7 +2094,7 @@ BEGIN
 	MainFrm_SInstallingLibraryFiles,	L"Installing application library files..."
 	MainFrm_SInstallingBuildAutomationFiles,	L"Installing build automation files..."
 	MainFrm_SInstallingApplicationFiles,	L"Installing application files..."
-	MainFrm_SInstallingSpellCheckFiles,	L"Installing spell check dictionaries..."
+	NtDialogFilter_SExeFiles,	L"Windows executable files"
 	NtDialogFilter_SImageFiles,	L"Image files"
 	NtDialogFilter_SJpegFiles,	L"JPEG files"
 	NtDialogFilter_SBitmapFiles,	L"Bitmap files"
@@ -2107,7 +2110,7 @@ BEGIN
 	NtDialogFilter_SMp4Files,	L"MP4 files"
 	NtDialogFilter_SMp3Files,	L"MP3 files"
 	NtDialogFilter_SVideoFiles,	L"Video files"
-	NtDialogFilter_SMpegFiles,	L"MPEG files"
+	Installer_SXliffDescription,	L"Installs XLIFF samples."
 	Installer_SXmlDescription,	L"Installs XML samples."
 	Installer_SXslDescription,	L"Installs XSL samples."
 	Installer_SYamlDescription,	L"Installs YAML samples."
@@ -2123,7 +2126,7 @@ BEGIN
 	NtDialogFilter_SAllFiles,	L"All files"
 	NtDialogFilter_SAllSupportedFiles,	L"All supported files"
 	NtDialogFilter_SDllFiles,	L"Windows DLL files"
-	NtDialogFilter_SExeFiles,	L"Windows executable files"
+	Installer_STextDescription,	L"Installs text file samples."
 	Installer_STmxDescription,	L"Installs TMX samples."
 	Installer_STranslationMemoryDescription,	L"Installs translation memory samples."
 	Installer_STutorialDescription,	L"Installs tutorial files."
@@ -2139,7 +2142,7 @@ BEGIN
 	Installer_SWpfDescription,	L"Installs WPF samples."
 	Installer_SUniversalWindowsPlatformDescription,	L"Installs Universal Windows Platform samples."
 	Installer_SXamarinDescription,	L"Installs Xamarin samples."
-	Installer_SXliffDescription,	L"Installs XLIFF samples."
+	Installer_SPoDescription,	L"Installs GetText/PO samples."
 	Installer_SPostgreDescription,	L"Installs PostgreSQL database samples."
 	Installer_SPowerPointDescription,	L"Installs PowerPoint samples."
 	Installer_SPythonDescription,	L"Installs Python samples."
@@ -2155,7 +2158,7 @@ BEGIN
 	Installer_SSqlServerDescription,	L"Installs SQL Server database samples."
 	Installer_SSrtDescription,	L"Installs SubRip subtitle samples."
 	Installer_SSvgDescription,	L"Installs SVG samples."
-	Installer_STextDescription,	L"Installs text file samples."
+	Installer_SHtmlDescription,	L"Installs HTML samples."
 	Installer_SHtmlHelpDescription,	L"Installs HTML Help samples."
 	Installer_Si18nextDescription,	L"Install i18next samples."
 	Installer_SIniDescription,	L"Installs ini file samples."
@@ -2171,7 +2174,7 @@ BEGIN
 	Installer_SMySqlDescription,	L"Installs MySQL database samples."
 	Installer_SPdfDescription,	L"Installs PDF samples."
 	Installer_SPhpDescription,	L"Installs PHP samples."
-	Installer_SPoDescription,	L"Installs GetText/PO samples."
+	Installer_SAngularDescription,	L"Installs Angular samples."
 	Installer_SAspNetDescription,	L"Installs ASP.NET and ASP.NET Core samples."
 	Installer_SBinaryDescription,	L"Installs binary file samples."
 	Installer_SBuildAutomationDescription,	L"Installs build automation samples."
@@ -2187,7 +2190,7 @@ BEGIN
 	Installer_SGlossaryDescription,	L"Install glossary samples."
 	Installer_SGoDescription,	L"Install Go samples."
 	Installer_SHelpAndManualDescription,	L"Install Help+Manual samples."
-	Installer_SHtmlDescription,	L"Installs HTML samples."
+	NtSpellChecker_SCouldNotOpenSpellEngine,	L"Could not open spell checker engine"
 	NtSpellChecker_SSpellEngineIsWorkingProperly,	L"%s spell checker is working properly."
 	NtSpellChecker_SLocal,	L"Local"
 	NtSpellChecker_SRemote,	L"Remote"
@@ -2203,7 +2206,7 @@ BEGIN
 	StandardLicense_SNoFeatureLicense,	L"You have %0:s edition that does not support \"%1:s\" feature. In order to use this feature you have to upgrade your license at least to %2:s edition"
 	Installer_SAccessDescription,	L"Installs Access database samples."
 	Installer_SAndroidDescription,	L"Installs Android samples."
-	Installer_SAngularDescription,	L"Installs Angular samples."
+	NtFormatItems_SReactSample,	L"My name is {name}"
 	NtFormatItems_SReactHtmlSample,	L"My name is <b>{name}</b>"
 	NtFormatItems_SSvelte,	L"Svelte"
 	NtFormatItems_SSvelteSample,	L"My name is {name}"
@@ -2219,7 +2222,7 @@ BEGIN
 	NtFormatItems_SJavaHtmlSample,	L"My name is <b>%s</b>"
 	NtFormatItems_SJavaSample2,	L"My name is {0}"
 	NtFormatItems_SJavaHtmlSample2,	L"My name is <b>{0}</b>"
-	NtSpellChecker_SCouldNotOpenSpellEngine,	L"Could not open spell checker engine"
+	NtFormatItems_SWix,	L"Wix"
 	NtFormatItems_SWixSample,	L"My name is [name]"
 	NtFormatItems_SWixHtmlSample,	L"My name is <b>[name]</b>"
 	NtFormatItems_SDelphi,	L"Delphi"
@@ -2235,7 +2238,7 @@ BEGIN
 	NtFormatItems_SRailsSample,	L"My name is %{name}"
 	NtFormatItems_SRailsHtmlSample,	L"My name is <b>%{name}</b>"
 	NtFormatItems_SReact,	L"React"
-	NtFormatItems_SReactSample,	L"My name is {name}"
+	NtPattern_SFemale,	L"Female"
 	NtPattern_SNeutral,	L"Neutral"
 	NtFormatItems_SSoluling,	L"Soluling"
 	NtFormatItems_SSolulingSample,	L"My name is {name}"
@@ -2251,7 +2254,7 @@ BEGIN
 	NtFormatItems_SQt,	L"Qt"
 	NtFormatItems_SQtSample,	L"My name is %1"
 	NtFormatItems_SQtHtmlSample,	L"My name is <b>%1</b>"
-	NtFormatItems_SWix,	L"Wix"
+	JclResources_RsEFunctionNotFound,	L"Function not found: %s.%s"
 	Vcl_OleConst_sNoRunningObject,	L"Unable to retrieve a pointer to a running object registered with OLE for %s/%s"
 	Dll_SLibraryDescription,	L"%s library"
 	Dll_SSpellCheckerDescription,	L"%s spell checker library"
@@ -2267,7 +2270,7 @@ BEGIN
 	NtPattern_SMany,	L"Many"
 	NtPattern_SPlural,	L"Plural"
 	NtPattern_SMale,	L"Male"
-	NtPattern_SFemale,	L"Female"
+	JclResources_RsIntelCacheDescrE4,	L"3rd-level cache: 8 MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrEA,	L"3rd-level cache: 12 MByte, 24-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrEB,	L"3rd-level cache: 18 MByte, 24-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrEC,	L"3rd-level cache: 24 MByte, 24-way set associative, 64 byte line size"
@@ -2283,7 +2286,7 @@ BEGIN
 	JclResources_RsEUnexpectedEOSeq,	L"Unexpected end of sequence"
 	JclResources_RsWin32Error,	L"Win32 error: %s (%u)%s%s"
 	JclResources_RsELibraryNotFound,	L"Library not found: %s"
-	JclResources_RsEFunctionNotFound,	L"Function not found: %s.%s"
+	JclResources_RsIntelCacheDescrB3,	L"Data TLB: 4 KByte pages, 4-way set associative, 128 entries"
 	JclResources_RsIntelCacheDescrB4,	L"Data TLB1: 4 KByte pages, 4-way set associative, 256 entries"
 	JclResources_RsIntelCacheDescrBA,	L"Data TLB1: 4 KByte pages, 4-way set associative, 64 entries"
 	JclResources_RsIntelCacheDescrC0,	L"Data TLB: 4 KByte and 4 MByte pages, 4-way set associative, 8 entries"
@@ -2299,7 +2302,7 @@ BEGIN
 	JclResources_RsIntelCacheDescrDE,	L"3rd-level cache: 6 MByte, 12-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrE2,	L"3rd-level cache: 2 MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrE3,	L"3rd-level cache: 4 MByte, 16-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrE4,	L"3rd-level cache: 8 MByte, 16-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr79,	L"2nd-level cache: 128 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr7A,	L"2nd-level cache: 256 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr7B,	L"2nd-level cache: 512 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr7C,	L"2nd-level cache: 1 MBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
@@ -2315,7 +2318,7 @@ BEGIN
 	JclResources_RsIntelCacheDescrB0,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries"
 	JclResources_RsIntelCacheDescrB1,	L"Instruction TLB: 2 MByte pages, 4-way, 8 entries or 4 MByte pages, 4-way, 4 entries"
 	JclResources_RsIntelCacheDescrB2,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 64 entries"
-	JclResources_RsIntelCacheDescrB3,	L"Data TLB: 4 KByte pages, 4-way set associative, 128 entries"
+	JclResources_RsIntelCacheDescr57,	L"Data TLB0: 4 KByte pages, 4-way associative, 16 entries"
 	JclResources_RsIntelCacheDescr59,	L"Data TLB0: 4 KByte pages, fully associative, 16 entries"
 	JclResources_RsIntelCacheDescr5A,	L"Data TLB0: 2 MByte or 4 MByte pages, 4-way set associative, 32 entries"
 	JclResources_RsIntelCacheDescr5B,	L"Data TLB: 4 KByte and 4 MByte pages, 64 Entries"
@@ -2331,7 +2334,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr73,	L"Trace cache: 64 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr76,	L"Instruction TLB: 2M/4M pages, fully associative, 8 entries"
 	JclResources_RsIntelCacheDescr78,	L"2nd-level cache: 1 MBytes, 4-way set associative, 64 bytes line size"
-	JclResources_RsIntelCacheDescr79,	L"2nd-level cache: 128 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
+	JclResources_RsIntelCacheDescr45,	L"2nd-level cache: 2 MBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr46,	L"3rd-level cache: 4 MBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr47,	L"3rd-level cache: 8 MBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr48,	L"3rd-level cache: 8 MByte, 8-way set associative, 64 byte line size"
@@ -2347,7 +2350,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr52,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
 	JclResources_RsIntelCacheDescr55,	L"Instruction TLB: 2-MByte or 4-MByte pages, fully associative, 7 entries"
 	JclResources_RsIntelCacheDescr56,	L"Data TLB0: 4 MByte pages, 4-way set associative, 16 entries"
-	JclResources_RsIntelCacheDescr57,	L"Data TLB0: 4 KByte pages, 4-way associative, 16 entries"
+	JclResources_RsIntelCacheDescr23,	L"3rd level cache: 1 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr25,	L"3rd level cache: 2 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr29,	L"3rd level cache: 4 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr2C,	L"1st level data cache: 32 KBytes, 8-way set associative, 64 byte line size"
@@ -2363,7 +2366,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr42,	L"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr43,	L"2nd-level cache: 512 KBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr44,	L"2nd-level cache: 1 MBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr45,	L"2nd-level cache: 2 MBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr00,	L"Null descriptor"
 	JclResources_RsIntelCacheDescr01,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 32 entries"
 	JclResources_RsIntelCacheDescr02,	L"Instruction TLB: 4 MByte pages, 4-way set associative, 2 entries"
 	JclResources_RsIntelCacheDescr03,	L"Data TLB: 4 KByte pages, 4-way set associative, 64 entries"
@@ -2379,7 +2382,7 @@ BEGIN
 	JclResources_RsIntelCacheDescr0E,	L"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr21,	L"2nd level cache: 256 KBytes, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr22,	L"3rd level cache: 512 KBytes, 4-way set associative, 64 byte line size, 2 lines per sector"
-	JclResources_RsIntelCacheDescr23,	L"3rd level cache: 1 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsPePkgRunOnly,	L"RunOnly"
 	JclResources_RsPePkgIgnoreDupUnits,	L"IgnoreDupUnits"
 	JclResources_RsPePkgV3Produced,	L"Delphi 3 or C++ Builder 3"
 	JclResources_RsPePkgProducerUndefined,	L"Undefined"
@@ -2395,7 +2398,7 @@ BEGIN
 	JclResources_RsInconsistentPath,	L"\"%s\" does not match RootKey"
 	JclResources_RsSynchCreateEvent,	L"Failed to create event"
 	JclResources_RsSynchOpenEvent,	L"Failed to open event"
-	JclResources_RsIntelCacheDescr00,	L"Null descriptor"
+	JclResources_RsPeSUBSYSTEM_POSIX_CUI,	L"Posix"
 	JclResources_RsPeSUBSYSTEM_RESERVED8,	L"Reserved 8"
 	JclResources_RsPeDEBUG_UNKNOWN,	L"UNKNOWN"
 	JclResources_RsPeDEBUG_COFF,	L"COFF"
@@ -2411,7 +2414,7 @@ BEGIN
 	JclResources_PsPePkgLibrary,	L"Library"
 	JclResources_RsPePkgNeverBuild,	L"NeverBuild"
 	JclResources_RsPePkgDesignOnly,	L"DesignOnly"
-	JclResources_RsPePkgRunOnly,	L"RunOnly"
+	JclResources_RsPeMACHINE_IA64,	L"Intel 64"
 	JclResources_RsPeMACHINE_MIPS16,	L"MIPS16"
 	JclResources_RsPeMACHINE_AMPHA64,	L"ALPHA64"
 	JclResources_RsPeMACHINE_MIPSFPU,	L"MIPSFPU"
@@ -2427,7 +2430,7 @@ BEGIN
 	JclResources_RsPeSUBSYSTEM_WINDOWS_GUI,	L"GUI"
 	JclResources_RsPeSUBSYSTEM_WINDOWS_CUI,	L"Console"
 	JclResources_RsPeSUBSYSTEM_OS2_CUI,	L"OS/2"
-	JclResources_RsPeSUBSYSTEM_POSIX_CUI,	L"Posix"
+	JclResources_RsPeMACHINE_I386,	L"Intel 386"
 	JclResources_RsPeMACHINE_R3000,	L"MIPS little-endian R3000"
 	JclResources_RsPeMACHINE_R4000,	L"MIPS little-endian R4000"
 	JclResources_RsPeMACHINE_R10000,	L"MIPS little-endian R10000"
@@ -2443,7 +2446,7 @@ BEGIN
 	JclResources_RsPeMACHINE_AM33,	L"AM33"
 	JclResources_RsPeMACHINE_POWERPC,	L"IBM PowerPC Little-Endian"
 	JclResources_RsPeMACHINE_POWERPCFP,	L"IBM PowerPC FP"
-	JclResources_RsPeMACHINE_IA64,	L"Intel 64"
+	JclResources_RsPeNumberOfRvaAndSizes,	L"Number of RVA"
 	JclResources_RsPeVersion,	L"Version"
 	JclResources_RsPeGlobalFlagsClear,	L"GlobalFlagsClear"
 	JclResources_RsPeGlobalFlagsSet,	L"GlobalFlagsSet"
@@ -2459,7 +2462,7 @@ BEGIN
 	JclResources_RsPeReserved,	L"Reserved"
 	JclResources_RsPeEditList,	L"EditList"
 	JclResources_RsPeMACHINE_UNKNOWN,	L"Unknown"
-	JclResources_RsPeMACHINE_I386,	L"Intel 386"
+	JclResources_RsPeSectionAlignment,	L"Section Alignment"
 	JclResources_RsPeFileAlignment,	L"File Alignment"
 	JclResources_RsPeOperatingSystemVersion,	L"Operating System Version"
 	JclResources_RsPeImageVersion,	L"Image Version"
@@ -2475,7 +2478,7 @@ BEGIN
 	JclResources_RsPeSizeOfHeapReserve,	L"Size of Heap Reserve"
 	JclResources_RsPeSizeOfHeapCommit,	L"Size of Heap Commit"
 	JclResources_RsPeLoaderFlags,	L"Loader Flags"
-	JclResources_RsPeNumberOfRvaAndSizes,	L"Number of RVA"
+	JclResources_RsPeMachine,	L"Machine"
 	JclResources_RsPeNumberOfSections,	L"Number of Sections"
 	JclResources_RsPeTimeDateStamp,	L"Time Date Stamp"
 	JclResources_RsPePointerToSymbolTable,	L"Symbols Pointer"
@@ -2491,7 +2494,7 @@ BEGIN
 	JclResources_RsPeBaseOfCode,	L"Base of Code"
 	JclResources_RsPeBaseOfData,	L"Base of Data"
 	JclResources_RsPeImageBase,	L"Image Base"
-	JclResources_RsPeSectionAlignment,	L"Section Alignment"
+	JclResources_RsPeImg_01,	L"Imports"
 	JclResources_RsPeImg_02,	L"Resources"
 	JclResources_RsPeImg_03,	L"Exceptions"
 	JclResources_RsPeImg_04,	L"Security"
@@ -2507,7 +2510,7 @@ BEGIN
 	JclResources_RsPeImg_14,	L"COM run-time"
 	JclResources_RsPeImg_Reserved,	L"reserved [%.2d]"
 	JclResources_RsPeSignature,	L"Signature"
-	JclResources_RsPeMachine,	L"Machine"
+	JclResources_RsFileUtilsNoVersionInfo,	L"File contains no version information"
 	JclResources_RsFileUtilsFileDoesNotExist,	L"The file %s does not exist"
 	JclResources_RsFileUtilsLanguageIndex,	L"Illegal language index"
 	JclResources_RsFileUtilsEmptyValue,	L"No value was supplied"
@@ -2523,7 +2526,7 @@ BEGIN
 	JclResources_RsPeNotAvailableForAttached,	L"Feature is not available for attached images"
 	JclResources_RsPeSectionNotFound,	L"Section \"%s\" not found"
 	JclResources_RsPeImg_00,	L"Exports"
-	JclResources_RsPeImg_01,	L"Imports"
+	License_SEvaluationLeft,	L"Evaluation, %d days left"
 	License_SEvaluationExpired,	L"Evaluation, expired"
 	License_SEdition,	L"%s edition"
 	NtFileAssociation_SProjectDescription,	L"Soluling project file"
@@ -2539,7 +2542,7 @@ BEGIN
 	JclResources_RsEWindowNotValid,	L"The window with handle %d is not valid"
 	JclResources_RsEProcessNotValid,	L"The process with ID %d is not valid"
 	JclResources_RsEModuleNotValid,	L"The Module with handle %d is not valid"
-	JclResources_RsFileUtilsNoVersionInfo,	L"File contains no version information"
+	License_SLocalTm,	L"Personal translation memory with fuzzy matching"
 	License_SCloud,	L"Can use cloud services"
 	License_SRemoteTermbase,	L"Can use remote glossaries and terminology databases"
 	License_SRemoteTm,	L"Can use remote translation memories with fuzzy matching"
@@ -2555,7 +2558,7 @@ BEGIN
 	License_SVersionBuildStr,	L"%0:d.%1:d.%2:d"
 	License_SVersion,	L"Version %s"
 	License_S32Bit,	L"32-bit"
-	License_SEvaluationLeft,	L"Evaluation, %d days left"
+	License_SLinux,	L"Linux platforms such as PO"
 	License_SGui,	L"Graphical User Interface"
 	License_SCreate,	L"Create new projects"
 	License_SScan,	L"Scan existing projects for changes"
@@ -2571,7 +2574,7 @@ BEGIN
 	License_SFileGlossary,	L"Can use glossary and terminology files"
 	License_SLocalTermbase,	L"Personal glossary and terminology database"
 	License_SMt,	L"Can use machine translation"
-	License_SLocalTm,	L"Personal translation memory with fuzzy matching"
+	License_SCrossPlatform,	L"Cross-platform platforms such as Java, GetText, Qt, Xamarin, FireMonkey"
 	License_SMobile,	L"Mobile platforms such as Android, iOS, UWP, Xamarin, FireMonkey"
 	License_SBasicData,	L"Basic data files such as XML, JSON, INI, text"
 	License_SAdvancedData,	L"Advanced data files such as Excel, TMX, XLIFF"
@@ -2587,7 +2590,7 @@ BEGIN
 	License_SEmbarcadero,	L"Embarcadero platforms such as Delphi, FireMonkey and Interbase"
 	License_SJava,	L"Java platforms such as Java, Java ME, LWUIT, JSP"
 	License_SApple,	L"Apple platforms such as OSX, iOS, Xamarin and FireMonkey"
-	License_SLinux,	L"Linux platforms such as PO"
+	License_SOk,	L"OK"
 	License_SError,	L"Unexpected error"
 	License_SNoInternet,	L"No Internet connection"
 	License_SInvalid,	L"Invalid name or serial number"
@@ -2603,7 +2606,7 @@ BEGIN
 	License_SBuildAutomation,	L"Build automation"
 	License_SDesktop,	L"Desktop platforms such as Delphi, Visual C++, GetText, Qt"
 	License_SModernDesktop,	L"Modern desktop platforms such as UWP, Windows Forms, WPF"
-	License_SCrossPlatform,	L"Cross-platform platforms such as Java, GetText, Qt, Xamarin, FireMonkey"
+	uTPLb_I18n_ES_HugeCardinal_SubractOverflow,	L"THugeCardinal.Subtract overflow."
 	uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow,	L"THugeCardinal.StreamOut overflow."
 	uTPLb_I18n_ES_HugeCardinal_StreamInOverflow,	L"THugeCardinal.StreamIn overflow."
 	uTPLb_I18n_ES_EratosthenesSievSizeTooSmall,	L"EratosthenesSieveSize value (%d) too small for required number of pre-computed small primes (%d primes)"
@@ -2619,7 +2622,7 @@ BEGIN
 	uTPLb_I18n_CFB8bit_DisplayName,	L"CFB 8-bit"
 	uTPLb_I18n_ECB_DisplayName,	L"ECB (with block padding)"
 	License_SNoPlatformLicense,	L"You have %0:s edition that does not support %1:s. In order to open this project file you have to upgrade your license to %2:s edition"
-	License_SOk,	L"OK"
+	uTPLb_I18n_ES_WrongModeEndEncryptMem,	L"TSimpleCodec.End_EncryptMemory - Wrong mode."
 	uTPLb_I18n_ES_Asym_CannotSetParam,	L"TSimpleCodec.AsymetricKeySizeInBits - Cannot set parameter whilst enc/decrypting."
 	uTPLb_I18n_ES_Asym_CannotSetCipher,	L"TSimpleCodec.Init - Cannot set Cipher whilst enc/decrypting."
 	uTPLb_I18n_ES_AsymNotInitByStr,	L"TSimpleCodec.Init - Asymetric codecs are not initialized by string."
@@ -2635,7 +2638,7 @@ BEGIN
 	uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow,	L"MulSmall overflow."
 	uTPLb_I18n_ES_HugeCardinal_ResizeOverflow,	L"THugeCardinal.Resize overflow"
 	uTPLb_I18n_ES_HugeCardinal_PowerOverflow,	L"Power overflow"
-	uTPLb_I18n_ES_HugeCardinal_SubractOverflow,	L"THugeCardinal.Subtract overflow."
+	PeUtils_SVersions,	L"Versions"
 	PeUtils_SVxds,	L"VXDs"
 	NtSourceCode_STruncated,	L"(Truncated, original data is %d characters)"
 	PeFile_SInvalidExeFile,	L"File \"%s\" is not a valid Portable Executable (PE) file."
@@ -2651,7 +2654,7 @@ BEGIN
 	uTPLb_I18n_ES_WrongModeEncryptMem,	L"TSimpleCodec.EncryptMemory - Wrong mode."
 	uTPLb_I18n_ES_WrongModeDecryptMem,	L"TSimpleCodec.DecryptMemory - Wrong mode."
 	uTPLb_I18n_ES_WrongModeEndDecryptMem,	L"TSimpleCodec.End_DecryptMemory - Wrong mode."
-	uTPLb_I18n_ES_WrongModeEndEncryptMem,	L"TSimpleCodec.End_EncryptMemory - Wrong mode."
+	PeUtils_SDlgDatas,	L"Dialog data"
 	PeUtils_SFonts,	L"Fonts"
 	PeUtils_SFontDirs,	L"Font directories"
 	PeUtils_SForms,	L"Forms"
@@ -2667,7 +2670,7 @@ BEGIN
 	PeUtils_SRibbons,	L"Ribbons"
 	PeUtils_SStrings,	L"Strings"
 	PeUtils_SToolbars,	L"Toolbars"
-	PeUtils_SVersions,	L"Versions"
+	LicenseTypes_SProfessionalEdition,	L"Includes most of the features and supports most of the platforms"
 	LicenseTypes_SPersonalEdition,	L"Includes the basic features and supports the basic platforms"
 	LicenseTypes_SBuildAutomation,	L"Includes all platforms and features to create, scan, import, export, and build from the command line"
 	LicenseTypes_SProfessionalTranslatorEdition,	L"Includes all the features to translate, test and build existing projects"
@@ -2683,7 +2686,7 @@ BEGIN
 	PeUtils_SCursors,	L"Cursors"
 	PeUtils_SDialogs,	L"Dialogs"
 	PeUtils_SDlgIncludes,	L"Dialog includes"
-	PeUtils_SDlgDatas,	L"Dialog data"
+	Data_DBConsts_SNestedDataSetClass,	L"Nested dataset must inherit from %s"
 	Data_DBConsts_STextFalse,	L"False"
 	Data_DBConsts_STextTrue,	L"True"
 	Data_DBConsts_SParameterNotFound,	L"Parameter '%s' not found"
@@ -2699,7 +2702,7 @@ BEGIN
 	Data_DBConsts_SCouldNotParseTimeStamp,	L"Could not parse SQL TimeStamp string"
 	Data_DBConsts_SInvalidSqlTimeStamp,	L"Invalid SQL date/time values"
 	LicenseTypes_SEnterpriseEdition,	L"Includes all the features and supports all platforms. Contains the build automation support."
-	LicenseTypes_SProfessionalEdition,	L"Includes most of the features and supports most of the platforms"
+	Data_DBConsts_SFieldOutOfRange,	L"Value of field '%s' is out of range"
 	Data_DBConsts_SFieldRequired,	L"Field '%s' must have a value"
 	Data_DBConsts_SDataSetMissing,	L"Field '%s' has no dataset"
 	Data_DBConsts_SInvalidCalcType,	L"Field '%s' cannot be a calculated or lookup field"
@@ -2715,7 +2718,7 @@ BEGIN
 	Data_DBConsts_SDataSetClosed,	L"Cannot perform this operation on a closed dataset"
 	Data_DBConsts_SDataSetEmpty,	L"Cannot perform this operation on an empty dataset"
 	Data_DBConsts_SDataSetReadOnly,	L"Cannot modify a read-only dataset"
-	Data_DBConsts_SNestedDataSetClass,	L"Nested dataset must inherit from %s"
+	Data_DBConsts_SInvalidFieldSize,	L"Invalid field size"
 	Data_DBConsts_SInvalidFieldKind,	L"Invalid FieldKind"
 	Data_DBConsts_SUnknownFieldType,	L"Field '%s' is of an unknown type"
 	Data_DBConsts_SFieldNameMissing,	L"Field name missing"
@@ -2731,7 +2734,7 @@ BEGIN
 	Data_DBConsts_SFieldTypeMismatch,	L"Type mismatch for field '%s', expecting: %s actual: %s"
 	Data_DBConsts_SFieldSizeMismatch,	L"Size mismatch for field '%s', expecting: %d actual: %d"
 	Data_DBConsts_SInvalidVarByteArray,	L"Invalid variant type or size for field '%s'"
-	Data_DBConsts_SFieldOutOfRange,	L"Value of field '%s' is out of range"
+	Vcl_Imaging_GIFConsts_sProgressCopying,	L"Copying"
 	Vcl_Imaging_GIFConsts_sProgressOptimizing,	L"Optimizing"
 	NtIcon_rstInvalidIcon,	L"Invalid Icon or Cursor"
 	NtIcon_rstInvalidCursor,	L"Invalid cursor"
@@ -2747,7 +2750,7 @@ BEGIN
 	NtJson_SUnexpectedClosingBracket,	L"Unexpected closing bracket"
 	NtJson_SNoFile,	L"No filename given"
 	NtJson_SErrorParsingJsonData,	L"Error parsing JSON data."
-	Data_DBConsts_SInvalidFieldSize,	L"Invalid field size"
+	Vcl_Imaging_GIFConsts_sBadPixelCoordinates,	L"Invalid pixel coordinates"
 	Vcl_Imaging_GIFConsts_sInvalidPixelFormat,	L"Unsupported PixelFormat"
 	Vcl_Imaging_GIFConsts_sBadDimension,	L"Invalid image dimensions"
 	Vcl_Imaging_GIFConsts_sNoDIB,	L"Image has no DIB"
@@ -2763,7 +2766,7 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sProgressSaving,	L"Saving"
 	Vcl_Imaging_GIFConsts_sProgressConverting,	L"Converting"
 	Vcl_Imaging_GIFConsts_sProgressRendering,	L"Rendering"
-	Vcl_Imaging_GIFConsts_sProgressCopying,	L"Copying"
+	Vcl_Imaging_GIFConsts_sScreenBadColorSize,	L"Invalid number of colors specified in Screen Descriptor"
 	Vcl_Imaging_GIFConsts_sImageBadColorSize,	L"Invalid number of colors specified in Image Descriptor"
 	Vcl_Imaging_GIFConsts_sUnknownExtension,	L"Unknown extension type"
 	Vcl_Imaging_GIFConsts_sBadExtensionLabel,	L"Invalid extension introducer"
@@ -2779,7 +2782,7 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sBadSize,	L"Invalid image size"
 	Vcl_Imaging_GIFConsts_sScreenSizeExceeded,	L"Image exceeds Logical Screen size"
 	Vcl_Imaging_GIFConsts_sNoColorTable,	L"No global or local color table defined"
-	Vcl_Imaging_GIFConsts_sBadPixelCoordinates,	L"Invalid pixel coordinates"
+	NtScript_SNameWithoutBom,	L"%s, without BOM"
 	NtString_SInvalidString,	L"Invalid string: %s"
 	NtString_SUnknownCode,	L"Unknown code: <%s>"
 	NtWiz_SNext,	L"&Next"
@@ -2795,7 +2798,7 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sBadColorIndexFixed,	L"Invalid color index - color map expanded"
 	Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty,	L"Cannot save empty GIF"
 	Vcl_Imaging_GIFConsts_sBadSignature,	L"Invalid GIF signature"
-	Vcl_Imaging_GIFConsts_sScreenBadColorSize,	L"Invalid number of colors specified in Screen Descriptor"
+	NtScript_SJapaneseJisX,	L"JIS X 0208-1990 & 0212-1990"
 	NtScript_SJapaneseAuto,	L"Japanese auto-detect"
 	NtScript_SKoreanAuto,	L"Korean auto-detect"
 	NtScript_SSimplifiedChineseGb2312,	L"Simplified Chinese GB2312"
@@ -2811,7 +2814,7 @@ BEGIN
 	NtScript_SUtf16BigEndian,	L"UTF-16 big endian"
 	NtScript_SUtf7,	L"UTF-7"
 	NtScript_SNameWithBom,	L"%s, with BOM"
-	NtScript_SNameWithoutBom,	L"%s, without BOM"
+	NtScript_SIsciiPunjabi,	L"ISCII Punjabi"
 	NtScript_SRussianKoi8,	L"Russian KOI8"
 	NtScript_SKoreanJohab,	L"Korean Johab"
 	NtScript_SCnsTaiwan,	L"CNS Taiwan"
@@ -2827,7 +2830,7 @@ BEGIN
 	NtScript_SUsAscii,	L"US ASCII"
 	NtScript_ST61,	L"T.61"
 	NtScript_SIso6937,	L"ISO 6937 Non-Spacing Accent"
-	NtScript_SJapaneseJisX,	L"JIS X 0208-1990 & 0212-1990"
+	NtScript_SEbcdicCyrillicSerbian,	L"EBCDIC Cyrillic Serbian, Bulgarian"
 	NtScript_SEbcdicJapanese,	L"EBCDIC Japanese Katakana Extended and Japanese"
 	NtScript_SEbcdicUsCanadaJapanese,	L"EBCDIC US/Canada and Japanese"
 	NtScript_SEbcdicKorean,	L"EBCDIC Korean Extended and Korean"
@@ -2843,7 +2846,7 @@ BEGIN
 	NtScript_SIsciiKannada,	L"ISCII Kannada"
 	NtScript_SIsciiMalayalam,	L"ISCII Malayalam"
 	NtScript_SIsciiGujarati,	L"ISCII Gujarati"
-	NtScript_SIsciiPunjabi,	L"ISCII Punjabi"
+	NtScript_SEbcdicDenmarkNorway,	L"EBCDIC Denmark/Norway"
 	NtScript_SEbcdicFinlandSweden,	L"EBCDIC Finland/Sweden"
 	NtScript_SEbcdicItaly,	L"EBCDIC Italy"
 	NtScript_SEbcdicLatinAmericaSpain,	L"EBCDIC Latin America/Spain"
@@ -2859,7 +2862,7 @@ BEGIN
 	NtScript_SEbcdicCyrillicRussian,	L"EBCDIC Cyrillic Russian"
 	NtScript_SEbcdicTurkish,	L"EBCDIC Turkish"
 	NtScript_SEbcdicLatin1Euro,	L"EBCDIC Latin 1 + Euro"
-	NtScript_SEbcdicCyrillicSerbian,	L"EBCDIC Cyrillic Serbian, Bulgarian"
+	NtScript_SEbcdicWestEuropean,	L"EBCDIC West European"
 	NtScript_SEbcdicLatin1,	L"EBCDIC Latin 1"
 	NtScript_SEbcdicLatin2,	L"EBCDIC Latin 2"
 	NtScript_SEbcdicModernGreek,	L"EBCDIC Greek"
@@ -2875,7 +2878,7 @@ BEGIN
 	NtScript_SEbcdicInternationalEuro,	L"EBCDIC International + Euro"
 	NtScript_SEbcdicIcelandicEuro,	L"EBCDIC Icelandic + Euro"
 	NtScript_SEbcdicGermany,	L"EBCDIC Germany"
-	NtScript_SEbcdicDenmarkNorway,	L"EBCDIC Denmark/Norway"
+	NtScript_SOemLatin1,	L"OEM Latin 1"
 	NtScript_SOemLatin2,	L"OEM Latin 2"
 	NtScript_SOemCyrillic,	L"OEM Cyrillic"
 	NtScript_SOemTurkish,	L"OEM Turkish"
@@ -2891,7 +2894,7 @@ BEGIN
 	NtScript_SOemArabicAsmo,	L"Arabic ASMO"
 	NtScript_SOemArabicTransparentAsmo,	L"Arabic Transparent ASMO"
 	NtScript_SEbcdicUsaCanada,	L"EBCDIC US/Canada"
-	NtScript_SEbcdicWestEuropean,	L"EBCDIC West European"
+	NtScript_SMacKorean,	L"Mac Korean"
 	NtScript_SMacArabic,	L"Mac Arabic"
 	NtScript_SMacHebrew,	L"Mac Hebrew"
 	NtScript_SMacGreek,	L"Mac Greek"
@@ -2907,7 +2910,7 @@ BEGIN
 	NtScript_SOemUs,	L"OEM United States"
 	NtScript_SOemGreek,	L"OEM Greek"
 	NtScript_SOemBaltic,	L"OEM Baltic"
-	NtScript_SOemLatin1,	L"OEM Latin 1"
+	NtScript_SIso8859_6_Arabic,	L"ISO 8859-6 Arabic"
 	NtScript_SIso8859_7_Greek,	L"ISO 8859-7 Greek"
 	NtScript_SIso8859_8_HebrewVisual,	L"ISO 8859-8 Hebrew Visual Ordering"
 	NtScript_SIso8859_8_HebrewLogical,	L"ISO 8859-8 Hebrew Logical Ordering"
@@ -2923,7 +2926,7 @@ BEGIN
 	NtScript_SMacRoman,	L"Mac Roman"
 	NtScript_SMacJapanese,	L"Mac Japanese"
 	NtScript_SMacTraditionalChinese,	L"Mac Traditional Chinese"
-	NtScript_SMacKorean,	L"Mac Korean"
+	NtScript_SAnsiKorean,	L"Windows Korean, KSC5601"
 	NtScript_SAnsiTraditionalChinese,	L"Windows Traditional Chinese, Big5"
 	NtScript_SAnsiEastEurope,	L"Windows Eastern Europe"
 	NtScript_SAnsiCyrillic,	L"Windows Cyrillic"
@@ -2939,7 +2942,7 @@ BEGIN
 	NtScript_SIso8859_3_Latin3,	L"ISO 8859-3 Latin 3"
 	NtScript_SIso8859_4_Baltic,	L"ISO 8859-4 Baltic"
 	NtScript_SIso8859_5_Cyrillic,	L"ISO 8859-5 Cyrillic"
-	NtScript_SIso8859_6_Arabic,	L"ISO 8859-6 Arabic"
+	NtScript_SSinhalaScript,	L"Sinhala"
 	NtScript_SSyriacScript,	L"Syriac"
 	NtScript_STamilScript,	L"Tamil"
 	NtScript_STeluguScript,	L"Telugu"
@@ -2955,7 +2958,7 @@ BEGIN
 	NtScript_SAnsiThai,	L"Windows Thai"
 	NtScript_SAnsiJapanese,	L"Windows Japanese, Shift-JIS"
 	NtScript_SAnsiSimplifiedChinese,	L"Windows Simplified Chinese, GB2312"
-	NtScript_SAnsiKorean,	L"Windows Korean, KSC5601"
+	NtScript_SArmenianScript,	L"Armenian"
 	NtScript_SBengaliScript,	L"Bengali"
 	NtScript_SBrahmiScript,	L"Brahmi"
 	NtScript_SDevanagariScript,	L"Devanagari"
@@ -2971,7 +2974,7 @@ BEGIN
 	NtScript_SMalayalamScript,	L"Malayalam"
 	NtScript_SMongolianScript,	L"Mongolian"
 	NtScript_SOriyaScript,	L"Oriya"
-	NtScript_SSinhalaScript,	L"Sinhala"
+	NtScript_SDosCodePage,	L"DOS code page"
 	NtScript_SEbcdicCodePage,	L"EBCDIC code page"
 	NtScript_SOtherCodePage,	L"Other code page"
 	NtScript_SDefaultScript,	L"Default"
@@ -2987,7 +2990,7 @@ BEGIN
 	NtScript_STraditionalScript,	L"Traditional"
 	NtScript_SKoreanScript,	L"Korean"
 	NtScript_SThaiScript,	L"Thai"
-	NtScript_SArmenianScript,	L"Armenian"
+	NtLanguages_SCura__ao,	L"Cura\x00e7ao"
 	NtLanguages_SSuriname,	L"Suriname"
 	NtLanguages_SCaboVerde,	L"Cabo Verde"
 	NtLanguages_SMozambique,	L"Mozambique"
@@ -3003,7 +3006,7 @@ BEGIN
 	NtScript_SWindowsCodePage,	L"Windows code page"
 	NtScript_SIsoCodePage,	L"ISO code page"
 	NtScript_SMacCodePage,	L"Mac code page"
-	NtScript_SDosCodePage,	L"DOS code page"
+	NtLanguages_SStMartin,	L"St. Martin"
 	NtLanguages_SMali,	L"Mali"
 	NtLanguages_SMartinique,	L"Martinique"
 	NtLanguages_SNewCaledonia,	L"New Caledonia"
@@ -3019,7 +3022,7 @@ BEGIN
 	NtLanguages_SSvalbardJanMayen,	L"Svalbard & Jan Mayen"
 	NtLanguages_SAruba,	L"Aruba"
 	NtLanguages_SBonaireSintEustatiusSaba,	L"Bonaire, Sint Eustatius and Saba"
-	NtLanguages_SCura__ao,	L"Cura\x00e7ao"
+	NtLanguages_SCuba,	L"Cuba"
 	NtLanguages_SEquatorialGuinea,	L"Equatorial Guinea"
 	NtLanguages_SBurkinaFaso,	L"Burkina Faso"
 	NtLanguages_SGuinea,	L"Guinea"
@@ -3035,7 +3038,7 @@ BEGIN
 	NtLanguages_SFrenchGuiana,	L"French Guiana"
 	NtLanguages_SGuadeloupe,	L"Guadeloupe"
 	NtLanguages_SHaiti,	L"Haiti"
-	NtLanguages_SStMartin,	L"St. Martin"
+	NtLanguages_SSierraLeone,	L"Sierra Leone"
 	NtLanguages_SSintMaarten,	L"Sint Maarten"
 	NtLanguages_SEswatini,	L"Eswatini"
 	NtLanguages_STurksCaicosIslands,	L"Turks & Caicos Islands"
@@ -3051,7 +3054,7 @@ BEGIN
 	NtLanguages_SVanuatu,	L"Vanuatu"
 	NtLanguages_SSamoa,	L"Samoa"
 	NtLanguages_SZambia,	L"Zambia"
-	NtLanguages_SCuba,	L"Cuba"
+	NtLanguages_SMadagascar,	L"Madagascar"
 	NtLanguages_SMarshallIslands,	L"Marshall Islands"
 	NtLanguages_SNorthernMarianaIslands,	L"Northern Mariana Islands"
 	NtLanguages_SMontserrat,	L"Montserrat"
@@ -3067,7 +3070,7 @@ BEGIN
 	NtLanguages_SSolomonIslands,	L"Solomon Islands"
 	NtLanguages_SSeychelles,	L"Seychelles"
 	NtLanguages_SStHelenaAscensionTristanDaCunha,	L"St Helena, Ascension, Tristan da Cunha"
-	NtLanguages_SSierraLeone,	L"Sierra Leone"
+	NtLanguages_SMicronesia,	L"Micronesia"
 	NtLanguages_SGrenada,	L"Grenada"
 	NtLanguages_SGuernsey,	L"Guernsey"
 	NtLanguages_SGibraltar,	L"Gibraltar"
@@ -3083,7 +3086,7 @@ BEGIN
 	NtLanguages_SStLucia,	L"St. Lucia"
 	NtLanguages_SLiberia,	L"Liberia"
 	NtLanguages_SLesotho,	L"Lesotho"
-	NtLanguages_SMadagascar,	L"Madagascar"
+	NtLanguages_STogo,	L"Togo"
 	NtLanguages_SAntiguaBarbuda,	L"Antigua & Barbuda"
 	NtLanguages_SAnguilla,	L"Anguilla"
 	NtLanguages_SAmericanSamoa,	L"American Samoa"
@@ -3099,7 +3102,7 @@ BEGIN
 	NtLanguages_SDominica,	L"Dominica"
 	NtLanguages_SFiji,	L"Fiji"
 	NtLanguages_SFalklandIslands,	L"Falkland Islands"
-	NtLanguages_SMicronesia,	L"Micronesia"
+	NtLanguages_SVietNam,	L"Viet Nam"
 	NtLanguages_SYemen,	L"Yemen"
 	NtLanguages_SZimbabwe,	L"Zimbabwe"
 	NtLanguages_SWorld,	L"World"
@@ -3115,7 +3118,7 @@ BEGIN
 	NtLanguages_SChad,	L"Chad"
 	NtLanguages_SAndorra,	L"Andorra"
 	NtLanguages_SGhana,	L"Ghana"
-	NtLanguages_STogo,	L"Togo"
+	NtLanguages_SSwitzerland,	L"Switzerland"
 	NtLanguages_SSyria,	L"Syria"
 	NtLanguages_STaiwan,	L"Taiwan"
 	NtLanguages_STajikistan,	L"Tajikistan"
@@ -3131,7 +3134,7 @@ BEGIN
 	NtLanguages_SUruguay,	L"Uruguay"
 	NtLanguages_SUzbekistan,	L"Uzbekistan"
 	NtLanguages_SVenezuela,	L"Venezuela"
-	NtLanguages_SVietNam,	L"Viet Nam"
+	NtLanguages_SPRC,	L"People's Republic of China"
 	NtLanguages_SPuertoRico,	L"Puerto Rico"
 	NtLanguages_SQatar,	L"Qatar"
 	NtLanguages_SRomania,	L"Romania"
@@ -3147,7 +3150,7 @@ BEGIN
 	NtLanguages_SSpain,	L"Spain"
 	NtLanguages_SSriLanka,	L"Sri Lanka"
 	NtLanguages_SSweden,	L"Sweden"
-	NtLanguages_SSwitzerland,	L"Switzerland"
+	NtLanguages_SMontenegro,	L"Montenegro"
 	NtLanguages_SMorocco,	L"Morocco"
 	NtLanguages_SNetherlands,	L"Netherlands"
 	NtLanguages_SNepal,	L"Nepal"
@@ -3163,7 +3166,7 @@ BEGIN
 	NtLanguages_SPhilippines,	L"Republic of the Philippines"
 	NtLanguages_SPoland,	L"Poland"
 	NtLanguages_SPortugal,	L"Portugal"
-	NtLanguages_SPRC,	L"People's Republic of China"
+	NtLanguages_SLaoPDR,	L"Lao P.D.R."
 	NtLanguages_SLatinAmerica,	L"Latin America"
 	NtLanguages_SLatvia,	L"Latvia"
 	NtLanguages_SLebanon,	L"Lebanon"
@@ -3179,7 +3182,7 @@ BEGIN
 	NtLanguages_SMexico,	L"Mexico"
 	NtLanguages_SMonaco,	L"Principality of Monaco"
 	NtLanguages_SMongolia,	L"Mongolia"
-	NtLanguages_SMontenegro,	L"Montenegro"
+	NtLanguages_SIndia,	L"India"
 	NtLanguages_SIndonesia,	L"Indonesia"
 	NtLanguages_SIran,	L"Iran"
 	NtLanguages_SIraq,	L"Iraq"
@@ -3195,7 +3198,7 @@ BEGIN
 	NtLanguages_SKosovo,	L"Kosovo"
 	NtLanguages_SKuwait,	L"Kuwait"
 	NtLanguages_SKyrgyzstan,	L"Kyrgyzstan"
-	NtLanguages_SLaoPDR,	L"Lao P.D.R."
+	NtLanguages_SEgypt,	L"Egypt"
 	NtLanguages_SElSalvador,	L"El Salvador"
 	NtLanguages_SEstonia,	L"Estonia"
 	NtLanguages_SEthiopia,	L"Ethiopia"
@@ -3211,7 +3214,7 @@ BEGIN
 	NtLanguages_SHongKong,	L"Hong Kong S.A.R."
 	NtLanguages_SHungary,	L"Hungary"
 	NtLanguages_SIceland,	L"Iceland"
-	NtLanguages_SIndia,	L"India"
+	NtLanguages_SBosniaAndHerzegovina,	L"Bosnia and Herzegovina"
 	NtLanguages_SBrazil,	L"Brazil"
 	NtLanguages_SBruneiDarussalam,	L"Brunei Darussalam"
 	NtLanguages_SBulgaria,	L"Bulgaria"
@@ -3227,7 +3230,7 @@ BEGIN
 	NtLanguages_SDenmark,	L"Denmark"
 	NtLanguages_SDominicanRepublic,	L"Dominican Republic"
 	NtLanguages_SEcuador,	L"Ecuador"
-	NtLanguages_SEgypt,	L"Egypt"
+	NtLanguages_SSesothoSaLeboaLanguage,	L"Sesotho sa Leboa"
 	NtLanguages_SAfghanistan,	L"Afghanistan"
 	NtLanguages_SAland,	L"\x00c5land Islands"
 	NtLanguages_SAlbania,	L"Albania"
@@ -3243,7 +3246,7 @@ BEGIN
 	NtLanguages_SBelgium,	L"Belgium"
 	NtLanguages_SBelize,	L"Belize"
 	NtLanguages_SBolivia,	L"Bolivia"
-	NtLanguages_SBosniaAndHerzegovina,	L"Bosnia and Herzegovina"
+	NtLanguages_SSundaneseLanguage,	L"Sundanese"
 	NtLanguages_STesoLanguage,	L"Teso"
 	NtLanguages_STigreLanguage,	L"Tigre"
 	NtLanguages_STonganLanguage,	L"Tongan"
@@ -3259,7 +3262,7 @@ BEGIN
 	NtLanguages_SNheengatuLanguage,	L"Nheengatu"
 	NtLanguages_SStandardMoroccanTamazightLanguage,	L"Standard Moroccan Tamazight"
 	NtLanguages_SInvariantLanguage,	L"Invariant"
-	NtLanguages_SSesothoSaLeboaLanguage,	L"Sesotho sa Leboa"
+	NtLanguages_SPrussianLanguage,	L"Prussian"
 	NtLanguages_SRajasthaniLanguage,	L"Rajasthani"
 	NtLanguages_SRundiLanguage,	L"Rundi"
 	NtLanguages_SRomboLanguage,	L"Rombo"
@@ -3275,7 +3278,7 @@ BEGIN
 	NtLanguages_SSomaliLanguage,	L"Somali"
 	NtLanguages_SsiSwatiLanguage,	L"siSwati"
 	NtLanguages_SSahoLanguage,	L"Saho"
-	NtLanguages_SSundaneseLanguage,	L"Sundanese"
+	NtLanguages_SMundangLanguage,	L"Mundang"
 	NtLanguages_SBurmeseLanguage,	L"Burmese"
 	NtLanguages_SMazanderaniLanguage,	L"Mazanderani"
 	NtLanguages_SNamaLanguage,	L"Nama"
@@ -3291,7 +3294,7 @@ BEGIN
 	NtLanguages_SOsseticLanguage,	L"Ossetic"
 	NtLanguages_SPapiamentoLanguage,	L"Papiamento"
 	NtLanguages_SNigerianPidginLanguage,	L"Nigerian Pidgin"
-	NtLanguages_SPrussianLanguage,	L"Prussian"
+	NtLanguages_SLangiLanguage,	L"Langi"
 	NtLanguages_SGandaLanguage,	L"Ganda"
 	NtLanguages_SLakotaLanguage,	L"Lakota"
 	NtLanguages_SLingalaLanguage,	L"Lingala"
@@ -3307,7 +3310,7 @@ BEGIN
 	NtLanguages_SMakhuwaMeettoLanguage,	L"Makhuwa-Meetto"
 	NtLanguages_SMetaLanguage,	L"Meta\x02bc"
 	NtLanguages_SManipuriLanguage,	L"Manipuri"
-	NtLanguages_SMundangLanguage,	L"Mundang"
+	NtLanguages_SKambaLanguage,	L"Kamba"
 	NtLanguages_SMakondeLanguage,	L"Makonde"
 	NtLanguages_SKabuverdianuLanguage,	L"Kabuverdianu"
 	NtLanguages_SKaingangLanguage,	L"Kaingang"
@@ -3323,7 +3326,7 @@ BEGIN
 	NtLanguages_SCentralKurdishLanguage,	L"Central Kurdish"
 	NtLanguages_SCornishLanguage,	L"Cornish"
 	NtLanguages_SLatinLanguage,	L"Latin"
-	NtLanguages_SLangiLanguage,	L"Langi"
+	NtLanguages_SEmbuLanguage,	L"Embu"
 	NtLanguages_SEweLanguage,	L"Ewe"
 	NtLanguages_SEwondoLanguage,	L"Ewondo"
 	NtLanguages_SFulaLanguage,	L"Fula"
@@ -3339,7 +3342,7 @@ BEGIN
 	NtLanguages_SNgombaLanguage,	L"Ngomba"
 	NtLanguages_SMachameLanguage,	L"Machame"
 	NtLanguages_SKabyleLanguage,	L"Kabyle"
-	NtLanguages_SKambaLanguage,	L"Kamba"
+	NtLanguages_SBamanankanLanguage,	L"Bamanankan"
 	NtLanguages_SBodoLanguage,	L"Bodo"
 	NtLanguages_SBlinLanguage,	L"Blin"
 	NtLanguages_SChakmaLanguage,	L"Chakma"
@@ -3355,7 +3358,7 @@ BEGIN
 	NtLanguages_SDualaLanguage,	L"Duala"
 	NtLanguages_SJolaFonyiLanguage,	L"Jola-Fonyi"
 	NtLanguages_SDzongkhaLanguage,	L"Dzongkha"
-	NtLanguages_SEmbuLanguage,	L"Embu"
+	NtLanguages_SXhosaLanguage,	L"Xhosa"
 	NtLanguages_SYakutLanguage,	L"Yakut"
 	NtLanguages_SYiLanguage,	L"Yi"
 	NtLanguages_SYorubaLanguage,	L"Yoruba"
@@ -3371,7 +3374,7 @@ BEGIN
 	NtLanguages_SHaryanviLanguage,	L"Haryanvi"
 	NtLanguages_SBhojpuriLanguage,	L"Bhojpuri"
 	NtLanguages_SEdoLanguage,	L"Edo"
-	NtLanguages_SBamanankanLanguage,	L"Bamanankan"
+	NtLanguages_STeluguLanguage,	L"Telugu"
 	NtLanguages_STibetanLanguage,	L"Tibetan"
 	NtLanguages_STigrinyaLanguage,	L"Tigrinya"
 	NtLanguages_SThaiLanguage,	L"Thai"
@@ -3387,7 +3390,7 @@ BEGIN
 	NtLanguages_SVietnameseLanguage,	L"Vietnamese"
 	NtLanguages_SWelshLanguage,	L"Welsh"
 	NtLanguages_SWolofLanguage,	L"Wolof"
-	NtLanguages_SXhosaLanguage,	L"Xhosa"
+	NtLanguages_SScotsGaelicLanguage,	L"Scots Gaelic"
 	NtLanguages_SSerbianLanguage,	L"Serbian"
 	NtLanguages_SSinhalaLanguage,	L"Sinhala"
 	NtLanguages_SSindhiLanguage,	L"Sindhi"
@@ -3403,7 +3406,7 @@ BEGIN
 	NtLanguages_STamazightLanguage,	L"Tamazight"
 	NtLanguages_STamilLanguage,	L"Tamil"
 	NtLanguages_STatarLanguage,	L"Tatar"
-	NtLanguages_STeluguLanguage,	L"Telugu"
+	NtLanguages_SPashtoLanguage,	L"Pashto"
 	NtLanguages_SPersianLanguage,	L"Persian"
 	NtLanguages_SPolishLanguage,	L"Polish"
 	NtLanguages_SPortugueseLanguage,	L"Portuguese"
@@ -3419,7 +3422,7 @@ BEGIN
 	NtLanguages_SSamiLuleLanguage,	L"Sami Lule"
 	NtLanguages_SSanskritLanguage,	L"Sanskrit"
 	NtLanguages_SSantaliLanguage,	L"Santali"
-	NtLanguages_SScotsGaelicLanguage,	L"Scots Gaelic"
+	NtLanguages_SMacedonianLanguage,	L"Macedonian"
 	NtLanguages_SMalayLanguage,	L"Malay"
 	NtLanguages_SMalayalamLanguage,	L"Malayalam"
 	NtLanguages_SMalteseLanguage,	L"Maltese"
@@ -3435,7 +3438,7 @@ BEGIN
 	NtLanguages_SNorwegianNynorskLanguage,	L"Norwegian Nynorsk"
 	NtLanguages_SOccitanLanguage,	L"Occitan"
 	NtLanguages_SOriyaLanguage,	L"Oriya"
-	NtLanguages_SPashtoLanguage,	L"Pashto"
+	NtLanguages_SItalianLanguage,	L"Italian"
 	NtLanguages_SJapaneseLanguage,	L"Japanese"
 	NtLanguages_SJavaneseLanguage,	L"Javanese"
 	NtLanguages_SKannadaLanguage,	L"Kannada"
@@ -3451,7 +3454,7 @@ BEGIN
 	NtLanguages_SLithuanianLanguage,	L"Lithuanian"
 	NtLanguages_SLowerSorbianLanguage,	L"Lower Sorbian"
 	NtLanguages_SLuxembourgishLanguage,	L"Luxembourgish"
-	NtLanguages_SMacedonianLanguage,	L"Macedonian"
+	NtLanguages_SFrenchLanguage,	L"French"
 	NtLanguages_SGalicianLanguage,	L"Galician"
 	NtLanguages_SGeorgianLanguage,	L"Georgian"
 	NtLanguages_SGermanLanguage,	L"German"
@@ -3467,7 +3470,7 @@ BEGIN
 	NtLanguages_SIndonesianLanguage,	L"Indonesian"
 	NtLanguages_SInuktitutLanguage,	L"Inuktitut"
 	NtLanguages_SIrishLanguage,	L"Irish"
-	NtLanguages_SItalianLanguage,	L"Italian"
+	NtLanguages_SBretonLanguage,	L"Breton"
 	NtLanguages_SBulgarianLanguage,	L"Bulgarian"
 	NtLanguages_SCatalanLanguage,	L"Catalan"
 	NtLanguages_SChineseLanguage,	L"Chinese"
@@ -3483,8 +3486,8 @@ BEGIN
 	NtLanguages_SEsperantoLanguage,	L"Esperanto"
 	NtLanguages_SFaeroeseLanguage,	L"Faeroese"
 	NtLanguages_SFinnishLanguage,	L"Finnish"
-	NtLanguages_SFrenchLanguage,	L"French"
 	NtHtmlHelp_SStringTopicNeeded,	L"Help context value is an integer value. HTMLHelp requires a string value."
+	NtLanguages_SUnknown,	L"Unknown"
 	NtLanguages_SDifferentItem,	L"\"%s\" file does not contain a language list."
 	NtLanguages_SAfrikaansLanguage,	L"Afrikaans"
 	NtLanguages_SAlbanianLanguage,	L"Albanian"
@@ -3499,7 +3502,6 @@ BEGIN
 	NtLanguages_SBelarusianLanguage,	L"Belarusian"
 	NtLanguages_SBengaliLanguage,	L"Bengali"
 	NtLanguages_SBosnianLanguage,	L"Bosnian"
-	NtLanguages_SBretonLanguage,	L"Breton"
 	Vcl_Imaging_pnglang_EPNGUnknownColorTypeText,	L"This \"Portable Network Graphics\" image uses an unknown color type which could not be decoded."
 	Vcl_Imaging_pnglang_EPNGCannotAssignChunkText,	L"The chunks must be compatible to be assigned."
 	Vcl_Imaging_pnglang_EPNGUnexpectedEndText,	L"This \"Portable Network Graphics\" image is invalid because the decoder found an unexpected end of the file."
@@ -4088,4 +4090,4 @@ END
 /* D:\NT\Desktop\Bin\JPart\InstallationLimitDlg.dfm */
 /* D:\NT\Desktop\Setup\Install\license.res */
 /* D:\NT\Desktop\Setup\Install\SoluSetup.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtfF06A.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtfEB9F.tmp */

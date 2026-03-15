@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20241227T093231Z" version="1.0.1054" stringid="411">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20260301T130100Z" version="1.0.1090" stringid="412">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\DevExpress.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\DevExpress\Win32\Release\DevExpress.exe" original="en" lastmodified="20241227T093231Z" platforms="[ptWin32,ptWin64]" library="dlAnsi">
+  <node class="TDelphiSource" name="Win32\Release\DevExpress.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\DevExpress\Win32\Release\DevExpress.exe" original="en" lastmodified="20260301T130100Z" hassignature="1" hassignatureread="1">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -12,6 +12,7 @@
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData">
       <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+        <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T020107Z">0</row>
         <row id="Top" created="20151019T020107Z">0</row>
         <row id="Caption" si="1">
@@ -238,7 +239,7 @@
             <lang id="fi" time="20180524T033719Z">&amp;Nopeus:</lang>
           </row>
         </item>
-        <item name="ResultLabel" type="TLabel" created="20151019T020107Z">
+        <item name="ResultLabel" type="TLabel" created="20151019T020107Z" autosize="0">
           <row id="Left">64</row>
           <row id="Top">56</row>
           <row id="Width">217</row>
@@ -261,6 +262,7 @@
           <row id="Top" created="20151019T020107Z">22</row>
           <row id="Width" created="20151019T020107Z">105</row>
           <row id="Height" created="20151019T020107Z">25</row>
+          <row id="Action" class="TVclActionRow" created="20260301T130057Z" st="0" hidden="1">CalculateAction</row>
         </item>
         <item name="MainMenu1" type="TMainMenu">
           <row id="Left" created="20151019T020107Z">240</row>
@@ -270,7 +272,9 @@
               <value>File</value>
               <lang id="fi" time="20180524T033719Z">Tiedosto</lang>
             </row>
-            <item name="Calculate1" type="TMenuItem"/>
+            <item name="Calculate1" type="TMenuItem">
+              <row id="Action" class="TVclActionRow" created="20260301T130057Z" st="0" hidden="1">CalculateAction</row>
+            </item>
             <item name="Language1" type="TMenuItem">
               <row id="Caption" si="5">
                 <value>Language...</value>
@@ -435,6 +439,7 @@
         </data>
       </node>
       <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+        <font id="Font" name="Tahoma" size="8"/>
         <row id="Left" created="20151019T020107Z">256</row>
         <row id="Top" created="20151019T020107Z">347</row>
         <row id="Caption" si="10">
@@ -456,7 +461,7 @@
           <row id="Height" created="20151019T020107Z">25</row>
           <row id="Caption" si="11">
             <value>OK</value>
-            <lang id="fi" time="20180524T033736Z">OK</lang>
+            <lang id="fi" time="20260301T125537Z">OK</lang>
           </row>
         </item>
         <item name="CancelButton" type="TButton">
@@ -488,21 +493,20 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" changed="20200209T160439Z" class="TPatternRow" si="13" created="20170517T034344Z">
-          <value startpattern="1">Driving time{0}{1}.</value>
-          <prev startpattern="1">Driving time{0:s}{1:s}.</prev>
+        <row id="SResultPlural" changed="20260301T130057Z" si="13" created="20260301T130057Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" time="20200209T160512Z">
-            <value startpattern="1">Ajoaika{0}{1}</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" time="20200209T160512Z">
+            <value startpattern="1">Ajoaika%0:s%1:s</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
         </row>
         <row id="SAbout" si="14">
@@ -517,7 +521,7 @@
       <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <platformfiles>
-      <item file="D:\NT\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.exe" drcfile="D:\NT\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.drc"/>
+      <item file="..\..\..\..\..\..\..\..\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.exe" drcfile="..\..\..\..\..\..\..\..\Desktop\Bin\Win64\Debug\Win64\Release\Multilingual.drc"/>
     </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLanguage]"/>
@@ -531,14 +535,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>

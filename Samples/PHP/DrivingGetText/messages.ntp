@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C6AF8C69-3AAE-4AA0-AF04-A2F3A702F938" created="20130922T162153Z" lastmodified="20191018T134638Z" version="1.0.579" stringid="17">
+<project id="C6AF8C69-3AAE-4AA0-AF04-A2F3A702F938" created="20130922T162153Z" lastmodified="20260302T070101Z" version="1.0.1090" stringid="19">
   <lang id="fi"/>
-  <node class="TPoSource" name="messages.po" fullpath="D:\NT\Deploy\Samples\PHP\DrivingGetText\messages.po" original="en" encoding="windows-1252" newline="nlLf" programminglanguage="plPhp" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1" options="[prComments,prTranslatorInfo]">
+  <node class="TPoSource" name="messages.po" fullpath="D:\NT\Deploy\Samples\PHP\DrivingGetText\messages.po" original="en" lastmodified="20260302T070101Z" encoding="windows-1252" newline="nlLf" programminglanguage="plPhp" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1" options="[prComments,prTranslatorInfo]">
     <row id="Driving Time Calculator" si="1">
       <value>Driving Time Calculator</value>
       <lang id="fi" time="20130923T031203Z">Ajoaikalaskin</lang>
@@ -30,13 +30,13 @@
       <value>Driving time is</value>
       <lang id="fi" time="20130923T031222Z">Ajoaika on</lang>
     </row>
-    <row id="%d hour" class="TPatternRow" si="8" comment="Message patterns for hours. Leave %d into the translated pattern." scannedcomment="Message patterns for hours. Leave %d into the translated pattern." created="20191018T134602Z">
-      <value>{0} hours</value>
-      <pattern plural="pfOne">{0} hour</pattern>
+    <row id="%d hour" changed="20260302T070101Z" si="8" comment="Message patterns for hours. Leave %d into the translated pattern." scannedcomment="Message patterns for hours. Leave %d into the translated pattern." created="20260302T070101Z" codep="1">
+      <value>%d hours</value>
+      <pattern plural="pfOne">%d hour</pattern>
     </row>
-    <row id="%d minute" class="TPatternRow" si="9" comment="Message patterns for minutes. Leave %d into the translated pattern." scannedcomment="Message patterns for minutes. Leave %d into the translated pattern." created="20191018T134602Z">
-      <value>{0} minutes</value>
-      <pattern plural="pfOne">{0} minute</pattern>
+    <row id="%d minute" changed="20260302T070101Z" si="9" comment="Message patterns for minutes. Leave %d into the translated pattern." scannedcomment="Message patterns for minutes. Leave %d into the translated pattern." created="20260302T070101Z" codep="1">
+      <value>%d minutes</value>
+      <pattern plural="pfOne">%d minute</pattern>
     </row>
     <row id="You must enter a valid distance and a speed!" si="17" created="20191018T134602Z">You must enter a valid distance and a speed!</row>
     <row id="flag.png" si="10" comment="File name for language flag. Enter here the name of the localized image." scannedcomment="File name for language flag. Enter here the name of the localized image.">
@@ -97,12 +97,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-      <item name="Yandex" type="TYandexTranslate"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
 </project>

@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="3B65E59D-0755-43FA-8249-E4972BDED891" created="20181214T223518Z" lastmodified="20200406T231757Z" version="1.0.731" stringid="19">
+<project id="3B65E59D-0755-43FA-8249-E4972BDED891" created="20181214T223518Z" lastmodified="20260302T072020Z" version="1.0.1090" stringid="28">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="DrivingView.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\DrivingView\DrivingView.csproj" original="en" resources="[nrResx,nrHtml]" availableresources="[nrResx,nrHtml]" netconfiguration="Debug|AnyCPU" aspnetcore="1">
-    <netproperties version="core22"/>
+  <node class="TNetProjectSource" name="DrivingView.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\MVC\DrivingView\DrivingView.csproj" original="en" lastmodified="20260302T072020Z" resources="[nrResx,nrHtml]" availableresources="[nrResx,nrHtml]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core90" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Controllers">
-        <node class="TResXNode" name="DefaultController.resx">
-          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="1" scannedcomment="0: Hours or minutes">
+        <node class="TResXNode" name="DefaultController.resx" windowsforms="wfCore">
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" changed="20260302T071940Z" si="1" scannedcomment="0: Hours or minutes" created="20260302T071940Z" codep="1">
             <value startpattern="1">Driving time is{0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -20,6 +20,7 @@
     </node>
     <node class="TDirectoryFolder" name="Views" created="20181215T010852Z">
       <node class="THtmlDataNode" name="_ViewImports.cshtml">
+        <row id="text" class="THtmlRow" si="20" created="20260302T071940Z" st="0">@using DrivingView @using DrivingView.Models @addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers</row>
         <data>
           QHVzaW5nIERyaXZpbmdWaWV3DQpAdXNpbmcgRHJpdmluZ1ZpZXcuTW9kZWxzDQpAYWRkVGFnSGVscGVyICosIE1pY3Jvc29mdC5B
           c3BOZXRDb3JlLk12Yy5UYWdIZWxwZXJzDQo=
@@ -27,13 +28,14 @@
       </node>
       <node class="TDirectoryFolder" name="Default">
         <node class="THtmlDataNode" name="Index.cshtml">
+          <row id="text" class="THtmlRow" si="21" created="20260302T071940Z" locked="1" st="0">@model DrivingView.Models.DrivingModel;</row>
           <row id="title.text" class="THtmlRow" si="2">
             <value>Driving Time Calculator</value>
             <lang id="fi" st="4" rw="0" time="20200406T231751Z" fuzzy="5">Ajoaika Laskin ÖÄÅ</lang>
           </row>
           <row id="h1.text" class="THtmlRow" si="3">
-            <value>&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Driving Time</value>
-            <lang id="fi" st="4" rw="0" time="20200406T231746Z">&lt;img align=&quot;top&quot; src=&quot;images/flag.png&quot; /&gt; Ajoaika</lang>
+            <value>&lt;img align="top" src="images/flag.png" /> Driving Time</value>
+            <lang id="fi" st="4" rw="0" time="20200406T231746Z">&lt;img align="top" src="images/flag.png" /> Ajoaika</lang>
           </row>
           <row id="td.text" class="THtmlRow" si="4">
             <value>Driving distance:</value>
@@ -47,7 +49,7 @@
             <value>Calculate</value>
             <lang id="fi" st="4" rw="0" time="20200406T231731Z">Laske</lang>
           </row>
-          <row id="td[4].text" class="THtmlRow" si="7">@Model?.Message</row>
+          <row id="td[4].text" class="THtmlRow" si="7" locked="1">@Model?.Message</row>
           <data>
             77u/QG1vZGVsIERyaXZpbmdWaWV3Lk1vZGVscy5Ecml2aW5nTW9kZWw7DQoNCjwhRE9DVFlQRSBodG1sPg0KPGh0bWw+DQo8aGVh
             ZD4NCiAgPG1ldGEgY2hhcnNldD0idXRmLTgiPg0KICA8dGl0bGU+RHJpdmluZyBUaW1lIENhbGN1bGF0b3I8L3RpdGxlPg0KPC9o
@@ -64,6 +66,12 @@
         </node>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\net9.0\DrivingView.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.Translator.Forms.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.Translator.WPF.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -76,13 +84,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

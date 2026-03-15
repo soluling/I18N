@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<translationbundle handler="angular">
+  <translation id="5672754662376866280" meaning="header">Ajoaika</translation>
+  <translation id="5005141257091855131">Laske</translation>
+  <translation id="5516112325374793270">Ajoaika on <ph name="ICU"/> <ph name="ICU_1"/></translation>
+  <translation id="4892912909971286976">{VAR_PLURAL, plural, =0 {} one {<ph name="INTERPOLATION"/> tunti } other {<ph name="INTERPOLATION"/> tuntia } }</translation>
+  <translation id="3023394972653842807">{VAR_PLURAL, plural, one {<ph name="INTERPOLATION"/> minuutti} other {<ph name="INTERPOLATION"/> minuuttia} }</translation>
+  <translation id="1187906511615154129">Avataan ajoaikalaskuri-valintaikkuna...</translation>
+</translationbundle>

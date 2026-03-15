@@ -1,56 +1,51 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="60F140F9-4B45-4167-93B2-3C91024BED5A" created="20180517T141336Z" lastmodified="20201010T233141Z" version="1.0.790" stringid="9">
+<project id="60F140F9-4B45-4167-93B2-3C91024BED5A" created="20180517T141336Z" lastmodified="20260302T123104Z" version="1.0.1090" stringid="15">
   <lang id="fi"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Multi\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Multi\src\locale\messages.xlf" original="en" lastmodified="20260302T123104Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
     <row id="src\app\app.component.ts.header" importid="8884523860497558714" si="5" created="20201010T232717Z">
       <value>Sample</value>
-      <lang id="fi" rw="0" time="20180523T185503Z">Esimerkki</lang>
+      <lang id="fi" rw="0" tm="1" time="20180523T185503Z">Esimerkki</lang>
     </row>
-    <row id="src\app\app.component.ts.skis" importid="1420873212592132990" class="TPatternRow" si="6" created="20201010T232717Z">
+    <row id="src\app\app.component.ts.skis" importid="2864011278194360095" si="6" created="20260302T122714Z" codep="1">
       <value>I have {ski} skis.</value>
-      <lang id="fi" rw="0" time="20200317T002515Z">Minulla on {ski} suksea.</lang>
+      <lang id="fi" rw="0" tm="1" time="20200317T002515Z">Minulla on {ski} suksea.</lang>
     </row>
-    <row id="src\app\app.component.ts.plural" importid="7133463901580073687" changed="20201010T233029Z" class="TPatternRow" si="9" created="20201010T232717Z">
-      <value startpattern="1">I have {0:ski, plural, one  other} and {1:car, plural, one  other}.</value>
-      <pattern plural="pfOne">{ski} ski</pattern>
-      <pattern plural="pfOther">{ski} skis</pattern>
-      <lang id="fi" rw="0" time="20201010T233107Z">
-        <value startpattern="1">Minulla on {0:ski, plural, one  other} ja {1:car, plural, one  other}</value>
-        <pattern plural="pfOne">{ski} suksi</pattern>
-        <pattern plural="pfOther">{ski} suksea</pattern>
+    <row id="src\app\app.component.ts.plural" importid="7928531771969797429" changed="20260302T122714Z" si="9" created="20260302T122714Z" codep="1">
+      <value>I have {icu0} and {icu1}.</value>
+      <prev>I have {0} and {1}.</prev>
+      <lang id="fi" rw="0" tm="1" time="20260203T133223Z">Minulla on {icu0} ja {icu1}.</lang>
+    </row>
+    <row id="6557136595132919743" si="14" created="20260302T122714Z" codep="1">
+      <value>{0} skis</value>
+      <pattern plural="pfOne">{0} ski</pattern>
+      <lang id="fi" rw="0" time="20260302T122913Z">
+        <value>{0} suksea</value>
+        <pattern plural="pfOne">{0} suksi</pattern>
       </lang>
     </row>
-    <row id="src\app\app.component.ts.8061099442892692790" importid="8061099442892692790" changed="20201010T233029Z" class="TPatternRow" si="8" created="20201010T232717Z">
-      <value>{car} cars</value>
-      <prev>{0} cars</prev>
-      <pattern plural="pfOne">{car} car</pattern>
-      <lang id="fi" rw="0" time="20201010T232802Z">
+    <row id="7086529352788200781" si="15" created="20260302T122714Z" codep="1">
+      <value>{0} cars</value>
+      <pattern plural="pfOne">{0} car</pattern>
+      <lang id="fi" rw="0" time="20260302T122926Z">
         <value>{0} autoa</value>
         <pattern plural="pfOne">{0} auto</pattern>
       </lang>
     </row>
-    <configurations>
-      <configuration name="Default"/>
-    </configurations>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

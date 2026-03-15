@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8E171479-382A-4DD6-A1A2-29388529B49B" created="20150613T144916Z" lastmodified="20200316T235206Z" version="1.0.714" stringid="14">
+<project id="8E171479-382A-4DD6-A1A2-29388529B49B" created="20150613T144916Z" lastmodified="20260302T072143Z" version="1.0.1090" stringid="16">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TResXSource" name="App_LocalResources\Index.aspx.resx" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\App_LocalResources\Index.aspx.resx" original="en" encoding="utf-8" bom="1">
+  <node class="TResXSource" name="App_LocalResources\Index.aspx.resx" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\App_LocalResources\Index.aspx.resx" original="en" lastmodified="20260302T072142Z" encoding="utf-8" bom="1" windowsforms="wfCore">
     <row id="calculateButton.Text" si="1" created="20150613T145021Z">
       <value>Calculate</value>
       <lang id="fi" time="20150613T145032Z">Laske</lang>
@@ -30,7 +30,7 @@
     </row>
     <netproperties version="net452"/>
   </node>
-  <node class="TAssemblySource" name="bin\Driving.dll" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\bin\Driving.dll" original="en" availableresources="[nrResx,nrVersion,nrHardCodeStrings]">
+  <node class="TAssemblySource" name="bin\Driving.dll" fullpath="D:\NT\Deploy\Samples\ASP.NET\Framework\WebForms\Driving\Localized\bin\Driving.dll" original="en" lastmodified="20260302T072143Z" availableresources="[nrResx,nrVersion,nrHardCodeStrings]">
     <netproperties version="net45"/>
     <node class="TNetResXFolder" name="ResX">
       <node class="TResXNode" name="Driving.Resources.resources">
@@ -44,19 +44,13 @@
           <lang id="fi" time="20150613T144931Z">Ajoaika</lang>
           <lang id="ja" time="20150613T145505Z">運転時間</lang>
         </row>
-        <row id="HoursPlural" class="TPatternRow" si="8" created="20200316T235205Z" st="0">
-          <value>{0} hours</value>
-          <pattern plural="pfOne">{0} hour</pattern>
-        </row>
+        <row id="HoursPlural" changed="20260302T072142Z" si="8" created="20260302T072142Z" codep="1">one;{0} hour;other;{0} hours</row>
         <row id="Language" si="9">
           <value>en</value>
           <lang id="fi" time="20150613T144946Z">fi</lang>
           <lang id="ja" time="20150613T145506Z">en</lang>
         </row>
-        <row id="MinutesPlural" class="TPatternRow" si="10" created="20200316T235205Z" st="0">
-          <value>{0} minutes</value>
-          <pattern plural="pfOne">{0} minute</pattern>
-        </row>
+        <row id="MinutesPlural" changed="20260302T072142Z" si="10" created="20260302T072142Z" codep="1">one;{0} minute;other;{0} minutes</row>
         <row id="Title" si="11">
           <value>Driving Time Calculator</value>
           <lang id="fi" time="20150613T145005Z">Ajoaikalaskin</lang>
@@ -73,21 +67,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

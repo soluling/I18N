@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F2CB98A9-8B31-4F50-A9D9-C411D6A2E6DA" created="20180514T133354Z" lastmodified="20200316T233933Z" version="1.0.714" stringid="16">
+<project id="F2CB98A9-8B31-4F50-A9D9-C411D6A2E6DA" created="20180514T133354Z" lastmodified="20260301T172613Z" version="1.0.1090" stringid="19">
   <lang id="fi"/>
-  <node class="Ti18nextSource" name="Sample.json" fullpath="D:\NT\Deploy\Samples\i18next\Sample.json" original="en" encoding="utf-8">
+  <node class="Ti18nextSource" name="Sample.json" fullpath="D:\NT\Deploy\Samples\i18next\Sample.json" original="en" lastmodified="20260301T172613Z" encoding="utf-8">
     <row id="key" si="1" created="20190419T225715Z">
       <value>value</value>
       <lang id="fi" st="4" rw="0" time="20190419T225725Z">arvo</lang>
     </row>
     <row id="keyNesting" si="2" created="20190419T225715Z">reuse $t(keyDeep.inner)</row>
-    <row id="keyInterpolate" class="TPatternRow" si="3" created="20190419T225715Z">replace this {value}</row>
-    <row id="keyInterpolateUnescaped" class="TPatternRow" si="4" created="20190419T225715Z">replace this {- value}</row>
-    <row id="keyInterpolateWithFormatting" class="TPatternRow" si="5" created="20190419T225715Z">replace this {value, format}</row>
+    <row id="keyInterpolate" changed="20260301T172613Z" si="3" created="20260301T172613Z" codep="1">replace this {{value}}</row>
+    <row id="keyInterpolateUnescaped" changed="20260301T172613Z" si="4" created="20260301T172613Z" codep="1">replace this {{- value}}</row>
+    <row id="keyInterpolateWithFormatting" changed="20260301T172613Z" si="5" created="20260301T172613Z" codep="1">replace this {{value, format}}</row>
     <row id="keyContext_male" si="6" created="20190419T225715Z">the male variant</row>
     <row id="keyContext_female" si="7" created="20190419T225715Z">the female variant</row>
     <row id="keyPluralSimple" si="8" created="20190419T225715Z">the singular</row>
@@ -41,16 +41,19 @@
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

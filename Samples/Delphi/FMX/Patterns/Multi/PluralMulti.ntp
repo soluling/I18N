@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A60A0EAA-5085-4592-9FF2-8137B5171A07" created="20160819T154611Z" lastmodified="20221231T021718Z" version="1.0.972" stringid="1324">
+<project id="A60A0EAA-5085-4592-9FF2-8137B5171A07" created="20160819T154611Z" lastmodified="20260301T133514Z" version="1.0.1090" stringid="1326">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="PluralMulti.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Multi\PluralMulti.dproj" original="en" lastmodified="20221231T021718Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+  <node class="TDelphiProjectSource" name="PluralMulti.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Multi\PluralMulti.dproj" original="en" lastmodified="20260301T133514Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
     <node class="TWindowsBinaryFolder" name="0" st="0" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData" created="20221230T205709Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
@@ -174,36 +174,36 @@
       <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessagePlural" class="TPatternRow" si="1208" scannedcomment="0: ski or bicyle count">
-          <value startpattern="1">I have {0} {1}</value>
+        <row id="SMessagePlural" changed="20260301T133512Z" si="1208" created="20260301T133512Z" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
           <pattern plural="pfOne" index="0">one ski</pattern>
-          <pattern plural="pfOther" index="0">{0} skis</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
           <pattern plural="pfOne" index="1">and one bicycle</pattern>
-          <pattern plural="pfOther" index="1">and {0} bicycles</pattern>
-          <lang id="fi" rw="0" time="20221230T205746Z">
-            <value startpattern="1">Minulla on {0} {1}</value>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="3" rw="0" time="20221230T205746Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
             <pattern plural="pfOne" index="0">yksi suksi</pattern>
-            <pattern plural="pfOther" index="0">{0} suksea</pattern>
+            <pattern plural="pfOther" index="0">%d suksea</pattern>
             <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
-            <pattern plural="pfOther" index="1">ja {0} polkupyörää</pattern>
+            <pattern plural="pfOther" index="1">ja %d polkupyörää</pattern>
           </lang>
         </row>
-        <row id="SZeroMessagePlural" class="TPatternRow" si="1209" scannedcomment="0: ski or bicyle count">
-          <value startpattern="1">I have {0} {1}</value>
+        <row id="SZeroMessagePlural" changed="20260301T133512Z" si="1209" created="20260301T133512Z" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
           <pattern plural="pfZero" index="0">no skis</pattern>
           <pattern plural="pfOne" index="0">one ski</pattern>
-          <pattern plural="pfOther" index="0">{0} skis</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
           <pattern plural="pfZero" index="1">and no bicycles</pattern>
           <pattern plural="pfOne" index="1">and one bicycle</pattern>
-          <pattern plural="pfOther" index="1">and {0} bicycles</pattern>
-          <lang id="fi" time="20180523T163927Z">
-            <value startpattern="1">Minulla on {0} {1}</value>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="3" time="20180523T163927Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
             <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
             <pattern plural="pfOne" index="0">yksi suksi</pattern>
-            <pattern plural="pfOther" index="0">{0} suksea</pattern>
+            <pattern plural="pfOther" index="0">%d suksea</pattern>
             <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
             <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
-            <pattern plural="pfOther" index="1">ja {0} polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %d polkupyörä</pattern>
           </lang>
         </row>
         <row id="SEnglish" si="1203">
@@ -239,7 +239,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -253,6 +252,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

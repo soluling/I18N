@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20230429T154645Z" version="1.0.993" stringid="1358" reviewcaption="Review">
+<project id="61BD8372-3E93-4E6E-BAC0-F7D24107F5D2" created="20170409T163953Z" lastmodified="20260302T064039Z" version="1.0.1090" stringid="1359" reviewcaption="Review">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
-  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\CBuilder\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20230429T154645Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Localized.exe" fullpath="D:\NT\Deploy\Samples\CBuilder\VCL\Driving\Localized\Win32\Release\Localized.exe" original="en" lastmodified="20260302T064039Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" drcscanmode="drcNew" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -346,6 +346,7 @@
           <row id="Top">22</row>
           <row id="Width">105</row>
           <row id="Height">25</row>
+          <row id="Action" class="TVclActionRow" created="20260302T064038Z" st="0" hidden="1">CalculateAction</row>
         </item>
         <item name="ActionList1" type="TActionList">
           <row id="Left">176</row>
@@ -369,7 +370,9 @@
               <lang id="de" or="6" rw="0" time="20180410T013803Z">Datei</lang>
               <lang id="fr" rw="0" time="20190125T035825Z">Fichier</lang>
             </row>
-            <item name="Calculate1" type="TMenuItem"/>
+            <item name="Calculate1" type="TMenuItem">
+              <row id="Action" class="TVclActionRow" created="20260302T064038Z" st="0" hidden="1">CalculateAction</row>
+            </item>
             <item name="N1" type="TMenuItem"/>
             <item name="Exit1" type="TMenuItem">
               <row id="Caption" si="5">
@@ -526,36 +529,36 @@
       <node class="TWindowsStringNode" name="Ntpattern" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Ntwindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Strings" created="20230429T025814Z">
-        <row id="SResultPlural" class="TPatternRow" si="405" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-          <value startpattern="1">Driving time{0}{1}.</value>
+        <row id="SResultPlural" changed="20260302T064038Z" si="405" created="20260302T064038Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" time="20200209T160403Z">
-            <value startpattern="1">Ajoaika{0}{1}</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" time="20200209T160403Z">
+            <value startpattern="1">Ajoaika%0:s%1:s</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti </pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti </pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
-          <lang id="de" rw="0" time="20180410T013939Z">
-            <value startpattern="1">Fahrzeit {0}</value>
+          <lang id="de" st="3" rw="0" time="20180410T013939Z">
+            <value startpattern="1">Fahrzeit %0:s</value>
             <pattern plural="pfZero" index="0">{1}</pattern>
-            <pattern plural="pfOne" index="0"> {0} Stunde{1}</pattern>
-            <pattern plural="pfOther" index="0"> {0} Stunden{1}</pattern>
-            <pattern plural="pfOne" index="1"> {0} Minute.</pattern>
-            <pattern plural="pfOther" index="1"> {0} Minuten.</pattern>
+            <pattern plural="pfOne" index="0"> %d Stunde</pattern>
+            <pattern plural="pfOther" index="0"> %d Stunden</pattern>
+            <pattern plural="pfOne" index="1"> %d Minute.</pattern>
+            <pattern plural="pfOther" index="1"> %d Minuten.</pattern>
           </lang>
-          <lang id="fr" rw="0" time="20190125T035833Z">
-            <value startpattern="1">Temps de conduite{0}{1}.</value>
+          <lang id="fr" st="3" rw="0" time="20190125T035833Z">
+            <value startpattern="1">Temps de conduite%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0}heure</pattern>
-            <pattern plural="pfOther" index="0"> {0}heures</pattern>
-            <pattern plural="pfOne" index="1">{0} minute</pattern>
-            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <pattern plural="pfOne" index="0"> %dheure</pattern>
+            <pattern plural="pfOther" index="0"> %dheures</pattern>
+            <pattern plural="pfOne" index="1">%d minute</pattern>
+            <pattern plural="pfOther" index="1">%d minutes</pattern>
           </lang>
         </row>
         <row id="SAbout" si="406">
@@ -601,22 +604,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

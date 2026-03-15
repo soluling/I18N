@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1755B53D-9887-4D27-A51E-23EE078EC41D" created="20130114T023832Z" lastmodified="20200316T185036Z" version="1.0.714" stringid="10">
+<project id="1755B53D-9887-4D27-A51E-23EE078EC41D" created="20130114T023832Z" lastmodified="20260302T071537Z" version="1.0.1090" stringid="13">
   <lang id="fi"/>
-  <node class="TUwpProjectSource" name="Complete.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Tutorial\Complete\Complete.csproj" original="en" defaultlanguage="en" scansource="rsNeutral" availableresources="[rtResw,rtXaml,rtImage]">
+  <node class="TUwpProjectSource" name="Complete.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Tutorial\Complete\Complete.csproj" original="en" lastmodified="20260302T071537Z" defaultlanguage="en" scansource="rsNeutral" availableresources="[rtResw,rtXaml,rtImage]">
     <node class="TXamlNode" name="App.xaml" excluded="1"/>
     <node class="TDirectoryFolder" name="Common">
       <node class="TXamlNode" name="StandardStyles.xaml" excluded="1"/>
@@ -44,19 +44,19 @@
         ZWw+DQo8L1BhZ2U+DQo=
       </data>
     </node>
-    <node class="TResXNode" name="Resources.resw">
+    <node class="TResXNode" name="Resources.resw" windowsforms="wfCore">
       <row id="Language" si="6" created="20130114T023832Z">
         <value>en</value>
         <lang id="fi" time="20130114T024401Z">fi</lang>
       </row>
-      <row id="Name" class="TPatternRow" si="7" scannedcomment="0: Name" created="20181219T041419Z">
+      <row id="Name" si="7" scannedcomment="0: Name" created="20260302T071537Z" codep="1">
         <value>My name is {0}</value>
         <lang id="fi" rw="0" time="20181219T041432Z">Nimeni on {0}</lang>
       </row>
-      <row id="OrangesPlural" changed="20181219T042015Z" class="TPatternRow" si="8" scannedcomment="0: Amount of oranges" created="20181219T041419Z">
+      <row id="OrangesPlural" changed="20260302T071537Z" si="8" scannedcomment="0: Amount of oranges" created="20260302T071537Z" codep="1">
         <value>I have {0} oranges</value>
         <pattern plural="pfOne">I have {0} orange</pattern>
-        <lang id="fi" rw="0" time="20181219T042034Z">
+        <lang id="fi" st="3" rw="0" time="20181219T042034Z">
           <value>Minulla on {0} appelsiinia</value>
           <pattern plural="pfOne">Minulla on {0} appelsiini</pattern>
         </lang>
@@ -65,7 +65,7 @@
         <value>This is a sample</value>
         <lang id="fi" time="20130114T024415Z">Tämä on esimerkki</lang>
       </row>
-      <row id="Today" class="TPatternRow" si="10" scannedcomment="0: Date" created="20181219T041419Z">
+      <row id="Today" si="10" scannedcomment="0: Date" created="20260302T071537Z" codep="1">
         <value>Today is {0}</value>
         <lang id="fi" rw="0" time="20181219T042045Z">Tänään on {0}</lang>
       </row>
@@ -77,20 +77,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

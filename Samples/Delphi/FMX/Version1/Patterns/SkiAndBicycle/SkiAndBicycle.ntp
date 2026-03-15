@@ -1,40 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20241228T055323Z" version="1.0.1054" stringid="16">
+<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20260301T134029Z" version="1.0.1090" stringid="17">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" lastmodified="20241228T055323Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release">
+  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" lastmodified="20260301T134029Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release">
     <node class="TDelphiProjectFormFolder" name="Forms">
-      <node class="TDirectoryFolder" name=".." created="20160820T024247Z" st="4">
-        <node class="TDirectoryFolder" name=".." st="4">
-          <node class="TDirectoryFolder" name=".." st="4">
-            <node class="TDirectoryFolder" name=".." st="4">
-              <node class="TDirectoryFolder" name=".." st="4">
-                <node class="TDirectoryFolder" name="Library" st="4">
-                  <node class="TDirectoryFolder" name="Delphi" st="4">
-                    <node class="TDelphiFormFileNode" name="FMX.NtLanguageDlg" type="TNtLanguageDialog" st="4" objectname="NtLanguageDialog" filename="..\..\..\..\..\Library\Delphi\FMX.NtLanguageDlg.fmx">
-                      <row id="Caption" si="1" st="4">
-                        <value>Select Language</value>
-                        <lang id="fi" time="20160820T024259Z">Valitse kieli</lang>
-                      </row>
-                      <item name="OkButton" type="TButton" st="4">
-                        <row id="Text" si="4" st="4">
-                          <value>OK</value>
-                          <lang id="fi" time="20160820T024250Z">OK</lang>
-                        </row>
-                      </item>
-                      <item name="CancelButton" type="TButton" st="4">
-                        <row id="Text" si="5" st="4">
-                          <value>Cancel</value>
-                          <lang id="fi" time="20160820T024252Z">Peru</lang>
-                        </row>
-                      </item>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
         <row id="Top">0</row>
@@ -93,23 +61,22 @@
     </node>
     <node class="TDelphiProjectStringFolder" name="Strings">
       <node class="TDelphiStringNode" name="_">
-        <row id="MessagePlural" changed="20180524T030254Z" class="TPatternRow" si="11" created="20170805T010447Z" original="I have {plural, zero {no skis} one {one ski} other {%d skis}} {plural, zero {and no bicycles} one {and one bicycle} other {and %d bicycles}}">
-          <value startpattern="1">I have {0} {1}</value>
-          <prev startpattern="1">I have {0}</prev>
+        <row id="MessagePlural" changed="20260301T133840Z" si="11" created="20260301T133840Z" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
           <pattern plural="pfZero" index="0">no skis</pattern>
           <pattern plural="pfOne" index="0">one ski</pattern>
-          <pattern plural="pfOther" index="0">{0} skis</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
           <pattern plural="pfZero" index="1">and no bicycles</pattern>
           <pattern plural="pfOne" index="1">and one bicycle</pattern>
-          <pattern plural="pfOther" index="1">and {0} bicycles</pattern>
-          <lang id="fi" time="20180524T030310Z">
-            <value startpattern="1">Minulla on {0} {1}</value>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
             <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
             <pattern plural="pfOne" index="0">yksi suksi</pattern>
-            <pattern plural="pfOther" index="0">{0} suksea</pattern>
+            <pattern plural="pfOther" index="0">%d suksea</pattern>
             <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
             <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
-            <pattern plural="pfOther" index="1">ja {0} polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %d polkupyörä</pattern>
           </lang>
         </row>
         <row id="en" si="12" created="20160820T024247Z">
@@ -145,13 +112,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="77BD5D47-06DB-4A9F-8149-5CC9FD2912F8" created="20170625T232132Z" lastmodified="20241228T073318Z" version="1.0.1054" stringid="7">
+<project id="77BD5D47-06DB-4A9F-8149-5CC9FD2912F8" created="20170625T232132Z" lastmodified="20260301T200145Z" version="1.0.1090" stringid="9">
   <lang id="fi"/>
-  <node class="TPoSource" name="Driving.po" fullpath="D:\NT\Deploy\Samples\Python\Driving\Driving.po" original="en-US" lastmodified="20241228T073318Z" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="hours:" commenttagdetected="1" frameworkdetected="1">
+  <node class="TPoSource" name="Driving.po" fullpath="D:\NT\Deploy\Samples\Python\Driving\Driving.po" original="en-US" lastmodified="20260301T200145Z" encoding="windows-1252" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="hours:" commenttagdetected="1" frameworkdetected="1">
     <row id="Driving Time" si="1">
       <value>Driving Time</value>
       <lang id="fi" time="20170625T232149Z">Ajoaika</lang>
@@ -14,18 +14,18 @@
       <value>Speed:</value>
       <lang id="fi" time="20170625T232157Z">Nopeus:</lang>
     </row>
-    <row id=" {hours} hour" class="TPatternRow" si="4" scannedcomment="Hours part of the driving time such a 1">
+    <row id=" {hours} hour" changed="20260301T200145Z" si="4" scannedcomment="Hours part of the driving time such a 1" created="20260301T200145Z" codep="1">
       <value> {hours} hours</value>
       <pattern plural="pfOne"> {hours} hour</pattern>
-      <lang id="fi" time="20170625T232204Z">
+      <lang id="fi" st="3" time="20170625T232204Z">
         <value> {hours} tuntia</value>
         <pattern plural="pfOne"> {hours} tunti</pattern>
       </lang>
     </row>
-    <row id=" {minutes} minute" class="TPatternRow" si="5" scannedcomment="minutes: Minutes part of the driving time such as 25">
+    <row id=" {minutes} minute" changed="20260301T200145Z" si="5" scannedcomment="minutes: Minutes part of the driving time such as 25" created="20260301T200145Z" codep="1">
       <value> {minutes} minutes</value>
       <pattern plural="pfOne"> {minutes} minute</pattern>
-      <lang id="fi" time="20170625T232212Z">
+      <lang id="fi" st="3" time="20170625T232212Z">
         <value> {minutes} minuuttia</value>
         <pattern plural="pfOne"> {minutes} minuutti</pattern>
       </lang>
@@ -58,13 +58,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

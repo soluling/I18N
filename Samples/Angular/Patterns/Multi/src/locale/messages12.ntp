@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="3A7FFCFF-54EE-4F40-A150-5AB9B70878DD" created="20260217T150554Z" lastmodified="20260302T123119Z" version="1.0.1090" stringid="9" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Multi\src\locale\messages12.xlf" original="en" lastmodified="20260302T123119Z" encoding="UTF-8" hasmeaning="1">
+    <row id="8884523860497558714" si="1">
+      <value>Sample</value>
+      <lang id="fi" rw="0" time="20260217T150604Z" fuzzy="100">Esimerkki</lang>
+    </row>
+    <row id="2864011278194360095" si="2" created="20260302T123027Z" codep="1">
+      <value>I have {ski} skis.</value>
+      <lang id="fi" rw="0" time="20260217T150604Z" fuzzy="99">Minulla on {ski} suksea.</lang>
+    </row>
+    <row id="7928531771969797429" si="3" created="20260302T123027Z" codep="1">
+      <value>I have {icu0} and {icu1}.</value>
+      <lang id="fi" rw="0" time="20260217T150614Z" fuzzy="99.5">Minulla on {icu0} ja {icu1}.</lang>
+    </row>
+    <row id="6557136595132919743" changed="20260302T123027Z" si="4" created="20260302T123027Z" codep="1">
+      <value>{0} skis</value>
+      <pattern plural="pfOne">{0} ski</pattern>
+      <lang id="fi" rw="0" time="20260217T150624Z">
+        <value>{0} suksea</value>
+        <pattern plural="pfOne">{0} suksi</pattern>
+      </lang>
+    </row>
+    <row id="7086529352788200781" changed="20260302T123027Z" si="5" created="20260302T123027Z" codep="1">
+      <value>{0} cars</value>
+      <pattern plural="pfOne">{0} car</pattern>
+      <lang id="fi" rw="0" time="20260217T150628Z">
+        <value>{0} autoa</value>
+        <pattern plural="pfOne">{0} auto</pattern>
+      </lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

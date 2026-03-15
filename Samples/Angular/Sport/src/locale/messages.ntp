@@ -1,21 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EEDC41F4-A58B-4D56-A74F-CF5D7C2FF457" created="20180411T220906Z" lastmodified="20221118T132753Z" version="1.0.964" stringid="60">
+<project id="EEDC41F4-A58B-4D56-A74F-CF5D7C2FF457" created="20180411T220906Z" lastmodified="20260205T083430Z" version="1.0.1090" stringid="69">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Sport\src\locale\messages.xlf" original="en" lastmodified="20221118T132753Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Sport\src\locale\messages.xlf" original="en" lastmodified="20260205T083430Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
     <row id="src\app\app.component.ts.header" importid="7435492258621955017" si="31" created="20201010T232225Z">
       <value>Sports</value>
       <lang id="fi" rw="0" tm="1" time="20180411T220918Z">Urheilulajit</lang>
       <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">スポーツ</lang>
     </row>
-    <row id="src\app\sports\sport-dialog.component.html.header" importid="4546456403011516690" si="44" created="20201010T232225Z">
+    <row id="src\app\sports\sport-dialog.component.html.dialogHeader" importid="5722142624703335954" si="61" created="20260205T081127Z">
       <value>Sport</value>
       <lang id="fi" rw="0" tm="1" time="20180411T220928Z">Urheilulaji</lang>
       <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">スポーツ</lang>
     </row>
     <row id="src\app\sports\sport-dialog.component.html.bodyText" importid="3965769458978027538" si="45" created="20201010T232225Z">
       <value>Enter properties of a sport.</value>
-      <lang id="fi" rw="0" time="20200317T002348Z">Anna urheilulajin tiedot.</lang>
+      <lang id="fi" rw="0" tm="1" time="20200317T002348Z">Anna urheilulajin tiedot.</lang>
     </row>
     <row id="src\app\sports\sport-dialog.component.html.namePlaceholder" importid="5412061639190455352" si="46" created="20201010T232225Z">
       <value>Name</value>
@@ -83,6 +83,25 @@
       <value>Cancel</value>
       <lang id="fi" rw="0" tm="1" time="20180411T221028Z">Peru</lang>
     </row>
+    <row id="src\app\sports\sport.ts.summer" importid="8929638199641485696" si="66" created="20260205T083422Z">
+      <value>Summer</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180541Z">Kesä</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">夏</lang>
+    </row>
+    <row id="src\app\sports\sport.ts.winter" importid="6145405721110398295" si="67" created="20260205T083422Z">
+      <value>Winter</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180538Z">Talvi</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">冬</lang>
+    </row>
+    <row id="src\app\sports\sport.ts.yes" importid="2678266681370299911" si="68" created="20260205T083422Z">
+      <value>Yes</value>
+      <lang id="fi" rw="0" time="20260205T082803Z" fuzzy="99.5">Kyllä</lang>
+    </row>
+    <row id="src\app\sports\sport.ts.no" importid="281238869516666203" si="69" created="20260205T083422Z">
+      <value>No</value>
+      <lang id="fi" rw="0" tm="1" time="20190128T180536Z">Ei</lang>
+      <lang id="ja" st="2" or="3" rw="0" time="20200422T021826Z">いいえ</lang>
+    </row>
     <row id="src\app\sports\sports.component.html.id" importid="8975348987833106233" si="35" created="20201010T232225Z">
       <value>Id</value>
       <lang id="fi" rw="0" tm="1" time="20180411T221031Z">Tunnus</lang>
@@ -145,19 +164,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

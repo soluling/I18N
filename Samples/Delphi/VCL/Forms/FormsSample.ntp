@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20250204T132315Z" version="1.0.1058" stringid="1324">
+<project id="592895A7-9E6D-48AF-B1D2-679C3EFFDE31" created="20150320T045324Z" lastmodified="20260301T130325Z" version="1.0.1090" stringid="1328">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="de"/>
   <lang id="en"/>
-  <node class="TDelphiSource" name="Win32\Release\FormsSample.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\FormsSample.exe" original="en" lastmodified="20250204T132315Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\FormsSample.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Forms\Win32\Release\FormsSample.exe" original="en" lastmodified="20260301T130325Z" hassignatureread="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="Manifest" resid="24" excluded="1"/>
@@ -993,22 +993,22 @@
         </row>
       </node>
       <node class="TWindowsStringNode" name="MessagesFrm" created="20150321T150249Z">
-        <row id="SMessageGender" class="TPatternRow" si="45" scannedcomment="0: Name of a person" created="20180223T015516Z" original="{gender, male {%s will bring his bicycle} female {%s will bring her bicycle}}">
-          <value gender="geMale">{0} will bring his bicycle</value>
-          <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" rw="0" time="20181024T020804Z">
-            <value gender="geNeutral">{0} tuo pyöränsä</value>
+        <row id="SMessageGender" changed="20260301T130325Z" si="45" scannedcomment="0: Name of a person" created="20260301T130325Z" codep="1">
+          <value gender="geMale">%s will bring his bicycle</value>
+          <pattern gender="geFemale">%s will bring her bicycle</pattern>
+          <lang id="fi" st="3" rw="0" time="20181024T020804Z">
+            <value gender="geNeutral">%s tuo pyöränsä</value>
             <pattern gender="geFemale"></pattern>
           </lang>
         </row>
-        <row id="SMessageSelect" changed="20181024T020750Z" class="TPatternRow" si="46" scannedcomment="0: Name of the player" created="20180223T015516Z" original="{select, soccer {%s is the best soccer player} hockey {%s is the best ice hockey player} basketball {%s is the best basketball player}}">
-          <value select="soccer">{0} is the best soccer player</value>
-          <pattern select="basketball">{0} is the best basketball player</pattern>
-          <pattern select="hockey">{0} is the best ice hockey player</pattern>
-          <lang id="fi" rw="0" time="20181024T020854Z">
-            <value select="soccer">{0} on paras jalkapalloilija</value>
-            <pattern select="basketball">{0} on paras koripalloilija</pattern>
-            <pattern select="hockey">{0} on paras jääkiekkoilija</pattern>
+        <row id="SMessageSelect" changed="20260301T130325Z" si="46" scannedcomment="0: Name of the player" created="20260301T130325Z" codep="1">
+          <value select="soccer">%s is the best soccer player</value>
+          <pattern select="basketball">%s is the best basketball player</pattern>
+          <pattern select="hockey">%s is the best ice hockey player</pattern>
+          <lang id="fi" st="3" rw="0" time="20181024T020854Z">
+            <value select="soccer">%s on paras jalkapalloilija</value>
+            <pattern select="basketball">%s on paras koripalloilija</pattern>
+            <pattern select="hockey">%s on paras jääkiekkoilija</pattern>
           </lang>
         </row>
         <row id="SRuntime" si="906" scannedcomment="Message text" created="20250204T132251Z">
@@ -1025,14 +1025,14 @@
           <value>Hello %s and %s!</value>
           <lang id="fi" st="2" or="3" time="20170507T194548Z">Moi %s ja %s!</lang>
         </row>
-        <row id="SMessagePlural" changed="20170508T140120Z" class="TPatternRow" si="44" scannedcomment="0: File count" created="20170507T194529Z" original="{plural, one {%d file} other {%d files}}">
-          <value>{0} files</value>
-          <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" time="20170508T140148Z">
-            <value>{0} tiedostoa</value>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
+        <row id="SMessagePlural" changed="20260301T130325Z" si="44" scannedcomment="0: File count" created="20260301T130325Z" codep="1">
+          <value>%d files</value>
+          <pattern plural="pfOne">%d file</pattern>
+          <lang id="fi" st="3" time="20170508T140148Z">
+            <value>%d tiedostoa</value>
+            <pattern plural="pfOne">%d tiedosto</pattern>
           </lang>
-          <lang id="ja" time="20170508T140742Z">{0}ファイル</lang>
+          <lang id="ja" st="3" time="20170508T140742Z">%dファイル</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="NtPattern" created="20250204T132251Z">
@@ -1062,7 +1062,7 @@
         <row id="Win_ComConst_SNoMethod" si="928" codep="1">Method '%s' not supported by automation object</row>
         <row id="Win_ComConst_SVarNotObject" si="929">Variant does not reference an automation object</row>
         <row id="Win_ComConst_STooManyParams" si="930">Dispatch methods do not support more than 64 parameters</row>
-        <row id="RTLConsts_SWindowsServer2022" si="1085">Windows Server 2022</row>
+        <row id="RTLConsts_SWindowsServer2025" si="1328" created="20260301T130325Z" st="0">Windows Server 2025</row>
         <row id="RTLConsts_SWindows8" si="1086">Windows 8</row>
         <row id="RTLConsts_SWindows8Point1" si="1087">Windows 8.1</row>
         <row id="RTLConsts_SWindows10" si="1088">Windows 10</row>
@@ -1076,7 +1076,6 @@
         <row id="RTLConsts_sObserverNotAvailable" si="1096">Observer is not available</row>
         <row id="RTLConsts_sMustWaitOnOneEvent" si="1097">Must wait on at least one event</row>
         <row id="RTLConsts_sBeginInvokeDestroying" si="1098">Cannot call BeginInvoke on a TComponent in the process of destruction</row>
-        <row id="RTLConsts_SSPVersionStr" si="1101" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
         <row id="RTLConsts_SVersion32" si="1102">32-bit Edition</row>
         <row id="RTLConsts_SVersion64" si="1103">64-bit Edition</row>
         <row id="RTLConsts_SWindows" si="1104">Windows</row>
@@ -1092,6 +1091,7 @@
         <row id="RTLConsts_SWindowsServer2012R2" si="1114">Windows Server 2012 R2</row>
         <row id="RTLConsts_SWindowsServer2016" si="1115">Windows Server 2016</row>
         <row id="RTLConsts_SWindowsServer2019" si="1116">Windows Server 2019</row>
+        <row id="RTLConsts_SWindowsServer2022" si="1085">Windows Server 2022</row>
         <row id="RTLConsts_SNoTopics" si="1117">No topic-based help system installed</row>
         <row id="RTLConsts_SNothingFound" si="1118" codep="1">No help found for %s</row>
         <row id="RTLConsts_SArgumentOutOfRange" si="1119">Argument out of range</row>
@@ -1100,7 +1100,6 @@
         <row id="RTLConsts_SGenericDuplicateItem" si="1122">Duplicates not allowed</row>
         <row id="RTLConsts_SInsufficientRtti" si="1123">Insufficient RTTI available to support this operation</row>
         <row id="RTLConsts_SParameterCountMismatch" si="1124">Parameter count mismatch</row>
-        <row id="RTLConsts_SParameterCountExceeded" si="1125">Parameter count exceeded</row>
         <row id="RTLConsts_SNonPublicType" si="1126" codep="1">Type '%s' is not declared in the interface section of a unit</row>
         <row id="RTLConsts_SByRefArgMismatch" si="1127">VAR and OUT arguments must match parameter type exactly</row>
         <row id="RTLConsts_SPropIsReadOnly" si="1128" codep="1">Property '%s' is read-only</row>
@@ -1108,6 +1107,7 @@
         <row id="RTLConsts_SInvalidRttiDestroy" si="1130">RTTI objects cannot be manually destroyed by application code</row>
         <row id="RTLConsts_SServiceNotFound" si="1131">Specified Login Credential Service not found</row>
         <row id="RTLConsts_SVersionStr" si="1132" codep="1">%s (Version %d.%d, Build %d, %5:s)</row>
+        <row id="RTLConsts_SSPVersionStr" si="1101" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
         <row id="RTLConsts_sInvalidStringAndObjectArrays" si="1133">Length of Strings and Objects arrays must be equal</row>
         <row id="RTLConsts_sSameArrays" si="1134">Source and Destination arrays must not be the same</row>
         <row id="RTLConsts_sNoConstruct" si="1135" codep="1">Class %s is not intended to be constructed</row>
@@ -1477,7 +1477,7 @@
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <platformfiles>
-      <item file="..\..\Win64\Release\FormsSample.exe" drcfile="..\..\Win64\Release\FormsSample.drc"/>
+      <item file="..\..\..\..\..\..\..\Desktop\Bin\Win64\Debug\Win64\Release\FormsSample.exe" drcfile="..\..\..\..\..\..\..\Desktop\Bin\Win64\Debug\Win64\Release\FormsSample.drc"/>
     </platformfiles>
     <configurations>
       <configuration name="Default" items="[oiLocalized,oiLanguage]"/>
@@ -1494,13 +1494,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

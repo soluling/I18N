@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8987FC76-00B7-40DB-8A58-1FD117F7928D" created="20180223T023830Z" lastmodified="20200209T162354Z" version="1.0.691" stringid="11">
+<project id="8987FC76-00B7-40DB-8A58-1FD117F7928D" created="20180223T023830Z" lastmodified="20260301T133553Z" version="1.0.1090" stringid="12">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TDelphiProjectSource" name="Comments.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Comments\Comments.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="Comments.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Comments\Comments.dproj" original="en" lastmodified="20260301T133553Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
@@ -67,9 +67,9 @@
           <value>Pixels</value>
           <lang id="fi" rw="0" time="20180223T023916Z">Pikseliä</lang>
         </row>
-        <row id="Hello %s, welcome to %s" class="TPatternRow" si="11" scannedcomment="0: Name of the person, 1: Name of the place">
-          <value>Hello {0}, welcome to {1}</value>
-          <lang id="fi" rw="0" time="20180223T023928Z">Moi {0}, tervetuloa {1}:een</lang>
+        <row id="Hello %s, welcome to %s" changed="20260301T133553Z" si="11" scannedcomment="0: Name of the person, 1: Name of the place" created="20260301T133553Z" codep="1">
+          <value>Hello %s, welcome to %s</value>
+          <lang id="fi" st="3" rw="0" time="20180223T023928Z">Moi %s, tervetuloa %s:een</lang>
         </row>
       </node>
     </node>
@@ -80,20 +80,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

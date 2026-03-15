@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="9A4DF261-DFBB-40F2-AA59-45781D98F1E4" created="20180506T023502Z" lastmodified="20221117T122149Z" version="1.0.963" stringid="13">
+<project id="9A4DF261-DFBB-40F2-AA59-45781D98F1E4" created="20180506T023502Z" lastmodified="20260301T124328Z" version="1.0.1090" stringid="14">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20221117T122149Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Multilingual.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Driving\Multilingual\Multilingual.csproj" original="en" lastmodified="20260301T124328Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
@@ -68,6 +68,7 @@
       <row id="flagPictureBox.Size" class="TCoordinateSizeRow" created="20221117T122113Z">48, 48</row>
       <row id="carPictureBox.Location" class="TCoordinatePointRow" created="20221117T122113Z">8, 80</row>
       <row id="carPictureBox.Size" class="TCoordinateSizeRow" created="20221117T122113Z">48, 48</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T124327Z" st="0">345, 137</row>
       <row id="$this.Icon" class="TImageRow" created="20221117T122140Z">
           AAABAA8AAAAAAAEABAD6NAAA9gAAADAwAAABAAQAaAYAAPA1AAAgIAAAAQAEAOgCAABYPAAAGBgAAAEABADoAQAAQD8AABAQAAAB
           AAQAKAEAAChBAAAAAAAAAQAIANJOAABQQgAAMDAAAAEACACoDgAAIpEAACAgAAABAAgAqAgAAMqfAAAYGAAAAQAIAMgGAAByqAAA
@@ -4352,15 +4353,14 @@
           <value>Driving time calculator</value>
           <lang id="fi" or="5" rw="0" time="20180506T025132Z">Ajoaikalaskin</lang>
         </row>
-        <row id="ResultPlural" changed="20181129T153426Z" class="TPatternRow" si="12" created="20181129T152452Z">
+        <row id="ResultPlural" changed="20260301T124327Z" si="12" created="20260301T124327Z" codep="1">
           <value startpattern="1">Driving time is{0}{1}</value>
-          <prev startpattern="1">Driving time is%0:s%1:s</prev>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
           <pattern plural="pfOther" index="0"> {0} hours </pattern>
           <pattern plural="pfOne" index="1">{0} minute</pattern>
           <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" time="20181129T153434Z">
+          <lang id="fi" st="3" rw="0" time="20181129T153434Z">
             <value startpattern="1">Ajoaika on {0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} tunti</pattern>
@@ -4562,7 +4562,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -4576,6 +4575,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

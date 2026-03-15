@@ -13,7 +13,7 @@ import { Component } from '@angular/core';
     male {{dogs, plural, =0 {{{name}} will not bring his dog} one {{{name}} will bring his {{dogs}} dog} other {{{name}} will bring his {{dogs}} dogs}} }
     female {{dogs, plural, =0 {{{name}} will not bring her dog} one {{{name}} will bring her {{dogs}} dog} other {{{name}} will bring her {{dogs}} dogs}} }
     other {{dogs, plural, =0 {Nobody will bring a dog} one {Somebody will bring {{dogs}} dog} other {Somebody will bring {{dogs}} dogs}} }}</p>
-
+<!--
   <p i18n="nested2|name: Name of the person, dogs: Amount of dogs">Dogs: {gender, select,
     male {{dogs, plural, =0 {{{name}} will not bring his dog} one {{{name}} will bring his {{dogs}} dog} other {{{name}} will bring his {{dogs}} dogs}} }
     female {{dogs, plural, =0 {{{name}} will not bring her dog} one {{{name}} will bring her {{dogs}} dog} other {{{name}} will bring her {{dogs}} dogs}} }
@@ -23,6 +23,7 @@ import { Component } from '@angular/core';
     =0 {{gender, select, male {{{name}} will not bring his dog} female {{{name}} will not bring her dog} other {Nobody will bring a dog}} }
     one {{gender, select, male {{{name}} will not bring his {{dogs}} dog} female {{{name}} will bring her {{dogs}} dog} other {Somebody will bring {{dogs}} dog}} }
     other {{gender, select, male {{{name}} will bring his {{dogs}} dogs} female {{{name}} will bring her {{dogs}} dogs} other {Somebody will bring {{dogs}} dogs}} }}</p>
+-->
     `,
     standalone: false
 })

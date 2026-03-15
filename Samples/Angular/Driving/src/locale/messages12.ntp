@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="D9675A58-C1D2-46F3-BE57-D07C5F753381" created="20260204T115636Z" lastmodified="20260301T162806Z" version="1.0.1090" stringid="9" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Driving\src\locale\messages12.xlf" original="en" lastmodified="20260301T162806Z" encoding="UTF-8" hasmeaning="1">
+    <row id="5672754662376866280" si="1">
+      <value>Driving Time</value>
+      <lang id="fi" rw="0" time="20260204T115642Z" fuzzy="100">Ajoaika</lang>
+    </row>
+    <row id="5005141257091855131" si="2">
+      <value>Calculate</value>
+      <lang id="fi" rw="0" time="20260217T112357Z">Laske</lang>
+    </row>
+    <row id="5516112325374793270" changed="20260217T084427Z" si="3" created="20260301T162806Z" codep="1">
+      <value>Driving time is {icu0} {icu1}</value>
+      <prev>Driving time is {0} {1}</prev>
+      <lang id="fi" rw="0" time="20260204T120707Z" fuzzy="100">Ajoaika on {icu0} {icu1}</lang>
+    </row>
+    <row id="4892912909971286976" changed="20260301T162806Z" si="4" created="20260301T162806Z" codep="1">
+      <value>{0} hours </value>
+      <pattern operator="okEqual" operand="0"></pattern>
+      <pattern plural="pfOne">{0} hour </pattern>
+      <lang id="fi" st="3" rw="0" time="20260204T122255Z" fuzzy="99.5">
+        <value>{0} tuntia </value>
+        <pattern operator="okEqual" operand="0"></pattern>
+        <pattern plural="pfOne">{0} tunti </pattern>
+      </lang>
+    </row>
+    <row id="3023394972653842807" changed="20260301T162806Z" si="5" created="20260301T162806Z" codep="1">
+      <value>{0} minutes</value>
+      <pattern plural="pfOne">{0} minute</pattern>
+      <lang id="fi" st="3" rw="0" time="20260204T122238Z" fuzzy="100">
+        <value>{0} minuuttia</value>
+        <pattern plural="pfOne">{0} minuutti</pattern>
+      </lang>
+    </row>
+    <row id="1187906511615154129" si="6">
+      <value>Opening Driving Time Calculator dialog...</value>
+      <lang id="fi" rw="0" time="20260204T115651Z" fuzzy="99.5">Avataan ajoaikalaskuri-valintaikkuna...</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

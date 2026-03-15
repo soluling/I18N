@@ -1,17 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="01683CCD-51AC-45B6-AE48-9098BE14CECB" created="20201009T024930Z" lastmodified="20201010T023230Z" version="1.0.789" lockedrowcomplete="0" stringid="9">
+<project id="01683CCD-51AC-45B6-AE48-9098BE14CECB" created="20201009T024930Z" lastmodified="20260301T195852Z" version="1.0.1090" lockedrowcomplete="0" stringid="11">
   <lang id="fi"/>
-  <node class="TSvelteI18nSource" name="en.json" fullpath="D:\NT\Deploy\Samples\Svelte\Sample\en.json" original="en" encoding="utf-8">
-    <row id="ski" changed="20201010T013850Z" class="TPatternRow" si="9" created="20201010T010550Z">
+  <node class="TSvelteI18nSource" name="en.json" fullpath="D:\NT\Deploy\Samples\Svelte\Sample\en.json" original="en" lastmodified="20260301T195852Z" encoding="utf-8">
+    <row id="ski" changed="20260301T195852Z" si="9" created="20260301T195852Z" codep="1">
       <value startpattern="1">I have {0}</value>
       <pattern operator="okEqual" operand="0">no skis</pattern>
-      <pattern plural="pfOne">{0} ski</pattern>
-      <pattern plural="pfOther">{0} skis</pattern>
-      <lang id="fi" st="4" rw="0" time="20201010T014459Z">
+      <pattern plural="pfOne"># ski</pattern>
+      <pattern plural="pfOther"># skis</pattern>
+      <lang id="fi" st="3" rw="0" time="20201010T014459Z">
         <value startpattern="1">Minulla on {0}</value>
         <pattern operator="okEqual" operand="0">ei yhtään suksea</pattern>
-        <pattern plural="pfOne">{0} suksi</pattern>
-        <pattern plural="pfOther">{0} suksea</pattern>
+        <pattern plural="pfOne"># suksi</pattern>
+        <pattern plural="pfOther"># suksea</pattern>
       </lang>
     </row>
     <item class="TJsonResourceComponent" name="common">
@@ -25,19 +25,19 @@
       </row>
     </item>
     <item class="TJsonResourceComponent" name="pattern">
-      <row id="message" class="TPatternRow" si="4">
+      <row id="message" si="4" created="20260301T195852Z" codep="1">
         <value>Today is {date}</value>
         <lang id="fi" st="4" rw="0" time="20201010T014619Z" fuzzy="5">Tänään on {date}</lang>
       </row>
     </item>
     <item class="TJsonResourceComponent" name="footer">
       <row id="value1" class="THtmlRow" si="5" created="20201009T030056Z">
-        <value>Please read &lt;a href=&quot;{url}&quot;&gt;this&lt;/a&gt; article.</value>
-        <lang id="fi" st="4" or="6" rw="0" time="20201010T023222Z" fuzzy="5">Lue &lt;a href=&quot;{url}&quot;&gt;tämä&lt;/a&gt; artikkeli.</lang>
+        <value>Please read &lt;a href="{url}">this&lt;/a> article.</value>
+        <lang id="fi" st="4" or="6" rw="0" time="20201010T023222Z" fuzzy="5">Lue &lt;a href="{url}">tämä&lt;/a> artikkeli.</lang>
       </row>
       <row id="value2" class="THtmlRow" si="6" created="20201009T030056Z">
-        <value>This is written in &lt;a href=&quot;{toolUrl}&quot;&gt;Svelte&lt;/a&gt; &amp;amp; &lt;a href=&quot;{editorUrl}&quot;&gt;VS Code&lt;/a&gt;.</value>
-        <lang id="fi" st="4" or="6" rw="0" time="20201010T023226Z" fuzzy="5">Tämä on kirjoitettu &lt;a href=&quot;{toolUrl}&quot;&gt;Svelte&lt;/a&gt; &amp;amp; &lt;a href=&quot;{editorUrl}&quot;&gt;VS -koodilla&lt;/a&gt;.</lang>
+        <value>This is written in &lt;a href="{toolUrl}">Svelte&lt;/a> &amp;amp; &lt;a href="{editorUrl}">VS Code&lt;/a>.</value>
+        <lang id="fi" st="4" or="6" rw="0" time="20201010T023226Z" fuzzy="5">Tämä on kirjoitettu &lt;a href="{toolUrl}">Svelte&lt;/a> &amp;amp; &lt;a href="{editorUrl}">VS -koodilla&lt;/a>.</lang>
       </row>
     </item>
     <data>
@@ -55,21 +55,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

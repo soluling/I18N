@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B1374969-33CF-416C-8436-1598750FBCAD" created="20220515T003429Z" lastmodified="20241228T060142Z" version="1.0.1054" lockedrowcomplete="0" stringid="886">
+<project id="B1374969-33CF-416C-8436-1598750FBCAD" created="20220515T003429Z" lastmodified="20260301T133348Z" version="1.0.1090" lockedrowcomplete="0" stringid="888">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Binary.exe" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Driving\Binary\Win32\Release\Binary.exe" original="en" lastmodified="20241228T060142Z" platforms="[ptWin32,ptWin64,ptMacOS64]" hassignatureread="1" drcscanmode="drcNew" library="dlFireMonkey" version="dvAlexandria">
+  <node class="TDelphiSource" name="Win32\Release\Binary.exe" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Driving\Binary\Win32\Release\Binary.exe" original="en" lastmodified="20260301T133348Z" platforms="[ptWin32,ptWin64,ptMacOS64]" hassignatureread="1" drcscanmode="drcNew" library="dlFireMonkey" version="dvAlexandria">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -409,20 +409,36 @@
       <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" class="TPatternRow" si="14" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-          <value startpattern="1">Driving time{0}{1}.</value>
+        <row id="SResultPlural" changed="20260301T133347Z" si="14" created="20260301T133347Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" time="20220515T003608Z">
-            <value startpattern="1">Ajoaika{0}{1}.</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" rw="0" time="20220515T003608Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
+          </lang>
+        </row>
+        <row id="SResultPlural.macOS64" si="888" created="20260301T133347Z" st="0" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
+          <pattern plural="pfZero" index="0"> </pattern>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="2" or="3" rw="0" time="20220515T003608Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
         </row>
         <row id="SAbout" si="15">
@@ -443,13 +459,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

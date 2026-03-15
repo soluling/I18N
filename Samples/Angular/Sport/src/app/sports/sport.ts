@@ -69,9 +69,9 @@ export class Sport
   get olympicAsString(): string
   {
     if (this.olympic == Olympic.Summer)
-      return "Summer";
+      return $localize`:summer|:Summer`;
     else if (this.olympic == Olympic.Winter)
-      return "Winter";
+      return $localize`:winter|:Winter`;
     else  
       return "";
   }
@@ -81,9 +81,9 @@ export class Sport
     if (this.goalie == undefined)
       return "";
     else if (this.goalie)
-      return "Yes";
+      return $localize`:yes|:Yes`;
     else  
-      return "No";
+      return $localize`:no|:No`;
   }
 
   // There can be several language variants of the language

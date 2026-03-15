@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="111FFF81-4918-42D2-A26C-B05EA3602EF1" created="20181130T002448Z" lastmodified="20221117T125826Z" version="1.0.963" stringid="23">
+<project id="111FFF81-4918-42D2-A26C-B05EA3602EF1" created="20181130T002448Z" lastmodified="20260301T112612Z" version="1.0.1090" stringid="27">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="MixedPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Mixed\MixedPlural.csproj" original="en" lastmodified="20221117T125826Z" resources="[nrResx,nrForm]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="MixedPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Mixed\MixedPlural.csproj" original="en" lastmodified="20260301T112543Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="noPluralLabel.Location" class="TCoordinatePointRow" created="20221117T125824Z" st="0">8, 8</row>
@@ -67,6 +67,7 @@
       <row id="multiPluralLabel4.Location" class="TCoordinatePointRow" created="20221117T125824Z" st="0">8, 288</row>
       <row id="multiPluralLabel4.Size" class="TCoordinateSizeRow" created="20221117T125824Z" st="0">40, 13</row>
       <row id="multiPluralLabel4.Text" si="17" excluded="2">dummy</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T112526Z" st="0">418, 313</row>
       <row id="$this.Text" si="18">
         <value>Plural Sample</value>
         <lang id="fi" rw="0" time="20181130T002642Z">Monikkoesimerkki</lang>
@@ -442,15 +443,15 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="File" class="TPatternRow" si="19">
+        <row id="File" si="19" created="20260301T112526Z" codep="1">
           <value>{0} file</value>
           <lang id="fi" rw="0" time="20181130T002508Z">{0} tiedosto</lang>
         </row>
-        <row id="Files" class="TPatternRow" si="20">
+        <row id="Files" si="20" created="20260301T112526Z" codep="1">
           <value>{0} files</value>
           <lang id="fi" rw="0" time="20181130T002513Z">{0} tiedostoa</lang>
         </row>
-        <row id="FilesPlural" class="TPatternRow" si="21" scannedcomment="Singular and plural parts">
+        <row id="FilesPlural" changed="20260301T112526Z" si="21" scannedcomment="Singular and plural parts" created="20260301T112526Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" rw="0" time="20181130T002518Z">
@@ -462,7 +463,7 @@
           <value>en</value>
           <lang id="fi" rw="0" time="20181130T002521Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" si="23" scannedcomment="Start, nullar1, singular1, plural1, separator, nullar2, singular2 and plural2">
+        <row id="MessagePlural" changed="20260301T112526Z" si="23" scannedcomment="Start, nullar1, singular1, plural1, separator, nullar2, singular2 and plural2" created="20260301T112526Z" codep="1">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
@@ -588,7 +589,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -602,6 +602,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

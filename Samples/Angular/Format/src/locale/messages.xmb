@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<messagebundle handler="angular">
+  <msg id="1238358838717941284"><source>src/app/app.component.ts:5,8</source>Sample</msg>
+  <msg id="2936540941337291086"><source>src/app/app.component.ts:6,9</source>Plain text.</msg>
+  <msg id="3470233261567573756"><source>src/app/app.component.ts:7,9</source>This is <ph name="START_BOLD_TEXT"/>bold<ph name="CLOSE_BOLD_TEXT"/> text.</msg>
+  <msg id="1113049417578720870"><source>src/app/app.component.ts:8,10</source>This is <ph name="START_BOLD_TEXT"/>bold<ph name="CLOSE_BOLD_TEXT"/> and <ph name="START_BOLD_TEXT"/>new<ph name="CLOSE_BOLD_TEXT"/> text.</msg>
+  <msg id="809560289757283545"><source>src/app/app.component.ts:9,11</source>This is <ph name="START_BOLD_TEXT"/>bold<ph name="CLOSE_BOLD_TEXT"/> and <ph name="START_ITALIC_TEXT"/>new<ph name="CLOSE_ITALIC_TEXT"/> text.</msg>
+  <msg id="8054028500806738029" meaning="defaultLink"><source>src/app/app.component.ts:10,12</source>This is <ph name="START_LINK"/>link<ph name="CLOSE_LINK"/> sample.</msg>
+  <msg id="1486051472349047684" meaning="blankLink"><source>src/app/app.component.ts:11,13</source>This is <ph name="START_LINK"/>link<ph name="CLOSE_LINK"/> sample.</msg>
+  <msg id="2091152160218617666"><source>src/app/app.component.ts:12,15</source>This is <ph name="START_LINK"/>link<ph name="CLOSE_LINK"/> and <ph name="START_BOLD_TEXT"/>bold<ph name="CLOSE_BOLD_TEXT"/> sample.</msg>
+</messagebundle>

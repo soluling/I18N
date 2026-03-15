@@ -1,15 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="BE970C10-979A-4A9C-B4AA-A1D666D3BEC8" created="20181130T005604Z" lastmodified="20221117T130624Z" version="1.0.963" stringid="1">
+<project id="BE970C10-979A-4A9C-B4AA-A1D666D3BEC8" created="20181130T005604Z" lastmodified="20260301T104611Z" version="1.0.1090" stringid="2">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Select.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Select\Select.csproj" original="en" lastmodified="20221117T130624Z" netconfiguration="Debug|AnyCPU">
+  <node class="TNetProjectSource" name="Select.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Select\Select.csproj" original="en" lastmodified="20260301T104611Z" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="SportSelect" class="TPatternRow" si="1" scannedcomment="0: Name of the player">
+        <row id="SportSelect" changed="20260301T104609Z" si="1" scannedcomment="0: Name of the player" created="20260301T104609Z" codep="1">
           <value select="soccer">{0} is the best soccer player</value>
           <pattern select="basketball">{0} is the best basketball player</pattern>
           <pattern select="hockey">{0} is the best ice hockey player</pattern>
-          <lang id="fi" rw="0" time="20181130T005641Z">
+          <lang id="fi" st="3" rw="0" time="20181130T005641Z">
             <value select="soccer">{0} on paras jalkapaloilija</value>
             <pattern select="basketball">{0} on paras koripalloilija</pattern>
             <pattern select="hockey">{0} on paras jääkiekkoilija</pattern>
@@ -124,7 +124,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -138,6 +137,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

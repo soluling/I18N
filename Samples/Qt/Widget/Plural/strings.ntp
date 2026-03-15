@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="6F718AEA-E5E4-4566-98AF-EE5AFC05A57D" created="20190111T163409Z" lastmodified="20210521T140155Z" version="1.0.855" stringid="2">
+<project id="6F718AEA-E5E4-4566-98AF-EE5AFC05A57D" created="20190111T163409Z" lastmodified="20260228T185120Z" version="1.0.1090" stringid="3">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TQtTsSource" name="strings.ts" fullpath="D:\NT\Deploy\Samples\Qt\Widget\Plural\strings.ts" original="en" encoding="windows-1252">
+  <node class="TQtTsSource" name="strings.ts" fullpath="D:\NT\Deploy\Samples\Qt\Widget\Plural\strings.ts" original="en" lastmodified="20260228T185120Z" encoding="windows-1252">
     <node class="TQtNode" name="Dialog">
       <row id="Plural Sample" si="1">
         <value>Plural Sample</value>
@@ -11,12 +11,12 @@
         <lang id="de" or="4" rw="0" time="20190111T163409Z">Plural Probe</lang>
         <lang id="ja" or="4" rw="0" time="20190111T163409Z">複数サンプル</lang>
       </row>
-      <row id="%n file" changed="20210521T140123Z" class="TPatternRow" si="2">
-        <value>{0} file</value>
-        <pattern plural="pfOne">{0} file</pattern>
+      <row id="%n file" changed="20260228T185120Z" si="2" created="20260228T185120Z" codep="1">
+        <value>%n file</value>
+        <pattern plural="pfOne">%n file</pattern>
         <lang id="fi" st="4" rw="0" time="20210521T140142Z">
-          <value>{0} tiedostoa</value>
-          <pattern plural="pfOne">{0} tiedosto</pattern>
+          <value>%n tiedostoa</value>
+          <pattern plural="pfOne">%n tiedosto</pattern>
         </lang>
         <lang id="de" st="3" or="4" rw="0" time="20190111T163409Z">
           <value>%n Dateien</value>
@@ -29,21 +29,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

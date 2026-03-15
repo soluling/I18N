@@ -1,47 +1,46 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E85112C8-3B85-4871-B682-D720E0B961F5" created="20171204T211602Z" lastmodified="20201010T232611Z" version="1.0.790" stringid="9">
+<project id="E85112C8-3B85-4871-B682-D720E0B961F5" created="20171204T211602Z" lastmodified="20260302T115152Z" version="1.0.1090" stringid="11">
   <lang id="fi"/>
   <lang id="en"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Gender\src\locale\messages.xlf" original="en" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Gender\src\locale\messages.xlf" original="en" lastmodified="20260302T115152Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
     <row id="src\app\app.component.ts.header" importid="9062141988063736217" si="7" created="20201010T232523Z">
       <value>Gender Sample</value>
-      <lang id="fi" rw="0">Sukuesimerkki</lang>
+      <lang id="fi" rw="0" tm="1">Sukuesimerkki</lang>
       <lang id="en" st="2" or="3" rw="0" time="20180523T185225Z">Gender Sample</lang>
     </row>
-    <row id="src\app\name.component.ts.value" importid="2792220360813277329" class="TPatternRow" si="8" scannedcomment="name: Name of the person" created="20201010T232523Z">
+    <row id="src\app\name.component.ts.value" importid="1504376677998785183" changed="20260302T115143Z" si="8" scannedcomment="name: Name of the person" created="20260302T115143Z" codep="1">
       <value gender="geMale">{0} drives his car.</value>
       <pattern gender="geFemale">{0} drives her car.</pattern>
-      <lang id="fi" rw="0" time="20200904T104129Z">{0} ajaa autoaan.</lang>
+      <lang id="fi" rw="0" tm="1" time="20200904T104129Z">{0} ajaa autoaan.</lang>
       <lang id="en" st="2" or="3" rw="0" time="20200904T104211Z">
         <value gender="geMale">{0} drives his car.</value>
         <pattern gender="geFemale">{0} drives her car.</pattern>
       </lang>
     </row>
-    <row id="src\app\name.component.ts.value2" importid="2260906681375880880" class="TPatternRow" si="9" scannedcomment="name: Name of the person" created="20201010T232523Z">
+    <row id="src\app\name.component.ts.value2" importid="2437561966934534343" changed="20260302T115143Z" si="9" scannedcomment="name: Name of the person" created="20260302T115143Z" codep="1">
       <value gender="geNeutral">{0} drives the car.</value>
       <pattern gender="geMale">{0} drives his car.</pattern>
       <pattern gender="geFemale">{0} drives her car.</pattern>
-      <lang id="fi" rw="0" time="20200904T104139Z">{0} ajaa autoaan.</lang>
+      <lang id="fi" rw="0" tm="1" time="20200904T104139Z">{0} ajaa autoaan.</lang>
     </row>
+    <configurations>
+      <configuration name="Default"/>
+    </configurations>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="SQL Server" type="TSqlServerTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

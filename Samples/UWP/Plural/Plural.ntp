@@ -1,42 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="424732C2-3BD0-4808-9EAA-832225A39AF5" created="20130111T095904Z" lastmodified="20200316T185056Z" version="1.0.714" stringid="2">
+<project id="424732C2-3BD0-4808-9EAA-832225A39AF5" created="20130111T095904Z" lastmodified="20260302T071521Z" version="1.0.1090" stringid="3">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TUwpProjectSource" name="Plural.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Plural\Plural.csproj" original="en" defaultlanguage="en" scansource="rsNeutral" resources="[rtResw]" availableresources="[rtResw,rtXaml,rtImage]">
-    <node class="TResXNode" name="Resources.resw">
+  <node class="TUwpProjectSource" name="Plural.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Plural\Plural.csproj" original="en" lastmodified="20260302T071521Z" defaultlanguage="en" scansource="rsNeutral" resources="[rtResw]" availableresources="[rtResw,rtXaml,rtImage]">
+    <node class="TResXNode" name="Resources.resw" windowsforms="wfCore">
       <row id="Language" si="1" scannedcomment="This specifies the language code of the language (en, de, fr, ...)" created="20130111T095904Z">
         <value>en</value>
         <lang id="fi" time="20130112T020924Z">fi</lang>
         <lang id="ja" time="20130112T020943Z">ja</lang>
       </row>
-      <row id="MessagePlural" class="TPatternRow" si="2" created="20181219T013054Z">
+      <row id="MessagePlural" changed="20260302T071521Z" si="2" scannedcomment="0: Amount of files" created="20260302T071521Z" codep="1">
         <value>{0} files</value>
         <pattern plural="pfOne">{0} file</pattern>
-        <lang id="fi" rw="0" time="20181219T013137Z">
+        <lang id="fi" st="3" rw="0" time="20181219T013137Z">
           <value>{0} tiedostoa</value>
           <pattern plural="pfOne">{0} tiedosto</pattern>
         </lang>
-        <lang id="ja" rw="0" time="20181219T013203Z">{0}　ファイル</lang>
+        <lang id="ja" st="3" rw="0" time="20181219T013203Z">{0}　ファイル</lang>
       </row>
     </node>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

@@ -1,23 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D0CBDEEC-4FC9-47D6-8936-DA3CB014A173" created="20200904T005938Z" lastmodified="20200904T010728Z" version="1.0.772" lockedrowcomplete="0" stringid="10">
+<project id="D0CBDEEC-4FC9-47D6-8936-DA3CB014A173" created="20200904T005938Z" lastmodified="20260302T153216Z" version="1.0.1090" lockedrowcomplete="0" stringid="13">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.json" fullpath="D:\NT\Deploy\Samples\Angular\Runtime\src\locale\messages.json" original="en" encoding="windows-1252">
-    <row id="224905756619582507" si="1">
-      <value>This is a sample.</value>
-      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on esimerkki.</lang>
-      <lang id="ja" rw="0" time="20200904T010107Z" fuzzy="5">これはサンプルです。</lang>
-    </row>
-    <row id="4231664889986575153" class="TTagRow" si="2">
-      <value>My name is &lt;PH/&gt;</value>
-      <lang id="fi" rw="0" time="20200904T010047Z" fuzzy="5">Nimeni on &lt;PH/&gt;</lang>
-      <lang id="ja" rw="0" time="20200904T010343Z" fuzzy="5">私の名前は&lt;PH/&gt;です</lang>
-    </row>
-    <row id="3501459928511353606" class="TTagRow" si="3">
-      <value>&lt;PH/&gt; and &lt;PH_1/&gt; will come</value>
-      <lang id="fi" rw="0" time="20200904T010015Z" fuzzy="5">&lt;PH/&gt; ja &lt;PH_1/&gt; tulevat</lang>
-      <lang id="ja" rw="0" time="20200904T010658Z">&lt;PH/&gt;と&lt;PH_1/&gt;が来ます</lang>
-    </row>
+  <node class="TAngularSource" name="messages.json" fullpath="D:\NT\Deploy\Samples\Angular\Runtime\src\locale\messages.json" original="en" lastmodified="20260302T153216Z" encoding="windows-1252">
     <row id="1238358838717941284" si="4">
       <value>Sample</value>
       <lang id="fi" rw="0" time="20200904T010002Z">Esimerkki</lang>
@@ -29,24 +14,39 @@
       <lang id="ja" rw="0" time="20200904T010101Z">スタティック テキスト</lang>
     </row>
     <row id="2184669140276043151" class="TTagRow" si="6">
-      <value>This is a &lt;b&gt;new&lt;/b&gt; sample</value>
-      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on &lt;b&gt;uusi&lt;/b&gt; esimerkki</lang>
-      <lang id="ja" rw="0" time="20200904T010101Z">これは&lt;b&gt;新しい&lt;/b&gt;サンプルです</lang>
+      <value>This is a &lt;b>new&lt;/b> sample</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on &lt;b>uusi&lt;/b> esimerkki</lang>
+      <lang id="ja" rw="0" time="20200904T010101Z">これは&lt;b>新しい&lt;/b>サンプルです</lang>
     </row>
-    <row id="3683231710138827964" class="TPatternRow" si="7">
+    <row id="3683231710138827964" si="7" created="20260302T153216Z" codep="1">
       <value>My name is {0}</value>
       <lang id="fi" rw="0" time="20200904T010002Z">Nimeni on {0}</lang>
       <lang id="ja" rw="0" time="20200904T010512Z" fuzzy="5">私の名前は{0}です</lang>
     </row>
-    <row id="6979255853066988770" class="TPatternRow" si="8">
+    <row id="6979255853066988770" si="8" created="20260302T153216Z" codep="1">
       <value>{0} and {1} are my friends</value>
       <lang id="fi" rw="0" time="20200904T010034Z" fuzzy="5">{0} ja {1} ovat ystäviäni</lang>
       <lang id="ja" rw="0" time="20200904T010316Z" fuzzy="5">{0}と{1}は私の友人です</lang>
     </row>
-    <row id="4314513045811054997" class="TPatternRow" si="10">
+    <row id="224905756619582507" si="1">
+      <value>This is a sample.</value>
+      <lang id="fi" rw="0" time="20200904T010002Z">Tämä on esimerkki.</lang>
+      <lang id="ja" rw="0" time="20200904T010107Z" fuzzy="5">これはサンプルです。</lang>
+    </row>
+    <row id="4314513045811054997" si="10" created="20260302T153216Z" codep="1">
       <value>{0} and {1} will come</value>
       <lang id="fi" rw="0" time="20200904T010029Z" fuzzy="5">{0} ja {1} tulevat</lang>
       <lang id="ja" rw="0" time="20200904T010710Z" fuzzy="5">{0}と{1}が来ます</lang>
+    </row>
+    <row id="4231664889986575153" class="TTagRow" si="2">
+      <value>My name is &lt;PH/></value>
+      <lang id="fi" rw="0" time="20200904T010047Z" fuzzy="5">Nimeni on &lt;PH/></lang>
+      <lang id="ja" rw="0" time="20200904T010343Z" fuzzy="5">私の名前は&lt;PH/>です</lang>
+    </row>
+    <row id="3501459928511353606" class="TTagRow" si="3">
+      <value>&lt;PH/> and &lt;PH_1/> will come</value>
+      <lang id="fi" rw="0" time="20200904T010015Z" fuzzy="5">&lt;PH/> ja &lt;PH_1/> tulevat</lang>
+      <lang id="ja" rw="0" time="20200904T010658Z">&lt;PH/>と&lt;PH_1/>が来ます</lang>
     </row>
     <configurations>
       <configuration name="Default" dir="..\assets\i18n" localized="&lt;id&gt;.&lt;ext&gt;"/>
@@ -58,22 +58,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings range="srView">
-    </settings>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

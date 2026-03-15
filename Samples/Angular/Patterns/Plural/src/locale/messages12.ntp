@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="2A57425B-E232-4F21-A7A5-CF96956FE50E" created="20260204T125057Z" lastmodified="20260302T151951Z" version="1.0.1090" stringid="3" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Plural\src\locale\messages12.xlf" original="en" lastmodified="20260302T151951Z" encoding="UTF-8" hasmeaning="1">
+    <row id="1835493080467832141" si="1">
+      <value>Plural Sample</value>
+      <lang id="fi" rw="0" time="20260204T125126Z" fuzzy="100">Monikkoesimerkki</lang>
+    </row>
+    <row id="1650028955215730946" changed="20260302T151946Z" si="2" scannedcomment="num: Number of files" created="20260302T151946Z" codep="1">
+      <value>{0} files</value>
+      <pattern plural="pfOne">{0} file</pattern>
+      <lang id="fi" fixed="1" rw="0" time="20260204T125114Z" fuzzy="100">
+        <value>{0} tiedostoa</value>
+        <pattern plural="pfOne">{0} tiedosto</pattern>
+      </lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

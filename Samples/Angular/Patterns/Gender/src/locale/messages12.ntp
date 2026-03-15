@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="B7C42294-19CB-4EFA-B295-7099D51DFD0D" created="20260217T144403Z" lastmodified="20260302T115259Z" version="1.0.1090" stringid="5" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Gender\src\locale\messages12.xlf" original="en" lastmodified="20260302T115259Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="src\app\app.component.ts.header" importid="9062141988063736217" si="1">
+      <value>Gender Sample</value>
+      <lang id="fi" rw="0" time="20260217T144406Z" fuzzy="100">Sukuesimerkki</lang>
+    </row>
+    <row id="src\app\name.component.ts.value" importid="1504376677998785183" changed="20260302T115254Z" si="2" scannedcomment="name: Name of the person" created="20260302T115254Z" codep="1">
+      <value gender="geMale">{0} drives his car.</value>
+      <pattern gender="geFemale">{0} drives her car.</pattern>
+      <lang id="fi" rw="0" time="20260217T144410Z" fuzzy="99.5">{0} ajaa autollaan.</lang>
+    </row>
+    <row id="src\app\name.component.ts.value2" importid="2437561966934534343" changed="20260302T115254Z" si="3" scannedcomment="name: Name of the person" created="20260302T115254Z" codep="1">
+      <value gender="geNeutral">{0} drives the car.</value>
+      <pattern gender="geMale">{0} drives his car.</pattern>
+      <pattern gender="geFemale">{0} drives her car.</pattern>
+      <lang id="fi" rw="0" time="20260217T144412Z" fuzzy="99.5">{0} ajaa autoa.</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

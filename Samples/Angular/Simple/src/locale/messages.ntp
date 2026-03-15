@@ -1,32 +1,42 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CBC5ECBB-9A46-44A3-88D6-F9E801D9F88E" created="20200325T224612Z" lastmodified="20220331T220333Z" version="1.0.912" lockedrowcomplete="0" stringid="6">
+<project id="CBC5ECBB-9A46-44A3-88D6-F9E801D9F88E" created="20200325T224612Z" lastmodified="20260314T051450Z" version="1.0.1091" stringid="20">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Simple\src\locale\messages.xlf" original="en" lastmodified="20220331T220333Z" encoding="UTF-8" hasmeaning="1">
-    <row id="1238358838717941284" si="1">
+  <node class="TAngularSource" name="messages.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Simple\src\locale\messages.xlf" original="en" lastmodified="20260314T051450Z" encoding="utf-8" context="acMeaning" hasmeaning="1">
+    <row id="1238358838717941284" si="16" created="20260208T041616Z">
       <value>Sample</value>
-      <lang id="fi" rw="0" time="20200325T224624Z" fuzzy="99">Esimerkki</lang>
+      <lang id="fi" rw="0" tm="1" time="20200325T224624Z" fuzzy="99">Esimerkki</lang>
       <lang id="de" rw="0" time="20200325T224657Z" fuzzy="99">Beispiel</lang>
       <lang id="ja" rw="0" time="20200325T235948Z" fuzzy="99">サンプル</lang>
     </row>
-    <row id="3067469718492071419" si="2">
+    <row id="3067469718492071419" si="17" created="20260208T041616Z">
       <value>This is a sample</value>
-      <lang id="fi" rw="0" time="20200325T224628Z" fuzzy="99">Tämä on esimerkki</lang>
+      <lang id="fi" rw="0" tm="1" time="20200325T224628Z" fuzzy="99">Tämä on esimerkki</lang>
       <lang id="de" rw="0" time="20200325T235934Z">Dies ist ein Beispiel</lang>
       <lang id="ja" rw="0" time="20200325T235951Z" fuzzy="99">これはサンプルです</lang>
     </row>
-    <row id="4848371593517801531" class="TPatternRow" si="4" scannedcomment="hello1" created="20200824T150521Z">
-      <value>Hello {name}!</value>
-      <lang id="fi" rw="0" time="20201010T232038Z" fuzzy="100">Moi {name}!</lang>
+    <row id="src\app\app.component.html.sample" importid="5425338937505052468" si="12" created="20260208T040625Z">
+      <value>This is another sample</value>
+      <lang id="fi" rw="0" tm="1" time="20260208T044212Z" fuzzy="99.5">Tämä on toinen näyte</lang>
+      <lang id="de" rw="0" time="20260208T044239Z" fuzzy="99.5">Dies ist ein weiteres Beispiel</lang>
+      <lang id="ja" rw="0" time="20260208T044252Z" fuzzy="99.5">これは別のサンプルです</lang>
     </row>
-    <row id="7863711721538167134" class="TPatternRow" si="6" scannedcomment="name: The name of the user" created="20201010T232022Z">
+    <row id="src\app\app.component.html.hello1" importid="8939647729368002019" si="13" created="20260302T153552Z" codep="1">
       <value>Hello {name}!</value>
-      <lang id="fi" rw="0" time="20201010T232039Z">Moi {name}!</lang>
+      <lang id="fi" rw="0" tm="1" time="20201010T232038Z" fuzzy="100">Moi {name}!</lang>
+      <lang id="de" rw="0" time="20260208T044230Z" fuzzy="99.5">Hallo {name}!</lang>
+      <lang id="ja" rw="0" time="20260208T044304Z" fuzzy="99.5">こんにちは、{name}さん！</lang>
     </row>
-    <row id="6727813075332149615" si="3" created="20200326T004230Z">
+    <row id="src\app\app.component.html.hello2" importid="5684208989614752536" si="14" scannedcomment="name: The name of the user" created="20260302T153552Z" codep="1">
+      <value>Hello {name}!</value>
+      <lang id="fi" rw="0" tm="1" time="20201010T232038Z" fuzzy="100">Moi {name}!</lang>
+      <lang id="de" rw="0" time="20260208T044234Z">Hallo {name}!</lang>
+      <lang id="ja" rw="0" time="20260208T044305Z">こんにちは、{name}さん！</lang>
+    </row>
+    <row id="6727813075332149615" si="18" created="20260208T041616Z">
       <value>Source code string</value>
-      <lang id="fi" rw="0" time="20200326T004236Z" fuzzy="5">Lähdekoodin merkkijono</lang>
+      <lang id="fi" rw="0" tm="1" time="20200326T004236Z" fuzzy="5">Lähdekoodin merkkijono</lang>
       <lang id="de" rw="0" time="20200710T014054Z" fuzzy="5">Quellcodezeichenfolge</lang>
       <lang id="ja" rw="0" time="20200710T014108Z" fuzzy="5">ソース コード文字列</lang>
     </row>
@@ -34,13 +44,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
@@ -49,6 +57,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

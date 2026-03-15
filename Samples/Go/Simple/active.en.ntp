@@ -1,23 +1,28 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="4A436CA3-03F2-4AE6-BF4A-9FE45AD03FBB" created="20200901T202037Z" lastmodified="20200901T202152Z" version="1.0.775" lockedrowcomplete="0" stringid="3">
+<project id="4A436CA3-03F2-4AE6-BF4A-9FE45AD03FBB" created="20200901T202037Z" lastmodified="20260228T163916Z" version="1.0.1090" lockedrowcomplete="0" stringid="5">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TGoI18nSource" name="active.en.json" fullpath="D:\NT\Deploy\Samples\Go\Simple\active.en.json" original="en" encoding="windows-1252">
-    <row id="HelloName" class="TPatternRow" si="1">
-      <value>Hello {name}!</value>
-      <lang id="fi" rw="0" time="20200901T202124Z" fuzzy="100">Hei {name}!</lang>
+  <lang id="ja"/>
+  <node class="TGoI18nSource" name="active.en.json" fullpath="D:\NT\Deploy\Samples\Go\Simple\active.en.json" original="en" lastmodified="20260228T163923Z" encoding="windows-1252">
+    <row id="HelloName" changed="20260228T163833Z" si="1" created="20260228T163833Z" codep="1">
+      <value>Hello {{.name}}!</value>
+      <prev>Hello {name}!</prev>
+      <lang id="fi" rw="0" time="20200901T202124Z" fuzzy="100">Hei {{.name}}!</lang>
+      <lang id="ja" st="4" rw="0" time="20260228T163923Z" fuzzy="99.5">こんにちは、{{.name}}！</lang>
     </row>
     <row id="HelloWorld" si="2">
       <value>Hello World</value>
       <lang id="fi" rw="0" time="20200901T202127Z" fuzzy="100">Hei maailma</lang>
+      <lang id="ja" st="1" or="6" rw="0" time="20260228T163914Z" fuzzy="99.5">こんにちは世界</lang>
     </row>
-    <row id="Skis" class="TPatternRow" si="3">
-      <value>I have {ski} skis.</value>
-      <pattern plural="pfOne">I have {ski} ski.</pattern>
+    <row id="Skis" changed="20260228T163833Z" si="3" created="20260228T163833Z" codep="1">
+      <value>I have {{.ski}} skis.</value>
+      <pattern plural="pfOne">I have {{.ski}} ski.</pattern>
       <lang id="fi" rw="0" time="20200901T202144Z">
-        <value>Minulla on {ski} suksea.</value>
-        <pattern plural="pfOne">Minulla on {ski} suksi.</pattern>
+        <value>Minulla on {{.ski}} suksea.</value>
+        <pattern plural="pfOne">Minulla on {{.ski}} suksi.</pattern>
       </lang>
+      <lang id="ja" st="1" or="6" rw="0" time="20260228T163916Z" fuzzy="99.5">私は{{.ski}}本のスキー板を持っています。</lang>
     </row>
   </node>
   <excludedoriginals>
@@ -26,20 +31,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
-    <settings saveoptions="[soEveryTime,soSameAsOriginal,soRemoveOld]" range="srLanguage" projectsavestatus="tsTranslated">
-    </settings>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

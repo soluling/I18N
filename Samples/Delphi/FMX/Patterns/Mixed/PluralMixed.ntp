@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8B4E9D3E-0163-49D8-B8A4-F39D517267A0" created="20170804T231623Z" lastmodified="20221231T021626Z" version="1.0.972" stringid="1341">
+<project id="8B4E9D3E-0163-49D8-B8A4-F39D517267A0" created="20170804T231623Z" lastmodified="20260301T133453Z" version="1.0.1090" stringid="1346">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="PluralMixed.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Mixed\PluralMixed.dproj" original="en" lastmodified="20221231T021626Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+  <node class="TDelphiProjectSource" name="PluralMixed.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Mixed\PluralMixed.dproj" original="en" lastmodified="20260301T133453Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
     <node class="TWindowsBinaryFolder" name="0" st="0" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData" created="20221230T210920Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
@@ -230,42 +230,42 @@
       <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SFile" class="TPatternRow" si="1222">
-          <value>{0} file</value>
-          <lang id="fi" time="20170804T232241Z">{0} tiedosto</lang>
+        <row id="SFile" changed="20260301T133451Z" si="1222" created="20260301T133451Z" codep="1">
+          <value>%d file</value>
+          <lang id="fi" st="3" time="20170804T232241Z">%d tiedosto</lang>
         </row>
-        <row id="SFile1" class="TPatternRow" si="1223">
-          <value>{0} file</value>
-          <lang id="fi" time="20170804T232241Z">{0} tiedosto</lang>
+        <row id="SFile1" changed="20260301T133451Z" si="1223" created="20260301T133451Z" codep="1">
+          <value>%d file</value>
+          <lang id="fi" st="3" time="20170804T232241Z">%d tiedosto</lang>
         </row>
-        <row id="SFile2" class="TPatternRow" si="1224">
-          <value>{0} files</value>
-          <lang id="fi" time="20170804T232245Z">{0} tiedostoa</lang>
+        <row id="SFile2" changed="20260301T133451Z" si="1224" created="20260301T133451Z" codep="1">
+          <value>%d files</value>
+          <lang id="fi" st="3" time="20170804T232245Z">%d tiedostoa</lang>
         </row>
-        <row id="SFilesPlural" class="TPatternRow" si="1225" scannedcomment="0: file count">
-          <value>{0} files</value>
-          <pattern plural="pfOne">{0} file</pattern>
-          <lang id="fi" rw="0" time="20221230T210946Z">
-            <value>{0} tiedostoa</value>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
+        <row id="SFilesPlural" changed="20260301T133451Z" si="1225" created="20260301T133451Z" codep="1">
+          <value>%d files</value>
+          <pattern plural="pfOne">%d file</pattern>
+          <lang id="fi" st="3" rw="0" time="20221230T210946Z">
+            <value>%d tiedostoa</value>
+            <pattern plural="pfOne">%d tiedosto</pattern>
           </lang>
         </row>
-        <row id="SMessagePlural" class="TPatternRow" si="1226">
-          <value startpattern="1">I have completed {0} {1}</value>
+        <row id="SMessagePlural" changed="20260301T133451Z" si="1226" created="20260301T133451Z" codep="1">
+          <value startpattern="1">I have completed %0:s %1:s</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
-          <pattern plural="pfOther" index="0">{0}</pattern>
+          <pattern plural="pfOther" index="0">%d</pattern>
           <pattern plural="pfZero" index="1">out of none steps</pattern>
           <pattern plural="pfOne" index="1">out of one step</pattern>
-          <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-          <lang id="fi" time="20180524T030055Z">
-            <value startpattern="1">Olen suorittanut {0} {1}</value>
+          <pattern plural="pfOther" index="1">out of %d steps</pattern>
+          <lang id="fi" st="3" time="20180524T030055Z">
+            <value startpattern="1">Olen suorittanut %0:s %1:s</value>
             <pattern plural="pfZero" index="0">en yhtään</pattern>
             <pattern plural="pfOne" index="0">yhden</pattern>
-            <pattern plural="pfOther" index="0">{0}</pattern>
+            <pattern plural="pfOther" index="0">%d</pattern>
             <pattern plural="pfZero" index="1">nollasta vaiheesta</pattern>
             <pattern plural="pfOne" index="1">yhdestä vaiheesta</pattern>
-            <pattern plural="pfOther" index="1">{0} vaiheesta</pattern>
+            <pattern plural="pfOther" index="1">%d vaiheesta</pattern>
           </lang>
         </row>
         <row id="SEnglish" si="1217">
@@ -301,7 +301,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -315,6 +314,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

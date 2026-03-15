@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20231231T075734Z" version="1.0.1014" stringid="13">
+<project id="8A40AE27-491D-49A3-A20B-D46DF5A37498" created="20161130T151958Z" lastmodified="20260301T104320Z" version="1.0.1090" stringid="14">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20231231T075734Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="SinglePlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Single\SinglePlural.csproj" original="en" lastmodified="20260301T104320Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="label1.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 24</row>
@@ -34,6 +34,7 @@
       <row id="label0.Location" class="TCoordinatePointRow" created="20221117T130638Z">8, 8</row>
       <row id="label0.Size" class="TCoordinateSizeRow" created="20221117T130638Z">40, 13</row>
       <row id="label0.Text" si="10" excluded="2">dummy</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T104310Z" st="0">453, 171</row>
       <row id="$this.Text" si="11">
         <value>Plural Sample</value>
         <lang id="fi" time="20161130T152250Z">Esimerkki</lang>
@@ -278,7 +279,7 @@
           <value>en</value>
           <lang id="fi" time="20161130T152251Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" si="13" scannedcomment="{0}: File count" created="20170510T190538Z" original="{plural, one {{0} file} other {{0} files}}">
+        <row id="MessagePlural" changed="20260301T104310Z" si="13" scannedcomment="{0}: File count" created="20260301T104310Z" codep="1">
           <value>{0} files</value>
           <pattern plural="pfOne">{0} file</pattern>
           <lang id="fi" time="20170510T190558Z">
@@ -298,14 +299,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -313,6 +312,5 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

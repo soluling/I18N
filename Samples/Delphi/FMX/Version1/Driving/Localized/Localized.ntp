@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CD7552E7-F835-4E75-8697-32779CFB2D46" created="20160822T022921Z" lastmodified="20241228T055529Z" version="1.0.1054" stringid="24">
+<project id="CD7552E7-F835-4E75-8697-32779CFB2D46" created="20160822T022921Z" lastmodified="20260301T133701Z" version="1.0.1090" stringid="25">
   <lang id="fi"/>
   <lang id="de"/>
   <lang id="fr"/>
   <lang id="es"/>
   <lang id="it"/>
   <lang id="nl"/>
-  <node class="TDelphiProjectSource" name="Localized.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Driving\Localized\Localized.dproj" original="en" lastmodified="20241228T055529Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release">
+  <node class="TDelphiProjectSource" name="Localized.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Driving\Localized\Localized.dproj" original="en" lastmodified="20260301T133701Z" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release" scanfiles="Win32 - Release">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -790,60 +790,60 @@
           <lang id="it" st="1" or="6" rw="0" time="20180325T231635Z">nipponica</lang>
           <lang id="nl" st="1" or="6" rw="0" time="20180325T231859Z">Japans</lang>
         </row>
-        <row id="ResultPlural" changed="20180524T032208Z" class="TPatternRow" si="23" created="20170801T133008Z" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-          <value startpattern="1">Driving time{0}{1}.</value>
+        <row id="ResultPlural" changed="20260301T133701Z" si="23" created="20260301T133701Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" tm="1" time="20180524T032408Z">
-            <value startpattern="1">Ajoaika{0}{1}.</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" tm="1" time="20180524T032408Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
           <lang id="de" st="3" rw="0" time="20180524T032421Z">
-            <value startpattern="1">Fahrzeit {0}{1}.</value>
+            <value startpattern="1">Fahrzeit %0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} Stunde </pattern>
-            <pattern plural="pfOther" index="0"> {0} Stunden </pattern>
-            <pattern plural="pfOne" index="1">{0} Minute</pattern>
-            <pattern plural="pfOther" index="1">{0} Minuten</pattern>
+            <pattern plural="pfOne" index="0"> %d Stunde </pattern>
+            <pattern plural="pfOther" index="0"> %d Stunden </pattern>
+            <pattern plural="pfOne" index="1">%d Minute</pattern>
+            <pattern plural="pfOther" index="1">%d Minuten</pattern>
           </lang>
-          <lang id="fr" st="4" rw="0" time="20180524T031731Z">
-            <value startpattern="1">Temps de conduite{0}{1}.</value>
+          <lang id="fr" st="3" rw="0" time="20180524T031731Z">
+            <value startpattern="1">Temps de conduite%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} heure </pattern>
-            <pattern plural="pfOther" index="0"> {0} heures </pattern>
-            <pattern plural="pfOne" index="1">{0} minute</pattern>
-            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <pattern plural="pfOne" index="0"> %d heure </pattern>
+            <pattern plural="pfOther" index="0"> %d heures </pattern>
+            <pattern plural="pfOne" index="1">%d minute</pattern>
+            <pattern plural="pfOther" index="1">%d minutes</pattern>
           </lang>
           <lang id="es" st="3" rw="0" time="20180524T031757Z">
-            <value startpattern="1">Tiempo de conducción{0}{1}.</value>
+            <value startpattern="1">Tiempo de conducción%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} hora</pattern>
-            <pattern plural="pfOther" index="0"> {0} horas</pattern>
-            <pattern plural="pfOne" index="1">{0} minuto </pattern>
-            <pattern plural="pfOther" index="1">{0} minutos </pattern>
+            <pattern plural="pfOne" index="0"> %d hora</pattern>
+            <pattern plural="pfOther" index="0"> %d horas</pattern>
+            <pattern plural="pfOne" index="1">%d minuto </pattern>
+            <pattern plural="pfOther" index="1">%d minutos </pattern>
           </lang>
           <lang id="it" st="3" rw="0" time="20180524T031828Z">
-            <value startpattern="1">Tempo di guida{0}{1}.</value>
+            <value startpattern="1">Tempo di guida%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} ora</pattern>
-            <pattern plural="pfOther" index="0"> {0} ore</pattern>
-            <pattern plural="pfOne" index="1">{0} minuto </pattern>
-            <pattern plural="pfOther" index="1">{0} minuti </pattern>
+            <pattern plural="pfOne" index="0"> %d ora</pattern>
+            <pattern plural="pfOther" index="0"> %d ore</pattern>
+            <pattern plural="pfOne" index="1">%d minuto </pattern>
+            <pattern plural="pfOther" index="1">%d minuti </pattern>
           </lang>
           <lang id="nl" st="3" rw="0" time="20180524T031851Z">
-            <value startpattern="1">Rijtijd{0}{1}.</value>
+            <value startpattern="1">Rijtijd%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} uur </pattern>
-            <pattern plural="pfOther" index="0"> {0} uur </pattern>
-            <pattern plural="pfOne" index="1">{0} minuut</pattern>
-            <pattern plural="pfOther" index="1">{0} minuten</pattern>
+            <pattern plural="pfOne" index="0"> %d uur </pattern>
+            <pattern plural="pfOther" index="0"> %d uur </pattern>
+            <pattern plural="pfOne" index="1">%d minuut</pattern>
+            <pattern plural="pfOther" index="1">%d minuten</pattern>
           </lang>
         </row>
         <row id="Driving time calculator" si="24">
@@ -868,14 +868,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>

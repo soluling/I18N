@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE messagebundle [
+<!ELEMENT messagebundle (msg)*>
+<!ATTLIST messagebundle class CDATA #IMPLIED>
+
+<!ELEMENT msg (#PCDATA|ph|source)*>
+<!ATTLIST msg id CDATA #IMPLIED>
+<!ATTLIST msg seq CDATA #IMPLIED>
+<!ATTLIST msg name CDATA #IMPLIED>
+<!ATTLIST msg desc CDATA #IMPLIED>
+<!ATTLIST msg meaning CDATA #IMPLIED>
+<!ATTLIST msg obsolete (obsolete) #IMPLIED>
+<!ATTLIST msg xml:space (default|preserve) "default">
+<!ATTLIST msg is_hidden CDATA #IMPLIED>
+
+<!ELEMENT source (#PCDATA)>
+
+<!ELEMENT ph (#PCDATA|ex)*>
+<!ATTLIST ph name CDATA #REQUIRED>
+
+<!ELEMENT ex (#PCDATA)>
+]>
+<translationbundle handler="angular">
+  <translation id="7435492258621955017" meaning="header">Urheilulajit</translation>
+  <translation id="5722142624703335954" meaning="dialogHeader">Urheilulaji</translation>
+  <translation id="3965769458978027538" meaning="bodyText">Anna urheilulajin tiedot.</translation>
+  <translation id="5412061639190455352" meaning="namePlaceholder">Nimi</translation>
+  <translation id="347807346634661578" meaning="nameValidation">Nimi vaaditaan</translation>
+  <translation id="3269565461533850890" meaning="olympicPlaceholder">Olympialaiset</translation>
+  <translation id="4688893772139292089" meaning="olympicNo">Ei</translation>
+  <translation id="7934930583635021943" meaning="olympicWinter">Talvi</translation>
+  <translation id="6808028743397309818" meaning="olympicSummer">Kesä</translation>
+  <translation id="1420851080984555630" meaning="individualRadio">Yksilölaji</translation>
+  <translation id="6470115951635736337" meaning="teamRadio">Joukkuelaji</translation>
+  <translation id="5221578937020973418" meaning="goalieCheck">Maalivahti</translation>
+  <translation id="7799738110858474651" meaning="originPlaceholder">Alkuperä</translation>
+  <translation id="9009367376684363386" meaning="originValidation">Alkuperä vaaditaan</translation>
+  <translation id="5324477523368767674" meaning="descriptionPlaceholder">Selitys</translation>
+  <translation id="3129937959724086916" meaning="descriptionValidation">Selitys vaaditaan</translation>
+  <translation id="5803239427440846208" meaning="okButton">OK</translation>
+  <translation id="7310365732728276921" meaning="cancelButton">Peru</translation>
+  <translation id="8929638199641485696" meaning="summer">Kesä</translation>
+  <translation id="6145405721110398295" meaning="winter">Talvi</translation>
+  <translation id="2678266681370299911" meaning="yes">Kyllä</translation>
+  <translation id="281238869516666203" meaning="no">Ei</translation>
+  <translation id="8975348987833106233" meaning="id">Tunnus</translation>
+  <translation id="2598875424061309057" meaning="name">Urheilun nimi</translation>
+  <translation id="5909765719634651388" meaning="olympic">Olympialaiset</translation>
+  <translation id="1677875612734852539" meaning="fieldPlayers">Pelaajamäärä</translation>
+  <translation id="4668855927553609573" meaning="goalie">Maalivahti</translation>
+  <translation id="9147956655005809552" meaning="origin">Alkuperä</translation>
+  <translation id="7360236606985703931" meaning="description">Selitys</translation>
+  <translation id="8821667938245000484" meaning="editButton">Moukkaa</translation>
+  <translation id="8293615958040124038" meaning="deleteButton">Poista</translation>
+  <translation id="5333241360009441144" meaning="addButton">Lisää...</translation>
+  <translation id="939013059329229990" meaning="addWaterpoloButton">Lisää vesipallo</translation>
+  <translation id="4405779790348275177" meaning="addVolleyballButton">Lisää lentopallo</translation>
+</translationbundle>

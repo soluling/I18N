@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C253E9FF-0816-4949-896D-81A98DB59036" created="20181207T165111Z" lastmodified="20201107T141246Z" version="1.0.802" stringid="7">
+<project id="C253E9FF-0816-4949-896D-81A98DB59036" created="20181207T165111Z" lastmodified="20260302T072051Z" version="1.0.1090" stringid="8">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="RazorDriving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Driving\RazorDriving.csproj" original="en" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
-    <netproperties version="core31"/>
+  <node class="TNetProjectSource" name="RazorDriving.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Driving\RazorDriving.csproj" original="en" lastmodified="20260302T072051Z" availableresources="[nrResx,nrManifest]" aspnetmethod="amScanAndCreate" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core90" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Resources">
       <node class="TDirectoryFolder" name="Pages">
-        <node class="TResXNode" name="Index.resx">
+        <node class="TResXNode" name="Index.resx" windowsforms="wfCore">
           <row id="Driving Time Calculator" si="1">
             <value>Driving Time Calculator</value>
             <lang id="fi" or="4" rw="0" tm="1" time="20181207T165111Z">Ajoaikalaskin</lang>
@@ -33,13 +33,13 @@
             <lang id="de" or="6" rw="0" time="20181214T162217Z">Berechnen</lang>
           </row>
         </node>
-        <node class="TResXNode" name="IndexModel.resx" created="20181212T235743Z">
+        <node class="TResXNode" name="IndexModel.resx" created="20181212T235743Z" windowsforms="wfCore">
           <row id="Enter values and click Calculate." si="6" scannedcomment="This is a comment">
             <value>Enter values and click Calculate.</value>
             <lang id="fi" rw="0" time="20191031T141028Z">Anna arvot ja paina Laske.</lang>
             <lang id="de" or="6" rw="0" time="20181214T162217Z">Geben Sie Werte ein und klicken Sie auf Berechnung.</lang>
           </row>
-          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" class="TPatternRow" si="7" scannedcomment="0: Hours or minutes">
+          <row id="Driving time is{plural, zero { } one { {0} hour } other { {0} hours }}{plural, one {{0} minute} other {{0} minutes}}" changed="20260302T072047Z" si="7" scannedcomment="0: Hours or minutes" created="20260302T072047Z" codep="1">
             <value startpattern="1">Driving time is{0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} hour </pattern>
@@ -54,7 +54,7 @@
               <pattern plural="pfOne" index="1">{0} minuutti</pattern>
               <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
             </lang>
-            <lang id="de" rw="0" time="20181214T162236Z">
+            <lang id="de" st="3" rw="0" time="20181214T162236Z">
               <value startpattern="1">Fahrzeit is{0}{1}</value>
               <pattern plural="pfZero" index="0"> </pattern>
               <pattern plural="pfOne" index="0"> {0} Stunde </pattern>
@@ -66,6 +66,11 @@
         </node>
       </node>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\net9.0\RazorDriving.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.AspNet.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -73,19 +78,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

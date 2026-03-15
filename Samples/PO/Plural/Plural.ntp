@@ -1,29 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="53661328-4E1F-4ED2-B31A-809E60CF7757" created="20180105T223610Z" lastmodified="20241223T045819Z" version="1.0.1054" stringid="8">
+<project id="53661328-4E1F-4ED2-B31A-809E60CF7757" created="20180105T223610Z" lastmodified="20260228T155752Z" version="1.0.1090" stringid="9">
   <lang id="fi"/>
   <lang id="pl"/>
-  <node class="TPoSource" name="Plural.pot" fullpath="D:\NT\Deploy\Samples\PO\Plural\Plural.pot" original="en-US" lastmodified="20241223T045819Z" encoding="windows-1252" newline="nlLf" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1" options="[prComments,prTranslatorInfo]">
+  <node class="TPoSource" name="Plural.pot" fullpath="D:\NT\Deploy\Samples\PO\Plural\Plural.pot" original="en-US" lastmodified="20260228T155752Z" encoding="windows-1252" newline="nlLf" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1" options="[prComments,prTranslatorInfo]">
     <row id="Sample" si="1" created="20180106T154927Z">
       <value>Sample</value>
       <lang id="fi" rw="0" time="20180106T154954Z">Esimerkki</lang>
-      <lang id="pl" or="6" rw="0" time="20180106T182232Z">Próbki</lang>
+      <lang id="pl" rw="0" time="20180106T182232Z">Próbki</lang>
     </row>
     <row id="Hello %s" changed="20241223T045747Z" si="2" created="20241223T045747Z" codep="1">
       <value>Hello %s</value>
       <lang id="fi" rw="0" time="20241223T045817Z">Moi %s</lang>
-      <lang id="pl" or="6" rw="0" time="20180106T182233Z">Hello %s</lang>
+      <lang id="pl" rw="0" time="20180106T182233Z">Hello %s</lang>
     </row>
-    <row id="%d file" class="TPatternRow" si="3">
-      <value>{0} files</value>
-      <pattern plural="pfOne">{0} file</pattern>
+    <row id="%d file" changed="20260228T154210Z" si="3" created="20260228T154210Z" codep="1">
+      <value>%d files</value>
+      <pattern plural="pfOne">%d file</pattern>
       <lang id="fi" rw="0" time="20180105T223628Z">
-        <value>{0} tiedostoa</value>
-        <pattern plural="pfOne">{0} tiedosto</pattern>
+        <value>%d tiedostoa</value>
+        <pattern plural="pfOne">%d tiedosto</pattern>
       </lang>
       <lang id="pl" rw="0" time="20180106T182356Z">
-        <value>{0} plików</value>
-        <pattern plural="pfOne">{0} plik</pattern>
-        <pattern plural="pfFew">{0} pliki</pattern>
+        <value>%d plików</value>
+        <pattern plural="pfOne">%d plik</pattern>
+        <pattern plural="pfFew">%d pliki</pattern>
       </lang>
     </row>
     <node class="TPoTranslatorNode" name="Translator" created="20180106T204455Z">
@@ -69,13 +69,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="FFD40808-0B14-46C3-9CC7-681A5AAF14AC" created="20201123T152018Z" lastmodified="20241228T054751Z" version="1.0.1054" lockedrowcomplete="0" stringid="3092">
+<project id="FFD40808-0B14-46C3-9CC7-681A5AAF14AC" created="20201123T152018Z" lastmodified="20260301T113055Z" version="1.0.1090" lockedrowcomplete="0" stringid="3095">
   <lang id="fi"/>
   <node class="TRadStudioGroupSource" name="Driving.groupproj" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Driving.groupproj" original="en-US" lastmodified="20240922T061519Z" encoding="windows-1252" enabledconfigurations="Release|Win32" disabledconfigurations="Release|Win64;Debug|Win32;Debug|Win64" mainconfiguration="Release" mainplatform="Win32">
-    <node class="TDelphiSource" name="Localized\Win32\Release\Localized.exe" original="en-US" lastmodified="20241228T054751Z" hassignatureread="1">
+    <node class="TDelphiSource" name="Localized\Win32\Release\Localized.exe" original="en-US" lastmodified="20260301T113055Z" hassignature="1" hassignatureread="1">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -493,13 +493,13 @@
           <row id="SysConst_SDivByZero" si="781">Division by zero</row>
         </node>
         <node class="TWindowsStringNode" name="Unit1">
-          <row id="SResultPlural" class="TPatternRow" si="395" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-            <value startpattern="1">Driving time{0}{1}.</value>
+          <row id="SResultPlural" changed="20260301T113054Z" si="395" created="20260301T113054Z" codep="1">
+            <value startpattern="1">Driving time%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} hour </pattern>
-            <pattern plural="pfOther" index="0"> {0} hours </pattern>
-            <pattern plural="pfOne" index="1">{0} minute</pattern>
-            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <pattern plural="pfOne" index="0"> %d hour </pattern>
+            <pattern plural="pfOther" index="0"> %d hours </pattern>
+            <pattern plural="pfOne" index="1">%d minute</pattern>
+            <pattern plural="pfOther" index="1">%d minutes</pattern>
           </row>
           <row id="SAbout" si="396">Driving time calculator</row>
           <row id="SNtLocale" si="397">en</row>
@@ -662,7 +662,7 @@
         </node>
       </node>
     </node>
-    <node class="TDelphiSource" name="Multilingual\Win32\Release\Multilingual.exe" original="en-US" lastmodified="20241228T054751Z">
+    <node class="TDelphiSource" name="Multilingual\Win32\Release\Multilingual.exe" original="en-US" lastmodified="20260301T113055Z">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -938,6 +938,7 @@
           <row id="SNeutral" si="2679">Neutral</row>
         </node>
         <node class="TWindowsStringNode" name="NtWindows" created="20241228T054738Z">
+          <row id="SModern" si="2857">modern</row>
           <row id="SValencia" si="2826">Valencia</row>
           <row id="STechnicalSort" si="2827">technical sort</row>
           <row id="SPhoneBookSort" si="2828">phone book sort</row>
@@ -946,13 +947,13 @@
           <row id="SBopomofoSort" si="2831">Bopomofo sort</row>
           <row id="STraditionalSort" si="2855">traditional sort</row>
           <row id="SInternationalSort" si="2856">international sort</row>
-          <row id="SModern" si="2857">modern</row>
         </node>
         <node class="TWindowsStringNode" name="System" created="20241228T054738Z">
           <row id="Win_ComConst_SOleError" si="2705" codep="1">OLE error %.8x</row>
           <row id="Win_ComConst_SNoMethod" si="2706" codep="1">Method '%s' not supported by automation object</row>
           <row id="Win_ComConst_SVarNotObject" si="2707">Variant does not reference an automation object</row>
           <row id="Win_ComConst_STooManyParams" si="2708">Dispatch methods do not support more than 64 parameters</row>
+          <row id="RTLConsts_SWindowsServer2025" si="3095" created="20260301T113054Z" st="0">Windows Server 2025</row>
           <row id="RTLConsts_SWindows8" si="2842">Windows 8</row>
           <row id="RTLConsts_SWindows8Point1" si="2843">Windows 8.1</row>
           <row id="RTLConsts_SWindows10" si="2844">Windows 10</row>
@@ -1196,21 +1197,23 @@
           <row id="SysConst_SDivByZero" si="3081">Division by zero</row>
         </node>
         <node class="TWindowsStringNode" name="Unit1">
-          <row id="SResultPlural" class="TPatternRow" si="2680" created="20241228T054738Z" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-            <value startpattern="1">Driving time{0}{1}.</value>
+          <row id="SResultPlural" changed="20260301T113054Z" si="2680" created="20260301T113054Z" codep="1">
+            <value startpattern="1">Driving time%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} hour </pattern>
-            <pattern plural="pfOther" index="0"> {0} hours </pattern>
-            <pattern plural="pfOne" index="1">{0} minute</pattern>
-            <pattern plural="pfOther" index="1">{0} minutes</pattern>
+            <pattern plural="pfOne" index="0"> %d hour </pattern>
+            <pattern plural="pfOther" index="0"> %d hours </pattern>
+            <pattern plural="pfOne" index="1">%d minute</pattern>
+            <pattern plural="pfOther" index="1">%d minutes</pattern>
           </row>
           <row id="SAbout" si="2681" created="20241228T054738Z">Driving time calculator</row>
         </node>
         <node class="TWindowsStringNode" name="Vcl" created="20241228T054738Z">
+          <row id="Imaging_pnglang_EPNGCannotChangeTransparentText" si="2697">Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)</row>
           <row id="Imaging_pnglang_EPNGHeaderNotPresentText" si="2667">This operation is not valid because the current image contains no valid header.</row>
           <row id="Imaging_pnglang_EInvalidNewSize" si="2668">The new size provided for image resizing is invalid.</row>
           <row id="Imaging_pnglang_EInvalidSpec" si="2669">The "Portable Network Graphics" could not be created because invalid image type parameters have being provided.</row>
           <row id="Imaging_pnglang_EPNGInvalidBitDepthText" si="2670">The "Portable Network Graphics" image could not be loaded because it uses an invalid image bit depth.</row>
+          <row id="Imaging_pnglang_EPNGInvalidPaletteText" si="2713">The "Portable Network Graphics" image contains an invalid palette.</row>
           <row id="Imaging_pnglang_EPNGInvalidFileHeaderText" si="2682">The file being read is not a valid "Portable Network Graphics" image because it contains an invalid header. This file may be corrupted, try obtaining it again</row>
           <row id="Imaging_pnglang_EPNGIHDRNotFirstText" si="2683">This "Portable Network Graphics" image is not supported or it might be invalid.
 (IHDR chunk is not the first)</row>
@@ -1227,7 +1230,7 @@
           <row id="Imaging_pnglang_EPNGCannotAddInvalidImageText" si="2694">It's not allowed to add a new chunk because the current image is invalid.</row>
           <row id="Imaging_pnglang_EPNGCouldNotLoadResourceText" si="2695">The png image could not be loaded from the resource ID.</row>
           <row id="Imaging_pnglang_EPNGOutMemoryText" si="2696">Some operation could not be performed because the system is out of resources. Close some windows and try again.</row>
-          <row id="Imaging_pnglang_EPNGCannotChangeTransparentText" si="2697">Setting bit transparency color is not allowed for png images containing alpha value for each pixel (COLOR_RGBALPHA and COLOR_GRAYSCALEALPHA)</row>
+          <row id="Consts_SStyleHookClassRegistered" si="2729" codep="1">Class '%s' is already registered for '%s'</row>
           <row id="Consts_SStyleHookClassNotRegistered" si="2698" codep="1">Class '%s' is not registered for '%s'</row>
           <row id="Consts_SStyleInvalidParameter" si="2699" codep="1">%s parameter cannot be nil</row>
           <row id="Consts_SStyleFeatureNotSupported" si="2700">Feature not supported by this style</row>
@@ -1240,7 +1243,7 @@
           <row id="Imaging_pnglang_EPNGMissingMultipleIDATText" si="2711">This "Portable Network Graphics" image is invalid because it has missing image parts.</row>
           <row id="Imaging_pnglang_EPNGZLIBErrorText" si="2712">Could not decompress the image because it contains invalid compressed data.
  Description: </row>
-          <row id="Imaging_pnglang_EPNGInvalidPaletteText" si="2713">The "Portable Network Graphics" image contains an invalid palette.</row>
+          <row id="Consts_SLogin" si="2745">Login</row>
           <row id="Consts_SErrorSettingCount" si="2714" codep="1">Error setting %s.Count</row>
           <row id="Consts_SListBoxMustBeVirtual" si="2715" codep="1">Listbox (%s) style must be virtual in order to set Count</row>
           <row id="Consts_STrayIconRemoveError" si="2716">Cannot remove shell notification icon</row>
@@ -1256,7 +1259,7 @@
           <row id="Consts_SStyleClassNotFound" si="2726" codep="1">Style class '%s' not found</row>
           <row id="Consts_SStyleInvalidHandle" si="2727">Invalid style handle</row>
           <row id="Consts_SStyleFormatError" si="2728">Invalid style format</row>
-          <row id="Consts_SStyleHookClassRegistered" si="2729" codep="1">Class '%s' is already registered for '%s'</row>
+          <row id="Consts_SInsertLineError" si="2761">Unable to insert a line</row>
           <row id="Consts_SIconToClipboard" si="2730">Clipboard does not support Icons</row>
           <row id="Consts_SCannotOpenClipboard" si="2731" codep="1">Cannot open clipboard: %s</row>
           <row id="Consts_SInvalidPrinterOp" si="2732">Operation not supported on selected printer</row>
@@ -1272,7 +1275,7 @@
           <row id="Consts_SUsername" si="2742">&amp;Username</row>
           <row id="Consts_SPassword" si="2743">&amp;Password</row>
           <row id="Consts_SDomain" si="2744">&amp;Domain</row>
-          <row id="Consts_SLogin" si="2745">Login</row>
+          <row id="Consts_SmkcSpace" si="2777">Space</row>
           <row id="Consts_SmkcPgUp" si="2746">PgUp</row>
           <row id="Consts_SmkcPgDn" si="2747">PgDn</row>
           <row id="Consts_SmkcEnd" si="2748">End</row>
@@ -1288,7 +1291,7 @@
           <row id="Consts_SmkcAlt" si="2758">Alt+</row>
           <row id="Consts_SOutOfRange" si="2759" codep="1">Value must be between %d and %d</row>
           <row id="Consts_sAllFilter" si="2760">All</row>
-          <row id="Consts_SInsertLineError" si="2761">Unable to insert a line</row>
+          <row id="Consts_SMsgDlgYes" si="2793">&amp;Yes</row>
           <row id="Consts_SMsgDlgNo" si="2762">&amp;No</row>
           <row id="Consts_SMsgDlgOK" si="2763">OK</row>
           <row id="Consts_SMsgDlgCancel" si="2764">Cancel</row>
@@ -1304,7 +1307,7 @@
           <row id="Consts_SmkcTab" si="2774">Tab</row>
           <row id="Consts_SmkcEsc" si="2775">Esc</row>
           <row id="Consts_SmkcEnter" si="2776">Enter</row>
-          <row id="Consts_SmkcSpace" si="2777">Space</row>
+          <row id="Consts_SDeviceOnPort" si="2809" codep="1">%s on %s</row>
           <row id="Consts_SGroupIndexTooLow" si="2778">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
           <row id="Consts_SNoMDIForm" si="2779">Cannot create form. No MDI forms are currently active</row>
           <row id="Consts_SImageCanvasNeedsBitmap" si="2780">Can only modify an image if it contains a bitmap</row>
@@ -1320,7 +1323,7 @@
           <row id="Consts_SMsgDlgError" si="2790">Error</row>
           <row id="Consts_SMsgDlgInformation" si="2791">Information</row>
           <row id="Consts_SMsgDlgConfirm" si="2792">Confirm</row>
-          <row id="Consts_SMsgDlgYes" si="2793">&amp;Yes</row>
+          <row id="Consts_SParentRequired" si="2825" codep="1">Control '%s' has no parent window</row>
           <row id="Consts_SControlPath" si="2794" codep="1">. Path:
 %s</row>
           <row id="Consts_SParentGivenNotAParent" si="2795" codep="1">Parent given is not a parent of '%s'</row>
@@ -1337,7 +1340,7 @@
           <row id="Consts_SPrinting" si="2806">Printing in progress</row>
           <row id="Consts_SPrinterIndexError" si="2807">Printer index out of range</row>
           <row id="Consts_SInvalidPrinter" si="2808">Printer selected is not valid</row>
-          <row id="Consts_SDeviceOnPort" si="2809" codep="1">%s on %s</row>
+          <row id="Consts_SUnknownClipboardFormat" si="2841">Unsupported clipboard format</row>
           <row id="Consts_SUnknownStreamFormat" si="2810">Unsupported stream format</row>
           <row id="Consts_SOutOfResources" si="2811">Out of system resources</row>
           <row id="Consts_SNoCanvasHandle" si="2812">Canvas does not allow drawing</row>
@@ -1353,7 +1356,6 @@
           <row id="Consts_SWindowDCError" si="2822">Error creating window device context</row>
           <row id="Consts_SWindowClass" si="2823">Error creating window class</row>
           <row id="Consts_SCannotFocus" si="2824">Cannot focus a disabled or invisible window</row>
-          <row id="Consts_SParentRequired" si="2825" codep="1">Control '%s' has no parent window</row>
           <row id="Consts_SInvalidBitmap" si="2832">Bitmap image is not valid</row>
           <row id="Consts_SInvalidIcon" si="2833">Icon image is not valid</row>
           <row id="Consts_SInvalidMetafile" si="2834">Metafile is not valid</row>
@@ -1363,11 +1365,10 @@
           <row id="Consts_SChangeIconSize" si="2838">Cannot change the size of an icon</row>
           <row id="Consts_SChangeWicSize" si="2839">Cannot change the size of a WIC Image</row>
           <row id="Consts_SUnknownExtension" si="2840" codep="1">Unknown picture file extension (.%s)</row>
-          <row id="Consts_SUnknownClipboardFormat" si="2841">Unsupported clipboard format</row>
         </node>
       </node>
     </node>
-    <node class="TDelphiSource" name="Original\Win32\Release\Original.exe" original="en-US" lastmodified="20241228T054751Z" hassignatureread="1">
+    <node class="TDelphiSource" name="Original\Win32\Release\Original.exe" original="en-US" lastmodified="20260301T113055Z" hassignature="1" hassignatureread="1">
       <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
       <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
       <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -2006,14 +2007,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">

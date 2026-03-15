@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="08F358D9-F884-47F0-92EF-D8302F31BA9E" created="20260217T143615Z" lastmodified="20260302T152518Z" version="1.0.1090" stringid="14" placehoder="pmOriginal">
+  <lang id="fi"/>
+  <node class="TAngularSource" name="messages12.xlf" fullpath="D:\NT\Deploy\Samples\Angular\Patterns\Select\src\locale\messages12.xlf" original="en" lastmodified="20260302T152518Z" encoding="UTF-8" context="acMeaning" hasmeaning="1">
+    <row id="src\app\app.component.ts.header" importid="2139580084212067875" si="1">
+      <value>Select Sample</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Esimerkki</lang>
+    </row>
+    <row id="src\app\app.component.ts.select" importid="1023308545030740642" si="2" scannedcomment="Sport combo box is following">
+      <value>Select the sport:</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="99">Valitse urheilulaji:</lang>
+    </row>
+    <row id="src\app\app.component.ts.selectHeader" importid="7949264276778386605" si="3">
+      <value>Sports</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Urheilulajit</lang>
+    </row>
+    <row id="src\app\app.component.ts.selectDescription" importid="7232737304824513495" si="4">
+      <value>The following text is a result of select states:</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="99">Seuraava esimerkki on valintavaihtoehdon tulos:</lang>
+    </row>
+    <row id="src\app\app.component.ts.selectText" importid="4887246481148819023" changed="20260302T152512Z" si="5" scannedcomment="bestPlayer: Name of the best player" created="20260302T152512Z" codep="1">
+      <value select="soccer">{0} is the best soccer player.</value>
+      <pattern select="basketball">{0} is the best basketball player.</pattern>
+      <pattern select="hockey">{0} is the best ice hockey player.</pattern>
+      <lang id="fi" rw="0" time="20260217T143755Z">
+        <value select="soccer">{0} on paras jalkapalloilija.</value>
+        <pattern select="basketball">{0} on paras koripalloilija.</pattern>
+        <pattern select="hockey">{0} on paras jääkiekkoilija.</pattern>
+      </lang>
+    </row>
+    <row id="src\app\app.component.ts.fallbackHeader" importid="5158279274514081016" si="6">
+      <value>Sports with a fallback</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Urheilulajit varmistuksen kanssa</lang>
+    </row>
+    <row id="src\app\app.component.ts.fallbackDescription" importid="3273667572203478902" si="7">
+      <value>The following text is a result the same select states plus a fallback state:</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="99">Seuraava esimerkki on varmistuksen kanssa olevan valintavaihtoehdon tulos:</lang>
+    </row>
+    <row id="src\app\app.component.ts.fallbackText" importid="6758458596137427040" changed="20260302T152512Z" si="8" scannedcomment="bestPlayer: Name of the best player" created="20260302T152512Z" codep="1">
+      <value select="other">Somebody is the best player.</value>
+      <pattern select="basketball">{0} is the best basketball player.</pattern>
+      <pattern select="hockey">{0} is the best ice hockey player.</pattern>
+      <pattern select="soccer">{0} is the best soccer player.</pattern>
+      <lang id="fi" rw="0" time="20260217T143813Z">
+        <value select="other">Joku on paras urheilija.</value>
+        <pattern select="basketball">{0} on paras koripalloilija.</pattern>
+        <pattern select="hockey">{0} on paras jääkiekkoilija.</pattern>
+        <pattern select="soccer">{0} on paras jalkapalloilija.</pattern>
+      </lang>
+    </row>
+    <row id="3561837173133763041" si="9">
+      <value>Soccer</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Jalkapallo</lang>
+    </row>
+    <row id="1378473899434596660" si="10">
+      <value>Ice Hockey</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Jääkiekko</lang>
+    </row>
+    <row id="5217306673498240951" si="11">
+      <value>Basketball</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Koripallo</lang>
+    </row>
+    <row id="8693603235657020323" si="12">
+      <value>Other</value>
+      <lang id="fi" rw="0" time="20260217T143625Z" fuzzy="100">Muu</lang>
+    </row>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

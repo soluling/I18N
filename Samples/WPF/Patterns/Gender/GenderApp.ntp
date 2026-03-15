@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="986ECCBE-5C50-47C5-B453-A70AC8BD888F" created="20231231T171850Z" lastmodified="20231231T172250Z" version="1.0.1014" stringid="15">
+<project id="986ECCBE-5C50-47C5-B453-A70AC8BD888F" created="20231231T171850Z" lastmodified="20260301T123209Z" version="1.0.1090" stringid="17">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="GenderApp.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Gender\GenderApp.csproj" original="en" lastmodified="20231231T172250Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="GenderApp.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Gender\GenderApp.csproj" original="en" lastmodified="20260301T123209Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net472" toolsversion="nt150"/>
     <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
       <data>
@@ -15,7 +15,7 @@
     <node class="TXamlNode" name="MainWindow.xaml" type="Window">
       <row id="Title" si="1">
         <value>Gender Sample</value>
-        <lang id="fi" st="4" rw="0" time="20231231T172148Z" fuzzy="99.5">Sukupuoliesimerkki</lang>
+        <lang id="fi" rw="0" time="20231231T172148Z" fuzzy="99.5">Sukupuoliesimerkki</lang>
       </row>
       <item name="panel" type="StackPanel">
         <item name="maleGrid" type="Grid" created="20231231T172249Z" st="0">
@@ -62,16 +62,16 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="MessageGender" class="TPatternRow" si="8" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle}}">
+        <row id="MessageGender" changed="20260301T123204Z" si="8" scannedcomment="0: Name of a person" created="20260301T123204Z" codep="1">
           <value gender="geMale">{0} will bring his bicycle</value>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" st="1" or="6" rw="0" time="20231231T172152Z" fuzzy="99.5">{0} tuo polkupyöränsä</lang>
+          <lang id="fi" rw="0" time="20231231T172152Z" fuzzy="99.5">{0} tuo polkupyöränsä</lang>
         </row>
-        <row id="OtherMessageGender" class="TPatternRow" si="9" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle} other {{0} will bring a bicycle}}">
+        <row id="OtherMessageGender" changed="20260301T123204Z" si="9" scannedcomment="0: Name of a person" created="20260301T123204Z" codep="1">
           <value gender="geNeutral">{0} will bring a bicycle</value>
           <pattern gender="geMale">{0} will bring his bicycle</pattern>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" st="1" or="6" rw="0" time="20231231T172153Z" fuzzy="99.5">{0} tuo polkupyörän</lang>
+          <lang id="fi" rw="0" time="20231231T172153Z" fuzzy="99.5">{0} tuo polkupyörän</lang>
         </row>
       </node>
     </node>
@@ -85,14 +85,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
@@ -100,6 +98,5 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

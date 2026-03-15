@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="673E1CDA-AC73-4E14-9247-6867BFE99911" created="20181130T004117Z" lastmodified="20221117T130106Z" version="1.0.963" stringid="15">
+<project id="673E1CDA-AC73-4E14-9247-6867BFE99911" created="20181130T004117Z" lastmodified="20260301T104710Z" version="1.0.1090" stringid="17">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20221117T130106Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20260301T104710Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="label0_1.Location" class="TCoordinatePointRow" created="20221117T130058Z">8, 24</row>
@@ -40,6 +40,7 @@
         <value>&amp;Use zero part</value>
         <lang id="fi" rw="0" time="20181130T004750Z">&amp;Käytä nolla-osaa</lang>
       </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T104647Z" st="0">453, 190</row>
       <row id="$this.Text" si="12">
         <value>Plural Sample</value>
         <lang id="fi" rw="0" time="20181130T004739Z">Monikkoesimerkki</lang>
@@ -299,7 +300,7 @@
           <value>en</value>
           <lang id="fi" rw="0" time="20181130T004741Z">fi</lang>
         </row>
-        <row id="MessagePlural" class="TPatternRow" si="14" scannedcomment="0: Amount of steps">
+        <row id="MessagePlural" changed="20260301T104647Z" si="14" scannedcomment="0: Amount of steps" created="20260301T104647Z" codep="1">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfOne" index="0">one</pattern>
           <pattern plural="pfOther" index="0">{0}</pattern>
@@ -313,7 +314,7 @@
             <pattern plural="pfOther" index="1">{0}:stä vaiheesta</pattern>
           </lang>
         </row>
-        <row id="ZeroMessagePlural" class="TPatternRow" si="15" scannedcomment="0: Amount of steps">
+        <row id="ZeroMessagePlural" changed="20260301T104647Z" si="15" scannedcomment="0: Amount of steps" created="20260301T104647Z" codep="1">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
@@ -321,7 +322,7 @@
           <pattern plural="pfZero" index="1">out of none steps</pattern>
           <pattern plural="pfOne" index="1">out of one step</pattern>
           <pattern plural="pfOther" index="1">out of {0} steps</pattern>
-          <lang id="fi" rw="0" time="20181130T004908Z">
+          <lang id="fi" rw="0" time="20260301T104704Z">
             <value startpattern="1">Olen suorittanut {0} {1}</value>
             <pattern plural="pfZero" index="0">en yhtään</pattern>
             <pattern plural="pfOne" index="0">yhden</pattern>
@@ -343,7 +344,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -357,6 +357,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

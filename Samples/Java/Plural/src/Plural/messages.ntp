@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="845C04D4-C620-4D4D-B2F7-2AE62D1D3B75" created="20180105T213830Z" lastmodified="20200316T231950Z" version="1.0.714" stringid="3">
+<project id="845C04D4-C620-4D4D-B2F7-2AE62D1D3B75" created="20180105T213830Z" lastmodified="20260302T064805Z" version="1.0.1090" stringid="4">
   <lang id="fi"/>
-  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Plural\src\Plural\messages.properties" original="en-US" encoding="iso-8859-1">
-    <row id="MessagePlural" class="TPatternRow" si="1" created="20180105T221619Z">
-      <value>{0} files</value>
-      <pattern plural="pfOne">{0} file</pattern>
+  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Plural\src\Plural\messages.properties" original="en-US" lastmodified="20260302T064805Z" encoding="iso-8859-1">
+    <row id="MessagePlural" changed="20260302T064753Z" si="1" created="20260302T064753Z" codep="1">
+      <value>%d files</value>
+      <pattern plural="pfOne">%d file</pattern>
       <lang id="fi" rw="0" time="20180105T221647Z">
-        <value>{0} tiedostoa</value>
-        <pattern plural="pfOne">{0} tiedosto</pattern>
+        <value>%d tiedostoa</value>
+        <pattern plural="pfOne">%d tiedosto</pattern>
       </lang>
     </row>
     <row id="Locale" si="2">
@@ -18,25 +18,25 @@
       <value>Plural Sample</value>
       <lang id="fi" rw="0" time="20180105T221640Z">Monikkoesimerkki</lang>
     </row>
+    <data>
+      TWVzc2FnZVBsdXJhbD17cGx1cmFsLCBvbmUgeyVkIGZpbGV9IG90aGVyIHslZCBmaWxlc319DQpMb2NhbGU9ZW4NClRpdGxlPVBs
+      dXJhbCBTYW1wbGUNCg==
+    </data>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

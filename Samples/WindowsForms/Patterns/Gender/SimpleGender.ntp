@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="C24576C8-85A3-485F-9519-8A8FA8FD4A6A" created="20181129T161824Z" lastmodified="20231231T150545Z" version="1.0.1014" stringid="10">
+<project id="C24576C8-85A3-485F-9519-8A8FA8FD4A6A" created="20181129T161824Z" lastmodified="20260301T112742Z" version="1.0.1090" stringid="12">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20231231T150545Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="SimpleGender.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Patterns\Gender\SimpleGender.csproj" original="en" lastmodified="20260301T112742Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="maleLabel.Location" class="TCoordinatePointRow" created="20221117T125753Z">8, 8</row>
@@ -17,7 +17,7 @@
       <row id="languageButton.Size" class="TCoordinateSizeRow" created="20221117T125753Z">99, 23</row>
       <row id="languageButton.Text" si="4">
         <value>&amp;Language...</value>
-        <lang id="fi" st="4" rw="0" time="20231231T133703Z">&amp;Kieli..</lang>
+        <lang id="fi" rw="0" time="20260301T112736Z">&amp;Kieli...</lang>
       </row>
       <row id="neutralInfo.Location" class="TCoordinatePointRow" created="20221117T125753Z">368, 40</row>
       <row id="neutralInfo.Size" class="TCoordinateSizeRow" created="20221117T125753Z">40, 13</row>
@@ -28,9 +28,10 @@
       <row id="maleInfo.Location" class="TCoordinatePointRow" created="20221117T125753Z">368, 8</row>
       <row id="maleInfo.Size" class="TCoordinateSizeRow" created="20221117T125753Z">40, 13</row>
       <row id="maleInfo.Text" si="7" excluded="2">dummy</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260301T112727Z" st="0">418, 97</row>
       <row id="$this.Text" si="8">
         <value>Gender Sample</value>
-        <lang id="fi" st="4" rw="0" time="20231231T071419Z" fuzzy="99.5">Sukupuoliesimerkki</lang>
+        <lang id="fi" rw="0" time="20231231T071419Z" fuzzy="99.5">Sukupuoliesimerkki</lang>
       </row>
       <data>
         77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4NCjxyb290Pg0KICA8IS0tIA0KICAgIE1pY3Jvc29mdCBS
@@ -242,122 +243,23 @@
     </node>
     <node class="TDirectoryFolder" name="Properties">
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-        <row id="MessageGender" class="TPatternRow" si="9" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle}}">
+        <row id="MessageGender" changed="20260301T112727Z" si="9" scannedcomment="0: Name of a person" created="20260301T112727Z" codep="1">
           <value gender="geMale">{0} will bring his bicycle</value>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" st="1" or="6" rw="0" time="20231231T135413Z" fuzzy="99.5">{0} tuo polkupyöränsä</lang>
+          <lang id="fi" rw="0" time="20231231T135413Z" fuzzy="99.5">{0} tuo polkupyöränsä</lang>
         </row>
-        <row id="OtherMessageGender" class="TPatternRow" si="10" scannedcomment="0: Name of a person" original="{gender, male {{0} will bring his bicycle} female {{0} will bring her bicycle} other {{0} will bring a bicycle}}">
+        <row id="OtherMessageGender" changed="20260301T112727Z" si="10" scannedcomment="0: Name of a person" created="20260301T112727Z" codep="1">
           <value gender="geNeutral">{0} will bring a bicycle</value>
           <pattern gender="geMale">{0} will bring his bicycle</pattern>
           <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" st="1" or="6" rw="0" time="20231231T135416Z" fuzzy="99.5">{0} tuo polkupyörän</lang>
+          <lang id="fi" rw="0" time="20231231T135416Z" fuzzy="99.5">{0} tuo polkupyörän</lang>
         </row>
       </node>
     </node>
     <assemblies>
-      <assembly>bin\Debug\Microsoft.Win32.Primitives.dll</assembly>
-      <assembly>bin\Debug\netstandard.dll</assembly>
-      <assembly>bin\Debug\Soluling.dll</assembly>
-      <assembly>bin\Debug\Soluling.Translator.Forms.dll</assembly>
-      <assembly>bin\Debug\System.AppContext.dll</assembly>
-      <assembly>bin\Debug\System.Collections.Concurrent.dll</assembly>
-      <assembly>bin\Debug\System.Collections.dll</assembly>
-      <assembly>bin\Debug\System.Collections.NonGeneric.dll</assembly>
-      <assembly>bin\Debug\System.Collections.Specialized.dll</assembly>
-      <assembly>bin\Debug\System.ComponentModel.dll</assembly>
-      <assembly>bin\Debug\System.ComponentModel.EventBasedAsync.dll</assembly>
-      <assembly>bin\Debug\System.ComponentModel.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.ComponentModel.TypeConverter.dll</assembly>
-      <assembly>bin\Debug\System.Console.dll</assembly>
-      <assembly>bin\Debug\System.Data.Common.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.Contracts.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.Debug.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.FileVersionInfo.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.Process.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.StackTrace.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.TextWriterTraceListener.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.Tools.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.TraceSource.dll</assembly>
-      <assembly>bin\Debug\System.Diagnostics.Tracing.dll</assembly>
-      <assembly>bin\Debug\System.Drawing.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.Dynamic.Runtime.dll</assembly>
-      <assembly>bin\Debug\System.Globalization.Calendars.dll</assembly>
-      <assembly>bin\Debug\System.Globalization.dll</assembly>
-      <assembly>bin\Debug\System.Globalization.Extensions.dll</assembly>
-      <assembly>bin\Debug\System.IO.Compression.dll</assembly>
-      <assembly>bin\Debug\System.IO.Compression.ZipFile.dll</assembly>
-      <assembly>bin\Debug\System.IO.dll</assembly>
-      <assembly>bin\Debug\System.IO.FileSystem.dll</assembly>
-      <assembly>bin\Debug\System.IO.FileSystem.DriveInfo.dll</assembly>
-      <assembly>bin\Debug\System.IO.FileSystem.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.IO.FileSystem.Watcher.dll</assembly>
-      <assembly>bin\Debug\System.IO.IsolatedStorage.dll</assembly>
-      <assembly>bin\Debug\System.IO.MemoryMappedFiles.dll</assembly>
-      <assembly>bin\Debug\System.IO.Pipes.dll</assembly>
-      <assembly>bin\Debug\System.IO.UnmanagedMemoryStream.dll</assembly>
-      <assembly>bin\Debug\System.Linq.dll</assembly>
-      <assembly>bin\Debug\System.Linq.Expressions.dll</assembly>
-      <assembly>bin\Debug\System.Linq.Parallel.dll</assembly>
-      <assembly>bin\Debug\System.Linq.Queryable.dll</assembly>
-      <assembly>bin\Debug\System.Net.Http.dll</assembly>
-      <assembly>bin\Debug\System.Net.NameResolution.dll</assembly>
-      <assembly>bin\Debug\System.Net.NetworkInformation.dll</assembly>
-      <assembly>bin\Debug\System.Net.Ping.dll</assembly>
-      <assembly>bin\Debug\System.Net.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.Net.Requests.dll</assembly>
-      <assembly>bin\Debug\System.Net.Security.dll</assembly>
-      <assembly>bin\Debug\System.Net.Sockets.dll</assembly>
-      <assembly>bin\Debug\System.Net.WebHeaderCollection.dll</assembly>
-      <assembly>bin\Debug\System.Net.WebSockets.Client.dll</assembly>
-      <assembly>bin\Debug\System.Net.WebSockets.dll</assembly>
-      <assembly>bin\Debug\System.ObjectModel.dll</assembly>
-      <assembly>bin\Debug\System.Reflection.dll</assembly>
-      <assembly>bin\Debug\System.Reflection.Extensions.dll</assembly>
-      <assembly>bin\Debug\System.Reflection.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.Resources.Reader.dll</assembly>
-      <assembly>bin\Debug\System.Resources.ResourceManager.dll</assembly>
-      <assembly>bin\Debug\System.Resources.Writer.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.CompilerServices.VisualC.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Extensions.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Handles.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.InteropServices.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.InteropServices.RuntimeInformation.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Numerics.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Serialization.Formatters.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Serialization.Json.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Serialization.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.Runtime.Serialization.Xml.dll</assembly>
-      <assembly>bin\Debug\System.Security.Claims.dll</assembly>
-      <assembly>bin\Debug\System.Security.Cryptography.Algorithms.dll</assembly>
-      <assembly>bin\Debug\System.Security.Cryptography.Csp.dll</assembly>
-      <assembly>bin\Debug\System.Security.Cryptography.Encoding.dll</assembly>
-      <assembly>bin\Debug\System.Security.Cryptography.Primitives.dll</assembly>
-      <assembly>bin\Debug\System.Security.Cryptography.X509Certificates.dll</assembly>
-      <assembly>bin\Debug\System.Security.Principal.dll</assembly>
-      <assembly>bin\Debug\System.Security.SecureString.dll</assembly>
-      <assembly>bin\Debug\System.Text.Encoding.dll</assembly>
-      <assembly>bin\Debug\System.Text.Encoding.Extensions.dll</assembly>
-      <assembly>bin\Debug\System.Text.RegularExpressions.dll</assembly>
-      <assembly>bin\Debug\System.Threading.dll</assembly>
-      <assembly>bin\Debug\System.Threading.Overlapped.dll</assembly>
-      <assembly>bin\Debug\System.Threading.Tasks.dll</assembly>
-      <assembly>bin\Debug\System.Threading.Tasks.Parallel.dll</assembly>
-      <assembly>bin\Debug\System.Threading.Thread.dll</assembly>
-      <assembly>bin\Debug\System.Threading.ThreadPool.dll</assembly>
-      <assembly>bin\Debug\System.Threading.Timer.dll</assembly>
-      <assembly>bin\Debug\System.ValueTuple.dll</assembly>
-      <assembly>bin\Debug\System.Xml.ReaderWriter.dll</assembly>
-      <assembly>bin\Debug\System.Xml.XDocument.dll</assembly>
-      <assembly>bin\Debug\System.Xml.XmlDocument.dll</assembly>
-      <assembly>bin\Debug\System.Xml.XmlSerializer.dll</assembly>
-      <assembly>bin\Debug\System.Xml.XPath.dll</assembly>
-      <assembly>bin\Debug\System.Xml.XPath.XDocument.dll</assembly>
+      <assembly>bin\Release\Soluling.dll</assembly>
+      <assembly>bin\Release\Soluling.Translator.Forms.dll</assembly>
     </assemblies>
-    <configurations>
-      <configuration name="Default"/>
-    </configurations>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -365,14 +267,12 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
@@ -380,6 +280,5 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>

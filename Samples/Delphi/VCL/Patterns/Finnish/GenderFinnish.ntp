@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AC808DC5-EA87-4249-A19B-FE24A44A4E19" created="20170426T132758Z" lastmodified="20200209T161525Z" version="1.0.691" stringid="384">
+<project id="AC808DC5-EA87-4249-A19B-FE24A44A4E19" created="20170426T132758Z" lastmodified="20260301T062729Z" version="1.0.1090" stringid="394">
   <lang id="fi"/>
   <lang id="en"/>
-  <node class="TDelphiSource" name="Win32\Release\GenderFinnish.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Finnish\Win32\Release\GenderFinnish.exe" original="fi" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\GenderFinnish.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Finnish\Win32\Release\GenderFinnish.exe" original="fi" lastmodified="20260301T062729Z" hassignature="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -144,16 +144,34 @@
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtPattern" st="0">
+        <row id="SMale" si="386" created="20260301T062654Z" st="0">
+          <value>Male</value>
+          <lang id="fi" rw="0" time="20260301T062723Z">Maskuliini</lang>
+        </row>
+        <row id="SFemale" si="387" created="20260301T062654Z" st="0">
+          <value>Female</value>
+          <lang id="fi" rw="0" time="20260301T062727Z">Feminiini</lang>
+        </row>
+        <row id="SNeutral" si="388" created="20260301T062654Z" st="0">
+          <value>Neutral</value>
+          <lang id="fi" rw="0" time="20260301T062719Z">Neutraali</lang>
+        </row>
+        <row id="SZero" si="389" created="20260301T062654Z" st="0">Nullar</row>
+        <row id="SOne" si="390" created="20260301T062654Z" st="0">Singular</row>
+        <row id="STwo" si="391" created="20260301T062654Z" st="0">Dual</row>
+        <row id="SFew" si="392" created="20260301T062654Z" st="0">Few</row>
+        <row id="SMany" si="393" created="20260301T062654Z" st="0">Many</row>
+        <row id="SPlural" si="394" created="20260301T062654Z" st="0">Plural</row>
+      </node>
       <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessageGender" changed="20200209T161503Z" class="TPatternRow" si="12">
-          <value gender="geNeutral">{0} tuo polkupyöränsä</value>
-          <prev gender="geNeutral">{0:s} tuo polkupyöränsä</prev>
-          <lang id="en" time="20200209T161516Z">
-            <value gender="geMale">{0} will bring his bicycle</value>
-            <pattern gender="geFemale">{0} will bring her bicycle</pattern>
+        <row id="SMessageGender" changed="20260301T062629Z" si="12" scannedcomment="0: Name of the person" created="20260301T062629Z" codep="1">
+          <value gender="geNeutral">%s tuo polkupyöränsä</value>
+          <lang id="en" st="3" time="20200209T161516Z">
+            <value gender="geMale">%s will bring his bicycle</value>
+            <pattern gender="geFemale">%s will bring her bicycle</pattern>
           </lang>
         </row>
         <row id="SJoku" si="13">
@@ -182,13 +200,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

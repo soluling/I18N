@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20250914T120841Z" version="1.0.1076" stringid="418">
+<project id="A2468CA5-2951-44D8-9C3B-D40A478A6A09" created="20120904T132536Z" lastmodified="20260301T115306Z" version="1.0.1090" stringid="419" placehoder="pmOriginal">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20250914T120841Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
+  <node class="TDelphiSource" name="Win32\Release\Multilingual.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Driving\Multilingual\Win32\Release\Multilingual.exe" original="en" lastmodified="20260301T115257Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" version="dvXE2">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -496,21 +496,20 @@
           <value>Driving time calculator</value>
           <lang id="fi" time="20110805T135508Z">Ajoaikalaskin</lang>
         </row>
-        <row id="SResultPlural" changed="20200209T160439Z" class="TPatternRow" si="13" created="20170517T034344Z" original="Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.">
-          <value startpattern="1">Driving time{0}{1}.</value>
-          <prev startpattern="1">Driving time{0:s}{1:s}.</prev>
+        <row id="SResultPlural" changed="20260301T115236Z" si="13" created="20260301T115236Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" time="20200209T160512Z">
-            <value startpattern="1">Ajoaika{0}{1}</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" time="20200209T160512Z">
+            <value startpattern="1">Ajoaika%0:s%1:s</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
         </row>
       </node>
@@ -541,6 +540,8 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
 </project>

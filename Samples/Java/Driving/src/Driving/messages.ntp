@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E698FB57-9FA3-447B-A162-2E356D4CAE1F" created="20140910T052357Z" lastmodified="20210916T093057Z" version="1.0.878" stringid="9">
+<project id="E698FB57-9FA3-447B-A162-2E356D4CAE1F" created="20140910T052357Z" lastmodified="20260302T064257Z" version="1.0.1090" stringid="12">
   <lang id="fi"/>
-  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Driving\src\Driving\messages.properties" original="en" encoding="iso-8859-1">
+  <node class="TPropertiesSource" name="messages.properties" fullpath="D:\NT\Deploy\Samples\Java\Driving\src\Driving\messages.properties" original="en" lastmodified="20260302T064257Z" encoding="iso-8859-1">
     <row id="Locale" si="1">en</row>
-    <row id="HoursPlural" changed="20210916T093045Z" class="TPatternRow" si="2" created="20190309T193118Z">one;{0} hour;other;{1} hours</row>
-    <row id="MinutesPlural" changed="20210916T093045Z" class="TPatternRow" si="3" created="20190309T193118Z">one;{0} minute;other;{1} minutes</row>
+    <row id="HoursPlural" changed="20260302T064257Z" si="2" created="20260302T064257Z" codep="1">one;%d hour;other;%d hours</row>
+    <row id="MinutesPlural" changed="20260302T064257Z" si="3" created="20260302T064257Z" codep="1">one;%d minute;other;%d minutes</row>
     <row id="Distance" si="4">
       <value>Distance:</value>
       <lang id="fi" st="4" or="6" rw="0" time="20190309T193144Z" fuzzy="1">Etäisyys:</lang>
@@ -22,9 +22,9 @@
       <value>Driving Time</value>
       <lang id="fi" st="4" or="6" rw="0" time="20190309T193139Z" fuzzy="1">Ajoaika</lang>
     </row>
-    <row id="DrivingTimeIs" class="TPatternRow" si="9" created="20190309T193118Z">
-      <value>Driving time is {0} and {1}</value>
-      <lang id="fi" st="4" or="6" rw="0" time="20190309T193155Z" fuzzy="1">Ajoaika on {0} ja {1}</lang>
+    <row id="DrivingTimeIs" changed="20260302T064257Z" si="9" created="20260302T064257Z" codep="1">
+      <value>Driving time is %s and %s</value>
+      <lang id="fi" st="3" or="6" rw="0" time="20190309T193155Z" fuzzy="1">Ajoaika on %s ja %s</lang>
     </row>
     <data>
       TG9jYWxlPWVuDQpIb3Vyc1BsdXJhbD1vbmU7JWQgaG91cjtvdGhlcjslZCBob3Vycw0KTWludXRlc1BsdXJhbD1vbmU7JWQgbWlu
@@ -36,13 +36,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
@@ -51,6 +49,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

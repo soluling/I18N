@@ -1,10 +1,40 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en" trgLang="fi">
-  <file original="ng.template" id="ngi18n">
+<xliff version="2.0" xmlns="urn:oasis:names:tc:xliff:document:2.0" srcLang="en-US" trgLang="fi">
+  <file id="ngi18n" original="ng.template">
     <unit id="5672754662376866280">
       <segment>
         <source>Driving Time</source>
         <target>Ajoaika</target>
+      </segment>
+    </unit>
+    <unit id="5005141257091855131">
+      <segment>
+        <source>Calculate</source>
+        <target>Laske</target>
+      </segment>
+    </unit>
+    <unit id="5516112325374793270">
+      <segment>
+        <source>Driving time is <ph id="0" equiv="ICU" disp="{hours, plural, =0 { } one {{{hours}} hour } other {{{hours}} hours }}"/> <ph id="1" equiv="ICU_1" disp="{minutes, plural, one {{{minutes}} minute} other {{{minutes}} minutes}}"/></source>
+        <target>Ajoaika on <ph id="0" equiv="ICU" disp="{hours, plural, =0 { } one {{{hours}} hour } other {{{hours}} hours }}"/> <ph id="1" equiv="ICU_1" disp="{minutes, plural, one {{{minutes}} minute} other {{{minutes}} minutes}}"/></target>
+      </segment>
+    </unit>
+    <unit id="4892912909971286976">
+      <segment>
+        <source>{VAR_PLURAL, plural, =0 {} one {<ph id="0" equiv="INTERPOLATION"/> hour } other {<ph id="1" equiv="INTERPOLATION"/> hours }}</source>
+        <target>{VAR_PLURAL, plural, =0 {} one {<ph id="0" equiv="INTERPOLATION"/> tunti } other {<ph id="0" equiv="INTERPOLATION"/> tuntia }}</target>
+      </segment>
+    </unit>
+    <unit id="3023394972653842807">
+      <segment>
+        <source>{VAR_PLURAL, plural, one {<ph id="0" equiv="INTERPOLATION"/> minute} other {<ph id="1" equiv="INTERPOLATION"/> minutes}}</source>
+        <target>{VAR_PLURAL, plural, one {<ph id="0" equiv="INTERPOLATION"/> minuutti} other {<ph id="0" equiv="INTERPOLATION"/> minuuttia}}</target>
+      </segment>
+    </unit>
+    <unit id="1187906511615154129">
+      <segment>
+        <source>Opening Driving Time Calculator dialog...</source>
+        <target>Avataan ajoaikalaskuri-valintaikkuna...</target>
       </segment>
     </unit>
   </file>

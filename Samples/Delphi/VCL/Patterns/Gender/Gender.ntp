@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A37AA803-F869-41C8-BC2B-AE6454B881AC" created="20161206T185410Z" lastmodified="20200209T161552Z" version="1.0.691" stringid="383">
+<project id="A37AA803-F869-41C8-BC2B-AE6454B881AC" created="20161206T185410Z" lastmodified="20260301T060029Z" version="1.0.1090" stringid="393">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Gender.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Gender\Win32\Release\Gender.exe" original="en" platforms="[ptWin32]">
+  <node class="TDelphiSource" name="Win32\Release\Gender.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Gender\Win32\Release\Gender.exe" original="en" lastmodified="20260301T060029Z" hassignature="1" hassignatureread="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -141,24 +141,43 @@
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
-      <node class="TWindowsStringNode" name="NtPattern" excluded="1">
-        <row id="SNeutral" si="14" st="4">
+      <node class="TWindowsStringNode" name="NtPattern">
+        <row id="SMale" si="385" created="20260301T055427Z">
+          <value>Male</value>
+          <lang id="fi" rw="0" time="20260301T055439Z">Maskuliini</lang>
+        </row>
+        <row id="SFemale" si="386" created="20260301T055427Z">
+          <value>Female</value>
+          <lang id="fi" rw="0" time="20260301T055449Z">Feminiini</lang>
+        </row>
+        <row id="SNeutral" si="387" created="20260301T055427Z">
           <value>Neutral</value>
-          <lang id="fi" st="3" rw="0" time="20181026T234251Z">neutraali</lang>
+          <lang id="fi" rw="0" time="20260301T055431Z" fuzzy="99.5">Neutraali</lang>
+        </row>
+        <row id="SZero" si="388" created="20260301T055427Z">Nullar</row>
+        <row id="SOne" si="389" created="20260301T055427Z">
+          <value>Singular</value>
+          <lang id="fi" rw="0" time="20260301T060021Z" fuzzy="100">Yksikkö</lang>
+        </row>
+        <row id="STwo" si="390" created="20260301T055427Z">Dual</row>
+        <row id="SFew" si="391" created="20260301T055427Z">Few</row>
+        <row id="SMany" si="392" created="20260301T055427Z">Many</row>
+        <row id="SPlural" si="393" created="20260301T055427Z">
+          <value>Plural</value>
+          <lang id="fi" rw="0" time="20260301T060017Z" fuzzy="100">Monikko</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="NtWindows" st="0" excluded="1"/>
-      <node class="TWindowsStringNode" name="System" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SOtherMessageGender" changed="20200209T161539Z" class="TPatternRow" si="21" created="20180223T020821Z">
-          <value gender="geNeutral">{0} will bring a bicycle</value>
-          <prev gender="geNeutral">{0:s} will bring a bicycle</prev>
-          <pattern gender="geMale">{0} will bring his bicycle</pattern>
-          <pattern gender="geFemale">{0} will bring her bicycle</pattern>
-          <lang id="fi" time="20200209T161546Z">{0} tuo polkupyöränsä</lang>
+        <row id="SOtherMessageGender" changed="20260301T055344Z" si="21" scannedcomment="0: Name of a person" created="20260301T055344Z" codep="1">
+          <value gender="geNeutral">%s will bring a bicycle</value>
+          <pattern gender="geMale">%s will bring his bicycle</pattern>
+          <pattern gender="geFemale">%s will bring her bicycle</pattern>
+          <lang id="fi" time="20200209T161546Z">%s tuo polkupyöränsä</lang>
         </row>
       </node>
-      <node class="TWindowsStringNode" name="Vcl" st="0" excluded="1"/>
+      <node class="TWindowsStringNode" name="Vcl" excluded="1"/>
     </node>
     <node class="TWindowsVersionFolder" name="Version" excluded="1"/>
     <configurations>
@@ -172,18 +191,19 @@
     <rule component="*" property="*Font.Name"/>
   </rules>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B1374969-33CF-416C-8436-1598750FBCAD" created="20220515T003429Z" lastmodified="20220517T003353Z" version="1.0.921" lockedrowcomplete="0" stringid="471">
+<project id="B1374969-33CF-416C-8436-1598750FBCAD" created="20220515T003429Z" lastmodified="20260301T133640Z" version="1.0.1090" lockedrowcomplete="0" stringid="886">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Binary.exe" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Driving\Binary\Win32\Release\Binary.exe" original="en" lastmodified="20220517T003353Z" platforms="[ptWin32,ptWin64,ptmacOS64]" hassignatureread="1" drcscanmode="drcNew" library="dlFireMonkey" version="dvAlexandria">
+  <node class="TDelphiSource" name="Win32\Release\Binary.exe" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Version1\Driving\Binary\Win32\Release\Binary.exe" original="en" lastmodified="20260301T133640Z" platforms="[ptWin32,ptWin64,ptMacOS64]" hassignatureread="1" drcscanmode="drcNew" library="dlFireMonkey" version="dvAlexandria">
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
     </datatypes>
@@ -397,30 +397,467 @@
       </node>
     </node>
     <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="FMX" created="20260301T133639Z" st="0">
+        <row id="Edit_Win_sInvalidComCtl32" si="485" st="0">This control requires version 4.70 or greater of COMCTL32.DLL</row>
+        <row id="Consts_SControlClassIsNil" si="486" st="0">AControlClass cannot be nil. Factory cannot generate presentation name.</row>
+        <row id="Consts_SPresentationProxyCreateError" si="487" st="0">Cannot create presentation proxy with nil model or PresentedControl. Use overloaded version of constructor with parameters and pass correct values.</row>
+        <row id="Consts_SPresentationProxyClassIsNil" si="488" st="0">APresentationProxyClass is nil. Factory cannot register presentation with a nil presentation proxy class.</row>
+        <row id="Consts_SPresentationProxyNameIsEmpty" si="489" st="0">APresentationName is empty. Factory cannot register presentation with an empty presentation name</row>
+        <row id="Consts_SPresentationAlreadyRegistered" si="490" st="0" codep="1">Presentation Proxy class [%s] for this presentation name [%s] has already been registered.</row>
+        <row id="Consts_SDataModelKeyEmpty" si="491" st="0">Key cannot be empty. Data model cannot set or get data by key with an empty name.</row>
+        <row id="Consts_SFormatAlreadyRegistered" si="492" st="0" codep="1">Custom clipboard format with name "%s" is already registered</row>
+        <row id="Consts_SFormatWasNotRegistered" si="493" st="0" codep="1">Custom clipboard format with name "%s" is not registered</row>
+        <row id="Consts_SCannotFindParentBySpecifiedCriteria" si="494" st="0">Cannot find parent by specified criteria</row>
+        <row id="Consts_SEdgeBrowserEngineUnavailable" si="495" st="0">Edge browser engine is unavailable</row>
+        <row id="Consts_SEdgeBrowserEngineCreateFailed" si="496" st="0">Failed to create instance of Edge browser engine</row>
+        <row id="Consts_SInvalidRowIndex" si="502" st="0" codep="1">Row index, %d, out of bounds</row>
+        <row id="Consts_SInvalidColumnIndex" si="503" st="0" codep="1">Column index, %d, out of bounds</row>
+        <row id="Consts_SInvalidControlItem" si="504" st="0">ControlItem.Control cannot be set to owning GridPanel</row>
+        <row id="Consts_SCannotDeleteColumn" si="505" st="0">Cannot delete a column that contains controls</row>
+        <row id="Consts_SCannotDeleteDefColumn" si="506" st="0">You cannot delete a column by default</row>
+        <row id="Consts_SCannotDeleteRow" si="507" st="0">Cannot delete a row that contains controls</row>
+        <row id="Consts_SCellMember" si="508" st="0">Member</row>
+        <row id="Consts_SCellSizeType" si="509" st="0">Size Type</row>
+        <row id="Consts_SCellValue" si="510" st="0">Value</row>
+        <row id="Consts_SCellAutoSize" si="511" st="0">Auto</row>
+        <row id="Consts_SCellPercentSize" si="512" st="0">Percent</row>
+        <row id="Consts_SCellAbsoluteSize" si="513" st="0">Absolute</row>
+        <row id="Consts_SCellColumn" si="514" st="0" codep="1">Column%d</row>
+        <row id="Consts_SCellRow" si="515" st="0" codep="1">Row%d</row>
+        <row id="Consts_SWrongModelClassType" si="516" st="0" codep="1">Model is not valid class. Expected [%s], but received [%s]</row>
+        <row id="Consts_SWrongParameter" si="517" st="0">[%] parameter cannot be nil</row>
+        <row id="Consts_SInvalidCallingConditions" si="518" st="0" codep="1">Invalid calling conditions for '%s'.</row>
+        <row id="Consts_SCannotFindSuitablePixelFormat" si="519" st="0" codep="1">Cannot find a suitable pixel format for '%s'.</row>
+        <row id="Consts_SCannotFindSuitableShader" si="520" st="0" codep="1">Cannot find a suitable shader for '%s'.</row>
+        <row id="Consts_SCannotDetermineDirect3DLevel" si="521" st="0">Cannot determine Direct3D support level.</row>
+        <row id="Consts_SCannotCreateD2DFactory" si="522" st="0" codep="1">Cannot create Direct2D Factory object for '%s'.</row>
+        <row id="Consts_SCannotCreateDWriteFactory" si="523" st="0" codep="1">Cannot create DirectWrite Factory object for '%s'.</row>
+        <row id="Consts_SCannotCreateWICImagingFactory" si="524" st="0" codep="1">Cannot create WIC Imaging Factory object for '%s'.</row>
+        <row id="Consts_SCannotCreateRenderTarget" si="525" st="0" codep="1">Cannot create rendering target for '%s'.</row>
+        <row id="Consts_SCannotCreateD3DDevice" si="526" st="0" codep="1">Cannot create Direct3D device for '%s'.</row>
+        <row id="Consts_SCannotAcquireDXGIFactory" si="527" st="0" codep="1">Cannot acquire DXGI factory from Direct3D device for '%s'.</row>
+        <row id="Consts_SCannotCreateTexture" si="528" st="0" codep="1">Cannot create texture for '%s'.</row>
+        <row id="Consts_SCannotCreateRenderTargetView" si="529" st="0" codep="1">Cannot create render target view for '%s'.</row>
+        <row id="Consts_SCannotCreateSwapChain" si="530" st="0" codep="1">Cannot create a swap chain for '%s'.</row>
+        <row id="Consts_SCannotPaintOnCanvasWithoutBeginScene" si="531" st="0">It is not possible to perform rendering. BeginScene was not invoked.</row>
+        <row id="Consts_SCannotAddFixedSize" si="532" st="0">Cannot add columns or rows when ExpandStyle is TExpandStyle.FixedSize</row>
+        <row id="Consts_SInvalidSpan" si="533" st="0" codep="1">'%d' is not a valid span</row>
+        <row id="Consts_StrEChangeFixed" si="534" st="0" codep="1">The "%s" cannot be modified (Fixed = True)</row>
+        <row id="Consts_StrEDupScale" si="535" st="0" codep="1">Duplicate scale value %s</row>
+        <row id="Consts_StrOther" si="536" st="0">Other scale</row>
+        <row id="Consts_StrScale1" si="537" st="0">Normal</row>
+        <row id="Consts_SCodecFileExtensionCannotEmpty" si="538" st="0">Cannot register bitmap codec. Codec file extension cannot be empty.</row>
+        <row id="Consts_SCodecClassCannotBeNil" si="539" st="0">Cannot register bitmap codec. Codec class cannot be nil.</row>
+        <row id="Consts_SCodecAlreadyExists" si="540" st="0" codep="1">Cannot register bitmap codec. Codec for specified file extension "%s" has already existed.</row>
+        <row id="Consts_SBitmapIncorrectSize" si="541" st="0">Incorrect size of bitmap parameter(s).</row>
+        <row id="Consts_SBitmapLoadingFailed" si="542" st="0">Loading bitmap failed.</row>
+        <row id="Consts_SBitmapLoadingFailedNamed" si="543" st="0" codep="1">Loading bitmap failed (%s).</row>
+        <row id="Consts_SBitmapSizeTooBig" si="544" st="0">Bitmap size too big.</row>
+        <row id="Consts_SInvalidCanvasParameter" si="545" st="0">Invalid call of GetParameter.</row>
+        <row id="Consts_SThumbnailLoadingFailedNamed" si="546" st="0" codep="1">Loading thumbnail failed (%s).</row>
+        <row id="Consts_SBitmapSavingFailed" si="547" st="0">Saving bitmap failed.</row>
+        <row id="Consts_SBitmapSavingFailedNamed" si="548" st="0" codep="1">Saving bitmap failed (%s).</row>
+        <row id="Consts_SRetrieveSurfaceContents" si="549" st="0">Could not retrieve surface contents.</row>
+        <row id="Consts_SEditCut" si="550" st="0">Cut</row>
+        <row id="Consts_SEditPaste" si="551" st="0">Paste</row>
+        <row id="Consts_SEditDelete" si="552" st="0">Delete</row>
+        <row id="Consts_SEditSelectAll" si="553" st="0">Select All</row>
+        <row id="Consts_SCannotCreateCircularDependence" si="554" st="0">Cannot create a circular dependency between components</row>
+        <row id="Consts_SPrinterDPIChangeError" si="555" st="0">Active printer DPI cannot be changed while printing</row>
+        <row id="Consts_SPrinterSettingsReadError" si="556" st="0" codep="1">Error occurred while reading printer settings: %s</row>
+        <row id="Consts_SPrinterSettingsWriteError" si="557" st="0" codep="1">Error occurred while writing printer settings: %s</row>
+        <row id="Consts_SVAllFiles" si="558" st="0">All Files</row>
+        <row id="Consts_SVBitmaps" si="559" st="0">Bitmaps</row>
+        <row id="Consts_SVIcons" si="560" st="0">Icons</row>
+        <row id="Consts_SVTIFFImages" si="561" st="0">TIFF Images</row>
+        <row id="Consts_SVJPGImages" si="562" st="0">JPEG Images</row>
+        <row id="Consts_SVPNGImages" si="563" st="0">PNG Images</row>
+        <row id="Consts_SVGIFImages" si="564" st="0">GIF Images</row>
+        <row id="Consts_SWMPImages" si="565" st="0">WMP Images</row>
+        <row id="Consts_SMsgDlgCancel" si="566" st="0">Cancel</row>
+        <row id="Consts_SMsgDlgHelp" si="567" st="0">Help</row>
+        <row id="Consts_SMsgDlgAbort" si="568" st="0">Abort</row>
+        <row id="Consts_SMsgDlgRetry" si="569" st="0">Retry</row>
+        <row id="Consts_SMsgDlgIgnore" si="570" st="0">Ignore</row>
+        <row id="Consts_SMsgDlgAll" si="571" st="0">All</row>
+        <row id="Consts_SMsgDlgNoToAll" si="572" st="0">No to All</row>
+        <row id="Consts_SMsgDlgYesToAll" si="573" st="0">Yes to &amp;All</row>
+        <row id="Consts_SMsgDlgClose" si="574" st="0">Close</row>
+        <row id="Consts_SWindowsVistaRequired" si="575" st="0" codep="1">%s requires Windows Vista or later</row>
+        <row id="Consts_SUsername" si="576" st="0">&amp;Username</row>
+        <row id="Consts_SPassword" si="577" st="0">&amp;Password</row>
+        <row id="Consts_SDomain" si="578" st="0">&amp;Domain</row>
+        <row id="Consts_SLogin" si="579" st="0">Login</row>
+        <row id="Consts_SAppDefault" si="580" st="0">application</row>
+        <row id="Consts_SEditCopy" si="581" st="0">Copy</row>
+        <row id="Consts_SMainMenuSupportsOnlyTMenuItems" si="582" st="0">A main menu only supports TMenuItem children</row>
+        <row id="Consts_SNoImplementation" si="583" st="0" codep="1">No %s implementation found</row>
+        <row id="Consts_SBitmapSizeNotEqual" si="584" st="0">Bitmap size must be equal in copy operation</row>
+        <row id="Consts_SInvalidSceneUpdatingPairCall" si="585" st="0">Invalid IScene.DisableUpdating/IScene.EnableUpdating call pair</row>
+        <row id="Consts_SNoPlatformStyle" si="586" st="0">No platform styles found</row>
+        <row id="Consts_SInvalidPlatformStyle" si="587" st="0">No platform style found for the current platform</row>
+        <row id="Consts_SNoIDeviceBehaviorBehavior" si="588" st="0">Required IDeviceBehavior is not registered</row>
+        <row id="Consts_SDialogMustBeRunInUIThread" si="589" st="0">Messages must be shown in the main UI thread.</row>
+        <row id="Consts_SObjectNonMainThreadUsage" si="590" st="0" codep="1">'%s' is used on a not main thread</row>
+        <row id="Consts_SMsgDlgWarning" si="591" st="0">Warning</row>
+        <row id="Consts_SMsgDlgError" si="592" st="0">Error</row>
+        <row id="Consts_SMsgDlgInformation" si="593" st="0">Information</row>
+        <row id="Consts_SMsgDlgConfirm" si="594" st="0">Confirm</row>
+        <row id="Consts_SMsgDlgYes" si="595" st="0">Yes</row>
+        <row id="Consts_SMsgDlgNo" si="596" st="0">No</row>
+        <row id="Consts_SMsgDlgOK" si="597" st="0">OK</row>
+        <row id="Consts_SCannotCreateTimer" si="598" st="0" codep="1">Cannot create timer: systemErrorCode=%d</row>
+        <row id="Consts_SErrorShortCut" si="599" st="0" codep="1">An unknown combination of keys %s</row>
+        <row id="Consts_SEUseHeirs" si="600" st="0" codep="1">You can use only the inheritors of class "%s"</row>
+        <row id="Consts_SUnavailableMenuId" si="601" st="0">Cannot create menu ID. All IDs have already been assigned</row>
+        <row id="Consts_SInvalidGestureID" si="602" st="0" codep="1">Invalid gesture ID (%d)</row>
+        <row id="Consts_SOutOfRange" si="603" st="0" codep="1">Value must be between %d and %d</row>
+        <row id="Consts_SAddIStylusAsyncPluginError" si="604" st="0" codep="1">Unable to add IStylusAsyncPlugin: %s</row>
+        <row id="Consts_SAddIStylusSyncPluginError" si="605" st="0" codep="1">Unable to add IStylusSyncPlugin: %s</row>
+        <row id="Consts_SRemoveIStylusAsyncPluginError" si="606" st="0" codep="1">Unable to remove IStylusAsyncPlugin: %s</row>
+        <row id="Consts_SRemoveIStylusSyncPluginError" si="607" st="0" codep="1">Unable to remove IStylusSyncPlugin: %s</row>
+        <row id="Consts_SStylusHandleError" si="608" st="0" codep="1">Unable to get or set window handle: %s</row>
+        <row id="Consts_SStylusEnableError" si="609" st="0" codep="1">Unable to enable or disable IRealTimeStylus: %s</row>
+        <row id="Consts_SEnableRecognizerError" si="610" st="0" codep="1">Unable to enable or disable IGestureRecognizer: %s</row>
+        <row id="Consts_SInitialGesturePointError" si="611" st="0">Unable to retrieve initial gesture point</row>
+        <row id="Consts_SSetStylusGestureError" si="612" st="0" codep="1">Unable to set stylus gestures: %s</row>
+        <row id="Consts_StrESingleMainMenu" si="613" st="0">The main menu can be only a single instance</row>
+        <row id="Consts_SResultCanNotBeNil" si="614" st="0" codep="1">The function '%s' must not return nil value</row>
+        <row id="Consts_SInvalidStyleForPlatform" si="615" st="0">The style you have chosen is not available for your currently selected target platform. You can select a custom style or remove the stylebook to allow FireMonkey to automatically load the native style at run time</row>
+        <row id="Consts_SCannotLoadStyleFromStream" si="616" st="0">Cannot load style from stream</row>
+        <row id="Consts_SCannotLoadStyleFromRes" si="617" st="0">Cannot load style from resource</row>
+        <row id="Consts_SCannotLoadStyleFromFile" si="618" st="0" codep="1">Cannot load style from file %s</row>
+        <row id="Consts_SInvalidPrinterClass" si="619" st="0" codep="1">Invalid printer class: %s</row>
+        <row id="Consts_SPromptArrayTooShort" si="620" st="0">Length of value array must be >= length of prompt array</row>
+        <row id="Consts_SPromptArrayEmpty" si="621" st="0">Prompt array must not be empty</row>
+        <row id="Consts_SInvalidFmxHandle" si="622" st="0" codep="1">Invalid FMX Handle: %s%.*x</row>
+        <row id="Consts_SUnsupportedPlatformService" si="623" st="0" codep="1">Unsupported platform service: %s</row>
+        <row id="Consts_SServiceAlreadyRegistered" si="624" st="0" codep="1">Service %s already registered</row>
+        <row id="Consts_SUnsupportedOSVersion" si="625" st="0" codep="1">Unsupported OS version: %s</row>
+        <row id="Consts_SNotInstance" si="626" st="0" codep="1">Instance of "%s" not created</row>
+        <row id="Consts_SFlasherNotRegistered" si="627" st="0">Class of flashing control is not registered</row>
+        <row id="Consts_SUnsupportedInterface" si="628" st="0" codep="1">Class %0:s does not support interface %1:s</row>
+        <row id="Consts_SNullException" si="629" st="0">Handled null exception</row>
+        <row id="Consts_SInvalidPrinterOp" si="638" st="0">Operation not supported on selected printer</row>
+        <row id="Consts_SInvalidPrinter" si="639" st="0">Selected printer is not valid</row>
+        <row id="Consts_SPrinterIndexError" si="640" st="0">Printer index out of range</row>
+        <row id="Consts_SDeviceOnPort" si="641" st="0" codep="1">%s on %s</row>
+        <row id="Consts_SNoDefaultPrinter" si="642" st="0">There is no default printer currently selected</row>
+        <row id="Consts_SNotPrinting" si="643" st="0">Printer is not currently printing</row>
+        <row id="Consts_SPrinting" si="644" st="0">Printing in progress</row>
+        <row id="Consts_StrCannotFocus" si="645" st="0">Cannot focus this control</row>
+      </node>
       <node class="TWindowsStringNode" name="FMX.Consts" excluded="1"/>
       <node class="TWindowsStringNode" name="FMX.Edit.Win" excluded="1"/>
       <node class="TWindowsStringNode" name="Macapi.Consts" excluded="1"/>
       <node class="TWindowsStringNode" name="NtPattern" excluded="1"/>
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
+      <node class="TWindowsStringNode" name="System" created="20260301T133639Z" st="0">
+        <row id="RegularExpressionsConsts_SRegExInvalidIndexType" si="473" st="0">Invalid index type</row>
+        <row id="RegularExpressionsConsts_SRegExIndexOutOfBounds" si="474" st="0" codep="1">Index out of bounds (%d)</row>
+        <row id="RegularExpressionsConsts_SRegExInvalidGroupName" si="475" st="0" codep="1">Invalid group name (%s)</row>
+        <row id="Win_ComConst_SOleError" si="476" st="0" codep="1">OLE error %.8x</row>
+        <row id="Win_ComConst_SNoMethod" si="477" st="0" codep="1">Method '%s' not supported by automation object</row>
+        <row id="Win_ComConst_SVarNotObject" si="478" st="0">Variant does not reference an automation object</row>
+        <row id="Win_ComConst_STooManyParams" si="479" st="0">Dispatch methods do not support more than 64 parameters</row>
+        <row id="Win_ComConst_sParameterCountExceeded" si="480" st="0">Parameter count exceeded</row>
+        <row id="Win_ComConst_SInvalidLicense" si="481" st="0" codep="1">License information for %s is invalid</row>
+        <row id="Win_ComConst_SNotLicensed" si="482" st="0" codep="1">License information for %s not found. You cannot use this control in design mode</row>
+        <row id="Win_ComConst_SCannotActivate" si="483" st="0">OLE control activation failed</row>
+        <row id="Win_ComConst_SNoWindowHandle" si="484" st="0">Could not obtain OLE control window handle</row>
+        <row id="RegularExpressionsConsts_SRegExMissingExpression" si="497" st="0">A regular expression specified in RegEx is required</row>
+        <row id="RegularExpressionsConsts_SRegExExpressionError" si="498" st="0" codep="1">Error in regular expression at offset %d: %s</row>
+        <row id="RegularExpressionsConsts_SRegExStudyError" si="499" st="0" codep="1">Error studying the regex: %s</row>
+        <row id="RegularExpressionsConsts_SRegExMatchRequired" si="500" st="0">Successful match required</row>
+        <row id="RegularExpressionsConsts_SRegExStringsRequired" si="501" st="0">Strings parameter cannot be nil</row>
+        <row id="RTLConsts_SInvalidDateString" si="630" st="0" codep="1">Invalid date string: %s</row>
+        <row id="RTLConsts_SInvalidTimeString" si="631" st="0" codep="1">Invalid time string: %s</row>
+        <row id="RTLConsts_SInvalidOffsetString" si="632" st="0" codep="1">Invalid time Offset string: %s</row>
+        <row id="RTLConsts_sCannotManuallyConstructDevice" si="633" st="0">Manual construction of TDeviceInfo is not supported</row>
+        <row id="RTLConsts_sAttributeExists" si="634" st="0" codep="1">Attribute '%s' already exists</row>
+        <row id="RTLConsts_sDeviceExists" si="635" st="0" codep="1">Device '%s' already exists</row>
+        <row id="RTLConsts_sMustWaitOnOneEvent" si="636" st="0">Must wait on at least one event</row>
+        <row id="RTLConsts_sBeginInvokeDestroying" si="637" st="0">Cannot call BeginInvoke on a TComponent in the process of destruction</row>
+        <row id="RTLConsts_SWindowsXP" si="646" st="0">Windows XP</row>
+        <row id="RTLConsts_SWindowsServer2003" si="647" st="0">Windows Server 2003</row>
+        <row id="RTLConsts_SWindowsServer2003R2" si="648" st="0">Windows Server 2003 R2</row>
+        <row id="RTLConsts_SWindowsServer2012" si="649" st="0">Windows Server 2012</row>
+        <row id="RTLConsts_SWindowsServer2012R2" si="650" st="0">Windows Server 2012 R2</row>
+        <row id="RTLConsts_SWindowsServer2016" si="651" st="0">Windows Server 2016</row>
+        <row id="RTLConsts_SWindowsServer2019" si="652" st="0">Windows Server 2019</row>
+        <row id="RTLConsts_SWindows8" si="653" st="0">Windows 8</row>
+        <row id="RTLConsts_SWindows8Point1" si="654" st="0">Windows 8.1</row>
+        <row id="RTLConsts_SWindows10" si="655" st="0">Windows 10</row>
+        <row id="RTLConsts_sObserverUnsupported" si="656" st="0">Observer is not supported</row>
+        <row id="RTLConsts_sObserverMultipleSingleCast" si="657" st="0">Cannot have multiple single cast observers added to the observers collection</row>
+        <row id="RTLConsts_sObserverNoInterface" si="658" st="0">The object does not implement the observer interface</row>
+        <row id="RTLConsts_sObserverNoSinglecastFound" si="659" st="0" codep="1">No single cast observer with ID %d was added to the observer collection</row>
+        <row id="RTLConsts_sObserverNoMulticastFound" si="660" st="0" codep="1">No multi cast observer with ID %d was added to the observer collection</row>
+        <row id="RTLConsts_sObserverNotAvailable" si="661" st="0">Observer is not available</row>
+        <row id="RTLConsts_SInsufficientRtti" si="662" st="0">Insufficient RTTI available to support this operation</row>
+        <row id="RTLConsts_SParameterCountMismatch" si="663" st="0">Parameter count mismatch</row>
+        <row id="RTLConsts_SParameterCountExceeded" si="664" st="0">Parameter count exceeded</row>
+        <row id="RTLConsts_SNonPublicType" si="665" st="0" codep="1">Type '%s' is not declared in the interface section of a unit</row>
+        <row id="RTLConsts_SByRefArgMismatch" si="666" st="0">VAR and OUT arguments must match parameter type exactly</row>
+        <row id="RTLConsts_SServiceNotFound" si="667" st="0">Specified Login Credential Service not found</row>
+        <row id="RTLConsts_SVersionStr" si="668" st="0" codep="1">%s (Version %d.%d, Build %d, %5:s)</row>
+        <row id="RTLConsts_SSPVersionStr" si="669" st="0" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
+        <row id="RTLConsts_SVersion32" si="670" st="0">32-bit Edition</row>
+        <row id="RTLConsts_SVersion64" si="671" st="0">64-bit Edition</row>
+        <row id="RTLConsts_SWindows" si="672" st="0">Windows</row>
+        <row id="RTLConsts_SWindowsVista" si="673" st="0">Windows Vista</row>
+        <row id="RTLConsts_SWindowsServer2008" si="674" st="0">Windows Server 2008</row>
+        <row id="RTLConsts_SWindows7" si="675" st="0">Windows 7</row>
+        <row id="RTLConsts_SWindowsServer2008R2" si="676" st="0">Windows Server 2008 R2</row>
+        <row id="RTLConsts_SWindows2000" si="677" st="0">Windows 2000</row>
+        <row id="RTLConsts_sArgument_InvalidLowSurrogate" si="678" st="0" codep="1">Low surrogate char without a preceding high surrogate char at index: %d. Check that the string is encoded properly</row>
+        <row id="RTLConsts_sInvalidStringAndObjectArrays" si="679" st="0">Length of Strings and Objects arrays must be equal</row>
+        <row id="RTLConsts_sSameArrays" si="680" st="0">Source and Destination arrays must not be the same</row>
+        <row id="RTLConsts_sNoConstruct" si="681" st="0" codep="1">Class %s is not intended to be constructed</row>
+        <row id="RTLConsts_sInvalidTimeoutValue" si="682" st="0" codep="1">Invalid Timeout value: %s</row>
+        <row id="RTLConsts_sSpinCountOutOfRange" si="683" st="0" codep="1">SpinCount out of range. Must be between 0 and %d</row>
+        <row id="RTLConsts_sTimespanTooLong" si="684" st="0">Timespan too long</row>
+        <row id="RTLConsts_sInvalidTimespanDuration" si="685" st="0">The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue</row>
+        <row id="RTLConsts_sTimespanValueCannotBeNan" si="686" st="0">Value cannot be NaN</row>
+        <row id="RTLConsts_sCannotNegateTimespan" si="687" st="0">Negating the minimum value of a Timespan is invalid</row>
+        <row id="RTLConsts_sInvalidTimespanFormat" si="688" st="0">Invalid Timespan format</row>
+        <row id="RTLConsts_sTimespanElementTooLong" si="689" st="0">Timespan element too long</row>
+        <row id="RTLConsts_SArgumentOutOfRange" si="690" st="0">Argument out of range</row>
+        <row id="RTLConsts_SArgumentNil" si="691" st="0">Argument must not be nil</row>
+        <row id="RTLConsts_SGenericItemNotFound" si="692" st="0">Item not found</row>
+        <row id="RTLConsts_SGenericDuplicateItem" si="693" st="0">Duplicates not allowed</row>
+        <row id="RTLConsts_SInputBufferExceed" si="694" st="0" codep="1">Input buffer exceeded for %s = %d, %s = %d</row>
+        <row id="RTLConsts_SInvalidCharsInPath" si="695" st="0">Invalid characters in path</row>
+        <row id="RTLConsts_SInvalidCharsInSearchPattern" si="696" st="0">Invalid characters in search pattern</row>
+        <row id="RTLConsts_SEmptyPath" si="697" st="0">Path is empty</row>
+        <row id="RTLConsts_SEmptySearchPattern" si="698" st="0">Search pattern is empty</row>
+        <row id="RTLConsts_SPathTooLong" si="699" st="0">The specified path is too long</row>
+        <row id="RTLConsts_SPathNotFound" si="700" st="0">The specified path was not found</row>
+        <row id="RTLConsts_SPathFormatNotSupported" si="701" st="0">The path format is not supported</row>
+        <row id="RTLConsts_SDriveNotFound" si="702" st="0">The drive cannot be found</row>
+        <row id="RTLConsts_SSpecifiedFileNotFound" si="703" st="0">The specified file was not found</row>
+        <row id="RTLConsts_SMissingDateTimeField" si="704" st="0">?</row>
+        <row id="RTLConsts_sArgumentInvalid" si="705" st="0">Invalid argument</row>
+        <row id="RTLConsts_sArgumentOutOfRange_Index" si="706" st="0" codep="1">Index out of range (%d).  Must be >= 0 and &lt; %d</row>
+        <row id="RTLConsts_sArgumentOutOfRange_StringIndex" si="707" st="0" codep="1">String index out of range (%d).  Must be >= %d and &lt;= %d</row>
+        <row id="RTLConsts_sArgumentOutOfRange_InvalidUTF32" si="708" st="0">Invalid UTF32 character value.  Must be >= 0 and &lt;= $10FFFF, excluding surrogate pair ranges</row>
+        <row id="RTLConsts_sArgument_InvalidHighSurrogate" si="709" st="0" codep="1">High surrogate char without a following low surrogate char at index: %d. Check that the string is encoded properly</row>
+        <row id="RTLConsts_SSeekNotImplemented" si="710" st="0" codep="1">%s.Seek not implemented</row>
+        <row id="RTLConsts_SSortedListError" si="711" st="0">Operation not allowed on sorted list</row>
+        <row id="RTLConsts_SStringExpected" si="712" st="0">String expected</row>
+        <row id="RTLConsts_SSymbolExpected" si="713" st="0" codep="1">%s expected</row>
+        <row id="RTLConsts_SUnknownGroup" si="714" st="0" codep="1">%s not in a class registration group</row>
+        <row id="RTLConsts_SUnknownProperty" si="715" st="0" codep="1">Property %s does not exist</row>
+        <row id="RTLConsts_SWriteError" si="716" st="0">Stream write error</row>
+        <row id="RTLConsts_SThreadCreateError" si="717" st="0" codep="1">Thread creation error: %s</row>
+        <row id="RTLConsts_SThreadError" si="718" st="0" codep="1">Thread Error: %s (%d)</row>
+        <row id="RTLConsts_SThreadExternalTerminate" si="719" st="0">Cannot terminate an externally created thread</row>
+        <row id="RTLConsts_SThreadExternalWait" si="720" st="0">Cannot wait for an externally created thread</row>
+        <row id="RTLConsts_SThreadStartError" si="721" st="0">Cannot call Start on a running or suspended thread</row>
+        <row id="RTLConsts_SThreadExternalCheckTerminated" si="722" st="0">Cannot call CheckTerminated on an externally created thread</row>
+        <row id="RTLConsts_SThreadExternalSetReturnValue" si="723" st="0">Cannot call SetReturnValue on an externally create thread</row>
+        <row id="RTLConsts_SParamIsNil" si="724" st="0" codep="1">Parameter %s cannot be nil</row>
+        <row id="RTLConsts_SParamIsNegative" si="725" st="0" codep="1">Parameter %s cannot be a negative value</row>
+        <row id="RTLConsts_SInvalidPropertyPath" si="726" st="0">Invalid property path</row>
+        <row id="RTLConsts_SInvalidPropertyValue" si="727" st="0">Invalid property value</row>
+        <row id="RTLConsts_SInvalidString" si="728" st="0">Invalid string constant</row>
+        <row id="RTLConsts_SLineTooLong" si="729" st="0">Line too long</row>
+        <row id="RTLConsts_SListCapacityError" si="730" st="0" codep="1">List capacity out of bounds (%d)</row>
+        <row id="RTLConsts_SListCountError" si="731" st="0" codep="1">List count out of bounds (%d)</row>
+        <row id="RTLConsts_SListIndexError" si="732" st="0" codep="1">List index out of bounds (%d)</row>
+        <row id="RTLConsts_SMemoryStreamError" si="733" st="0">Out of memory while expanding memory stream</row>
+        <row id="RTLConsts_SNoComSupport" si="734" st="0" codep="1">%s has not been registered as a COM class</row>
+        <row id="RTLConsts_SNumberExpected" si="735" st="0">Number expected</row>
+        <row id="RTLConsts_SAnsiUTF8Expected" si="736" st="0">ANSI or UTF8 encoding expected</row>
+        <row id="RTLConsts_SParseError" si="737" st="0" codep="1">%s on line %d</row>
+        <row id="RTLConsts_SPropertyException" si="738" st="0" codep="1">Error reading %s%s%s: %s</row>
+        <row id="RTLConsts_SReadError" si="739" st="0">Stream read error</row>
+        <row id="RTLConsts_SReadOnlyProperty" si="740" st="0">Property is read-only</row>
+        <row id="RTLConsts_SResNotFound" si="741" st="0" codep="1">Resource %s not found</row>
+        <row id="RTLConsts_SDuplicateClass" si="742" st="0" codep="1">A class named %s already exists</row>
+        <row id="RTLConsts_SDuplicateItem" si="743" st="0" codep="1">List does not allow duplicates ($0%x)</row>
+        <row id="RTLConsts_SDuplicateName" si="744" st="0" codep="1">A component named %s already exists</row>
+        <row id="RTLConsts_SDuplicateString" si="745" st="0">String list does not allow duplicates</row>
+        <row id="RTLConsts_SFCreateErrorEx" si="746" st="0" codep="1">Cannot create file "%s". %s</row>
+        <row id="RTLConsts_SFOpenErrorEx" si="747" st="0" codep="1">Cannot open file "%s". %s</row>
+        <row id="RTLConsts_SIdentifierExpected" si="748" st="0">Identifier expected</row>
+        <row id="RTLConsts_StrNoClientClass" si="749" st="0" codep="1">The client can not be an instance of class %s</row>
+        <row id="RTLConsts_StrEActionNoSuported" si="750" st="0" codep="1">Class %s does not support the action</row>
+        <row id="RTLConsts_SInvalidBinary" si="751" st="0">Invalid binary value</row>
+        <row id="RTLConsts_SInvalidKnownFilename" si="752" st="0" codep="1">Invalid filename - %s</row>
+        <row id="RTLConsts_SInvalidImage" si="753" st="0">Invalid stream format</row>
+        <row id="RTLConsts_SInvalidMask" si="754" st="0" codep="1">'%s' is an invalid mask at (%d)</row>
+        <row id="RTLConsts_SInvalidName" si="755" st="0" codep="1">''%s'' is not a valid component name</row>
+        <row id="RTLConsts_SInvalidProperty" si="756" st="0">Invalid property value</row>
+        <row id="RTLConsts_SInvalidPropertyElement" si="757" st="0" codep="1">Invalid property element: %s</row>
+        <row id="SysConst_SInvalidDestinationArray" si="758" st="0">Invalid destination array</row>
+        <row id="SysConst_SCharIndexOutOfBounds" si="759" st="0" codep="1">Character index out of bounds (%d)</row>
+        <row id="SysConst_SByteIndexOutOfBounds" si="760" st="0" codep="1">Start index out of bounds (%d)</row>
+        <row id="SysConst_SInvalidCharCount" si="761" st="0" codep="1">Invalid count (%d)</row>
+        <row id="SysConst_SInvalidDestinationIndex" si="762" st="0" codep="1">Invalid destination index (%d)</row>
+        <row id="SysConst_SInvalidCodePage" si="763" st="0">Invalid code page</row>
+        <row id="SysConst_SInvalidEncodingName" si="764" st="0">Invalid encoding name</row>
+        <row id="SysConst_SNoMappingForUnicodeCharacter" si="765" st="0">No mapping for the Unicode character exists in the target multi-byte code page</row>
+        <row id="SysConst_SInvalidStringBaseIndex" si="766" st="0">Invalid StringBaseIndex</row>
+        <row id="RTLConsts_SAncestorNotFound" si="767" st="0" codep="1">Ancestor for '%s' not found</row>
+        <row id="RTLConsts_SAssignError" si="768" st="0" codep="1">Cannot assign a %s to a %s</row>
+        <row id="RTLConsts_SBitsIndexError" si="769" st="0">Bits index out of range</row>
+        <row id="RTLConsts_SCantWriteResourceStreamError" si="770" st="0">Can't write to a read-only resource stream</row>
+        <row id="RTLConsts_SCharExpected" si="771" st="0" codep="1">''%s'' expected</row>
+        <row id="RTLConsts_SCheckSynchronizeError" si="772" st="0" codep="1">CheckSynchronize called from thread $%x, which is NOT the main thread</row>
+        <row id="RTLConsts_SClassNotFound" si="773" st="0" codep="1">Class %s not found</row>
+        <row id="SysConst_SLongMonthNameDec" si="774" st="0">December</row>
+        <row id="SysConst_SShortDayNameSun" si="775" st="0">Sun</row>
+        <row id="SysConst_SShortDayNameMon" si="776" st="0">Mon</row>
+        <row id="SysConst_SShortDayNameTue" si="777" st="0">Tue</row>
+        <row id="SysConst_SShortDayNameWed" si="778" st="0">Wed</row>
+        <row id="SysConst_SShortDayNameThu" si="779" st="0">Thu</row>
+        <row id="SysConst_SShortDayNameFri" si="780" st="0">Fri</row>
+        <row id="SysConst_SShortDayNameSat" si="781" st="0">Sat</row>
+        <row id="SysConst_SLongDayNameSun" si="782" st="0">Sunday</row>
+        <row id="SysConst_SLongDayNameMon" si="783" st="0">Monday</row>
+        <row id="SysConst_SLongDayNameTue" si="784" st="0">Tuesday</row>
+        <row id="SysConst_SLongDayNameWed" si="785" st="0">Wednesday</row>
+        <row id="SysConst_SLongDayNameThu" si="786" st="0">Thursday</row>
+        <row id="SysConst_SLongDayNameFri" si="787" st="0">Friday</row>
+        <row id="SysConst_SLongDayNameSat" si="788" st="0">Saturday</row>
+        <row id="SysConst_SInvalidSourceArray" si="789" st="0">Invalid source array</row>
+        <row id="SysConst_SShortMonthNameAug" si="790" st="0">Aug</row>
+        <row id="SysConst_SShortMonthNameSep" si="791" st="0">Sep</row>
+        <row id="SysConst_SShortMonthNameOct" si="792" st="0">Oct</row>
+        <row id="SysConst_SShortMonthNameNov" si="793" st="0">Nov</row>
+        <row id="SysConst_SShortMonthNameDec" si="794" st="0">Dec</row>
+        <row id="SysConst_SLongMonthNameJan" si="795" st="0">January</row>
+        <row id="SysConst_SLongMonthNameFeb" si="796" st="0">February</row>
+        <row id="SysConst_SLongMonthNameMar" si="797" st="0">March</row>
+        <row id="SysConst_SLongMonthNameApr" si="798" st="0">April</row>
+        <row id="SysConst_SLongMonthNameMay" si="799" st="0">May</row>
+        <row id="SysConst_SLongMonthNameJun" si="800" st="0">June</row>
+        <row id="SysConst_SLongMonthNameJul" si="801" st="0">July</row>
+        <row id="SysConst_SLongMonthNameAug" si="802" st="0">August</row>
+        <row id="SysConst_SLongMonthNameSep" si="803" st="0">September</row>
+        <row id="SysConst_SLongMonthNameOct" si="804" st="0">October</row>
+        <row id="SysConst_SLongMonthNameNov" si="805" st="0">November</row>
+        <row id="SysConst_SMonitorLockException" si="806" st="0">Object lock not owned</row>
+        <row id="SysConst_SNoMonitorSupportException" si="807" st="0">Monitor support function not initialized</row>
+        <row id="SysConst_SNotImplemented" si="808" st="0">Feature not implemented</row>
+        <row id="SysConst_SObjectDisposed" si="809" st="0">Method called on disposed object</row>
+        <row id="SysConst_SAssertError" si="810" st="0" codep="1">%s (%s, line %d)</row>
+        <row id="SysConst_SAbstractError" si="811" st="0">Abstract Error</row>
+        <row id="SysConst_SModuleAccessViolation" si="812" st="0" codep="1">Access violation at address %p in module '%s'. %s of address %p</row>
+        <row id="SysConst_SOSError" si="813" st="0" codep="1">System Error.  Code: %d.
+%s%s</row>
+        <row id="SysConst_SUnkOSError" si="814" st="0">A call to an OS function failed</row>
+        <row id="SysConst_SShortMonthNameJan" si="815" st="0">Jan</row>
+        <row id="SysConst_SShortMonthNameFeb" si="816" st="0">Feb</row>
+        <row id="SysConst_SShortMonthNameMar" si="817" st="0">Mar</row>
+        <row id="SysConst_SShortMonthNameApr" si="818" st="0">Apr</row>
+        <row id="SysConst_SShortMonthNameMay" si="819" st="0">May</row>
+        <row id="SysConst_SShortMonthNameJun" si="820" st="0">Jun</row>
+        <row id="SysConst_SShortMonthNameJul" si="821" st="0">Jul</row>
+        <row id="SysConst_SInvalidVarOpWithHResultWithPrefix" si="822" st="0" codep="1">Invalid variant operation (%s%.8x)
+%s</row>
+        <row id="SysConst_SVarTypeOutOfRangeWithPrefix" si="823" st="0" codep="1">Custom variant type (%s%.4x) is out of range</row>
+        <row id="SysConst_SVarTypeAlreadyUsedWithPrefix" si="824" st="0" codep="1">Custom variant type (%s%.4x) already used by %s</row>
+        <row id="SysConst_SVarTypeNotUsableWithPrefix" si="825" st="0" codep="1">Custom variant type (%s%.4x) is not usable</row>
+        <row id="SysConst_SVarTypeTooManyCustom" si="826" st="0">Too many custom variant types have been registered</row>
+        <row id="SysConst_SVarTypeCouldNotConvert" si="827" st="0" codep="1">Could not convert variant of type (%s) into type (%s)</row>
+        <row id="SysConst_SVarTypeConvertOverflow" si="828" st="0" codep="1">Overflow while converting variant of type (%s) into type (%s)</row>
+        <row id="SysConst_SVarOverflow" si="829" st="0">Variant overflow</row>
+        <row id="SysConst_SVarInvalid" si="830" st="0">Invalid argument</row>
+        <row id="SysConst_SVarBadType" si="831" st="0">Invalid variant type</row>
+        <row id="SysConst_SVarNotImplemented" si="832" st="0">Operation not supported</row>
+        <row id="SysConst_SVarUnexpected" si="833" st="0">Unexpected variant error</row>
+        <row id="SysConst_SExternalException" si="834" st="0" codep="1">External exception %x</row>
+        <row id="SysConst_SAssertionFailed" si="835" st="0">Assertion failed</row>
+        <row id="SysConst_SIntfCastError" si="836" st="0">Interface not supported</row>
+        <row id="SysConst_SSafecallException" si="837" st="0">Exception in safecall method</row>
+        <row id="SysConst_SOperationAborted" si="838" st="0">Operation aborted</row>
+        <row id="SysConst_SException" si="839" st="0" codep="1">Exception %s in module %s at %p.
+%s%s
+</row>
+        <row id="SysConst_SExceptTitle" si="840" st="0">Application Error</row>
+        <row id="SysConst_SInvalidFormat" si="841" st="0" codep="1">Format '%s' invalid or incompatible with argument</row>
+        <row id="SysConst_SArgumentMissing" si="842" st="0" codep="1">No argument for format '%s'</row>
+        <row id="SysConst_SDispatchError" si="843" st="0">Variant method calls not supported</row>
+        <row id="SysConst_SReadAccess" si="844" st="0">Read</row>
+        <row id="SysConst_SWriteAccess" si="845" st="0">Write</row>
+        <row id="SysConst_SExecuteAccess" si="846" st="0">Execution</row>
+        <row id="SysConst_SInvalidAccess" si="847" st="0">Invalid access</row>
+        <row id="SysConst_SVarArrayCreate" si="848" st="0">Error creating variant or safe array</row>
+        <row id="SysConst_SVarArrayBounds" si="849" st="0">Variant or safe array index out of bounds</row>
+        <row id="SysConst_SVarArrayLocked" si="850" st="0">Variant or safe array is locked</row>
+        <row id="SysConst_SInvalidVarCast" si="851" st="0">Invalid variant type conversion</row>
+        <row id="SysConst_SInvalidVarOp" si="852" st="0">Invalid variant operation</row>
+        <row id="SysConst_SInvalidVarNullOp" si="853" st="0">Invalid NULL variant operation</row>
+        <row id="SysConst_SDiskFull" si="854" st="0">Disk full</row>
+        <row id="SysConst_SInvalidInput" si="855" st="0">Invalid numeric input</row>
+        <row id="SysConst_SDivByZero" si="856" st="0">Division by zero</row>
+        <row id="SysConst_SRangeError" si="857" st="0">Range check error</row>
+        <row id="SysConst_SIntOverflow" si="858" st="0">Integer overflow</row>
+        <row id="SysConst_SInvalidOp" si="859" st="0">Invalid floating point operation</row>
+        <row id="SysConst_SZeroDivide" si="860" st="0">Floating point division by zero</row>
+        <row id="SysConst_SOverflow" si="861" st="0">Floating point overflow</row>
+        <row id="SysConst_SUnderflow" si="862" st="0">Floating point underflow</row>
+        <row id="SysConst_SInvalidPointer" si="863" st="0">Invalid pointer operation</row>
+        <row id="SysConst_SInvalidCast" si="864" st="0">Invalid class typecast</row>
+        <row id="SysConst_SAccessViolationArg3" si="865" st="0" codep="1">Access violation at address %p. %s of address %p</row>
+        <row id="SysConst_SAccessViolationNoArg" si="866" st="0">Access violation</row>
+        <row id="SysConst_SStackOverflow" si="867" st="0">Stack overflow</row>
+        <row id="SysConst_SControlC" si="868" st="0">Control-C hit</row>
+        <row id="SysConst_SPrivilege" si="869" st="0">Privileged instruction</row>
+        <row id="SysConst_SUnknown" si="870" st="0">&lt;unknown></row>
+        <row id="SysConst_SInvalidInteger" si="871" st="0" codep="1">'%s' is not a valid integer value</row>
+        <row id="SysConst_SInvalidInteger2" si="872" st="0" codep="1">'%s' is not a valid integer value for %s type</row>
+        <row id="SysConst_SInvalidFloat" si="873" st="0" codep="1">'%s' is not a valid floating point value</row>
+        <row id="SysConst_SInvalidDateTime" si="874" st="0" codep="1">'%s' is not a valid date and time</row>
+        <row id="SysConst_SInvalidTimeStamp" si="875" st="0" codep="1">'%d.%d' is not a valid timestamp</row>
+        <row id="SysConst_SInvalidGUID" si="876" st="0" codep="1">'%s' is not a valid GUID value</row>
+        <row id="SysConst_STimeEncodeError" si="877" st="0">Invalid argument to time encode</row>
+        <row id="SysConst_SDateEncodeError" si="878" st="0">Invalid argument to date encode</row>
+        <row id="SysConst_SOutOfMemory" si="879" st="0">Out of memory</row>
+        <row id="SysConst_SInOutError" si="880" st="0" codep="1">I/O error %d</row>
+        <row id="SysConst_SFileNotFound" si="881" st="0">File not found</row>
+        <row id="SysConst_SInvalidUnknownFilename" si="882" st="0">Invalid filename</row>
+        <row id="SysConst_STooManyOpenFiles" si="883" st="0">Too many open files</row>
+        <row id="SysConst_SAccessDenied" si="884" st="0">File access denied</row>
+        <row id="SysConst_SEndOfFile" si="885" st="0">Read beyond end of file</row>
+      </node>
       <node class="TWindowsStringNode" name="System.RegularExpressionsConsts" excluded="1"/>
       <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1"/>
       <node class="TWindowsStringNode" name="System.SysConst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SResultPlural" class="TPatternRow" si="14">
-          <value startpattern="1">Driving time{0}{1}.</value>
+        <row id="SResultPlural" changed="20260301T133639Z" si="14" created="20260301T133639Z" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
           <pattern plural="pfZero" index="0"> </pattern>
-          <pattern plural="pfOne" index="0"> {0} hour </pattern>
-          <pattern plural="pfOther" index="0"> {0} hours </pattern>
-          <pattern plural="pfOne" index="1">{0} minute</pattern>
-          <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" time="20220515T003608Z">
-            <value startpattern="1">Ajoaika{0}{1}.</value>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="3" rw="0" time="20220515T003608Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
             <pattern plural="pfZero" index="0"> </pattern>
-            <pattern plural="pfOne" index="0"> {0} tunti </pattern>
-            <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
-            <pattern plural="pfOne" index="1">{0} minuutti</pattern>
-            <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
+          </lang>
+        </row>
+        <row id="SResultPlural.macOS64" si="886" created="20260301T133639Z" st="0" codep="1">
+          <value startpattern="1">Driving time%0:s%1:s.</value>
+          <pattern plural="pfZero" index="0"> </pattern>
+          <pattern plural="pfOne" index="0"> %d hour </pattern>
+          <pattern plural="pfOther" index="0"> %d hours </pattern>
+          <pattern plural="pfOne" index="1">%d minute</pattern>
+          <pattern plural="pfOther" index="1">%d minutes</pattern>
+          <lang id="fi" st="2" or="3" rw="0" time="20220515T003608Z">
+            <value startpattern="1">Ajoaika%0:s%1:s.</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> %d tunti </pattern>
+            <pattern plural="pfOther" index="0"> %d tuntia </pattern>
+            <pattern plural="pfOne" index="1">%d minuutti</pattern>
+            <pattern plural="pfOther" index="1">%d minuuttia</pattern>
           </lang>
         </row>
         <row id="SAbout" si="15">
@@ -441,25 +878,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="DeepL" type="TDeepLTranslator"/>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

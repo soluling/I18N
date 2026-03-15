@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="439B2776-B257-441F-B5FF-4BB6B8465CBE" created="20130113T053109Z" lastmodified="20200316T185319Z" version="1.0.714" stringid="8">
+<project id="439B2776-B257-441F-B5FF-4BB6B8465CBE" created="20130113T053109Z" lastmodified="20260302T071447Z" version="1.0.1090" stringid="9">
   <lang id="fi"/>
-  <node class="TUwpProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Driving\Driving.csproj" original="en" defaultlanguage="en" scansource="rsNeutral" resources="[rtResw,rtXaml,rtImage]" availableresources="[rtResw,rtXaml,rtImage]">
+  <node class="TUwpProjectSource" name="Driving.csproj" fullpath="D:\NT\Deploy\Samples\UWP\Driving\Driving.csproj" original="en" lastmodified="20260302T071447Z" defaultlanguage="en" scansource="rsNeutral" resources="[rtResw,rtXaml,rtImage]" availableresources="[rtResw,rtXaml,rtImage]">
     <node class="TXamlNode" name="App.xaml" excluded="1"/>
     <node class="TDirectoryFolder" name="Assets" st="0" excluded="1">
       <node class="TImageDataNode" name="Logo.png" st="0"/>
@@ -371,7 +371,7 @@
         YW5lbD4NCjwvUGFnZT4NCg==
       </data>
     </node>
-    <node class="TResXNode" name="Resources.resw">
+    <node class="TResXNode" name="Resources.resw" windowsforms="wfCore">
       <row id="About" si="6" created="20130113T053109Z">
         <value>Driving time calculator</value>
         <lang id="fi" time="20130113T102631Z">Ajoaikalaskin</lang>
@@ -380,16 +380,16 @@
         <value>en</value>
         <lang id="fi" time="20130113T102634Z">fi</lang>
       </row>
-      <row id="ResultPlural" class="TPatternRow" si="8" created="20181218T220745Z">
+      <row id="ResultPlural" changed="20260302T071423Z" si="8" created="20260302T071423Z" codep="1">
         <value startpattern="1">Driving time is{0}{1}</value>
         <pattern plural="pfZero" index="0"> </pattern>
         <pattern plural="pfOne" index="0"> {0} hour </pattern>
         <pattern plural="pfOther" index="0"> {0} hours </pattern>
         <pattern plural="pfOne" index="1">{0} minute</pattern>
         <pattern plural="pfOther" index="1">{0} minutes</pattern>
-        <lang id="fi" rw="0" time="20181218T221824Z">
+        <lang id="fi" rw="0" time="20260302T071445Z">
           <value startpattern="1">Ajoaika on{0}{1}</value>
-          <pattern plural="pfZero" index="0"> {0}{1}{0}{0}{0}{0}</pattern>
+          <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} tunti </pattern>
           <pattern plural="pfOther" index="0"> {0} tuntia </pattern>
           <pattern plural="pfOne" index="1">{0} minuutti</pattern>
@@ -401,20 +401,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

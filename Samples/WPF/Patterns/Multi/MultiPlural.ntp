@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F73D566A-D9F4-424A-8D52-6CABBE236B40" created="20180331T145435Z" lastmodified="20200316T192659Z" version="1.0.714" stringid="15">
+<project id="F73D566A-D9F4-424A-8D52-6CABBE236B40" created="20180331T145435Z" lastmodified="20260301T123306Z" version="1.0.1090" stringid="17">
   <lang id="fi"/>
   <lang id="de"/>
-  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Multi\MultiPlural.csproj" original="en" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
+  <node class="TNetProjectSource" name="MultiPlural.csproj" fullpath="D:\NT\Deploy\Samples\WPF\Patterns\Multi\MultiPlural.csproj" original="en" lastmodified="20260301T123306Z" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrGroupIcon,nrIcon,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWpf]">
     <netproperties version="net462" toolsversion="nt120"/>
     <node class="TXamlNode" name="App.xaml" type="Application" created="20200316T192658Z" st="0" kind="xkApplication">
       <data>
@@ -13,13 +13,13 @@
       </data>
     </node>
     <node class="TDirectoryFolder" name="Properties">
-      <node class="TResXNode" name="Resources.resx">
+      <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="Language" si="1">
           <value>en</value>
           <lang id="fi" rw="0" time="20180331T150112Z">fi</lang>
           <lang id="de" st="1" or="6" rw="0" time="20180331T192827Z">de</lang>
         </row>
-        <row id="MessagePlural" changed="20181207T024127Z" class="TPatternRow" si="2">
+        <row id="MessagePlural" changed="20260301T123300Z" si="2" created="20260301T123300Z" codep="1">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfOne" index="0">one</pattern>
           <pattern plural="pfOther" index="0">{0}</pattern>
@@ -33,7 +33,7 @@
             <pattern plural="pfOther" index="1">{0}:stä vaiheista</pattern>
           </lang>
         </row>
-        <row id="ZeroMessagePlural" changed="20181207T024127Z" class="TPatternRow" si="3">
+        <row id="ZeroMessagePlural" changed="20260301T123300Z" si="3" created="20260301T123300Z" codep="1">
           <value startpattern="1">I have completed {0} {1}</value>
           <pattern plural="pfZero" index="0">none</pattern>
           <pattern plural="pfOne" index="0">one</pattern>
@@ -114,6 +114,9 @@
         a19DaGVja2VkIj5fVXNlIHplcm8gcGFydDwvQ2hlY2tCb3g+DQogIDwvU3RhY2tQYW5lbD4NCjwvV2luZG93Pg0K
       </data>
     </node>
+    <assemblies>
+      <assembly>bin\Debug\Soluling.dll</assembly>
+    </assemblies>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -121,20 +124,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

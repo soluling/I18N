@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="89D9E1B8-E451-46BC-A8FC-7514B3417EA8" created="20201025T221445Z" lastmodified="20201025T235024Z" version="1.0.797" lockedrowcomplete="0" stringid="19">
+<project id="89D9E1B8-E451-46BC-A8FC-7514B3417EA8" created="20201025T221445Z" lastmodified="20260301T123518Z" version="1.0.1090" lockedrowcomplete="0" stringid="20">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\Driving.exe" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\bin\Debug\Driving.exe" original="en" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrImage,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Localized.csproj" libraries="[nlWpf]">
+  <node class="TAssemblySource" name="bin\Debug\Driving.exe" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\bin\Debug\Driving.exe" original="en" lastmodified="20260301T123518Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrImage,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Localized.csproj" libraries="[nlWpf]">
     <netproperties version="net46"/>
     <node class="TNetImageFolder" name="Image" created="20201025T234932Z">
       <node class="TImageDataNode" name="car_sedan_blue.ico">
@@ -1795,14 +1795,14 @@
           <value>en</value>
           <lang id="fi" rw="0" time="20201025T221445Z">fi</lang>
         </row>
-        <row id="ResultPlural" class="TPatternRow" si="3">
+        <row id="ResultPlural" changed="20260301T123518Z" si="3" created="20260301T123518Z" codep="1">
           <value startpattern="1">Driving time is{0}{1}</value>
           <pattern plural="pfZero" index="0"> </pattern>
           <pattern plural="pfOne" index="0"> {0} hour </pattern>
           <pattern plural="pfOther" index="0"> {0} hours </pattern>
           <pattern plural="pfOne" index="1">{0} minute</pattern>
           <pattern plural="pfOther" index="1">{0} minutes</pattern>
-          <lang id="fi" rw="0" time="20201025T221445Z">
+          <lang id="fi" st="3" rw="0" time="20201025T221445Z">
             <value startpattern="1">Ajoaika on{0}{1}</value>
             <pattern plural="pfZero" index="0"> </pattern>
             <pattern plural="pfOne" index="0"> {0} tunti </pattern>
@@ -1864,19 +1864,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

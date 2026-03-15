@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20241228T051129Z" version="1.0.1054" stringid="380">
+<project id="AF648F71-6838-4430-BE48-F1ED6329A8C6" created="20170723T033136Z" lastmodified="20260301T062442Z" version="1.0.1090" stringid="381">
   <lang id="fi"/>
-  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" lastmodified="20241228T051129Z" hassignature="1" hassignatureread="1">
+  <node class="TDelphiSource" name="Win32\Release\Select.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Patterns\Select\Win32\Release\Select.exe" original="en-US" lastmodified="20260301T062442Z" hassignature="1" hassignatureread="1">
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
     <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
     <node class="TWindowsGroupIconFolder" name="GroupIcon" excluded="1"/>
@@ -118,15 +118,14 @@
       <node class="TWindowsStringNode" name="NtWindows" excluded="1"/>
       <node class="TWindowsStringNode" name="System" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SSportSelect" changed="20200209T162053Z" class="TPatternRow" si="9" scannedcomment="0: Name of the player" original="{select, soccer {%s is the best soccer player.} hockey {%s is the best ice hockey player.} basketball {%s is the best basketball player.}}">
-          <value select="soccer">{0} is the best soccer player.</value>
-          <prev select="soccer">{0:s} is the best soccer player.</prev>
-          <pattern select="basketball">{0} is the best basketball player.</pattern>
-          <pattern select="hockey">{0} is the best ice hockey player.</pattern>
-          <lang id="fi" time="20200209T162114Z">
-            <value select="soccer">{0} on paras jalkapalloilija.</value>
-            <pattern select="basketball">{0} on paras koripalloilija.</pattern>
-            <pattern select="hockey">{0} on paras jääkiekkoilija.</pattern>
+        <row id="SSportSelect" changed="20260301T062441Z" si="9" scannedcomment="0: Name of the player" created="20260301T062441Z" codep="1">
+          <value select="soccer">%s is the best soccer player.</value>
+          <pattern select="basketball">%s is the best basketball player.</pattern>
+          <pattern select="hockey">%s is the best ice hockey player.</pattern>
+          <lang id="fi" st="3" time="20200209T162114Z">
+            <value select="soccer">%s on paras jalkapalloilija.</value>
+            <pattern select="basketball">%s on paras koripalloilija.</pattern>
+            <pattern select="hockey">%s on paras jääkiekkoilija.</pattern>
           </lang>
         </row>
       </node>
@@ -146,13 +145,11 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>

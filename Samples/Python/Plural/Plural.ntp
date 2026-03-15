@@ -1,24 +1,24 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A0A7C2E0-5B5E-49F6-B511-53DE02B744E7" created="20170625T131607Z" lastmodified="20200316T230203Z" version="1.0.714" stringid="2">
+<project id="A0A7C2E0-5B5E-49F6-B511-53DE02B744E7" created="20170625T131607Z" lastmodified="20260301T200047Z" version="1.0.1090" stringid="3">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="pl"/>
-  <node class="TPoSource" name="Plural.po" fullpath="D:\NT\Deploy\Samples\Python\Plural\Plural.po" original="en-US" encoding="utf-8" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="count:" commenttagdetected="1" frameworkdetected="1">
+  <node class="TPoSource" name="Plural.po" fullpath="D:\NT\Deploy\Samples\Python\Plural\Plural.po" original="en-US" lastmodified="20260301T200047Z" encoding="utf-8" newline="nlLf" programminglanguage="plPython" programminglanguagedetected="1" commenttag="count:" commenttagdetected="1" frameworkdetected="1">
     <row id="Plural Sample" si="1" created="20170625T131816Z">
       <value>Plural Sample</value>
       <lang id="fi" time="20170625T131828Z">Monikkoesimerkki</lang>
       <lang id="ja" or="6" time="20170625T132701Z">複数サンプル</lang>
       <lang id="pl" st="4" or="6" time="20170625T132727Z">Lm liczba mnoga próbki</lang>
     </row>
-    <row id="{count} file" class="TPatternRow" si="2" scannedcomment="Amount of files" created="20170625T132541Z">
+    <row id="{count} file" changed="20260301T200047Z" si="2" scannedcomment="Amount of files" created="20260301T200047Z" codep="1">
       <value>{count} files</value>
       <pattern plural="pfOne">{count} file</pattern>
-      <lang id="fi" time="20170625T132622Z">
+      <lang id="fi" st="3" time="20170625T132622Z">
         <value>{count} tiedostoa</value>
         <pattern plural="pfOne">{count} tiedosto</pattern>
       </lang>
-      <lang id="ja" or="6" time="20170625T132701Z">{count} ファイル</lang>
-      <lang id="pl" st="4" time="20170625T132748Z">
+      <lang id="ja" st="3" or="6" time="20170625T132701Z">{count} ファイル</lang>
+      <lang id="pl" st="3" time="20170625T132748Z">
         <value>Pliki {count} plural</value>
         <pattern plural="pfOne">Pliki {count} singular</pattern>
         <pattern plural="pfFew">Pliki {count} paucal</pattern>
@@ -42,21 +42,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

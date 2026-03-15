@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="B345B039-D1A7-4C63-AE9F-BC632B442E50" created="20221119T163244Z" lastmodified="20221119T175503Z" version="1.0.964" stringid="14">
+<project id="B345B039-D1A7-4C63-AE9F-BC632B442E50" created="20221119T163244Z" lastmodified="20260301T201130Z" version="1.0.1090" stringid="15">
   <lang id="fi"/>
-  <node class="TPoSource" name="simple.pot" fullpath="D:\NT\Deploy\Samples\Lazarus\Simple\simple.pot" original="en" lastmodified="20221119T175503Z" encoding="utf-8" programminglanguage="plPascal" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1">
+  <node class="TPoSource" name="simple.pot" fullpath="D:\NT\Deploy\Samples\Lazarus\Simple\simple.pot" original="en" lastmodified="20260301T201130Z" encoding="utf-8" programminglanguage="plPascal" programminglanguagedetected="1" commenttagdetected="1" frameworkdetected="1">
     <row id="&amp;Click..." si="6" created="20221119T164753Z">
       <value>&amp;Click...</value>
       <lang id="fi" rw="0" time="20221119T165823Z">&amp;Napsauta...</lang>
@@ -31,9 +31,9 @@
       <value>Hello World</value>
       <lang id="fi" rw="0" time="20221119T165856Z" fuzzy="99">Hei maailma</lang>
     </row>
-    <row id="This is a %s sample." class="TPatternRow" si="10" created="20221119T164753Z">
-      <value>This is a {0} sample.</value>
-      <lang id="fi" rw="0" time="20221119T165853Z" fuzzy="76.1904754638672">Tämä on {0} esimerkki.</lang>
+    <row id="This is a %s sample." changed="20260301T201130Z" si="10" created="20260301T201130Z" codep="1">
+      <value>This is a %s sample.</value>
+      <lang id="fi" st="3" rw="0" time="20221119T165853Z" fuzzy="76.1904754638672">Tämä on %s esimerkki.</lang>
     </row>
     <configurations>
       <configuration name="Default" localized="&lt;body&gt;.&lt;leg&gt;.po" options="[]"/>
@@ -53,19 +53,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

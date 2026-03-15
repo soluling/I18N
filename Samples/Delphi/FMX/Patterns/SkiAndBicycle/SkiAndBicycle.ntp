@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20221231T022008Z" version="1.0.972" stringid="1280">
+<project id="A4A363DE-E8A8-466C-8878-F78ACA3F3D1C" created="20160819T234417Z" lastmodified="20260301T104230Z" version="1.0.1090" stringid="1287">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" lastmodified="20221231T022008Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+  <node class="TDelphiProjectSource" name="SkiAndBicycle.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\SkiAndBicycle\SkiAndBicycle.dproj" original="en" lastmodified="20260301T104230Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
     <node class="TDelphiFormFolder" name="RCData" created="20221230T211555Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
       <node class="TWindowsBinaryNode" name="clouds" resname="clouds" excluded="1"/>
@@ -146,22 +146,130 @@
       <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" st="0" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessagePlural" class="TPatternRow" si="1186" scannedcomment="0: ski or bicyle count">
-          <value startpattern="1">I have {0} {1}</value>
+        <row id="SMessagePlural.Android64" si="1287" created="20260301T104229Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
           <pattern plural="pfZero" index="0">no skis</pattern>
           <pattern plural="pfOne" index="0">one ski</pattern>
-          <pattern plural="pfOther" index="0">{0} skis</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
           <pattern plural="pfZero" index="1">and no bicycles</pattern>
           <pattern plural="pfOne" index="1">and one bicycle</pattern>
-          <pattern plural="pfOther" index="1">and {0} bicycles</pattern>
-          <lang id="fi" time="20180524T030310Z">
-            <value startpattern="1">Minulla on {0} {1}</value>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
             <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
             <pattern plural="pfOne" index="0">yksi suksi</pattern>
-            <pattern plural="pfOther" index="0">{0} suksea</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
             <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
             <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
-            <pattern plural="pfOther" index="1">ja {0} polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural.iOS64" si="1282" created="20260301T104204Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural.iOSSim64" si="1283" created="20260301T104204Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural.macOS64" si="1284" created="20260301T104204Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural.macOSARM64" si="1285" created="20260301T104204Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural" changed="20260301T104204Z" si="1186" created="20260301T104204Z" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
+          </lang>
+        </row>
+        <row id="SMessagePlural.Linux64" si="1286" created="20260301T104204Z" st="0" codep="1">
+          <value startpattern="1">I have %0:s %1:s</value>
+          <pattern plural="pfZero" index="0">no skis</pattern>
+          <pattern plural="pfOne" index="0">one ski</pattern>
+          <pattern plural="pfOther" index="0">%d skis</pattern>
+          <pattern plural="pfZero" index="1">and no bicycles</pattern>
+          <pattern plural="pfOne" index="1">and one bicycle</pattern>
+          <pattern plural="pfOther" index="1">and %d bicycles</pattern>
+          <lang id="fi" st="2" or="3" time="20180524T030310Z">
+            <value startpattern="1">Minulla on %0:s %1:s</value>
+            <pattern plural="pfZero" index="0">ei yhtään suksea</pattern>
+            <pattern plural="pfOne" index="0">yksi suksi</pattern>
+            <pattern plural="pfOther" index="0">%0:s suksea</pattern>
+            <pattern plural="pfZero" index="1">ja ei yhtään polkupyörää</pattern>
+            <pattern plural="pfOne" index="1">ja yksi polkupyörä</pattern>
+            <pattern plural="pfOther" index="1">ja %0:s polkupyörä</pattern>
           </lang>
         </row>
         <row id="SEnglish" si="1187">
@@ -197,7 +305,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -211,6 +318,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

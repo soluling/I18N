@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20241019T040415Z" version="1.0.1044" lockedrowcomplete="0" stringid="53">
+<project id="A15CB70F-48D2-4296-B472-55B73C736DF6" created="20191113T150554Z" lastmodified="20260302T072113Z" version="1.0.1090" lockedrowcomplete="0" stringid="55">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" lastmodified="20241019T040415Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
-    <netproperties version="core70" toolsversion="nt150"/>
+  <node class="TNetProjectSource" name="RazorSport.csproj" fullpath="D:\NT\Deploy\Samples\ASP.NET\Core\RazorPages\Sport\RazorSport.csproj" original="en" lastmodified="20260302T072113Z" availableresources="[nrResx,nrManifest]" netconfiguration="Debug|AnyCPU" aspnetcore="1" defaultresourcedir="Resources">
+    <netproperties version="core90" toolsversion="nt150"/>
     <node class="TDirectoryFolder" name="Pages">
       <node class="TResXNode" name="LanguageNames.resx" windowsforms="wfCore">
         <row id="English" si="1">
@@ -78,7 +78,7 @@
           </row>
         </node>
         <node class="TResXNode" name="Details.resx" windowsforms="wfCore">
-          <row id="Sport {0}" class="TPatternRow" si="22" original="Sport {0}">
+          <row id="Sport {0}" si="22" created="20260302T072112Z" codep="1">
             <value>Sport {0}</value>
             <lang id="fi" rw="0" time="20191113T151631Z">Urheilulaji {0}</lang>
           </row>
@@ -135,7 +135,7 @@
         </node>
         <node class="TDirectoryFolder" name="Shared">
           <node class="TResXNode" name="_LanguagePartial.resx" windowsforms="wfCore">
-            <row id="Browser default language, currently {0}" class="TPatternRow" si="32" scannedcomment="0: language name" original="Browser default language, currently {0}">
+            <row id="Browser default language, currently {0}" si="32" scannedcomment="0: language name" created="20260302T072112Z" codep="1">
               <value>Browser default language, currently {0}</value>
               <lang id="fi" rw="0" time="20191208T033915Z">Selaimen oletuskieli, tällä hetkellä {0}</lang>
             </row>
@@ -246,10 +246,10 @@
       </node>
     </node>
     <assemblies>
-      <assembly>bin\Debug\net7.0\Newtonsoft.Json.dll</assembly>
-      <assembly>bin\Debug\net7.0\RazorSport.dll</assembly>
-      <assembly>bin\Debug\net7.0\Soluling.AspNet.dll</assembly>
-      <assembly>bin\Debug\net7.0\Soluling.dll</assembly>
+      <assembly>bin\Debug\net9.0\Newtonsoft.Json.dll</assembly>
+      <assembly>bin\Debug\net9.0\RazorSport.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.AspNet.dll</assembly>
+      <assembly>bin\Debug\net9.0\Soluling.dll</assembly>
     </assemblies>
   </node>
   <terminology>
@@ -260,11 +260,12 @@
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
   </mt>
 </project>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="699DBDD8-E768-4E23-868C-674EBE47DDEE" created="20160819T134702Z" lastmodified="20221231T021849Z" version="1.0.972" stringid="1324">
+<project id="699DBDD8-E768-4E23-868C-674EBE47DDEE" created="20160819T134702Z" lastmodified="20260301T103712Z" version="1.0.1090" stringid="1326">
   <lang id="fi"/>
-  <node class="TDelphiProjectSource" name="Plural.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Plural\Plural.dproj" original="en" lastmodified="20221231T021849Z" scansourcecode="1" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
+  <node class="TDelphiProjectSource" name="Plural.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Patterns\Plural\Plural.dproj" original="en" lastmodified="20260301T103712Z" library="dlFireMonkey" scanconfigurations="Release" scanfiles="Android - Release;Android64 - Release;iOSDevice64 - Release;iOSSimARM64 - Release;OSX64 - Release;OSXARM64 - Release;Win32 - Release;Win64 - Release;Linux64 - Release">
     <node class="TWindowsBinaryFolder" name="0" st="0" excluded="1"/>
     <node class="TDelphiFormFolder" name="RCData" created="20221230T202333Z">
       <node class="TWindowsBinaryNode" name="androidstyle" resname="androidstyle" st="0" binaryformat="bfBinary"/>
@@ -174,43 +174,43 @@
       <node class="TWindowsStringNode" name="System.Sysconst" excluded="1"/>
       <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1"/>
       <node class="TWindowsStringNode" name="Unit1">
-        <row id="SMessagePlural" class="TPatternRow" si="1208" scannedcomment="0: file count">
-          <value>{0} files</value>
-          <pattern plural="pfOne">{0} file</pattern>
+        <row id="SMessagePlural" changed="20260301T103628Z" si="1208" created="20260301T103628Z" codep="1">
+          <value>%d files</value>
+          <pattern plural="pfOne">%d file</pattern>
           <lang id="fi" rw="0" time="20221230T202412Z">
-            <value>{0} tiedostoa</value>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
+            <value>%d tiedostoa</value>
+            <pattern plural="pfOne">%d tiedosto</pattern>
           </lang>
         </row>
-        <row id="SZeroMessagePlural" class="TPatternRow" si="1209" scannedcomment="0: file count">
-          <value>{0} files</value>
+        <row id="SZeroMessagePlural" changed="20260301T103628Z" si="1209" created="20260301T103628Z" codep="1">
+          <value>%d files</value>
           <pattern plural="pfZero">No files</pattern>
-          <pattern plural="pfOne">{0} file</pattern>
+          <pattern plural="pfOne">%d file</pattern>
           <lang id="fi" time="20221230T202444Z">
-            <value>{0} tiedostoa</value>
+            <value>%d tiedostoa</value>
             <pattern plural="pfZero">Ei tiedostoa</pattern>
-            <pattern plural="pfOne">{0} tiedosto</pattern>
+            <pattern plural="pfOne">%d tiedosto</pattern>
           </lang>
         </row>
         <row id="SEnglish" si="1203">
           <value>English</value>
-          <lang id="fi" time="20221230T202416Z">{0} tiedosto</lang>
+          <lang id="fi" rw="0" time="20260301T103639Z">englanti</lang>
         </row>
         <row id="SFinnish" si="1204">
           <value>Finnish</value>
-          <lang id="fi" time="20221230T202416Z">{0} tiedosto</lang>
+          <lang id="fi" rw="0" time="20260301T103641Z">suomi</lang>
         </row>
         <row id="SGerman" si="1205">
           <value>German</value>
-          <lang id="fi" time="20221230T202416Z">{0} tiedosto</lang>
+          <lang id="fi" rw="0" time="20260301T103643Z">saksa</lang>
         </row>
         <row id="SFrench" si="1206">
           <value>French</value>
-          <lang id="fi" time="20221230T202416Z">{0} tiedosto</lang>
+          <lang id="fi" rw="0" time="20260301T103649Z">ranska</lang>
         </row>
         <row id="SJapanese" si="1207">
           <value>Japanese</value>
-          <lang id="fi" time="20221230T202416Z">{0} tiedosto</lang>
+          <lang id="fi" rw="0" time="20260301T103655Z">japani</lang>
         </row>
       </node>
     </node>
@@ -225,7 +225,6 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
@@ -239,6 +238,4 @@
       <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>
