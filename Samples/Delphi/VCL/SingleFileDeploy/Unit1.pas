@@ -29,6 +29,7 @@ implementation
 {$ENDIF}
 
 uses
+  NtBase,
   NtBaseTranslator,
   NtLanguageDlg;
 

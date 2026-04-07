@@ -112,6 +112,9 @@ var
 
     for i := 0 to count - 1 do
     begin
+      if i >= items.Count then
+        Break;
+
       item := items[i];
 
       stream.Read(info, Sizeof(info));
@@ -195,7 +198,7 @@ var
       begin
         item.SubItems[i] := stream.ReadShortUnicodeString;
 
-        if version >= VERSION_32_3 then
+        if version >= VERSION_64_3 then
           stream.ReadPointer;
       end;
     end;
@@ -213,6 +216,9 @@ var
 
     for i := 0 to count - 1 do
     begin
+      if i >= items.Count then
+        Break;
+
       item := items[i];
 
 {$IFDEF UNICODE}

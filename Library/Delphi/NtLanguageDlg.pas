@@ -311,7 +311,6 @@ begin
   try
     dialog.CheckVersion := ldCheckVersion in options;
     dialog.Compatible := ldCompatible in options;
-    dialog.CheckVersion := ldCheckVersion in options;
     dialog.OriginalLanguage := originalLanguage;
     dialog.OriginalLanguageName := originalLanguageName;
     dialog.Position := position;

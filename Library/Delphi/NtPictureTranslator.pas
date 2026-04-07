@@ -84,6 +84,10 @@ begin
 
   picture := obj as TPicture;
   currentGraphic := picture.Graphic;
+
+  if currentGraphic = nil then
+    Exit;
+
 {$IFDEF DELPHIXE}
   data := value;
 {$ELSE}

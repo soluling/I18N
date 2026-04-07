@@ -231,7 +231,7 @@ end.
 {$IFDEF DELPHIXE}
     constructor Create(value: TBytes);
 {$ELSE}
-    constructor Create(value: AnsiString);
+    constructor Create(value: RawByteString);
 {$ENDIF}
 
     { Read one byte.
@@ -544,7 +544,7 @@ begin
 
       if Result.NameFld.UTF8Length = UTF8Length then
       begin
-        S2 := Result.NameFld.ToString;;
+        S2 := Result.NameFld.ToString;
 
         if SameText(S1, S2) then
           Exit;
@@ -1221,6 +1221,7 @@ begin
 
       if CompareMem(@VCL_FORM_HEADER, @header[0], Length(VCL_FORM_HEADER)) then
       begin
+        FUnnamedTypes.Clear;
         ProcessComponent(nil, True);
         Result := True;
       end;
@@ -1385,23 +1386,35 @@ end;
 
 {$IFDEF DELPHIXE}
 constructor TNtStream.Create(value: TBytes);
+var
+  len: Integer;
 begin
   inherited Create;
 
-  if Length(value) > 0 then
+  len := Length(value);
+
+  if len > 0 then
   begin
-    Write(value[0], Length(value));
+    if Write(value[0], len) <> len then
+      raise Exception.Create('Could not write to stream');
+
     Seek(0, TSeekOrigin.soBeginning);
   end;
 end;
 {$ELSE}
-constructor TNtStream.Create(value: AnsiString);
+constructor TNtStream.Create(value: RawByteString);
+var
+  len: Integer;
 begin
   inherited Create;
 
-  if Length(value) > 0 then
+  len := Length(value);
+
+  if len > 0 then
   begin
-    Write(PAnsiChar(value)^, Length(value));
+    if Write(PAnsiChar(value)^, len) <> len then
+      raise Exception.Create('Could not write to stream');
+
     Seek(0, soFromBeginning);
   end;
 end;

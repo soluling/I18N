@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="7A9F9335-BAB4-4122-93B2-D95D607361F1" created="20170927T213118Z" lastmodified="20190309T234821Z" version="1.0.714" stringid="6">
+<project id="7A9F9335-BAB4-4122-93B2-D95D607361F1" created="20170927T213118Z" lastmodified="20260321T094201Z" version="1.0.1094" stringid="6">
   <lang id="fi"/>
-  <node class="TSqlDatabaseSource" name="Composite.accdb" original="en" encoding="unicode" structure="dsByGroups" hasunicodefields="1">
+  <node class="TSqlDatabaseSource" name="Composite.accdb" original="en" lastmodified="20260321T094159Z" encoding="unicode" structure="dsByGroups" hasunicodefields="1">
     <database kind="TAccessDatabase" file="Composite.accdb" provider="Microsoft.ACE.OLEDB.15.0"/>
     <tables>
       <table name="Composite" method="dlRow" language="Language">
@@ -11,20 +11,6 @@
       </table>
     </tables>
     <node class="TSqlDatabaseTableNode" name="Composite" keyfields="GroupId;ItemId">
-      <node class="TDatabaseGroupNode" name="country">
-        <row id="0.Value" si="1">
-          <value>Finland</value>
-          <lang id="fi" time="20170927T213123Z">Suomi</lang>
-        </row>
-        <row id="1.Value" si="2">
-          <value>Germany</value>
-          <lang id="fi" rw="0" time="20170927T213125Z">Saksa</lang>
-        </row>
-        <row id="2.Value" si="3">
-          <value>Japan</value>
-          <lang id="fi" rw="0" time="20170927T213127Z">Japani</lang>
-        </row>
-      </node>
       <node class="TDatabaseGroupNode" name="sport">
         <row id="0.Value" si="4">
           <value>Soccer</value>
@@ -39,26 +25,34 @@
           <lang id="fi" rw="0" time="20170927T213137Z">Koripallo</lang>
         </row>
       </node>
+      <node class="TDatabaseGroupNode" name="country">
+        <row id="0.Value" si="1">
+          <value>Finland</value>
+          <lang id="fi" time="20170927T213123Z">Suomi</lang>
+        </row>
+        <row id="1.Value" si="2">
+          <value>Germany</value>
+          <lang id="fi" rw="0" time="20170927T213125Z">Saksa</lang>
+        </row>
+        <row id="2.Value" si="3">
+          <value>Japan</value>
+          <lang id="fi" rw="0" time="20170927T213127Z">Japani</lang>
+        </row>
+      </node>
     </node>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
-      <item name="Local1" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

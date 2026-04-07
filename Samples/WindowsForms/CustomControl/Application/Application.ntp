@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20241004T034917Z" version="1.0.1039" stringid="32">
+<project id="E04934C0-3CBE-49A0-B6DC-39D68E210F74" created="20180506T035937Z" lastmodified="20260328T055010Z" version="1.0.1095" stringid="35">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" lastmodified="20241004T034917Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Application.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\CustomControl\Application\Application.csproj" original="en" lastmodified="20260328T055010Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt40"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <formats>
@@ -43,6 +43,7 @@
       <row id="label1.Location" class="TCoordinatePointRow" created="20221117T121404Z">8, 24</row>
       <row id="label1.Size" class="TCoordinateSizeRow" created="20221117T121404Z">31, 13</row>
       <row id="label1.Text" si="26" created="20211229T202116Z">Hello</row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260328T054955Z" st="0">377, 140</row>
       <row id="$this.Text" si="5">
         <value>Sample</value>
         <lang id="fi" rw="0" ex="1" time="20180506T040005Z">Esimerkki</lang>
@@ -326,13 +327,11 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
     </shared>
   </mt>
 </project>

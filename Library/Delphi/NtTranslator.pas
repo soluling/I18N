@@ -56,7 +56,7 @@ type
       const originalCode: String = '';
       const fileName: String = ''): Boolean;
 
-    { Translate all created forms, frames and data modules. }
+    { Translate all created data modules, forms, and frames. }
     class procedure TranslateForms;
   end;
 
@@ -78,31 +78,31 @@ begin
   ResourceOptions := options;
   Result := TNtBase.LoadNew(code, fileName) <> 0;
 
-  if Result then
+  if not Result then
+    Exit;
+
+  if code = '' then
+    locale := TNtLocale.ExtensionToLocale(originalCode)
+  else
+    locale := TNtLocale.ExtensionToLocale(code);
+
+  // Updates thred's locale, format settings and bidi mode to match
+  if not (roNoThreadLocale in options) then
+    SetThreadLocale(locale);
+
+  if not (roNoLocaleVariables in options) then
+    TNtLocale.UpdateFormatSettings(locale);
+
+  if not (roNoUpdateBidiMode in options) then
   begin
-    if code = '' then
-      locale := TNtLocale.ExtensionToLocale(originalCode)
+    if TNtLocale.IsLocaleBiDi(TNtBase.LocaleToExtension(locale)) then
+      Application.BiDiMode := bdRightToLeft
     else
-      locale := TNtLocale.ExtensionToLocale(code);
-
-    // Updates thred's locale, format settings and bidi mode to match
-    if not (roNoThreadLocale in options) then
-      SetThreadLocale(locale);
-
-    if not (roNoLocaleVariables in options) then
-      TNtLocale.UpdateFormatSettings(locale);
-
-    if not (roNoUpdateBidiMode in options) then
-    begin
-      if TNtLocale.IsLocaleBiDi(TNtBase.LocaleToExtension(locale)) then
-        Application.BiDiMode := bdRightToLeft
-      else
-        Application.BiDiMode := bdLeftToRight;
-    end;
-
-    // Translate forms
-    TranslateForms;
+      Application.BiDiMode := bdLeftToRight;
   end;
+
+  // Translate forms
+  TranslateForms;
 
   if roSaveLocale in options then
     TNtLocaleRegistry.SetCurrentDefaultLocale;

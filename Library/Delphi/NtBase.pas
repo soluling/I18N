@@ -905,6 +905,10 @@ begin
   Result := '';
 {$IFDEF MSWINDOWS}
   handle := LoadLibrary('shfolder.dll');
+
+  if handle = 0 then
+    Exit;
+
   try
 {$IFDEF UNICODE}
     proc := GetProcAddress(handle, 'SHGetFolderPathW');
@@ -1575,47 +1579,58 @@ var
   size: Integer;
   unload: Boolean;
   str, fileName: String;
-  pointer: PByte;
+  dataPointer: PByte;
   resource: THandle;
+  loadedResource: HGLOBAL;
   stream: TFileStream;
 begin
-  str := resName;
-  fileName := ChangeFileExt(enumFileName, '.' + str);
+  try
+    str := resName;
+    fileName := ChangeFileExt(enumFileName, '.' + str);
 
-  if (not FileExists(fileName) or
-    not (eoCheckDate in enumOptions) or
-    (GetFileDateTime(fileName) <> enumFileDate)) then
-  begin
-    unload := resName = LoadedResourceLocale;
+    if (not FileExists(fileName) or
+      not (eoCheckDate in enumOptions) or
+      (GetFileDateTime(fileName) <> enumFileDate)) then
+    begin
+      unload := resName = LoadedResourceLocale;
 
-    if unload then
-      TNtBase.LoadNew;
+      if unload then
+        TNtBase.LoadNew;
 
-    resource := FindResource(instance, PChar(resName), PChar(resType));
-    pointer := LockResource(LoadResource(instance, resource));
-    size := SizeofResource(instance, resource);
+      resource := FindResource(instance, PChar(resName), PChar(resType));
 
-    SysUtils.DeleteFile(fileName);
+      loadedResource := LoadResource(instance, resource);
+      try
+        dataPointer := LockResource(loadedResource);
+        size := SizeofResource(instance, resource);
 
-    stream := TFileStream.Create(fileName, fmCreate);
-    try
-      stream.Write(pointer^, size);
-    finally
-      stream.Free;
+        SysUtils.DeleteFile(fileName);
+
+        stream := TFileStream.Create(fileName, fmCreate);
+        try
+          stream.Write(dataPointer^, size);
+        finally
+          stream.Free;
+        end;
+      finally
+        FreeResource(loadedResource);
+      end;
+
+      SetFileDateTime(fileName, enumFileDate);
+
+      if unload then
+        TNtBase.LoadNew(resName);
+
+      if eoRemoveFiles in enumOptions then
+        FExtractedResourceFiles.Add(fileName);
+
+      Inc(enumResourceFileCount);
     end;
 
-    SetFileDateTime(fileName, enumFileDate);
-
-    if unload then
-      TNtBase.LoadNew(resName);
-
-    if eoRemoveFiles in enumOptions then
-      FExtractedResourceFiles.Add(fileName);
-
-    Inc(enumResourceFileCount);
+    Result := True;
+  except
+    Result := False;
   end;
-
-  Result := True;
 end;
 {$ENDIF}
 
@@ -1772,7 +1787,9 @@ begin
     stream := TResourceStream.Create(instance, resName, resType);
     try
       SetLength(Result, stream.Size);
-      stream.Read(Result[0], stream.Size);
+
+      if stream.Size > 0 then
+        stream.Read(Result[0], stream.Size);
     finally
       stream.Free;
     end;
@@ -2004,15 +2021,25 @@ end;
 
 {$IFDEF DELPHI2007}
 class function TNtConvert.BytesToRawByteString(bytes: TBytes): RawByteString;
+var
+  len: Integer;
 begin
-  SetLength(Result, Length(bytes));
-  Move(bytes[0], Result[1], Length(bytes));
+  len := Length(bytes);
+  SetLength(Result, len);
+
+  if len > 0 then
+    Move(bytes[0], Result[1], len);
 end;
 
 class function TNtConvert.RawByteStringToBytes(str: RawByteString): TBytes;
+var
+  len: Integer;
 begin
-  SetLength(Result, Length(str));
-  Move(str[1], Result[0], Length(str));
+  len := Length(str);
+  SetLength(Result, len);
+
+  if len > 0 then
+    Move(str[1], Result[0], len);
 end;
 
 class function TNtConvert.BytesToUnicode(str: TBytes; codePage: Integer = 0): UnicodeString;

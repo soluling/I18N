@@ -159,7 +159,7 @@ var
     node.Text := str;
 
     for i := 0 to info.Count - 1 do
-      Process2(node[i]);
+      Process264(node[i]);
   end;
 {$ENDIF}
 

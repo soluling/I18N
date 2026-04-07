@@ -1,22 +1,22 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0EAD45C8-19B6-4B34-938B-889E4A76BD55" created="20230210T022652Z" lastmodified="20241228T060314Z" version="1.0.1054" stringid="10">
+<project id="0EAD45C8-19B6-4B34-938B-889E4A76BD55" created="20230210T022652Z" lastmodified="20260317T044132Z" version="1.0.1092" stringid="10">
   <lang id="fi"/>
   <lang id="pt"/>
-  <node class="TNetProjectSource" name="VBSample.vbproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VBSample\VBSample.vbproj" original="en" lastmodified="20241228T060314Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="VBSample.vbproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\VBSample\VBSample.vbproj" original="en" lastmodified="20260317T044132Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties toolsversion="nt150"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm" windowsforms="wf20">
       <row id="Button1.Location" class="TCoordinatePointRow">280, 8</row>
       <row id="Button1.Size" class="TCoordinateSizeRow">75, 23</row>
       <row id="Button1.Text" si="1">
         <value>&amp;Click...</value>
-        <lang id="fi" st="1" or="6" rw="0" time="20230210T022700Z" fuzzy="99.5">&amp;Klikkaus...</lang>
+        <lang id="fi" rw="0" time="20230210T022700Z" fuzzy="99.5">&amp;Klikkaus...</lang>
         <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">&amp;Clique...</lang>
       </row>
       <row id="Label1.Location" class="TCoordinatePointRow">8, 8</row>
       <row id="Label1.Size" class="TCoordinateSizeRow">82, 13</row>
       <row id="Label1.Text" si="2">
         <value>This is a sample</value>
-        <lang id="fi" st="1" or="6" rw="0" time="20230210T022702Z" fuzzy="99.5">Tämä on esimerkki</lang>
+        <lang id="fi" rw="0" time="20230210T022702Z" fuzzy="99.5">Tämä on esimerkki</lang>
         <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">esta é uma amostra</lang>
       </row>
       <row id="Label2.Location" class="TCoordinatePointRow">8, 24</row>
@@ -28,7 +28,7 @@
       <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20241228T060313Z" st="0">363, 198</row>
       <row id="$this.Text" si="5">
         <value>Sample</value>
-        <lang id="fi" st="4" rw="0" time="20230210T022707Z">Esimerkki</lang>
+        <lang id="fi" rw="0" time="20230210T022707Z">Esimerkki</lang>
         <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Amostra</lang>
       </row>
       <data>
@@ -182,22 +182,22 @@
       <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
         <row id="AboutCaption" si="6">
           <value>Visual Basic Sample</value>
-          <lang id="fi" st="4" rw="0" time="20230210T022716Z" fuzzy="99.5">Visual Basic -esimerkki</lang>
+          <lang id="fi" rw="0" time="20230210T022716Z" fuzzy="99.5">Visual Basic -esimerkki</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Exemplo do Visual Basic</lang>
         </row>
         <row id="AboutText" si="7">
           <value>This is a Visual basic sample.</value>
-          <lang id="fi" st="4" rw="0" time="20230210T022735Z" fuzzy="99.5">Tämä on Visual Basic -esimerkki.</lang>
+          <lang id="fi" rw="0" time="20230210T022735Z" fuzzy="99.5">Tämä on Visual Basic -esimerkki.</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Esta é uma amostra do Visual Basic.</lang>
         </row>
         <row id="String1" si="8">
           <value>This is a string</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20230210T022738Z" fuzzy="99.5">Tämä on merkkijono</lang>
+          <lang id="fi" rw="0" time="20230210T022738Z" fuzzy="99.5">Tämä on merkkijono</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Isso é uma corda</lang>
         </row>
         <row id="String2" si="9" created="20241228T060313Z" codep="1">
           <value>Hello {0}</value>
-          <lang id="fi" st="1" or="6" rw="0" time="20230210T022740Z" fuzzy="99.5">Hei {0}</lang>
+          <lang id="fi" rw="0" time="20230210T022740Z" fuzzy="99.5">Hei {0}</lang>
           <lang id="pt" st="1" or="6" rw="0" time="20230210T022832Z">Olá {0}</lang>
         </row>
       </node>
@@ -210,20 +210,16 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

@@ -6,7 +6,11 @@
         <group id="RCData.TFORM1">
           <trans-unit id="Win32\Release\Format.exe.RCData.TFORM1.Caption">
             <source>Sample</source>
-            <target state="translated">Esimerkki</target>
+            <target state="final">Esimerkki</target>
+            <alt-trans>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Probe</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Steekproef</target>
+            </alt-trans>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
@@ -24,6 +28,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TFORM1.FirstNameLabel.Caption">
               <source>&amp;First name:</source>
               <target state="final">&amp;Ensimmäinen nimi:</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">&amp;Vorname, Vorname:</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">&amp;Voornaam:</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -32,6 +40,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TFORM1.CountLabel.Caption">
               <source>&amp;Count:</source>
               <target state="final">&amp;Määrä:</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">&amp;Anzahl:</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">&amp;Telling:</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -40,6 +52,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TFORM1.SecondNameLabel.Caption">
               <source>&amp;Second name:</source>
               <target state="final">&amp;Toinen nimi:</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">&amp;Zweiter Name:</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">&amp;Secondenaam:</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -62,6 +78,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TFORM1.LanguageButton.Caption">
               <source>&amp;Language...</source>
               <target state="final">&amp;Kieli...</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">&amp;Sprache....</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">&amp;Taal...</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -71,6 +91,10 @@
           <trans-unit id="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.Caption">
             <source>Select Language</source>
             <target state="final">Valitse kieli</target>
+            <alt-trans>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Sprache auswählen</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Selecteer Taal</target>
+            </alt-trans>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
@@ -80,6 +104,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.OkButton.Caption">
               <source>OK</source>
               <target state="final">OK</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">OK</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">OK</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -88,6 +116,10 @@
             <trans-unit id="Win32\Release\Format.exe.RCData.TNTLANGUAGEDIALOG.CancelButton.Caption">
               <source>Cancel</source>
               <target state="final">Peru</target>
+              <alt-trans>
+                <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Abbrechen</target>
+                <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Annuleren</target>
+              </alt-trans>
               <soluling:datatype>string</soluling:datatype>
               <soluling:rowstatus>rsInUse</soluling:rowstatus>
             </trans-unit>
@@ -97,40 +129,64 @@
       <group id="String">
         <group id="String.Unit1">
           <trans-unit id="Win32\Release\Format.exe.String.Unit1.SHello">
-            <source>Hello %s!</source>
-            <target state="final">Moi %s!</target>
+            <source>Hello {0}!</source>
+            <target state="final">Moi {0}!</target>
+            <alt-trans>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Hallo {0}!</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Hallo {0}!</target>
+            </alt-trans>
             <note>0: Name of a person</note>
             <soluling:scannedcomment>0: Name of a person</soluling:scannedcomment>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
           <trans-unit id="Win32\Release\Format.exe.String.Unit1.SHello2">
-            <source>Hello %s and %s!</source>
-            <target state="final">Moi %s ja %s!</target>
+            <source>Hello {0} and {1}!</source>
+            <target state="final">Moi {0} ja {1}!</target>
+            <alt-trans>
+              <target xml:lang="fi-FI" state="translated">Moikka {1} ja {0}!</target>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Hallo {0} und {1}!</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Hallo {0} en {1}!</target>
+              <target xml:lang="he" state="translated">שלום {0} {1}!</target>
+            </alt-trans>
             <note>0: Name of the first person, 1: Name of the second person</note>
             <soluling:scannedcomment>0: Name of the first person, 1: Name of the second person</soluling:scannedcomment>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
           <trans-unit id="Win32\Release\Format.exe.String.Unit1.SCount">
-            <source>%s has %d cars</source>
-            <target state="final">%s:lla on %d autoa</target>
+            <source>{0} has {1} cars</source>
+            <target state="final">{0}:lla on {1} autoa</target>
+            <alt-trans>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">{0} hat {1} Autos</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">{0} heeft {1} auto's</target>
+            </alt-trans>
             <note>0: Name of a person, 1: Number of cars</note>
             <soluling:scannedcomment>0: Name of a person, 1: Number of cars</soluling:scannedcomment>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
           <trans-unit id="Win32\Release\Format.exe.String.Unit1.SCount2">
-            <source>%d cars will pick up %s and %s</source>
-            <target state="final">%d autoa hakee %s:in ja %s:in</target>
+            <source>{0} cars will pick up {1} and {2}</source>
+            <target state="final">{0} autoa hakee {1}:in ja {2}:in</target>
+            <alt-trans>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Autos nehmen {1} und {2} auf.</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">Auto's zullen {0} ophalen {1} en {2}.</target>
+              <target xml:lang="he" state="translated">{0} מכוניות יאספו {1} ו-{2}</target>
+            </alt-trans>
             <note>0: Number of cars, 1: Name of the first person, 2: Name of the second person</note>
             <soluling:scannedcomment>0: Number of cars, 1: Name of the first person, 2: Name of the second person</soluling:scannedcomment>
             <soluling:datatype>string</soluling:datatype>
             <soluling:rowstatus>rsInUse</soluling:rowstatus>
           </trans-unit>
           <trans-unit id="Win32\Release\Format.exe.String.Unit1.SDouble">
-            <source>%0:s swims and %0:s skis</source>
-            <target state="final">%0:s ui ja %0:s hiihtää</target>
+            <source>{0} swims and {0} skis</source>
+            <target state="final">{0} ui ja {0} hiihtää</target>
+            <alt-trans>
+              <target xml:lang="fi-FI" state="needs-review-translation">{0} ui ja {0} hiihtää</target>
+              <target xml:lang="de" state="translated" state-qualifier="fuzzy-match">Schwimmen und Skier</target>
+              <target xml:lang="nl" state="translated" state-qualifier="fuzzy-match">{0} Zwemmen en {0} ski's</target>
+            </alt-trans>
             <note>0: Name of a person. This parameter occurs twice.</note>
             <soluling:scannedcomment>0: Name of a person. This parameter occurs twice.</soluling:scannedcomment>
             <soluling:datatype>string</soluling:datatype>
