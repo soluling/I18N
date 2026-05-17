@@ -1,19 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<result created="20260326T164859Z">
+<result created="20260418T164650Z">
   <rows>
     <statuses new="0" inuse="145" changed="0" contextchanged="0" unused="0"/>
     <lastscan new="0" inuse="0" changed="0" contextchanged="0" unused="0"/>
   </rows>
   <translations>
-    <statuses nottranslated="555" bestguess="7" autotranslated="0" forreview="4" translated="1" complete="13"/>
-    <lastimport clear="0" import="0" overwrite="0">
+    <statuses nottranslated="548" bestguess="1" autotranslated="8" forreview="2" translated="1" complete="20"/>
+    <lastimport clear="0" import="8" overwrite="0">
       <language id="fi" clear="0" import="0" overwrite="0"/>
       <language id="ja" clear="0" import="0" overwrite="0"/>
-      <language id="pl" clear="0" import="0" overwrite="0"/>
+      <language id="pl" clear="0" import="8" overwrite="0"/>
       <language id="he" clear="0" import="0" overwrite="0"/>
     </lastimport>
   </translations>
   <imports>
+    <language id="pl">
+      <import context="Win32\Release\Plural.exe.RCData.TFORM1.Caption" original="Plural Sample" value="Lm liczba mnoga próbki"/>
+      <import context="Win32\Release\Plural.exe.RCData.TFORM1.LanguageButton.Caption" original="&amp;Language..." value="&amp;Język..."/>
+      <import context="Win32\Release\Plural.exe.RCData.TFORM1.ZeroCheckBox.Caption" original="&amp;Use zero part" value="&amp;Zero części"/>
+      <import context="Win32\Release\Plural.exe.RCData.TNTLANGUAGEDIALOG.Caption" original="Select Language" value="Wybierz język"/>
+      <import context="Win32\Release\Plural.exe.RCData.TNTLANGUAGEDIALOG.OkButton.Caption" original="OK" value="Ok"/>
+      <import context="Win32\Release\Plural.exe.RCData.TNTLANGUAGEDIALOG.CancelButton.Caption" original="Cancel" value="Anuluj"/>
+      <import context="Win32\Release\Plural.exe.String.Unit1.SMessagePlural" original="%d files" value="{plural, one {%d plik} few {%d pliki} other {%d plików}}"/>
+      <import context="Win32\Release\Plural.exe.String.Unit1.SZeroMessagePlural" original="%d files" value="{plural, zero {Żadnych plików} one {%d plik} few {%d pliki} other {%d plików}}"/>
+    </language>
   </imports>
   <outputfiles>
   </outputfiles>

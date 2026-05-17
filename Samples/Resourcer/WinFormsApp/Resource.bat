@@ -1,0 +1,1 @@
+SoluMake resource WinFormsApp.csproj -y -res:Resources.resx

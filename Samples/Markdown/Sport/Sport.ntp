@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="1BC003EC-B2B2-4F78-9B77-268E0AF83DAA" created="20191026T233857Z" lastmodified="20221118T143504Z" version="1.0.964" lockedrowcomplete="0" stringid="373">
+<project id="1BC003EC-B2B2-4F78-9B77-268E0AF83DAA" created="20191026T233857Z" lastmodified="20260506T034718Z" version="1.0.1102" lockedrowcomplete="0" stringid="594">
   <lang id="fi"/>
-  <node class="TMarkdownSource" name="Sport.md" fullpath="D:\NT\Deploy\Samples\Markdown\Sport\Sport.md" original="en" lastmodified="20221118T143504Z" encoding="utf-8">
+  <node class="TMarkdownSource" name="Sport.md" fullpath="D:\NT\Deploy\Samples\Markdown\Sport\Sport.md" original="en" lastmodified="20260506T034718Z" encoding="utf-8">
     <row id="header1[0]" si="1">
       <value>Sports</value>
       <lang id="fi" rw="0" time="20191026T234326Z">Urheilulajit</lang>
@@ -123,22 +123,17 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
-      <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Local1" type="TSqliteTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
     <shared>
       <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

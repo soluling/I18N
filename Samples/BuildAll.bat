@@ -105,6 +105,10 @@ cd Lazarus
 call Build.bat
 cd ..
 
+cd LaTeX
+call Build.bat
+cd ..
+
 cd Markdown
 call Build.bat
 cd ..

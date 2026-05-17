@@ -1,11 +1,17 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="EA65EC00-5D8A-4BDB-81B5-5DCCFF4EC404" created="20220126T142014Z" lastmodified="20260226T065521Z" version="1.0.1090" lockedrowcomplete="0" stringid="9">
+<project id="EA65EC00-5D8A-4BDB-81B5-5DCCFF4EC404" created="20220126T142014Z" lastmodified="20260514T134807Z" version="1.0.1102" lockedrowcomplete="0" stringid="18">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" original="en" lastmodified="20260226T065521Z" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU">
+  <node class="TNetProjectSource" name="Soluling.csproj" fullpath="D:\NT\Deploy\Library\NET\Standard\Soluling.csproj" original="en" lastmodified="20260514T134807Z" availableresources="[nrResx]" netconfiguration="Debug|AnyCPU">
     <netproperties version="standard20" toolsversion="nt150"/>
     <node class="TResXNode" name="Resources.resx" windowsforms="wfCore">
-      <row id="Female" si="1">Female</row>
-      <row id="Few" si="2">Few</row>
+      <row id="Female" si="1">
+        <value>Female</value>
+        <lang id="fi" st="1" or="6" rw="0" time="20260514T134801Z" fuzzy="99.5">Nainen</lang>
+      </row>
+      <row id="Few" si="2">
+        <value>Few</value>
+        <lang id="fi" st="1" or="6" rw="0" time="20260514T134807Z" fuzzy="99.5">Harvat</lang>
+      </row>
       <row id="Male" si="3">Male</row>
       <row id="Many" si="4">Many</row>
       <row id="Neutral" si="5">Neutral</row>
@@ -20,7 +26,7 @@
   </node>
   <terminology>
     <shared>
-      <item name="Local" type="TSqliteTermbase"/>
+      <item name="SQLite" type="TSqliteTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -31,7 +37,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="Claude" type="TClaudeTranslator"/>
     </shared>
   </mt>
 </project>
