@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-meaning1',
@@ -9,6 +9,7 @@ import { Component } from '@angular/core';
   <p i18n="sample3|">This is a sample</p>
   <p i18n="sample3|">This is a duplicate sample</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class Meaning1Component 

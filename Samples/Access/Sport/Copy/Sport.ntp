@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="DAEB777D-4106-4562-8A92-70F6E0CCBD6B" created="20160914T002007Z" lastmodified="20260321T094300Z" version="1.0.1094" stringid="9">
+<project id="DAEB777D-4106-4562-8A92-70F6E0CCBD6B" created="20160914T002007Z" lastmodified="20260913T074514Z" version="1.0.1110" stringid="9">
   <lang id="fi"/>
   <lang id="fr"/>
   <lang id="de"/>
   <lang id="ja"/>
-  <node class="TSqlDatabaseSource" name="Sport.accdb" original="en" lastmodified="20260321T094300Z" encoding="unicode" hasunicodefields="1">
+  <node class="TSqlDatabaseSource" name="Sport.accdb" original="en" lastmodified="20260913T074514Z" encoding="unicode" hasunicodefields="1">
     <database kind="TAccessDatabase" file="Sport.accdb" provider="Microsoft.ACE.OLEDB.13.0"/>
     <tables>
       <table name="Sport" method="dlCopy">
@@ -18,7 +18,7 @@
       <node class="TDatabaseFieldNode" name="Name">
         <row id="0" si="4">
           <value>Soccer</value>
-          <lang id="fi" tm="1" time="20160914T002031Z">Jalkapallo</lang>
+          <lang id="fi" st="4" tm="1" time="20160914T002031Z">Jalkapallo</lang>
           <lang id="fr" time="20160914T002031Z">Football</lang>
           <lang id="de" time="20160914T002031Z">Fußball</lang>
           <lang id="ja" time="20160914T002031Z">サッカー</lang>
@@ -83,15 +83,19 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
 </project>

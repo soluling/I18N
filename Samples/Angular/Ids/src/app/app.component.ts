@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -11,6 +11,7 @@ import { Component } from '@angular/core';
   <app-noid1></app-noid1>
   <app-noid2></app-noid2>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -12,6 +12,7 @@ import { Component } from '@angular/core';
   <p i18n="blankLink|">This is <a href="https://www.w3schools.com/html/" target="_blank">link</a> sample.</p>
   <p i18n>This is <a href="https://www.w3schools.com/html/" target="_blank">link</a> and <b>bold</b> sample.</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

@@ -1,4 +1,4 @@
-import { Component, ViewChild, AfterViewInit } from '@angular/core';
+import { Component, ViewChild, AfterViewInit, ChangeDetectionStrategy } from '@angular/core';
 import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
@@ -9,6 +9,7 @@ import { MatDialogRef } from '@angular/material/dialog';
   <button mat-button (click)="dialogRef.close(1)">{{select2Caption}}</button>
   <button mat-button (click)="dialogRef.close(2)">{{select3Caption}}</button>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class SelectDialog

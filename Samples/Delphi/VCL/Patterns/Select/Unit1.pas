@@ -34,13 +34,13 @@ procedure TForm1.UpdateValues;
   procedure Process(const select: String; const name: String; messageLabel: TLabel);
   resourcestring
     // Contains three patterns: soccer, hockey and basketball.
-    SSportSelect = '{select, soccer {%s is the best soccer player.} hockey {%s is the best ice hockey player.} basketball {%s is the best basketball player.}}'; //loc 0: Name of the player
+    SSportSelect = '{select, soccer {%s is the best soccer player.} hockey {%s is the best ice hockey player.} basketball {%s is the best basketball player.}}'; //loc %s: Name of the player
   begin
     messageLabel.Caption := TMultiPattern.Format(SSportSelect, select, [name]);
   end;
 
 begin
-  Process('soccer', 'Pelé', SoccerLabel);
+  Process('soccer', 'Pel ', SoccerLabel);
   Process('hockey', 'Wayne Gretzky', HockeyLabel);
   Process('basketball', 'Michael Jordan', BasketBallLabel);
 end;

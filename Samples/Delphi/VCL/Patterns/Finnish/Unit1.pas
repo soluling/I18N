@@ -35,7 +35,7 @@ uses
 procedure TForm1.UpdateValues;
 resourcestring
   // Contains only one pattern: neutral.
-  SMessageGender = '{gender, neutral {%s tuo polkupyöränsä}}';  //loc 0: Name of the person
+  SMessageGender = '{gender, neutral {%s tuo polkupyöränsä}}';  //loc %s: Name of the person
 
   procedure Process(gender: TGender; const name: String; messageLabel, infoLabel: TLabel);
   var

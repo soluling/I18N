@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="46B780F5-EE41-4CF9-8C63-B5AD00ACE2D9" created="20180509T134818Z" lastmodified="20241012T133256Z" version="1.0.1042" stringid="22">
+<project id="46B780F5-EE41-4CF9-8C63-B5AD00ACE2D9" created="20180509T134818Z" lastmodified="20260520T155054Z" version="1.0.1103" stringid="22">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" lastmodified="20241012T133256Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="FileDialog.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\FileDialog\FileDialog.csproj" original="en" lastmodified="20260520T155054Z" resources="[nrResx,nrForm]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net481" toolsversion="nt120"/>
     <node class="TResXNode" name="Form1.resx" resourcekind="nkForm">
       <row id="openButton1.Location" class="TCoordinatePointRow" created="20221117T122731Z">8, 8</row>
@@ -76,6 +76,7 @@
         <value>Composed filter</value>
         <lang id="fi" rw="0" time="20180509T135106Z">Koottu suodin</lang>
       </row>
+      <row id="$this.ClientSize" class="TCoordinateSizeRow" created="20260520T155053Z" st="0">381, 164</row>
       <row id="$this.Text" si="13">
         <value>File Dialog Sample</value>
         <lang id="fi" rw="0" time="20180509T135115Z">Tiedostodialogiesimerkki</lang>
@@ -393,20 +394,15 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
 </project>

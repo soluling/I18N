@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'gender-name',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   <p i18n="value|name: Name of the person">{gender, select, male {{{name}} drives his car.} female {{{name}} drives her car.} }</p>
   <p i18n="value2|name: Name of the person">{gender, select, male {{{name}} drives his car.} female {{{name}} drives her car.} other {{{name}} drives the car.} }</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class NameComponent

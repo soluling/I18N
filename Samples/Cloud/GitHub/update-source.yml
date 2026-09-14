@@ -1,0 +1,97 @@
+name: Update source
+
+# Runs automatically whenever Sport.ini changes on the default branch (and can be
+# started by hand from the Actions page). Mirrors Deploy/Samples/Cloud/UpdateSource.ps1:
+# authenticate for a JWT, resolve the project and its source file, then PUT the
+# changed file's bytes so its strings are re-imported.
+#
+# The API endpoint comes from the SOLULING_API_URL environment variable, set from
+# a repository/environment variable of the same name (Settings -> Secrets and
+# variables -> Actions -> Variables). Falls back to the public API when unset.
+# The target project name comes from the SOLULING_PROJECT_NAME variable, falling
+# back to "Sport".
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - Sport.ini
+  workflow_dispatch:
+
+concurrency:
+  group: update-soluling-source
+  cancel-in-progress: false
+
+jobs:
+  update-source:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Upload changed source file
+        shell: pwsh
+        env:
+          SOLULING_USER: ${{ secrets.SOLULING_USER }}
+          SOLULING_PASSWORD: ${{ secrets.SOLULING_PASSWORD }}
+          SOLULING_API_URL: ${{ vars.SOLULING_API_URL }}
+          SOLULING_PROJECT_NAME: ${{ vars.SOLULING_PROJECT_NAME }}
+          SOURCE_FILE: Sport.ini
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if (-not $env:SOLULING_USER -or -not $env:SOLULING_PASSWORD) {
+              throw 'Set the SOLULING_USER and SOLULING_PASSWORD repository secrets.'
+          }
+
+          $apiUrl = if ($env:SOLULING_API_URL) { $env:SOLULING_API_URL } else { 'https://www.soluling.com/api' }
+          $apiUrl = $apiUrl.TrimEnd('/')
+          $projectName = if ($env:SOLULING_PROJECT_NAME) { $env:SOLULING_PROJECT_NAME } else { 'Sport' }
+
+          $sourceFile = Join-Path $env:GITHUB_WORKSPACE $env:SOURCE_FILE
+          if (-not (Test-Path -LiteralPath $sourceFile)) {
+              throw "Source file not found: $sourceFile"
+          }
+          $sourceName = [System.IO.Path]::GetFileName($sourceFile)
+
+          # --- 1. Authenticate -> JWT. ---------------------------------------
+          Write-Host "Authenticating as $env:SOLULING_USER ..."
+          $auth = Invoke-RestMethod -Method Post -Uri "$apiUrl/users/authenticate" `
+              -ContentType 'application/json' `
+              -Body (@{ username = $env:SOLULING_USER
+                        password = $env:SOLULING_PASSWORD } | ConvertTo-Json)
+          Write-Host 'Authenticated.'
+
+          $headers = @{ Authorization = "Bearer $($auth.token)" }
+
+          # --- 2. Resolve the project and the source to update. -------------
+          Write-Host "Looking up project `"$projectName`" ..."
+          $project = Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$([Uri]::EscapeDataString($projectName))"
+          Write-Host "Found project id=$($project.id) guid=$($project.guid)"
+
+          $sources = @(Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$($project.id)/sources")
+          if (-not $sources) { throw "Project `"$projectName`" has no source files." }
+
+          if ($sources.Count -eq 1) {
+              $source = $sources[0]
+          } else {
+              $source = $sources | Where-Object { $_.name -eq $sourceName } | Select-Object -First 1
+          }
+          if (-not $source) {
+              $names = ($sources | ForEach-Object { $_.name }) -join ', '
+              throw "Project `"$projectName`" has no source named `"$sourceName`". Sources: $names"
+          }
+          Write-Host "Updating source id=$($source.id) name=`"$($source.name)`" from `"$sourceFile`" ..."
+
+          # --- 3. Upload the changed file bytes. ---------------------------
+          $uri = "$apiUrl/projects/$($project.id)/files/$([Uri]::EscapeDataString($source.name))"
+          $updated = Invoke-RestMethod -Method Put -Uri $uri -Headers $headers `
+              -ContentType 'application/octet-stream' `
+              -InFile $sourceFile
+
+          $rows = if ($null -ne $updated.rowCount) { $updated.rowCount } else { $updated.count }
+          $msg = "Updated source `"$($source.name)`"$(if ($null -ne $rows) { " - $rows row(s)" })."
+          Write-Host $msg
+          $msg | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append

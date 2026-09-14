@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -7,6 +7,7 @@ import { Component } from '@angular/core';
   <p i18n="skis|">I have {{ski}} skis.</p>
   <p i18n="plural|">I have {ski, plural, one {{{ski}} ski} other {{{ski}} skis}} and {car, plural, one {{{car}} car} other {{{car}} cars}}.</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

@@ -1,4 +1,4 @@
-import { Component, Inject, LOCALE_ID, OnInit } from '@angular/core';
+import { Component, Inject, LOCALE_ID, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { DataSource } from '@angular/cdk/collections';
 
 import { Observable ,  BehaviorSubject } from 'rxjs';
@@ -16,6 +16,7 @@ const dialogWidth = '800px';
   selector: 'app-sports',
   templateUrl: './sports.component.html',
   styleUrls: ['./sports.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SportsComponent implements OnInit

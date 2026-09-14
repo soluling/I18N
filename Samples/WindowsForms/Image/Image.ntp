@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20260319T050243Z" version="1.0.1093" stringid="6">
+<project id="55A8EFB9-8E26-4692-AA91-48C73EBE524A" created="20171106T142429Z" lastmodified="20260825T111629Z" version="1.0.1109" stringid="6">
   <lang id="fi"/>
-  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en-US" lastmodified="20260319T050243Z" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
+  <node class="TNetProjectSource" name="Image.csproj" fullpath="D:\NT\Deploy\Samples\WindowsForms\Image\Image.csproj" original="en-US" lastmodified="20260825T111629Z" resources="[nrResx,nrForm,nrImage]" availableresources="[nrResx,nrForm,nrAssemblyInfo,nrImage,nrManifest]" netconfiguration="Debug|AnyCPU" libraries="[nlWinForms]">
     <netproperties version="net462" toolsversion="nt120"/>
     <datatypes>
       <item class="TImageData" scan="dsYes"/>
@@ -4341,9 +4341,13 @@
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Hilde" type="TSqliteTranslationMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="Claude" type="TClaudeTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
 </project>

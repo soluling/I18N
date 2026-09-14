@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-root',
@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
   <p i18n="name|">Hello {{name}}</p>
   <p i18n="plural|0: Number of cars">{cars, plural, one {I have {{cars}} car.} other {I have {{cars}} cars.}}</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

@@ -1,4 +1,4 @@
-import { Component, Inject, OnInit } from '@angular/core';
+import { Component, Inject, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import { UntypedFormBuilder, UntypedFormGroup, Validators } from '@angular/forms';
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Sport, SportKind } from './sport'
@@ -7,6 +7,7 @@ import { Sport, SportKind } from './sport'
   selector: 'app-sport-dialog',
   templateUrl: './sport-dialog.component.html',
   styleUrls: ['./sport-dialog.component.css'],
+  changeDetection: ChangeDetectionStrategy.Eager,
   standalone: false
 })
 export class SportDialogComponent implements OnInit

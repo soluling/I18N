@@ -67,15 +67,15 @@ procedure TForm1.FormCreate(Sender: TObject);
   procedure Process(count: Integer; label1, label2, label3, label4, label5: TLabel);
   resourcestring
     // Contains the standard two patterns: one and other.
-    SMessagePlural = '{plural, one {%d file} other {%d files}}';  //loc 0: Amount of files
+    SMessagePlural = '{plural, one {%d file} other {%d files}}';  //loc %d: Amount of files
     // Contains three patterns: zero, one and other.
-    SZeroMessagePlural = '{plural, zero {No files} one {One file} other {%d files}}';  //loc 0: Amount of files
+    SZeroMessagePlural = '{plural, zero {No files} one {One file} other {%d files}}';  //loc %d: Amount of files
     // Contains four patterns: zero, one, two and other.
-    STwoMessagePlural = '{plural, zero {No files} one {One file} two {Two files} other {%d files}}';  //loc 0: Amount of files
+    STwoMessagePlural = '{plural, zero {No files} one {One file} two {Two files} other {%d files}}';  //loc %d: Amount of files
     // Contains four patterns: =0, one, =2 and other.
-    S2MessagePlural = '{plural, =0 {No files} one {One file} =2 {Two files} other {%d files}}';  //loc 0: Amount of files
+    S2MessagePlural = '{plural, =0 {No files} one {One file} =2 {Two files} other {%d files}}';  //loc %d: Amount of files
     // Contains fixed patterns: =0, =1, =2, <6, <=10, ~12 and other.
-    STextMessagePlural = '{plural, =0 {No files} =1 {One file} =2 {Two files} <6 {Few files} <=10 {Several files} ~12 {A dozen files} other {Lots of files}}';  //loc 0: Amount of files
+    STextMessagePlural = '{plural, =0 {No files} =1 {One file} =2 {Two files} <6 {Few files} <=10 {Several files} ~12 {A dozen files} other {Lots of files}}';  //loc %d: Amount of files
   begin
     label1.Caption := TMultiPattern.Format(SMessagePlural, [count]);
     label2.Caption := TMultiPattern.Format(SZeroMessagePlural, [count]);

@@ -35,9 +35,9 @@ uses
 procedure TForm1.UpdateValues;
 resourcestring
   // Contains two patterns: male and female.
-  SMessageGender = '{gender, male {%s will bring his bicycle} female {%s will bring her bicycle}}';  //loc 0: Name of a person
+  SMessageGender = '{gender, male {%s will bring his bicycle} female {%s will bring her bicycle}}';  //loc %s: Name of a person
   // Contains three patterns: neutral, male and female.
-  SOtherMessageGender = '{gender, male {%s will bring his bicycle} female {%s will bring her bicycle} other {%s will bring a bicycle}}';  //loc 0: Name of a person
+  SOtherMessageGender = '{gender, male {%s will bring his bicycle} female {%s will bring her bicycle} other {%s will bring a bicycle}}';  //loc %s: Name of a person
 
   procedure Process(gender: TGender; const name: String; messageLabel, infoLabel: TLabel);
   var

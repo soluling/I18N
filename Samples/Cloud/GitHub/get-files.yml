@@ -1,0 +1,175 @@
+name: Get localized files
+
+# Runs automatically after the "Update source" workflow finishes
+# successfully (i.e. after a Sport.ini change has been re-imported). Mirrors
+# Deploy/Samples/Cloud/GetFiles.ps1: authenticate for a JWT, resolve the project
+# and its target languages, queue a fresh build and wait for it, then download
+# each source's localized file per language into Localized/<language>/<file> and
+# commit them back to the branch.
+#
+# The API endpoint comes from the SOLULING_API_URL environment variable, set from
+# a repository/environment variable of the same name (Settings -> Secrets and
+# variables -> Actions -> Variables). Falls back to the public API when unset.
+# The target project name comes from the SOLULING_PROJECT_NAME variable, falling
+# back to "Sport".
+
+on:
+  workflow_run:
+    workflows: ["Update source"]
+    types: [completed]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: get-soluling-files
+  cancel-in-progress: false
+
+jobs:
+  get-files:
+    # Only when the upstream run succeeded.
+    if: ${{ github.event.workflow_run.conclusion == 'success' }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.workflow_run.head_branch }}
+
+      - name: Download localized files
+        shell: pwsh
+        env:
+          SOLULING_USER: ${{ secrets.SOLULING_USER }}
+          SOLULING_PASSWORD: ${{ secrets.SOLULING_PASSWORD }}
+          SOLULING_API_URL: ${{ vars.SOLULING_API_URL }}
+          SOLULING_PROJECT_NAME: ${{ vars.SOLULING_PROJECT_NAME }}
+          OUT_DIR: Localized
+          BUILD_TIMEOUT_SEC: '300'
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if (-not $env:SOLULING_USER -or -not $env:SOLULING_PASSWORD) {
+              throw 'Set the SOLULING_USER and SOLULING_PASSWORD repository secrets.'
+          }
+
+          $apiUrl = if ($env:SOLULING_API_URL) { $env:SOLULING_API_URL } else { 'https://www.soluling.com/api' }
+          $apiUrl = $apiUrl.TrimEnd('/')
+          $projectName = if ($env:SOLULING_PROJECT_NAME) { $env:SOLULING_PROJECT_NAME } else { 'Sport' }
+          $outDir = Join-Path $env:GITHUB_WORKSPACE $env:OUT_DIR
+          $buildTimeoutSec = [int]$env:BUILD_TIMEOUT_SEC
+
+          # --- 1. Authenticate -> JWT. -----------------------------------
+          Write-Host "Authenticating as $env:SOLULING_USER ..."
+          $auth = Invoke-RestMethod -Method Post -Uri "$apiUrl/users/authenticate" `
+              -ContentType 'application/json' `
+              -Body (@{ username = $env:SOLULING_USER
+                        password = $env:SOLULING_PASSWORD } | ConvertTo-Json)
+          Write-Host 'Authenticated.'
+
+          $headers = @{ Authorization = "Bearer $($auth.token)" }
+
+          # --- 2. Resolve the project and its target languages. ---------
+          Write-Host "Looking up project `"$projectName`" ..."
+          $project = Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$([Uri]::EscapeDataString($projectName))"
+          Write-Host "Found project id=$($project.id) guid=$($project.guid)"
+
+          $langs = Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$($project.id)/languages" |
+              ForEach-Object { $_.code } |
+              Where-Object { $_ -and ($_ -ne $project.originalLanguage) }
+          if (-not $langs) { throw "No languages to fetch for project `"$projectName`"." }
+          Write-Host "Languages: $($langs -join ', ')"
+
+          # --- 3. Queue a build and wait for it. -----------------------
+          $langQuery = [Uri]::EscapeDataString($langs -join ';')
+          Write-Host 'Queuing build ...'
+          $action = Invoke-RestMethod -Method Post -Headers $headers `
+              -Uri "$apiUrl/projects/$($project.id)/build?languages=$langQuery&publish=true"
+
+          $deadline = (Get-Date).AddSeconds($buildTimeoutSec)
+          $percent  = 0
+          do {
+              Start-Sleep -Seconds 2
+              try {
+                  $percent = Invoke-RestMethod -Method Get -Headers $headers `
+                      -Uri "$apiUrl/fileactions/$($action.id)/progress/percent"
+              } catch {
+                  $percent = 0   # 404 = no progress recorded yet; keep waiting.
+              }
+              Write-Host ("  build {0:N0}%" -f [double]$percent)
+          } while (([double]$percent -lt 100) -and ((Get-Date) -lt $deadline))
+
+          if ([double]$percent -lt 100) {
+              throw "Build did not finish within $buildTimeoutSec seconds."
+          }
+          Write-Host 'Build complete.'
+
+          # --- 4. Download each source's localized file per language. --
+          $sources = Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$($project.id)/sources"
+          if (-not $sources) { throw "Project `"$projectName`" has no source files." }
+
+          $null  = New-Item -ItemType Directory -Path $outDir -Force
+          $saved = 0
+
+          foreach ($source in $sources) {
+              foreach ($lang in $langs) {
+                  $uri     = "$apiUrl/sources/$($source.id)/artifacts/$([Uri]::EscapeDataString($lang))"
+                  $langDir = Join-Path $outDir $lang
+                  $null    = New-Item -ItemType Directory -Path $langDir -Force
+                  $tmp     = Join-Path $langDir ('.{0}.download' -f [Guid]::NewGuid())
+
+                  try {
+                      $resp = Invoke-WebRequest -Method Get -Uri $uri -Headers $headers -OutFile $tmp -PassThru
+                  } catch {
+                      $status = $_.Exception.Response.StatusCode.value__
+                      if ($status -eq 404) {
+                          Write-Warning "No build for '$($source.name)' [$lang]."
+                      } else {
+                          Write-Warning "Failed to download '$($source.name)' [$lang]: $($_.Exception.Message)"
+                      }
+                      if (Test-Path -LiteralPath $tmp) { Remove-Item -LiteralPath $tmp -Force }
+                      continue
+                  }
+
+                  # Prefer the server-supplied file name (Content-Disposition), else fall
+                  # back to "<source base>.<lang><ext>".
+                  $fileName = $null
+                  $cd = $resp.Headers['Content-Disposition']
+                  if ($cd -is [array]) { $cd = $cd[0] }
+                  if ($cd -and ($cd -match "filename\*?=(?:UTF-8'')?`"?([^`";]+)`"?")) {
+                      $fileName = [Uri]::UnescapeDataString($Matches[1]).Trim()
+                  }
+                  if (-not $fileName) {
+                      $base = [IO.Path]::GetFileNameWithoutExtension($source.name)
+                      $ext  = [IO.Path]::GetExtension($source.name)
+                      $fileName = "$base.$lang$ext"
+                  }
+
+                  $dest = Join-Path $langDir $fileName
+                  Move-Item -LiteralPath $tmp -Destination $dest -Force
+                  Write-Host "  saved $dest"
+                  $saved++
+              }
+          }
+
+          Write-Host "Done. $saved localized file(s) written under `"$($env:OUT_DIR)`"."
+          "Downloaded **$saved** localized file(s) into ``$($env:OUT_DIR)``." |
+              Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append
+
+      - name: Commit localized files
+        shell: bash
+        run: |
+          set -euo pipefail
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Localized
+          if git diff --cached --quiet; then
+            echo "No localized file changes to commit."
+            exit 0
+          fi
+          git commit -m "Update localized files from Soluling build
+
+          Co-Authored-By: Claude Sonnet 5 <noreply@anthropic.com>"
+          git push origin "HEAD:${{ github.event.workflow_run.head_branch }}"

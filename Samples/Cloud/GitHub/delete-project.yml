@@ -1,0 +1,70 @@
+name: Delete Soluling project
+
+# Manually triggered from the GitHub Actions page (Actions tab -> "Delete Soluling
+# project" -> Run workflow). Mirrors Deploy/Samples/Cloud/DeleteProject.ps1:
+# authenticate for a JWT, resolve the project id, then DELETE the project and
+# everything in it. The delete is irreversible, so the run only proceeds when the
+# "confirm" input exactly matches the project name.
+#
+# The API endpoint comes from the SOLULING_API_URL environment variable, set from
+# a repository/environment variable of the same name (Settings -> Secrets and
+# variables -> Actions -> Variables). Falls back to the public API when unset.
+
+on:
+  workflow_dispatch:
+    inputs:
+      project_name:
+        description: Project name or guid to delete
+        required: true
+        default: Sport
+      confirm:
+        description: Type the project name again to confirm the irreversible delete
+        required: true
+        default: ''
+
+jobs:
+  delete-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Delete project
+        shell: pwsh
+        env:
+          SOLULING_USER: ${{ secrets.SOLULING_USER }}
+          SOLULING_PASSWORD: ${{ secrets.SOLULING_PASSWORD }}
+          SOLULING_API_URL: ${{ vars.SOLULING_API_URL }}
+          PROJECT_NAME: ${{ inputs.project_name }}
+          CONFIRM: ${{ inputs.confirm }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if (-not $env:SOLULING_USER -or -not $env:SOLULING_PASSWORD) {
+              throw 'Set the SOLULING_USER and SOLULING_PASSWORD repository secrets.'
+          }
+          if ($env:CONFIRM -ne $env:PROJECT_NAME) {
+              throw "Confirmation mismatch: type `"$($env:PROJECT_NAME)`" in the confirm field to proceed."
+          }
+
+          $apiUrl = if ($env:SOLULING_API_URL) { $env:SOLULING_API_URL } else { 'https://www.soluling.com/api' }
+          $apiUrl = $apiUrl.TrimEnd('/')
+
+          # --- 1. Authenticate -> JWT. -------------------------------------
+          Write-Host "Authenticating as $env:SOLULING_USER ..."
+          $auth = Invoke-RestMethod -Method Post -Uri "$apiUrl/users/authenticate" `
+              -ContentType 'application/json' `
+              -Body (@{ username = $env:SOLULING_USER
+                        password = $env:SOLULING_PASSWORD } | ConvertTo-Json)
+          Write-Host 'Authenticated.'
+
+          $headers = @{ Authorization = "Bearer $($auth.token)" }
+
+          # --- 2. Resolve the project. -----------------------------------
+          Write-Host "Looking up project `"$($env:PROJECT_NAME)`" ..."
+          $project = Invoke-RestMethod -Method Get -Headers $headers `
+              -Uri "$apiUrl/projects/$([Uri]::EscapeDataString($env:PROJECT_NAME))"
+          Write-Host "Found project id=$($project.id) guid=$($project.guid)"
+
+          # --- 3. Delete it. -------------------------------------------
+          $target = "project `"$($env:PROJECT_NAME)`" (id=$($project.id))"
+          Invoke-RestMethod -Method Delete -Uri "$apiUrl/projects/$($project.id)" -Headers $headers | Out-Null
+          Write-Host "Deleted $target."
+          "Deleted $target." | Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append

@@ -1,0 +1,108 @@
+name: Create Soluling project
+
+# Manually triggered from the GitHub Actions page (Actions tab -> "Create Soluling
+# project" -> Run workflow). Mirrors Deploy/Samples/Cloud/CreateProject.ps1:
+# authenticate against the Soluling REST API for a JWT, then POST the source
+# file's bytes to /projects/source so the new project starts with its strings
+# already imported.
+#
+# The API endpoint comes from the SOLULING_API_URL environment variable, set
+# from a repository/environment variable of the same name (Settings -> Secrets
+# and variables -> Actions -> Variables). Falls back to the public API when unset.
+
+on:
+  workflow_dispatch:
+    inputs:
+      source_file:
+        description: Source file to seed the project from (path in the repo)
+        required: true
+        default: Sport.ini
+      project_name:
+        description: Project name
+        required: true
+        default: Sport
+      original_language:
+        description: Original language
+        required: true
+        default: en
+      target_languages:
+        description: Target languages (semicolon separated)
+        required: true
+        default: fi;sv
+      source_type:
+        description: Soluling source type code (blank = server auto-detect)
+        required: false
+        default: ''
+      account_key:
+        description: Account key (blank = default account)
+        required: false
+        default: ''
+
+jobs:
+  create-project:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create project from source file
+        shell: pwsh
+        env:
+          SOLULING_USER: ${{ secrets.SOLULING_USER }}
+          SOLULING_PASSWORD: ${{ secrets.SOLULING_PASSWORD }}
+          SOLULING_API_URL: ${{ vars.SOLULING_API_URL }}
+          SOURCE_FILE: ${{ inputs.source_file }}
+          PROJECT_NAME: ${{ inputs.project_name }}
+          ORIGINAL_LANGUAGE: ${{ inputs.original_language }}
+          TARGET_LANGUAGES: ${{ inputs.target_languages }}
+          SOURCE_TYPE: ${{ inputs.source_type }}
+          ACCOUNT_KEY: ${{ inputs.account_key }}
+        run: |
+          $ErrorActionPreference = 'Stop'
+
+          if (-not $env:SOLULING_USER -or -not $env:SOLULING_PASSWORD) {
+              throw 'Set the SOLULING_USER and SOLULING_PASSWORD repository secrets.'
+          }
+
+          $apiUrl = if ($env:SOLULING_API_URL) { $env:SOLULING_API_URL } else { 'https://www.soluling.com/api' }
+          $apiUrl = $apiUrl.TrimEnd('/')
+          $sourceFile = $env:SOURCE_FILE
+          if (-not [System.IO.Path]::IsPathRooted($sourceFile)) {
+              $sourceFile = Join-Path $env:GITHUB_WORKSPACE $sourceFile
+          }
+          if (-not (Test-Path -LiteralPath $sourceFile)) {
+              throw "Source file not found: $sourceFile"
+          }
+
+          # --- 1. Authenticate -> JWT. -----------------------------------------
+          Write-Host "Authenticating as $env:SOLULING_USER ..."
+          $auth = Invoke-RestMethod -Method Post -Uri "$apiUrl/users/authenticate" `
+              -ContentType 'application/json' `
+              -Body (@{ username = $env:SOLULING_USER
+                        password = $env:SOLULING_PASSWORD } | ConvertTo-Json)
+          Write-Host 'Authenticated.'
+
+          # --- 2. Create the project from the source file. --------------------
+          $params = [ordered]@{
+              name             = [System.IO.Path]::GetFileName($sourceFile)
+              projectName      = $env:PROJECT_NAME
+              originalLanguage = $env:ORIGINAL_LANGUAGE
+              targetLanguages  = $env:TARGET_LANGUAGES
+          }
+          if ($env:SOURCE_TYPE)  { $params.sourceType = $env:SOURCE_TYPE }
+          if ($env:ACCOUNT_KEY)  { $params.account    = $env:ACCOUNT_KEY }
+
+          $query = ($params.GetEnumerator() | ForEach-Object {
+              '{0}={1}' -f [Uri]::EscapeDataString($_.Key), [Uri]::EscapeDataString($_.Value)
+          }) -join '&'
+
+          Write-Host "Creating project `"$($env:PROJECT_NAME)`" from `"$sourceFile`" ..."
+          $project = Invoke-RestMethod -Method Post -Uri "$apiUrl/projects/source?$query" `
+              -Headers @{ Authorization = "Bearer $($auth.token)" } `
+              -ContentType 'application/octet-stream' `
+              -InFile $sourceFile
+
+          Write-Host "Created project `"$($env:PROJECT_NAME)`" - id=$($project.id) guid=$($project.guid)"
+
+          "Created project **$($env:PROJECT_NAME)** - id=``$($project.id)`` guid=``$($project.guid)``" |
+              Out-File -FilePath $env:GITHUB_STEP_SUMMARY -Append

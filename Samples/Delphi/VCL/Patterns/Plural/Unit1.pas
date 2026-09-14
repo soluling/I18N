@@ -51,9 +51,9 @@ uses
 procedure TForm1.UpdateValues;
 resourcestring
   // Contains two patterns: one and other.
-  SMessagePlural = '{plural, one {%d file} other {%d files}}';  //loc 0: Amount of files
+  SMessagePlural = '{plural, one {%d file} other {%d files}}';  //loc %d: Amount of files
   // Contains three patterns: zero, one and other.
-  SZeroMessagePlural = '{plural, zero {No files} one {%d file} other {%d files}}'; //loc 0: Amount of files
+  SZeroMessagePlural = '{plural, zero {No files} one {%d file} other {%d files}}'; //loc %d: Amount of files
 
   procedure Process(count: Integer; messageLabel, infoLabel: TLabel);
   var

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'ordinal-number',
@@ -14,6 +14,7 @@ import { Component } from '@angular/core';
     <p i18n="longPlural|num: Plural ordinal number in a long form such as 'first'">These are the {{num|ordinal:'long;other'}} attempts.</p>
   }
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class NumberComponent

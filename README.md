@@ -267,8 +267,18 @@ If you plan to localize your application using multiple patterns strings, you be
 
 Soluling supports continuous localization, machine translation, interactive fuzzy matching enabled translation memory, interactive terminology, import/export, build tools, and cloud translation.
 
-![NewTool.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
+You can use either Soluling Cloud or Soluling Desktop.
 
-You can download Soluling from [here](https://www.soluling.com/Download).
+### Cloud
+
+![CloudPlural.png](https://github.com/jaska45/I18N/blob/master/Other/CloudPlural.png)
+
+You can try Soluling Cloud from [here](https://www.soluling.com/Pricing/Cloud).
+
+### Desktop
+
+![Screenshot.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
+
+You can download Soluling Desktop from [here](https://www.soluling.com/Download).
 
 `Localization` folder contains Soluling's own localization project. Read `README.md` from that folder to learn more.

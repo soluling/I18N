@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-embedded',
@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   <p i18n="hello|name: Name of the user">Hello {{name}}!</p>
   <p i18n="sample|">This is a sample</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class EmbeddedComponent

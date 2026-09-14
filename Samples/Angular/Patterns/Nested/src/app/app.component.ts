@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 // This samples uses nested plural/select markup. The sample show how flexible the markup is but you should 
 // avoid nested or at least deeply nested markup because they tend to come very hard to read and also very difficult to translate
@@ -25,6 +25,7 @@ import { Component } from '@angular/core';
     other {{gender, select, male {{{name}} will bring his {{dogs}} dogs} female {{{name}} will bring her {{dogs}} dogs} other {Somebody will bring {{dogs}} dogs}} }}</p>
 -->
     `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

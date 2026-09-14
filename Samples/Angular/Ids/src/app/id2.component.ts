@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-id2',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   <p i18n="@@sample2">This is another sample</p>
   <p i18n="@@sample3">This is another sample</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class Id2Component 

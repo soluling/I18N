@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 // Stores information about one sport
 class Sport 
@@ -46,6 +46,7 @@ class Sport
     <ng-container i18n>Other</ng-container>
   </p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class AppComponent 

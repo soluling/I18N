@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, ChangeDetectionStrategy } from '@angular/core';
 
 @Component({
     selector: 'app-noid2',
@@ -8,6 +8,7 @@ import { Component } from '@angular/core';
   <p i18n>This is another sample</p>
   <p i18n>This is another sample</p>
   `,
+    changeDetection: ChangeDetectionStrategy.Eager,
     standalone: false
 })
 export class NoId2Component 
