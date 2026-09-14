@@ -271,11 +271,15 @@ You can use either Soluling Cloud or Soluling Desktop.
 
 ### Cloud
 
+You can use Soluling Cloud from any browser on any OS, or use REST API. 
+
 ![CloudPlural.png](https://github.com/jaska45/I18N/blob/master/Other/CloudPlural.png)
 
 You can try Soluling Cloud from [here](https://www.soluling.com/Pricing/Cloud).
 
 ### Desktop
+
+Soluling Desktop is a Windows application.
 
 ![Screenshot.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
