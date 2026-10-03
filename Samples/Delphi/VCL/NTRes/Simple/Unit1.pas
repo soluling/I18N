@@ -57,7 +57,11 @@ end;
 
 procedure TForm1.Button1Click(Sender: TObject);
 begin
-  NtResources.LanguageId := 'fi';
+  if NtResources.LanguageId = '' then
+    NtResources.LanguageId := 'fi'
+  else
+    NtResources.LanguageId := '';
+
   Translate;
 end;
 

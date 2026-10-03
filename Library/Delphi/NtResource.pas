@@ -70,7 +70,7 @@ end;
   [dataN]       ~
 
 
-  Language data version 2
+  Language data version 2 (using resource strings)
 
   There is one language data or file per language.
   Format:
@@ -140,7 +140,7 @@ end;
   [resourceN]    ~
 
 
-  Language data version 1 (will be deprected in 2027)
+  Language data version 1 (not using resource strings)
 
   There is one language data per language.
   Format:
@@ -723,7 +723,7 @@ end;
 
 function TNtDelphiResource.FindForm(const name: String): TStream; //FI:C103
 var
-  i, offsetValue, len: Integer;
+  offsetValue, len: Integer;
   left, right, mid: Integer;
   formOffset, formSize: Integer;
   formData: TBytes;
@@ -733,10 +733,15 @@ begin //FI:C101
 
   if FVersion = nr1 then
   begin
-    FStream.Position := FFormNameOffset;
+    // Form names are alphabetically sorted, so use a binary search.
+    left := 0;
+    right := FFormCount - 1;
 
-    for i := 0 to FFormCount - 1 do
+    while left <= right do
     begin
+      mid := (left + right) div 2;
+
+      FStream.Position := FFormNameOffset + 8*mid;
       offsetValue := FStream.ReadInt32;
       len := FStream.ReadInt32 div 2;
 
@@ -744,7 +749,7 @@ begin //FI:C101
 
       if str = name then
       begin
-        FStream.Position := FFormNameOffset + 8*FFormCount + 8*i;
+        FStream.Position := FFormNameOffset + 8*FFormCount + 8*mid;
         formOffset := FOffset + FStream.ReadInt32;
         formSize := FStream.ReadInt32;
 
@@ -755,7 +760,11 @@ begin //FI:C101
         Result.Write(formData[0], formSize);
         Result.Position := 0;
         Exit;
-      end;
+      end
+      else if str < name then
+        left := mid + 1
+      else
+        right := mid - 1;
     end;
   end
   else
@@ -776,8 +785,6 @@ begin //FI:C101
 
       if str = name then
       begin
-        FStream.Position := formOffset;
-        FStream.ReadString;
         formSize := FStream.ReadInt32;
         formData := FStream.ReadBytes(formSize);
 
@@ -833,7 +840,7 @@ end;
 
 function TNtDelphiResource.FindResource(const id: String): TStream; //FI:C103
 var
-  i, offsetValue, len: Integer;
+  offsetValue, len: Integer;
   left, right, mid: Integer;
   resourceOffset, resourceSize: Integer;
   resourceData: TBytes;
@@ -843,10 +850,15 @@ begin //FI:C101
 
   if FVersion = nr1 then
   begin
-    FStream.Position := FResourceNameOffset;
+    // Resource names are alphabetically sorted, so use a binary search.
+    left := 0;
+    right := FResourceCount - 1;
 
-    for i := 0 to FResourceCount - 1 do
+    while left <= right do
     begin
+      mid := (left + right) div 2;
+
+      FStream.Position := FResourceNameOffset + 8*mid;
       offsetValue := FStream.ReadInt32;
       len := FStream.ReadInt32 div 2;
 
@@ -854,7 +866,7 @@ begin //FI:C101
 
       if str = id then
       begin
-        FStream.Position := FResourceNameOffset + 8*FResourceCount + 8*i;
+        FStream.Position := FResourceNameOffset + 8*FResourceCount + 8*mid;
         resourceOffset := FOffset + FStream.ReadInt32;
         resourceSize := FStream.ReadInt32;
 
@@ -865,7 +877,11 @@ begin //FI:C101
         Result.Write(resourceData[0], resourceSize);
         Result.Position := 0;
         Exit;
-      end;
+      end
+      else if str < id then
+        left := mid + 1
+      else
+        right := mid - 1;
     end;
   end
   else
@@ -886,8 +902,6 @@ begin //FI:C101
 
       if str = id then
       begin
-        FStream.Position := resourceOffset;
-        FStream.ReadString;
         resourceSize := FStream.ReadInt32;
         resourceData := FStream.ReadBytes(resourceSize);
 
@@ -1247,20 +1261,28 @@ end;
 
 function TNtDelphiResource.FindString(const original: String; id: String; const group: String): String;  //FI:C103
 var
-  i, j, stringCount: Integer;
+  left, right, mid, stringCount: Integer;
   offsetValue, len, thisOffset: Integer;
   groupOffset: Integer;
+  found: Boolean;
   str: String;
 begin
   if id = '' then
     id := original;
 
-  // Find group
+  // Find group. Groups are alphabetically sorted by id, so use a binary search.
   CheckStream;
-  FStream.Position := FStringGroupNameOffset;
 
-  for i := 0 to FStringGroupCount - 1 do
+  found := False;
+  groupOffset := 0;
+  left := 0;
+  right := FStringGroupCount - 1;
+
+  while left <= right do
   begin
+    mid := (left + right) div 2;
+
+    FStream.Position := FStringGroupNameOffset + 8*mid;
     offsetValue := FStream.ReadInt32;
     len := FStream.ReadInt32 div 2;
 
@@ -1268,29 +1290,50 @@ begin
 
     if str = group then
     begin
-      FStream.Position := FStringGroupNameOffset + 8*FStringGroupCount + 8*i;
+      FStream.Position := FStringGroupNameOffset + 8*FStringGroupCount + 8*mid;
       groupOffset := FOffset + FStream.ReadInt32;
-      FStream.Position := groupOffset;
-      stringCount := FStream.ReadInt32;
+      found := True;
+      Break;
+    end
+    else if str < group then
+      left := mid + 1
+    else
+      right := mid - 1;
+  end;
 
-      for j := 0 to stringCount - 1 do
+  if found then
+  begin
+    FStream.Position := groupOffset;
+    stringCount := FStream.ReadInt32;
+
+    // Ids within a group are alphabetically sorted too, so use a binary search.
+    left := 0;
+    right := stringCount - 1;
+
+    while left <= right do
+    begin
+      mid := (left + right) div 2;
+
+      FStream.Position := groupOffset + 4 + 8*mid;
+      offsetValue := FStream.ReadInt32;
+      len := FStream.ReadInt32 div 2;
+
+      str := FStream.ReadString(groupOffset + offsetValue, len);
+
+      if str = id then
       begin
-        offsetValue := FStream.ReadInt32;
+        FStream.Position := groupOffset + 4 + 8*stringCount + 8*mid;
+        thisOffset := FStream.ReadInt32;
         len := FStream.ReadInt32 div 2;
 
-        str := FStream.ReadString(groupOffset + offsetValue, len);
-
-        if str = id then
-        begin
-          FStream.Position := groupOffset + 4 + 8*stringCount + 8*j;
-          thisOffset := FStream.ReadInt32;
-          len := FStream.ReadInt32 div 2;
-
-          FStream.Position := groupOffset + thisOffset;
-          Result := FStream.ReadString(len);
-          Exit;
-        end;
-      end;
+        FStream.Position := groupOffset + thisOffset;
+        Result := FStream.ReadString(len);
+        Exit;
+      end
+      else if str < id then
+        left := mid + 1
+      else
+        right := mid - 1;
     end;
   end;
 

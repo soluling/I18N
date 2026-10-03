@@ -24,7 +24,6 @@ type
     property on the host component (form, frame or data module).
     Call @link(TNtTranslator.TranslateForms) to translate all forms. }
   TNtTranslator = class(TNtBaseTranslator)
-
   protected
     { Called after a component has been translated.
       @param component Component that has been translated. }
@@ -33,6 +32,8 @@ type
     procedure Translate(component: TComponent); override;
 
   public
+    constructor Create;
+
     procedure TranslateForm(form: TCustomForm);
 
     { Call this function in the initialization section of your main form.
@@ -66,6 +67,11 @@ implementation
 
 uses
   Windows, Controls, NtLocalization, NtPattern;
+
+constructor TNtTranslator.Create;
+begin
+  inherited;
+end;
 
 class function TNtTranslator.SetNew(
   const code: String;

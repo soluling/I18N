@@ -39,15 +39,15 @@ resourcestring
   // Contains three patterns: neutral, male and female.
   SOtherMessageGender = '{gender, male {%s will bring his bicycle} female {%s will bring her bicycle} other {%s will bring a bicycle}}';  //loc %s: Name of a person
 
-  procedure Process(gender: TGender; const name: String; messageLabel, infoLabel: TLabel);
+  procedure Process(msg: String; gender: TGender; const name: String; messageLabel, infoLabel: TLabel);
   var
     actualGender: TGender;
   begin
     // Update message label
-    messageLabel.Caption := TMultiPattern.Format(SOtherMessageGender, gender, [name]);
+    messageLabel.Caption := TMultiPattern.Format(msg, gender, [name]);
 
     // Update info label
-    actualGender := TMultiPattern.GetGender(SOtherMessageGender, gender);
+    actualGender := TMultiPattern.GetGender(msg, gender);
 
     if actualGender <> gender then
       infoLabel.Font.Style := [fsBold]
@@ -58,9 +58,13 @@ resourcestring
   end;
 
 begin
-  Process(geMale, 'John', MaleLabel, MaleInfo);
-  Process(geFemale, 'Jill', FemaleLabel, FemaleInfo);
-  Process(geNeutral, 'Amazon', NeutralLabel, NeutralInfo);
+  Process(SMessageGender, geMale, 'John', MaleLabel, MaleInfo);
+  Process(SMessageGender, geFemale, 'Jill', FemaleLabel, FemaleInfo);
+  Process(SMessageGender, geNeutral, 'Amazon', NeutralLabel, NeutralInfo);
+
+  Process(SOtherMessageGender, geMale, 'John', MaleLabel, MaleInfo);
+  Process(SOtherMessageGender, geFemale, 'Jill', FemaleLabel, FemaleInfo);
+  Process(SOtherMessageGender, geNeutral, 'Amazon', NeutralLabel, NeutralInfo);
 end;
 
 procedure TForm1.FormCreate(Sender: TObject);

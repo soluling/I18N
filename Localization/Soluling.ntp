@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="CE4346A2-803E-4198-BC3C-BB340F25B152" created="20160410T141506Z" lastmodified="20260913T060620Z" version="1.0.1110" stringid="42837" cloudid="4">
+<project id="CE4346A2-803E-4198-BC3C-BB340F25B152" created="20160410T141506Z" lastmodified="20261002T034135Z" version="1.0.1113" stringid="42837" cloudid="4">
   <lang id="fi"/>
   <lang id="cs"/>
   <lang id="ja"/>
   <excludedcharacters usechars="1"/>
-  <node class="TDelphiSource" name="Soluling.exe" fullpath="D:\NT\Deploy\Localization\Soluling.exe" original="en" lastmodified="20260913T060620Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" projectfile="..\..\Desktop\Bin\Soluling.dpr" fullprojectfile="D:\NT\Desktop\Bin\Soluling.dpr" resourcestringprefixes="S;Str;Rs;Res;OExportRS" drcscanmode="drcSmart" version="dvXE2">
+  <node class="TDelphiSource" name="Soluling.exe" fullpath="D:\NT\Deploy\Localization\Soluling.exe" original="en" lastmodified="20261002T034135Z" platforms="[ptWin32,ptWin64]" hassignatureread="1" projectfile="..\..\Desktop\Bin\Soluling.dpr" fullprojectfile="D:\NT\Desktop\Bin\Soluling.dpr" resourcestringprefixes="S;Str;Rs;Res;OExportRS" drcscanmode="drcSmart" version="dvXE2">
     <node class="TWindowsBinaryFolder" name="&quot;COLOR&quot;" resname="COLOR" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;FLAG&quot;" resname="FLAG" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;SOLULING&quot;" resname="SOLULING" excluded="1"/>
@@ -1443,7 +1443,7 @@
         <row id="Caption" si="67">
           <value>Array Field</value>
           <lang id="fi" rw="0" ex="1" time="20221108T010524Z">Taulukon kenttä</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175212Z">Uzel pole</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T140703Z">Oblast pole</lang>
         </row>
         <row id="ClientHeight">193</row>
         <item name="OkButton" type="TButton">
@@ -11833,9 +11833,9 @@
           AggDVG9wAhAFV2lkdGgDOQIGSGVpZ2h0AhEHQ2FwdGlvbgYpJlNjYW4gc291cmNlIGNvZGUgdG8gZmluZCBzdHJpbmcgY29tbWVu
           dHMIVGFiT3JkZXICAAdPbkNsaWNrBxhTY2FuU291cmNlQ29kZUNoZWNrQ2xpY2sAAAANVENoZWNrTGlzdEJveBJDb25maWd1cmF0
           aW9uc0xpc3QETGVmdAIAA1RvcAO4AAVXaWR0aAMhAQZIZWlnaHQDQQEHQW5jaG9ycwsGYWtMZWZ0BWFrVG9wCGFrQm90dG9tAApJ
-          dGVtSGVpZ2h0Ag8IVGFiT3JkZXICAgdPbkNsaWNrBxdDb25maWd1cmF0aW9uc0xpc3RDbGljawAADVRDaGVja0xpc3RCb3gNU2Nh
+          dGVtSGVpZ2h0AhEIVGFiT3JkZXICAgdPbkNsaWNrBxdDb25maWd1cmF0aW9uc0xpc3RDbGljawAADVRDaGVja0xpc3RCb3gNU2Nh
           bkZpbGVzTGlzdARMZWZ0AygBA1RvcAO4AAVXaWR0aAMhAQZIZWlnaHQDQgEHQW5jaG9ycwsGYWtMZWZ0BWFrVG9wCGFrQm90dG9t
-          AApJdGVtSGVpZ2h0Ag8IVGFiT3JkZXICAwAAAA==
+          AApJdGVtSGVpZ2h0AhEIVGFiT3JkZXICAwAAAA==
         </data>
       </node>
       <node class="TDelphiFormNode" name="TDELPHIPROJECTSOURCEFRAME" type="TDelphiProjectSourceFrame" resname="TDELPHIPROJECTSOURCEFRAME" objectname="DelphiProjectSourceFrame" parent="TPlatformGroupSourceFrame" flags="[ffInherited]">
@@ -26897,7 +26897,7 @@
           <row id="Items.Strings[1]" si="22559">
             <value>&amp;Tree</value>
             <lang id="fi" rw="0" ex="1" time="20230319T002049Z" fuzzy="99.5">&amp;Puu</lang>
-            <lang id="cs" rw="0" ex="1" time="20260511T175238Z">&amp;Strom</lang>
+            <lang id="cs" st="4" rw="0" ex="1" time="20260928T141926Z">&amp;Struktura</lang>
           </row>
         </item>
         <item name="UseBomCheck" type="TCheckBox" created="20211119T123929Z">
@@ -32903,7 +32903,7 @@
             <row id="Caption" si="15275">
               <value>Output list of changed nodes after scanning</value>
               <lang id="fi" rw="0" ex="1" time="20221109T035417Z" fuzzy="99.5">Tulosta muuttuneiden solmujen luettelo skannauksen jälkeen</lang>
-              <lang id="cs" rw="0" ex="1" time="20260511T175243Z">Zobrazit seznam změněných uzlů po prohledání</lang>
+              <lang id="cs" st="4" rw="0" time="20260928T140245Z">Zobrazit seznam změněných vazeb po prohledání</lang>
             </row>
           </item>
           <item name="ShowIntroductionCheckBox" type="TCheckBox" created="20200102T035339Z">
@@ -33023,6 +33023,7 @@
             <row id="Caption" si="42837" st="0">
               <value>Show the "&amp;Rescan needed" message box whenever the user changes a setting that affects scanning</value>
               <lang id="fi" rw="0" time="20260901T100627Z" fuzzy="99.5">Näytä ”&amp;Uudelleenskannaus tarvitaan” -ilmoitusikkuna aina, kun käyttäjä muuttaa skannaukseen vaikuttavaa asetusta</lang>
+              <lang id="cs" st="4" rw="0" time="20260914T125016Z">Zobrazit okno se zprávou „&amp;Je třeba provést nové skenování“ pokaždé, když uživatel změní nastavení, které má vliv na skenování</lang>
             </row>
           </item>
         </item>
@@ -46029,7 +46030,7 @@ Soubor s nastavením aplikace Soluling najdete ve složce „Documents\Soluling\
         <row id="Caption" si="1804">
           <value>Node Not Found</value>
           <lang id="fi" rw="0" ex="1" time="20230323T222515Z" fuzzy="99.5">Solmua ei löydy</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175255Z">Uzel nenalezen</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T140736Z">Vazba nenalezena</lang>
         </row>
         <row id="ClientHeight" changed="20200102T035339Z">129</row>
         <row id="ClientWidth">465</row>
@@ -59212,7 +59213,7 @@ Soubor s nastavením aplikace Soluling najdete ve složce „Documents\Soluling\
         <row id="Caption" si="2345">
           <value>Find in Nodes</value>
           <lang id="fi" rw="0" ex="1" time="20230404T235539Z" fuzzy="99.5">Etsi solmuja</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175303Z">Vyhledávání v uzlech</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T140625Z">Vyhledávání ve vazbác</lang>
         </row>
         <item name="ItemsListView" type="TListView">
           <row id="Columns[0].Caption" si="2346">
@@ -59449,7 +59450,7 @@ Soubor s nastavením aplikace Soluling najdete ve složce „Documents\Soluling\
             <row id="Caption" si="15799">
               <value>Show resource strings nodes</value>
               <lang id="fi" rw="0" ex="1" time="20230405T000701Z" fuzzy="99.5">Näytä resurssimerkkijonojen solmut</lang>
-              <lang id="cs" rw="0" ex="1" time="20260511T175303Z">Zobrazit uzly řetězců zdrojů</lang>
+              <lang id="cs" st="4" rw="0" time="20260928T140207Z">Zobrazit vazby s řetězci zdrojů</lang>
             </row>
           </item>
           <item name="ShowLeftoverUiStringsCheck" type="TCheckBox">
@@ -61398,7 +61399,7 @@ Soubor s nastavením aplikace Soluling najdete ve složce „Documents\Soluling\
             <row id="Caption" si="2435">
               <value>Show hex dump view on image nodes</value>
               <lang id="fi" rw="0" ex="1" time="20230405T003936Z" fuzzy="99.5">Näytä heksavedosnäkymä kuvan solmuissa</lang>
-              <lang id="cs" rw="0" ex="1" time="20260511T175306Z">Zobrazit hexadecimální výpis na uzlech obrázků</lang>
+              <lang id="cs" st="4" rw="0" time="20260928T140327Z">Zobrazit hexadecimální výpis u vazeb obrázků</lang>
             </row>
           </item>
         </item>
@@ -68134,8 +68135,8 @@ Right click the form node in the projet tree and choose Select Ancestor.</value>
 Right click the form node in the projet tree and choose Select Ancestor.</prev>
           <lang id="fi" rw="0" ex="1" time="20251104T165330Z" fuzzy="99.5">Tämä on peritty lomake, mutta sen esi-isää ei löytynyt. Siksi sitä ei voitu näyttää oikein.
 Napsauta hiiren kakkospainikkeella lomakesolmua projektipuussa ja valitse Valitse esi-isä.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T193108Z">Toto je zděděný formulář, ale jeho předchůdce nebyl nalezen. Proto nemohl být správně zobrazen.
-Klikněte pravým tlačítkem myši na uzel formuláře ve stromu projektu a vyberte možnost Vybrat předka.</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T140946Z">Jedná se o zděděný formulář, ale jeho předchůdce se nepodařilo najít. Proto se jej nepodařilo správně zobrazit.
+Klikněte pravým tlačítkem myši na vazbu formuláře ve struktuře projektu a vyberte možnost Vybrat předchůdce.</lang>
         </row>
         <row id="SDelphiTranslatedForm" si="24271" created="20221108T224322Z">
           <value>Delphi translated form</value>
@@ -70567,7 +70568,7 @@ Pokud chcete vyloučit pouze řetězec „*“, klikněte na Ne a poté označte
         <row id="SSelectTreeNode" si="17455">
           <value>Select Tree Node</value>
           <lang id="fi" rw="0" ex="1" time="20251106T051526Z" fuzzy="99.5">Valitse puun solmu</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175340Z">Vyberte uzel stromu</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T140039Z">Vyberte vazbu struktury</lang>
         </row>
         <row id="SCustomizeGrid" si="17456">
           <value>Customize Grid...</value>
@@ -71746,10 +71747,10 @@ Pokud chcete vyloučit pouze řetězec „*“, klikněte na Ne a poté označte
             <value>%d solmua luotu</value>
             <pattern plural="pfOne">%d solmu luotu</pattern>
           </lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175343Z">
-            <value>vytvořeno %d uzlů</value>
-            <pattern plural="pfOne">vytvořeno %d uzlů</pattern>
-            <pattern plural="pfFew">vytvořeno %d uzlů</pattern>
+          <lang id="cs" st="4" rw="0" time="20260928T140415Z">
+            <value>vytvořeno %d vazeb</value>
+            <pattern plural="pfOne">vytvořeno %d vazeb</pattern>
+            <pattern plural="pfFew">vytvořeno %d vazeb</pattern>
           </lang>
         </row>
         <row id="SComponentsCreatedPlural" changed="20260302T160526Z" si="26233" created="20260302T160526Z" codep="1">
@@ -74380,7 +74381,7 @@ Chcete pokračovat?</lang>
         <row id="SDebugBrowseItemsHint" si="16154">
           <value>Shows content of the selected item in a tree.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T113642Z" fuzzy="99.5">Näyttää valitun kohteen sisällön puussa.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175403Z">Zobrazí obsah vybrané položky ve stromu.</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141752Z">Zobrazí obsah vybrané položky ve struktuře.</lang>
         </row>
         <row id="SDataCreateTranslationPackage" si="16157">
           <value>Create translation package</value>
@@ -74717,7 +74718,7 @@ Chcete pokračovat?</lang>
         <row id="SNodeComponentRulesHint" si="16205">
           <value>Edit component rules of the selected node.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T113816Z" fuzzy="99.5">Muokkaa valitun solmun komponenttisääntöjä.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175403Z">Úprava pravidel komponenty vybraného uzlu.</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141031Z">Upravit pravidla komponent vybrané vazb.</lang>
         </row>
         <row id="SNodeImagesHint" si="16206">
           <value>Edit images of the selected node.</value>
@@ -75135,7 +75136,7 @@ Chcete pokračovat?</lang>
         <row id="SSearchFindInNodesHint" si="16275">
           <value>Find in nodes.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T114300Z">Etsi solmuista.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175404Z">Vyhledávání v uzlech.</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T140540Z">Vyhledávání ve vazbách.</lang>
         </row>
         <row id="SSearchPrevUntranslatedRow" si="16276">
           <value>Prev Untranslated Row</value>
@@ -75390,7 +75391,7 @@ Chcete pokračovat?</lang>
         <row id="SSelectInheritedFromNodeHint" si="24232" created="20221108T224322Z">
           <value>Select the inherited from node in the project tree.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T114300Z">Valitse projektipuusta peritty solmu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175404Z">Vyberte uzel zděděno z ve stromu projektu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T130334Z">Vyberte vazbu zděděnou ze struktury projektu.</lang>
         </row>
         <row id="SSelectLastVisitedNode" si="24233" created="20221108T224322Z">
           <value>Select last visited node</value>
@@ -75400,7 +75401,7 @@ Chcete pokračovat?</lang>
         <row id="SSelectLastVisitedNodeHint" si="24234" created="20221108T224322Z">
           <value>Select the last visited node in the project tree.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T114300Z">Valitse projektipuusta viimeksi vierailtu solmu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175404Z">Vyberte poslední navštívený uzel ve stromu projektu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T130527Z">Vyberte poslední navštívenou vazbu ve struktuře projektu.</lang>
         </row>
         <row id="SSelectPreviousNode" si="24235" created="20221108T224322Z">
           <value>Select previous node</value>
@@ -75410,7 +75411,7 @@ Chcete pokračovat?</lang>
         <row id="SSelectPreviousNodeHint" si="24236" created="20221108T224322Z">
           <value>Select the previous node in the project tree.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T114300Z">Valitse edellinen solmu projektipuussa.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175404Z">Vyberte předchozí uzel ve stromu projektu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T130841Z">Vyberte předchozí vazbu ve struktuře projektu.</lang>
         </row>
         <row id="SSelectNextNode" si="24237" created="20221108T224322Z">
           <value>Select next node</value>
@@ -75420,7 +75421,7 @@ Chcete pokračovat?</lang>
         <row id="SSelectNextNodeHint" si="24238" created="20221108T224322Z">
           <value>Select the next node in the project tree.</value>
           <lang id="fi" rw="0" ex="1" time="20251108T114300Z">Valitse projektipuun seuraava solmu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175404Z">Vyberte další uzel ve stromu projektu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T130949Z">Vyberte další vazbu ve struktuře projektu.</lang>
         </row>
         <row id="SSetDefaultHint" si="16335">
           <value>Set default values.</value>
@@ -77334,7 +77335,7 @@ Ujistěte se, že jste zkompilovali projekt Visual Studio „%1:s“ s konfigura
         <row id="SNodeImages" si="19340">
           <value>Node images</value>
           <lang id="fi" rw="0" ex="1" time="20251108T131820Z" fuzzy="99.5">Solmujen kuvat</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175414Z">Obrázky uzlů</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141103Z">Obrázky vazeb</lang>
         </row>
         <row id="SFileNotFound" changed="20250106T095608Z" si="19341" created="20250106T095608Z" codep="1">
           <value>File "%s" not found!</value>
@@ -84132,17 +84133,17 @@ mutta ovat eri prosessori-, käyttöjärjestelmä- tai käännösmäärityksiä 
         <row id="SNewNodePlural" changed="20250106T095608Z" si="16519" created="20250106T095608Z" codep="1">
           <value>%d new nodes</value>
           <lang id="fi" rw="0" ex="1" time="20251109T165408Z" fuzzy="99.5">%d uutta solmua</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175432Z">%d nových uzlů</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141134Z">%d nových vazeb</lang>
         </row>
         <row id="SChangedNodePlural" changed="20250106T095608Z" si="16520" created="20250106T095608Z" codep="1">
           <value>%d changed nodes</value>
           <lang id="fi" rw="0" ex="1" time="20251109T165410Z" fuzzy="99.5">%d muutettua solmua</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175432Z">%d změněných uzlů</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141215Z">%d změněných vazeb</lang>
         </row>
         <row id="SUnusedNodePlural" changed="20250106T095608Z" si="16521" created="20250106T095608Z" codep="1">
           <value>%d unused nodes</value>
           <lang id="fi" rw="0" ex="1" time="20251109T165411Z" fuzzy="99.5">%d käyttämätöntä solmua</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175432Z">%d nepoužívaných uzlů</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141255Z">%d nepoužívaných vazeb</lang>
         </row>
         <row id="SChangedNodeData" changed="20250106T095608Z" si="16522" created="20250106T095608Z" codep="1">
           <value>Raw data of node %s has been changed</value>
@@ -84161,10 +84162,10 @@ mutta ovat eri prosessori-, käyttöjärjestelmä- tai käännösmäärityksiä 
             <value>%d solmujen raakadataa on muutettu</value>
             <pattern plural="pfOne">%d solmun raakadataa on muutettu</pattern>
           </lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175432Z">
-            <value>Byla změněna surová data %d uzlů</value>
-            <pattern plural="pfOne">Byla změněna surová data %d uzlů</pattern>
-            <pattern plural="pfFew">Byla změněna surová data %d uzlů</pattern>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141358Z">
+            <value>Byla změněna surová data %d vazeb</value>
+            <pattern plural="pfOne">Byla změněna surová data %d vazeb</pattern>
+            <pattern plural="pfFew">Byla změněna surová data %d vazeb</pattern>
           </lang>
         </row>
         <row id="SScanning" changed="20250106T095608Z" si="16525" created="20250106T095608Z" codep="1">
@@ -84474,7 +84475,7 @@ mutta ovat eri prosessori-, käyttöjärjestelmä- tai käännösmäärityksiä 
         <row id="SNoClassName" changed="20250106T095608Z" si="16567" created="20250106T095608Z" codep="1">
           <value>Class name attribute is missing. Reading node %s was ignored</value>
           <lang id="fi" rw="0" ex="1" time="20251109T110030Z" fuzzy="99.5">Luokan nimiattribuutti puuttuu. Solmua %s ei huomioitu</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175433Z">Chybí atribut názvu třídy. Čtení uzlu %s bylo ignorováno</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141441Z">Chybí atribut názvu třídy. Čtení vazby %s bylo ignorováno</lang>
         </row>
         <row id="SInvalidNts" changed="20250106T095608Z" si="16568" created="20250106T095608Z" codep="1">
           <value>Project source file "%s" is invalid. Reading of source ignored</value>
@@ -84514,7 +84515,7 @@ mutta ovat eri prosessori-, käyttöjärjestelmä- tai käännösmäärityksiä 
         <row id="SSharedHint" si="26029" created="20250422T110952Z">
           <value>Node is shared</value>
           <lang id="fi" rw="0" ex="1" time="20251109T165720Z" fuzzy="99.5">Solmu on jaettu</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175433Z">Uzel je sdílený</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T140808Z">Vazba je sdílená</lang>
         </row>
         <row id="SExcludedIdsImageHint" si="25061" created="20241108T094818Z">
           <value>Excluded ids exist</value>
@@ -87067,15 +87068,15 @@ Chcete použít kontext indexu?</lang>
         <row id="SSkipImportingAll" si="23834" created="20220321T230915Z">
           <value>Skip importing all nodes like this</value>
           <lang id="fi" rw="0" ex="1" time="20251110T044658Z" fuzzy="99.5">Ohita kaikkien tällaisten solmujen tuonti</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175444Z">Přeskočit import všech uzlů tímto způsobem</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141513Z">Přeskočit import všech vazeb tohoto typu</lang>
         </row>
         <row id="SSource" changed="20250106T095608Z" si="18098" created="20250106T095608Z" codep="1">
           <value>The project that you are importing contains "%s" node that does not exist in the destination project.
 If the name of the node has been changed in the current project select the target node from the list below.</value>
           <lang id="fi" rw="0" ex="1" time="20251110T044705Z" fuzzy="99.5">Tuomasi projekti sisältää solmun "%s", jota ei ole kohdeprojektissa.
 Jos solmun nimeä on muutettu nykyisessä projektissa, valitse kohdesolmu alla olevasta luettelosta.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T193805Z">Projekt, který importujete, obsahuje uzel „%s“, který v cílovém projektu neexistuje.
-Pokud byl název uzlu v aktuálním projektu změněn, vyberte cílový uzel ze seznamu níže.</lang>
+          <lang id="cs" st="4" rw="0" time="20260928T141558Z">Projekt, který importujete, obsahuje vazbu „%s“, která v cílovém projektu neexistuje.
+Pokud byl název vazby v aktuálním projektu změněn, vyberte cílovou vazbu ze seznamu níže.</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="SelectFile" created="20200102T060958Z">
@@ -88590,7 +88591,7 @@ Souhlasíte s tím, že vám nemůžeme poskytnout podporu, pokud verze vašeho 
         <row id="SNumberOfNodes" si="16665">
           <value>Number of nodes:</value>
           <lang id="fi" rw="0" ex="1" time="20251111T145623Z" fuzzy="99.5">Solmujen lukumäärä:</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175453Z">Počet uzlů:</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141652Z">Počet vazeb:</lang>
         </row>
         <row id="SNumberOfRows" changed="20210310T050825Z" si="16666">
           <value>Total number of rows:</value>
@@ -90954,7 +90955,7 @@ Opravdu ji chcete použít?</lang>
         <row id="SMarkCompleted" si="19366">
           <value>Mark completed nodes</value>
           <lang id="fi" rw="0" ex="1" time="20251111T163808Z" fuzzy="99.5">Merkitse valmiit solmut</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175503Z">Označit vyplněné uzly</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141720Z">Označit dokončené vazby</lang>
         </row>
         <row id="SMarkComponentRules" si="19367">
           <value>Mark component rules with an image</value>
@@ -91671,6 +91672,22 @@ Opravdu ji chcete použít?</lang>
           <lang id="fi" rw="0" ex="1" time="20251111T164607Z" fuzzy="99.5">Pienten kirjainten ristiriita "%s".</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Neshoda malých písmen v „%s“.</lang>
         </row>
+        <row id="SExtraNewLineCharacterIn" changed="20260507T142626Z" si="19939" created="20250106T095608Z" codep="1">
+          <value>Extra newline character in "%s"</value>
+          <prev>Extra newline character in '%s'</prev>
+          <lang id="fi" rw="0" ex="1" time="20260507T154433Z">Ylimääräinen rivinvaihtomerkki kohdassa "%s"</lang>
+          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Znak nového řádku navíc v „%s</lang>
+        </row>
+        <row id="SEmptyOriginal" si="19961">
+          <value>Empty original</value>
+          <lang id="fi" rw="0" ex="1" time="20251111T164652Z" fuzzy="99.5">Tyhjä alkuperäinen</lang>
+          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Prázdný originál</lang>
+        </row>
+        <row id="SEmptyTranslation" si="19962">
+          <value>Empty translation</value>
+          <lang id="fi" rw="0" ex="1" time="20251111T164653Z" fuzzy="99.5">Tyhjä käännös</lang>
+          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Prázdný překlad</lang>
+        </row>
         <row id="SEmptyOriginalDescription" changed="20250106T095608Z" si="19963" created="20250106T095608Z" codep="1">
           <value>Empty original in %s</value>
           <lang id="fi" rw="0" ex="1" time="20251111T164657Z" fuzzy="99.5">Tyhjä alkuperäinen %s</lang>
@@ -91700,23 +91717,6 @@ Opravdu ji chcete použít?</lang>
           <value>Translation contains only space characters</value>
           <lang id="fi" rw="0" ex="1" time="20251111T164632Z" fuzzy="99.5">Käännös sisältää vain välilyöntejä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Překlad obsahuje pouze znaky mezery</lang>
-        </row>
-        <row id="SNewLineCharacter" si="19937">
-          <value>Newline character</value>
-          <lang id="fi" rw="0" ex="1" time="20251111T164633Z" fuzzy="99.5">Rivinvaihtomerkki</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Znak nového řádku</lang>
-        </row>
-        <row id="SMissingNewLineCharacterIn" changed="20260507T142626Z" si="19938" created="20250106T095608Z" codep="1">
-          <value>Missing newline character in "%s"</value>
-          <prev>Missing newline character in '%s'</prev>
-          <lang id="fi" rw="0" ex="1" time="20260507T154429Z">Puuttuu rivinvaihtomerkki kohdassa "%s"</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Chybějící znak nového řádku v '%s'</lang>
-        </row>
-        <row id="SExtraNewLineCharacterIn" changed="20260507T142626Z" si="19939" created="20250106T095608Z" codep="1">
-          <value>Extra newline character in "%s"</value>
-          <prev>Extra newline character in '%s'</prev>
-          <lang id="fi" rw="0" ex="1" time="20260507T154433Z">Ylimääräinen rivinvaihtomerkki kohdassa "%s"</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Znak nového řádku navíc v „%s</lang>
         </row>
         <row id="SHorizontalTabCharacter" si="19940">
           <value>Horizontal tab character</value>
@@ -91768,15 +91768,16 @@ Opravdu ji chcete použít?</lang>
           <lang id="fi" rw="0" ex="1" time="20260507T154458Z">Puuttuva käännös sanalle "%s"</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Chybějící překlad znaku „%s</lang>
         </row>
-        <row id="SEmptyOriginal" si="19961">
-          <value>Empty original</value>
-          <lang id="fi" rw="0" ex="1" time="20251111T164652Z" fuzzy="99.5">Tyhjä alkuperäinen</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Prázdný originál</lang>
+        <row id="SNewLineCharacter" si="19937">
+          <value>Newline character</value>
+          <lang id="fi" rw="0" ex="1" time="20251111T164633Z" fuzzy="99.5">Rivinvaihtomerkki</lang>
+          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Znak nového řádku</lang>
         </row>
-        <row id="SEmptyTranslation" si="19962">
-          <value>Empty translation</value>
-          <lang id="fi" rw="0" ex="1" time="20251111T164653Z" fuzzy="99.5">Tyhjä käännös</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Prázdný překlad</lang>
+        <row id="SMissingNewLineCharacterIn" changed="20260507T142626Z" si="19938" created="20250106T095608Z" codep="1">
+          <value>Missing newline character in "%s"</value>
+          <prev>Missing newline character in '%s'</prev>
+          <lang id="fi" rw="0" ex="1" time="20260507T154429Z">Puuttuu rivinvaihtomerkki kohdassa "%s"</lang>
+          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Chybějící znak nového řádku v '%s'</lang>
         </row>
       </node>
       <node class="TWindowsStringNode" name="ValidationSheet" created="20200102T060958Z">
@@ -91896,7 +91897,7 @@ Opravdu ji chcete použít?</lang>
         <row id="STreeView" si="24248" created="20221108T224322Z">
           <value>Tree view</value>
           <lang id="fi" rw="0" ex="1" time="20251111T170942Z" fuzzy="99.5">Puunäkymä</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175507Z">Zobrazit strom</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T132150Z">Zobrazit strukturu</lang>
         </row>
         <row id="SToolBar" si="24356" created="20230215T154151Z">
           <value>Toolbar</value>
@@ -92225,12 +92226,12 @@ Doporučujeme projekt nyní zavřít a aktualizovat Soluling</lang>
         <row id="BaseTree_SCorruptStream1" si="28290">
           <value>Stream data corrupt. A node's anchor chunk is missing.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171132Z" fuzzy="99.5">Virtatiedot vioittuneet. Solmun ankkuriosa puuttuu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Poškozená data proudu. Chybí kotevní blok uzlu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T132800Z">Poškozená data zdroje. Chybí kotevní blok vazby.</lang>
         </row>
         <row id="BaseTree_SCorruptStream2" si="28291">
           <value>Stream data corrupt. Unexpected data after node's end position.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171140Z" fuzzy="99.5">Virtatiedot vioittuneet. Odottamatonta dataa solmun loppupisteen jälkeen.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Poškozená data proudu. Neočekávaná data po koncové pozici uzlu.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T133217Z">Poškozená data zdroje. Neočekávaná data po koncové pozice vazby.</lang>
         </row>
         <row id="HeaderPopup_sResizeColumnToFit" si="28292">
           <value>Size &amp;Column to Fit</value>
@@ -92250,7 +92251,7 @@ Doporučujeme projekt nyní zavřít a aktualizovat Soluling</lang>
         <row id="BaseTree_SWrongMoveError" si="28295">
           <value>Target node cannot be a child node of the node to be moved.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171135Z" fuzzy="99.5">Kohdesolmu ei voi olla siirrettävän solmun alisolmu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Cílový uzel nemůže být podřízeným uzlem uzlu, který má být přesunut.</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260914T133631Z">Cílová vazba nemůže být podřízenou vazbou vazby, který má být přesunuta.</lang>
         </row>
         <row id="BaseTree_SWrongStreamFormat" si="28287">
           <value>Unable to load tree structure, the format is wrong.</value>
@@ -92284,17 +92285,17 @@ Doporučujeme projekt nyní zavřít a aktualizovat Soluling</lang>
         <row id="SCorruptStream1" si="38971">
           <value>Stream data corrupt. A node's anchor chunk is missing.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171132Z" fuzzy="99.5">Virtatiedot vioittuneet. Solmun ankkuriosa puuttuu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Poškozená data proudu. Chybí kotevní blok uzlu.</lang>
+          <lang id="cs" st="4" or="3" rw="0" ex="1" time="20260914T132814Z">Poškozená data zdroje. Chybí kotevní blok vazby.</lang>
         </row>
         <row id="SCorruptStream2" si="38972">
           <value>Stream data corrupt. Unexpected data after node's end position.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171140Z" fuzzy="99.5">Virtatiedot vioittuneet. Odottamatonta dataa solmun loppupisteen jälkeen.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Poškozená data proudu. Neočekávaná data po koncové pozici uzlu.</lang>
+          <lang id="cs" st="4" or="3" rw="0" ex="1" time="20260914T133219Z">Poškozená data zdroje. Neočekávaná data po koncové pozice vazby.</lang>
         </row>
         <row id="SWrongMoveError" si="38967">
           <value>Target node cannot be a child node of the node to be moved.</value>
           <lang id="fi" rw="0" ex="1" time="20251111T171135Z" fuzzy="99.5">Kohdesolmu ei voi olla siirrettävän solmun alisolmu.</lang>
-          <lang id="cs" rw="0" ex="1" time="20260511T175509Z">Cílový uzel nemůže být podřízeným uzlem uzlu, který má být přesunut.</lang>
+          <lang id="cs" st="4" or="3" rw="0" ex="1" time="20260914T133634Z">Cílová vazba nemůže být podřízenou vazbou vazby, který má být přesunuta.</lang>
         </row>
         <row id="SWrongStreamFormat" si="38968">
           <value>Unable to load tree structure, the format is wrong.</value>
@@ -93795,7 +93796,7 @@ Rivi kaksi</lang>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <node class="TDelphiSource" name="SoluSetup.exe" fullpath="D:\NT\Deploy\Localization\SoluSetup.exe" original="en" lastmodified="20260913T060442Z" hassignatureread="1" projectfile="..\..\Desktop\Setup\Install\SoluSetup.dpr" fullprojectfile="D:\NT\Desktop\Setup\Install\SoluSetup.dpr" drcscanmode="drcSmart" version="dvXE2">
+  <node class="TDelphiSource" name="SoluSetup.exe" fullpath="D:\NT\Deploy\Localization\SoluSetup.exe" original="en" lastmodified="20261002T034132Z" hassignatureread="1" projectfile="..\..\Desktop\Setup\Install\SoluSetup.dpr" fullprojectfile="D:\NT\Desktop\Setup\Install\SoluSetup.dpr" drcscanmode="drcSmart" version="dvXE2">
     <node class="TWindowsBinaryFolder" name="&quot;COLOR&quot;" resname="COLOR" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;SOLULING&quot;" resname="SOLULING" excluded="1"/>
     <node class="TWindowsBinaryFolder" name="&quot;UNICODEDATA&quot;" resname="UNICODEDATA" excluded="1"/>
@@ -101879,7 +101880,7 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
       <configuration name="Default" items="[oiLanguage]"/>
     </configurations>
   </node>
-  <node class="TDelphiSource" name="vcl370.bpl" fullpath="D:\NT\Deploy\Localization\vcl370.bpl" original="en" lastmodified="20260913T060620Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" stringcontextmethod="scmStringValue" drcscanmode="drcNew" version="dvXE2">
+  <node class="TDelphiSource" name="vcl370.bpl" fullpath="D:\NT\Deploy\Localization\vcl370.bpl" original="en" lastmodified="20261002T034132Z" platforms="[ptWin32,ptWin64]" hassignature="1" hassignatureread="1" stringcontextmethod="scmStringValue" drcscanmode="drcNew" version="dvXE2">
     <node class="TWindowsBinaryFolder" name="&quot;AVI&quot;" resname="AVI" excluded="1"/>
     <node class="TWindowsBitmapFolder" name="Bitmap" excluded="1"/>
     <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
@@ -101893,162 +101894,202 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
       <node class="TWindowsStringNode" name="All" created="20251112T161434Z">
         <row id="Linked %s" importid="65056" si="37455" created="20251113T164440Z" codep="1">
           <value>Linked %s</value>
+          <lang id="fi" rw="0" time="20260922T060156Z" fuzzy="99.5">Linkitetty %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Propojené %s</lang>
         </row>
         <row id="Operation not allowed on an empty OLE container" importid="65057" si="36985" created="20251113T164440Z">
           <value>Operation not allowed on an empty OLE container</value>
+          <lang id="fi" rw="0" time="20260922T060158Z" fuzzy="99.5">Toimintoa ei sallita tyhjällä OLE-kontilla</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Operace není povolena na prázdném kontejneru OLE</lang>
         </row>
         <row id="Invalid object verb" importid="65058" si="37457" created="20251113T164440Z">
           <value>Invalid object verb</value>
+          <lang id="fi" rw="0" time="20260922T060200Z" fuzzy="99.5">Virheellinen objektiverbi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatné sloveso objektu</lang>
         </row>
         <row id="%s Properties" importid="65059" si="35081" created="20251113T140304Z" codep="1">
           <value>%s Properties</value>
+          <lang id="fi" rw="0" time="20260922T060202Z" fuzzy="99.5">%s:n ominaisuudet</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Vlastnosti %s</lang>
         </row>
         <row id="Invalid stream format" importid="65060" si="37459" created="20251113T164440Z">
           <value>Invalid stream format</value>
+          <lang id="fi" rw="0" time="20260922T060204Z" fuzzy="99.5">Virheellinen virtaformaatti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný formát datového proudu</lang>
         </row>
         <row id="License information for %s is invalid" importid="65061" si="37460" created="20251113T164440Z" codep="1">
           <value>License information for %s is invalid</value>
+          <lang id="fi" rw="0" time="20260922T060206Z" fuzzy="99.5">%s:n lisenssitiedot eivät ole kelvolliset</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Informace o licenci pro %s jsou neplatné</lang>
         </row>
         <row id="License information for %s not found. You cannot use this control in design mode" importid="65062" si="37932" created="20251113T164440Z" codep="1">
           <value>License information for %s not found. You cannot use this control in design mode</value>
+          <lang id="fi" rw="0" time="20260922T060212Z" fuzzy="99.5">%s:n lisenssitietoja ei löytynyt. Tätä ohjausobjektia ei voi käyttää suunnittelutilassa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Informace o licenci pro %s nebyly nalezeny. Tento ovládací prvek nelze použít v režimu návrhu</lang>
         </row>
         <row id="Unable to retrieve a pointer to a running object registered with OLE for %s/%s" importid="65063" si="36991" created="20251113T164440Z" codep="1">
           <value>Unable to retrieve a pointer to a running object registered with OLE for %s/%s</value>
+          <lang id="fi" rw="0" time="20260922T060214Z" fuzzy="99.5">OLE:hen rekisteröidyn, käynnissä olevan objektin osoitinta ei voitu hakea kohteesta %s/%s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze načíst ukazatel na spuštěný objekt registrovaný v OLE pro %s/%s</lang>
         </row>
         <row id="Failed to set calendar date or time" importid="65072" si="34144" created="20251113T140304Z">
           <value>Failed to set calendar date or time</value>
+          <lang id="fi" rw="0" time="20260922T060218Z" fuzzy="99.5">Kalenteripäivän tai -ajan asettaminen epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se nastavit datum nebo čas v kalendáři</lang>
         </row>
         <row id="Failed to set maximum selection range" importid="65073" si="36993" created="20251113T164440Z">
           <value>Failed to set maximum selection range</value>
+          <lang id="fi" rw="0" time="20260922T060220Z" fuzzy="99.5">Valinnan enimmäisaluetta ei voitu määrittää</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se nastavit maximální rozsah výběru</lang>
         </row>
         <row id="Failed to set calendar min/max range" importid="65074" si="36994" created="20251113T164440Z">
           <value>Failed to set calendar min/max range</value>
+          <lang id="fi" rw="0" time="20260922T060222Z" fuzzy="99.5">Kalenterin alin ja ylin päivämäärä ei voitu määrittää</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nastavení minimálního/maximálního rozsahu kalendáře se nezdařilo</lang>
         </row>
         <row id="Date range can only be used in multiselect mode" importid="65075" si="37937" created="20251113T164440Z">
           <value>Date range can only be used in multiselect mode</value>
+          <lang id="fi" rw="0" time="20260922T060223Z" fuzzy="99.5">Päivämääräväliä voi käyttää vain monivalintatilassa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Rozsah dat lze použít pouze v režimu vícenásobného výběru</lang>
         </row>
         <row id="Failed to set calendar selected range" importid="65076" si="36996" created="20251113T164440Z">
           <value>Failed to set calendar selected range</value>
+          <lang id="fi" rw="0" time="20260922T060224Z" fuzzy="99.5">Valitun kalenterialueen määrittäminen epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se nastavit vybraný rozsah kalendáře</lang>
         </row>
         <row id="ListView item can be added only when OwnerData is False.  Use OnData instead." importid="65077" si="37468" created="20251113T164440Z">
           <value>ListView item can be added only when OwnerData is False.  Use OnData instead.</value>
+          <lang id="fi" rw="0" time="20260922T060226Z" fuzzy="99.5">ListView-kohde voidaan lisätä vain, kun OwnerData-arvo on False.  Käytä sen sijaan OnData-tapahtumaa.</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Položku ListView lze přidat pouze v případě, že je vlastnost OwnerData nastavena na False.  Místo toho použijte vlastnost OnData.</lang>
         </row>
         <row id="'%s' is not a valid property value" importid="65078" si="36998" created="20251113T164440Z" codep="1">
           <value>'%s' is not a valid property value</value>
+          <lang id="fi" rw="0" time="20260922T060257Z" fuzzy="99.5">'%s' ei ole kelvollinen ominaisuusarvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">‚%s‘ není platná hodnota vlastnosti</lang>
         </row>
         <row id="OLE control activation failed" importid="65079" si="37470" created="20251113T164440Z">
           <value>OLE control activation failed</value>
+          <lang id="fi" rw="0" time="20260922T060258Z" fuzzy="99.5">OLE-ohjausobjektin aktivointi epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Aktivace ovládacího prvku OLE se nezdařila</lang>
         </row>
         <row id="Could not obtain OLE control window handle" importid="65080" si="35094" created="20251113T140304Z">
           <value>Could not obtain OLE control window handle</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">OLE-ohjausobjektin ikkunan käsittelijää ei voitu hakea</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze získat popisovač okna ovládacího prvku OLE</lang>
         </row>
         <row id="OLE error %.8x" importid="65081" si="37001" created="20251113T164440Z" codep="1">
           <value>OLE error %.8x</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">OLE-virhe %.8x</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Chyba OLE %.8x</lang>
         </row>
         <row id="Variant does not reference an OLE object" importid="65082" si="37473" created="20251113T164440Z">
           <value>Variant does not reference an OLE object</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Variant ei viittaa OLE-objektiin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Variant neodkazuje na objekt OLE</lang>
         </row>
         <row id="Variant does not reference an automation object" importid="65083" si="33672" created="20251113T055718Z">
           <value>Variant does not reference an automation object</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Variantti ei viittaa automaatio-objektiin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Variant neodkazuje na objekt automatizace</lang>
         </row>
         <row id="Method '%s' not supported by OLE object" importid="65084" si="33673" created="20251113T055718Z" codep="1">
           <value>Method '%s' not supported by OLE object</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">OLE-objekti ei tue menetelmää '%s'</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Metoda ‚%s‘ není podporována objektem OLE</lang>
         </row>
         <row id="Link Properties" importid="65085" si="37476" created="20251113T164440Z">
           <value>Link Properties</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Linkin ominaisuudet</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Vlastnosti odkazu</lang>
         </row>
         <row id="Cannot link to an invalid source." importid="65086" si="37948" created="20251113T164440Z">
           <value>Cannot link to an invalid source.</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Virheelliseen lähteeseen ei voi luoda linkkiä.</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze vytvořit odkaz na neplatný zdroj.</lang>
         </row>
         <row id="Break link operation is not supported." importid="65087" si="37007" created="20251113T164440Z">
           <value>Break link operation is not supported.</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Linkin katkaisemista ei tueta.</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Operace přerušení odkazu není podporována.</lang>
         </row>
         <row id="Unable to create new column" importid="65088" si="37008" created="20251113T164440Z">
           <value>Unable to create new column</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Uutta saraketta ei voitu luoda</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze vytvořit nový sloupec</lang>
         </row>
         <row id="Unable to create new item" importid="65089" si="37480" created="20251113T164440Z">
           <value>Unable to create new item</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Uutta kohdetta ei voitu luoda</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze vytvořit novou položku</lang>
         </row>
         <row id="RichEdit line insertion error" importid="65090" si="37481" created="20251113T164440Z">
           <value>RichEdit line insertion error</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">RichEdit-rivien lisäysvirhe</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Chyba vložení řádku RichEdit</lang>
         </row>
         <row id="Failed to Load Stream" importid="65091" si="37482" created="20251113T164440Z">
           <value>Failed to Load Stream</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Virhe virran lataamisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se načíst proud</lang>
         </row>
         <row id="Failed to Save Stream" importid="65092" si="37012" created="20251113T164440Z">
           <value>Failed to Save Stream</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">Virhe tallennettaessa streamia</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se uložit proud</lang>
         </row>
         <row id="StatusBar cannot have more than 64 panels" importid="65093" si="37955" created="20251113T164440Z">
           <value>StatusBar cannot have more than 64 panels</value>
+          <lang id="fi" rw="0" time="20260922T060310Z">StatusBarissa voi olla enintään 64 paneelia</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">StatusBar nemůže mít více než 64 panelů</lang>
         </row>
         <row id="Error assigning Hot-Key to %s. %s" importid="65094" si="37956" created="20251113T164440Z" codep="1">
           <value>Error assigning Hot-Key to %s. %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Virhe pikanäppäimen määrittämisessä %s:lle. %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Chyba při přiřazování klávesové zkratky k %s. %s</lang>
         </row>
         <row id="Hot-Key is invalid" importid="65095" si="34638" created="20251113T140304Z">
           <value>Hot-Key is invalid</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Pikanäppäin on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Klávesová zkratka je neplatná</lang>
         </row>
         <row id="Window is invalid or a child window" importid="65096" si="37487" created="20251113T164440Z">
           <value>Window is invalid or a child window</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Ikkuna on virheellinen tai se on alaiikkuna</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Okno je neplatné nebo je to podřízené okno</lang>
         </row>
         <row id="Hot-Key is assigned to another window" importid="65097" si="37017" created="20251113T164440Z">
           <value>Hot-Key is assigned to another window</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Pikanäppäin on määritetty toiselle ikkunalle</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Klávesová zkratka je přiřazena jinému oknu</lang>
         </row>
         <row id="%s is already associated with %s" importid="65098" si="37489" created="20251113T164440Z" codep="1">
           <value>%s is already associated with %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">%s on jo liitetty %s:ään</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">%s je již přidruženo k %s</lang>
         </row>
         <row id="%d is an invalid PageIndex value.  PageIndex must be between 0 and %d" importid="65099" si="37490" created="20251113T164440Z" codep="1">
           <value>%d is an invalid PageIndex value.  PageIndex must be between 0 and %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">%d on virheellinen PageIndex-arvo.  PageIndex-arvon on oltava välillä 0–%d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175546Z">%d je neplatná hodnota PageIndex.  PageIndex musí být v rozmezí 0 až %d</lang>
         </row>
         <row id="This control requires version 4.70 or greater of COMCTL32.DLL" importid="65100" si="35114" created="20251113T140304Z">
           <value>This control requires version 4.70 or greater of COMCTL32.DLL</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Tämä ohjausobjekti edellyttää COMCTL32.DLL-tiedoston versiota 4.70 tai uudempaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Tento ovládací prvek vyžaduje verzi 4.70 nebo vyšší knihovny COMCTL32.DLL</lang>
         </row>
         <row id="Date exceeds maximum of %s" importid="65101" si="37021" created="20251113T164440Z" codep="1">
           <value>Date exceeds maximum of %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Päivämäärä ylittää enimmäisarvon %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175546Z">Datum přesahuje maximální hodnotu %s</lang>
         </row>
         <row id="Date is less than minimum of %s" importid="65102" si="37493" created="20251113T164440Z" codep="1">
           <value>Date is less than minimum of %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Päivämäärä on pienempi kuin %s:n vähimmäisarvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175546Z">Datum je menší než minimum %s</lang>
         </row>
         <row id="You must be in ShowCheckbox mode to set to this date" importid="65103" si="37965" created="20251113T164440Z">
           <value>You must be in ShowCheckbox mode to set to this date</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Tämän päivämäärän asettaminen edellyttää, että olet ShowCheckbox-tilassa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Pro nastavení tohoto data musíte být v režimu ShowCheckbox</lang>
         </row>
         <row id="RelativePanel error: Circular dependency detected. Layout could not complete" importid="65104" si="37966" created="20251113T164440Z">
@@ -102058,106 +102099,132 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="CardPanel card index is out of range" importid="65105" si="37025" created="20251113T164440Z">
           <value>CardPanel card index is out of range</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">CardPanel-korttihakemiston arvo on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Index karty CardPanel je mimo rozsah</lang>
         </row>
         <row id="CardPanel.ActiveCard cannot be nil" importid="65106" si="34178" created="20251113T140304Z">
           <value>CardPanel.ActiveCard cannot be nil</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">CardPanel.ActiveCard ei saa olla nolla</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">CardPanel.ActiveCard nemůže být nulová</lang>
         </row>
         <row id="Only TGraphicControl class descendants are supported by ControlList" importid="65107" si="37498" created="20251113T164440Z">
           <value>Only TGraphicControl class descendants are supported by ControlList</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">ControlList tukee ainoastaan TGraphicControl-luokan alaluokkia</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">ControlList podporuje pouze potomky třídy TGraphicControl</lang>
         </row>
         <row id="Failed to clear tab control" importid="65108" si="37028" created="20251113T164440Z">
           <value>Failed to clear tab control</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Välilehtikontrollin tyhjentäminen epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se vymazat ovládací prvek tab</lang>
         </row>
         <row id="Failed to delete tab at index %d" importid="65109" si="37500" created="20251113T164440Z" codep="1">
           <value>Failed to delete tab at index %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Välilehden poistaminen epäonnistui kohdassa %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se odstranit kartu na indexu %d</lang>
         </row>
         <row id="Failed to retrieve tab at index %d" importid="65110" si="37030" created="20251113T164440Z" codep="1">
           <value>Failed to retrieve tab at index %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Välilehteä indeksillä %d ei voitu hakea</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se načíst kartu na indexu %d</lang>
         </row>
         <row id="Failed to get object at index %d" importid="65111" si="37031" created="20251113T164440Z" codep="1">
           <value>Failed to get object at index %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Objektia indeksillä %d ei voitu hakea</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se získat objekt na indexu %d</lang>
         </row>
         <row id="Failed to set tab &quot;%s&quot; at index %d" importid="65112" si="37032" created="20251113T164440Z" codep="1">
           <value>Failed to set tab "%s" at index %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Välilehteä ”%s” ei voitu asettaa indeksissä %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se nastavit kartu „%s“ na indexu %d</lang>
         </row>
         <row id="Failed to set object at index %d" importid="65113" si="37504" created="20251113T164440Z" codep="1">
           <value>Failed to set object at index %d</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Objektia ei voitu asettaa indeksiin %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nepodařilo se nastavit objekt na indexu %d</lang>
         </row>
         <row id="MultiLine must be True when TabPosition is tpLeft or tpRight" importid="65114" si="37976" created="20251113T164440Z">
           <value>MultiLine must be True when TabPosition is tpLeft or tpRight</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">MultiLine-parametrin arvon on oltava True, kun TabPosition-parametrin arvo on tpLeft tai tpRight</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">MultiLine musí být True, pokud je TabPosition tpLeft nebo tpRight</lang>
         </row>
         <row id="Invalid item level assignment" importid="65115" si="37977" created="20251113T164440Z">
           <value>Invalid item level assignment</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Virheellinen kohdetason määritys</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatné přiřazení na úrovni položky</lang>
         </row>
         <row id="Invalid level (%d) for item &quot;%s&quot;" importid="65116" si="37036" created="20251113T164440Z" codep="1">
           <value>Invalid level (%d) for item "%s"</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Virheellinen taso (%d) kohteelle "%s"</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatná úroveň (%d) pro položku „%s“</lang>
         </row>
         <row id="Invalid index" importid="65117" si="37979" created="20251113T164440Z">
           <value>Invalid index</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Virheellinen hakemisto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný index</lang>
         </row>
         <row id="Unable to insert an item" importid="65118" si="33236" created="20251113T055718Z">
           <value>Unable to insert an item</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Kohdetta ei voitu lisätä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze vložit položku</lang>
         </row>
         <row id="Invalid owner" importid="65119" si="37510" created="20251113T164440Z">
           <value>Invalid owner</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Virheellinen omistaja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný vlastník</lang>
         </row>
         <row id="JumpListItem exception: Error %d: %s" importid="65120" si="34192" created="20251113T140304Z" codep="1">
           <value>JumpListItem exception: Error %d: %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">JumpListItem-poikkeus: Virhe %d: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Výjimka JumpListItem: Chyba %d: %s</lang>
         </row>
         <row id="JumpList exception: Error %d: %s" importid="65121" si="37983" created="20251113T164440Z" codep="1">
           <value>JumpList exception: Error %d: %s</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">JumpList-poikkeus: Virhe %d: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Výjimka JumpList: Chyba %d: %s</lang>
         </row>
         <row id="Initiating a building session for a new jump list" importid="65122" si="37513" created="20251113T164440Z">
           <value>Initiating a building session for a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Uuden hyppylistan luomisen aloittaminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Zahájení relace vytváření nového seznamu skoků</lang>
         </row>
         <row id="Appending an item to the recent files category of a new jump list" importid="65123" si="37514" created="20251113T164440Z">
           <value>Appending an item to the recent files category of a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Kohteen lisääminen uuden pikavalikon ”Viimeisimmät tiedostot” -luokkaan</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Připojení položky do kategorie nedávných souborů nového seznamu skoků</lang>
         </row>
         <row id="Appending an item to the frequent files category of a new jump list" importid="65124" si="37044" created="20251113T164440Z">
           <value>Appending an item to the frequent files category of a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060311Z">Kohteen lisääminen uuden hyppylistan ”usein käytetyt tiedostot” -luokkaan</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Připojení položky do kategorie často používaných souborů nového seznamu skoků</lang>
         </row>
         <row id="Adding your tasks to a new jump list" importid="65125" si="34668" created="20251113T140304Z">
           <value>Adding your tasks to a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Tehtävien lisääminen uuteen pikaluetteloon</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Přidání vašich úkolů do nového seznamu skoků</lang>
         </row>
         <row id="Adding a custom category ('%s') and its child items to a new jump list" importid="65126" si="34669" created="20251113T140304Z" codep="1">
           <value>Adding a custom category ('%s') and its child items to a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Mukautetun luokan ('%s') ja sen alaluokkien lisääminen uuteen pikavalikkoon</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Přidání vlastní kategorie („%s“) a jejích podřízených položek do nového seznamu skoků</lang>
         </row>
         <row id="Committing a new jump list" importid="65127" si="37518" created="20251113T164440Z">
           <value>Committing a new jump list</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Uuden hyppylistan tallentaminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Potvrzení nového seznamu skoků</lang>
         </row>
         <row id="The current operating system does not support jump lists" importid="65128" si="37990" created="20251113T164440Z">
           <value>The current operating system does not support jump lists</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Nykyinen käyttöjärjestelmä ei tue hyppylistoja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Aktuální operační systém nepodporuje seznamy skoků</lang>
         </row>
         <row id="The current process already has an application ID: %s" importid="65129" si="37991" created="20251113T164440Z" codep="1">
           <value>The current process already has an application ID: %s</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Kyseisellä prosessilla on jo sovellustunnus: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Aktuální proces již má ID aplikace: %s</lang>
         </row>
         <row id="Cannot call BeginInvoke on a control with no parent or window handle" importid="65130" si="34673" created="20251113T140304Z">
           <value>Cannot call BeginInvoke on a control with no parent or window handle</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">BeginInvoke-funktiota ei voi kutsua ohjausobjektissa, jolla ei ole vanhempaa objektia tai ikkunankahvaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze zavolat BeginInvoke u ovládacího prvku bez rodičovského prvku nebo identifikátoru okna</lang>
         </row>
         <row id="On" importid="65131" si="37993" created="20251113T164440Z">
@@ -102172,134 +102239,167 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="ControlItem.Control cannot be set to owning RelativePanel" importid="65133" si="37995" created="20251113T164440Z">
           <value>ControlItem.Control cannot be set to owning RelativePanel</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">ControlItem.Control-ominaisuutta ei voi määrittää omistavaksi RelativePanel-objektiksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">ControlItem.Control nelze přiřadit k RelativePanel, který jej vlastní</lang>
         </row>
         <row id="Control is not a sibling within RelativePanel" importid="65134" si="37996" created="20251113T164440Z">
           <value>Control is not a sibling within RelativePanel</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Control ei ole RelativePanel-komponentin sisarkomponentti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Ovládací prvek není sourozencem v rámci RelativePanel</lang>
         </row>
         <row id="Control cannot be positioned relative to itself" importid="65135" si="37526" created="20251113T164440Z">
           <value>Control cannot be positioned relative to itself</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ohjauselementtiä ei voi sijoittaa suhteessa itseensä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Ovládací prvek nelze umístit relativně k sobě samému</lang>
         </row>
         <row id="3D Dark Shadow" importid="65136" si="37527" created="20251113T164440Z">
           <value>3D Dark Shadow</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">3D Dark Shadow</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175548Z">3D tmavý stín</lang>
         </row>
         <row id="3D Light" importid="65137" si="37999" created="20251113T164440Z">
           <value>3D Light</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">3D-valo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175548Z">3D světlo</lang>
         </row>
         <row id="Window Background" importid="65138" si="34210" created="20251113T140304Z">
           <value>Window Background</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ikkunan tausta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Pozadí okna</lang>
         </row>
         <row id="Window Frame" importid="65139" si="38001" created="20251113T164440Z">
           <value>Window Frame</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ikkunan kehys</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Rámeček okna</lang>
         </row>
         <row id="Window Text" importid="65140" si="38002" created="20251113T164440Z">
           <value>Window Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ikkunan teksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Text okna</lang>
         </row>
         <row id="Invalid bitmap pixel format, should be a 32 bit image" importid="65141" si="34213" created="20251113T140304Z">
           <value>Invalid bitmap pixel format, should be a 32 bit image</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Bitmap-pikselimuoto ei ole kelvollinen; kuvan tulisi olla 32-bittinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný formát pixelů bitmapy, měl by to být 32bitový obrázek</lang>
         </row>
         <row id="Querying the IPropertyStore interface" importid="65142" si="34214" created="20251113T140304Z">
           <value>Querying the IPropertyStore interface</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">IPropertyStore-rajapinnan kyselyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Dotaz na rozhraní IPropertyStore</lang>
         </row>
         <row id="Initializing a variant property" importid="65143" si="37063" created="20251113T164440Z">
           <value>Initializing a variant property</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Variant-ominaisuuden alustaminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Inicializace vlastnosti typu variant</lang>
         </row>
         <row id="Setting the value of a property store" importid="65144" si="37064" created="20251113T164440Z">
           <value>Setting the value of a property store</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ominaisuusvaraston arvon asettaminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nastavení hodnoty úložiště vlastností</lang>
         </row>
         <row id="Committing a property store" importid="65145" si="37536" created="20251113T164440Z">
           <value>Committing a property store</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Kiinteistötietojen tallentaminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Potvrzení úložiště vlastností</lang>
         </row>
         <row id="Setting the arguments of a jump list item" importid="65146" si="37066" created="20251113T164440Z">
           <value>Setting the arguments of a jump list item</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Hyppylistan kohteen parametrien määrittäminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nastavení argumentů položky seznamu skoků</lang>
         </row>
         <row id="Setting the path of a jump list item" importid="65147" si="37067" created="20251113T164440Z">
           <value>Setting the path of a jump list item</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Hyppylistan kohteen polun määrittäminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nastavení cesty položky seznamu skoků</lang>
         </row>
         <row id="Setting the icon location of a jump list item" importid="65148" si="37539" created="20251113T164440Z">
           <value>Setting the icon location of a jump list item</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Hyppylistan kohteen kuvakkeen sijainnin määrittäminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nastavení umístění ikony položky seznamu skoků</lang>
         </row>
         <row id="Adding an item to an object array" importid="65149" si="34221" created="20251113T140304Z">
           <value>Adding an item to an object array</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Kohteen lisääminen objektijonoon</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Přidání položky do pole objektů</lang>
         </row>
         <row id="Querying the IObjectArray interface" importid="65150" si="37541" created="20251113T164440Z">
           <value>Querying the IObjectArray interface</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">IObjectArray-rajapinnan kysely</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Dotazování rozhraní IObjectArray</lang>
         </row>
         <row id="The FriendlyName property of an item must not be empty" importid="65151" si="37071" created="20251113T164440Z">
           <value>The FriendlyName property of an item must not be empty</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Kohteen FriendlyName-ominaisuus ei saa olla tyhjä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Vlastnost FriendlyName položky nesmí být prázdná</lang>
         </row>
         <row id="Gradient Inactive Caption" importid="65152" si="35166" created="20251113T140304Z">
           <value>Gradient Inactive Caption</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Gradientin passiivinen kuvateksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Přechodový neaktivní titulek</lang>
         </row>
         <row id="Gray Text" importid="65153" si="37544" created="20251113T164440Z">
           <value>Gray Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Harmaa teksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Šedý text</lang>
         </row>
         <row id="Highlight Background" importid="65154" si="37545" created="20251113T164440Z">
           <value>Highlight Background</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Korosta tausta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Zvýrazněné pozadí</lang>
         </row>
         <row id="Highlight Text" importid="65155" si="37546" created="20251113T164440Z">
           <value>Highlight Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Korosta tekstiä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Text zvýraznění</lang>
         </row>
         <row id="Hot Light" importid="65156" si="37547" created="20251113T164440Z">
           <value>Hot Light</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Kuuma valo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Horké světlo</lang>
         </row>
         <row id="Inactive Border" importid="65157" si="37548" created="20251113T164440Z">
           <value>Inactive Border</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ei-aktiivinen raja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Neaktivní ohraničení</lang>
         </row>
         <row id="Inactive Caption" importid="65158" si="37078" created="20251113T164440Z">
           <value>Inactive Caption</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ei-aktiivinen kuvateksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Neaktivní titulek</lang>
         </row>
         <row id="Inactive Caption Text" importid="65159" si="35173" created="20251113T140304Z">
           <value>Inactive Caption Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Ei-aktiivinen kuvateksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Neaktivní text nadpisu</lang>
         </row>
         <row id="Info Background" importid="65160" si="34232" created="20251113T140304Z">
           <value>Info Background</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Taustatiedot</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Pozadí informací</lang>
         </row>
         <row id="Info Text" importid="65161" si="38023" created="20251113T164440Z">
           <value>Info Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Tietoteksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Informační text</lang>
         </row>
         <row id="Menu Background" importid="65162" si="37082" created="20251113T164440Z">
           <value>Menu Background</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Valikon tausta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Pozadí nabídky</lang>
         </row>
         <row id="Menu Bar" importid="65163" si="37083" created="20251113T164440Z">
           <value>Menu Bar</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Valikkopalkki</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Panel nabídky</lang>
         </row>
         <row id="Menu Highlight" importid="65164" si="37084" created="20251113T164440Z">
           <value>Menu Highlight</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Valikon kohokohta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Zvýraznit nabídky</lang>
         </row>
         <row id="Menu Text" importid="65165" si="34708" created="20251113T140304Z">
           <value>Menu Text</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Valikon teksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Text nabídky</lang>
         </row>
         <row id="None" importid="65166" si="37086" created="20251113T164440Z">
@@ -102309,673 +102409,834 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Scroll Bar" importid="65167" si="37087" created="20251113T164440Z">
           <value>Scroll Bar</value>
+          <lang id="fi" rw="0" time="20260922T060312Z">Vierityspalkki</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Posuvník</lang>
         </row>
         <row id="White" importid="65168" si="37559" created="20251113T164440Z">
           <value>White</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Valkoinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175549Z">Bílá</lang>
         </row>
         <row id="Money Green" importid="65169" si="38031" created="20251113T164440Z">
           <value>Money Green</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Raha Vihreä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Zelená barva peněz</lang>
         </row>
         <row id="Sky Blue" importid="65170" si="34713" created="20251113T140304Z">
           <value>Sky Blue</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Taivaansininen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Nebesky modrá</lang>
         </row>
         <row id="Cream" importid="65171" si="34714" created="20251113T140304Z">
           <value>Cream</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Kerma</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Krémová barva</lang>
         </row>
         <row id="Medium Gray" importid="65172" si="37092" created="20251113T164440Z">
           <value>Medium Gray</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Keskiharmaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Středně šedá barva</lang>
         </row>
         <row id="Active Border" importid="65173" si="32820" created="20251113T055718Z">
           <value>Active Border</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Aktiivinen raja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Aktivní ohraničení</lang>
         </row>
         <row id="Active Caption" importid="65174" si="34717" created="20251113T140304Z">
           <value>Active Caption</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Aktiivinen tekstitys</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Aktivní titulek</lang>
         </row>
         <row id="Application Workspace" importid="65175" si="34247" created="20251113T140304Z">
           <value>Application Workspace</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Sovelluksen työtila</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Pracovní prostor aplikace</lang>
         </row>
         <row id="Background" importid="65176" si="33765" created="20251113T055718Z">
           <value>Background</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tausta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Pozadí</lang>
         </row>
         <row id="Button Face" importid="65177" si="37097" created="20251113T164440Z">
           <value>Button Face</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Nappikasvot</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Tvar tlačítka</lang>
         </row>
         <row id="Button Highlight" importid="65178" si="32825" created="20251113T055718Z">
           <value>Button Highlight</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Painikkeen korostus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Zvýraznit tlačítka</lang>
         </row>
         <row id="Button Shadow" importid="65179" si="37099" created="20251113T164440Z">
           <value>Button Shadow</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Painikkeen varjo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Stín tlačítka</lang>
         </row>
         <row id="Button Text" importid="65180" si="37571" created="20251113T164440Z">
           <value>Button Text</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Painikkeen teksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Text tlačítka</lang>
         </row>
         <row id="Caption Text" importid="65181" si="37572" created="20251113T164440Z">
           <value>Caption Text</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Kuvateksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Text titulku</lang>
         </row>
         <row id="Gradient Active Caption" importid="65183" si="37103" created="20251113T164440Z">
           <value>Gradient Active Caption</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Gradient Active -teksti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Přechod aktivního nadpisu</lang>
         </row>
         <row id="Style not registered" importid="65184" si="37104" created="20251113T164440Z">
           <value>Style not registered</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyliä ei ole rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Styl není zaregistrován</lang>
         </row>
         <row id="Black" importid="65185" si="37576" created="20251113T164440Z">
           <value>Black</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Musta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Černá</lang>
         </row>
         <row id="Maroon" importid="65186" si="34258" created="20251113T140304Z">
           <value>Maroon</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Maroon</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Maroon</lang>
         </row>
         <row id="Green" importid="65187" si="35201" created="20251113T140304Z">
           <value>Green</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Vihreä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Zelená</lang>
         </row>
         <row id="Olive" importid="65188" si="37108" created="20251113T164440Z">
           <value>Olive</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Olive</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Olive</lang>
         </row>
         <row id="Navy" importid="65189" si="37580" created="20251113T164440Z">
           <value>Navy</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Laivasto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Navy</lang>
         </row>
         <row id="Purple" importid="65190" si="37110" created="20251113T164440Z">
           <value>Purple</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Violetti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Purple</lang>
         </row>
         <row id="Teal" importid="65191" si="37582" created="20251113T164440Z">
           <value>Teal</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Teal</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Čajová</lang>
         </row>
         <row id="Gray" importid="65192" si="33310" created="20251113T055718Z">
           <value>Gray</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Harmaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Gray</lang>
         </row>
         <row id="Silver" importid="65193" si="33782" created="20251113T055718Z">
           <value>Silver</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Hopea</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Silver</lang>
         </row>
         <row id="Red" importid="65194" si="38056" created="20251113T164440Z">
           <value>Red</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Punainen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Červená</lang>
         </row>
         <row id="Lime" importid="65195" si="37115" created="20251113T164440Z">
           <value>Lime</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Lime</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Limetková</lang>
         </row>
         <row id="Yellow" importid="65196" si="34739" created="20251113T140304Z">
           <value>Yellow</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Keltainen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Žlutá</lang>
         </row>
         <row id="Blue" importid="65197" si="38059" created="20251113T164440Z">
           <value>Blue</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Sininen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Modrá</lang>
         </row>
         <row id="Fuchsia" importid="65198" si="37118" created="20251113T164440Z">
           <value>Fuchsia</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Fuksia</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Fuchsiová</lang>
         </row>
         <row id="Aqua" importid="65199" si="38061" created="20251113T164440Z">
           <value>Aqua</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Aqua</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175550Z">Vodová</lang>
         </row>
         <row id="Unable to load style '%s'" importid="65200" si="37591" created="20251113T164440Z" codep="1">
           <value>Unable to load style '%s'</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyliä '%s' ei voitu ladata</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze načíst styl ‚%s‘</lang>
         </row>
         <row id="Unable to load styles: %s" importid="65201" si="38063" created="20251113T164440Z" codep="1">
           <value>Unable to load styles: %s</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyliä ei voitu ladata: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze načíst styly: %s</lang>
         </row>
         <row id="Style '%s' already registered" importid="65202" si="32849" created="20251113T055718Z" codep="1">
           <value>Style '%s' already registered</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyli ”%s” on jo rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Styl ‚%s‘ je již zaregistrován</lang>
         </row>
         <row id="Style class '%s' already registered" importid="65203" si="34746" created="20251113T140304Z" codep="1">
           <value>Style class '%s' already registered</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyppiluokka '%s' on jo rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Třída stylu ‚%s‘ je již zaregistrována</lang>
         </row>
         <row id="Style '%s' not found" importid="65204" si="37595" created="20251113T164440Z" codep="1">
           <value>Style '%s' not found</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyliä '%s' ei löytynyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Styl ‚%s‘ nebyl nalezen</lang>
         </row>
         <row id="Style class '%s' not found" importid="65205" si="34748" created="20251113T140304Z" codep="1">
           <value>Style class '%s' not found</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyppiluokkaa '%s' ei löytynyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Třída stylu ‚%s‘ nebyla nalezena</lang>
         </row>
         <row id="Invalid style handle" importid="65206" si="37126" created="20251113T164440Z">
           <value>Invalid style handle</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Virheellinen tyylikoodi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný identifikátor stylu</lang>
         </row>
         <row id="Invalid style format" importid="65207" si="34750" created="20251113T140304Z">
           <value>Invalid style format</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Virheellinen tyylimuoto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný formát stylu</lang>
         </row>
         <row id="VCL Style File" importid="65208" si="38070" created="20251113T164440Z">
           <value>VCL Style File</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">VCL-tyylitiedosto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Soubor stylu VCL</lang>
         </row>
         <row id="Class '%s' is already registered for '%s'" importid="65209" si="37600" created="20251113T164440Z" codep="1">
           <value>Class '%s' is already registered for '%s'</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Luokka '%s' on jo rekisteröity kohteelle '%s'</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Třída ‚%s‘ je již zaregistrována pro ‚%s‘</lang>
         </row>
         <row id="Class '%s' is not registered for '%s'" importid="65210" si="37130" created="20251113T164440Z" codep="1">
           <value>Class '%s' is not registered for '%s'</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Luokkaa '%s' ei ole rekisteröity kohteeseen '%s'</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Třída ‚%s‘ není zaregistrována pro ‚%s‘</lang>
         </row>
         <row id="%s parameter cannot be nil" importid="65211" si="38073" created="20251113T164440Z" codep="1">
           <value>%s parameter cannot be nil</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">%s-parametri ei saa olla nolla</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Parametr %s nemůže být nulový</lang>
         </row>
         <row id="A StyleHook class has not been registered for %s" importid="65212" si="37603" created="20251113T164440Z" codep="1">
           <value>A StyleHook class has not been registered for %s</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">StyleHook-luokkaa ei ole rekisteröity %s:lle</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Pro %s nebyla zaregistrována třída StyleHook</lang>
         </row>
         <row id="Feature not supported by this style" importid="65213" si="37133" created="20251113T164440Z">
           <value>Feature not supported by this style</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tämä tyyli ei tue tätä ominaisuutta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Tato funkce není tímto stylem podporována</lang>
         </row>
         <row id="Style '%s' is not registered" importid="65214" si="33803" created="20251113T055718Z" codep="1">
           <value>Style '%s' is not registered</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Tyyliä ”%s” ei ole rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Styl „%s“ není zaregistrován</lang>
         </row>
         <row id="Cannot unregister the system style" importid="65215" si="37135" created="20251113T164440Z">
           <value>Cannot unregister the system style</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Järjestelmätyylin rekisteröintiä ei voi poistaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze zrušit registraci systémového stylu</lang>
         </row>
         <row id="%s requires themes to be enabled" importid="65216" si="37607" created="20251113T164440Z" codep="1">
           <value>%s requires themes to be enabled</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">%s edellyttää, että teemat on otettu käyttöön</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">%s vyžaduje, aby byla povolena témata</lang>
         </row>
         <row id="Button%d" importid="65217" si="37608" created="20251113T164440Z" codep="1">
           <value>Button%d</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">Painike %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Button%d</lang>
         </row>
         <row id="RadioButton%d" importid="65218" si="37138" created="20251113T164440Z" codep="1">
           <value>RadioButton%d</value>
+          <lang id="fi" rw="0" time="20260922T060313Z">RadioButton%d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">RadioButton%d</lang>
         </row>
         <row id="Caption cannot be empty" importid="65219" si="34762" created="20251113T140304Z">
           <value>Caption cannot be empty</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Kuvateksti ei saa olla tyhjä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Popisek nemůže být prázdný</lang>
         </row>
         <row id="CategoryPanel must have a CategoryPanelGroup as its parent" importid="65220" si="38082" created="20251113T164440Z">
           <value>CategoryPanel must have a CategoryPanelGroup as its parent</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">CategoryPanel-objektilla on oltava CategoryPanelGroup-objekti vanhempana</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">CategoryPanel musí mít jako nadřazený prvek CategoryPanelGroup</lang>
         </row>
         <row id="Only CategoryPanels can be inserted into a CategoryPanelGroup" importid="65221" si="37141" created="20251113T164440Z">
           <value>Only CategoryPanels can be inserted into a CategoryPanelGroup</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">CategoryPanelGroup-ryhmään voidaan lisätä ainoastaan CategoryPanel-objekteja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Do CategoryPanelGroup lze vkládat pouze CategoryPanely</lang>
         </row>
         <row id="Invalid canvas operation" importid="65222" si="37613" created="20251113T164440Z">
           <value>Invalid canvas operation</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Virheellinen kankaatoiminto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatná operace plátna</lang>
         </row>
         <row id="%s has no owner" importid="65223" si="37614" created="20251113T164440Z" codep="1">
           <value>%s has no owner</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">%s:llä ei ole omistajaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">%s nemá vlastníka</lang>
         </row>
         <row id="Source and destination require the same owner" importid="65224" si="34296" created="20251113T140304Z">
           <value>Source and destination require the same owner</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Lähde ja kohde vaativat samaa omistajaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Zdroj a cíl vyžadují stejného vlastníka</lang>
         </row>
         <row id="%s cannot be owned by a different canvas" importid="65225" si="37616" created="20251113T164440Z" codep="1">
           <value>%s cannot be owned by a different canvas</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">%s ei voi kuulua toiselle kankaalle</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">%s nemůže být ve vlastnictví jiného plátna</lang>
         </row>
         <row id="Not a solid color brush" importid="65226" si="35240" created="20251113T140304Z">
           <value>Not a solid color brush</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Ei yksivärinen sivellin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Není to štětec s plnou barvou</lang>
         </row>
         <row id="Invalid brush style" importid="65227" si="37618" created="20251113T164440Z">
           <value>Invalid brush style</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Virheellinen sivellintyyli</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatný styl štětce</lang>
         </row>
         <row id="Error retrieving locale information" importid="65228" si="35242" created="20251113T140304Z">
           <value>Error retrieving locale information</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Virhe paikallisasetustietojen hakemisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chyba při načítání informací o lokalitě</lang>
         </row>
         <row id="Failed to change input language" importid="65229" si="38091" created="20251113T164440Z">
           <value>Failed to change input language</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Syöttökielen vaihtaminen epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nepodařilo se změnit jazyk zadávání</lang>
         </row>
         <row id="You can only tab dock TWinControl based Controls" importid="65230" si="33348" created="20251113T055718Z">
           <value>You can only tab dock TWinControl based Controls</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Vain TWinControl-pohjaiset ohjausobjektit voidaan kiinnittää välilehtipalkkiin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Můžete dokovat pouze ovládací prvky založené na TWinControl</lang>
         </row>
         <row id="No help keyword specified." importid="65231" si="37622" created="20251113T164440Z">
           <value>No help keyword specified.</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Ohje-avainsanaa ei ole määritetty.</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nebylo zadáno žádné klíčové slovo nápovědy.</lang>
         </row>
         <row id="Column index, %d, out of bounds" importid="65232" si="37152" created="20251113T164440Z" codep="1">
           <value>Column index, %d, out of bounds</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Sarakkeen indeksi, %d, on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Index sloupce, %d, mimo rozsah</lang>
         </row>
         <row id="ControlItem.Control cannot be set to owning GridPanel" importid="65233" si="32880" created="20251113T055718Z">
           <value>ControlItem.Control cannot be set to owning GridPanel</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">ControlItem.Control-ominaisuutta ei voi määrittää omistavalle GridPanel-objektille</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">ControlItem.Control nelze nastavit na vlastnící GridPanel</lang>
         </row>
         <row id="Cannot delete a column that contains controls" importid="65234" si="34777" created="20251113T140304Z">
           <value>Cannot delete a column that contains controls</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Saraketta, joka sisältää ohjausobjekteja, ei voi poistaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze odstranit sloupec obsahující ovládací prvky</lang>
         </row>
         <row id="Cannot delete a row that contains controls" importid="65235" si="37626" created="20251113T164440Z">
           <value>Cannot delete a row that contains controls</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Riviä, joka sisältää ohjausobjekteja, ei voi poistaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze odstranit řádek obsahující ovládací prvky</lang>
         </row>
         <row id="Member" importid="65236" si="37156" created="20251113T164440Z">
           <value>Member</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Jäsen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Člen</lang>
         </row>
         <row id="Size Type" importid="65237" si="32884" created="20251113T055718Z">
           <value>Size Type</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Koko Tyyppi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Typ velikosti</lang>
         </row>
         <row id="Auto" importid="65239" si="32886" created="20251113T055718Z">
           <value>Auto</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Auto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Auto</lang>
         </row>
         <row id="Percent" importid="65240" si="37631" created="20251113T164440Z">
           <value>Percent</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Prosentti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Procenta</lang>
         </row>
         <row id="Absolute" importid="65241" si="38103" created="20251113T164440Z">
           <value>Absolute</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Absoluuttinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Absolutní</lang>
         </row>
         <row id="Column%d" importid="65242" si="37162" created="20251113T164440Z" codep="1">
           <value>Column%d</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Sarake %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Sloupec %d</lang>
         </row>
         <row id="Row%d" importid="65243" si="37634" created="20251113T164440Z" codep="1">
           <value>Row%d</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Rivi %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Řádek %d</lang>
         </row>
         <row id="Cannot remove shell notification icon" importid="65244" si="37635" created="20251113T164440Z">
           <value>Cannot remove shell notification icon</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Shellin ilmoituskuvaketta ei voi poistaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze odstranit ikonu oznámení shellu</lang>
         </row>
         <row id="Cannot create shell notification icon" importid="65245" si="37636" created="20251113T164440Z">
           <value>Cannot create shell notification icon</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Shell-ilmoituskuvaketta ei voi luoda</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze vytvořit ikonu oznámení shellu</lang>
         </row>
         <row id="PageControl must first be assigned" importid="65246" si="37166" created="20251113T164440Z">
           <value>PageControl must first be assigned</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">PageControl on määritettävä ensin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">PageControl musí být nejprve přiřazen</lang>
         </row>
         <row id="%s requires Windows Vista or later" importid="65247" si="38109" created="20251113T164440Z" codep="1">
           <value>%s requires Windows Vista or later</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">%s edellyttää Windows Vistaa tai uudempaa versiota</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">%s vyžaduje Windows Vista nebo novější</lang>
         </row>
         <row id="Invalid Color string" importid="65248" si="37168" created="20251113T164440Z">
           <value>Invalid Color string</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Virheellinen värimerkkijono</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatný řetězec barvy</lang>
         </row>
         <row id="Bitmap PixelFormat must be pf24bit or p32bit" importid="65249" si="37640" created="20251113T164440Z">
           <value>Bitmap PixelFormat must be pf24bit or p32bit</value>
+          <lang id="fi" rw="0" time="20260922T060314Z">Bitmap-kuvan PixelFormat-asetuksen on oltava joko pf24bit tai p32bit</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Bitmap PixelFormat musí být pf24bit nebo p32bit</lang>
         </row>
         <row id="%s ActionManager property has not been assigned" importid="65250" si="37641" created="20251113T164440Z" codep="1">
           <value>%s ActionManager property has not been assigned</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">%s ActionManager-ominaisuudelle ei ole määritetty arvoa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Vlastnost ActionManager %s nebyla přiřazena</lang>
         </row>
         <row id="&quot;%s&quot; is an invalid path" importid="65251" si="37642" created="20251113T164440Z" codep="1">
           <value>"%s" is an invalid path</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">"%s" on virheellinen polku</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">„%s“ je neplatná cesta</lang>
         </row>
         <row id="Invalid path" importid="65252" si="38114" created="20251113T164440Z">
           <value>Invalid path</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Virheellinen polku</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatná cesta</lang>
         </row>
         <row id="ANSI" importid="65253" si="37644" created="20251113T164440Z">
           <value>ANSI</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251109T110334Z" fuzzy="100">ANSI</lang>
+          <lang id="fi" rw="0" ex="1" time="20251109T110334Z" fuzzy="100">ANSI</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175553Z">ANSI</lang>
         </row>
         <row id="ASCII" importid="65254" si="38116" created="20251113T164440Z">
           <value>ASCII</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">ASCII</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">ASCII</lang>
         </row>
         <row id="Unicode" importid="65255" si="38117" created="20251113T164440Z">
           <value>Unicode</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251104T172814Z" fuzzy="99.5">Unicode</lang>
+          <lang id="fi" rw="0" ex="1" time="20251104T172814Z" fuzzy="99.5">Unicode</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175553Z">Unicode</lang>
         </row>
         <row id="Big Endian Unicode" importid="65256" si="37176" created="20251113T164440Z">
           <value>Big Endian Unicode</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Big Endian -Unicode</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Unicode s velkým endianem</lang>
         </row>
         <row id="UTF-8" importid="65257" si="37177" created="20251113T164440Z">
           <value>UTF-8</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251109T104357Z">UTF-8</lang>
+          <lang id="fi" rw="0" ex="1" time="20251109T104357Z">UTF-8</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175553Z">UTF-8</lang>
         </row>
         <row id="UTF-7" importid="65258" si="37178" created="20251113T164440Z">
           <value>UTF-7</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251109T104354Z">UTF-7</lang>
+          <lang id="fi" rw="0" ex="1" time="20251109T104354Z">UTF-7</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175553Z">UTF-7</lang>
         </row>
         <row id="Encoding:" importid="65259" si="38121" created="20251113T164440Z">
           <value>Encoding:</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Koodaus:</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175553Z">&amp;Kódování:</lang>
         </row>
         <row id="Cannot add columns or rows while expand style is fixed size" importid="65260" si="34803" created="20251113T140304Z">
           <value>Cannot add columns or rows while expand style is fixed size</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Sarakkeita tai rivejä ei voi lisätä, kun laajennustyyli on kiinteäkokoinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze přidat sloupce nebo řádky, pokud má styl rozbalení pevnou velikost</lang>
         </row>
         <row id="Cannot add a control to GridPanel with empty rows and columns" importid="65261" si="37652" created="20251113T164440Z">
           <value>Cannot add a control to GridPanel with empty rows and columns</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Ohjausobjektia ei voi lisätä GridPaneliin, jossa on tyhjiä rivejä ja sarakkeita</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze přidat ovládací prvek do GridPanel s prázdnými řádky a sloupci</lang>
         </row>
         <row id="'%d' is not a valid span" importid="65262" si="37182" created="20251113T164440Z" codep="1">
           <value>'%d' is not a valid span</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">'%d' ei ole kelvollinen span-elementti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">‚%d‘ není platný rozsah</lang>
         </row>
         <row id="Row index, %d, out of bounds" importid="65263" si="38125" created="20251113T164440Z" codep="1">
           <value>Row index, %d, out of bounds</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Rivin indeksi %d on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Index řádku, %d, mimo rozsah</lang>
         </row>
         <row id="&amp;Customize..." importid="65264" si="34336" created="20251113T140304Z">
           <value>&amp;Customize...</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">&amp;Mukauta...</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">&amp;Přizpůsobit...</lang>
         </row>
         <row id="Separator" importid="65265" si="35279" created="20251113T140304Z">
           <value>Separator</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Erotin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175554Z">SEPARATOR</lang>
         </row>
         <row id="Circular references not allowed" importid="65266" si="35280" created="20251113T140304Z">
           <value>Circular references not allowed</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Kiertoviittaukset eivät ole sallittuja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Kruhové odkazy nejsou povoleny</lang>
         </row>
         <row id="%s does not allow hiding" importid="65267" si="37187" created="20251113T164440Z" codep="1">
           <value>%s does not allow hiding</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">%s ei salli piilottamista</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">%s neumožňuje skrytí</lang>
         </row>
         <row id="Error setting %s.Count" importid="65268" si="38130" created="20251113T164440Z" codep="1">
           <value>Error setting %s.Count</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Virhe %s.Count:n asettamisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chyba při nastavování %s.Count</lang>
         </row>
         <row id="Listbox (%s) style must be virtual in order to set Count" importid="65269" si="38131" created="20251113T164440Z" codep="1">
           <value>Listbox (%s) style must be virtual in order to set Count</value>
+          <lang id="fi" rw="0" time="20260922T060315Z">Listboxin (%s) tyylin on oltava virtuaalinen, jotta Count-arvo voidaan asettaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Styl Listbox (%s) musí být virtuální, aby bylo možné nastavit počet položek</lang>
         </row>
         <row id="Unable to save settings" importid="65270" si="37190" created="20251113T164440Z">
           <value>Unable to save settings</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Asetuksia ei voitu tallentaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze uložit nastavení</lang>
         </row>
         <row id="Would you like to reset to the default Priority Schedule?" importid="65271" si="37662" created="20251113T164440Z">
           <value>Would you like to reset to the default Priority Schedule?</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Haluatko palauttaa oletusarvoisen prioriteettiaikataulun?</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chcete obnovit výchozí plán priorit?</lang>
         </row>
         <row id="No OnGetItem event handler assigned" importid="65272" si="37192" created="20251113T164440Z">
           <value>No OnGetItem event handler assigned</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">OnGetItem-tapahtumankäsittelijää ei ole määritetty</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Není přiřazena žádná obslužná rutina události OnGetItem</lang>
         </row>
         <row id="Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx" importid="65273" si="37664" created="20251113T164440Z">
           <value>Invalid Colormap this ActionBand requires ColorMaps of type TCustomActionBarColorMapEx</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Virheellinen värikartta: tämä ActionBar vaatii tyypin TCustomActionBarColorMapEx mukaisia värikarttoja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatná barevná mapa – tento ActionBand vyžaduje barevné mapy typu TCustomActionBarColorMapEx</lang>
         </row>
         <row id="A style named %s has already been registered" importid="65274" si="37665" created="20251113T164440Z" codep="1">
           <value>A style named %s has already been registered</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Tyyli nimeltä %s on jo rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Styl s názvem %s již byl zaregistrován</lang>
         </row>
         <row id="A style named %s has not been registered" importid="65275" si="38137" created="20251113T164440Z" codep="1">
           <value>A style named %s has not been registered</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Nimellä %s nimetyn tyyliä ei ole rekisteröity</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Styl s názvem %s nebyl zaregistrován</lang>
         </row>
         <row id="Standard Style" importid="65276" si="37196" created="20251113T164440Z">
           <value>Standard Style</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Vakiotyyli</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Standardní styl</lang>
         </row>
         <row id="XP Style" importid="65277" si="35291" created="20251113T140304Z">
           <value>XP Style</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">XP-tyyli</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Styl XP</lang>
         </row>
         <row id="No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause" si="42826" created="20260718T184324Z" st="0">
           <value>No ActionBand style unit present in the uses clause.Your application must include either XPStyleActnCtrls, StdStyleActnCtrls or a third party ActionBand style unit in its uses clause</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">uses-lauseessa ei ole ActionBand-tyylistä yksikköä.
+Sovelluksesi uses-lauseessa on oltava joko XPStyleActnCtrls, StdStyleActnCtrls tai kolmannen osapuolen ActionBand-tyylinen yksikkö.</lang>
           <lang id="cs" st="4" rw="0" time="20260825T125826Z">V klauzuli „použito“ není uvedena žádná jednotka ve stylu ActionBand. Vaše aplikace musí v klauzuli „uses“ obsahovat buď XPStyleActnCtrls, StdStyleActnCtrls, nebo jednotku ve stylu ActionBand od jiného výrobce.</lang>
         </row>
         <row id="%s parameter in call to %s cannot be nil" importid="65279" si="37199" created="20251113T164440Z" codep="1">
           <value>%s parameter in call to %s cannot be nil</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">%s-parametrin arvo %s:n kutsussa ei saa olla nil</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Parametr %s ve volání %s nemůže být nulový</lang>
         </row>
         <row id="Item %s is not allowed to be moved" importid="65280" si="37200" created="20251113T164440Z" codep="1">
           <value>Item %s is not allowed to be moved</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Kohdetta %s ei saa siirtää</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Položku %s nelze přesunout</lang>
         </row>
         <row id="More Buttons" importid="65281" si="34824" created="20251113T140304Z">
           <value>More Buttons</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Lisää painikkeita</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Další tlačítka</lang>
         </row>
         <row id="Error downloading URL: %s" importid="65282" si="37673" created="20251113T164440Z" codep="1">
           <value>Error downloading URL: %s</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Virhe URL-osoitteen lataamisessa: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Chyba při stahování URL: %s</lang>
         </row>
         <row id="Unable to load %s" importid="65283" si="38145" created="20251113T164440Z" codep="1">
           <value>Unable to load %s</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">%s:ää ei voitu ladata</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze načíst %s</lang>
         </row>
         <row id="(All Actions)" importid="65284" si="37204" created="20251113T164440Z">
           <value>(All Actions)</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">(Kaikki toimet)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">(Všechny akce)</lang>
         </row>
         <row id="(No Category)" importid="65285" si="38147" created="20251113T164440Z">
           <value>(No Category)</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">(Ei luokkaa)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">(Žádná kategorie)</lang>
         </row>
         <row id="Expand" importid="65286" si="38148" created="20251113T164440Z">
           <value>Expand</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Laajenna</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Rozbalit</lang>
         </row>
         <row id="Error setting path: &quot;%s&quot;" importid="65287" si="37678" created="20251113T164440Z" codep="1">
           <value>Error setting path: "%s"</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Virhe polun määrittämisessä: "%s"</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chyba při nastavení cesty: „%s“</lang>
         </row>
         <row id="Attempting to put items into a virtual style listbox" importid="65288" si="37679" created="20251113T164440Z">
           <value>Attempting to put items into a virtual style listbox</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Yritetään lisätä kohteita virtuaaliseen tyyliluetteloon</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Pokus o vložení položek do virtuálního seznamu stylů</lang>
         </row>
         <row id="Error loading previously saved settings file: %sWould you like to delete it?" si="42827" created="20260718T184324Z" st="0" codep="1">
           <value>Error loading previously saved settings file: %sWould you like to delete it?</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Virhe aiemmin tallennetun asetustiedoston lataamisessa: %s
+Haluatko poistaa sen?</lang>
           <lang id="cs" st="4" rw="0" time="20260825T125911Z">Došlo k chybě při načítání dříve uloženého souboru s nastavením: %s Chcete jej smazat?</lang>
         </row>
         <row id="Reset all usage data?" importid="65290" si="35304" created="20251113T140304Z">
           <value>Reset all usage data?</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Nollataanko kaikki käyttötiedot?</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Obnovit všechna data o použití?</lang>
         </row>
         <row id="Run" importid="65291" si="38153" created="20251113T164440Z">
           <value>Run</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251104T150134Z" fuzzy="99.5">Aja</lang>
+          <lang id="fi" rw="0" ex="1" time="20251104T150134Z" fuzzy="99.5">Aja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175555Z">Spustit</lang>
         </row>
         <row id="(No Name)" importid="65292" si="37683" created="20251113T164440Z">
           <value>(No Name)</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">(Nimetön)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">(Bez názvu)</lang>
         </row>
         <row id="ActionManager must first be assigned" importid="65293" si="37213" created="20251113T164440Z">
           <value>ActionManager must first be assigned</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">ActionManager on määritettävä ensin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Nejprve je třeba přiřadit ActionManager</lang>
         </row>
         <row id="&amp;Add or Remove Buttons" importid="65294" si="38156" created="20251113T164440Z">
           <value>&amp;Add or Remove Buttons</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">&amp;Lisää tai poista -painikkeet</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">&amp;Přidat nebo odebrat tlačítka</lang>
         </row>
         <row id="Reset Toolbar" importid="65295" si="34367" created="20251113T140304Z">
           <value>Reset Toolbar</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Työkalurivin nollaus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Obnovit panel nástrojů</lang>
         </row>
         <row id="Length of value array must be &gt;= length of prompt array" importid="65296" si="37687" created="20251113T164440Z">
           <value>Length of value array must be >= length of prompt array</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Arvojen taulukon pituuden on oltava vähintään yhtä suuri kuin kehotteiden taulukon pituus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Délka pole hodnot musí být >= délce pole výzvy</lang>
         </row>
         <row id="Prompt array must not be empty" importid="65297" si="38159" created="20251113T164440Z">
           <value>Prompt array must not be empty</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">Komentojoukon ei saa olla tyhjä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Pole výzvy nesmí být prázdné</lang>
         </row>
         <row id="&amp;Username" importid="65298" si="34370" created="20251113T140304Z">
           <value>&amp;Username</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">&amp;Käyttäjätunnus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">&amp;Uživatelské jméno</lang>
         </row>
         <row id="&amp;Password" importid="65299" si="34842" created="20251113T140304Z">
           <value>&amp;Password</value>
+          <lang id="fi" rw="0" time="20260922T060316Z">&amp;Salasana</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T193927Z">&amp;Heslo</lang>
         </row>
         <row id="&amp;Domain" importid="65300" si="38162" created="20251113T164440Z">
           <value>&amp;Domain</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">&amp;Verkkotunnus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">&amp;Doména</lang>
         </row>
         <row id="Login" importid="65301" si="37692" created="20251113T164440Z">
           <value>Login</value>
-          <lang id="fi" st="2" or="3" rw="0" ex="1" time="20251107T044517Z">Kirjautuminen</lang>
+          <lang id="fi" rw="0" ex="1" time="20251107T044517Z">Kirjautuminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175556Z">Přihlásit</lang>
         </row>
         <row id="Key" importid="65302" si="37222" created="20251113T164440Z">
           <value>Key</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Avain</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Klíč</lang>
         </row>
         <row id="Value" importid="65303" si="37629" created="20251113T164440Z">
           <value>Value</value>
-          <lang id="fi" st="4" or="3" rw="0" ex="1" time="20260407T134104Z">Arvo</lang>
+          <lang id="fi" rw="0" ex="1" time="20260407T134104Z">Arvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175556Z">Hodnota</lang>
         </row>
         <row id="A key with the name of &quot;%s&quot; already exists" importid="65304" si="31054" codep="1">
           <value>A key with the name of "%s" already exists</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Nimellä "%s" oleva avain on jo olemassa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Klíč s názvem „%s“ již existuje</lang>
         </row>
         <row id="Key &quot;%s&quot; not found" importid="65305" si="37696" created="20251113T164440Z" codep="1">
           <value>Key "%s" not found</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Avainta ”%s” ei löytynyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Klíč „%s“ nebyl nalezen</lang>
         </row>
         <row id="goColMoving is not a supported option" importid="65306" si="37697" created="20251113T164440Z">
           <value>goColMoving is not a supported option</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">goColMoving ei ole tuettu vaihtoehto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">goColMoving není podporovaná volba</lang>
         </row>
         <row id="Key may not contain equals sign (&quot;=&quot;)" importid="65307" si="37698" created="20251113T164440Z">
           <value>Key may not contain equals sign ("=")</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Avain ei saa sisältää yhtä kuin -merkkiä ("=")</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Klíč nesmí obsahovat znaménko rovnosti („=“)</lang>
         </row>
         <row id="Error sending mail" importid="65308" si="37228" created="20251113T164440Z">
           <value>Error sending mail</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Virhe sähköpostin lähettämisessä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Chyba při odesílání e-mailu</lang>
         </row>
         <row id="Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar" importid="65309" si="38171" created="20251113T164440Z">
           <value>Cannot assign a subitem to an actionbar when one of it's parent's is already assigned to an actionbar</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Alakohtaa ei voi määrittää toimintapalkkiin, jos jokin sen yläkohdista on jo määritetty toimintapalkkiin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze přiřadit podpoložku k panelu akcí, pokud je již jedna z jejích nadřazených položek přiřazena k panelu akcí</lang>
         </row>
         <row id="Item %s has subitems, delete anyway?" importid="65310" si="38172" created="20251113T164440Z" codep="1">
           <value>Item %s has subitems, delete anyway?</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Kohteessa %s on alikohteita. Haluatko silti poistaa sen?</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Položka %s má pod položky, přesto odstranit?</lang>
         </row>
         <row id="You are not allowed to delete this item" importid="65311" si="38173" created="20251113T164440Z">
           <value>You are not allowed to delete this item</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Tätä kohdetta ei saa poistaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Tuto položku nemůžete odstranit</lang>
         </row>
         <row id="Service failed in custom message(%d): %s" importid="65312" si="38174" created="20251113T164440Z" codep="1">
           <value>Service failed in custom message(%d): %s</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Palvelu epäonnistui mukautetussa viestissä (%d): %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Služba selhala v uživatelské zprávě (%d): %s</lang>
         </row>
         <row id="Service installed successfully" importid="65313" si="38175" created="20251113T164440Z">
           <value>Service installed successfully</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Palvelu on asennettu onnistuneesti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Služba byla úspěšně nainstalována</lang>
         </row>
         <row id="Service &quot;%s&quot; failed to install with error: &quot;%s&quot;" importid="65314" si="38176" created="20251113T164440Z" codep="1">
           <value>Service "%s" failed to install with error: "%s"</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Palvelun ”%s” asennus epäonnistui seuraavan virheen vuoksi: ”%s”</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Instalace služby „%s“ selhala s chybou: „%s“</lang>
         </row>
         <row id="Service uninstalled successfully" importid="65315" si="35329" created="20251113T140304Z">
           <value>Service uninstalled successfully</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Palvelu on poistettu onnistuneesti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Služba byla úspěšně odinstalována</lang>
         </row>
         <row id="Service &quot;%s&quot; failed to uninstall with error: &quot;%s&quot;" importid="65316" si="37707" created="20251113T164440Z" codep="1">
           <value>Service "%s" failed to uninstall with error: "%s"</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Palvelua ”%s” ei voitu poistaa, ja seuraava virhe ilmeni: ”%s”</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Službu „%s“ se nepodařilo odinstalovat s chybou: „%s“</lang>
         </row>
         <row id="Docked control must have a name" importid="65317" si="38179" created="20251113T164440Z">
           <value>Docked control must have a name</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Telakoidulla ohjausyksiköllä on oltava nimi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Připojený ovládací prvek musí mít název</lang>
         </row>
         <row id="Error removing control from dock tree" importid="65318" si="37709" created="20251113T164440Z">
           <value>Error removing control from dock tree</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Virhe ohjausobjektin poistamisessa telakointipuusta</lang>
           <lang id="cs" st="4" rw="0" ex="1" time="20260720T131623Z">Chyba při odebrání ovládacího prvku ze struktury vazby</lang>
         </row>
         <row id=" - Dock zone not found" importid="65319" si="35333" created="20251113T140304Z">
           <value> - Dock zone not found</value>
+          <lang id="fi" rw="0" time="20260922T060317Z"> - Telakointialuetta ei löytynyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z"> - Dokovací zóna nebyla nalezena</lang>
         </row>
         <row id=" - Dock zone has no control" importid="65320" si="34863" created="20251113T140304Z">
           <value> - Dock zone has no control</value>
+          <lang id="fi" rw="0" time="20260922T060317Z"> - Telakointialueella ei ole valvontaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z"> - Dokovací zóna nemá žádný ovládací prvek</lang>
         </row>
         <row id="Error loading dock zone from the stream. Expecting version %d, but found %d." importid="65321" si="34864" created="20251113T140304Z" codep="1">
           <value>Error loading dock zone from the stream. Expecting version %d, but found %d.</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Virhe ladattaessa telakointialuetta suoratoistosta. Odotettiin versiota %d, mutta löytyi %d.</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Chyba při načítání dokovací zóny ze streamu. Očekávána verze %d, ale nalezena %d.</lang>
         </row>
         <row id="All Commands" importid="65322" si="37713" created="20251113T164440Z">
           <value>All Commands</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Kaikki komennot</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Všechny příkazy</lang>
         </row>
         <row id="List does not allow duplicates ($0%x)" importid="65323" si="37243" created="20251113T164440Z" codep="1">
           <value>List does not allow duplicates ($0%x)</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Lista ei salli päällekkäisyyksiä ($0%x)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Seznam neumožňuje duplicity ($0%x)</lang>
         </row>
         <row id="Text not found: &quot;%s&quot;" importid="65324" si="37244" created="20251113T164440Z" codep="1">
           <value>Text not found: "%s"</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Tekstiä ei löytynyt: "%s"</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Text nebyl nalezen: „%s“</lang>
         </row>
         <row id="No default browser is specified" importid="65325" si="37245" created="20251113T164440Z">
           <value>No default browser is specified</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Oletusselainta ei ole määritetty</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Není zadán výchozí prohlížeč</lang>
         </row>
         <row id="Custom..." importid="65326" si="38188" created="20251113T164440Z">
           <value>Custom...</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Mukautettu...</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Vlastní...</lang>
         </row>
         <row id="Multiselect mode must be on for this feature" importid="65327" si="38189" created="20251113T164440Z">
           <value>Multiselect mode must be on for this feature</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Tämän toiminnon käyttämiseksi monivalintatilan on oltava päällä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Pro tuto funkci musí být zapnutý režim vícenásobného výběru</lang>
         </row>
         <row id="Videodisc" importid="65328" si="35342" created="20251113T140304Z">
           <value>Videodisc</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">Videolevy</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Videodisk</lang>
         </row>
         <row id="WaveAudio" importid="65329" si="34401" created="20251113T140304Z">
           <value>WaveAudio</value>
+          <lang id="fi" rw="0" time="20260922T060317Z">WaveAudio</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">WaveAudio</lang>
         </row>
         <row id="Unknown error code" importid="65330" si="37721" created="20251113T164440Z">
           <value>Unknown error code</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Tuntematon virhekoodi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neznámý kód chyby</lang>
         </row>
         <row id="Bold Italic" importid="65331" si="37722" created="20251113T164440Z">
           <value>Bold Italic</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Lihavoitu ja kursivoitu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Tučné kurzíva</lang>
         </row>
         <row id="Bold" importid="65332" si="37723" created="20251113T164440Z">
           <value>Bold</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Lihavoitu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Tučné</lang>
         </row>
         <row id="Italic" importid="65333" si="37253" created="20251113T164440Z">
           <value>Italic</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Kursivoitu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Kurzíva</lang>
         </row>
         <row id="Regular" importid="65334" si="37725" created="20251113T164440Z">
           <value>Regular</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Tavallinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Běžné</lang>
         </row>
         <row id="Properties" importid="65335" si="37255" created="20251113T164440Z">
@@ -102985,38 +103246,47 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Service failed on %s: %s" importid="65336" si="32983" created="20251113T055718Z" codep="1">
           <value>Service failed on %s: %s</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Palvelu epäonnistui %s:ssa: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Služba selhala na %s: %s</lang>
         </row>
         <row id="execute" importid="65337" si="37257" created="20251113T164440Z">
           <value>execute</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">suorittaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">spustit</lang>
         </row>
         <row id="start" importid="65338" si="37729" created="20251113T164440Z">
           <value>start</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">aloitus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175558Z">spustit</lang>
         </row>
         <row id="stop" importid="65339" si="35353" created="20251113T140304Z">
           <value>stop</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">pysähdy</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">zastavit</lang>
         </row>
         <row id="pause" importid="65340" si="37260" created="20251113T164440Z">
           <value>pause</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">tauko</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">pozastavit</lang>
         </row>
         <row id="continue" importid="65341" si="37261" created="20251113T164440Z">
           <value>continue</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">jatka</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">pokračovat</lang>
         </row>
         <row id="interrogate" importid="65342" si="34414" created="20251113T140304Z">
           <value>interrogate</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">kuulustella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">vyžádat</lang>
         </row>
         <row id="shutdown" importid="65343" si="35357" created="20251113T140304Z">
           <value>shutdown</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">sammutus</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">vypnout</lang>
         </row>
         <row id=" (%dx%d)" importid="65344" si="37264" created="20251113T164440Z" codep="1">
           <value> (%dx%d)</value>
+          <lang id="fi" rw="0" time="20260922T060318Z"> (%dx%d)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z"> (%dx%d)</lang>
         </row>
         <row id="Preview" importid="65345" si="38207" created="20251113T164440Z">
@@ -103026,34 +103296,42 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Cannot open AVI" importid="65346" si="38208" created="20251113T164440Z">
           <value>Cannot open AVI</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">AVI-tiedostoa ei voi avata</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Nelze otevřít AVI</lang>
         </row>
         <row id="No MCI device open" importid="65347" si="35361" created="20251113T140304Z">
           <value>No MCI device open</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">MCI-laitetta ei ole auki</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Žádné zařízení MCI není otevřené</lang>
         </row>
         <row id="All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi" importid="65348" si="37268" created="20251113T164440Z">
           <value>All files (*.*)|*.*|Wave files (*.wav)|*.wav|Midi files (*.mid)|*.mid|Video for Windows (*.avi)|*.avi</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Kaikki tiedostot (*.*)|*.*|Wave-tiedostot (*.wav)|*.wav|MIDI-tiedostot (*.mid)|*.mid|Video for Windows -tiedostot (*.avi)|*.avi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Všechny soubory (*.*)|*.*|Soubory Wave (*.wav)|*.wav|Soubory Midi (*.mid)|*.mid|Video pro Windows (*.avi)|*.avi</lang>
         </row>
         <row id="AVIVideo" importid="65350" si="37269" created="20251113T164440Z">
           <value>AVIVideo</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">AVIVideo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">AVIVideo</lang>
         </row>
         <row id="CDAudio" importid="65351" si="37270" created="20251113T164440Z">
           <value>CDAudio</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">CDAudio</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">CDAudio</lang>
         </row>
         <row id="DAT" importid="65352" si="37742" created="20251113T164440Z">
           <value>DAT</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">DAT</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">DAT</lang>
         </row>
         <row id="DigitalVideo" importid="65353" si="37743" created="20251113T164440Z">
           <value>DigitalVideo</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Digitaalinen video</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Digitální video</lang>
         </row>
         <row id="MMMovie" importid="65354" si="37273" created="20251113T164440Z">
           <value>MMMovie</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">MMMovie</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">MMMovie</lang>
         </row>
         <row id="Other" importid="65355" si="33472" created="20251113T055718Z">
@@ -103063,34 +103341,42 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Overlay" importid="65356" si="38217" created="20251113T164440Z">
           <value>Overlay</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Päällekkäin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Překrytí</lang>
         </row>
         <row id="Scanner" importid="65357" si="37747" created="20251113T164440Z">
           <value>Scanner</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Skanneri</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Skener</lang>
         </row>
         <row id="Sequencer" importid="65358" si="35371" created="20251113T140304Z">
           <value>Sequencer</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Sekvensseri</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Sekvencer</lang>
         </row>
         <row id="VCR" importid="65359" si="37278" created="20251113T164440Z">
           <value>VCR</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">videonauhuri</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Videorekordér</lang>
         </row>
         <row id="ABCDEFGHIJKLMNOP" importid="65360" si="35373" created="20251113T140304Z">
           <value>ABCDEFGHIJKLMNOP</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">ABCDEFGHIJKLMNOP</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">ABCDEFGHIJKLMNOP</lang>
         </row>
         <row id="Invalid clipboard format" importid="65361" si="37280" created="20251113T164440Z">
           <value>Invalid clipboard format</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Leikepöydän muoto on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Neplatný formát schránky</lang>
         </row>
         <row id="Clipboard does not support Icons" importid="65362" si="38223" created="20251113T164440Z">
           <value>Clipboard does not support Icons</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Leikepöytä ei tue kuvakkeita</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Schránka nepodporuje ikony</lang>
         </row>
         <row id="Cannot open clipboard: %s" importid="65363" si="38224" created="20251113T164440Z" codep="1">
           <value>Cannot open clipboard: %s</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Leikepöytää ei voi avata: %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Nelze otevřít schránku: %s</lang>
         </row>
         <row id="Default" importid="65364" si="38044" created="20251113T164440Z">
@@ -103100,66 +103386,82 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Text exceeds memo capacity" importid="65365" si="37284" created="20251113T164440Z">
           <value>Text exceeds memo capacity</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Teksti ylittää muistion kapasiteetin</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Text přesahuje kapacitu poznámky</lang>
         </row>
         <row id="Custom Colors" importid="65366" si="37285" created="20251113T164440Z">
           <value>Custom Colors</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Mukautetut värit</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Vlastní barvy</lang>
         </row>
         <row id="Operation not supported on selected printer" importid="65367" si="37757" created="20251113T164440Z">
           <value>Operation not supported on selected printer</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Toimintoa ei tueta valitulla tulostimella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Operace není na vybrané tiskárně podporována</lang>
         </row>
         <row id="There is no default printer currently selected" importid="65368" si="37758" created="20251113T164440Z">
           <value>There is no default printer currently selected</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Tällä hetkellä ei ole valittuna oletustulostinta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">V současné době není vybrána žádná výchozí tiskárna</lang>
         </row>
         <row id="Unable to write to %s" importid="65369" si="37288" created="20251113T164440Z" codep="1">
           <value>Unable to write to %s</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Kirjoittaminen tiedostoon %s ei onnistu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Nelze zapisovat do %s</lang>
         </row>
         <row id="Bits index out of range" importid="65370" si="37289" created="20251113T164440Z">
           <value>Bits index out of range</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Bittien indeksi on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Index bitů mimo rozsah</lang>
         </row>
         <row id="(Untitled)" importid="65371" si="35384" created="20251113T140304Z">
           <value>(Untitled)</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">(Nimetön)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">(Bez názvu)</lang>
         </row>
         <row id="Invalid data type for '%s'" importid="65372" si="35385" created="20251113T140304Z" codep="1">
           <value>Invalid data type for '%s'</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">'%s':n tietotyyppi on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Neplatný datový typ pro ‚%s‘</lang>
         </row>
         <row id="Unknown RichEdit conversion file extension (.%s)" importid="65373" si="37763" created="20251113T164440Z" codep="1">
           <value>Unknown RichEdit conversion file extension (.%s)</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Tuntematon RichEdit-muunnostiedoston laajennus (.%s)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Neznámá přípona souboru pro konverzi RichEdit (.%s)</lang>
         </row>
         <row id="Menu '%s' is already being used by another form" importid="65374" si="38235" created="20251113T164440Z" codep="1">
           <value>Menu '%s' is already being used by another form</value>
+          <lang id="fi" rw="0" time="20260922T060318Z">Valikkoa ”%s” käytetään jo toisessa lomakkeessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Menu ‚%s‘ již používá jiný formulář</lang>
         </row>
         <row id="Picture:" importid="65375" si="34917" created="20251113T140304Z">
           <value>Picture:</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Kuva:</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Obrázek:</lang>
         </row>
         <row id="(Unknown)" importid="65376" si="38237" created="20251113T164440Z">
           <value>(Unknown)</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">(Tuntematon)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">(Neznámé)</lang>
         </row>
         <row id="(None)" importid="65377" si="37767" created="20251113T164440Z">
           <value>(None)</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">(Ei mitään)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">(Žádná)</lang>
         </row>
         <row id="Value must be between %d and %d" importid="65378" si="37297" created="20251113T164440Z" codep="1">
           <value>Value must be between %d and %d</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Arvon on oltava välillä %d ja %d</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Hodnota musí být v rozmezí %d a %d</lang>
         </row>
         <row id="Invalid argument to date encode" importid="65379" si="38240" created="20251113T164440Z">
           <value>Invalid argument to date encode</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Päivämäärän koodaukseen annettu argumentti on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Neplatný argument pro kódování data</lang>
         </row>
         <row id="All files (*.*)|*.*" importid="65380" si="37299" created="20251113T164440Z">
           <value>All files (*.*)|*.*</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Kaikki tiedostot (*.*)|*.*</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Všechny soubory (*.*)|*.*</lang>
         </row>
         <row id="All" importid="65381" si="37771" created="20251113T164440Z">
@@ -103169,38 +103471,47 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id=": [ - no volume label - ]" importid="65382" si="37301" created="20251113T164440Z">
           <value>: [ - no volume label - ]</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">: [ – ei levyn nimeä – ]</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">: [ - žádný název svazku - ]</lang>
         </row>
         <row id="Unable to insert a line" importid="65383" si="37773" created="20251113T164440Z">
           <value>Unable to insert a line</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Riviä ei voitu lisätä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Nelze vložit řádek</lang>
         </row>
         <row id="The specified directory does not exist. Create it?" importid="65384" si="38245" created="20251113T164440Z">
           <value>The specified directory does not exist. Create it?</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Määritettyä kansiota ei ole. Luodaanko se?</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T191030Z">Zadaná složky neexistuje. Vytvořit?</lang>
         </row>
         <row id="Select Directory" importid="65385" si="37304" created="20251113T164440Z">
           <value>Select Directory</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Valitse hakemisto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175600Z">Vybrat složku</lang>
         </row>
         <row id="Directory &amp;Name:" importid="65386" si="37305" created="20251113T164440Z">
           <value>Directory &amp;Name:</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Hakemisto ja nimi:</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T191042Z">Název složky:</lang>
         </row>
         <row id="D&amp;rives:" importid="65387" si="37306" created="20251113T164440Z">
           <value>D&amp;rives:</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">D&amp;rives:</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">D&amp;isky:</lang>
         </row>
         <row id="&amp;Directories:" importid="65388" si="37778" created="20251113T164440Z">
           <value>&amp;Directories:</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">&amp;Hakemistot:</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T191053Z">&amp;Složky:</lang>
         </row>
         <row id="&amp;Files: (*.*)" importid="65389" si="37308" created="20251113T164440Z">
           <value>&amp;Files: (*.*)</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">&amp;Tiedostot: (*.*)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">&amp;Soubory: (*.*)</lang>
         </row>
         <row id="Ne&amp;twork..." importid="65390" si="32552" created="20251113T035632Z">
           <value>Ne&amp;twork...</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Ne&amp;twork...</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Sí&amp;ť...</lang>
         </row>
         <row id="Color" importid="65391" si="37310" created="20251113T164440Z">
@@ -103210,10 +103521,12 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Esc" importid="65392" si="34463" created="20251113T140304Z">
           <value>Esc</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Esc</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Esc</lang>
         </row>
         <row id="Enter" importid="65393" si="38254" created="20251113T164440Z">
           <value>Enter</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Syötä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">Enter</lang>
         </row>
         <row id="Space" importid="65394" si="33511" created="20251113T055718Z">
@@ -103223,14 +103536,17 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="PgUp" importid="65395" si="33041" created="20251113T055718Z">
           <value>PgUp</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">PgUp</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">PgUp</lang>
         </row>
         <row id="PgDn" importid="65396" si="37315" created="20251113T164440Z">
           <value>PgDn</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">PgDn</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182453Z">PgDn</lang>
         </row>
         <row id="End" importid="65397" si="37787" created="20251113T164440Z">
           <value>End</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Loppu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Konec</lang>
         </row>
         <row id="Home" importid="65398" si="37317" created="20251113T164440Z">
@@ -103260,26 +103576,32 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Ins" importid="65403" si="37322" created="20251113T164440Z">
           <value>Ins</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Ins</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Ins</lang>
         </row>
         <row id="Del" importid="65404" si="37323" created="20251113T164440Z">
           <value>Del</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Del</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175600Z">Del</lang>
         </row>
         <row id="Shift+" importid="65405" si="37324" created="20251113T164440Z">
           <value>Shift+</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Shift+</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Shift+</lang>
         </row>
         <row id="Ctrl+" importid="65406" si="37325" created="20251113T164440Z">
           <value>Ctrl+</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Ctrl+</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Ctrl+</lang>
         </row>
         <row id="Alt+" importid="65407" si="37797" created="20251113T164440Z">
           <value>Alt+</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Alt+</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Alt+</lang>
         </row>
         <row id="No help available" importid="65413" si="37332" created="20251113T164440Z">
           <value>No help available</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Apua ei ole saatavilla</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Není k dispozici žádná nápověda</lang>
         </row>
         <row id="Help" importid="65414" si="37804" created="20251113T164440Z">
@@ -103289,18 +103611,22 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="&amp;Abort" importid="65415" si="34486" created="20251113T140304Z">
           <value>&amp;Abort</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">&amp;Keskeytä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">&amp;Přerušit</lang>
         </row>
         <row id="N&amp;o to All" importid="65419" si="37338" created="20251113T164440Z">
           <value>N&amp;o to All</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">N&amp;o kaikille</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">N&amp;o to All</lang>
         </row>
         <row id="Yes to &amp;All" importid="65420" si="37810" created="20251113T164440Z">
           <value>Yes to &amp;All</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Kyllä &amp;Allille</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175600Z">Ano pro &amp;všechny</lang>
         </row>
         <row id="BkSp" importid="65422" si="38283" created="20251113T164440Z">
           <value>BkSp</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">BkSp</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">BkSp</lang>
         </row>
         <row id="Tab" importid="65423" si="34494" created="20251113T140304Z">
@@ -103310,50 +103636,62 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Invalid numeric value" importid="65424" si="35437" created="20251113T140304Z">
           <value>Invalid numeric value</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Virheellinen numeerinen arvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatná číselná hodnota</lang>
         </row>
         <row id="Outline index not found" importid="65425" si="34496" created="20251113T140304Z">
           <value>Outline index not found</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Sisällysluetteloa ei löytynyt</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Index struktury nebyl nalezen</lang>
         </row>
         <row id="Parent must be expanded" importid="65426" si="37345" created="20251113T164440Z">
           <value>Parent must be expanded</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Vanhemman on oltava laajennettu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nadřazený prvek musí být rozbalen</lang>
         </row>
         <row id="Invalid value for current item" importid="65427" si="37817" created="20251113T164440Z">
           <value>Invalid value for current item</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Nykyisen kohteen arvo on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatná hodnota pro aktuální položku</lang>
         </row>
         <row id="Invalid input value" importid="65428" si="37347" created="20251113T164440Z">
           <value>Invalid input value</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Syötetty arvo on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatná vstupní hodnota</lang>
         </row>
         <row id="Invalid input value.  Use escape key to abandon changes" importid="65429" si="38290" created="20251113T164440Z">
           <value>Invalid input value.  Use escape key to abandon changes</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Syötetty arvo on virheellinen.  Käytä Escape-näppäintä, jos haluat hylätä muutokset</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatná vstupní hodnota.  Stisknutím klávesy Esc zrušíte změny</lang>
         </row>
         <row id="Invalid outline index" importid="65430" si="37349" created="20251113T164440Z">
           <value>Invalid outline index</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Virheellinen sisällysluettelo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný index struktury</lang>
         </row>
         <row id="Incorrect level assignment" importid="65431" si="34502" created="20251113T140304Z">
           <value>Incorrect level assignment</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Virheellinen tason määrittäminen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nesprávné přiřazení úrovně</lang>
         </row>
         <row id="Invalid selection" importid="65432" si="37822" created="20251113T164440Z">
           <value>Invalid selection</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Valinta on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatný výběr</lang>
         </row>
         <row id="File load error" importid="65433" si="37352" created="20251113T164440Z">
           <value>File load error</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Tiedoston latausvirhe</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chyba při načítání souboru</lang>
         </row>
         <row id="Line too long" importid="65434" si="37353" created="20251113T164440Z">
           <value>Line too long</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Jono on liian pitkä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Příliš dlouhý řádek</lang>
         </row>
         <row id="Maximum outline depth exceeded" importid="65435" si="34977" created="20251113T140304Z">
           <value>Maximum outline depth exceeded</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Enimmäissyvyys ylitetty</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Překročena maximální hloubka obrysu</lang>
         </row>
         <row id="Warning" importid="65436" si="38297" created="20251113T164440Z">
@@ -103378,26 +103716,32 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="FB" importid="65440" si="37359" created="20251113T164440Z">
           <value>FB</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">FB</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">FB</lang>
         </row>
         <row id="FG" importid="65441" si="35454" created="20251113T140304Z">
           <value>FG</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">FG</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">FG</lang>
         </row>
         <row id="BG" importid="65442" si="37832" created="20251113T164440Z">
           <value>BG</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">BG</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">BG</lang>
         </row>
         <row id="Cannot load older version of TShape" importid="65443" si="37362" created="20251113T164440Z">
           <value>Cannot load older version of TShape</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Vanhempaa TShape-versiota ei voi ladata</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze načíst starší verzi TShape</lang>
         </row>
         <row id="Metafiles" importid="65444" si="37363" created="20251113T164440Z">
           <value>Metafiles</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Metatiedostot</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Metasoubory</lang>
         </row>
         <row id="Enhanced Metafiles" importid="65445" si="38306" created="20251113T164440Z">
           <value>Enhanced Metafiles</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Laajennetut metatiedostot</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Vylepšené metafily</lang>
         </row>
         <row id="Icons" importid="65446" si="34517" created="20251113T140304Z">
@@ -103412,38 +103756,47 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="TIFF Images" importid="65448" si="37838" created="20251113T164440Z">
           <value>TIFF Images</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">TIFF-kuvat</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Obrázky TIFF</lang>
         </row>
         <row id="Grid too large for operation" importid="65449" si="38310" created="20251113T164440Z">
           <value>Grid too large for operation</value>
+          <lang id="fi" rw="0" time="20260922T060319Z">Verkko on liian suuri käytettäväksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Mřížka je pro operaci příliš velká</lang>
         </row>
         <row id="Too many rows or columns deleted" importid="65450" si="32141" created="20251113T035632Z">
           <value>Too many rows or columns deleted</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Poistettu liian monta riviä tai saraketta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Bylo odstraněno příliš mnoho řádků nebo sloupců</lang>
         </row>
         <row id="Grid index out of range" importid="65451" si="37841" created="20251113T164440Z">
           <value>Grid index out of range</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Verkon indeksi on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Index mřížky mimo rozsah</lang>
         </row>
         <row id="Fixed column count must be less than column count" importid="65452" si="38313" created="20251113T164440Z">
           <value>Fixed column count must be less than column count</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Kiinteän sarakemäärän on oltava pienempi kuin sarakemäärä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Pevný počet sloupců musí být menší než počet sloupců</lang>
         </row>
         <row id="Fixed row count must be less than row count" importid="65453" si="37843" created="20251113T164440Z">
           <value>Fixed row count must be less than row count</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Kiinteän rivimäärän on oltava pienempi kuin rivimäärä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Pevný počet řádků musí být menší než počet řádků</lang>
         </row>
         <row id="Cannot insert or delete rows from grid" importid="65454" si="37373" created="20251113T164440Z">
           <value>Cannot insert or delete rows from grid</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Rivejä ei voi lisätä tai poistaa taulukosta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze vložit nebo odstranit řádky z mřížky</lang>
         </row>
         <row id="Invalid Enum Value" importid="65455" si="38316" created="20251113T164440Z">
           <value>Invalid Enum Value</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Virheellinen luettelon arvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatná hodnota výčtu</lang>
         </row>
         <row id="Control '%s' is used on a not main thread" importid="65456" si="37846" created="20251113T164440Z" codep="1">
           <value>Control '%s' is used on a not main thread</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Ohjauskomentoa '%s' käytetään muussa kuin pääsäikeessä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Ovládací prvek ‚%s‘ je použit v jiném než hlavním vlákně</lang>
         </row>
         <row id="OK" importid="65410" si="37847" created="20251113T164440Z">
@@ -103498,221 +103851,276 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Cannot drag a form" importid="65467" si="37386" created="20251113T164440Z">
           <value>Cannot drag a form</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Lomaketta ei voi vetää</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze přetáhnout formulář</lang>
         </row>
         <row id="An error returned from DDE  ($0%x)" importid="65468" si="34539" created="20251113T140304Z" codep="1">
           <value>An error returned from DDE  ($0%x)</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">DDE:stä palautettiin virhe  ($0%x)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Vrátila se chyba z DDE  ($0%x)</lang>
         </row>
         <row id="DDE Error - conversation not established ($0%x)" importid="65469" si="37388" created="20251113T164440Z" codep="1">
           <value>DDE Error - conversation not established ($0%x)</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">DDE-virhe – yhteyttä ei saatu muodostettua ($0%x)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Chyba DDE – konverzace nebyla navázána ($0%x)</lang>
         </row>
         <row id="Error occurred when DDE ran out of memory ($0%x)" importid="65470" si="37860" created="20251113T164440Z" codep="1">
           <value>Error occurred when DDE ran out of memory ($0%x)</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Virhe tapahtui, kun DDE:n muisti loppui ($0%x)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Došlo k chybě, když DDE vyčerpalo paměť ($0%x)</lang>
         </row>
         <row id="Unable to connect DDE conversation" importid="65471" si="37390" created="20251113T164440Z">
           <value>Unable to connect DDE conversation</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">DDE-yhteyden muodostaminen ei onnistu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze navázat DDE konverzaci</lang>
         </row>
         <row id="Check state can only be set when CheckBoxes is True" importid="65472" si="37391" created="20251113T164440Z">
           <value>Check state can only be set when CheckBoxes is True</value>
-          <lang id="cs" rw="0" ex="1" time="20260511T200326Z">Stav označení lze nastavit pouze tehdy, když je CheckBoxes nastaveno na True</lang>
+          <lang id="fi" rw="0" time="20260922T060320Z">Tarkistustila voidaan asettaa vain, kun CheckBoxes-asetus on True</lang>
+          <lang id="cs" st="4" rw="0" ex="1" time="20260928T141846Z">Stav označení není kompatibilní se styly označení struktury zobrazení</lang>
         </row>
         <row id="Check state incompatible with treeview's CheckStyles" importid="65473" si="38334" created="20251113T164440Z">
           <value>Check state incompatible with treeview's CheckStyles</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Valintatila ei ole yhteensopiva TreeView-komponentin CheckStyles-ominaisuuden kanssa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T200339Z">Stav označení není kompatibilní s CheckStyles stromového zobrazení</lang>
         </row>
         <row id="Menu index out of range" importid="65474" si="37864" created="20251113T164440Z">
           <value>Menu index out of range</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Valikon indeksi on sallitun alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Index menu mimo rozsah</lang>
         </row>
         <row id="Menu inserted twice" importid="65475" si="37865" created="20251113T164440Z">
           <value>Menu inserted twice</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Valikko on lisätty kahdesti</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Menu vloženo dvakrát</lang>
         </row>
         <row id="Sub-menu is not in menu" importid="65476" si="35018" created="20251113T140304Z">
           <value>Sub-menu is not in menu</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Alavalikko ei ole valikossa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Podnabídka není v nabídce</lang>
         </row>
         <row id="Not enough timers available" importid="65477" si="37867" created="20251113T164440Z">
           <value>Not enough timers available</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Käytettävissä olevia ajastimia ei ole tarpeeksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Není k dispozici dostatek časovačů</lang>
         </row>
         <row id="Printer is not currently printing" importid="65478" si="37868" created="20251113T164440Z">
           <value>Printer is not currently printing</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Tulostin ei tällä hetkellä tulosta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Tiskárna právě netiskne</lang>
         </row>
         <row id="Printing in progress" importid="65479" si="37869" created="20251113T164440Z">
           <value>Printing in progress</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Tulostus käynnissä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Probíhá tisk</lang>
         </row>
         <row id="Printer index out of range" importid="65480" si="35493" created="20251113T140304Z">
           <value>Printer index out of range</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Tulostimen indeksi on sallitun alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Index tiskárny je mimo rozsah</lang>
         </row>
         <row id="Printer selected is not valid" importid="65481" si="37400" created="20251113T164440Z">
           <value>Printer selected is not valid</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Valittua tulostinta ei ole määritetty</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Vybraná tiskárna není platná</lang>
         </row>
         <row id="%s on %s" importid="65482" si="35495" created="20251113T140304Z" codep="1">
           <value>%s on %s</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">%s päivänä %s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">%s na %s</lang>
         </row>
         <row id="GroupIndex cannot be less than a previous menu item's GroupIndex" importid="65483" si="37873" created="20251113T164440Z">
           <value>GroupIndex cannot be less than a previous menu item's GroupIndex</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">GroupIndex-arvo ei voi olla pienempi kuin edellisen valikkokohdan GroupIndex-arvo</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">GroupIndex nemůže být menší než GroupIndex předchozí položky menu</lang>
         </row>
         <row id="Cannot have more than one MDI form per application" importid="65484" si="34555" created="20251113T140304Z">
           <value>Cannot have more than one MDI form per application</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Sovelluksessa ei voi olla useampaa kuin yksi MDI-lomake</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">V jedné aplikaci nemůže být více než jeden formulář MDI</lang>
         </row>
         <row id="Cannot create form. No MDI forms are currently active" importid="65485" si="38346" created="20251113T164440Z">
           <value>Cannot create form. No MDI forms are currently active</value>
+          <lang id="fi" rw="0" time="20260922T060351Z">Lomaketta ei voi luoda. Tällä hetkellä ei ole aktiivisia MDI-lomakkeita</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze vytvořit formulář. V současné době nejsou aktivní žádné formuláře MDI</lang>
         </row>
         <row id="Can only modify an image if it contains a bitmap" importid="65486" si="38347" created="20251113T164440Z">
           <value>Can only modify an image if it contains a bitmap</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Kuva voidaan muokata vain, jos se on bittikarttakuva</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Obrázek lze upravit pouze v případě, že obsahuje bitmapu</lang>
         </row>
         <row id="A control cannot have itself as its parent" importid="65487" si="37877" created="20251113T164440Z">
           <value>A control cannot have itself as its parent</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">Ohjausobjekti ei voi olla itsensä vanhempi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Ovládací prvek nemůže mít sám sebe jako svého rodiče</lang>
         </row>
         <row id="Failed to read ImageList data from stream" importid="65488" si="37878" created="20251113T164440Z">
           <value>Failed to read ImageList data from stream</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">ImageList-tietojen lukeminen virrasta epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nepodařilo se načíst data ImageList ze streamu</lang>
         </row>
         <row id="Failed to write ImageList data to stream" importid="65489" si="37879" created="20251113T164440Z">
           <value>Failed to write ImageList data to stream</value>
+          <lang id="fi" rw="0" time="20260922T060320Z">ImageList-tietojen kirjoittaminen streamiin epäonnistui</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nepodařilo se zapsat data ImageList do streamu</lang>
         </row>
         <row id="Error creating window device context" importid="65490" si="37409" created="20251113T164440Z">
           <value>Error creating window device context</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Virhe ikkunan laitteen kontekstin luomisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Chyba při vytváření kontextu zařízení okna</lang>
         </row>
         <row id="Client of TDrag not initialized" importid="65491" si="37881" created="20251113T164440Z">
           <value>Client of TDrag not initialized</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">TDrag-asiakasohjelmaa ei ole alustettu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Klient TDrag nebyl inicializován</lang>
         </row>
         <row id="Error creating window class" importid="65492" si="34563" created="20251113T140304Z">
           <value>Error creating window class</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Virhe ikkunaluokan luomisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Chyba při vytváření třídy okna</lang>
         </row>
         <row id="Error creating window" importid="65493" si="38354" created="20251113T164440Z">
           <value>Error creating window</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Virhe ikkunan luomisessa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Chyba při vytváření okna</lang>
         </row>
         <row id="Cannot focus a disabled or invisible window" importid="65494" si="37413" created="20251113T164440Z">
           <value>Cannot focus a disabled or invisible window</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Vammaista tai näkymätöntä ikkunaa ei voi valita kohteeksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze zaostřit na deaktivované nebo neviditelné okno</lang>
         </row>
         <row id="Control '%s' has no parent window" importid="65495" si="35037" created="20251113T140304Z" codep="1">
           <value>Control '%s' has no parent window</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Ohjausobjektilla ”%s” ei ole vanhempaa ikkunaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Ovládací prvek „%s“ nemá žádné nadřazené okno</lang>
         </row>
         <row id=". Path:
 %s" importid="65496" si="37886" created="20251113T164440Z" codep="1">
           <value>. Path:
 %s</value>
+          <lang id="fi" rw="0" time="20260922T060406Z">. Polku:
+%s</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175604Z">. Cesta:
 %s</lang>
         </row>
         <row id="Parent given is not a parent of '%s'" importid="65497" si="35510" created="20251113T140304Z" codep="1">
           <value>Parent given is not a parent of '%s'</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Annettu vanhempi ei ole '%s':n vanhempi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Zadaný rodič není rodičem ‚%s‘</lang>
         </row>
         <row id="Cannot hide an MDI Child Form" importid="65498" si="37417" created="20251113T164440Z">
           <value>Cannot hide an MDI Child Form</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">MDI-alilomaketta ei voi piilottaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze skrýt podřízený formulář MDI</lang>
         </row>
         <row id="Cannot change SingleBufferingInRemoteSessions in a remote session" importid="65499" si="38360" created="20251113T164440Z">
           <value>Cannot change SingleBufferingInRemoteSessions in a remote session</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">SingleBufferingInRemoteSessions-asetusta ei voi muuttaa etäistunnossa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze změnit SingleBufferingInRemoteSessions ve vzdálené relaci</lang>
         </row>
         <row id="Cannot change Visible in OnShow or OnHide" importid="65500" si="37419" created="20251113T164440Z">
           <value>Cannot change Visible in OnShow or OnHide</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Visible-ominaisuutta ei voi muuttaa OnShow- tai OnHide-tapahtumissa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze změnit vlastnost Visible v OnShow nebo OnHide</lang>
         </row>
         <row id="Cannot make a visible window modal" importid="65501" si="37891" created="20251113T164440Z">
           <value>Cannot make a visible window modal</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Ikkunaa ei voi asettaa näkyväksi modaaliksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze nastavit viditelné okno jako modální</lang>
         </row>
         <row id="Scrollbar property out of range" importid="65502" si="37421" created="20251113T164440Z">
           <value>Scrollbar property out of range</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Vierityspalkin arvo on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Vlastnost posuvníku mimo rozsah</lang>
         </row>
         <row id="%s property out of range" importid="65503" si="37422" created="20251113T164440Z" codep="1">
           <value>%s property out of range</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">%s-ominaisuuden arvo on sallitun alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Vlastnost %s mimo rozsah</lang>
         </row>
         <row id="Cannot change the size of a WIC Image" importid="65504" si="35046" created="20251113T140304Z">
           <value>Cannot change the size of a WIC Image</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">WIC-kuvan kokoa ei voi muuttaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nelze změnit velikost obrázku WIC</lang>
         </row>
         <row id="Invalid operation on TOleGraphic" importid="65505" si="35047" created="20251113T140304Z">
           <value>Invalid operation on TOleGraphic</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Virheellinen toiminto TOleGraphic-objektissa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neplatná operace na TOleGraphic</lang>
         </row>
         <row id="Unknown picture file extension (.%s)" importid="65506" si="38367" created="20251113T164440Z" codep="1">
           <value>Unknown picture file extension (.%s)</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Tuntematon kuvatiedostotunniste (.%s)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Neznámá přípona obrazového souboru (.%s)</lang>
         </row>
         <row id="Unsupported clipboard format" importid="65507" si="37426" created="20251113T164440Z">
           <value>Unsupported clipboard format</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Leikepöydän muotoa ei tueta</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nepodporovaný formát schránky</lang>
         </row>
         <row id="Unsupported stream format" importid="65508" si="37427" created="20251113T164440Z">
           <value>Unsupported stream format</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Tuettamaton stream-muoto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nepodporovaný formát proudu</lang>
         </row>
         <row id="Out of system resources" importid="65509" si="37428" created="20251113T164440Z">
           <value>Out of system resources</value>
+          <lang id="fi" rw="0" time="20260922T060321Z">Järjestelmän resurssit loppuneet</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Nedostatek systémových prostředků</lang>
         </row>
         <row id="Canvas does not allow drawing" importid="65510" si="37429" created="20251113T164440Z">
           <value>Canvas does not allow drawing</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Canvas ei salli piirtämistä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Plátno neumožňuje kreslení</lang>
         </row>
         <row id="Text format flag '%s' not supported" importid="65511" si="35053" created="20251113T140304Z" codep="1">
           <value>Text format flag '%s' not supported</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Tekstimuodon tunniste '%s' ei ole tuettu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182605Z">Příznak formátu textu „%s“ není podporován</lang>
         </row>
         <row id="Invalid image frame index %d: there are %d frames (0-%d)" importid="65512" si="37902" created="20251113T164440Z" codep="1">
           <value>Invalid image frame index %d: there are %d frames (0-%d)</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvakehyksen indeksi %d on virheellinen: kehyksiä on %d (0–%d)</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný index rámečku obrázku %d: je zde %d rámečků (0-%d)</lang>
         </row>
         <row id="Invalid image size" importid="65513" si="37432" created="20251113T164440Z">
           <value>Invalid image size</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvan koko ei ole sallittu</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T175605Z">Nesprávná velikost obrázku</lang>
         </row>
         <row id="Too many images" importid="65514" si="37433" created="20251113T164440Z">
           <value>Too many images</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Liian monta kuvaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Příliš mnoho obrázků</lang>
         </row>
         <row id="Image dimensions do not match image list dimensions" importid="65515" si="38376" created="20251113T164440Z">
           <value>Image dimensions do not match image list dimensions</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvan mitat eivät vastaa kuvaluettelon mittoja</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Rozměry obrázku neodpovídají rozměrům seznamu obrázků</lang>
         </row>
         <row id="Invalid ImageList" importid="65516" si="37435" created="20251113T164440Z">
           <value>Invalid ImageList</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Virheellinen ImageList</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný ImageList</lang>
         </row>
         <row id="Unable to Replace Image" importid="65517" si="34588" created="20251113T140304Z">
           <value>Unable to Replace Image</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvaa ei voi korvata</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze nahradit obrázek</lang>
         </row>
         <row id="Unable to Insert Image" importid="65518" si="38379" created="20251113T164440Z">
           <value>Unable to Insert Image</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvaa ei voi lisätä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Nelze vložit obrázek</lang>
         </row>
         <row id="Invalid ImageList Index" importid="65519" si="37909" created="20251113T164440Z">
           <value>Invalid ImageList Index</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Virheellinen ImageList-indeksi</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">Neplatný index ImageList</lang>
         </row>
         <row id="select a date" importid="65520" si="37910" created="20251113T164440Z">
           <value>select a date</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">valitse päivämäärä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182717Z">vyberte datum</lang>
         </row>
         <row id="Open" importid="65521" si="38382" created="20251113T164440Z">
@@ -103722,58 +104130,72 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
         </row>
         <row id="Can't write to a read-only resource stream" importid="65522" si="37441" created="20251113T164440Z">
           <value>Can't write to a read-only resource stream</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Ei voi kirjoittaa vain luku -resurssivirtaan</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze zapisovat do proudu prostředků jen pro čtení</lang>
         </row>
         <row id="WriteObject called twice for the same instance" importid="65523" si="38384" created="20251113T164440Z">
           <value>WriteObject called twice for the same instance</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">WriteObject-funktiota kutsuttiin kahdesti samalle instanssille</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">WriteObject volán dvakrát pro stejnou instanci</lang>
         </row>
         <row id="Resource %s is of incorrect class" importid="65524" si="37443" created="20251113T164440Z" codep="1">
           <value>Resource %s is of incorrect class</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Resurssin %s luokka on virheellinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Zdroje %s je nesprávné třídy</lang>
         </row>
         <row id="Tab index out of bounds" importid="65525" si="38386" created="20251113T164440Z">
           <value>Tab index out of bounds</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Tab-indeksi ylittää sallitut rajat</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Index záložky mimo rozsah</lang>
         </row>
         <row id="Tab position incompatible with current tab style" importid="65526" si="38387" created="20251113T164440Z">
           <value>Tab position incompatible with current tab style</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Sarkaimen sijainti ei sovi yhteen nykyisen sarkaimtyylin kanssa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Pozice záložky není kompatibilní s aktuálním stylem záložky</lang>
         </row>
         <row id="Tab style incompatible with current tab position" importid="65527" si="37446" created="20251113T164440Z">
           <value>Tab style incompatible with current tab position</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Välilehden tyyli ei sovi yhteen nykyisen välilehden sijainnin kanssa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Styl záložky není kompatibilní s aktuální pozicí záložky</lang>
         </row>
         <row id="Bitmap image is not valid" importid="65528" si="35541" created="20251113T140304Z">
           <value>Bitmap image is not valid</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Bittikarttakuva ei ole kelvollinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Bitmapový obrázek není platný</lang>
         </row>
         <row id="Icon image is not valid" importid="65529" si="37448" created="20251113T164440Z">
           <value>Icon image is not valid</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvakkeen kuva ei ole kelvollinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Obrázek ikony není platný</lang>
         </row>
         <row id="Metafile is not valid" importid="65530" si="38391" created="20251113T164440Z">
           <value>Metafile is not valid</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Metatiedosto ei ole kelvollinen</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Metasoubor není platný</lang>
         </row>
         <row id="Invalid pixel format" importid="65531" si="37450" created="20251113T164440Z">
           <value>Invalid pixel format</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Virheellinen pikselimuoto</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný formát pixelů</lang>
         </row>
         <row id="Invalid image" importid="65532" si="37451" created="20251113T164440Z">
           <value>Invalid image</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Virheellinen kuva</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Neplatný obrázek</lang>
         </row>
         <row id="Bitmap is empty" importid="65533" si="37452" created="20251113T164440Z">
           <value>Bitmap is empty</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Bittikartta on tyhjä</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Bitmapový obrázek je prázdný</lang>
         </row>
         <row id="Scan line index out of range" importid="65534" si="37453" created="20251113T164440Z">
           <value>Scan line index out of range</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Skannausrivin indeksi on alueen ulkopuolella</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Index skenovacího řádku je mimo rozsah</lang>
         </row>
         <row id="Cannot change the size of an icon" importid="65535" si="38396" created="20251113T164440Z">
           <value>Cannot change the size of an icon</value>
+          <lang id="fi" rw="0" time="20260922T060322Z">Kuvakkeen kokoa ei voi muuttaa</lang>
           <lang id="cs" rw="0" ex="1" time="20260511T182801Z">Nelze změnit velikost ikony</lang>
         </row>
       </node>
@@ -103800,19 +104222,19 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
+      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Hilde" type="TSqliteTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
       <item name="DeepL" type="TDeepLTranslator"/>
-      <item name="Claude" type="TClaudeTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
     </shared>
   </mt>
   <dictionaries>
@@ -103828,9 +104250,9 @@ Ukončete aplikaci Soluling a zkuste to znovu.</lang>
       <item>Soluling</item>
     </dictionary>
   </dictionaries>
-  <cloudsettings username="jaska" password="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAArFPgoYReEkidN8f6Z5XNhwAAAAACAAAAAAAQZgAAAAEA
-ACAAAACzydXZYPoeYXDuhnshXzdPyo+ueQ0Kc/2jSz5lYphvmgAAAAAOgAAAAAIAACAAAABFRUz8
-0WA0J5HbIyW25xKpB5xY5J+s4JFp6OlNpLWoxhAAAAAljK1TAfFBMT00YJkBVUxpQAAAAJzmSdCA
-6k7EBNC3Qs3+Nck1qzvovBHsS+iJu7zE+MDITdKetarljRUnxVpuMKsUWagFsfDO5mGGUcEgewRO
-Rms=" account="1"/>
+  <cloudsettings username="jaska" password="AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAj388S7G0JEa51P9eAlsyVQAAAAACAAAAAAAQZgAAAAEA
+ACAAAACJsXwQ+BUvHWAhAAQJrmrhRtadYvF6QKPl2tovXSRhXQAAAAAOgAAAAAIAACAAAADZvmOY
+EpaFIsaB+pzhO64SL8hzGMdtrOi9eZ1bL+w8ghAAAADdjfbHV8jZ01aDupTQguhdQAAAAMHEZAOu
+HHvp1UE0SxnjJNU7Y/mUwLeN+eqCwY74SNymoi5doukB2vh6zQCb7g8Oz+ynoRlFAI+b/HY62JvY
+sYI=" account="1"/>
 </project>

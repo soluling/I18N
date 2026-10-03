@@ -347,6 +347,7 @@ type
     function Find(pattern: TPattern): TPattern; overload;
     function FindAny(pattern: TPattern): TPattern;
     function FindOther: TPattern;
+    function FindOtherOrAny: TPattern;
 
     function Find(gender: TGender): TGenderPattern; overload;
     function Exists(gender: TGender): Boolean; overload;
@@ -1196,6 +1197,27 @@ begin
   end;
 
   Result := nil;
+end;
+
+function TFormatPart.FindOtherOrAny: TPattern;
+var
+  i: Integer;
+begin
+  for i := 0 to Count - 1 do
+  begin
+    Result := Items[i];
+
+    if (Result is TPluralPattern) and (TPluralPattern(Result).Plural = pfOther) or
+      (Result is TGenderPattern) and (TGenderPattern(Result).Gender = geNeutral) then
+    begin
+      Exit;
+    end;
+  end;
+
+  if Count > 0 then
+    Result := Items[0]
+  else
+    Result := nil;
 end;
 
 function TFormatPart.FindAny(pattern: TPattern): TPattern;

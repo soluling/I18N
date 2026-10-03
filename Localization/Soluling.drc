@@ -1873,16 +1873,16 @@
 #define Validations_SMissingQuestionMarkIn 60317
 #define Validations_SExtraQuestionMarkIn 60318
 #define Validations_SLowerCase 60319
-#define Validations_SEmptyTranslation 60320
-#define Validations_SEmptyOriginalDescription 60321
-#define Validations_SEmptyTranslationDescription 60322
-#define Validations_SOnlySpacesInOriginal 60323
-#define Validations_SOnlySpacesInTranslation 60324
-#define Validations_SOriginalContainsOnlySpaceCharacters 60325
-#define Validations_STranslationContainsOnlySpaceCharacters 60326
-#define Validations_SNewLineCharacter 60327
-#define Validations_SMissingNewLineCharacterIn 60328
-#define Validations_SExtraNewLineCharacterIn 60329
+#define Validations_SMissingNewLineCharacterIn 60320
+#define Validations_SExtraNewLineCharacterIn 60321
+#define Validations_SEmptyOriginal 60322
+#define Validations_SEmptyTranslation 60323
+#define Validations_SEmptyOriginalDescription 60324
+#define Validations_SEmptyTranslationDescription 60325
+#define Validations_SOnlySpacesInOriginal 60326
+#define Validations_SOnlySpacesInTranslation 60327
+#define Validations_SOriginalContainsOnlySpaceCharacters 60328
+#define Validations_STranslationContainsOnlySpaceCharacters 60329
 #define Validations_SHorizontalTabCharacter 60330
 #define Validations_SMissingHorizontalTabCharacterIn 60331
 #define Validations_SExtraHorizontalTabCharacterIn 60332
@@ -1904,7 +1904,7 @@
 #define OtherValidations_SAiValidationDescription 60348
 #define Validations_SMissingTranslation 60349
 #define Validations_SMissingTranslationDescription 60350
-#define Validations_SEmptyOriginal 60351
+#define Validations_SNewLineCharacter 60351
 #define VclMappings_STabControl 60352
 #define VclMappings_STabSheet 60353
 #define VclMappings_STrackBar 60354
@@ -8956,6 +8956,9 @@ BEGIN
 	Validations_SMissingQuestionMarkIn,	L"Missing question mark in \"%s\""
 	Validations_SExtraQuestionMarkIn,	L"Extra question mark in \"%s\""
 	Validations_SLowerCase,	L"Lower case"
+	Validations_SMissingNewLineCharacterIn,	L"Missing newline character in \"%s\""
+	Validations_SExtraNewLineCharacterIn,	L"Extra newline character in \"%s\""
+	Validations_SEmptyOriginal,	L"Empty original"
 	Validations_SEmptyTranslation,	L"Empty translation"
 	Validations_SEmptyOriginalDescription,	L"Empty original in %s"
 	Validations_SEmptyTranslationDescription,	L"Empty translation of \"%s\""
@@ -8963,9 +8966,6 @@ BEGIN
 	Validations_SOnlySpacesInTranslation,	L"Only spaces in translation"
 	Validations_SOriginalContainsOnlySpaceCharacters,	L"Original contains only space characters"
 	Validations_STranslationContainsOnlySpaceCharacters,	L"Translation contains only space characters"
-	Validations_SNewLineCharacter,	L"Newline character"
-	Validations_SMissingNewLineCharacterIn,	L"Missing newline character in \"%s\""
-	Validations_SExtraNewLineCharacterIn,	L"Extra newline character in \"%s\""
 	Validations_SHorizontalTabCharacter,	L"Horizontal tab character"
 	Validations_SMissingHorizontalTabCharacterIn,	L"Missing horizontal tab character in \"%s\""
 	Validations_SExtraHorizontalTabCharacterIn,	L"Extra horizontal tab character in \"%s\""
@@ -8987,7 +8987,7 @@ BEGIN
 	OtherValidations_SAiValidationDescription,	L"The translation \"%s\" does not match the original \"%s\""
 	Validations_SMissingTranslation,	L"Missing translation"
 	Validations_SMissingTranslationDescription,	L"Missing translation of \"%s\""
-	Validations_SEmptyOriginal,	L"Empty original"
+	Validations_SNewLineCharacter,	L"Newline character"
 	VclMappings_STabControl,	L"Tab control"
 	VclMappings_STabSheet,	L"Tab sheet"
 	VclMappings_STrackBar,	L"Track bar"
@@ -15073,4 +15073,4 @@ END
 /* D:\NT\Desktop\Bin\Manifest.res */
 /* D:\NT\Desktop\Bin\Icons.res */
 /* D:\NT\Desktop\Bin\Soluling.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtf82DD.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtf1247.tmp */

@@ -271,7 +271,7 @@ You can use either Soluling Cloud or Soluling Desktop.
 
 ### Cloud
 
-You can use Soluling Cloud from any browser on any OS, or use REST API. 
+You can use Soluling Cloud from any browser on any OS, or through the REST API.
 
 ![CloudPlural.png](https://github.com/jaska45/I18N/blob/master/Other/CloudPlural.png)
 
@@ -283,6 +283,6 @@ Soluling Desktop is a Windows application.
 
 ![Screenshot.png](https://github.com/jaska45/I18N/blob/master/Other/Screenshot.png)
 
-You can download Soluling Desktop from [here](https://www.soluling.com/Download).
+You can [download Soluling Desktop](https://www.soluling.com/Download). It includes SoluMake, a command-line application you can use in your build pipeline.
 
 `Localization` folder contains Soluling's own localization project. Read `README.md` from that folder to learn more.
