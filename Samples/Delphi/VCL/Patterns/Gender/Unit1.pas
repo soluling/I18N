@@ -58,6 +58,10 @@ resourcestring
   end;
 
 begin
+  // Both patterns use the same labels on purpose. The second set of calls overwrites
+  // the results of the first one, so the form shows SOtherMessageGender. To see how
+  // SMessageGender, which has no other form, handles the neutral gender, comment
+  // out the last three calls.
   Process(SMessageGender, geMale, 'John', MaleLabel, MaleInfo);
   Process(SMessageGender, geFemale, 'Jill', FemaleLabel, FemaleInfo);
   Process(SMessageGender, geNeutral, 'Amazon', NeutralLabel, NeutralInfo);

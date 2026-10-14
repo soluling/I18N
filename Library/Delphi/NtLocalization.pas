@@ -561,7 +561,7 @@ var
   l: Integer;
   buffer: array[0..255] of WideChar;
 begin
-  l := GetLocaleInfoW(locale, localeType, buffer, SizeOf(buffer));
+  l := GetLocaleInfoW(locale, localeType, buffer, Length(buffer));
 
   if l > 0 then
     SetString(Result, buffer, l - 1)
@@ -790,10 +790,11 @@ begin
   resource := FindResource(module, resName, resType);
   versionInfo := LockResource(LoadResource(module, resource));
 
+  // Each version part is 16 bits: major.minor in MS, release.build in LS
   enumVersion1 := versionInfo.value.dwFileVersionMS shr 16;
-  enumVersion2 := $FF and versionInfo.value.dwFileVersionMS;
+  enumVersion2 := $FFFF and versionInfo.value.dwFileVersionMS;
   enumVersion3 := versionInfo.value.dwFileVersionLS shr 16;
-  enumVersion4 := $FF and versionInfo.value.dwFileVersionLS;
+  enumVersion4 := $FFFF and versionInfo.value.dwFileVersionLS;
 
   enumFound := True;
 
@@ -944,7 +945,7 @@ begin
   PreviouslyLoadedResourceLocale := '';
 
   if (LoadedResourceLocale = '') and
-    (GetModuleFileName(LibModuleList.Instance, buffer, SizeOf(buffer)) > 0) then
+    (GetModuleFileName(LibModuleList.Instance, buffer, Length(buffer)) > 0) then
   begin
 {$IFDEF DELPHIXE}
     LoadedResourceLocale := GetLocaleOverride(buffer);
@@ -985,13 +986,27 @@ begin
 end;
 
 class function TNtLocale.IsLocaleAsian(value: String): Boolean;
+var
+  p: Integer;
 begin
-  if Length(value) > 2 then
-    value := Copy(value, 1, 2);
+  // Language part of an ISO id such as ja-JP or zh_CN
+  p := Pos('-', value);
+
+  if p = 0 then
+    p := Pos('_', value);
+
+  if p > 0 then
+    value := Copy(value, 1, p - 1);
 
   value := LowerCase(value);
 
-  Result := (value = 'jp') or (value = 'ch') or (value = 'ko');
+  Result :=
+    // ISO 639 codes
+    (value = 'ja') or (value = 'zh') or (value = 'ko') or
+    // Windows language abbreviations and their language neutral forms
+    (value = 'jpn') or (value = 'jp') or
+    (value = 'chs') or (value = 'cht') or (value = 'zhh') or (value = 'zhi') or (value = 'zhm') or (value = 'ch') or
+    (value = 'kor');
 end;
 
 class function TNtLocale.LocaleToIso(locale: Integer): String;

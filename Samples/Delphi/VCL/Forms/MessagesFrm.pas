@@ -67,7 +67,7 @@ begin
   OtherLabel.Caption := TMultiPattern.Format(SMessagePlural, 10);
 
   // Gender enabled messages
-  GenderLabel.Caption := TMultiPattern.Format(SMessageGender, 'male', [str]);
+  GenderLabel.Caption := TMultiPattern.Format(SMessageGender, geMale, [str]);
 
   // Select enabled messages
   SelectLabel.Caption := TMultiPattern.Format(SMessageSelect, 'hockey', [player]);

@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20260514T160755Z" version="1.0.1102" lockedrowcomplete="0" stringid="373">
+<project id="77F2EE73-C0B0-4142-87A4-58327E75E868" created="20200827T150636Z" lastmodified="20261014T094016Z" version="1.0.1114" lockedrowcomplete="0" stringid="373">
   <lang id="fi"/>
   <node class="TVisualStudioSolutionSource" name="Wpf.sln" fullpath="D:\NT\Deploy\Samples\WPF\Wpf.sln" original="en" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWinForms,nlWpf]" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrImage,nrGroupIcon,nrIcon,nrManifest]">
     <node class="TNetProjectSource" name="..\..\Library\NET\Standard\Soluling.csproj" original="en" lastmodified="20230416T135812Z" groupname="..\..\Library\NET\Standard\Soluling.csproj" availableresources="[nrResx]" netconfiguration="Release|AnyCPU">
@@ -3169,9 +3169,6 @@
         <assembly>bin\Release\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
         <assembly>bin\Release\net9.0-windows7.0\Tabs.dll</assembly>
       </assemblies>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
     </node>
     <node class="TNetProjectSource" name="Test\Test.csproj" original="en" lastmodified="20260514T160713Z" groupname="Test\Test.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt40"/>
@@ -3484,9 +3481,6 @@ Tämä on toinen esimerkki</lang>
         <assembly>bin\Release\net9.0-windows7.0\Soluling.Translator.WPF.dll</assembly>
         <assembly>bin\Release\net9.0-windows7.0\TextBlocks.dll</assembly>
       </assemblies>
-      <configurations>
-        <configuration name="Default"/>
-      </configurations>
     </node>
     <node class="TNetProjectSource" name="Tutorial\BadSample\BadSample.csproj" original="en" lastmodified="20260514T160713Z" groupname="Tutorial\BadSample\BadSample.csproj" resources="[nrResx,nrXaml]" availableresources="[nrResx,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
@@ -3675,7 +3669,7 @@ Tämä on toinen esimerkki</lang>
         </node>
       </node>
     </node>
-    <node class="TNetProjectSource" name="WindowsForms\WindowsForms.csproj" original="en" lastmodified="20260514T160755Z" groupname="WindowsForms\WindowsForms.csproj" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms,nlWpf]">
+    <node class="TNetProjectSource" name="WindowsForms\WindowsForms.csproj" original="en" lastmodified="20261014T094016Z" groupname="WindowsForms\WindowsForms.csproj" resources="[nrResx,nrForm,nrXaml]" availableresources="[nrResx,nrForm,nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWinForms,nlWpf]">
       <netproperties version="net30" toolsversion="nt120"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
@@ -3864,6 +3858,8 @@ Tämä on toinen esimerkki</lang>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
 </project>

@@ -101,6 +101,14 @@ var
   stream: TNtStream;
   items: TListItems;
 
+  // Translations can have more sub items than the list item, for example if sub items
+  // have been removed at runtime. The value is always read so that the stream stays in sync.
+  procedure SetSubItem(item: TListItem; index: Integer; const value: String);
+  begin
+    if index < item.SubItems.Count then
+      item.SubItems[index] := value;
+  end;
+
   procedure ProcessOld;
   var
     i, j, count: Integer;
@@ -130,9 +138,9 @@ var
 
       for j := 0 to info.SubItemCount - 1 do
 {$IFDEF DELPHIXE}
-        item.SubItems[j] := TNtConvert.BytesToUnicode(stream.ReadShortString);
+        SetSubItem(item, j, TNtConvert.BytesToUnicode(stream.ReadShortString));
 {$ELSE}
-        item.SubItems[j] := TNtConvert.AnsiToUnicode(stream.ReadShortString);
+        SetSubItem(item, j, TNtConvert.AnsiToUnicode(stream.ReadShortString));
 {$ENDIF}
     end;
   end;
@@ -155,7 +163,7 @@ var
       item.Caption := stream.ReadShortUnicodeString;
 
       for i := 0 to info.SubItemCount - 1 do
-        item.SubItems[i] := stream.ReadShortUnicodeString;
+        SetSubItem(item, i, stream.ReadShortUnicodeString);
     end;
 
 {$IFDEF UNICODE}
@@ -173,7 +181,7 @@ var
 
       for i := 0 to info.SubItemCount - 1 do
       begin
-        item.SubItems[i] := stream.ReadShortUnicodeString;
+        SetSubItem(item, i, stream.ReadShortUnicodeString);
 
         if version >= VERSION_32_3 then
           stream.ReadPointer;
@@ -196,7 +204,7 @@ var
 
       for i := 0 to info.SubItemCount - 1 do
       begin
-        item.SubItems[i] := stream.ReadShortUnicodeString;
+        SetSubItem(item, i, stream.ReadShortUnicodeString);
 
         if version >= VERSION_64_3 then
           stream.ReadPointer;

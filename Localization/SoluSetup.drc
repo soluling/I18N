@@ -8,769 +8,773 @@
   resources were bound to the produced executable.
 */
 
-#define MainFrm_SYes 63504
-#define MainFrm_SVersion 63505
-#define MainFrm_SDataDirectory 63506
-#define MainFrm_SUpdate 63507
-#define MainFrm_SModify 63508
-#define MainFrm_SNew 63509
-#define MainFrm_SDefaultLanguage 63510
-#define MainFrm_SNewerVersionExists 63511
-#define MainFrm_SThisSetupIsMostRecent 63512
-#define MainFrm_SCouldNotCheckVersion 63513
-#define MainFrm_SWindows7OrLaterneeded 63514
-#define MainFrm_SNewRadio 63520
-#define MainFrm_SUnknownParameter 63521
-#define MainFrm_SNoFirstAndLastName 63522
-#define MainFrm_SWaiting 63523
-#define MainFrm_SSetupRunning 63524
-#define MainFrm_SNoWriteAccess 63525
-#define MainFrm_SNotEnoughDiskSpace 63526
-#define MainFrm_SRootDir 63527
-#define MainFrm_SEnterEvaluationExtensionReason 63528
-#define MainFrm_SReasonCaption 63529
-#define MainFrm_SEnterEvaluationExtensionCode 63530
-#define MainFrm_SCodeCaption 63531
-#define MainFrm_SNoInternet 63532
-#define MainFrm_SCancel 63533
-#define MainFrm_SNext 63534
-#define MainFrm_SNo 63535
-#define MainFrm_SInstallingApplicationFiles 63536
-#define MainFrm_SInstallingSpellCheckFiles 63537
-#define MainFrm_SInstallingI18NLibraryFiles 63538
-#define MainFrm_SInstallingFiles 63539
-#define MainFrm_SCouldNotRegisterInstallation 63540
-#define MainFrm_SCouldNotActivate 63541
-#define MainFrm_SSetupFailed 63542
-#define MainFrm_SPersonalFolder 63543
-#define MainFrm_SPublicFolder 63544
-#define MainFrm_SUnknownVersion 63545
-#define MainFrm_SStart1 63546
-#define MainFrm_SStart2 63547
-#define MainFrm_SStart3 63548
-#define MainFrm_SDirectory 63549
-#define MainFrm_SUpdateRadio 63550
-#define MainFrm_SModifyRadio 63551
-#define NtDialogFilter_SVideoFiles 63552
-#define NtDialogFilter_SMpegFiles 63553
-#define NtDialogFilter_SAviFiles 63554
-#define NtDialogFilter_SQuickTimeFiles 63555
-#define SelectFile_SCaption 63556
-#define VoikkoSpellEngine_SVoikko 63557
-#define MainFrm_SSetup 63558
-#define MainFrm_SSetupTypeCustomDescription 63559
-#define MainFrm_SSetupTypeAllDescription 63560
-#define MainFrm_SSetupTypeMinimalDescription 63561
-#define MainFrm_SSetupTypeBuildAutomationDescription 63562
-#define MainFrm_SCanNotInstall 63563
-#define MainFrm_SApplicationRunning 63564
-#define MainFrm_STotalSelectedSize 63565
-#define MainFrm_SInstallingLibraryFiles 63566
-#define MainFrm_SInstallingBuildAutomationFiles 63567
-#define NtDialogFilter_SDllFiles 63568
-#define NtDialogFilter_SExeFiles 63569
-#define NtDialogFilter_SImageFiles 63570
-#define NtDialogFilter_SJpegFiles 63571
-#define NtDialogFilter_SBitmapFiles 63572
-#define NtDialogFilter_SPngFiles 63573
-#define NtDialogFilter_SGifFiles 63574
-#define NtDialogFilter_SIconFiles 63575
-#define NtDialogFilter_SLanguageFiles 63576
-#define NtDialogFilter_SSisulizerLanguagesFiles 63577
-#define NtDialogFilter_STextFiles 63578
-#define NtDialogFilter_SAudioFiles 63579
-#define NtDialogFilter_SWaveFiles 63580
-#define NtDialogFilter_SWmaFiles 63581
-#define NtDialogFilter_SMp4Files 63582
-#define NtDialogFilter_SMp3Files 63583
-#define Installer_SXamarinDescription 63584
-#define Installer_SXliffDescription 63585
-#define Installer_SXmlDescription 63586
-#define Installer_SXslDescription 63587
-#define Installer_SYamlDescription 63588
-#define Installer_SSilverlightDescription 63589
-#define Installer_SWindowsPhoneDescription 63590
-#define Installer_SLocalization 63591
-#define Installer_SLocalizationDescription 63592
-#define Installer_SI18NAPI 63593
-#define Installer_SI18NAPIDescription 63594
-#define Installer_SConfiguringSystem 63595
-#define Installer_SConfiguringLibraryPaths 63596
-#define Installer_SComponentFailed 63597
-#define NtDialogFilter_SAllFiles 63598
-#define NtDialogFilter_SAllSupportedFiles 63599
-#define Installer_SSvgDescription 63600
-#define Installer_STextDescription 63601
-#define Installer_STmxDescription 63602
-#define Installer_STranslationMemoryDescription 63603
-#define Installer_STutorialDescription 63604
-#define Installer_STypeScriptDescription 63605
-#define Installer_SVisualCppDescription 63606
-#define Installer_SVisualStudioDescription 63607
-#define Installer_SVueDescription 63608
-#define Installer_SWebVTTDescription 63609
-#define Installer_SWindowsFormsDescription 63610
-#define Installer_SWinUIDescription 63611
-#define Installer_SWixDescription 63612
-#define Installer_SWordDescription 63613
-#define Installer_SWpfDescription 63614
-#define Installer_SUniversalWindowsPlatformDescription 63615
-#define Installer_SPhpDescription 63616
-#define Installer_SPoDescription 63617
-#define Installer_SPostgreDescription 63618
-#define Installer_SPowerPointDescription 63619
-#define Installer_SPythonDescription 63620
-#define Installer_SOpenDocumentDescription 63621
-#define Installer_SQtDescription 63622
-#define Installer_SRailsDescription 63623
-#define Installer_SReactDescription 63624
-#define Installer_SRtfDescription 63625
-#define Installer_SSalesForceDescription 63626
-#define Installer_SScriptDescription 63627
-#define Installer_SSqlCeDescription 63628
-#define Installer_SSqliteDescription 63629
-#define Installer_SSqlServerDescription 63630
-#define Installer_SSrtDescription 63631
-#define Installer_SHtmlDescription 63632
-#define Installer_SHtmlHelpDescription 63633
-#define Installer_Si18nextDescription 63634
-#define Installer_SIniDescription 63635
-#define Installer_SInterBaseDescription 63636
-#define Installer_SiOSDescription 63637
-#define Installer_SJavaDescription 63638
-#define Installer_SJavaScriptDescription 63639
-#define Installer_SJsonDescription 63640
-#define Installer_SJspDescription 63641
-#define Installer_SLazarusDescription 63642
-#define Installer_SLaTeXDescription 63643
-#define Installer_SMauiDescription 63644
-#define Installer_SMarkdownDescription 63645
-#define Installer_SMySqlDescription 63646
-#define Installer_SPdfDescription 63647
-#define Installer_SAngularDescription 63648
-#define Installer_SAspNetDescription 63649
-#define Installer_SBinaryDescription 63650
-#define Installer_SBuildAutomationDescription 63651
-#define Installer_SBlazorDescription 63652
-#define Installer_SBsonDescription 63653
-#define Installer_SCBuilderDescription 63654
-#define Installer_SDelphiDescription 63655
-#define Installer_SDitaDescription 63656
-#define Installer_SDotNetDescription 63657
-#define Installer_SExcelDescription 63658
-#define Installer_SFirebirdDescription 63659
-#define Installer_SFlutterDescription 63660
-#define Installer_SGlossaryDescription 63661
-#define Installer_SGoDescription 63662
-#define Installer_SHelpAndManualDescription 63663
-#define NtSpellChecker_SCouldNotOpenSpellEngine 63664
-#define NtSpellChecker_SSpellEngineIsWorkingProperly 63665
-#define NtSpellChecker_SLocal 63666
-#define NtSpellChecker_SRemote 63667
-#define NtConsts_SFileDoesNotExist 63668
-#define NtConsts_SDllDoesNotExist 63669
-#define NtConsts_SDllDoesNotExist2 63670
-#define NtConsts_SDllHasNoFunction 63671
-#define NtConsts_SItemsFilter 63672
-#define NtConsts_SSelectActivationFile 63673
-#define NtConsts_SActivationFiles 63674
-#define NtConsts_SInvalidActivationFile 63675
-#define HunSpellEngine_SOpenOffice 63676
-#define StandardLicense_SNoFeatureLicense 63677
-#define Installer_SAccessDescription 63678
-#define Installer_SAndroidDescription 63679
-#define NtFormatItems_SReactSample 63680
-#define NtFormatItems_SReactHtmlSample 63681
-#define NtFormatItems_SSvelte 63682
-#define NtFormatItems_SSvelteSample 63683
-#define NtFormatItems_SSvelteHtmlSample 63684
-#define NtFormatItems_SObjectiveC 63685
-#define NtFormatItems_SObjectiveCSample 63686
-#define NtFormatItems_SObjectiveCHtmlSample 63687
-#define NtFormatItems_SCpp 63688
-#define NtFormatItems_SCppSample 63689
-#define NtFormatItems_SCppHtmlSample 63690
-#define NtFormatItems_SJava 63691
-#define NtFormatItems_SJavaSample 63692
-#define NtFormatItems_SJavaHtmlSample 63693
-#define NtFormatItems_SJavaSample2 63694
-#define NtFormatItems_SJavaHtmlSample2 63695
-#define NtFormatItems_SWix 63696
-#define NtFormatItems_SWixSample 63697
-#define NtFormatItems_SWixHtmlSample 63698
-#define NtFormatItems_SDelphi 63699
-#define NtFormatItems_SDelphiSample 63700
-#define NtFormatItems_SDelphiHtmlSample 63701
-#define NtFormatItems_SNet 63702
-#define NtFormatItems_SNetSample 63703
-#define NtFormatItems_SNetHtmlSample 63704
-#define NtFormatItems_SMagento 63705
-#define NtFormatItems_SMagentoSample 63706
-#define NtFormatItems_SMagentoHtmlSample 63707
-#define NtFormatItems_SRails 63708
-#define NtFormatItems_SRailsSample 63709
-#define NtFormatItems_SRailsHtmlSample 63710
-#define NtFormatItems_SReact 63711
-#define NtPattern_SFemale 63712
-#define NtPattern_SNeutral 63713
-#define NtFormatItems_SSoluling 63714
-#define NtFormatItems_SSolulingSample 63715
-#define NtFormatItems_SSolulingHtmlSample 63716
-#define NtFormatItems_SAngular 63717
-#define NtFormatItems_SAngularSample 63718
-#define NtFormatItems_SAngularHtmlSample 63719
-#define NtFormatItems_SPython 63720
-#define NtFormatItems_SPythonSample 63721
-#define NtFormatItems_SPythonHtmlSample 63722
-#define NtFormatItems_SPythonSample2 63723
-#define NtFormatItems_SPythonHtmlSample2 63724
-#define NtFormatItems_SQt 63725
-#define NtFormatItems_SQtSample 63726
-#define NtFormatItems_SQtHtmlSample 63727
-#define JclResources_RsEFunctionNotFound 63728
-#define Vcl_OleConst_sNoRunningObject 63729
-#define Dll_SLibraryDescription 63730
-#define Dll_SSpellCheckerDescription 63731
-#define Dll_SNetLibraryDescription 63732
-#define Dll_SUnavailable 63733
-#define Dll_SUnregistered 63734
-#define Dll_SInstalled 63735
-#define Dll_SRegisterManually 63736
-#define NtPattern_SZero 63737
-#define NtPattern_SOne 63738
-#define NtPattern_STwo 63739
-#define NtPattern_SFew 63740
-#define NtPattern_SMany 63741
-#define NtPattern_SPlural 63742
-#define NtPattern_SMale 63743
-#define JclResources_RsIntelCacheDescrE4 63744
-#define JclResources_RsIntelCacheDescrEA 63745
-#define JclResources_RsIntelCacheDescrEB 63746
-#define JclResources_RsIntelCacheDescrEC 63747
-#define JclResources_RsIntelCacheDescrF0 63748
-#define JclResources_RsIntelCacheDescrF1 63749
-#define JclResources_RsIntelCacheDescrFF 63750
-#define JclResources_RsOSVersionWin8 63751
-#define JclResources_RsOSVersionWinServer2012 63752
-#define JclResources_RsOSVersionWin81 63753
-#define JclResources_RsOSVersionWinServer2012R2 63754
-#define JclResources_RsCannotWriteRefStream 63755
-#define JclResources_RsHasNotTD32Info 63756
-#define JclResources_RsEUnexpectedEOSeq 63757
-#define JclResources_RsWin32Error 63758
-#define JclResources_RsELibraryNotFound 63759
-#define JclResources_RsIntelCacheDescrB3 63760
-#define JclResources_RsIntelCacheDescrB4 63761
-#define JclResources_RsIntelCacheDescrBA 63762
-#define JclResources_RsIntelCacheDescrC0 63763
-#define JclResources_RsIntelCacheDescrCA 63764
-#define JclResources_RsIntelCacheDescrD0 63765
-#define JclResources_RsIntelCacheDescrD1 63766
-#define JclResources_RsIntelCacheDescrD2 63767
-#define JclResources_RsIntelCacheDescrD6 63768
-#define JclResources_RsIntelCacheDescrD7 63769
-#define JclResources_RsIntelCacheDescrD8 63770
-#define JclResources_RsIntelCacheDescrDC 63771
-#define JclResources_RsIntelCacheDescrDD 63772
-#define JclResources_RsIntelCacheDescrDE 63773
-#define JclResources_RsIntelCacheDescrE2 63774
-#define JclResources_RsIntelCacheDescrE3 63775
-#define JclResources_RsIntelCacheDescr79 63776
-#define JclResources_RsIntelCacheDescr7A 63777
-#define JclResources_RsIntelCacheDescr7B 63778
-#define JclResources_RsIntelCacheDescr7C 63779
-#define JclResources_RsIntelCacheDescr7D 63780
-#define JclResources_RsIntelCacheDescr7F 63781
-#define JclResources_RsIntelCacheDescr80 63782
-#define JclResources_RsIntelCacheDescr82 63783
-#define JclResources_RsIntelCacheDescr83 63784
-#define JclResources_RsIntelCacheDescr84 63785
-#define JclResources_RsIntelCacheDescr85 63786
-#define JclResources_RsIntelCacheDescr86 63787
-#define JclResources_RsIntelCacheDescr87 63788
-#define JclResources_RsIntelCacheDescrB0 63789
-#define JclResources_RsIntelCacheDescrB1 63790
-#define JclResources_RsIntelCacheDescrB2 63791
-#define JclResources_RsIntelCacheDescr57 63792
-#define JclResources_RsIntelCacheDescr59 63793
-#define JclResources_RsIntelCacheDescr5A 63794
-#define JclResources_RsIntelCacheDescr5B 63795
-#define JclResources_RsIntelCacheDescr5C 63796
-#define JclResources_RsIntelCacheDescr5D 63797
-#define JclResources_RsIntelCacheDescr60 63798
-#define JclResources_RsIntelCacheDescr66 63799
-#define JclResources_RsIntelCacheDescr67 63800
-#define JclResources_RsIntelCacheDescr68 63801
-#define JclResources_RsIntelCacheDescr70 63802
-#define JclResources_RsIntelCacheDescr71 63803
-#define JclResources_RsIntelCacheDescr72 63804
-#define JclResources_RsIntelCacheDescr73 63805
-#define JclResources_RsIntelCacheDescr76 63806
-#define JclResources_RsIntelCacheDescr78 63807
-#define JclResources_RsIntelCacheDescr45 63808
-#define JclResources_RsIntelCacheDescr46 63809
-#define JclResources_RsIntelCacheDescr47 63810
-#define JclResources_RsIntelCacheDescr48 63811
-#define JclResources_RsIntelCacheDescr49 63812
-#define JclResources_RsIntelCacheDescr4A 63813
-#define JclResources_RsIntelCacheDescr4B 63814
-#define JclResources_RsIntelCacheDescr4C 63815
-#define JclResources_RsIntelCacheDescr4D 63816
-#define JclResources_RsIntelCacheDescr4E 63817
-#define JclResources_RsIntelCacheDescr4F 63818
-#define JclResources_RsIntelCacheDescr50 63819
-#define JclResources_RsIntelCacheDescr51 63820
-#define JclResources_RsIntelCacheDescr52 63821
-#define JclResources_RsIntelCacheDescr55 63822
-#define JclResources_RsIntelCacheDescr56 63823
-#define JclResources_RsIntelCacheDescr23 63824
-#define JclResources_RsIntelCacheDescr25 63825
-#define JclResources_RsIntelCacheDescr29 63826
-#define JclResources_RsIntelCacheDescr2C 63827
-#define JclResources_RsIntelCacheDescr30 63828
-#define JclResources_RsIntelCacheDescr39 63829
-#define JclResources_RsIntelCacheDescr3A 63830
-#define JclResources_RsIntelCacheDescr3B 63831
-#define JclResources_RsIntelCacheDescr3C 63832
-#define JclResources_RsIntelCacheDescr3D 63833
-#define JclResources_RsIntelCacheDescr3E 63834
-#define JclResources_RsIntelCacheDescr40 63835
-#define JclResources_RsIntelCacheDescr41 63836
-#define JclResources_RsIntelCacheDescr42 63837
-#define JclResources_RsIntelCacheDescr43 63838
-#define JclResources_RsIntelCacheDescr44 63839
-#define JclResources_RsIntelCacheDescr00 63840
-#define JclResources_RsIntelCacheDescr01 63841
-#define JclResources_RsIntelCacheDescr02 63842
-#define JclResources_RsIntelCacheDescr03 63843
-#define JclResources_RsIntelCacheDescr04 63844
-#define JclResources_RsIntelCacheDescr05 63845
-#define JclResources_RsIntelCacheDescr06 63846
-#define JclResources_RsIntelCacheDescr08 63847
-#define JclResources_RsIntelCacheDescr09 63848
-#define JclResources_RsIntelCacheDescr0A 63849
-#define JclResources_RsIntelCacheDescr0B 63850
-#define JclResources_RsIntelCacheDescr0C 63851
-#define JclResources_RsIntelCacheDescr0D 63852
-#define JclResources_RsIntelCacheDescr0E 63853
-#define JclResources_RsIntelCacheDescr21 63854
-#define JclResources_RsIntelCacheDescr22 63855
-#define JclResources_RsPePkgRunOnly 63856
-#define JclResources_RsPePkgIgnoreDupUnits 63857
-#define JclResources_RsPePkgV3Produced 63858
-#define JclResources_RsPePkgProducerUndefined 63859
-#define JclResources_RsPePkgBCB4Produced 63860
-#define JclResources_RsPePkgDelphi4Produced 63861
-#define JclResources_RsPePkgMain 63862
-#define JclResources_RsPePkgWeak 63863
-#define JclResources_RsPePkgOrgWeak 63864
-#define JclResources_RsPePkgImplicit 63865
-#define JclResources_RsUnableToOpenKeyRead 63866
-#define JclResources_RsUnableToAccessValue 63867
-#define JclResources_RsWrongDataType 63868
-#define JclResources_RsInconsistentPath 63869
-#define JclResources_RsSynchCreateEvent 63870
-#define JclResources_RsSynchOpenEvent 63871
-#define JclResources_RsPeSUBSYSTEM_POSIX_CUI 63872
-#define JclResources_RsPeSUBSYSTEM_RESERVED8 63873
-#define JclResources_RsPeDEBUG_UNKNOWN 63874
-#define JclResources_RsPeDEBUG_COFF 63875
-#define JclResources_RsPeDEBUG_CODEVIEW 63876
-#define JclResources_RsPeDEBUG_FPO 63877
-#define JclResources_RsPeDEBUG_MISC 63878
-#define JclResources_RsPeDEBUG_EXCEPTION 63879
-#define JclResources_RsPeDEBUG_FIXUP 63880
-#define JclResources_RsPeDEBUG_OMAP_TO_SRC 63881
-#define JclResources_RsPeDEBUG_OMAP_FROM_SRC 63882
-#define JclResources_RsPePkgExecutable 63883
-#define JclResources_RsPePkgPackage 63884
-#define JclResources_PsPePkgLibrary 63885
-#define JclResources_RsPePkgNeverBuild 63886
-#define JclResources_RsPePkgDesignOnly 63887
-#define JclResources_RsPeMACHINE_IA64 63888
-#define JclResources_RsPeMACHINE_MIPS16 63889
-#define JclResources_RsPeMACHINE_AMPHA64 63890
-#define JclResources_RsPeMACHINE_MIPSFPU 63891
-#define JclResources_RsPeMACHINE_MIPSFPU16 63892
-#define JclResources_RsPeMACHINE_TRICORE 63893
-#define JclResources_RsPeMACHINE_CEF 63894
-#define JclResources_RsPeMACHINE_EBC 63895
-#define JclResources_RsPeMACHINE_AMD64 63896
-#define JclResources_RsPeMACHINE_M32R 63897
-#define JclResources_RsPeMACHINE_CEE 63898
-#define JclResources_RsPeSUBSYSTEM_UNKNOWN 63899
-#define JclResources_RsPeSUBSYSTEM_NATIVE 63900
-#define JclResources_RsPeSUBSYSTEM_WINDOWS_GUI 63901
-#define JclResources_RsPeSUBSYSTEM_WINDOWS_CUI 63902
-#define JclResources_RsPeSUBSYSTEM_OS2_CUI 63903
-#define JclResources_RsPeMACHINE_I386 63904
-#define JclResources_RsPeMACHINE_R3000 63905
-#define JclResources_RsPeMACHINE_R4000 63906
-#define JclResources_RsPeMACHINE_R10000 63907
-#define JclResources_RsPeMACHINE_WCEMIPSV2 63908
-#define JclResources_RsPeMACHINE_ALPHA 63909
-#define JclResources_RsPeMACHINE_SH3 63910
-#define JclResources_RsPeMACHINE_SH3DSP 63911
-#define JclResources_RsPeMACHINE_SH3E 63912
-#define JclResources_RsPeMACHINE_SH4 63913
-#define JclResources_RsPeMACHINE_SH5 63914
-#define JclResources_RsPeMACHINE_ARM 63915
-#define JclResources_RsPeMACHINE_THUMB 63916
-#define JclResources_RsPeMACHINE_AM33 63917
-#define JclResources_RsPeMACHINE_POWERPC 63918
-#define JclResources_RsPeMACHINE_POWERPCFP 63919
-#define JclResources_RsPeNumberOfRvaAndSizes 63920
-#define JclResources_RsPeVersion 63921
-#define JclResources_RsPeGlobalFlagsClear 63922
-#define JclResources_RsPeGlobalFlagsSet 63923
-#define JclResources_RsPeCriticalSectionDefaultTimeout 63924
-#define JclResources_RsPeDeCommitFreeBlockThreshold 63925
-#define JclResources_RsPeDeCommitTotalFreeThreshold 63926
-#define JclResources_RsPeLockPrefixTable 63927
-#define JclResources_RsPeMaximumAllocationSize 63928
-#define JclResources_RsPeVirtualMemoryThreshold 63929
-#define JclResources_RsPeProcessHeapFlags 63930
-#define JclResources_RsPeProcessAffinityMask 63931
-#define JclResources_RsPeCSDVersion 63932
-#define JclResources_RsPeReserved 63933
-#define JclResources_RsPeEditList 63934
-#define JclResources_RsPeMACHINE_UNKNOWN 63935
-#define JclResources_RsPeSectionAlignment 63936
-#define JclResources_RsPeFileAlignment 63937
-#define JclResources_RsPeOperatingSystemVersion 63938
-#define JclResources_RsPeImageVersion 63939
-#define JclResources_RsPeSubsystemVersion 63940
-#define JclResources_RsPeWin32VersionValue 63941
-#define JclResources_RsPeSizeOfImage 63942
-#define JclResources_RsPeSizeOfHeaders 63943
-#define JclResources_RsPeCheckSum 63944
-#define JclResources_RsPeSubsystem 63945
-#define JclResources_RsPeDllCharacteristics 63946
-#define JclResources_RsPeSizeOfStackReserve 63947
-#define JclResources_RsPeSizeOfStackCommit 63948
-#define JclResources_RsPeSizeOfHeapReserve 63949
-#define JclResources_RsPeSizeOfHeapCommit 63950
-#define JclResources_RsPeLoaderFlags 63951
-#define JclResources_RsPeMachine 63952
-#define JclResources_RsPeNumberOfSections 63953
-#define JclResources_RsPeTimeDateStamp 63954
-#define JclResources_RsPePointerToSymbolTable 63955
-#define JclResources_RsPeNumberOfSymbols 63956
-#define JclResources_RsPeSizeOfOptionalHeader 63957
-#define JclResources_RsPeCharacteristics 63958
-#define JclResources_RsPeMagic 63959
-#define JclResources_RsPeLinkerVersion 63960
-#define JclResources_RsPeSizeOfCode 63961
-#define JclResources_RsPeSizeOfInitializedData 63962
-#define JclResources_RsPeSizeOfUninitializedData 63963
-#define JclResources_RsPeAddressOfEntryPoint 63964
-#define JclResources_RsPeBaseOfCode 63965
-#define JclResources_RsPeBaseOfData 63966
-#define JclResources_RsPeImageBase 63967
-#define JclResources_RsPeImg_01 63968
-#define JclResources_RsPeImg_02 63969
-#define JclResources_RsPeImg_03 63970
-#define JclResources_RsPeImg_04 63971
-#define JclResources_RsPeImg_05 63972
-#define JclResources_RsPeImg_06 63973
-#define JclResources_RsPeImg_07 63974
-#define JclResources_RsPeImg_08 63975
-#define JclResources_RsPeImg_09 63976
-#define JclResources_RsPeImg_10 63977
-#define JclResources_RsPeImg_11 63978
-#define JclResources_RsPeImg_12 63979
-#define JclResources_RsPeImg_13 63980
-#define JclResources_RsPeImg_14 63981
-#define JclResources_RsPeImg_Reserved 63982
-#define JclResources_RsPeSignature 63983
-#define JclResources_RsFileUtilsNoVersionInfo 63984
-#define JclResources_RsFileUtilsFileDoesNotExist 63985
-#define JclResources_RsFileUtilsLanguageIndex 63986
-#define JclResources_RsFileUtilsEmptyValue 63987
-#define JclResources_RsFileUtilsValueNotFound 63988
-#define JclResources_RsCreateFileMapping 63989
-#define JclResources_RsCreateFileMappingView 63990
-#define JclResources_RsFailedToObtainSize 63991
-#define JclResources_RsPeReadOnlyStream 63992
-#define JclResources_RsPeCantOpen 63993
-#define JclResources_RsPeNotPE 63994
-#define JclResources_RsPeUnknownTarget 63995
-#define JclResources_RsPeNotResDir 63996
-#define JclResources_RsPeNotAvailableForAttached 63997
-#define JclResources_RsPeSectionNotFound 63998
-#define JclResources_RsPeImg_00 63999
-#define License_SEvaluationLeft 64000
-#define License_SEvaluationExpired 64001
-#define License_SEdition 64002
-#define NtFileAssociation_SProjectDescription 64003
-#define NtFileAssociation_SExchangeDescription 64004
-#define NetTypes_SNet 64005
-#define NetTypes_SFramework 64006
-#define NetTypes_SStandard 64007
-#define NetTypes_SCompact 64008
-#define JclResources_RsEReplacementChar 64009
-#define JclResources_RsDateConversion 64010
-#define JclResources_RsUnknownFunctionAt 64011
-#define JclResources_RsEWindowsVersionNotSupported 64012
-#define JclResources_RsEWindowNotValid 64013
-#define JclResources_RsEProcessNotValid 64014
-#define JclResources_RsEModuleNotValid 64015
-#define License_SLocalTm 64016
-#define License_SCloud 64017
-#define License_SRemoteTermbase 64018
-#define License_SRemoteTm 64019
-#define License_SMake 64020
-#define License_SHiddenId 64021
-#define License_SVisualEditor 64022
-#define License_SErrorRegister 64023
-#define License_SNotFoundRegister 64024
-#define License_SInvalidNamesRegister 64025
-#define License_SInstallLimitReachedRegister 64026
-#define License_SSubscriptionExpiredRegister 64027
-#define License_SExtendLimitReachedRegister 64028
-#define License_SVersionBuildStr 64029
-#define License_SVersion 64030
-#define License_S32Bit 64031
-#define License_SLinux 64032
-#define License_SGui 64033
-#define License_SCreate 64034
-#define License_SScan 64035
-#define License_SBuild 64036
-#define License_SEnter 64037
-#define License_SNoneString 64038
-#define License_SExchange 64039
-#define License_SImport 64040
-#define License_SExport 64041
-#define License_SPseudo 64042
-#define License_SSpell 64043
-#define License_SValidation 64044
-#define License_SFileGlossary 64045
-#define License_SLocalTermbase 64046
-#define License_SMt 64047
-#define License_SCrossPlatform 64048
-#define License_SMobile 64049
-#define License_SBasicData 64050
-#define License_SAdvancedData 64051
-#define License_SBasicDocument 64052
-#define License_SAdvancedDocument 64053
-#define License_SLocalDatabase 64054
-#define License_SRemoteDatabase 64055
-#define License_SBrowser 64056
-#define License_SWeb 64057
-#define License_SWindows 64058
-#define License_SNet 64059
-#define License_SMicrosoft 64060
-#define License_SEmbarcadero 64061
-#define License_SJava 64062
-#define License_SApple 64063
-#define License_SOk 64064
-#define License_SError 64065
-#define License_SNoInternet 64066
-#define License_SInvalid 64067
-#define License_SInstallLimitReached 64068
-#define License_SSubscriptionExpired 64069
-#define License_SNeedsExtensionReason 64070
-#define License_SExtendLimitReached 64071
-#define License_SEvaluation 64072
-#define License_SBasicTranslatorEdition 64073
-#define License_SShortEdition 64074
-#define License_SDeveloper 64075
-#define License_STranslator 64076
-#define License_SBuildAutomation 64077
-#define License_SDesktop 64078
-#define License_SModernDesktop 64079
-#define uTPLb_I18n_ES_HugeCardinal_SubractOverflow 64080
-#define uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow 64081
-#define uTPLb_I18n_ES_HugeCardinal_StreamInOverflow 64082
-#define uTPLb_I18n_ES_EratosthenesSievSizeTooSmall 64083
-#define uTPLb_I18n_ES_InternalError_Suffix 64084
-#define uTPLb_I18n_ES_InvalidKey 64085
-#define uTPLb_I18n_ES_PlaintextFN_Empty 64086
-#define uTPLb_I18n_ES_CiphertextFN_Empty 64087
-#define uTPLb_I18n_ES_NoOpenSSLCompat 64088
-#define uTPLb_I18n_ES_OpenSSLCompat_RequiresIV 64089
-#define uTPLb_I18n_RSA_DisplayName 64090
-#define uTPLb_I18n_BlockCipher_DisplayName 64091
-#define uTPLb_I18n_Base64_DisplayName 64092
-#define uTPLb_I18n_CFB8bit_DisplayName 64093
-#define uTPLb_I18n_ECB_DisplayName 64094
-#define License_SNoPlatformLicense 64095
-#define uTPLb_I18n_ES_WrongModeEndEncryptMem 64096
-#define uTPLb_I18n_ES_Asym_CannotSetParam 64097
-#define uTPLb_I18n_ES_Asym_CannotSetCipher 64098
-#define uTPLb_I18n_ES_AsymNotInitByStr 64099
-#define uTPLb_I18n_ES_NotImplementedNot_Suffix 64100
-#define uTPLb_I18n_ES_LibsChainTooDeep 64101
-#define uTPLb_I18n_ES_CircularLibs 64102
-#define uTPLb_I18n_ES_HugeCardinal_CloneOverflow 64103
-#define uTPLb_I18n_ES_HugeCardinal_AddOverflow 64104
-#define uTPLb_I18n_ES_CannotAssignHuge_BecauseSourceTooBig 64105
-#define uTPLb_I18n_ES_HugeCardinal_IncrementOverflow 64106
-#define uTPLb_I18n_ES_HugeCardinal_DivideOverflow 64107
-#define uTPLb_I18n_ES_HugeCardinal_Power2 64108
-#define uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow 64109
-#define uTPLb_I18n_ES_HugeCardinal_ResizeOverflow 64110
-#define uTPLb_I18n_ES_HugeCardinal_PowerOverflow 64111
-#define PeUtils_SVersions 64112
-#define PeUtils_SVxds 64113
-#define NtSourceCode_STruncated 64114
-#define PeFile_SInvalidExeFile 64115
-#define PeFile_SOutOfMemory 64116
-#define uTPLb_I18n_ES_NoPassword 64117
-#define uTPLb_I18n_ES_AsymPassword 64118
-#define uTPLb_I18n_ES_HashFailed 64119
-#define uTPLb_I18n_ES_WrongModeReset 64120
-#define uTPLb_I18n_ES_WrongModeEncrypt 64121
-#define uTPLb_I18n_ES_EncryptNoAlg 64122
-#define uTPLb_I18n_ES_WrongModeDecrypt 64123
-#define uTPLb_I18n_ES_DecryptNoAlg 64124
-#define uTPLb_I18n_ES_WrongModeEncryptMem 64125
-#define uTPLb_I18n_ES_WrongModeDecryptMem 64126
-#define uTPLb_I18n_ES_WrongModeEndDecryptMem 64127
-#define PeUtils_SDlgDatas 64128
-#define PeUtils_SFonts 64129
-#define PeUtils_SFontDirs 64130
-#define PeUtils_SForms 64131
-#define PeUtils_SGroupCursors 64132
-#define PeUtils_SGroupIcons 64133
-#define PeUtils_SHtmls 64134
-#define PeUtils_SIcons 64135
-#define PeUtils_SManifests 64136
-#define PeUtils_SMenus 64137
-#define PeUtils_SMessageTables 64138
-#define PeUtils_SPlugPlays 64139
-#define PeUtils_SRcDatas 64140
-#define PeUtils_SRibbons 64141
-#define PeUtils_SStrings 64142
-#define PeUtils_SToolbars 64143
-#define LicenseTypes_SProfessionalEdition 64144
-#define LicenseTypes_SPersonalEdition 64145
-#define LicenseTypes_SBuildAutomation 64146
-#define LicenseTypes_SProfessionalTranslatorEdition 64147
-#define LicenseTypes_SBasicTransaltorEdition 64148
-#define LicenseTypes_SUnknown 64149
-#define LicenseTypes_SFreeTranslatorName 64150
-#define LicenseTypes_SFreeTranslatorDescription 64151
-#define NtCommon_SVersionStr 64152
-#define PeUtils_SAccelerators 64153
-#define PeUtils_SAniCursors 64154
-#define PeUtils_SAniIcons 64155
-#define PeUtils_SBitmaps 64156
-#define PeUtils_SCursors 64157
-#define PeUtils_SDialogs 64158
-#define PeUtils_SDlgIncludes 64159
-#define Data_DBConsts_SNestedDataSetClass 64160
-#define Data_DBConsts_STextFalse 64161
-#define Data_DBConsts_STextTrue 64162
-#define Data_DBConsts_SParameterNotFound 64163
-#define Data_DBConsts_SInvalidVersion 64164
-#define Data_DBConsts_SBadFieldType 64165
-#define Data_DBConsts_SProviderSQLNotSupported 64166
-#define Data_DBConsts_SProviderExecuteNotSupported 64167
-#define Data_DBConsts_SDataSetUnidirectional 64168
-#define Data_DBConsts_SUnassignedVar 64169
-#define Data_DBConsts_SRecordNotFound 64170
-#define Data_DBConsts_SBcdOverflow 64171
-#define Data_DBConsts_SInvalidBcdValue 64172
-#define Data_DBConsts_SCouldNotParseTimeStamp 64173
-#define Data_DBConsts_SInvalidSqlTimeStamp 64174
-#define LicenseTypes_SEnterpriseEdition 64175
-#define Data_DBConsts_SFieldOutOfRange 64176
-#define Data_DBConsts_SFieldRequired 64177
-#define Data_DBConsts_SDataSetMissing 64178
-#define Data_DBConsts_SInvalidCalcType 64179
-#define Data_DBConsts_SDuplicateIndexName 64180
-#define Data_DBConsts_SNoIndexForFields 64181
-#define Data_DBConsts_SIndexNotFound 64182
-#define Data_DBConsts_SDBDuplicateName 64183
-#define Data_DBConsts_SCircularDataLink 64184
-#define Data_DBConsts_SLookupInfoError 64185
-#define Data_DBConsts_SDataSourceChange 64186
-#define Data_DBConsts_SDataSetOpen 64187
-#define Data_DBConsts_SNotEditing 64188
-#define Data_DBConsts_SDataSetClosed 64189
-#define Data_DBConsts_SDataSetEmpty 64190
-#define Data_DBConsts_SDataSetReadOnly 64191
-#define Data_DBConsts_SInvalidFieldSize 64192
-#define Data_DBConsts_SInvalidFieldKind 64193
-#define Data_DBConsts_SUnknownFieldType 64194
-#define Data_DBConsts_SFieldNameMissing 64195
-#define Data_DBConsts_SDuplicateFieldName 64196
-#define Data_DBConsts_SFieldNotFound 64197
-#define Data_DBConsts_SFieldAccessError 64198
-#define Data_DBConsts_SFieldValueError 64199
-#define Data_DBConsts_SFieldRangeError 64200
-#define Data_DBConsts_SBcdFieldRangeError 64201
-#define Data_DBConsts_SInvalidIntegerValue 64202
-#define Data_DBConsts_SInvalidBoolValue 64203
-#define Data_DBConsts_SInvalidFloatValue 64204
-#define Data_DBConsts_SFieldTypeMismatch 64205
-#define Data_DBConsts_SFieldSizeMismatch 64206
-#define Data_DBConsts_SInvalidVarByteArray 64207
-#define Vcl_Imaging_GIFConsts_sProgressCopying 64208
-#define Vcl_Imaging_GIFConsts_sProgressOptimizing 64209
-#define NtIcon_rstInvalidIcon 64210
-#define NtIcon_rstInvalidCursor 64211
-#define NtIcon_rstInvalidBitmap 64212
-#define NtIcon_rstInvalidPixelFormat 64213
-#define NtUninstallFile_SDoesNotExists 64214
-#define NtUninstallFile_SCouldNotDeleteDir 64215
-#define NtUninstallFile_SCouldNotDeleteFile 64216
-#define NtUninstallFile_SChangeSinceInstallation 64217
-#define NtUninstallFile_SCanNotRemoveKey 64218
-#define NtUninstallFile_SCanNotRemoveValue 64219
-#define NtInstaller_SHelpAndManual 64220
-#define NtJson_SUnexpectedClosingBracket 64221
-#define NtJson_SNoFile 64222
-#define NtJson_SErrorParsingJsonData 64223
-#define Vcl_Imaging_GIFConsts_sBadPixelCoordinates 64224
-#define Vcl_Imaging_GIFConsts_sInvalidPixelFormat 64225
-#define Vcl_Imaging_GIFConsts_sBadDimension 64226
-#define Vcl_Imaging_GIFConsts_sNoDIB 64227
-#define Vcl_Imaging_GIFConsts_sInvalidStream 64228
-#define Vcl_Imaging_GIFConsts_sInvalidColor 64229
-#define Vcl_Imaging_GIFConsts_sInvalidBitSize 64230
-#define Vcl_Imaging_GIFConsts_sEmptyColorMap 64231
-#define Vcl_Imaging_GIFConsts_sEmptyImage 64232
-#define Vcl_Imaging_GIFConsts_sMultipleGCE 64233
-#define Vcl_Imaging_GIFConsts_sNoPalette 64234
-#define Vcl_Imaging_GIFConsts_sGIFImageFile 64235
-#define Vcl_Imaging_GIFConsts_sProgressLoading 64236
-#define Vcl_Imaging_GIFConsts_sProgressSaving 64237
-#define Vcl_Imaging_GIFConsts_sProgressConverting 64238
-#define Vcl_Imaging_GIFConsts_sProgressRendering 64239
-#define Vcl_Imaging_GIFConsts_sScreenBadColorSize 64240
-#define Vcl_Imaging_GIFConsts_sImageBadColorSize 64241
-#define Vcl_Imaging_GIFConsts_sUnknownExtension 64242
-#define Vcl_Imaging_GIFConsts_sBadExtensionLabel 64243
-#define Vcl_Imaging_GIFConsts_sOutOfMemDIB 64244
-#define Vcl_Imaging_GIFConsts_sDecodeTooFewBits 64245
-#define Vcl_Imaging_GIFConsts_sDecodeCircular 64246
-#define Vcl_Imaging_GIFConsts_sBadTrailer 64247
-#define Vcl_Imaging_GIFConsts_sBadExtensionInstance 64248
-#define Vcl_Imaging_GIFConsts_sBadBlockSize 64249
-#define Vcl_Imaging_GIFConsts_sBadBlock 64250
-#define Vcl_Imaging_GIFConsts_sUnsupportedClass 64251
-#define Vcl_Imaging_GIFConsts_sInvalidData 64252
-#define Vcl_Imaging_GIFConsts_sBadSize 64253
-#define Vcl_Imaging_GIFConsts_sScreenSizeExceeded 64254
-#define Vcl_Imaging_GIFConsts_sNoColorTable 64255
+#define MainFrm_SCodeCaption 63504
+#define MainFrm_SNoInternet 63505
+#define MainFrm_SCancel 63506
+#define MainFrm_SNext 63507
+#define MainFrm_SNo 63508
+#define MainFrm_SYes 63509
+#define MainFrm_SVersion 63510
+#define MainFrm_SDataDirectory 63511
+#define MainFrm_SUpdate 63512
+#define MainFrm_SModify 63513
+#define MainFrm_SNew 63514
+#define MainFrm_SDefaultLanguage 63515
+#define MainFrm_SNewerVersionExists 63516
+#define MainFrm_SThisSetupIsMostRecent 63517
+#define MainFrm_SCouldNotCheckVersion 63518
+#define MainFrm_SStart3 63520
+#define MainFrm_SDirectory 63521
+#define MainFrm_SUpdateRadio 63522
+#define MainFrm_SModifyRadio 63523
+#define MainFrm_SNewRadio 63524
+#define MainFrm_SUnknownParameter 63525
+#define MainFrm_SNoFirstAndLastName 63526
+#define MainFrm_SNotAdministrator 63527
+#define MainFrm_SWaiting 63528
+#define MainFrm_SSetupRunning 63529
+#define MainFrm_SNoWriteAccess 63530
+#define MainFrm_SNotEnoughDiskSpace 63531
+#define MainFrm_SRootDir 63532
+#define MainFrm_SEnterEvaluationExtensionReason 63533
+#define MainFrm_SReasonCaption 63534
+#define MainFrm_SEnterEvaluationExtensionCode 63535
+#define MainFrm_SSetupFailed 63536
+#define MainFrm_SApplicationRunning 63537
+#define MainFrm_STotalSelectedSize 63538
+#define MainFrm_SInstallingLibraryFiles 63539
+#define MainFrm_SInstallingBuildAutomationFiles 63540
+#define MainFrm_SInstallingApplicationFiles 63541
+#define MainFrm_SInstallingSpellCheckFiles 63542
+#define MainFrm_SInstallingI18NLibraryFiles 63543
+#define MainFrm_SInstallingFiles 63544
+#define MainFrm_SCouldNotRegisterInstallation 63545
+#define MainFrm_SCouldNotActivate 63546
+#define MainFrm_SPersonalFolder 63547
+#define MainFrm_SPublicFolder 63548
+#define MainFrm_SUnknownVersion 63549
+#define MainFrm_SStart1 63550
+#define MainFrm_SStart2 63551
+#define NtDialogFilter_SWaveFiles 63552
+#define NtDialogFilter_SWmaFiles 63553
+#define NtDialogFilter_SMp4Files 63554
+#define NtDialogFilter_SMp3Files 63555
+#define NtDialogFilter_SVideoFiles 63556
+#define NtDialogFilter_SMpegFiles 63557
+#define NtDialogFilter_SAviFiles 63558
+#define NtDialogFilter_SQuickTimeFiles 63559
+#define SelectFile_SCaption 63560
+#define VoikkoSpellEngine_SVoikko 63561
+#define MainFrm_SSetup 63562
+#define MainFrm_SSetupTypeCustomDescription 63563
+#define MainFrm_SSetupTypeAllDescription 63564
+#define MainFrm_SSetupTypeMinimalDescription 63565
+#define MainFrm_SSetupTypeBuildAutomationDescription 63566
+#define MainFrm_SCanNotInstall 63567
+#define Installer_SConfiguringSystem 63568
+#define Installer_SComponentFailed 63569
+#define NtDialogFilter_SAllFiles 63570
+#define NtDialogFilter_SAllSupportedFiles 63571
+#define NtDialogFilter_SDllFiles 63572
+#define NtDialogFilter_SExeFiles 63573
+#define NtDialogFilter_SImageFiles 63574
+#define NtDialogFilter_SJpegFiles 63575
+#define NtDialogFilter_SBitmapFiles 63576
+#define NtDialogFilter_SPngFiles 63577
+#define NtDialogFilter_SGifFiles 63578
+#define NtDialogFilter_SIconFiles 63579
+#define NtDialogFilter_SLanguageFiles 63580
+#define NtDialogFilter_SSisulizerLanguagesFiles 63581
+#define NtDialogFilter_STextFiles 63582
+#define NtDialogFilter_SAudioFiles 63583
+#define Installer_SWinUIDescription 63584
+#define Installer_SWixDescription 63585
+#define Installer_SWordDescription 63586
+#define Installer_SWpfDescription 63587
+#define Installer_SUniversalWindowsPlatformDescription 63588
+#define Installer_SXamarinDescription 63589
+#define Installer_SXliffDescription 63590
+#define Installer_SXmlDescription 63591
+#define Installer_SXslDescription 63592
+#define Installer_SYamlDescription 63593
+#define Installer_SSilverlightDescription 63594
+#define Installer_SWindowsPhoneDescription 63595
+#define Installer_SLocalization 63596
+#define Installer_SLocalizationDescription 63597
+#define Installer_SI18NAPI 63598
+#define Installer_SI18NAPIDescription 63599
+#define Installer_SSqlCeDescription 63600
+#define Installer_SSqliteDescription 63601
+#define Installer_SSqlServerDescription 63602
+#define Installer_SSrtDescription 63603
+#define Installer_SSvelteDescription 63604
+#define Installer_SSvgDescription 63605
+#define Installer_STextDescription 63606
+#define Installer_STmxDescription 63607
+#define Installer_STranslationMemoryDescription 63608
+#define Installer_STutorialDescription 63609
+#define Installer_STypeScriptDescription 63610
+#define Installer_SVisualCppDescription 63611
+#define Installer_SVisualStudioDescription 63612
+#define Installer_SVueDescription 63613
+#define Installer_SWebVTTDescription 63614
+#define Installer_SWindowsFormsDescription 63615
+#define Installer_SMauiDescription 63616
+#define Installer_SMarkdownDescription 63617
+#define Installer_SMySqlDescription 63618
+#define Installer_SPdfDescription 63619
+#define Installer_SPhpDescription 63620
+#define Installer_SPoDescription 63621
+#define Installer_SPostgreDescription 63622
+#define Installer_SPowerPointDescription 63623
+#define Installer_SPythonDescription 63624
+#define Installer_SOpenDocumentDescription 63625
+#define Installer_SQtDescription 63626
+#define Installer_SRailsDescription 63627
+#define Installer_SReactDescription 63628
+#define Installer_SRtfDescription 63629
+#define Installer_SSalesForceDescription 63630
+#define Installer_SScriptDescription 63631
+#define Installer_SFlutterDescription 63632
+#define Installer_SGlossaryDescription 63633
+#define Installer_SGoDescription 63634
+#define Installer_SHelpAndManualDescription 63635
+#define Installer_SHtmlDescription 63636
+#define Installer_SHtmlHelpDescription 63637
+#define Installer_Si18nextDescription 63638
+#define Installer_SIniDescription 63639
+#define Installer_SInterBaseDescription 63640
+#define Installer_SiOSDescription 63641
+#define Installer_SJavaDescription 63642
+#define Installer_SJavaScriptDescription 63643
+#define Installer_SJsonDescription 63644
+#define Installer_SJspDescription 63645
+#define Installer_SLazarusDescription 63646
+#define Installer_SLaTeXDescription 63647
+#define HunSpellEngine_SOpenOffice 63648
+#define StandardLicense_SNoFeatureLicense 63649
+#define Installer_SAccessDescription 63650
+#define Installer_SAndroidDescription 63651
+#define Installer_SAngularDescription 63652
+#define Installer_SAspNetDescription 63653
+#define Installer_SBinaryDescription 63654
+#define Installer_SBuildAutomationDescription 63655
+#define Installer_SBlazorDescription 63656
+#define Installer_SBsonDescription 63657
+#define Installer_SCBuilderDescription 63658
+#define Installer_SDelphiDescription 63659
+#define Installer_SDitaDescription 63660
+#define Installer_SDotNetDescription 63661
+#define Installer_SExcelDescription 63662
+#define Installer_SFirebirdDescription 63663
+#define NtFormatItems_SJavaSample 63664
+#define NtFormatItems_SJavaHtmlSample 63665
+#define NtFormatItems_SJavaSample2 63666
+#define NtFormatItems_SJavaHtmlSample2 63667
+#define NtSpellChecker_SCouldNotOpenSpellEngine 63668
+#define NtSpellChecker_SSpellEngineIsWorkingProperly 63669
+#define NtSpellChecker_SLocal 63670
+#define NtSpellChecker_SRemote 63671
+#define NtConsts_SFileDoesNotExist 63672
+#define NtConsts_SDllDoesNotExist2 63673
+#define NtConsts_SDllHasNoFunction 63674
+#define NtConsts_SItemsFilter 63675
+#define NtConsts_SSelectActivationFile 63676
+#define NtConsts_SActivationFiles 63677
+#define NtConsts_SInvalidActivationFile 63678
+#define HunSpellEngine_SCouldNotLoadDll 63679
+#define NtFormatItems_SRails 63680
+#define NtFormatItems_SRailsSample 63681
+#define NtFormatItems_SRailsHtmlSample 63682
+#define NtFormatItems_SReact 63683
+#define NtFormatItems_SReactSample 63684
+#define NtFormatItems_SReactHtmlSample 63685
+#define NtFormatItems_SSvelte 63686
+#define NtFormatItems_SSvelteSample 63687
+#define NtFormatItems_SSvelteHtmlSample 63688
+#define NtFormatItems_SObjectiveC 63689
+#define NtFormatItems_SObjectiveCSample 63690
+#define NtFormatItems_SObjectiveCHtmlSample 63691
+#define NtFormatItems_SCpp 63692
+#define NtFormatItems_SCppSample 63693
+#define NtFormatItems_SCppHtmlSample 63694
+#define NtFormatItems_SJava 63695
+#define NtFormatItems_SPythonHtmlSample2 63696
+#define NtFormatItems_SQt 63697
+#define NtFormatItems_SQtSample 63698
+#define NtFormatItems_SQtHtmlSample 63699
+#define NtFormatItems_SWix 63700
+#define NtFormatItems_SWixSample 63701
+#define NtFormatItems_SWixHtmlSample 63702
+#define NtFormatItems_SDelphi 63703
+#define NtFormatItems_SDelphiSample 63704
+#define NtFormatItems_SDelphiHtmlSample 63705
+#define NtFormatItems_SNet 63706
+#define NtFormatItems_SNetSample 63707
+#define NtFormatItems_SNetHtmlSample 63708
+#define NtFormatItems_SMagento 63709
+#define NtFormatItems_SMagentoSample 63710
+#define NtFormatItems_SMagentoHtmlSample 63711
+#define NtPattern_SFew 63712
+#define NtPattern_SMany 63713
+#define NtPattern_SPlural 63714
+#define NtPattern_SMale 63715
+#define NtPattern_SFemale 63716
+#define NtPattern_SNeutral 63717
+#define NtFormatItems_SSoluling 63718
+#define NtFormatItems_SSolulingSample 63719
+#define NtFormatItems_SSolulingHtmlSample 63720
+#define NtFormatItems_SAngular 63721
+#define NtFormatItems_SAngularSample 63722
+#define NtFormatItems_SAngularHtmlSample 63723
+#define NtFormatItems_SPython 63724
+#define NtFormatItems_SPythonSample 63725
+#define NtFormatItems_SPythonHtmlSample 63726
+#define NtFormatItems_SPythonSample2 63727
+#define JclResources_RsHasNotTD32Info 63728
+#define JclResources_RsEUnexpectedEOSeq 63729
+#define JclResources_RsWin32Error 63730
+#define JclResources_RsELibraryNotFound 63731
+#define JclResources_RsEFunctionNotFound 63732
+#define Vcl_OleConst_sNoRunningObject 63733
+#define Dll_SLibraryDescription 63734
+#define Dll_SSpellCheckerDescription 63735
+#define Dll_SNetLibraryDescription 63736
+#define Dll_SUnavailable 63737
+#define Dll_SUnregistered 63738
+#define Dll_SInstalled 63739
+#define Dll_SRegisterManually 63740
+#define NtPattern_SZero 63741
+#define NtPattern_SOne 63742
+#define NtPattern_STwo 63743
+#define JclResources_RsIntelCacheDescrDD 63744
+#define JclResources_RsIntelCacheDescrDE 63745
+#define JclResources_RsIntelCacheDescrE2 63746
+#define JclResources_RsIntelCacheDescrE3 63747
+#define JclResources_RsIntelCacheDescrE4 63748
+#define JclResources_RsIntelCacheDescrEA 63749
+#define JclResources_RsIntelCacheDescrEB 63750
+#define JclResources_RsIntelCacheDescrEC 63751
+#define JclResources_RsIntelCacheDescrF0 63752
+#define JclResources_RsIntelCacheDescrF1 63753
+#define JclResources_RsIntelCacheDescrFF 63754
+#define JclResources_RsOSVersionWin8 63755
+#define JclResources_RsOSVersionWinServer2012 63756
+#define JclResources_RsOSVersionWin81 63757
+#define JclResources_RsOSVersionWinServer2012R2 63758
+#define JclResources_RsCannotWriteRefStream 63759
+#define JclResources_RsIntelCacheDescr87 63760
+#define JclResources_RsIntelCacheDescrB0 63761
+#define JclResources_RsIntelCacheDescrB1 63762
+#define JclResources_RsIntelCacheDescrB2 63763
+#define JclResources_RsIntelCacheDescrB3 63764
+#define JclResources_RsIntelCacheDescrB4 63765
+#define JclResources_RsIntelCacheDescrBA 63766
+#define JclResources_RsIntelCacheDescrC0 63767
+#define JclResources_RsIntelCacheDescrCA 63768
+#define JclResources_RsIntelCacheDescrD0 63769
+#define JclResources_RsIntelCacheDescrD1 63770
+#define JclResources_RsIntelCacheDescrD2 63771
+#define JclResources_RsIntelCacheDescrD6 63772
+#define JclResources_RsIntelCacheDescrD7 63773
+#define JclResources_RsIntelCacheDescrD8 63774
+#define JclResources_RsIntelCacheDescrDC 63775
+#define JclResources_RsIntelCacheDescr72 63776
+#define JclResources_RsIntelCacheDescr73 63777
+#define JclResources_RsIntelCacheDescr76 63778
+#define JclResources_RsIntelCacheDescr78 63779
+#define JclResources_RsIntelCacheDescr79 63780
+#define JclResources_RsIntelCacheDescr7A 63781
+#define JclResources_RsIntelCacheDescr7B 63782
+#define JclResources_RsIntelCacheDescr7C 63783
+#define JclResources_RsIntelCacheDescr7D 63784
+#define JclResources_RsIntelCacheDescr7F 63785
+#define JclResources_RsIntelCacheDescr80 63786
+#define JclResources_RsIntelCacheDescr82 63787
+#define JclResources_RsIntelCacheDescr83 63788
+#define JclResources_RsIntelCacheDescr84 63789
+#define JclResources_RsIntelCacheDescr85 63790
+#define JclResources_RsIntelCacheDescr86 63791
+#define JclResources_RsIntelCacheDescr51 63792
+#define JclResources_RsIntelCacheDescr52 63793
+#define JclResources_RsIntelCacheDescr55 63794
+#define JclResources_RsIntelCacheDescr56 63795
+#define JclResources_RsIntelCacheDescr57 63796
+#define JclResources_RsIntelCacheDescr59 63797
+#define JclResources_RsIntelCacheDescr5A 63798
+#define JclResources_RsIntelCacheDescr5B 63799
+#define JclResources_RsIntelCacheDescr5C 63800
+#define JclResources_RsIntelCacheDescr5D 63801
+#define JclResources_RsIntelCacheDescr60 63802
+#define JclResources_RsIntelCacheDescr66 63803
+#define JclResources_RsIntelCacheDescr67 63804
+#define JclResources_RsIntelCacheDescr68 63805
+#define JclResources_RsIntelCacheDescr70 63806
+#define JclResources_RsIntelCacheDescr71 63807
+#define JclResources_RsIntelCacheDescr41 63808
+#define JclResources_RsIntelCacheDescr42 63809
+#define JclResources_RsIntelCacheDescr43 63810
+#define JclResources_RsIntelCacheDescr44 63811
+#define JclResources_RsIntelCacheDescr45 63812
+#define JclResources_RsIntelCacheDescr46 63813
+#define JclResources_RsIntelCacheDescr47 63814
+#define JclResources_RsIntelCacheDescr48 63815
+#define JclResources_RsIntelCacheDescr49 63816
+#define JclResources_RsIntelCacheDescr4A 63817
+#define JclResources_RsIntelCacheDescr4B 63818
+#define JclResources_RsIntelCacheDescr4C 63819
+#define JclResources_RsIntelCacheDescr4D 63820
+#define JclResources_RsIntelCacheDescr4E 63821
+#define JclResources_RsIntelCacheDescr4F 63822
+#define JclResources_RsIntelCacheDescr50 63823
+#define JclResources_RsIntelCacheDescr0D 63824
+#define JclResources_RsIntelCacheDescr0E 63825
+#define JclResources_RsIntelCacheDescr21 63826
+#define JclResources_RsIntelCacheDescr22 63827
+#define JclResources_RsIntelCacheDescr23 63828
+#define JclResources_RsIntelCacheDescr25 63829
+#define JclResources_RsIntelCacheDescr29 63830
+#define JclResources_RsIntelCacheDescr2C 63831
+#define JclResources_RsIntelCacheDescr30 63832
+#define JclResources_RsIntelCacheDescr39 63833
+#define JclResources_RsIntelCacheDescr3A 63834
+#define JclResources_RsIntelCacheDescr3B 63835
+#define JclResources_RsIntelCacheDescr3C 63836
+#define JclResources_RsIntelCacheDescr3D 63837
+#define JclResources_RsIntelCacheDescr3E 63838
+#define JclResources_RsIntelCacheDescr40 63839
+#define JclResources_RsWrongDataType 63840
+#define JclResources_RsInconsistentPath 63841
+#define JclResources_RsSynchCreateEvent 63842
+#define JclResources_RsSynchOpenEvent 63843
+#define JclResources_RsIntelCacheDescr00 63844
+#define JclResources_RsIntelCacheDescr01 63845
+#define JclResources_RsIntelCacheDescr02 63846
+#define JclResources_RsIntelCacheDescr03 63847
+#define JclResources_RsIntelCacheDescr04 63848
+#define JclResources_RsIntelCacheDescr05 63849
+#define JclResources_RsIntelCacheDescr06 63850
+#define JclResources_RsIntelCacheDescr08 63851
+#define JclResources_RsIntelCacheDescr09 63852
+#define JclResources_RsIntelCacheDescr0A 63853
+#define JclResources_RsIntelCacheDescr0B 63854
+#define JclResources_RsIntelCacheDescr0C 63855
+#define JclResources_RsPePkgPackage 63856
+#define JclResources_PsPePkgLibrary 63857
+#define JclResources_RsPePkgNeverBuild 63858
+#define JclResources_RsPePkgDesignOnly 63859
+#define JclResources_RsPePkgRunOnly 63860
+#define JclResources_RsPePkgIgnoreDupUnits 63861
+#define JclResources_RsPePkgV3Produced 63862
+#define JclResources_RsPePkgProducerUndefined 63863
+#define JclResources_RsPePkgBCB4Produced 63864
+#define JclResources_RsPePkgDelphi4Produced 63865
+#define JclResources_RsPePkgMain 63866
+#define JclResources_RsPePkgWeak 63867
+#define JclResources_RsPePkgOrgWeak 63868
+#define JclResources_RsPePkgImplicit 63869
+#define JclResources_RsUnableToOpenKeyRead 63870
+#define JclResources_RsUnableToAccessValue 63871
+#define JclResources_RsPeSUBSYSTEM_NATIVE 63872
+#define JclResources_RsPeSUBSYSTEM_WINDOWS_GUI 63873
+#define JclResources_RsPeSUBSYSTEM_WINDOWS_CUI 63874
+#define JclResources_RsPeSUBSYSTEM_OS2_CUI 63875
+#define JclResources_RsPeSUBSYSTEM_POSIX_CUI 63876
+#define JclResources_RsPeSUBSYSTEM_RESERVED8 63877
+#define JclResources_RsPeDEBUG_UNKNOWN 63878
+#define JclResources_RsPeDEBUG_COFF 63879
+#define JclResources_RsPeDEBUG_CODEVIEW 63880
+#define JclResources_RsPeDEBUG_FPO 63881
+#define JclResources_RsPeDEBUG_MISC 63882
+#define JclResources_RsPeDEBUG_EXCEPTION 63883
+#define JclResources_RsPeDEBUG_FIXUP 63884
+#define JclResources_RsPeDEBUG_OMAP_TO_SRC 63885
+#define JclResources_RsPeDEBUG_OMAP_FROM_SRC 63886
+#define JclResources_RsPePkgExecutable 63887
+#define JclResources_RsPeMACHINE_THUMB 63888
+#define JclResources_RsPeMACHINE_AM33 63889
+#define JclResources_RsPeMACHINE_POWERPC 63890
+#define JclResources_RsPeMACHINE_POWERPCFP 63891
+#define JclResources_RsPeMACHINE_IA64 63892
+#define JclResources_RsPeMACHINE_MIPS16 63893
+#define JclResources_RsPeMACHINE_AMPHA64 63894
+#define JclResources_RsPeMACHINE_MIPSFPU 63895
+#define JclResources_RsPeMACHINE_MIPSFPU16 63896
+#define JclResources_RsPeMACHINE_TRICORE 63897
+#define JclResources_RsPeMACHINE_CEF 63898
+#define JclResources_RsPeMACHINE_EBC 63899
+#define JclResources_RsPeMACHINE_AMD64 63900
+#define JclResources_RsPeMACHINE_M32R 63901
+#define JclResources_RsPeMACHINE_CEE 63902
+#define JclResources_RsPeSUBSYSTEM_UNKNOWN 63903
+#define JclResources_RsPeCSDVersion 63904
+#define JclResources_RsPeReserved 63905
+#define JclResources_RsPeEditList 63906
+#define JclResources_RsPeMACHINE_UNKNOWN 63907
+#define JclResources_RsPeMACHINE_I386 63908
+#define JclResources_RsPeMACHINE_R3000 63909
+#define JclResources_RsPeMACHINE_R4000 63910
+#define JclResources_RsPeMACHINE_R10000 63911
+#define JclResources_RsPeMACHINE_WCEMIPSV2 63912
+#define JclResources_RsPeMACHINE_ALPHA 63913
+#define JclResources_RsPeMACHINE_SH3 63914
+#define JclResources_RsPeMACHINE_SH3DSP 63915
+#define JclResources_RsPeMACHINE_SH3E 63916
+#define JclResources_RsPeMACHINE_SH4 63917
+#define JclResources_RsPeMACHINE_SH5 63918
+#define JclResources_RsPeMACHINE_ARM 63919
+#define JclResources_RsPeSizeOfStackCommit 63920
+#define JclResources_RsPeSizeOfHeapReserve 63921
+#define JclResources_RsPeSizeOfHeapCommit 63922
+#define JclResources_RsPeLoaderFlags 63923
+#define JclResources_RsPeNumberOfRvaAndSizes 63924
+#define JclResources_RsPeVersion 63925
+#define JclResources_RsPeGlobalFlagsClear 63926
+#define JclResources_RsPeGlobalFlagsSet 63927
+#define JclResources_RsPeCriticalSectionDefaultTimeout 63928
+#define JclResources_RsPeDeCommitFreeBlockThreshold 63929
+#define JclResources_RsPeDeCommitTotalFreeThreshold 63930
+#define JclResources_RsPeLockPrefixTable 63931
+#define JclResources_RsPeMaximumAllocationSize 63932
+#define JclResources_RsPeVirtualMemoryThreshold 63933
+#define JclResources_RsPeProcessHeapFlags 63934
+#define JclResources_RsPeProcessAffinityMask 63935
+#define JclResources_RsPeAddressOfEntryPoint 63936
+#define JclResources_RsPeBaseOfCode 63937
+#define JclResources_RsPeBaseOfData 63938
+#define JclResources_RsPeImageBase 63939
+#define JclResources_RsPeSectionAlignment 63940
+#define JclResources_RsPeFileAlignment 63941
+#define JclResources_RsPeOperatingSystemVersion 63942
+#define JclResources_RsPeImageVersion 63943
+#define JclResources_RsPeSubsystemVersion 63944
+#define JclResources_RsPeWin32VersionValue 63945
+#define JclResources_RsPeSizeOfImage 63946
+#define JclResources_RsPeSizeOfHeaders 63947
+#define JclResources_RsPeCheckSum 63948
+#define JclResources_RsPeSubsystem 63949
+#define JclResources_RsPeDllCharacteristics 63950
+#define JclResources_RsPeSizeOfStackReserve 63951
+#define JclResources_RsPeImg_13 63952
+#define JclResources_RsPeImg_14 63953
+#define JclResources_RsPeImg_Reserved 63954
+#define JclResources_RsPeSignature 63955
+#define JclResources_RsPeMachine 63956
+#define JclResources_RsPeNumberOfSections 63957
+#define JclResources_RsPeTimeDateStamp 63958
+#define JclResources_RsPePointerToSymbolTable 63959
+#define JclResources_RsPeNumberOfSymbols 63960
+#define JclResources_RsPeSizeOfOptionalHeader 63961
+#define JclResources_RsPeCharacteristics 63962
+#define JclResources_RsPeMagic 63963
+#define JclResources_RsPeLinkerVersion 63964
+#define JclResources_RsPeSizeOfCode 63965
+#define JclResources_RsPeSizeOfInitializedData 63966
+#define JclResources_RsPeSizeOfUninitializedData 63967
+#define JclResources_RsPeNotResDir 63968
+#define JclResources_RsPeNotAvailableForAttached 63969
+#define JclResources_RsPeSectionNotFound 63970
+#define JclResources_RsPeImg_00 63971
+#define JclResources_RsPeImg_01 63972
+#define JclResources_RsPeImg_02 63973
+#define JclResources_RsPeImg_03 63974
+#define JclResources_RsPeImg_04 63975
+#define JclResources_RsPeImg_05 63976
+#define JclResources_RsPeImg_06 63977
+#define JclResources_RsPeImg_07 63978
+#define JclResources_RsPeImg_08 63979
+#define JclResources_RsPeImg_09 63980
+#define JclResources_RsPeImg_10 63981
+#define JclResources_RsPeImg_11 63982
+#define JclResources_RsPeImg_12 63983
+#define JclResources_RsEWindowsVersionNotSupported 63984
+#define JclResources_RsEWindowNotValid 63985
+#define JclResources_RsEProcessNotValid 63986
+#define JclResources_RsEModuleNotValid 63987
+#define JclResources_RsFileUtilsNoVersionInfo 63988
+#define JclResources_RsFileUtilsFileDoesNotExist 63989
+#define JclResources_RsFileUtilsLanguageIndex 63990
+#define JclResources_RsFileUtilsEmptyValue 63991
+#define JclResources_RsFileUtilsValueNotFound 63992
+#define JclResources_RsCreateFileMapping 63993
+#define JclResources_RsCreateFileMappingView 63994
+#define JclResources_RsFailedToObtainSize 63995
+#define JclResources_RsPeReadOnlyStream 63996
+#define JclResources_RsPeCantOpen 63997
+#define JclResources_RsPeNotPE 63998
+#define JclResources_RsPeUnknownTarget 63999
+#define License_SExtendLimitReachedRegister 64000
+#define License_SVersionBuildStr 64001
+#define License_SVersion 64002
+#define License_S32Bit 64003
+#define License_SEvaluationLeft 64004
+#define License_SEvaluationExpired 64005
+#define License_SEdition 64006
+#define NtFileAssociation_SProjectDescription 64007
+#define NtFileAssociation_SExchangeDescription 64008
+#define NetTypes_SNet 64009
+#define NetTypes_SFramework 64010
+#define NetTypes_SStandard 64011
+#define NetTypes_SCompact 64012
+#define JclResources_RsEReplacementChar 64013
+#define JclResources_RsDateConversion 64014
+#define JclResources_RsUnknownFunctionAt 64015
+#define License_SValidation 64016
+#define License_SFileGlossary 64017
+#define License_SLocalTermbase 64018
+#define License_SMt 64019
+#define License_SLocalTm 64020
+#define License_SCloud 64021
+#define License_SRemoteTermbase 64022
+#define License_SRemoteTm 64023
+#define License_SMake 64024
+#define License_SHiddenId 64025
+#define License_SVisualEditor 64026
+#define License_SErrorRegister 64027
+#define License_SNotFoundRegister 64028
+#define License_SInvalidNamesRegister 64029
+#define License_SInstallLimitReachedRegister 64030
+#define License_SSubscriptionExpiredRegister 64031
+#define License_SMicrosoft 64032
+#define License_SEmbarcadero 64033
+#define License_SJava 64034
+#define License_SApple 64035
+#define License_SLinux 64036
+#define License_SGui 64037
+#define License_SCreate 64038
+#define License_SScan 64039
+#define License_SBuild 64040
+#define License_SEnter 64041
+#define License_SNoneString 64042
+#define License_SExchange 64043
+#define License_SImport 64044
+#define License_SExport 64045
+#define License_SPseudo 64046
+#define License_SSpell 64047
+#define License_STranslator 64048
+#define License_SBuildAutomation 64049
+#define License_SDesktop 64050
+#define License_SModernDesktop 64051
+#define License_SCrossPlatform 64052
+#define License_SMobile 64053
+#define License_SBasicData 64054
+#define License_SAdvancedData 64055
+#define License_SBasicDocument 64056
+#define License_SAdvancedDocument 64057
+#define License_SLocalDatabase 64058
+#define License_SRemoteDatabase 64059
+#define License_SBrowser 64060
+#define License_SWeb 64061
+#define License_SWindows 64062
+#define License_SNet 64063
+#define uTPLb_I18n_Base64_DisplayName 64064
+#define uTPLb_I18n_CFB8bit_DisplayName 64065
+#define uTPLb_I18n_ECB_DisplayName 64066
+#define License_SNoPlatformLicense 64067
+#define License_SOk 64068
+#define License_SError 64069
+#define License_SNoInternet 64070
+#define License_SInvalid 64071
+#define License_SInstallLimitReached 64072
+#define License_SSubscriptionExpired 64073
+#define License_SNeedsExtensionReason 64074
+#define License_SExtendLimitReached 64075
+#define License_SEvaluation 64076
+#define License_SBasicTranslatorEdition 64077
+#define License_SShortEdition 64078
+#define License_SDeveloper 64079
+#define uTPLb_I18n_ES_HugeCardinal_Power2 64080
+#define uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow 64081
+#define uTPLb_I18n_ES_HugeCardinal_ResizeOverflow 64082
+#define uTPLb_I18n_ES_HugeCardinal_PowerOverflow 64083
+#define uTPLb_I18n_ES_HugeCardinal_SubractOverflow 64084
+#define uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow 64085
+#define uTPLb_I18n_ES_HugeCardinal_StreamInOverflow 64086
+#define uTPLb_I18n_ES_EratosthenesSievSizeTooSmall 64087
+#define uTPLb_I18n_ES_InternalError_Suffix 64088
+#define uTPLb_I18n_ES_InvalidKey 64089
+#define uTPLb_I18n_ES_PlaintextFN_Empty 64090
+#define uTPLb_I18n_ES_CiphertextFN_Empty 64091
+#define uTPLb_I18n_ES_NoOpenSSLCompat 64092
+#define uTPLb_I18n_ES_OpenSSLCompat_RequiresIV 64093
+#define uTPLb_I18n_RSA_DisplayName 64094
+#define uTPLb_I18n_BlockCipher_DisplayName 64095
+#define uTPLb_I18n_ES_DecryptNoAlg 64096
+#define uTPLb_I18n_ES_WrongModeEncryptMem 64097
+#define uTPLb_I18n_ES_WrongModeDecryptMem 64098
+#define uTPLb_I18n_ES_WrongModeEndDecryptMem 64099
+#define uTPLb_I18n_ES_WrongModeEndEncryptMem 64100
+#define uTPLb_I18n_ES_Asym_CannotSetParam 64101
+#define uTPLb_I18n_ES_Asym_CannotSetCipher 64102
+#define uTPLb_I18n_ES_AsymNotInitByStr 64103
+#define uTPLb_I18n_ES_NotImplementedNot_Suffix 64104
+#define uTPLb_I18n_ES_LibsChainTooDeep 64105
+#define uTPLb_I18n_ES_CircularLibs 64106
+#define uTPLb_I18n_ES_HugeCardinal_CloneOverflow 64107
+#define uTPLb_I18n_ES_HugeCardinal_AddOverflow 64108
+#define uTPLb_I18n_ES_CannotAssignHuge_BecauseSourceTooBig 64109
+#define uTPLb_I18n_ES_HugeCardinal_IncrementOverflow 64110
+#define uTPLb_I18n_ES_HugeCardinal_DivideOverflow 64111
+#define PeUtils_SRcDatas 64112
+#define PeUtils_SRibbons 64113
+#define PeUtils_SStrings 64114
+#define PeUtils_SToolbars 64115
+#define PeUtils_SVersions 64116
+#define PeUtils_SVxds 64117
+#define NtSourceCode_STruncated 64118
+#define PeFile_SInvalidExeFile 64119
+#define PeFile_SOutOfMemory 64120
+#define uTPLb_I18n_ES_NoPassword 64121
+#define uTPLb_I18n_ES_AsymPassword 64122
+#define uTPLb_I18n_ES_HashFailed 64123
+#define uTPLb_I18n_ES_WrongModeReset 64124
+#define uTPLb_I18n_ES_WrongModeEncrypt 64125
+#define uTPLb_I18n_ES_EncryptNoAlg 64126
+#define uTPLb_I18n_ES_WrongModeDecrypt 64127
+#define PeUtils_SBitmaps 64128
+#define PeUtils_SCursors 64129
+#define PeUtils_SDialogs 64130
+#define PeUtils_SDlgIncludes 64131
+#define PeUtils_SDlgDatas 64132
+#define PeUtils_SFonts 64133
+#define PeUtils_SFontDirs 64134
+#define PeUtils_SForms 64135
+#define PeUtils_SGroupCursors 64136
+#define PeUtils_SGroupIcons 64137
+#define PeUtils_SHtmls 64138
+#define PeUtils_SIcons 64139
+#define PeUtils_SManifests 64140
+#define PeUtils_SMenus 64141
+#define PeUtils_SMessageTables 64142
+#define PeUtils_SPlugPlays 64143
+#define Data_DBConsts_SInvalidBcdValue 64144
+#define Data_DBConsts_SCouldNotParseTimeStamp 64145
+#define Data_DBConsts_SInvalidSqlTimeStamp 64146
+#define LicenseTypes_SEnterpriseEdition 64147
+#define LicenseTypes_SProfessionalEdition 64148
+#define LicenseTypes_SPersonalEdition 64149
+#define LicenseTypes_SBuildAutomation 64150
+#define LicenseTypes_SProfessionalTranslatorEdition 64151
+#define LicenseTypes_SBasicTransaltorEdition 64152
+#define LicenseTypes_SUnknown 64153
+#define LicenseTypes_SFreeTranslatorName 64154
+#define LicenseTypes_SFreeTranslatorDescription 64155
+#define NtCommon_SVersionStr 64156
+#define PeUtils_SAccelerators 64157
+#define PeUtils_SAniCursors 64158
+#define PeUtils_SAniIcons 64159
+#define Data_DBConsts_SNotEditing 64160
+#define Data_DBConsts_SDataSetClosed 64161
+#define Data_DBConsts_SDataSetEmpty 64162
+#define Data_DBConsts_SDataSetReadOnly 64163
+#define Data_DBConsts_SNestedDataSetClass 64164
+#define Data_DBConsts_STextFalse 64165
+#define Data_DBConsts_STextTrue 64166
+#define Data_DBConsts_SParameterNotFound 64167
+#define Data_DBConsts_SInvalidVersion 64168
+#define Data_DBConsts_SBadFieldType 64169
+#define Data_DBConsts_SProviderSQLNotSupported 64170
+#define Data_DBConsts_SProviderExecuteNotSupported 64171
+#define Data_DBConsts_SDataSetUnidirectional 64172
+#define Data_DBConsts_SUnassignedVar 64173
+#define Data_DBConsts_SRecordNotFound 64174
+#define Data_DBConsts_SBcdOverflow 64175
+#define Data_DBConsts_SInvalidFloatValue 64176
+#define Data_DBConsts_SFieldTypeMismatch 64177
+#define Data_DBConsts_SFieldSizeMismatch 64178
+#define Data_DBConsts_SInvalidVarByteArray 64179
+#define Data_DBConsts_SFieldOutOfRange 64180
+#define Data_DBConsts_SFieldRequired 64181
+#define Data_DBConsts_SDataSetMissing 64182
+#define Data_DBConsts_SInvalidCalcType 64183
+#define Data_DBConsts_SDuplicateIndexName 64184
+#define Data_DBConsts_SNoIndexForFields 64185
+#define Data_DBConsts_SIndexNotFound 64186
+#define Data_DBConsts_SDBDuplicateName 64187
+#define Data_DBConsts_SCircularDataLink 64188
+#define Data_DBConsts_SLookupInfoError 64189
+#define Data_DBConsts_SDataSourceChange 64190
+#define Data_DBConsts_SDataSetOpen 64191
+#define NtInstaller_SChangesNotRemoved 64192
+#define NtJson_SUnexpectedClosingBracket 64193
+#define NtJson_SNoFile 64194
+#define NtJson_SErrorParsingJsonData 64195
+#define Data_DBConsts_SInvalidFieldSize 64196
+#define Data_DBConsts_SInvalidFieldKind 64197
+#define Data_DBConsts_SUnknownFieldType 64198
+#define Data_DBConsts_SFieldNameMissing 64199
+#define Data_DBConsts_SDuplicateFieldName 64200
+#define Data_DBConsts_SFieldNotFound 64201
+#define Data_DBConsts_SFieldAccessError 64202
+#define Data_DBConsts_SFieldValueError 64203
+#define Data_DBConsts_SFieldRangeError 64204
+#define Data_DBConsts_SBcdFieldRangeError 64205
+#define Data_DBConsts_SInvalidIntegerValue 64206
+#define Data_DBConsts_SInvalidBoolValue 64207
+#define Vcl_Imaging_GIFConsts_sProgressRendering 64208
+#define Vcl_Imaging_GIFConsts_sProgressCopying 64209
+#define Vcl_Imaging_GIFConsts_sProgressOptimizing 64210
+#define NtIcon_rstInvalidIcon 64211
+#define NtIcon_rstInvalidCursor 64212
+#define NtIcon_rstInvalidBitmap 64213
+#define NtIcon_rstInvalidPixelFormat 64214
+#define NtUninstallFile_SDoesNotExists 64215
+#define NtUninstallFile_SCouldNotDeleteDir 64216
+#define NtUninstallFile_SCouldNotDeleteFile 64217
+#define NtUninstallFile_SChangeSinceInstallation 64218
+#define NtUninstallFile_SCanNotRemoveKey 64219
+#define NtUninstallFile_SCanNotRemoveValue 64220
+#define NtInstaller_SHelpAndManual 64221
+#define NtInstaller_SCouldNotCreateDir 64222
+#define NtInstaller_SChangesRemoved 64223
+#define Vcl_Imaging_GIFConsts_sNoColorTable 64224
+#define Vcl_Imaging_GIFConsts_sBadPixelCoordinates 64225
+#define Vcl_Imaging_GIFConsts_sInvalidPixelFormat 64226
+#define Vcl_Imaging_GIFConsts_sBadDimension 64227
+#define Vcl_Imaging_GIFConsts_sNoDIB 64228
+#define Vcl_Imaging_GIFConsts_sInvalidStream 64229
+#define Vcl_Imaging_GIFConsts_sInvalidColor 64230
+#define Vcl_Imaging_GIFConsts_sInvalidBitSize 64231
+#define Vcl_Imaging_GIFConsts_sEmptyColorMap 64232
+#define Vcl_Imaging_GIFConsts_sEmptyImage 64233
+#define Vcl_Imaging_GIFConsts_sMultipleGCE 64234
+#define Vcl_Imaging_GIFConsts_sNoPalette 64235
+#define Vcl_Imaging_GIFConsts_sGIFImageFile 64236
+#define Vcl_Imaging_GIFConsts_sProgressLoading 64237
+#define Vcl_Imaging_GIFConsts_sProgressSaving 64238
+#define Vcl_Imaging_GIFConsts_sProgressConverting 64239
+#define Vcl_Imaging_GIFConsts_sBadSignature 64240
+#define Vcl_Imaging_GIFConsts_sScreenBadColorSize 64241
+#define Vcl_Imaging_GIFConsts_sImageBadColorSize 64242
+#define Vcl_Imaging_GIFConsts_sUnknownExtension 64243
+#define Vcl_Imaging_GIFConsts_sBadExtensionLabel 64244
+#define Vcl_Imaging_GIFConsts_sOutOfMemDIB 64245
+#define Vcl_Imaging_GIFConsts_sDecodeTooFewBits 64246
+#define Vcl_Imaging_GIFConsts_sDecodeCircular 64247
+#define Vcl_Imaging_GIFConsts_sBadTrailer 64248
+#define Vcl_Imaging_GIFConsts_sBadExtensionInstance 64249
+#define Vcl_Imaging_GIFConsts_sBadBlockSize 64250
+#define Vcl_Imaging_GIFConsts_sBadBlock 64251
+#define Vcl_Imaging_GIFConsts_sUnsupportedClass 64252
+#define Vcl_Imaging_GIFConsts_sInvalidData 64253
+#define Vcl_Imaging_GIFConsts_sBadSize 64254
+#define Vcl_Imaging_GIFConsts_sScreenSizeExceeded 64255
 #define NtScript_SNameWithoutBom 64256
 #define NtString_SInvalidString 64257
 #define NtString_SUnknownCode 64258
-#define NtWiz_SNext 64259
-#define NtWiz_SFinish 64260
-#define Shell_Win32_sNewFolder 64261
-#define Shell_Win32_sInFolder 64262
-#define Vcl_Imaging_JConsts_sChangeJPGSize 64263
-#define Vcl_Imaging_JConsts_sJPEGError 64264
-#define Vcl_Imaging_JConsts_sJPEGImageFile 64265
-#define Vcl_Imaging_GIFConsts_sOutOfData 64266
-#define Vcl_Imaging_GIFConsts_sTooManyColors 64267
-#define Vcl_Imaging_GIFConsts_sBadColorIndex 64268
-#define Vcl_Imaging_GIFConsts_sBadColorIndexFixed 64269
-#define Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty 64270
-#define Vcl_Imaging_GIFConsts_sBadSignature 64271
+#define NtClasses_SWindowsError 64259
+#define NtWiz_SNext 64260
+#define NtWiz_SFinish 64261
+#define Shell_Win32_sNewFolder 64262
+#define Shell_Win32_sInFolder 64263
+#define Vcl_Imaging_JConsts_sChangeJPGSize 64264
+#define Vcl_Imaging_JConsts_sJPEGError 64265
+#define Vcl_Imaging_JConsts_sJPEGImageFile 64266
+#define Vcl_Imaging_GIFConsts_sOutOfData 64267
+#define Vcl_Imaging_GIFConsts_sTooManyColors 64268
+#define Vcl_Imaging_GIFConsts_sBadColorIndex 64269
+#define Vcl_Imaging_GIFConsts_sBadColorIndexFixed 64270
+#define Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty 64271
 #define NtScript_SJapaneseJisX 64272
 #define NtScript_SJapaneseAuto 64273
 #define NtScript_SKoreanAuto 64274
@@ -2037,6 +2041,11 @@
 #define System_SysConst_STooManyOpenFiles 65535
 STRINGTABLE
 BEGIN
+	MainFrm_SCodeCaption,	L"&You can extend your evaluation period by entering an evaluation extension code:"
+	MainFrm_SNoInternet,	L"You do not have an Internet connection.\r\nWe recommend you turn Internet on. You can install Soluling without an Internet, but unless you install the Basic Translator edition or you have an activation file, you need to activate your Soluling before you can create or open any projects."
+	MainFrm_SCancel,	L"Cancel"
+	MainFrm_SNext,	L"&Next"
+	MainFrm_SNo,	L"&No"
 	MainFrm_SYes,	L"&Yes"
 	MainFrm_SVersion,	L"Version: %s"
 	MainFrm_SDataDirectory,	L"Data directory: %s"
@@ -2047,10 +2056,14 @@ BEGIN
 	MainFrm_SNewerVersionExists,	L"Soluling %s is available.\r\nYou can download it from the download page that was just opened."
 	MainFrm_SThisSetupIsMostRecent,	L"This setup is the most recent setup."
 	MainFrm_SCouldNotCheckVersion,	L"Could not check the version."
-	MainFrm_SWindows7OrLaterneeded,	L"You need to have Windows 7 or later to install this application."
+	MainFrm_SStart3,	L"Click Cancel to quit the Setup and then close any program you have running. Click Next to continue with the Setup program."
+	MainFrm_SDirectory,	L"%s"
+	MainFrm_SUpdateRadio,	L"&Update the existing installation"
+	MainFrm_SModifyRadio,	L"&Modify the existing installation"
 	MainFrm_SNewRadio,	L"M&ake a new installation"
 	MainFrm_SUnknownParameter,	L"Unknown parameter: %s"
 	MainFrm_SNoFirstAndLastName,	L"You have to give the first name and the last name of the serial number"
+	MainFrm_SNotAdministrator,	L"Not running as an administrator. Installing for the current user."
 	MainFrm_SWaiting,	L"Waiting for %s application to close!"
 	MainFrm_SSetupRunning,	L"Another Soluling setup application is already running.\r\nCannot run this setup application."
 	MainFrm_SNoWriteAccess,	L"You do not have a write access for \"%s\" directory"
@@ -2059,27 +2072,26 @@ BEGIN
 	MainFrm_SEnterEvaluationExtensionReason,	L"Your evaluation has expired. You can extend it once by telling us a reason."
 	MainFrm_SReasonCaption,	L"&You can extend your evaluation period by telling us the reason:"
 	MainFrm_SEnterEvaluationExtensionCode,	L"Your evaluation has expired. You can extend it by entering an evaluation extension code."
-	MainFrm_SCodeCaption,	L"&You can extend your evaluation period by entering an evaluation extension code:"
-	MainFrm_SNoInternet,	L"You do not have an Internet connection.\r\nWe recommend you turn Internet on. You can install Soluling without an Internet, but unless you install the Basic Translator edition or you have an activation file, you need to activate your Soluling before you can create or open any projects."
-	MainFrm_SCancel,	L"Cancel"
-	MainFrm_SNext,	L"&Next"
-	MainFrm_SNo,	L"&No"
+	MainFrm_SSetupFailed,	L"Soluling setup failed: %s"
+	MainFrm_SApplicationRunning,	L"Soluling application is running. Cannot run this setup application.\r\nPlease close the Soluling application and try again."
+	MainFrm_STotalSelectedSize,	L"Total selected size: %d KB"
+	MainFrm_SInstallingLibraryFiles,	L"Installing application library files..."
+	MainFrm_SInstallingBuildAutomationFiles,	L"Installing build automation files..."
 	MainFrm_SInstallingApplicationFiles,	L"Installing application files..."
 	MainFrm_SInstallingSpellCheckFiles,	L"Installing spell check dictionaries..."
 	MainFrm_SInstallingI18NLibraryFiles,	L"Installing the I18N library code..."
 	MainFrm_SInstallingFiles,	L"Installing %s samples..."
 	MainFrm_SCouldNotRegisterInstallation,	L"Could not contact the license server. You need to register Soluling later."
 	MainFrm_SCouldNotActivate,	L"Could not activate your installation because there is no Internet connection.\r\nSoluling will automatically activate itself once the Internet connection is available.\r\nIf this machine has no Internet at all, you can complete the activation on any other machine having Soluling installed."
-	MainFrm_SSetupFailed,	L"Soluling setup failed: %s"
 	MainFrm_SPersonalFolder,	L"&Personal folder, %s"
 	MainFrm_SPublicFolder,	L"&Public folder, %s"
 	MainFrm_SUnknownVersion,	L"Unknown version"
 	MainFrm_SStart1,	L"Welcome to the Soluling Setup program. This program will install Soluling on your computer."
 	MainFrm_SStart2,	L"It is strongly recommended that you exit all Windows programs before running this Setup program."
-	MainFrm_SStart3,	L"Click Cancel to quit the Setup and then close any program you have running. Click Next to continue with the Setup program."
-	MainFrm_SDirectory,	L"%s"
-	MainFrm_SUpdateRadio,	L"&Update the existing installation"
-	MainFrm_SModifyRadio,	L"&Modify the existing installation"
+	NtDialogFilter_SWaveFiles,	L"Wave files"
+	NtDialogFilter_SWmaFiles,	L"Windows Media Audio files"
+	NtDialogFilter_SMp4Files,	L"MP4 files"
+	NtDialogFilter_SMp3Files,	L"MP3 files"
 	NtDialogFilter_SVideoFiles,	L"Video files"
 	NtDialogFilter_SMpegFiles,	L"MPEG files"
 	NtDialogFilter_SAviFiles,	L"AVI files"
@@ -2092,10 +2104,10 @@ BEGIN
 	MainFrm_SSetupTypeMinimalDescription,	L"This option installs only the required application files.\r\nNo sample files, spell check dictionaries, or language files are installed."
 	MainFrm_SSetupTypeBuildAutomationDescription,	L"This option installs only files needed by build automation.\r\nNo GUI tools, sample files, spell check dictionaries, or language files are installed."
 	MainFrm_SCanNotInstall,	L"Cannot install: %s"
-	MainFrm_SApplicationRunning,	L"Soluling application is running. Cannot run this setup application.\r\nPlease close the Soluling application and try again."
-	MainFrm_STotalSelectedSize,	L"Total selected size: %d KB"
-	MainFrm_SInstallingLibraryFiles,	L"Installing application library files..."
-	MainFrm_SInstallingBuildAutomationFiles,	L"Installing build automation files..."
+	Installer_SConfiguringSystem,	L"Configuring system"
+	Installer_SComponentFailed,	L"Error installing %s component: %s. This is not fatal, but you will not have this sample code or library."
+	NtDialogFilter_SAllFiles,	L"All files"
+	NtDialogFilter_SAllSupportedFiles,	L"All supported files"
 	NtDialogFilter_SDllFiles,	L"Windows DLL files"
 	NtDialogFilter_SExeFiles,	L"Windows executable files"
 	NtDialogFilter_SImageFiles,	L"Image files"
@@ -2108,10 +2120,11 @@ BEGIN
 	NtDialogFilter_SSisulizerLanguagesFiles,	L"Sisulizer languages files"
 	NtDialogFilter_STextFiles,	L"Text files"
 	NtDialogFilter_SAudioFiles,	L"Audio files"
-	NtDialogFilter_SWaveFiles,	L"Wave files"
-	NtDialogFilter_SWmaFiles,	L"Windows Media Audio files"
-	NtDialogFilter_SMp4Files,	L"MP4 files"
-	NtDialogFilter_SMp3Files,	L"MP3 files"
+	Installer_SWinUIDescription,	L"Installs Windows App SDK/WinUI samples."
+	Installer_SWixDescription,	L"Installs Wix samples."
+	Installer_SWordDescription,	L"Installs Word samples."
+	Installer_SWpfDescription,	L"Installs WPF samples."
+	Installer_SUniversalWindowsPlatformDescription,	L"Installs Universal Windows Platform samples."
 	Installer_SXamarinDescription,	L"Installs Xamarin samples."
 	Installer_SXliffDescription,	L"Installs XLIFF samples."
 	Installer_SXmlDescription,	L"Installs XML samples."
@@ -2123,11 +2136,11 @@ BEGIN
 	Installer_SLocalizationDescription,	L"Installs Soluling's localization project."
 	Installer_SI18NAPI,	L"I18N API"
 	Installer_SI18NAPIDescription,	L"Installs Soluling's internationalization APIs."
-	Installer_SConfiguringSystem,	L"Configuring system"
-	Installer_SConfiguringLibraryPaths,	L"Configuring library paths"
-	Installer_SComponentFailed,	L"Error installing %s component: %s. This is not fatal, but you will not have this sample code or library."
-	NtDialogFilter_SAllFiles,	L"All files"
-	NtDialogFilter_SAllSupportedFiles,	L"All supported files"
+	Installer_SSqlCeDescription,	L"Installs SQL Server Compact database samples."
+	Installer_SSqliteDescription,	L"Installs SQLite database samples."
+	Installer_SSqlServerDescription,	L"Installs SQL Server database samples."
+	Installer_SSrtDescription,	L"Installs SubRip subtitle samples."
+	Installer_SSvelteDescription,	L"Install Svelte samples."
 	Installer_SSvgDescription,	L"Installs SVG samples."
 	Installer_STextDescription,	L"Installs text file samples."
 	Installer_STmxDescription,	L"Installs TMX samples."
@@ -2139,11 +2152,10 @@ BEGIN
 	Installer_SVueDescription,	L"Installs Vue samples."
 	Installer_SWebVTTDescription,	L"Installs WebVTT subtitle samples."
 	Installer_SWindowsFormsDescription,	L"Installs Windows Forms samples."
-	Installer_SWinUIDescription,	L"Installs Windows App SDK/WinUI samples."
-	Installer_SWixDescription,	L"Installs Wix samples."
-	Installer_SWordDescription,	L"Installs Word samples."
-	Installer_SWpfDescription,	L"Installs WPF samples."
-	Installer_SUniversalWindowsPlatformDescription,	L"Installs Universal Windows Platform samples."
+	Installer_SMauiDescription,	L"Installs MAUI samples."
+	Installer_SMarkdownDescription,	L"Installs Markdown samples."
+	Installer_SMySqlDescription,	L"Installs MySQL database samples."
+	Installer_SPdfDescription,	L"Installs PDF samples."
 	Installer_SPhpDescription,	L"Installs PHP samples."
 	Installer_SPoDescription,	L"Installs GetText/PO samples."
 	Installer_SPostgreDescription,	L"Installs PostgreSQL database samples."
@@ -2156,10 +2168,10 @@ BEGIN
 	Installer_SRtfDescription,	L"Install RTF samples."
 	Installer_SSalesForceDescription,	L"Install SalesForce samples."
 	Installer_SScriptDescription,	L"Installs script and source code samples."
-	Installer_SSqlCeDescription,	L"Installs SQL Server Compact database samples."
-	Installer_SSqliteDescription,	L"Installs SQLite database samples."
-	Installer_SSqlServerDescription,	L"Installs SQL Server database samples."
-	Installer_SSrtDescription,	L"Installs SubRip subtitle samples."
+	Installer_SFlutterDescription,	L"Installs Flutter samples."
+	Installer_SGlossaryDescription,	L"Install glossary samples."
+	Installer_SGoDescription,	L"Install Go samples."
+	Installer_SHelpAndManualDescription,	L"Install Help+Manual samples."
 	Installer_SHtmlDescription,	L"Installs HTML samples."
 	Installer_SHtmlHelpDescription,	L"Installs HTML Help samples."
 	Installer_Si18nextDescription,	L"Install i18next samples."
@@ -2172,10 +2184,10 @@ BEGIN
 	Installer_SJspDescription,	L"Installs JSP samples."
 	Installer_SLazarusDescription,	L"Installs Lazarus samples."
 	Installer_SLaTeXDescription,	L"Installs LaTeX samples."
-	Installer_SMauiDescription,	L"Installs MAUI samples."
-	Installer_SMarkdownDescription,	L"Installs Markdown samples."
-	Installer_SMySqlDescription,	L"Installs MySQL database samples."
-	Installer_SPdfDescription,	L"Installs PDF samples."
+	HunSpellEngine_SOpenOffice,	L"OpenOffice"
+	StandardLicense_SNoFeatureLicense,	L"You have %0:s edition that does not support \"%1:s\" feature. In order to use this feature you have to upgrade your license at least to %2:s edition"
+	Installer_SAccessDescription,	L"Installs Access database samples."
+	Installer_SAndroidDescription,	L"Installs Android samples."
 	Installer_SAngularDescription,	L"Installs Angular samples."
 	Installer_SAspNetDescription,	L"Installs ASP.NET and ASP.NET Core samples."
 	Installer_SBinaryDescription,	L"Installs binary file samples."
@@ -2188,26 +2200,26 @@ BEGIN
 	Installer_SDotNetDescription,	L"Installs .NET Core, .NET Standard, and .NET command line samples."
 	Installer_SExcelDescription,	L"Installs Excel samples."
 	Installer_SFirebirdDescription,	L"Installs Firebird database samples."
-	Installer_SFlutterDescription,	L"Installs Flutter samples."
-	Installer_SGlossaryDescription,	L"Install glossary samples."
-	Installer_SGoDescription,	L"Install Go samples."
-	Installer_SHelpAndManualDescription,	L"Install Help+Manual samples."
+	NtFormatItems_SJavaSample,	L"My name is %s"
+	NtFormatItems_SJavaHtmlSample,	L"My name is <b>%s</b>"
+	NtFormatItems_SJavaSample2,	L"My name is {0}"
+	NtFormatItems_SJavaHtmlSample2,	L"My name is <b>{0}</b>"
 	NtSpellChecker_SCouldNotOpenSpellEngine,	L"Could not open spell checker engine"
 	NtSpellChecker_SSpellEngineIsWorkingProperly,	L"%s spell checker is working properly."
 	NtSpellChecker_SLocal,	L"Local"
 	NtSpellChecker_SRemote,	L"Remote"
 	NtConsts_SFileDoesNotExist,	L"\"%s\" file does not exist."
-	NtConsts_SDllDoesNotExist,	L"\"%s\" not found"
 	NtConsts_SDllDoesNotExist2,	L"\"%s\" not found: %s"
 	NtConsts_SDllHasNoFunction,	L"\"%0:s\" does not contain \"%1:s\" function."
 	NtConsts_SItemsFilter,	L"Soluling item files"
 	NtConsts_SSelectActivationFile,	L"Select activation file"
 	NtConsts_SActivationFiles,	L"Activation files"
 	NtConsts_SInvalidActivationFile,	L"Activation file is invalid or not for serial number you provided."
-	HunSpellEngine_SOpenOffice,	L"OpenOffice"
-	StandardLicense_SNoFeatureLicense,	L"You have %0:s edition that does not support \"%1:s\" feature. In order to use this feature you have to upgrade your license at least to %2:s edition"
-	Installer_SAccessDescription,	L"Installs Access database samples."
-	Installer_SAndroidDescription,	L"Installs Android samples."
+	HunSpellEngine_SCouldNotLoadDll,	L"Could not load \"%s\": %s"
+	NtFormatItems_SRails,	L"Ruby on Rails"
+	NtFormatItems_SRailsSample,	L"My name is %{name}"
+	NtFormatItems_SRailsHtmlSample,	L"My name is <b>%{name}</b>"
+	NtFormatItems_SReact,	L"React"
 	NtFormatItems_SReactSample,	L"My name is {name}"
 	NtFormatItems_SReactHtmlSample,	L"My name is <b>{name}</b>"
 	NtFormatItems_SSvelte,	L"Svelte"
@@ -2220,10 +2232,10 @@ BEGIN
 	NtFormatItems_SCppSample,	L"My name is %s"
 	NtFormatItems_SCppHtmlSample,	L"My name is <b>%s</b>"
 	NtFormatItems_SJava,	L"Java"
-	NtFormatItems_SJavaSample,	L"My name is %s"
-	NtFormatItems_SJavaHtmlSample,	L"My name is <b>%s</b>"
-	NtFormatItems_SJavaSample2,	L"My name is {0}"
-	NtFormatItems_SJavaHtmlSample2,	L"My name is <b>{0}</b>"
+	NtFormatItems_SPythonHtmlSample2,	L"My name is <b>%s</b>"
+	NtFormatItems_SQt,	L"Qt"
+	NtFormatItems_SQtSample,	L"My name is %1"
+	NtFormatItems_SQtHtmlSample,	L"My name is <b>%1</b>"
 	NtFormatItems_SWix,	L"Wix"
 	NtFormatItems_SWixSample,	L"My name is [name]"
 	NtFormatItems_SWixHtmlSample,	L"My name is <b>[name]</b>"
@@ -2236,10 +2248,10 @@ BEGIN
 	NtFormatItems_SMagento,	L"Magento"
 	NtFormatItems_SMagentoSample,	L"My name is %s"
 	NtFormatItems_SMagentoHtmlSample,	L"My name is <b>%s</b>"
-	NtFormatItems_SRails,	L"Ruby on Rails"
-	NtFormatItems_SRailsSample,	L"My name is %{name}"
-	NtFormatItems_SRailsHtmlSample,	L"My name is <b>%{name}</b>"
-	NtFormatItems_SReact,	L"React"
+	NtPattern_SFew,	L"Few"
+	NtPattern_SMany,	L"Many"
+	NtPattern_SPlural,	L"Plural"
+	NtPattern_SMale,	L"Male"
 	NtPattern_SFemale,	L"Female"
 	NtPattern_SNeutral,	L"Neutral"
 	NtFormatItems_SSoluling,	L"Soluling"
@@ -2252,10 +2264,10 @@ BEGIN
 	NtFormatItems_SPythonSample,	L"My name is {name}"
 	NtFormatItems_SPythonHtmlSample,	L"My name is <b>{name}</b>"
 	NtFormatItems_SPythonSample2,	L"My name is %s"
-	NtFormatItems_SPythonHtmlSample2,	L"My name is <b>%s</b>"
-	NtFormatItems_SQt,	L"Qt"
-	NtFormatItems_SQtSample,	L"My name is %1"
-	NtFormatItems_SQtHtmlSample,	L"My name is <b>%1</b>"
+	JclResources_RsHasNotTD32Info,	L"File [%s] has not TD32 debug information!"
+	JclResources_RsEUnexpectedEOSeq,	L"Unexpected end of sequence"
+	JclResources_RsWin32Error,	L"Win32 error: %s (%u)%s%s"
+	JclResources_RsELibraryNotFound,	L"Library not found: %s"
 	JclResources_RsEFunctionNotFound,	L"Function not found: %s.%s"
 	Vcl_OleConst_sNoRunningObject,	L"Unable to retrieve a pointer to a running object registered with OLE for %s/%s"
 	Dll_SLibraryDescription,	L"%s library"
@@ -2264,14 +2276,14 @@ BEGIN
 	Dll_SUnavailable,	L"Unavailable"
 	Dll_SUnregistered,	L"Unregistered"
 	Dll_SInstalled,	L"Installed"
-	Dll_SRegisterManually,	L"Application can not register this COM object.\r\nTo register it manually run Command Prompt as administrator, go to application directory, and enter\r\n%0:s %1:s"
+	Dll_SRegisterManually,	L"Application cannot register this COM object.\r\nTo register it manually run Command Prompt as administrator, go to application directory, and enter\r\n%0:s %1:s"
 	NtPattern_SZero,	L"Nullar"
 	NtPattern_SOne,	L"Singular"
 	NtPattern_STwo,	L"Dual"
-	NtPattern_SFew,	L"Few"
-	NtPattern_SMany,	L"Many"
-	NtPattern_SPlural,	L"Plural"
-	NtPattern_SMale,	L"Male"
+	JclResources_RsIntelCacheDescrDD,	L"3rd-level cache: 3 MByte, 12-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescrDE,	L"3rd-level cache: 6 MByte, 12-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescrE2,	L"3rd-level cache: 2 MByte, 16-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescrE3,	L"3rd-level cache: 4 MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrE4,	L"3rd-level cache: 8 MByte, 16-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrEA,	L"3rd-level cache: 12 MByte, 24-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrEB,	L"3rd-level cache: 18 MByte, 24-way set associative, 64 byte line size"
@@ -2284,10 +2296,10 @@ BEGIN
 	JclResources_RsOSVersionWin81,	L"Windows 8.1"
 	JclResources_RsOSVersionWinServer2012R2,	L"Windows Server 2012 R2"
 	JclResources_RsCannotWriteRefStream,	L"Can not write to a read-only memory stream"
-	JclResources_RsHasNotTD32Info,	L"File [%s] has not TD32 debug information!"
-	JclResources_RsEUnexpectedEOSeq,	L"Unexpected end of sequence"
-	JclResources_RsWin32Error,	L"Win32 error: %s (%u)%s%s"
-	JclResources_RsELibraryNotFound,	L"Library not found: %s"
+	JclResources_RsIntelCacheDescr87,	L"2nd-level cache: 1 MByte, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescrB0,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries"
+	JclResources_RsIntelCacheDescrB1,	L"Instruction TLB: 2 MByte pages, 4-way, 8 entries or 4 MByte pages, 4-way, 4 entries"
+	JclResources_RsIntelCacheDescrB2,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 64 entries"
 	JclResources_RsIntelCacheDescrB3,	L"Data TLB: 4 KByte pages, 4-way set associative, 128 entries"
 	JclResources_RsIntelCacheDescrB4,	L"Data TLB1: 4 KByte pages, 4-way set associative, 256 entries"
 	JclResources_RsIntelCacheDescrBA,	L"Data TLB1: 4 KByte pages, 4-way set associative, 64 entries"
@@ -2300,10 +2312,10 @@ BEGIN
 	JclResources_RsIntelCacheDescrD7,	L"3rd-level cache: 2 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrD8,	L"3rd-level cache: 4 MByte, 8-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescrDC,	L"3rd-level cache: 1.5 MByte, 12-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrDD,	L"3rd-level cache: 3 MByte, 12-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrDE,	L"3rd-level cache: 6 MByte, 12-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrE2,	L"3rd-level cache: 2 MByte, 16-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrE3,	L"3rd-level cache: 4 MByte, 16-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr72,	L"Trace cache: 32 K-Ops, 8-way set associative"
+	JclResources_RsIntelCacheDescr73,	L"Trace cache: 64 K-Ops, 8-way set associative"
+	JclResources_RsIntelCacheDescr76,	L"Instruction TLB: 2M/4M pages, fully associative, 8 entries"
+	JclResources_RsIntelCacheDescr78,	L"2nd-level cache: 1 MBytes, 4-way set associative, 64 bytes line size"
 	JclResources_RsIntelCacheDescr79,	L"2nd-level cache: 128 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr7A,	L"2nd-level cache: 256 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr7B,	L"2nd-level cache: 512 KBytes, 8-way set associative, 64 bytes line size, 2 lines per sector"
@@ -2316,10 +2328,10 @@ BEGIN
 	JclResources_RsIntelCacheDescr84,	L"2nd-level cache: 1 MBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr85,	L"2nd-level cache: 2 MBytes, 8-way associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr86,	L"2nd-level cache: 512 KByte, 4-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr87,	L"2nd-level cache: 1 MByte, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescrB0,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 128 entries"
-	JclResources_RsIntelCacheDescrB1,	L"Instruction TLB: 2 MByte pages, 4-way, 8 entries or 4 MByte pages, 4-way, 4 entries"
-	JclResources_RsIntelCacheDescrB2,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 64 entries"
+	JclResources_RsIntelCacheDescr51,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 128 Entries"
+	JclResources_RsIntelCacheDescr52,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
+	JclResources_RsIntelCacheDescr55,	L"Instruction TLB: 2-MByte or 4-MByte pages, fully associative, 7 entries"
+	JclResources_RsIntelCacheDescr56,	L"Data TLB0: 4 MByte pages, 4-way set associative, 16 entries"
 	JclResources_RsIntelCacheDescr57,	L"Data TLB0: 4 KByte pages, 4-way associative, 16 entries"
 	JclResources_RsIntelCacheDescr59,	L"Data TLB0: 4 KByte pages, fully associative, 16 entries"
 	JclResources_RsIntelCacheDescr5A,	L"Data TLB0: 2 MByte or 4 MByte pages, 4-way set associative, 32 entries"
@@ -2332,10 +2344,10 @@ BEGIN
 	JclResources_RsIntelCacheDescr68,	L"1st-level data cache: 32 KBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr70,	L"Trace cache: 12 K-Ops, 8-way set associative"
 	JclResources_RsIntelCacheDescr71,	L"Trace cache: 16 K-Ops, 8-way set associative"
-	JclResources_RsIntelCacheDescr72,	L"Trace cache: 32 K-Ops, 8-way set associative"
-	JclResources_RsIntelCacheDescr73,	L"Trace cache: 64 K-Ops, 8-way set associative"
-	JclResources_RsIntelCacheDescr76,	L"Instruction TLB: 2M/4M pages, fully associative, 8 entries"
-	JclResources_RsIntelCacheDescr78,	L"2nd-level cache: 1 MBytes, 4-way set associative, 64 bytes line size"
+	JclResources_RsIntelCacheDescr41,	L"2nd-level cache: 128 KBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr42,	L"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr43,	L"2nd-level cache: 512 KBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsIntelCacheDescr44,	L"2nd-level cache: 1 MBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr45,	L"2nd-level cache: 2 MBytes, 4-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr46,	L"3rd-level cache: 4 MBytes, 4-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr47,	L"3rd-level cache: 8 MBytes, 4-way set associative, 64 byte line size"
@@ -2348,10 +2360,10 @@ BEGIN
 	JclResources_RsIntelCacheDescr4E,	L"2nd-level cache: 6MByte, 24-way set associative, 64 byte line size"
 	JclResources_RsIntelCacheDescr4F,	L"Instruction TLB: 4 KByte pages, 32 Entries"
 	JclResources_RsIntelCacheDescr50,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 64 Entries"
-	JclResources_RsIntelCacheDescr51,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 128 Entries"
-	JclResources_RsIntelCacheDescr52,	L"Instruction TLB: 4 KByte and 2 MByte or 4 MByte pages, 256 Entries"
-	JclResources_RsIntelCacheDescr55,	L"Instruction TLB: 2-MByte or 4-MByte pages, fully associative, 7 entries"
-	JclResources_RsIntelCacheDescr56,	L"Data TLB0: 4 MByte pages, 4-way set associative, 16 entries"
+	JclResources_RsIntelCacheDescr0D,	L"1st level data cache: 16 KBytes, 4-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr0E,	L"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr21,	L"2nd level cache: 256 KBytes, 8-way set associative, 64 byte line size"
+	JclResources_RsIntelCacheDescr22,	L"3rd level cache: 512 KBytes, 4-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr23,	L"3rd level cache: 1 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr25,	L"3rd level cache: 2 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
 	JclResources_RsIntelCacheDescr29,	L"3rd level cache: 4 MBytes, 8-way set associative, 64 byte line size, 2 lines per sector"
@@ -2364,10 +2376,10 @@ BEGIN
 	JclResources_RsIntelCacheDescr3D,	L"2nd-level cache: 384 KBytes, 6-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr3E,	L"2nd-level cache: 512 KBytes, 4-way set associative, sectored cache, 64-byte line size"
 	JclResources_RsIntelCacheDescr40,	L"No 2nd-level cache or, if processor contains a valid 2nd-level cache, no 3rd-level cache"
-	JclResources_RsIntelCacheDescr41,	L"2nd-level cache: 128 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr42,	L"2nd-level cache: 256 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr43,	L"2nd-level cache: 512 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr44,	L"2nd-level cache: 1 MBytes, 4-way set associative, 32 byte line size"
+	JclResources_RsWrongDataType,	L"\"%s\\%s\\%s\" is of wrong kind or size"
+	JclResources_RsInconsistentPath,	L"\"%s\" does not match RootKey"
+	JclResources_RsSynchCreateEvent,	L"Failed to create event"
+	JclResources_RsSynchOpenEvent,	L"Failed to open event"
 	JclResources_RsIntelCacheDescr00,	L"Null descriptor"
 	JclResources_RsIntelCacheDescr01,	L"Instruction TLB: 4 KByte pages, 4-way set associative, 32 entries"
 	JclResources_RsIntelCacheDescr02,	L"Instruction TLB: 4 MByte pages, 4-way set associative, 2 entries"
@@ -2380,10 +2392,10 @@ BEGIN
 	JclResources_RsIntelCacheDescr0A,	L"1st level data cache: 8 KBytes, 2-way set associative, 32 byte line size"
 	JclResources_RsIntelCacheDescr0B,	L"Instruction TLB: 4 MByte pages, 4-way set associative, 4 entries"
 	JclResources_RsIntelCacheDescr0C,	L"1st level data cache: 16 KBytes, 4-way set associative, 32 byte line size"
-	JclResources_RsIntelCacheDescr0D,	L"1st level data cache: 16 KBytes, 4-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr0E,	L"1st level data cache: 24 KBytes, 6-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr21,	L"2nd level cache: 256 KBytes, 8-way set associative, 64 byte line size"
-	JclResources_RsIntelCacheDescr22,	L"3rd level cache: 512 KBytes, 4-way set associative, 64 byte line size, 2 lines per sector"
+	JclResources_RsPePkgPackage,	L"Package"
+	JclResources_PsPePkgLibrary,	L"Library"
+	JclResources_RsPePkgNeverBuild,	L"NeverBuild"
+	JclResources_RsPePkgDesignOnly,	L"DesignOnly"
 	JclResources_RsPePkgRunOnly,	L"RunOnly"
 	JclResources_RsPePkgIgnoreDupUnits,	L"IgnoreDupUnits"
 	JclResources_RsPePkgV3Produced,	L"Delphi 3 or C++ Builder 3"
@@ -2396,10 +2408,10 @@ BEGIN
 	JclResources_RsPePkgImplicit,	L"Implicit"
 	JclResources_RsUnableToOpenKeyRead,	L"Unable to open key \"%s\\%s\" for read"
 	JclResources_RsUnableToAccessValue,	L"Unable to open key \"%s\\%s\" and access value \"%s\""
-	JclResources_RsWrongDataType,	L"\"%s\\%s\\%s\" is of wrong kind or size"
-	JclResources_RsInconsistentPath,	L"\"%s\" does not match RootKey"
-	JclResources_RsSynchCreateEvent,	L"Failed to create event"
-	JclResources_RsSynchOpenEvent,	L"Failed to open event"
+	JclResources_RsPeSUBSYSTEM_NATIVE,	L"Native"
+	JclResources_RsPeSUBSYSTEM_WINDOWS_GUI,	L"GUI"
+	JclResources_RsPeSUBSYSTEM_WINDOWS_CUI,	L"Console"
+	JclResources_RsPeSUBSYSTEM_OS2_CUI,	L"OS/2"
 	JclResources_RsPeSUBSYSTEM_POSIX_CUI,	L"Posix"
 	JclResources_RsPeSUBSYSTEM_RESERVED8,	L"Reserved 8"
 	JclResources_RsPeDEBUG_UNKNOWN,	L"UNKNOWN"
@@ -2412,10 +2424,10 @@ BEGIN
 	JclResources_RsPeDEBUG_OMAP_TO_SRC,	L"OMAP_TO_SRC"
 	JclResources_RsPeDEBUG_OMAP_FROM_SRC,	L"OMAP_FROM_SRC"
 	JclResources_RsPePkgExecutable,	L"Executable"
-	JclResources_RsPePkgPackage,	L"Package"
-	JclResources_PsPePkgLibrary,	L"Library"
-	JclResources_RsPePkgNeverBuild,	L"NeverBuild"
-	JclResources_RsPePkgDesignOnly,	L"DesignOnly"
+	JclResources_RsPeMACHINE_THUMB,	L"THUMB"
+	JclResources_RsPeMACHINE_AM33,	L"AM33"
+	JclResources_RsPeMACHINE_POWERPC,	L"IBM PowerPC Little-Endian"
+	JclResources_RsPeMACHINE_POWERPCFP,	L"IBM PowerPC FP"
 	JclResources_RsPeMACHINE_IA64,	L"Intel 64"
 	JclResources_RsPeMACHINE_MIPS16,	L"MIPS16"
 	JclResources_RsPeMACHINE_AMPHA64,	L"ALPHA64"
@@ -2428,10 +2440,10 @@ BEGIN
 	JclResources_RsPeMACHINE_M32R,	L"M32R little-endian"
 	JclResources_RsPeMACHINE_CEE,	L"CEE"
 	JclResources_RsPeSUBSYSTEM_UNKNOWN,	L"Unknown"
-	JclResources_RsPeSUBSYSTEM_NATIVE,	L"Native"
-	JclResources_RsPeSUBSYSTEM_WINDOWS_GUI,	L"GUI"
-	JclResources_RsPeSUBSYSTEM_WINDOWS_CUI,	L"Console"
-	JclResources_RsPeSUBSYSTEM_OS2_CUI,	L"OS/2"
+	JclResources_RsPeCSDVersion,	L"CSDVersion"
+	JclResources_RsPeReserved,	L"Reserved"
+	JclResources_RsPeEditList,	L"EditList"
+	JclResources_RsPeMACHINE_UNKNOWN,	L"Unknown"
 	JclResources_RsPeMACHINE_I386,	L"Intel 386"
 	JclResources_RsPeMACHINE_R3000,	L"MIPS little-endian R3000"
 	JclResources_RsPeMACHINE_R4000,	L"MIPS little-endian R4000"
@@ -2444,10 +2456,10 @@ BEGIN
 	JclResources_RsPeMACHINE_SH4,	L"SH4 little-endian"
 	JclResources_RsPeMACHINE_SH5,	L"SH5"
 	JclResources_RsPeMACHINE_ARM,	L"ARM Little-Endian"
-	JclResources_RsPeMACHINE_THUMB,	L"THUMB"
-	JclResources_RsPeMACHINE_AM33,	L"AM33"
-	JclResources_RsPeMACHINE_POWERPC,	L"IBM PowerPC Little-Endian"
-	JclResources_RsPeMACHINE_POWERPCFP,	L"IBM PowerPC FP"
+	JclResources_RsPeSizeOfStackCommit,	L"Size of Stack Commit"
+	JclResources_RsPeSizeOfHeapReserve,	L"Size of Heap Reserve"
+	JclResources_RsPeSizeOfHeapCommit,	L"Size of Heap Commit"
+	JclResources_RsPeLoaderFlags,	L"Loader Flags"
 	JclResources_RsPeNumberOfRvaAndSizes,	L"Number of RVA"
 	JclResources_RsPeVersion,	L"Version"
 	JclResources_RsPeGlobalFlagsClear,	L"GlobalFlagsClear"
@@ -2460,10 +2472,10 @@ BEGIN
 	JclResources_RsPeVirtualMemoryThreshold,	L"VirtualMemoryThreshold"
 	JclResources_RsPeProcessHeapFlags,	L"ProcessHeapFlags"
 	JclResources_RsPeProcessAffinityMask,	L"ProcessAffinityMask"
-	JclResources_RsPeCSDVersion,	L"CSDVersion"
-	JclResources_RsPeReserved,	L"Reserved"
-	JclResources_RsPeEditList,	L"EditList"
-	JclResources_RsPeMACHINE_UNKNOWN,	L"Unknown"
+	JclResources_RsPeAddressOfEntryPoint,	L"Address of Entry Point"
+	JclResources_RsPeBaseOfCode,	L"Base of Code"
+	JclResources_RsPeBaseOfData,	L"Base of Data"
+	JclResources_RsPeImageBase,	L"Image Base"
 	JclResources_RsPeSectionAlignment,	L"Section Alignment"
 	JclResources_RsPeFileAlignment,	L"File Alignment"
 	JclResources_RsPeOperatingSystemVersion,	L"Operating System Version"
@@ -2476,10 +2488,10 @@ BEGIN
 	JclResources_RsPeSubsystem,	L"Subsystem"
 	JclResources_RsPeDllCharacteristics,	L"Dll Characteristics"
 	JclResources_RsPeSizeOfStackReserve,	L"Size of Stack Reserve"
-	JclResources_RsPeSizeOfStackCommit,	L"Size of Stack Commit"
-	JclResources_RsPeSizeOfHeapReserve,	L"Size of Heap Reserve"
-	JclResources_RsPeSizeOfHeapCommit,	L"Size of Heap Commit"
-	JclResources_RsPeLoaderFlags,	L"Loader Flags"
+	JclResources_RsPeImg_13,	L"Delay load import"
+	JclResources_RsPeImg_14,	L"COM run-time"
+	JclResources_RsPeImg_Reserved,	L"reserved [%.2d]"
+	JclResources_RsPeSignature,	L"Signature"
 	JclResources_RsPeMachine,	L"Machine"
 	JclResources_RsPeNumberOfSections,	L"Number of Sections"
 	JclResources_RsPeTimeDateStamp,	L"Time Date Stamp"
@@ -2492,10 +2504,10 @@ BEGIN
 	JclResources_RsPeSizeOfCode,	L"Size of Code"
 	JclResources_RsPeSizeOfInitializedData,	L"Size of Initialized Data"
 	JclResources_RsPeSizeOfUninitializedData,	L"Size of Uninitialized Data"
-	JclResources_RsPeAddressOfEntryPoint,	L"Address of Entry Point"
-	JclResources_RsPeBaseOfCode,	L"Base of Code"
-	JclResources_RsPeBaseOfData,	L"Base of Data"
-	JclResources_RsPeImageBase,	L"Image Base"
+	JclResources_RsPeNotResDir,	L"Not a resource directory"
+	JclResources_RsPeNotAvailableForAttached,	L"Feature is not available for attached images"
+	JclResources_RsPeSectionNotFound,	L"Section \"%s\" not found"
+	JclResources_RsPeImg_00,	L"Exports"
 	JclResources_RsPeImg_01,	L"Imports"
 	JclResources_RsPeImg_02,	L"Resources"
 	JclResources_RsPeImg_03,	L"Exceptions"
@@ -2508,10 +2520,10 @@ BEGIN
 	JclResources_RsPeImg_10,	L"Load configuration"
 	JclResources_RsPeImg_11,	L"Bound Import"
 	JclResources_RsPeImg_12,	L"IAT"
-	JclResources_RsPeImg_13,	L"Delay load import"
-	JclResources_RsPeImg_14,	L"COM run-time"
-	JclResources_RsPeImg_Reserved,	L"reserved [%.2d]"
-	JclResources_RsPeSignature,	L"Signature"
+	JclResources_RsEWindowsVersionNotSupported,	L"This Windows version is not supported"
+	JclResources_RsEWindowNotValid,	L"The window with handle %d is not valid"
+	JclResources_RsEProcessNotValid,	L"The process with ID %d is not valid"
+	JclResources_RsEModuleNotValid,	L"The module with handle %d is not valid"
 	JclResources_RsFileUtilsNoVersionInfo,	L"File contains no version information"
 	JclResources_RsFileUtilsFileDoesNotExist,	L"The file %s does not exist"
 	JclResources_RsFileUtilsLanguageIndex,	L"Illegal language index"
@@ -2524,10 +2536,10 @@ BEGIN
 	JclResources_RsPeCantOpen,	L"Cannot open file \"%s\""
 	JclResources_RsPeNotPE,	L"This is not a PE format"
 	JclResources_RsPeUnknownTarget,	L"Unknown PE target"
-	JclResources_RsPeNotResDir,	L"Not a resource directory"
-	JclResources_RsPeNotAvailableForAttached,	L"Feature is not available for attached images"
-	JclResources_RsPeSectionNotFound,	L"Section \"%s\" not found"
-	JclResources_RsPeImg_00,	L"Exports"
+	License_SExtendLimitReachedRegister,	L"Evaluation period has ended and cannot be extended"
+	License_SVersionBuildStr,	L"%0:d.%1:d.%2:d"
+	License_SVersion,	L"Version %s"
+	License_S32Bit,	L"32-bit"
 	License_SEvaluationLeft,	L"Evaluation, %d days left"
 	License_SEvaluationExpired,	L"Evaluation, expired"
 	License_SEdition,	L"%s edition"
@@ -2540,26 +2552,26 @@ BEGIN
 	JclResources_RsEReplacementChar,	L"Failed to get ANSI replacement character"
 	JclResources_RsDateConversion,	L"Error illegal date or time format"
 	JclResources_RsUnknownFunctionAt,	L"Unknown function at %s"
-	JclResources_RsEWindowsVersionNotSupported,	L"This Windows version is not supported"
-	JclResources_RsEWindowNotValid,	L"The window with handle %d is not valid"
-	JclResources_RsEProcessNotValid,	L"The process with ID %d is not valid"
-	JclResources_RsEModuleNotValid,	L"The module with handle %d is not valid"
+	License_SValidation,	L"Can use validation"
+	License_SFileGlossary,	L"Can use glossary and terminology files"
+	License_SLocalTermbase,	L"Personal glossary and terminology database"
+	License_SMt,	L"Can use machine translation"
 	License_SLocalTm,	L"Personal translation memory with fuzzy matching"
 	License_SCloud,	L"Can use cloud services"
 	License_SRemoteTermbase,	L"Can use remote glossaries and terminology databases"
 	License_SRemoteTm,	L"Can use remote translation memories with fuzzy matching"
 	License_SMake,	L"Can use command line tool"
-	License_SHiddenId,	L"Can inject hidden ids"
+	License_SHiddenId,	L"Can inject hidden IDs"
 	License_SVisualEditor,	L"Visual editors"
 	License_SErrorRegister,	L"Error"
 	License_SNotFoundRegister,	L"Unknown serial number"
 	License_SInvalidNamesRegister,	L"Serial and name do not match"
 	License_SInstallLimitReachedRegister,	L"Installation limit reached"
 	License_SSubscriptionExpiredRegister,	L"Subscription expired"
-	License_SExtendLimitReachedRegister,	L"Evaluation period has ended and cannot be extended"
-	License_SVersionBuildStr,	L"%0:d.%1:d.%2:d"
-	License_SVersion,	L"Version %s"
-	License_S32Bit,	L"32-bit"
+	License_SMicrosoft,	L"Microsoft platforms such as Visual C++, .NET, UWP, ASP.NET, Blazor"
+	License_SEmbarcadero,	L"Embarcadero platforms such as Delphi, FireMonkey and Interbase"
+	License_SJava,	L"Java platforms such as Java, Java ME, LWUIT, JSP"
+	License_SApple,	L"Apple platforms such as OSX, iOS, Xamarin and FireMonkey"
 	License_SLinux,	L"Linux platforms such as PO"
 	License_SGui,	L"Graphical User Interface"
 	License_SCreate,	L"Create new projects"
@@ -2572,10 +2584,10 @@ BEGIN
 	License_SExport,	L"Can export translations"
 	License_SPseudo,	L"Pseudo translation"
 	License_SSpell,	L"Spell checking"
-	License_SValidation,	L"Can use validation"
-	License_SFileGlossary,	L"Can use glossary and terminology files"
-	License_SLocalTermbase,	L"Personal glossary and terminology database"
-	License_SMt,	L"Can use machine translation"
+	License_STranslator,	L"Translator"
+	License_SBuildAutomation,	L"Build automation"
+	License_SDesktop,	L"Desktop platforms such as Delphi, Visual C++, GetText, Qt"
+	License_SModernDesktop,	L"Modern desktop platforms such as UWP, Windows Forms, WPF"
 	License_SCrossPlatform,	L"Cross-platform platforms such as Java, GetText, Qt, Xamarin, FireMonkey"
 	License_SMobile,	L"Mobile platforms such as Android, iOS, UWP, Xamarin, FireMonkey"
 	License_SBasicData,	L"Basic data files such as XML, JSON, INI, text"
@@ -2588,10 +2600,10 @@ BEGIN
 	License_SWeb,	L"Web platforms such as ASP.NET, PHP, Blazor, Magento"
 	License_SWindows,	L"Windows platforms such as Delphi, C++Builder, Visual C++, Windows Forms, WPF"
 	License_SNet,	L".NET platforms such as WinForms, WPF, ASP.NET, ASP.NET Core, Blazor"
-	License_SMicrosoft,	L"Microsoft platforms such as Visual C++, .NET, UWP, ASP.NET, Blazor"
-	License_SEmbarcadero,	L"Embarcadero platforms such as Delphi, FireMonkey and Interbase"
-	License_SJava,	L"Java platforms such as Java, Java ME, LWUIT, JSP"
-	License_SApple,	L"Apple platforms such as OSX, iOS, Xamarin and FireMonkey"
+	uTPLb_I18n_Base64_DisplayName,	L"Base64"
+	uTPLb_I18n_CFB8bit_DisplayName,	L"CFB 8-bit"
+	uTPLb_I18n_ECB_DisplayName,	L"ECB (with block padding)"
+	License_SNoPlatformLicense,	L"You have %0:s edition that does not support %1:s. In order to open this project file you have to upgrade your license to %2:s edition"
 	License_SOk,	L"OK"
 	License_SError,	L"Unexpected error"
 	License_SNoInternet,	L"No Internet connection"
@@ -2604,10 +2616,10 @@ BEGIN
 	License_SBasicTranslatorEdition,	L"Basic Translator Edition"
 	License_SShortEdition,	L"%s Edition"
 	License_SDeveloper,	L"Developer, author or localization engineer"
-	License_STranslator,	L"Translator"
-	License_SBuildAutomation,	L"Build automation"
-	License_SDesktop,	L"Desktop platforms such as Delphi, Visual C++, GetText, Qt"
-	License_SModernDesktop,	L"Modern desktop platforms such as UWP, Windows Forms, WPF"
+	uTPLb_I18n_ES_HugeCardinal_Power2,	L"MulPower2 overflow."
+	uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow,	L"MulSmall overflow."
+	uTPLb_I18n_ES_HugeCardinal_ResizeOverflow,	L"THugeCardinal.Resize overflow"
+	uTPLb_I18n_ES_HugeCardinal_PowerOverflow,	L"Power overflow"
 	uTPLb_I18n_ES_HugeCardinal_SubractOverflow,	L"THugeCardinal.Subtract overflow."
 	uTPLb_I18n_ES_HugeCardinal_StreamOutOverflow,	L"THugeCardinal.StreamOut overflow."
 	uTPLb_I18n_ES_HugeCardinal_StreamInOverflow,	L"THugeCardinal.StreamIn overflow."
@@ -2620,10 +2632,10 @@ BEGIN
 	uTPLb_I18n_ES_OpenSSLCompat_RequiresIV,	L"OpenSSL Compability mode requires an explicit IV (except ECB mode)."
 	uTPLb_I18n_RSA_DisplayName,	L"RSA public key encryption system"
 	uTPLb_I18n_BlockCipher_DisplayName,	L"Block mode"
-	uTPLb_I18n_Base64_DisplayName,	L"Base64"
-	uTPLb_I18n_CFB8bit_DisplayName,	L"CFB 8-bit"
-	uTPLb_I18n_ECB_DisplayName,	L"ECB (with block padding)"
-	License_SNoPlatformLicense,	L"You have %0:s edition that does not support %1:s. In order to open this project file you have to upgrade your license to %2:s edition"
+	uTPLb_I18n_ES_DecryptNoAlg,	L"TSimpleCodec.Begin_DecryptMemory - Algorithms not set."
+	uTPLb_I18n_ES_WrongModeEncryptMem,	L"TSimpleCodec.EncryptMemory - Wrong mode."
+	uTPLb_I18n_ES_WrongModeDecryptMem,	L"TSimpleCodec.DecryptMemory - Wrong mode."
+	uTPLb_I18n_ES_WrongModeEndDecryptMem,	L"TSimpleCodec.End_DecryptMemory - Wrong mode."
 	uTPLb_I18n_ES_WrongModeEndEncryptMem,	L"TSimpleCodec.End_EncryptMemory - Wrong mode."
 	uTPLb_I18n_ES_Asym_CannotSetParam,	L"TSimpleCodec.AsymetricKeySizeInBits - Cannot set parameter whilst enc/decrypting."
 	uTPLb_I18n_ES_Asym_CannotSetCipher,	L"TSimpleCodec.Init - Cannot set Cipher whilst enc/decrypting."
@@ -2636,10 +2648,10 @@ BEGIN
 	uTPLb_I18n_ES_CannotAssignHuge_BecauseSourceTooBig,	L"Cannot assign THugeCardinal because source is too big and resizing is not allowed."
 	uTPLb_I18n_ES_HugeCardinal_IncrementOverflow,	L"THugeCardinal.Increment overflow."
 	uTPLb_I18n_ES_HugeCardinal_DivideOverflow,	L"THugeCardinal.Divide overflow."
-	uTPLb_I18n_ES_HugeCardinal_Power2,	L"MulPower2 overflow."
-	uTPLb_I18n_ES_HugeCardinal_MulSmallOverflow,	L"MulSmall overflow."
-	uTPLb_I18n_ES_HugeCardinal_ResizeOverflow,	L"THugeCardinal.Resize overflow"
-	uTPLb_I18n_ES_HugeCardinal_PowerOverflow,	L"Power overflow"
+	PeUtils_SRcDatas,	L"RC data"
+	PeUtils_SRibbons,	L"Ribbons"
+	PeUtils_SStrings,	L"Strings"
+	PeUtils_SToolbars,	L"Toolbars"
 	PeUtils_SVersions,	L"Versions"
 	PeUtils_SVxds,	L"VXDs"
 	NtSourceCode_STruncated,	L"(Truncated, original data is %d characters)"
@@ -2652,10 +2664,10 @@ BEGIN
 	uTPLb_I18n_ES_WrongModeEncrypt,	L"TSimpleCodec.Begin_EncryptMemory - Wrong mode."
 	uTPLb_I18n_ES_EncryptNoAlg,	L"TSimpleCodec.Begin_EncryptMemory - Algorithms not set."
 	uTPLb_I18n_ES_WrongModeDecrypt,	L"TSimpleCodec.Begin_DecryptMemory - Wrong mode."
-	uTPLb_I18n_ES_DecryptNoAlg,	L"TSimpleCodec.Begin_DecryptMemory - Algorithms not set."
-	uTPLb_I18n_ES_WrongModeEncryptMem,	L"TSimpleCodec.EncryptMemory - Wrong mode."
-	uTPLb_I18n_ES_WrongModeDecryptMem,	L"TSimpleCodec.DecryptMemory - Wrong mode."
-	uTPLb_I18n_ES_WrongModeEndDecryptMem,	L"TSimpleCodec.End_DecryptMemory - Wrong mode."
+	PeUtils_SBitmaps,	L"Bitmaps"
+	PeUtils_SCursors,	L"Cursors"
+	PeUtils_SDialogs,	L"Dialogs"
+	PeUtils_SDlgIncludes,	L"Dialog includes"
 	PeUtils_SDlgDatas,	L"Dialog data"
 	PeUtils_SFonts,	L"Fonts"
 	PeUtils_SFontDirs,	L"Font directories"
@@ -2668,10 +2680,10 @@ BEGIN
 	PeUtils_SMenus,	L"Menus"
 	PeUtils_SMessageTables,	L"Message tables"
 	PeUtils_SPlugPlays,	L"Plug and Plays"
-	PeUtils_SRcDatas,	L"RC data"
-	PeUtils_SRibbons,	L"Ribbons"
-	PeUtils_SStrings,	L"Strings"
-	PeUtils_SToolbars,	L"Toolbars"
+	Data_DBConsts_SInvalidBcdValue,	L"%s is not a valid BCD value"
+	Data_DBConsts_SCouldNotParseTimeStamp,	L"Could not parse SQL TimeStamp string"
+	Data_DBConsts_SInvalidSqlTimeStamp,	L"Invalid SQL date/time values"
+	LicenseTypes_SEnterpriseEdition,	L"Includes all the features and supports all platforms. Contains the build automation support."
 	LicenseTypes_SProfessionalEdition,	L"Includes most of the features and supports most of the platforms"
 	LicenseTypes_SPersonalEdition,	L"Includes the basic features and supports the basic platforms"
 	LicenseTypes_SBuildAutomation,	L"Includes all platforms and features to create, scan, import, export, and build from the command line"
@@ -2684,10 +2696,10 @@ BEGIN
 	PeUtils_SAccelerators,	L"Accelerators"
 	PeUtils_SAniCursors,	L"Animated cursors"
 	PeUtils_SAniIcons,	L"Animated icons"
-	PeUtils_SBitmaps,	L"Bitmaps"
-	PeUtils_SCursors,	L"Cursors"
-	PeUtils_SDialogs,	L"Dialogs"
-	PeUtils_SDlgIncludes,	L"Dialog includes"
+	Data_DBConsts_SNotEditing,	L"Dataset not in edit or insert mode"
+	Data_DBConsts_SDataSetClosed,	L"Cannot perform this operation on a closed dataset"
+	Data_DBConsts_SDataSetEmpty,	L"Cannot perform this operation on an empty dataset"
+	Data_DBConsts_SDataSetReadOnly,	L"Cannot modify a read-only dataset"
 	Data_DBConsts_SNestedDataSetClass,	L"Nested dataset must inherit from %s"
 	Data_DBConsts_STextFalse,	L"False"
 	Data_DBConsts_STextTrue,	L"True"
@@ -2700,10 +2712,10 @@ BEGIN
 	Data_DBConsts_SUnassignedVar,	L"Unassigned variant value"
 	Data_DBConsts_SRecordNotFound,	L"Record not found"
 	Data_DBConsts_SBcdOverflow,	L"BCD overflow"
-	Data_DBConsts_SInvalidBcdValue,	L"%s is not a valid BCD value"
-	Data_DBConsts_SCouldNotParseTimeStamp,	L"Could not parse SQL TimeStamp string"
-	Data_DBConsts_SInvalidSqlTimeStamp,	L"Invalid SQL date/time values"
-	LicenseTypes_SEnterpriseEdition,	L"Includes all the features and supports all platforms. Contains the build automation support."
+	Data_DBConsts_SInvalidFloatValue,	L"'%s' is not a valid floating point value for field '%s'"
+	Data_DBConsts_SFieldTypeMismatch,	L"Type mismatch for field '%s', expecting: %s actual: %s"
+	Data_DBConsts_SFieldSizeMismatch,	L"Size mismatch for field '%s', expecting: %d actual: %d"
+	Data_DBConsts_SInvalidVarByteArray,	L"Invalid variant type or size for field '%s'"
 	Data_DBConsts_SFieldOutOfRange,	L"Value of field '%s' is out of range"
 	Data_DBConsts_SFieldRequired,	L"Field '%s' must have a value"
 	Data_DBConsts_SDataSetMissing,	L"Field '%s' has no dataset"
@@ -2716,10 +2728,10 @@ BEGIN
 	Data_DBConsts_SLookupInfoError,	L"Lookup information for field '%s' is incomplete"
 	Data_DBConsts_SDataSourceChange,	L"DataSource cannot be changed"
 	Data_DBConsts_SDataSetOpen,	L"Cannot perform this operation on an open dataset"
-	Data_DBConsts_SNotEditing,	L"Dataset not in edit or insert mode"
-	Data_DBConsts_SDataSetClosed,	L"Cannot perform this operation on a closed dataset"
-	Data_DBConsts_SDataSetEmpty,	L"Cannot perform this operation on an empty dataset"
-	Data_DBConsts_SDataSetReadOnly,	L"Cannot modify a read-only dataset"
+	NtInstaller_SChangesNotRemoved,	L"The changes made so far have been removed except these:%s"
+	NtJson_SUnexpectedClosingBracket,	L"Unexpected closing bracket"
+	NtJson_SNoFile,	L"No filename given"
+	NtJson_SErrorParsingJsonData,	L"Error parsing JSON data."
 	Data_DBConsts_SInvalidFieldSize,	L"Invalid field size"
 	Data_DBConsts_SInvalidFieldKind,	L"Invalid FieldKind"
 	Data_DBConsts_SUnknownFieldType,	L"Field '%s' is of an unknown type"
@@ -2732,10 +2744,7 @@ BEGIN
 	Data_DBConsts_SBcdFieldRangeError,	L"%s is not a valid value for field '%s'. The allowed range is %s to %s"
 	Data_DBConsts_SInvalidIntegerValue,	L"'%s' is not a valid integer value for field '%s'"
 	Data_DBConsts_SInvalidBoolValue,	L"'%s' is not a valid boolean value for field '%s'"
-	Data_DBConsts_SInvalidFloatValue,	L"'%s' is not a valid floating point value for field '%s'"
-	Data_DBConsts_SFieldTypeMismatch,	L"Type mismatch for field '%s', expecting: %s actual: %s"
-	Data_DBConsts_SFieldSizeMismatch,	L"Size mismatch for field '%s', expecting: %d actual: %d"
-	Data_DBConsts_SInvalidVarByteArray,	L"Invalid variant type or size for field '%s'"
+	Vcl_Imaging_GIFConsts_sProgressRendering,	L"Rendering"
 	Vcl_Imaging_GIFConsts_sProgressCopying,	L"Copying"
 	Vcl_Imaging_GIFConsts_sProgressOptimizing,	L"Optimizing"
 	NtIcon_rstInvalidIcon,	L"Invalid Icon or Cursor"
@@ -2749,9 +2758,9 @@ BEGIN
 	NtUninstallFile_SCanNotRemoveKey,	L"Can not remove %0:s\\%1:s key."
 	NtUninstallFile_SCanNotRemoveValue,	L"Can not remove %0:s\\%1:s -> %2:s value."
 	NtInstaller_SHelpAndManual,	L"Help+Manual"
-	NtJson_SUnexpectedClosingBracket,	L"Unexpected closing bracket"
-	NtJson_SNoFile,	L"No filename given"
-	NtJson_SErrorParsingJsonData,	L"Error parsing JSON data."
+	NtInstaller_SCouldNotCreateDir,	L"Could not create \"%s\" directory: %s"
+	NtInstaller_SChangesRemoved,	L"The changes made so far have been removed."
+	Vcl_Imaging_GIFConsts_sNoColorTable,	L"No global or local color table defined"
 	Vcl_Imaging_GIFConsts_sBadPixelCoordinates,	L"Invalid pixel coordinates"
 	Vcl_Imaging_GIFConsts_sInvalidPixelFormat,	L"Unsupported PixelFormat"
 	Vcl_Imaging_GIFConsts_sBadDimension,	L"Invalid image dimensions"
@@ -2767,7 +2776,7 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sProgressLoading,	L"Loading"
 	Vcl_Imaging_GIFConsts_sProgressSaving,	L"Saving"
 	Vcl_Imaging_GIFConsts_sProgressConverting,	L"Converting"
-	Vcl_Imaging_GIFConsts_sProgressRendering,	L"Rendering"
+	Vcl_Imaging_GIFConsts_sBadSignature,	L"Invalid GIF signature"
 	Vcl_Imaging_GIFConsts_sScreenBadColorSize,	L"Invalid number of colors specified in Screen Descriptor"
 	Vcl_Imaging_GIFConsts_sImageBadColorSize,	L"Invalid number of colors specified in Image Descriptor"
 	Vcl_Imaging_GIFConsts_sUnknownExtension,	L"Unknown extension type"
@@ -2783,10 +2792,10 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sInvalidData,	L"Invalid GIF data"
 	Vcl_Imaging_GIFConsts_sBadSize,	L"Invalid image size"
 	Vcl_Imaging_GIFConsts_sScreenSizeExceeded,	L"Image exceeds Logical Screen size"
-	Vcl_Imaging_GIFConsts_sNoColorTable,	L"No global or local color table defined"
 	NtScript_SNameWithoutBom,	L"%s, without BOM"
 	NtString_SInvalidString,	L"Invalid string: %s"
 	NtString_SUnknownCode,	L"Unknown code: <%s>"
+	NtClasses_SWindowsError,	L"Windows error %d"
 	NtWiz_SNext,	L"&Next"
 	NtWiz_SFinish,	L"&Finish"
 	Shell_Win32_sNewFolder,	L"New Folder"
@@ -2799,7 +2808,6 @@ BEGIN
 	Vcl_Imaging_GIFConsts_sBadColorIndex,	L"Invalid color index"
 	Vcl_Imaging_GIFConsts_sBadColorIndexFixed,	L"Invalid color index - color map expanded"
 	Vcl_Imaging_GIFConsts_sGIFErrorSaveEmpty,	L"Cannot save empty GIF"
-	Vcl_Imaging_GIFConsts_sBadSignature,	L"Invalid GIF signature"
 	NtScript_SJapaneseJisX,	L"JIS X 0208-1990 & 0212-1990"
 	NtScript_SJapaneseAuto,	L"Japanese auto-detect"
 	NtScript_SKoreanAuto,	L"Korean auto-detect"
@@ -3563,7 +3571,7 @@ BEGIN
 	System_NetConsts_SMimeWeightOutOfRange,	L"Quality weight is out of range"
 	NtXml_SUnknownVersion,	L"Unknown XML version: %s"
 	NtXml_SNotInProcessMode,	L"XML parser is not in the process mode."
-	NtXml_SCanNotChangeEncoding,	L"Can not change the detected \"%0:s\" encoding to the \"%1:s\" specified by encoding attribute. The XML data is invalid."
+	NtXml_SCanNotChangeEncoding,	L"Cannot change the detected \"%0:s\" encoding to the \"%1:s\" specified by encoding attribute. The XML data is invalid."
 	NtXml_SNoElement,	L"The file does not contain a %s element"
 	NtXml_SInvalidXml,	L"Invalid XML"
 	NtXml_SInvalidXmlAtLine,	L"Invalid XML at line: \"%s\""
@@ -4092,4 +4100,4 @@ END
 /* D:\NT\Desktop\Bin\JPart\InstallationLimitDlg.dfm */
 /* D:\NT\Desktop\Setup\Install\license.res */
 /* D:\NT\Desktop\Setup\Install\SoluSetup.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtf1C7D.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtf5466.tmp */

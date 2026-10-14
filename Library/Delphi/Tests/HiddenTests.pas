@@ -51,8 +51,9 @@ end;
 
 procedure THiddenTests.TearDown;
 begin
-  inherited;
+  FCustomValue.Free;
   FValue.Free;
+  inherited;
 end;
 
 procedure THiddenTests.Encode(value: Integer);
@@ -62,7 +63,7 @@ var
 begin
   encoded := FValue.Encode(value);
   decoded := FValue.Decode(encoded);
-  Check(decoded = value);
+  CheckEquals(value, decoded);
 end;
 
 procedure THiddenTests.EncodeCustom(value: Integer);
@@ -72,7 +73,7 @@ var
 begin
   encoded := FCustomValue.Encode(value);
   decoded := FCustomValue.Decode(encoded);
-  Check(decoded = value);
+  CheckEquals(value, decoded);
 end;
 
 procedure THiddenTests.EncodeZero;
@@ -121,8 +122,8 @@ begin
   encoded := FValue.Inject(VALUE, ID);
   part := FValue.Parse(encoded);
 
-  Check(part.Value = VALUE);
-  Check(part.Id = ID);
+  CheckEquals(VALUE, part.Value);
+  CheckEquals(ID, part.Id);
 end;
 
 procedure THiddenTests.ParseTriple;
@@ -143,16 +144,16 @@ begin
   try
     FValue.Parse(encoded, parts);
 
-    Check(parts.Count = 3);
+    CheckEquals(3, parts.Count);
 
-    Check(parts[0].Value = VALUE1);
-    Check(parts[0].Id = ID1);
+    CheckEquals(VALUE1, parts[0].Value);
+    CheckEquals(ID1, parts[0].Id);
 
-    Check(parts[1].Value = VALUE2);
-    Check(parts[1].Id = ID2);
+    CheckEquals(VALUE2, parts[1].Value);
+    CheckEquals(ID2, parts[1].Id);
 
-    Check(parts[2].Value = VALUE3);
-    Check(parts[2].Id = ID3);
+    CheckEquals(VALUE3, parts[2].Value);
+    CheckEquals(ID3, parts[2].Id);
   finally
     parts.Free;
   end;

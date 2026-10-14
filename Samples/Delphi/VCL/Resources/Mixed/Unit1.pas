@@ -37,6 +37,9 @@ type
 
     procedure UpdateImage;
     procedure UpdateText;
+
+  public
+    destructor Destroy; override;
   end;
 
 var
@@ -111,6 +114,13 @@ begin
 
   UpdateImage;
   UpdateText;
+end;
+
+destructor TForm1.Destroy;
+begin
+  FImages.Free;
+  FTexts.Free;
+  inherited;
 end;
 
 procedure TForm1.FormResize(Sender: TObject);

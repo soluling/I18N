@@ -72,14 +72,15 @@ end;
 procedure TForm1.CalculateActionExecute(Sender: TObject);
 var
   time: Double;
-  hours, minutes: Integer;
+  hours, minutes, totalMinutes: Integer;
 begin
   if Speed = 0 then
     Exit;
 
   time := Distance/Speed;
-  hours := Trunc(time);
-  minutes := Round(60*(time - hours));
+  totalMinutes := Round(60*time);
+  hours := totalMinutes div 60;
+  minutes := totalMinutes mod 60;
 
   HoursLabel.Caption := IntToStr(hours) + ' hours';
   MinutesLabel.Caption := IntToStr(minutes) + ' minutes';

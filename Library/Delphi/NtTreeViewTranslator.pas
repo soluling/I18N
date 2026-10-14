@@ -71,6 +71,17 @@ const
 var
   stream: TNtStream;
 
+  // Child of the node, or nil if the node or the child does not exist. A translation
+  // can contain more nodes than the tree, for example if nodes have been deleted at runtime.
+  // The data of a missing node is still read so that the following nodes stay in sync.
+  function GetChild(node: TTreeNode; index: Integer): TTreeNode;
+  begin
+    if (node <> nil) and (index < node.Count) then
+      Result := node[index]
+    else
+      Result := nil;
+  end;
+
   procedure ProcessOld(node: TTreeNode);
   var
     i, size: Integer;
@@ -79,13 +90,16 @@ var
     size := stream.ReadInteger;
     stream.Read(info, size);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.Text := TNtConvert.AnsiToUnicode(info.Text);
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.Text := TNtConvert.AnsiToUnicode(info.Text);
+    end;
 
     for i := 0 to info.Count - 1 do
-      ProcessOld(node[i]);
+      ProcessOld(GetChild(node, i));
   end;
 
 {$IFDEF DELPHI2006}
@@ -103,13 +117,16 @@ var
     if info.TextLen > 0 then
       stream.Read(str[1], 2*info.TextLen);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.Text := str;
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.Text := str;
+    end;
 
     for i := 0 to info.Count - 1 do
-      Process(node[i]);
+      Process(GetChild(node, i));
   end;
 {$ENDIF}
 
@@ -128,13 +145,16 @@ var
     if info.TextLen > 0 then
       stream.Read(str[1], 2*info.TextLen);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.Text := str;
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.Text := str;
+    end;
 
     for i := 0 to info.Count - 1 do
-      Process2(node[i]);
+      Process2(GetChild(node, i));
   end;
 {$ENDIF}
 
@@ -153,13 +173,16 @@ var
     if info.TextLen > 0 then
       stream.Read(str[1], 2*info.TextLen);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.Text := str;
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.Text := str;
+    end;
 
     for i := 0 to info.Count - 1 do
-      Process264(node[i]);
+      Process264(GetChild(node, i));
   end;
 {$ENDIF}
 
@@ -200,14 +223,17 @@ var
     if info.TextLen > 0 then
       stream.Read(str[1], 2*info.TextLen);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.CheckState := info.CheckState;
-    node.Text := str;
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.CheckState := info.CheckState;
+      node.Text := str;
+    end;
 
     for i := 0 to info.Count - 1 do
-      Process332(node[i], version);
+      Process332(GetChild(node, i), version);
   end;
 
   procedure Process364(node: TTreeNode; version: Integer);
@@ -227,14 +253,17 @@ var
     if info.TextLen > 0 then
       stream.Read(str[1], 2*info.TextLen);
 
-    node.ImageIndex := info.ImageIndex;
-    node.SelectedIndex := info.SelectedIndex;
-    node.OverlayIndex := info.OverlayIndex;
-    node.CheckState := info.CheckState;
-    node.Text := str;
+    if node <> nil then
+    begin
+      node.ImageIndex := info.ImageIndex;
+      node.SelectedIndex := info.SelectedIndex;
+      node.OverlayIndex := info.OverlayIndex;
+      node.CheckState := info.CheckState;
+      node.Text := str;
+    end;
 
     for i := 0 to info.Count - 1 do
-      Process364(node[i], version);
+      Process364(GetChild(node, i), version);
   end;
 {$ENDIF}
 
@@ -262,7 +291,8 @@ begin //FI:C101
       for i := 0 to count - 1 do  //FI:W528
       begin
         ProcessOld(node);
-        node := node.GetNextSibling;
+        if node <> nil then
+          node := node.GetNextSibling;
       end;
     end
 {$IFDEF DELPHI2006}
@@ -297,7 +327,8 @@ begin //FI:C101
   {$ENDIF}
           Process(node);
 
-        node := node.GetNextSibling;
+        if node <> nil then
+          node := node.GetNextSibling;
       end;
     end;
 {$ENDIF}

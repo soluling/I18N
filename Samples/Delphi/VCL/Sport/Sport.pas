@@ -231,24 +231,25 @@ var
 begin
   ClearItems;
 
-  SetLength(header, 3);
-  stream.Read(header[1], 3);
-
-  if header <> #$EF#$BB#$BF then
-    raise Exception.Create('Not valid UTF-8');
-
   try
+    SetLength(header, 3);
+    stream.Read(header[1], 3);
+
+    if header <> #$EF#$BB#$BF then
+      raise Exception.Create('Not valid UTF-8');
+
     while not IsEof do
     begin
+      // Add the item first so it gets freed even if reading a property fails
       item := TSport.Create;
+      FItems.Add(item);
+
       item.FId := GetString;
       item.FName := GetString;
       item.FPlayers := GetInteger;
       item.FGoalie := GetInteger > 0;
       item.FOrigin := GetString;
       item.FDescription := GetString;
-
-      FItems.Add(item);
     end;
   finally
     stream.Free;
@@ -309,20 +310,27 @@ var
 var
   item: TSport;
   bytes: TArray<Byte>;
+  jsonValue: TJSONValue;
   json: TJSONArray;
   jsonItem: TJSONValue;
 begin
   ClearItems;
+  jsonValue := nil;
 
-  SetLength(bytes, stream.Size);
-  stream.Read(bytes, Length(bytes));
-
-  json := TJSONObject.ParseJSONValue(bytes, 0) as TJSONArray;
   try
+    SetLength(bytes, stream.Size);
+    stream.Read(bytes, Length(bytes));
+
+    jsonValue := TJSONObject.ParseJSONValue(bytes, 0);
+    json := jsonValue as TJSONArray;
+
     for jsonItem in json do
     begin
       activeJsonItem := jsonItem;
+
+      // Add the item first so it gets freed even if reading a property fails
       item := TSport.Create;
+      FItems.Add(item);
 
       if language = '' then
       begin
@@ -349,11 +357,9 @@ begin
         item.FOrigin := GetString('origin');
         item.FDescription := GetString('description');
       end;
-
-      FItems.Add(item);
     end;
   finally
-    json.Free;
+    jsonValue.Free;
 
     if freeStream then
       stream.Free;
@@ -420,7 +426,7 @@ var
 var
   i: Integer;
   item: TSport;
-  document: TXMLDocument;
+  document: IXMLDocument;
   sports: IXMLNode;
 begin
   ClearItems;
@@ -435,18 +441,18 @@ begin
     begin
       xmlItem := sports.ChildNodes[i];
 
+      // Add the item first so it gets freed even if reading a property fails
       item := TSport.Create;
+      FItems.Add(item);
+
       item.FId := GetString('id');
       item.FName := GetString('name');
       item.FPlayers := GetInteger('fieldplayers');
       item.FGoalie := GetBoolean('goalie');
       item.FOrigin := GetString('origin');
       item.FDescription := xmlItem.ChildNodes.FindNode('description').Text;
-
-      FItems.Add(item);
     end;
   finally
-    document.Free;
     stream.Free;
   end;
 end;
@@ -504,12 +510,17 @@ var
 begin
   ClearItems;
 
-  encoding := TEncoding.GetEncoding(GetCodePage);
-  iniFile := TMemIniFile.Create('');
-  stringList := TStringList.Create;
-  sections := TStringList.Create;
+  encoding := nil;
+  iniFile := nil;
+  stringList := nil;
+  sections := nil;
 
   try
+    encoding := TEncoding.GetEncoding(GetCodePage);
+    iniFile := TMemIniFile.Create('');
+    stringList := TStringList.Create;
+    sections := TStringList.Create;
+
     stringList.LoadFromStream(stream, encoding);
     iniFile.SetStrings(stringList);
 
@@ -519,15 +530,16 @@ begin
     begin
       section := sections[i];
 
+      // Add the item first so it gets freed even if reading a property fails
       item := TSport.Create;
+      FItems.Add(item);
+
       item.FId := section;
       item.FName := GetString('name');
       item.FPlayers := GetInteger('fieldplayers');
       item.FGoalie := GetBoolean('goalie');
       item.FOrigin := GetString('origin');
       item.FDescription := GetString('description');
-
-      FItems.Add(item);
     end;
   finally
     sections.Free;

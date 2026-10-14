@@ -85,7 +85,8 @@ begin
   openParm.dwCallback := 0;
   openParm.lpstrElementName := PChar(fileName);
 
-  error := mciSendCommand(0, mci_Open, MCI_OPEN_ELEMENT or MCI_WAIT, Longint(@openParm));
+  // The parameter is a pointer. DWORD_PTR keeps it 64-bit on Win64; Longint would truncate it.
+  error := mciSendCommand(0, mci_Open, MCI_OPEN_ELEMENT or MCI_WAIT, DWORD_PTR(@openParm));
 
   if (error <> 0) and (error <> MCIERR_DEVICE_OPEN) then
     Exit;
@@ -94,9 +95,9 @@ begin
 
   try
     FillChar(playParm, SizeOf(TMCI_Play_Parms), 0);
-    Result := mciSendCommand(deviceID, MCI_PLAY, MCI_WAIT, Longint(@playParm)) = 0;
+    Result := mciSendCommand(deviceID, MCI_PLAY, MCI_WAIT, DWORD_PTR(@playParm)) = 0;
   finally
-    mciSendCommand(deviceID, MCI_CLOSE, 0, Longint(@openParm));
+    mciSendCommand(deviceID, MCI_CLOSE, 0, DWORD_PTR(@openParm));
   end;
 end;
 

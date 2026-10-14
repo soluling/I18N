@@ -192,7 +192,7 @@ var
 begin
   if IsVista then
   begin
-    l := getLocaleInfoEx(PWideChar(WideString(id)), localeType, buffer, SizeOf(buffer));
+    l := getLocaleInfoEx(PWideChar(WideString(id)), localeType, buffer, Length(buffer));
 
     if l > 0 then
       SetString(Result, buffer, l - 1)
@@ -367,6 +367,7 @@ end;
 
 function EnumLocalesEx(localeStr: PWideChar; flags: DWord; param: LParam): Integer; stdcall;  //FI:O804
 var
+  id: Integer;
   code: String;
   thisFileName: String;
 begin
@@ -375,7 +376,14 @@ begin
 
   if FileExists(thisFileName) {$IFDEF DELPHI2009}and IsPeFile(thisFileName){$ENDIF} then
   begin
-    enumLanguages.Add(code, TNtWindows.CodeToId(code), thisFileName);
+    id := TNtWindows.CodeToId(code);
+
+    // Same checks as the legacy named files have
+    if (not enumCompatibleOnly or TNtBase.IsLocaleCompatible(id)) and
+      (not enumCheckVersions or TNtResource.DoesLocaleVersionMatchFile(thisFileName)) then
+    begin
+      enumLanguages.Add(code, id, thisFileName);
+    end;
   end;
 
   Result := 1;
@@ -474,7 +482,7 @@ class function TNtWindows.GetAvailable(
   languages: TNtLanguages;
   exeFileName: String;
   compatibleOnly: Boolean;
-  checkVersions: Boolean;  //FI:O804
+  checkVersions: Boolean;
   const dir: String = ''): Integer;
 begin
   if exeFileName = '' then
@@ -482,6 +490,7 @@ begin
 
   enumLanguages := languages;
   enumCompatibleOnly := compatibleOnly;
+  enumCheckVersions := checkVersions;
 
   if dir <> '' then
   begin
@@ -511,7 +520,7 @@ begin
   if languages.Count = 0 then
   begin
     enumExeFileName := TNtBase.GetFolderPath(NT_CSIDL_PERSONAL) + '\' + APPLICATION_DIR + '\' + ExtractFileName(exeFileName);
-    EnumSystemLocales(@EnumLocales, LCID_SUPPORTED);
+    EnumSystemLocalesA(@EnumLocales, LCID_SUPPORTED);
   end;
 
   Result := languages.Count;

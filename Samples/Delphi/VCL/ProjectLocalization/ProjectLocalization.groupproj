@@ -1,0 +1,48 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{BE5A99F4-5F4B-4D35-9EB8-86907F7507EF}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="ResourceStrings\ResourceStrings.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="LegacyStrings\LegacyStrings.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="ResourceStrings">
+        <MSBuild Projects="ResourceStrings\ResourceStrings.dproj"/>
+    </Target>
+    <Target Name="ResourceStrings:Clean">
+        <MSBuild Projects="ResourceStrings\ResourceStrings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="ResourceStrings:Make">
+        <MSBuild Projects="ResourceStrings\ResourceStrings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="LegacyStrings">
+        <MSBuild Projects="LegacyStrings\LegacyStrings.dproj"/>
+    </Target>
+    <Target Name="LegacyStrings:Clean">
+        <MSBuild Projects="LegacyStrings\LegacyStrings.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="LegacyStrings:Make">
+        <MSBuild Projects="LegacyStrings\LegacyStrings.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="ResourceStrings;LegacyStrings"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="ResourceStrings:Clean;LegacyStrings:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="ResourceStrings:Make;LegacyStrings:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

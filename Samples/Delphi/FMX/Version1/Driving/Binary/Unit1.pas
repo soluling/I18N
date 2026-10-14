@@ -77,14 +77,15 @@ resourcestring
   SResultPlural = 'Driving time{plural, zero { } one { %d hour } other { %d hours }}{plural, one {%d minute} other {%d minutes}}.';
 var
   time: Double;
-  hours, minutes: Integer;
+  hours, minutes, totalMinutes: Integer;
 begin
   if Speed = 0 then
     Exit;
 
   time := Distance/Speed;
-  hours := Trunc(time);
-  minutes := Round(60*(time - hours));
+  totalMinutes := Round(60*time);
+  hours := totalMinutes div 60;
+  minutes := totalMinutes mod 60;
 
   ResultLabel.Text := TMultiPattern.Format(SResultPlural, [hours, minutes]);
 end;

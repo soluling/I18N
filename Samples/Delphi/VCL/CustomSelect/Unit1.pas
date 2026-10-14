@@ -20,6 +20,9 @@ type
     FLanguages: TNtLanguages;
 
     procedure UpdateLanguages;
+
+  public
+    destructor Destroy; override;
   end;
 
 var
@@ -71,13 +74,26 @@ begin
   NameGroup.ItemIndex := 0;
 end;
 
+destructor TForm1.Destroy;
+begin
+  FLanguages.Free;
+  inherited;
+end;
+
 procedure TForm1.LanguageGroupClick(Sender: TObject);
+var
+  language: String;
 begin
   if FUpdating then
     Exit;
 
   // User clicked a language button. Turn that language on.
-  TNtTranslator.SetNew(FLanguages[LanguageGroup.ItemIndex].Code);
+  language := FLanguages[LanguageGroup.ItemIndex].Code;
+
+  if language = DefaultLocale then
+    language := '';
+
+  TNtTranslator.SetNew(language, [], DefaultLocale);
   UpdateLanguages;
 end;
 

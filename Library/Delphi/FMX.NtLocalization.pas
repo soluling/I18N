@@ -186,7 +186,7 @@ begin
   PreviouslyLoadedResourceLocale := '';
 
   if (LoadedResourceLocale = '') and
-    (GetModuleFileName(LibModuleList.Instance, buffer, SizeOf(buffer)) > 0) then
+    (GetModuleFileName(LibModuleList.Instance, buffer, Length(buffer)) > 0) then
   begin
     LoadedResourceLocale := CheckLocale(buffer, TNtLocaleRegistry.GetCurrentDefaultLocale, False);
 

@@ -10,10 +10,16 @@ uses
 type
   TPatternTests = class(TTestCase)
   private
-    procedure Same(const value1, value2: String);
+    FDefaultLocale: String;
+
+    procedure Same(const actual, expected: String);
     procedure Form(count: Integer; plural: TPlural);
     procedure Pattern(count: Integer; const format: String; const pattern: String);
     procedure Format(count: Integer; const format: String; const value: String);
+
+  protected
+    procedure SetUp; override;
+    procedure TearDown; override;
 
   published
     procedure StandardIcu;
@@ -108,11 +114,20 @@ type
     procedure Operators;
     procedure Gender;
     procedure Multi2;
+
+    // Regression tests
+    procedure InvalidPatternRaisesException;
+    procedure MultiCountLegacy;
+    procedure OperatorValuesAddsGivenOperator;
+    procedure TrailingBackslashIcu;
+    procedure UnknownPluralSelectorIsOther;
+    procedure UnknownPluralSelectorIgnoredIfOtherExists;
   end;
 
 implementation
 
 uses
+  System.SysUtils,
   NtBase;
 
 const
@@ -172,9 +187,24 @@ const
   ZeroOtherLegacy = 'zero;No files;other;%d files';
 
 
-procedure TPatternTests.Same(const value1, value2: String);
+procedure TPatternTests.SetUp;
 begin
-  CheckEquals(value1, value2);
+  inherited;
+
+  // Tests must not depend on the language set by the previous test
+  FDefaultLocale := DefaultLocale;
+  DefaultLocale := 'en';
+end;
+
+procedure TPatternTests.TearDown;
+begin
+  DefaultLocale := FDefaultLocale;
+  inherited;
+end;
+
+procedure TPatternTests.Same(const actual, expected: String);
+begin
+  CheckEquals(expected, actual);
 end;
 
 procedure TPatternTests.Form(count: Integer; plural: TPlural);
@@ -182,17 +212,17 @@ var
   func: TPluralProc;
 begin
   func := TMultiPattern.GetProc();
-  CheckEquals(Ord(func(count, count, 0, 0, 0, 0)), Ord(plural));
+  CheckEquals(Ord(plural), Ord(func(count, count, 0, 0, 0, 0)), System.SysUtils.Format('Plural form of %d in "%s"', [count, DefaultLocale]));
 end;
 
 procedure TPatternTests.Pattern(count: Integer; const format: String; const pattern: String);
 begin
-  CheckEquals(TMultiPattern.GetPattern(format, count), pattern);
+  CheckEquals(pattern, TMultiPattern.GetPattern(format, count), System.SysUtils.Format('Count %d in "%s"', [count, DefaultLocale]));
 end;
 
 procedure TPatternTests.Format(count: Integer; const format: String; const value: String);
 begin
-  CheckEquals(TMultiPattern.Format(format, count), value);
+  CheckEquals(value, TMultiPattern.Format(format, count), System.SysUtils.Format('Count %d in "%s"', [count, DefaultLocale]));
 end;
 
 
@@ -1304,63 +1334,63 @@ const
 begin
   DefaultLocale := 'en';
 
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [0]), 'I have 0 skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [1]), 'I have one ski');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [2]), 'I have 2 skis');
+  CheckEquals('I have 0 skis', TMultiPattern.Format(PATTERN_C, [0]));
+  CheckEquals('I have one ski', TMultiPattern.Format(PATTERN_C, [1]));
+  CheckEquals('I have 2 skis', TMultiPattern.Format(PATTERN_C, [2]));
 end;
 
 procedure TPatternTests.ZeroSinglePlural;
 const
   PATTERN_C = 'zero;I have no skis;one;I have one ski;other;I have %d skis';
 begin
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [0]), 'I have no skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [1]), 'I have one ski');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [2]), 'I have 2 skis');
+  CheckEquals('I have no skis', TMultiPattern.Format(PATTERN_C, [0]));
+  CheckEquals('I have one ski', TMultiPattern.Format(PATTERN_C, [1]));
+  CheckEquals('I have 2 skis', TMultiPattern.Format(PATTERN_C, [2]));
 end;
 
 procedure TPatternTests.Range;
 const
   PATTERN_C = '0;I have no skis;1..3;I have few skis;4..9;I have many skis;>=10;I have lots of skis';
 begin
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [0]), 'I have no skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [1]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [2]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [3]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [5]), 'I have many skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [9]), 'I have many skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [10]), 'I have lots of skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [20]), 'I have lots of skis');
+  CheckEquals('I have no skis', TMultiPattern.Format(PATTERN_C, [0]));
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [1]));
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [2]));
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [3]));
+  CheckEquals('I have many skis', TMultiPattern.Format(PATTERN_C, [5]));
+  CheckEquals('I have many skis', TMultiPattern.Format(PATTERN_C, [9]));
+  CheckEquals('I have lots of skis', TMultiPattern.Format(PATTERN_C, [10]));
+  CheckEquals('I have lots of skis', TMultiPattern.Format(PATTERN_C, [20]));
 end;
 
 procedure TPatternTests.Operators;
 const
   PATTERN_C = '=0;I have no skis;=1;I have one ski;~12;I have a dozen skis;<10;I have few skis;>5;I have many skis;>=20;I have lots of skis;other;I have %d skis';
 begin
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [0]), 'I have no skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [1]), 'I have one ski');
+  CheckEquals('I have no skis', TMultiPattern.Format(PATTERN_C, [0]));
+  CheckEquals('I have one ski', TMultiPattern.Format(PATTERN_C, [1]));
 
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [2]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [5]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [6]), 'I have many skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [9]), 'I have few skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [10]), 'I have many skis');
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [2]));
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [5]));
+  CheckEquals('I have many skis', TMultiPattern.Format(PATTERN_C, [6]));
+  CheckEquals('I have few skis', TMultiPattern.Format(PATTERN_C, [9]));
+  CheckEquals('I have many skis', TMultiPattern.Format(PATTERN_C, [10]));
 
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [11]), 'I have a dozen skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [12]), 'I have a dozen skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [13]), 'I have a dozen skis');
+  CheckEquals('I have a dozen skis', TMultiPattern.Format(PATTERN_C, [11]));
+  CheckEquals('I have a dozen skis', TMultiPattern.Format(PATTERN_C, [12]));
+  CheckEquals('I have a dozen skis', TMultiPattern.Format(PATTERN_C, [13]));
 
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [19]), 'I have many skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [20]), 'I have lots of skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [21]), 'I have lots of skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, [100]), 'I have lots of skis');
+  CheckEquals('I have many skis', TMultiPattern.Format(PATTERN_C, [19]));
+  CheckEquals('I have lots of skis', TMultiPattern.Format(PATTERN_C, [20]));
+  CheckEquals('I have lots of skis', TMultiPattern.Format(PATTERN_C, [21]));
+  CheckEquals('I have lots of skis', TMultiPattern.Format(PATTERN_C, [100]));
 end;
 
 procedure TPatternTests.Gender;
 const
   PATTERN_C = 'male;%s brings his skis;female;%s brings her skis';
 begin
-  CheckEquals(TMultiPattern.Format(PATTERN_C, geMale, [MALE_C]), MALE_C + ' brings his skis');
-  CheckEquals(TMultiPattern.Format(PATTERN_C, geFemale, [FEMALE_C]), FEMALE_C + ' brings her skis');
+  CheckEquals(MALE_C + ' brings his skis', TMultiPattern.Format(PATTERN_C, geMale, [MALE_C]));
+  CheckEquals(FEMALE_C + ' brings her skis', TMultiPattern.Format(PATTERN_C, geFemale, [FEMALE_C]));
 end;
 
 procedure TPatternTests.Multi2;
@@ -1397,12 +1427,94 @@ const
     (Kind: fpPlural; Plural: 2)
   );
 begin
-  CheckEquals(TMultiPattern.FormatMulti(PATTERN_C, MALE_0_C), MALE_C + ' will bring his 0 cars.');
-  CheckEquals(TMultiPattern.FormatMulti(PATTERN_C, MALE_1_C), MALE_C + ' will bring his car.');
-  CheckEquals(TMultiPattern.FormatMulti(PATTERN_C, MALE_2_C), MALE_C + ' will bring his 2 cars.');
+  CheckEquals(MALE_C + ' will bring his 0 cars.', TMultiPattern.FormatMulti(PATTERN_C, MALE_0_C));
+  CheckEquals(MALE_C + ' will bring his car.', TMultiPattern.FormatMulti(PATTERN_C, MALE_1_C));
+  CheckEquals(MALE_C + ' will bring his 2 cars.', TMultiPattern.FormatMulti(PATTERN_C, MALE_2_C));
 
-  CheckEquals(TMultiPattern.FormatMulti(PATTERN_C, FEMALE_1_C), FEMALE_C + ' will bring her car.');
-  CheckEquals(TMultiPattern.FormatMulti(PATTERN_C, FEMALE_2_C), FEMALE_C + ' will bring her 2 cars.');
+  CheckEquals(FEMALE_C + ' will bring her car.', TMultiPattern.FormatMulti(PATTERN_C, FEMALE_1_C));
+  CheckEquals(FEMALE_C + ' will bring her 2 cars.', TMultiPattern.FormatMulti(PATTERN_C, FEMALE_2_C));
+end;
+
+procedure TPatternTests.InvalidPatternRaisesException;
+const
+  PATTERN_C = '{plural, one {one} other {%d files\}';
+begin
+  // Raising used to type cast the message string into an exception object
+  try
+    TMultiPattern.Format(PATTERN_C, 1);
+    Fail('Invalid pattern did not raise an exception');
+  except
+    on e: ETestFailure do
+      raise;
+
+    on e: Exception do
+      CheckTrue(Pos(PATTERN_C, e.Message) > 0, 'Message does not contain the pattern: ' + e.Message);
+  end;
+end;
+
+procedure TPatternTests.MultiCountLegacy;
+const
+  PATTERN_C = 'one;%d hour %s;other;%d hours %s;next;one;%d minute;other;%d minutes';
+begin
+  // Every parameter used to be formatted only after the loop so the inner parameters were lost
+  CheckEquals('2 hours 5 minutes', TMultiPattern.Format(PATTERN_C, [2, 5]));
+  CheckEquals('1 hour 1 minute', TMultiPattern.Format(PATTERN_C, [1, 1]));
+  CheckEquals('1 hour 10 minutes', TMultiPattern.Format(PATTERN_C, [1, 10]));
+end;
+
+procedure TPatternTests.OperatorValuesAddsGivenOperator;
+var
+  str: TFormatString;
+  part: TFormatPart;
+begin
+  // A new operator pattern used to be always added as =n
+  str := TFormatString.Create;
+  try
+    str.ParsePattern('{plural, one {%d file} other {%d files}}');
+    part := str.Items[0];
+
+    part.OperatorValues[okGreater, 10, 0] := 'many files';
+    part.OperatorValues[okGreater, 10, 0] := 'more than ten files';
+    part.OperatorValues[okRange, 3, 5] := 'a few files';
+
+    CheckEquals(4, part.Count, 'Setting an existing operator must not add a new pattern');
+    CheckEquals('more than ten files', part.OperatorValues[okGreater, 10, 0]);
+    CheckEquals('a few files', part.OperatorValues[okRange, 3, 5]);
+    CheckEquals('{plural, one {%d file} other {%d files} >10 {more than ten files} 3..5 {a few files}}', str.Text);
+
+    CheckEquals('more than ten files', part.GetPluralPattern(TMultiPattern.GetPlural(11), 11));
+    CheckEquals('%d files', part.GetPluralPattern(TMultiPattern.GetPlural(10), 10));
+    CheckEquals('a few files', part.GetPluralPattern(TMultiPattern.GetPlural(4), 4));
+  finally
+    str.Free;
+  end;
+end;
+
+procedure TPatternTests.TrailingBackslashIcu;
+const
+  PATTERN_C = 'Files: {plural, one {%d file} other {%d files}}\';
+begin
+  // A backslash at the end used to read past the end of the string
+  CheckEquals('Files: 2 files\', TMultiPattern.Format(PATTERN_C, 2));
+  CheckEquals('Use {braces}: 1 file', TMultiPattern.Format('Use \{braces\}: {plural, one {%d file} other {%d files}}', 1));
+end;
+
+procedure TPatternTests.UnknownPluralSelectorIsOther;
+const
+  PATTERN_C = '{plural, one {%d file} othe {%d files}}';
+begin
+  // A misspelled selector is used as the other form when there is no other form
+  Pattern(1, PATTERN_C, '%d file');
+  Pattern(2, PATTERN_C, '%d files');
+  Format(0, PATTERN_C, '0 files');
+end;
+
+procedure TPatternTests.UnknownPluralSelectorIgnoredIfOtherExists;
+const
+  PATTERN_C = '{plural, one {%d file} othe {typo} other {%d files}}';
+begin
+  Pattern(1, PATTERN_C, '%d file');
+  Pattern(2, PATTERN_C, '%d files');
 end;
 
 initialization

@@ -39,6 +39,9 @@ type
 
     property MainLanguage: String read GetMainLanguage;
     property ClientLanguage: String read GetClientLanguage;
+
+  public
+    destructor Destroy; override;
   end;
 
 var
@@ -135,6 +138,12 @@ begin
 
   if MainCombo.ItemIndex = -1 then
     SetIndex(0);
+end;
+
+destructor TMainForm.Destroy;
+begin
+  FLanguages.Free;
+  inherited;
 end;
 
 procedure TMainForm.MainComboChange(Sender: TObject);

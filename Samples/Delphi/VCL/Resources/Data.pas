@@ -81,7 +81,12 @@ begin
 end;
 
 destructor TResourceItems.Destroy;
+var
+  i: Integer;
 begin
+  for i := 0 to FItems.Count - 1 do
+    TResourceItem(FItems[i]).Free;
+
   FItems.Free;
   inherited;
 end;

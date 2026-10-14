@@ -11,6 +11,8 @@ type
   TNumberTests = class(TTestCase)
   private
     FPrecision: Integer;
+    FThreadLocale: Integer;
+    FDefaultLocale: String;
 
     procedure SetLanguage(const value: String);
 
@@ -18,6 +20,10 @@ type
 
     property Language: String write SetLanguage;
     property Precision: Integer read FPrecision write FPrecision;
+
+  protected
+    procedure SetUp; override;
+    procedure TearDown; override;
 
   published
     procedure English;
@@ -36,6 +42,24 @@ uses
   NtNumber,
   NtNumberData;
 
+procedure TNumberTests.SetUp;
+begin
+  inherited;
+
+  // Tests change the locale. Restore it so that other tests are not affected.
+  FThreadLocale := GetThreadLocale;
+  FDefaultLocale := DefaultLocale;
+end;
+
+procedure TNumberTests.TearDown;
+begin
+  SetThreadLocale(FThreadLocale);
+  TNtLocale.UpdateFormatSettings(FThreadLocale);
+  DefaultLocale := FDefaultLocale;
+
+  inherited;
+end;
+
 procedure TNumberTests.SetLanguage(const value: String);
 var
   locale: Integer;
@@ -51,7 +75,7 @@ procedure TNumberTests.Process(value: Double; const long, short, currency: Strin
 
   procedure Check(const actual, shouldBe: String);
   begin
-    CheckEquals(StringReplace(actual, #160, ' ', [rfReplaceAll]), shouldBe);
+    CheckEquals(shouldBe, StringReplace(actual, #160, ' ', [rfReplaceAll]), Format('Value %g in "%s"', [value, DefaultLocale]));
   end;
 
 begin

@@ -88,14 +88,15 @@ end;
 procedure TForm1.CalculateButtonClick(Sender: TObject);
 var
   time: Double;
-  hours, minutes: Integer;
+  hours, minutes, totalMinutes: Integer;
 begin
   if Speed = 0 then
     Exit;
 
   time := Distance/Speed;
-  hours := Trunc(time);
-  minutes := Round(60*(time - hours));
+  totalMinutes := Round(60*time);
+  hours := totalMinutes div 60;
+  minutes := totalMinutes mod 60;
 
   // This multi-plural pattern has two parameters (hours and minutes).
   // It uses standard plural rules of English (1 = singular, all other are plurals) plus special zero case in hours.

@@ -348,7 +348,8 @@ procedure TNtLanguageDialog.FormShow(Sender: TObject);
 
   procedure Add(language: TNtLanguage);
   begin
-    if not CheckVersion or TNtResource.DoesLocaleVersionMatch(language.Code) then
+    // Check the resource file that was found. The original language has no resource file.
+    if not CheckVersion or (language.FileName = '') or TNtResource.DoesLocaleVersionMatchFile(language.FileName) then
       LanguageList.Items.AddObject(
         language.Names[FLanguageName],
         TLanguageCode.Create(language.ActiveCode));

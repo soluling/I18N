@@ -29,6 +29,9 @@ type
     FTexts: TResourceItems;
 
     procedure UpdateText;
+
+  public
+    destructor Destroy; override;
   end;
 
 var
@@ -74,6 +77,12 @@ begin
   FTexts.Add(NAME, 'SegmentedUtf16Be');
 
   UpdateText;
+end;
+
+destructor TForm1.Destroy;
+begin
+  FTexts.Free;
+  inherited;
 end;
 
 procedure TForm1.FormResize(Sender: TObject);

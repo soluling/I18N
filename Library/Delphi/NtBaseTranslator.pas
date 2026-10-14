@@ -103,8 +103,8 @@ type
     property TypeInfo: PTypeInfo read GetTypeInfo;
 
   protected
-    FCurrentPpi: Integer;
-    FScreenPpi: Integer;
+    FCurrentPpi: Integer;  // DPI of the form being translated. 0 if coordinates are not scaled.
+    FScreenPpi: Integer;   // DPI that the form data being translated was designed at
 
     procedure AfterProcessComponent(component: TComponent); virtual;
 
@@ -1190,6 +1190,53 @@ begin
   Result := FindResourceHInstance(FindClassHInstance(classType));
 end;
 
+{$IFDEF DELPHIDX4}
+{ Get the DPI that the form was designed at. It is the PixelsPerInch property of
+  the root object. If the form data does not contain it the form was designed at 96 DPI.
+  The property comes after the coordinates of the root, so read it before translating.
+  @param stream Form data. The position is restored.
+  @return Design DPI. }
+function GetDesignPpi(stream: TStream): Integer;
+const
+  DEFAULT_PPI_C = 96;
+var
+  childPos: Integer;
+  flags: TFilerFlags;
+  position: Int64;
+  reader: TReader;
+begin
+  Result := DEFAULT_PPI_C;
+  position := stream.Position;
+  try
+    reader := TReader.Create(stream, 4096);
+    try
+      reader.ReadSignature;
+      reader.ReadPrefix(flags, childPos);
+      reader.ReadStr;  // class name
+      reader.ReadStr;  // object name
+
+      while not reader.EndOfList do
+      begin
+        if SameText(reader.ReadStr, 'PixelsPerInch') then
+        begin
+          Result := reader.ReadInteger;
+          Break;
+        end;
+
+        reader.SkipValue;
+      end;
+    finally
+      reader.Free;
+    end;
+  except
+    // Invalid form data is reported when the form is translated
+    Result := DEFAULT_PPI_C;
+  end;
+
+  stream.Position := position;
+end;
+{$ENDIF}
+
 function TNtBaseTranslator.DoTranslate(component: TComponent; resourceName: String): Boolean;
 var
   instance: THandle;
@@ -1214,6 +1261,13 @@ begin
 
     if stream = nil then
       stream := TResourceStream.Create(instance, PChar(resourceName), RT_RCDATA);
+
+{$IFDEF DELPHIDX4}
+    // Coordinates in the form data are in the DPI that the form was designed at.
+    // Scale them from that DPI, not from 96. Only when scaling is used (VCL).
+    if FCurrentPpi > 0 then
+      FScreenPpi := GetDesignPpi(stream);
+{$ENDIF}
 
     FReader := TReader.Create(stream, stream.Size);
     try

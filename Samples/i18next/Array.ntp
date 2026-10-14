@@ -1,0 +1,62 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="98AA5617-1D70-4B19-AE68-91D83189DCF3" created="20261004T114521Z" lastmodified="20261004T114602Z" version="1.0.1113" stringid="8">
+  <lang id="fi"/>
+  <node class="Ti18nextSource" name="Array.json" fullpath="D:\NT\Deploy\Samples\i18next\Array.json" original="en" lastmodified="20261004T114602Z" encoding="utf-8">
+    <row id="arrayJoin[0]" si="1">
+      <value>line1</value>
+      <lang id="fi" st="1" or="6" rw="0" time="20261004T114532Z" fuzzy="99.5">rivi1</lang>
+    </row>
+    <row id="arrayJoin[1]" si="2">
+      <value>line2</value>
+      <lang id="fi" st="1" or="6" rw="0" time="20261004T114533Z" fuzzy="99.5">rivi2</lang>
+    </row>
+    <row id="arrayJoin[2]" si="3">
+      <value>line3</value>
+      <lang id="fi" st="1" or="6" rw="0" time="20261004T114535Z" fuzzy="99.5">rivi 3</lang>
+    </row>
+    <row id="arrayJoinWithInterpolation[0]" si="4">
+      <value>you</value>
+      <lang id="fi" st="1" or="6" rw="0" time="20261004T114537Z" fuzzy="99.5">sinä</lang>
+    </row>
+    <row id="arrayJoinWithInterpolation[1]" si="5">
+      <value>can</value>
+      <lang id="fi" st="1" or="6" rw="0" time="20261004T114540Z" fuzzy="99.5">voi</lang>
+    </row>
+    <row id="arrayJoinWithInterpolation[2]" si="6" codep="1">{{myVar}}</row>
+    <item class="TJsonResourceComponent" name="arrayOfObjects[0]">
+      <row id="name" si="7">
+        <value>tom</value>
+        <lang id="fi" st="4" rw="0" time="20261004T114559Z">Tommi</lang>
+      </row>
+    </item>
+    <item class="TJsonResourceComponent" name="arrayOfObjects[1]">
+      <row id="name" si="8">
+        <value>steve</value>
+        <lang id="fi" st="4" rw="0" time="20261004T114602Z">Teuvvo</lang>
+      </row>
+    </item>
+    <data>
+      ew0KICAgICAgImFycmF5Sm9pbiI6IFsNCiAgICAgICAgImxpbmUxIiwNCiAgICAgICAgImxpbmUyIiwNCiAgICAgICAgImxpbmUz
+      Ig0KICAgICAgXSwNCiAgICAgICJhcnJheUpvaW5XaXRoSW50ZXJwb2xhdGlvbiI6IFsNCiAgICAgICAgInlvdSIsDQogICAgICAg
+      ICJjYW4iLA0KICAgICAgICAie3tteVZhcn19Ig0KICAgICAgXSwNCiAgICAgICJhcnJheU9mT2JqZWN0cyI6IFsNCiAgICAgICAg
+      eyAibmFtZSI6ICJ0b20iIH0sDQogICAgICAgIHsgIm5hbWUiOiAic3RldmUiIH0NCiAgICAgIF0NCn0=
+    </data>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+      <item name="Hilde" type="TSqliteTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
+  </mt>
+</project>

@@ -49,6 +49,8 @@ type
     procedure HideList;
 
   public
+    destructor Destroy; override;
+
     property LanguageId: String read GetLanguageId write SetLanguageId;
     property LanguageCount: Integer read GetLanguageCount;
     property Languages[i: Integer]: TNtLanguage read GetLanguage;
@@ -247,6 +249,12 @@ begin
   HideList;
 
   SetDefault;
+end;
+
+destructor TForm1.Destroy;
+begin
+  FLanguages.Free;
+  inherited;
 end;
 
 procedure TForm1.HideList;

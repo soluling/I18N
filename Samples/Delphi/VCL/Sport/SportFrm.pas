@@ -39,6 +39,8 @@ type
     procedure LoadSports; virtual; abstract;
 
   public
+    destructor Destroy; override;
+
     property ItemIndex: Integer read FItemIndex write SetItemIndex;
     property ActiveLanguage: String read GetActiveLanguage;
   end;
@@ -99,6 +101,12 @@ begin
 
   // Show first sport
   FirstButtonClick(Self);
+end;
+
+destructor TSportForm.Destroy;
+begin
+  FSports.Free;
+  inherited;
 end;
 
 procedure TSportForm.FirstButtonClick(Sender: TObject);

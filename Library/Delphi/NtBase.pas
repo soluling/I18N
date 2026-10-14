@@ -817,12 +817,17 @@ begin
   LoadNew('');
 end;
 
-class function TNtBase.LocaleToCodePage(locale: Integer): Integer;
+class function TNtBase.LocaleToCodePage(locale: Integer): Integer;  //FI:O804
 begin
+{$IFDEF MSWINDOWS}
   if locale = LANG_CHINESE then
     Result := 936
   else
     Result := StrToInt(GetLocaleStr(locale, LOCALE_IDEFAULTANSICODEPAGE, '0'));
+{$ELSE}
+  // Code pages are not locale specific outside Windows
+  Result := DefaultSystemCodePage;
+{$ENDIF}
 end;
 
 class function TNtBase.IsLocaleCompatible(locale: Integer): Boolean;  //FI:O804
@@ -1354,7 +1359,8 @@ begin  //FI:C101
     if ProcessLocale(id) then
       Exit;
 
-    Delete(id, 2, 1);
+    // Language neutral id is the first two characters: FIN -> FI
+    Delete(id, 3, 1);
 
     if ProcessLocale(id) then
       Exit;
@@ -1481,7 +1487,7 @@ begin  //FI:C101
     begin
       if fileName = '' then
       begin
-        GetModuleFileName(module.Instance, buffer, SizeOf(buffer));
+        GetModuleFileName(module.Instance, buffer, Length(buffer));
         fileName := buffer;
         resourceFileNameGiven := False;
       end
@@ -1491,7 +1497,15 @@ begin  //FI:C101
       if FileExists(fileName) then
       begin
         if resourceFileNameGiven then
-          newInst := LoadResourceDll(fileName, '')
+        begin
+          // Load the given resource file as it is. Do not search it.
+{$IFDEF MSWINDOWS}
+          newInst := LoadLibraryEx(PChar(fileName), 0, LOAD_LIBRARY_AS_DATAFILE);
+{$ENDIF}
+{$IFDEF POSIX}
+          newInst := LoadModule(fileName, fileName, False);
+{$ENDIF}
+        end
         else
         begin
           newInst := LoadResourceDll(fileName, code);
@@ -1527,6 +1541,9 @@ begin  //FI:C101
         end
         else
         begin
+          if module.ResInstance <> module.Instance then
+            FreeLibrary(module.ResInstance);
+
           module.ResInstance := module.Instance;
         end;
       end;
@@ -1588,9 +1605,11 @@ begin
     str := resName;
     fileName := ChangeFileExt(enumFileName, '.' + str);
 
+    // Extracted files have the date of the exe. The file date has only two seconds precision
+    // so compare the dates in that precision.
     if (not FileExists(fileName) or
       not (eoCheckDate in enumOptions) or
-      (GetFileDateTime(fileName) <> enumFileDate)) then
+      (DateTimeToFileDate(GetFileDateTime(fileName)) <> DateTimeToFileDate(enumFileDate))) then
     begin
       unload := resName = LoadedResourceLocale;
 
@@ -1629,7 +1648,8 @@ begin
 
     Result := True;
   except
-    Result := False;
+    // Skip the file but continue with the other files
+    Result := True;
   end;
 end;
 {$ENDIF}
@@ -1806,7 +1826,7 @@ class procedure TNtLocaleRegistry.SetCurrentDefaultLocale;
 var
   fileName: array[0..MAX_PATH] of Char;
 begin
-  if GetModuleFileName(0, fileName, SizeOf(fileName)) > 0 then
+  if GetModuleFileName(0, fileName, Length(fileName)) > 0 then
     SetDefaultLocale(fileName, LoadedResourceLocale);
 end;
 
@@ -1814,7 +1834,7 @@ class procedure TNtLocaleRegistry.SetCurrentDefaultLocaleValue(const code: Strin
 var
   fileName: array[0..MAX_PATH] of Char;
 begin
-  if GetModuleFileName(0, fileName, SizeOf(fileName)) > 0 then
+  if GetModuleFileName(0, fileName, Length(fileName)) > 0 then
     SetDefaultLocale(fileName, code);
 end;
 
@@ -1822,7 +1842,7 @@ class function TNtLocaleRegistry.GetCurrentDefaultLocale: String;
 var
   fileName: array[0..MAX_PATH] of Char;
 begin
-  if GetModuleFileName(0, fileName, SizeOf(fileName)) > 0 then
+  if GetModuleFileName(0, fileName, Length(fileName)) > 0 then
     Result := GetDefaultLocale(fileName)
   else
     Result := '';
@@ -1914,7 +1934,7 @@ class function TNtLocaleRegistry.ClearCurrentDefaultLocale: Boolean;
 var
   fileName: array[0..MAX_PATH] of Char;
 begin
-  if GetModuleFileName(0, fileName, SizeOf(fileName)) = 0 then
+  if GetModuleFileName(0, fileName, Length(fileName)) = 0 then
     Result := False
   else
     Result := ClearDefaultLocale(fileName);

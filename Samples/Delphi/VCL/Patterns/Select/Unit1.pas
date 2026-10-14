@@ -1,4 +1,4 @@
-unit Unit1;
+﻿unit Unit1;
 
 interface
 
@@ -40,7 +40,7 @@ procedure TForm1.UpdateValues;
   end;
 
 begin
-  Process('soccer', 'Pel ', SoccerLabel);
+  Process('soccer', 'Pelé', SoccerLabel);
   Process('hockey', 'Wayne Gretzky', HockeyLabel);
   Process('basketball', 'Michael Jordan', BasketBallLabel);
 end;

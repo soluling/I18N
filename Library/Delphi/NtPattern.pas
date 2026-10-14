@@ -1551,7 +1551,7 @@ begin
     FUsedOperand2 := operand2;
   end
   else
-    Add(value, okEqual, operand, operand2);
+    Add(value, kind, operand, operand2);
 end;
 
 function TFormatPart.GetEqualOperatorValue(operand: Integer): String;
@@ -2343,7 +2343,7 @@ begin
     Clear;
 
     if not ParseLegacy(pattern) then
-      raise Exception(Format('"%s" is not a valid pattern string', [pattern]));
+      raise Exception.CreateFmt('"%s" is not a valid pattern string', [pattern]);
   end;
 end;
 
@@ -2399,7 +2399,8 @@ begin
     if braces = 0 then
       Break;
 
-    if c = '\' then
+    // Backslash escapes the next character. A backslash at the end is a normal character.
+    if (c = '\') and (index < Length(pattern)) then
     begin
       Inc(index);
       c := pattern[index];
@@ -2415,12 +2416,16 @@ end;
 
 function TFormatString.ParseIcuPattern(const pattern: String; var index: Integer): Boolean;
 var
-  name, str: String;
+  name, str, unknownStr: String;
   operand, operand2: Integer;
   operatorKind: TOperatorKind;
   parameter: TFormatPart;
+  plural: TPlural;
+  hasOther, hasUnknown: Boolean;
 begin
   Result := False;
+  hasOther := False;
+  hasUnknown := False;
 
   // {plural one {%d file} other {%d files}}
   // {plural one {{0} file} other {{0} files}}
@@ -2453,11 +2458,21 @@ begin
     if SameText(parameter.ParameterType, 'plural') then
     begin
       if TMultiPattern.IsPlural(name) then
-        parameter.Add(str, TMultiPattern.StringToPlural(name))
-      else
       begin
-        operand := TMultiPattern.StringToOperator(name, operatorKind, operand2);
-        parameter.Add(str, operatorKind, operand, operand2);
+        plural := TMultiPattern.StringToPlural(name);
+        parameter.Add(str, plural);
+
+        if plural = pfOther then
+          hasOther := True;
+      end
+      else if TMultiPattern.TryStringToOperator(name, operatorKind, operand, operand2) then
+        parameter.Add(str, operatorKind, operand, operand2)
+      else if not hasUnknown then
+      begin
+        // Unknown selector, most likely a typo such as "othe". It is used as
+        // the other form if the pattern does not have one.
+        unknownStr := str;
+        hasUnknown := True;
       end;
     end
     else if SameText(parameter.ParameterType, 'gender') then
@@ -2465,6 +2480,9 @@ begin
     else
       parameter.Add(str, name);
   end;
+
+  if hasUnknown and not hasOther then
+    parameter.Add(unknownStr, pfOther);
 
   Inc(index);
   Result := True;
@@ -2547,8 +2565,9 @@ begin //FI:C101
 
       Continue;
     end
-    else if c = '\' then
+    else if (c = '\') and (index < Length(pattern)) then
     begin
+      // Backslash escapes the next character. A backslash at the end is a normal character.
       Inc(index);
       c := pattern[index];
       thisStartPattern := thisStartPattern + c;
@@ -3061,9 +3080,9 @@ begin  //FI:C101
           thisArgs[1].VWideString := Pointer(Result);
   {$ENDIF}
         end;
-      end;
 
-      Result := SysUtils.Format(thisPattern, thisArgs);
+        Result := SysUtils.Format(thisPattern, thisArgs);
+      end;
 
       if str.StartPattern <> '' then
         Result := SysUtils.Format(str.StartPattern, [Result]);
@@ -3284,7 +3303,7 @@ end;
 class function TMultiPattern.StringToOperator(const value: String; out kind: TOperatorKind; out operand2: Integer): Integer;
 begin
   if not TryStringToOperator(value, kind, Result, operand2) then
-    raise Exception.CreateFmt('Invalid oprator value: %s', [value]);
+    raise Exception.CreateFmt('Invalid operator value: %s', [value]);
 end;
 
 class function TMultiPattern.StringToOperator(const value: String; out kind: TOperatorKind): Integer;
@@ -3292,7 +3311,7 @@ var
   operand2: Integer;
 begin
   if not TryStringToOperator(value, kind, Result, operand2) then
-    raise Exception.CreateFmt('Invalid oprator value: %s', [value]);
+    raise Exception.CreateFmt('Invalid operator value: %s', [value]);
 end;
 
 class function TMultiPattern.StringToGender(const value: String): TGender;

@@ -21,9 +21,13 @@ uses
   NumberTests in 'NumberTests.pas',
   NtNumberData in '..\NtNumberData.pas',
   NtHiddenId in '..\NtHiddenId.pas',
-  HiddenTests in 'HiddenTests.pas';
+  HiddenTests in 'HiddenTests.pas',
+  NtResource in '..\NtResource.pas',
+  ResourceTests in 'ResourceTests.pas',
+  LocalizationTests in 'LocalizationTests.pas';
 
 {$R *.RES}
+{$R 'NtTestRes.res' 'NtTestRes.rc'}
 
 begin
   DUnitTestRunner.RunRegisteredTests;

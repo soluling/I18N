@@ -130,9 +130,18 @@ begin
 end;
 
 procedure TForm1.LanguageButtonClick(Sender: TObject);
+var
+  thisPrecision: Integer;
 begin
+  // Translating the form sets the properties from the form resource. This sets
+  // also the precision to its design time value. Keep the precision.
+  thisPrecision := Precision;
+
   if TNtLanguageDialog.Select then
+  begin
+    PrecisionUpDown.Position := thisPrecision;
     UpdateValues;
+  end;
 end;
 
 end.

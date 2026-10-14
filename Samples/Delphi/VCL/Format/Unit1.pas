@@ -95,12 +95,19 @@ begin
 end;
 
 procedure TForm1.LanguageButtonClick(Sender: TObject);
+var
+  thisCount: Integer;
 begin
+  // Translating the form sets the properties from the form resource. This sets
+  // also the text of the count edit to its design time value. Keep the count.
+  thisCount := Count;
+
   // Show a language select dialog and turn on the selected language
   if TNtLanguageDialog.Select('en', '', lnBoth) then
   begin
     // Language has been changed.
     // Properties that were set on run time must be set again.
+    CountUpDown.Position := thisCount;
     UpdateItems;
   end;
 end;

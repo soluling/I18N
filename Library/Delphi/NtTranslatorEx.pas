@@ -18,6 +18,9 @@ procedure _T(form: TCustomForm);
 var
   translator: TNtTranslator;
 begin
+  if form = nil then
+    Exit;
+
   translator := TNtTranslator.Create;
   try
     translator.TranslateForm(form);
