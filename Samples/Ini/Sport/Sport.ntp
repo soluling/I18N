@@ -1,33 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="27F1A21E-7368-4AF5-8934-4919C59BDC73" created="20111118T065307Z" lastmodified="20260702T121614Z" version="1.0.1106" stringid="9" cloudid="1" comments="A INI file that contains the sport list">
-  <lang id="fi">
-    <invitation id="1" account="1" projectGuid="" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaakko" languageId="fi" userId="0" emailSent="20211113T194707573Z" accepted="18991230T000000000Z" securityToken="2113434667">
-    </invitation>
-  </lang>
-  <lang id="de">
-    <invitation id="2" account="1" projectGuid="" projectId="1" projectName="Sport" email="jaakko.salmenius@gmail.com" name="Jaska" languageId="de" userId="1" emailSent="20211113T195733443Z" accepted="18991230T000000000Z" securityToken="2127149085">
-    </invitation>
-  </lang>
-  <lang id="fr">
-    <invitation id="3" account="1" projectGuid="" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaska" languageId="fr" userId="0" emailSent="20211113T200701587Z" accepted="18991230T000000000Z" securityToken="900712063">
-    </invitation>
-  </lang>
-  <lang id="ja">
-    <invitation id="8" account="1" projectGuid="" projectId="1" projectName="Sport" email="jaakko@soluling.com" name="Jaska" languageId="ja" userId="0" emailSent="20211113T214051241Z" accepted="18991230T000000000Z" securityToken="476482219">
-    </invitation>
-  </lang>
-  <node class="TIniSource" name="Sport.ini" fullpath="D:\NT\Deploy\Samples\Ini\Sport\Sport.ini" original="en" lastmodified="20260702T111811Z" encoding="windows-1252">
+<project id="27F1A21E-7368-4AF5-8934-4919C59BDC73" created="20111118T065307Z" lastmodified="20261022T112547Z" version="1.0.1119" stringid="9" cloudid="1" comments="A INI file that contains the sport list">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="fr"/>
+  <lang id="ja"/>
+  <node class="TIniSource" name="Sport.ini" fullpath="D:\NT\Deploy\Samples\Ini\Sport\Sport.ini" original="en" lastmodified="20261022T112547Z" encoding="windows-1252">
     <ini detectstringformat="1">
       <keys>
-        <key section="soccer" indent="name"/>
-        <key section="soccer" indent="origin"/>
-        <key section="soccer" indent="description"/>
-        <key section="hockey" indent="name"/>
-        <key section="hockey" indent="origin"/>
-        <key section="hockey" indent="description"/>
-        <key section="basketball" indent="name"/>
-        <key section="basketball" indent="origin"/>
-        <key section="basketball" indent="description"/>
+        <key section="soccer" indent="name" format="sfPlain"/>
+        <key section="soccer" indent="origin" format="sfPlain"/>
+        <key section="soccer" indent="description" format="sfPlain"/>
+        <key section="hockey" indent="name" format="sfPlain"/>
+        <key section="hockey" indent="origin" format="sfPlain"/>
+        <key section="hockey" indent="description" format="sfPlain"/>
+        <key section="basketball" indent="name" format="sfPlain"/>
+        <key section="basketball" indent="origin" format="sfPlain"/>
+        <key section="basketball" indent="description" format="sfPlain"/>
       </keys>
     </ini>
     <item name="soccer">
@@ -113,7 +101,7 @@
   </tm>
   <mt>
     <shared>
-      <item name="Claude" type="TClaudeTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
   <cloudsettings username="jaska" cloudismaster="1" includesources="1" artifacts="1"/>

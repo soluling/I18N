@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="D03BBA1C-AA5B-4903-AA21-CCBCD02395DE" created="20170730T154309Z" lastmodified="20200209T162728Z" version="1.0.691" stringid="9">
+<project id="D03BBA1C-AA5B-4903-AA21-CCBCD02395DE" created="20170730T154309Z" lastmodified="20200209T162728Z" version="1.0.1119" stringid="9">
   <lang id="fi"/>
   <lang id="ja"/>
   <lang id="de"/>
   <lang id="zh"/>
-  <node class="TDelphiProjectSource" name="HelloWorld.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Hello\HelloWorld.dproj" original="en" library="dlFireMonkey">
+  <node class="TDelphiProjectSource" name="HelloWorld.dproj" fullpath="D:\NT\Deploy\Samples\Delphi\FMX\Hello\HelloWorld.dproj" original="en" library="dlFireMonkey" scanmethod="smSource" scanconfigurations="Release">
     <node class="TDelphiProjectFormFolder" name="Forms">
       <node class="TDelphiFormFileNode" name="Unit1" type="TForm1" objectname="Form1" filename="Unit1.fmx">
         <row id="Left">0</row>
@@ -123,50 +123,15 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+    <shared/>
   </mt>
-  <exchange>
-    <item id="fi">
-      <value id="fi">
-        <value>
-          <translator class="TFileTranslator" name="..\Driving\Localized\HelloWorld_fi.ntp"/>
-        </value>
-      </value>
-    </item>
-    <item id="ja">
-      <value id="ja">
-        <value>
-          <translator class="TFileTranslator" name="..\Driving\Localized\HelloWorld_ja.ntp"/>
-        </value>
-      </value>
-    </item>
-    <item id="de">
-      <value id="de">
-        <value>
-          <translator class="TFileTranslator" name="..\Driving\Localized\HelloWorld_de.ntp"/>
-        </value>
-      </value>
-    </item>
-    <item id="zh">
-      <value id="zh">
-        <value>
-          <translator class="TFileTranslator" name="..\Driving\Localized\HelloWorld_zh.ntp"/>
-        </value>
-      </value>
-    </item>
-  </exchange>
-  <duplicates>
-  </duplicates>
 </project>

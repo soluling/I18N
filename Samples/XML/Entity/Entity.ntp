@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="412751DC-D780-466A-A0A4-15AA4EE39F52" created="20140323T035950Z" lastmodified="20230225T120008Z" version="1.0.981" stringid="5">
+<project id="412751DC-D780-466A-A0A4-15AA4EE39F52" created="20140323T035950Z" lastmodified="20261016T104408Z" version="1.0.1115" stringid="15">
   <lang id="fi"/>
-  <node class="TXmlSource" name="Entity.xml" fullpath="D:\NT\Deploy\Samples\XML\Entity\Entity.xml" original="en" lastmodified="20230225T120008Z" encoding="utf-8" bom="1">
+  <node class="TXmlSource" name="Entity.xml" fullpath="D:\NT\Deploy\Samples\XML\Entity\Entity.xml" original="en" lastmodified="20261016T104408Z" encoding="utf-8" bom="1">
     <xml encoding="UTF-8"/>
     <item name="values">
       <item name="1" created="20181126T021725Z">
@@ -43,6 +43,60 @@ sample</value>
 näyte</lang>
         </row>
       </item>
+      <item name="5" created="20261016T095737Z" st="0">
+        <row id="@text[0]" si="6" st="0">
+          <value>Click </value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T095740Z" fuzzy="99.5">Napsauta </lang>
+        </row>
+        <row id="@cdata" si="7" st="0">
+          <value>&lt;b>here&lt;/b> &amp; now</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T095743Z" fuzzy="99.5">&lt;b>täällä&lt;/b> &amp; nyt</lang>
+        </row>
+        <row id="@text[1]" si="8" st="0">
+          <value> to continue</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T095746Z" fuzzy="99.5"> jatkaaksesi</lang>
+        </row>
+      </item>
+      <item name="6" created="20261016T104345Z" st="0">
+        <row id="value" si="9" st="0">
+          <value>Hex reference 😀 in text</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104354Z" fuzzy="99.5">Heksaviite 😀 tekstissä</lang>
+        </row>
+      </item>
+      <item name="7" created="20261016T104345Z" st="0">
+        <row id="value" si="10" st="0">
+          <value>Decimal reference 😀 in text</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104356Z" fuzzy="99.5">Desimaaliviite 😀 tekstissä</lang>
+        </row>
+      </item>
+      <item name="8" created="20261016T104345Z" st="0">
+        <row id="value" si="11" st="0">
+          <value>Lowercase hex with leading zero 😀 in text</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104357Z" fuzzy="99.5">Tekstissä esiintyvä pienillä kirjaimilla kirjoitettu heksadesimaali, jonka alussa on nolla 😀</lang>
+        </row>
+      </item>
+      <item name="9" created="20261016T104345Z" st="0">
+        <row id="value" si="12" st="0">
+          <value>Emoji 😀 typed directly</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104403Z" fuzzy="99.5">Emoji 😀 kirjoitettu suoraan</lang>
+        </row>
+      </item>
+      <item name="10" created="20261016T104345Z" st="0">
+        <row id="value" si="13" st="0">
+          <value>Fish &amp; chips 😀 with an entity</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104401Z" fuzzy="99.5">Fish &amp; chips 😀 entiteetin kanssa</lang>
+        </row>
+      </item>
+      <item name="11" created="20261016T104345Z" st="0">
+        <row id="=note" si="14" st="0">
+          <value>😀 attribute</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104405Z" fuzzy="99.5">😀-attribuutti</lang>
+        </row>
+        <row id="value" si="15" st="0">
+          <value>Reference in an attribute</value>
+          <lang id="fi" st="1" or="6" rw="0" time="20261016T104408Z" fuzzy="99.5">Viittaus attribuutin sisällä</lang>
+        </row>
+      </item>
     </item>
     <data>
       77u/PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiID8+DQoNPCFET0NUWVBFIEh0bWxDb2RlcyBbIDwhRU5USVRZ
@@ -50,15 +104,19 @@ näyte</lang>
       PlRoaXMgYSAmbGRxdW87c21hbGwmcmRxdW87IHNhbXBsZTwvc3RyaW5nPg0KICA8c3RyaW5nIGlkPSIyIj5UaGlzIGEg4oCcc21h
       bGzigJ0gc2FtcGxlPC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9Im9uZQ0KdHdvIj5NdWx0aWxpbmUNCnNhbXBsZTwvc3RyaW5nPg0K
       ICA8c3RyaW5nIGlkPSJvbmUmI3gwYTt0aHJlZSI+TXVsdGlsaW5lJiN4MGE7c2FtcGxlPC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9
-      Im9uZSYjeDBkOyYjeDBhO2ZvdXIiPllldCBhbm90aGVyIG11bHRpbGluZSYjeDBEOyYjeDBhO3NhbXBsZTwvc3RyaW5nPg0KPC92
-      YWx1ZXM+
+      Im9uZSYjeDBkOyYjeDBhO2ZvdXIiPllldCBhbm90aGVyIG11bHRpbGluZSYjeDBEOyYjeDBhO3NhbXBsZTwvc3RyaW5nPg0KICA8
+      c3RyaW5nIGlkPSI1Ij5DbGljayA8IVtDREFUQVs8Yj5oZXJlPC9iPiAmIG5vd11dPiB0byBjb250aW51ZTwvc3RyaW5nPg0KICA8
+      c3RyaW5nIGlkPSI2Ij5IZXggcmVmZXJlbmNlICYjeDFGNjAwOyBpbiB0ZXh0PC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9IjciPkRl
+      Y2ltYWwgcmVmZXJlbmNlICYjMTI4NTEyOyBpbiB0ZXh0PC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9IjgiPkxvd2VyY2FzZSBoZXgg
+      d2l0aCBsZWFkaW5nIHplcm8gJiN4MDFmNjAwOyBpbiB0ZXh0PC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9IjkiPkVtb2ppIPCfmIAg
+      dHlwZWQgZGlyZWN0bHk8L3N0cmluZz4NCiAgPHN0cmluZyBpZD0iMTAiPkZpc2ggJmFtcDsgY2hpcHMgJiN4MUY2MDA7IHdpdGgg
+      YW4gZW50aXR5PC9zdHJpbmc+DQogIDxzdHJpbmcgaWQ9IjExIiBub3RlPSImI3gxRjYwMDsgYXR0cmlidXRlIj5SZWZlcmVuY2Ug
+      aW4gYW4gYXR0cmlidXRlPC9zdHJpbmc+DQo8L3ZhbHVlcz4=
     </data>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
-      <item name="SQL Server" type="TSqlServerTermbase"/>
     </shared>
   </terminology>
   <tm>
@@ -69,10 +127,7 @@ näyte</lang>
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-      <item name="IBM" type="TIBMTranslator"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

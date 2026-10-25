@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="5D8E254E-8E7A-4FFE-9D43-98A370F01843" created="20230814T175253Z" lastmodified="20230903T094627Z" version="1.0.1004" stringid="478">
+<project id="5D8E254E-8E7A-4FFE-9D43-98A370F01843" created="20230814T175253Z" lastmodified="20261022T083548Z" version="1.0.1119" stringid="532">
   <lang id="fi"/>
   <lang id="ja"/>
-  <node class="THelpAndManualSource" name="source\Sport.hmxp" fullpath="D:\NT\Deploy\Samples\HelpAndManual\Sport\source\Sport.hmxp" original="en" lastmodified="20230903T094627Z" encoding="utf-8">
+  <node class="THelpAndManualSource" name="source\Sport.hmxp" fullpath="D:\NT\Deploy\Samples\HelpAndManual\Sport\source\Sport.hmxp" original="en" lastmodified="20261022T083548Z" encoding="utf-8">
     <node class="TDirectoryFolder" name="Maps">
       <node class="THelpAndManualMapNode" name="table_of_contents.xml">
         <row id="451371575120474" si="1">
@@ -170,7 +170,7 @@
           <lang id="fi" rw="0" time="20230903T062311Z" fuzzy="100">Jalkapallo</lang>
           <lang id="ja" st="2" or="5" rw="0" time="20230903T092801Z" fuzzy="100">サッカー</lang>
         </row>
-        <row id="body[0].para[1].table[0].tr[1].td[2].para[0].text" si="73" excluded="2">
+        <row id="body[0].para[1].table[0].tr[1].td[2].para[0].text" si="73">
           <value>10</value>
           <lang id="fi" rw="0" time="20230903T062311Z" fuzzy="100">10</lang>
         </row>
@@ -263,7 +263,7 @@
           <lang id="fi" rw="0" time="20230903T062311Z" fuzzy="100">Kenttäpelaajia</lang>
           <lang id="ja" st="1" or="5" rw="0" time="20230903T092654Z" fuzzy="92.3076934814453">フィールドプレーヤー</lang>
         </row>
-        <row id="body[0].para[5].text" si="93" excluded="2">
+        <row id="body[0].para[5].text" si="93">
           <value>10</value>
           <lang id="fi" rw="0" time="20230903T062311Z" fuzzy="100">10</lang>
         </row>
@@ -296,6 +296,7 @@
         </row>
       </node>
     </node>
+    <node class="THelpAndManualVariableNode" name="variables" created="20261022T083548Z" st="0"/>
   </node>
   <excludedoriginals>
     <item>dummy</item>
@@ -303,21 +304,16 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
     </shared>
   </tm>
   <mt>
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+    <shared/>
   </mt>
-  <duplicates promptoverwritetranslated="1">
-  </duplicates>
+  <duplicates promptoverwritetranslated="1"/>
 </project>
