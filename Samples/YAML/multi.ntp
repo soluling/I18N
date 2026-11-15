@@ -1,13 +1,25 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="164F1AF9-AFF1-4D94-96D2-24309482ED7F" created="20181124T225548Z" lastmodified="20210916T094532Z" version="1.0.878" stringid="3">
+<project id="164F1AF9-AFF1-4D94-96D2-24309482ED7F" created="20181124T225548Z" lastmodified="20261029T071731Z" version="1.0.1120" stringid="3">
   <lang id="fi"/>
-  <node class="TYamlSource" name="multi.yml" fullpath="D:\NT\Deploy\Samples\YAML\multi.yml" original="en" encoding="utf-8">
-    <row id="long" changed="20200316T220446Z" si="1">First line
+  <node class="TYamlSource" name="multi.yml" fullpath="D:\NT\Deploy\Samples\YAML\multi.yml" original="en" lastmodified="20261029T071731Z" encoding="utf-8">
+    <row id="long" changed="20200316T220446Z" si="1">
+      <value>First line
 Second line
-</row>
-    <row id="white" changed="20200316T220446Z" si="2" created="20181124T225609Z">First line Second line
-</row>
-    <row id="simple" si="3" created="20181124T230309Z">Value</row>
+</value>
+      <lang id="fi" st="2" or="4" rw="0" time="20261029T071731Z">Ensimmäinen rivi
+Toinen rivi
+</lang>
+    </row>
+    <row id="white" changed="20200316T220446Z" si="2" created="20181124T225609Z">
+      <value>First line Second line
+</value>
+      <lang id="fi" st="2" or="4" rw="0" time="20261029T071731Z">Ensimmäinen rivi Toinen rivi
+</lang>
+    </row>
+    <row id="simple" si="3" created="20181124T230309Z">
+      <value>Value</value>
+      <lang id="fi" st="2" or="4" rw="0" time="20261029T071731Z">Arvo</lang>
+    </row>
     <data>
       bG9uZzogfA0KICBGaXJzdCBsaW5lDQogIFNlY29uZCBsaW5lDQp3aGl0ZTogPg0KICBGaXJzdCBsaW5lDQogIFNlY29uZCBsaW5l
       DQpzaW1wbGU6IFZhbHVl
@@ -16,21 +28,15 @@ Second line
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
-  <mt optimizeusage="0">
-    <shared>
-      <item name="Google" type="TGoogleTranslate"/>
-    </shared>
+  <mt>
+    <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

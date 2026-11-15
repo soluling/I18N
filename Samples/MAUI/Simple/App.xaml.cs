@@ -1,16 +1,21 @@
-﻿using System.Globalization;
-
-namespace Simple;
+﻿namespace Simple;
 
 public partial class App : Application
 {
 	public App()
 	{
-    Thread.CurrentThread.CurrentUICulture = CultureInfo.CurrentCulture;
-    Thread.CurrentThread.CurrentCulture = CultureInfo.CurrentCulture;
-    
-    InitializeComponent();
+		// The application uses the language of the device. To use a specific language, set the UI culture
+		// before any page is created, for example:
+		//
+		// var culture = new System.Globalization.CultureInfo("fi");
+		// System.Globalization.CultureInfo.DefaultThreadCurrentUICulture = culture;
+		// System.Globalization.CultureInfo.CurrentUICulture = culture;
 
-    MainPage = new AppShell();
+		InitializeComponent();
+	}
+
+	protected override Window CreateWindow(IActivationState? activationState)
+	{
+		return new Window(new AppShell());
 	}
 }

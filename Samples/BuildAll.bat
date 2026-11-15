@@ -113,6 +113,10 @@ cd Markdown
 call Build.bat
 cd ..
 
+cd MAUI
+call Build.bat
+cd ..
+
 cd MySQL
 call Build.bat
 cd ..

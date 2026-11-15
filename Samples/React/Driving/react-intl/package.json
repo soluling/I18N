@@ -1,0 +1,21 @@
+{
+  "name": "driving-react-intl",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "vite",
+    "build": "vite build",
+    "extract": "formatjs extract \"src/**/*.jsx\" --out-file src/translations/en.json"
+  },
+  "dependencies": {
+    "react": "^19.3.1",
+    "react-dom": "^19.3.1",
+    "react-intl": "^12.1.6"
+  },
+  "devDependencies": {
+    "@formatjs/cli": "^6.18.0",
+    "@vitejs/plugin-react": "^6.1.2",
+    "vite": "^8.3.5"
+  }
+}

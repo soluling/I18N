@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="F048CA30-AE0E-4C30-AB09-345DAC16A40F" created="20201022T144821Z" lastmodified="20251210T171644Z" version="1.0.1084" lockedrowcomplete="0" stringid="16">
+<project id="F048CA30-AE0E-4C30-AB09-345DAC16A40F" created="20201022T144821Z" lastmodified="20261108T042613Z" version="1.0.1121" lockedrowcomplete="0" stringid="16">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Release\net9.0-windows7.0\Menu.dll" fullpath="D:\NT\Deploy\Samples\WPF\Menu\bin\Release\net9.0-windows7.0\Menu.dll" original="en" lastmodified="20251210T171644Z" resources="[nrXaml,nrVersion]" availableresources="[nrXaml,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Menu.csproj" libraries="[nlWpf]">
+  <lang id="de"/>
+  <node class="TAssemblySource" name="bin\Release\net9.0-windows7.0\Menu.dll" fullpath="D:\NT\Deploy\Samples\WPF\Menu\bin\Release\net9.0-windows7.0\Menu.dll" original="en" lastmodified="20261108T042613Z" resources="[nrXaml,nrVersion]" availableresources="[nrXaml,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Menu.csproj" libraries="[nlWpf]">
     <netproperties version="core90" windowsversion="windows7.0"/>
     <node class="TWindowsVersionFolder" name="Version">
       <node class="TWindowsVersionNode" name="1" resid="1">
@@ -51,29 +52,35 @@
         <row id="mainWindow.Title" si="1">
           <value>Sample</value>
           <lang id="fi" rw="0" time="20201022T144821Z">Esimerkki</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">Beispiel</lang>
         </row>
         <row id="fileMenu.Header" si="2">
           <value>F_ile</value>
           <lang id="fi" rw="0" time="20201022T144821Z">_Tiedosto</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">Datei</lang>
         </row>
         <row id="calculateMenu.$Content" si="3" excluded="3"></row>
         <row id="calculateMenu.Header" si="4">
           <value>_Calculate</value>
           <lang id="fi" rw="0" time="20201022T144821Z">_Laske</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">_Berechnen</lang>
         </row>
         <row id="exitMenu.$Content" si="5" excluded="3"></row>
         <row id="exitMenu.Header" si="6">
           <value>E_xit</value>
           <lang id="fi" rw="0" time="20201022T144821Z">_Lopeta</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">E_xit</lang>
         </row>
         <row id="helpMenu.Header" si="7">
           <value>He_lp</value>
           <lang id="fi" rw="0" time="20201022T144821Z">_Ohje</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">Hilfe</lang>
         </row>
         <row id="aboutMenu.$Content" si="8" excluded="3"></row>
         <row id="aboutMenu.Header" si="9">
           <value>A_bout</value>
           <lang id="fi" rw="0" time="20201022T144821Z">_Tietoa</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261108T042613Z">Über</lang>
         </row>
       </node>
     </node>
@@ -93,7 +100,9 @@
     </shared>
   </tm>
   <mt optimizeusage="0">
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

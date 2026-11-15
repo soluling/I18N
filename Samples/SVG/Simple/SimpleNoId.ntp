@@ -12,7 +12,7 @@
       <item name="text[1]">
         <row id="value" changed="20181127T161817Z" si="2">
           <value>Price: 1,15</value>
-          <lang id="fi" rw="0" time="20140602T214105Z">Hinta: 1,11</lang>
+          <lang id="fi" rw="0" time="20140602T214105Z">Hinta: 1,15</lang>
         </row>
       </item>
       <item name="text[2]">
@@ -31,19 +31,16 @@
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
-  <mt optimizeusage="0">
-    <shared>
-      <item name="Microsoft" type="TMicrosoftTranslator"/>
-    </shared>
+  <mt>
+    <shared/>
   </mt>
   <duplicates>
   </duplicates>

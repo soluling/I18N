@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20251209T100450Z" version="1.0.1083" stringid="5">
+<project id="8CCA90CF-E794-46DE-A59A-EBA7DF95FD46" created="20231106T151821Z" lastmodified="20261108T045833Z" version="1.0.1121" stringid="5">
   <lang id="fi"/>
   <lang id="de"/>
   <node class="TVisualStudioSolutionSource" name="CustomControl.sln" fullpath="D:\NT\Deploy\Samples\WPF\CustomControl\CustomControl.sln" original="en" lastmodified="20231106T151827Z" encoding="windows-1252" enabledconfigurations="Release|AnyCPU" disabledconfigurations="Debug|AnyCPU" netlibraries="[nlWpf]" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo]">
-    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20251209T100446Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
-      <netproperties version="core70" windowsversion="windows" toolsversion="nt150"/>
+    <node class="TNetProjectSource" name="WpfApplication\WpfApplication.csproj" original="en" lastmodified="20261108T045833Z" groupname="WpfApplication\WpfApplication.csproj" resources="[nrXaml]" availableresources="[nrXaml,nrAssemblyInfo,nrManifest]" netconfiguration="Release|AnyCPU" libraries="[nlWpf]">
+      <netproperties version="core70" windowsversion="windows7.0" toolsversion="nt150"/>
       <node class="TXamlNode" name="App.xaml" type="Application" kind="xkApplication">
         <data>
           77u/PEFwcGxpY2F0aW9uIHg6Q2xhc3M9IldwZkFwcGxpY2F0aW9uLkFwcCINCiAgICAgICAgICAgICB4bWxucz0iaHR0cDovL3Nj
@@ -15,7 +15,7 @@
           dGlvbj4NCg==
         </data>
       </node>
-      <node class="TXamlNode" name="MainWindow.xaml" type="Window">
+      <node class="TXamlNode" name="MainWindow.xaml" type="Window" id="window1">
         <row id="Title" si="1">
           <value>Sample</value>
           <lang id="fi" st="4" rw="0" time="20241019T120057Z">Esimerkki</lang>
@@ -45,16 +45,17 @@
           c2lvbi9ibGVuZC8yMDA4Ig0KICB4bWxuczptYz0iaHR0cDovL3NjaGVtYXMub3BlbnhtbGZvcm1hdHMub3JnL21hcmt1cC1jb21w
           YXRpYmlsaXR5LzIwMDYiDQogIHhtbG5zOmN1c3RvbT0iY2xyLW5hbWVzcGFjZTpXcGZDb250cm9sO2Fzc2VtYmx5PVdwZkNvbnRy
           b2wiDQogIHhtbG5zOnVzZXI9ImNsci1uYW1lc3BhY2U6V3BmVXNlckNvbnRyb2w7YXNzZW1ibHk9V3BmVXNlckNvbnRyb2wiDQog
-          IG1jOklnbm9yYWJsZT0iZCINCiAgVGl0bGU9IlNhbXBsZSIgSGVpZ2h0PSIyMDAiIFdpZHRoPSIzMDAiPg0KDQogIDxTdGFja1Bh
-          bmVsPg0KICAgIDxMYWJlbCB4OlVpZD0ibGFiZWwxIj5IZWxsbzwvTGFiZWw+DQogICAgPGN1c3RvbTpDdXN0b21MYWJlbCB4OlVp
-          ZD0iY3VzdG9tTGFiZWwiIFRleHRWYWx1ZT0iU29tZSB0ZXh0Ij5DdXN0b20gaGVsbG88L2N1c3RvbTpDdXN0b21MYWJlbD4NCiAg
-          ICA8dXNlcjpVc2VyQ29udHJvbDEgeDpVaWQ9InVzZXJDb250cm9sIiAvPg0KICA8L1N0YWNrUGFuZWw+DQo8L1dpbmRvdz4NCg==
+          IG1jOklnbm9yYWJsZT0iZCINCiAgeDpVaWQ9IndpbmRvdzEiDQogIFRpdGxlPSJTYW1wbGUiIEhlaWdodD0iMjAwIiBXaWR0aD0i
+          MzAwIj4NCg0KICA8U3RhY2tQYW5lbD4NCiAgICA8TGFiZWwgeDpVaWQ9ImxhYmVsMSI+SGVsbG88L0xhYmVsPg0KICAgIDxjdXN0
+          b206Q3VzdG9tTGFiZWwgeDpVaWQ9ImN1c3RvbUxhYmVsIiBUZXh0VmFsdWU9IlNvbWUgdGV4dCI+Q3VzdG9tIGhlbGxvPC9jdXN0
+          b206Q3VzdG9tTGFiZWw+DQogICAgPHVzZXI6VXNlckNvbnRyb2wxIHg6VWlkPSJ1c2VyQ29udHJvbCIgLz4NCiAgPC9TdGFja1Bh
+          bmVsPg0KPC9XaW5kb3c+DQo=
         </data>
       </node>
       <assemblies>
-        <assembly>bin\Release\net7.0-windows\WpfApplication.dll</assembly>
-        <assembly>bin\Release\net7.0-windows\WpfUserControl.dll</assembly>
-        <assembly>bin\Release\net7.0-windows\_WpfControl.dll</assembly>
+        <assembly>bin\Release\net7.0-windows7.0\WpfApplication.dll</assembly>
+        <assembly>bin\Release\net7.0-windows7.0\WpfControl.dll</assembly>
+        <assembly>bin\Release\net7.0-windows7.0\WpfUserControl.dll</assembly>
       </assemblies>
     </node>
     <node class="TNetProjectSource" name="WpfControl\WpfControl.csproj" original="en" lastmodified="20251209T100450Z" groupname="WpfControl\WpfControl.csproj" resources="[]" netconfiguration="Release|AnyCPU">
@@ -128,7 +129,9 @@
     </shared>
   </tm>
   <mt>
-    <shared/>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+    </shared>
   </mt>
   <duplicates promptoverwritetranslated="1"/>
 </project>

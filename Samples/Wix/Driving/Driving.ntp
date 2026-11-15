@@ -1,39 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="0F4E439C-7AE7-4841-9D1E-5408D1320995" created="20150301T201130Z" lastmodified="20241222T093509Z" version="1.0.1053" stringid="4">
+<project id="0F4E439C-7AE7-4841-9D1E-5408D1320995" created="20150301T201130Z" lastmodified="20261028T052001Z" version="1.0.1120" stringid="4">
   <lang id="fi"/>
-  <node class="TWixProjectSource" name="Driving.wixproj" fullpath="D:\NT\Deploy\Samples\Wix\Driving\Driving.wixproj" original="en-US" lastmodified="20241222T093509Z" encoding="windows-1252" localeidname="LocaleId" summarycodepagename="SummaryCodepage">
+  <node class="TWixProjectSource" name="Driving.wixproj" fullpath="D:\NT\Deploy\Samples\Wix\Driving\Driving.wixproj" original="en-US" lastmodified="20261028T052001Z" encoding="windows-1252" localeidname="LocaleId" summarycodepagename="SummaryCodepage">
     <node class="TWxlNode" name="en-US.wxl">
-      <row id="ProductName" si="1" scannedcomment="Product name">
+      <row id="ProductName" changed="20261028T052001Z" si="1" scannedcomment="Product name" st="2">
         <value>Driving</value>
-        <lang id="fi" time="20150301T202123Z">Ajoaika</lang>
+        <prev>Ajoaika</prev>
+        <lang id="fi" st="3" invalidated="1" time="20150301T202123Z">Ajoaika</lang>
       </row>
-      <row id="ProductTitle" si="2" scannedcomment="Product title">
+      <row id="ProductTitle" changed="20261028T052001Z" si="2" scannedcomment="Product title" st="2">
         <value>Driving</value>
-        <lang id="fi" time="20150301T202123Z">Ajoaika</lang>
+        <prev>Ajoaika</prev>
+        <lang id="fi" st="3" invalidated="1" time="20150301T202123Z">Ajoaika</lang>
       </row>
-      <row id="DowngradeErrorMessage" changed="20241222T092817Z" si="3" scannedcomment="[ProductName] is a placeholder for product name" created="20241222T092817Z" codep="1">
+      <row id="DowngradeErrorMessage" changed="20261028T052001Z" si="3" scannedcomment="[ProductName] is a placeholder for product name" created="20241222T092817Z" st="2" codep="1">
         <value>A newer version of [ProductName] is already installed.</value>
-        <prev>A newer version of {0}[ProductName] is already installed.</prev>
-        <lang id="fi" rw="0" time="20241222T093438Z">[ProductName]:n uudempi versio on jo asennettu.</lang>
+        <prev>[ProductName]:n uudempi versio on jo asennettu.</prev>
+        <lang id="fi" st="3" invalidated="1" rw="0" time="20241222T093438Z">[ProductName]:n uudempi versio on jo asennettu.</lang>
       </row>
     </node>
   </node>
   <terminology>
     <shared>
       <item name="Local" type="TSqliteTermbase"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceGlossary"/>
     </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
-      <item name="Microsoft" type="TMicrosoftTerminologyServiceMemory"/>
       <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
 </project>

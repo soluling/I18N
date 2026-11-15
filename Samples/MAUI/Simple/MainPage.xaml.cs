@@ -1,4 +1,6 @@
-﻿namespace Simple;
+﻿using Simple.Resources.Strings;
+
+namespace Simple;
 
 public partial class MainPage : ContentPage
 {
@@ -13,12 +15,12 @@ public partial class MainPage : ContentPage
 	{
 		count++;
 
+		// Do not concatenate strings. Use a format string, so the translator can change the word order.
 		if (count == 1)
-			CounterBtn.Text = String.Format(Resource1.ClickedSingular, count);
+			CounterBtn.Text = String.Format(AppResources.ClickedSingular, count);
 		else
-      CounterBtn.Text = String.Format(Resource1.ClickedPlural, count);
+			CounterBtn.Text = String.Format(AppResources.ClickedPlural, count);
 
 		SemanticScreenReader.Announce(CounterBtn.Text);
 	}
 }
-

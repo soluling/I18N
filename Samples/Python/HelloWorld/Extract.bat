@@ -1,1 +1,1 @@
-xgettext.exe --from-code="UTF-8" --add-comments -d helloworld helloWorld.py
+xgettext.exe --from-code="UTF-8" --add-comments -d HelloWorld HelloWorld.py

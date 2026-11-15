@@ -2,7 +2,7 @@ package Image;
 
 import java.util.*;
 import javax.swing.*;
-import newtool.ImageResource;
+import soluling.ImageResource;
 
 public class MainFrame extends javax.swing.JFrame
 {

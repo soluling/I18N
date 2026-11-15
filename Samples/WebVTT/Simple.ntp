@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="E6B1A18C-9EF1-4E20-9D4D-4DA17AE34AB6" created="20190801T160504Z" lastmodified="20200316T185411Z" version="1.0.714" stringid="9">
+<project id="E6B1A18C-9EF1-4E20-9D4D-4DA17AE34AB6" created="20190801T160504Z" lastmodified="20261029T113149Z" version="1.0.1120" stringid="9">
   <lang id="fi"/>
-  <node class="TWebVTTSource" name="Simple.vtt" fullpath="D:\NT\Deploy\Samples\WebVTT\Simple.vtt" original="en" encoding="utf-8">
+  <node class="TWebVTTSource" name="Simple.vtt" fullpath="D:\NT\Deploy\Samples\WebVTT\Simple.vtt" original="en" lastmodified="20261029T113149Z" encoding="utf-8" maxlinelength="36">
     <row id="0.00:00:01.600 --&gt; 00:00:03.200" si="7" created="20190807T133528Z">
       <value>Hello world.</value>
       <lang id="fi" rw="0" time="20190807T125043Z">Moi maailma.</lang>
@@ -21,16 +21,17 @@
     </data>
   </node>
   <terminology>
-    <shared/>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
   </terminology>
   <tm>
     <shared>
       <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
     </shared>
   </tm>
   <mt>
     <shared/>
   </mt>
-  <duplicates>
-  </duplicates>
 </project>

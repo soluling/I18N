@@ -1,14 +1,14 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="960B51F4-9A89-4AE7-B12C-6D155C7B7C2B" created="20140701T083021Z" lastmodified="20181127T163518Z" version="1.0.267">
+<project id="960B51F4-9A89-4AE7-B12C-6D155C7B7C2B" created="20140701T083021Z" lastmodified="20261029T112056Z" version="1.0.1120" stringid="9">
   <lang id="fi"/>
-  <node class="TSvgSource" name="Relative.svg" fullpath="D:\NT\Deploy\Samples\SVG\Font\Relative.svg" original="en" encoding="utf-8">
+  <node class="TSvgSource" name="Relative.svg" fullpath="D:\NT\Deploy\Samples\SVG\Font\Relative.svg" original="en" lastmodified="20261029T112056Z" encoding="utf-8" bom="1">
     <datatypes>
       <item class="TFontNameData" scan="dsYes"/>
       <item class="TFontSizeData" scan="dsYes"/>
     </datatypes>
     <item name="svg">
       <item name="text.textPercent">
-        <row id="value">
+        <row id="value" si="1">
           <value>Percent</value>
           <lang id="fi" time="20140701T083848Z">Prosentti</lang>
         </row>
@@ -16,7 +16,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">110%</row>
       </item>
       <item name="text.textEm">
-        <row id="value">
+        <row id="value" si="2">
           <value>Ems</value>
           <lang id="fi" time="20140701T083844Z">Em</lang>
         </row>
@@ -24,7 +24,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">1.1em</row>
       </item>
       <item name="text.textRem">
-        <row id="value">
+        <row id="value" si="3">
           <value>Rems</value>
           <lang id="fi" time="20140701T083842Z">Rem</lang>
         </row>
@@ -32,7 +32,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083434Z">1.5rem</row>
       </item>
       <item name="text.textEx">
-        <row id="value">
+        <row id="value" si="4">
           <value>x-height</value>
           <lang id="fi" time="20140701T083836Z">x-korkeus</lang>
         </row>
@@ -40,7 +40,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">2.2ex</row>
       </item>
       <item name="text.textCh">
-        <row id="value">
+        <row id="value" si="5">
           <value>0-height</value>
           <lang id="fi" time="20140701T083840Z">0-korkeus</lang>
         </row>
@@ -48,7 +48,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">1.5ch</row>
       </item>
       <item name="text.textVw">
-        <row id="value">
+        <row id="value" si="6">
           <value>View width</value>
           <lang id="fi" time="20140701T083830Z">Näkymän leveys</lang>
         </row>
@@ -56,7 +56,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">1.5vw</row>
       </item>
       <item name="text.textVh">
-        <row id="value">
+        <row id="value" si="7">
           <value>View height</value>
           <lang id="fi" time="20140701T083858Z">Näkymän korkeus</lang>
         </row>
@@ -64,7 +64,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083033Z">1.5vh</row>
       </item>
       <item name="text.textMin">
-        <row id="value">
+        <row id="value" si="8">
           <value>View min</value>
           <lang id="fi" time="20140701T083906Z">Miniminäkymä</lang>
         </row>
@@ -72,7 +72,7 @@
         <row id="=font-size" class="TFontSizeRow" created="20140701T083653Z">1.5vmin</row>
       </item>
       <item name="text.textMax">
-        <row id="value">
+        <row id="value" si="9">
           <value>View max</value>
           <lang id="fi" time="20140701T083918Z">Maksiminäkymä</lang>
         </row>
@@ -96,4 +96,18 @@
       eHQ+DQo8L3N2Zz4=
     </data>
   </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared/>
+  </mt>
 </project>

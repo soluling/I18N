@@ -131,7 +131,7 @@ User interface checker APIs are for Delphi VCL, Delphi FireMonkey, .NET Windows 
 
 ## .NET
 
-`Library\NET` contains the .NET API. `Library\NET\Standard` contains a .NET Standard library that contains API for grammatical numbers, grammatical genders, abbreviated numbers, and ordinal numbers. Compile it and add that into your solution and finally add the library into the references of your project. Because the no UI part of the library is .NET Standard, it works with Windows Forms, WPF, ASP.NET, .NET Core, and Xamarin. You can also compile it using any .NET version starting with .NET 2.0.
+`Library\NET` contains the .NET API. `Library\NET\Standard` contains a .NET Standard library that contains API for grammatical numbers, grammatical genders, abbreviated numbers, and ordinal numbers. Compile it and add that into your solution and finally add the library into the references of your project. Because the no UI part of the library is .NET Standard, it works with Windows Forms, WPF, WinUI, ASP.NET, .NET Core, and .NET MAUI. You can also compile it using any .NET version starting with .NET 2.0.
 
 You can get the API through NuGet.
 
