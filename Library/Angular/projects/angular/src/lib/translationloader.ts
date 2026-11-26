@@ -7,18 +7,44 @@ export type Translations = Record<MessageId, TargetMessage>;
 // Stores the locale id of the loaded resource
 let resourceLocale: string = 'en-US';
 
-// Convert JSON resource file data to Translations
-function parseTranslations(fileData: string): Translations 
+// The format of the resource files
+// - json: Angular JSON, { "locale": "fi", "translations": { "id": "text" } }
+// - arb: Application Resource Bundle, { "@@locale": "fi", "id": "text", "@id": { "description": "..." } }.
+//   Unlike Angular JSON, the extracted file contains the descriptions, so translators see them.
+export type ResourceFormat = 'json' | 'arb';
+
+// Convert resource file data to Translations
+function parseTranslations(fileData: string, format: ResourceFormat = 'json'): Translations
 {
+  if (!fileData)
+    return null;
+
+  let data = JSON.parse(fileData);
+
+  if (format === 'arb')
+  {
+    // Every key that does not start with @ is a message. @@locale is the locale and @id the
+    // metadata (description, locations) of message id.
+    let translations: Translations = {};
+
+    for (let key of Object.keys(data))
+    {
+      if (!key.startsWith('@') && (typeof data[key] === 'string'))
+        translations[key] = data[key];
+    }
+
+    return translations;
+  }
+
   // Converts JSON file into JavaScript object and cast that to the type of the strongly typed translation
-  let translations: Translations = JSON.parse(fileData).translations;
+  let translations: Translations = data.translations;
   return translations;
 }
 
 // Get a resource file URL
-function getLanguageUrl(baseUrl: string, id: string): string
+function getLanguageUrl(baseUrl: string, id: string, format: ResourceFormat = 'json'): string
 {
-  return `${baseUrl}/${id}.json`;
+  return `${baseUrl}/${id}.${format}`;
 }
 
 export function setCookie(name: string, value: string) 
@@ -49,9 +75,10 @@ export function getCookie(name: string)
 
 // Load resources from the specific URL
 export function getTranslationsByUrl(
-  url: string, 
-  id: string, 
-  setLocaleId: boolean = true): Promise<Translations> 
+  url: string,
+  id: string,
+  setLocaleId: boolean = true,
+  format: ResourceFormat = 'json'): Promise<Translations>
 {
   return fetch(url)
     .then(response => 
@@ -66,15 +93,20 @@ export function getTranslationsByUrl(
       if (data && setLocaleId)
         resourceLocale = id;
 
-      return parseTranslations(data);
+      return parseTranslations(data, format);
     })
     .catch(() => null);
 }
 
 // Load resources matching the give language id. If not found, use the fallback ids.
-export function getTranslationsById(baseUrl: string, id: string, fallbacks: string[], setLocaleId: boolean): Promise<Translations> 
+export function getTranslationsById(
+  baseUrl: string,
+  id: string,
+  fallbacks: string[],
+  setLocaleId: boolean,
+  format: ResourceFormat = 'json'): Promise<Translations>
 {
-  return getTranslationsByUrl(getLanguageUrl(baseUrl, id), id, setLocaleId).then(translations => 
+  return getTranslationsByUrl(getLanguageUrl(baseUrl, id, format), id, setLocaleId, format).then(translations =>
     {
       // If translations were found return it
       if (translations)
@@ -91,7 +123,7 @@ export function getTranslationsById(baseUrl: string, id: string, fallbacks: stri
         for (let i = 1; i < parts.length - 1; i++)
           parentId = parentId + '-' + parts[i];
   
-        return getTranslationsById(baseUrl, parentId, fallbacks, setLocaleId);
+        return getTranslationsById(baseUrl, parentId, fallbacks, setLocaleId, format);
       }
       else
       {
@@ -99,7 +131,7 @@ export function getTranslationsById(baseUrl: string, id: string, fallbacks: stri
         if (fallbacks.length > 0)
         {
           let id = fallbacks.shift();
-          return getTranslationsById(baseUrl, id, fallbacks, setLocaleId);
+          return getTranslationsById(baseUrl, id, fallbacks, setLocaleId, format);
         }
         else
         {
@@ -118,6 +150,7 @@ export interface TranslateOptions
   fallbackId?: string;        // Specifies the fallback language/locale id. Default en
   locale?: string;            // Specifies the locale to be loaded. Separate multiple locales with a semicolon (;). If null or empty use the browser language. Default null
   cookieName?: string;        // Specifies the cookie name that stores the language. If null cookies are ignored. Default null
+  format?: ResourceFormat;    // Specifies the format of the resource files: json (<id>.json) or arb (<id>.arb). Default json
 }
 
 // Load resources matching the browser language(s)
@@ -131,9 +164,13 @@ export function getTranslationsEx(
   let fallbackId = "en";
   let locale: string = null;
   let cookieName = null;
+  let format: ResourceFormat = 'json';
 
   if (options)
   {
+    if (options.format)
+      format = options.format;
+
     if (options.ingoreCountry != null)
       ingoreCountry = options.ingoreCountry;
 
@@ -187,7 +224,7 @@ export function getTranslationsEx(
     languages.push(fallbackId);
 
   // Get the translations
-  return getTranslationsById(baseUrl, id, languages, setLocaleId);
+  return getTranslationsById(baseUrl, id, languages, setLocaleId, format);
 }
 
 // Load resources matching the browser language(s)
@@ -198,16 +235,18 @@ export function getTranslations(
   setLocaleId: boolean = true, 
   fallbackId: string = 'en',
   locale: string = null,
-  cookieName: string = null): Promise<Translations> 
+  cookieName: string = null,
+  format: ResourceFormat = 'json'): Promise<Translations>
 {
-  let options: TranslateOptions = 
+  let options: TranslateOptions =
   {
     ingoreCountry,
     tryAllLanguages,
     setLocaleId,
     fallbackId,
     locale,
-    cookieName
+    cookieName,
+    format
   };
 
   return getTranslationsEx(baseUrl, options);

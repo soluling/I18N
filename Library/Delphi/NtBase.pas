@@ -313,6 +313,14 @@ uses
       code: String = '';
       fileName: String = ''): HModule;
 
+    { Removes hidden ids from a string. Soluling can inject an invisible id into each
+      translation (Hidden ids in the project options) so a picker can find the row of the
+      text. If such a string is used as data, for example a language code, the id must
+      be removed first.
+      @param value  The string that may contain a hidden id.
+      @return The string without the zero-width characters of the hidden id. }
+    class function RemoveHiddenId(const value: String): String;
+
     { Extracts embedded resource DLLs from EXE to the application directory.
       If the user has write access to the directory where the EXE locates, then
       resource files are exteracted there. Otherwise the files are extracted
@@ -1431,6 +1439,27 @@ begin
   Result := '';
 end;
 
+class function TNtBase.RemoveHiddenId(const value: String): String;
+{$IFDEF UNICODE}
+var
+  c: Char;
+{$ENDIF}
+begin
+{$IFDEF UNICODE}
+  Result := '';
+
+  for c in value do
+    case Ord(c) of
+      $200B..$200E, $202A, $202C, $202D, $2060, $2062, $2063, $FEFF: ;
+    else
+      Result := Result + c;
+    end;
+{$ELSE}
+  // An Ansi string can not contain the zero-width characters
+  Result := value;
+{$ENDIF}
+end;
+
 class function TNtBase.LoadNew(code: String; fileName: String): HModule;
 
   function LoadResourceDll(const fileName, ext: String): HModule;
@@ -1455,6 +1484,8 @@ var
   module: PLibModule;
   buffer: array[0..260] of Char;
 begin  //FI:C101
+  code := RemoveHiddenId(code);
+
 {$IFDEF MSWINDOWS}
   // ResStringCleanupCache was added in Delphi 10.4.2
   {$IF CompilerVersion = 34}

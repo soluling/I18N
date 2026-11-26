@@ -87,10 +87,11 @@ begin
   if not Result then
     Exit;
 
+  // The code may come from a translated string that has a hidden id
   if code = '' then
-    locale := TNtLocale.ExtensionToLocale(originalCode)
+    locale := TNtLocale.ExtensionToLocale(TNtBase.RemoveHiddenId(originalCode))
   else
-    locale := TNtLocale.ExtensionToLocale(code);
+    locale := TNtLocale.ExtensionToLocale(TNtBase.RemoveHiddenId(code));
 
   // Updates thred's locale, format settings and bidi mode to match
   if not (roNoThreadLocale in options) then

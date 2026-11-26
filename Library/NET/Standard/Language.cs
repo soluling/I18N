@@ -90,11 +90,45 @@ namespace Soluling
     /// <summary>
     /// Get and set the current locale id.
     /// </summary>
+    /// <remarks>
+    /// A hidden id that an in-context editing build has appended to the value is ignored - see <see cref="M:Soluling.Language.RemoveHiddenId(System.String)"/>.
+    /// </remarks>
     /// <seealso cref="P:Soluling.Language.Culture"/>
     public static string Id
     {
       get { return Culture.ToString(); }
-      set { Culture = new CultureInfo(value); }
+      set { Culture = new CultureInfo(RemoveHiddenId(value)); }
+    }
+
+    // Every character Soluling's hidden id injection can use (THiddenId in NtHiddenId.pas): a
+    // project chooses four of these, so all are removed, not only the default four.
+    private const string HIDDEN_ID_CHARS =
+      "​‌‍\u200E\u202A\u202C\u202D⁠⁢⁣﻿";
+
+    /// <summary>
+    /// Removes the hidden id that a build with hidden id injection (in-context editing) appends to
+    /// each translation.
+    /// </summary>
+    /// <remarks>
+    /// The id is written as invisible zero-width characters after the translation. A translated
+    /// string that the application uses as data, such as a language code read from the resources,
+    /// must have it removed before use: <c>new CultureInfo("fi")</c> with the id appended throws
+    /// <see cref="T:System.Globalization.CultureNotFoundException"/>.
+    /// </remarks>
+    /// <param name="value">A string, possibly with a hidden id.</param>
+    /// <returns>The string without the hidden id characters. null stays null.</returns>
+    public static string RemoveHiddenId(string value)
+    {
+      if (string.IsNullOrEmpty(value) || (value.IndexOfAny(HIDDEN_ID_CHARS.ToCharArray()) < 0))
+        return value;
+
+      var result = new System.Text.StringBuilder(value.Length);
+
+      foreach (var c in value)
+        if (HIDDEN_ID_CHARS.IndexOf(c) < 0)
+          result.Append(c);
+
+      return result.ToString();
     }
 
     /// <summary>
@@ -199,11 +233,12 @@ namespace Soluling
     /// <summary>
     /// Set the initial culture and UI culture to a language.
     /// </summary>
-    /// <param name="id">Locale id.</param>
+    /// <param name="id">Locale id. A hidden id of an in-context editing build is ignored.</param>
     /// <seealso cref="M:Soluling.Language.SetInitial(System.Globalization.CultureInfo)"/>
     public static void SetInitial(string id)
     {
       CultureInfo culture;
+      id = RemoveHiddenId(id);
 
       if (string.IsNullOrEmpty(id))
         culture = CultureInfo.CurrentCulture;

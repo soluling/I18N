@@ -260,7 +260,8 @@ begin
 
   if NtResources.Count > 0 then
   begin
-    NtResources.LanguageId := code;
+    // The code may come from a translated string that has a hidden id
+    NtResources.LanguageId := TNtBase.RemoveHiddenId(code);
     LoadedResourceLocale := NtResources.LanguageId;
     Result := True;
   end

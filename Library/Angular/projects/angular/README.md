@@ -53,6 +53,28 @@ The resource files are the standard Angular JSON resource files that contain key
 
 The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and has faster parsing time. Angular's extraction tool can extract JSON instead of XLIFF or XMB. The disadvantage of the JSON extraction is that comments and meanings are not extracted. The easiest way to create the JSON files is to use [Soluling](https://www.soluling.com/), but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
 
+### ARB resource files
+
+The JSON format does not contain the descriptions of the strings, so translators do not see them. If you want the descriptions, use ARB (Application Resource Bundle) instead. ARB is JSON too, but it also contains the metadata of each string:
+
+```json
+{
+  "@@locale": "en",
+  "login.password": "Password:",
+  "@login.password": {
+    "description": "Label of the password field"
+  }
+}
+```
+
+Extract ARB with `ng extract-i18n --format arb`, and pass `format: 'arb'` to `getTranslationsEx`. The resource files are then `<id>.arb`.
+
+```typescript
+getTranslationsEx('assets/i18n', { format: 'arb' }).then(translations => ...);
+```
+
+Soluling localizes ARB files too. Make sure your web server serves `.arb` files, for example as `application/json`.
+
 The next modification you need to do is to add locale support for the languages you plan to support. By default, Angular application contains support for English (United States). If you plan to support German and Japanese, you need to add the locale support for those languages. Add the following code into your `app.module.ts`.
 
 ```typescript

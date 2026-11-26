@@ -1,0 +1,870 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="F1D3E89A-FADC-498B-9587-7B328B0F8C85" created="20261117T133333Z" lastmodified="20261118T134122Z" version="1.0.1123" stringid="449">
+  <lang id="fi"/>
+  <node class="TDelphiSource" name="Win32\Release\Context.exe" fullpath="D:\NT\Deploy\Samples\Delphi\VCL\Context\Win32\Release\Context.exe" original="en" lastmodified="20261118T134122Z" hassignatureread="1" drcscanmode="drcSmart">
+    <node class="TWindowsCursorFolder" name="Cursor" excluded="1"/>
+    <node class="TWindowsGroupCursorFolder" name="GroupCursor" excluded="1"/>
+    <node class="TDelphiFormFolder" name="RCData">
+      <node class="TDelphiFormNode" name="TFORM1" type="TForm1" resname="TFORM1" objectname="Form1">
+        <font id="Font" name="Segoe UI" size="9"/>
+        <row id="Left">0</row>
+        <row id="Top">0</row>
+        <row id="Caption" si="412">Context Sample</row>
+        <row id="ClientHeight">452</row>
+        <row id="ClientWidth">640</row>
+        <item name="ThemeLabel" type="TLabel">
+          <row id="Left">8</row>
+          <row id="Top">420</row>
+          <row id="Width">3</row>
+          <row id="Height">15</row>
+        </item>
+        <item name="TicketGroupBox" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">305</row>
+          <row id="Height">241</row>
+          <row id="Caption" si="413">Ticket</row>
+          <item name="StatusCaptionLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">24</row>
+            <row id="Width">35</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="414">Status:</row>
+          </item>
+          <item name="StatusLabel" type="TLabel">
+            <font id="Font" name="Segoe UI" size="9"/>
+            <row id="Left">80</row>
+            <row id="Top">24</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="StatusTextLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">44</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="ReplyLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">104</row>
+            <row id="Width">32</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="415">&amp;Reply:</row>
+          </item>
+          <item name="PostsLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">152</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="AssignedLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">172</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="OpenCloseButton" type="TButton">
+            <row id="Left">12</row>
+            <row id="Top">68</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+          </item>
+          <item name="PendingButton" type="TButton">
+            <row id="Left">108</row>
+            <row id="Top">68</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="416">Pe&amp;nding</row>
+          </item>
+          <item name="ReplyEdit" type="TEdit">
+            <row id="Left">12</row>
+            <row id="Top">122</row>
+            <row id="Width">186</row>
+            <row id="Height">23</row>
+          </item>
+          <item name="PostButton" type="TButton">
+            <row id="Left">204</row>
+            <row id="Top">121</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="417">&amp;Post</row>
+          </item>
+          <item name="DeleteButton" type="TButton">
+            <row id="Left">12</row>
+            <row id="Top">200</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="418">&amp;Delete...</row>
+          </item>
+        </item>
+        <item name="QueueGroupBox" type="TGroupBox">
+          <row id="Left">8</row>
+          <row id="Top">256</row>
+          <row id="Width">305</row>
+          <row id="Height">153</row>
+          <row id="Caption" si="419">Queue</row>
+          <item name="CountCaptionLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">28</row>
+            <row id="Width">69</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="420">Open &amp;tickets:</row>
+          </item>
+          <item name="QueueCaptionLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">60</row>
+            <row id="Width">43</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="421">&amp;Queues:</row>
+          </item>
+          <item name="OpenTicketsLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">96</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="SummaryLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">120</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="CountEdit" type="TEdit">
+            <row id="Left">120</row>
+            <row id="Top">24</row>
+            <row id="Width">50</row>
+            <row id="Height">23</row>
+            <row id="Text" si="422">3</row>
+          </item>
+          <item name="CountUpDown" type="TUpDown">
+            <row id="Left">170</row>
+            <row id="Top">24</row>
+            <row id="Width">16</row>
+            <row id="Height">23</row>
+          </item>
+          <item name="QueueEdit" type="TEdit">
+            <row id="Left">120</row>
+            <row id="Top">56</row>
+            <row id="Width">50</row>
+            <row id="Height">23</row>
+            <row id="Text" si="423">1</row>
+          </item>
+          <item name="QueueUpDown" type="TUpDown">
+            <row id="Left">170</row>
+            <row id="Top">56</row>
+            <row id="Width">16</row>
+            <row id="Height">23</row>
+          </item>
+        </item>
+        <item name="ShopGroupBox" type="TGroupBox">
+          <row id="Left">324</row>
+          <row id="Top">8</row>
+          <row id="Width">305</row>
+          <row id="Height">241</row>
+          <row id="Caption" si="424">Shop</row>
+          <item name="PriceCaptionLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">24</row>
+            <row id="Width">29</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="425">Price:</row>
+          </item>
+          <item name="PriceLabel" type="TLabel">
+            <row id="Left">120</row>
+            <row id="Top">24</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="DistanceCaptionLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">44</row>
+            <row id="Width">48</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="426">Distance:</row>
+          </item>
+          <item name="DistanceLabel" type="TLabel">
+            <row id="Left">120</row>
+            <row id="Top">44</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="DistanceNoCommentLabel" type="TLabel">
+            <font id="Font" name="Segoe UI" size="9"/>
+            <row id="Left">200</row>
+            <row id="Top">44</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="SortLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">108</row>
+            <row id="Width">33</row>
+            <row id="Height">15</row>
+            <row id="Caption" si="427">O&amp;rder:</row>
+          </item>
+          <item name="DiskLabel" type="TLabel">
+            <row id="Left">12</row>
+            <row id="Top">148</row>
+            <row id="Width">3</row>
+            <row id="Height">15</row>
+          </item>
+          <item name="BookButton" type="TButton">
+            <row id="Left">12</row>
+            <row id="Top">68</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="428">&amp;Book</row>
+          </item>
+          <item name="OrderButton" type="TButton">
+            <row id="Left">108</row>
+            <row id="Top">68</row>
+            <row id="Width">90</row>
+            <row id="Height">25</row>
+            <row id="Caption" si="429">&amp;Order</row>
+          </item>
+          <item name="SortComboBox" type="TComboBox">
+            <row id="Left">120</row>
+            <row id="Top">104</row>
+            <row id="Width">145</row>
+            <row id="Height">23</row>
+            <row id="Items.Strings[0]" si="430">Ascending</row>
+            <row id="Items.Strings[1]" si="431">Descending</row>
+            <row id="Items.Strings[2]" si="432">Newest first</row>
+            <row id="Items.Strings[3]" si="433">Oldest first</row>
+          </item>
+        </item>
+        <item name="LanguageButton" type="TButton">
+          <row id="Left">539</row>
+          <row id="Top">415</row>
+          <row id="Width">90</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="434">&amp;Language...</row>
+        </item>
+        <item name="MainMenu1" type="TMainMenu">
+          <row id="Left">456</row>
+          <row id="Top">296</row>
+          <item name="FileMenu" type="TMenuItem">
+            <row id="Caption" si="435">&amp;File</row>
+            <item name="OpenMenu" type="TMenuItem">
+              <row id="Caption" si="436">&amp;Open...</row>
+              <row id="ShortCut">16463</row>
+            </item>
+            <item name="SaveMenu" type="TMenuItem">
+              <row id="Caption" si="437">&amp;Save</row>
+              <row id="ShortCut">16467</row>
+            </item>
+            <item name="CloseMenu" type="TMenuItem">
+              <row id="Caption" si="438">&amp;Close</row>
+            </item>
+            <item name="N1" type="TMenuItem"/>
+            <item name="ExitMenu" type="TMenuItem">
+              <row id="Caption" si="439">E&amp;xit</row>
+            </item>
+          </item>
+          <item name="EditMenu" type="TMenuItem">
+            <row id="Caption" si="440">&amp;Edit</row>
+            <item name="ClearMenu" type="TMenuItem">
+              <row id="Caption" si="441">C&amp;lear</row>
+            </item>
+            <item name="FindMenu" type="TMenuItem">
+              <row id="Caption" si="442">&amp;Find...</row>
+              <row id="ShortCut">16454</row>
+            </item>
+          </item>
+          <item name="ViewMenu" type="TMenuItem">
+            <row id="Caption" si="443">&amp;View</row>
+            <item name="ThemeMenu" type="TMenuItem">
+              <row id="Caption" si="444">&amp;Theme</row>
+              <item name="LightMenu" type="TMenuItem">
+                <row id="Caption" si="445">&amp;Light</row>
+              </item>
+              <item name="DarkMenu" type="TMenuItem">
+                <row id="Caption" si="446">&amp;Dark</row>
+              </item>
+            </item>
+          </item>
+        </item>
+        <data>
+          VFBGMAZURm9ybTEFRm9ybTEETGVmdAIAA1RvcAIAB0NhcHRpb24GDkNvbnRleHQgU2FtcGxlDENsaWVudEhlaWdodAPEAQtDbGll
+          bnRXaWR0aAOAAgVDb2xvcgcJY2xCdG5GYWNlDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2lu
+          ZG93VGV4dAtGb250LkhlaWdodAL0CUZvbnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsABE1lbnUHCU1haW5NZW51MQhQb3Np
+          dGlvbgcOcG9TY3JlZW5DZW50ZXIIT25DcmVhdGUHCkZvcm1DcmVhdGUKVGV4dEhlaWdodAIPAAZUTGFiZWwKVGhlbWVMYWJlbARM
+          ZWZ0AggDVG9wA6QBBVdpZHRoAgMGSGVpZ2h0Ag8AAAlUR3JvdXBCb3gOVGlja2V0R3JvdXBCb3gETGVmdAIIA1RvcAIIBVdpZHRo
+          AzEBBkhlaWdodAPxAAdDYXB0aW9uBgZUaWNrZXQIVGFiT3JkZXICAAAGVExhYmVsElN0YXR1c0NhcHRpb25MYWJlbARMZWZ0AgwD
+          VG9wAhgFV2lkdGgCIwZIZWlnaHQCDwdDYXB0aW9uBgdTdGF0dXM6AAAGVExhYmVsC1N0YXR1c0xhYmVsBExlZnQCUANUb3ACGAVX
+          aWR0aAIDBkhlaWdodAIPDEZvbnQuQ2hhcnNldAcPREVGQVVMVF9DSEFSU0VUCkZvbnQuQ29sb3IHDGNsV2luZG93VGV4dAtGb250
+          LkhlaWdodAL0CUZvbnQuTmFtZQYIU2Vnb2UgVUkKRm9udC5TdHlsZQsGZnNCb2xkAApQYXJlbnRGb250CAAABlRMYWJlbA9TdGF0
+          dXNUZXh0TGFiZWwETGVmdAIMA1RvcAIsBVdpZHRoAgMGSGVpZ2h0Ag8AAAZUTGFiZWwKUmVwbHlMYWJlbARMZWZ0AgwDVG9wAmgF
+          V2lkdGgCIAZIZWlnaHQCDwdDYXB0aW9uBgcmUmVwbHk6DEZvY3VzQ29udHJvbAcJUmVwbHlFZGl0AAAGVExhYmVsClBvc3RzTGFi
+          ZWwETGVmdAIMA1RvcAOYAAVXaWR0aAIDBkhlaWdodAIPAAAGVExhYmVsDUFzc2lnbmVkTGFiZWwETGVmdAIMA1RvcAOsAAVXaWR0
+          aAIDBkhlaWdodAIPAAAHVEJ1dHRvbg9PcGVuQ2xvc2VCdXR0b24ETGVmdAIMA1RvcAJEBVdpZHRoAloGSGVpZ2h0AhkIVGFiT3Jk
+          ZXICAAdPbkNsaWNrBxRPcGVuQ2xvc2VCdXR0b25DbGljawAAB1RCdXR0b24NUGVuZGluZ0J1dHRvbgRMZWZ0AmwDVG9wAkQFV2lk
+          dGgCWgZIZWlnaHQCGQdDYXB0aW9uBghQZSZuZGluZwhUYWJPcmRlcgIBB09uQ2xpY2sHElBlbmRpbmdCdXR0b25DbGljawAABVRF
+          ZGl0CVJlcGx5RWRpdARMZWZ0AgwDVG9wAnoFV2lkdGgDugAGSGVpZ2h0AhcIVGFiT3JkZXICAgAAB1RCdXR0b24KUG9zdEJ1dHRv
+          bgRMZWZ0A8wAA1RvcAJ5BVdpZHRoAloGSGVpZ2h0AhkHQ2FwdGlvbgYFJlBvc3QIVGFiT3JkZXICAwdPbkNsaWNrBw9Qb3N0QnV0
+          dG9uQ2xpY2sAAAdUQnV0dG9uDERlbGV0ZUJ1dHRvbgRMZWZ0AgwDVG9wA8gABVdpZHRoAloGSGVpZ2h0AhkHQ2FwdGlvbgYKJkRl
+          bGV0ZS4uLghUYWJPcmRlcgIEB09uQ2xpY2sHEURlbGV0ZUJ1dHRvbkNsaWNrAAAACVRHcm91cEJveA1RdWV1ZUdyb3VwQm94BExl
+          ZnQCCANUb3ADAAEFV2lkdGgDMQEGSGVpZ2h0A5kAB0NhcHRpb24GBVF1ZXVlCFRhYk9yZGVyAgEABlRMYWJlbBFDb3VudENhcHRp
+          b25MYWJlbARMZWZ0AgwDVG9wAhwFV2lkdGgCRQZIZWlnaHQCDwdDYXB0aW9uBg5PcGVuICZ0aWNrZXRzOgxGb2N1c0NvbnRyb2wH
+          CUNvdW50RWRpdAAABlRMYWJlbBFRdWV1ZUNhcHRpb25MYWJlbARMZWZ0AgwDVG9wAjwFV2lkdGgCKwZIZWlnaHQCDwdDYXB0aW9u
+          BggmUXVldWVzOgxGb2N1c0NvbnRyb2wHCVF1ZXVlRWRpdAAABlRMYWJlbBBPcGVuVGlja2V0c0xhYmVsBExlZnQCDANUb3ACYAVX
+          aWR0aAIDBkhlaWdodAIPAAAGVExhYmVsDFN1bW1hcnlMYWJlbARMZWZ0AgwDVG9wAngFV2lkdGgCAwZIZWlnaHQCDwAABVRFZGl0
+          CUNvdW50RWRpdARMZWZ0AngDVG9wAhgFV2lkdGgCMgZIZWlnaHQCFwhUYWJPcmRlcgIABFRleHQGATMIT25DaGFuZ2UHD0NvdW50
+          RWRpdENoYW5nZQAAB1RVcERvd24LQ291bnRVcERvd24ETGVmdAOqAANUb3ACGAVXaWR0aAIQBkhlaWdodAIXCUFzc29jaWF0ZQcJ
+          Q291bnRFZGl0A01heAPoAwhQb3NpdGlvbgIDCFRhYk9yZGVyAgEAAAVURWRpdAlRdWV1ZUVkaXQETGVmdAJ4A1RvcAI4BVdpZHRo
+          AjIGSGVpZ2h0AhcIVGFiT3JkZXICAgRUZXh0BgExCE9uQ2hhbmdlBw9Db3VudEVkaXRDaGFuZ2UAAAdUVXBEb3duC1F1ZXVlVXBE
+          b3duBExlZnQDqgADVG9wAjgFV2lkdGgCEAZIZWlnaHQCFwlBc3NvY2lhdGUHCVF1ZXVlRWRpdANNaW4CAQhQb3NpdGlvbgIBCFRh
+          Yk9yZGVyAgMAAAAJVEdyb3VwQm94DFNob3BHcm91cEJveARMZWZ0A0QBA1RvcAIIBVdpZHRoAzEBBkhlaWdodAPxAAdDYXB0aW9u
+          BgRTaG9wCFRhYk9yZGVyAgIABlRMYWJlbBFQcmljZUNhcHRpb25MYWJlbARMZWZ0AgwDVG9wAhgFV2lkdGgCHQZIZWlnaHQCDwdD
+          YXB0aW9uBgZQcmljZToAAAZUTGFiZWwKUHJpY2VMYWJlbARMZWZ0AngDVG9wAhgFV2lkdGgCAwZIZWlnaHQCDwAABlRMYWJlbBRE
+          aXN0YW5jZUNhcHRpb25MYWJlbARMZWZ0AgwDVG9wAiwFV2lkdGgCMAZIZWlnaHQCDwdDYXB0aW9uBglEaXN0YW5jZToAAAZUTGFi
+          ZWwNRGlzdGFuY2VMYWJlbARMZWZ0AngDVG9wAiwFV2lkdGgCAwZIZWlnaHQCDwAABlRMYWJlbBZEaXN0YW5jZU5vQ29tbWVudExh
+          YmVsBExlZnQDyAADVG9wAiwFV2lkdGgCAwZIZWlnaHQCDwxGb250LkNoYXJzZXQHD0RFRkFVTFRfQ0hBUlNFVApGb250LkNvbG9y
+          BwpjbEdyYXlUZXh0C0ZvbnQuSGVpZ2h0AvQJRm9udC5OYW1lBghTZWdvZSBVSQpGb250LlN0eWxlCwAKUGFyZW50Rm9udAgAAAZU
+          TGFiZWwJU29ydExhYmVsBExlZnQCDANUb3ACbAVXaWR0aAIhBkhlaWdodAIPB0NhcHRpb24GB08mcmRlcjoMRm9jdXNDb250cm9s
+          BwxTb3J0Q29tYm9Cb3gAAAZUTGFiZWwJRGlza0xhYmVsBExlZnQCDANUb3ADlAAFV2lkdGgCAwZIZWlnaHQCDwAAB1RCdXR0b24K
+          Qm9va0J1dHRvbgRMZWZ0AgwDVG9wAkQFV2lkdGgCWgZIZWlnaHQCGQdDYXB0aW9uBgUmQm9vawhUYWJPcmRlcgIAB09uQ2xpY2sH
+          D0Jvb2tCdXR0b25DbGljawAAB1RCdXR0b24LT3JkZXJCdXR0b24ETGVmdAJsA1RvcAJEBVdpZHRoAloGSGVpZ2h0AhkHQ2FwdGlv
+          bgYGJk9yZGVyCFRhYk9yZGVyAgEHT25DbGljawcQT3JkZXJCdXR0b25DbGljawAACVRDb21ib0JveAxTb3J0Q29tYm9Cb3gETGVm
+          dAJ4A1RvcAJoBVdpZHRoA5EABkhlaWdodAIXBVN0eWxlBw5jc0Ryb3BEb3duTGlzdAhUYWJPcmRlcgICDUl0ZW1zLlN0cmluZ3MB
+          BglBc2NlbmRpbmcGCkRlc2NlbmRpbmcGDE5ld2VzdCBmaXJzdAYMT2xkZXN0IGZpcnN0AAAAAAdUQnV0dG9uDkxhbmd1YWdlQnV0
+          dG9uBExlZnQDGwIDVG9wA58BBVdpZHRoAloGSGVpZ2h0AhkHQ2FwdGlvbgYMJkxhbmd1YWdlLi4uCFRhYk9yZGVyAgMHT25DbGlj
+          awcTTGFuZ3VhZ2VCdXR0b25DbGljawAACVRNYWluTWVudQlNYWluTWVudTEETGVmdAPIAQNUb3ADKAEACVRNZW51SXRlbQhGaWxl
+          TWVudQdDYXB0aW9uBgUmRmlsZQAJVE1lbnVJdGVtCE9wZW5NZW51B0NhcHRpb24GCCZPcGVuLi4uCFNob3J0Q3V0A09AAAAJVE1l
+          bnVJdGVtCFNhdmVNZW51B0NhcHRpb24GBSZTYXZlCFNob3J0Q3V0A1NAAAAJVE1lbnVJdGVtCUNsb3NlTWVudQdDYXB0aW9uBgYm
+          Q2xvc2UAAAlUTWVudUl0ZW0CTjEHQ2FwdGlvbgYBLQAACVRNZW51SXRlbQhFeGl0TWVudQdDYXB0aW9uBgVFJnhpdAdPbkNsaWNr
+          Bw1FeGl0TWVudUNsaWNrAAAACVRNZW51SXRlbQhFZGl0TWVudQdDYXB0aW9uBgUmRWRpdAAJVE1lbnVJdGVtCUNsZWFyTWVudQdD
+          YXB0aW9uBgZDJmxlYXIAAAlUTWVudUl0ZW0IRmluZE1lbnUHQ2FwdGlvbgYIJkZpbmQuLi4IU2hvcnRDdXQDRkAAAAAJVE1lbnVJ
+          dGVtCFZpZXdNZW51B0NhcHRpb24GBSZWaWV3AAlUTWVudUl0ZW0JVGhlbWVNZW51B0NhcHRpb24GBiZUaGVtZQAJVE1lbnVJdGVt
+          CUxpZ2h0TWVudQdDYXB0aW9uBgYmTGlnaHQJUmFkaW9JdGVtCQdPbkNsaWNrBw5UaGVtZU1lbnVDbGljawAACVRNZW51SXRlbQhE
+          YXJrTWVudQdDYXB0aW9uBgUmRGFyawlSYWRpb0l0ZW0JB09uQ2xpY2sHDlRoZW1lTWVudUNsaWNrAAAAAAAA
+        </data>
+      </node>
+      <node class="TDelphiFormNode" name="TNTLANGUAGEDIALOG" type="TNtLanguageDialog" resname="TNTLANGUAGEDIALOG" objectname="NtLanguageDialog">
+        <font id="Font" name="Tahoma" size="8"/>
+        <row id="Left">256</row>
+        <row id="Top">347</row>
+        <row id="Caption" si="447">Select Language</row>
+        <row id="ClientHeight">192</row>
+        <row id="ClientWidth">287</row>
+        <item name="LanguageList" type="TListBox">
+          <row id="Left">8</row>
+          <row id="Top">8</row>
+          <row id="Width">193</row>
+          <row id="Height">177</row>
+        </item>
+        <item name="OkButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">8</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="448">OK</row>
+        </item>
+        <item name="CancelButton" type="TButton">
+          <row id="Left">208</row>
+          <row id="Top">40</row>
+          <row id="Width">75</row>
+          <row id="Height">25</row>
+          <row id="Caption" si="449">Cancel</row>
+        </item>
+        <data>
+          VFBGMBFUTnRMYW5ndWFnZURpYWxvZxBOdExhbmd1YWdlRGlhbG9nBExlZnQDAAEDVG9wA1sBC0JvcmRlclN0eWxlBwhic0RpYWxv
+          ZwdDYXB0aW9uBg9TZWxlY3QgTGFuZ3VhZ2UMQ2xpZW50SGVpZ2h0A8AAC0NsaWVudFdpZHRoAx8BBUNvbG9yBwljbEJ0bkZhY2UM
+          Rm9udC5DaGFyc2V0Bw9ERUZBVUxUX0NIQVJTRVQKRm9udC5Db2xvcgcMY2xXaW5kb3dUZXh0C0ZvbnQuSGVpZ2h0AvUJRm9udC5O
+          YW1lBgZUYWhvbWEKRm9udC5TdHlsZQsACE9uQ3JlYXRlBwpGb3JtQ3JlYXRlCU9uRGVzdHJveQcLRm9ybURlc3Ryb3kGT25TaG93
+          BwhGb3JtU2hvdwpUZXh0SGVpZ2h0Ag0ACFRMaXN0Qm94DExhbmd1YWdlTGlzdARMZWZ0AggDVG9wAggFV2lkdGgDwQAGSGVpZ2h0
+          A7EACkl0ZW1IZWlnaHQCDQZTb3J0ZWQJCFRhYk9yZGVyAgAKT25EYmxDbGljawcUTGFuZ3VhZ2VMaXN0RGJsQ2xpY2sAAAdUQnV0
+          dG9uCE9rQnV0dG9uBExlZnQD0AADVG9wAggFV2lkdGgCSwZIZWlnaHQCGQdDYXB0aW9uBgJPSwdEZWZhdWx0CQtNb2RhbFJlc3Vs
+          dAIBCFRhYk9yZGVyAgEAAAdUQnV0dG9uDENhbmNlbEJ1dHRvbgRMZWZ0A9AAA1RvcAIoBVdpZHRoAksGSGVpZ2h0AhkGQ2FuY2Vs
+          CQdDYXB0aW9uBgZDYW5jZWwLTW9kYWxSZXN1bHQCAghUYWJPcmRlcgICAAAA
+        </data>
+      </node>
+    </node>
+    <node class="TWindowsStringFolder" name="String">
+      <node class="TWindowsStringNode" name="NtPattern" excluded="1">
+        <row id="SFew" si="12">Few</row>
+        <row id="SMany" si="13">Many</row>
+        <row id="SPlural" si="14">Plural</row>
+        <row id="SMale" si="15">Male</row>
+        <row id="SFemale" si="16">Female</row>
+        <row id="SNeutral" si="17">Neutral</row>
+        <row id="SZero" si="41">Nullar</row>
+        <row id="SOne" si="42">Singular</row>
+        <row id="STwo" si="43">Dual</row>
+      </node>
+      <node class="TWindowsStringNode" name="NtWindows" excluded="1">
+        <row id="STraditionalSort" si="32">traditional sort</row>
+        <row id="SInternationalSort" si="33">international sort</row>
+        <row id="SModern" si="34">modern</row>
+        <row id="SValencia" si="35">Valencia</row>
+        <row id="STechnicalSort" si="36">technical sort</row>
+        <row id="SPhoneBookSort" si="37">phone book sort</row>
+        <row id="SStrokeSort" si="38">stroke sort</row>
+        <row id="SRadicalSort" si="39">radical/stroke sort</row>
+        <row id="SBopomofoSort" si="40">Bopomofo sort</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.RTLConsts" excluded="1">
+        <row id="SWindowsServer2025" si="172">Windows Server 2025</row>
+        <row id="SWindows8" si="173">Windows 8</row>
+        <row id="SWindows8Point1" si="174">Windows 8.1</row>
+        <row id="SWindows10" si="175">Windows 10</row>
+        <row id="SWindows11" si="176">Windows 11</row>
+        <row id="SWinRTInstanceError" si="177" codep="1">Cannot create instance of class %s</row>
+        <row id="sObserverUnsupported" si="178">Observer is not supported</row>
+        <row id="sObserverMultipleSingleCast" si="179">Cannot have multiple single cast observers added to the observers collection</row>
+        <row id="sObserverNoInterface" si="180">The object does not implement the observer interface</row>
+        <row id="sObserverNoSinglecastFound" si="181" codep="1">No single cast observer with ID %d was added to the observer collection</row>
+        <row id="sObserverNoMulticastFound" si="182" codep="1">No multi cast observer with ID %d was added to the observer collection</row>
+        <row id="sObserverNotAvailable" si="183">Observer is not available</row>
+        <row id="sMustWaitOnOneEvent" si="184">Must wait on at least one event</row>
+        <row id="sBeginInvokeDestroying" si="185">Cannot call BeginInvoke on a TComponent in the process of destruction</row>
+        <row id="SVersion32" si="188">32-bit Edition</row>
+        <row id="SVersion64" si="189">64-bit Edition</row>
+        <row id="SWindows" si="190">Windows</row>
+        <row id="SWindowsVista" si="191">Windows Vista</row>
+        <row id="SWindowsServer2008" si="192">Windows Server 2008</row>
+        <row id="SWindows7" si="193">Windows 7</row>
+        <row id="SWindowsServer2008R2" si="194">Windows Server 2008 R2</row>
+        <row id="SWindows2000" si="195">Windows 2000</row>
+        <row id="SWindowsXP" si="196">Windows XP</row>
+        <row id="SWindowsServer2003" si="197">Windows Server 2003</row>
+        <row id="SWindowsServer2003R2" si="198">Windows Server 2003 R2</row>
+        <row id="SWindowsServer2012" si="199">Windows Server 2012</row>
+        <row id="SWindowsServer2012R2" si="200">Windows Server 2012 R2</row>
+        <row id="SWindowsServer2016" si="201">Windows Server 2016</row>
+        <row id="SWindowsServer2019" si="202">Windows Server 2019</row>
+        <row id="SWindowsServer2022" si="203">Windows Server 2022</row>
+        <row id="SNoTopics" si="204">No topic-based help system installed</row>
+        <row id="SNothingFound" si="205" codep="1">No help found for %s</row>
+        <row id="SArgumentOutOfRange" si="206">Argument out of range</row>
+        <row id="SArgumentNil" si="207">Argument must not be nil</row>
+        <row id="SGenericItemNotFound" si="208">Item not found</row>
+        <row id="SGenericDuplicateItem" si="209">Duplicates not allowed</row>
+        <row id="SInsufficientRtti" si="210">Insufficient RTTI available to support this operation</row>
+        <row id="SParameterCountMismatch" si="211">Parameter count mismatch</row>
+        <row id="SNonPublicType" si="212" codep="1">Type '%s' is not declared in the interface section of a unit</row>
+        <row id="SByRefArgMismatch" si="213">VAR and OUT arguments must match parameter type exactly</row>
+        <row id="SPropIsReadOnly" si="214" codep="1">Property '%s' is read-only</row>
+        <row id="SPropIsWriteOnly" si="215" codep="1">Property '%s' is write-only</row>
+        <row id="SInvalidRttiDestroy" si="216">RTTI objects cannot be manually destroyed by application code</row>
+        <row id="SServiceNotFound" si="217">Specified Login Credential Service not found</row>
+        <row id="SVersionStr" si="218" codep="1">%s (Version %d.%d, Build %d, %5:s)</row>
+        <row id="SSPVersionStr" si="219" codep="1">%s Service Pack %4:d (Version %1:d.%2:d, Build %3:d, %5:s)</row>
+        <row id="sInvalidStringAndObjectArrays" si="220">Length of Strings and Objects arrays must be equal</row>
+        <row id="sSameArrays" si="221">Source and Destination arrays must not be the same</row>
+        <row id="sNoConstruct" si="222" codep="1">Class %s is not intended to be constructed</row>
+        <row id="sInvalidTimeoutValue" si="223" codep="1">Invalid Timeout value: %s</row>
+        <row id="sSpinCountOutOfRange" si="224" codep="1">SpinCount out of range. Must be between 0 and %d</row>
+        <row id="sTimespanTooLong" si="225">Timespan too long</row>
+        <row id="sInvalidTimespanDuration" si="226">The duration cannot be returned because the absolute value exceeds the value of TTimeSpan.MaxValue</row>
+        <row id="sTimespanValueCannotBeNan" si="227">Value cannot be NaN</row>
+        <row id="sCannotNegateTimespan" si="228">Negating the minimum value of a Timespan is invalid</row>
+        <row id="sInvalidTimespanFormat" si="229">Invalid Timespan format</row>
+        <row id="sTimespanElementTooLong" si="230">Timespan element too long</row>
+        <row id="SNoContext" si="231">No context-sensitive help installed</row>
+        <row id="SNoContextFound" si="232" codep="1">No help found for context %d</row>
+        <row id="SNoIndex" si="233">Unable to open Index</row>
+        <row id="SNoSearch" si="234">Unable to open Search</row>
+        <row id="SNoTableOfContents" si="235">Unable to find a Table of Contents</row>
+        <row id="SThreadStartError" si="236">Cannot call Start on a running or suspended thread</row>
+        <row id="SThreadExternalCheckTerminated" si="237">Cannot call CheckTerminated on an externally created thread</row>
+        <row id="SThreadExternalSetReturnValue" si="238">Cannot call SetReturnValue on an externally create thread</row>
+        <row id="SParamIsNil" si="239" codep="1">Parameter %s cannot be nil</row>
+        <row id="SParamIsNegative" si="240" codep="1">Parameter %s cannot be a negative value</row>
+        <row id="SInputBufferExceed" si="241" codep="1">Input buffer exceeded for %s = %d, %s = %d</row>
+        <row id="SInvalidCharsInPath" si="242">Invalid characters in path</row>
+        <row id="SInvalidCharsInSearchPattern" si="243">Invalid characters in search pattern</row>
+        <row id="SEmptyPath" si="244">Path is empty</row>
+        <row id="SEmptySearchPattern" si="245">Search pattern is empty</row>
+        <row id="SPathTooLong" si="246">The specified path is too long</row>
+        <row id="SPathNotFound" si="247">The specified path was not found</row>
+        <row id="SPathFormatNotSupported" si="248">The path format is not supported</row>
+        <row id="SDriveNotFound" si="249">The drive cannot be found</row>
+        <row id="hNoFilterViewer" si="250">No help viewer that supports filters</row>
+        <row id="sArgumentInvalid" si="251">Invalid argument</row>
+        <row id="SPropertyException" si="252" codep="1">Error reading %s%s%s: %s</row>
+        <row id="SReadError" si="253">Stream read error</row>
+        <row id="SReadOnlyProperty" si="254">Property is read-only</row>
+        <row id="SRegCreateFailed" si="255" codep="1">Failed to create key %s</row>
+        <row id="SRegGetDataFailed" si="256" codep="1">Failed to get data for '%s'</row>
+        <row id="SRegSetDataFailed" si="257" codep="1">Failed to set data for '%s'</row>
+        <row id="SResNotFound" si="258" codep="1">Resource %s not found</row>
+        <row id="SSeekNotImplemented" si="259" codep="1">%s.Seek not implemented</row>
+        <row id="SSortedListError" si="260">Operation not allowed on sorted list</row>
+        <row id="SUnknownGroup" si="261" codep="1">%s not in a class registration group</row>
+        <row id="SUnknownProperty" si="262" codep="1">Property %s does not exist</row>
+        <row id="SWriteError" si="263">Stream write error</row>
+        <row id="SThreadCreateError" si="264" codep="1">Thread creation error: %s</row>
+        <row id="SThreadError" si="265" codep="1">Thread Error: %s (%d)</row>
+        <row id="SThreadExternalTerminate" si="266">Cannot terminate an externally created thread</row>
+        <row id="SThreadExternalWait" si="267">Cannot wait for an externally created thread</row>
+        <row id="SFCreateErrorEx" si="268" codep="1">Cannot create file "%s". %s</row>
+        <row id="SInvalidImage" si="269">Invalid stream format</row>
+        <row id="SInvalidMask" si="270" codep="1">'%s' is an invalid mask at (%d)</row>
+        <row id="SInvalidName" si="271" codep="1">''%s'' is not a valid component name</row>
+        <row id="SInvalidProperty" si="272">Invalid property value</row>
+        <row id="SInvalidPropertyElement" si="273" codep="1">Invalid property element: %s</row>
+        <row id="SInvalidPropertyPath" si="274">Invalid property path</row>
+        <row id="SInvalidPropertyValue" si="275">Invalid property value</row>
+        <row id="SInvalidRegType" si="276" codep="1">Invalid data type for '%s'</row>
+        <row id="SListCapacityError" si="277" codep="1">List capacity out of bounds (%d)</row>
+        <row id="SListCountError" si="278" codep="1">List count out of bounds (%d)</row>
+        <row id="SListIndexError" si="279" codep="1">List index out of bounds (%d)</row>
+        <row id="SListIndexErrorRangeReason" si="280" codep="1">.  %s range is 0..%d</row>
+        <row id="SListIndexErrorEmptyReason" si="281" codep="1">.  %s is empty</row>
+        <row id="SMemoryStreamError" si="282">Out of memory while expanding memory stream</row>
+        <row id="SNoComSupport" si="283" codep="1">%s has not been registered as a COM class</row>
+        <row id="SAncestorNotFound" si="289" codep="1">Ancestor for '%s' not found</row>
+        <row id="SAssignError" si="290" codep="1">Cannot assign a %s to a %s</row>
+        <row id="SBitsIndexError" si="291">Bits index out of range</row>
+        <row id="SCantWriteResourceStreamError" si="292">Can't write to a read-only resource stream</row>
+        <row id="SCheckSynchronizeError" si="293" codep="1">CheckSynchronize called from thread $%x, which is NOT the main thread</row>
+        <row id="SClassNotFound" si="294" codep="1">Class %s not found</row>
+        <row id="SDuplicateClass" si="295" codep="1">A class named %s already exists</row>
+        <row id="SDuplicateItem" si="296" codep="1">List does not allow duplicates ($0%x)</row>
+        <row id="SDuplicateName" si="297" codep="1">A component named %s already exists</row>
+        <row id="SDuplicateString" si="298">String list does not allow duplicates</row>
+        <row id="SFCreateError" si="299" codep="1">Cannot create file %s</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.SysConst" excluded="1">
+        <row id="SInvalidDestinationIndex" si="284" codep="1">Invalid destination index (%d)</row>
+        <row id="SInvalidCodePage" si="285">Invalid code page</row>
+        <row id="SInvalidEncodingName" si="286">Invalid encoding name</row>
+        <row id="SNoMappingForUnicodeCharacter" si="287">No mapping for the Unicode character exists in the target multi-byte code page</row>
+        <row id="SInvalidStringBaseIndex" si="288">Invalid StringBaseIndex</row>
+        <row id="SShortDayNameWed" si="300">Wed</row>
+        <row id="SShortDayNameThu" si="301">Thu</row>
+        <row id="SShortDayNameFri" si="302">Fri</row>
+        <row id="SShortDayNameSat" si="303">Sat</row>
+        <row id="SLongDayNameSun" si="304">Sunday</row>
+        <row id="SLongDayNameMon" si="305">Monday</row>
+        <row id="SLongDayNameTue" si="306">Tuesday</row>
+        <row id="SLongDayNameWed" si="307">Wednesday</row>
+        <row id="SLongDayNameThu" si="308">Thursday</row>
+        <row id="SLongDayNameFri" si="309">Friday</row>
+        <row id="SLongDayNameSat" si="310">Saturday</row>
+        <row id="SInvalidSourceArray" si="311">Invalid source array</row>
+        <row id="SInvalidDestinationArray" si="312">Invalid destination array</row>
+        <row id="SCharIndexOutOfBounds" si="313" codep="1">Character index out of bounds (%d)</row>
+        <row id="SByteIndexOutOfBounds" si="314" codep="1">Start index out of bounds (%d)</row>
+        <row id="SInvalidCharCount" si="315" codep="1">Invalid count (%d)</row>
+        <row id="SShortMonthNameDec" si="316">Dec</row>
+        <row id="SLongMonthNameJan" si="317">January</row>
+        <row id="SLongMonthNameFeb" si="318">February</row>
+        <row id="SLongMonthNameMar" si="319">March</row>
+        <row id="SLongMonthNameApr" si="320">April</row>
+        <row id="SLongMonthNameMay" si="321">May</row>
+        <row id="SLongMonthNameJun" si="322">June</row>
+        <row id="SLongMonthNameJul" si="323">July</row>
+        <row id="SLongMonthNameAug" si="324">August</row>
+        <row id="SLongMonthNameSep" si="325">September</row>
+        <row id="SLongMonthNameOct" si="326">October</row>
+        <row id="SLongMonthNameNov" si="327">November</row>
+        <row id="SLongMonthNameDec" si="328">December</row>
+        <row id="SShortDayNameSun" si="329">Sun</row>
+        <row id="SShortDayNameMon" si="330">Mon</row>
+        <row id="SShortDayNameTue" si="331">Tue</row>
+        <row id="SAssertError" si="332" codep="1">%s (%s, line %d)</row>
+        <row id="SAbstractError" si="333">Abstract Error</row>
+        <row id="SModuleAccessViolation" si="334" codep="1">Access violation at address %p in module '%s' (offset %x). %s of address %p</row>
+        <row id="SOSError" si="335" codep="1">System Error.  Code: %d.
+%s%s</row>
+        <row id="SUnkOSError" si="336">A call to an OS function failed</row>
+        <row id="SShortMonthNameJan" si="337">Jan</row>
+        <row id="SShortMonthNameFeb" si="338">Feb</row>
+        <row id="SShortMonthNameMar" si="339">Mar</row>
+        <row id="SShortMonthNameApr" si="340">Apr</row>
+        <row id="SShortMonthNameMay" si="341">May</row>
+        <row id="SShortMonthNameJun" si="342">Jun</row>
+        <row id="SShortMonthNameJul" si="343">Jul</row>
+        <row id="SShortMonthNameAug" si="344">Aug</row>
+        <row id="SShortMonthNameSep" si="345">Sep</row>
+        <row id="SShortMonthNameOct" si="346">Oct</row>
+        <row id="SShortMonthNameNov" si="347">Nov</row>
+        <row id="SVarTypeTooManyCustom" si="348">Too many custom variant types have been registered</row>
+        <row id="SVarTypeCouldNotConvert" si="349" codep="1">Could not convert variant of type (%s) into type (%s)</row>
+        <row id="SVarTypeConvertOverflow" si="350" codep="1">Overflow while converting variant of type (%s) into type (%s)</row>
+        <row id="SVarOverflow" si="351">Variant overflow</row>
+        <row id="SVarInvalid" si="352">Invalid argument</row>
+        <row id="SVarBadType" si="353">Invalid variant type</row>
+        <row id="SVarNotImplemented" si="354">Operation not supported</row>
+        <row id="SVarUnexpected" si="355">Unexpected variant error</row>
+        <row id="SExternalException" si="356" codep="1">External exception %x</row>
+        <row id="SAssertionFailed" si="357">Assertion failed</row>
+        <row id="SIntfCastError" si="358">Interface not supported</row>
+        <row id="SSafecallException" si="359">Exception in safecall method</row>
+        <row id="SMonitorLockException" si="360">Object lock not owned</row>
+        <row id="SNoMonitorSupportException" si="361">Monitor support function not initialized</row>
+        <row id="SNotImplemented" si="362">Feature not implemented</row>
+        <row id="SObjectDisposed" si="363">Method called on disposed object</row>
+        <row id="SArgumentMissing" si="364" codep="1">No argument for format '%s'</row>
+        <row id="SDispatchError" si="365">Variant method calls not supported</row>
+        <row id="SReadAccess" si="366">Read</row>
+        <row id="SWriteAccess" si="367">Write</row>
+        <row id="SExecuteAccess" si="368">Execution</row>
+        <row id="SInvalidAccess" si="369">Invalid access</row>
+        <row id="SVarArrayCreate" si="370">Error creating variant or safe array</row>
+        <row id="SVarArrayBounds" si="371">Variant or safe array index out of bounds</row>
+        <row id="SVarArrayLocked" si="372">Variant or safe array is locked</row>
+        <row id="SInvalidVarCast" si="373">Invalid variant type conversion</row>
+        <row id="SInvalidVarOp" si="374">Invalid variant operation</row>
+        <row id="SInvalidVarNullOp" si="375">Invalid NULL variant operation</row>
+        <row id="SInvalidVarOpWithHResultWithPrefix" si="376" codep="1">Invalid variant operation (%s%.8x)
+%s</row>
+        <row id="SVarTypeOutOfRangeWithPrefix" si="377" codep="1">Custom variant type (%s%.4x) is out of range</row>
+        <row id="SVarTypeAlreadyUsedWithPrefix" si="378" codep="1">Custom variant type (%s%.4x) already used by %s</row>
+        <row id="SVarTypeNotUsableWithPrefix" si="379" codep="1">Custom variant type (%s%.4x) is not usable</row>
+        <row id="SRangeError" si="380">Range check error</row>
+        <row id="SIntOverflow" si="381">Integer overflow</row>
+        <row id="SInvalidOp" si="382">Invalid floating point operation</row>
+        <row id="SZeroDivide" si="383">Floating point division by zero</row>
+        <row id="SOverflow" si="384">Floating point overflow</row>
+        <row id="SUnderflow" si="385">Floating point underflow</row>
+        <row id="SInvalidPointer" si="386">Invalid pointer operation</row>
+        <row id="SInvalidCast" si="387">Invalid class typecast</row>
+        <row id="SAccessViolationArg3" si="388" codep="1">Access violation at address %p. %s of address %p</row>
+        <row id="SAccessViolationNoArg" si="389">Access violation</row>
+        <row id="SStackOverflow" si="390">Stack overflow</row>
+        <row id="SControlC" si="391">Control-C hit</row>
+        <row id="SPrivilege" si="392">Privileged instruction</row>
+        <row id="SException" si="393" codep="1">Exception %s in module %s at %p.
+%s%s
+</row>
+        <row id="SExceptTitle" si="394">Application Error</row>
+        <row id="SInvalidFormat" si="395" codep="1">Format '%s' invalid or incompatible with argument</row>
+        <row id="SUnknown" si="396">&lt;unknown></row>
+        <row id="SInvalidInteger" si="397" codep="1">'%s' is not a valid integer value</row>
+        <row id="SInvalidTimeStamp" si="398" codep="1">'%d.%d' is not a valid timestamp</row>
+        <row id="SInvalidGUID" si="399" codep="1">'%s' is not a valid GUID value</row>
+        <row id="STimeEncodeError" si="400">Invalid argument to time encode</row>
+        <row id="SDateEncodeError" si="401">Invalid argument to date encode</row>
+        <row id="SOutOfMemory" si="402">Out of memory</row>
+        <row id="SInOutError" si="403" codep="1">I/O error %d</row>
+        <row id="SFileNotFound" si="404">File not found</row>
+        <row id="SInvalidUnknownFilename" si="405">Invalid filename</row>
+        <row id="STooManyOpenFiles" si="406">Too many open files</row>
+        <row id="SAccessDenied" si="407">File access denied</row>
+        <row id="SEndOfFile" si="408">Read beyond end of file</row>
+        <row id="SDiskFull" si="409">Disk full</row>
+        <row id="SInvalidInput" si="410">Invalid numeric input</row>
+        <row id="SDivByZero" si="411">Division by zero</row>
+      </node>
+      <node class="TWindowsStringNode" name="System.Win.ComConst" excluded="1">
+        <row id="SNoMethod" si="28" codep="1">Method '%s' not supported by automation object</row>
+        <row id="SVarNotObject" si="29">Variant does not reference an automation object</row>
+        <row id="STooManyParams" si="30">Dispatch methods do not support more than 64 parameters</row>
+        <row id="SOleError" si="59" codep="1">OLE error %.8x</row>
+      </node>
+      <node class="TWindowsStringNode" name="Unit1">
+        <row id="SOrderPlaced" si="1" scannedcomment="0: Number of the purchase order, for example &quot;A-1024&quot;. Order is a noun: a purchase order." codep="1">Order %s was placed.</row>
+        <row id="SLightTheme" si="2" scannedcomment="Name of the light color theme of the user interface. Not a weight.">Light</row>
+        <row id="SDarkTheme" si="3" scannedcomment="Name of the dark color theme of the user interface.">Dark</row>
+        <row id="STheme" si="4" scannedcomment="0: Name of the color theme: Light or Dark" codep="1">Theme: %s</row>
+        <row id="SDeleteTicket" si="5" scannedcomment="0: Number of the support ticket, for example &quot;#1234&quot;, 1: Name of the queue, for example &quot;Billing&quot;. A ticket is a support request, not a travel ticket." codep="1">Delete ticket %s from the %s queue?</row>
+        <row id="SNearNoComment" si="6">Close</row>
+        <row id="SOpenTickets" si="7" scannedcomment="%d: Number of support tickets that are not solved yet. Open is an adjective here." codep="1">
+          <value>%d open tickets</value>
+          <pattern plural="pfZero">No open tickets</pattern>
+          <pattern plural="pfOne">%d open ticket</pattern>
+        </row>
+        <row id="SSummary" si="8" scannedcomment="0: Number of support tickets, 1: Number of queues where the tickets are waiting" codep="1">
+          <value startpattern="1">%0:s in %1:s</value>
+          <pattern plural="pfOne" index="0">%d ticket</pattern>
+          <pattern plural="pfOther" index="0">%d tickets</pattern>
+          <pattern plural="pfOne" index="1">%d queue</pattern>
+          <pattern plural="pfOther" index="1">%d queues</pattern>
+        </row>
+        <row id="SPostCount" si="9" scannedcomment="%d: Number of replies published in the support ticket. Post is a noun: a reply." codep="1">
+          <value>%d posts</value>
+          <pattern plural="pfZero">No posts yet</pattern>
+          <pattern plural="pfOne">%d post</pattern>
+        </row>
+        <row id="SStatusText" si="10" scannedcomment="The status of a support ticket as a sentence. Open and closed are adjectives." codep="1">
+          <value select="open">The ticket is open.</value>
+          <pattern select="closed">The ticket is closed.</pattern>
+          <pattern select="pending">The ticket is waiting for the customer.</pattern>
+        </row>
+        <row id="SAssigned" si="11" scannedcomment="0: First name of the support agent" codep="1">
+          <value gender="geMale">%s assigned the ticket to himself.</value>
+          <pattern gender="geFemale">%s assigned the ticket to herself.</pattern>
+        </row>
+        <row id="SStatusOpen" si="18" scannedcomment="Status of a support ticket (adjective): the problem is not solved yet. Not a command.">Open</row>
+        <row id="SStatusPending" si="19" scannedcomment="Status of a support ticket (adjective): waiting for an answer from the customer.">Pending</row>
+        <row id="SStatusClosed" si="20" scannedcomment="Status of a support ticket (adjective): the problem has been solved.">Closed</row>
+        <row id="SOpenCommand" si="21" scannedcomment="Button (verb): opens a closed support ticket again. &amp; marks the hotkey." scannedmaxcharacters="12">&amp;Open</row>
+        <row id="SCloseCommand" si="22" scannedcomment="Button (verb): marks the support ticket solved. &amp; marks the hotkey." scannedmaxcharacters="12">&amp;Close</row>
+        <row id="SNear" si="23" scannedcomment="Distance of the store (adjective): near, a short walk away. Not the Close command.">Close</row>
+        <row id="SFreePrice" si="24" scannedcomment="Price of a product (adjective): it costs nothing. Not &quot;available&quot; or &quot;unused&quot;.">Free</row>
+        <row id="SFreeSpace" si="25" scannedcomment="0: Amount of disk space, for example &quot;12 GB&quot;. Free means unused here, not &quot;costs nothing&quot;." codep="1">%s free</row>
+        <row id="SPosted" si="26" scannedcomment="Message after publishing. Post is a noun here: a reply in a discussion.">Your post was published.</row>
+        <row id="SBooked" si="27" scannedcomment="0: Time of the reservation, for example &quot;18:30&quot;. Booked = reserved." codep="1">Table booked for %s.</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.ComStrs" excluded="1">
+        <row id="sUDAssociated" si="31" codep="1">%s is already associated with %s</row>
+      </node>
+      <node class="TWindowsStringNode" name="Vcl.Consts" excluded="1">
+        <row id="SStyleLoadErrors" si="44" codep="1">Unable to load styles: %s</row>
+        <row id="SStyleRegisterError" si="45" codep="1">Style '%s' already registered</row>
+        <row id="SStyleClassRegisterError" si="46" codep="1">Style class '%s' already registered</row>
+        <row id="SStyleNotFound" si="47" codep="1">Style '%s' not found</row>
+        <row id="SStyleClassNotFound" si="48" codep="1">Style class '%s' not found</row>
+        <row id="SStyleInvalidHandle" si="49">Invalid style handle</row>
+        <row id="SStyleFormatError" si="50">Invalid style format</row>
+        <row id="SStyleHookClassRegistered" si="51" codep="1">Class '%s' is already registered for '%s'</row>
+        <row id="SStyleHookClassNotRegistered" si="52" codep="1">Class '%s' is not registered for '%s'</row>
+        <row id="SStyleInvalidParameter" si="53" codep="1">%s parameter cannot be nil</row>
+        <row id="SStyleFeatureNotSupported" si="54">Feature not supported by this style</row>
+        <row id="SStyleNotRegistered" si="55" codep="1">Style '%s' is not registered</row>
+        <row id="SStyleUnregisterError" si="56">Cannot unregister the system style</row>
+        <row id="SStyleNotRegisteredNoName" si="57">Style not registered</row>
+        <row id="sBeginInvokeNoHandle" si="58">Cannot call BeginInvoke on a control with no parent or window handle</row>
+        <row id="SDockZoneHasNoCtl" si="60"> - Dock zone has no control</row>
+        <row id="SDockZoneVersionConflict" si="61" codep="1">Error loading dock zone from the stream. Expecting version %d, but found %d.</row>
+        <row id="SPromptArrayTooShort" si="62">Length of value array must be >= length of prompt array</row>
+        <row id="SPromptArrayEmpty" si="63">Prompt array must not be empty</row>
+        <row id="SUsername" si="64">&amp;Username</row>
+        <row id="SPassword" si="65">&amp;Password</row>
+        <row id="SDomain" si="66">&amp;Domain</row>
+        <row id="SLogin" si="67">Login</row>
+        <row id="SErrorSettingCount" si="68" codep="1">Error setting %s.Count</row>
+        <row id="SListBoxMustBeVirtual" si="69" codep="1">Listbox (%s) style must be virtual in order to set Count</row>
+        <row id="STrayIconRemoveError" si="70">Cannot remove shell notification icon</row>
+        <row id="SWindowsVistaRequired" si="71" codep="1">%s requires Windows Vista or later</row>
+        <row id="STaskDlgButtonCaption" si="72" codep="1">Button%d</row>
+        <row id="STaskDlgRadioButtonCaption" si="73" codep="1">RadioButton%d</row>
+        <row id="SInvalidTaskDlgButtonCaption" si="74">Caption cannot be empty</row>
+        <row id="SStyleLoadError" si="75" codep="1">Unable to load style '%s'</row>
+        <row id="SmkcIns" si="76">Ins</row>
+        <row id="SmkcDel" si="77">Del</row>
+        <row id="SmkcShift" si="78">Shift+</row>
+        <row id="SmkcCtrl" si="79">Ctrl+</row>
+        <row id="SmkcAlt" si="80">Alt+</row>
+        <row id="SOutOfRange" si="81" codep="1">Value must be between %d and %d</row>
+        <row id="sAllFilter" si="82">All</row>
+        <row id="SInsertLineError" si="83">Unable to insert a line</row>
+        <row id="SIconToClipboard" si="84">Clipboard does not support Icons</row>
+        <row id="SCannotOpenClipboard" si="85" codep="1">Cannot open clipboard: %s</row>
+        <row id="SInvalidPrinterOp" si="86">Operation not supported on selected printer</row>
+        <row id="SNoDefaultPrinter" si="87">There is no default printer currently selected</row>
+        <row id="SDuplicateMenus" si="88" codep="1">Menu '%s' is already being used by another form</row>
+        <row id="SDockedCtlNeedsName" si="89">Docked control must have a name</row>
+        <row id="SDockTreeRemoveError" si="90">Error removing control from dock tree</row>
+        <row id="SDockZoneNotFound" si="91"> - Dock zone not found</row>
+        <row id="SMsgDlgNoToAll" si="92">N&amp;o to All</row>
+        <row id="SMsgDlgYesToAll" si="93">Yes to &amp;All</row>
+        <row id="SMsgDlgClose" si="94">&amp;Close</row>
+        <row id="SmkcBkSp" si="95">BkSp</row>
+        <row id="SmkcTab" si="96">Tab</row>
+        <row id="SmkcEsc" si="97">Esc</row>
+        <row id="SmkcEnter" si="98">Enter</row>
+        <row id="SmkcSpace" si="99">Space</row>
+        <row id="SmkcPgUp" si="100">PgUp</row>
+        <row id="SmkcPgDn" si="101">PgDn</row>
+        <row id="SmkcEnd" si="102">End</row>
+        <row id="SmkcHome" si="103">Home</row>
+        <row id="SmkcLeft" si="104">Left</row>
+        <row id="SmkcUp" si="105">Up</row>
+        <row id="SmkcRight" si="106">Right</row>
+        <row id="SmkcDown" si="107">Down</row>
+        <row id="SVIcons" si="108">Icons</row>
+        <row id="SVBitmaps" si="109">Bitmaps</row>
+        <row id="SVTIFFImages" si="110">TIFF Images</row>
+        <row id="SMsgDlgWarning" si="111">Warning</row>
+        <row id="SMsgDlgError" si="112">Error</row>
+        <row id="SMsgDlgInformation" si="113">Information</row>
+        <row id="SMsgDlgConfirm" si="114">Confirm</row>
+        <row id="SMsgDlgYes" si="115">&amp;Yes</row>
+        <row id="SMsgDlgNo" si="116">&amp;No</row>
+        <row id="SMsgDlgOK" si="117">OK</row>
+        <row id="SMsgDlgCancel" si="118">Cancel</row>
+        <row id="SMsgDlgHelp" si="119">&amp;Help</row>
+        <row id="SMsgDlgAbort" si="120">&amp;Abort</row>
+        <row id="SMsgDlgRetry" si="121">&amp;Retry</row>
+        <row id="SMsgDlgIgnore" si="122">&amp;Ignore</row>
+        <row id="SMsgDlgAll" si="123">&amp;All</row>
+        <row id="SMenuReinserted" si="124">Menu inserted twice</row>
+        <row id="SMenuNotFound" si="125">Sub-menu is not in menu</row>
+        <row id="SNoTimers" si="126">Not enough timers available</row>
+        <row id="SNotPrinting" si="127">Printer is not currently printing</row>
+        <row id="SPrinting" si="128">Printing in progress</row>
+        <row id="SPrinterIndexError" si="129">Printer index out of range</row>
+        <row id="SInvalidPrinter" si="130">Printer selected is not valid</row>
+        <row id="SDeviceOnPort" si="131" codep="1">%s on %s</row>
+        <row id="SGroupIndexTooLow" si="132">GroupIndex cannot be less than a previous menu item's GroupIndex</row>
+        <row id="SNoMDIForm" si="133">Cannot create form. No MDI forms are currently active</row>
+        <row id="SImageCanvasNeedsBitmap" si="134">Can only modify an image if it contains a bitmap</row>
+        <row id="SControlParentSetToSelf" si="135">A control cannot have itself as its parent</row>
+        <row id="SControlNonMainThreadUsage" si="136" codep="1">Control '%s' is used on a not main thread</row>
+        <row id="SCannotDragForm" si="137">Cannot drag a form</row>
+        <row id="SVMetafiles" si="138">Metafiles</row>
+        <row id="SVEnhMetafiles" si="139">Enhanced Metafiles</row>
+        <row id="SInsertImage" si="140">Unable to Insert Image</row>
+        <row id="SImageIndexError" si="141">Invalid ImageList Index</row>
+        <row id="SImageReadFail" si="142">Failed to read ImageList data from stream</row>
+        <row id="SImageWriteFail" si="143">Failed to write ImageList data to stream</row>
+        <row id="SWindowDCError" si="144">Error creating window device context</row>
+        <row id="SWindowClass" si="145">Error creating window class</row>
+        <row id="SCannotFocus" si="146">Cannot focus a disabled or invisible window</row>
+        <row id="SParentRequired" si="147" codep="1">Control '%s' has no parent window</row>
+        <row id="SControlPath" si="148" codep="1">. Path:
+%s</row>
+        <row id="SParentGivenNotAParent" si="149" codep="1">Parent given is not a parent of '%s'</row>
+        <row id="SMDIChildNotVisible" si="150">Cannot hide an MDI Child Form</row>
+        <row id="SVisibleChanged" si="151">Cannot change Visible in OnShow or OnHide</row>
+        <row id="SCannotShowModal" si="152">Cannot make a visible window modal</row>
+        <row id="SScrollBarRange" si="153">Scrollbar property out of range</row>
+        <row id="SPropertyOutOfRange" si="154" codep="1">%s property out of range</row>
+        <row id="SMenuIndexError" si="155">Menu index out of range</row>
+        <row id="SInvalidMetafile" si="156">Metafile is not valid</row>
+        <row id="SInvalidPixelFormat" si="157">Invalid pixel format</row>
+        <row id="SInvalidImage" si="158">Invalid image</row>
+        <row id="SScanLine" si="159">Scan line index out of range</row>
+        <row id="SChangeIconSize" si="160">Cannot change the size of an icon</row>
+        <row id="SChangeWicSize" si="161">Cannot change the size of a WIC Image</row>
+        <row id="SUnknownExtension" si="162" codep="1">Unknown picture file extension (.%s)</row>
+        <row id="SUnknownClipboardFormat" si="163">Unsupported clipboard format</row>
+        <row id="SUnknownStreamFormat" si="164">Unsupported stream format</row>
+        <row id="SOutOfResources" si="165">Out of system resources</row>
+        <row id="SNoCanvasHandle" si="166">Canvas does not allow drawing</row>
+        <row id="SInvalidTextFormatFlag" si="167" codep="1">Text format flag '%s' not supported</row>
+        <row id="SInvalidFrameIndex" si="168" codep="1">Invalid image frame index %d: there are %d frames (0-%d)</row>
+        <row id="SInvalidImageSize" si="169">Invalid image size</row>
+        <row id="SInvalidImageList" si="170">Invalid ImageList</row>
+        <row id="SReplaceImage" si="171">Unable to Replace Image</row>
+        <row id="SInvalidBitmap" si="186">Bitmap image is not valid</row>
+        <row id="SInvalidIcon" si="187">Icon image is not valid</row>
+      </node>
+    </node>
+  </node>
+  <excludedoriginals>
+    <item>...</item>
+    <item>dummy</item>
+  </excludedoriginals>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Claude" type="TClaudeTranslator"/>
+    </shared>
+  </mt>
+  <styleguide>This is a help desk and web shop application for consumers.
+
+Tone: friendly and informal. Address the user in the informal form (for example "du" in German and Swedish, "sinä" in Finnish, "tu" in French).
+
+Buttons and menu commands: short imperative verbs ("Open", "Close", "Post"). Statuses and labels: adjectives or nouns, never commands.
+
+Terminology: a "ticket" is a support request, never a travel or event ticket. A "queue" is a group of support tickets. A "post" is a reply in a support ticket.
+
+Keep the product and component names in English. Use sentence case, not title case.</styleguide>
+  <duplicates differentcontext="dcaMachineTranslate"/>
+</project>

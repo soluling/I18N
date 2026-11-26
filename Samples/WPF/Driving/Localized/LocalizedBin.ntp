@@ -1,7 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<project id="89D9E1B8-E451-46BC-A8FC-7514B3417EA8" created="20201025T221445Z" lastmodified="20260301T123518Z" version="1.0.1090" lockedrowcomplete="0" stringid="20">
+<project id="89D9E1B8-E451-46BC-A8FC-7514B3417EA8" created="20201025T221445Z" lastmodified="20261124T135517Z" version="1.0.1124" lockedrowcomplete="0" stringid="20">
   <lang id="fi"/>
-  <node class="TAssemblySource" name="bin\Debug\Driving.exe" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\bin\Debug\Driving.exe" original="en" lastmodified="20260301T123518Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrImage,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Localized.csproj" libraries="[nlWpf]">
+  <lang id="de"/>
+  <node class="TAssemblySource" name="bin\Debug\Driving.exe" fullpath="D:\NT\Deploy\Samples\WPF\Driving\Localized\bin\Debug\Driving.exe" original="en" lastmodified="20261124T135517Z" resources="[nrResx,nrXaml,nrImage]" availableresources="[nrResx,nrXaml,nrImage,nrGroupIcon,nrIcon,nrManifest,nrVersion,nrHardCodeStrings]" projectfilename="Localized.csproj" libraries="[nlWpf]">
     <netproperties version="net46"/>
     <node class="TNetImageFolder" name="Image" created="20201025T234932Z">
       <node class="TImageDataNode" name="car_sedan_blue.ico">
@@ -1790,10 +1791,12 @@
         <row id="About" si="1">
           <value>Driving time calculator</value>
           <lang id="fi" rw="0" time="20201025T221445Z">Ajoaikalaskin</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135516Z">Rechner für die Fahrzeit</lang>
         </row>
         <row id="Language" si="2">
           <value>en</value>
           <lang id="fi" rw="0" time="20201025T221445Z">fi</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135516Z">de</lang>
         </row>
         <row id="ResultPlural" changed="20260301T123518Z" si="3" created="20260301T123518Z" codep="1">
           <value startpattern="1">Driving time is{0}{1}</value>
@@ -1810,6 +1813,14 @@
             <pattern plural="pfOne" index="1">{0} minuutti</pattern>
             <pattern plural="pfOther" index="1">{0} minuuttia</pattern>
           </lang>
+          <lang id="de" st="4" or="6" rw="0" time="20261124T135517Z">
+            <value startpattern="1">Die Fahrzeit beträgt{0}{1}</value>
+            <pattern plural="pfZero" index="0"> </pattern>
+            <pattern plural="pfOne" index="0"> {0} Stunde </pattern>
+            <pattern plural="pfOther" index="0"> {0} Stunden </pattern>
+            <pattern plural="pfOne" index="1">{0} Minute</pattern>
+            <pattern plural="pfOther" index="1">{0} Minuten</pattern>
+          </lang>
         </row>
       </node>
     </node>
@@ -1818,45 +1829,54 @@
         <row id="Main.Title" si="4" created="20201025T234602Z">
           <value>Driving Time</value>
           <lang id="fi" rw="0" time="20201025T234615Z" fuzzy="5">Ajoaika</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">Fahrzeit</lang>
         </row>
         <row id="fileMenu.Header" si="5" created="20201025T234602Z">
           <value>_File</value>
           <lang id="fi" rw="0" time="20201025T234617Z" fuzzy="80">_Tiedosto</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">_Datei</lang>
         </row>
         <row id="calculateMenu.$Content" si="6" excluded="3"></row>
         <row id="calculateMenu.Header" si="7" created="20201025T234602Z">
           <value>_Calculate</value>
           <lang id="fi" rw="0" time="20201025T234619Z" fuzzy="100">_Laske</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">Bere_chnen</lang>
         </row>
         <row id="separator1.$Content" si="8" excluded="3"></row>
         <row id="exitMenu.$Content" si="9" excluded="3"></row>
         <row id="exitMenu.Header" si="10" created="20201025T234602Z">
           <value>_Exit</value>
           <lang id="fi" rw="0" time="20201025T234622Z" fuzzy="80">_Lopeta</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">B_eenden</lang>
         </row>
         <row id="helpMenu.Header" si="11" created="20201025T234602Z">
           <value>_Help</value>
           <lang id="fi" rw="0" time="20201025T234628Z">_Ohje</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">_Hilfe</lang>
         </row>
         <row id="aboutMenu.$Content" si="12" excluded="3"></row>
         <row id="aboutMenu.Header" si="13" created="20201025T234602Z">
           <value>_About</value>
           <lang id="fi" rw="0" time="20201025T234631Z" fuzzy="83.3333358764648">_Tietoa</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">_Über</lang>
         </row>
         <row id="distanceLabel.$Content" si="14" excluded="3"></row>
         <row id="distanceLabel.Content" si="15" created="20201025T234602Z">
           <value>_Distance:</value>
           <lang id="fi" rw="0" time="20201025T234637Z">_Etäisyys:</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">_Entfernung:</lang>
         </row>
         <row id="speedLabel.$Content" si="16" excluded="3"></row>
         <row id="speedLabel.Content" si="17" created="20201025T234602Z">
           <value>_Speed:</value>
           <lang id="fi" rw="0" time="20201025T234642Z">_Nopeus:</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">Ge_schwindigkeit:</lang>
         </row>
         <row id="calculateButton.$Content" si="18" excluded="3"></row>
         <row id="calculateButton.Content" si="19" created="20201025T234602Z">
           <value>_Calculate</value>
           <lang id="fi" rw="0" time="20201025T234619Z">_Laske</lang>
+          <lang id="de" st="1" or="6" rw="0" time="20261124T135517Z">Bere_chnen</lang>
         </row>
       </node>
     </node>
@@ -1874,7 +1894,7 @@
   </tm>
   <mt optimizeusage="0">
     <shared>
-      <item name="Google" type="TGoogleTranslate"/>
+      <item name="DeepL" type="TDeepLTranslator"/>
     </shared>
   </mt>
 </project>

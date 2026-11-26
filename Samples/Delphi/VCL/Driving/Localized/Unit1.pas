@@ -48,6 +48,7 @@ implementation
 {$R *.dfm}
 
 uses
+  NtInContext,
   NtBase, NtPattern;
 
 function TForm1.GetDistance: Double;
