@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- A platform view, a view named with its package, a literal text, and a content description -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:orientation="vertical">
+
+  <TextView
+    android:id="@+id/text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hello"
+    android:hint="@string/untouched" />
+
+  <EditText
+    android:id="@+id/edit"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:hint="@string/hello" />
+
+  <android.widget.CheckBox
+    android:id="@+id/check"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/hello" />
+
+  <TextView
+    android:id="@+id/literal"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Literal" />
+
+  <ImageView
+    android:id="@+id/image"
+    android:layout_width="10dp"
+    android:layout_height="10dp"
+    android:contentDescription="@string/hello" />
+</LinearLayout>

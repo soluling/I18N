@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+  <!-- The tests' stand-in server is plain HTTP on 127.0.0.1 -->
+  <application android:usesCleartextTraffic="true">
+    <activity
+      android:name="com.soluling.ota.OtaTestActivity"
+      android:exported="false"
+      android:theme="@style/Theme.AppCompat.Light" />
+  </application>
+</manifest>
