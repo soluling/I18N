@@ -1,0 +1,43 @@
+# Builds and tests the Swift package SolulingOta (Library/iOS): on macOS with swift test, and on an
+# iOS Simulator with xcodebuild
+name: iOS OTA
+
+on:
+  push:
+    paths:
+      - "Package.swift"
+      - "Library/iOS/**"
+      - ".github/workflows/ios-ota.yml"
+  pull_request:
+    paths:
+      - "Package.swift"
+      - "Library/iOS/**"
+      - ".github/workflows/ios-ota.yml"
+  workflow_dispatch:
+
+jobs:
+  test:
+    runs-on: macos-latest
+    timeout-minutes: 30
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Versions
+        run: |
+          xcodebuild -version
+          swift --version
+
+      - name: Test on macOS
+        run: swift test
+
+      - name: Test on an iOS Simulator
+        run: |
+          DEVICE=$(xcrun simctl list devices available --json | python3 -c '
+          import json, sys
+          devices = json.load(sys.stdin)["devices"]
+          runtimes = sorted((r for r in devices if "iOS" in r), reverse=True)
+          print(next(d["udid"] for r in runtimes for d in devices[r] if d["name"].startswith("iPhone")))
+          ')
+          echo "Simulator: $DEVICE"
+          xcodebuild test -scheme SolulingOta -destination "id=$DEVICE" -quiet
