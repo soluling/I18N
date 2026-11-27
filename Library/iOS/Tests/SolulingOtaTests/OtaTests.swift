@@ -1,3 +1,4 @@
+import ObjectiveC
 import XCTest
 @testable import SolulingOta
 
@@ -218,6 +219,24 @@ final class OtaTests: XCTestCase {
 
     initialize(options())
     XCTAssertEqual(String(localized: "hello", bundle: Bundle.module), "Moi maailma")
+  }
+
+  // Not a check: lists the localization methods of NSBundle in the log, for when an API doesn't
+  // get the downloaded strings
+  func testListBundleLookups() {
+    var count: UInt32 = 0
+
+    if let methods = class_copyMethodList(Bundle.self, &count) {
+      for i in 0..<Int(count) {
+        let name = NSStringFromSelector(method_getName(methods[i]))
+
+        if name.lowercased().contains("localized") {
+          print("NSBundle method: \(name)")
+        }
+      }
+
+      free(methods)
+    }
   }
 
   func testOtherLanguages_UseTheBuiltInStrings() {

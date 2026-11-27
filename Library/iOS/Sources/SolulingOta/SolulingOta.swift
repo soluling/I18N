@@ -158,28 +158,63 @@ public enum SolulingOta {
 
 /// The class that the main bundle gets: its string lookup returns the downloaded strings first
 final class OtaBundle: Bundle {
+  // The lookup with the languages to use, which String(localized:) and other newer APIs call. It
+  // is not public, so it is overridden through the Objective-C runtime, if Bundle has it.
+  private static let localizationsSelector = NSSelectorFromString("localizedStringForKey:value:table:localizations:")
+
+  private static let addLocalizationsLookup: Void = {
+    typealias Lookup = @convention(c) (AnyObject, Selector, NSString, NSString?, NSString?, AnyObject?) -> NSString
+
+    guard let method = class_getInstanceMethod(Bundle.self, localizationsSelector) else {
+      return
+    }
+
+    let selector = localizationsSelector
+    let original = unsafeBitCast(method_getImplementation(method), to: Lookup.self)
+    let block: @convention(block) (AnyObject, NSString, NSString?, NSString?, AnyObject?) -> NSString = { bundle, key, value, table, localizations in
+      let builtIn = { original(bundle, selector, key, value, table, localizations) as String }
+
+      if let found = OtaBundle.lookup(key: key as String, table: table as String?, original: builtIn) {
+        return found as NSString
+      }
+
+      return original(bundle, selector, key, value, table, localizations)
+    }
+
+    class_addMethod(OtaBundle.self, selector, imp_implementationWithBlock(block), method_getTypeEncoding(method))
+  }()
+
   static func install(on bundle: Bundle) {
+    _ = addLocalizationsLookup
+
     if !(bundle is OtaBundle) {
       object_setClass(bundle, OtaBundle.self)
     }
   }
 
-  override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
-    if let store = SolulingOta.currentStore(), let found = store.find(key: key, table: tableName) {
-      if let valid = found.valid {
-        if valid {
-          return found.value
-        }
-      } else {
-        // The first time: valid if its placeholders are the built-in string's
-        let original = super.localizedString(forKey: key, value: value, table: tableName)
-        let valid = Placeholders.of(found.value) == Placeholders.of(original)
-
-        store.setValid(valid, for: found.cacheKey, value: found.value)
-        return valid ? found.value : original
-      }
+  /// The downloaded string, or nil if there is none or its placeholders are not the built-in
+  /// string's. original returns the built-in string; it is read only the first time.
+  static func lookup(key: String, table: String?, original: () -> String) -> String? {
+    guard let store = SolulingOta.currentStore(), let found = store.find(key: key, table: table) else {
+      return nil
     }
 
-    return super.localizedString(forKey: key, value: value, table: tableName)
+    if let valid = found.valid {
+      return valid ? found.value : nil
+    }
+
+    let valid = Placeholders.of(found.value) == Placeholders.of(original())
+    store.setValid(valid, for: found.cacheKey, value: found.value)
+    return valid ? found.value : nil
+  }
+
+  override func localizedString(forKey key: String, value: String?, table tableName: String?) -> String {
+    let builtIn = { super.localizedString(forKey: key, value: value, table: tableName) }
+
+    if let found = OtaBundle.lookup(key: key, table: tableName, original: builtIn) {
+      return found
+    }
+
+    return builtIn()
   }
 }
