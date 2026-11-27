@@ -158,34 +158,47 @@ public enum SolulingOta {
 
 /// The class that the main bundle gets: its string lookup returns the downloaded strings first
 final class OtaBundle: Bundle {
-  // The lookup with the languages to use, which String(localized:) and other newer APIs call. It
-  // is not public, so it is overridden through the Objective-C runtime, if Bundle has it.
-  private static let localizationsSelector = NSSelectorFromString("localizedStringForKey:value:table:localizations:")
+  // The lookups with the language or languages to use, which String(localized:) and other newer
+  // APIs call. They are not public, so they are overridden through the Objective-C runtime, the
+  // ones that Bundle has.
+  private static let languageLookups = [
+    "localizedStringForKey:value:table:localization:",
+    "localizedStringForKey:value:table:localizations:",
+    "_localizedStringForKey:value:table:localizations:"
+  ]
 
-  private static let addLocalizationsLookup: Void = {
+  // For the tests: called with the selector and the language argument of each lookup
+  static var trace: ((String, String) -> Void)?
+
+  private static let addLanguageLookups: Void = {
     typealias Lookup = @convention(c) (AnyObject, Selector, NSString, NSString?, NSString?, AnyObject?) -> NSString
 
-    guard let method = class_getInstanceMethod(Bundle.self, localizationsSelector) else {
-      return
-    }
+    for name in languageLookups {
+      let selector = NSSelectorFromString(name)
 
-    let selector = localizationsSelector
-    let original = unsafeBitCast(method_getImplementation(method), to: Lookup.self)
-    let block: @convention(block) (AnyObject, NSString, NSString?, NSString?, AnyObject?) -> NSString = { bundle, key, value, table, localizations in
-      let builtIn = { original(bundle, selector, key, value, table, localizations) as String }
-
-      if let found = OtaBundle.lookup(key: key as String, table: table as String?, original: builtIn) {
-        return found as NSString
+      guard let method = class_getInstanceMethod(Bundle.self, selector) else {
+        continue
       }
 
-      return original(bundle, selector, key, value, table, localizations)
-    }
+      let original = unsafeBitCast(method_getImplementation(method), to: Lookup.self)
+      let block: @convention(block) (AnyObject, NSString, NSString?, NSString?, AnyObject?) -> NSString = { bundle, key, value, table, languages in
+        OtaBundle.trace?(name, languages.map { String(describing: $0) } ?? "nil")
 
-    class_addMethod(OtaBundle.self, selector, imp_implementationWithBlock(block), method_getTypeEncoding(method))
+        let builtIn = { original(bundle, selector, key, value, table, languages) as String }
+
+        if let found = OtaBundle.lookup(key: key as String, table: table as String?, original: builtIn) {
+          return found as NSString
+        }
+
+        return original(bundle, selector, key, value, table, languages)
+      }
+
+      class_addMethod(OtaBundle.self, selector, imp_implementationWithBlock(block), method_getTypeEncoding(method))
+    }
   }()
 
   static func install(on bundle: Bundle) {
-    _ = addLocalizationsLookup
+    _ = addLanguageLookups
 
     if !(bundle is OtaBundle) {
       object_setClass(bundle, OtaBundle.self)

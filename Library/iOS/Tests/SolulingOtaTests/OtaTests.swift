@@ -218,6 +218,10 @@ final class OtaTests: XCTestCase {
     }
 
     initialize(options())
+
+    OtaBundle.trace = { selector, languages in print("Lookup: \(selector) \(languages)") }
+    defer { OtaBundle.trace = nil }
+
     XCTAssertEqual(String(localized: "hello", bundle: Bundle.module), "Moi maailma")
   }
 
