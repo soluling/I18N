@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>files</key>
+  <dict>
+    <key>NSStringLocalizedFormatKey</key>
+    <string>%#@files@</string>
+    <key>files</key>
+    <dict>
+      <key>NSStringFormatSpecTypeKey</key>
+      <string>NSStringPluralRuleType</string>
+      <key>NSStringFormatValueTypeKey</key>
+      <string>d</string>
+      <key>one</key>
+      <string>%d file</string>
+      <key>other</key>
+      <string>%d files</string>
+    </dict>
+  </dict>
+  <key>items</key>
+  <dict>
+    <key>NSStringLocalizedFormatKey</key>
+    <string>%#@value@</string>
+    <key>value</key>
+    <dict>
+      <key>NSStringFormatSpecTypeKey</key>
+      <string>NSStringPluralRuleType</string>
+      <key>NSStringFormatValueTypeKey</key>
+      <string>lld</string>
+      <key>one</key>
+      <string>%lld item</string>
+      <key>other</key>
+      <string>%lld items</string>
+    </dict>
+  </dict>
+  <key>found</key>
+  <dict>
+    <key>NSStringLocalizedFormatKey</key>
+    <string>Found %1$#@count@</string>
+    <key>count</key>
+    <dict>
+      <key>NSStringFormatSpecTypeKey</key>
+      <string>NSStringPluralRuleType</string>
+      <key>NSStringFormatValueTypeKey</key>
+      <string>lld</string>
+      <key>one</key>
+      <string>%lld file</string>
+      <key>other</key>
+      <string>%lld files</string>
+    </dict>
+  </dict>
+</dict>
+</plist>
