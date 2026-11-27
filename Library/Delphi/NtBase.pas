@@ -125,7 +125,7 @@ type
   { Specifies in what language language, country and locale names are given. }
   TNtLanguageName =
   (
-    lnNative,     //< Language's own language is used: English, Deutsch, Français, ...
+    lnNative,     //< Language's own language is used: English, Deutsch, Franï¿½ais, ...
     lnLocalized,  //< Language of the application is used.
     lnBoth,       //< Native + localize is used.
     lnEnglish,    //< English is used.
@@ -852,6 +852,41 @@ class function TNtBase.GetAvailable(
   exeFileName: String;
   compatibleOnly: Boolean;
   checkVersions: Boolean): Integer;
+{$IFDEF MSWINDOWS}
+
+  // The languages of the resource DLL directory (SetResourceDllDir, such as the files NtOta
+  // downloads) that are not listed yet - GetResourceFile loads from there first, so they can be
+  // selected too. A language found in both is listed once.
+  procedure AddResourceDllDirLanguages;
+  var
+    j, k: Integer;
+    found: Boolean;
+    dirLanguages: TNtLanguages;
+  begin
+    dirLanguages := TNtLanguages.Create;
+    try
+      TNtWindows.GetAvailable(dirLanguages, exeFileName, compatibleOnly, checkVersions, ResourceDllDir);
+
+      for j := 0 to dirLanguages.Count - 1 do
+      begin
+        found := False;
+
+        for k := 0 to languages.Count - 1 do
+          if SameText(languages[k].Code, dirLanguages[j].Code) then
+          begin
+            found := True;
+            Break;
+          end;
+
+        if not found then
+          languages.Add(dirLanguages[j].Code, dirLanguages[j].Id, dirLanguages[j].FileName);
+      end;
+    finally
+      dirLanguages.Free;
+    end;
+  end;
+{$ENDIF}
+
 {$IFDEF DELPHIXE}
 var
   i: Integer;
@@ -872,7 +907,12 @@ begin
 {$ENDIF}
   begin
 {$IFDEF MSWINDOWS}
-    Result := TNtWindows.GetAvailable(languages, exeFileName, compatibleOnly, checkVersions);
+    TNtWindows.GetAvailable(languages, exeFileName, compatibleOnly, checkVersions);
+
+    if ResourceDllDir <> '' then
+      AddResourceDllDirLanguages;
+
+    Result := languages.Count;
 {$ENDIF}
 {$IFDEF POSIX}
     Result := 0;

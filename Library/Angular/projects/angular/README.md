@@ -75,6 +75,34 @@ getTranslationsEx('assets/i18n', { format: 'arb' }).then(translations => ...);
 
 Soluling localizes ARB files too. Make sure your web server serves `.arb` files, for example as `application/json`.
 
+### Over-the-air updates from Soluling Cloud
+
+If you localize the application in Soluling Cloud, the application can load its translations from the files the project publishes (turn on Publish artifacts on the project's Manage page). Then a translation fix or a new language reaches your users without a new build of the application. Use `getOtaTranslations` instead of `getTranslations`, with the project's GUID from its Manage page:
+
+```typescript
+import { getOtaTranslations } from '@soluling/angular';
+...
+getOtaTranslations('1b6e2f0a-4c2d-4e9a-9f1a-example-guid').then(translations => 
+{
+  if (translations)
+    loadTranslations(translations);
+  ...
+```
+
+The application starts as fast as before. On the first visit it downloads the translations; if that fails or takes longer than `timeout` (3 seconds), it uses its own files in `fallbackUrl` (`assets/i18n`) as `getTranslations` does. After that it uses the translations saved in the browser right away, and checks for newer ones in the background once a day - a newer file is used on the next load after that check. The language is selected the same way as with `getTranslationsEx`, and the same options work, for example `format: 'arb'`. The extra options are:
+
+| Option | Default | |
+|---|---|---|
+| `cdnUrl` | `https://www.soluling.com/artifacts` | The published files on Soluling's CDN, where the manifest is read first |
+| `apiUrl` | `https://www.soluling.com/api` | Soluling's API, for the manifest when the CDN doesn't have it yet |
+| `fallbackUrl` | `assets/i18n` | The application's own files, used until the first download. `null` for none. |
+| `timeout` | `3000` | Milliseconds to wait for the first download |
+| `fileFilter` | the files of the format | Which published files are the application's, when the project has other files too |
+| `cache` | `true` | Save the translations in the browser |
+| `checkInterval` | a day | Milliseconds between the background checks for newer translations. `0` checks on every load. |
+
+Message ids are made from the original texts, so every version of the application can use the same published files: texts the application doesn't have are ignored, and the texts it lacks show in the original language.
+
 The next modification you need to do is to add locale support for the languages you plan to support. By default, Angular application contains support for English (United States). If you plan to support German and Japanese, you need to add the locale support for those languages. Add the following code into your `app.module.ts`.
 
 ```typescript
