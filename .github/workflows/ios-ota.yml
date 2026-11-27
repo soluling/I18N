@@ -47,4 +47,5 @@ jobs:
           print(next((s for s in schemes if s.endswith("-Package")), schemes[0]))
           ')
           echo "Scheme: $SCHEME"
-          xcodebuild test -scheme "$SCHEME" -destination "id=$DEVICE" -quiet
+          set -o pipefail
+          xcodebuild test -scheme "$SCHEME" -destination "id=$DEVICE" 2>&1 | grep -E "Test Case .* (passed|failed)|Executed [0-9]+ test|error:|\*\* TEST"
