@@ -1,6 +1,6 @@
 plugins {
   id("com.android.library")
-  id("maven-publish")
+  id("com.vanniktech.maven.publish") version "0.37.0"
 }
 
 // The Maven coordinates: implementation("com.soluling:ota:<version>")
@@ -21,12 +21,6 @@ android {
     sourceCompatibility = JavaVersion.VERSION_17
     targetCompatibility = JavaVersion.VERSION_17
   }
-
-  publishing {
-    singleVariant("release") {
-      withSourcesJar()
-    }
-  }
 }
 
 dependencies {
@@ -36,40 +30,46 @@ dependencies {
   androidTestImplementation("androidx.appcompat:appcompat:1.7.1")
 }
 
-publishing {
-  publications {
-    register<MavenPublication>("release") {
-      groupId = otaGroup
-      artifactId = otaArtifact
-      version = otaVersion
+// Publishing to Maven Central: gradlew publishAndReleaseToMavenCentral. The Central Portal token
+// (mavenCentralUsername, mavenCentralPassword) and the signing key (signingInMemoryKey,
+// signingInMemoryKeyId, signingInMemoryKeyPassword) are in %USERPROFILE%\.gradle\gradle.properties,
+// never in this repository. Without the key, publishToMavenLocal works unsigned.
+mavenPublishing {
+  publishToMavenCentral()
 
-      afterEvaluate {
-        from(components["release"])
+  if (project.hasProperty("signingInMemoryKey")) {
+    signAllPublications()
+  }
+
+  coordinates(otaGroup, otaArtifact, otaVersion)
+
+  pom {
+    name.set("Soluling OTA")
+    description.set("Over-the-air translation updates from Soluling Cloud for Android applications")
+    inceptionYear.set("2026")
+    url.set("https://www.soluling.com/Guides/Android#ota")
+
+    licenses {
+      license {
+        name.set("MIT License")
+        url.set("https://opensource.org/licenses/MIT")
+        distribution.set("repo")
       }
+    }
 
-      pom {
-        name.set("Soluling OTA")
-        description.set("Over-the-air translation updates from Soluling Cloud for Android applications")
-        url.set("https://www.soluling.com/Guides/Android#ota")
-
-        licenses {
-          license {
-            name.set("MIT License")
-            url.set("https://opensource.org/licenses/MIT")
-          }
-        }
-
-        developers {
-          developer {
-            organization.set("Soluling Oy")
-            organizationUrl.set("https://www.soluling.com")
-          }
-        }
-
-        scm {
-          url.set("https://github.com/soluling/I18N")
-        }
+    developers {
+      developer {
+        id.set("soluling")
+        name.set("Soluling")
+        organization.set("Soluling Oy")
+        organizationUrl.set("https://www.soluling.com")
       }
+    }
+
+    scm {
+      url.set("https://github.com/soluling/I18N")
+      connection.set("scm:git:https://github.com/soluling/I18N.git")
+      developerConnection.set("scm:git:ssh://git@github.com/soluling/I18N.git")
     }
   }
 }

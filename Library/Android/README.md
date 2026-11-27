@@ -1,6 +1,12 @@
 # Soluling's Android Library
 
-Over-the-air translation updates from Soluling Cloud (`com.soluling:ota`). See the [Android guide](https://www.soluling.com/Guides/Android#ota).
+Over-the-air translation updates from Soluling Cloud (`com.soluling:ota` on Maven Central). See the [Android guide](https://www.soluling.com/Guides/Android#ota).
+
+```kotlin
+dependencies {
+  implementation("com.soluling:ota:1.0.0")
+}
+```
 
 ```kotlin
 class App : Application() {

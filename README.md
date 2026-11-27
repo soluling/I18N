@@ -4,6 +4,8 @@
 
 Soluling has implemented a collection of internationalization (I18N) APIs for [.NET](https://en.wikipedia.org/wiki/.NET_Framework), [Angular](https://en.wikipedia.org/wiki/Angular_(web_framework)) and [Delphi](https://en.wikipedia.org/wiki/Delphi_(programming_language)). Each API adds additional features to the standard I18N API of the platform — for example, support for [grammatical numbers](https://en.wikipedia.org/wiki/Grammatical_number), [grammatical genders](https://en.wikipedia.org/wiki/Grammatical_gender), abbreviated numbers, and ordinal numbers. Library also includes APIs to perform runtime language switch of applications, or to select the initial language on runtime. The library also contains API that on runtime checks your user interface for issues such as truncated or overlapped controls. Finally, the Delphi library contains a proper localization resource for [FireMonkey](https://en.wikipedia.org/wiki/FireMonkey).
 
+The libraries for Delphi, Angular, ASP.NET Core, Android, and iOS also get [over-the-air translation updates](#over-the-air-translation-updates) from Soluling Cloud: new translations reach the users without a new release.
+
 ## API Implementation
 
 Each API is 100% native API. It means that it contains full source code and requires no additional files. .NET API contains only C# code and requires no other library or data files. In the same way Angular API contains only TypeScript code, and Delphi API contains only Delphi code. The rules used by the code have been extracted from [CLDR](https://en.wikipedia.org/wiki/Common_Locale_Data_Repository) into source code files that are part of the API source code. You don't need ICU library or CLDR XML files, but everything including logic and rules are compiled into your application file.
@@ -123,6 +125,20 @@ Runtime language switch is a feature where the application can change the langua
 
 Runtime language switch APIs are for Delphi VCL, Delphi FireMonkey, .NET Windows Forms, and .NET WPF.
 
+## Over-the-air translation updates
+
+When you translate in [Soluling Cloud](https://www.soluling.com/Documentation/Cloud) and publish the project's files, an application gets the new translations without a new release. The OTA libraries read the project's manifest from Soluling's CDN once a day, download only the changed files of the user's language, keep them on the device or the server, and use them instead of the translations built into the application. Without a connection, or before the first download, the built-in translations are used. A downloaded translation whose placeholders differ from the built-in string is not used, so a translation made for a newer version can't break an older one.
+
+| Platform | Library | Add it with |
+| -------- | ------- | ----------- |
+| Delphi VCL (resource DLLs, XE8 or later) | `NtOta` unit in `Library\Delphi` | `TNtOta.Initialize('project-guid')` and `TNtOta.UpdateAsync` in the project file - see the [guide](https://www.soluling.com/Guides/DelphiVCL#ota) |
+| Angular | `getOtaTranslations` of `@soluling/angular` | `npm install @soluling/angular` - see the [guide](https://www.soluling.com/Guides/Angular#ota) |
+| ASP.NET Core | `AddSolulingOta` of `Soluling.AspNet` | `dotnet add package Soluling.AspNet` - see the [guide](https://www.soluling.com/Guides/AspNetCore#ota) |
+| Android (`strings.xml`) | `SolulingOta` of `com.soluling:ota` | `implementation("com.soluling:ota:1.0.0")` - see the [guide](https://www.soluling.com/Guides/Android#ota) |
+| iOS and macOS (`.strings`, `.stringsdict`, String Catalogs) | Swift package `SolulingOta` in `Library\iOS` | Add `https://github.com/soluling/I18N` in Xcode - see its [README](Library/iOS/README.md) and the [guide](https://www.soluling.com/Guides/iOS#ota) |
+
+On other platforms, read the manifest and download the files yourself. See [over-the-air updates](https://www.soluling.com/Documentation/OTA).
+
 ## User Interface Checker
 
 When we translate strings to another language, there is always a possibility that the translation will be longer than the original string. This is especially true if the original language is English because English is a more compact language as for example, German or Finnish. When translated strings get longer, there is a risk that part of the string gets truncated or two or more strings get overlapped. Situations like these are hard to find. User interface checker API helps. It is an API that you temporary link to your code, and when you run the application is writing a report file with screenshots showing truncations and overlapped marked with clear colors. You can instantly see where a truncation or overlapping occurs.
@@ -182,6 +198,54 @@ You can use `.ntres` resources also in VCL applications, but it is recommended t
 #### C++Builder
 
 C++Builder is not officially supported. All these codes should work with C++Builder but never tested.
+
+## Android
+
+`Library\Android` contains Soluling's Android library for over-the-air translation updates (`com.soluling:ota`). It is written in Java, has no dependencies, and needs Android 7.0 (API 24) or later. Add it from Maven Central to the dependencies of the application module:
+
+```kotlin
+dependencies {
+  implementation("com.soluling:ota:1.0.0")
+}
+```
+
+To build it yourself, see its [README](Library/Android/README.md).
+
+```kotlin
+class App : Application() {
+  override fun onCreate() {
+    super.onCreate()
+    SolulingOta.initialize(this, "project-guid")
+  }
+}
+
+class MainActivity : AppCompatActivity() {
+  override fun attachBaseContext(base: Context) {
+    super.attachBaseContext(SolulingOta.wrap(base))
+  }
+}
+```
+
+## iOS and macOS
+
+`Library\iOS` contains the Swift package `SolulingOta` for over-the-air translation updates. It needs iOS 13 or macOS 11 or later. In Xcode, choose *File | Add Package Dependencies*, enter `https://github.com/soluling/I18N`, and add the `SolulingOta` library to the application target.
+
+```swift
+import SolulingOta
+
+@main
+struct SampleApp: App {
+  init() {
+    SolulingOta.initialize(projectGuid: "project-guid")
+  }
+
+  var body: some Scene {
+    WindowGroup { ContentView() }
+  }
+}
+```
+
+To learn more, read its [README](Library/iOS/README.md).
 
 ## Other programming languages
 
