@@ -40,4 +40,11 @@ jobs:
           print(next(d["udid"] for r in runtimes for d in devices[r] if d["name"].startswith("iPhone")))
           ')
           echo "Simulator: $DEVICE"
-          xcodebuild test -scheme SolulingOta -destination "id=$DEVICE" -quiet
+          # The scheme with the tests: <package name>-Package when the package has several targets
+          SCHEME=$(xcodebuild -list -json | python3 -c '
+          import json, sys
+          schemes = json.load(sys.stdin)["workspace"]["schemes"]
+          print(next((s for s in schemes if s.endswith("-Package")), schemes[0]))
+          ')
+          echo "Scheme: $SCHEME"
+          xcodebuild test -scheme "$SCHEME" -destination "id=$DEVICE" -quiet
