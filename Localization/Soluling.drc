@@ -8,45 +8,47 @@
   resources were bound to the produced executable.
 */
 
-#define XslSource_SDescription 58416
-#define XslSource_SXslFile 58417
-#define HelpAndManualSource_SHelpAndManualDescription 58418
-#define HelpAndManualSource_SHelpAndManualFiles 58419
-#define FlutterSource_SFlutterDescription 58420
-#define FlutterSource_SFlutterFile 58421
-#define FilePairImportFra_SImportFileName 58422
-#define SubtitleSource_SSubtitle 58432
-#define SubtitleSource_SWebVTT 58433
-#define MicrosoftTerminologyServiceFra_SGlossaryWorking 58434
-#define MicrosoftTerminologyServiceFra_SGlossaryDoesNotWork 58435
-#define MagentoSourceFra_SSameAsSource 58436
-#define MagentoSource_SDescription 58437
-#define MagentoSource_SMagentoCsv 58438
-#define GoI18nSource_SDescription 58439
-#define GoI18nSource_SJsonFile 58440
-#define GoI18nSource_SYamlFile 58441
-#define GoI18nSource_SYamlNotSupported 58442
-#define ReactIntlSource_SReactIntlDescription 58443
-#define ReactIntlSource_SReactIntlJsonFile 58444
-#define ReactIntlConfigurationFra_SCaption 58445
-#define WinUiProjectSource_SWuinUiProjectDescription 58446
-#define WinUiProjectSource_SWinUiProject 58447
+#define WinUiProjectSource_SWuinUiProjectDescription 58416
+#define WinUiProjectSource_SWinUiProject 58417
+#define XslSource_SDescription 58418
+#define XslSource_SXslFile 58419
+#define HelpAndManualSource_SHelpAndManualDescription 58420
+#define HelpAndManualSource_SHelpAndManualFiles 58421
+#define FlutterSource_SFlutterDescription 58422
+#define FlutterSource_SFlutterFile 58423
+#define FilePairImportFra_SImportFileName 58424
+#define SubtitleSegmentationSourceFra_SCaption 58432
+#define SubtitleSource_SSubtitleDescription 58433
+#define SubtitleSource_SSubtitle 58434
+#define SubtitleSource_SWebVTT 58435
+#define MicrosoftTerminologyServiceFra_SGlossaryWorking 58436
+#define MicrosoftTerminologyServiceFra_SGlossaryDoesNotWork 58437
+#define MagentoSourceFra_SSameAsSource 58438
+#define MagentoSource_SDescription 58439
+#define MagentoSource_SMagentoCsv 58440
+#define GoI18nSource_SDescription 58441
+#define GoI18nSource_SJsonFile 58442
+#define GoI18nSource_SYamlFile 58443
+#define GoI18nSource_SYamlNotSupported 58444
+#define ReactIntlSource_SReactIntlDescription 58445
+#define ReactIntlSource_SReactIntlJsonFile 58446
+#define ReactIntlConfigurationFra_SCaption 58447
 #define JsonResourceSource_SSvelteI18nDescription 58448
 #define JsonResourceSource_SSvelteI18nJsonFile 58449
 #define JsonResourceSource_SVueI18nDescription 58450
 #define JsonResourceSource_SVueI18nJsonFile 58451
-#define JsonResourceSource_SAngularTranslateDescription 58452
-#define JsonResourceSource_SAngularTranslateJsonFile 58453
-#define JsonResourceSource_SNgxTranslateDescription 58454
-#define JsonResourceSource_SNgxTranslateJsonFile 58455
-#define AmazonTranslateDlg_SNoAccessKeyId 58456
-#define WordSource_SDescription 58457
-#define WordSource_SDocxFiles 58458
-#define PowerPointSource_SDescription 58459
-#define PowerPointSource_SPptxFiles 58460
-#define SubtitleConfigurationFra_SCaption 58461
-#define SubtitleSegmentationSourceFra_SCaption 58462
-#define SubtitleSource_SSubtitleDescription 58463
+#define JsonResourceSource_SNextIntlDescription 58452
+#define JsonResourceSource_SNextIntlJsonFile 58453
+#define JsonResourceSource_SAngularTranslateDescription 58454
+#define JsonResourceSource_SAngularTranslateJsonFile 58455
+#define JsonResourceSource_SNgxTranslateDescription 58456
+#define JsonResourceSource_SNgxTranslateJsonFile 58457
+#define AmazonTranslateDlg_SNoAccessKeyId 58458
+#define WordSource_SDescription 58459
+#define WordSource_SDocxFiles 58460
+#define PowerPointSource_SDescription 58461
+#define PowerPointSource_SPptxFiles 58462
+#define SubtitleConfigurationFra_SCaption 58463
 #define PdfView_SPdfReader 58464
 #define PdfView_SPdfSource 58465
 #define PdfSource_SPdfDescription 58466
@@ -7121,6 +7123,8 @@
 #define Vcl_Imaging_pnglang_EPNGNoImageDataText 65535
 STRINGTABLE
 BEGIN
+	WinUiProjectSource_SWuinUiProjectDescription,	L"Windows App SDK/WinUI project file"
+	WinUiProjectSource_SWinUiProject,	L"Windows App SDK/WinUI project files"
 	XslSource_SDescription,	L"Extensible Stylesheet Language file"
 	XslSource_SXslFile,	L"Extensible Stylesheet Language (XSL) files"
 	HelpAndManualSource_SHelpAndManualDescription,	L"Help+Manual project file"
@@ -7128,6 +7132,8 @@ BEGIN
 	FlutterSource_SFlutterDescription,	L"Flutter resource file"
 	FlutterSource_SFlutterFile,	L"Flutter resource files"
 	FilePairImportFra_SImportFileName,	L"Import file name: %s"
+	SubtitleSegmentationSourceFra_SCaption,	L"Segmentation"
+	SubtitleSource_SSubtitleDescription,	L"Subtitle file"
 	SubtitleSource_SSubtitle,	L"Subtitle files"
 	SubtitleSource_SWebVTT,	L"WebVTT files"
 	MicrosoftTerminologyServiceFra_SGlossaryWorking,	L"Glossary is working properly."
@@ -7142,12 +7148,12 @@ BEGIN
 	ReactIntlSource_SReactIntlDescription,	L"React-Intl resource file"
 	ReactIntlSource_SReactIntlJsonFile,	L"React-Intl JSON files"
 	ReactIntlConfigurationFra_SCaption,	L"Output options"
-	WinUiProjectSource_SWuinUiProjectDescription,	L"Windows App SDK/WinUI project file"
-	WinUiProjectSource_SWinUiProject,	L"Windows App SDK/WinUI project files"
 	JsonResourceSource_SSvelteI18nDescription,	L"Svelte I18n resource file"
 	JsonResourceSource_SSvelteI18nJsonFile,	L"Svelte I18n JSON files"
 	JsonResourceSource_SVueI18nDescription,	L"Vue I18n resource file"
 	JsonResourceSource_SVueI18nJsonFile,	L"Vue I18n JSON files"
+	JsonResourceSource_SNextIntlDescription,	L"next-intl resource file"
+	JsonResourceSource_SNextIntlJsonFile,	L"next-intl JSON files"
 	JsonResourceSource_SAngularTranslateDescription,	L"Angular-translate resource file"
 	JsonResourceSource_SAngularTranslateJsonFile,	L"Angular-translate JSON files"
 	JsonResourceSource_SNgxTranslateDescription,	L"Ngx-translate resource file"
@@ -7158,8 +7164,6 @@ BEGIN
 	PowerPointSource_SDescription,	L"PowerPoint file"
 	PowerPointSource_SPptxFiles,	L"PowerPoint files"
 	SubtitleConfigurationFra_SCaption,	L"Write options"
-	SubtitleSegmentationSourceFra_SCaption,	L"Segmentation"
-	SubtitleSource_SSubtitleDescription,	L"Subtitle file"
 	PdfView_SPdfReader,	L"PDF reader"
 	PdfView_SPdfSource,	L"PDF source"
 	PdfSource_SPdfDescription,	L"PDF file"
@@ -15123,4 +15127,4 @@ END
 /* D:\NT\Desktop\Bin\Manifest.res */
 /* D:\NT\Desktop\Bin\Icons.res */
 /* D:\NT\Desktop\Bin\Soluling.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtf4EFB.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtfE74B.tmp */

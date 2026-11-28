@@ -1,0 +1,24 @@
+<h1 i18n="The page heading@@title">Over-the-air translations</h1>
+
+<p i18n="What the sample does@@intro">This application gets its translations from Soluling Cloud. When you change a translation there and publish the files, the next load of the page shows it, without a new build.</p>
+
+<p i18n="INTERPOLATION: The name of the user@@greeting">Hello {{ name }}!</p>
+
+<p i18n="The number of new messages@@messages">{count, plural, =0 {No new messages} one {{{ count }} new message} other {{{ count }} new messages}}</p>
+
+<p>{{ today | localDate:'fullDate' }}</p>
+
+<label>
+  {{ languageLabel }}
+  <select (change)="changeLanguage($any($event.target).value)">
+    @for (id of languages(); track id) {
+      <option [value]="id" [selected]="isSelected(id)">{{ id | localDisplayName:'language':'self' }}</option>
+    }
+  </select>
+</label>
+
+@if (projectGuid) {
+  <p class="muted">Over the air from the Soluling Cloud project {{ projectGuid }}.</p>
+} @else {
+  <p class="muted">Set SOLULING_PROJECT_GUID in src/ota.config.ts to get the translations over the air. Until then, they come from the localized files in src/locale.</p>
+}

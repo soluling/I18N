@@ -1,0 +1,58 @@
+{
+  "@@locale": "ja",
+  "title": "OTA 翻訳",
+  "@title": {
+    "description": "The page heading",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "0", "column": "44" },
+        "end": { "line": "2", "column": "90" }
+      }
+    ]
+  },
+  "intro": "このアプリケーションは翻訳を Soluling Cloud から取得します。そこで翻訳を変更してファイルを公開すると、新しいビルドなしで、次にページを読み込んだときに表示されます。",
+  "@intro": {
+    "description": "What the sample does",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "2", "column": "47" },
+        "end": { "line": "6", "column": "16" }
+      }
+    ]
+  },
+  "greeting": "こんにちは、{$INTERPOLATION} さん!",
+  "@greeting": {
+    "description": "INTERPOLATION: The name of the user",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "4", "column": "65" },
+        "end": { "line": "6", "column": "11" }
+      }
+    ]
+  },
+  "messages": "{VAR_PLURAL, plural, =0 {新しいメッセージはありません} other {新しいメッセージが {INTERPOLATION} 件あります}}",
+  "@messages": {
+    "description": "The number of new messages",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "6", "column": "56" },
+        "end": { "line": "12", "column": "49" }
+      }
+    ]
+  },
+  "language": "言語",
+  "@language": {
+    "description": "The label of the language list",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.ts",
+        "start": { "line": "47", "column": "36" },
+        "end": { "line": "47", "column": "88" }
+      }
+    ]
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "name": "ota",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "ng": "ng",
+    "start": "ng serve -o",
+    "start:local": "ng serve -o --configuration local",
+    "build": "ng build",
+    "extract": "ng extract-i18n --format=arb --output-path src/locale"
+  },
+  "dependencies": {
+    "@angular/common": "^22.3.0",
+    "@angular/compiler": "^22.3.0",
+    "@angular/core": "^22.3.0",
+    "@angular/localize": "^22.3.0",
+    "@angular/platform-browser": "^22.3.0",
+    "@soluling/angular": "^14.5.0",
+    "rxjs": "~7.8.0",
+    "tslib": "^2.3.0"
+  },
+  "devDependencies": {
+    "@angular/build": "^22.3.0",
+    "@angular/cli": "^22.3.0",
+    "@angular/compiler-cli": "^22.3.0",
+    "typescript": "~6.0.3"
+  }
+}

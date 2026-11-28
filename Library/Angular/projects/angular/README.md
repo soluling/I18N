@@ -1,182 +1,383 @@
-# Runtime Translation Loading for Angular
+# @soluling/angular
 
-The standard Angular internationalization (I18N) and localization (L10N) is designed to produce one compiled application per language. This is quite restrictive because you have to compile for each language and then deploy each compilation result to a separate URL. The standard Angular internationalization has the means to load translations on runtime, but the Angular team has not fully implemented that feature. This API fills that gap. It is important to notice that this API works on the top of the Angular internationalization API, not replacing it.
+Runtime translation loading, over-the-air (OTA) translation updates, and locale-aware pipes for Angular.
 
-Start by installing the Soluling library.
+Angular's standard localization builds one application per language. This library lets one build load the translations of the user's language at runtime, from the application's own files or over the air from [Soluling Cloud](https://www.soluling.com/Documentation/OTA), so a translation fix or a new language reaches your users without a new build. It works on top of Angular's own localization (`$localize` and `i18n` attributes), not instead of it.
+
+- [Get started](#get-started)
+- [Resource files](#resource-files)
+- [Loading translations](#loading-translations): `getTranslations`, `getTranslationsEx`, `TranslateOptions`
+- [Over-the-air updates](#over-the-air-updates): `getOtaTranslations`, `getOtaLanguages`, `OtaOptions`
+- [The active language](#the-active-language): `LocaleService`, `getLoadedLocale`, `LOCALE_ID`, cookies
+- [Pipes](#pipes): dates, numbers, currencies, relative times, lists, and names
+- [Other functions and types](#other-functions-and-types)
+- [Versions](#versions)
+
+Learn more from the [Angular localization guide](https://www.soluling.com/Guides/Angular). The [Runtime](https://github.com/soluling/I18N/tree/master/Samples/Angular/Runtime) and [Ota](https://github.com/soluling/I18N/tree/master/Samples/Angular/Ota) samples use this library.
+
+## Get started
+
+Install the library:
 
 ```bash
 npm install @soluling/angular
 ```
 
-The first thing you need to modify in your application is to make sure that the translations are loaded before any module is created. The right place for that is `main.ts`. The default code to initialize the modules is:
-
-```typescript
-platformBrowserDynamic().bootstrapModule(AppModule)
-  .catch(err => console.log(err));
-```
-
-Modify it as shown in the following code snippet.
+Load the translations before the application starts - `$localize` translates each text once, when the application starts - and import the application only after that. In `main.ts`:
 
 ```typescript
 import { loadTranslations } from '@angular/localize';
-import { getTranslations } from '@soluling/angular';
-import '@angular/localize/init';
-...
-getTranslations('assets/i18n').then(translations => 
+import { getTranslationsEx } from '@soluling/angular';
+
+getTranslationsEx('assets/i18n', { format: 'arb' }).then(translations =>
 {
   if (translations)
     loadTranslations(translations);
 
-  import('./app/app.module').then(module => 
-  {
-    platformBrowserDynamic()
-      .bootstrapModule(module.AppModule)
-      .catch(err => console.error(err));
-  });      
+  // Import the application only now, so that its texts use the loaded translations
+  import('./app/bootstrap').then(module => module.bootstrap());
 });
 ```
 
-Here we first call `getTranslations` function that gets the translation file from the server. The function gets the resource file matching the current language of the browser. You can override the language by using the parameters, but the default behavior is to find a resource file matching the language of the browser. If the function finds any translations, then it loads them using `loadTranslations`. If no translation is found, no loading happens, and then the application uses the original strings.
+`@angular/localize/init` must be loaded first, for example as a polyfill in `angular.json`. If no translations are found, the application uses its original texts.
 
-The resource files are the standard Angular JSON resource files that contain key-value pairs.
-
-```json
-{
-  "locale": "en",
-  "translations":
-  {
-    "1238358838717941284": "Sample",
-    "3067469718492071419": "This is a sample"
-  }
-}
-```
-
-The reason the library uses JSON instead of XLIFF or XMB is that on runtime, we need only the key and the value. Everything else is unnecessary. XLIFF and XMB are a lot more verbose formats that cause larger file sizes. Also, they use XML that means slower parsing. Using JSON keeps the resource size smaller and has faster parsing time. Angular's extraction tool can extract JSON instead of XLIFF or XMB. The disadvantage of the JSON extraction is that comments and meanings are not extracted. The easiest way to create the JSON files is to use [Soluling](https://www.soluling.com/), but you can also create them yourself. The name of the resource file is `<id>.json` when `id` is IETF language tag (the same code passed in HTTP Accept-Language).
-
-### ARB resource files
-
-The JSON format does not contain the descriptions of the strings, so translators do not see them. If you want the descriptions, use ARB (Application Resource Bundle) instead. ARB is JSON too, but it also contains the metadata of each string:
-
-```json
-{
-  "@@locale": "en",
-  "login.password": "Password:",
-  "@login.password": {
-    "description": "Label of the password field"
-  }
-}
-```
-
-Extract ARB with `ng extract-i18n --format arb`, and pass `format: 'arb'` to `getTranslationsEx`. The resource files are then `<id>.arb`.
+Then make `LOCALE_ID` the language of the loaded translations, so that Angular's own pipes format in it - see [The active language](#the-active-language):
 
 ```typescript
-getTranslationsEx('assets/i18n', { format: 'arb' }).then(translations => ...);
+import { LOCALE_ID } from '@angular/core';
+import { LocaleService } from '@soluling/angular';
+
+bootstrapApplication(AppComponent,
+{
+  providers:
+  [
+    LocaleService,
+    { provide: LOCALE_ID, deps: [LocaleService], useFactory: (service: LocaleService) => service.localeId },
+  ]
+});
 ```
 
-Soluling localizes ARB files too. Make sure your web server serves `.arb` files, for example as `application/json`.
+## Resource files
 
-### Over-the-air updates from Soluling Cloud
+The library loads Angular's own runtime formats. Extract the original texts with Angular's extract tool, localize them, for example with [Soluling](https://www.soluling.com/), and save each language as `<id>.<format>`, where `id` is the language code, such as `fi.arb` or `de-AT.json`.
 
-If you localize the application in Soluling Cloud, the application can load its translations from the files the project publishes (turn on Publish artifacts on the project's Manage page). Then a translation fix or a new language reaches your users without a new build of the application. Use `getOtaTranslations` instead of `getTranslations`, with the project's GUID from its Manage page:
+| Format | Extract | Content |
+|---|---|---|
+| `json` (default) | `ng extract-i18n --format=json` | `{ "locale": "fi", "translations": { "id": "text" } }` |
+| `arb` | `ng extract-i18n --format=arb` | `{ "@@locale": "fi", "id": "text", "@id": { "description": "..." } }` |
+
+ARB keeps the descriptions (`i18n="description@@id"`), so translators see them; JSON has only the ids and texts. Make sure your web server serves `.arb` files, for example as `application/json`.
+
+Copy the localized files to a folder that the application serves, such as `assets/i18n` or a `locale` folder mapped in `angular.json`:
+
+```json
+"assets": [
+  { "glob": "*.arb", "input": "src/locale", "output": "locale", "ignore": ["messages.arb"] }
+]
+```
+
+## Loading translations
+
+### getTranslationsEx
 
 ```typescript
-import { getOtaTranslations } from '@soluling/angular';
-...
-getOtaTranslations('1b6e2f0a-4c2d-4e9a-9f1a-example-guid').then(translations => 
-{
-  if (translations)
-    loadTranslations(translations);
-  ...
+getTranslationsEx(baseUrl: string, options?: TranslateOptions): Promise<Translations>
 ```
 
-The application starts as fast as before. On the first visit it downloads the translations; if that fails or takes longer than `timeout` (3 seconds), it uses its own files in `fallbackUrl` (`assets/i18n`) as `getTranslations` does. After that it uses the translations saved in the browser right away, and checks for newer ones in the background once a day - a newer file is used on the next load after that check. The language is selected the same way as with `getTranslationsEx`, and the same options work, for example `format: 'arb'`. The extra options are:
+Loads `<baseUrl>/<id>.<format>` of the user's language and resolves to the translations, or `null` if none is found. The languages are tried in this order:
+
+1. The language in the cookie (`cookieName`), or the `locale` option, or the browser's languages (`navigator.languages`)
+2. Each followed by its parent: `de-AT`, then `de`
+3. The fallback language (`fallbackId`)
+
+The first file found is used. Its language becomes the [active language](#the-active-language).
+
+### TranslateOptions
 
 | Option | Default | |
 |---|---|---|
-| `cdnUrl` | `https://www.soluling.com/artifacts` | The published files on Soluling's CDN, where the manifest is read first |
-| `apiUrl` | `https://www.soluling.com/api` | Soluling's API, for the manifest when the CDN doesn't have it yet |
-| `fallbackUrl` | `assets/i18n` | The application's own files, used until the first download. `null` for none. |
+| `format` | `'json'` | `'json'` or `'arb'` |
+| `cookieName` | none | The cookie that keeps the language the user selected. See [setCookie](#other-functions-and-types). |
+| `locale` | the browser's languages | The languages to try, separated by `;`, such as `'fi;de'` |
+| `fallbackId` | `'en'` | The language tried last |
+| `tryAllLanguages` | `true` | Try all the browser's languages, not only the first |
+| `ingoreCountry` | `false` | Try only the language parts of the browser's languages, such as `fi` for `fi-FI` |
+| `setLocaleId` | `true` | Make the loaded language the active language |
+
+### getTranslations
+
+```typescript
+getTranslations(baseUrl: string, ingoreCountry?, tryAllLanguages?, setLocaleId?, fallbackId?, locale?, cookieName?, format?): Promise<Translations>
+```
+
+The same as `getTranslationsEx`, with the options as parameters, for existing code.
+
+## Over-the-air updates
+
+Requires version 14.2 or later.
+
+### getOtaTranslations
+
+```typescript
+getOtaTranslations(projectGuid: string, options?: OtaOptions): Promise<Translations>
+```
+
+Loads the translations of the user's language from the files published in Soluling Cloud. Turn on *Publish artifacts* on the *Integrations* tab of the project's *Manage* page, and build the project; the GUID is on its *Overview* tab. The project must be made from the runtime file, such as `messages.arb`, so that the published files are files the application can load.
+
+```typescript
+getOtaTranslations('1b6e2f0a-4c2d-4e9a-9f1a-example-guid', { format: 'arb', fallbackUrl: 'locale', cookieName: 'language' })
+  .then(translations => ...);
+```
+
+- **First visit:** reads the manifest of the published files (the CDN's first, the API's if the CDN has none), and downloads the file of the user's language. If that fails or takes longer than `timeout`, the application's own files in `fallbackUrl` are used, as `getTranslationsEx` does.
+- **After that:** the translations saved in the browser (`localStorage`) are used at once, and newer ones are checked in the background once a `checkInterval`. A newer file is used on the next load. A file is downloaded only when its hash has changed.
+- **Missing texts:** a published file replaces the application's own file of that language. A text that the published file doesn't have shows in the original language. Message ids come from the original texts, so every version of the application can use the same published files.
+
+The languages are tried in the same order as with `getTranslationsEx`.
+
+### OtaOptions
+
+All the [TranslateOptions](#translateoptions), and:
+
+| Option | Default | |
+|---|---|---|
+| `fallbackUrl` | `'assets/i18n'` | The application's own files, used until the first download, or if it fails. `null` for none. |
 | `timeout` | `3000` | Milliseconds to wait for the first download |
-| `fileFilter` | the files of the format | Which published files are the application's, when the project has other files too |
-| `cache` | `true` | Save the translations in the browser |
 | `checkInterval` | a day | Milliseconds between the background checks for newer translations. `0` checks on every load. |
+| `cache` | `true` | Save the translations and the languages in the browser |
+| `fileFilter` | the files of `format` | Which published files are the application's, when the project has other files too: `(fileName: string) => boolean` |
+| `cdnUrl` | `SOLULING_CDN_URL` | The published files on Soluling's CDN, where the manifest is read first |
+| `apiUrl` | `SOLULING_API_URL` | Soluling's API, for the manifest when the CDN doesn't have it yet |
 
-Message ids are made from the original texts, so every version of the application can use the same published files: texts the application doesn't have are ignored, and the texts it lacks show in the original language.
-
-The next modification you need to do is to add locale support for the languages you plan to support. By default, Angular application contains support for English (United States). If you plan to support German and Japanese, you need to add the locale support for those languages. Add the following code into your `app.module.ts`.
-
-```typescript
-import { registerLocaleData } from '@angular/common';
-
-import de from '@angular/common/locales/de'; 
-import ja from '@angular/common/locales/ja'; 
-
-registerLocaleData(de, 'de'); 
-registerLocaleData(ja, 'ja'); 
-```
-
-The above code will ensure that the compiled application contains the locale data also for German and Japanese besides English. All locale-dependent functions, such as date pipe, rely on the locale data.
-
-The final modification is to add a code that specifies the active locale of the application. Angular uses the `LOCALE_ID` variable for that. By default, it is `en-US`. Let's add code to change that to match to the locale id of the resource we have loaded.
+### getOtaLanguages
 
 ```typescript
-import { NgModule, LOCALE_ID } from '@angular/core';
-import { LocaleService } from '@soluling/angular';
-...
-@NgModule({
-  declarations: [
-    AppComponent
-  ],
-  imports: [
-    BrowserModule
-  ],
-  providers: [
-    LocaleService, 
-    { provide: LOCALE_ID, deps: [LocaleService], useFactory: (service: LocaleService) => service.localeId },
-  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule { }
+getOtaLanguages(projectGuid: string, options?: OtaOptions): Promise<string[]>
 ```
 
-We use `LocaleService` service. It is a service that gives us the id of the loaded resource.
+Requires version 14.4 or later. Resolves to the languages published in Soluling Cloud, such as `['de', 'fi', 'ja']`: the languages of the application's files (`format`, `fileFilter`), without the original language. Add them to the languages of the application itself, so that a language published later is in the application's language list too:
 
-The final step is you place the runtime resource files into assets/i18n directory. Angular extract tool extracts the design time resource file (XLIFF, XMB or JSON). [Soluling](https://www.soluling.com/) can localize all file formats created by Angular extract tool such as XLIFF 1.2, XLIFF 2.0 JSON, and XMB. However you need to use JSON when using the runtime localization. Angular extract tool extracts XLIFF and XMB from the source code (i.e., `.html` and `.ts`). However the JSON file is extracted from the compiled application (e.g., `dist\*.js`). In addition Angular CLI does not yet support JSON so you have to do the extraction without the CLI. First build your application.
+```typescript
+const APP_LANGUAGES = ['en', 'fi', 'de', 'ja'];
 
-```bash
-ng build
+getOtaLanguages(guid, options).then(published =>
+  languages.set([...APP_LANGUAGES, ...published.filter(id => !APP_LANGUAGES.includes(id))]));
 ```
 
-Then add the following command to the `package.json` file un the `"scripts"` section.
-
-```json
-{
-  ...
-  "scripts": {
-    "i18nj": "node_modules/.bin/localize-extract -s dist/**/*.js -f json -o src/locale/messages.json",    
-    ...      
-  }
-  ...
+```html
+@for (id of languages(); track id) {
+  <option [value]="id">{{ id | localDisplayName:'language':'self' }}</option>
 }
 ```
 
-**Note!** On Windows you need to put the full path to the localize-extract.
+It reads the same manifest as `getOtaTranslations`, only once per page load, and saves the list in the browser: after the first visit the list is there at once, and it is read again in the background once a `checkInterval`. Pass the same options as to `getOtaTranslations`. If nothing is published, or the read fails, the list is empty; the promise never rejects.
 
-Then run the extractor to extract strings and to create the `messages.json` file.
+## The active language
 
-```bash
-npm run i18nj
+The active language is the language of the loaded translations, such as `fi` or `zh-Hant`, or `en-US` when none were loaded. It is what the [pipes](#pipes) of this library format in.
+
+- `LocaleService.localeId` - an injectable service; provide `LocaleService` in your providers
+- `getLoadedLocale()` - the same without dependency injection (version 14.5 or later)
+
+### LOCALE_ID
+
+Angular's own pipes (`date`, `number`, ...) and components such as Angular Material's use `LOCALE_ID` and Angular's locale data, which is code in the application: register it with `registerLocaleData` for each language. If `LOCALE_ID` is a language without locale data, the application fails as soon as Angular formats with it.
+
+A language added over the air, after the release, has no locale data. So use the loaded language as `LOCALE_ID` only when its locale data is registered, and otherwise the original language. Angular uses the data of the language part, such as `fi` for `fi-FI`:
+
+```typescript
+import de from '@angular/common/locales/de';
+import fi from '@angular/common/locales/fi';
+import ja from '@angular/common/locales/ja';
+
+const LOCALE_DATA = { de, fi, ja };
+
+for (const [id, data] of Object.entries(LOCALE_DATA))
+  registerLocaleData(data, id);
+
+function getLocaleId(service: LocaleService): string
+{
+  const id = service.localeId;
+  return ((id in LOCALE_DATA) || (id.split('-')[0] in LOCALE_DATA)) ? id : 'en-US';
+}
+
+// providers
+LocaleService,
+{ provide: LOCALE_ID, deps: [LocaleService], useFactory: getLocaleId },
 ```
 
-Localize the `messages.json` file. Save the localized files with the name `<id>.json` where id is the language id. For example, the German file is `de.json`.  We recommend using Soluling when creating localized files. You can download Soluling from [here](https://www.soluling.com/Download). 
+Use the [pipes](#pipes) of this library for your own formatting: they need no locale data, so a language added later gets its own formats too. For the language the user sees, such as the selected item of a language list, use `LocaleService.localeId`, not `LOCALE_ID`.
 
-The localized JSON files are ready to be used in runtime location. Place the the localized JSON files into `assets\i18n` directory. Run the application.
+### Changing the language
 
-```bash
-ng serve -o
+`$localize` translates each text when the application starts, so a new language needs a new start. Keep the selected language in a cookie, pass the same `cookieName` to `getTranslationsEx` or `getOtaTranslations`, and load the page again:
+
+```typescript
+setCookie('language', 'fi');
+location.reload();
 ```
 
-If you have the resource file matching your browser's language, the application appears in that language. If not, change the language of the browser and click refresh to see the application in the selected language.
+## Pipes
 
-**Note!** If you want to extract string from `.ts` file you need to use Angular 10.1 or later. The extract tools of Angular 9 and 10 do not extract strings from `.ts` files but only strings from templates.
+Requires version 14.5 or later.
 
+The pipes format with the browser's `Intl` API in the [active language](#the-active-language). Unlike Angular's pipes, they need no locale data: the browser has the formats of practically every language, so a language added over the air formats correctly too, such as *lördag 28 november 2026* in Swedish. They are standalone pipes; import them in a standalone component's or a module's `imports`:
+
+```typescript
+import { LocalDatePipe, LocalNumberPipe } from '@soluling/angular';
+
+@Component({
+  imports: [LocalDatePipe, LocalNumberPipe],
+  ...
+})
+```
+
+The first four replace Angular's pipes with the same parameters, so a template changes only the pipe name. Every pipe takes `Intl` options for anything else, and a locale as its last parameter to override the active language. An empty value (`null`, `undefined`, `''`) gives `null`; a value that isn't a valid date or number throws an error.
+
+### localDate
+
+```
+value | localDate[:format[:locale]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | A `Date`, a timestamp, or an ISO date string |
+| `format` | `'mediumDate'` | One of Angular's format names, or `Intl.DateTimeFormatOptions` |
+| `locale` | the active language | |
+
+The format names are `short`, `medium`, `long`, `full` (date and time), `shortDate`, `mediumDate`, `longDate`, `fullDate`, and `shortTime`, `mediumTime`, `longTime`, `fullTime`.
+
+```html
+{{ today | localDate }}                                   <!-- 28.11.2026 in Finnish -->
+{{ today | localDate:'fullDate' }}                        <!-- lauantai 28. marraskuuta 2026 -->
+{{ today | localDate:'short' }}                           <!-- 28.11.2026 klo 14.05 -->
+{{ today | localDate:{ weekday: 'long', day: 'numeric', month: 'long' } }}
+```
+
+### localNumber, localPercent
+
+```
+value | localNumber[:format[:locale]]
+value | localPercent[:format[:locale]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | A number, or a string with a number |
+| `format` | `'1.0-3'` (number), `'1.0-0'` (percent) | Angular's digits info, or `Intl.NumberFormatOptions` |
+| `locale` | the active language | |
+
+The digits info is `{minIntegerDigits}.{minFractionDigits}-{maxFractionDigits}`, each part optional, such as `'1.2-2'`.
+
+```html
+{{ 1234567.891 | localNumber }}                    <!-- 1 234 567,891 in Finnish -->
+{{ 12.5 | localNumber:'1.2-2' }}                   <!-- 12,50 -->
+{{ 1500000 | localNumber:{ notation: 'compact' } }} <!-- 1,5 milj. -->
+{{ 0.256 | localPercent }}                         <!-- 26 % -->
+{{ 0.256 | localPercent:'1.1-1' }}                 <!-- 25,6 % -->
+```
+
+### localCurrency
+
+```
+value | localCurrency[:currencyCode[:display[:format[:locale]]]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | A number, or a string with a number |
+| `currencyCode` | `'USD'` | An ISO 4217 code, such as `'EUR'` |
+| `display` | `'symbol'` | `'symbol'`, `'narrowSymbol'`, `'code'`, or `'name'` |
+| `format` | the currency's own digits | Angular's digits info, or `Intl.NumberFormatOptions` |
+| `locale` | the active language | |
+
+```html
+{{ 12.5 | localCurrency:'EUR' }}          <!-- 12,50 € in Finnish -->
+{{ 12.5 | localCurrency:'EUR':'code' }}   <!-- 12,50 EUR -->
+{{ 1234 | localCurrency:'JPY' }}          <!-- ¥1,234 in English -->
+```
+
+### localRelativeTime
+
+```
+value | localRelativeTime[:unit[:options[:locale]]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | A number with a `unit`, or a `Date`, timestamp, or ISO date string |
+| `unit` | the unit that fits, for a date | `'second'`, `'minute'`, `'hour'`, `'day'`, `'week'`, `'month'`, `'quarter'`, `'year'` |
+| `options` | `{ numeric: 'auto' }` | `Intl.RelativeTimeFormatOptions` |
+| `locale` | the active language | |
+
+For a date, the pipe uses the time from now in the largest unit that fits. `numeric: 'auto'` gives words such as *yesterday* and *next week*; `{ numeric: 'always' }` gives *1 day ago*. Like Angular's pure pipes, the text is made when the value changes, not as time goes on.
+
+```html
+{{ -3 | localRelativeTime:'day' }}         <!-- 3 days ago -->
+{{ 1 | localRelativeTime:'week' }}         <!-- next week -->
+{{ comment.created | localRelativeTime }}  <!-- 5 minutes ago, yesterday, in 2 weeks -->
+```
+
+### localList
+
+```
+value | localList[:options[:locale]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | An array or another iterable of strings |
+| `options` | `{ type: 'conjunction', style: 'long' }` | `type`: `'conjunction'`, `'disjunction'`, or `'unit'`; `style`: `'long'`, `'short'`, or `'narrow'` |
+| `locale` | the active language | |
+
+```html
+{{ ['Anna', 'Ben', 'Carl'] | localList }}                <!-- Anna, Ben ja Carl in Finnish -->
+{{ ['S', 'M', 'L'] | localList:{ type: 'disjunction' } }} <!-- S, M, or L in English -->
+```
+
+### localDisplayName
+
+```
+value | localDisplayName[:type[:locale[:options]]]
+```
+
+| Parameter | Default | |
+|---|---|---|
+| `value` | | A code, such as `'fi'`, `'SE'`, `'EUR'`, or `'Hant'` |
+| `type` | `'language'` | `'language'`, `'region'`, `'currency'`, `'script'`, `'calendar'`, or `'dateTimeField'` |
+| `locale` | the active language | `'self'` gives a language's name in the language itself, for a language list |
+| `options` | `{ fallback: 'code' }` | `style`, `languageDisplay`, `fallback` |
+
+An unknown code shows as it is.
+
+```html
+{{ 'fi' | localDisplayName }}                     <!-- Finnish in English, Finnisch in German -->
+{{ 'sv' | localDisplayName:'language':'self' }}   <!-- svenska -->
+{{ 'SE' | localDisplayName:'region' }}            <!-- Ruotsi in Finnish -->
+{{ 'EUR' | localDisplayName:'currency' }}         <!-- euro in Finnish -->
+```
+
+## Other functions and types
+
+| Name | |
+|---|---|
+| `setCookie(name, value)` | Saves the language the user selected in a cookie |
+| `getCookie(name)` | Reads a cookie, or `''` |
+| `getTranslationsByUrl(url, id, setLocaleId?, format?)` | Loads one resource file from a URL |
+| `getTranslationsById(baseUrl, id, fallbacks, setLocaleId, format?)` | Loads `<baseUrl>/<id>.<format>`, then its parents and the fallback languages |
+| `parseDigitsInfo(digitsInfo)` | Angular's digits info, such as `'1.0-2'`, as `Intl.NumberFormatOptions` |
+| `Translations` | The loaded translations: `Record<MessageId, TargetMessage>`, for `loadTranslations` |
+| `ResourceFormat` | `'json'` or `'arb'` |
+| `LocalDateFormat` | The format names of `localDate` |
+| `SOLULING_API_URL`, `SOLULING_CDN_URL` | The default addresses of Soluling's API and CDN |
+
+## Versions
+
+| Version | |
+|---|---|
+| 14.5 | The pipes; `getLoadedLocale` |
+| 14.4 | `getOtaLanguages`; the manifest is read once per page load |
+| 14.2 | Over-the-air updates: `getOtaTranslations` |
+
+The library supports Angular 14 and later.

@@ -3,3 +3,4 @@
  */
 
 export * from './lib/translationloader';
+export * from './lib/intlpipes';

@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project id="C690C182-0A5F-403F-B4E1-F319C39C3F24" created="20261127T195034Z" lastmodified="20261128T052611Z" version="1.0.1124" stringid="5">
+  <lang id="fi"/>
+  <lang id="de"/>
+  <lang id="ja"/>
+  <node class="TAngularSource" name="messages.arb" fullpath="D:\NT\Deploy\Samples\Angular\Ota\src\locale\messages.arb" original="en" lastmodified="20261128T052611Z" encoding="windows-1252">
+    <row id="title" si="1" scannedcomment="The page heading">
+      <value>Over-the-air translations</value>
+      <lang id="fi" rw="0" time="20261127T195035Z">Langattomat käännökset</lang>
+      <lang id="de" rw="0" time="20261127T195035Z">Übersetzungen over the air</lang>
+      <lang id="ja" rw="0" time="20261127T195035Z">OTA 翻訳</lang>
+    </row>
+    <row id="intro" si="2" scannedcomment="What the sample does">
+      <value>This application gets its translations from Soluling Cloud. When you change a translation there and publish the files, the next load of the page shows it, without a new build.</value>
+      <lang id="fi" rw="0" time="20261127T195035Z">Tämä sovellus saa käännöksensä Soluling Cloudista. Kun muutat siellä käännöstä ja julkaiset tiedostot, sivu näyttää sen, kun se seuraavan kerran ladataan, ilman uutta versiota.</lang>
+      <lang id="de" rw="0" time="20261127T195035Z">Diese Anwendung erhält ihre Übersetzungen aus Soluling Cloud. Wenn Sie dort eine Übersetzung ändern und die Dateien veröffentlichen, zeigt die Seite sie beim nächsten Laden, ohne neuen Build.</lang>
+      <lang id="ja" rw="0" time="20261127T195035Z">このアプリケーションは翻訳を Soluling Cloud から取得します。そこで翻訳を変更してファイルを公開すると、新しいビルドなしで、次にページを読み込んだときに表示されます。</lang>
+    </row>
+    <row id="greeting" si="3" scannedcomment="INTERPOLATION: The name of the user" codep="1">
+      <value>Hello {0}!</value>
+      <lang id="fi" rw="0" time="20261127T195035Z">Hei {0}!</lang>
+      <lang id="de" rw="0" time="20261127T195035Z">Hallo {0}!</lang>
+      <lang id="ja" rw="0" time="20261127T195035Z">こんにちは、{0} さん!</lang>
+    </row>
+    <row id="messages" changed="20261128T052610Z" si="4" scannedcomment="The number of new messages" st="2" codep="1">
+      <value>{0} new messages</value>
+      <prev>{0} new messages</prev>
+      <pattern operator="okEqual" operand="0">No new messages</pattern>
+      <pattern plural="pfOne">{0} new message</pattern>
+      <lang id="fi" st="2" or="4" rw="0" time="20261128T052611Z">
+        <value>{0} uutta viestiä</value>
+        <pattern operator="okEqual" operand="0">Ei uusia viestejä</pattern>
+        <pattern plural="pfOne">{0} uusi viesti</pattern>
+      </lang>
+      <lang id="de" st="2" or="4" rw="0" time="20261128T052611Z">
+        <value>{0} neue Nachrichten</value>
+        <pattern operator="okEqual" operand="0">Keine neuen Nachrichten</pattern>
+        <pattern plural="pfOne">{0} neue Nachricht</pattern>
+      </lang>
+      <lang id="ja" st="2" or="4" rw="0" time="20261128T052444Z">
+        <value>新しいメッセージが {0} 件あります</value>
+        <pattern operator="okEqual" operand="0">新しいメッセージはありません</pattern>
+      </lang>
+    </row>
+    <row id="language" si="5" scannedcomment="The label of the language list">
+      <value>Language</value>
+      <lang id="fi" rw="0" time="20261127T195035Z">Kieli</lang>
+      <lang id="de" rw="0" time="20261127T195035Z">Sprache</lang>
+      <lang id="ja" rw="0" time="20261127T195035Z">言語</lang>
+    </row>
+    <configurations>
+      <configuration name="Default" localized="&lt;id&gt;.arb"/>
+    </configurations>
+  </node>
+  <terminology>
+    <shared>
+      <item name="Local" type="TSqliteTermbase"/>
+    </shared>
+  </terminology>
+  <tm>
+    <shared>
+      <item name="Local" type="TSqliteTranslationMemory"/>
+      <item name="Shadow translation memory" type="TCacheTranslationMemory"/>
+    </shared>
+  </tm>
+  <mt>
+    <shared>
+      <item name="DeepL" type="TDeepLTranslator"/>
+      <item name="Azure" type="TMicrosoftTranslator"/>
+      <item name="Claude" type="TClaudeTranslator"/>
+      <item name="Google" type="TGoogleTranslate"/>
+    </shared>
+  </mt>
+</project>

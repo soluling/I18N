@@ -432,25 +432,85 @@ function fetchText(url: string, timeout: number): Promise<string>
     });
 }
 
-// Downloads the best published language: the first candidate with a published file, unless the
-// browser already has that file (same hash). Resolves to the language and its file data, or null.
-function downloadTranslations(
-  projectGuid: string,
-  candidates: string[],
-  options: OtaOptions,
-  timeout: number): Promise<{ id: string, data: string }>
+// Which published files are the application's: fileFilter, or the files of the format
+function getFileFilter(options: OtaOptions): (fileName: string) => boolean
 {
+  let format: ResourceFormat = options.format || 'json';
+  return options.fileFilter || ((fileName: string) => fileName.toLowerCase().endsWith('.' + format));
+}
+
+// The languages of the application's published files, in the order of the manifest
+function getPublishedLanguages(items: ManifestItem[], options: OtaOptions): string[]
+{
+  let filter = getFileFilter(options);
+  let languages: string[] = [];
+
+  for (let item of items)
+  {
+    if (item.language && filter(item.fileName) && !languages.some(id => id.toLowerCase() === item.language.toLowerCase()))
+      languages.push(item.language);
+  }
+
+  return languages;
+}
+
+// The published languages saved in the browser, and when they were read
+interface CachedLanguages
+{
+  time: number;
+  languages: string[];
+}
+
+function getLanguagesKey(projectGuid: string): string
+{
+  return `soluling-ota:${projectGuid}:languages`;
+}
+
+function readCachedLanguages(projectGuid: string): CachedLanguages
+{
+  try
+  {
+    let value = localStorage.getItem(getLanguagesKey(projectGuid));
+    let cached: CachedLanguages = value ? JSON.parse(value) : null;
+    return (cached && Array.isArray(cached.languages)) ? cached : null;
+  }
+  catch
+  {
+    return null;
+  }
+}
+
+function writeCachedLanguages(projectGuid: string, languages: string[])
+{
+  try
+  {
+    localStorage.setItem(getLanguagesKey(projectGuid), JSON.stringify({ time: Date.now(), languages }));
+  }
+  catch
+  {
+    // Not saved: read again on the next load
+  }
+}
+
+// The manifest of each project read on this page load, so that getOtaTranslations and
+// getOtaLanguages read it only once
+let manifestRequests: Record<string, Promise<ManifestItem[]>> = {};
+
+// Reads the project's manifest: the static one on the CDN first - it costs nothing on Soluling's
+// servers however many visitors the application has - and the API's when the CDN doesn't have one
+// yet. Saves the published languages in the browser. Resolves to null on failure.
+function readManifest(projectGuid: string, options: OtaOptions, timeout: number): Promise<ManifestItem[]>
+{
+  let key = projectGuid.toLowerCase();
+
+  if (manifestRequests[key])
+    return manifestRequests[key];
+
   let apiUrl = (options.apiUrl || SOLULING_API_URL).replace(/\/+$/, '');
   let cdnUrl = ((options.cdnUrl !== undefined) ? options.cdnUrl : SOLULING_CDN_URL)?.replace(/\/+$/, '');
-  let format: ResourceFormat = options.format || 'json';
-  let filter = options.fileFilter || ((fileName: string) => fileName.toLowerCase().endsWith('.' + format));
-  let cache = options.cache !== false;
-
-  // The static manifest on the CDN first - it costs nothing on Soluling's servers however many
-  // visitors the application has - and the API's when the CDN doesn't have one yet
   let manifest = cdnUrl ? fetchText(`${cdnUrl}/${projectGuid}/manifest.json`, timeout) : Promise.resolve<string>(null);
 
-  return manifest.then(text => text || fetchText(`${apiUrl}/artifacts/${projectGuid}/manifest`, timeout)).then(text =>
+  let request = manifest.then(text => text || fetchText(`${apiUrl}/artifacts/${projectGuid}/manifest`, timeout)).then(text =>
   {
     let items: ManifestItem[];
 
@@ -464,6 +524,37 @@ function downloadTranslations(
     }
 
     if (!Array.isArray(items))
+    {
+      // Failed: a later call on this page tries again
+      delete manifestRequests[key];
+      return null;
+    }
+
+    if (options.cache !== false)
+      writeCachedLanguages(projectGuid, getPublishedLanguages(items, options));
+
+    return items;
+  });
+
+  manifestRequests[key] = request;
+  return request;
+}
+
+// Downloads the best published language: the first candidate with a published file, unless the
+// browser already has that file (same hash). Resolves to the language and its file data, or null.
+function downloadTranslations(
+  projectGuid: string,
+  candidates: string[],
+  options: OtaOptions,
+  timeout: number): Promise<{ id: string, data: string }>
+{
+  let format: ResourceFormat = options.format || 'json';
+  let filter = getFileFilter(options);
+  let cache = options.cache !== false;
+
+  return readManifest(projectGuid, options, timeout).then(items =>
+  {
+    if (!items)
       return null;
 
     for (let id of candidates)
@@ -557,6 +648,43 @@ export function getOtaTranslations(
 
       return null;
     });
+}
+
+// The languages published in Soluling Cloud for the project, such as ['de', 'fi', 'ja'] - for a
+// language list that also has the languages added after the release. Only the languages of the
+// application's files (format or fileFilter) are included, and not the original language, which has
+// no published file. After the first read the list comes from the browser at once, and is read
+// again in the background once a checkInterval, so a newly published language is in the list on
+// the next load. Resolves to an empty list if nothing is published or the read fails. Uses the same
+// manifest as getOtaTranslations, read only once per page load.
+export function getOtaLanguages(
+  projectGuid: string,
+  options: OtaOptions = null): Promise<string[]>
+{
+  options = options || {};
+
+  let timeout = (options.timeout != null) ? options.timeout : 3000;
+  let interval = (options.checkInterval != null) ? options.checkInterval : DEFAULT_CHECK_INTERVAL;
+  let cached = (options.cache !== false) ? readCachedLanguages(projectGuid) : null;
+
+  if (cached)
+  {
+    if ((interval <= 0) || (Date.now() - cached.time >= interval))
+      readManifest(projectGuid, options, 0).catch(() => null);
+
+    return Promise.resolve(cached.languages);
+  }
+
+  return readManifest(projectGuid, options, timeout)
+    .then(items => items ? getPublishedLanguages(items, options) : [])
+    .catch(() => []);
+}
+
+// The language of the loaded translations, such as fi or zh-Hant, or en-US when none were loaded -
+// the same as LocaleService.localeId, without dependency injection
+export function getLoadedLocale(): string
+{
+  return resourceLocale;
 }
 
 // Service that provides you the active resource locale

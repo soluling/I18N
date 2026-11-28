@@ -8,44 +8,46 @@
   resources were bound to the produced executable.
 */
 
-#define XslSource_SXslFile 58416
-#define HelpAndManualSource_SHelpAndManualDescription 58417
-#define HelpAndManualSource_SHelpAndManualFiles 58418
-#define FlutterSource_SFlutterDescription 58419
-#define FlutterSource_SFlutterFile 58420
-#define FilePairImportFra_SImportFileName 58421
-#define SubtitleSource_SWebVTT 58432
-#define MicrosoftTerminologyServiceFra_SGlossaryWorking 58433
-#define MicrosoftTerminologyServiceFra_SGlossaryDoesNotWork 58434
-#define MagentoSourceFra_SSameAsSource 58435
-#define MagentoSource_SDescription 58436
-#define MagentoSource_SMagentoCsv 58437
-#define GoI18nSource_SDescription 58438
-#define GoI18nSource_SJsonFile 58439
-#define GoI18nSource_SYamlFile 58440
-#define GoI18nSource_SYamlNotSupported 58441
-#define ReactIntlSource_SReactIntlDescription 58442
-#define ReactIntlSource_SReactIntlJsonFile 58443
-#define ReactIntlConfigurationFra_SCaption 58444
-#define WinUiProjectSource_SWuinUiProjectDescription 58445
-#define WinUiProjectSource_SWinUiProject 58446
-#define XslSource_SDescription 58447
+#define WinUiProjectSource_SWinUiProject 58416
+#define XslSource_SDescription 58417
+#define XslSource_SXslFile 58418
+#define HelpAndManualSource_SHelpAndManualDescription 58419
+#define HelpAndManualSource_SHelpAndManualFiles 58420
+#define FlutterSource_SFlutterDescription 58421
+#define FlutterSource_SFlutterFile 58422
+#define FilePairImportFra_SImportFileName 58423
+#define SubtitleSource_SSubtitleDescription 58432
+#define SubtitleSource_SSubtitle 58433
+#define SubtitleSource_SWebVTT 58434
+#define MicrosoftTerminologyServiceFra_SGlossaryWorking 58435
+#define MicrosoftTerminologyServiceFra_SGlossaryDoesNotWork 58436
+#define MagentoSourceFra_SSameAsSource 58437
+#define MagentoSource_SDescription 58438
+#define MagentoSource_SMagentoCsv 58439
+#define GoI18nSource_SDescription 58440
+#define GoI18nSource_SJsonFile 58441
+#define GoI18nSource_SYamlFile 58442
+#define GoI18nSource_SYamlNotSupported 58443
+#define ReactIntlSource_SReactIntlDescription 58444
+#define ReactIntlSource_SReactIntlJsonFile 58445
+#define ReactIntlConfigurationFra_SCaption 58446
+#define WinUiProjectSource_SWuinUiProjectDescription 58447
 #define JsonResourceSource_SSvelteI18nJsonFile 58448
 #define JsonResourceSource_SVueI18nDescription 58449
 #define JsonResourceSource_SVueI18nJsonFile 58450
-#define JsonResourceSource_SAngularTranslateDescription 58451
-#define JsonResourceSource_SAngularTranslateJsonFile 58452
-#define JsonResourceSource_SNgxTranslateDescription 58453
-#define JsonResourceSource_SNgxTranslateJsonFile 58454
-#define AmazonTranslateDlg_SNoAccessKeyId 58455
-#define WordSource_SDescription 58456
-#define WordSource_SDocxFiles 58457
-#define PowerPointSource_SDescription 58458
-#define PowerPointSource_SPptxFiles 58459
-#define SubtitleConfigurationFra_SCaption 58460
-#define SubtitleSegmentationSourceFra_SCaption 58461
-#define SubtitleSource_SSubtitleDescription 58462
-#define SubtitleSource_SSubtitle 58463
+#define JsonResourceSource_SNextIntlDescription 58451
+#define JsonResourceSource_SNextIntlJsonFile 58452
+#define JsonResourceSource_SAngularTranslateDescription 58453
+#define JsonResourceSource_SAngularTranslateJsonFile 58454
+#define JsonResourceSource_SNgxTranslateDescription 58455
+#define JsonResourceSource_SNgxTranslateJsonFile 58456
+#define AmazonTranslateDlg_SNoAccessKeyId 58457
+#define WordSource_SDescription 58458
+#define WordSource_SDocxFiles 58459
+#define PowerPointSource_SDescription 58460
+#define PowerPointSource_SPptxFiles 58461
+#define SubtitleConfigurationFra_SCaption 58462
+#define SubtitleSegmentationSourceFra_SCaption 58463
 #define PdfView_SPdfSource 58464
 #define PdfSource_SPdfDescription 58465
 #define PdfSource_SPdf 58466
@@ -7120,12 +7122,16 @@
 #define Vcl_Imaging_pnglang_EPNGNoImageDataText 65535
 STRINGTABLE
 BEGIN
+	WinUiProjectSource_SWinUiProject,	L"Windows App SDK/WinUI project files"
+	XslSource_SDescription,	L"Extensible Stylesheet Language file"
 	XslSource_SXslFile,	L"Extensible Stylesheet Language (XSL) files"
 	HelpAndManualSource_SHelpAndManualDescription,	L"Help+Manual project file"
 	HelpAndManualSource_SHelpAndManualFiles,	L"Help+Manual project files"
 	FlutterSource_SFlutterDescription,	L"Flutter resource file"
 	FlutterSource_SFlutterFile,	L"Flutter resource files"
 	FilePairImportFra_SImportFileName,	L"Import file name: %s"
+	SubtitleSource_SSubtitleDescription,	L"Subtitle file"
+	SubtitleSource_SSubtitle,	L"Subtitle files"
 	SubtitleSource_SWebVTT,	L"WebVTT files"
 	MicrosoftTerminologyServiceFra_SGlossaryWorking,	L"Glossary is working properly."
 	MicrosoftTerminologyServiceFra_SGlossaryDoesNotWork,	L"Glossary does not work properly:"
@@ -7140,11 +7146,11 @@ BEGIN
 	ReactIntlSource_SReactIntlJsonFile,	L"React-Intl JSON files"
 	ReactIntlConfigurationFra_SCaption,	L"Output options"
 	WinUiProjectSource_SWuinUiProjectDescription,	L"Windows App SDK/WinUI project file"
-	WinUiProjectSource_SWinUiProject,	L"Windows App SDK/WinUI project files"
-	XslSource_SDescription,	L"Extensible Stylesheet Language file"
 	JsonResourceSource_SSvelteI18nJsonFile,	L"Svelte I18n JSON files"
 	JsonResourceSource_SVueI18nDescription,	L"Vue I18n resource file"
 	JsonResourceSource_SVueI18nJsonFile,	L"Vue I18n JSON files"
+	JsonResourceSource_SNextIntlDescription,	L"next-intl resource file"
+	JsonResourceSource_SNextIntlJsonFile,	L"next-intl JSON files"
 	JsonResourceSource_SAngularTranslateDescription,	L"Angular-translate resource file"
 	JsonResourceSource_SAngularTranslateJsonFile,	L"Angular-translate JSON files"
 	JsonResourceSource_SNgxTranslateDescription,	L"Ngx-translate resource file"
@@ -7156,8 +7162,6 @@ BEGIN
 	PowerPointSource_SPptxFiles,	L"PowerPoint files"
 	SubtitleConfigurationFra_SCaption,	L"Write options"
 	SubtitleSegmentationSourceFra_SCaption,	L"Segmentation"
-	SubtitleSource_SSubtitleDescription,	L"Subtitle file"
-	SubtitleSource_SSubtitle,	L"Subtitle files"
 	PdfView_SPdfSource,	L"PDF source"
 	PdfSource_SPdfDescription,	L"PDF file"
 	PdfSource_SPdf,	L"PDF files"
@@ -15120,4 +15124,4 @@ END
 /* D:\NT\Desktop\Bin\Manifest.res */
 /* D:\NT\Desktop\Bin\Icons.res */
 /* D:\NT\Desktop\Bin\Soluling.res */
-/* C:\Users\Jaakko\AppData\Local\Temp\dtfC326.tmp */
+/* C:\Users\Jaakko\AppData\Local\Temp\dtf432B.tmp */

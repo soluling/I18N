@@ -1,0 +1,58 @@
+{
+  "@@locale": "de",
+  "title": "Übersetzungen over the air",
+  "@title": {
+    "description": "The page heading",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "0", "column": "44" },
+        "end": { "line": "2", "column": "90" }
+      }
+    ]
+  },
+  "intro": "Diese Anwendung erhält ihre Übersetzungen aus Soluling Cloud. Wenn Sie dort eine Übersetzung ändern und die Dateien veröffentlichen, zeigt die Seite sie beim nächsten Laden, ohne neuen Build.",
+  "@intro": {
+    "description": "What the sample does",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "2", "column": "47" },
+        "end": { "line": "6", "column": "16" }
+      }
+    ]
+  },
+  "greeting": "Hallo {$INTERPOLATION}!",
+  "@greeting": {
+    "description": "INTERPOLATION: The name of the user",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "4", "column": "65" },
+        "end": { "line": "6", "column": "11" }
+      }
+    ]
+  },
+  "messages": "{VAR_PLURAL, plural, =0 {Keine neuen Nachrichten} one {{INTERPOLATION} neue Nachricht} other {{INTERPOLATION} neue Nachrichten}}",
+  "@messages": {
+    "description": "The number of new messages",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.html",
+        "start": { "line": "6", "column": "56" },
+        "end": { "line": "12", "column": "49" }
+      }
+    ]
+  },
+  "language": "Sprache",
+  "@language": {
+    "description": "The label of the language list",
+    "x-locations": [
+      {
+        "file": "src\\app\\app.component.ts",
+        "start": { "line": "47", "column": "36" },
+        "end": { "line": "47", "column": "88" }
+      }
+    ]
+  }
+}
